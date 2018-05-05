@@ -1,0 +1,7964 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Briarlea Faerie Ring~
+ShortName   Faerie Ring~
+Builders    None~
+Credits     Zophiel Cadoren~
+VNUMs       39100 39399
+LComment    [  ALL  ]
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      G~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   faerie_ring~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#39120
+Name door~
+ShortD a door mob~
+LongD A door mob is here holding a tape measure.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 0d0+1
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -700
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#39121
+Name fly~
+ShortD a fly mob~
+LongD A fly mob is here reminding faeries to use their wings.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 0d0+1
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -700
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXALL 39121 up~
+MProg HOUR 39150 19~
+MProg HOUR 39150 20~
+MProg HOUR 39150 0~
+MProg HOUR 39150 1~
+MProg HOUR 39150 2~
+MProg HOUR 39150 3~
+MProg HOUR 39150 4~
+MProg HOUR 39150 5~
+MProg HOUR 39150 6~
+MProg HOUR 39150 7~
+MProg HOUR 39150 8~
+MProg HOUR 39150 9~
+MProg HOUR 39150 10~
+MProg HOUR 39150 11~
+MProg HOUR 39150 12~
+MProg HOUR 39150 13~
+MProg HOUR 39150 14~
+MProg HOUR 39150 15~
+MProg HOUR 39150 16~
+MProg HOUR 39150 17~
+MProg HOUR 39150 18~
+MProg HOUR 39150 21~
+MProg HOUR 39150 22~
+MProg HOUR 39150 23~
+END
+
+#39122
+Name fly~
+ShortD a fly mob~
+LongD A fly mob is here reminding faeries to use their wings.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 0d0+1
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -700
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXALL 39122 down~
+MProg EXALL 39121 up~
+END
+
+#39123
+Name fly~
+ShortD a fly mob~
+LongD A fly mob is here reminding faeries to use their wings.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 0d0+1
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -700
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXALL 39122 down~
+END
+
+#39124
+Name Tillillie busy faerie daisy~
+ShortD a busy faerie with a daisy tucked behind her ear~
+LongD A busy faerie with a daisy tucked behind her ear serves cups of tea.~
+Desc A faerie lady busies herself serving cups of tea to the customers.  She 
+keeps her purple-toned wings out of the way somehow as she bustles amongst 
+the tables.  A bright yellow daisy is tucked cheerfully behind her left ear. 
+ 
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39125
+Name kaylie slightly chubby faerie pink cheeks~
+ShortD a slightly chubby faerie with pink cheeks~
+LongD A slightly chubby faerie with pink cheeks is ready to serve the customers.~
+Desc A slightly chubby faerie fusses over the customers as they drool over the 
+delectable treats for sale.  She looks as if she's sampled a few herself, 
+but who could resist such delights?  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39126
+Name Beren green-haired faerie~
+ShortD a green-haired faerie~
+LongD A green-haired faerie is sorting herbs into piles, and is serving customers at the same time.~
+Desc This male faerie has an unusual shade of green in his hair, perhaps natural, 
+or perhaps it is dyed using some of the herbs he sells.  He seems to know 
+his herbs well, and is ready to help you with any herbal needs.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39127
+Name Salvian tall faerie~
+ShortD a tall faerie~
+LongD A tall faerie demonstrates how to use the instruments here.~
+Desc A tall male faerie demonstrates how to use the varied instruments on sale.  
+He seems like a talented musician, being able to pick up any instrument and 
+play a sweet melody on it.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39128
+Name millissa faerie flamboyant hat~
+ShortD a faerie dressed in a flamboyant hat~
+LongD A faerie dressed in a flamboyant hat greets you warmly.~
+Desc A faerie dressed in a flamboyant hat greets you warmly and shows you around 
+her little store.  She seems very proud of her creations, and takes delight 
+in seeing a happy customer walk out with one of them.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39129
+Name Ibrellen plump faerie~
+ShortD a plump faerie~
+LongD A plump faerie is polishing up a pair of slippers.~
+Desc This faerie man is a little on the plump side, but just enough to make him 
+adorable.  He busies himself polishing shoes and helping customers find just 
+the right fit for their faerie foot.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39130
+Name Jilessa faerie tiny spectacles~
+ShortD a faerie with tiny spectacles~
+LongD A faerie with tiny spectacles is putting leaf dockets on the books.~
+Desc A faerie with dainty spectacles is tending to the bookstore.  She takes 
+particular care when displaying the well-loved books, as if they were her 
+favourite.  But she looks the type to know about all of the books she sells. 
+ 
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39131
+Name Melistre faerie sparkly hair~
+ShortD a faerie with sparkly hair~
+LongD A faerie with sparkly hair is pouring faeriedust into a small pouch.~
+Desc The faerie who owns this shop has sparkly hair, probably from the faerie 
+dust she works with all day long.  She has dusty fingers which sparkle a 
+little too.  She knows all about faeriedust and would be more than happy to 
+help you.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39132
+Name Tetril curious-looking faerie fuzzy hair~
+ShortD a curious-looking faerie with fuzzy hair~
+LongD A curious-looking faerie with fuzzy hair would love to help you find the trinket you're after.~
+Desc The faerie who works in this shop is a curious-looking fellow.  He has fuzzy 
+hair, and his eyes are a little glazed over, as if he were daydreaming about 
+something.  Perhaps an adventure where he found one of his knickknacks, or 
+his next adventure in search of an odd trinket.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+MProg SPEECH 39127 magic tablecloth~
+MProg GRALL 39154 100~
+END
+
+#39133
+Name Kestalla finely dressed faerie~
+ShortD a finely dressed faerie~
+LongD A finely dressed faerie is ready to help you find the right garment.~
+Desc This faerie is finely dressed, in a beautiful handsewn and original dress of 
+auburn rose petals.  Her hair is intricately styled and a colourful scarf 
+adorns her neck, giving her a touch of added flair.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39134
+Name Kristilla faerie ribbons hair~
+ShortD a faerie with beautiful ribbons in her hair~
+LongD A faerie with beautiful ribbons in her hair is cutting lengths of ribbon.~
+Desc This faerie has a flair for doing delightful things with ribbons.  Today she 
+has weaved ribbons of every shade of pink and peach through her hair, and 
+tied them into dazzling bows at the ends.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39135
+Name Avriel faerie humming bird~
+ShortD a faerie with a hummingbird perched on his shoulder~
+LongD A faerie with a hummingbird perched on his shoulder is taking care of the pets.~
+Desc This faerie man seems to have a natural bond with almost any creature, being 
+able to tame even the wildest of them.  The little hummingbird on his 
+shoulder sits there quietly, obviously happy with its surroundings.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39136
+Name Galiial scruffy faerie~
+ShortD a scruffy faerie~
+LongD A scruffy faerie is crafting a new piece of furniture.~
+Desc A scruffy faerie here, has tousled hair with bits of sawdust all through it, 
+and old, patched overalls.  Despite his appearance, he seems to know his 
+trade well, and takes a lot of joy from it.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39137
+Name angelfish fish clamshell~
+ShortD an `#`Ya`Sn`Yg`Se`Yl `Sf`Yi`Ss`Yh`^~
+LongD An `#`Ya`Sn`Yg`Se`Yl `Sf`Yi`Ss`Yh`^ swims happily in its clamshell tank.~
+Desc Inside its clamshell tank, swims an angel fish with black and bright yellow 
+stripes.  It has a black dorsal fin, and black eyes, with a rippling yellow 
+tail.  
+~
+Race fish~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+2
+DamDice 1d5+0
+DamType suction
+AC 80 80 80 80
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area wimpy pet noalign~
+AffBy  haste swim~
+Imm    drowning~
+Form   edible sentient biped mammal fish~
+Part   head heart brains guts eye tail scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#39138
+Name green aphid~
+ShortD a `#`Ggreen`^ aphid~
+LongD A `#`Ggreen`^ aphid flies about happily.~
+Desc This is a little green bug, which loves feeding on leafs and other 
+vegetables.  It has two wings on its back, and two antennae on its head 
+which twitch constantly.  
+~
+Race insect~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+2
+DamDice 1d5+0
+DamType bite
+AC 80 80 80 80
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area wimpy pet noalign noautosocial~
+AffBy  haste swim~
+Off    fast~
+Imm    mental drowning~
+Vuln   bash~
+Form   edible sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#39139
+Name man lady-bug~
+ShortD a man `#`Rl`Sa`Rd`Sy`R-`Sb`Ru`Sg`^~
+LongD A man `#`Rl`Sa`Rd`Sy`R-`Sb`Ru`Sg`^ flits about looking for a spot to land.~
+Desc This is a little man lady-bug.  You can tell, because his spots are larger 
+than that of a female's.  He has two curved wings tucked into his back, and 
+just loves munching his way through leaves.  
+~
+Race insect~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+2
+DamDice 1d5+0
+DamType chomp
+AC 80 80 80 80
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area wimpy pet noalign noautosocial~
+AffBy  haste swim~
+Off    fast~
+Imm    mental drowning~
+Vuln   bash~
+Form   edible sentient biped insect~
+Part   head arms legs heart brains guts hands feet ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#39140
+Name furry white mouse~
+ShortD a furry `#`Wwhite`^ mouse~
+LongD A furry `#`Wwhite`^ mouse cleans its whiskers here.~
+Desc A furry white mouse sits here cleaning its whiskers.  It has tiny paws which 
+it first licks, and then rubs over its head and face.  Of course it would 
+stop cleaning, at the first smell of cheese.  
+~
+Race rabbit~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType bite
+AC 60 60 60 60
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area wimpy pet noalign noautosocial~
+AffBy  haste swim~
+Off    dodge fast~
+Imm    mental drowning~
+Vuln   bash~
+Form   edible animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#39141
+Name hummingbird~
+ShortD a hummingbird~
+LongD A hummingbird beats its wings furiously here.~
+Desc This hummingbird is forever beating its wings, so fast that it often seems 
+like a blur of something resembling wings.  It has a long black beak, and 
+bright black eyes.  It has a weakness for nectar and honey.  
+~
+Race song bird~
+Align 0 0
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+4
+DamDice 1d7+1
+DamType peck
+AC 40 40 40 40
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area wimpy pet noalign noautosocial~
+AffBy  flying haste swim~
+Off    dodge fast~
+Imm    mental drowning~
+Vuln   bash~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#39142
+Name venus flytrap~
+ShortD a `#`Gvenus`^ `#`mfly-trap`^~
+LongD A `#`Gvenus`^ `#`mfly-trap`^ snaps at flys here.~
+Desc A venus flytrap sits in its turtleshell pot snapping at anything that 
+resembles a fly.  Actually, anything smaller than itself that moves would 
+do.  It has a dripping mouth of spiky teeth and a plump red tongue which 
+lolls about inside its mouth.  It is bright green in colour, with a purple 
+head.  
+~
+Race unique~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+18
+DamDice 2d4+2
+DamType digestion
+AC 10 10 10 10
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area wimpy pet noalign noautosocial~
+AffBy  flying haste dark_vision swim~
+Off    dodge fast~
+Imm    mental drowning~
+Res    pierce cold~
+Vuln   bash~
+Form   edible poison sentient biped insect~
+Part   head arms legs heart brains guts~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#39143
+Name racing snail~
+ShortD a racing snail~
+LongD A racing snail sits here with a saddle on its back.~
+Desc A snail, bred for racing sits here with a saddle strapped to its back, and a 
+bit in its mouth.  When it gets moving it gets up to speeds fast enough to 
+blow you hair into a haystack.  
+~
+Race centipede~
+Align 0 0
+Level 8
+Hitroll 0
+HitDice 2d5+8
+ManaDice 2d5+8
+DamDice 1d7+2
+DamType chomp
+AC 30 30 30 30
+Wealth 0
+Act    npc dont_wander docile stay_area wimpy pet noalign noautosocial~
+AffBy  flying haste dark_vision swim~
+Off    dodge fast~
+Imm    mental drowning~
+Res    pierce cold~
+Vuln   bash~
+Form   edible poison animal sentient biped insect mountable~
+Part   head arms legs heart brains guts eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#39144
+Name starfish clamshell~
+ShortD a `#`Rstarfish`^~
+LongD A `#`Rstarfish`^ sits in its clamshell tank, looking adorable.~
+Desc Inside this clamshell tank, is a red starfish.  It has tiny little ridges 
+along its legs and on each ridge are many smaller ridges, like little 
+mountains.  It looks adorable, for a starfish.  
+~
+Race fish~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+2
+DamDice 1d5+0
+DamType suction
+AC 80 80 80 80
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area wimpy pet noalign~
+AffBy  haste swim~
+Imm    drowning~
+Form   edible sentient biped mammal fish~
+Part   head heart brains guts eye tail scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#39145
+Name fluffy yellow chick~
+ShortD a fluffy `#`Yyellow`^ chick~
+LongD A fluffy `#`Yyellow`^ chick sits here, looking soft and cuddly.~
+Desc A fluffy yellow chick pecks about quietly, either exploring or in search of 
+food.  It feels soft to the touch, and makes little peeping noises every so 
+often.  It looks very cuddly.  
+~
+Race bird~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType bite
+AC 60 60 60 60
+Wealth 0
+Act    npc dont_wander docile no_tame stay_area wimpy pet noalign noautosocial~
+AffBy  flying haste swim~
+Off    dodge fast~
+Imm    mental drowning~
+Res    light~
+Vuln   bash fire~
+Form   edible animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#39146
+Name silvie faerie party hat~
+ShortD a faerie wearing a party hat~
+LongD A faerie wearing a party hat is serving the customers.~
+Desc The faerie working here looks as if she were about to head off to a party 
+herself.  She's dressed in a bright, almost tutu-like dress, with shiny 
+slippers and a party hat on her head.  Every so often she picks up a bottle 
+of bubble mix and blows some more bubbles around the shop.  
+~
+Race faerie~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 10d14+480
+DamDice 10d13+55
+DamType slap
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GRALL 39154 100~
+END
+
+#39147
+Name jasmine blue winged faerie~
+ShortD a delicate blue-winged female faerie~
+LongD A delicate blue-winged female faerie is here.~
+Desc A delicate looking female faerie is here.  She has large translucent blue 
+wings that is bigger than she is.  She flies about happily, stopping once in 
+a while to rest on a toadstool or mushroom nearby.  
+~
+Race faerie~
+Align 2 2
+Level 30
+Hitroll 0
+HitDice 5d5+130
+ManaDice 5d6+235
+DamDice 5d4+7
+DamType slap
+AC -90 -90 -90 -70
+Wealth 300
+Act    npc stay_area mage~
+AffBy  detect_magic flying~
+Off    assist_align assist_race~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg HOUR 39156 22~
+MProg FIGHT 39123 40~
+MProg GRALL 39124 30~
+MProg HOUR 39149 19~
+MProg GRALL 39152 100~
+END
+
+#39148
+Name sharelli druid faerie~
+ShortD a druid faerie~
+LongD A druid faerie is here, fussing over passersby.~
+Desc This faerie has a gentle looking face and soft tender hands.  She has a 
+soothing voice and looks like just the faerie to take of one when one is not 
+feeling so good.  
+~
+Race faerie~
+Align 2 2
+Level 70
+Hitroll 0
+HitDice 7d10+360
+ManaDice 7d10+360
+DamDice 8d8+34
+DamType slap
+AC -400 -400 -400 -320
+Wealth 800
+Act    npc dont_wander no_tame stay_area cleric healer~
+AffBy  detect_magic flying~
+Off    assist_align assist_race~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GRALL 39152 100~
+END
+
+#39149
+Name wise-looking faerie storytelling corillie~
+ShortD a storytelling faerie~
+LongD A wise-looking faerie is here telling faerie-tales.~
+Desc This faerie is one of the older ones in the mushroom ring, yet still has 
+eyes filled with life and laughter.  She spends her time telling 
+faerie-tales to the younger ones, and of course any innocent passersby.  
+~
+Race faerie~
+Align 2 2
+Level 110
+Hitroll 0
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+65
+DamType slap
+AC -800 -800 -800 -680
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic flying~
+Imm    summon charm magic weapon~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+MProg GIVE 39169 30516~
+MProg SPEECH 39168 flower~
+MProg SPEECH 39168 flowers~
+MProg SPEECH 39167 yes~
+MProg SPEECH 39166 daydream~
+MProg SPEECH 39166 day-dream~
+MProg SPEECH 39165 lost children~
+MProg SPEECH 39165 aarislan~
+MProg SPEECH 39133 magic tablecloth~
+MProg GIVE 39128 39286~
+MProg GIVE 39129 39284~
+MProg GIVE 39130 faerie dust~
+MProg GIVE 39131 39288~
+MProg GIVE 39132 31017~
+MProg GRALL 39152 100~
+MProg HOUR 39125 4~
+MProg HOUR 39126 9~
+END
+
+#39150
+Name load a drop of dew~
+ShortD `#`WI load a drop of dew`^~
+LongD `#`WI load a drop of dew`^~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 0d0+1
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -700
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg HOUR 39125 4~
+MProg HOUR 39126 12~
+END
+
+#39151
+Name alila olive skinned faerie ranger~
+ShortD an olive skinned male faerie~
+LongD An olive skinned male faerie is here.~
+Desc An olive skinned male faerie is here, dressed in a brown tunic.  He flits 
+about with his short brown wings, resting amongst plants, almost totally 
+camouflaged.  
+~
+Race faerie~
+Align 2 2
+Level 30
+Hitroll 0
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType slap
+AC -90 -90 -90 -70
+Wealth 300
+Act    npc stay_area warrior~
+AffBy  detect_magic flying~
+Off    assist_align assist_race~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg HOUR 39157 22~
+MProg REPOP 39137 100~
+MProg HOUR 39149 19~
+MProg GRALL 39152 100~
+END
+
+#39152
+Name laetha green speckled wing faerie~
+ShortD a female faerie with green speckled wings~
+LongD A female faerie with green speckled wings is here.~
+Desc A slender female faerie with green speckled wings stands here demurely.  She 
+is very quite and looks about very interested in the events around her.  
+~
+Race faerie~
+Align 2 2
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+140
+DamDice 4d6+8
+DamType slap
+AC -90 -90 -90 -70
+Wealth 300
+Act    npc stay_area cleric~
+AffBy  detect_magic flying~
+Off    assist_align assist_race~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg HOUR 39158 22~
+MProg HOUR 39149 19~
+MProg HOUR 39149 21~
+MProg HOUR 39149 0~
+MProg HOUR 39149 2~
+MProg GRALL 39152 100~
+END
+
+#39153
+Name secret lair, nightime lights, borrowed treasure~
+ShortD the multipurpose mob~
+LongD The multipurpose mob sits here, doing several jobs at once.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 0d0+1
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -700
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg HOUR 39138 16~
+MProg HOUR 39138 14~
+MProg HOUR 39138 11~
+MProg HOUR 39138 9~
+MProg HOUR 39138 8~
+MProg HOUR 39138 7~
+MProg HOUR 39138 5~
+MProg HOUR 39138 3~
+MProg HOUR 39138 2~
+MProg HOUR 39138 12~
+MProg COMMAND 39134 push diamond~
+MProg COMMAND 39134 touch diamond~
+MProg HOUR 39139 19~
+END
+
+#39154
+Name secret lair mob #2~
+ShortD exit from the queen's lair~
+LongD I'll shut the door after you.~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 10d14+480
+ManaDice 0d0+1
+DamDice 10d13+55
+DamType none
+AC -700 -700 -700 -700
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXALL 39135 southwest~
+END
+
+#39155
+Name handsome faerie attendant ileth~
+ShortD a faerie attendant~
+LongD A handsome faerie attendant waits on the queen.~
+Desc This attendant to the queen is a handsome faerie with golden hair tucked 
+neatly under a royal cap.  He has deep blue wings with silvery swirls which 
+flutter softly behind him as he waits on the queen.  
+~
+Race faerie~
+Align 2 2
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType punch
+AC -130 -130 -130 -110
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy  detect_magic flying~
+Off    assist_race~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material flesh
+MProg GIVE 39146 3194~
+MProg SPEECH 39143 blue~
+MProg SPEECH 39143 carriage~
+MProg SPEECH 39143 paint~
+MProg GIVE 39144 blueberry~
+MProg GIVE 39145 39233~
+MProg GIVE 39147 39225~
+MProg GIVE 39148 39326~
+MProg GRALL 39152 100~
+END
+
+#39156
+Name wiliondl guard faerie regal~
+ShortD a guard faerie~
+LongD A regal male faerie stands here, guarding the queen.~
+Desc The young male faerie on duty as a guard to the faerie queen, takes his job 
+very seriously.  He stands at attention for hours on end, his wings barely 
+twitching.  His uniform is kept spick and span, everything is neatly pressed 
+and in order.  
+~
+Race faerie~
+Align 2 2
+Level 42
+Hitroll 0
+HitDice 5d7+242
+ManaDice 5d7+245
+DamDice 3d12+14
+DamType slash
+AC -140 -140 -140 -110
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy  detect_magic flying~
+Off    assist_race~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material flesh
+MProg GRALL 39152 100~
+END
+
+#39157
+Name verili rugged looking male faerie~
+ShortD a rugged looking male faerie~
+LongD A rugged looking male faerie is here, looking serious.~
+Desc A rugged looking male faerie is here looking serious. For a faerie. Rugged, in faerie terms, that is. He holds his weapons expertly, and his armour is well worn but in good condition.
+~
+Race faerie~
+Align 2 2
+Level 30
+Hitroll 0
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType slap
+AC -90 -90 -90 -70
+Wealth 300
+Act    npc stay_area warrior~
+AffBy  detect_magic flying~
+Off    bash berserk disarm dodge fast parry assist_align assist_race~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg HOUR 39159 22~
+MProg HOUR 39149 19~
+MProg GRALL 39152 100~
+END
+
+#39158
+Name lilila nondescript female faerie black wings~
+ShortD a nondescript female faerie with black wings~
+LongD A nondescript female faerie with black wings is here.~
+Desc A nondescript female faerie with black wings hides here in the shadows.  A 
+perpetual mischevious grin plays across her innocent face as she flits 
+around.  
+~
+Race faerie~
+Align 2 2
+Level 30
+Hitroll 0
+HitDice 5d5+130
+ManaDice 3d5+60
+DamDice 2d12+8
+DamType slap
+AC -90 -90 -90 -70
+Wealth 300
+Act    npc stay_area cleric thief~
+AffBy  detect_magic sneak hide flying~
+Off    assist_align assist_race~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg RANDOM 39140 30~
+MProg HOUR 39149 19~
+MProg GRALL 39152 100~
+END
+
+#39159
+Name arylili female faerie silky green hair~
+ShortD a female faerie with silky green hair~
+LongD A female faerie with silky green hair is here.~
+Desc A cheerful looking female faerie with green hair is here, engaging everyone 
+around her in noisy chatter.  She holds a flute in her hand, stopping her 
+chatter once in a while to play a lilting scale.  She seems to be able to 
+capture everyone's attention to herself all the time, effortlessly and 
+non-obstructively.  
+~
+Race faerie~
+Align 2 2
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 2d12+8
+DamType slap
+AC 90 90 90 70
+Wealth 10
+Act    npc stay_area~
+AffBy  detect_magic flying~
+Off    assist_align assist_race~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg HOUR 39161 22~
+MProg HOUR 39149 19~
+MProg HOUR 39151 7~
+MProg HOUR 39151 8~
+MProg HOUR 39151 9~
+MProg HOUR 39151 10~
+MProg HOUR 39151 11~
+MProg HOUR 39151 12~
+MProg HOUR 39151 13~
+MProg HOUR 39151 14~
+MProg HOUR 39151 15~
+MProg HOUR 39151 16~
+MProg HOUR 39151 17~
+MProg HOUR 39151 18~
+MProg HOUR 39151 23~
+MProg HOUR 39151 0~
+MProg GRALL 39152 100~
+END
+
+#39166
+Name faerie queen adraeli~
+ShortD a faerie queen with a magnificent crown~
+LongD A faerie queen with a magnificent crown is here, smiling happily.~
+Desc The beautiful faerie queen is here surrounded by dozens of other faeries. She wears a grand ballgown and a magnificent crown is perched precariously on her head.
+~
+Race faerie~
+Align 2 2
+Level 45
+Hitroll 0
+HitDice 5d8+255
+ManaDice 2d5+30
+DamDice 8d4+16
+DamType slap
+AC -150 -150 -150 -120
+Wealth 300
+Act    npc dont_wander no_tame stay_area mage warrior~
+Act2   allskills~
+AffBy  detect_magic sanctuary flying~
+Off    assist_align assist_race~
+Imm    summon charm~
+Res    magic pierce mental~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SAYTO 39164 zap~
+MProg TICK 39153 100~
+MProg DEATH 39155 all~
+MProg ACT 39162 fireball~
+MProg SAYTO 39164 wishes~
+MProg SAYTO 39164 wish~
+MProg SAYTO 39164 wand of a thousand wishes~
+MProg RANDOM 39164 3~
+END
+
+#0
+
+
+
+#OBJECTS
+#39120
+Name a colourful scarf~
+Short a `#`?c`?o`?l`?o`?u`?r`?f`?u`?l`^ scarf~
+Desc A `#`?c`?o`?l`?o`?u`?r`?f`?u`?l`^ scarf is here, looking delicate.~
+Level 50
+ItemType clothing~
+Cost 1000
+Asize 10
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material spidersilk~
+Extra    nodegrade~
+Wear     take neck~
+ExtraDesc colourful scarf~
+A `#`?c`?o`?l`?o`?u`?r`?f`?u`?l`^ scarf about the length of 12 inches and width of 4 inches lies 
+here carelessly.  It is made of fine spidersilk and thistledown.  The 
+material seems to have been treated to make it more durable.  It is 
+extremely light and the edges of the scarf has little tassles all along it.  
+~
+End
+
+#39121
+Name toadstool stool~
+Short a `#`Wwhite`^ spotted `#`Rred`^ toadstool stool~
+Desc A `#`Wwhite`^ spotted `#`Rred`^ toadstool stool is here looking comfortable.~
+Level 0
+ItemType furniture~
+Cost 50
+Asize 3
+Rsize 35
+Values 1 500 BEHKNR 105 105
+Weight 10
+Material fungus~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39122
+Name smallish silver spotted toadstool~
+Short a smallish `#`Ssilver`^ spotted toadstool~
+Desc A smallish `#`Ssilver`^ spotted toadstool grows here, in the grass.~
+Level 1
+ItemType trash~
+Cost 1500
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39123
+Name violet topped mushroom~
+Short a `#`mviolet`^ topped mushroom~
+Desc A `#`mviolet`^ topped mushroom grows among the tufts of grass.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39158 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39124
+Name crystal blue spotted mushroom~
+Short a `#`Ccrystal blue`^ spotted mushroom~
+Desc A `#`Ccrystal blue`^ spotted mushroom grows here.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39157 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39126
+Name large cyan mushroom~
+Short a large `#`ccyan`^ mushroom~
+Desc A large `#`ccyan`^ mushroom grows in the grass here.~
+Level 1
+ItemType trash~
+Cost 1500
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39127
+Name bright blue toadstool~
+Short a `#`Cbright blue`^ toadstool~
+Desc A `#`Cbright blue`^ toadstool stands in the middle of the path here.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39165 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39128
+Name smallish green toadstool~
+Short a smallish `#`Ggreen`^ toadstool~
+Desc A smallish `#`Ggreen`^ toadstool grows here in the grass.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39168 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39129
+Name large yellow mushroom~
+Short a large `#`Yyellow`^ mushroom~
+Desc A large `#`Yyellow`^ mushroom with a thick stalk grows here.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39150 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39130
+Name purple and white toadstool~
+Short a `#`mpurple`^ and `#`Wwhite`^ toadstool~
+Desc A `#`mpurple`^ and `#`Wwhite`^ toadstool stands here in the tufts of grass.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39166 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39131
+Name deep blue toadstool~
+Short a `#`bdeep blue`^ toadstool~
+Desc A `#`bdeep blue`^ toadstool stands among the tufts of grass here.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39167 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39132
+Name mushroom light green spots~
+Short a mushroom with `#`Glight green`^ spots~
+Desc A mushroom with `#`Glight green`^ spots grows here.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39159 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39133
+Name tall blue toadstool~
+Short a tall `#`Bblue`^ toadstool~
+Desc A tall `#`Bblue`^ toadstool grows here.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39160 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39136
+Name pink mushroom tall stalk~
+Short a `#`Mpink`^ mushroom with a tall stalk~
+Desc A `#`Mpink`^ mushroom with a tall stalk grows on the path.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39161 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39137
+Name bright purple toadstool~
+Short a bright `#`mpurple`^ toadstool~
+Desc A bright `#`mpurple`^ toadstool grows here.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39162 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39138
+Name large toadstool thick green stalk~
+Short a large toadstool with a thick, `#`Ggreen`^ stalk~
+Desc A large toadstool with a thick, `#`Ggreen`^ stalk grows here.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39163 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39139
+Name brilliant yellow mushroom~
+Short a brilliant `#`Yyellow`^ mushroom~
+Desc A brilliant `#`Yyellow`^ mushroom grows here.~
+Level 1
+ItemType trash~
+Cost 1500
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39140
+Name orange toadstool~
+Short an `#`Rorange`^ toadstool~
+Desc An `#`Rorange`^ toadstool grows at the edge of the path.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39154 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39141
+Name red white toadstool~
+Short a `#`Rred`^ and `#`Wwhite`^ toadstool~
+Desc A `#`Rred`^ and `#`Wwhite`^ toadstool grows on the path.~
+Level 1
+ItemType portal~
+Cost 1500
+Asize 0
+Rsize 50
+Values -1 0 0 39164 0
+Weight 2000
+Material mushroom~
+Extra    nodegrade~
+End
+
+#39142
+Name lusciously soft patch moss~
+Short a lusciously soft patch of moss~
+Desc A lusciously soft patch of moss.~
+Level 1
+ItemType furniture~
+Cost 10
+Asize 0
+Rsize 50
+Values 10 5000 BEHK 100 100
+Weight 2000
+Material moss~
+Extra    nodegrade~
+End
+
+#39143
+Name mossy patch grass~
+Short a mossy patch of grass~
+Desc A mossy patch of grass grows here.~
+Level 1
+ItemType furniture~
+Cost 10
+Asize 0
+Rsize 50
+Values 10 5000 BEHK 100 100
+Weight 2000
+Material moss~
+Extra    nodegrade~
+End
+
+#39144
+Name comfy tulip chairs~
+Short some comfy `#`Rtulip`^ chairs~
+Desc Some comfy `#`Rtulip`^ chairs.~
+Level 1
+ItemType furniture~
+Cost 250
+Asize 0
+Rsize 50
+Values 10 5000 EHK 0 0
+Weight 50
+Material tulip~
+Extra    nodegrade~
+End
+
+#39145
+Name button mushroom tables~
+Short some button mushroom tables~
+Desc Some button mushroom tables.~
+Level 1
+ItemType furniture~
+Cost 250
+Asize 0
+Rsize 50
+Values 0 1000 N 0 0
+Weight 50
+Material tulip~
+Extra    nodegrade~
+End
+
+#39146
+Name honeycomb shelves~
+Short some honeycomb shelves~
+Desc Some honeycomb shelves are filled with candies and sweets.~
+Level 1
+ItemType trash~
+Cost 250
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material honeycomb~
+Extra    nodegrade~
+End
+
+#39147
+Name racks bramble dried herbs~
+Short dried herbs hanging from racks of bramble~
+Desc Bundles of dried herbs hang from racks of bramble.~
+Level 1
+ItemType trash~
+Cost 250
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material bramble~
+Extra    nodegrade~
+End
+
+#39148
+Name walnut shell models display hats~
+Short walnut shell models displaying hats~
+Desc Walnut shell models display the selection of impressive hats.~
+Level 1
+ItemType trash~
+Cost 250
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material walnut~
+Extra    nodegrade~
+End
+
+#39149
+Name fluffy rug~
+Short a fluffy `#`Wwhite`^ rug~
+Desc A fluffy `#`Wwhite`^ rug is spread out here.~
+Level 1
+ItemType furniture~
+Cost 1000
+Asize 100
+Rsize 35
+Values 6 9999 BEKNR 120 120
+Weight 100
+Material wool~
+Extra    nodegrade~
+End
+
+#39150
+Name tortoise shell tables display books~
+Short several tortoise shell tables displaying books~
+Desc Several tortoise shell tables display collections of books for sale.~
+Level 1
+ItemType trash~
+Cost 250
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material walnut~
+Extra    nodegrade~
+End
+
+#39151
+Name coral clothes hooks handsewn garments~
+Short coral clothes hooks displaying handsewn garments~
+Desc Coral clothes hooks display the selection of handsewn garments.~
+Level 1
+ItemType trash~
+Cost 250
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material walnut~
+Extra    nodegrade~
+End
+
+#39152
+Name crystal gem throne~
+Short a crystal throne studded with gems~
+Desc A crystal throne studded with gems is here, right in the middle of the hall.~
+Level 1
+ItemType furniture~
+Cost 1000
+Asize 100
+Rsize 25
+Values 1 9999 BEHKNR 115 115
+Weight 250
+Material crystal~
+Extra    glow hum nodegrade~
+ExtraDesc crystal throne gems~
+The throne of the faerie queen is made of delicate crystal, and is studded 
+with glistening gems.  The seat of the throne is covered with a lush gold 
+silk, woven with intricate designs.  The arms of the throne are fragile and 
+thin, and each arm is laced with tiny `#`rruby`^, `#`Bsapphire`^, `#`Gemerald`^ and `#`mamethyst`^ 
+gems.  At the end of the left arm, is a solitary `#`Wdiamond`^, which captures the 
+hues of the rainbow in its many sides.  The throne stands regally, in the 
+middle of the hall.  
+~
+End
+
+#39153
+Name candy cane~
+Short a `#`Rc`Wa`Rn`Wd`Ry`^ cane~
+Desc A `#`Rc`Wa`Rn`Wd`Ry`^ cane is here, looking deliciously minty.~
+Level 0
+ItemType food~
+Cost 14
+Asize 0
+Rsize 25
+Values 6 4 0 0 0
+Weight 1
+Material sugar~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39154
+Name silver bells~
+Short some `#`Ssilver`^ bells~
+Desc Some `#`Ssilver`^ bells have been left here.~
+Level 1
+ItemType instrument~
+Cost 45
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material metal~
+Extra    nodegrade~
+Wear     take ankle~
+ExtraDesc silver bells~
+Two quaint silver bells hand on a silver cord of webbing.  They make a sweet 
+sound when they jingle, like raindrops landing on a leaf.  
+~
+End
+
+#39155
+Name gold bells~
+Short some `#`Ygold`^ bells~
+Desc Some `#`Ygold`^ bells have been left here.~
+Level 1
+ItemType instrument~
+Cost 45
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material metal~
+Extra    nodegrade~
+Wear     take ankle~
+ExtraDesc gold bells~
+Two quaint gold bells hand on a gold cord of webbing.  They make a sweet 
+sound when they jingle, like raindrops landing on a leaf.  
+~
+End
+
+#39156
+Name bamboo recorder~
+Short a bamboo recorder~
+Desc A recorder made from bamboo lies here.~
+Level 1
+ItemType instrument~
+Cost 68
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material bamboo~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc bamboo recorder~
+Out of a bamboo stalk, has been crafted a recorder with seven faerie-finger 
+sized holes, and a mouthpiece at one end.  When played by a talented 
+musician, it makes some beautiful sounding melodies.  
+~
+End
+
+#39157
+Name reed flute~
+Short a `#`greed`^ flute~
+Desc A reed flute has been left here.~
+Level 1
+ItemType instrument~
+Cost 58
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material reeds~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc reed flute~
+A wide reed has been carefully wrapped into a tube, and has five holes cut 
+out it along the length.  By blowing into one end, and holding one's fingers 
+over various holes, a musician can create a melody of raspy sounds.  
+~
+End
+
+#39158
+Name pan flute~
+Short a pan flute~
+Desc A pan flute has been left here.~
+Level 1
+ItemType instrument~
+Cost 78
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material reeds~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc pan flute~
+This pan flute is carved out of sandalwood and shaped into a long flute, 
+with a leaf attached for the mouthpiece.  Small holes are carved out of the 
+flute, letting the musician play a myriad of melodies on this sweet, mellow 
+sounding instrument.  
+~
+End
+
+#39159
+Name walnut shell lute~
+Short a walnut shell lute~
+Desc A walnut shell lute lies here.~
+Level 1
+ItemType instrument~
+Cost 120
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material walnut~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc walnut shell lute~
+A walnut shell has been used to make this lute.  Silkworm silk has been 
+strung across the nutshell for strings, six in all.  This gentle sounding 
+instrument is perfect for accompanying any budding singer.  
+~
+End
+
+#39160
+Name acorn nut mortar~
+Short an acorn nut mortar~
+Desc An acorn nut mortar sits here, waiting to be used.~
+Level 1
+ItemType mortar~
+Cost 23
+Asize 0
+Rsize 25
+Values 5 0 0 100 0
+Weight 5
+Material acorn~
+Extra    nodegrade~
+Wear     take hold~
+ClassAllowances druid ranger barbarian~
+End
+
+#39161
+Name stone pestle~
+Short a stone pestle~
+Desc A stone pestle lies here.~
+Level 5
+ItemType trash~
+Cost 67
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material stone~
+Extra    nodegrade~
+Wear     take hold~
+ClassAllowances druid ranger barbarian~
+End
+
+#39162
+Name crystal dousing flask~
+Short a `#`Ccrystal`^ dousing flask~
+Desc A `#`Ccrystal`^ dousing flask lies here.~
+Level 5
+ItemType treasure~
+Cost 61
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material crystal~
+Extra    nodegrade burnproof~
+Wear     take hold~
+ClassAllowances druid ranger barbarian~
+End
+
+#39163
+Name rose petal pouch~
+Short a `#`rrose petal`^ pouch~
+Desc A `#`rrose petal`^ pouch has been left here.~
+Level 1
+ItemType container~
+Cost 24
+Asize 0
+Rsize 25
+Values 50 A 0 50 2
+Weight 2
+Material petal~
+Extra    nodegrade burnproof~
+Wear     take hold~
+ClassAllowances druid ranger barbarian~
+End
+
+#39164
+Name woven leaf pouch~
+Short a woven `#`gleaf`^ pouch~
+Desc A woven `#`gleaf`^ pouch has been left here.~
+Level 1
+ItemType container~
+Cost 24
+Asize 0
+Rsize 50
+Values 50 A 0 50 2
+Weight 2
+Material petal~
+Extra    nodegrade burnproof~
+Wear     take hold~
+ClassAllowances druid ranger barbarian~
+End
+
+#39165
+Name snailshell cauldron~
+Short a snailshell cauldron~
+Desc A snailshell cauldron sits here.~
+Level 5
+ItemType cauldron~
+Cost 125
+Asize 0
+Rsize 50
+Values 500 0 0 500 0
+Weight 5
+Material snail~
+Extra    nodegrade burnproof~
+Wear     take hold~
+ClassAllowances druid ranger barbarian~
+End
+
+#39166
+Name cupcake pink iced~
+Short a `#`Mpink`^ iced cupcake~
+Desc A `#`Mpink`^ iced cupcake is here, waiting to be eaten.~
+Level 0
+ItemType food~
+Cost 17
+Asize 0
+Rsize 25
+Values 6 4 0 0 0
+Weight 1
+Material sugar~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39167
+Name lemon yellow iced cupcake~
+Short a `#`Ylemon yellow`^ iced cupcake~
+Desc A `#`Ylemon yellow`^ iced cupcake is here, waiting to be eaten.~
+Level 0
+ItemType food~
+Cost 17
+Asize 0
+Rsize 25
+Values 6 4 0 0 0
+Weight 1
+Material sugar~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39168
+Name crimson-purple sea-blue stripes cupcake~
+Short a `#`mcrimson-purple`^ cupcake with `#`csea-blue`^ stripes~
+Desc A `#`mcrimson-purple`^ cupcake with `#`csea-blue`^ stripes looks very tempting here.~
+Level 0
+ItemType food~
+Cost 24
+Asize 0
+Rsize 25
+Values 6 4 0 0 0
+Weight 1
+Material sugar~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39169
+Name acorn cup nectar~
+Short an acorn cup of nectar~
+Desc An acorn cup of nectar is here, smelling sweet.~
+Level 0
+ItemType food~
+Cost 45
+Asize 0
+Rsize 25
+Values 8 6 0 0 0
+Weight 1
+Material sugar~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39170
+Name acorn cup mixed sweets~
+Short an acorn cup of mixed sweets~
+Desc An acorn cup of mixed sweets is here, looking very tempting.~
+Level 0
+ItemType food~
+Cost 65
+Asize 0
+Rsize 25
+Values 8 6 0 0 0
+Weight 1
+Material sugar~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39171
+Name big bag toffees~
+Short a big bag of toffees~
+Desc A big bag of toffees is here, smelling sweetly.~
+Level 0
+ItemType food~
+Cost 59
+Asize 0
+Rsize 25
+Values 8 6 0 0 0
+Weight 1
+Material sugar~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39172
+Name crystallized raindrops~
+Short a handful of `#`Wcrystallised`^ raindrops~
+Desc A handful of `#`Wcrystallised`^ raindrops lie scattered here.~
+Level 0
+ItemType food~
+Cost 39
+Asize 0
+Rsize 25
+Values 7 5 0 0 0
+Weight 1
+Material sugar~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39173
+Name leafcone honeyed dew~
+Short a leafcone of `#`Yhoneyed`^ dew~
+Desc A leafcone of `#`Yhoneyed`^ dew looks delicious here.~
+Level 0
+ItemType drinkcontainer~
+Cost 26
+Asize 0
+Rsize 25
+Values 5 5 'honey wine' 0 0
+Weight 1
+Material sugar~
+Extra    nolocate nodegrade~
+Wear     take hold~
+End
+
+#39174
+Name tinderbox bed~
+Short a tinderbox bed~
+Desc A tinderbox bed lies here, looking cosy.~
+Level 1
+ItemType furniture~
+Cost 90
+Asize 0
+Rsize 25
+Values 1 500 FIL 0 0
+Weight 10
+Material tin~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39175
+Name fluffy pillow~
+Short a fluffy pillow~
+Desc A fluffy pillow is here, looking very soft.~
+Level 1
+ItemType furniture~
+Cost 20
+Asize 0
+Rsize 25
+Values 1 500 EH 0 0
+Weight 5
+Material feather~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39176
+Name buttercup armchair~
+Short a `#`Ybuttercup`^ armchair~
+Desc A `#`Ybuttercup`^ armchair sits here, looking comfy.~
+Level 1
+ItemType furniture~
+Cost 34
+Asize 0
+Rsize 25
+Values 1 500 EH 0 0
+Weight 5
+Material buttercup~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39177
+Name turtle shell table~
+Short a turtle shell table~
+Desc A turtle shell table is here.~
+Level 1
+ItemType furniture~
+Cost 55
+Asize 0
+Rsize 25
+Values 0 500 NX 0 0
+Weight 5
+Material turtle~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39178
+Name walnut shell lamp lampshade light~
+Short a lamp with a walnut shell lampshade~
+Desc A lamp with a walnut shell lampshade glows with a soft light here.~
+Level 1
+ItemType light~
+Cost 19
+Asize 0
+Rsize 25
+Values 0 0 100 0 0
+Weight 3
+Material energy~
+Extra    glow magic nodegrade~
+Wear     take~
+End
+
+#39179
+Name faerie floss~
+Short a stick of faerie floss~
+Desc A stick of faerie floss has been left here.~
+Level 0
+ItemType food~
+Cost 14
+Asize 0
+Rsize 25
+Values 6 4 0 0 0
+Weight 1
+Material sugar~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39180
+Name collection cupcake recipes~
+Short a collection of `#`Mc`Cu`Bp`Gc`Ra`rk`ce`^ recipes~
+Desc A collection of `#`Mc`Cu`Bp`Gc`Ra`rk`ce`^ recipes have been left here.~
+Level 1
+ItemType map~
+Cost 45
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material leafpaper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc collection cupcake recipes~
+`#`MC`Cu`Bp`Gc`Ra`rk`ce `mR`Me`gc`Bi`Cp`Ye`Ws`R!`^
+ 
+`#`MIngredients:`^ a smidgen of butter
+             a handful of sugar
+             2 eggs
+             a smattering of flour
+             a little milk
+ 
+`#`CMix:`^ everything in a bowl, and cook in a warm oven for a little bit, until golden.
+ 
+`#`YIce:`^ with brightly coloured icing (icing sugar, mixed with coloured dye).
+ 
+     pink icing   - strawberry dye
+     red icing    - rasberry dye
+     orange icing - orange rind dye
+     yellow icing - lemon rind dye
+     blue icing   - blueberry dye
+     green icing  - lime rind dye 
+ 
+`#`BSprinkle:`^ with faerie dust for extra delight.
+~
+End
+
+#39181
+Name selenia's book of wise sayings~
+Short `#`CS`^elenia's `#`BB`^ook of `#`MW`^ise `#`rS`^ayings~
+Desc `#`CS`^elenia's `#`BB`^ook of `#`MW`^ise `#`rS`^ayings has been left here.~
+Level 1
+ItemType map~
+Cost 51
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material leafpaper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc selenia's book wise sayings~
+`#`GS`^elenia's `#`CB`^ook of `#`rW`^ise `#`MS`^ayings
+ 
+`#`MN`^othing brighten's one's day better, than a cupcake!
+ 
+`#`BA`^ friend is one who always has a sweet in their pocket for you.
+ 
+`#`GS`^urprise a friend by doing a few home improvements for them while they are out.
+ 
+`#`rA`^ spoonful of sugar helps the medicine go down.
+ 
+`#`CT`^he best things in life are like the forgotten bag of faerie dust waiting to be 
+found at the back of the cupboard.
+ 
+`#`mC`^upcakes don't grow new cupcakes when planted in the ground.
+ 
+`#`YB`^lustery days should be avoided by small creatures.
+ 
+`#`RI`^f it isn't broken.. don't fix it.
+ 
+`#`GI`^f its broken really badly.. don't fix it either.
+ 
+`#`MB`^eing stepped on by a troll, hurts!
+~
+End
+
+#39182
+Name basket sandwiches~
+Short a basket of sandwiches~
+Desc A basket of sandwiches have been left here.~
+Level 1
+ItemType food~
+Cost 111
+Asize 0
+Rsize 25
+Values 10 7 0 0 0
+Weight 4
+Material sandwiches~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc basket sandwiches~
+A small basket lined with a red napkin is filled with a collection of 
+assorted sandwiches.  There are jam sandwiches, honey sandwiches, salad 
+sandwiches, faerie sprinkle sandwiches, anything you could put in a 
+sandwich, is in here.  Its the perfect picnic basket!  
+~
+End
+
+#39183
+Name bunch grapes~
+Short a bunch of `#`mgrapes`^~
+Desc A bunch of `#`mgrapes`^ look delicious here.~
+Level 1
+ItemType food~
+Cost 21
+Asize 0
+Rsize 25
+Values 6 4 0 0 0
+Weight 3
+Material grapes~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39184
+Name purple berries~
+Short some `#`mpurple`^ berries~
+Desc Some `#`mpurple`^ berries lie here.~
+Level 1
+ItemType food~
+Cost 17
+Asize 0
+Rsize 50
+Values 6 4 0 0 0
+Weight 3
+Material berries~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39185
+Name cup nectar tea~
+Short a cup of sweet nectar tea~
+Desc A cup of sweet nectar tea smells delightful here.~
+Level 1
+ItemType drinkcontainer~
+Cost 22
+Asize 0
+Rsize 25
+Values 5 5 'spiced tea' 0 0
+Weight 3
+Material berries~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39186
+Name honey lemon tea~
+Short a cup of honey lemon tea~
+Desc A cup of honey lemon tea smells delicious here.~
+Level 1
+ItemType drinkcontainer~
+Cost 22
+Asize 0
+Rsize 50
+Values 5 5 'spiced tea' 0 0
+Weight 3
+Material berries~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39187
+Name sandwich faerie sprinkles~
+Short a sandwich with `#`Mf`Ca`Be`Rr`Yi`re `ms`Bp`Cr`Gi`Yn`rk`Ml`me`Cs`^~
+Desc A sandwich with `#`Mf`Ca`Be`Rr`Yi`re `ms`Bp`Cr`Gi`Yn`rk`Ml`me`Cs`^ looks extremely delicious here.~
+Level 1
+ItemType food~
+Cost 11
+Asize 0
+Rsize 25
+Values 6 4 0 0 0
+Weight 3
+Material sandwich~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39188
+Name chocolate dipped strawberry~
+Short a chocolate dipped `#`Rstrawberry`^~
+Desc A chocolate dipped `#`Rstrawberry`^ looks so tempting here.~
+Level 1
+ItemType food~
+Cost 9
+Asize 0
+Rsize 25
+Values 6 4 0 0 0
+Weight 3
+Material strawberry~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39189
+Name sunflower seeds~
+Short some sunflower seeds~
+Desc Some sunflower seeds are scattered here.~
+Level 1
+ItemType food~
+Cost 10
+Asize 0
+Rsize 25
+Values 6 4 0 0 0
+Weight 3
+Material sunflower seeds~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39190
+Name gilt-edged hand mirror~
+Short a `#`Sgilt-edged`^ hand mirror~
+Desc A `#`Sgilt-edged`^ hand mirror sparkles here.~
+Level 1
+ItemType trash~
+Cost 79
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material glass~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc gilt-edged hand mirror~
+A quaint hand mirror, with an oval-shaped mirror is set in a gilt-edged 
+frame.  The frame has been ornately designed with an intricate vine pattern, 
+and sparkles when it moves.  
+~
+End
+
+#39191
+Name sparkly silver glitter make-up~
+Short sparkly `#`Ss`Xi`Sl`Xv`Se`Xr`^ glitter~
+Desc Some sparkly `#`Ss`Xi`Sl`Xv`Se`Xr`^ glitter is scattered here.~
+Level 1
+ItemType clothing~
+Cost 25
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material glitter~
+Extra    glow nodegrade~
+Wear     take face~
+End
+
+#39192
+Name sparkly petal-pink glitter make-up~
+Short sparkly `#`Mp`me`Mt`ma`Ml`m-`Mp`mi`Mn`mk`^ glitter~
+Desc Some sparkly `#`Mp`me`Mt`ma`Ml`m-`Mp`mi`Mn`mk`^ glitter is scattered here.~
+Level 1
+ItemType treasure~
+Cost 25
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material glitter~
+Extra    glow nodegrade~
+Wear     take face~
+End
+
+#39193
+Name sparkly petal-pink glitter make-up~
+Short sparkly `#`Ge`gm`Ge`gr`Ga`gl`Gd`g-`Gg`gr`Ge`ge`Gn`^ glitter~
+Desc Some sparkly `#`Ge`gm`Ge`gr`Ga`gl`Gd`g-`Gg`gr`Ge`ge`Gn`^ glitter is scattered here.~
+Level 1
+ItemType clothing~
+Cost 25
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material glitter~
+Extra    glow nodegrade~
+Wear     take face~
+End
+
+#39194
+Name sparkly sun-gold glitter make-up~
+Short sparkly `#`Ys`yu`Yn`y-`Yg`yo`Yl`yd`^ glitter~
+Desc Some sparkly `#`Ys`yu`Yn`y-`Yg`yo`Yl`yd`^ glitter is scattered here.~
+Level 1
+ItemType clothing~
+Cost 25
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material glitter~
+Extra    glow nodegrade~
+Wear     take face~
+End
+
+#39195
+Name tiny heart sticky gem heart-shaped~
+Short a tiny `#`Rheart-shaped`^ sticky gem~
+Desc A tiny `#`Rheart-shaped`^ sticky gem has been left here.~
+Level 11
+ItemType clothing~
+Cost 220
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material glitter~
+Extra    antievil nodegrade~
+Wear     take ear~
+Affect modifier -1 11 -1 mana 20 0
+End
+
+#39196
+Name tiny crescent moon sticky gem~
+Short a tiny `#`Screscent-moon`^ shaped sticky gem~
+Desc A tiny `#`Screscent-moon`^ shaped sticky gem has been left here.~
+Level 11
+ItemType clothing~
+Cost 220
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material glitter~
+Extra    antievil nodegrade~
+Wear     take ear~
+Affect modifier -1 11 -1 mana 20 0
+End
+
+#39197
+Name tiny star-shaped sticky gem~
+Short a tiny `#`Ystar-shaped`^ sticky gem~
+Desc A tiny `#`Ystar-shaped`^ sticky gem has been left here.~
+Level 11
+ItemType clothing~
+Cost 220
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material glitter~
+Extra    antievil nodegrade~
+Wear     take ear~
+Affect modifier -1 11 -1 mana 20 0
+End
+
+#39198
+Name lovely purple hat~
+Short a lovely `#`mpurple`^ hat~
+Desc A lovely `#`mpurple`^ hat has been left here.~
+Level 1
+ItemType clothing~
+Cost 105
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material unknown~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#39199
+Name wreath flowers~
+Short a wreath of pretty `#`Mf`Yl`mo`Rw`re`yr`cs`^~
+Desc A wreath of pretty `#`Mf`Yl`mo`Rw`re`yr`cs`^ lies here.~
+Level 1
+ItemType clothing~
+Cost 32
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material flowers~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#39200
+Name winter bonnet~
+Short a `#`Wwinter`^ bonnet~
+Desc A `#`Wwinter`^ bonnet has been left here.~
+Level 25
+ItemType clothing~
+Cost 370
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material cotton~
+Extra    antievil nonmetal nodegrade~
+Wear     take head~
+Affect modifier -1 25 -1 mana 60 0
+End
+
+#39201
+Name maroon velvet bonnet~
+Short a `#`rmaroon`^ velvet bonnet~
+Desc A `#`rmaroon`^ velvet bonnet has been left here.~
+Level 42
+ItemType clothing~
+Cost 1200
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material velvet~
+Extra    antievil nonmetal nodegrade~
+Wear     take head~
+Affect modifier -1 42 -1 mana 40 0
+Affect modifier -1 42 -1 memory 1 0
+Affect modifier -1 42 -1 constitution 1 0
+End
+
+#39202
+Name beaded purse~
+Short a `#`Rb`Be`ga`Yd`re`cd`^ purse~
+Desc A `#`Rb`Be`ga`Yd`re`cd`^ purse sparkles here.~
+Level 1
+ItemType container~
+Cost 42
+Asize 0
+Rsize 25
+Values 20 A 0 20 0
+Weight 5
+Material beads~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc beaded purse~
+A beautiful purse has been covered in sparkly beads of all different 
+colours.  There is a small butterfly clasp to open and shut the purse.  
+~
+End
+
+#39203
+Name butterfly hairclip~
+Short a butterfly hairclip~
+Desc A butterfly hairclip lies here.~
+Level 1
+ItemType clothing~
+Cost 24
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 0
+Material silver~
+Extra    nodegrade~
+Wear     take head~
+ExtraDesc butterfly hairclip~
+A delicate hairclip made from silver has a silver butterfly attached at one 
+end.  Crafted into the butterfly are sparkling tiny, blue gems.  
+~
+End
+
+#39204
+Name coloured silk scarf~
+Short a `#`?c`?o`?l`?o`?u`?r`?e`?d`^ silk scarf~
+Desc A `#`?c`?o`?l`?o`?u`?r`?e`?d`^ silk scarf lies in a heap here.~
+Level 1
+ItemType clothing~
+Cost 108
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material silk~
+Extra    nodegrade~
+Wear     take neck~
+ExtraDesc coloured silk scarf~
+A magical scarf made from a rainbow of spidersilk colours, shimmers with 
+every moment.  The colours shift and blend, reds and blues melting into 
+purples, yellows and blues melting into greens.  
+~
+End
+
+#39205
+Name embroidered gloves~
+Short a pair of embroidered gloves~
+Desc Some embroidered gloves have been left here.~
+Level 1
+ItemType clothing~
+Cost 111
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material silk~
+Extra    nodegrade~
+Wear     take hands~
+ExtraDesc embroidered gloves~
+These soft, warm gloves made from rose petals, have been embroidered with 
+spidersilk.  On the top of each glove, is an embroidered rose, which weaves 
+into vines sewn along each finger.  
+~
+End
+
+#39206
+Name pretty lace cuff~
+Short a pretty `#`Wlace`^ cuff~
+Desc A pretty `#`Wlace`^ cuff has been left here.~
+Level 1
+ItemType clothing~
+Cost 97
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material lace~
+Extra    nodegrade~
+Wear     take wrist~
+ExtraDesc pretty lace cuff~
+Fine lace, sewn with tender hands, in the patterns of tiny flowers has been 
+made into a delicate cuff, the perfect finish to a beautiful dress or 
+outfit.  
+~
+End
+
+#39207
+Name rose petal cloak~
+Short a `#`rrose petal`^ cloak~
+Desc A `#`rrose petal`^ cloak has been left here.~
+Level 21
+ItemType clothing~
+Cost 350
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material rose petal~
+Extra    antievil nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 21 -1 strength 2 0
+Affect modifier -1 21 -1 ac -5 0
+ExtraDesc rose petal cloak~
+Out of soft, sweet-smelling rose petals, a cloak has been carefully made.  
+It is layered with many petals, much like feathers on a bird, each 
+overlapping, to create a truly beautiful, warm cloak.  
+~
+End
+
+#39208
+Name dancing slippers~
+Short a pair of `#`Cd`ca`wn`Wc`wi`cn`Cg`^ slippers~
+Desc A pair of slippers lie here.~
+Level 1
+ItemType clothing~
+Cost 88
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material silk~
+Extra    nodegrade~
+Wear     take feet~
+ExtraDesc dancing slippers~
+These slippers are made from the finest silk.  They feel soft and light, 
+perfect for dancing in!  
+~
+End
+
+#39209
+Name bedtime slippers feathers down~
+Short a pair of `#`Wbedtime`^ slippers~
+Desc A pair of slippers here, are made from feathers' down.~
+Level 1
+ItemType clothing~
+Cost 66
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material featherdown~
+Extra    nodegrade~
+Wear     take feet~
+ExtraDesc bedtime slippers feathers down~
+These plush slippers are made from the softest feathers' down.  They are 
+snug to wear, just the thing to keep one's feet warm before bedtime.  
+~
+End
+
+#39210
+Name hazelnut clogs ~
+Short a pair of `#`yhazelnut`^ clogs~
+Desc A pair of clogs made from hazelnuts are here.~
+Level 12
+ItemType clothing~
+Cost 300
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material hazelnut~
+Extra    antievil nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 12 -1 move 40 0
+ExtraDesc hazelnut clogs~
+These clogs have been carved out of hazelnuts.  They are solid and 
+practical, and are ideal for playing in.  
+~
+End
+
+#39211
+Name dainty velvet slippers~
+Short a pair of dainty `#`mvelvet`^ slippers~
+Desc A pair of dainty `#`mvelvet`^ slippers have been left.~
+Level 31
+ItemType clothing~
+Cost 660
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material velvet~
+Extra    antievil nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 31 -1 constitution 1 0
+Affect modifier -1 31 -1 quickness 2 0
+Affect modifier -1 31 -1 agility 1 0
+ExtraDesc velvet slippers dainty~
+This soft pair of slippers have been sewn from velvet.  They are dainty, 
+with pointed toes, and would be perfect for any special occasion.  
+~
+End
+
+#39212
+Name mapleleaf woven slippers~
+Short a pair of woven `#`ymapleleaf`^ slippers~
+Desc A pair of slippers, made from leaves, have been left here.~
+Level 24
+ItemType clothing~
+Cost 480
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material mapleleaf~
+Extra    antievil nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 24 -1 constitution 1 0
+Affect modifier -1 24 -1 move 40 0
+Affect modifier -1 24 -1 quickness 1 0
+ExtraDesc mapleleaf slippers woven~
+These shiny slippers are made from maple leaves sewn carefully together.  
+The leaves weave over each other in criss-cross pattern, across the bridge 
+of the foot.  
+~
+End
+
+#39213
+Name delicate crystal vase~
+Short a delicate `#`Ccrystal`^ vase~
+Desc A delicate crystal vase stands here.~
+Level 1
+ItemType container~
+Cost 39
+Asize 0
+Rsize 25
+Values 10 0 0 10 0
+Weight 2
+Material crystal~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39214
+Name pouch coloured confetti~
+Short a pouch of `#`?c`?o`?l`?o`?u`?r`?e`?d`^ confetti~
+Desc A pouch lies here, with confetti spilling out of it.~
+Level 1
+ItemType trash~
+Cost 11
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material paper~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39215
+Name pink paper plate~
+Short a `#`Mpink`^ paper plate~
+Desc A `#`Mpink`^ paper plate has been left here.~
+Level 1
+ItemType furniture~
+Cost 8
+Asize 0
+Rsize 50
+Values 0 10 N 0 0
+Weight 1
+Material paper~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39216
+Name yellow paper plate~
+Short a `#`Yyellow`^ paper plate~
+Desc A `#`Yyellow`^ paper plate has been left here.~
+Level 1
+ItemType furniture~
+Cost 8
+Asize 0
+Rsize 50
+Values 0 10 N 0 0
+Weight 1
+Material paper~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39217
+Name paper napkin pink~
+Short a `#`Mpink`^ paper napkin~
+Desc A `#`Mpink`^ paper napkin has been left here.~
+Level 1
+ItemType trash~
+Cost 6
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material cloth~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39218
+Name yellow paper napkin~
+Short a `#`Yyellow`^ paper napkin~
+Desc A `#`Yyellow`^ paper napkin has been left here.~
+Level 1
+ItemType trash~
+Cost 6
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material paper~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39219
+Name bright yellow tablecloth~
+Short a `#`Ybright yellow`^ tablecloth~
+Desc A `#`Ybright yellow`^ tablecloth is spread out here.~
+Level 1
+ItemType furniture~
+Cost 58
+Asize 0
+Rsize 50
+Values 10 1000 EH 0 0
+Weight 10
+Material cloth~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39220
+Name party whistle~
+Short a party whistle~
+Desc A party whistle has been left here.~
+Level 1
+ItemType clothing~
+Cost 13
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material tin~
+Extra    nodegrade~
+Wear     take neck~
+End
+
+#39221
+Name colourful party hat~
+Short a `#`?c`?o`?l`?o`?u`?r`?f`?u`?l`^ party hat~
+Desc A `#`?c`?o`?l`?o`?u`?r`?f`?u`?l`^ party hat has been left here.~
+Level 1
+ItemType clothing~
+Cost 25
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material paper~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#39222
+Name bag party treats~
+Short a bag of party treats~
+Desc A bag of party treats has been left here.~
+Level 1
+ItemType food~
+Cost 28
+Asize 0
+Rsize 50
+Values 6 4 0 0 0
+Weight 1
+Material sweets~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39223
+Name bottle of bubble mixture~
+Short a bottle of `#`Rb`ru`Yb`Gb`Bl`Me`^ mixture~
+Desc A bottle of `#`Rb`ru`Yb`Gb`Bl`Me`^ mixture is spilled here.~
+Level 1
+ItemType trash~
+Cost 20
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material bubblemixture~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39224
+Name purple balloon~
+Short a `#`mpurple`^ balloon~
+Desc A `#`mpurple`^ balloon floats here.~
+Level 1
+ItemType trash~
+Cost 21
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material air~
+Extra    nodegrade~
+Wear     take float~
+End
+
+#39225
+Name blue balloon~
+Short a `#`Bblue`^ balloon~
+Desc A `#`Bblue`^ balloon floats here.~
+Level 1
+ItemType trash~
+Cost 21
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material air~
+Extra    nolocate nodegrade~
+Wear     take float~
+End
+
+#39226
+Name orange balloon~
+Short an `#`Rorange`^ balloon~
+Desc An `#`Rorange`^ balloon floats here.~
+Level 1
+ItemType trash~
+Cost 21
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material air~
+Extra    nodegrade~
+Wear     take float~
+End
+
+#39227
+Name dazzling watery blue wand~
+Short a dazzling `#`Cwatery blue`^ wand~
+Desc A dazzling `#`Cwatery blue`^ wand has been left here.~
+Level 10
+ItemType wand~
+Cost 200
+Asize 0
+Rsize 25
+Values 15 1 1 bless 0
+Weight 4
+Material unknown~
+Extra    glow hum magic antievil nonmetal nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid ranger spellfilcher~
+End
+
+#39228
+Name splendid yellow gold-flecked wand~
+Short a splendid `#`Yye`yl`Yl`yow a`Yn`yd `Ygol`yd`^ wand~
+Desc A splendid `#`Yye`yl`Yl`yow a`Yn`yd `Ygol`yd`^ wand has been left here.~
+Level 10
+ItemType wand~
+Cost 500
+Asize 0
+Rsize 25
+Values 15 1 1 shrink 0
+Weight 4
+Material unknown~
+Extra    glow hum magic antievil nonmetal nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid ranger spellfilcher~
+End
+
+#39229
+Name glowing sapphire wand~
+Short a glowing `#`Bsapphire`^ wand~
+Desc A glowing `#`Bsapphire`^ wand has been left here.~
+Level 20
+ItemType wand~
+Cost 400
+Asize 0
+Rsize 25
+Values 25 2 2 barkskin 0
+Weight 4
+Material unknown~
+Extra    glow hum magic antievil nonmetal nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid ranger spellfilcher~
+End
+
+#39230
+Name glossy {#{yauburn{^ wand~
+Short a glossy `#`yauburn`^ wand~
+Desc A glossy `#`yauburn`^ wand has been left here.~
+Level 30
+ItemType wand~
+Cost 500
+Asize 0
+Rsize 25
+Values 35 3 3 'purify body' 0
+Weight 4
+Material unknown~
+Extra    glow hum magic antievil nonmetal nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid ranger spellfilcher~
+End
+
+#39231
+Name radiant scarlet wand~
+Short a radiant `#`Rscarlet`^ wand~
+Desc A radiant `#`Rscarlet`^ wand has been left here~
+Level 30
+ItemType wand~
+Cost 500
+Asize 0
+Rsize 25
+Values 35 3 3 shield 0
+Weight 4
+Material unknown~
+Extra    glow hum magic antievil nonmetal nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid ranger spellfilcher~
+End
+
+#39232
+Name crown baby rose buds~
+Short a crown of baby `#`r`Wr`Mo`Ws`re `Mb`ru`Wd`rs`^~
+Desc A crown of baby `#`r`Wr`Mo`Ws`re `Mb`ru`Wd`rs`^ has been left here.~
+Level 1
+ItemType clothing~
+Cost 22
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material flowers~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#39233
+Name blue white edged ribbon~
+Short a thick `#`bblue`^ ribbon with a `#`Wwhite`^ edge~
+Desc A thick `#`bblue`^ ribbon with a `#`Wwhite`^ edge rests prettily here.~
+Level 20
+ItemType clothing~
+Cost 400
+Condition 25
+Asize 1
+Rsize 29
+Values 0 0 0 0 0
+Weight 1
+Material silk~
+Extra    magic antievil antineutral nolocate nodegrade~
+Wear     take head~
+Affect objectspell 'protection evil' 20 -1 none 0 0
+End
+
+#39234
+Name thin pink ribbon~
+Short a thin `#`mpink`^ ribbon~
+Desc A thin `#`mpink`^ ribbon is here, curling prettily.~
+Level 30
+ItemType clothing~
+Cost 600
+Condition 25
+Asize 1
+Rsize 29
+Values 0 0 0 0 0
+Weight 1
+Material silk~
+Extra    magic antigood~
+Wear     take head~
+Affect objectspell 'faerie fire' 30 -1 none 0 0
+End
+
+#39235
+Name flat green ribbon sequins~
+Short a flat `#`ggreen`^ ribbon with tiny sequins~
+Desc A flat `#`ggreen`^ ribbon with tiny sequins sparkles prettily here.~
+Level 15
+ItemType clothing~
+Cost 300
+Condition 25
+Asize 1
+Rsize 29
+Values 0 0 0 0 0
+Weight 1
+Material silk~
+Extra    magic antievil antineutral~
+Wear     take head~
+Affect modifier -1 15 -1 constitution 2 0
+End
+
+#39236
+Name music box~
+Short a music box~
+Desc A music box has been left here, with the lid closed.~
+Level 1
+ItemType treasure~
+Cost 82
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 0
+Material 1~
+ExtraDesc music box~
+This little music box is made of sterling silver.  The sides have tiny 
+sparkling gems which weave their way along an engraved vine.  On the lid is 
+a cluster of gems in the shape of a rose.  When you open the box, a little 
+faerie doll pops up and slowly turns as a sweet melody plays from within the 
+box.  
+~
+End
+
+#39237
+Name delicate white lace ribbon~
+Short a delicate `#`Wwhite`^ lace ribbon~
+Desc A delicate `#`Wwhite`^ lace ribbon is here, looking sweet.~
+Level 25
+ItemType clothing~
+Cost 420
+Condition 25
+Asize 1
+Rsize 29
+Values 0 0 0 0 0
+Weight 1
+Material lace~
+Extra    glow magic antievil inventory nonmetal~
+Wear     take head~
+Affect modifier -1 25 -1 selfdiscipline 3 0
+End
+
+#39238
+Name narrow silver gilt braid~
+Short a narrow `#`ssilver`^ gilt braid~
+Desc A narrow `#`ssilver`^ gilt braid gleams prettily here.~
+Level 1
+ItemType clothing~
+Cost 80
+Condition 25
+Asize 1
+Rsize 29
+Values 0 0 0 0 0
+Weight 1
+Material gilt~
+Extra    magic~
+Wear     take head~
+End
+
+#39239
+Name glittering ball light~
+Short a glittering ball of light~
+Desc A glittering ball of light shimmers here.~
+Level 30
+ItemType light~
+Cost 600
+Asize 0
+Rsize 29
+Values 0 0 50 0 0
+Weight 0
+Material energy~
+Extra    glow magic antievil burnproof~
+Wear     take~
+ClassAllowances mage~
+Affect modifier -1 30 -1 memory 3 0
+End
+
+#39240
+Name pink glass ring~
+Short a `#`mpink`^ glass ring~
+Desc A `#`mpink`^ glass ring is here, shining prettily.~
+Level 30
+ItemType jewelry~
+Cost 680
+Asize 1
+Rsize 29
+Values 0 0 0 0 0
+Weight 1
+Material glass~
+Extra    glow magic antievil nodegrade burnproof~
+Wear     take finger~
+ClassAllowances mage~
+Affect modifier -1 30 -1 mana 40 0
+End
+
+#39241
+Name scarf white~
+Short a `#`Wwhite`^ scarf~
+Desc A `#`Wwhite`^ scarf is here.~
+Level 30
+ItemType clothing~
+Cost 700
+Asize 10
+Rsize 29
+Values 0 0 0 0 0
+Weight 10
+Material wool~
+Extra    magic antievil nodegrade~
+Wear     take neck~
+ClassAllowances mage~
+Affect resist -1 30 -1 none 0 cold
+End
+
+#39242
+Name blue silk dress~
+Short a `#`Bblue`^ silk dress~
+Desc A `#`Bblue`^ silk dress is here, lying crumpled on the floor.~
+Level 30
+ItemType clothing~
+Cost 1000
+Asize 50
+Rsize 29
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    magic antievil nodegrade~
+Wear     take torso~
+ClassAllowances mage~
+Affect modifier -1 30 -1 quickness 3 0
+End
+
+#39243
+Name blue crystal bracelet~
+Short a `#`Bblue`^ cystal bracelet~
+Desc A `#`Bblue`^ cystal bracelet gleams prettily here.~
+Level 30
+ItemType jewelry~
+Cost 690
+Asize 1
+Rsize 29
+Values 0 0 0 0 0
+Weight 5
+Material crystal~
+Extra    magic antievil nodegrade~
+Wear     take wrist~
+ClassAllowances mage~
+Affect modifier -1 30 -1 agility 3 0
+End
+
+#39244
+Name dainty blue silk slippers~
+Short some dainty `#`Bblue`^ silk slippers~
+Desc A pair of dainty `#`Bblue`^ silk slippers lie side by side, here.~
+Level 30
+ItemType clothing~
+Cost 720
+Asize 10
+Rsize 29
+Values 0 0 0 0 0
+Weight 8
+Material silk~
+Extra    magic antievil nodegrade~
+Wear     take feet~
+ClassAllowances mage~
+Affect modifier -1 30 -1 move 40 0
+Affect modifier -1 30 -1 agility 2 0
+End
+
+#39245
+Name thin glass dagger~
+Short a thin glass dagger~
+Desc A thin glass dagger is here, looking sharp.~
+Level 30
+ItemType weapon~
+Cost 800
+Asize 10
+Rsize 29
+Values dagger 3 11 pierce 0
+Weight 50
+Material glass~
+Extra    magic antievil nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage~
+End
+
+#39246
+Name blue metal wand~
+Short a `#`Bblue`^ metal wand~
+Desc A `#`Bblue`^ metal wand is here, looking innocent.~
+Level 30
+ItemType wand~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 (null) 0
+Weight 0
+Material metal~
+Extra    magic nodegrade burnproof~
+Wear     take hold~
+End
+
+#39247
+Name tiny blue seashell earrings~
+Short a tiny `#`Bblue`^ seashell earring~
+Desc A tiny `#`Bblue`^ seashell earring is here.~
+Level 30
+ItemType jewelry~
+Cost 300
+Asize 1
+Rsize 29
+Values 0 0 0 0 0
+Weight 1
+Material seashell~
+Extra    magic antievil nodegrade burnproof~
+Wear     take ear~
+ClassAllowances mage~
+Affect modifier -1 30 -1 memory 1 0
+End
+
+#39248
+Name rose-scented petal dress~
+Short a `#`Mrose-scented`^ petal dress~
+Desc A dress made from `#`Mrose petals`^ has been left here.~
+Level 1
+ItemType clothing~
+Cost 120
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material rose petal~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#39249
+Name rose petal cape~
+Short a cape of soft `#`Wrose petals`^~
+Desc A `#`Wrose petal`^ cape has been left here.~
+Level 1
+ItemType clothing~
+Cost 150
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material rose petal~
+Extra    nodegrade~
+Wear     take about~
+End
+
+#39250
+Name soft clover-leaf leggings~
+Short some soft `#`Gclover-leaf`^ leggings~
+Desc Some soft `#`Gclover-leaf`^ leggings have been left here.~
+Level 1
+ItemType clothing~
+Cost 99
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material rose petal~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#39251
+Name spun silk sleeves~
+Short some `#`ws`Wp`Yu`yn `ws`Wi`Yl`yk`^ sleeves~
+Desc Some sleeves made from `#`ws`Wp`Yu`yn `ws`Wi`Yl`yk`^ lie here.~
+Level 1
+ItemType clothing~
+Cost 145
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material rose petal~
+Extra    nodegrade~
+Wear     take arms~
+End
+
+#39252
+Name crystal blue silk sleeves~
+Short some `#`Ccrystal blue`^ silk sleeves~
+Desc Some `#`Ccrystal blue`^ silk sleeves have been left here.~
+Level 39
+ItemType clothing~
+Cost 850
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material rose petal~
+Extra    antievil nonmetal nodegrade~
+Wear     take arms~
+Affect modifier -1 39 -1 hp 4 0
+End
+
+#39253
+Name daisy-chain belt~
+Short a `#`Yd`Wa`Yi`Ws`Yy`W-`Yc`Wh`Ya`Wi`Yn`^ belt~
+Desc A `#`Yd`Wa`Yi`Ws`Yy`W-`Yc`Wh`Ya`Wi`Yn`^ belt lies here wilting.~
+Level 1
+ItemType clothing~
+Cost 35
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 0
+Material flowers~
+Extra    nonmetal nodegrade~
+Wear     take waist~
+End
+
+#39254
+Name leggings green spidersilk~
+Short some `#`Ggreen`^ spidersilk leggings~
+Desc Some `#`Ggreen`^ spidersilk leggings have been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material leaf~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#39255
+Name purple petal jacket~
+Short a `#`mpurple petal`^ jacket~
+Desc A `#`mpurple petal`^ jacket has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material leaf~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#39256
+Name brown mapleleaf jacket~
+Short a `#`ybrown mapleleaf`^ jacket~
+Desc A `#`ybrown mapleleaf`^ jacket has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material leaf~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#39257
+Name ornate gown sunset-coloured petals~
+Short an ornate gown of `#`ms`Mu`rn`Rs`Ye`Ct`m-`Mc`ro`Rl`Yo`Cu`mr`Me`rd`^ petals~
+Desc An ornate gown of `#`ms`Mu`rn`Rs`Ye`Ct`m-`Mc`ro`Rl`Yo`Cu`mr`Me`rd`^ petals has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material leaf~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#39258
+Name beautiful ribbons rainbow shades~
+Short some beautiful ribbons from every colour in the `#`Rr`ra`Yi`Gn`Cb`Mo`mw`^~
+Desc Some beautiful ribbons of every colour of the `#`Rr`ra`Yi`Gn`Cb`Mo`mw`^ have been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#39259
+Name soft pink petal dress~
+Short a soft `#`Mpink petal`^ dress~
+Desc A soft `#`Mpink petal`^ dress has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#39260
+Name dyed blue petal jacket~
+Short a `#`Bdyed-blue petal`^ jacket~
+Desc A `#`Bdyed-blue petal`^ jacket has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#39261
+Name yellow petal jacket~
+Short a `#`Yyellow petal`^ jacket~
+Desc A `#`Yyellow petal`^ jacket has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#39262
+Name woven green blue leggings~
+Short some woven `#`Gg`Br`Ge`Be`Gn`^ and `#`Gb`Bl`Gu`Be`^ leggings~
+Desc Some woven `#`Gg`Br`Ge`Be`Gn`^ and `#`Gb`Bl`Gu`Be`^ leggings have been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material leaf~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#39263
+Name flamboyant hat grapes bananas feathers~
+Short a flamboyant hat decorated with `#`mgrapes`^, `#`Ybananas`^ and `#`rf`Re`ra`Rt`rh`Re`rr`Rs`^~
+Desc A flamboyant hat has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#39264
+Name pale blue slippers~
+Short some `#`Cpale blue`^ slippers~
+Desc Some `#`Cpale blue`^ slippers have been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take feet~
+End
+
+#39265
+Name tiny glass spectacles~
+Short some tiny glass spectacles~
+Desc Some tiny glass spectacles have been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take face~
+End
+
+#39266
+Name bright tutu dress~
+Short a `#`Mb`Wright tut`Mu`^ dress~
+Desc A `#`Mb`Wright tut`Mu`^ dress has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#39267
+Name shiny {#{Ssilver{^ slippers~
+Short some shiny `#`Ssilver`^ slippers~
+Desc Some shiny `#`Ssilver`^ slippers have been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take feet~
+End
+
+#39268
+Name colourful party hat~
+Short a `#`?c`?o`?l`?o`?u`?r`?f`?u`?l`^ party hat~
+Desc A `#`?c`?o`?l`?o`?u`?r`?f`?u`?l`^ party hat has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#39269
+Name light purple petal dress~
+Short a `#`mlight purple`^ petal dress~
+Desc A `#`mlight purple`^ petal dress has been left here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material petal~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#39270
+Name bright yellow daisy~
+Short a `#`Ybright yellow`^ `#`Wdaisy`^~
+Desc A `#`Ybright yellow`^ `#`Wdaisy`^ lies here.~
+Level 1
+ItemType clothing~
+Cost 140
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 2
+Material flower~
+Extra    nodegrade~
+Wear     take ear~
+End
+
+#39271
+Name handful faerie dust~
+Short `#`Wf`Sa`Me`Sr`Bi`We `Sd`Wu`Ms`St`^~
+Desc Some `#`Wf`Sa`Me`Sr`Bi`We `Sd`Wu`Ms`St`^ has been scattered here.~
+Level 1
+ItemType treasure~
+Cost 350
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material faerie dust~
+Extra    magic antievil nolocate nodegrade~
+Wear     take float~
+Affect modifier -1 1 -1 hp 2 0
+End
+
+#39272
+Name silver pin~
+Short a `#`Ssilver pin`^~
+Desc A `#`Ssilver pin`^ lies here.~
+Level 1
+ItemType treasure~
+Cost 103
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material silver~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39273
+Name golden needles~
+Short some `#`Ygolden needles`^~
+Desc Some `#`Ygolden needles`^ are here.~
+Level 1
+ItemType treasure~
+Cost 232
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material gold~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39274
+Name silk pin cushion~
+Short a `#`Rsilk`^ pin cushion~
+Desc A `#`Rsilk`^ pin cushion has been left here.~
+Level 1
+ItemType treasure~
+Cost 670
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material silk~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39275
+Name thimble~
+Short a `#`Sthimble`^~
+Desc A `#`Sthimble`^ lies upturned here.~
+Level 1
+ItemType treasure~
+Cost 149
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material silver~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39276
+Name pink purple buttons~
+Short some `#`Mpink`^ and `#`mpurple`^ buttons~
+Desc Some `#`Mpink`^ and `#`mpurple`^ buttons are here, scattered about.~
+Level 1
+ItemType treasure~
+Cost 110
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39277
+Name glittering red jewel~
+Short a glittering `#`Rred`^ jewel~
+Desc A glittering `#`Rred`^ jewel is here.~
+Level 1
+ItemType treasure~
+Cost 943
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 0
+Material gem~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39278
+Name shiny seashell~
+Short a shiny `#`yseashell`^~
+Desc A shiny `#`yseashell`^ lies here.~
+Level 1
+ItemType treasure~
+Cost 240
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 1
+Material shell~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39279
+Name dragonfly wings~
+Short some `#`Gd`Brag`Gon`Bf`Gly wi`Bn`Gg`Bs`^~
+Desc Some `#`Gd`Brag`Gon`Bf`Gly wi`Bn`Gg`Bs`^ are here.~
+Level 1
+ItemType treasure~
+Cost 350
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material dragonfly~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#39280
+Name hatbox~
+Short a `#`yhatbox`^~
+Desc A `#`yhatbox`^ is here.~
+Level 1
+ItemType container~
+Cost 35
+Asize 0
+Rsize 50
+Values 25 0 0 10 0
+Weight 2
+Material cardboard~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39281
+Name magic tablecloth~
+Short a `#`Rm`ra`wg`Wi`rc `Rt`ra`Wb`Wl`re`Rc`rl`Wo`Wt`Rh`^~
+Desc A `#`Rm`ra`wg`Wi`rc `Rt`ra`Wb`Wl`re`Rc`rl`Wo`Wt`Rh`^ is spread out on the ground here.~
+Level 1
+ItemType container~
+Cost 1500
+Asize 0
+Rsize 25
+Values 10 0 0 10 0
+Weight 0
+Material cloth~
+Extra    magic bless nolocate nodegrade burnproof~
+Wear     take hold~
+ExtraDesc magic tablecloth~
+This tablecloth is a magical one, making delightful edible treats for the 
+owner all day long, keeping the belly full for as long as the owner has the 
+tablecloth.  Its covered in bright red and white chequed squares and makes a 
+quiet humming noise.  
+~
+End
+
+#39282
+Name collection delightful drinks drink~
+Short a collection of `#`m"`WDelightful Drinks to Drink`m"`^~
+Desc A collection of `#`m"`WDelightful Drinks to Drink`m"`^ has been left here.~
+Level 1
+ItemType map~
+Cost 45
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material leafpaper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc collection delightful drinks drink~
+.
+`#`RD`relightfu`ml `RD`rrink`ms to `RD`rrin`mk`^
+ 
+`#`rRose Petal Wine`^
+ 
+`#`RIngredients`^: 5 pink roses
+           a little bit of water
+           a nice amount of sugar
+           2 lovely yellow lemons
+           a little pinch of yeast
+ 
+`#`mMethod`^: Mix everything up and leave it in the sun for a little while.
+ 
+`#`rHot Honey Lemonade`^
+ 
+`#`RIngredients`^: 4 tsps lemon juice
+             4 honeycombs
+             2 pitchers water
+ 
+`#`mMethod`^: Mix it all over something nice and warm.
+ 
+`#`rFaerie Wine`^
+ 
+`#`RIngredients`^: a pouring of milk
+             a delicious lick of honeycomb
+             a swirl of vanilla
+             an inkling of cinnamon
+ 
+`#`mMethod`^: Mix it all up and drink immediately.
+~
+End
+
+#39283
+Name wheat plant~
+Short a `#`Ywheat`^ plant~
+Desc A `#`Ywheat`^ plant fills the field.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 1000 0 0 10 0
+Weight 500
+Material wheat~
+Extra    nodegrade~
+End
+
+#39284
+Name grain wheat~
+Short a grain of `#`Ywheat`^~
+Desc A grain of `#`Ywheat`^ is here.~
+Level 1
+ItemType food~
+Cost 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material wheat~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39285
+Name started_magic_tablecloth_quest~
+Short `#`rstarted_magic_tablecloth_quest`^~
+Desc `#`rstarted_magic_tablecloth_quest`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    rotdeath visdeath~
+End
+
+#39286
+Name apple seed~
+Short an apple seed~
+Desc An apple seed lies here.~
+Level 1
+ItemType trash~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material apple~
+Extra    nolocate nodegrade~
+Wear     take~
+End
+
+#39287
+Name leaf tree~
+Short a `#`Gtree leaf`^~
+Desc A `#`Gtree leaf`^ grows on the tree here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material leaf~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39288
+Name drop dew~
+Short a `#`Wdrop of dew`^~
+Desc A `#`Wdrop of dew`^ is collected here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material dew~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39289
+Name leaf tree~
+Short a `#`Gtree leaf`^~
+Desc A `#`Gleaf`^ collects `#`Wdew`^ here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 20 0 0 1 0
+Weight 20
+Material leaf~
+Extra    nodegrade~
+Wear     take~
+End
+
+#39290
+Name appleseed_given_for_magic_tablecloth_quest~
+Short `#`rappleseed_given_for_magic_tablecloth_quest`^~
+Desc `#`rappleseed_given_for_magic_tablecloth_quest`^~
+Level 1
+ItemType token~
+Cost 15
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 20
+Material apple~
+Extra    rotdeath visdeath~
+End
+
+#39291
+Name wheat_given_for_magic_tablecloth_quest~
+Short `#`rwheat_given_for_magic_tablecloth_quest`^~
+Desc `#`rwheat_given_for_magic_tablecloth_quest`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    rotdeath visdeath~
+End
+
+#39292
+Name faeriedust_given_for_magic_tablecloth_quest~
+Short `#`rfaeriedust_given_for_magic_tablecloth_quest`^~
+Desc `#`rfaeriedust_given_for_magic_tablecloth_quest`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    rotdeath visdeath~
+End
+
+#39293
+Name dew_given_for_magic_tablecloth_quest~
+Short `#`rdew_given_for_magic_tablecloth_quest`^~
+Desc `#`rdew_given_for_magic_tablecloth_quest`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    rotdeath visdeath~
+End
+
+#39294
+Name strawberry-topped cupcake~
+Short a `#`Rstrawberry-topped`^ cupcake~
+Desc A `#`Rstrawberry-topped`^ cupcake smells delicious here.~
+Level 1
+ItemType food~
+Cost 34
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 2
+Material cupcake~
+Extra    nonmetal~
+Wear     take~
+End
+
+#39295
+Name crispy-fresh green apple~
+Short a `#`Gcrispy-fresh green`^ apple~
+Desc A `#`Gcrispy-fresh green`^ apple is here.~
+Level 1
+ItemType food~
+Cost 13
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 2
+Material apple~
+Extra    nonmetal~
+Wear     take~
+End
+
+#39296
+Name chicken salad sandwich~
+Short a chicken salad sandwich~
+Desc A chicken salad sandwich is here.~
+Level 1
+ItemType food~
+Cost 40
+Asize 0
+Rsize 50
+Values 10 5 0 0 0
+Weight 2
+Material bread~
+Extra    nonmetal~
+Wear     take~
+End
+
+#39297
+Name cup sweet lemonade~
+Short a cup of `#`Wsweet lemonade`^~
+Desc A cup of `#`Wsweet lemonade`^ is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 45
+Asize 0
+Rsize 50
+Values 10 10 lemonade 0 0
+Weight 2
+Material lemonade~
+Extra    nonmetal~
+Wear     take~
+End
+
+#39298
+Name faerie floss~
+Short some `#`Mfaerie floss`^~
+Desc Some `#`Mfaerie floss`^ looks tempting here.~
+Level 1
+ItemType food~
+Cost 33
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 2
+Material sugar~
+Extra    nonmetal~
+Wear     take~
+End
+
+#39299
+Name tiny silvery key~
+Short a tiny silver key~
+Desc A tiny silvery key lies here.~
+Level 1
+ItemType key~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material silvery~
+Extra    nolocate nodegrade~
+End
+
+#39300
+Name firefly~
+Short a firefly~
+Desc A firefly glows brightly here.~
+Level 30
+ItemType light~
+Cost 300
+Asize 1
+Rsize 29
+Values 0 0 20 0 0
+Weight 1
+Material unknown~
+Extra    glow nodegrade~
+Wear     take~
+ClassAllowances ranger~
+Affect modifier -1 30 -1 mana 30 0
+End
+
+#39301
+Name brown tunic~
+Short a brown tunic~
+Desc A brown tunic is here, crumpled in a heap.~
+Level 30
+ItemType armor~
+Cost 600
+Asize 20
+Rsize 29
+Values 10 10 10 8 0
+Weight 50
+Material jude~
+Extra    nodegrade~
+Wear     take torso~
+ClassAllowances ranger~
+Affect skills hide 30 -1 none 3 0
+End
+
+#39302
+Name brown furry boots~
+Short some brown furry boots~
+Desc A pair of brown furry boots are here.~
+Level 30
+ItemType armor~
+Cost 650
+Asize 30
+Rsize 29
+Values 6 6 6 5 0
+Weight 30
+Material fur~
+Extra    nodegrade~
+Wear     take feet~
+ClassAllowances ranger~
+Affect modifier -1 30 -1 move 80 0
+End
+
+#39303
+Name muddied sword~
+Short a muddied sword~
+Desc A muddied sword is here.~
+Level 30
+ItemType weapon~
+Cost 800
+Asize 30
+Rsize 29
+Values sword 2 15 slash D
+Weight 100
+Material metal~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances ranger~
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 damroll 2 0
+End
+
+#39304
+Name pure white dress~
+Short a pure `#`Wwhite`^ dress~
+Desc A pure `#`Wwhite`^ dress is here.~
+Level 30
+ItemType clothing~
+Cost 800
+Asize 20
+Rsize 29
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    glow bless nodegrade~
+Wear     take torso~
+ClassAllowances cleric~
+Affect skills diagnose 30 -1 none 2 0
+Affect modifier -1 30 -1 hp 3 0
+End
+
+#39305
+Name glass earrings~
+Short a glass earring~
+Desc A glass earring is here, shining prettily.~
+Level 30
+ItemType jewelry~
+Cost 300
+Asize 0
+Rsize 29
+Values 0 0 0 0 0
+Weight 1
+Material glass~
+Extra    glow magic nodegrade~
+Wear     take ear~
+ClassAllowances cleric~
+Affect modifier -1 30 -1 memory 1 0
+End
+
+#39306
+Name white mace~
+Short a brand new `#`Wwhite`^ mace~
+Desc A brand new `#`Wwhite`^ mace lies here, barely used.~
+Level 30
+ItemType weapon~
+Cost 900
+Asize 20
+Rsize 29
+Values mace 3 10 pound I
+Weight 50
+Material metal~
+Extra    magic antievil nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric~
+Affect modifier -1 30 -1 hitroll 1 0
+End
+
+#39307
+Name gold-trimmed jacket tails~
+Short a `#`Ygold-trimmed`^ jacket with tails~
+Desc A `#`Ygold-trimmed`^ jacket with tails has been left here.~
+Level 41
+ItemType clothing~
+Cost 1100
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances mage cleric druid spellfilcher~
+End
+
+#39308
+Name royal blue leggings~
+Short a pair of `#`broyal-blue`^ leggings~
+Desc A pair of `#`broyal-blue`^ leggings have been left here.~
+Level 41
+ItemType clothing~
+Cost 1050
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take legs~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 41 -1 constitution 3 0
+End
+
+#39309
+Name gold trimmed cap~
+Short a `#`Ygold-trimmed`^ cap~
+Desc A `#`Ygold-trimmed`^ cap has been left here.~
+Level 41
+ItemType clothing~
+Cost 1020
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take head~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 41 -1 memory 4 0
+End
+
+#39310
+Name gold trimmed boots~
+Short a pair of `#`Ygold-trimmed`^ boots~
+Desc A pair of `#`Ygold-trimmed`^ boots have been left here.~
+Level 41
+ItemType clothing~
+Cost 1300
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take feet~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 41 -1 memory 4 0
+End
+
+#39311
+Name fancy white cuff~
+Short a fancy `#`Wwhite`^ cuff~
+Desc A fancy `#`Wwhite`^ cuff has been left here.~
+Level 41
+ItemType clothing~
+Cost 1300
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take wrist~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 41 -1 agility 3 0
+End
+
+#39312
+Name starch white collar~
+Short a `#`Wstarch white`^ collar~
+Desc A `#`Wstarch white`^ collar has been left here.~
+Level 41
+ItemType clothing~
+Cost 1300
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 41 -1 saves -4 0
+End
+
+#39313
+Name velveteen jacket~
+Short a `#`cvelveteen`^ jacket~
+Desc A `#`cvelveteen`^ jacket has been left here.~
+Level 43
+ItemType clothing~
+Cost 1300
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances cleric druid spellfilcher~
+Affect modifier -1 43 -1 hp 4 0
+End
+
+#39314
+Name forest green leggings~
+Short a pair of `#`cforest green`^ leggings~
+Desc A pair of `#`cforest green`^ leggings have been left here.~
+Level 44
+ItemType clothing~
+Cost 1250
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take legs~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 44 -1 hp 4 0
+End
+
+#39315
+Name polished black-laced boots~
+Short a pair of polished `#`Sblack-laced`^ boots~
+Desc A pair of polished `#`Sblack-laced`^ boots have been left here.~
+Level 44
+ItemType clothing~
+Cost 1250
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take feet~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 44 -1 reasoning 2 0
+End
+
+#39316
+Name gold-white vest~
+Short a `#`Ygold-`Wwhite`^ vest~
+Desc A `#`Ygold-`Wwhite`^ vest has been left here.~
+Level 43
+ItemType clothing~
+Cost 980
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade burnproof~
+Wear     take torso~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 43 -1 hitroll 2 0
+Affect modifier -1 43 -1 damroll 2 0
+End
+
+#39317
+Name glass-handled sword~
+Short a `#`Wglass-handled`^ sword~
+Desc A `#`Wglass-handled`^ sword has been left here.~
+Level 43
+ItemType weapon~
+Cost 1250
+Asize 0
+Rsize 50
+Values sword 9 4 slash G
+Weight 10
+Material silver~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances paladin ranger~
+Affect modifier -1 43 -1 hp 2 0
+End
+
+#39318
+Name thin steel neckguard~
+Short a thin steel neckguard~
+Desc A thin steel neckguard is here.~
+Level 30
+ItemType armor~
+Cost 700
+Asize 16
+Rsize 29
+Values 5 5 5 4 0
+Weight 50
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take neck~
+ClassAllowances warrior paladin~
+Affect modifier -1 30 -1 hp 2 0
+End
+
+#39319
+Name thin steel breastplate~
+Short a thin steel breastplate~
+Desc A thin steel breastplate is here.~
+Level 30
+ItemType armor~
+Cost 750
+Asize 30
+Rsize 29
+Values 10 10 10 8 0
+Weight 80
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances warrior paladin~
+Affect modifier -1 30 -1 hp 2 0
+Affect modifier -1 30 -1 constitution 1 0
+End
+
+#39320
+Name thin steel leggings~
+Short some thin steel leggings~
+Desc Some thin steel leggings are here.~
+Level 30
+ItemType armor~
+Cost 640
+Asize 30
+Rsize 29
+Values 8 8 8 6 0
+Weight 40
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take legs~
+ClassAllowances warrior paladin~
+Affect modifier -1 30 -1 agility 2 0
+End
+
+#39321
+Name thin steel sleeves~
+Short thin steel sleeves~
+Desc Some thin steel sleeves are here.~
+Level 30
+ItemType armor~
+Cost 620
+Asize 30
+Rsize 29
+Values 8 8 8 6 0
+Weight 40
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take arms~
+ClassAllowances warrior paladin~
+Affect modifier -1 30 -1 strength 1 0
+Affect modifier -1 30 -1 hitroll 1 0
+Affect modifier -1 30 -1 damroll 1 0
+End
+
+#39322
+Name slightly curved longsword~
+Short a slightly curved longsword~
+Desc A slightly curved longsword~
+Level 30
+ItemType weapon~
+Cost 1000
+Asize 50
+Rsize 29
+Values sword 3 13 slash F
+Weight 100
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin~
+End
+
+#39323
+Name short black dress~
+Short a short `#`Sblack`^ dress~
+Desc A short `#`Sblack`^ dress is here, hidden in the shadows.~
+Level 30
+ItemType clothing~
+Cost 780
+Asize 20
+Rsize 29
+Values 0 0 0 0 0
+Weight 30
+Material silk~
+Extra    magic antievil nodegrade~
+Wear     take torso~
+ClassAllowances thief~
+Affect skills steal 30 -1 none 3 0
+Affect modifier -1 30 -1 quickness 1 0
+Affect modifier -1 30 -1 agility 1 0
+End
+
+#39324
+Name black leggings~
+Short some `#`Sblack`^ leggings~
+Desc Some `#`Sblack`^ leggings are here.~
+Level 30
+ItemType armor~
+Cost 640
+Asize 10
+Rsize 29
+Values 8 8 8 6 0
+Weight 10
+Material silk~
+Extra    antievil nodegrade~
+Wear     take legs~
+ClassAllowances thief~
+Affect modifier -1 30 -1 move 80 0
+End
+
+#39325
+Name short dagger~
+Short a short dagger~
+Desc A short dagger is here.~
+Level 30
+ItemType weapon~
+Cost 780
+Asize 30
+Rsize 50
+Values dagger 2 15 pierce E
+Weight 50
+Material metal~
+Extra    antievil nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief~
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 agility 1 0
+End
+
+#39326
+Name bluebell~
+Short a `#`Bbluebell`^~
+Desc A solitary `#`Bbluebell`^ grows here.~
+Level 1
+ItemType trash~
+Cost 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material flower~
+Extra    nolocate nodegrade~
+Wear     take hold~
+End
+
+#39327
+Name started_blue_paint_quest~
+Short `#`Bstarted_blue_paint_quest`^~
+Desc `#`Bstarted_blue_paint_quest`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    rotdeath visdeath~
+End
+
+#39328
+Name {#{Bblueberry_given_for_blue_paint_quest{^~
+Short `#`Bblueberry_given_for_blue_paint_quest`^~
+Desc `#`Bblueberry_given_for_blue_paint_quest`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    rotdeath visdeath~
+End
+
+#39329
+Name {#{Bribbon_given_for_blue_paint_quest{^~
+Short `#`Bribbon_given_for_blue_paint_quest`^~
+Desc `#`Bribbon_given_for_blue_paint_quest`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    rotdeath visdeath~
+End
+
+#39330
+Name {#{Bwatermelon_given_for_blue_paint_quest{^~
+Short `#`Bwatermelon_given_for_blue_paint_quest`^~
+Desc `#`Bwatermelon_given_for_blue_paint_quest`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    rotdeath visdeath~
+End
+
+#39331
+Name {#{Bballoon_given_for_blue_paint_quest{^~
+Short `#`Bballoon_given_for_blue_paint_quest`^~
+Desc `#`Bballoon_given_for_blue_paint_quest`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    rotdeath visdeath~
+End
+
+#39332
+Name fragile blue shard~
+Short a fragile `#`Bblue`^ shard~
+Desc A fragile `#`Bblue`^ shard glows here.~
+Level 45
+ItemType treasure~
+Cost 2400
+Asize 0
+Rsize 25
+Values 0 0 0 0 0
+Weight 5
+Material crystal~
+Extra    glow magic nolocate nodegrade~
+Wear     take float~
+ClassAllowances mage cleric druid~
+Affect skills vanish 45 -1 none 5 0
+Affect modifier -1 45 -1 mana 80 0
+End
+
+#39333
+Name plain green dress~
+Short a plain `#`ggreen`^ dress~
+Desc A plain `#`ggreen`^ dress is here.~
+Level 1
+ItemType clothing~
+Cost 780
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 30
+Material silk~
+Extra    antievil nodegrade~
+Wear     take torso~
+ClassAllowances bard~
+Affect modifier -1 1 -1 presence 3 0
+End
+
+#39334
+Name I_killed_the_faerie_queen~
+Short `#`RI_killed_the_faerie_queen`^~
+Desc `#`RI_killed_the_faerie_queen`^~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+End
+
+#39335
+Name tangled ball faerie lights~
+Short a tangled ball of faerie lights~
+Desc A tangled ball of faerie lights glows brightly here.~
+Level 45
+ItemType light~
+Cost 800
+Asize 5
+Rsize 29
+Values 0 0 225 0 0
+Weight 5
+Material glass~
+Extra    glow magic antievil nodegrade~
+Wear     take~
+ClassAllowances mage~
+Affect modifier -1 45 -1 memory 1 0
+Affect modifier -1 45 -1 mana 60 0
+End
+
+#39336
+Name translucent pink glass ring~
+Short a translucent `#`mpink`^ glass ring~
+Desc A translucent `#`mpink`^ glass ring is here, glittering prettily.~
+Level 45
+ItemType jewelry~
+Cost 750
+Asize 1
+Rsize 29
+Values 0 0 0 0 0
+Weight 1
+Material glass~
+Extra    glow magic antievil nodegrade burnproof norestring~
+Wear     take finger~
+Affect modifier -1 45 -1 mana 20 0
+Affect modifier -1 45 -1 presence 2 0
+Affect modifier -1 45 -1 selfdiscipline 2 0
+End
+
+#39337
+Name string blue pearls~
+Short a string of `#`cblue`^ pearls~
+Desc A string of `#`cblue`^ pearls is here.~
+Level 45
+ItemType jewelry~
+Cost 800
+Asize 10
+Rsize 29
+Values 0 0 0 0 0
+Weight 2
+Material pearl~
+Extra    glow magic antievil nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage~
+Affect modifier -1 45 -1 ac -5 0
+Affect modifier -1 45 -1 reasoning 2 0
+Affect modifier -1 45 -1 memory 2 0
+End
+
+#39338
+Name pink ball gown long train~
+Short a `#`mpink`^ ball gown with a long train~
+Desc A `#`mpink`^ ball gown with a long train is here.~
+Level 45
+ItemType clothing~
+Cost 1000
+Asize 40
+Rsize 29
+Values 0 0 0 0 0
+Weight 50
+Material cotton~
+Extra    glow magic bless antievil nodegrade burnproof~
+Wear     take torso~
+ClassAllowances mage~
+Affect modifier -1 45 -1 ac -10 0
+Affect modifier -1 45 -1 hp 4 0
+End
+
+#39339
+Name magnificent crown~
+Short a magnificent crown~
+Desc A magnificent crown lies gleaming brightly here.~
+Level 45
+ItemType jewelry~
+Cost 2000
+Asize 10
+Rsize 29
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Extra    glow magic bless antievil rotdeath nodegrade burnproof~
+Wear     take head~
+ClassAllowances mage cleric thief warrior paladin ranger spellfilcher~
+End
+
+#39340
+Name wand thousand wishes~
+Short a Wand of a Thousand Wishes~
+Desc A Wand of a Thousand Wishes is here.~
+Level 30
+ItemType wand~
+Cost 800
+Asize 10
+Rsize 29
+Values 1 20 20 cantrip 0
+Weight 10
+Material glass~
+Extra    glow hum magic antievil nonmetal nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+End
+
+#39341
+Name token_trillilath_queen_mp39164~
+Short token_trillilath_queen_mp39164~
+Desc Token_trillilath_queen_mp39164~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values B 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#39342
+Name shimmering magic portal~
+Short a magic portal~
+Desc A magic portal `#`Ws`Ch`ci`Wm`cm`Ce`cr`Ws`^ here.~
+Level 1
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 0 0 30442 0
+Weight 0
+Material unknown~
+Extra    magic nodegrade~
+End
+
+#39343
+Name shimmering magic portal 39343~
+Short a magic portal~
+Desc A magic portal `#`Ws`Ch`ci`Wm`cm`Ce`cr`Ws`^ here.~
+Level 1
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 0 0 39171 0
+Weight 0
+Material unknown~
+Extra    magic nodegrade~
+End
+
+#39344
+Name book aarisland legend lost children~
+Short a beautiful, leather-bound book~
+Desc A leather-bound book has been left here.~
+Level 1
+ItemType trash~
+Cost 55
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 4
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc leather-bound book beautiful~
+Opening the book you read:
+ 
+           `#`rAarislan, Legend of the Lost Children`^
+ 
+A tale is sometimes told to children, by their parents, desperate to instill fear in an effort to make their child pay more attention, that if one were to daydream too often, their very souls would be taken to another land, a land that is far above the clouds, where the daydreams of children can run rampant, and a land where there would be no return if a child were ever to go there. It is said that the faeries, who take a natural liking to children, fly about looking for children who spend their days and nights daydreaming, and when one is spotted, it is then that their faerie magic takes the child to this new, and mysterious land.
+ 
+Of course, that is only the parents' version and the tales children tell amongst themselves about this land, are indeed quite a different story. In fact, many children, for the very reason of living in a land without parents to tell them what to do, will often spend their time daydreaming about such a place. A place where they can eat all the sweets in the world, and dance with faeries, and ride ponies all day long. For them, this wonderful tale is a constant longing to be made into a reality.
+ 
+But then, it is only a tale, for could it really be true, that such a place, filled with lost children and sugar faeries could really exist? Is there really a land above the skies, called Aarislan, and if you were not a child, would it still be possible to find it? Perhaps if you ask one of the wise faeries, they might know how to find it.
+~
+End
+
+#39345
+Name brew green liquid revigoration~
+Short a brew of revigoration~
+Desc A brew of green liquid is here.~
+Level 25
+ItemType potion~
+Cost 250
+Asize 0
+Rsize 50
+Values 25 revigorate '' '' ''
+Weight 9
+Material unknown~
+Extra    magic nonmetal~
+Wear     take hold~
+End
+
+#39346
+Name brownish-yellow liquid brew antidote poison~
+Short a brew to antidote poison~
+Desc A brew of brownish-yellow liquid is here.~
+Level 10
+ItemType potion~
+Cost 125
+Asize 0
+Rsize 50
+Values 10 'poison antidote' '' '' ''
+Weight 9
+Material unknown~
+Extra    magic nonmetal~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#39120
+Name A `#`RRed`^ and `#`WWhite`^ Toadstool~
+Desc A red and white spotted toadstool grows on the path here to the south of the 
+giant toadstool.  The toadstool here has a thick white stalk and at its 
+base, tufts of soft grass surround it.  Dainty windows peep out on either 
+side of the stalk and are painted bright red.  A woodshaving sign hangs over 
+the round `#`Rred door`^ and is painted with bright white letters, reading: `1`1 `#`WFaraeriedust and WaLLandLes`^ 
+~
+Sector inside~
+ExtraDesc red door~
+The red door is rounded at the top, and is made of brightly painted wooden 
+panels.  There is a white doorhandle which you can turn to `#`Senter`^ the 
+`#`Stoadstool`^.  
+~
+Exit north 39123
+Exit southwest 39121
+End
+
+
+#39121
+Name A `#`CCrystal Blue`^ Spotted Mushroom~
+Desc A beautiful crystal blue mushroom grows here, amongst the grass to the 
+southeast of the giant toadstool.  The stalk is plump with a stout crown.  A 
+little chimney pokes out on the right side of the crown, somewhat crookedly. 
+ Two windows adorned with bright yellow curtains are placed on opposite 
+sides of the blue mushroom top, and one is wide open with delightful smells 
+wafting out of it.  A `#`Cblue, wooden door`^ at the base of the mushroom is swung 
+open on its hinge.  A woodshaving sign hangs above the door with the words: `1`1 `#`CTiLLiLLie's Teashop`^ 
+~
+Sector inside~
+ExtraDesc blue wooden door~
+The blue, wooden door is rounded at the top, and is made of brightly painted 
+wooden panels.  There is a light blue doorhandle which you can turn to `#`Senter`^ 
+the `#`Smushroom`^.  
+~
+Exit northeast 39120
+Exit southwest 39144
+Exit northwest 39153
+End
+
+
+#39122
+Name A Large `#`cCyan`^ Mushroom~
+Desc A large mushroom, with a cyan crown grows in the grass here, to the west of 
+the giant toadstool.  Looking up, you see underneath is a deeper cyan shade, 
+almost green in colour.  A crooked chimney stands at a leanto on the 
+leftside of the crown, and a small window is on the rightside.  There is a 
+little door at the base of the stalk, with a bright cyan doorknob.  Just 
+above the door is another window, which is ajar.  
+~
+Sector inside~
+Exit north 39151
+Exit east 39144
+Exit south 39171
+Exit west 39135
+End
+
+
+#39123
+Name A `#`CBright Blue`^ Toadstool~
+Desc A fantastic bright blue toadstool stands in the middle of the path which 
+leads to the west, heading towards the giant toadstool.  The crown is plump, 
+and the stalk is solid in shape.  Little daisies grow all around the stalk, 
+up to a `#`Cbright blue door`^.  Bright blue curtains decorate two little windows 
+either side of the door.  Above the door hangs a woodshaving sign with the 
+words: `1`1 `#`CTrealleasures and Trillinkets`^ 
+~
+Sector inside~
+ExtraDesc bright blue door~
+The bright blue door is rounded at the top, and is made of brightly painted 
+wooden panels.  There is a blue doorhandle which you can turn to `#`Senter`^ the 
+`#`Stoadstool`^.  
+~
+Exit north 39124
+Exit south 39120
+Exit west 39148
+End
+
+
+#39124
+Name A Smallish `#`gGreen`^ Toadstool~
+Desc A green toadstool, rather small in size, grows here in the grass to the west 
+of the giant toadstool.  A thin, copper chimney stands uncertainly at the 
+tip of the crown.  There is only one small window poking through the stalk, 
+and it has a painted green sill.  At the base of the stalk, is a `#`Yyellow 
+arched door`^ with a green doorknob.  A garden of bluebells grow wildly around 
+the stalk's base and barely leave room for the door.  A sign hangs over the 
+door and spells the words:`1`1 `#`GDomesticaLated DaLLarLLings`^ 
+~
+Sector inside~
+ExtraDesc yellow arched door~
+The yellow arched door is rounded at the top, and is made of brightly 
+painted wooden panels.  There is a green doorhandle which you can turn to 
+`#`Senter`^ the `#`Stoadstool`^.  
+~
+Exit south 39123
+Exit northwest 39125
+End
+
+
+#39125
+Name A Large `#`YYellow`^ Mushroom~
+Desc A large yellow mushroom with a thick stalk grows here to the northeast of 
+the giant toadstool.  The crown of the mushroom has faint white spots, but 
+they are barely visible from the ground.  On the stalk are two round windows 
+on the sunny side, and two on the shady side, each with a different coloured 
+set of frilly curtains.  The `#`mdoor`^ at the base of the stalk, is yet another 
+colour, being a brilliant purple with a cherry-red doorhandle.  A 
+woodshaving sign hangs over the door with the printed words: `1`1 `#`YFineLLie FurLurnitureLLie`^ 
+~
+Sector inside~
+ExtraDesc door ~
+The purple door is rounded at the top, and is made of brightly painted 
+wooden panels.  There is a cherry-red doorhandle which you can turn to `#`Senter`^ 
+the `#`Smushroom`^.  
+~
+Exit southeast 39124
+Exit southwest 39143
+Exit northwest 39126
+End
+
+
+#39126
+Name A `#`mPurple`^ and `#`WWhite`^ Toadstool~
+Desc A purple toadstool with great big white spots stands here, in the tufts of 
+grass to the north of the giant toadstool.  At the top of the toadstool is a 
+bent chimney, in the shape of a windy road.  Three windows, one atop of the 
+other, are peep out of the stalk.  Each window is painted brightly, and 
+decorated with floral curtains.  A round `#`mwooden door`^ at the base of the 
+stalk stands under a woodshaving sign which reads: `1`1 `#`mGaLLoLLorious Garments`^ 
+~
+Sector inside~
+ExtraDesc wooden door~
+The wooden door is rounded at the top, and is made of brightly painted 
+wooden panels.  There is a purple doorhandle which you can turn to `#`Senter`^ the 
+`#`Stoadstool`^.  
+~
+Exit west 39145
+Exit southeast 39125
+End
+
+
+#39128
+Name A Tall `#`BBlue`^ Toadstool~
+Desc A tall toadstool, a bright blue one, grows here on the northern path around 
+the giant toadstool.  This toadstool has a brilliant blue crown and pure 
+white stalk.  It is nestled in the tufts of grass, and bunches of yellow and 
+white daisies which have been planted in no orderly fashion around the 
+toadstool.  A woodshaving sign hangs over a `#`Bblue door`^ at the base of the 
+toadstool.  Blue letters are painted on the sign and read: `1`1`#`BMusicaLiLLicaL Instrumementies`^ 
+~
+Sector inside~
+ExtraDesc blue door~
+The blue door is rounded at the top, and is made of brightly painted wooden 
+panels.  There is a dark blue doorhandle which you can turn to `#`Senter`^ the 
+`#`Stoadstool`^.  
+~
+Exit east 39145
+Exit southwest 39141
+End
+
+
+#39131
+Name A `#`MPink`^ Mushroom with a Tall Stalk~
+Desc A pink mushroom grows on the western path of the giant toadstool.  This 
+mushroom has an extraordinarily long stalk and is dotted with several 
+pink-framed windows with matching pink curtains.  A tin chimney leans 
+slightly, from its position near the tip of the mushroom top.  An arched 
+`#`Mpink door`^ stands at the base of the tall stalk.  A sign swings above it, and 
+is painted with pink letters which reads: `1`1 `#`MMillissa's Millillillinery`^ 
+~
+Sector inside~
+ExtraDesc pink door~
+The pink door is rounded at the top, and is made of brightly painted wooden 
+panels.  There is a pink doorhandle which you can turn to `#`Senter`^ the 
+`#`Smushroom`^.  
+~
+Exit south 39132
+Exit northeast 39141
+End
+
+
+#39132
+Name A Bright `#`mPurple`^ Toadstool~
+Desc Where the path to the giant toadstool meets the western ring, a bright 
+purple toadstool grows.  The toadstool is the colour of grapes, and the 
+stalk is a shade of light cream.  Perched on the crown like birds, are two 
+round windows, painted with bright purple sills.  At the base of the purple 
+toadstool, is a `#`mbright purple door`^, with a cream painted doorknob.  Above 
+the door swings a woodshaving sign with printed letters, reading:`1`1`#`mSiLiLken SLiLLiLLipers`^ 
+~
+Sector inside~
+ExtraDesc bright purple door~
+The bright purple door is rounded at the top, and is made of brightly 
+painted wooden panels.  There is a cream painted doorhandle which you can 
+turn to `#`Senter`^ the `#`Stoadstool`^.  
+~
+Exit north 39131
+Exit east 39138
+Exit south 39133
+End
+
+
+#39133
+Name A Large Toadstool with a Thick, `#`GGreen`^ Stalk~
+Desc A large toadstool grows on the western side of the giant toadstool.  The 
+thick green stalk on this toadstool is the same colour as the tufts of grass 
+surrounding it, which makes the bright red windows and doors stand out 
+dramatically.  There are three windows which weave up the stalk in a 
+diagonal fashion, and there is a `#`Rred door`^ at the base of the stalk.  A 
+woodshaving sign hangs above it and reads: `1`1 `#`RBookooklle Bargains`^ 
+~
+Sector inside~
+ExtraDesc red door~
+The red door is rounded at the top, and is made of brightly painted wooden 
+panels.  There is a green doorhandle which you can turn to `#`Senter`^ the 
+`#`Stoadstool`^.  
+~
+Exit north 39132
+Exit southeast 39134
+End
+
+
+#39134
+Name A Brilliant `#`YYellow`^ Mushroom~
+Desc On the southwestern side of the giant toadstool, grows a brilliant yellow 
+mushroom.  A path heads northeast from here towards the giant toadstool.  
+The yellow mushroom has several windows dotted randomly across the crown of 
+the mushroom, each with a set of bright yellow curtains and bright yellow 
+windowsills.  At the foot of the mushroom, there is a bright yellow door.  
+Bright yellow daisies have been planted neatly around the stalk of the 
+mushroom.  
+~
+Sector inside~
+Exit northeast 39136
+Exit southeast 39135
+Exit northwest 39133
+End
+
+
+#39135
+Name An `#`ROrange`^ Toadstool~
+Desc At the edge of the path, on the southern side of the giant toadstool, grows 
+a brilliant orange toadstool.  A copper chimney pipe, bent in several places 
+pokes out of the orange crown of the toadstool.  At the edge of the crown, 
+and rather feebly placed, is a large round window with bright orange 
+curtains, tied with big ribbons.  A `#`Rwooden-panelled door`^ stands at the base 
+of the toadstool, amidst a patches of vibrant green moss.  Above it hangs a 
+sign which reads `1`1 `#`RBaLLooLLans and BuLLubLes`^ 
+~
+Sector inside~
+ExtraDesc wooden-panelled door~
+The wooden-panelled door is rounded at the top, and is made of brightly 
+painted wooden panels.  There is a red doorhandle which you can turn to 
+`#`Senter`^ the `#`Stoadstool`^.  
+~
+Exit east 39122
+Exit northwest 39134
+End
+
+
+#39136
+Name A Smallish Path before the Giant Toadstool~
+Desc A smallish path heads northeast to the looming giant toadstool, and 
+southwest to the outer mushroom ring.  Bunches of daisies grow wild along 
+the edge of the path, dotting the path with yellow and white splotches of 
+colour.  As you get closer to the giant toadstool, it really does seem huge. 
+ There is a door in the northeastern side of the stalk.  
+~
+Sector inside~
+Exit northeast 39137
+Exit southwest 39134
+End
+
+
+#39137
+Name First Floor in the Giant Toadstool~
+Desc This large hall is bustling with activity with dozens of busy faeries in all 
+sizes and colours.  The tall ceiling is covered with a beautiful brightly 
+coloured mural, depicting a bouquet of beautiful roses.  Looking closer at 
+the mural, there is a exit to the second floor hidden in one of the roses.  
+There are rounded wooden doors, lined all along the sides of the hall.  
+~
+Sector inside~
+Exit north 39147
+EFlags door closed~
+Exit east 39149
+EFlags door closed~
+Exit south 39152
+EFlags door closed~
+Exit west 39140
+EFlags door closed~
+Exit up 39155
+Exit northeast 39143
+Exit southeast 39153
+Exit southwest 39136
+Exit northwest 39142
+End
+
+
+#39138
+Name A Straight Little Path~
+Desc A straight little path leads east towards the giant toadstool, and west to 
+the outer mushroom ring.  Shiny pebbles and colourful rocks line up all 
+along the neatly kept pathway.  Looking east, a giant mushroom looms over 
+the surrounding area.  
+~
+Sector inside~
+Exit east 39140
+Exit west 39132
+End
+
+
+#39140
+Name A Straight Little Path before the Giant Toadstool~
+Desc A straight little path leads east towards the giant toadstool, and west to 
+the outer mushroom ring.  The well kept pathway is decorated on both sides 
+with a variety of colourful rocks and shiny pebbles.  The giant toadstool 
+stands majestically over the area, towering at an impressive height, more 
+than double the height of the other mushrooms.  How tall it is, almost four 
+faeries high.  There is a rounded wooden door in the eastern side of the 
+stalk.  
+~
+Sector inside~
+Exit east 39137
+EFlags door closed~
+Exit west 39138
+End
+
+
+#39141
+Name A `#`bDeep Blue`^ Toadstool~
+Desc A toadstool the colour of the deepest blue velvet, stands amongst the tufts 
+of grass here to the north of the giant toadstool.  A round window pokes 
+through the crown on the leftside, and on the sill is a thimble flowerpot 
+with a bunch of forget-me-nots inside.  At the base of the stalk, is a `#`bdeep 
+blue wooden door`^, with an acorn for a doorknob.  Above the door hangs a 
+woodshaving sign with the printed words:`1`1 `#`BReeLLoLLies of Ribbons`^ 
+~
+Sector inside~
+ExtraDesc deep blue wooden door~
+The deep blue wooden door is rounded at the top, and is made of brightly 
+painted wooden panels.  There is an acorn doorhandle which you can turn to 
+`#`Senter`^ the `#`Stoadstool`^.  
+~
+Exit northeast 39128
+Exit southeast 39142
+Exit southwest 39131
+End
+
+
+#39142
+Name A Tiny Path before the Giant Toadstool~
+Desc The path heading southeast to the giant toadstool and northwest to the outer 
+mushroom ring, is tiny, barely fitting one faerie widthways.  Wild 
+forget-me-nots grow at the edge of the path, adding dashes of blue to the 
+grassy green path.  The giant toadstool, as you get nearer, seems awefully 
+big from where you stand.  There is an arched door in the southeastern side 
+of the stalk.  
+~
+Sector inside~
+Exit southeast 39137
+Exit northwest 39141
+End
+
+
+#39143
+Name A Minute Path before the Giant Toadstool~
+Desc A minute path leads southwest towards the giant toadstool, and northeast to 
+the outer mushroom ring.  The path is decorated with clumps of daisies, 
+growing at the edge of the grassy walkway.  As you near the giant toadstool, 
+you notice how tall it is, almost four faeries high.  There is a rounded 
+wooden door in the southwestern side of the stalk.  
+~
+Sector inside~
+Exit northeast 39125
+Exit southwest 39137
+End
+
+
+#39144
+Name A `#`mViolet`^ Topped Mushroom~
+Desc In the tufts of grass, to the south of the giant toadstool, grows a mushroom 
+with a violet coloured crown.  The top of the mushroom is large and 
+underneath, it is a soft lavendar shade.  Two round windows with pink 
+windowsills peer out on either side of the stalk.  There is a `#`Mtiny pink door`^ 
+at the base of the mushroom and above hangs a wood shaving sign, with some 
+printed letters which read: `1`1`#`MDeLightfuLLoLLie SweetiLLies`^ 
+~
+Sector inside~
+ExtraDesc tiny pink door~
+The tiny pink door is rounded at the top, and is made of brightly painted 
+wooden panels.  There is a white doorhandle which you can turn to `#`Senter`^ the 
+`#`Smushroom`^.  
+~
+Exit west 39122
+Exit northeast 39121
+End
+
+
+#39145
+Name A Mushroom with `#`GLight Green`^ Spots~
+Desc A mushroom grows here, where a path heading south to the giant toadstool 
+meets the outer ring.  The crown of the mushroom is covered in light 
+apple-green spots, and its stalk is a lighter shade of green.  Poking out of 
+the stalk are several bright green windows with dark green curtains, tied 
+with green ribbons.  A `#`Glight green door`^ stands at the base of the stalk 
+under a sign which reads:`1`1 `#`GHerLLerbaL Rememedies`^ 
+~
+Sector inside~
+ExtraDesc light green door~
+The light green door is rounded at the top, and is made of brightly painted 
+wooden panels.  There is a dark green doorhandle which you can turn to `#`Senter`^ 
+the `#`Smushroom`^.  
+~
+Exit east 39126
+Exit south 39146
+Exit west 39128
+End
+
+
+#39146
+Name A Small Path~
+Desc A small path heads south towards the giant toadstool, and north to the outer 
+mushroom ring.  At the side of the path, is a mossy patch of grass, perfect 
+for sitting and listening to a story from the storyteller who has settled 
+here.  
+~
+Sector inside~
+Exit north 39145
+Exit south 39147
+End
+
+
+#39147
+Name A Small Path Leading to a Giant Toadstool~
+Desc A small path leads south towards the giant toadstool, and north to the outer 
+mushroom ring.  Two neatly kept rows of sunflowers as tall as faeries line 
+the sides of the path of well kept grass.  The tall toadstool looms up in 
+front, towering over everything else, at an impressive height of almost four 
+faeries high.  There is a rounded wooden door in the southern side of the 
+stalk.  
+~
+Sector inside~
+Exit north 39146
+Exit south 39137
+EFlags door closed~
+End
+
+
+#39148
+Name A Miniature Path~
+Desc Brightly coloured pebbles and stones line the path leading west to the giant 
+toadstool and east to the outer ring of mushrooms.  The giant toadstool 
+seems to loom high above all the other mushrooms, and from here, looks to be 
+taller than four faeries high.  
+~
+Sector inside~
+Exit east 39123
+Exit west 39149
+End
+
+
+#39149
+Name A Miniature Path before the Giant Toadstool~
+Desc A path leads up to the giant toadstool, and heads east to the outer ring.  
+The toadstool stretches high before you, and you can't even see the top of 
+it to tell what colour it is.  Dashes of brightly coloured pebbles and 
+stones colour the edge of the path.  There is a wooden door built into the 
+western side of the stalk.  
+~
+Sector inside~
+Exit east 39148
+Exit west 39137
+EFlags door closed~
+End
+
+
+#39150
+Name FineLLie FurLurnitureLLie~
+Desc Entering this mushroom, you see cluttered stacks of finely crafted 
+furniture.  There are tiny delicate lamps, and small soft beds with fluffy 
+pillows and dainty chairs.  In fact, there's just about anything one could 
+wish to buy for one's own mushroom house.  There's a faerie covered in wood 
+shavings polishing a piece of furniture that he's recently crafted near the 
+counter.  
+~
+Sector inside~
+Exit southwest 39125
+EFlags oneway~
+End
+
+
+#39151
+Name A Miniscule Path~
+Desc A path, miniscule in size, heads north towards the giant toadstool and south 
+to the outer mushroom ring.  There is a lusciously soft patch of moss at the 
+side of the path, and a druid faerie seems to have taken to using the spot 
+for tending to the hurt and needy.  
+~
+Sector inside~
+Exit north 39152
+Exit south 39122
+End
+
+
+#39152
+Name A Miniscule Path before the Giant Toadstool~
+Desc A path heads to the giant toadstool to the north, and to the outer ring to 
+the south.  Looking up at the giant toadstool, you can't even tell what 
+colour the crown is, its so high up.  Being this close to the toadstool, it 
+seems a lot bigger than it did from the outer ring.  There is an arched 
+doorway built into the northern side of the stalk.  
+~
+Sector inside~
+Exit north 39137
+EFlags door closed~
+Exit south 39151
+End
+
+
+#39153
+Name A small path before the giant toadstool~
+Desc A path barely two faerie feet wide, heads towards the northwest to the giant 
+toadstool and southeast to the outer ring.  Heading in the direction of the 
+giant toadstool it seems a whole lot bigger than it did from the outer ring. 
+ It almost towers over you, and from here you can see it is at least three 
+or four faeries tall.  There is a wooden doorway in the northwestern side of 
+the stalk.  
+~
+Sector inside~
+Exit southeast 39121
+Exit northwest 39137
+End
+
+
+#39154
+Name BaLLooLLans and BuLLubLes~
+Desc Walking into this toadstool is like walking into a dream.  Delicate rainbow 
+coloured bubbles float all about you, as balloons bob about on stands, every 
+colour and shape imaginable.  As you look around you see all sorts of party 
+things, from little toys to napkins and plates, and decorations.  There is a 
+faerie with a party hat, serving the customers.  
+~
+Sector inside~
+Exit northeast 39135
+EFlags oneway~
+End
+
+
+#39155
+Name Second Floor in the Giant Toadstool~
+Desc Large stained windows line the sides of this large throne room, letting in 
+the light from outside into the hall in a prism of multicoloured rainbow 
+colours.  The domed ceiling is an intricate mosiac of shiny gems and silver 
+with a little hexagonal shaped exit leading up, right in the middle of it.  
+There is a round hole with a velvet banister in the smooth marbled floor 
+leading down to the first floor.  
+~
+Sector inside~
+Exit up 39156
+Exit down 39137
+Exit northeast 39170
+EFlags door closed locked pickproof nopass~
+EKeyvnum 39299
+End
+
+
+#39156
+Name Third Floor in the Giant Toadstool~
+Desc The crown of this giant toadstool is so big, the surface seems almost flat.  
+Standing on it, you can look over the whole faerie circle, and all of the 
+surrounding mushrooms.  A fluffy rug is spread here, making this a fantastic 
+picnic spot!  
+~
+Sector inside~
+Exit down 39155
+End
+
+
+#39157
+Name TiLLiLLie's Teashop~
+Desc A bustling little teashop, is filled with faeries sharing secrets over cups 
+of nectar tea, and nibbling on slices of honeydew.  Sets of comfy tulip 
+chairs around button mushroom tables are placed in cosy corners of the room. 
+ Delightful, hand painted pictures of well-known faeries hang from pinhooks, 
+and colourful curtains are tied neatly with bows at the edges of the 
+windows.  A busy faerie with a daisy tucked behind her ear, is serving cups 
+of tea.  
+~
+Sector inside~
+Exit northwest 39121
+EFlags oneway~
+End
+
+
+#39158
+Name DeLightfuLLoLLie SweetiLLies~
+Desc Inside this small mushroom are dozens of honeycomb shelves filled with 
+assortments of candies and chocolates, and of course..  Cupcakes!  There are 
+cupcakes iced with every hue of the rainbow, and combinations, like 
+crimson-purple with sea-blue stripes, and cupcakes with faeriedust 
+sprinkles.  This shop is a dream for any sweet-toothed faerie!  A slightly 
+chubby faerie with pink cheeks holds an acorn in her hand, ready to pile 
+sweets into it, for the next tempted customer.  
+~
+Sector inside~
+Exit northwest 39144
+EFlags oneway~
+End
+
+
+#39159
+Name HerLLerbaL Rememedies~
+Desc Inside this toadstool, its almost like being in the forest.  From the 
+ceiling, on racks of bramble, hang bundles and clutches of dried herbs of 
+every variation, from long strangly ones, to short stubby ones, to burnt 
+amber ones, to ones that smell like the sea-air.  Lining the walls are an 
+assortment of snailshell cauldrons, and clamshell mortars, and other handy 
+items for herbalists.  A green-haired faerie is sorting a recent forage into 
+piles behind a bench, made from an upturned jar.  
+~
+Sector inside~
+Exit south 39145
+EFlags oneway~
+End
+
+
+#39160
+Name MusicaLiLLicaL Instrumementies~
+Desc A sweet melody wafts over to you when you enter this mushroom, and you 
+notice a slender faerie playing on one of the reed flutes for sale.  
+Hand-crafted instruments are displayed on lily leafs in this shop.  There 
+are all kinds of flutes, and tiny gold and silver bells, and bamboo 
+recorders, and walnut shell lutes.  A tall faerie demonstrates how to use a 
+set of seashell chimes to one of the customers, and seems willing to help 
+the customers with any instrument that takes their fancy.  
+~
+Sector inside~
+Exit south 39128
+EFlags oneway~
+End
+
+
+#39161
+Name Millissa's Millillillinery ~
+Desc A faerie dressed in a flamboyant hat topped with berries and nuts, greets 
+you warmly.  She must be Millissa, the faerie who makes all the wonderful 
+creations in this shop.  Displayed on walnut shell models are extravagant, 
+richly decorated hats, and plain yet practical caps, and dainty bonnets, and 
+caps made of leaves and floral wreathes.  The burst of colour and texture on 
+the selection is really quite impressive.  
+~
+Sector inside~
+Exit southeast 39131
+EFlags oneway~
+End
+
+
+#39162
+Name SiLiLken SLiLLiLLipers~
+Desc Inside this quaint mushroom is a selection of handmade, delicately sewn, 
+slippers.  On display, you can see dancing slippers made from fine silk, and 
+bedtime slippers made from featherdown, and hazelnut clogs for playing in, 
+and dainty velvet slippers for special occasions.  A plump faerie is 
+polishing up a pair of woven mapleleaf slippers, and looks like the one to 
+talk to about finding the right size slipper.  
+~
+Sector inside~
+Exit east 39132
+EFlags oneway~
+End
+
+
+#39163
+Name Bookooklle Bargains~
+Desc Upon several tortoise shell tables are displayed collections of novels, 
+faerie-tales, and other fantastical literary delights.  Looking over the 
+collection, you notice some of the books have shiny, new covers, and others 
+have dull, slightly tattered ones.  A small note on leaf paper beside these 
+ones reads `#`W"Well-loved books - Half Price"`^.  A faerie with tiny spectacles 
+is putting leaf dockets on the books, and looks wise enough to recommend a 
+worthy book to read.  
+~
+Sector inside~
+Exit northeast 39133
+EFlags oneway~
+End
+
+
+#39164
+Name Faraeriedust and WaLLandLes~
+Desc As you enter, a shower of silver dust scatters, floating into the air, and 
+slowly drifting to settle on the ground.  After the dust clears, you make 
+out tiny pouches of different colours displayed in neat rows.  Each pouch 
+has a handsewn label with its ingredients listed, and recommended use.  
+There are also a selection of glittering wands for sale.  A faerie with 
+sparkly hair is pouring a buttercup of dust into a new pouch, and looks like 
+the faerie to talk to about the magic of faeriedust.  
+~
+Sector inside~
+Exit northwest 39120
+EFlags oneway~
+End
+
+
+#39165
+Name Trealleasures and Trillinkets~
+Desc You barely fit through the door, as you realise that blocking the way is an 
+assortment of antiques, collectables and trinkets piled almost as high as 
+the ceiling.  There is scarcely space to move inside this shop of treasures, 
+and looking around, your eyes can hardly take it all in at once.  There are 
+marvellous and strange articles, and difficult to reach articles, and bright 
+shiny articles, and dull and dusty articles.  Its a wonder the faerie with 
+the most unusual hat can find anything as he helps the customers, but if you 
+asked, I'm sure he'd know just where it was in this muddle of trinkets and 
+treasure.  
+~
+Sector inside~
+Exit west 39123
+EFlags oneway~
+End
+
+
+#39166
+Name GaLLoLLorious Garments~
+Desc On coral clothes hooks, hang a selection of handsewn garments for all 
+occasions, inside this shop.  Made of rose-petals, there are pretty pink, 
+red and white dresses for faerie lasses.  And from flax, jackets and vests 
+have been woven for faerie lads.  For evening wear, these is a selection of 
+fine spidersilk garments, and for casual wear, a selection of mapleleaf 
+garments.  A finely dressed faerie looks ready to help the customers with 
+any garment that catches their eye.  
+~
+Sector inside~
+Exit southwest 39126
+EFlags oneway~
+End
+
+
+#39167
+Name ReeLLoLLies of Ribbons~
+Desc This little shop is full of lovely ribbons.  Blue ribbons, made of the mist 
+that hangs on faraway hills, and sea-green ribbons embroidered with diamond 
+sparkles that glitter like sunny water.  There are big broad ribbons of 
+shiny silk and tiny delicate ribbons of frosted spider silk.  The whole shop 
+is practically spilling over with rolls and rolls, and unrolled ribbons.  
+There is a rounded door to the south.  
+~
+Sector inside~
+Exit southeast 39141
+EFlags oneway~
+End
+
+
+#39168
+Name DomesticaLated DaLLarLLings~
+Desc As soon as you walk into this shop, you hear a soft pitter patter of feet 
+scurrying about, and the mingled chatter of insects and little creatures as 
+they peer out at you from their giant oyster shell cages.  As you walk 
+closer to the shells you see inside all sorts of little insects..  Creatures 
+with wings, creatures with fluffy fur or feathers, creatures with gills, and 
+all sizes too, of course they're all smaller than a faerie in size.  A 
+faerie with a hummingbird perched on her shoulder looks willing to help the 
+customers find the perfect darling.  
+~
+RoomFlags pet_shop~
+Sector inside~
+Exit southwest 39124
+EFlags oneway~
+End
+
+
+#39169
+Name Pet Storage~
+Desc ~
+RoomFlags pet_shop imm_only ooc~
+Sector inside~
+End
+
+
+#39170
+Name The Faerie Queen's Lair~
+Desc The room you've managed to find your way into, is cram-packed with odd bits 
+and pieces, glittering jewels, shiny shells, sparkling needles and thimbles, 
+colourful buttons and patches of material.  This is where the queen faerie 
+has been keeping her collection of "borrowed" trinkets and ornaments.  There 
+seems to be no order to the room, with each new addition being piled 
+randomly onto the almost toppling collection.  
+~
+RoomFlags no_mob~
+Sector inside~
+Exit southwest 39155
+EFlags door closed locked pickproof nopass~
+EKeyvnum 39299
+End
+
+
+#39171
+Name A Glade of Silver Birch Trees~
+Desc A canopy of silver leaves dance gently over the grassy path, as a wind 
+rustles through the silver birch trees which grace the edge of the path.  
+Patches of moss clump around the roots of the trees and brightly coloured 
+pebbles are sprinkled across the grass like a lolly scramble.  Up ahead, to 
+the south, the path leads into a forest of oak trees.  Glancing north, 
+colourful mushrooms grow in a ring.  
+~
+RoomFlags light~
+Sector forest~
+Exit north 39122
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 39147 spec_cast_mage
+M 39148 spec_cast_druid
+M 39151 spec_cast_druid
+M 39152 spec_cast_cleric
+M 39157 spec_cast_druid
+M 39158 spec_thief
+M 39166 spec_cast_mage
+S
+
+
+
+#RESETS2
+O 0 39141 -1 39120
+O 0 39124 -1 39121
+O 0 39126 -1 39122
+O 0 39127 -1 39123
+M 0 39151 1 39124 1
+E 0 39300 -1 light~
+E 0 39301 -1 torso~
+E 0 39302 -1 feet~
+E 0 39303 -1 sheathed~
+O 0 39128 -1 39124
+O 0 39129 -1 39125
+O 0 39130 -1 39126
+M 0 39159 1 39128 1
+E 0 39333 -1 torso~
+G 0 39121 -1
+E 0 39157 -1 hold~
+O 0 39133 -1 39128
+O 0 39136 -1 39131
+O 0 39137 -1 39132
+O 0 39138 -1 39133
+M 0 39158 1 39134 1
+E 0 39325 -1 sheathed~
+E 0 39324 -1 legs~
+E 0 39323 -1 torso~
+O 0 39139 -1 39134
+O 0 39140 -1 39135
+M 0 39121 1 39137 1
+M 0 39147 1 39137 1
+E 0 39247 -1 lear~
+E 0 39247 -1 rear~
+E 0 39244 -1 feet~
+E 0 39242 -1 torso~
+E 0 39240 -1 lfinger~
+E 0 39239 -1 light~
+E 0 39241 -1 neck1~
+E 0 39243 -1 lwrist~
+E 0 39245 -1 sheathed~
+O 0 39131 -1 39141
+M 0 39157 1 39141 1
+E 0 39322 -1 wielded~
+E 0 39321 -1 arms~
+E 0 39320 -1 legs~
+E 0 39319 -1 torso~
+E 0 39318 -1 neck1~
+O 0 39123 -1 39144
+M 0 39152 1 39145 1
+E 0 39306 -1 sheathed~
+E 0 39305 -1 lear~
+E 0 39305 -1 rear~
+E 0 39304 -1 torso~
+O 0 39132 -1 39145
+O 0 39143 -1 39146
+M 0 39149 1 39146 1
+E 0 39269 -1 torso~
+E 0 39264 -1 feet~
+G 0 39281 -1
+P 0 39294 50 39281 1
+P 0 39295 50 39281 1
+P 0 39296 50 39281 1
+P 0 39297 50 39281 1
+P 0 39298 50 39281 1
+M 0 39136 1 39150 1
+G 0 39174 -1
+G 0 39175 -1
+G 0 39176 -1
+G 0 39177 -1
+G 0 39178 -1
+E 0 39256 -1 torso~
+E 0 39254 -1 legs~
+O 0 39142 -1 39151
+M 0 39148 1 39151 1
+E 0 39256 -1 torso~
+E 0 39254 -1 legs~
+M 0 39146 1 39154 1
+G 0 39214 -1
+G 0 39215 -1
+G 0 39216 -1
+G 0 39217 -1
+G 0 39218 -1
+G 0 39219 -1
+G 0 39220 -1
+G 0 39221 -1
+G 0 39222 -1
+G 0 39223 -1
+G 0 39224 -1
+G 0 39225 -1
+G 0 39226 -1
+E 0 39266 -1 torso~
+E 0 39267 -1 feet~
+E 0 39268 -1 head~
+M 0 39122 1 39155 1
+M 0 39153 1 39155 1
+G 0 39299 -1
+M 0 39155 1 39155 1
+E 0 39312 -1 neck1~
+E 0 39311 -1 lwrist~
+E 0 39310 -1 feet~
+E 0 39309 -1 head~
+E 0 39308 -1 legs~
+E 0 39307 -1 about~
+M 0 39156 1 39155 1
+E 0 39313 -1 about~
+E 0 39314 -1 legs~
+E 0 39315 -1 feet~
+E 0 39316 -1 torso~
+E 0 39317 -1 sheathed~
+M 0 39166 1 39155 1
+E 0 39340 -1 hold~
+E 0 39337 -1 neck1~
+E 0 39336 -1 lfinger~
+E 0 39335 -1 light~
+E 0 39338 -1 torso~
+E 0 39339 -1 head~
+O 0 39152 -1 39155
+M 0 39123 1 39156 1
+O 0 39149 -1 39156
+O 0 39144 -1 39157
+O 0 39145 -1 39157
+M 0 39124 1 39157 1
+G 0 39182 -1
+G 0 39183 -1
+G 0 39184 -1
+G 0 39185 -1
+G 0 39186 -1
+G 0 39187 -1
+G 0 39188 -1
+G 0 39189 -1
+E 0 39269 -1 torso~
+E 0 39270 -1 lear~
+O 0 39146 -1 39158
+M 0 39125 1 39158 1
+G 0 39153 -1
+G 0 39166 -1
+G 0 39167 -1
+G 0 39168 -1
+G 0 39169 -1
+G 0 39170 -1
+G 0 39171 -1
+G 0 39172 -1
+G 0 39173 -1
+G 0 39179 -1
+E 0 39269 -1 torso~
+O 0 39147 -1 39159
+M 0 39126 1 39159 1
+G 0 39165 -1
+G 0 39162 -1
+G 0 39161 -1
+G 0 39160 -1
+G 0 39164 -1
+G 0 39163 -1
+E 0 39260 -1 torso~
+E 0 39254 -1 legs~
+G 0 39345 -1
+G 0 39346 -1
+M 0 39127 1 39160 1
+G 0 39159 -1
+G 0 39158 -1
+G 0 39157 -1
+G 0 39156 -1
+G 0 39155 -1
+G 0 39154 -1
+E 0 39261 -1 torso~
+E 0 39262 -1 legs~
+O 0 39148 -1 39161
+M 0 39128 1 39161 1
+G 0 39198 -1
+G 0 39199 -1
+G 0 39200 -1
+G 0 39201 -1
+G 0 39232 -1
+E 0 39259 -1 torso~
+E 0 39263 -1 head~
+G 0 39280 -1
+M 0 39129 1 39162 1
+G 0 39208 -1
+G 0 39209 -1
+G 0 39210 -1
+G 0 39211 -1
+G 0 39212 -1
+E 0 39262 -1 legs~
+E 0 39256 -1 torso~
+E 0 39264 -1 feet~
+O 0 39150 -1 39163
+M 0 39130 1 39163 1
+G 0 39180 -1
+G 0 39181 -1
+E 0 39265 -1 face~
+E 0 39259 -1 torso~
+G 0 39282 -1
+G 0 39344 -1
+M 0 39131 1 39164 1
+G 0 39192 -1
+G 0 39191 -1
+G 0 39193 -1
+G 0 39194 -1
+G 0 39227 -1
+G 0 39228 -1
+G 0 39229 -1
+G 0 39230 -1
+G 0 39231 -1
+E 0 39259 -1 torso~
+G 0 39271 -1
+M 0 39132 1 39165 1
+G 0 39190 -1
+G 0 39202 -1
+G 0 39203 -1
+G 0 39197 -1
+G 0 39196 -1
+G 0 39195 -1
+G 0 39213 -1
+G 0 39236 -1
+E 0 39262 -1 legs~
+E 0 39256 -1 torso~
+O 0 39151 -1 39166
+M 0 39133 1 39166 1
+G 0 39204 -1
+G 0 39205 -1
+G 0 39206 -1
+G 0 39207 -1
+G 0 39248 -1
+G 0 39249 -1
+G 0 39250 -1
+G 0 39251 -1
+G 0 39252 -1
+G 0 39253 -1
+E 0 39257 -1 torso~
+M 0 39134 1 39167 1
+G 0 39238 -1
+G 0 39235 -1
+G 0 39234 -1
+G 0 39233 -1
+G 0 39237 -1
+E 0 39258 -1 head~
+E 0 39259 -1 torso~
+M 0 39135 1 39168 1
+E 0 39254 -1 legs~
+E 0 39255 -1 torso~
+M 0 39142 200 39169 1
+M 0 39143 200 39169 1
+M 0 39141 200 39169 1
+M 0 39145 200 39169 1
+M 0 39140 200 39169 1
+M 0 39139 200 39169 1
+M 0 39137 200 39169 1
+M 0 39138 200 39169 1
+M 0 39144 200 39169 1
+O 0 39272 -1 39170
+O 0 39273 -1 39170
+O 0 39274 -1 39170
+O 0 39275 -1 39170
+O 0 39276 -1 39170
+O 0 39277 -1 39170
+O 0 39278 -1 39170
+O 0 39279 -1 39170
+M 0 39154 1 39170 1
+G 0 39299 -1
+O 0 39342 -1 39171
+S
+
+
+
+#SHOPS
+#39124
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39125
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39126
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39127
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39128
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39129
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39130
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39131
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39132
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39133
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39134
+buy_type clothing~
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39135
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39136
+profit_buy 110
+profit_sell 90
+close_hour 23
+END
+
+#39146
+profit_buy 110
+profit_sell 50
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#39169
+title trigger flask (aarislan quest)~
+code if hastoken $n 30518
+sayto $n Wonderful, we have holy water.
+say Now, to just add a touch of faerie dust, and a few words of magic.
+emote turns her back as she sprinkles glittering dust into the water, and quietly whispers 
+the words "alabesh, karek.. aaravan.. aarislan"
+mq3 pmote $n turns around, dips her fingers into the flask and sprinkles the magical dust over @.
+mob echoat $n You begin to feel lightheaded, and your body turns transparent and begins to float.
+mq5 mob echoat $n In a moment, you are swept up and find yourself in a new, and wonderful land.
+mob echoaround $n $N disappears in a whirl of faerie dust and is gone.
+mob oload 7165
+mob tgive 7165 $n 
+mob transfer $n 16050
+giggle
+endif
+~
+disabled false
+END
+
+#39168
+title trigger flowers (aarislan quest)~
+code if hastoken $n 7163
+giggle
+sayto $n Yes, every faerie is born of a flower!
+sayto $n That is why we are so beautiful!
+giggle
+sayto $n Alright, you have shown you know a little more about us, I will help you to get there.
+sayto $n But first, you will need to find the old ranger, who lives in the woods.
+sayto $n He lives near a crystal spring of water, which you must ask him to turn into holy water for you.
+mob oload 7164
+mob tgive 7164 $n
+endif
+~
+disabled false
+END
+
+#39167
+title trigger yes (aarislan quest)~
+code if hastoken $n 7162
+giggle
+sayto $n You would?
+sayto $n I did warn you, that you'd only ever be able to go there once.
+sayto $n But, if you really want to, you have to prove that you have a deep respect for faeries.
+sayto $n Can you tell me who are the mothers of faeries?
+giggle
+mob oload 7163
+mob tgive 7163 $n
+endif
+~
+disabled false
+END
+
+#39166
+title trigger daydream (aarislan quest)~
+code if hastoken $n 7161
+giggle
+sayto $n Yes, that's right.. they daydream, far too much..
+sayto $n And eventually, their very soul is taken to the land where daydreams are fulfilled.
+sayto $n But it is said that if you ever return from there, you can never get back.
+sayto $n Its a wonderful place though, many of my kind live there, making sure the daydreams come true.
+sayto $n Would you like to go there?
+mob oload 7162
+mob tgive 7162 $n
+endif
+~
+disabled false
+END
+
+#39165
+title trigger aarislan quest~
+code if hastoken $n 16084
+or hastoken $n 7165
+giggle
+sayto $n Your innocence is lost, you can no longer return to the land of Aarislan.
+giggle
+else
+sayto $n Aarislan?
+giggle
+sayto $n Yes, many children have disappeared, with the rumour being they have gone to the land of lost children.
+sayto $n Do you know why so many children have gone to that place?
+giggle
+mob oload 7161
+mob tgive 7161 $n
+endif
+ 
+~
+disabled false
+END
+
+#39164
+title queen uses her wand~
+code if !pos $i fight
+if !wears $i wand
+if carries $i wand
+mob silent drop wand
+mob purge wand
+mob oload 39340
+wear wand
+mob queue 1 zap
+mob queue 2 giggle
+break
+endif
+endif
+endif
+ 
+if !pos $i fight
+if !wears $i wand
+mob oload 39340
+wear wand
+mob queue 1 zap
+mob queue 2 beam
+break
+endif
+endif
+ 
+if !pos $i fight
+if wears $i wand
+if hastoken $i 21.39341
+rem wand
+mob silent drop wand
+mob purge wand
+emote frowns slightly at a Wand of a Thousand Wishes.
+mob queue 1 emote shakes a Wand of a Thousand Wishes slightly.
+mob queue 1 mob oload 39340
+mob queue 2 wear wand
+mob queue 2 zap
+mob queue 2 mob tjunk all.39341 self
+mob queue 2 mob oload 39341
+mob queue 3 laugh
+break
+endif
+endif
+endif
+ 
+if !pos $i fight
+if wears $i wand
+mob queue 1 zap
+mob queue 2 emote smiles happily.
+mob queue 2 mob oload 39341
+break
+endif
+endif
+ 
+~
+disabled false
+END
+
+#39163
+title use this!~
+code steal token quee
+~
+disabled false
+END
+
+#39162
+title queen can spell! fireball~
+code if pos $i fight
+emote gestures and a pretty fireball appears.
+mob cast 'fireball'
+mob cast 'fireball'
+~
+disabled false
+END
+
+#39161
+title dance is over, bard wanders.~
+code if room $i == 39155
+if !pos $i fight
+emote smiles happily.
+fly
+down
+open southeast
+southeast
+southeast
+emote fidgets a little and peers around her.
+if !pos $i fight
+mob queue 10 emote puts a reed flute to her lips and plays a lilting little practice scale.
+if !pos $i fight
+mob queue 18 emote clears her throat a little and smiles.
+if !pos $i fight
+mob queue 20 emote walks to a clear spot.
+mob queue 20 mob purge stool
+mob queue 20 mob oload 39121
+mob queue 20 drop stool
+mob queue 20 rest stool
+if !pos $i fight
+mob queue 29 emote waits a little for silence.
+mob queue 36 emote puts a reed flute to her lips and plays a beautifully uplifting tune.
+if !pos $i fight
+mob queue 45 emote pauses and takes a deep breath.
+mob queue 45 emote plays another little tune on a reed flute.
+if !pos $i fight
+mob queue 60 emote smiles politely.
+mob queue 61 stand
+mob queue 61 mob purge stool
+mob queue 61 emote gets a white spotted red toadstool stool.
+mob queue 62 curtsey
+mob queue 63 '[beaming] Thank you! My next performance is in an hour's time.
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+ 
+if room $i == 39156
+if !pos $i fight
+fly 
+down
+emote smiles happily.
+fly
+down
+open southeast
+southeast
+southeast
+emote fidgets a little and peers around her.
+if !pos $i fight
+mob queue 10 emote puts a reed flute to her lips and plays a lilting little practice scale.
+if !pos $i fight
+mob queue 18 emote clears her throat a little and smiles.
+if !pos $i fight
+mob queue 20 emote walks to a clear spot.
+mob queue 20 mob purge stool
+mob queue 20 mob oload 39121
+mob queue 20 drop stool
+mob queue 20 rest stool
+if !pos $i fight
+mob queue 29 emote waits a little for silence.
+mob queue 36 emote puts a reed flute to her lips and plays a beautifully uplifting tune.
+if !pos $i fight
+mob queue 45 emote pauses and takes a deep breath.
+mob queue 45 emote plays another little tune on a reed flute.
+if !pos $i fight
+mob queue 60 emote smiles politely.
+mob queue 61 stand
+mob queue 61 mob purge stool
+mob queue 61 emote gets a white spotted red toadstool stool.
+mob queue 62 curtsey
+mob queue 63 '[beaming] Thank you! My next performance is in an hour's time.
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+ 
+if room $i == 39137
+if !pos $i fight
+emote smiles happily.
+open southeast
+southeast
+southeast
+emote fidgets a little and peers around her.
+if !pos $i fight
+mob queue 10 emote puts a reed flute to her lips and plays a lilting little practice scale.
+if !pos $i fight
+mob queue 18 emote clears her throat a little and smiles.
+if !pos $i fight
+mob queue 20 emote walks to a clear spot.
+mob queue 20 mob purge stool
+mob queue 20 mob oload 39121
+mob queue 20 drop stool
+mob queue 20 rest stool
+if !pos $i fight
+mob queue 29 emote waits a little for silence.
+mob queue 36 emote puts a reed flute to her lips and plays a beautifully uplifting tune.
+if !pos $i fight
+mob queue 45 emote pauses and takes a deep breath.
+mob queue 45 emote plays another little tune on a reed flute.
+if !pos $i fight
+mob queue 60 emote smiles politely.
+mob queue 61 stand
+mob queue 61 mob purge stool
+mob queue 61 emote gets a white spotted red toadstool stool.
+mob queue 62 curtsey
+mob queue 63 '[beaming] Thank you! My next performance is in an hour's time.
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+~
+disabled false
+END
+
+#39160
+title dance is over, thief wanders.~
+code if room $i == 39155
+if !pos $i fight
+steal hole $r
+steal back $r
+giggle $r
+fly
+down
+open southwest
+southwest
+southwest
+wander
+endif
+endif
+ 
+if room $i == 39156
+if !pos $i fight
+fly 
+down
+steal hole $r
+steal back $r
+giggle $r
+fly
+down
+open southwest
+southwest
+southwest
+wander
+endif
+endif
+ 
+if room $i == 39137
+if !pos $i fight
+steal hole $r
+steal back $r
+giggle $r
+open southwest
+southwest
+southwest
+wander
+endif
+endif
+~
+disabled false
+END
+
+#39159
+title dance is over, warrior wanders.~
+code if room $i == 39155
+if !pos $i fight
+fly
+down
+open south
+south
+south
+south
+wander
+endif
+endif
+ 
+if room $i == 39156
+if !pos $i fight
+fly
+down
+down
+open south
+south
+south
+south
+wander
+endif
+endif
+ 
+if room $i == 39137
+if !pos $i fight
+open south
+south
+south
+south
+wander
+endif
+endif
+~
+disabled false
+END
+
+#39158
+title dance is over, cleric wanders.~
+code if room $i == 39155
+if !pos $i fight
+emote sprinkles some `#`?f`?a`?e`?r`?i`?e`^ dust all around.
+mob cast 'mass heal'
+mob cast 'mass heal'
+fly
+down
+open west
+west
+west
+west
+wander
+endif
+endif
+ 
+if room $i == 39156
+if !pos $i fight
+fly
+down
+emote sprinkles some `#`?f`?a`?e`?r`?i`?e`^ dust all around.
+mob cast 'mass heal'
+mob cast 'mass heal'
+down
+open west
+west
+west
+west
+wander
+endif
+endif
+ 
+if room $i == 39137
+if !pos $i fight
+emote sprinkles some `#`?f`?a`?e`?r`?i`?e`^ dust all around.
+mob cast 'mass heal'
+mob cast 'mass heal'
+open west
+west
+west
+west
+wander
+endif
+endif
+~
+disabled false
+END
+
+#39157
+title dance is over, ranger wanders.~
+code if room $i == 39155
+if !pos $i fight
+fly
+down
+mob purge chick
+mob mload 39145
+mob force chick follow ranger
+pat chick
+open east
+east
+east
+east
+wander
+endif
+endif
+ 
+if room $i == 39156
+if !pos $i fight
+fly
+down
+down
+mob purge chick
+mob mload 39145
+mob force chick follow ranger
+pat chick
+open east
+east
+east
+east
+wander
+endif
+endif
+ 
+if room $i == 39137
+if !pos $i fight
+mob purge chick
+mob mload 39145
+mob force chick follow ranger
+pat chick
+open east
+east
+east
+east
+wander
+endif
+endif
+~
+disabled false
+END
+
+#39156
+title dance is over, mage wanders.~
+code if room $i == 39155
+if !pos $i fight
+fly
+down
+open north
+north
+north
+north
+wander
+endif
+endif
+ 
+if room $i == 39156
+if !pos $i fight
+fly
+down
+down
+open north
+north
+north
+north
+wander
+endif
+endif
+ 
+if room $i == 39137
+if !pos $i fight
+open north
+north
+north
+north
+wander
+endif
+endif
+~
+disabled false
+END
+
+#39155
+title what a nasty sort!~
+code mob oload 39334
+mob tgive 39334 $n
+~
+disabled false
+END
+
+#39154
+title you killed the queen!~
+code if hastoken $n 39334
+sayto $n You look like the one that hurt our queen!
+mq1 frown $n
+end 
+endif
+~
+disabled false
+END
+
+#39153
+title queen has a throne!~
+code if players > 0
+if !pos $i fight
+rest throne
+endif
+endif
+~
+disabled false
+END
+
+#39152
+title who killed the faerie queen!~
+code if hastoken $n 39334
+frown $n
+mob echo $i vanishes from sight!
+wander
+end 
+endif
+~
+disabled false
+END
+
+#39151
+title bard plays every hour~
+code if !pos $i fight
+emote fidgets a little and peers around her.
+if !pos $i fight
+mob queue 10 emote puts a `#`greed`^ flute to her lips and plays a lilting little practice scale.
+if !pos $i fight
+mob queue 18 emote clears her throat a little and smiles.
+if !pos $i fight
+mob queue 20 emote walks to a clear spot.
+mob queue 20 mob junk stool
+mob queue 20 mob oload 39121
+mob queue 20 drop stool
+mob queue 20 rest stool
+if !pos $i fight
+mob queue 29 emote waits a little for silence.
+mob queue 36 emote puts a `#`greed`^ flute to her lips and plays a beautifully uplifting tune.
+if !pos $i fight
+mob queue 45 emote pauses and takes a deep breath.
+mob queue 45 emote plays another melodious tune on a `#`greed`^ flute.
+if !pos $i fight
+mob queue 60 emote smiles politely.
+mob queue 61 stand
+mob queue 61 mob silent get stool
+mob queue 61 emote gets a `#`Wwhite`^ spotted `#`Rred`^ toadstool stool.
+mob queue 62 curtsey
+mob queue 63 '[beaming] Thank you! My next performance is in an hour's time.
+endif
+endif
+endif
+endif
+endif
+endif
+endif
+~
+disabled false
+END
+
+#39150
+title mob opens the doors for the dance!~
+code mob silent open north
+mob silent open southwest
+mob silent open northwest
+mob silent open northeast
+mob silent open southeast
+mob silent open south
+mob silent open west
+mob silent open east
+~
+disabled false
+END
+
+#39149
+title time for the dance!~
+code * faeries meet at the throne room for the dance in the night! *
+ 
+if room $i == 39155
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39137
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39152
+open north
+north
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39151
+north
+open north
+north
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39139
+north
+north
+open north
+north
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39120
+east
+north
+north
+open north
+north
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39135
+east
+east
+north
+north
+open north
+north
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39134
+northeast
+open northeast
+northeast
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39133
+southeast
+northeast
+open northeast
+northeast
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39132
+east
+east
+open east
+east
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39131
+south
+east
+east
+open east
+east
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39130
+southeast
+open southeast
+southeast
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39129
+southwest
+southeast
+open southeast
+southeast
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39128
+west
+southwest
+southeast
+open southeast
+southeast
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39145
+south
+south
+south
+open south
+south
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39141
+west
+south
+south
+south
+open south
+south
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39126
+southeast
+southwest
+open southwest
+southwest
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39125
+southwest
+open southwest
+southwest
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39124
+northwest
+southwest
+open southwest
+southwest
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39123
+west
+west
+open west
+west
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39122
+north
+west
+west
+open west
+west
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39127
+northwest
+open northwest
+northwest
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39121
+northeast
+northwest
+open northwest
+northwest
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39144
+west
+north
+north
+open north
+north
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39136
+open northeast
+northeast
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39138
+east
+open east
+east
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39140
+open east
+east
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39142
+open southeast
+southeast
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39146
+south
+south
+open south
+south
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39147
+open south
+south
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39143
+open southwest
+southwest
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39148
+west
+open west
+west
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39149
+open west
+west
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+ 
+if room $i == 39153
+open northwest
+northwest
+fly
+up
+mob queue 3 curt
+dance $r
+mob queue 30 dance 2.faerie
+endif
+~
+disabled false
+END
+
+#39148
+title paint that carriage `#`Bblue`^ (bluebell)~
+code if hastoken $n 39331
+mob tremove 39331 $n
+mob tjunk all.39331 $i
+sayto $n Excellent, we have everything we need to make a nice `#`Bblue`^ paint for the queen's carriage.
+mq3 sayto $n As reward for your kindness towards the queen, on her behalf, please take this precious `#`Bblue`^ shard.
+mq4 mob oload 39332
+mq4 give shard $n
+mq6 sayto $n Many thanks, and good day to you.
+mq6 smile $n
+mq9 emote takes the `#`Bblue`^ items and begins to mix up a new coat of `#`Bblue`^ paint for the carriage.
+else
+sayto $n Hmm, that is a nice flower isn't it?
+mq2 give bluebell $n
+mq3 smile
+~
+disabled false
+END
+
+#39147
+title paint that carriage `#`Bblue`^ (balloon/bluebell)~
+code if hastoken $n 39330
+mob tremove 39330 $n
+mob tjunk all.39330 $i
+sayto $n Excellent, this will give it a nice shine.
+mq3 sayto $n Now, that last thing we need to add, is a `#`Bbluebell`^.
+mq3 say To really make it a fine coat of `#`Bblue`^ paint.
+mq3 mob oload 39331
+mq3 mob tgive 39331 $n
+mq5 smile $n
+else
+sayto $n Hmm.. a blue balloon.. 
+sayto $n That's very kind of you, but why don't you keep it?
+mq3 give balloon $n
+endif
+~
+disabled false
+END
+
+#39146
+title paint that carriage `#`Bblue`^ (watermelon/balloon)~
+code if hastoken $n 39329
+mob tremove 39329 $n
+mob tjunk all.39329 $i
+sayto $n Perfect, this will make the paint have a lovely smooth texture.
+mq3 sayto $n The next thing to add colour to this paint, is a `#`Bblue`^ balloon.`^
+mq6 sayto $n Yes, one of those will do just the trick.
+mq6 mob oload 39330
+mq6 mob tgive 39330 $n
+else
+sayto $n Hmmm, watermelon.. thank you.
+eat watermelon
+endif
+~
+disabled false
+END
+
+#39145
+title paint that carriage `#`Bblue`^ (ribbon/watermelon)~
+code if hastoken $n 39328
+mob tremove 39328 $n
+mob tjunk all.39328 $i
+sayto $n Excellent, this will make it a nice thick coat of paint.
+mq3 sayto $n Now, the next thing to add to this paint, is a `#`Bblue`^ watermelon.
+mq5 sayto $n I'll start mixing these things, while you find one.
+mq5 mob oload 39329
+mq5 mob tgive 39329 $n
+else
+sayto $n A blue ribbon?
+smirk
+give ribbon $n
+~
+disabled false
+END
+
+#39144
+title paint that carriage `#`Bblue`^ (blueberry/ribbon)~
+code if hastoken $n 39327
+mob tremove 39327 $n
+mob tjunk all.39327 $i
+sayto $n Excellent, this is nice and ripe too, it will make it a lovely shade of blue.
+mq3 sayto $n Next, I'll need a `#`Bblue`^ ribbon to add to the paint.
+mq3 mob oload 39328
+mq3 mob tgive 39328 $n
+mq6 smile $n
+mq6 sayto $n Could you find me one of those?
+else
+sayto $n Thank you, I was feeling a little peckish.
+eat blueberry
+endif
+~
+disabled false
+END
+
+#39143
+title paint that carriage `#`Bblue`^ (blueberry)~
+code sayto $n Oh yes, we really must put a new coat of `#`Bblue`^ paint on the queen's carriage.
+mq3 sayto $n Well, we'll need a few items to mix the paint with.. let me see..
+mq6 sayto $n A `#`Bblueberry`^ would make the paint a nice blue.
+mq9 sayto $n Could you bring me a `#`Bblueberry`^ for the paint?
+mq9 smile $n
+mq9 mob oload 39327
+mq9 mob tgive 39327 $n
+~
+disabled false
+END
+
+#39142
+title lilila gives treasure to the queen~
+code mob dequeueall
+mq3 mob echo The queen rummages through the backpack pulling out a crystal diamond.
+mq6 mob echo The queen says '`#`M(faerie)`^ This is lovely, Lilila. You never cease to amaze me!
+mq7 mob echo The queen must like Lilila a great deal to beam at her so broadly.
+mq9 mob echo The nondescript faerie curtseys with a proud smile on her face, and flutters away.
+mq13 mob echo When the queen thinks no one is looking, she touches the diamond on her throne, opening a tiny door to her lair.
+mq13 mob echo She hands the brooch to her nearest attendant to store away, with her other treasures.
+mq17 mob echo The faerie queen straightens her crown, and smiles innocently.
+ 
+~
+disabled false
+END
+
+#39141
+title pellago gives treasure to the queen~
+code mob dequeueall
+mq3 mob echo The queen smiles at the faerie, admiring the new treasure.
+mq6 mob echo The queen says '`#`M(faerie)`^ Oh, what a pretty brooch! You have done very well, Pellago!'
+mq9 mob echo The tiny faerie blushes, and bows quickly, hurrying off.
+mq12 mob echo When the queen thinks no one is looking, she touches the diamond on her throne, opening a tiny door to her lair.
+mq12 mob echo She hands the brooch to her nearest attendant to store away, with her other treasures.
+mq17 mob echo The faerie queen straightens her crown, and smiles innocently.
+ 
+~
+disabled false
+END
+
+#39140
+title lilila borrows stuff for the queen~
+code if players > 0
+mob remember $r
+steal hole $q
+steal back $q
+giggle $q
+mob forget
+mob wander
+else
+break
+endif
+~
+disabled false
+END
+
+#39139
+title lights on!~
+code mob zecho `#`BThe mushroom ring `Wlights up`B, as several brilliantly lit `Yfireflies`B begin to fly about in the dusky-night sky.`^
+ 
+~
+disabled false
+END
+
+#39138
+title gather up the treasure!~
+code if rand 50
+mob echo A tiny faerie with crystalline wings arrives, carrying a "borrowed" trinket for the queen.
+mob call 39141 $i
+else
+ 
+mob echo A nondescript female faerie arrives, carrying a backpack of treasures for the queen.
+mob call 39142 $i
+ 
+endif
+~
+disabled false
+END
+
+#39137
+title i want a pet!~
+code mob queue 3 enter toad
+mob queue 4 mob mload 39145
+mob queue 4 mob force chick follow alila 
+mob queue 5 beam
+mob queue 6 pat chick
+mob queue 7 west
+~
+disabled false
+END
+
+#39136
+title queued to close the door~
+code if players < 1
+mob silent close southwest
+mob silent lock southwest
+endif
+~
+disabled false
+END
+
+#39135
+title player exits queen's lair~
+code mob letpass
+mq1 mob call 39136
+~
+disabled false
+END
+
+#39134
+title enter the queen's secret lair~
+code mob echoat $n `#`WAs you touch the diamond, a tiny door opens where a gem was painted on the wall.`^
+mob echoaround $n `#`WAs $n touches the diamond, a tiny door opens where a gem was painted on the wall.`^
+ 
+mob silent unlock northeast
+mob silent open northeast
+ 
+~
+disabled false
+END
+
+#39133
+title quest for magic tablecloth (appleseed)~
+code sayto $n The magic tablecloth.. ahh, yes, I do believe I know how to make one...
+mq3 sayto $n If I could just remember the ingredients..
+mq5 sayto $n You'll need to bring me a few things to make it with..
+mq8 sayto $n First.. ah, I remember now.. first, an apple seed..
+mq8 mob oload 39285
+mq8 mob tgive 39285 $n
+mq9 smile
+~
+disabled false
+END
+
+#39132
+title quest for magic tablecloth (honeycomb)~
+code if hastoken $n 39293
+mob tremove 39293 $n
+mob tjunk all.39293 $i
+sayto $n Wonderful, that's everything I need.
+mq4 mob echo She puts all the ingredients together and sprinkles `#`Wfa`Me`Sr`Wie du`Bs`Wt`^ over them, and as she does so, a `#`Rm`ra`wg`Wi`rc`Ra`rl `wt`Wa`rb`Rl`re`wc`Wl`ro`Rt`rh`^ forms, filled with delicious foods.
+mq10 sayto $n Here you are then, a magic tablecloth, to always keep you well fed.
+mq12 give tablecloth $n
+mq13 beam $n
+~
+disabled false
+END
+
+#39131
+title quest for magic tablecloth (dew/honeycomb)~
+code if hastoken $n 39292
+mob tremove 39292 $n
+mob tjunk all.39292 $i
+sayto $n Excellent, they're not easy to collect are they?
+mq2 chuckle
+mq4 sayto $n Now, the last thing I need to make this magic tablecloth, is a honeycomb.
+mq6 sayto $n As soon as you bring me one of those, I can finish this tablecloth, and it will be all yours.
+mq6 smile $n
+mq6 mob oload 39293
+mq6 mob tgive 39293 $n
+end
+sayto $n That's very clever of you to catch a drop of dew, but what would I do with it?
+ 
+mq2 chuckle
+mq4 give dew $n
+ 
+~
+disabled false
+END
+
+#39130
+title quest for magic tablecloth (faeriedust/dew)~
+code if hastoken $n 39291
+mob tremove 39291 $n
+mob tjunk all.39291 $i
+sayto $n Ah yes, all magic needs a little sprinkling of faerie dust.
+mq2 sayto $n Next, I need a drop of dew.
+mq4 smile $n
+mq6 sayto $n When you've found one, bring it back before it melts, and I'll add it to the mixture.
+mq6 mob oload 39292
+mq6 mob tgive 39292 $n
+end
+emote looks at the faerie dust.
+sayto $n Thank you, but I think you'll find there's a faerie dust shop that would sell this.
+sayto $n I wouldn't want to take away their business.
+mq2 chuckle
+mq3 give dust $n
+~
+disabled false
+END
+
+#39129
+title quest for magic tablecloth (grainofwheat/faeriedust)~
+code if hastoken $n 39290
+mob tremove 39290 $n
+mob tjunk all.39290 $i
+smile $n
+sayto $n Perfect.. now, [resting her chin on her hand] what else do I need?
+mq4 sayto $n Ah yes, a sprinkle of faerie dust..
+mq4 mob oload 39291
+mq4 mob tgive 39291 $n
+mq6 emote nestles softly on the ground, ready to tell another story.
+end
+emote holds the grain of wheat curiously.
+sayto $n A loaf of bread might be useful, but a grain of wheat? 
+mq2 chuckle
+mq3 give wheat $n
+~
+disabled false
+END
+
+#39128
+title quest for magic tablecloth (appleseed/grain of wheat)~
+code if hastoken $n 39285
+mob tremove 39285 $n
+mob tjunk all.39285 $i
+smile $n
+mq2 sayto $n Excellent, now..
+mq3 sayto $n I will also need a grain of wheat.
+mq5 sayto $n I'll just be here, sharing stories, when you've found one.
+mq5 mob oload 39290
+mq5 mob tgive 39290 $n
+mq7 smile
+end
+pmote $n looks at @ puzzled.
+sayto $n An apple seed?
+mq2 sayto $n I'm a storyteller, what need have I for apple seeds?
+mq2 chuckle
+mq3 give seed $n
+~
+disabled false
+END
+
+#39127
+title quest for magic tablecloth (start)~
+code beam $n
+mq1 sayto $n You're looking for the magic tablecloth?
+mq3 smile
+mq5 sayto $n Yes.. as a matter of fact I have one of those somewhere..
+mq6 emote rummages through the piles of trinkets.
+mq10 sayto $n Hmm.. well, I did have one..
+mq13 sayto $n You might have to see the Corellie, our storyteller.. I'm sure she'd know how to make one, since she's been here long before I have.
+mq13 smile $n
+~
+disabled false
+END
+
+#39126
+title a drop of dew melts~
+code if room $i == 39146
+mob purge dew
+mob echo A drop of dew melts in the sun.
+else
+mob purge leaf
+mob oload 39287
+mob silent drop leaf
+mob purge dew
+mob echo A drop of dew melts in the sun.
+endif
+~
+disabled false
+END
+
+#39125
+title a drop of dew forms~
+code if room $i == 39146
+mob oload 39288
+mob silent put dew leaf
+mob echo `#`WA drop of dew forms on the mossy grass.`^
+else
+mob purge leaf
+mob oload 39289
+mob silent drop leaf
+mob oload 39288
+mob silent put dew leaf
+mob echo `#`WA drop of dew forms on a leaf.`^
+endif
+~
+disabled false
+END
+
+#39124
+title my kingdom for a light!~
+code mob echo A glittering ball of light flickers and goes out.
+emote pouts a little.
+mob queue 2 emote twiddles her thumbs and a glittering ball of light appears.
+mob queue 3 emote gets a glittering ball of light.
+mob queue 3 mob silent remove glittering
+mob queue 3 mob silent purge glittering
+mob queue 3 mob oload 39239
+mob queue 4 wear glittering
+~
+disabled false
+END
+
+#39123
+title faerie spells!~
+code if rand 50
+emote $n throws some `#`mpink`^ dust at @.
+mob cast 'weaken' $n
+mob cast 'weaken' $n
+mob cast 'weaken' $n
+else
+      say damned!! you've won!
+      mob oload 5034
+      give coin $n
+   endifemote $n throws some `#`mpink`^ dust at @.
+mob cast 'weaken' $n
+~
+disabled false
+END
+
+#39122
+title fly 2~
+code if affected $n fly
+mob letpass
+else
+mob echoat $n You peer down the hole and decide, Nah.
+mob echoaround $n $N crouches down and peers into the hole on the floor.  
+endif
+~
+disabled false
+END
+
+#39121
+title fly~
+code if affected $n fly
+mob letpass
+else
+mob echoat $n You need to fly to reach the high ceiling.
+mob echoaround $n $N attempts to launch into the air and falls flat.
+endif 
+~
+disabled false
+END
+
+#39120
+title doors!~
+code if racesize $n <= 1
+mob transfer $n 39158
+else
+mob echoat $n You try to squeeze through the doorway but fail.
+mob echoaround $n $N tries to squeeze through a doorway in the stalk.
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

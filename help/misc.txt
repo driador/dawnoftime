@@ -1,0 +1,502 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword WHAT-IS-THE-MEANING-OF-LIFE~
+title What is the meaning of life?~
+level 1
+helpflags hide_keywords~
+category undefined~
+text To mud, to mud, that is the meaning of life.
+ 
+As defined by the Hitch Hikers Guide To The Galaxy
+          42
+~
+END
+
+keyword WAR-CRY~
+level 92
+category undefined~
+spell_name war cry~
+text When in battle, a war cry will raise the spirits of your allies, and might 
+turn the tides of battle if things are not going so well. When a war cry is 
+shouted in battle, the deafening chant causes damage to the victim.`+
+~
+END
+
+keyword DEAFENING-WAIL DEATH-WAIL~
+level 92
+category undefined~
+text `=lSyntax: `=?cast 'deafening wail' <target>`+
+`=?        cast 'death wail' <target>`+
+`+
+These spells invokes a shreaking scream mimicing that of the spectre, aimed 
+directly at an unlucky victim.  This unnerving wail can cause tremendous 
+damage, not to mention loss of hearing over a lengthy period of exposure.  
+Although the name suggest death, and would imply more shreaking power, the 
+death wail requires less concentration to cast, which means it's not as 
+powerful in force, but can be invoked much quicker.`+
+`+
+`GREALMS: `=?`=_evocation `=_essence 
+~
+END
+
+keyword NOTE-COPYTO~
+level 92
+category undefined~
+text `=lSyntax: `=?<board> copyto <#> <newboard>`+
+`+
+Copyto allows you to transfer a message from one board to another board, 
+i.e. note->inote,  change->news, etc.  `+
+`+
+Board is idea, note, etc, # if the number of the note, and newboard is where 
+you want it copied to.   
+~
+END
+
+keyword ALIGNMENT-CHANGE ALIGN-CHANGE~
+level 1
+helpflags mud_specific mud_should_customize~
+category undefined~
+see_also ALIGNMENT-CHANGE-POLICY~
+text At some point in time, a character may want or need and alignment change.  
+There can be several reasons for this.  Something might happen in the 
+characters life that changes his view of the world, the player might decide 
+that he is having a hard time with his chosen alignment, or the imms and 
+nobles might determine that a character is not playing by the rules of their 
+chosen alignment.  `+
+`+
+Although players may change alignment, it is not something that should be 
+approached lightly, since there are serious consequences.  When a character 
+changes alignment, he does more than just change his attitudes.  He is 
+altering his perception of the world and his relationship to it.  Much of 
+what he learned previously was flavored by his alignment.  When the 
+philosophical foundations of his life change, the character discovers that 
+he must relearn things he thought he knew.  Because of these reasons, any 
+alignment changes that occur will result in a small experience reduction.  
+This experience loss is not to penalize the character or saying that the 
+player has done something bad or not role-playing properly, but is the 
+result of the characters changed perception of the world.  The amount of 
+experience lost will be determined by the immortals and is dependent on how 
+drastic the alignment change is.  There will be no exceptions to this rule.  
+`+
+`+
+If you think that you want an alignment change, you will be informed of the 
+amount of experience that will be lost before the change and will have the 
+option of proceeding or not.  If you decide not to change your alignment, 
+you must continue to role-play your original alignment according to the 
+guidelines found in the corresponding help files.  `+
+`+
+If you want to request an alignment change for your character, you must:
+ 
+- Write the story behind it. That means the IC reasons behind the change. 
+These reasons must be sent to the histories mailing list (help `=_email), 
+and must have at least around `#`B200 words`^.  If your character is 
+changing, then he probably has a nice story behind that change.
+- Write a note the roleplay council `#`M(NOTE TO RP)`^, telling us you 
+already sent the story to the histories e-mail.  In your note, include 
+your current alignment and the new alignment that you would like to have.  
+ 
+An immortal will get back to you letting you know what the cost of the 
+change will be.
+~
+END
+
+keyword ALIGNMENT-CHANGE-POLICY~
+level 92
+category undefined~
+text These are the guidelines for alignment changes.  If a character requests an 
+alignment change and has a valid IC reason for doing so, there will be an xp 
+deduction of 50xp per point of change.  If the character does not have a 
+valid reason or if the alignment change is deemed necessary by the 
+imms/nobles because of the alignment being played improperly, there will be 
+an xp deduction of 100xp per point.  In the case that the character is not 
+playing their alignment properly, they have the choice of attempting to 
+correct the problem or taking the alignment change.  If a reasonable amount 
+of time passes and they still are not playing the alignment properly, a 
+change will be necessary.  For example, if a character has an alignment of 
++3/+3 and request it to be changed to +1/+2 due to a valid IC reason 
+(something happened to their char, etc.)  , they would receive a 150xp 
+deduction for the alignment change.  The xp reduction is the same regardless 
+of level.  A high level person has held their beliefs longer therefore the 
+effect on them is far more severe.  It is the `#`MROLEPLAYING`^ counsils 
+responsibility to approve and initiate any alignment change and experience 
+deduction.  
+~
+END
+
+keyword THROW~
+category undefined~
+text `#`=lSyntax:`^ throw <object> <direction>
+ 
+THROW throws an object that is in your inventory in the specified 
+direction.  It will land in the next room.
+~
+END
+
+keyword GRAB~
+category undefined~
+see_also SUBDUE~
+text `#`=lSyntax:`^ grab <object> <character>
+`#`=lSyntax:`^ grab <amount> gold|silver <character>
+ 
+GRAB takes an item from the target character.  The character can be 
+either a mob or player.  The item may be in their inventory or 
+equipped.  You may grab from a character if they are subdued or 
+sleeping.  There is a greater chance of success if the character is 
+subdued or sleeping because of a sleep spell.  You are likely to wake 
+up the character if they are in natural sleep.  This command does not 
+currently work if the target character is blind.  If you are grabbing 
+gold or silver, you must specify the amount that you wish to grab.
+ 
+~
+END
+
+keyword NAME-POLICY POLICY-NAME~
+helpflags hide_keywords~
+category undefined~
+text Here are the things to keep in mind when naming your character:
+- Avoid playing as a character you already have on another game (including 
+  Dawn1.1). This is a new world and your character should have a new beginning.
+- Swear words in any language are not allowed.
+- Religious names of any Earthly religion are not allowed.
+- Be creative. Do not give your character the name of another character you
+  like in a fantasy book.
+- Do not give your char a descriptive name such as CoolGuy, SexyJane, 
+  WeaponMaster or GreatFighter.
+- Do not put nouns, adjectives or adverbs. If a word has a meaning, keep it 
+  off your name. Examples: Slasher, TheShadow, RedDrac, Bloody.
+- Do not put titles in your name such as SirCrosash or LadyElbriana
+- If you want to play as a character whose name is unknown and who is known 
+  only through a nickname, name your character after the nickname. This 
+  will prevent people from ever knowing your true name the first time they 
+  see you.
+- Do not try to get around these rules by naming yourself incorrectly and 
+  just changing some letters, like Dchadow or Kreizie.
+- The immortal staff reserves the right to change your name if it is 
+  disrespectful, in bad role-playing form, or in violation of any of the 
+  above rules.
+~
+END
+
+keyword LONG-EXAMPLE~
+category undefined~
+see_also RP SHORT NAME DESCRIPTION-EDITOR~
+text The following is an example of a good long description:
+ 
+You see a large male draconian, with pale colored scales cresting
+along his body.  Each scale shimmers in dull reflection of the light, and
+collectively form a tough layer of protection.  An intricate pattern
+formed by the scales appears to swirl as he moves, giving the impression
+of slithering rather than walking.  The hard bone points on the wings of
+this draconian rise arrogantly above his broad shoulders.  This,
+combined with sharp claws at the end of each sinewed arm, makes for a
+ghastly first appearance.  A hard bone, about the length of a finger,
+extends from the center of his forehead.  Slightly below it is another
+shorter bone, and below that a small lump.  This triage of horns does
+little to detract from the look of pure hatred radiating from solid gray
+eyes that you can see when he is awake.  A set of thin lips retract to
+show a row of razor sharp, beige colored teeth.
+ 
+~
+END
+
+keyword SHARP VORPAL~
+level 1
+category undefined~
+see_also 'RUNIC BLADE'~
+text The SHARP and VORPAL flags will increase the amount of damage that a weapon 
+does.  While attacking the SHARP and VORPAL flags will multiply the amount of 
+damage that occurs at random intervals .  SHARP will happen more frequently 
+than VORPAL, but vorpal does more damage than sharp. 
+ 
+~
+END
+
+keyword SAYTO~
+level 1
+category undefined~
+see_also SAY~
+text `#`=lSyntax: `^sayto <character> <message>
+`#`=lSyntax: `^say ><character> <message>
+ 
+This allows you to speak to an individual character (player or mob).  The 
+message will be seen by everyone in the current room, but it will appear as 
+though you are addressing that person.
+ 
+~
+END
+
+keyword MUDSTATS~
+level 1
+category undefined~
+text `#`=lSyntax: mudstats`^
+ 
+This will display general information about Dawn of Time including the 
+number of rooms/mobs/objects, server, and reboot information.
+~
+END
+
+keyword COUNCIL SUPPORT CODE LAW~
+level 1
+category olc:aedit~
+text The immortal Councils exist to make the many tasks of immortals much easier 
+by giving specific immortals control over different areas of 
+responsibility.  There are 6 immortal Councils.  They are listed below 
+along with their corresponding duties.
+ 
+`#`YBalance`^
+The Balance Council is in charge of maintaining game balance and ensuring 
+fairness for all players.  Please contact Balance for issues such as an 
+item being too powerful or not powerful enough.
+ 
+`BCode`^
+The Code Council is in charge of adding new and exciting changes to the 
+code as well as fixing any bugs that might exist.  Please contact Code for 
+issues such as suspecting a bug with a new command.
+ 
+`RLaw`^
+The Law Council is in charge of enforcing the rules and laws.  This 
+includes keeping an eye out for player cheating and making sure pkills are 
+valid.  Please contact Law for issues such as reporting a player who is 
+possibly cheating.
+ 
+`WMythos`^
+The Mythos Council is in charge of Story & Background infomation, This 
+includes adding new tales, fixing typos and problems found, 
+ 
+`CRealm`^
+The Realm Council is in charge of area development and management.  This 
+includes setting up and supervising builders using OLC.  Please contact 
+Realm for issues such as getting set up for building via OLC.
+ 
+`MRoleplaying`^
+The Roleplaying Council is in charge of questing and roleplaying affairs.  
+This includes developing plots and mob interaction with players.  Please 
+contact Roleplaying for issues such as requesting a notice to be posted on 
+the town message board.
+ 
+`GSupport`^
+The Support Council is in charge of assisting players.  This includes 
+overseeing letgains, descriptions, help files, newbie support, and clans.  
+Please contact Support for issues such as reporting a help file that is 
+missing or inaccurate.
+ 
+If you have an issue that needs to be brought to the immortal staff, please 
+address it to the appropriate Council if one is fitting.  If one doesn't 
+stand out as being appropriate, either ask which should be used or address 
+any/all immortals.  If you wish to write a note to a particular Council, 
+just include the Council name in the to line.  As an example, '`bNote to 
+Roleplaying`^' will send the note to any immortal that is on the 
+Roleplaying Council.  Type '`bWIZLIST`^' if you wish to see which immortals 
+are on each Council.
+~
+END
+
+keyword ROLEPLAYING RP RPG RPS ROLEPLAYING-SCORE~
+level 1
+category undefined~
+text `#`CRedirection help file.`^
+ 
+`=lType:`^  help COUNCIL
+       For help about the immortal Council of Roleplaying.
+ 
+`=lType:`^  help ROLE-PLAYING
+       For information about roleplaying in Dawn of Time.
+ 
+`=lType:`^  help AUTO-XP
+       For information about the roleplaying score and auto experience.
+~
+END
+
+keyword BALANCE~
+level 1
+category undefined~
+text `#`CRedirection help file.
+ 
+`=lType:`^  help COUNCIL
+       For help about the immortal Council of Balance.
+ 
+`=lType:`^  help BANK
+       For information about banks and the balance parameter.
+~
+END
+
+keyword NETSEX NET-SEX SEX NETSEX-POLICY POLICY-NETSEX RAPE SEXUAL HARASSMENT~
+level 1
+category undefined~
+see_also RULES~
+text This Mud is a roleplaying MUD, but this does not include the roleplaying 
+of NETSEX or of RAPING another with or without their concent.  If you are 
+interested in NETSEX or roleplaying out raping someone there are plenty of 
+other resources on the internet at your disposal.  This includes roleplaying
+having sex or raping a NPC.
+ 
+NETSEX means using graphic descriptions of parts and feelings to portray 
+a sexual encounter.  RAPE defined, well got get a dictionary... it is 
+disappointing that a help file like this needs to exist.
+ 
+Roleplaying out a courtship is fine, but the roleplaying of a sexual encounter
+is not appropriate and is classified as NETSEX due to the gray line of
+what some people find offensive or graphic.  Breaking this rule can result 
+in deletion or worse.  
+ 
+It has been asked what nature of sexual relationships are allowed, the 
+answer to that is that it is not the goal of dawn to be politically 
+correct when it comes to the issue of sexual rights.  While we acknowledge
+that in real life that all people are different, this is a game that is
+available for the enjoyment of all, and therefore anything of a sexual
+nature that is controversial or would offend is not appropriate.
+ 
+Punishment for NETSEX and/or RAPE ranges from a warning to deletion and a 
+permanant siteban - no warnings necessary either - so don't be surprised. 
+ 
+Sexual Harassment on this Mud is not tolerated in any way either. 
+It is not acceptable nor will it ever be.
+ 
+Sexual Harassment is:
+ 
+1) Using sexual language to someone that doesn't wish to have you
+     speaking to them, in that way.
+2) Using any sexual emotes without permission to do so. (french, fondle, etc, 
+   this does not mean things like flirt or stare)
+3) Stalking players with sexual undertones to the style as compared to 
+   shadowing someone to pkill them.
+ 
+Please people lets not do anything here to someone that we wouldn't do in 
+Real Life. As far as i know Frenching and Fondling someone you don't know is 
+not acceptable behavior in any world. Punishment for Harassment ranges from 
+a warning to deletion & permanant siteban - no warnings necessary either.
+so don't be surprised. 
+   
+If you have been Sexually Harassed Please do the following:
+1) Ask the person to stop.
+2) Leave the room the person is in. They can't emote to you if you are not 
+   there.
+3) Tell someone - or discuss it with an immortal, ask on ooc for one if you 
+   cant see any on the who list.  Perhaps if your asking them to stop didn't
+   stop it, someone else asking will let
+   them know you are serious.
+4) Tell an immortal what is going on, and *always* write a note to immortal 
+   so we know who is doing these things.
+ 
+If anyone has the need for clarification of any of these rules, write a note 
+to the admin... A common saying applies to all the rules on dawn, and that 
+is to read "spirit of the law" not the "letter of the law".  If it might 
+offend then it is most likely not appropriate.
+ 
+~
+END
+
+keyword PUNISHMENT-TABLE~
+level 98
+category undefined~
+text .
+ 
+Pkills
+------
+ 
+`#`c1st.`^ -500 moot
+`#`c2nd.`^ -5,000 moot
+`#`c3rd.`^ 1 week in 299
+`#`c4th.`^ char deletion
+`#`c5th.`^ month ban (this would be with another char, of course)
+`#`c6th.`^ permban
+ 
+Multilogging    
+------------
+ 
+`#`c1st.`^ chat in 299 (shared stuff removed, if the case)
+`#`c2nd.`^ -500 moot
+`#`c3rd.`^ both chars stay one week in 299
+`#`c4th.`^ deletion of lower level char involved
+`#`c5th.`^ deletion of higher level char involved
+`#`c6th.`^ month ban
+`#`c7th.`^ permban
+ 
+Nochannels
+----------
+ 
+`#`c1st.`^ nochan for 1 or 2 days
+`#`c2nd.`^ nochan for 1 week
+`#`c3rd.`^ nochan for 2 weeks
+`#`c4th.`^ nochan for 1 month
+`#`c5th.`^ permnochan
+~
+END
+
+keyword OOC-POLICY~
+level 1
+category undefined~
+text OOC channel etiquette on dawn`+
+`+
+Please observe the following DO NOT's for use on the OOC channel:`+
+`+
+`Y*`=? Broadcast the level/stats etc of your character`+
+`+
+`Y*`=? Swear in any language`+
+`+
+`Y*`=? Ask for immortals, write them a note`+
+`+
+`Y*`=? Argue in a heated fashion or call other players names`+
+`+
+`Y*`=? Flood/spam or use full CAPS text, it is considered yelling`+
+`+
+`Y*`=? Give away the anything 'in character' including location of your 
+character, asking where a certain area is or if someone could wake your 
+character up`+
+`+
+`Y*`=? Complain about the topic, if you do not wish to hear the current topic on 
+the channel turn the channel off by typing `cOOC`=?`+
+ 
+~
+END
+
+keyword QUOTE-OF-THE-YEAR QUOTE~
+level 98
+category undefined~
+text . 
+ And you can tell that to the priest!
+ -Herald
+ 
+ Does Unix use C?
+ -Alexei
+ 
+ If I have to, I'll walk down to hell, and pull your ass out.
+ -Mnnalis
+ 
+ Genjuro "you no see me, i in neenja mode" - Best Short of the Year
+ - Szordrin
+ 
+ Boy are my lips going to be chapped in the morning.
+ -Pwint
+ 
+ GREAT who in the WORLD stole my hole?.... muttermutter
+ -Polgara on OOC
+ 
+I am only rude to those who deserve it
+-Lysdexia (who else?)
+ 
+My "little" kit is attacking my pringles
+- Ylerin
+ 
+Grrr, now he is attacking my milkshake
+- Ylerin
+ 
+I thought I compiled, but I uploaded.
+- Rhuarc
+ 
+Kerenos[ to quote: Ellyllon - Dainty fairies who wear fine 
+diaphinous garments, the Ellyllon dance in the forest by 
+day among the velvet mosses and toadstools that grow 
+between tree roots. :)
+Tibault[ Sounds a bit like imi
+ 
+<Lahna OOC>: 'FreeBSD, and even RedHat are better then linux'
+~
+END
+
+EOF~
+#$

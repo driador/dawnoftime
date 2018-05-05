@@ -1,0 +1,75 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword OLCAEDIT-LOCK~
+level 1
+helpflags builder wordwrapped~
+category olc:aedit~
+see_also OLCAEDIT-USE-BUILDRESTRICTS OLCAEDIT-RESTRICT~
+text `=lSyntax: `=CLock`+
+`=lSecurity: `=?9`+
+`+
+`=?This command is a security 9 command when in olc. It can be used with in 
+AEDIT. What it does is it locks an area completely from being modified. If 
+for example the area is set to security 6 then everyone with security 6 and 
+under even if on the builder's list cannot modify the area in any shape, 
+size, or form.`+
+
+~
+END
+
+keyword OLCAEDIT-USE-BUILDRESTRICTS~
+level 92
+helpflags wordwrapped~
+category olc:aedit~
+text `=lSyntax: `=Cuse-buildrestricts`+
+`=lSecurity: `=?9`+
+`+
+ This option can be used while in AEDIT mode in OLC. What it does is when 
+its enabled it sets the build-restricts on the area. Whomever is set on the 
+Build-restricts will have access to the certain area they are listed under 
+in builder restricts. If someone is listed under the Builder restricts even 
+if they have security 1 they can access the field they are assigned too. 
+Unless a Lock is put on the area and the security parameters is higher than 
+the person listed in the Builder restricts files.`+
+
+~
+END
+
+keyword OLCAEDIT-RESTRICT~
+level 92
+category undefined~
+see_also OLCAEDIT-USE-BUILDRESTRICTS OLCAEDIT-LOCK~
+text .. 
+`=lSyntax: `cRestrict
+`=lSecurity: `c9
+ 
+When use_build is activated this parameter of settings activate as well. Fairly simple to understand the restrict fields allow builders in only certain fields of the area. When setting the use_build. Below is a list of the Restrict Options and a short definition of what they do.
+ 
+`CALL: `cGives Player/players/all access to every section in the area.
+`CAREA: `cGives Player/players/all access to area file.
+`CExits: `cGives Player/players/all access to linking rooms.
+`CMobprogs: `cGives Player/players/all access to creating/adding mprogs.
+`CMobs: `cGives Player/players/all access to creating mobiles.
+`CObjects: `cGives Player/players/all access to creating objects.
+`CResets: `cGives Player/players/all access to adding and removing resets.
+`CRooms: `cGives Player/players/all access to rooms.
+`COther: `cGives Player/players/all access to extra options. Ie: saving.
+ 
+~
+END
+
+keyword OLCAEDIT.~
+title OLC AREA EDITOR (AEdit)~
+helpflags builder hide_keywords~
+category olc:aedit~
+text aedit is the olc command for editing areas... this help will be completed later.
+~
+assigned_editor 1
+END
+
+EOF~
+#$

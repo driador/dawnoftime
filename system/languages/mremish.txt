@@ -1,0 +1,593 @@
+from a~
+to agh~
+END
+
+from air~
+to oht~
+END
+
+from abominable~
+to vaht~
+END
+
+from abhorrence~
+to ashkal~
+END
+
+from autumn~
+to ashuhn~
+END
+
+from awe~
+to gaya~
+END
+
+from awakening~
+to artnan~
+END
+
+from b~
+to bhe~
+END
+
+from battle~
+to khrihv~
+END
+
+from bane~
+to dangir~
+END
+
+from beyond~
+to heruh~
+END
+
+from beard~
+to mruhk~
+END
+
+from beautiful~
+to sroon~
+END
+
+from behold~
+to naie~
+END
+
+from bend~
+to maraie~
+END
+
+from beside~
+to goh~
+END
+
+from between~
+to mstegh~
+END
+
+from bird~
+to aghun~
+END
+
+from blood~
+to ayruhn~
+END
+
+from bloodstained~
+to ayruhot~
+END
+
+from blossom~
+to tsaghik~
+END
+
+from blessed~
+to aman~
+END
+
+from bow~
+to rei~
+END
+
+from book~
+to gheerk~
+END
+
+from bridge~
+to yanta~
+END
+
+from bride~
+to hahrs~
+END
+
+from breeze~
+to hwesta~
+END
+
+from c~
+to c~
+END
+
+from commander~
+to tehr~
+END
+
+from children~
+to erekh~
+END
+
+from champion~
+to cahgh~
+END
+
+from d~
+to ghe~
+END
+
+from dwelling~
+to tuhn~
+END
+
+from daughter~
+to achikh~
+END
+
+from devoted~
+to azahd~
+END
+
+from dimness~
+to muht~
+END
+
+from e~
+to eh~
+END
+
+from exalted~
+to ahstvagh~
+END
+
+from encircling~
+to tchorg~
+END
+
+from f~
+to fh~
+END
+
+from fortress~
+to baht~
+END
+
+from farewell~
+to elarie~
+END
+
+from fading~
+to mtnel~
+END
+
+from flatlands~
+to tagahnd~
+END
+
+from g~
+to dha~
+END
+
+from golden~
+to vosqie~
+END
+
+from gazing~
+to nyael~
+END
+
+from glorious~
+to gehget~
+END
+
+from glittering~
+to phlahn~
+END
+
+from h~
+to han~
+END
+
+from hound~
+to shuan~
+END
+
+from hollow~
+to unque~
+END
+
+from horse~
+to tseeh~
+END
+
+from horror~
+to goroth~
+END
+
+from harbor~
+to aghaman~
+END
+
+from heaven~
+to yerkangh~
+END
+
+from i~
+to ila~
+END
+
+from j~
+to jhi~
+END
+
+from jewel~
+to adamant~
+END
+
+from k~
+to kh~
+END
+
+from knowledge~
+to khelk~
+END
+
+from kind~
+to anoush~
+END
+
+from l~
+to ille~
+END
+
+from laughter~
+to lalaith~
+END
+
+from lament~
+to artzuhnk~
+END
+
+from m~
+to mha~
+END
+
+from marry~
+to psahk~
+END
+
+from maiden~
+to achikh~
+END
+
+from mastery~
+to khelk~
+END
+
+from meeting~
+to omentielvo~
+END
+
+from mighty~
+to osghegh~
+END
+
+from middle~
+to msthegh~
+END
+
+from mountain~
+to sarh~
+END
+
+from mountains~
+to asarh~
+END
+
+from mound~
+to corol~
+END
+
+from month~
+to taraie~
+END
+
+from months~
+to taraie~
+END
+
+from mortal~
+to marth~
+END
+
+from n~
+to nel~
+END
+
+from no~
+to votch~
+END
+
+from north~
+to formen~
+END
+
+from noble~
+to arah~
+END
+
+from noise~
+to tsen~
+END
+
+from nightingale~
+to aghuhn~
+END
+
+from number~
+to tihvh~
+END
+
+from o~
+to olle~
+END
+
+from open~
+to bahts~
+END
+
+from oppression~
+to jharth~
+END
+
+from oliphaunt~
+to mumak~
+END
+
+from outside~
+to dours~
+END
+
+from outdoors~
+to dours~
+END
+
+from ocean~
+to djuhr~
+END
+
+from p~
+to bha~
+END
+
+from petty~
+to eshahk~
+END
+
+from people~
+to dhoke~
+END
+
+from plain~
+to svhrak~
+END
+
+from power~
+to oohszh~
+END
+
+from prison~
+to mbanth~
+END
+
+from pursue~
+to hdvangh~
+END
+
+from pass~
+to ahnts~
+END
+
+from q~
+to khu~
+END
+
+from queen~
+to tahkooie~
+END
+
+from r~
+to r~
+END
+
+from radiance~
+to brilliant~
+END
+
+from rainbow~
+to ninniach~
+END
+
+from ransom~
+to danwedh~
+END
+
+from reversed~
+to paghvat~
+END
+
+from rememberance~
+to hstagh~
+END
+
+from s~
+to sl~
+END
+
+from slim~
+to bharagh~
+END
+
+from slender~
+to bharagh~
+END
+
+from serpent~
+to ohts~
+END
+
+from screen~
+to tuhr~
+END
+
+from sickly~
+to hvand~
+END
+
+from sorcery~
+to khasin~
+END
+
+from spider~
+to sahrd~
+END
+
+from strong~
+to osghegh~
+END
+
+from street~
+to pgohts~
+END
+
+from stream~
+to get~
+END
+
+from starlight~
+to astkhlooys~
+END
+
+from stirring~
+to coire~
+END
+
+from sunset~
+to arevnstel~
+END
+
+from sunlight~
+to arevlooys~
+END
+
+from sunrise~
+to arevbarts~
+END
+
+from sudden~
+to hangarts~
+END
+
+from summer~
+to ahmar~
+END
+
+from swordsman~
+to shurghan~
+END
+
+from t~
+to tl~
+END
+
+from twinkle~
+to pyloon~
+END
+
+from twilight~
+to yereko~
+END
+
+from thousand~
+to hazar~
+END
+
+from torment~
+to ngwalme~
+END
+
+from u~
+to uh~
+END
+
+from v~
+to vhi~
+END
+
+from w~
+to vhe~
+END
+
+from word~
+to ahmen~
+END
+
+from wolf~
+to gyul~
+END
+
+from woods~
+to ahndar~
+END
+
+from without~
+to nar~
+END
+
+from wisdom~
+to khelk~
+END
+
+from wren~
+to aghun~
+END
+
+from weapon~
+to tsehk~
+END
+
+from x~
+to x~
+END
+
+from y~
+to aie~
+END
+
+from year~
+to tahri~
+END
+
+from years~
+to tahri~
+END
+
+from yes~
+to ayoh~
+END
+
+from z~
+to z~
+END
+
+EOF~

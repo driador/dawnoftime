@@ -1,0 +1,7689 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Links and Roads~
+ShortName   ~
+Builders    None~
+Credits     Reave Tibault Siobhan~
+VNUMs       30100 30499
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#30100
+Name nwbyprot1 old wise man~
+ShortD an old, wise man~
+LongD A wise old man stands here, looking thoughtfully.~
+Desc A man, old in appearance stands here.  He has a long white beard that curls 
+tightly near the end.  His eyes show a wisdom, accustomed to those who have 
+years and years of experience.  His clothing is slightly tattered and show 
+signs of heavy use.  The state of his boots suggest he has traveled many 
+miles in them.  
+~
+Race human~
+Align 3 3
+Level 108
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d10+400
+DamDice 10d11+46
+DamType punch
+AC -670 -670 -670 -600
+Wealth 463
+Act    npc dont_wander stay_area~
+Imm    summon charm sleep~
+Form   sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GREET 30100 100~
+END
+
+#30101
+Name nwbyprot1 old wise man~
+ShortD an old, wise man~
+LongD A wise old man stands here, looking thoughtfully.~
+Desc A man, old in appearance stands here.  He has a long white beard that curls 
+tightly near the end.  His eyes show a wisdom, accustomed to those who have 
+years and years of experience.  His clothing is slightly tattered and show 
+signs of heavy use.  The state of his boots suggest he has traveled many 
+miles in them.  
+~
+Race human~
+Align 3 3
+Level 108
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d10+400
+DamDice 10d11+46
+DamType punch
+AC -670 -670 -670 -600
+Wealth 463
+Act    npc dont_wander stay_area~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GREET 30101 100~
+END
+
+#30102
+Name unseen mob load portal~
+ShortD i load the magic portal to faerie ring~
+LongD I load the magic portal to faerie ring~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  dark_vision~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg HOUR 30103 20~
+MProg HOUR 30102 17~
+MProg HOUR 30102 5~
+MProg HOUR 30103 8~
+END
+
+#30108
+Name old_man_stage_1 old man~
+ShortD an old and stooped man~
+LongD A stooped and grungy old man is here~
+Desc This man is dressed in rags, he is unshaven and looks to be
+suffering from sleep deprevation or some wasting disease.
+His finger nails are long and his hair unkept, his eyes
+although sunken are keen and his apperance masks the obvious
+intelligence lurking behind the visage.
+~
+Race unique~
+Align 3 -2
+XPMod 5
+Level 100
+Hitroll 2
+HitDice 5d10+10000
+ManaDice 5d10+4000
+DamDice 8d6+2000
+DamType drain
+AC -600 -600 -600 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign outdoors indoors~
+AffBy  detect_invis detect_hidden infrared flying pass_door haste berserk regeneration~
+Off    area_attack bash dodge fade parry crush~
+Imm    magic weapon fire~
+Vuln   cold~
+Form   instant_decay undead blob~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material mist
+END
+
+#30109
+Name old_man_stage_2 old man~
+ShortD an old and stooped man~
+LongD An old, stooped and grungy old man is here.~
+Desc This man is dressed in rags, he is unshaven and looks to be
+suffering from sleep deprevation or some wasting disease.
+His finger nails are long and his hair unkept, his eyes
+although sunken are keen and his apperance masks the obvious
+intelligence lurking behind the visage.
+~
+Race unique~
+Align 3 -2
+Level 100
+Hitroll 2
+HitDice 5d10+10000
+ManaDice 5d10+4000
+DamDice 8d6+2000
+DamType drain
+AC -600 -600 -600 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign outdoors indoors~
+AffBy  detect_invis detect_hidden infrared flying pass_door haste berserk regeneration~
+Off    area_attack bash dodge fade parry crush~
+Imm    magic weapon fire~
+Vuln   cold~
+Form   instant_decay undead blob~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material mist
+END
+
+#30110
+Name old_man_stage_3 old man~
+ShortD an old and stooped man~
+LongD An old, stooped and grungy old man is here.~
+Desc This man is dressed in rags, he is unshaven and looks to be
+suffering from sleep deprevation or some wasting disease.
+His finger nails are long and his hair unkept, his eyes
+although sunken are keen and his apperance masks the obvious
+intelligence lurking behind the visage.
+~
+Race unique~
+Align 3 -2
+Level 100
+Hitroll 2
+HitDice 5d10+10000
+ManaDice 5d10+4000
+DamDice 8d6+2000
+DamType drain
+AC -600 -600 -600 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign outdoors indoors~
+AffBy  detect_invis detect_hidden infrared flying pass_door haste berserk regeneration~
+Off    area_attack bash dodge fade parry crush~
+Imm    magic weapon fire~
+Vuln   cold~
+Form   instant_decay undead blob~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material mist
+END
+
+#30303
+Name Unseen Storm~
+ShortD a Storm~
+LongD A storm~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 31026 15~
+END
+
+#30304
+Name thazolis a huge pale skinned ogre~
+ShortD a huge pale skinned ogre~
+LongD A huge pale skinned ogre is here.~
+Desc This huge ogre is around ten feet tall, and is covered in warts and sores.  
+He has pale greenish skin, and matted black hair that goes past his 
+shoulders.  His eyes glimmer crimson red and he smells like he hasnt taken a 
+bath in over a year.  
+~
+Race orc~
+Align -3 0
+XPMod 110
+Level 80
+Hitroll 3
+HitDice 1d1+500
+ManaDice 1d1+1008
+DamDice 9d9+41
+DamType smash
+AC -550 -550 -550 -450
+Wealth 0
+Act    npc dont_wander no_tame warrior~
+AffBy  detect_invis detect_magic detect_hidden infrared protect_evil haste plague dark_vision regeneration~
+Off    bash berserk disarm dodge fast kick parry trip~
+Imm    summon charm cold poison negative mental disease drowning sound wood~
+Res    pierce~
+Vuln   fire~
+Form   sentient biped mammal cold_blood~
+Part   head arms legs hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#30100
+Name heavy black platemail~
+Short a heavy black platemail~
+Desc A heavy black platemail has been left here.~
+Level 46
+ItemType armor~
+Cost 920
+Asize 0
+Rsize 50
+Values 17 15 16 12 0
+Weight 90
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+ExtraDesc heavy black platemail~
+This steel platemail is very thick and looks like it could absorb quite a
+beating.  It has been painted black.  
+~
+End
+
+#30101
+Name black heavy cloak~
+Short a black heavy cloak~
+Desc A black coloured heavy cloak lies here.~
+Level 45
+ItemType armor~
+Cost 200
+Asize 0
+Rsize 50
+Values 9 9 9 9 0
+Weight 50
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 45 -1 agility 4 0
+End
+
+#30102
+Name heavy leggings~
+Short heavy leggings~
+Desc a pair of heavy leggings is here.~
+Level 30
+ItemType armor~
+Cost 599
+Asize 35
+Rsize 50
+Values 7 8 7 5 0
+Weight 30
+Material iron~
+Extra    nodegrade~
+Wear     take legs~
+ClassAllowances cleric warrior druid paladin barbarian~
+ExtraDesc heavy leggings~
+This is very well used pair of leggings.  They look of strong design.
+~
+End
+
+#30103
+Name hammer of thazolis~
+Short a huge, black hammer~
+Desc A huge, black hammer lies here.~
+Level 45
+ItemType weapon~
+Cost 950
+Asize 50
+Rsize 50
+Values mace 3 16 blast A
+Weight 140
+Material mithril~
+Extra    glow evil magic antigood nolocate meltdrop nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin ranger~
+Affect affects -1 45 -1 none 0 sanctuary
+ExtraDesc black hammer~
+This hammer was magicaly enchated with a fiery aura.
+~
+End
+
+#30104
+Name moss-carpeted knoll~
+Short a moss-carpeted knoll~
+Desc A moss-carpeted knoll pokes through the ground.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 200 EH 105 105
+Weight 200
+Material wood~
+Extra    nodegrade~
+End
+
+#30105
+Name sign post signpost~
+Short a brightly coloured signpost~
+Desc A brightly coloured signpost stands here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1000
+Material metal~
+Extra    nodegrade~
+ExtraDesc signpost sign post~
+A bright sign post stands tall here. Near the top of the pole a plaque, 
+pointing southwards, has been attached firmly. It reads in bright yellow 
+colours. 
+ 
+`#`Y   Come and see, come and see.. `^
+`#`Y   The gypsie carnival has arrived!`^
+ 
+~
+End
+
+#30106
+Name alpine berry~
+Short an alpine berry~
+Desc An alpine berry grows in a clump here.~
+Level 10
+ItemType pill~
+Cost 5
+Asize 0
+Rsize 50
+Values 10 'purify body' '' '' ''
+Weight 1
+Material food~
+Extra    nolocate~
+Wear     take~
+End
+
+#30107
+Name black snakeroot~
+Short a black snakeroot~
+Desc A black snakeroot grows feebly in the sand here.~
+Level 10
+ItemType pill~
+Cost 5
+Asize 0
+Rsize 50
+Values 10 'resist poison' '' '' ''
+Weight 1
+Material food~
+Extra    nolocate~
+Wear     take~
+End
+
+#30108
+Name common thistle~
+Short a common thistle~
+Desc A common thistle struggles to grow here.~
+Level 10
+ItemType food~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 A 0
+Weight 1
+Material food~
+Extra    nolocate~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#30100
+Name Dense Forest~
+Desc The forest is very dense and lush here.  Tall trees and heavy growth 
+surround you and block out the light.  The terriain appears to be similar in 
+all directions except west, where it seems to lighten somewhat.  
+~
+Sector forest~
+Exit north 30199
+Exit east 30195
+Exit south 30192
+Exit west 30196
+End
+
+
+#30101
+Name Forest Road~
+Desc The road here looks brand new, and seems to get a lot of use.  Trees 
+surround it in all directions.  Most of them are very large and old, and it 
+must have been difficult to clear a space for the road.  You can move east 
+or west along the road, or head off into the forest.  To the south-east, you 
+can see a small grass hut hidden amongst the trees.  You catch the faint 
+sounds of what seems to be laughter towards the south, at which you notice a 
+small dusty path leading in that direction.  
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 30536
+EDesc Into the forest.
+~
+Exit east 30102
+EDesc The road runs through the forest to the east.
+~
+Exit south 30244
+EDesc The forest.
+~
+Exit west 30221
+EDesc The road runs through the forest to the west.
+~
+End
+
+
+#30102
+Name Forest Road~
+Desc The road here looks like it was recently cleared and built, and seems 
+to be heavily used.  The dark forest surrounds it in all directions.  
+You can move east or west along the road, or try to force your way 
+through the forest.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 30540
+EDesc A dark forest.
+~
+Exit east 30103
+EDesc The road runs through the forest to the east.
+~
+Exit south 30645
+Exit west 30101
+EDesc The road runs through the forest to the west.
+~
+End
+
+
+#30103
+Name Forest Road~
+Desc The road here is in good shape, and from the looks of it seems to 
+get a lot of traffic.  Huge trees surround it in all directions, 
+blocking out most of the sunlight.  You can travel east or west along 
+the road, or head into the forest.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 30544
+EDesc A dark forest.
+~
+Exit east 30104
+EDesc The road runs through the forest to the east.
+~
+Exit south 30644
+Exit west 30102
+EDesc The road runs through the forest to the west.
+~
+End
+
+
+#30104
+Name Forest Road~
+Desc You walk into a large crossroad in the middle of the forest.  Here, the road 
+is very heavily used, and seems to have been recently built or repaired.  A 
+thick, dark forest surrounds it in all directions.  It is possible to go 
+east or west along the road, or any other direction into the trees.  You 
+hear water trickling somewhere, but can't pinpoint the exact location.  
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 30138
+EDesc Thick, leafy trees will make moving this way difficult.
+~
+Exit east 30105
+Exit south 30651
+Exit west 30103
+EDesc The road runs through the forest to the west.
+~
+End
+
+
+#30105
+Name Forest Road~
+Desc The road here is newly cleared, and seems to get a lot of use.  The forest 
+surrounds it in all directions.  You can move east or west on the road, or 
+off into the trees.  As you move around, you occasionally see squirrels 
+climbing around in the branches, or birds flitting from tree to tree.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 30139
+EDesc You can travel into the forest to the north.
+~
+Exit east 30106
+Exit south 30646
+Exit west 30104
+End
+
+
+#30106
+Name Forest Road~
+Desc The road here is very new, and already worn from lots of traffic.  The
+forest surrounds it in all directions.  You can move east or west on the
+road, or off into the trees if you feel ready to force your way through
+the thick brush.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 30140
+EDesc Thick leafy trees are to the north.
+~
+Exit east 30107
+EDesc The road runs through the forest to the east.
+~
+Exit south 30647
+Exit west 30105
+End
+
+
+#30107
+Name Forest Road~
+Desc You are on a brand new road that has been built to run east and west through 
+the trees.  The forest surrounding the road is very dark and dense, and 
+teems with life.  As you move around here, you hear and see many of the 
+residents of the forest jumping around in the trees, or running through the 
+brush.  A small animal path breaks off north from the main road here.  
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 30508
+EDesc Into the trees.
+~
+Exit east 30108
+EDesc The road runs through the forest to the east.
+~
+Exit south 30648
+Exit west 30106
+EDesc The road runs through the forest to the west.
+~
+End
+
+
+#30108
+Name Forest Road~
+Desc A newly constructed road cuts east and west through the dark dense forest 
+here.  The trees that surround it are all old and very tall, and block out 
+most of the sunlight.  You hear water trickling somewhere, but don't see the 
+source anywhere near the road.  The brush to the north is so dense that it 
+is impassable.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit east 30109
+EDesc The road runs through the forest to the east.
+~
+Exit south 30649
+Exit west 30107
+EDesc The road runs through the forest to the west.
+~
+End
+
+
+#30109
+Name Forest Road~
+Desc The road here is new, and seems to get a lot of use.  As you travel on the
+crushed stone it is made of, you can hear the various sounds of a busy
+forest - trickling water, birdcalls, and animals moving around.  The road
+goes east and west.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 30522
+EDesc The dark forest.
+~
+Exit east 30110
+EDesc The road runs through the forest to the east.
+~
+Exit west 30108
+EDesc The road runs through the forest to the west.
+~
+End
+
+
+#30110
+Name Forest Road, just West of a Crossroads~
+Desc The road here continues east and west.  The dark forest surrounds it in all 
+directions, but there seems to be some activity to the east.  You can head
+in that direction, or head off into the forest if you like. To the south a 
+path leads off into the silent forest.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc crossroads~
+There is a crossroads to the east.  Why don't you go check it out?
+~
+Exit north 30529
+EDesc The dark forest.
+~
+Exit east 30111
+EDesc The road crosses another road to the east.  You see some buildings there.
+~
+Exit south 33000
+Exit west 30109
+EDesc The road runs through the forest to the west.
+~
+End
+
+
+#30111
+Name Crossroads~
+Desc The east-west road crosses another major north-south road here.  The same 
+dark, dense forest lies in each of those directions.  The roads themselves 
+are rather muddy from all the activity and some unseen water source.  You 
+see a few buildings and some people and horses moving around just to the 
+northeast.  
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 30118
+EDesc A road leads north into the forest.
+~
+Exit east 30112
+EDesc The road runs through the forest to the east.
+~
+Exit south 30117
+EDesc A road leads south into the forest.
+~
+Exit west 30110
+EDesc The road runs through the forest to the west.
+~
+Exit northeast 28001
+EDesc There are two large buildings and some activity to the northeast.
+~
+End
+
+
+#30112
+Name Forest Road, just East of the Crossroads~
+Desc The road here is very old, and seems to get a lot of use.  Just to
+the west you see what looks like a major crossroads.  Off to the
+north are a few buildings.  It looks like there is a path to them at
+the crossroads.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit east 30113
+EDesc The road runs through the forest to the east.
+~
+Exit west 30111
+EDesc The road runs through the forest to the west, towards a crossroads.
+~
+End
+
+
+#30113
+Name Forest Road~
+Desc The road here is very old, and seems to get a lot of use.  The forest
+surrounds it in all directions, but seems to lighten to the east.  You
+can go east or west from here, or off into the forest.  
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+Exit north 31084
+EDesc Trees.
+~
+Exit east 30114
+EDesc The road runs through the forest to the east.  It seems to lighten a bit in 
+that direction.
+~
+Exit west 30112
+EDesc The road runs through the forest to the west.
+~
+End
+
+
+#30114
+Name Sloped Road~
+Desc The road emerges from the forest here with a spectacular view to the east.
+In that direction, the ground slopes down towards a wide expanse of water.
+From this height you can see a dark line across the water.  It looks like 
+there is land that way.  The air has a slight salty scent, and you hear the
+cries of seagulls along with the laughter and shrieks of some festive event.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc salty scent~
+The smell of salt is in the air, probably from the water to the east.
+~
+Exit north 31089
+EDesc The forest edge.
+~
+Exit east 30115
+EDesc The road runs downward, towards the water, to the east.
+~
+Exit south 18196
+Exit west 30113
+EDesc The road runs into the forest to the west.
+~
+End
+
+
+#30115
+Name Sloped Road, just above Shoreline~
+Desc The road here runs west towards a dark forest, and slopes downward east
+towards a sandy shoreline. Past that, there is water as far as the eye
+can see.  The air has a strong salty scent, probably from the water.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc salty scent~
+The smell of salt is in the air, probably from the water to the east.
+~
+ExtraDesc sandy shoreline~
+There is a sandy beach along the water's edge.
+~
+Exit north 31093
+EDesc Along the slope.
+~
+Exit east 30116
+EDesc The road runs downward, towards the water, to the east.
+~
+Exit west 30114
+EDesc The road runs into the forest to the west.
+~
+End
+
+
+#30116
+Name Beach~
+Desc You are on a sandy beach, with water to the east as far as the eye can see.
+The water is fairly calm here.  A road begins here and runs west up a slope,
+and enters a dark forest at the top.  The air has a strong salty scent, 
+probably from the water, and you hear seagulls calling from high in the air.
+The water is deep enough right up to the edge here that you could probably
+set off east in a boat if you had one.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc salty scent~
+The smell of salt is in the air, probably from the water to the east.
+~
+ExtraDesc beack sandy shoreline~
+There is a sandy beach along the water's edge.
+~
+Exit north 31098
+Exit east 30354
+EDesc You can sail east if you have a big enough boat.
+~
+Exit west 30115
+EDesc The road runs up a slope and into the forest to the west.
+~
+End
+
+
+#30117
+Name Forest Road, just South of Crossroads~
+Desc The road here is not very well maintained, and doesn't seem to get much 
+traffic.  The forest surrounds it in all directions, but it looks like there 
+is some kind of crossroads to the north.  You can travel in that direction, 
+or to the south. A well used path leads of to the west. Toward the 
+southeast, obscured somewhat by creeping stalks of briar and brambles, a 
+thin trail moves into darkness. 
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc crossroads~
+A major crossroads, just to the north.
+~
+Exit north 30111
+EDesc The road runs north to a crossroads.
+~
+Exit south 30133
+EDesc The road runs south into the forest.
+~
+Exit west 33000
+End
+
+
+#30118
+Name Forest Road, just North of the Crossroads~
+Desc The road here is very old, and seems to get a lot of use.  It doesn't
+seem to be maintained very well however.  To the south you see what looks
+like a major crossroads.  You can head in that direction or north into the
+forest.  There are a few buildings to the east; you see a lane to them at
+the crossroads.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc crossroad~
+There is a large busy crossroads to the south.
+~
+ExtraDesc building~
+Two large buildings are just to the east.  You can reach them from the 
+crossroads south of here.
+~
+Exit north 30119
+EDesc The road runs north into the forest
+~
+Exit south 30111
+EDesc The road runs south, towards a crossroads.
+~
+Exit west 30529
+EDesc A dark forest awaits.
+~
+End
+
+
+#30119
+Name Forest Road~
+Desc The road runs north-south here, and is very old and poorly maintained.
+It is surrounded in all directions by a dark forest.  The growth in the
+forest is very thick and lush, and it looks like it would be difficult
+to travel through.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30120
+EDesc The road runs north, through the forest.
+~
+Exit east 31079
+EDesc Thick forest.
+~
+Exit south 30118
+EDesc The road runs south, through the dark forest.
+~
+Exit west 30530
+EDesc A dark forest.
+~
+End
+
+
+#30120
+Name Forest Road~
+Desc The road runs north-south here, and is in pretty bad shape.  It doesn't
+look to get much traffic, and certainly no one has repaired it for a long
+time.  Trees surround the road in all directions.  The growth in the forest 
+is very thick and lush, making it rather dark and hard to travel through.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30121
+EDesc The road runs north, through the forest.
+~
+Exit east 31078
+EDesc Thick trees.
+~
+Exit south 30119
+EDesc The road runs south, through the dark forest.
+~
+Exit west 30531
+EDesc A dark forest.
+~
+End
+
+
+#30121
+Name Forest Road~
+Desc The road runs north-south here, and is very old and poorly maintained.
+It is surrounded to the east and west by a forest.  The growth in the
+forest is very thick and lush, making it rather dark and hard to travel
+through.  All the sorts of noises that you expect from a forest are heard,
+including birds and animals moving around.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30122
+EDesc The road runs north, through the forest.
+~
+Exit east 31077
+EDesc Thick forest.
+~
+Exit south 30120
+EDesc The road runs south, through the dark forest.
+~
+Exit west 30532
+EDesc A dark forest.
+~
+End
+
+
+#30122
+Name Forest Road~
+Desc The forest here is extremely dense and dark.  The trees are very closely 
+spaced, and many branches are intertwined with other trees and brush.  An
+old road runs north and south, allowing easy travel in those directions,
+but to head off into the forest would be difficult.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30128
+EDesc The road runs north, through the forest.
+~
+Exit east 31076
+EDesc Thick trees.
+~
+Exit south 30121
+EDesc The road runs south, through the dark forest.
+~
+Exit west 30533
+EDesc A dark forest.
+~
+End
+
+
+#30123
+Name Forest Road~
+Desc The road runs north-south here, and is very old and poorly maintained.
+It is surrounded to the east and west by a forest.  The growth in the
+forest is very thick and lush, making it rather dark and hard to travel
+through.  As you move around here, you notice that the forest is teeming
+with life - You hear birds chirping, animals moving around, and water
+trickling from some hidden source.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30124
+EDesc The road runs north, through the forest.
+~
+Exit south 30132
+EDesc The road runs south, through the dark forest.
+~
+End
+
+
+#30124
+Name Forest Road~
+Desc An old road runs north-south here, and is in pretty poor shape.  It is
+surrounded in all directions by a pleasant forest.  The growth in the forest 
+is fairly dense, so you can leave the road, but it does not look like it 
+would be easy travel.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30125
+EDesc The road runs north, through the forest.
+~
+Exit east 30473
+EDesc A pleasant forest.
+~
+Exit south 30123
+EDesc The road runs south, through the dark forest.
+~
+End
+
+
+#30125
+Name Forest Road, Thinning Forest~
+Desc The road runs north-south here, and is very old and poorly maintained.
+It is surrounded to the east and west by a forest.  The forest isn't
+quite as dark and lush here as it is to the south, and seems to thin
+out even more to the north.  
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30126
+EDesc The forest seems to thin out to the north.
+~
+Exit east 30470
+EDesc The forest is very thin this way.
+~
+Exit south 30124
+EDesc The road runs south, through the dark forest.
+~
+End
+
+
+#30126
+Name North-South Road in Thinning Forest~
+Desc The road runs north-south here, and is very old and poorly maintained.
+It is surrounded to the east and west by a thin forest.  The trees here
+are much further apart and there is much less undergrowth than to the
+south.  The forest seems to end entirely to the north, giving way to 
+grassy meadows.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30127
+EDesc The road runs north.
+~
+Exit east 30434
+EDesc Meadows, with a few trees.
+~
+Exit south 30125
+EDesc The road runs south, into a dark forest.
+~
+End
+
+
+#30127
+Name North-South Road~
+Desc The road runs north-south here, and is surrounded by meadows and an
+occasional tree or bush.  To the south, the trees get more frequent and
+closer together until they eventually become a thick forest.  To the north,
+the road seems to degrade to the point where it is more of a path through
+the grass.  You can see a wide river off to the north and west, and a stone
+bridge crossing it north.  
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30479
+EDesc The road runs north.
+~
+Exit south 30126
+EDesc The road runs south, through some fields and into a dark forest.
+~
+End
+
+
+#30128
+Name Forest Road~
+Desc The road runs north-south here, and is very old and poorly maintained.
+It is surrounded to the east and west by a forest.  The growth in the
+forest is very thick and lush, making it rather dark and hard to travel
+through.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30129
+EDesc The road runs north, through the forest.
+~
+Exit south 30122
+EDesc The road runs south, through the dark forest.
+~
+Exit west 30534
+EDesc A dark forest.
+~
+End
+
+
+#30129
+Name Forest Road~
+Desc The forest is very dark and thick here.  The trees are of all types, but are
+all old and very tall, and block out the light from above.  The road runs to
+the north and south, and is in fairly bad shape, with many ruts and holes.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30130
+EDesc The road runs north, through the forest.
+~
+Exit south 30128
+EDesc The road runs south, through the dark forest.
+~
+Exit west 30535
+EDesc A dark forest.
+~
+End
+
+
+#30130
+Name Forest Road~
+Desc The road runs north-south here, and is very old and poorly maintained.  It
+is surrounded to the east and west by a forest.  The growth in the forest
+is very thick and lush, making it rather dark and hard to travel through.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30131
+EDesc The road runs north, through the forest.
+~
+Exit south 30129
+EDesc The road runs south, through the dark forest.
+~
+Exit west 30190
+EDesc Dense forest lies in this direction.
+~
+End
+
+
+#30131
+Name Forest Road~
+Desc You are traveling through a dense, dark forest.  There is a road here, which
+goes north-south, and which is in very poor condition.  You can follow the
+road, or head off into the forest, although the forest is to thick that it
+would not be easy.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30132
+EDesc The road runs north, through the forest.
+~
+Exit south 30130
+EDesc The road runs south, through the dark forest.
+~
+Exit west 30194
+EDesc You can move into the dense forest in this direction.
+~
+End
+
+
+#30132
+Name Forest Road~
+Desc The road runs north and south here, and is very old and poorly maintained.
+It is surrounded in all directions by a forest.  The trees in the forest
+are mostly old and very tall, and block out much or the light from above.
+Branches and brush seem to have all grown together, and it looks like travel
+through the forest would not be easy here.
+~
+Sector field~
+ExtraDesc forest~
+The forest is very old, and dark.
+~
+ExtraDesc road~
+The road is well-used, but poorly maintained.
+~
+Exit north 30123
+EDesc The road runs north, through the forest.
+~
+Exit south 30131
+EDesc The road runs south, through the dark forest.
+~
+Exit west 30197
+EDesc You can enter the dense forest in this direction.
+~
+End
+
+
+#30133
+Name Road through Dark Forest~
+Desc What's left of the road runs north and south through the forest here.  It
+looks like it may have at one time been a major highway, but is not used
+anymore and is disintegrating into rubble.  Trees surround the road, but
+are not as thick and healthy as those to the north.
+~
+Sector field~
+ExtraDesc road rubble~
+The old stone road has not been cared for and is in bad shape.
+~
+ExtraDesc trees forest~
+The trees here are alive, but don't look all that healthy.
+~
+Exit north 30117
+EDesc What's left of the road runs north, through the forest.
+~
+Exit south 30134
+EDesc What's left of the road runs south, through the forest.
+~
+Exit west 30660
+End
+
+
+#30134
+Name Road through Dying Forest~
+Desc What's left of the road runs north and west through the forest here. It 
+looks like it may have at one time been widely used, but is not anymore and 
+is mostly rubble. The trees that surround the road look very unhealthy, 
+like they aren't getting any sun. It does seem particularly dim in this 
+area. Between the trees to the east, a once brightly coloured fence stands, 
+very closed and also very locked. 
+~
+Sector field~
+ExtraDesc road rubble~
+The old stone road has not been cared for and is in bad shape.
+~
+ExtraDesc trees forest~
+The trees here are alive, but don't look all that healthy.
+~
+Exit north 30133
+EDesc What's left of the road runs north, through the forest.
+~
+Exit south 30293
+EDesc More dying forest this way.
+~
+Exit west 30135
+EDesc What's left of the road runs west, through the dying forest.
+~
+End
+
+
+#30135
+Name Old Road through Dying Forest~
+Desc It looks like there use to be a road running east and south here, but
+all that is left now is muddy ruts.  The trees that surround the former
+road are nearly dead, only barely clinging on to life and a few leaves.  
+~
+Sector forest~
+ExtraDesc muddy ruts~
+Many muddy ruts, formerly a road by the looks of it.
+~
+ExtraDesc trees forest~
+The trees here are mostly dead
+~
+Exit north 30660
+Exit east 30134
+EDesc Muddy ruts run off to the east.
+~
+Exit south 30136
+EDesc Muddy ruts head off south, through the dead forest.
+~
+Exit west 30668
+End
+
+
+#30136
+Name Muddy ruts in Dead Forest~
+Desc There use to be a road running north and south here, but all that is
+left now is muddy ruts and some very swampy ground.  The trees that
+surround the former road are almost all dead, and some have even toppled
+into the muck.  A fair distance to the south you see what look like some
+old wooden walls.
+~
+Sector forest~
+ExtraDesc muddy ruts~
+Many muddy ruts, formerly a road by the looks of it.
+~
+ExtraDesc trees forest~
+The trees here are mostly dead
+~
+ExtraDesc wooden walls~
+Old broken walls surrounding a small village of some type.
+~
+Exit north 30135
+EDesc Muddy ruts run off to the north.
+~
+Exit east 30293
+EDesc More dying fores this way.
+~
+Exit south 30137
+EDesc Muddy ruts head off south, through the dead forest.
+~
+Exit west 30676
+End
+
+
+#30137
+Name Dead Forest~
+Desc The forest isn't so green here, and gets thinner to the east and south.  The 
+trees have lost some of their leaves, and are stunted in some cases.  There 
+is not much wildlife that you can see or hear.  
+~
+RoomFlags no_mob~
+Sector hills~
+ExtraDesc muddy ruts~
+Many muddy ruts, formerly a road by the looks of it.
+~
+ExtraDesc trees forest~
+The trees here are mostly dead
+~
+ExtraDesc wooden walls~
+Old broken walls surrounding a small village of some type.
+~
+Exit north 30136
+EDesc Muddy ruts run off to the north.
+~
+Exit east 30438
+EDesc More muddy wasteland.
+~
+Exit south 31107
+Exit west 30684
+End
+
+
+#30138
+Name Forest~
+Desc You are in a dark forest.  Thick, leafy trees of all types surround you, and 
+make it difficult to travel quickly.  A short ways to the south you see what 
+looks like a road.  
+~
+Sector forest~
+ExtraDesc forest trees~
+The trees are very large, and are covered with green leaves of all shapes and
+sizes.
+~
+Exit north 30141
+EDesc More Trees.
+~
+Exit east 30139
+EDesc More trees.
+~
+Exit south 30104
+EDesc A road lies through the trees to the south.
+~
+Exit west 30544
+EDesc More trees.
+~
+End
+
+
+#30139
+Name Thick Forest~
+Desc You are in a dark forest.  Thick, leafy trees of all types surround you, and 
+make it difficult to travel quickly.  A short ways to the south you see what
+looks like a road.
+~
+Sector forest~
+ExtraDesc forest trees~
+The trees are very large, and are covered with green leaves of all shapes and
+sizes.
+~
+Exit north 30142
+EDesc More Trees.
+~
+Exit east 30140
+EDesc More trees.
+~
+Exit south 30105
+EDesc A road lies through the trees to the south.
+~
+Exit west 30138
+EDesc More trees.
+~
+End
+
+
+#30140
+Name Thick Forest~
+Desc You are in a dark forest.  Thick, leafy trees of all types surround you, and 
+make it difficult to travel quickly.  A short ways to the south you see what
+looks like a road.
+~
+Sector forest~
+ExtraDesc forest trees~
+The trees are very large, and are covered with green leaves of all shapes and
+sizes.
+~
+Exit north 30143
+EDesc More Trees.
+~
+Exit east 30508
+EDesc More trees.
+~
+Exit south 30106
+EDesc A road lies through the trees to the south.
+~
+Exit west 30139
+EDesc More trees.
+~
+End
+
+
+#30141
+Name Thick Forest~
+Desc You are in a dense, dark forest.  No sound can be heard from anywhere.  The 
+roots and branches crossing your way make it difficult to travel.  
+~
+Sector forest~
+ExtraDesc forest trees~
+The trees are very large, and are covered with green leaves of all shapes and
+sizes.
+~
+Exit north 30144
+EDesc More Trees.
+~
+Exit east 30142
+EDesc More trees.
+~
+Exit south 30138
+EDesc More trees.
+~
+Exit west 30545
+EDesc More trees.
+~
+End
+
+
+#30142
+Name Thick Forest~
+Desc You are in a dark forest.  Thick, leafy trees of all types surround you, and 
+make it difficult to travel quickly.  Off to the north is a clearing, and a 
+tree that is larger than the rest.
+~
+Sector forest~
+ExtraDesc forest trees~
+The trees are very large, and are covered with green leaves of all shapes and
+sizes.
+~
+Exit east 30143
+EDesc More trees.
+~
+Exit south 30139
+EDesc More trees.
+~
+Exit west 30141
+EDesc More trees.
+~
+End
+
+
+#30143
+Name Thick Forest~
+Desc You are in a dark forest.  Thick, leafy trees of all types surround you, and 
+make it difficult to travel quickly.  
+~
+Sector forest~
+ExtraDesc forest trees~
+The trees are very large, and are covered with green leaves of all shapes and
+sizes.
+~
+Exit north 30145
+EDesc More Trees.
+~
+Exit east 30509
+EDesc More trees.
+~
+Exit south 30140
+EDesc More trees.
+~
+Exit west 30142
+EDesc More trees.
+~
+End
+
+
+#30144
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their leaves 
+blocking out the sky above.  You can hear animals moving around in the 
+branches.  
+~
+Sector forest~
+ExtraDesc forest trees~
+The trees are very large, and are covered with green leaves of all shapes and
+sizes.
+~
+Exit north 30348
+EDesc More trees.
+~
+Exit south 30141
+EDesc More trees.
+~
+Exit west 30546
+EDesc More trees.
+~
+End
+
+
+#30145
+Name Thick Forest~
+Desc You are in a dark forest.  Thick, leafy trees of all types surround you, and 
+make it difficult to travel quickly.  A short ways to the south you see what
+looks like a road.
+~
+Sector forest~
+ExtraDesc forest trees~
+The trees are very large, and are covered with green leaves of all shapes and
+sizes.
+~
+Exit north 30503
+EDesc More trees.
+~
+Exit east 30510
+EDesc More trees.
+~
+Exit south 30143
+EDesc More trees.
+~
+End
+
+
+#30146
+Name Just Outside the North Entrance of a City~
+Desc You are just outside the northern gates of a city.  The city is surrounded 
+by partially built walls and it appears that a lot of construction is 
+underway within the city itself.  A heavily used trail leads off to the north 
+and into the vast plains.  These plains stretch as far to the north and west 
+as you can see, also towards the west you notice a small cobblestone path 
+running along the edges of the city walls.  Towards the east a bit you see 
+the dark line of a forest.  
+~
+Sector field~
+ExtraDesc walls city construction~
+The city looks newly established.  A lot on construction is underway.
+~
+ExtraDesc trail path plains~
+A heavily used trail leads north across the plains.  Off to the east is
+what looks like a dark forest.
+~
+Exit north 30147
+EDesc A path leading north, into the plains.
+~
+Exit east 30181
+EDesc Just to the east are plains, and eventually the dark line of a forest.
+~
+Exit south 3007
+EFlags door closed obvious~
+EKeywords gate~
+Exit west 30180
+EDesc You can travel west over the plains.
+~
+End
+
+
+#30147
+Name Path Through Plains~
+Desc You are on a dirt path that runs north-south through the plains.
+The grassy plains stretch far to the west and north, and not far to 
+the east is a dark forest.  There is also a village of some type just 
+down the path to the south.  You hear what sounds like hammers banging 
+and other construction noises in that direction. A tall tower rises
+above the trees to the northwest.
+~
+Sector field~
+ExtraDesc path~
+A path beaten into the grass by heavy use.  
+~
+ExtraDesc forest~
+A dark forest to the east.
+~
+ExtraDesc city~
+A city is down the road to the south.
+~
+Exit north 30186
+EDesc The path leads north, thriugh the plains.
+~
+Exit east 30564
+EDesc There is a forest beyond the plains this way.
+~
+Exit south 30146
+EDesc The path leads south, to a city.
+~
+End
+
+
+#30148
+Name Path Through Plains~
+Desc A dirt path runs in a fairly straight line north and south.  You are 
+in the middle of a huge expanse of flat, grassy plains.  There is not 
+much interesting to look here, except perhaps the dark edge of a forest 
+off to the east.  You occasionally see or hear small animals moving in 
+the grass.
+~
+Sector field~
+Exit north 30149
+EDesc The path runs through the plains.
+~
+Exit east 30569
+EDesc Plains and then forests lie in this direction.
+~
+Exit south 30189
+EDesc The path runs south.
+~
+End
+
+
+#30149
+Name Path Through Plains~
+Desc Plains stretch in every direction from here.  They are covered with 
+tall grass, in which almost anything could be hiding.  The area in 
+your immediate vicinity looks to be a path or sorts, which goes off 
+to the north and south.  A thick line of trees is off to the east.
+You notice another very faint path which splits off here and runs west.
+~
+Sector field~
+Exit north 30150
+EDesc The path runs through the plains.
+~
+Exit east 30279
+EDesc You can head east towards the trees.
+~
+Exit south 30148
+EDesc The path runs south.
+~
+Exit west 30289
+End
+
+
+#30150
+Name Path Through Plains~
+Desc Tall grass is all around you, except for the path on which you stand.  
+This path goes south and north, and appears to make a turn just to the 
+north. What looks like a forest is some distance to the east.
+~
+Sector field~
+Exit north 30151
+EDesc The path runs through the plains.
+~
+Exit south 30149
+EDesc The path runs south.
+~
+End
+
+
+#30151
+Name Turn in Path Through Plains~
+Desc You are on a dirt path, which makes a turn here.  It goes south as far 
+as you can see, and goes east just a short way before turning north again.  
+Tall grass surrounds you in all directions.  You occasinally see small 
+animals of several types running across the path or through the grass.  The
+dark edge of a forest is off to the east.
+~
+Sector field~
+Exit south 30150
+EDesc The path runs south.
+~
+Exit west 30223
+EDesc Plains as far as you can see.
+~
+End
+
+
+#30152
+Name Turn on a Path through Plains~
+Desc You are in the middle of some pretty boring grasslands.  A path makes a 
+turn here, and runs to the north and west.  The tall grass grows as far 
+as you can see in every direction except east; that way you see the dark 
+edge of a forest.
+~
+Sector field~
+Exit north 30153
+EDesc The path runs through the plains.
+~
+Exit east 30448
+End
+
+
+#30153
+Name Path through Plains~
+Desc A dirt path runs north and south here, but seems to make a turn in just 
+a short distance in both ways.  Around the path you see little besides tall 
+grass in every direction.  The one exception is the dark line of a forest
+off to the east.
+~
+Sector field~
+Exit north 30154
+EDesc The path runs through the plains.
+~
+Exit south 30152
+EDesc The path runs south.
+~
+End
+
+
+#30154
+Name Turn on a Path through Plains~
+Desc You are on a dirt path which runs through flat, grassy plains.  At this 
+point the path makes a turn, and runs to the south and east.  A good ways 
+off to the east is what looks like a dark forest, but that is about the
+only landmark that you see.
+~
+Sector field~
+Exit east 30155
+EDesc The path runs through the plains.
+~
+Exit south 30153
+EDesc The path runs south.
+~
+End
+
+
+#30155
+Name Turn on a Path through Plains~
+Desc You are in the middle of flat plains, with featureless grassy terrain 
+stretching in every direction.  A dirt path cuts through the tall grass 
+here, and runs to the north and west.  You see the dark line of a forest, 
+but it is too far to the east to see very clearly.  
+~
+Sector field~
+Exit north 30156
+EDesc The path runs through the plains.
+~
+Exit west 30154
+EDesc The path runs to the west.
+~
+End
+
+
+#30156
+Name Path through Plains~
+Desc A dirt path runs in a fairly straight line north and south.  You are 
+in the middle of flat, grassy plains.  There is not much interesting 
+to look here, except perhaps the dark edge of a forest off to the east.  
+Or is that also a line of mountains far to north?  You can't quite tell 
+from here.
+~
+Sector field~
+Exit east 30499
+EDesc Plains, then forest.
+~
+Exit south 30155
+EDesc The path runs south.
+~
+End
+
+
+#30157
+Name Edge of Grassy Plains~
+Desc You are on a dirt path that makes its way south into the grassy plains, and 
+north into some foothills and towards a mountain range.  The hills look to
+be pretty rocky from this point on, with very little plant growth.
+~
+Sector field~
+Exit east 30275
+Exit south 30338
+Exit west 30336
+End
+
+
+#30158
+Name Path Through Hills~
+Desc You are on a rocky path that winds its way north and south through some
+rocky foothills.  To the south, you see grassy plains, and to the southeast
+some trees.  To the north, the hills get taller and rougher, until they turn
+into a huge mountain range.  Travel in that direction looks like it might be
+tough.
+~
+Sector hills~
+Exit north 30275
+Exit east 31099
+Exit south 19958
+Exit west 30338
+End
+
+
+#30159
+Name Rocky Foothills~
+Desc Several paths intersect here, in the middle of the rocky foothills.  Travel 
+to the north is blocked by a steep mountainside, but you can head east pr 
+west if you feel like some rough travel.  There are a few trees and bushes 
+scattered around, but for the most part you see very little wildlife of any 
+type.  
+~
+Sector hills~
+Exit east 30160
+EDesc A path runs east, through the hills.
+~
+Exit west 30174
+EDesc The path runs west, through the rocky hills.
+~
+End
+
+
+#30160
+Name Path through Rocky Foothills~
+Desc A rough path winds through the rocky foothills.  It goes east and west, and 
+does not look like easy travelling.  There are a few trees and bushes here
+and there, none of which look very healthy.  The hills are passable in all
+directions except north, which is blocked by a sheer mountain wall.
+~
+Sector hills~
+Exit east 30161
+EDesc The path goes east through the hills.
+~
+Exit west 30159
+EDesc The path runs west, through the rocky hills.
+~
+End
+
+
+#30161
+Name Path through Rocky Foothills~
+Desc You are on a rocky path which winds east-west through the rocky foothills. 
+You don't see much alive here, maybe a few small plants, but there are loose
+rocks lying everywhere.  The hills are passable in all directions, but even 
+on the path moving around is very difficult.  You see huge mountains off to 
+the north.
+~
+Sector hills~
+Exit east 30162
+EDesc The path goes east through the hills.
+~
+Exit west 30160
+EDesc The path runs west, through the rocky hills.
+~
+End
+
+
+#30162
+Name Edge of Rocky Foothills~
+Desc The path here marks the border of the rocky foothills.  It runs east and
+west, and is very rough.  To the north are the hills and mountains, while 
+to the south you see some overgrown meadows and trees.
+~
+Sector hills~
+Exit east 30163
+EDesc The path goes east, and runs along the south edge of the hills.
+~
+Exit west 30161
+EDesc The path runs west, through the rocky hills.
+~
+End
+
+
+#30163
+Name Edge of Rocky Foothills~
+Desc The path here runs east and west, and marks the south edge of some rocky
+foothills.   Past the foothills to the north you see tall mountains, and 
+to the south you see meadows and some scattered trees.
+~
+Sector hills~
+Exit south 19590
+Exit west 30162
+EDesc The path runs west, along the rocky hills.
+~
+End
+
+
+#30164
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all types of 
+trees, but they are spaced in such a way that travel is easy.  The sounds of 
+birds chirping and small animals scurrying through the branches is all 
+around.  
+~
+Sector hills~
+End
+
+
+#30165
+Name A Path Running along the Edge of Rocky Foothills~
+Desc The path turns north and west here, and continues to run along the edge
+of the rocky foothills.  To the north and west, these hills rise to meet
+a tall mountain range.  To the south are scattered trees, and to the
+east the trees are thick enough to be considered a forest.  You hear the 
+sounds of birds and animals, especially from the trees.
+~
+Sector hills~
+Exit north 30166
+EDesc The path goes north, along the base of the hills.
+~
+Exit south 30299
+EDesc Some scattered trees.
+~
+End
+
+
+#30166
+Name A Path Running along the Edge of Rocky Foothills~
+Desc There is a trail here which runs south along the base of some rocky 
+foothills and east into a pleasant pine forest.  There are lots of
+sounds and signs of life in the trees, but doesn't seem to be much 
+of anything living in the hills.  You can follow the path in either
+direction, but the eastern path looks a lot easier.
+~
+Sector forest~
+Exit east 30167
+EDesc The path runs east, into a nice pine forest.
+~
+Exit south 30165
+EDesc The path goes south along the base of some foothills.
+~
+Exit west 31074
+End
+
+
+#30167
+Name Forest Trail~
+Desc You are at the western edge of a pleasant forest, on an old worn trail.
+The path leads east, deeper into the forest, and west, towards some 
+hills and mountains.  You notice that the ground is covered with pine
+needles, and that most of the surrounding trees are of that variety.
+Occasionally the sound of some forest creature echoes around you.  To
+the north, the forest dies out and the hills begin.
+~
+Sector forest~
+Exit east 30168
+EDesc The path runs east through the forest.
+~
+Exit west 30166
+EDesc The path exits the forest and heads for some hills.
+~
+End
+
+
+#30168
+Name Forest Trail~
+Desc You are on a trail which runs through a pretty forest.  You hear animal      
+sounds all around you, and even see a squirrel flitting through the 
+trees occasionally.  The trees are mostly pine, and the ground is
+covered with their needles.  You can follow the trail to the east or west.
+~
+Sector forest~
+Exit east 30169
+EDesc The path runs east through the forest.
+~
+Exit west 30167
+EDesc The trail leads west through the forest.
+~
+End
+
+
+#30169
+Name Forest Trail~
+Desc A trail covered with pine needles cuts through the forest at this point.
+You can go east or west on the trail, or head off into the forest.  The 
+trees are old in this area, and there are fallen branches here and there,
+making it difficult to move in some places.
+~
+Sector forest~
+Exit east 30170
+EDesc The path runs east through the forest.
+~
+Exit west 30168
+EDesc The trail runs west through the forest.
+~
+End
+
+
+#30170
+Name Forest Trail~
+Desc You are in a pleasant pine forest, on an east-west path.  The forest is
+very active, and you hear and see small animals everywhere.  You also 
+hear the sound of trickling water although you can't tell from what 
+direction.  The trees seem to lighten to the east.
+~
+Sector forest~
+Exit east 30171
+EDesc The path runs east through the forest.
+~
+Exit west 30169
+EDesc The trail runs west through the forest.
+~
+End
+
+
+#30171
+Name Light Forest~
+Desc The forest is very thin here, with large spaces between most trees.  There 
+is a path running west, into thicker forest, or east, through some grassy 
+meadows.  You hear the sound of running water, off to the south.  
+~
+Sector field~
+Exit east 30172
+EDesc A path runs east through some meadows.
+~
+Exit west 30170
+EDesc A path runs west into the thicker forest.
+~
+End
+
+
+#30172
+Name Path through Meadow~
+Desc You are on a dirt trail which meanders through grassy meadows.  It enters a 
+nice looking forest to the west.  The meadow is full of wildlife - Lots of 
+wildflowers and bushes, and small animals scurrying around everywhere.  You 
+can hear water running somewhere to the south.  
+~
+Sector field~
+Exit east 30488
+EDesc The path goes east.
+~
+Exit west 30171
+EDesc A path enters a forest to the west.
+~
+End
+
+
+#30173
+Name Small Cottage~
+Desc This small cottage is anything but interesting.  A small wooden bed and a 
+chest dominate this one room cottage and nothing more save for the furs on 
+the bed and a couple of windows.  The room is filled with dust that covers 
+some areas so thick you can't even see the floor.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 30463
+EFlags door closed~
+End
+
+
+#30174
+Name Rocky Path through Foothills~
+Desc You are on a rough path that runs through some rocky foothills.  The path
+heads east through the hills, and turns north into a pass that leads into
+the mountains.  The pass north does not look like it is used often, and is
+hard to follow in some spots.  Around you is mostly rocks, with very little
+vegetation growing because the terrain is to rough.
+~
+Sector hills~
+Exit east 30159
+EDesc The path runs off to the east, through the rocky hills.
+~
+Exit west 30438
+End
+
+
+#30175
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land visible 
+in any direction.  The air carries the scent of salt, and the water looks 
+very deep here.  
+~
+Sector noswim~
+Exit north 30176
+EDesc The path runs north, further into the mountains.
+~
+Exit south 30368
+End
+
+
+#30176
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land visible 
+in any direction.  The air carries the scent of salt, and the water looks 
+very deep here.  
+~
+Sector noswim~
+Exit north 30367
+Exit south 30175
+EDesc You can follow the narrow path to the south.
+~
+End
+
+
+#30177
+Name Deep within a Mountain Pass~
+Desc You are very deep into the mountain pass.  The pass, which is very narrow to 
+the south, widens into what seems to be a large circular depression to the 
+north.  The walls here are still very steep and unclimbable.  A small path 
+runs east along the top edge of the depression.  In the middle of the 
+depression lie the ruins of a large tower.  
+~
+Sector hills~
+Exit east 30489
+EDesc A small path.
+~
+Exit west 30234
+End
+
+
+#30178
+Name Plains, Near a City~
+Desc You are on the plains, at the edge of a dark forest, which is to the east.
+The plains continue to the north and west, and to your southwest a bit you
+see a city.  There appear to be entrances to this city to the south and 
+west.
+~
+Sector field~
+Exit north 30570
+EDesc Along the edge of the forest.
+~
+Exit east 30549
+EDesc Into the trees.
+~
+Exit south 30183
+EDesc The eastern entrance to the city lies in this direction.
+~
+Exit west 30181
+EDesc The entrance to the city, and more plains, lie to the west.
+~
+End
+
+
+#30179
+Name Cobblestone Path, Near a City~
+Desc You are surrounding by grassy plains on this cobblestone path, just 
+northwest of a city.  You can enter that city to the south and ast, but not 
+from here.  Plains lie in all directions except east, where you see the dark 
+edge of a forest some ways off.  Peering more intently towards the west you 
+see what appears to be a large path opening with houses on opposing sides 
+of the path.  
+~
+Sector field~
+Exit east 30180
+EDesc The city entrance is to the east.
+~
+Exit south 30182
+EDesc The city entrance is to the south. 
+~
+End
+
+
+#30180
+Name Cobblestone Path, Outside the North Wall of a City~
+Desc You are just outside the north wall of a city.  The walls do not look very 
+strong, and appear to still be under construction in some parts.  There 
+appears to be an entrance to this city to the east, or you can move away 
+from it following the cobblestone path that runs towards the west through 
+the plains.  
+~
+Sector field~
+Exit east 30146
+EDesc There is an entrance to the city off to the east.
+~
+Exit west 30179
+EDesc You can go west into the plains.
+~
+End
+
+
+#30181
+Name Plains, Outside the North Wall of a City~
+Desc You are in a flat grassy area just outside the north walls of a city.
+This section of the walls are not finished being build, and do not yet
+look like they'd keep much of anything out.  You can go west to get to
+the city entrance, or north to travel into the plains.  Not far to the
+east you see the the edge of a dark forest.
+~
+Sector field~
+Exit north 30564
+EDesc Plains stretch to the north.
+~
+Exit east 30178
+EDesc To the east are some fields and then a dark forest.
+~
+Exit west 30146
+EDesc To the west is an entrance to the city.
+~
+End
+
+
+#30182
+Name Plains, outside the West Wall of a City~
+Desc You are just outside the west walls of a city on the plains.  The walls 
+themselves don't look quite complete as of yet.  Plains lie to the north
+and west, and an entrance to the city is just to the south.  
+~
+Sector field~
+Exit north 30179
+EDesc Plains lie to the north.
+~
+Exit south 30217
+EDesc An entrance to the city is to the south.
+~
+End
+
+
+#30183
+Name Meadows between City Walls and a Forest~
+Desc You are just outside the eastern walls of a city, standing in a meadow
+that is covered with tall grass and wildflowers.  You can enter the
+trees to the east, or follow the edge of the forest by going north.  
+Just to the south is an entrance to the city.  The city walls look
+like they are still under construction in some sections.
+~
+Sector field~
+Exit north 30178
+EDesc You can walk along the border of the forest to the north.
+~
+Exit east 30548
+EDesc Into the trees.
+~
+Exit south 30216
+EDesc The entrance to the city is just to the south.
+~
+End
+
+
+#30184
+Name Near the Western Walls of a City, along a River.~
+Desc You are just outside the western walls of a city.  The walls still look
+like they are under construction, and certainly couldn't keep much out
+at this stage.  You can travel west into the plains, or north to the city's
+entrance, but movement south is blocked by a wide river.  The walls are
+built right up to the edge of the water, so don't even think about trying
+to get in that way.
+~
+Sector field~
+Exit north 30217
+EDesc The entrance to the city is just to the north.
+~
+Exit south 30597
+EDesc The river.
+~
+End
+
+
+#30185
+Name Near the Eastern Walls of a City, along a River.~
+Desc You are just outside the eastern walls of a city.  The walls still look
+like they are under construction, and certainly couldn't keep much out
+at this stage.  You can travel east into a forest, or north to the city's
+entrance, but movement south is blocked by a wide river.  The walls are
+built right up to the edge of the water, so don't even think about trying
+to get in that way.
+~
+Sector field~
+Exit north 30216
+EDesc The entrance to the city is just to the north.
+~
+Exit east 30708
+Exit south 30713
+End
+
+
+#30186
+Name Path Through Plains~
+Desc A dirt path runs in a fairly straight line north and south.  You are in
+the  middle of a huge expanse of flat, grassy plains.  There is not much
+interesting to look here, except perhaps the dark edge of a forest off to
+the east.  A long way to the south, you think you see what might be a city.
+~
+Sector field~
+Exit north 30187
+EDesc The path runs through the plains.
+~
+Exit east 30565
+EDesc Plains then forest lie this way.
+~
+Exit south 30147
+EDesc The path runs south.
+~
+End
+
+
+#30187
+Name Path Through Plains~
+Desc You are on a dirt path running through flat, grassy plains.  It runs north
+and south, but there is nothing worth looking at in either direction.  As a
+matter of fact, the only thing at all you see besides tall grass is the
+dark edge of a forest to the east.
+~
+Sector field~
+Exit north 30188
+EDesc The path runs through the plains.
+~
+Exit east 30566
+EDesc Plains then forest lie in this direction.
+~
+Exit south 30186
+EDesc The path runs south through the plains.
+~
+End
+
+
+#30188
+Name Path Through Plains~
+Desc Plains covered by tall grass surround you.  There is a dirt path beaten into 
+the grass here, running north and south.  Off to the east is what looks like 
+the border of a dark forest.
+~
+Sector field~
+Exit north 30189
+EDesc The path runs through the plains.
+~
+Exit east 30567
+EDesc Plains then forest lie in this direction.
+~
+Exit south 30187
+EDesc The path runs south.
+~
+End
+
+
+#30189
+Name Path Through Plains~
+Desc The area you are traveling through is rather boring.  Grassy plains
+stretch in every direction except east, where you see the edge of a forest. 
+A dirt path goes off to the north and south.  
+~
+Sector field~
+Exit north 30148
+EDesc The path runs through the plains.
+~
+Exit east 30568
+EDesc Plains then forest lie in this direction.
+~
+Exit south 30188
+EDesc The path runs south.
+~
+End
+
+
+#30190
+Name Dense Forest, near Road~
+Desc You are finding it difficult to move quickly because the forest is 
+so dense at this point.  All sorts of trees and underbrush surround 
+you and are intertwined with one another.  A short distance to the 
+east it looks like there is a cleared roadway.
+~
+Sector forest~
+Exit north 30194
+EDesc More thick forest to the north.
+~
+Exit east 30130
+EDesc There is a cleared roadway to the east.
+~
+Exit south 30535
+EDesc More trees.
+~
+Exit west 30191
+EDesc More Dense forest to the west.
+~
+End
+
+
+#30191
+Name Dense Forest~
+Desc The forest is so dense here that it is difficult to travel.  Each 
+direction looks about the same - trees and brush and not much else.  
+You hear birds chirping and animals moving around.
+~
+Sector forest~
+Exit north 30195
+EDesc More dense forest to the north.
+~
+Exit east 30190
+EDesc More trees to the east.
+~
+Exit south 30528
+EDesc More trees.
+~
+Exit west 30192
+EDesc More trees to the west.
+~
+End
+
+
+#30192
+Name Dense Forest~
+Desc You are in a rather dense and dark part of a forest.  Many varieties 
+of trees grow tall around you, blocking out much of the light from 
+above.  It looks just as gloomy in every direction except north, where 
+it seems a little lighter.
+~
+Sector forest~
+Exit north 30100
+Exit east 30191
+EDesc Dense forest.
+~
+Exit south 30521
+EDesc More trees.
+~
+Exit west 30193
+EDesc Dense forest.
+~
+End
+
+
+#30193
+Name Dense Forest~
+Desc The trees here are so tall and leafy that not much light gets through.  
+It is difficult to travel because of the heavy undergorwth.  You hear 
+an occassional bird or animal running through the forest.
+~
+Sector forest~
+Exit north 30196
+EDesc More dense forest.
+~
+Exit east 30192
+EDesc More dense forest.
+~
+Exit south 30514
+EDesc More trees.
+~
+Exit west 30507
+EDesc More trees.
+~
+End
+
+
+#30194
+Name Dense Forest near Road~
+Desc You are in very thick and dark forest.  All sorts of trees and 
+undergrowth surround you and make it difficult to move.  You see 
+something moving occassionally, but can't make out any details 
+because the trees block out much of the light.  There is some sort
+of cleared roadway off to your east.
+~
+Sector forest~
+Exit north 30197
+EDesc More dense forest.
+~
+Exit east 30131
+EDesc A roadway is in this direction.
+~
+Exit south 30190
+EDesc More dense forest.
+~
+Exit west 30195
+EDesc More dense forest.
+~
+End
+
+
+#30195
+Name Dense Forest~
+Desc The forest is very dense and lush here.  Tall trees and heavy growth 
+surround you and block out the light.  The terriain appears to be similar 
+in all directions except west, where it seems to lighten somewhat.
+~
+Sector forest~
+Exit north 30198
+EDesc More dense forest.
+~
+Exit east 30194
+EDesc Dense forest.
+~
+Exit south 30191
+EDesc Dense forest.
+~
+Exit west 30100
+End
+
+
+#30196
+Name Dense Forest~
+Desc You are in a dark and gloomy forest.  The tall trees and heavy 
+growth seem to block out the light and make it difficult to move.  
+Every now and then you hear something moving around near you.  It 
+seems to be a bit lighter to the east.
+~
+Sector forest~
+Exit north 30200
+EDesc Dense forest.
+~
+Exit east 30100
+Exit south 30193
+EDesc Dense forest.
+~
+Exit west 30313
+EDesc More dense forest.
+~
+End
+
+
+#30197
+Name Dense Forest near Road~
+Desc You are in the thick and dark forest just to the west of a cleared 
+roadway.  The trees that surround you are of all varieties, and most 
+of have branches which have in many places grown together.  The heavy 
+growth blocks out much of the light from above.
+~
+Sector forest~
+Exit east 30132
+EDesc A cleared roadway is in this direction.
+~
+Exit south 30194
+EDesc Dense forest.
+~
+Exit west 30198
+EDesc Dense forest.
+~
+End
+
+
+#30198
+Name Dense Forest~
+Desc The forest here is teeming with life.  You hear small animals scurrying
+through the growth, and birds chirping from the trees.  The light is mostly
+blocked by the high leafy canopy, so it is difficult to see too much of your
+surroundings.
+~
+Sector forest~
+Exit east 30197
+EDesc More trees.
+~
+Exit south 30195
+EDesc More trees.
+~
+Exit west 30199
+EDesc More trees.
+~
+End
+
+
+#30199
+Name Dense Forest~
+Desc As you force your way through the heavy growth here, you hear small animals
+scurrying away from all the noise you are making.  It is not easy to move, 
+with all the branches and undergrowth.  It is bad enough to the south to be
+impassable.
+~
+Sector forest~
+Exit east 30198
+EDesc More thick forest.
+~
+Exit south 30100
+Exit west 30200
+EDesc Thick forest.
+~
+End
+
+
+#30200
+Name Dense Forest~
+Desc The forest is very dark and foreboding here.  Many types of trees and
+growth are around you, all of which are very dense and close.  You hear
+water trickling from somewhere, but the source is not visible.
+~
+Sector forest~
+Exit east 30199
+EDesc More trees.
+~
+Exit south 30196
+EDesc More dense forest.
+~
+End
+
+
+#30201
+Name Road through Light Forest~
+Desc The dirt road goes north and south through a light forest here.  The trees
+around it are mostly maple trees, with an occasional oak or pine.  There
+is not much undergrowth.  It looks like the road comes out of the forest
+just to the south.
+~
+Sector field~
+Exit north 30202
+EDesc The road goes to the north.
+~
+Exit south 30486
+EDesc The road leaves the trees to the south.
+~
+End
+
+
+#30202
+Name Turn in Road through Light Forest~
+Desc A dirt road makes a sharp turn to the west and south here.  The forest
+around it is very pleasant, with many varieties of trees and wildlife.
+~
+Sector field~
+Exit south 30201
+EDesc The road heads south through the trees.
+~
+Exit west 30203
+EDesc The road goes west through the trees.
+~
+End
+
+
+#30203
+Name Turn in Road through Light Forest~
+Desc A dirt road cuts through the forest here, heading north and east.  You can
+go either of those directions, or move off into the trees.  You hear animals
+moving around in the trees, and a bird is chirping somewhere.
+~
+Sector field~
+Exit north 30204
+EDesc The road goes north.
+~
+Exit east 30202
+EDesc The road goes east through the trees.
+~
+End
+
+
+#30204
+Name Road through Light Forest~
+Desc You are just inside the northern edge of a light forest.  A road runs north
+out of the trees, and south deeper into the forest.  The forest is made up
+of mostly maple trees, with a pine or oak tree here and there.
+~
+Sector field~
+Exit north 30205
+EDesc The road leaves the trees to the north.
+~
+Exit south 30203
+EDesc The roads goes south into the forest.
+~
+End
+
+
+#30205
+Name Dirt Road at Edge of Forest~
+Desc You are on a dirt road just outside a light forest.  You can follow the road
+south into that forest, or north through the plains.  You can't tell for 
+certain from this elevation, but it looks like there is a large expanse of 
+water far to the northeast.
+~
+Sector field~
+Exit north 30206
+EDesc The road goes north across the flatlands.
+~
+Exit south 30204
+EDesc The road enters the trees to the south.
+~
+End
+
+
+#30206
+Name Road through Plains~
+Desc A dirt road runs north and south over the flatlands here.  There is a large
+expanse of water a good distance to the northeast.  Long grass grows around
+the path and as far to the east and west as you can see.  A path is beaten
+into the grass and runs east along the water of the bay from here.
+~
+Sector field~
+Exit north 30207
+EDesc The road goes north.
+~
+Exit east 30464
+EDesc A path runs east.
+~
+Exit south 30205
+EDesc The road heads to the south.
+~
+End
+
+
+#30207
+Name Road through Plains~
+Desc You are on a road which travels north and south through the plains.
+You appear to be near the edge of the flatlands, however.  A huge
+expanse of water lies before you to the north.  The road heads in
+that direction, or south across the plains.
+~
+Sector field~
+Exit north 30208
+EDesc The road heads towards the water.
+~
+Exit south 30206
+EDesc The road heads south across the plains.
+~
+End
+
+
+#30208
+Name Road near Bay~
+Desc You are on a dirt road which runs west and south along the edge of the water.
+The water is dark blue, fairly calm, and stretches as far to the north and 
+east as you can see.
+~
+Sector field~
+Exit south 30207
+EDesc The road runs south, into some plains.
+~
+Exit west 30209
+EDesc The road goes west, just above the water's edge.
+~
+End
+
+
+#30209
+Name Road along Water's Edge~
+Desc You are on a dirt road which runs east and north along the edge of the water.
+The water lies northeast, and stretches as far as you can see.  To the west
+and south are grassy flatlands.
+~
+Sector field~
+Exit north 30210
+EDesc The road runs north, along the water's edge.
+~
+Exit east 30208
+EDesc The road goes east, along the water's edge.
+~
+End
+
+
+#30210
+Name Road along Water's Edge~
+Desc A dirt road runs north and south along the edge of a large expanse of water.
+The water stretches as far as you can see to the east.  Along parts of the
+west side of the road are some cultivated fields, perhaps you are close to
+a town or city?  There is also a small overgrown path running off the main
+road to the west.  It is in such poor shape that you almost didn't notice it.
+~
+Sector field~
+Exit north 30211
+EDesc The road runs north along the water.
+~
+Exit south 30209
+EDesc The road runs south along the water's edge.
+~
+End
+
+
+#30211
+Name Road through Fields, along Water's Edge~
+Desc You are on a dirt road which passes through some cultivated fields, in which 
+all sorts of crops are being grown, Just to the east is the edge of a huge 
+expanse of water.  The road seems to be heavily used here, and to the north 
+you see what appears to be a large city rising over the horizon.  
+~
+Sector field~
+Exit north 30480
+Exit south 30210
+EDesc The road runs south, along the water's edge.
+~
+End
+
+
+#30213
+Name Overgrown Path through FootHills~
+Desc You are on an overgrown path through the hills.  There are a lot of
+briars and thorny bushes here, making the going tough.  The path goes
+east, towards flatter land, and west, into the steeper hills.  There
+is more of the same to the north and south.
+~
+Sector hills~
+Exit east 30238
+Exit west 30214
+EDesc The path goes west, into the steeper foothills.
+~
+End
+
+
+#30214
+Name Path through Steep Foothills~
+Desc A path winds its way north and east around some steep foothills here.
+Your way west is blocked by sheer mountainsides, but you can go in any
+other direction.  To the north and south are more rocky slopes, while
+to the east it seems to level out a bit after a while.  Another smaller
+path branches off to the south.
+~
+Sector hills~
+Exit east 30213
+EDesc The path heads east into more hospitable lands.
+~
+Exit west 30585
+End
+
+
+#30215
+Name Steep Foothills~
+Desc You are just west of a huge mountain range, in the foothills.  The slopes 
+around you are very steep and rocky, and support little in the way of plant 
+life.  
+~
+Sector hills~
+Exit east 30498
+Exit west 30339
+End
+
+
+#30216
+Name Outside the East Gate of a City~
+Desc You are just outside the eastern gates of a city.  Most of the buildings 
+and the wall on this end of the city appear to be under construction.  There
+are two small towers here that have only been partially built, and are not
+yet attached to the new wall.  To the east a road disappears into a dark
+forest.  There is a meadow to the south,  and beyond that a wide river flows.
+You can also travel into the plains to the north.
+~
+RoomFlags law~
+Sector field~
+ExtraDesc wall tower~
+It is being built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is looking rather shaky at this stage.
+~
+Exit north 30183
+EDesc Plains are off to the north.
+~
+Exit east 30218
+EDesc A road leading east into a dark forest.
+~
+Exit south 30185
+EDesc You can go south, across the meadow to the river.
+~
+Exit west 3010
+EFlags door closed obvious~
+EKeywords gate~
+End
+
+
+#30217
+Name Outside the Western Entrance of a City~
+Desc You are just outside the western entrance to a city.  Most of the buildings 
+and the wall on this end of the city appear to be under construction.  There 
+are two small towers here that have only been partially built, and are not 
+yet attached to the new wall.  To the west a path leads off onto the plains. 
+Plains also lie to the north, and to the south you see what looks like a 
+wide river.
+~
+RoomFlags law~
+Sector city~
+ExtraDesc wall tower~
+It is being built from large grey rocks that have been fastened to each other with
+some kind of mortar.  It is looking rather shaky at this stage.
+~
+Exit north 30182
+EDesc Plains lie to the north.
+~
+Exit east 3013
+EFlags door closed obvious~
+EKeywords gate~
+Exit south 30184
+EDesc You can head south towards the river.
+~
+Exit west 30262
+EDesc A path leads off west into the plains.
+~
+End
+
+
+#30218
+Name A Road just East of a Large City~
+Desc To the west you can see the gates of a large city, east lies a forest.  The 
+forest is vibrant and rich with plant life.  Green trees tall and strong 
+each reach for the sky, almost blocking out the sky above.  
+~
+RoomFlags law~
+Sector field~
+Mana 10
+Heal 10
+Exit north 30548
+EDesc A forest.
+~
+Exit east 30219
+EDesc A trail leading eastward from Midgaard.
+~
+Exit south 30708
+Exit west 30216
+EDesc You see the city gate.
+~
+End
+
+
+#30219
+Name A Road East of a Large City~
+Desc Somewhat to the west you can see the gates of a large city, and to the east
+a mighty river blocks your path.  Luckily there is a huge wooden bridge 
+built over it.  The path is surrounded by thick, leafy trees which stretch 
+as far to the north and south as you can see.
+~
+RoomFlags law~
+Sector field~
+Exit north 30552
+EDesc A forest meets the riverbank.
+~
+Exit east 30220
+EDesc A trail leading eastward from Midgaard.
+~
+Exit south 30709
+Exit west 30218
+EDesc You see the trail back to Midgaard.
+~
+End
+
+
+#30220
+Name Wooden Bridge over River~
+Desc You are on a sturdy wooden bridge that passes over a wide but slow moving
+river.  The bridge is well built, and from examining the wood you can tell
+it was erected only recently.  The river flows north and south through the
+forest, and is surrounded by trees on all sides.
+~
+RoomFlags law~
+Sector field~
+Exit north 30556
+Exit east 30221
+EDesc A trail leading east from a large city.
+~
+Exit south 30710
+Exit west 30219
+EDesc You see a road leading to a large city.
+~
+End
+
+
+#30221
+Name A Forest Road~
+Desc You are just east of a long wooden bridge which spans a huge river.  In that 
+direction, a lot farther down the road, you see the walls of a large city.  
+Thick, leafy trees stand as far as you can see to the north and south, and a 
+road continues east into the forest.  
+~
+RoomFlags law~
+Sector field~
+Exit north 30560
+EDesc A riverbank meets the forest.
+~
+Exit east 30101
+EDesc The trail leads east.
+~
+Exit south 30711
+Exit west 30220
+EDesc You see the trail back to Midgaard.
+~
+End
+
+
+#30222
+Name Muck-Filled River~
+Desc The river flows slowly eastward here.  It is covered with a disgusting layer
+of slime and muck.  To the north there seems to be a village of some type,
+which from here looks very filthy and quiet.  There is a dark and towering
+shape through the mists to the south, and you can see an old bridge crossing
+the river just east of here.
+~
+Sector swim~
+Exit north 31107
+Exit east 30440
+Exit south 30456
+EDesc There is more solid ground, and is that a tall wall to the south?
+~
+Exit west 30699
+End
+
+
+#30223
+Name Plains~
+Desc There is not much besides grassy flatlands in every direction.  The only 
+interesting thing around is a path just to your east.  To the west you see
+the jagged tips of a mountain range, but they are very far off.
+~
+Sector field~
+Exit east 30151
+EDesc There is a dirt path just east.
+~
+Exit west 30224
+EDesc Plains, and beyond that mountains.
+~
+End
+
+
+#30224
+Name Plains~
+Desc There are grassy plains in every direction but west.  Turning that way, you
+see that the ground starts to become uneven, and eventually rises up into 
+hills and then mountains.
+~
+Sector field~
+Exit east 30223
+EDesc Grassy plains stretch as far as you can see.
+~
+Exit west 30225
+EDesc The ground becomes hilly to the west.
+~
+End
+
+
+#30225
+Name Plains, at the Base of the Foothills~
+Desc The ground is mostly flat here, but to the west it really starts to rise.
+In that direction, the foothills get steeper and steeper until they turn
+into a mountain range that runs roughly north-south.  From this distance
+the mountains look very imposing and impassable.
+~
+Sector field~
+Exit east 30224
+EDesc Plains as far as you can see.
+~
+Exit west 30226
+EDesc The foothills and mountains are this way.
+~
+End
+
+
+#30226
+Name Small Foothills~
+Desc You are in an area of low foothills.  They are small and easy to travel
+through here, but to the west they get much steeper.  Beyond that a huge
+mountain range fills your view.  To the east the ground flattens out and
+becomes grassy plains.
+~
+Sector hills~
+Exit east 30225
+EDesc The ground flattens to the east.
+~
+Exit west 30227
+EDesc The foothills become steeper to the west.
+~
+End
+
+
+#30227
+Name Foothills~
+Desc Travel through the foothills here is not easy.  The ground is very rocky,
+and there is no path.  To the west, it only gets worse, while to the east
+it seems to flatten out.  Huge mountains block your view to the west.
+You notice that a bit of a path has formed here, and goes between two of
+the tallest mountains.
+~
+Sector hills~
+Exit east 30226
+EDesc The hills are less severe in this direction.
+~
+Exit west 30228
+EDesc A path leads into a small pass between two mountains.
+~
+End
+
+
+#30228
+Name Mountain Pass~
+Desc You are in a wide mountain pass that has been carved out of the stone
+either by some powerful force or a lot of dedicated workers.  It runs
+between two of the tallest mountains in the range, which are now to your
+north and south.  To the east, the pass opens into the foothills, while
+to the west it goes deeper into the mountains.
+~
+Sector hills~
+Exit east 30227
+EDesc The pass opens to the hills.
+~
+Exit west 30229
+EDesc The pass goes deeper into the mountains.
+~
+End
+
+
+#30229
+Name Mountain Pass~
+Desc Someone or something has carved a wide pass here between two of the
+taller mountains in the range.  You can go west, out into the hills,
+or east, deeper into the mountain pass.
+~
+Sector hills~
+Exit east 30228
+EDesc The pass goes deeper into the mountains.
+~
+Exit west 30230
+EDesc You can go west, where the pass opens into the hills.
+~
+End
+
+
+#30230
+Name Steep Foothills~
+Desc Steep foothills surround you in all directions, although they seem to
+flatten out a bit to the west.  They are rocky, and very difficult to
+travel through.  A small path forms here, and heads into the mountains
+to the east.
+~
+Sector hills~
+Exit north 30231
+EDesc Steep foothills.
+~
+Exit east 30229
+EDesc You can enter a mountain pass to the east.
+~
+End
+
+
+#30231
+Name Steep Foothills~
+Desc Steep, rocky hills surround you.  There is little wildlife of any type
+here, unless you count the lichen growing on rocks.  It is quite a dismal
+scene to say the least.  The way east is blocked by sheer mountainsides,
+but you can travel through the hills in any other direction.
+~
+Sector hills~
+Exit north 30232
+EDesc Steep Foothills
+~
+Exit south 30230
+EDesc Steep Foothills
+~
+End
+
+
+#30232
+Name Steep Foothills~
+Desc Steep, rocky hills surround you.  There is little wildlife of any type here,
+unless you count the lichen growing on rocks.  It is quite a dismal scene to
+say the least.  The way east is blocked by steep mountainsides, but you can
+travel through the hills in any other direction.
+~
+Sector hills~
+Exit north 30233
+EDesc Steep Foothills
+~
+Exit south 30231
+EDesc Steep Foothills
+~
+End
+
+
+#30233
+Name Foothills~
+Desc The hills here are steep and rocky, making travel difficult.  The path, 
+though well used has not been kept in good repair.  The terrain seems a 
+little easier to travel to the east and north, while to the south it appears 
+to become even more difficult.  A path leads off to the northwest.  
+~
+Sector hills~
+Exit east 30234
+EDesc Flatter ground.
+~
+Exit south 30232
+EDesc Steep foothills
+~
+End
+
+
+#30234
+Name Small Foothills~
+Desc The hills here are not quite as steep as they are to the west.  As a matter 
+of fact, they seem to get even smaller and disappear to the east.  You can 
+go in either direction, or into the steeper hills to the west, but travel 
+north and south is blocked by sheer mountain sides.  Not to far to the east 
+you can hear sounds of faint laughter.  Peering more intently in that 
+direction what looks like the walls of some city can be seen.  
+~
+Sector hills~
+Exit north 940
+Exit east 30177
+Exit west 30233
+EDesc Steeper hills.
+~
+End
+
+
+#30235
+Name Wooden Bridge Overlooking River~
+Desc You are on a long wooden bridge spanning the width of a westward flowing
+river.  At the north end, you see a large town spreading out, while to
+the south are some flatlands with the occasional cluster of trees.  The
+bridge is well built and looks quite sturdy.
+~
+Sector city~
+ExtraDesc bridge wooden~
+The brige looks like it was hastily built and is not very sturdy.
+~
+ExtraDesc town~
+A walled town is to the north.
+~
+ExtraDesc river water~
+The river is fairly calm at this point.
+~
+ExtraDesc tree cluster~
+Some sparse trees are to the south.
+~
+Exit north 3006
+EFlags door closed obvious~
+EKeywords gate~
+Exit south 30236
+EDesc Grassy flatlands.
+~
+Exit down 30771
+End
+
+
+#30236
+Name Flatlands~
+Desc You are on the flatlands near a large river.  To your north, a 
+wooden bridge crosses that river, and leads into a city.  In all 
+other directions is grassy, flat land, with small bunches of trees
+here and there.
+~
+Sector field~
+ExtraDesc flatlands grassy~
+Grassy flatlands.  Pretty boring.
+~
+ExtraDesc river bridge city~
+A woooden bridge leads over a river and into a city to the north.
+~
+ExtraDesc trees cluster~
+Small groups of trees.
+~
+Exit north 30235
+EDesc The bridge is to the north.
+~
+Exit east 30718
+Exit south 30237
+EDesc Flatlands, with trees here and there.
+~
+End
+
+
+#30237
+Name Flatlands~
+Desc The flatlands stretch on and on in every direction.  There are single
+trees in a few spots, but none really together.  A long way to the
+north you can see what looks like a river, and possibly a city beyond.
+~
+Sector field~
+ExtraDesc flatlands trees~
+The flatlands stretch in every direction, broken only by single trees
+in a few places.
+~
+ExtraDesc river city~
+You can't make out any details from here.
+~
+Exit north 30236
+EDesc A river is off to the north.
+~
+Exit east 30724
+Exit south 30238
+EDesc The flatlands stretch south.
+~
+End
+
+
+#30238
+Name Flatlands~
+Desc The ground is flat and covered with clumps of tall grass.  Aside from
+a field mouse scurrying through the growth, there is not much to look at,
+although a faint path leads east.
+~
+Sector field~
+ExtraDesc tall grass~
+Clumps of tall green and yellow grass.
+~
+ExtraDesc mouse~
+Just a tiny little field mouse.  It is gone now.
+~
+Exit north 30237
+EDesc The flatlands stretch north.
+~
+Exit east 12300
+EDesc A faint path.
+~
+Exit south 30239
+EDesc The flatlands continue south, and seem to get a little rockier
+~
+Exit west 30213
+End
+
+
+#30239
+Name Flatlands~
+Desc The flatlands stretch off in all directions.  To the north, the ground is
+covered with tall grass, while to the south it seems to get much rockier 
+and little vegetation is present.
+~
+Sector field~
+ExtraDesc tall grass~
+Clumps of tall grass.
+~
+Exit north 30238
+EDesc Grassy flatlands.
+~
+Exit east 30735
+Exit south 30240
+EDesc Rocky ground.
+~
+End
+
+
+#30240
+Name Rocky Flatlands~
+Desc Here the ground is flat for the most part, but is getting very rocky.  
+Clumps of grass are growing in a few crevices, but don't look all that
+healthy.  There is no animal life, and it is very quiet.  It seems to
+get worse to the south.
+~
+Sector field~
+ExtraDesc clumps grass crevices~
+Very unhealthy grass grows in a few cracks.
+~
+Exit north 30239
+EDesc More grass and smoother ground.
+~
+Exit east 30741
+Exit south 30241
+EDesc Rocky ground.
+~
+End
+
+
+#30241
+Name Small Rocky Hills~
+Desc You find yourself winding your way through and over small rocky hills.
+Some of the more hardy types of vegetation exist here, mostly in the
+form of lichens and mosses, with a few stunted trees. It seems to even
+out a bit to the north.
+~
+Sector hills~
+ExtraDesc vegetation lichen moss trees~
+Very sickly looking.
+~
+Exit north 30240
+EDesc Rocky flatlands.
+~
+Exit east 30242
+EDesc Small rocky hills.
+~
+Exit south 30756
+End
+
+
+#30242
+Name Small Rocky Hills~
+Desc You are wandering through a region of small rocky hills.  There is
+little plant growth or for that matter anything besides the grey 
+stone.  The whole area has an ugly, unwholesome look to it.  You
+notice some bones lying about on the ground.
+~
+Sector hills~
+ExtraDesc bones~
+You can tell that they haven't been here that long, as there is still
+meat rotting on some of them.  You notice the shreds of clothing mixed
+in with them.
+~
+Exit north 30741
+Exit east 30255
+EDesc More rocky hills.
+~
+Exit south 30243
+EDesc More rocky hills.
+~
+Exit west 30241
+EDesc More rocky hills.
+~
+End
+
+
+#30243
+Name Rocky Hills, Near a Cave~
+Desc You are in the middle of an area of rocky hills.  They continue in all 
+directions, and it looks like the traveling is going to be difficult.  
+~
+Sector hills~
+ExtraDesc cave opening~
+A disgusting smell comes from this dark cave opening.
+~
+ExtraDesc stench smell~
+Smells like rotting meat.
+~
+Exit north 30242
+EDesc Rocky hills.
+~
+Exit east 30317
+Exit south 30315
+Exit west 30756
+End
+
+
+#30244
+Name A Narrow Dusty Trail~
+Desc A narrow dusty trail leads through the forest rims towards the southern and 
+northern directions through here.  The songs of birds fill the air with 
+their beautiful harmony of tranquil music, yet something seems strange about 
+the tune they sing a touch of happiness yet sadness all twisted into one 
+unison of a melody.  To the south you notice some sort of structure just 
+over the horizon.  
+~
+Sector forest~
+ExtraDesc tree pine maple forest~
+Maple and pine trees.  Not very exciting.
+~
+ExtraDesc roadway~
+A roadway is cleared just to the north.
+~
+Exit north 30101
+EDesc A cleared roadway.
+~
+Exit east 30645
+Exit south 30245
+EDesc More trees.
+~
+Exit west 30711
+End
+
+
+#30245
+Name A Tranquil Glade~
+Desc A magnificent sight of nature looms before you.  Beauty can not comprehend 
+the vision of this glorious will of nature.  Flowers of all types and 
+colours flourish on the glades ground, a enchanting painting to say the 
+least.  The tree's surrounding the glade seem some what majestic in their 
+own fashion, healthy and strong they loom above the forest floor like giants 
+onto the land.  A thin mist flows through the forest's floor, as white as 
+snow yet translucent, its ghostly appearance seems some what soothing if not 
+calming.  Looking around the glade you notice some sort of `Ssmall structure`^ 
+`#`Xsitting directly in the center of it.  The steps of the beautiful structure 
+loom towards the south, where they lead to the entrance of the structure.  
+~
+Sector forest~
+ExtraDesc small structure~
+This beautiful small structure has been made from a combination of sky-blue 
+glass and pure white marble.  Magnificent glass columns spiral from the 
+structures floor to its roof, completely translucent you notice what looks 
+to be some sort of smokey-grey mist flowing within the columns.  Though, 
+strange its sight is nonetheless enchanting.  A set of marble steps lead 
+onto the platform where statues of all sorts stand proudly near the entrance 
+of the structure.  
+~
+ExtraDesc trees forest~
+Pine and maple trees, mostly.
+~
+ExtraDesc squirrels~
+Grey squirrels running around in the branches about 30 feet up.
+~
+Exit north 30244
+EDesc More trees.
+~
+Exit east 30652
+Exit south 30442
+Exit west 30717
+End
+
+
+#30246
+Name Steep Foothills~
+Desc . Sheer walls of stone block travel west from here, but you can move in the
+other directions if you feel like climbing.  Rocky hills stand all around,
+and not much vegetation or shelter.  
+~
+Sector forest~
+ExtraDesc running water~
+You hear it from the south and west.  You could go and check it out...
+~
+Exit north 30580
+Exit east 30294
+Exit west 31060
+End
+
+
+#30247
+Name Riverbank~
+Desc You are on the east bank of a wide, slow moving river.  It makes a bend 
+here, flowing from the west, and to the south.  You can follow it in 
+either direction, or head off into the forest.
+~
+Sector field~
+ExtraDesc river bend~
+The river makes a turn here, flowing from the west and heading south.
+~
+Exit east 30669
+Exit south 30248
+EDesc More riverbank is south.
+~
+Exit west 30729
+End
+
+
+#30248
+Name Riverbank~
+Desc You are on the northeast bank of a wide, slow moving river.  The ground
+is muddy in some places, so better be careful lest you fall in.  The 
+river makes a bend here, flowing from the north and heading off east.
+Someone has constructed a flimsy rope bridge over it to the south here.
+If you are careful, you might just be able to cross without a boat in 
+that direction.
+~
+Sector forest~
+ExtraDesc river water~
+The river is wide and slow here.  You see a fish darting through the
+water if you look long enough.
+~
+ExtraDesc rope bridge~
+A flimsy bridge made from three ropes tied to trees crosses the river
+to the south.
+~
+Exit north 30247
+EDesc Along the riverbank.
+~
+Exit east 30677
+Exit south 30249
+EDesc There is a rope bridge spanning the river to the south.
+~
+Exit west 30734
+End
+
+
+#30249
+Name On a Rope Bridge~
+Desc You are in the middle of a flimsy rope bridge that crosses a wide slow
+river.  The bridge is attached to tall trees on both ends, and is
+made of 3 very thick ropes.  As long as you are careful, it shouldn't
+be too hard to finish the crossing.
+~
+Sector forest~
+ExtraDesc rope~
+The rope is very thick and looks strong.
+~
+Exit north 30248
+EDesc The forest begins at the end of the bridge.
+~
+Exit east 30685
+Exit south 30250
+EDesc The forest seems to die out to the south.
+~
+Exit west 30740
+End
+
+
+#30250
+Name Riverbank~
+Desc You are on the muddy south bank of a river.  The river is very wide
+and slow moving at this point.  A flimsy rope bridge crosses it to
+the north, in case you are interested in going that way and don't 
+have a boat.  There are some trees here, but they really seem to die
+out to the south.
+~
+Sector forest~
+ExtraDesc rope bridge~
+The bridge is made from three thick ropes tied to trees.
+~
+ExtraDesc trees~
+The trees here don't look as healthy as those on the north bank.
+~
+Exit north 30249
+EDesc A rope bridge crosses the river.
+~
+Exit east 30251
+EDesc You can continue along the riverbank.
+~
+Exit south 30748
+Exit west 30746
+End
+
+
+#30251
+Name Riverbank~
+Desc You are on the muddy south bank of a wide and slow river.  There are
+some trees here, but they don't look all that healthy and seem to die
+out to the south.
+~
+Sector forest~
+ExtraDesc tree~
+The trees aren't as tall or healthy as those on the north bank.
+~
+ExtraDesc river~
+The river is slow and wide here.  It flows from west to east.
+~
+Exit north 30685
+Exit east 30693
+Exit south 30252
+EDesc The trees really seem to die out in this direction.
+~
+Exit west 30250
+EDesc The riverbank continues.
+~
+End
+
+
+#30252
+Name Barren Flatlands~
+Desc What little vegetation there is here is sickly and dying, for some
+reason.  To the north, it looks a little healthier, perhaps because
+of the river that flows through the area.  To the south the ground 
+appears to be even more barren, and even scorched.  It looks like 
+there is a small keep of some type off in that direction.
+~
+Sector field~
+ExtraDesc vegetation~
+A few pathetic trees and bushes.
+~
+ExtraDesc keep~
+You'll have to get closer to make out any details.
+~
+Exit north 30251
+EDesc The river and greener lands are north.
+~
+Exit east 30700
+Exit south 30253
+EDesc South is scorched earth.
+~
+Exit west 30748
+End
+
+
+#30253
+Name Barren Scorched Earth~
+Desc You are in the middle of some barren fields that have been burnt
+through some unnatural means.  A keep is just to your southwest,
+and appears to be at the center of the scorched area.  The keep
+can be entered a little to the south.
+~
+Sector field~
+ExtraDesc keep blackstone~
+The keep is a small fortress, made of some black stone.  You see 
+a few guards patrolling the battlements.
+~
+Exit north 30252
+EDesc The ground is less barren this way.
+~
+Exit east 30463
+EDesc More barren earth.
+~
+Exit south 30337
+Exit west 30261
+EDesc You can move along the keep's north wall.
+~
+End
+
+
+#30254
+Name Just East of a Blackstone Keep~
+Desc You are just east of a bleak blackstone keep, sitting in the middle of
+a field of scorched earth. Surly guards patrol both on the battlements and
+below before the gate, but they pay you little heed. Apparently they are 
+used to strange visitors.
+~
+RoomFlags no_mob~
+Sector field~
+Exit east 30292
+Exit west 15701
+EKeyvnum -1
+End
+
+
+#30255
+Name Small Rocky Hills~
+Desc You are wandering through a region of small rocky hills.  The whole
+area is rather grey and depressing, unless of course you enjoy that
+sort of thing.  
+~
+Sector hills~
+Exit north 30742
+Exit east 30256
+EDesc More rocky hills.
+~
+Exit south 30317
+Exit west 30242
+EDesc More rocky hills.
+~
+End
+
+
+#30256
+Name Rocky Hills~
+Desc Small rocky hills surround you.  Not only do they make the travelling
+difficult, but also make it impossible to see far in any direction.
+It is dead silent here, and you see nothing moving.
+~
+Sector hills~
+Exit north 30743
+Exit east 30257
+EDesc Rocky hills
+~
+Exit south 30318
+Exit west 30255
+EDesc Rocky hills.
+~
+End
+
+
+#30257
+Name Edge of Rocky Hills~
+Desc You are at the edge of a region of small rocky hills.  They spread
+out to the west, and are grey and depressing.  The east doesn't
+look much better, for there you see barren flatlands.  At least it
+is flat that way.
+~
+Sector hills~
+ExtraDesc hills rocky~
+Extremely rocky hills spread out to the west.
+~
+Exit north 30744
+Exit east 30258
+EDesc Barren flatlands this way.
+~
+Exit south 30319
+Exit west 30256
+EDesc Rocky hills.
+~
+End
+
+
+#30258
+Name Barren Flatlands~
+Desc The ground is very flat and barren here.  It continues that way to 
+the south and east, and even looks a little burnt in those directions.
+To the west, rocky hills spread out, while off to the north there is
+at least a little greenery.
+~
+Sector field~
+Exit north 30745
+Exit east 30747
+Exit south 30259
+EDesc More barren flatlands.
+~
+Exit west 30257
+EDesc Rocky hills.
+~
+End
+
+
+#30259
+Name Barren Flatlands~
+Desc The ground is very flat and barren here.  It continues that way to 
+the north, south, and east, and even looks a little burnt in those 
+directions.  To the west, rocky hills spread out.  Far to the east
+there is what seems to be a castle or keep of some type.  It is hard
+to make out any details from here, though.
+~
+Sector field~
+ExtraDesc keep castle~
+If you get closer, you could see it a bit better.
+~
+Exit north 30258
+EDesc More barren flatlands.
+~
+Exit east 30260
+EDesc A keep is off in the distance.
+~
+Exit south 30328
+Exit west 30319
+End
+
+
+#30260
+Name Just Northwest of a Blackstone Keep~
+Desc You are just northwest of a keep built of some black stone.  There
+doesn't appear to be an entrance on the sides you can see from here.
+The ground below you is scorched and burnt.  The closer to the keep
+you get, the worse it is.
+~
+Sector field~
+ExtraDesc keep black stone~
+The keep is built of some black stone.  You see a few guards patrolling
+on the battlements.
+~
+Exit north 30747
+Exit east 30261
+EDesc You can move along the keep's north wall.
+~
+Exit south 30331
+Exit west 30259
+EDesc Barren flatlands
+~
+End
+
+
+#30261
+Name North of a Blackstone Keep~
+Desc You are outside the north wall of a blackstone keep.  The wall itself is
+about 40 feet high, and does not look climbable.  You will need to find
+another entrance if you want to enter.  Barren flatlands stretch in all
+other directions.  The ground is burnt here.
+~
+Sector field~
+ExtraDesc keep wall black stone~
+The keep is build from black stone.  The tall strong walls probably make
+it easy to defend.
+~
+Exit north 30748
+Exit east 30253
+EDesc Scorched flatlands
+~
+Exit south 30288
+Exit west 30260
+EDesc More scorched, barren flatlands.
+~
+End
+
+
+#30262
+Name Path through Plains~
+Desc A dirt path runs east-west through the plains here. Around it, tall grass 
+waves slowly in the slight breeze. You can see a walled city not far to the 
+east, and some hills to the west. Some ways to the south is a wide river. 
+To the north the grass seems heavily trampled by small feet, and laughter 
+can be heard coming from that direction. 
+~
+Sector field~
+ExtraDesc path~
+A dirt path has been worn into the grass.
+~
+ExtraDesc tall grass~
+Tall green/yellow grass waves in the breeze.
+~
+ExtraDesc city walled~
+Get closer and you can see.
+~
+Exit north 4936
+Exit east 30217
+EDesc The path goes east to a city.
+~
+Exit west 30263
+EDesc The path goes west towards some hills.
+~
+End
+
+
+#30263
+Name Path through Plains~
+Desc A dirt path runs generally east-west through the grassy plains here.
+There is not much to look at, besides a line of hills off to the west.
+You see a rodent scurry across your path every now and then.
+~
+Sector field~
+ExtraDesc path~
+A dirt path is worn into the ground here.
+~
+ExtraDesc hills~
+A line of hills is off to the west.  You think there are mountains 
+behind them.
+~
+Exit east 30262
+EDesc The dirt path goes east.
+~
+Exit west 30264
+EDesc The path goes west, towards some hills.
+~
+End
+
+
+#30264
+Name Edge of Plains~
+Desc You are at the western edge of a huge region of grassy plains.  Hills 
+rise to your west, becoming taller as you raise your eyes, until they 
+eventually evolve into an impressive mountain range.  To the north is 
+not so flat either, although is not as bad as directly west.  A dirt 
+path runs east and west here.
+~
+Sector field~
+Exit east 30263
+EDesc The plains stretch to the east.
+~
+Exit west 30265
+EDesc Towards the mountains.
+~
+End
+
+
+#30265
+Name Path through Small Foothills~
+Desc You are wandering among the small foothills, on a path that has been worn 
+into the stone and dirt.  To the west, the hills get steeper until they 
+become a fullblown mountain range.  There are some hardy trees here, and 
+bushes grow in small crevices.  The path itself is winding, but generally 
+goes east and west.  To your north-east, you see a small thatched hut.  
+~
+Sector hills~
+ExtraDesc hardy trees bushes~
+Just hanging on to life on these rocky slopes.
+~
+Exit east 30264
+EDesc Towards the plains.
+~
+Exit west 30266
+EDesc Mountains are off to the west.
+~
+End
+
+
+#30266
+Name Steep Foothills~
+Desc You are surrounded by steep and rocky foothills.  Despite the fact that
+there is a path running east and south, the traveling is far from easy.
+The way west is completely blocked by unclimbable mountainsides.
+~
+Sector hills~
+ExtraDesc mountainsides~
+Near vertical slopes, impossible to climb.
+~
+Exit east 30265
+EDesc A path winds east, through the hills.
+~
+Exit south 30267
+EDesc A path winds south, through the hills.
+~
+End
+
+
+#30267
+Name Steep Foothills~
+Desc Steep and rocky foothills surround you.  A path here winds north and
+south, following the easiest line through the uneven terrain.  Your
+way west is completely blocked by unclimbable mountainsides.
+~
+Sector hills~
+ExtraDesc mountainsides~
+Near vertical slopes, impossible to climb.
+~
+Exit north 30266
+EDesc More steep hills.
+~
+Exit south 30268
+EDesc More steep hills.
+~
+End
+
+
+#30268
+Name Rocky Ledge~
+Desc You stand upon a rocky ledge far above a river below.  The river is about
+500 feet below you, to the south, and the climb down looks nearly impossible.
+Steep rocky hills lie to your north and east.  There is a path here, running
+from the north hills and along the ledge to the west.
+~
+Sector hills~
+ExtraDesc river~
+Far far below you, a wide river.  You arent getting down there unless you can
+fly.  And if you can, where are you going to land?
+~
+Exit north 30267
+EDesc Steep hills in this direction.
+~
+Exit west 30269
+EDesc The path runs along a rocky ledge to the west.
+~
+End
+
+
+#30269
+Name Path along Rocky Ledge~
+Desc You are on a path running along a rocky ledge, only a few feet wide.  To the
+south is a drop of about 500 feet, to a wide river below.  The mountainside 
+to the north is sheer and unclimbable, your only options are east and west.
+~
+Sector hills~
+ExtraDesc river~
+Far far below you, a wide river.  You arent getting down there unless you can
+fly.  And if you can, where are you going to land?
+~
+Exit east 30268
+EDesc The path runs east along the ledge.
+~
+Exit west 30270
+EDesc The path runs west along the rocky ledge.
+~
+End
+
+
+#30270
+Name Path along Rocky Ledge~
+Desc The path runs east and west along the rocky ledge.  It becomes very narrow
+here, so you better be careful, unless you can fly.  And even then it looks
+like there wouldn't be any place to land below.  The drop is about 500 feet
+down, to the south, and ends in a wide river.  From here you can see that to 
+the west, the river originates from under a huge mountain.  
+~
+Sector hills~
+ExtraDesc river~
+Far far below you, a wide river.  You arent getting down there unless you 
+can fly.  And if you can, where are you going to land?
+~
+Exit east 30269
+EDesc The path runs eats along the ledge.
+~
+Exit west 30271
+EDesc The path runs west along the ledge.
+~
+End
+
+
+#30271
+Name Path on Rocky Ledge~
+Desc You are on a narrow rocky ledge far above a river below.  There is a 
+path going north through a huge crevice in the stone, or you can travel 
+east if you want to risk falling.  Looking down you notice that the river 
+disappears into the huge mountain to the west.
+~
+Sector hills~
+ExtraDesc river~
+Far far below you, a wide river.  You arent getting down there unless you can
+fly.  And if you can, where are you going to land?
+~
+ExtraDesc crevice~
+A huge crevice has been rent in the stone.  The path seems to lead into it.
+~
+Exit north 30272
+EDesc You can enter a crevice in the stone to the north.
+~
+Exit east 30270
+EDesc The rocky ledge runs east.
+~
+End
+
+
+#30272
+Name Path through a Narrow Crevice~
+Desc You are on a path that leads through a narrow crevice in the mountain.  To 
+the south, it opens onto a rocky ledge, while to the north the crevice gets
+even more narrow.
+~
+Sector hills~
+Exit north 30273
+EDesc You can move north through the crevice, if you fit.
+~
+Exit south 30271
+EDesc The crevice opens onto a rocky ledge.
+~
+End
+
+
+#30273
+Name Path through a Narrow Crevice~
+Desc The path is very narrow here, and is wide enough for only one person at a
+time.  To the north, it seems to open into a wide area, while to the south
+remains narrow.
+~
+Sector hills~
+Exit north 30274
+EDesc The crevice opens intyo a wider area to the north.
+~
+Exit south 30272
+EDesc The path runs to the south, through the crevice.
+~
+End
+
+
+#30274
+Name Narrow Valley in Mountains~
+Desc You are at the end of a narrow valley in the middle of a huge mountain
+range. You can move east through the valley fairly easily.  There is
+also a crevice to the south that you might be able to squeeze into. The
+mild slope of the valley to the west seems like a fine walk and a forest
+is visible on the oposite side of the valley. To the north mountains
+rise up high, blocking your passage in that direction.
+~
+Sector hills~
+Exit north 23100
+Exit south 30273
+EDesc You can probably squeeze into the crevice.
+~
+End
+
+
+#30275
+Name Narrow Valley in Mountains~
+Desc You are in the middle of a hidden valley between some of the tallest 
+mountains in this range.  You can move west or north towards the ends of the 
+valley.  There appears to be some kind of keep or castle high up in the 
+northern end.  A faint path also leads east through a gap, into a smaller 
+branch of the valley.  
+~
+Sector hills~
+Exit north 30276
+EDesc You can move north, towards a keep.
+~
+Exit south 30158
+Exit west 30157
+End
+
+
+#30276
+Name Narrow Valley in Mountains~
+Desc You are at the north end of a valley running through the middle of a 
+mountain range.  You can move south through the valley, or up to the north 
+on a winding path.  A castle sits at the top of the path, and you can see 
+figures patrolling the battlements.  
+~
+Sector hills~
+Exit north 30462
+Exit east 31100
+Exit south 30275
+EDesc The valley runs south.
+~
+End
+
+
+#30277
+Name Small Foothills~
+Desc You are on the eastern edge of some foothills.  To the east, the 
+land flattens into grassy plains, while to the west, the hills only
+get higher until they become mountains.  There are a few hardy trees
+growing on the slopes, but not much else.
+~
+Sector hills~
+ExtraDesc foot hills~
+Rocky hills that get taller as you look west.
+~
+ExtraDesc hardy trees~
+A few stubborn trees cling to life on the slopes.
+~
+Exit north 30278
+EDesc The hills continue to the north.
+~
+Exit east 30580
+Exit south 31060
+Exit west 30638
+End
+
+
+#30278
+Name Small Foothills~
+Desc You are on the eastern edge of some foothills.  To the east, the 
+land flattens into grassy plains, while to the west, the hills only
+get higher until they become mountains.  There are a few hardy trees 
+growing on the slopes, but not much else.  To your north is one 
+especially large and jagged hill.
+~
+Sector hills~
+ExtraDesc foot hills~
+Rocky hills that get taller as you look west.
+~
+ExtraDesc hardy trees~
+A few stubborn trees cling to life on the slopes.
+~
+Exit north 30450
+Exit east 30581
+Exit south 30277
+EDesc More hills to the south.
+~
+Exit west 30637
+End
+
+
+#30279
+Name Plains~
+Desc The grassy plains stretch in all directions here.  A good distance 
+to the east are trees, possibly the edge of a forest.
+~
+Sector field~
+Exit east 30280
+EDesc There is a line of trees to the east.
+~
+Exit south 30569
+EDesc Plains lie to the south.
+~
+Exit west 30149
+EDesc The plains continue west.
+~
+End
+
+
+#30280
+Name Plains~
+Desc You are in the middle of some grassy plains.  The only thing besides
+tall grass that you see is a line of trees not far to the east.  It
+appears to be the edge of a large forest.
+~
+Sector field~
+Exit east 30281
+EDesc There is a line of trees to the east.
+~
+Exit south 30575
+EDesc Along the edge of the forest.
+~
+Exit west 30279
+EDesc The plains continue.
+~
+End
+
+
+#30281
+Name Edge of Plains~
+Desc Here the grassy plains to the west meet a thick forest.  There are a
+few trees in your immediate area, and they really become dense to the
+east.
+~
+Sector field~
+Exit east 30282
+EDesc Into the forest.
+~
+Exit south 30579
+EDesc Plains then forest.
+~
+Exit west 30280
+EDesc The plains continue west.
+~
+End
+
+
+#30282
+Name Edge of Forest~
+Desc You stand just within the edge of a lush forest.  To the west, the trees
+end and grassy flatlands begin.  All around you and to the east are
+woodlands teeming with life.  There are a few squirrels jumping around
+in the branches, and the sounds of nature from all directions.
+~
+Sector forest~
+Exit east 30283
+EDesc Deeper into the forest.
+~
+Exit south 30602
+Exit west 30281
+EDesc You can leave the forest to the west.
+~
+End
+
+
+#30283
+Name Forest~
+Desc You are travelling through a forest made up of maple, oak, spruce, and pine 
+trees.  Occasionally you see a squirrel or bird moving around above you.  
+~
+Sector forest~
+Exit east 30308
+EDesc A path heads east.
+~
+Exit south 30606
+Exit west 30282
+EDesc More trees.
+~
+End
+
+
+#30284
+Name Light Forest~
+Desc You are just inside the northern edge of a light forest.  The forest
+is made up of mostly maple trees, with a pine or oak tree here and there.
+It looks like there is a road just to your east.
+~
+Sector forest~
+Exit north 30343
+Exit south 30398
+Exit west 30285
+EDesc More trees.
+~
+End
+
+
+#30285
+Name Light Forest~
+Desc You are just inside the edge of a light forest.  Maple trees surround you,
+but they are spaced far apart.  Animals move around in the trees, and you
+hear birds calling out from somewhere.  To the north and west the forest ends.
+~
+Sector forest~
+Exit east 30284
+EDesc More Trees
+~
+Exit west 30286
+EDesc The forest ends this way.
+~
+End
+
+
+#30286
+Name Flatlands near Forest~
+Desc The ground is flat and grassy here.  You can enter a light forest to 
+the south or east, and hills begin to the west.  Beyond the hills is 
+a large mountain range.  There is a small village surrounded by fields
+off to the north, and a path heading towards it.
+~
+Sector field~
+Exit east 30285
+EDesc You can enter the forest this way.
+~
+Exit west 19951
+End
+
+
+#30287
+Name Flatlands near Hills~
+Desc The ground is flat here, but to the west rises into hills and 
+mountains.  A light forest is off to the east, while flatlands 
+stretch north and south.
+~
+Sector field~
+Exit north 30288
+Exit east 30336
+Exit south 30332
+Exit west 30330
+End
+
+
+#30288
+Name Small Foothills~
+Desc You are on the eastern edge of some small foothills.  A path forms
+here and winds its way west through the hills.  They seem to get
+steeper in that direction, until they become mountains.  You can see
+some flatlands and a forest to the east.
+~
+Sector hills~
+Exit north 30261
+Exit east 30337
+Exit south 30287
+Exit west 30331
+End
+
+
+#30289
+Name Foothills~
+Desc You are on a path that winds its way east and west through the hills.  
+Tall mountains block your view to the west, and you can see nothing 
+but rocky hills every other way.  Another smaller path branches off
+to the north.
+~
+Sector hills~
+Exit east 30149
+Exit west 30290
+EDesc Hills, and mountains.
+~
+End
+
+
+#30290
+Name Path through Hills~
+Desc The path takes a turn north and east here, around some particularly
+nasty hills.  Steep mountainsides completely block movement to the
+south and west.
+~
+Sector hills~
+Exit north 30291
+EDesc The path runs north through the hills.
+~
+Exit east 30289
+EDesc More hills.
+~
+End
+
+
+#30291
+Name Path through Hills~
+Desc The path takes a turn south and west here.  Steep mountainsides block
+travel to the north, but you can go any other direction if you don't
+mind climbing hills.  It does seem that the path is a little more
+heavily used, and a little flatter to the west.
+~
+Sector hills~
+Exit south 30290
+EDesc The path leads through the hills.
+~
+Exit west 30292
+EDesc The path leads into the mountains.
+~
+End
+
+
+#30292
+Name Path through Mountains~
+Desc You are on a heavily used path running through the mountains.  It makes a 
+turn here, running east out of the mountains, and north, up a slope.  East 
+and west are unclimbable mountainsides.  Unfortunately, the trail north 
+seems to have been blocked by a recent landslide.  
+~
+Sector hills~
+Exit east 30291
+EDesc The path goes east.
+~
+Exit west 30254
+End
+
+
+#30293
+Name Dying Forest~
+Desc The trees here are few and far between.  It looks like this might once
+have been a thick forest, but the little growth that remains is stunted
+and unhealthy.  It seems a little better to the north, but to the south
+there is hardly any greenery at all.  The remnants of an old road run 
+north and south.
+~
+Sector field~
+Exit north 30134
+EDesc The remnants of an old road are north.
+~
+Exit south 30438
+EDesc An old road runs south through the dead forest.
+~
+Exit west 30136
+EDesc The remnants of an old road are west.
+~
+End
+
+
+#30294
+Name Dying Forest~
+Desc The trees here are sickly and deformed.  To the north, it seems to get
+a bit brighter and more pleasant, but to the south only gets worse.  In
+that direction there is little more than mud and stumps.
+~
+Sector forest~
+Exit north 22748
+Exit east 30295
+EDesc More dying trees.
+~
+Exit west 30246
+End
+
+
+#30295
+Name Dying Forest~
+Desc The ground here is somewhat muddy, and the few trees that survive are 
+stunted monstrosities.  To the north it seems to get a bit nicer, but to the 
+south it is even more muddy and dead.  
+~
+Sector forest~
+Exit east 30296
+EDesc You can travel along the north wall of the city.
+~
+Exit west 30294
+EDesc More dying trees.
+~
+End
+
+
+#30296
+Name Dying Forest~
+Desc A narrow path leads through the forest of dying, parched and leafless trees. 
+ Further to the east the forest seems more lush, and new leaves are 
+beginning to grow on the trees.  
+~
+Sector forest~
+Exit east 30297
+EDesc More dying trees and muddy ground this way.
+~
+Exit west 30295
+EDesc Dying forest lies in this direction.
+~
+End
+
+
+#30297
+Name Dying Forest~
+Desc You are in the midst of some dying, stunted trees.  The forest seems to get 
+much healthier as you look north and east, but in the other directions there 
+is not much living.  A small path can be seen through the brushes of the 
+forest towards the north.  
+~
+Sector forest~
+Exit east 30756
+Exit west 30296
+EDesc You can move along the north wall of the city.
+~
+End
+
+
+#30298
+Name Muck-Filled River Under a Decrepit Old Bridge~
+Desc You are in a river under a decrepit old bridge, the river flows from
+west to east and it is covered with a disgusting layer of slime and 
+muck. The water is very smelly and cold, and you see no living 
+creature in this river.
+~
+Sector swim~
+End
+
+
+#30299
+Name Among Scattered Trees~
+Desc The ground is mostly flat here, and trees are scattered about in
+small groups.  To the north, the ground gets very hilly, while
+to the south and east is a deep dark forest.
+~
+Sector field~
+Exit north 30165
+EDesc Rocky Hills in this direction.
+~
+Exit south 30300
+EDesc Dark Forest
+~
+End
+
+
+#30300
+Name Edge of Dark Forest~
+Desc You are just inside the edge of a dark forest.  It gets thicker to
+the south, but seems to thin to the north.  There are lots of animals
+moving around.
+~
+Sector forest~
+Exit north 30299
+EDesc You can exit the forest to the north.
+~
+Exit south 30301
+EDesc You can go deeper into the forest.
+~
+End
+
+
+#30301
+Name Dark Forest~
+Desc The forest is rather dark here, because the leaves above are 
+so dense.  Up in the trees it looks like there are walkways or
+bridges of some sort.
+~
+Sector forest~
+Exit north 30300
+EDesc More dark forest.
+~
+Exit south 30302
+EDesc More dark forest.
+~
+End
+
+
+#30302
+Name Below a Huge Tree~
+Desc You are in a dark forest, below an especially huge tree.  The tree has 
+stairs carved in it, which spiral around it up into the branches. There are 
+bridges and walkways visible up there also. Beneath the tree, a trapdoor 
+lies under some freshly fallen leaves. 
+~
+Sector forest~
+Exit north 30301
+EDesc More dark forest.
+~
+Exit south 30303
+EDesc More dark forest.
+~
+Exit up 12382
+EDesc You can climb up into the trees.
+~
+End
+
+
+#30303
+Name Dark Forest~
+Desc The forest is dark and dense here.  Not much of the sky 
+is visible because of the thick leaves.  You can hear water 
+running not too far to the southeast.
+~
+Sector forest~
+Exit north 30302
+EDesc It seems to get darker to the north.
+~
+Exit south 30304
+EDesc The forest is a bit lighter to the south.
+~
+End
+
+
+#30304
+Name Riverbank~
+Desc You are on the north bank of a wide, slow river.  It turns here,
+flowing to the south and east.  It would not be an easy crossing
+unless you have a boat.  The forest is very dark to the west, and
+even darker to the north.
+~
+Sector forest~
+Exit north 30303
+EDesc The forest is very dark.
+~
+Exit west 30305
+EDesc The forest is dark to the west.
+~
+End
+
+
+#30305
+Name Dark Forest~
+Desc Because of the heavy growth above, the forest is very dark and 
+foreboding here.  Very little of the sky is visible through the 
+branches.  You can hear the sound water gurgling to the southeast.
+~
+Sector forest~
+Exit east 30304
+EDesc More dark forest.
+~
+Exit south 30306
+EDesc More dark forest.
+~
+End
+
+
+#30306
+Name Riverbank~
+Desc You are travelling along the west shore of a wide, slow river, 
+which flows south to north.  There is no way to cross it without
+a boat here, but it looks like there is a wooden bridge a short
+way to the south.  Dark forest is to the west.
+~
+Sector forest~
+Exit north 30305
+EDesc Dark forest.
+~
+Exit south 30307
+EDesc The riverbank continues.
+~
+End
+
+
+#30307
+Name Riverbank, Near Bridge~
+Desc You are on the west bank of a wide, slow river.  A crude wooden 
+bridge crosses it here, but does not look altogether safe.  A
+narrow trail leads away from the bridge, west into the forest.
+~
+Sector forest~
+Exit north 30306
+EDesc The riverbank continues to the north.
+~
+Exit east 30309
+EDesc A bridge over the river.
+~
+Exit south 30614
+Exit west 30308
+EDesc A path into the forest.
+~
+End
+
+
+#30308
+Name Path through Forest~
+Desc A narrow path runs east and west through the forest here.  The
+trees that surround you have many branches and leaves, which
+block out much of the light.  You hear running water to the east.
+~
+Sector forest~
+Exit east 30307
+EDesc You hear water gurgling in this direction.
+~
+Exit south 30610
+Exit west 30283
+EDesc A path runs west through the forest.
+~
+End
+
+
+#30309
+Name On a Crude Wooden Bridge~
+Desc You are on a crude wooden bridge, which spans a wide river.  The
+river is flowing slowly from south to north.  Dark forest awaits
+you at either end.
+~
+Sector forest~
+Exit east 30310
+EDesc Dark forest.
+~
+Exit south 30618
+Exit west 30307
+EDesc Dark forest.
+~
+End
+
+
+#30310
+Name Riverbank~
+Desc You stand on the southeast bank of a wide, slow river.  It flows from
+the south, and makes a turn to the east here.  The water blocks travel
+to the north, unless you have a boat, but luckily there is a bridge
+crossing it to the west.
+~
+Sector forest~
+Exit east 30311
+EDesc The riverbank continues.
+~
+Exit south 30622
+Exit west 30309
+EDesc A bridge crosses the river to the west.
+~
+End
+
+
+#30311
+Name Dense, Thick Forest~
+Desc The forest is very thick and dark here.  Branches and leaves block out most 
+of the sky, and undergrowth makes movement difficult.  You can hear the 
+sound of running water to the northwest.  
+~
+Sector forest~
+Exit east 30312
+EDesc Dark, thick forest.
+~
+Exit south 30352
+EDesc Thick forest.
+~
+Exit west 30310
+EDesc The riverbank continues.
+~
+End
+
+
+#30312
+Name Dense, Thick Forest~
+Desc The forest is very thick and dark here.  Branches and leaves block out
+most of the sky, and undergrowth makes movement difficult.  You can
+hear the sound of running water to the northwest.
+~
+Sector forest~
+Exit east 30313
+EDesc More thick, dense forest.
+~
+Exit south 30502
+EDesc More trees.
+~
+Exit west 30311
+EDesc More trees.
+~
+End
+
+
+#30313
+Name Dense, Dark Forest~
+Desc The extremely thick growth here makes travel difficult.  The sky above 
+is mostly blocked out by leafy branches and vines.  You can hear
+animals moving around, although don't see any at the moment.
+~
+Sector forest~
+Exit east 30196
+EDesc More dense forest.
+~
+Exit south 30507
+EDesc More trees.
+~
+Exit west 30312
+EDesc More dense forest.
+~
+End
+
+
+#30314
+Name Mountain Pass~
+Desc Steep walls of stone tower above you to the east and west.  There is a path 
+that you can follow to the south, deeper into the mountains, or north, out 
+into the hills.  
+~
+Sector hills~
+Exit north 30315
+EDesc Out into the hills.
+~
+Exit east 30321
+Exit south 19968
+Exit west 30758
+End
+
+
+#30315
+Name Path through Hills~
+Desc You are in the middle of some steep, rocky hills.  Stubborn trees and bushes 
+cling to life on the slopes here and there.  A path leads south into the 
+mountains, and east, through the hills.  To the west you notice a narrow 
+dusty trail opening up and fields of golden wheat glow in the distant west 
+with their radiance.  
+~
+Sector hills~
+Exit north 30243
+Exit east 30316
+EDesc Through the hills.
+~
+Exit south 30314
+EDesc Into a mountain pass.
+~
+Exit west 30757
+End
+
+
+#30316
+Name Path through Hills~
+Desc An old path is worn into the stone here.  It runs west and north, 
+through the steep hills that surround you.  Unclimbable mountain 
+walls block the way to the south and east.
+~
+Sector hills~
+Exit north 30317
+EDesc The path runs north, through the hills.
+~
+Exit east 30333
+Exit south 30321
+Exit west 30315
+EDesc The path runs west through the hills.
+~
+End
+
+
+#30317
+Name Path through Hills~
+Desc Steep hills and tall mountains surround you.  A path winds its way 
+south from here, and also runs east into a wide tunnel opening in
+a huge mountain.  It is very dark in there, hope you have a light
+if you are planning on going that way.
+~
+Sector hills~
+Exit north 30255
+Exit east 30318
+EDesc A wide tunnel opening.
+~
+Exit south 30316
+EDesc A path runs south through the hills.
+~
+Exit west 30243
+End
+
+
+#30318
+Name Wide Tunnel~
+Desc You are in a wide tunnel carved from the stone.  There are no exits
+along the sides, and the only opening is to the outside far to your 
+west.  You can head that way to escape this darkness, or go east,
+deeper into the earth.
+~
+Sector hills~
+Exit north 30256
+Exit east 30319
+Exit south 30333
+Exit west 30317
+EDesc Out of the tunnel.
+~
+End
+
+
+#30319
+Name Turn in Wide Tunnel~
+Desc The wide tunnel makes a turn to the north and west here.  You can
+see no light from either direction, and all you hear is the dripping
+of water from somewhere to the north.
+~
+Sector hills~
+Exit north 30257
+Exit east 30259
+Exit south 30325
+Exit west 30318
+End
+
+
+#30320
+Name Wide Tunnel~
+Desc The wide tunnel continues to the north and south.  You finally see
+the water you have been hearing - It is trickling from a crack in the
+wall out onto the floor.  There is no light in either direction.
+~
+Sector hills~
+Exit north 30321
+Exit east 30322
+Exit south 19966
+Exit west 19968
+End
+
+
+#30321
+Name Wide Tunnel~
+Desc You are in a wide tunnel carved from the stone.  You can hear water 
+trickling from somewhere to the south.  There is an exit to the 
+outside through which you can see the sky to the north, while to
+the south it only gets darker.
+~
+Sector hills~
+Exit north 30316
+Exit east 30323
+Exit south 30320
+Exit west 30314
+End
+
+
+#30322
+Name In the Hills~
+Desc You are in the midst of some steep hills.  Mountains block your way
+to the west, but you can go north and east if you feel like some
+climbing.  A dark tunnel opening leads down into the earth beneath
+the mountain to your south.
+~
+Sector hills~
+Exit north 30323
+EDesc More hills.
+~
+Exit east 30334
+Exit south 19965
+Exit west 30320
+End
+
+
+#30323
+Name Hills~
+Desc You are making your way through some rocky hills.  Huge mountains
+rise a short way to the west and south, and to the north are more 
+hills, but to the east you get a peek at a wide valley. You would
+never have seen if you hadn't walked right up to it, as it appears
+to be quite well hidden by the surrounding mountains.  If you are
+careful you could probably climb down into it from here.
+~
+Sector hills~
+Exit north 30333
+EDesc You continue north through the hills.
+~
+Exit east 30324
+Exit south 30322
+EDesc More Hills.
+~
+Exit west 30321
+End
+
+
+#30324
+Name West End of a Wide, Hidden Valley~
+Desc You are in the west end of a wide valley.  Hills and mountains
+rise up around it, and probably hide it quite well.  The ground 
+here is surprisingly flat compared to the surrounding terrain, 
+and you see pine trees scattered about.
+~
+Sector hills~
+Exit north 30325
+Exit east 30327
+Exit south 30334
+Exit west 30323
+End
+
+
+#30325
+Name In a Wide, Hidden Valley~
+Desc You are in the middle of a wide, flat valley, which is well hidden by the 
+surrounding hills and mountains.  It continues east and west, or you can 
+climb up into the hills to your south.  There is a small lake to the 
+northeast, and trees dot the land here and there.  A compound with several 
+buildings sit just north along the lakeshore, but all of the buildings seem 
+to have collapsed.  
+~
+Sector hills~
+Exit north 30319
+Exit east 30328
+Exit south 30324
+Exit west 30333
+End
+
+
+#30326
+Name In a Wide, Hidden Valley~
+Desc You are just south of a small lake in a long, wide valley.  The 
+valley is surrounded by mountains in such a way that it would be
+hidden from all but the most careful search.  There are a few
+trees here and there, and you see an occasional fish jumping in
+the water.
+~
+Sector hills~
+Exit north 30327
+Exit east 30329
+Exit south 19963
+Exit west 30334
+End
+
+
+#30327
+Name In a Wide, Hidden Valley~
+Desc The valley stretches east and west from here.  The ground is
+relatively flat, compared to the surrounding hills and mountains.
+A small lake is just to the north.  In it, you see fish darting
+through the water, and a few waterfowl bobbing on the surface.
+There are widely spaced maple pine trees throughout the whole area.
+~
+Sector hills~
+Exit north 30328
+Exit east 30330
+Exit south 30326
+Exit west 30324
+End
+
+
+#30328
+Name In a Wide, Hidden Valley~
+Desc Animal paths cut across the grass here in the middle of this nice
+lightly wooded valley floor.  A small lake is to the north, and 
+pine trees are scattered around the area.  You can climb up into
+the hills to the south if you really want to leave this tranquil 
+place.
+~
+Sector field~
+Exit north 30259
+Exit east 30331
+Exit south 30327
+Exit west 30325
+End
+
+
+#30329
+Name In a Hidden Valley~
+Desc You are in the middle of a wide valley, hidden from the surrounding 
+lands by steep hills and tall mountains.  The ground is mostly flat 
+here, and pine trees dot the landscape.  There is a small lake to your 
+northwest.  A dirt path through the grass forms here and wanders away
+north.
+~
+Sector hills~
+Exit north 30330
+EDesc A path heads north.
+~
+Exit east 30332
+Exit south 19962
+Exit west 30326
+End
+
+
+#30330
+Name On a Path in a Hidden Valley~
+Desc You are on a dirt path, running over the flat valley floor.  A small lake
+is to your west, and pine trees are scattered about.  The path continues
+south through the valley, or north into the hills.
+~
+Sector field~
+Exit north 30331
+EDesc A path goes north into the hills.
+~
+Exit east 30287
+Exit south 30329
+EDesc A path runs south.
+~
+Exit west 30327
+End
+
+
+#30331
+Name Path through Hills~
+Desc A path winds its way north and south through the steep hills.  There is not
+much around as far as plant or animal life, just stone and more stone.
+Between two stone pillars to the south you think you catch a glimpse of a
+wide open valley.
+~
+Sector hills~
+Exit north 30260
+Exit east 30288
+Exit south 30330
+EDesc A path leads into a hidden valley to the south.
+~
+Exit west 30328
+End
+
+
+#30332
+Name Path through Hills~
+Desc You are on a path that winds its way through the hills.  To the south, it
+is quickly lost from view as it travels the steep slopes, but to the 
+north you can see what it leads to. There stands a tall black tower,
+outlined on the mountains behind by some unholy magical light.
+~
+Sector hills~
+Exit north 30287
+Exit east 30335
+Exit south 19961
+Exit west 30329
+End
+
+
+#30333
+Name Hills~
+Desc You are in the steep hills, making your way through loose boulders
+and even some stubborn trees and bushes.  It is like this in just
+about every direction, except for east.  In that direction, you
+catch a glimpse of a wide flat valley, hidden in this rough terrain.
+~
+Sector hills~
+Exit north 30318
+Exit east 30325
+Exit south 30323
+EDesc More hills.
+~
+Exit west 30316
+End
+
+
+#30334
+Name Steep Hills~
+Desc Steep hills surround you and make travel difficult.  There is not much to 
+see here except grey stone everywhere.  Tall mountains stand to the west, 
+but it seems that from here you can enter a small pass that runs between 
+them.  
+~
+Sector hills~
+Exit north 30324
+Exit east 30326
+Exit south 19964
+Exit west 30322
+End
+
+
+#30335
+Name Hills~
+Desc You are in the small foothills that lie before the mountains to the 
+northwest.  The hills end just to the south, and a light forest begins.
+There are some trees here, clinging to the slopes, but not many.
+~
+Sector hills~
+Exit north 30336
+EDesc More hills.
+~
+Exit east 30338
+Exit south 19960
+Exit west 30332
+End
+
+
+#30336
+Name Steep Foothills~
+Desc Steep, rocky foothills surround you.  There are a few hardy trees and
+bushes clinging to life on the slopes, but no animal life that you can
+see.  Tall mountain peaks tower to the northwest.
+~
+Sector hills~
+Exit north 30337
+EDesc More steep hills.
+~
+Exit east 30157
+Exit south 30335
+EDesc More hills.
+~
+Exit west 30287
+End
+
+
+#30337
+Name Path through Steep Foothills~
+Desc A faint path forms here and winds its way around the hills to the north.
+It does not look like it gets much use.  The hills themselves are quite
+steep and rocky, and support little plant and animal life.  The way west
+is completely blocks by a vertical mountainside.
+~
+Sector hills~
+Exit north 30253
+Exit south 30336
+EDesc The hills continue.
+~
+Exit west 30288
+End
+
+
+#30338
+Name Path through Steep Hills~
+Desc You are on a faint path in the steep foothills.  It runs south through the 
+hills. To the north, way in the distance a small tower can be seen on the 
+horizon. It looks utterly black, but from this distance it is hard to make 
+out. 
+~
+RoomFlags no_mob~
+Sector hills~
+Exit north 30157
+Exit east 30158
+Exit south 19959
+Exit west 30335
+End
+
+
+#30339
+Name Steep Foothills~
+Desc You are just west of a huge mountain range, in the foothills.  The slopes 
+around you are very steep and rocky, and support little in the way of plant 
+life.  
+~
+Sector hills~
+Exit east 30215
+Exit west 30340
+End
+
+
+#30340
+Name Steep Foothills~
+Desc Steep, rocky foothills rise around you, making travel difficult.  There
+is a faint path worn in the stone here, but it is in poor condition and
+easily lost.  A few stunted trees grow on the slopes.  Mountains block
+your way to the south and east.
+~
+Sector hills~
+Exit east 30339
+Exit west 30341
+EDesc More steep hills.
+~
+End
+
+
+#30341
+Name Steep Foothills~
+Desc You are travelling through some rather nasty hills.  All you see is grey 
+stone in all directions, broken only by an occasional tree clinging tolife.  
+In the east, a huge mountain range rises up from the ground defiantly, while 
+a faint trail curves toward the northwest.  Narrow roads lead south and east 
+here. 
+~
+Sector hills~
+Exit east 30340
+EDesc More hills, and mountains.
+~
+Exit south 30342
+EDesc More hills.
+~
+End
+
+
+#30342
+Name Steep Foothills~
+Desc A faint path here leads north and south through the steep hills.  Tall
+mountains are to the east, and block travel in that direction.
+~
+Sector hills~
+Exit north 30341
+EDesc The path leads through more hills.
+~
+Exit south 30343
+EDesc The path leads south.
+~
+End
+
+
+#30343
+Name Steep Foothills~
+Desc An old path winds its way north and south through the rocky terrain here.
+There are steep mountain walls blocking the way east.  A few stubborn
+trees and bushes cling to life here.
+~
+Sector hills~
+Exit north 30342
+EDesc The path goes north through the hills.
+~
+Exit south 30284
+End
+
+
+#30344
+Name Path through Hills~
+Desc You are on a path which runs north through the hills, and east up into
+the mountains.  It looks like it will be slow movement in either direction,
+because of all the loose rocks and boulders lying around here.  
+~
+Sector hills~
+Exit east 30345
+EDesc A path up into the mountains.
+~
+Exit west 30499
+End
+
+
+#30345
+Name Path through Mountains~
+Desc The path heads east up into the mountains, or west through the hills.  All
+you see around you is grey stone, and hear nothing but a rock rolling down a
+mountainside every now and then.
+~
+Sector hills~
+Exit east 30346
+EDesc Higher into the mountains.
+~
+Exit west 30344
+EDesc Out into the hills.
+~
+End
+
+
+#30346
+Name Path through Mountains~
+Desc You are on a high point of a trail that leads through the mountains.  
+It slopes slightly downward both to the east and west.  You notice 
+some smoke rising from the northeast.
+~
+Sector hills~
+Exit east 30347
+EDesc East along the trail.
+~
+Exit west 30345
+EDesc West along the trail.
+~
+End
+
+
+#30347
+Name Mountain Path, Outside a Town~
+Desc To your north, you see a fairly large town nestled in a small valley 
+between several mountains in the heart of the range.  You can enter it 
+in that direction, or follow a path west.
+~
+Sector hills~
+Exit north 29301
+EDesc You can enter the town to the north.
+~
+Exit west 30346
+EDesc A path goes west.
+~
+End
+
+
+#30348
+Name Thick Forest~
+Desc . The forest is very thick here.  Tall trees surround you, their leaves 
+blocking out the sky above.  You can hear animals moving around in the 
+branches.  It seems to lighten up a bit to the north.  
+~
+Sector forest~
+Exit north 30349
+EDesc More trees.
+~
+Exit east 30500
+EDesc More trees.
+~
+Exit south 30144
+EDesc More trees.
+~
+Exit west 30547
+EDesc More trees.
+~
+End
+
+
+#30349
+Name Thick Forest~
+Desc Tall trees with thick leafy branches surround you, blocking much of the sky. 
+ The sounds of wildlife are all around.  You can hear water trickling to the 
+northwest.  
+~
+Sector forest~
+Exit north 30350
+EDesc More trees, although it is a bit lighter.
+~
+Exit east 30501
+EDesc More trees.
+~
+Exit south 30348
+EDesc More trees.
+~
+Exit west 30619
+End
+
+
+#30350
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all directions, 
+but the heavy growth makes it hard to see where they are at.  The roots and 
+branches crossing your way make it difficult to travel.  
+~
+Sector forest~
+Exit north 30351
+EDesc More trees.
+~
+Exit east 30353
+EDesc More trees, and is that the entrance to the tower?
+~
+Exit south 30349
+EDesc Darker forest.
+~
+Exit west 30620
+End
+
+
+#30351
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all directions, 
+but the heavy growth makes it hard to see where they are at.  The roots and 
+branches crossing your way make it difficult to travel.  
+~
+Sector forest~
+Exit north 30352
+EDesc More trees.
+~
+Exit east 30643
+Exit south 30350
+EDesc More trees.
+~
+Exit west 30621
+End
+
+
+#30352
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all directions, 
+but the heavy growth makes it hard to see where they are at.  The roots and 
+branches crossing your way make it difficult to travel.  
+~
+Sector forest~
+Exit north 30311
+EDesc The trees seem to thin, and you hear water trickling.
+~
+Exit east 30502
+EDesc More trees.
+~
+Exit south 30351
+EDesc More trees.
+~
+Exit west 30622
+End
+
+
+#30353
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all directions, 
+but the heavy growth makes it hard to see where they are at.  The roots and 
+branches crossing your way make it difficult to travel.  
+~
+Sector forest~
+Exit north 30643
+Exit east 30505
+EDesc More trees.
+~
+Exit south 30501
+EDesc More trees.
+~
+Exit west 30350
+EDesc More trees.
+~
+End
+
+
+#30354
+Name On the Water, near the Beach~
+Desc You are on the water, just off the shore.  A sandy beach is just
+to your west, providing a good landing spot.  The smell of salt is 
+in the air.  The water stretches as far as you can see to the east,
+and does not look very deep here.
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit east 30355
+EDesc Away from the beach.
+~
+Exit west 30116
+EDesc Onto the beach.
+~
+End
+
+
+#30355
+Name On the Water~
+Desc You are on the water, a good distance off shore.  Away to the
+west is a sandy beach.  The air smells of salt, and the water is
+deep here as far as you can tell.
+~
+Sector noswim~
+Exit east 30356
+EDesc More water.
+~
+Exit west 30354
+EDesc Towards the shore.
+~
+End
+
+
+#30356
+Name On the Water~
+Desc You are on the water, in the middle of some great body of it.  You
+can barely see a shoreline a long way to the west.  The air smells
+of salt, and the water appears very deep here.
+~
+Sector noswim~
+Exit east 30357
+EDesc More water.
+~
+Exit west 30355
+EDesc The shore is this way.
+~
+End
+
+
+#30357
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit east 30358
+EDesc More water.
+~
+Exit west 30356
+EDesc More water.
+~
+End
+
+
+#30358
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit east 30360
+Exit west 30357
+EDesc More water.
+~
+End
+
+
+#30360
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31000
+EDesc More water.
+~
+Exit east 30361
+EDesc More water.
+~
+Exit south 30367
+Exit west 30358
+End
+
+
+#30361
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31010
+EDesc More water.
+~
+Exit east 30362
+EDesc More water.
+~
+Exit west 30360
+EDesc More water.
+~
+End
+
+
+#30362
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31020
+EDesc More water.
+~
+Exit west 30361
+EDesc More water.
+~
+End
+
+
+#30367
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 30360
+Exit south 30176
+End
+
+
+#30368
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 30175
+Exit south 30369
+EDesc More water.
+~
+End
+
+
+#30369
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 30368
+EDesc More water.
+~
+Exit south 30370
+EDesc More water.
+~
+End
+
+
+#30370
+Name On the Water~
+Desc You are on the water, in the middle of some great body of it.  The air
+smells of salt, and the water is very deep here.  There is a large
+island some way off to the south.
+~
+Sector noswim~
+Exit north 30369
+EDesc More water.
+~
+Exit south 30371
+EDesc Towards the island.
+~
+End
+
+
+#30371
+Name On the Water~
+Desc You are on the water, just north of a large island.  The beach is
+fairly rocky, but it looks like you could land without too much
+trouble.  The smell of salt is in the air.
+~
+Sector noswim~
+Exit north 30370
+EDesc More water.
+~
+Exit south 30498
+End
+
+
+#30372
+Name Rocky Beach~
+Desc You are on the rocky shoreline of an island.  Water stretches north
+as far as you can see, and the smell of salt is in the air.  This 
+part of the island is covered with low brush, with only a few trees.
+~
+Sector field~
+Exit north 30496
+Exit south 30373
+EDesc Towards the center of the idland.
+~
+End
+
+
+#30373
+Name Thinning Forest~
+Desc You are making your way through the low brush, in a higher part of what 
+appears to be a large island.  The shoreline is to the west and north.  ~
+Sector forest~
+Exit north 30372
+EDesc To the shoreline.
+~
+Exit south 30374
+EDesc Through the brush.
+~
+End
+
+
+#30374
+Name Thin Forest~
+Desc You are in a cleared area near the ruins of a pair of towers.  The ruins are 
+a bit east of here, while to the west the ground slopes down a bit to the 
+shoreline.  
+~
+Sector field~
+Exit north 30373
+EDesc Into some low brush.
+~
+Exit south 30404
+End
+
+
+#30384
+Name Wide Path through Trees~
+Desc You are on a wide dirt path that runs north and south through a 
+pleasant forest.  The trees that surround you are tall, very nicely 
+shaped, and not too close together.  There is not much in the way of 
+undergrowth, just a layer of fallen leaves.  You occasionally see 
+animals moving around in the branches.
+~
+Sector forest~
+End
+
+
+#30392
+Name Wide Path through Trees~
+Desc You are on a wide dirt path that runs north and south through a 
+pleasant forest.  The trees that surround you are tall, very nicely 
+shaped, and not too close together.  There is not much in the way of 
+undergrowth, just a layer of fallen leaves.  You occasionally see 
+animals moving around in the branches.
+~
+Sector forest~
+Exit north 30393
+EDesc The path runs north through the trees.
+~
+End
+
+
+#30393
+Name Wide Path through Trees~
+Desc You are on a wide dirt path that runs north and south through a 
+pleasant forest.  The trees that surround you are tall, very nicely 
+shaped, and not too close together.  There is not much in the way of 
+undergrowth, just a layer of fallen leaves.  You occasionally see 
+animals moving around in the branches.
+~
+Sector forest~
+Exit north 30394
+EDesc The path runs north through the trees.
+~
+Exit south 30392
+EDesc The path runs south through the trees.
+~
+End
+
+
+#30394
+Name Wide Path through Trees~
+Desc You are on a wide dirt path that runs south and west through a 
+pleasant forest.  The trees that surround you are tall, very nicely 
+shaped, and not too close together.  There is not much in the way of 
+undergrowth, just a layer of fallen leaves.  You occasionally see 
+animals moving around in the branches.
+~
+Sector forest~
+Exit south 30393
+EDesc The path runs south through the trees.
+~
+Exit west 30395
+EDesc The path runs west through the trees.
+~
+End
+
+
+#30395
+Name Wide Path through Trees~
+Desc You are on a wide dirt path that runs north and east through a 
+pleasant forest.  The trees that surround you are tall, very nicely 
+shaped, and not too close together.  There is not much in the way of 
+undergrowth, just a layer of fallen leaves.  You occasionally see 
+animals moving around in the branches.
+~
+Sector forest~
+Exit north 30396
+EDesc The path runs north through the trees.
+~
+Exit east 30394
+EDesc The path runs east through the trees.
+~
+End
+
+
+#30396
+Name Wide Path through Trees~
+Desc You are on a wide dirt path that runs north and south through a 
+pleasant forest.  The trees that surround you are tall, very nicely 
+shaped, and not too close together.  There is not much in the way of 
+undergrowth, just a layer of fallen leaves.  You occasionally see 
+animals moving around in the branches.
+~
+Sector forest~
+Exit north 30397
+EDesc The path runs north through the trees.
+~
+Exit south 30395
+EDesc The path runs south through the trees.
+~
+End
+
+
+#30397
+Name Wide Path through Trees~
+Desc You are on a wide dirt path that runs north and south through a 
+pleasant forest.  The trees that surround you are tall, very nicely 
+shaped, and not too close together.  There is not much in the way of 
+undergrowth, just a layer of fallen leaves.  You occasionally see 
+animals moving around in the branches.
+~
+Sector forest~
+Exit south 30396
+EDesc The path runs south through the trees.
+~
+End
+
+
+#30398
+Name Pleasant Forest~
+Desc Tall trees reach gracefully towards the sky around you.  There is
+not much undergrowth and it is easy to move around.  Birds flutter
+from tree to tree above, and small animals scurry around in the
+branches.  The only other sound is the breeze blowing through the
+leaves.
+~
+Sector forest~
+Exit north 30284
+Exit south 30399
+EDesc More trees.
+~
+End
+
+
+#30399
+Name Pleasant Forest~
+Desc Tall trees reach gracefully towards the sky around you.  There is
+not much undergrowth and it is easy to move around.  Birds flutter
+from tree to tree above, and small animals scurry around in the
+branches.  The only other sound is the breeze blowing through the
+leaves.
+~
+Sector forest~
+Exit north 30398
+EDesc More trees.
+~
+Exit south 30400
+EDesc More trees.
+~
+End
+
+
+#30400
+Name Pleasant Forest~
+Desc Tall trees reach gracefully towards the sky around you.  There is
+not much undergrowth and it is easy to move around.  Birds flutter
+from tree to tree above, and small animals scurry around in the
+branches.  The only other sound is the breeze blowing through the
+leaves.
+~
+Sector forest~
+Exit north 30399
+EDesc More trees.
+~
+Exit east 30401
+EDesc More trees.
+~
+End
+
+
+#30401
+Name Pleasant Forest~
+Desc Tall trees reach gracefully towards the sky around you.  There is
+not much undergrowth and it is easy to move around.  Birds flutter
+from tree to tree above, and small animals scurry around in the
+branches.  The only other sound is the breeze blowing through the
+leaves.
+~
+Sector forest~
+Exit east 30402
+EDesc More trees.
+~
+Exit west 30400
+EDesc More trees.
+~
+End
+
+
+#30402
+Name Pleasant Forest~
+Desc Tall trees reach gracefully towards the sky around you.  There is
+not much undergrowth and it is easy to move around.  Birds flutter
+from tree to tree above, and small animals scurry around in the
+branches.  The only other sound is the breeze blowing through the
+leaves.
+~
+Sector forest~
+Exit east 30403
+EDesc More trees.
+~
+Exit west 30401
+EDesc More trees.
+~
+End
+
+
+#30403
+Name Pleasant Forest~
+Desc Tall trees reach gracefully towards the sky around you.  There is
+not much undergrowth and it is easy to move around.  Birds flutter
+from tree to tree above, and small animals scurry around in the
+branches.  The only other sound is the breeze blowing through the
+leaves.
+~
+Sector forest~
+Exit east 30404
+EDesc More trees.
+~
+Exit west 30402
+EDesc More trees.
+~
+End
+
+
+#30404
+Name Thin Forest~
+Desc The forest is rather thin at this point, with the trees widely
+spaced.  It seems to get thicker and greener to the west, while
+to the east is even less dense. There is a warm breeze blowing
+from that direction.
+~
+Sector forest~
+Exit north 30374
+Exit south 30405
+EDesc More trees.
+~
+Exit west 30403
+EDesc More trees.
+~
+End
+
+
+#30405
+Name Thin Forest~
+Desc The forest is rather thin at this point, with the trees widely
+spaced.  It seems to get thicker and greener to the west, while
+to the east is even less dense. There is a warm breeze blowing
+from that direction.
+~
+Sector forest~
+Exit north 30404
+EDesc More trees.
+~
+Exit east 30406
+EDesc The trees really thin out this way.
+~
+End
+
+
+#30406
+Name Edge of Desert~
+Desc The trees are few and far between here, and the ground is mostly
+barren and cracked from the heat.  The forest gets thicker to the
+west, but to the east dwindles to nothing except dirt and sand.
+~
+Sector field~
+Exit east 30407
+EDesc A desert stretches to the east.
+~
+Exit west 30405
+EDesc The trees get thicker.
+~
+End
+
+
+#30407
+Name Edge of the Desert~
+Desc You stand on the edge of a great desert, which stretches off to
+east as far as the eye can see.  The ground here is mostly flat,
+and is a mix of cracked dirt and sand.
+~
+Sector desert~
+Exit east 30408
+EDesc The desert stretches east.
+~
+Exit west 30406
+EDesc You see trees and healthier land this way.
+~
+End
+
+
+#30408
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit east 30409
+EDesc More sand.
+~
+Exit south 30414
+EDesc More sand.
+~
+Exit west 30407
+EDesc More sand.
+~
+End
+
+
+#30409
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit east 30410
+EDesc More sand.
+~
+Exit south 30415
+EDesc More sand.
+~
+Exit west 30408
+EDesc More sand.
+~
+End
+
+
+#30410
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit east 30412
+EDesc More sand.
+~
+Exit south 30416
+EDesc More sand.
+~
+Exit west 30409
+EDesc More sand.
+~
+End
+
+
+#30411
+Name Path through Meadows~
+Desc A small dirt path runs north and south through the meadows here.  A
+short distance to the north, you see a small village, and some figures
+moving around.
+~
+Sector field~
+End
+
+
+#30412
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit east 30413
+EDesc More sand.
+~
+Exit south 30417
+EDesc More sand.
+~
+Exit west 30410
+EDesc More sand.
+~
+End
+
+
+#30413
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit south 30418
+EDesc More sand.
+~
+Exit west 30412
+EDesc More sand.
+~
+End
+
+
+#30414
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30408
+EDesc More sand.
+~
+Exit east 30415
+EDesc More sand.
+~
+Exit south 30419
+EDesc More sand.
+~
+End
+
+
+#30415
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30409
+EDesc More sand.
+~
+Exit east 30416
+EDesc More sand.
+~
+Exit south 30420
+EDesc More sand.
+~
+Exit west 30414
+EDesc More sand.
+~
+End
+
+
+#30416
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30410
+EDesc More sand.
+~
+Exit east 30417
+EDesc More sand.
+~
+Exit west 30415
+EDesc More sand.
+~
+End
+
+
+#30417
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30412
+EDesc More sand.
+~
+Exit east 30418
+EDesc More sand.
+~
+Exit south 30422
+EDesc More sand.
+~
+Exit west 30416
+EDesc More sand.
+~
+End
+
+
+#30418
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30413
+EDesc More sand.
+~
+Exit south 30423
+EDesc More sand.
+~
+Exit west 30417
+EDesc More sand.
+~
+End
+
+
+#30419
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30414
+EDesc More sand.
+~
+Exit east 30420
+EDesc More sand.
+~
+Exit south 30424
+EDesc More sand.
+~
+End
+
+
+#30420
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30415
+EDesc More sand.
+~
+Exit east 30421
+Exit south 30425
+Exit west 30419
+EDesc More sand.
+~
+End
+
+
+#30421
+Name Desert~
+Desc You have walked into a pretty violent sandstorm!!  Your vision is extremely 
+limited in all directions.  The landscape seems to change continuously, 
+throwing your senses into complete disarray.  
+~
+Sector desert~
+Mana 50
+Heal 0
+Exit north 30425
+EFlags oneway~
+Exit east 30422
+Exit south 30426
+Exit west 30420
+End
+
+
+#30422
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30417
+EDesc More sand.
+~
+Exit east 30423
+EDesc More sand.
+~
+Exit south 30427
+EDesc More sand.
+~
+Exit west 30421
+End
+
+
+#30423
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise all around 
+you, preventing you from seeing very far in any direction.  There is not 
+much to look at, and it is dead silent.  
+~
+Sector desert~
+Exit north 30418
+EDesc More sand.
+~
+Exit south 30428
+EDesc More sand.
+~
+Exit west 30422
+EDesc More sand.
+~
+End
+
+
+#30424
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30419
+EDesc More sand.
+~
+Exit east 30425
+End
+
+
+#30425
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30420
+Exit east 30426
+EDesc More sand.
+~
+Exit west 30424
+End
+
+
+#30426
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30421
+Exit east 30427
+EDesc More sand.
+~
+Exit west 30425
+EDesc More sand.
+~
+End
+
+
+#30427
+Name Desert~
+Desc You stand in the middle of a barren desert.  Low sand dunes rise
+all around you, preventing you from seeing very far in any direction.
+There is not much to look at, and it is dead silent.
+~
+Sector desert~
+Exit north 30422
+EDesc More sand.
+~
+Exit east 30428
+EDesc More sand.
+~
+Exit west 30426
+EDesc More sand.
+~
+End
+
+
+#30428
+Name Desert~
+Desc You stand among the dunes of a barren desert, which stretches out in all 
+directions.  It is dead quiet.  
+~
+Sector desert~
+Exit north 30423
+EDesc More sand.
+~
+Exit west 30427
+EDesc More sand.
+~
+End
+
+
+#30429
+Name Faint Path through Plains~
+Desc A very faint path runs east and west through the plains here.  Tall
+grass surrounds you in every direction except west, where off in the
+distance you can see hills rise.
+~
+Sector field~
+Exit east 30444
+Exit west 30430
+EDesc Hills are this way.
+~
+End
+
+
+#30430
+Name Faint Path at Edge of Plains~
+Desc You are near a faint path that runs east through the plains, and west 
+up into the hills.  Beyond the hills rises a huge mountain range, but
+otherwise there is not much to look at.
+~
+Sector field~
+Exit east 30429
+EDesc Into the plains.
+~
+Exit west 30431
+EDesc The path goes into the hills.
+~
+End
+
+
+#30431
+Name Small Foothills~
+Desc A faint path here winds its way east and west through the small
+foothills.  The terrain is mostly rocky and uneven, making travel
+difficult.  Some of the more stubborn varieties of plant life
+cling to life on the slopes.
+~
+Sector hills~
+Exit east 30430
+EDesc Into the plains.
+~
+Exit west 30432
+EDesc Into the steeper hills.
+~
+End
+
+
+#30432
+Name Foothills~
+Desc You are travelling among the steep foothills on a faint path.  It
+leads east and west, or you can go another direction if you feel like
+some climbing.  Trees perch precariously on the slopes in some spots.
+~
+Sector hills~
+Exit east 30431
+EDesc The hills seem to get smaller this way.
+~
+Exit west 30433
+EDesc The hills rise to meet the mountains this way.
+~
+End
+
+
+#30433
+Name Steep Foothills~
+Desc You are in an area of extremely steep foothills.  A path forms here and
+winds its way east through the hills.  Steep mountainsides block the way
+to the west, but you do notice a narrow cave entrance in that direction.
+~
+Sector hills~
+Exit east 30432
+EDesc A path heads east through the hills.
+~
+Exit west 41700
+End
+
+
+#30434
+Name Meadows~
+Desc You are in the middle of some grassy meadows.  There are a few trees 
+here and there, and they grow thicker to the west and south.  You can
+see a large body of water a long way to the east.
+~
+Sector field~
+Exit east 30435
+EDesc More meadows, and the water.
+~
+Exit south 30470
+EDesc Some scattered trees but generally easy travelling.
+~
+Exit west 30126
+EDesc Into some light forest.
+~
+End
+
+
+#30435
+Name Tranquil Meadow~
+Desc Grassy meadows surround you.  Wildflowers grow through out the area, along 
+with a few trees.  A sense of tranquility seems to flow through here and the 
+only noises you can hear are the calls of seagulls towards the east where 
+the ground rises and becomes a bit rockier.  
+~
+Sector field~
+Mana 150
+Heal 150
+Exit east 30436
+EDesc The ground rises and becomes rockier.
+~
+Exit south 30471
+EDesc Grassy meadows with a few trees.
+~
+Exit west 30434
+EDesc More meadows.
+~
+End
+
+
+#30436
+Name Cliff Overlooking Sea~
+Desc You are on the top of a cliff that looks east over a large body of water.
+The way down is steep and not climbable.  To the west, the ground slopes
+down into some meadows and eventually a forest.  You notice a lighthouse
+perched on the edge just to the north.
+~
+Sector field~
+Exit north 30437
+EDesc North towards a lighthouse.
+~
+Exit south 30472
+EDesc The ground slopes downward this way, dropping towards the water's level.
+~
+Exit west 30435
+EDesc Down the slope into the meadows.
+~
+End
+
+
+#30437
+Name Just Outside a Lighthouse~
+Desc You are near the edge of a cliff that overlooks the sea.  A tall stone
+lighthouse stands here, and can be entered to the east.  The door is
+missing, and the entire structure looks like it has not been well
+maintained for a long time.  There is a small sign here.
+~
+Sector field~
+ExtraDesc sign~
+It reads:
+
+Beware ye who would enter this cursed place.  The inhabitants are not
+friendly to visitors, and those among ye who are inexperienced should
+turn back now!
+
+~
+Exit east 43200
+Exit south 30436
+EDesc South along the cliff.
+~
+End
+
+
+#30438
+Name Old Road Through Barren Wasteland~
+Desc You are on the remnants of an old road that runs north and south
+through a barren, muddy wasteland.  Dead trees surround you, some
+of which appear burnt.  There appears to be a small village a bit
+to the southwest.
+~
+Sector field~
+Exit north 30293
+EDesc The road continues north.
+~
+Exit east 30174
+Exit south 30439
+EDesc The road continues south.
+~
+Exit west 30137
+EDesc More barren wasteland, and the entrance to a small village.
+~
+End
+
+
+#30439
+Name Old Road Near River~
+Desc An old road runs north through the dead forest from here, and to the
+south ends at a decrepit bridge that crosses over a murky, muddy river.
+Your way west is blocked by the short wall of a small village.
+~
+Sector field~
+Exit north 30438
+EDesc An old road runs north.
+~
+Exit south 30440
+EDesc A decrepit old bridge.
+~
+Exit west 31107
+End
+
+
+#30440
+Name Decrepit Old Bridge~
+Desc You are on a decrepit old bridge that spans a murky, muddy river.
+A road continues north and south from the ends of the bridge, and 
+is covered with mud and in very poor shape.
+~
+Sector field~
+Exit north 30439
+EDesc A road heads north.
+~
+Exit south 30441
+EDesc A road runs south.
+~
+Exit west 30222
+End
+
+
+#30441
+Name Just Outside City~
+Desc You are on an old road just north of the gates of a large city.  
+To your north lies a river, and a decrepit wooden brige crossing 
+it.  You can enter the city to the south, or go east or west along 
+the city walls.
+~
+Sector field~
+Exit north 30440
+EDesc A road crosses the river to the north.
+~
+Exit south 27104
+EFlags door~
+Exit west 30456
+EDesc You can follow the city walls west.
+~
+End
+
+
+#30442
+Name An Enchanted Forest~
+Desc The woods are lush and green and filled with immense trees so old they seem 
+to have witnessed the beginning of the realm.  Pine, oak, acorn and redwood 
+with gnarled trunks as big as towers reach their branches towards the sky.  
+Tiny flowers dot the verdant grass, splashes of crimson and gold amidst the 
+green.  
+~
+Sector field~
+RoomEcho  7  5   5 A scattering of faerie dust glistens as it catches the sun.~
+RoomEcho  7  5   5 A magical wind stirs up, scattering sparkly dust in the air.~
+Exit north 30245
+End
+
+
+#30443
+Name Barren Wasteland~
+Desc You are outside the northeast corner of a large city, on some very
+muddy ground.  A scum-covered river comes very close to the city
+here, flowing along to your north and making a turn south.
+~
+Sector field~
+Exit north 19951
+Exit south 30444
+EDesc You can follow the city walls south.
+~
+End
+
+
+#30444
+Name Barren Wasteland~
+Desc You are on the outside of the eastern wall of some city.  Muddy
+wastes stretch out in all directions, and a scum-covered river
+flows quietly to your northeast.
+~
+Sector field~
+Exit north 30443
+EDesc You can follow the city walls north.
+~
+Exit south 30445
+EDesc You can follow the city walls south.
+~
+Exit west 30429
+End
+
+
+#30445
+Name Barren Wasteland~
+Desc You are on the outside of the eastern wall of some city.  Muddy
+wastes stretch out in all other directions from here.
+~
+Sector field~
+Exit north 30444
+EDesc You can follow the city walls north.
+~
+Exit south 30446
+EDesc You can follow the city walls south.
+~
+End
+
+
+#30446
+Name Barren Wasteland~
+Desc You are on the outside of the eastern wall of some city.  Muddy
+wastes stretch out in all directions.  There are few signs of
+life here, but from what you can here, the city sounds active.
+~
+Sector field~
+Exit north 30445
+EDesc You can follow the city walls north.
+~
+Exit south 30499
+End
+
+
+#30447
+Name A Marshy Path~
+Desc You are outside the southeast corner of a large city, on some very
+muddy ground.  You can't tell much about the city from this vantage
+point, but do hear some raucous laughing coming from within.
+~
+Sector field~
+Exit east 12315
+Exit west 30448
+EDesc You can follow the city walls west.
+~
+End
+
+
+#30448
+Name A Marshy Path~
+Desc You are on the outside of the southern wall of some city.  Muddy
+wastes stretch out in all other directions from here, broken 
+only by a few stunted trees poking up here and there.
+~
+Sector field~
+Exit east 30447
+EDesc You can follow the city walls east.
+~
+Exit west 30152
+End
+
+
+#30449
+Name Along a City Wall~
+Desc You are outside the southern gates of a large city.  You can
+follow a street north through the wall, or head off into the
+muddy wastelands in another direction.
+~
+Sector field~
+Exit north 27057
+Exit south 19951
+End
+
+
+#30450
+Name Steep Foothills~
+Desc You are just west of a huge mountain range, in the foothills.  The slopes 
+around you are very steep and rocky, and support little in the way of plant 
+life.  
+~
+Sector hills~
+Exit east 30582
+Exit south 30278
+Exit west 30636
+End
+
+
+#30451
+Name Southwest of a Large City~
+Desc You are outside the southwest corner of a large city, on some very
+muddy ground.  You can't tell much about the city from this vantage
+point, but do hear some raucous laughing coming from within.
+~
+Sector field~
+Exit north 30452
+EDesc You can follow the city walls north.
+~
+Exit south 19953
+Exit west 31106
+End
+
+
+#30452
+Name Along a City Wall~
+Desc You are on the outside of the western wall of some city.  Muddy
+wastes stretch out in all other directions from here.  A gate
+into the city is just north.
+~
+Sector field~
+Exit north 30453
+EDesc You can follow the city walls north.
+~
+Exit south 30451
+EDesc You can follow the city walls south.
+~
+Exit west 31103
+End
+
+
+#30453
+Name Outside the Gates~
+Desc You stand just outside the west gates of a large city.  Barren, muddy
+wastelands surround you in all other directions.  There are trees
+poking up through the mud in several spots, but all are quite dead.
+~
+Sector field~
+Exit north 30454
+EDesc You can follow the city walls north.
+~
+Exit east 27007
+EDesc You can enter the city to the east.
+~
+Exit south 30452
+EDesc You can follow the city walls south.
+~
+Exit west 30457
+EDesc A barren wasteland.
+~
+End
+
+
+#30454
+Name Along a City Wall~
+Desc You are on the outside of the western wall of some city.  Muddy
+wastes stretch out in all other directions from here.  A gate 
+into the city is just to your south.
+~
+Sector field~
+Exit north 30455
+EDesc You can follow the city walls north.
+~
+Exit south 30453
+EDesc You can follow the city walls south.
+~
+Exit west 30707
+End
+
+
+#30455
+Name Northwest of a Large City~
+Desc You are outside the northwest corner of a large city, on some very
+muddy ground.  A scum-covered river comes very close to the city
+here, flowing along to your north.
+~
+Sector field~
+Exit north 30699
+Exit east 30456
+EDesc You can follow the city walls east.
+~
+Exit south 30454
+EDesc You can follow the city walls south.
+~
+Exit west 30705
+End
+
+
+#30456
+Name Along a City Wall~
+Desc You are on the outside of the northern wall of some city.  Muddy
+wastes stretch out in all directions, and a scum-covered river
+flows quietly to your north.  A gate to the city is a short way
+to the east.
+~
+Sector field~
+Exit north 30222
+EDesc A scum covered river.
+~
+Exit east 30441
+EDesc You can follow the city walls east.
+~
+Exit west 30455
+EDesc You can follow the city walls west.
+~
+End
+
+
+#30457
+Name Barren, Muddy Wasteland~
+Desc Barren, muddy wastelands surround you.  There are a few stunted trees
+here and there, but after a moment's inspections you see that they
+are all dead.  The walls of a city stand not far to the east.
+~
+Sector field~
+Exit north 30707
+Exit east 30453
+EDesc A city is this way.
+~
+Exit south 31103
+Exit west 30458
+EDesc More barren wastelands.
+~
+End
+
+
+#30458
+Name Barren, Muddy Wasteland~
+Desc Dead trees poke up through the muddy ground here and there in this
+barren wasteland.  There is no sign of anything living here, although
+you do notice city walls a long distance to the east.
+~
+Sector field~
+Exit north 30706
+Exit east 30457
+EDesc Towards a city.
+~
+Exit south 31102
+Exit west 30459
+EDesc Barren Wastelands.
+~
+End
+
+
+#30459
+Name Barren, Muddy Wasteland~
+Desc You stand in the middle of a wasteland, with little but muddy ground in most 
+directions.  To the south and west, living trees poke up through the mud, 
+and it gets quite swampy.  
+~
+Sector field~
+Exit north 30460
+EDesc Barren wasteland.
+~
+Exit east 30458
+EDesc Barren wasteland.
+~
+Exit south 31101
+Exit west 31100
+End
+
+
+#30460
+Name Barren, Muddy Wasteland~
+Desc You stand in the middle of a wasteland, with little but muddy ground
+and dead trees in all directions.
+~
+Sector field~
+Exit north 30703
+Exit east 30706
+Exit south 30459
+EDesc Barren wasteland.
+~
+Exit west 30461
+EDesc Barren wasteland.
+~
+End
+
+
+#30461
+Name Barren, Muddy Wasteland~
+Desc You stand in the middle of a wasteland, with little but muddy ground in most 
+directions.  To the south, living trees poke up through the mud, and it gets 
+quite swampy.  
+~
+Sector field~
+Exit north 30702
+Exit east 30460
+EDesc Barren wasteland.
+~
+Exit south 31100
+Exit west 30462
+EDesc Barren wasteland.
+~
+End
+
+
+#30462
+Name Barren Wastelands~
+Desc You stand in the middle of a large barren wastelands.  The ground to the
+east seems wet and muddy, while to the west it is drier and even appears
+burnt in some places.  There are a few trees standing near here, but all
+are dead.
+~
+Sector field~
+Exit north 30701
+Exit east 30461
+EDesc Barren, Muddy Wasteland.
+~
+Exit south 30276
+Exit west 30463
+EDesc Barren, Scorched earth.
+~
+End
+
+
+#30463
+Name Barren, Scorched Wastelands~
+Desc The ground here is dry and cracked, and even burnt in some places.  A few
+charred tree stumps still stand here, and you can see a small fortress of
+some type a good distance to the southwest. A small cottage is off in the
+distance to the south.
+~
+Sector field~
+Exit north 30700
+Exit east 30462
+EDesc The ground gets wetter this way.
+~
+Exit south 30173
+EFlags door closed~
+Exit west 30253
+EDesc More dry, cracked earth.
+~
+End
+
+
+#30464
+Name Path through Grass~
+Desc A dirt path has been beaten into the grass here, and runs east through 
+the grass or west meets up with a north-south road.  The water of the 
+bay lies a bit to the north.
+~
+Sector field~
+Exit east 30465
+EDesc A path runs east from here.
+~
+Exit west 30206
+EDesc The path meets up with a road this way.
+~
+End
+
+
+#30465
+Name Path through Grass~
+Desc A dirt path has been beaten into the grass here, and runs east and 
+west through the grass.  The water of the bay lies a short way to 
+the north.
+~
+Sector field~
+Exit east 30466
+EDesc A path runs east.
+~
+Exit west 30464
+EDesc A path runs west.
+~
+End
+
+
+#30466
+Name Path along Water's Edge~
+Desc You are on a path that runs east and west along the south edge of a huge
+bay.  The water stretches north almost as far as you can see, and to the
+south lie grassy plains.
+~
+Sector field~
+Exit east 30467
+EDesc A path runs east.
+~
+Exit west 30465
+EDesc A path runs west.
+~
+End
+
+
+#30467
+Name Path along Water's Edge~
+Desc Here a path runs east and sest along the south edge of a huge bay.  The 
+water stretches north almost as far as you can see, and to the south lie 
+grassy plains.
+~
+Sector field~
+Exit east 30468
+EDesc A path runs east.
+~
+Exit west 30466
+EDesc A path runs west.
+~
+End
+
+
+#30468
+Name Path along Water's Edge~
+Desc You are on a path that runs east and west along the south edge of a huge
+bay.  The water stretches north almost as far as you can see, and to the
+south lie grassy plains.
+~
+Sector field~
+Exit east 30469
+EDesc A path runs east.
+~
+Exit west 30467
+EDesc A path runs west.
+~
+End
+
+
+#30469
+Name Path along Water's Edge~
+Desc The shoreline and path take a turn north here towards a small village.  
+You can't make out much detail from here however.  Grassy plains stretch
+off to the south.
+~
+Sector field~
+Exit south 4321
+Exit west 30468
+EDesc A path runs west along the water.
+~
+End
+
+
+#30470
+Name Meadows~
+Desc The trees are very sparse, here, to the point that it is more of a meadow
+than a forest.  It gets denser to the west and south, while to the east
+the ground remains smooth but rises a bit.
+~
+Sector field~
+Exit north 30434
+EDesc Meadows.
+~
+Exit east 30471
+EDesc The ground rises a bit.
+~
+Exit south 30473
+EDesc Light forest.
+~
+Exit west 30125
+EDesc Light forest.
+~
+End
+
+
+#30471
+Name Grassy Slope~
+Desc The ground here is smooth and grassy, and is rising sharply to the east.  It
+appears to lead up to a cliff.  Down to the west are more grassy meadows, and
+a bit further off a light forest.
+~
+Sector field~
+Exit north 30435
+EDesc Meadows.
+~
+Exit east 30472
+EDesc The ground slopes up sharply.
+~
+Exit south 30474
+EDesc Meadows.
+~
+Exit west 30470
+EDesc A light forest is off in the distance.
+~
+End
+
+
+#30472
+Name On a Short Cliff over the Ocean~
+Desc You stand near the edge of a small cliff that overlooks the ocean to the 
+east.  It looks impossible to go down to the water here, but to the south
+the ground slopes to meet the water.  The ground also slopes down into
+the meadows  to the west, but north rises to a high point, upon which 
+stands a stone lighthouse.
+~
+Sector field~
+Exit north 30436
+EDesc A lighthouse on a cliff.
+~
+Exit south 30475
+EDesc The ground drops towards the water level.
+~
+Exit west 30471
+EDesc The ground slopes down.
+~
+End
+
+
+#30473
+Name Edge of a Light Forest~
+Desc The trees are rather sparse here, on the northeastern corner of a light
+forest.  Grassy meadows lie to the east and north, while thicker cover
+is to the west and south.
+~
+Sector forest~
+Exit north 30470
+EDesc Meadows.
+~
+Exit east 30474
+EDesc Meadows.
+~
+Exit west 30124
+EDesc Light forest.
+~
+End
+
+
+#30474
+Name Meadows~
+Desc You stand in some flat, grassy meadows.  A few trees are clustered in groups
+near you, but none really thick except for to the west.  The ground looks like
+it gets rocky to the east.
+~
+Sector field~
+Exit north 30471
+EDesc Meadows.
+~
+Exit east 30475
+EDesc Flat grasslands.
+~
+Exit west 30473
+EDesc A light forest is this way.
+~
+End
+
+
+#30475
+Name Rocky Flatland~
+Desc The ground is quite broken and uneven here, making travel unpleasant.
+A rocky beach and water are to the east, while to the north the earth
+rises steeply to form cliffs that overlook that water.  To the west
+it is grassier, and there is a forest in the distance.
+~
+Sector hills~
+Exit north 30472
+EDesc The ground slopes up to some cliffs.
+~
+Exit east 30476
+EDesc A rocky beach.
+~
+Exit south 31046
+EDesc Lightly rock ground that rises a bit in this direction.
+~
+Exit west 30474
+EDesc Some meadows and light forest.
+~
+End
+
+
+#30476
+Name Rocky Beach~
+Desc The rocky ground here meets a wide body of water, forming a beach of sorts.  
+Small waves from the east slowly hit the stones as you watch.  Cliffs 
+stretch out towards the north, large stones and rocks litter the ground 
+around the jagged cliffs.  The rocky beach continues south.  
+~
+Sector field~
+Exit east 30477
+EDesc If you have a boat, or can fly, the water is this way.
+~
+Exit south 31047
+EDesc The beach continues.
+~
+Exit west 30475
+EDesc The ground gets grassier and smoother.
+~
+End
+
+
+#30477
+Name Just Offshore~
+Desc You are on the fairly calm water just offshore a rocky beach to your west.
+The water looks fairly shallow, and small waves are just beginning to form.
+The huge body of water stretches east as far as you can see.
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit east 30478
+EDesc Further out to sea.
+~
+Exit south 31048
+EDesc Just offshore.
+~
+Exit west 30476
+EDesc A rocky beach.
+~
+End
+
+
+#30478
+Name On Deep Water~
+Desc You are on a very deep body of water, a fairly long distance from land.
+You can see the tops of some tall cliffs off to the west, but only water 
+in every other direction.
+~
+Sector noswim~
+Exit east 31123
+Exit south 31049
+EDesc More water.
+~
+Exit west 30477
+EDesc Land is this way.
+~
+End
+
+
+#30479
+Name Near a wide river~
+Desc You are on the south bank of a wide, slow river.  It flows west to east,
+and makes a turn to the south just to your west.  A path coming from the
+south leads to a wide stone bridge which spans it.  
+~
+Sector field~
+Exit north 988
+EDesc A wooden bridge over a river.
+~
+Exit south 30127
+EDesc A path leads south.
+~
+End
+
+
+#30480
+Name Approaching a walled city~
+Desc You stand before the looming walls of a large city towering above you.  A 
+large unguarded gateway leads into the city from this side of the south wall 
+of the city.  The walls look old but strong.  It will be at least several 
+decades before these walls show signs of collapse.  
+~
+RoomFlags no_mob~
+Sector field~
+Exit south 30211
+Exit west 1801
+End
+
+
+#30481
+Name Near a wide river~
+Desc You are on the north bank of a wide, slow river, near a stone bridge that
+crosses it.  The water is flowing from east to west, and is calm.  Grassy
+meadows lie along the river banks as you look east and west.  A well-used
+path leads north from the bridge into the wilderness, and another fainter
+one runs west.  
+~
+Sector field~
+Exit north 30482
+EDesc A path.
+~
+Exit south 986
+EDesc A wooden bridge.
+~
+Exit west 30487
+EDesc A path along the river.
+~
+End
+
+
+#30482
+Name Path through Meadows~
+Desc A path runs north and south here.  Flat meadows surround you, covered
+with wildgrass, bushes, and even some flowers.  A little ways to the
+south is a river, and a bridge crossing it.
+~
+Sector field~
+Exit north 30483
+EDesc A path goes north.
+~
+Exit south 30481
+EDesc A path goes south.
+~
+End
+
+
+#30483
+Name Path through Meadows~
+Desc A well-used path runs north and south through the meadows here.  Tall
+grass, bushes, and flowers surround you, and the whole area seems to
+be teeming with wildlife.
+~
+Sector field~
+Exit north 30484
+EDesc A path.
+~
+Exit south 30482
+EDesc A path.
+~
+End
+
+
+#30484
+Name Path through Meadows~
+Desc A well-used path runs north and south through the meadows here.  Tall
+grass, bushes, and flowers surround you, and the whole area seems to
+be teeming with wildlife.
+~
+Sector field~
+Exit north 30485
+EDesc A path.
+~
+Exit south 30483
+EDesc A path.
+~
+End
+
+
+#30485
+Name Path through Meadows~
+Desc A well-used path runs north and south through the meadows here.  Tall
+grass, bushes, and flowers surround you, and the whole area seems to
+be teeming with wildlife.  You can see a light forest begin some way
+to the north.
+~
+Sector field~
+Exit north 30486
+EDesc A path.
+~
+Exit south 30484
+EDesc A path.
+~
+End
+
+
+#30486
+Name Just South of a Light Forest~
+Desc You are just outside the south edge of a light forest.  The forest is
+made up of trees and bushes of all types, and seems very vibrant, with
+lots of wildlife.  A path runs north into it, or south through some
+grassy meadows.
+~
+Sector field~
+Exit north 30201
+EDesc A path into the forest.
+~
+Exit south 30485
+EDesc A path.
+~
+End
+
+
+#30487
+Name Path along Riverbank~
+Desc A path runs east and west here, along the north bank of a river.
+The water runs west to east, and is calm at this point.  Grassy
+meadows stretch to the north.
+~
+Sector field~
+Exit east 30481
+EDesc The path goes east, to a bridge.
+~
+Exit west 30488
+EDesc The path runs west.
+~
+End
+
+
+#30488
+Name Path through Meadows~
+Desc A well-used path runs east and west through the meadows here.  Tall grass, 
+bushes, and flowers surround you, and the whole area seems to be teeming 
+with wildlife.  
+~
+Sector field~
+Exit east 30487
+EDesc A path.
+~
+Exit west 30172
+EDesc A path.
+~
+End
+
+
+#30489
+Name Along the Southeastern Edge of a Depression~
+Desc You are deep in the mountins, on the top edge of a deep circular depression 
+in the stone.  To your northwest, the ruins of a large tower stands in the 
+depression.  It is too steep to go down to the ruins from here, but it looks 
+possible to the west.  You can continue north.  
+~
+Sector hills~
+Exit north 30490
+EDesc North along the edge.
+~
+Exit east 31051
+Exit west 30177
+EDesc West along the edge.
+~
+End
+
+
+#30490
+Name Deep within Mountains~
+Desc You are deep within the mountains, on the eastern edge of a deep,
+circular depression.  You can't get down into it from here, but 
+it looks a little less steep if you go south then west.  A narrow
+path continues north, but looks like a tight fit.
+~
+Sector hills~
+Exit north 30491
+EDesc Through a tight pass.
+~
+Exit south 30489
+EDesc South along the edge.
+~
+End
+
+
+#30491
+Name Tight Pass~
+Desc The path here becomes so narrow that it is very difficult to squeeze
+through.  You can see a wide opening to the south, and to the north
+it appears that the mountains end and foothills begin.
+~
+Sector hills~
+Exit north 30492
+EDesc North into the foothills.
+~
+Exit south 30490
+EDesc South into a wider area.
+~
+End
+
+
+#30492
+Name Foothills~
+Desc You are in the foothills just north of a large mountain range.  
+The hills die out immediately to the north, and become flat plains.
+There is a crevice in the rock just south, which may be large
+enough to enter.
+~
+Sector hills~
+Exit north 30493
+EDesc Barren plains.
+~
+Exit south 30491
+EDesc A crevice.
+~
+End
+
+
+#30493
+Name Rough Plains~
+Desc Barren Plains stretch to the north and west of here, while foothills
+and mountains lie just south and a ways to the east.  The plains do
+not appear very fertile, with only a few clumps of hardy grass or
+bushes scattered around.
+~
+Sector field~
+Exit north 30494
+EDesc More plains.
+~
+Exit south 30492
+EDesc Into foothills.
+~
+End
+
+
+#30494
+Name Rough Plains~
+Desc Barren Plains stretch to the north and west or here, while foothills
+and mountains lie a good distance south and east.  The plains are
+not very green with plant life, with only a few clumps of hardy grass 
+or bushes scattered around.
+~
+Sector field~
+Exit east 30495
+EDesc Mountains this way.
+~
+Exit south 30493
+EDesc Mountains this way.
+~
+End
+
+
+#30495
+Name Rough Plains~
+Desc Barren Plains stretch to the north and west of here, while foothills
+and mountains lie a good distance south and east.  The plains do
+not appear very fertile, with only a few clumps of hardy grass or
+bushes scattered around.
+~
+Sector field~
+Exit east 1900
+EDesc Mountains this way.
+~
+Exit west 30494
+EDesc Flat, barren plains.
+~
+End
+
+
+#30496
+Name Sandy Beach~
+Desc You are on a sandy beach that looks out over the water to the west.  
+The cries of seagulls and the scent of the salt fill the air.  A
+dense forest begins almost immediately to the east.
+~
+Sector field~
+Exit north 30497
+EDesc The beach continues.
+~
+Exit south 30372
+End
+
+
+#30497
+Name Sandy Beach~
+Desc The sandy beach continues to the north and south.  Small waves from the 
+sea to the west lap slowly on the shore.  A dark forest begins a short
+way to the east.
+~
+Sector field~
+Exit north 30498
+EDesc The beach continues.
+~
+Exit south 30496
+EDesc The beach continues.
+~
+End
+
+
+#30498
+Name Sandy Beach~
+Desc The sandy beach comes to a point here.  Water stretches to the horizon to
+the north and west, while a forest begins to the southeast.
+~
+Sector field~
+Exit north 30371
+Exit south 30497
+EDesc The beach continues.
+~
+Exit west 30215
+End
+
+
+#30499
+Name Grassy Plains~
+Desc The ground here is flat and covered with tall grass.  The plains continue
+in all directions but east.  In that way you can see a forest off in the
+distance.
+~
+Sector field~
+Exit north 30446
+Exit east 30344
+Exit west 30156
+EDesc More plains.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 30105 -1 30114
+M 0 30516 4 30145 2
+M 0 30516 4 30145 2
+M 0 30304 1 30173 1
+E 0 30100 -1 torso~
+E 0 30101 -1 about~
+E 0 30102 -1 legs~
+E 0 30103 -1 wielded~
+M 0 30509 5 30193 1
+O 0 30108 -1 30288
+O 0 30108 -1 30335
+O 0 30107 -1 30426
+M 0 30101 1 30437 1
+M 0 30102 1 30442 1
+O 0 30104 -1 30442
+O 0 30106 -1 30490
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#30103
+title purge the portal to faerie ring~
+code mob seeall
+mob echo A `#`Ws`Ch`ci`Wm`Cm`We`cr`Ci`Wn`cg`^ portal disappears magically, leaving traces of faerie dust on the grass.
+mob purge magic
+~
+disabled false
+END
+
+#30102
+title load the portal to faerie ring~
+code mob echo A `#`Ws`Ch`ci`Cm`Wm`ce`Wr`ci`Cn`Wg`^ portal appears magically, sprinkling faerie dust over the grass.
+mob oload 39343
+ 
+~
+disabled false
+END
+
+#30101
+title newbieprot 3: Guarding Haunted Lighthouse~
+code if level $n <= 25
+emote $n examines @ carefully.
+sayto $n You look a little inexperienced to be going in there alone.
+sayto $n That place is haunted you know.
+emote nods his head in the direction of the lighthouse.
+endif
+~
+disabled false
+END
+
+#30100
+title newby protection 2 : Wise old man stops levels < 25 entering portcullis~
+code if level $n <= 25
+pmote $n gives @ a thoughtfull glance.
+sayto $n Welcome traveler.
+sayto $n Great danger lies ahead. Be carefull.
+emote looks towards the north and sighs.
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

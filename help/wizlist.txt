@@ -1,0 +1,63 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword CODE_WIZLIST ~
+helpflags hide_keywords~
+category undefined~
+text `r                        /|                 |\
+                       / | ___.--'''--.___ | \
+  ...--=.._           /  ''`Y___`r'\_   _/'`Y___`r''  \        _..=--...
+ '   .-=_)/==._     _ \ .('  `?`#o`r'-.\ /.-'`^o`r  '). / _  _.==\(_=-.   ''-._
+   _/.-  /         / \/\_ '---'_-=V=-_'---' _/\/ \      \  -.\_      -
+  /_/  ./          \/\_-_''v-/'o') ('o'\-v''_-_/\/       \.  \_\      '
+ //    |          _-=___==/(__         __)\==___=-_       |    \\\
+  ))    \          _/ _ \ X___---===---___X / _ \_       /    (( ))\
+ \ \_   |         /_\/_\ (( `Y\| `` `` ' ' |/`r )) /_\/_\      |   _/ /   \
+  \  \   \       ''  / _ /\\ `YV`R  /'V')`Y  V`r //\ _ \  ''    /   /  /     \
+   \_ \  |           \/ \\ \\^ `R \ )/ `r  ^//|// \/        |  / _/       \
+     \ \  \               '/\\^ `R )/`r   ^// |``           /  / /      
+      \ \_ |             '| (\\^ `RV `r  ^//  |``          | _/ /       
+       \  \\             '/(''\``-___-'/) /``           //  /        
+        \_ \\ /|        '|('''-\_   _/)  |``          |\ _/         
+          \_/''''-.     '/('''---==='')  |``      .-'''''\_        
+         _/   _    \   '|('''-----''')  /``      /     _   \_    
+        // / /\\')  \  '|('''-----''')  |``     /   ('//\ \ \X    
+    `c/--`r/ \ \ )`c--=====----=====--`GADMIN`c------=====-----===-`r\_) \\`c---\
+    `c|  `r\ (\_)`Y\`=?          `SFounder -`=? Kalahn(101)              `Y/`r\_)\  `c|
+    `c|  `r \_)`Y\`=?    `SImplementors - `=?Kerenos(100) `S&`=? Ylerin(100)   `Y/`r\_)  `c|
+    `c|    `Y\`=?     Quoxatyl(99),  `SSite Support -`=? Imidazole(99)    `Y/   `c|
+    `c|`S                `SAncient of Realms -`=? Reave(99)`S  `=?              `c|
+    `c|`S            Ancient of Lawlessness - `=? Entharr(99)            `c|
+    `c|`S Lord `=?Tibault`S of the Realms(99)   `SLady `=?Yonae`S of Roleplay(99) `c|
+    `c|`c------------------------- `GCOUNCIL`c ---------------------------|
+    `c|`=?        `RCLAN            `BROLEPLAYING           `GBALANCE        `c|`+
+    `c|`=?       `=?Szordrin           Farheen               `=?Xelton       `c|`+ 
+    `c|`=?      `CMYTHOS              `MSUPPORT                 `YREALM      `c|`+
+    `c|`=?      `=?Lanaeil            `=?Astyriath               Zhaunil     `c|`+
+    `c|`c------------------------ `GIMMORTALS`c --------------------------|
+    `c|`=?     Cadoren `YR`BR`=?, Celrion `SC`=?, Jarren `SC`BR`=?, Ylow `BR`CM`=?, Kriesara `BR`=?   `c|
+    `c|`=?   Minyae `YR`BR`=?, Ninive `GB`YR`=?, Raneal `YR`BR`=?, Siobhan `GB`YR`=?, Zophiel `YR`BR`MS  `c|
+    `c|`c------------------------- `gRETIRED`c ---------------------------|
+    `c|`S                Alric, Anita, Khronalis, Kylina,             `c|
+    `c|`S                     Malacreus, Mord, Rigel                  `c|
+    `c|_____________________________________________________________|`=?
+~
+END
+
+keyword WIZLIST STAFF~
+helpflags wordwrapped~
+category undefined~
+text `=lSyntax:`=? wizlist`+
+`+
+The wizlist command lists the names of those involved with the running of 
+the mud. Commonly these people are called immortals... traditionally they 
+were called wizards hence the term wizlist.`+
+
+~
+END
+
+EOF~
+#$

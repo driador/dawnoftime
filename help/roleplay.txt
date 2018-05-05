@@ -1,0 +1,2625 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword METRIC~
+level 1
+helpflags wordwrapped~
+category undefined~
+see_also RPSHEET~
+text `=lSyntax:`=? metric`+
+`+
+   This commands allows you to view your height and weight in metric.    
+Typing in this command while metric is already on, switches to imperial 
+representations. 
+~
+END
+
+keyword IQUESTS~
+level 92
+category undefined~
+see_also HELP QUEST-HOW-TO~
+text ..             Questing on Dawn of time - Immortal helpfile
+ 
+Quests on DoT are divided on 3 categories:
+ 
+`yMAJOR QUESTS:`=? These are quests that involve all, or most of the realm. Army
+invasions, falling gods, the return of Kron, etc... To keep the consistency and
+focus of the game, there should be only one major quest running at a time.
+ 
+`yMINOR QUESTS:`=? These are quests that involve few players, and not-too-much
+catastrophic events. A ghost haunting a house, an old enemy seeking personal
+vengeance, the kidnapping of a character's son, etc. There can be as many minor
+quests running at a time as possible, and, in fact, it is those, and not the
+major ones, that mostly add to the game's flavour.
+ 
+`yOOC QUESTS:`=? These are contests of all sorts, published through ooc channels
+(note to all, ooc, etc.) OOC quests may give IC prizes or not, but are also
+important as a means to get players involved in the game and encourage their
+participation. There can be as many ooc quests running at once as possible, but
+let's not overdose them.
+ 
+Use help `rimm-quests`=? to keep up-to-date with ongoing and scheduled quests.
+ 
+~
+END
+
+keyword QUEST-HOW-TO~
+level 92
+category undefined~
+see_also IQUESTS IMM-QUESTS~
+text ..          DOs and DON'Ts to bear in mind while running quests:
+ 
+`y- Keep quests believable.`=? Although this is a fantasy environment, there is a
+limit between fantasy and toons. If at every major quest there is a new fallen
+god, a new threat to the world, a new 'Deus-ex-machina', soon, ALL of our quests
+will lose their flavour. Keep quests simple and involving. There can be fun
+without threatening the world.
+ 
+`y- Involve the players.`=? Players want to get involved. Getting something to
+haunt them from their past, or a secret they never thaught they had always
+entices them. Player histories are rich in details that can be used for hooks
+into quests, and they sure love it.
+ 
+`y- Be impartial.`=? Try to involve also the not-so-good rpers into quests, give
+everyone an equal chance. Anyone can run a nice quest with only good rpers, but
+truly good quests can take the best out of most players, even those who don't
+usually involve themselves in questing. Most players are only waiting for a
+chance.
+ 
+`y- Do not rush.`=? Even if you desperately want to make a certain quest happen,
+talk it over with the rp council first, it just may not be the time for it right
+now, it may get into another ongoing quest, or it may just not fit into the
+scheme, or don't, but we have to know what's going on if we are to create a
+believable, coherent environment for the players. (and everyone likes coherence
+and believability).
+~
+END
+
+keyword IMM-ONLY IMMORTAL-ONLY IMM-RP IMM-ROLEPLAY~
+level 92
+category undefined~
+text This is a list of immortal only rp-related files:
+ 
+List of Quests:            `#`Bhelp imm-quest`^
+List of Mobs:              `#`Bhelp special-mobs`^
+Quest types:               `#`Bhelp iquests`^
+Running quests:            `#`Bhelp how-to-quest`^
+Truth behind our Mythos:   `#`Bhelp truth`^
+A Brief History of Time:   `#`Bhelp brief-history`^
+Leiden/Eternity History:   `#`Bhelp god-leiden`^
+Kirion:                    `#`Bhelp who-is-kirion`^
+Xelton:                    `#`Bhelp who-is-xelton`^
+~
+END
+
+keyword ROLE-PLAYING ROLE-PLAYING-HELP~
+category undefined~
+text .   -What is roleplaying?  What should I do?
+    SEE: IC, OOC, EXAMPLEGOOD, EXAMPLEBAD, NEWBIE
+ 
+   -How your character looks is very important.  Just exactly how you
+    would like your character to look is able to be customised by you.
+    SEE: LONG, SHORT, NAME  
+ 
+   -How your character acts is another important part to roleplaying.
+    Your history, race and alignment will determine to an extent how 
+    your character will act.
+    SEE: ALIGNMENT, HISTORY, RACE
+ 
+   -Other interest areas concerning roleplay are.        
+    SEE: LETGAIN, RPS, CLAN, QUEST, POLITICS
+~
+END
+
+keyword ROLE-PLAYING-SCORE AUTO-XP AUTO-EXP AUTO-RPS~
+category undefined~
+text You can gain experience at the dawn of time by roleplaying.  Every
+now and then you will be rewarded for Roleplaying automatically.
+~
+END
+
+keyword BADEXAMPLE EXAMPLEBAD BAD-EXAMPLE~
+category undefined~
+text 1. Using words like 'mob' 'NPC' 'level' in general conversation.  The 
+rationale behind this is that if you are actually are an 'Orc Warrior'
+your life would not be based on levels, and your enemies would be real,
+not mobs.
+ 
+Bad roleplay  "where can I go to kill some mobs and level?" 
+ 
+A better way: "I am a young adventurer, and in need of excitement.  I 
+               Have heard stories of a swamp invested with evil, where
+               can I go to dispatch this evil horde."
+ 
+               A lot will depend on your characters, personality.
+ 
+ 
+2. Using a characters name before you have met them.  An 'Orc Warrior'
+or any other person, would not know anyone's name before meeting them.
+ 
+Bad Roleplay: "hi, Boris I've seen you online."
+ 
+A better way: "Greetings sir, I am called Ilora what name are you 
+              known by."
+ 
+ 
+3. Using the who list or the laston command to find out a players name.
+And using that name in conversation is not good roleplay.
+ 
+Bad Roleplay: "Yeah i saw Kith was on yesterday."
+ 
+A better way: "Has anyone seen a tall human, that smokes a lot?"
+ 
+ 
+4. Asking or giving information on the ooc channel which is IC.
+ 
+Bad Roleplay: 1. ooc: "Damn ShenYang just killed me!"
+              2. ooc: "Does anyone know where i can get a good sword?"
+              3. ooc: "Ok, I'm going to attack it now, you come in 
+                      afterwards."
+ 
+A better way: 1. ooc:  There is no better way.  But you can use any
+                       method of communication which is considered IC
+                       eg, say, yell, whisper
+              2. say:  "Do you have an idea, to where I might find a
+                       more suitable sword?"
+              3. yell: "Enter once I have given the word!"
+ 
+ 
+5.  Doing a say or whisper prefixed by ooc:
+   
+    eg.  'say "OOC: Hi, I'm a from Melbourne."'  
+    OR   'say "OOC: sorry, typo."'
+ 
+ 
+6.  Putting :), :P :|, etc in a say or whisper.
+ 
+ 
+7   Using emote to blatantly communicate with another character, 
+    that does not speak your language.
+ 
+    eg 'emote say "I am Krystin, can you help me."'
+    OR 'emote does not understand.'
+    OR 'emote wonders if you would like to go to the reeking village.'
+ 
+8.  Getting protection before going hunting/to battle
+ 
+Bad roleplay:     Asking someone to "spell you up" or "sanc" you.
+ 
+A better way:     "I'm about to hunt down some very nasty creatures, I 
+                   need all the protection I can get.. can you help me?" 
+          or:     "I am going on a new adventure, do you think you could 
+                   bless my travels please?"
+~
+END
+
+keyword EXAMPLEGOOD GOODEXAMPLE GOOD-EXAMPLE~
+category undefined~
+text 1. Good roleplay is essentially making decisions and doing actions
+   in line with what your character would do, if your character was
+   actually in that situation.
+
+   These decisions will be based upon your character's alignment,
+   the history you submit, online history, and any other goals 
+   you have previously set out for your character.
+
+   Therefore you must control your character in such a manner consistent
+   with the above criteria, irrespective of what YOU personally would do
+   in that situation.  (Always remember your character is not you.)
+
+   For Example:  A good lawful character, will probably  stand up for
+   weaker players even thou that character is likely to die.
+
+   And a chaotic evil player, will probably attack indiscriminately 
+   without respect for age, race, class, gender, and strength of
+   opponent.
+
+2. Other Examples
+
+   1.  A good aligned player may refuse to use a vampiric weapon
+       because that weapon takes away life.  Even thou that weapon
+       may provide an advantage in combat.
+
+   2.  A good aligned player may also refuse to use a cursed, or
+       once cursed weapon.  For much the same reasons as 1.
+
+   3.  A lawful aligned player may wish to avoid conflict which is 
+       unlawful. eg, stealing, murder, revenge.  A lawful player will 
+       look for solutions with in the law.
+
+   4.  A chaotic aligned player will break the law as a means to an
+       ends.  A good chaotic aligned character may murder to avenge
+       a death.
+
+   5.  An evil aligned player does things which may or may not affect
+       others, but there only consideration is for their cause.  An evil
+       lawful may bury the dead of their enemies, treat prisoners well,
+       and in all respects act honourably within the law, but their 
+       overall cause may well harm others.
+
+   6.  A neutral aligned character will tend to be indifferent towards 
+       the belief's of another character, but will be influenced by that
+	 other character's action.   Evil and good aligned characters, 
+       may tend to blinded by their own causes and thus cannot sometimes
+       see past another's belief's. 
+
+       Neutral character's have a unique perceptive as they see both
+       sides of the coin.
+   
+   7.  A neutral aligned player might help a good person recover stolen 
+       possessions one day, and the next day may steal those possessions
+       away. This is very much dependant on a neutral aligned player's 
+       tendency (eg lawful or chaotic), which is a very integral part
+       of a neutral aligned players personality.
+~
+END
+
+keyword ALLIANCE~
+category undefined~
+see_also ALIGNMENT~
+text Your alliance is that part of your alignment which refers to the 
+opposites of good and evil.  Please read help ALIGNMENT and see 
+the section referring to good and evil.
+
+~
+END
+
+keyword TENDENCY~
+category undefined~
+see_also ALIGNMENT~
+text Your tendency is that part of your alignment which refers to the 
+opposites of law and chaos.  Please read help ALIGNMENT and see 
+the section referring to law and chaos.
+ 
+~
+END
+
+keyword LONG-DESCRIPTION CONTENT LONG~
+title Long Descriptions~
+helpflags mud_specific~
+category undefined~
+see_also RP LONG NAME LONG-EXAMPLE SHORT DESCRIPTION-EDITOR SHORT-CHANGE RACE~
+text Your long description is what people see when they '`clook`=?' at you.  A long 
+description is generally four to eight sentences in length.  Here are some 
+rules for writing a good long description:`+
+`+
+`Y*`=? Use color in moderation.  If you use too much color you will be asked to 
+take it out.  `+
+`Y*`=? Do not put actions in your description.  Eg.  Draw daggers, whistle or bow 
+etc.  `+
+`Y*`=? Do not put personality traits or emotions in your long description, such 
+feelings as sorrow/joy and traits of charisma/intelligence.  These are best 
+roleplayed out.  `+
+`Y*`=? Do not tell your character's life story.  Eg.  She wears an heir loom that 
+was given to her by her great grandmother.  `+
+`Y*`=? Do not include objects or clothing in your long at all.  When your 
+character dies they loose all objects and clothes on them.  `+
+`Y*`=? When mentioning eye color if any, prefix it with "When awake, his eyes...".
+  When your character is alseep a player looking at you cannot tell what 
+eye color your eyes are if your eyes are closed.  `+
+`Y*`=? Do not tell the reader to perform, feel or action something merely from 
+looking at you.  Eg.  "You cringe in horror before this draconian."  It is 
+up to the player to decide how they react.  `+
+`Y*`=? Follow the race guidlines.  Read help race-<your race> and read the 
+general help file if you are confused on what your race looks like.  Eg.  If 
+you are human you are not ten foot three and have wings.  `+
+ `+
+Type `chelp long-example`=? to see an example of a good long description.  Use 
+the `Ydescription editor`=? to write your long.  `+
+ 
+ 
+~
+END
+
+keyword NAMES~
+category undefined~
+see_also SHORT LONG RP NAME-POLICY~
+text When people are born, they are given names by their parents which are common 
+names within the realm 99.9% of the time. No mother can name a son DarkThorn 
+or Dragonslayer based on his future, in which he will be a warrior of the 
+wilderness, or a renown hunter of dragons.`+
+`+
+As a good parameter, think of names you find in real life. Just use some 
+common sense, to avoid names like 'RedPuppy', 'CoolBird' and the kind that 
+involve a noun of some sorts in them. Those are not real names, but you can 
+use nicknames to introduce yourself, if you desire. For example, some may 
+remember a character named Jaladyor, who called himself Kalad, amongst other 
+names, IC.`+
+`+
+Please choose a name for your character that fits in line with the fantasy 
+theme we are trying to encourage here.  Don't use names from other themes 
+like "star wars" or famous characters from books, or else the imms will 
+politely ask you to delete and recreate with an original character name. For 
+more information on what is apropriate to use for a name, type: `#`Chelp 
+name-policy`^. `+
+`+
+If you are having difficulties and need help thinking of an original name, 
+visit the the fantasy name generator web site at 
+`Yhttp://spitfire.ausys.se/johan/names/`=?. There are a variety of names, many 
+following different guidelines for naming.`+
+`+
+~
+END
+
+keyword SHORT SHORT-DESCRIPTION~
+helpflags mud_specific~
+category undefined~
+see_also RP LONG NAME 'SHORT CHANGE'~
+text `YPLEASE READ THIS COMPLETELY BEFORE ASKING FOR A SHORT DESCRIPTION!`=?`+
+`+
+A short description is what people will see when they walk in the room.  
+It is how you will appear to everyone else.  To this end it is very 
+important, it is preferred that you have a long description before you 
+get a short description, but sometimes an imm might offer to set your
+short before you have a long.  DO NOT ask for a short description until
+you have written or atleast attempted to write a long description 
+(see help long for more on long descriptions).`+
+`+
+`GSHORT DESCRIPTION RULES:`=?`+
+* Your short must have your race in it.`+
+* Must show your gender.`+
+* No eye colour is allowed (simply because eyes are closed when sleeping).`+
+(avoids messages like 'a tall elven woman with green eyes is asleep here.')`+
+* A short description `#`Rcannot`^ include information about your behaviour 
+or how you react to a particular player.`+
+* No `#`Gclothing`^ in a short description since that is seen in your equipment
+ list when someone looks at you and also when you die, would cause 
+your short to be incorrect.`+
+`+
+`WConventions used in short descriptions:`=?`+
+* If the words woman or man is used in a short but no race is specified, then 
+  the race of the player with the short is human.
+* If adjectives like beautiful or ugly are used to describe a particular player
+that is in comparision to the race of that character.`+
+e.g. "a beautiful alaghi female", is beautiful by alaghi standards even though 
+all alaghi may appear ugly to a human for example.`+
+`+
+Examples of good short descriptions:`+
+"A tall and slender male elf"`+
+"A dark-skinned woman with flowing black hair"`+
+`+
+Examples of bad short descriptions:`+
+"An elf with green eyes"`+
+- cant see eye colour when they are sleeping`+
+`+
+"An intelligent elven lady is here."`+
+- not everyone can tell someones intelligence by looking at them.`+
+`+
+If you are above level 10 and only have a generic short description,
+you are required to get a short description as soon as an immortal
+is available to set one for you, you may be asked to write a long 
+description as a result.`+
+`+ 
+~
+END
+
+keyword IC IN-CHARACTER~
+category undefined~
+text IC stands for "In Character".  What does this mean?  Well the most 
+comprehensive explanation can be found in the newbie document. (help newbie)  
+but for a quick definition IC stands for those actions and things your 
+character would do and does. 
+
+IC makes specific distinction between what you in real life would do as to 
+what your character might do.  For help on what your character might do, some 
+guidelines can be found in (help alignment) It is stressed these are 
+guidelines only, and in no way applicable to everyone, they provide general 
+help.  While playing the game characters must always act in character.  This 
+is a roleplaying MUD and roleplaying is required not optional.
+
+`CSEE: ALIGNMENT, NEWBIE, OOC, CONTENT
+~
+END
+
+keyword OOC OUT-OF-CHARACTER~
+category undefined~
+text `=?
+OOC stands for "Out of Character".  What does this mean? Well OOC is you.  
+When talking on the OOC channel you talk about real life issues, real life 
+things, this is OOC.  Broadly speaking it is bad form to use OOCly gained 
+information for IC (help IC) purposes.  You must keep you and your character 
+separate.  If someone kills your character for example, abusing them on the 
+OOC
+channel is considered bad form, and may be punished by moot (help moot) or 
+worse.  Please keep IC and OOC separate and everyone will enjoy themselves a 
+lot more.
+
+`CSEE: ALIGNMENT, NEWBIE, OOC, CONTENT
+~
+END
+
+keyword ALIGNMENT-HELP~
+category undefined~
+see_also LAWFUL-GOOD LAWFUL-EVIL NEUTRAL-GOOD TRUE-NEUTRAL CHAOTIC-EVIL NEUTRAL-EVIL CHAOTIC-GOOD CHAOTIC-NEUTRAL LAWFUL-NEUTRAL~
+text `=?
+Your alignment is extremely important please read the help file relating to
+your chosen alignment.  If you have alliance of 3 and a tendency of 3 read
+the help file 'LAWFUL GOOD'.  The other help files make good reading besides.
+
+Law vs Chaos (tendency)                   Good vs Evil (alliance)
+---------------------------------------------------------------------------
++3 = Totally Lawful, no exceptions        +3 = Totally Good, no exceptions
++2 = Mostly Lawful                        +2 = Mostly Good
++1 = Neutral with Lawful Tendencies       +1 = Neutral with Good Tendencies
+ 0 = Totally Neutral                       0 = Totally Neutral
+-1 = Neutral with Chaotic Tendencies      -1 = Neutral with Evil Tendencies
+-2 = Mostly Chaotic                       -2 = Mostly Evil
+-3 = Totally Chaotic                      -3 = Totally Evil
+
+`CSEE: ALIGNMENT-DEFINITION For an explanation of what alignment is in 
+general.
+ 
+`CSEE: ALIGNMENT-CHANGE For information on changing alignments.
+~
+END
+
+keyword ALIGNMENT-DEFINITION~
+category undefined~
+text `=?
+Alignment is used to represent the values and beliefs that are inside
+each Player Character (PC) to help explain why they act the way they do.
+
+This applies to ALL actions performed by EVERY PC - including the
+slaying of mobs, talking in the pit, helping other PCs with
+advice/equipment, or assisting in Corpse Retrievals (CRs).
+
+The following definitions should be consulted for you to pick the
+proper label for the way you plan to act on Dawn of Time.  Once an
+alignment is selected, actions performed outside that alignment
+are punishable by alignment changes, loss of experience, and worse -
+so choose wisely!  
+
+Role-Playing (RP) means you must learn to keep separate your personal
+alignment from that of your character, unless of course you have
+chosen to RP a character with the same alignment as yourself.
+
+A high level summary:  Law/Neutral/Chaos is the means and
+Good/Neutral/Evil is the result or your actions.
+
+`GLaw vs Chaos
+`c------------
+The standard Cop versus Criminal philosophical differences.
+
+Law - The belief that in order for happiness and safety to exist, a
+set of external laws must be followed and obeyed, regardless of the
+consequences.  A lawful character believes that all laws must be
+obeyed for society to prosper, including those laws that he does
+not agree with.  A lawful person does not tolerate those that break
+the law.
+
+Chaos - The belief that laws and strictures restrict the happiness of
+an individual, and society will be better off without these
+restrictions.  In order for a person to achieve the most in life,
+they must not be held back by restrictions imposed by others, and
+they should be allowed to do whatever they feel like doing.
+
+Neutral (Law/Chaos) - This is either not being able to understand the
+concept of a society's laws [wild animals]; or having a personal set
+of laws to live by that are close to that of society, but not identical.
+This can be simplified to "Laws are important, but I don't mind breaking
+little laws, or breaking laws in small ways".  They are always true
+to their own personal set of laws.
+
+
+`GGood vs Evil
+`c------------
+Good and Evil are opposites and seek to destroy each other.
+
+Good -  The belief that by being fair, just, and nice to others, one
+should receive the same treatment in return.  A good person places
+the needs of others before their own needs, and as long as everyone
+acts this way, the world will be a better place.  A good person does
+NOT tolerate the actions of evil people, because it places the good
+person at great risk to have someone around that is selfish and does
+not place the needs of others before their own.  Good always seeks to
+destroy evil, and never harms other good people.
+
+Evil - Evil people lust for pain and suffering, and feel they must dish
+it out, before they get it.  Do unto others BEFORE they do unto you.
+The evil person actually enjoys being cruel to others, so has no second
+thoughts of performing evil acts for the entertainment value alone.  The
+evil person does things solely for their own benefit, always placing
+their needs above the needs of others.  Evil people have no difficulty
+destroying other evil people, as well as good people, if it benefits them.
+
+Neutral (Good/Evil) - The neutral philosophy advocates that both of
+the opposing philosophies of good and evil are too extreme.  A neutral
+person is open to all ideas, and either strives to keep a balance between
+good and evil, by always siding with the weaker, or treating both sides
+equally, thus not endorsing one over the other.
+~
+END
+
+keyword LAWFUL-GOOD~
+category undefined~
+see_also ALIGNMENT~
+text `=?
+The LG person completely believes in the laws of their society, and most
+societies in general.  However, this attitude is modified by the fact that
+the LG person also looks at the SPIRIT of the law, as well as the letter
+of the law.  They would like to see the laws that they are familiar with
+applied universally, regardless of the situation.  They will seek out and
+destroy evil ONLY as permitted by the laws of society.
+
+Ex: City Guard
+
+~
+END
+
+keyword LAWFUL-NEUTRAL~
+category undefined~
+see_also ALIGN~
+text `=?
+Like the LG person, the LN also completely believes in the Law.  But they
+are focused on the LETTER of the law.  If they give their word to someone,
+they will honour it - regardless of treachery on the other's part.  They feel
+that ALL laws should be obeyed; regardless of the intent behind it or even
+the overall merit. They live to follow orders.
+
+Ex: Judge
+
+~
+END
+
+keyword LAWFUL-EVIL~
+category undefined~
+see_also ALIGNMENT~
+text `=?
+As with other Lawful types, they too believe in Law.  However, they work
+within the laws to benefit themselves.  They do whatever is necessary to
+advance within society's hierarchy, as giving orders puts them in a place
+of power.  They will sometimes honour the letter of the law, and sometimes
+the spirit of the law - depending on which is to their advantage.  The 
+laws they follow are external laws dictated by their society, but they
+find a way to be as cruel as possible within those laws.
+
+Ex: Mafia Boss
+
+~
+END
+
+keyword NEUTRAL-GOOD~
+category undefined~
+see_also ALIGNMENT~
+text `=?
+External laws are not as important for the NG person.  Their focus is more
+on what is good for society in general.  They take the long view when
+considering the implications of their actions.  These folks will take the
+time to consider an action before acting on it.  They do what they do for
+the overall good of society, even if they need to break a few laws to do it.
+
+Ex: Robin Hood
+
+~
+END
+
+keyword TRUE-NEUTRAL NEUTRAL-NEUTRAL~
+category undefined~
+see_also ALIGNMENT~
+text People of this alignment are for the overall balance of the universe.
+Law, Chaos, Good, Evil; all are irrelevant.  ANY will be used to maintain
+WHATEVER is seen as the balance to that person, and this can be a VERY 
+extreme view.  A true neutral realises that there cannot be life without 
+death, and there cannot be good without evil; a true neutral can either 
+always take the side of the underdog, or just treat everyone equally.
+
+Ex: Arbitrator
+
+~
+END
+
+keyword NEUTRAL-EVIL~
+category undefined~
+see_also ALIGNMENT~
+text They take the long view on what is best for themselves.  Contrary to most 
+people's thinking, this is the nastiest of the evil alignments.  This is 
+because all NEs are following some predetermined, 'selfish' goal.  If you can 
+find out what this goal is, you have half a chance of predicting what they 
+will do.  
+
+Many NEs have a personal code of honour that can make them seem LE, but 
+because in the end there can be only the self, it places them firmly in the 
+NE camp.  They follow their own internal rules to maximise the cruelty and 
+destruction they can perform to those around them.
+
+Ex: Informant
+
+~
+END
+
+keyword CHAOTIC-GOOD~
+category undefined~
+see_also ALIGNMENT~
+text `=?
+The CG if more concerned with the Good of the self.  They will happily
+ignore any law that restricts their personal freedom.  They tend to take the
+short view of their actions, never considering the long range consequences.
+They like to defend other's individual rights as well, even if those others
+DON'T want their rights defended.  They do not stand by and let evil take
+advantage of good for any reason.  They will seek out and destroy evil at
+will.
+
+Ex: Vigilante (Dirty Harry)
+
+~
+END
+
+keyword CHAOTIC-NEUTRAL~
+category undefined~
+see_also ALIGNMENT~
+text These people are fully into Chaos.  They don't care about the good and evil 
+of their actions or even the world; they just want Chaos to flow freely.  
+This does not mean acting on whatever whim comes along - CNs can have a long 
+range plan.  One year they could start a peasant revolt against a tyrant; and 
+then come back in a couple of years and help with a military coup.  As long 
+as there is a state of upheaval and confusion, they're happy.  They are 
+typically loners.
+
+Ex: Mercenary
+
+~
+END
+
+keyword CHAOTIC-EVIL~
+category undefined~
+see_also ALIGNMENT~
+text These folks are into evil in and of itself.  They don't really look to the
+future.  If they can cause pain and suffering right now, they do it.
+Strength is all important - might makes right, and all that.  Anything to
+further the spread of evil and destruction, even if it means death in their
+own group.  CEs that are truly dedicated to the cause tend not to live very
+long.
+
+Ex: Serial Killer
+
+~
+END
+
+keyword QUESTING QUESTS~
+category undefined~
+see_also AUTO-QUEST~
+text There are a group of immortals who are responsible for providing both 
+individual and group quests for mortals.  
+The wizlist (type wizlist) has information on which immortals to approach if 
+you would like an individual quest, otherwise quests are held at
+the discretion of those immortals responsible.  
+When asking for individual quests provide a note or email outlining your idea 
+to the immortal responsible, please do this first as it makes things a lot 
+easier for the immortal.  The ADMIN may also be approached for quests and or 
+any other concerns.  (help ADMIN)
+
+NEW: Automated quests are currently being added into the game!  See the 
+associated help files for information.
+~
+END
+
+keyword AUTO-QUEST AUTOQUEST AUTOMATED~
+category undefined~
+text Several automated quests are in the process of being added to the game.  
+Automated quests are puzzles of sorts, often with nice rewards at the end.  
+The rewards can vary, including things like experience points, special 
+magical items, gold, and other fun stuff.  Some of these quests will be all 
+problem solving and puzzles, while others may involve combat.  Often quests 
+can be solved through a combination of both.  There will even be some in 
+which they can be completed in different ways.  Some quests are confined to 
+one area, while others may have you travelling all over the realm.
+ 
+There is one main rule for automated quests.  NO OOC HELP!  This means that 
+your character must figure out the quest on their own.  You may only get help 
+in an IC way. Don't ask questions like 'I seek the way to get to the end of 
+the dungeon east of town' or anything that involves a full rundown of how to 
+complete the quest.  
+ 
+You may ask questions IC that will help you - For example, part of the 
+Ronar's Tomb quest requires you to gather certain items and give them to a 
+mob.  You will likely need to do some roleplaying and exploring to find these 
+items unless you already know the mud areas very well, and it would be 
+alright to ask 'Might you know where i can find a rosebush? For I am hired by 
+one who is looking to use its petals as a spell component.'
+This is not meant to make the quest harder, but rather to encourage 
+roleplaying and ensure that the sometimes powerful rewards are not obtained 
+by someone who has cheated.
+ 
+Some brief information about each quest follows:
+`# 
+`BRonar's Tomb`=?
+Seek out the undead founder of Mekali and his great treasure.
+Recommended for levels 60+.  Begin by speaking to the story
+teller in Mekali. `s(Quest by Reave)
+ 
+`BThe Legend of the Unicorns`=?
+Find the beautiful and legendary unicorns, and the magical lands 
+and creatures they protect.  Begin by speaking to the storyteller 
+in Mekali. (Quest by Anita, Story by Lyne)
+ 
+`BThe Talisman of Learning`=?
+Find the storied Talisman of Learning, a relic to help you with 
+your studies.  For all levels, especially those under level 10. 
+`s(Quest by Anita)
+ 
+`BHave the amalgum shield made`=?
+Ask the Mrem blacksmith to make you an amalgum shield and quest 
+for its ingredience. `s(Quest by Anita)
+ 
+`BTime shift and Unicorn's treasure`=?
+Find out more about the time shift, and search for some unicorn 
+stuff. You can begin it talking to citizens or to Dzagari's 
+healer. You might want to visit the Silver Temple Library also.
+`s(Quest by Ylerin)
+ 
+`BQuest for the Cloak of Shadows`=?
+Find out where to begin your search at the bartender in Dzagari. 
+This is intended for level 50 and up.
+ 
+`BQuest for the Scimitar of Dancing Flames`=?
+Find out where to begin your quest at the Paladin in the fishing 
+village . This is intended for levels
+75 and up.
+ 
+`BLord of the Sands`=?
+There is a hidden burial crypt somewhere in the desert. Rumours 
+have it that the nomads there have a map....
+ 
+`BAarislan quest`=?
+Discover the land of childhood daydreams and delights, and perhaps even 
+rescue a young damsel in distress. You'll need to brush up on your animal 
+knowledge at the zoo to get started.
+Level range - suitable for all, ideal for under level 30.
+ 
+ 
+~
+END
+
+keyword LETGAINED LETGAINING~
+helpflags wordwrapped~
+category undefined~
+see_also NEWBIE SHORT-DESCRIPTION LONG-DESCRIPTION ROLEPLAY HISTORY REQUESTLETGAIN RPSHEET~
+immsee_also -LETGAIN~
+text To be letgained you must send to immortals of Dawn of Time a character 
+`=_history.  Once received and approved you will be letgained.`+
+`+
+A character that is letgained is able to PKILL and will receive extra 
+experience when killing mobs.  Characters that are not letgained cannot 
+obtain any level higher than level 26.  Although you still will recieve 
+roleplaying experience.  `+
+`+
+Why is there this obvious disadvantage to non-letgained characters, well...  
+We would like to see everybody submit histories and be letgained, but we 
+realise some people may find this tiresome, submitting histories before your 
+character can progress in levels.  So rather than make it a requirement that 
+you must submit a history.  We give you the option to submit your history 
+when you are ready.  `+
+`+
+Notes:`+
+- If there isn't an immortal online to letgain you, and you would like to be 
+letgained at the earliest convenience, you can request to be letgained even 
+if you are offline.  Check the help for `=_requestletgain.`+
+- You must also have a history if you wish to be in a clan`+
+- Non-letgained characters are unable to PKILL but are able to be pkilled.`+
+- You are required to have your `#`Yrpsheet`^ filled to be letgained.`+
+ 
+~
+END
+
+keyword HISTORY~
+category undefined~
+see_also HISTORY-REQUIREMENTS HISTORY-EXAMPLE  HISTORY-INFO  MYTHOS~
+text Before you can become letgained, you must write and submit a history to the 
+history mailing list.  Basically a history is to prove to us that you have 
+put some thought into your character and his/her development, and it also 
+gives us an indication of your role-play ability.  We like to see that 
+people have some understanding of what this mud is about before they are 
+able to PKILL, join CLANS, and receive other benefits that are given to 
+letgained characters.  A decent history should be about 30 lines, roughly 
+400+ words.
+ 
+Do read the `#`Chelp HISTORY-REQUIREMENTS`^ before you write your history. That 
+file shows what we expect in your history.
+ 
+Your history can include but is not limited to where your character came 
+from, how he grew up, who he was in contact with, how he began training, and 
+how he wound up in Mekali/Dzagari if he wasn't born there.  We encourage you 
+to be creative when writing your history.  If you want background information 
+for DOT to base your history on, type `#`Chelp MYTHOS`^.  You will not 
+be penalized if you put something that is not accurate in your history, so 
+if in doubt, feel free to put it in.  We will correct you if you are too far 
+off base.
+ 
+For an example history type help `#`CEXAMPLE-HISTORY`^.  For further 
+information on what a history is and some roleplay aspects of one, type `#`Chelp 
+HISTORY-INFO`^.
+ 
+`#`rDo NOT send your history as a Word document, or any attached document.`^ Plain text
+only please, and put it in the body of your email. If you do send it as something
+other than text in the body of your email (preferably formatted), your history
+will most likely be ignored.
+ 
+Send histories to the Dawn of Time histories mailing list, `#`Cbe sure to 
+include your `Ycharacter's name `Cin the subject`^.  The mailing list address is:
+`Rdawn-histories@dawnoftime.org
+`=?
+~
+END
+
+keyword EXAMPLE-HISTORY HISTORY-EXAMPLE~
+category undefined~
+see_also HISTORY HISTORY-INFO~
+text `GHistory for Raeskan.`=?
+ 
+ Raeskan, is originally from a farming community, some distance northeast 
+ of  Mekali.  His first 14 years of life were spent tilling the land and
+ helping with farm medial chores.  His parents were not a god faring couple,
+ quite the opposite actually, they believed that no god or gods existed and 
+ that a man made his own path in the world.  
+
+ Raeskan for the most part agreed with them and has taken this into to his 
+ heart.  Unlike his parents Raeskan does not believe in the ways of law.  
+ Sure he abides by them in public, but he has a disregard for laws and other 
+ people.  He cares only for himself and how he can benefit himself.  At age 
+ 15 Raeskan was an accomplished liar and part time thief.  Stealing pies and 
+ apples from local stores he did so not from hunger but because it was 
+ exciting, the thrill was what he craved.  
+
+ A little known fact Raeskan was also the community peeping tom.  It was 
+ clear to those that knew him best that Raeskan was struggling, his father 
+ figure was lacking in strength.  His words often drove Raeskan to worse 
+ deeds.  At the end of his 16 year Raeskan had a disagreement with a fellow 
+ worker at a nearby farm where Raeskan had found a job.  The disagreement was 
+ violent and a fist fight insured, Raeskan was outmatched and beaten hard by
+ the much stronger boy 'gladamere', although not physical hurt bad his pride
+ had taken a pounding.  
+
+ Life went on for Raeskan and the incident was long forgotten.  In his early 
+ 17 year Raeskan was caught stealing money from the baker, he was ordered to 
+ publicly apologise and to pay the baker back.  The apology was to be made to 
+ the whole community in the town square at noon.  Raeskan had agreed that he 
+ would do this and he was expected...  noon came around and the towns people 
+ had gathered, they waited..  Suddenly a figure appears running, it is the
+ bakers son 'muchor' ..His words are garbled and it takes time to calm him  
+ down to understand.  Muchor speaks : 'its gladamere, hes dead face up in a 
+ ditch just out of town.. All his clothes are missing and there is much blood 
+ running form a stab wound in his back.'  the crowd gasps together and the 
+ rumours spread like wildfire.  
+
+ Some 10 leagues south Raeskan strides confidently on, his past behind him a 
+ new life ahead.  2 people share Raeskan's mind, his quite and likeable 
+ daylight form, of the young naive youth.  And his alter ego of the merciless 
+ thief and killer.  
+ The only unanswered question is who will have Raeskan's heart.
+ 
+ 
+~
+END
+
+keyword TOPRP TOP-ROLEPLAY TOP-RP~
+level 92
+category undefined~
+text `=lSyntax: `=?toprp`1`1This command sorts and lists the people with a Role Playing Score of over 
+10K, excluding immortals.  If you are on the list, your score will 
+automatically be updated within 10 minutes from the time you log off.  Those 
+that haven't logged on with the past 8 weeks or are permkilled will be 
+removed from this list.  
+~
+END
+
+keyword LETGAIN-MOOTS~
+level 93
+category undefined~
+text Moots are an integral part of the roleplay system here.  Part of any letgain 
+is using some creativity to write a history for a character to explain where 
+he/she is from and what has happened to him/her.  It has been a common 
+belief amongst many imms that large moots to the lower level characters are 
+beneficial to encouraging roleplay without giving them an unfair experience 
+advantage.  It is quite common for someone under level 10 to earn 300+ xp 
+from a kill, and 100+ rps for 10 steady minutes of roleplay.  Here is a 
+table created for reference of the size of moots to be given, depending on 
+the quality of the history.  `1`C 
+                       Level Range        Moot Range`Y
+                       ===========        ==========`=?
+                        1  -   10         300 - 1500
+                        11 -   20         200 -  800
+                        21 -   30         100 -  500
+                        31 +               50 -  300
+~
+END
+
+keyword SHORT-CHANGE~
+level 1
+helpflags wordwrapped~
+category undefined~
+text Short descriptions identify the most prominent aspects of your character, 
+and are what other characters use to identify you on sight when you walk 
+into the room.  Because of this, changing your short description isn't 
+something allowed on a frequent basis.  But it is understood that perhaps 
+changing your short description is required to further your character 
+development.  `+
+`+
+In order to change your description, you must have a good roleplay reason 
+why you wish for it to change.  Keep in mind that people refer to your short 
+description as it being you, so drastic changes are not always granted.  `+
+ `+
+ If you think you have a valid reason to change your short description, `#`MNOTE 
+TO SUPPORT `^ with your request for the change and `#`Groleplay reasons`^, and a 
+member of the Support Council will get back to you.  Please, include your 
+`#`Ypresent short`^ in the note.  
+~
+END
+
+keyword HISTORY-INFO~
+level 1
+category undefined~
+see_also HISTORY HISTORY-EXAMPLE~
+text The History is the most important aspect of your character. It is more 
+important than attributes, more important than skills and spells, 
+more important than any equipment. You ask why? The reason is pretty 
+simple: it is the history that gives your character a meaning, a life of 
+its own. 
+ 
+Let us elaborate on that. Role-play means pretending you are someone 
+else, in a fantasy, a different, world. Someone that can be totally 
+different from you. Tons of fun come from that. Now, we can only play as 
+someone else, if we know that someone. So, we need to know his life, 
+what happened to him, how he thinks. In other words, in a way, it is 
+more important to describe how your character means than where he was 
+born, or who killed his mother How did he feel in the most important 
+moments of his life? How will he act now? Those are the questions you 
+should think when you are writing about your character.
+
+A history does not have to be long, though a one paragraph history will 
+hardly say much about your character. A history should be as long as you 
+think is necessary to describe your character's way of thinking. And 
+that is as important to you as it is to us.
+ 
+Let me give you an example to illustrate what I mean:
+ 
+A history that says 'I was born in an elven village, saw my parents be 
+killed by orcs, and left to explore the world' can have many different 
+meanings. One, your character might hate orcs now, for what they did. 
+Second, he may love them, if his parents were such monsters that their 
+deaths were a blessing to your character. Three, he may have suffered 
+with his parents deaths, but then he realized his parents left him an 
+enormous inheritance and, ah, well, pity they died, but life goes on.
+With that example, I hope to have shown you that your character 
+psychology is what makes a difference between your elf and another 
+player's elf. As you describe how your character think, his actions, his 
+alignment begins to make a lot more sense. Often, it is the history that 
+defines his alignment, that retouches it, and explains why someone is 
+evil, good, lawful or chaotic.
+Thus, a History's purpose is to tell, not only us, but you too, who your 
+character really is. Its purpose is to help you make a full character, 
+with some idiosyncrasies of his own, and allow you to have the most 
+possible fun with him. Its purpose is to make your character more than a 
+bunch of bytes.
+ 
+~
+END
+
+keyword NOBLES~
+level 1
+category undefined~
+see_also NOBLE-COMMANDS~
+text `#`^ The nobles of Dawn of Time are a select group or mudders whose excellence 
+in roleplay and their positive influence to the mud have been recognized.  
+Nobles have been given the power and authority to reward and remove 
+experience from other players, based on observed roleplay.  The nobles get 
+their power through anonymity and being inconspicuous.  `+
+`+
+ Our Nobility system does not include noble applications.  To become a 
+noble, you must be invited into the group by existing nobles.  `+
+ `+
+~
+END
+
+keyword NOBLE-COMMANDS~
+level 1
+helpflags noble~
+category undefined~
+see_also _MOOT VOTE AUTOVOTE NTALK NTELL DLOOK NSPEAK FROMNOBLE MOOT-TABLE~
+text `#`CNoble commands:`^`+
+ `+
+help _MOOT `+
+help VOTE`+
+help AUTOVOTE`+
+help NTALK`+
+help NTELL`+
+help DLOOK`+
+help NSPEAK`+
+help FROMNOBLE
+help MOOT-TABLE
+~
+END
+
+keyword _MOOT~
+level 1
+helpflags noble~
+category undefined~
+see_also NOBLE-COMMANDS~
+text `=lSyntax:`=? 
+       moot <character> <type> <votes>
+ 
+Only nobles can moot, a moot gives you experience points for good Roleplaying
+or takes away experience points for bad roleplaying.`+
+ 
+This command starts a moot of one of the following types:
+ 
+1)reward  - Used to grant or remove experience points from a character for
+            good or bad role-playing.  The number of experience points
+            of the moot is specified in <votes>, and it takes over 50%
+            approval to pass.
+ 
+2)induct  - Used to grant noble status to a non-noble character.  It takes
+            2000 votes to start, and requires a 70% approval to pass.
+ 
+3)outcast - Used to remove noble status from a character.  It takes 4000
+            votes to start, requires a 80% approval to pass, and requires
+            at least 5000 approving votes to pass.
+ 
+The initial votes to start any type of moot do NOT count in the approval
+totals.
+ 
+~
+END
+
+keyword NTELL NREPLY~
+level 1
+helpflags noble~
+category undefined~
+see_also NOBLE-COMMANDS~
+text `=lSyntax:`=? `+
+         ntell <player> <msg>`+
+         nreply <msg>`+
+ `+
+Ntell is generally used for nobles to tell a player some information 
+regarding their roleplay or a general warning. This type of tell when used 
+can be seen by ALL nobles on the noble channel.`+
+ `+
+Nreply is used when the player responds back to the noble which also shows 
+up on the channel, again all nobles see this reply.`+
+ `+
+~
+END
+
+keyword VOTE~
+level 1
+helpflags noble~
+category undefined~
+text `=lSyntax:`=? 
+       vote <favor|oppose> <votes>
+ 
+Allows you to cast your votes for the current moot in progress.  You may
+only vote once per moot.
+ 
+`CSEE: NOBLE-COMMANDS
+~
+END
+
+keyword NTALKING~
+level 1
+helpflags noble~
+category undefined~
+see_also NOBLE-COMMANDS~
+text `=lSyntax:`=?
+       ntalk <msg>
+ 
+Will send a message to all online nobles.  Your name is not shown,
+this channel is not for conversations other than about role-playing.
+ 
+~
+END
+
+keyword NSPEAKING~
+level 1
+helpflags noble~
+category undefined~
+see_also NOBLE-COMMANDS~
+text `=lSyntax:`=?
+       NSPEAK <msg>
+ 
+This command allows a noble to send a global message to everyone on the mud.
+Use this command only on occasion, and when you use it give one sentence
+explanations.  I.E. If someone asks what was that moot for and it isn't 
+already obvious, do an nspeak to explain in one sentence.
+ 
+Do not get into an argument, and do not abuse nspeak, all nspeaks are logged.
+ 
+~
+END
+
+keyword HISTORY-REQUIREMENTS HISTORIES-REQUIREMENTS~
+level 1
+category undefined~
+text . 
+`#`WHistories Requirements`^
+ 
+- `#`CDefine your character's `Wpersonality`C. Go deeper than alignments, add 
+idiosyncrasies, quirks, and the kind (help history-info).`^
+- Your character must have a `#`Wlife goal`^, everyone does. It may be simple or 
+complex, but he/she must have a reason to live. Revenge as a character's only 
+goal should be avoided, since that is a short-termed goal, and usually a side 
+one.
+- A history has a minimum requirement of `#`W30 lines `^(around 400 words).
+- Your character should be `#`Wactive `^in your history - do not keep him/her 
+sitting, watching events happen before him/her.
+- Work out your character's `#`Winterests`^. Think of hobbies, work, and what else 
+he/she does in life apart from killing mobs. Do not kill your character of boredom 
+by keeping him studying spells and skills non-stop all his life.
+- Unless there is a good reason to, you should know your `#`Wrace`^, and some of its 
+mythos (help race).
+- All characters are born in `#`WMythrin`^, in one of the existing `#`Wkingdoms`^ 
+(help kingdoms). Your character cannot come from other worlds, or fictitious realms.
+You can choose one of the main cities (help cities) of Mythrin, or think of a small 
+village, which you can name as you seem fit.
+- Unless there is a reason not to, your character has a `#`Whome`^, a place he/she 
+came from.
+- You cannot `#`Wdestroy `^your character hometown, by any means.
+- All Mythrin gods are in `#`Whelp god-list`^. Do not "create" new gods in your 
+histories, and treat them as if the whole of Mythrin follows them. If you want to 
+have a particular view of the world, talk to an immortal `#`Gprior`^ to writing 
+your history.
+- There is no such thing as `#`Wreincarnation `^from one character to another. 
+Memories disappear when a character dies permanently (that is, permkilled 
+or deleted).
+- You cannot be of any `#`WNPC race `^(help npc-races).
+- The only races that can `#`Winterbreed `^are listed in 'help interbreeding'. No 
+other race combination can produce offspring.
+- Remember you begin at `#`Wlevel 1`^, in a town (Mekali or Dzagari). Find a good 
+explanation for that, and keep in mind that it is impossible for your 
+character to be the most powerful mage among elves.
+- Keep in mind your beginning is `#`Whumble`^. Most don't know you, so you are not a 
+great hero in these part of the world. Also, you cannot be a `#`Wking`^, prince, 
+emperor, or any ruler of any part of the world. Nor the son of a `#`Wgod`^, nor the 
+favorite paladin of a goddess. If you want to be something, build that out IC.
+- `#`WGrammar `^is not a requirement, and you need not be a great writer :)
+- You spend 15 minutes writing your long description. Why not spend 30 
+minutes `#`Wthinking `^of your character? ;)
+~
+END
+
+keyword NOTICE-BOARD BOARD NOTICEBOARD~
+level 1
+category undefined~
+text .. 
+                   How to write a notice on our boards
+                   -----------------------------------
+ 
+Write a `#`Cnote to RP`^ with the notice you want to post. The note's `#`Csubject 
+`^must include the `#`Clanguage `^it will be written on, and the `#`Cboards `^on 
+which you want your notice posted and the `CIC time`^. 
+ 
+Presently, we have two notice boards: one in Mekali, and one in Dzagari.
+ 
+An example:
+ 
+=============================================================================
+[999] Hrast: `#`Wnotice for Dzagari's board, language: orc`^
+Sun Dec 31 23:59:59 1999
+To: `#`WRP`^
+-----------------------------------------------------------------------------
+Day of Despair, 8th the Month of Winter in the year 1220 AK.
+ 
+(Written with blood) 
+ 
+You elf filth leave this town now, or suffer the consequences.
+ 
+`#`RHrast, the mad orc`^
+ 
+=============================================================================
+~
+END
+
+keyword QUESTER QUESTER-FLAG QUESTER-STATUS~
+category undefined~
+text `#`B                           The Quester Status`^ `+
+ `+
+ By becoming a quester, you are telling us that you want to be part of 
+quests and autoquests, no matter how dangerous they can be.  No matter if it 
+takes you to cold death.  And that you will have fun, even then.  `+
+ `+
+ Some mobs, within dangerous autoquests, will only recognize and react to 
+questers.  All non-questers will be magnanimously ignored by them.  
+Immortals running quests that may lead to some sort of loss will check if 
+you are a quester, before taking you to danger.  Some autoquests will not
+be able to be done by non questers.  And the immortals will have less 
+tendency to actively promote questing with non questers when players
+that are questers are logged on.`+
+ `+
+ Non-questers will be respected (by both mobs and immortals) in their wish 
+to not be involved in any quest that may harm them in some way.  `+
+ `+
+ Be careful, once this status is turned on, it cannot be turned off!  And 
+to get it removed will cost you at least `#`R-5000xp`^.  `+
+ `+
+ Thus, do not take the decision of becoming a quester lightly.   `+
+ `+
+Note: For your information the original reason for the quester came from 
+that some players complain constantly on ooc when a quest doesn't go 
+the way they think it should and that they were dragged into the quest
+without wanting to be.  If you are that type of player please do NOT
+turn the quester flag on.`+
+~
+END
+
+keyword IC-HOUSES IC-HOUSES-PRICES PRICES-IC-HOUSES NEKKO-GAREN HOUSE~
+level 92
+category undefined~
+text .. 
+`#`G              Nekko Garen's Houses`^
+ 
+The IC Houses project allows players to buy houses ICly. There is a set 
+of building rules, that can be found as an obj in each IC House area. 
+There will be one IC manager for each area, they being also the actual 
+builders. Buyers are to send detailed descriptions of their rooms, objs, 
+and mobs, to the builders, in an atempt to simplify as much as possible 
+their work.
+ 
+There are presently two IC houses areas:
+ 
+Area                 Vnums         Location               Responsible
+----                 -----         --------               -----------
+`BThe Ironmaul Estates `b15500-15699   Southwest of Mekali    Balin (aka Alric)
+`BThe Lapis Caverns    `b11300-11499   Southwest of Dzagari   Mastif`^
+ 
+ICly, the boss and owner of the project is Nekko Garen, a merchant gnome 
+(vnum 6800) that lives in the Silver Temple. Nice fellow, who likes gold.
+ 
+The lots are sold as vnum lots (1 room + 1 mob + 1 obj), the price (i gold) 
+of each vnum, and the IC managers are listed below.
+ 
+`#`CMekali's Houses (Mekali)                    Lapis Caverns (Dzagari)
+`c------------------------                    -----------------------
+Resp.: Balin                                  Resp.: Mastif
+`W 
+1 vnum     6,000                            1 vnum     3,000
+2 vnums   13,500                            2 vnums   11,800
+3 vnums   21,000                            3 vnums   18,500
+4 vnums   31,000                            4 vnums   27,500
+5 vnums   46,000                            5 vnums   41,000
+`^
+Obs: Yes, Dzagari's are 10% cheaper :p
+ 
+A list of basic furniture will be provided if the player doesnt want to 
+use his onums for chairs/tables. Prices (in gold) are as listed below.
+ 
+`#`CFurniture             Price
+`c---------             -----`^
+ 
+Lamp                    50
+Chair                  100
+Table                  150
+Bed                    200
+~
+END
+
+keyword IC-HOUSES-BUILDING-RULES BUILDING-RULES-IC-HOUSES IC-HOUSE-BUILDING-RULES IC-HOUSE-RULES HOUSE~
+level 1
+category undefined~
+text When writing the descriptions and characteristics of your rooms, mobs, and 
+objects, make sure all them follow the below rules, `#`Rbefore`^ handing 
+them to the builder manager.
+ 
+`#`cRules: 
+1.   `^All descriptions must fit into a fantasy world setting.  
+`#`c2.   `^All items must be either trash or furniture.  The later must have 
+normal healing bonuses.  
+`#`c3.   `^All mobs must be level one, and must not have any additional 
+immunities, offensive flags, etc, that are not naturally part of the race 
+(ie, a cat is naturally fast, so that is allowed; cats that have permanent
+sanctuaries would be unthinkable).  
+`#`c4.   `^All normal building rules apply here (such as no proper names in room's 
+names, etc).  
+`#`c5.   `^Things must follow common sense - that means no elephant pets.  
+`#`c6.   `^It is allowed to have a small plaque with the house's owner name on the 
+exit description to his door.  
+`#`c7.   `^Doors must be normal ones, no special locks allowed.  
+`#`c8.   `^Rooms must be normal ones, no 'no_recall', 'noscry', etc, rooms.  
+Healing bonuses must also be normal.  
+`#`c9.   `^Any attempt to cheat these rules means the loss of rights for buying 
+houses, forever.  
+ 
+`#`CSEE: IC-HOUSE-PRICE`^
+~
+END
+
+keyword IC-HOUSES-PRICES IC-HOUSE-PRICE~
+level 1
+category undefined~
+text Prices (in gold) are as listed below.
+ 
+`#`CMekali's Houses (Mekali)                    Lapis Caverns (Dzagari)
+`c------------------------                    -----------------------
+Resp.: Kioras                               Resp.: Kioras
+`W 
+1 vnum     6,000                            1 vnum     3,000
+2 vnums   13,500                            2 vnums   11,800
+3 vnums   21,000                            3 vnums   18,500
+4 vnums   31,000                            4 vnums   27,500
+5 vnums   46,000                            5 vnums   41,000
+`^
+ 
+A list of basic furniture will be provided if the player doesnt want to 
+use his onums for chairs/tables. Prices (in gold) are as listed below.
+ 
+`#`CFurniture             Price
+`c---------             -----`^
+ 
+Lamp                    50
+Chair                  100
+Table                  150
+Bed                    200
+ 
+`#`sVnum means 'virtual number'. They identify each room, mob and object in the game.
+Vnums for each of those are treated separetely, so a room can have the same 
+vnum of a mob, and an item.
+In other words, `W1 Vnum = 1 room + 1 mob + 1 object`s.`^
+~
+END
+
+keyword DELETE~
+level 92
+category undefined~
+text .. 
+~
+END
+
+keyword ALIGN-REQUEST ALIGNMENT-REQUEST REQUESTED-ALIGNMENT~
+level 92
+category undefined~
+text `#`MRequested alignment changes:
+ 
+`rDone - by Yonae `BCharacter:`=? Devlin   `BDate:`=? Oct 19   `BTime:`=? 19:05
+`mFrom:`=?               `mTo:`=? 
+`sReasoning:`^
+Hey i mad a mistake with choosing my alignment i would like to roleplay a chaotic good avian. basically my char is a good cleric who likes to help the innocent. 
+ 
+`rNote forwarded by Yonae to Astyriath`^
+~
+END
+
+keyword DLOOK~
+level 1
+helpflags noble~
+category undefined~
+see_also NOBLE-COMMANDS~
+text `=lSyntax:`=?`+
+       DLOOK <player>`+
+`+
+This command is used to look at a player's long description and short. You 
+will also see Race and Class when you 'dlook' someone. Useful for helping 
+roleplay environment look consistent and that the descriptions comply with 
+help LONG and help SHORT.`+
+`+
+~
+END
+
+keyword FROMNOBLE~
+level 1
+helpflags noble~
+category undefined~
+see_also NOBLE-COMMANDS~
+text `=lSyntax:`=?`+
+       note FROMNOBLE`+
+`+
+This is a command used after 'note subject' that masks the author of the 
+note so it appears "from a noble". All notes that are sent FROMNOBLE are 
+copied to all nobles. Make sure if writing these notes they have a tone of 
+respect and diplomacy. Mainly used to inquire about missing pkill notes, it 
+is a good idea when using this command to put down the bottom of the note 
+from an annonymous source. Ie. The Nobility.`+
+`+
+~
+END
+
+keyword MOOT-TABLE~
+level 1
+helpflags noble~
+category undefined~
+text The Moot Table.`+
+`B*******************************************************************`=?`+
+ `+
+ `=?For a roleplay of say 20 to 40 minutes: `+
+ `+
+                            `YExcellent Good Fair Average GoodAttempt`+
+ `+
+ `YNewbie rp lvl   1-10`=? ......450       400  350  300     200`+
+ `+
+ `YSeminewbie lvl  11-20`=?......400       350  300  200     100`+
+ `+
+ `YAmateur lvl     21-40`=?......375       250  200  100     60`+
+ `+
+ `YExperienced lvl 41-80`=?......200       175  90   60      40`+
+ `+
+ `YExpert lvl      81-91`=?......100       50   25   10      5`+
+ `+
+ NOTE: This is a guideline for mooting, Mooting is a good thing! `+
+ `+
+`B*******************************************************************`=? 
+~
+END
+
+keyword TRAITS CHARACTER-TRAITS~
+level 1
+category undefined~
+see_also RPSHEET LETGAIN~
+text .. 
+                        `#`WCharacter Traits`^
+ 
+When creating your character, you will surely imagine him/her with a specific 
+personality, with quirks, and an original way to see the world. You might also 
+imagine him/her with some interesting physical attributes that will add some 
+spice to your roleplay.
+ 
+This list of traits is here to help you choose those special aspects of your 
+character. They are mainly suggestions, you are free to think of new ideas, as 
+far as they are consistent with our settings (fantasy, medieval one). If you 
+wish to discuss any new ideas, send a `#`Wnote to rp`^.
+ 
+As you will see, some of the traits have alignment restrictions. That means if 
+you have one of those, you cannot choose that trait. Some of them may not be 
+strictly in accord with your own view of that trait - human psycology is 
+complex after all - but that's how they will be treated in this game.
+ 
+In order to be letgained, you will have to choose at least 3 traits. 
+50% (rounded up) of your traits must be personality traits.
+ 
+`#`RPersonality Traits`^:  help personality-traits
+`#`RPhysical Traits`^:     help physical-traits
+ 
+~
+END
+
+keyword JOBS SHOPS~
+level 1
+category undefined~
+text ..
+`#`WWhat do you want to know about jobs and owning a shop?`^
+ 
+`#`BWhat is the job and shop system:     `^help job-what-is
+`#`BHow does it work:                    `^help job-mechanism
+`#`BWhat are the rules:                  `^help job-rules
+`#`BHow to set prices on items:          `^help job-item-prices
+ 
+`#`CIMM-SEE: job-application job-location`^
+~
+END
+
+keyword RPSUPPORT-GUIDLINES~
+level 1
+helpflags rpsupport~
+category undefined~
+see_also RPSUPPORT-COMMANDS~
+text `#`C
+                      RPSupport Guidelines
+ 
+`YRPSupport role:`^
+To help, within their power, players that ask for small quests, directions for 
+their characters, advice on alignments, rp items.
+ 
+`#`GPersonal quests:`^
+When creating a quest for a player, RPSupport must not involve gods, deities, 
+or any high powers of Mythrin. If there is a need for such involvement, the RP 
+Council must approve in advance.
+When RPing, motes making mobs react to you are allowed, taken such an action 
+suits the mob. An example:
+ "amote laborer nods at @, who totally ignores her."
+Such motes should not, however, who some special power. Ex: 
+ "emote gathers the shadows around him."
+While IC, the RPSupport character is a normal character, just like all others.
+ 
+`#`MDirections and advices:`^
+The RPSupport should always give council when requested, or when a blatant 
+confusion of IC and OOC is detected. RPSupport is not to take any punishment 
+measures. Any trouble should be reported to the immortals.
+ 
+`#`BRP Items:`^
+RPSupport can load the template rp item and restring it to whatever is needed, 
+with the following restrictions in mind:
+- all descriptions must be in accord to Mythrin's fantasy setting;
+- if there is a worker (ex: a weaponsmith) in the game, RPSupport should direct 
+the character to that worker, instead of creating a restrung item;
+- try to keep the creation of restrung items to the essential, instead of 
+abiding to every request.
+ 
+~
+END
+
+keyword RPSUPPORT-COMMANDS~
+level 1
+helpflags rpsupport~
+category undefined~
+text `#`C
+                 RPSupport Commands
+ 
+`BLoadrpobj`^
+Loads a template rp item, which can then be restrung.
+Syntax: `#`Yloadrpojb <wear-loc>`^
+ 
+`#`BRestring`^
+See `#`Chelp restring`^.
+ 
+`#`BRtell and Rreply`^
+Same as normal tells.
+ 
+`#`BDlook`^
+Can be used on others.
+Syntax: `#`Ydlook <charname>`^
+ 
+`#`BRpsheet`^:
+Can be used on others.
+ 
+ 
+~
+END
+
+keyword RPSUPPORT~
+level 1
+category undefined~
+text `#`C
+                              RPSupport`^
+ 
+RPSupport is a group of players dedicated to assist players in their needs, 
+doubts and ideas, concerning the roleplay of their characters.
+ 
+RPSupport members can discuss alignments, give suggestions for a character's 
+life direction, create rp items, or help with simple rp settings. RPSupport 
+`#`Rcannot`^ do letgains, set shorts, change alignments or fix bugs.
+ 
+To contact RPSupport, write a `#`Ynote to rpsupport`^, stating your request. 
+Keep in mind that RPSupport may not be able to keep up with all requests. Your 
+patience will be very much appreciated.
+~
+END
+
+keyword PERSONALITY-TRAITS~
+level 1
+category undefined~
+see_also PERSONALITY-TRAITS-2~
+text `#`R
+Personality Traits
+----------- ------`^
+ 
+ 
+`#`CAddiction (must be specified):`^
+You NEED something, and become desperate when you cannot have it for more than 
+one day (ex: addicted to wine).
+ 
+-`#`Walign restriction`^: Cannot have alliance +3 or tendency +3, for you might kill 
+for his need.
+ 
+`#`CAnimal empathy:`^
+You like animals, and they usually like you too. You like to be always 
+surrounded by them.
+ 
+-`#`Walign restriction`^: Cannot have alliance-3, for you will never kill animals 
+for sport.
+ 
+`#`CBlatancy:`^
+You do like to laugh at people mercilessly, and making people the subject of a 
+joke is sublime.
+ 
+-`#`Walign restriction`^: cannot be alliance +3, for you can hurt someone's feelings 
+deeply with such actions.
+ 
+`#`CCarefulness:`^
+You seldom act hastily and without thinking carefully about it. You take time 
+to make your decisions.
+ 
+-`#`Walign restriction`^: Cannot have tendency -2 or -3. Chaotic people are usually 
+susceptible to whims.
+ 
+`#`CCode of Honor (must be specified):`^
+You have a code of honor, and you must follow it, for it is anchored to the 
+very depths of your soul (ex: code of honor: respect ladies).
+ 
+-`#`Walign restriction`^: cannot have negative tendency.
+ 
+`#`CCompassion`^:
+You always feel a tugging at your heart when you see others in pain or hurting 
+and want to do something to help them. You are also able to forgive those who 
+hurt you.
+ 
+-`#`Walign restriction`^: cannot have negative alliance.
+ 
+`#`CConfusion:`^
+The world is unfocused, things don't make much sense, and you simply cannot 
+understand why trees are green.
+ 
+`#`CCredulity:`^
+You believe in people; the concept of people lying doesn't exist to you, so 
+you believe everything that is told to you.
+ 
+`#`CCuriosity:`^
+You are always curious about everything, and you are eager to know new places
+and new people, even if that involves personal risk.
+ 
+`#`CCurse (must be specified):`^
+You have been cursed, and are not able to perform some actions (ex: curse: 
+cannot touch metal).
+ 
+`#`CDistraction:`^
+You cannot easily concentrate on anything... nice those butterflies out there,
+aren't they?
+ 
+`#`CFantasy (must be specified):`^
+You believe something contrary to the nature of the world is true (ex: fantasy: 
+cats are the improved version of gnomes).
+ 
+`#`CFriendliness`^:
+You will always make the first move when meeting someone new. You have a 
+cheerful nature which likes to meet new people and enjoys talking with others.
+ 
+`#`CForgetfulness:`^
+Your memory is awful! Names, places, paths, they should be all written down 
+in a great walking board, with legs to accompany you around the world.
+ 
+`#`CFugue:`^
+You have blackouts, periods of time you will not remember later. It's like 
+there are blank gaps in your life, and you got no idea what happened there.
+ 
+`#`CGluttony:`^
+Is there something better than eat a wonderful sweet? You are always carrying 
+large amounts of food, and is always munching some of it. An offer of food 
+usually can seduce you.
+ 
+`#`CGreed:`^
+Money, money, money! If it can't be money, be it jewel, jewel, jewel! Those 
+shiny things that worth a lot are simply irresistible.
+The ppooowwwweeeerrrr! Power, power, power, I must have it!
+ 
+-`#`Walign restriction`^: Cannot have alliance +3 or tendency +3, for you might kill 
+for his need.
+ 
+`#`CHatred (must be specified):`^
+You hate something so much, that any other goal pales before the possibility 
+of hurting it (ex: hatred: orcs).
+ 
+-`#`Walign restriction`^: cannot have alliance +3, for you might kill the ones he 
+hate. `#`c(ooc note: do rp this! do not pkill an orc on sight!)`^
+ 
+~
+END
+
+keyword PERSONALITY-TRAITS-2 PERSONALITY-TRAITS2~
+level 1
+category undefined~
+text `#`R
+Personality Traits 2
+----------- ------ -`^
+ 
+`#`CHonesty:`^
+You must always speak the truth, no matter what is at stake. Lying would be a 
+great shame on you.
+ 
+-`#`Walign restriction`^: cannot have -2/-3 tendency.
+ 
+`#`CImpulsiveness:`^
+Act first, think later, that is your motto.
+ 
+-`#`Walign restriction`^: should not have extreme positive aligns.
+ 
+`#`CIntolerance (must be specified):`^
+You can't stand something, and you have to do something about it. Its presence 
+disturbs you, but usually not to the point of destroying it (ex: intolerance: 
+cockroaches).
+ 
+-`#`Walign restriction`^: cannot have alliance +3 or tendency +3, for you may 
+go to extremes, to rid yourself from the intolerable thing.
+ 
+`#`CLife goal (must be specified):`^
+You have a goal, one that is probably so huge that it is unattainable, but you 
+must do all you can to achieve that (ex: life goal: master all languages).
+ 
+-`#`Walign restriction`^: depends on the case. If 'life goal: world peace', 
+cannot have extreme negative aligns; if 'life goal: exterminate elves', cannot 
+have extreme positive aligns.
+ 
+`#`CLoyalty:`^
+You will remain loyal to your friends or beliefs no matter what.
+ 
+-`#`Walign restriction`^: cannot have -2 or -3 tendency, for such people 
+might well betray others.
+ 
+`#`CMadness:`^
+You're nuts. You lost contact with the meaningful reality, and find yourself 
+living in your own home-made reality.
+ 
+-`#`Walign restriction`^: no positive tendencies.
+ 
+`#`CMasochism:`^
+You like, you love to be hurt! The pain... oh, it is sooo good!
+ 
+`#`CMood tendency (must be specified):`^
+You tend to one kind of mood, and that's the way you are most of the time (ex: 
+mood tendency: happy).
+ 
+`#`CMultiple personalities (must be specified):`^
+Part of your time you are a sweet, delicate person, and part of it you're a 
+devious plotter. Or any other combinations you can think of. Both personalities 
+must agree with your alignment, though, due to game limits. Ie, you cannot be 
+a holy person and an evil one at the same time.
+ 
+`#`CNurture`^:
+You always like to take care of others, particularly children, and to see 
+others grow and learn.
+ 
+-`#`Walign restriction`^: no extreme negative aligns.
+ 
+`#`CObsession (must be specified):`^
+You are obsessed by something, and anything related to your obsession will 
+drive you, call you, knocking down any common sense you would have otherwise.
+ 
+-`#`Walign restriction`^: cannot have aligns +2 or over, for you might steal, 
+or kill, if necessary to get the object of your desire.
+ 
+`#`COverconfidence:`^
+You have yourself in high opinion, and you are pretty sure that you can handle 
+anything. Of course that huge platinum dragon can be defeated!
+ 
+`#`CPacifism:`^
+You hate violence, and you try to avoid any time you can.
+ 
+-`#`Walign restriction`^: cannot have alliance -2 or lower, and should not have 
+alliance -1.
+ 
+`#`CParanoia (must be specified):`^
+There is something, or someone after you, wanting to do something awful to you.
+You feel endangered. And nothing can convince you of the opposite (ex: 
+paranoia: dragons want my skin).
+ 
+-`#`Walign restriction`^: cannot have alliance or tendency +2 or over, for you do 
+not think of laws or souls when you're paranoic.
+ 
+`#`CPatience`^:
+You have an inexhaustible amount of patience and are able to tolerate 
+annoyances, or to endure hardships. You are especially good at teaching 
+because you have patience with student and their abilities.
+ 
+-`#`Walign restriction`^: no negative alliances.
+ 
+`#`CPhobia (must be specified):`^
+There is something that scares you so much, that you can't think, or do 
+anything in its presence.
+ 
+`#`CRepugnant behaviour: `^
+You do such detestable things, that it usually drives people away from you. 
+Having lunch with you takes a great deal of self-discipline not to vomit.
+ 
+`#`CRespect (must be specified):`^
+There is something that you respect above everything else, and only 
+in extreme cases you'd do something to hurt it (ex: respect: children).
+ 
+-`#`Walign restriction`^: depends on the case. If 'respect: life', cannot have 
+negative alignments whatsoever. If 'respect: murder', cannot have positive 
+alignments.
+ 
+`#`CSadism:`^
+You like to cause pain... yesss.... the pain itself is a lot more fun than the 
+kill itself. Why kill someone, if you can make it suffer a lot more by letting 
+him live?
+ 
+-`#`Walign restriction`^: no positive alliances.
+ 
+`#`CServitude`^:
+You willingly and cheerfully help others and want to make their lives easier 
+by meeting their basic needs, such as providing food and drink.
+ 
+`#`CShyness:`^
+You don't feel well when dealing with a group of people, and you will avoid 
+social situations at all costs. Talking to a friend privately is a lot more 
+agreeable.
+ 
+`#`CStubbornness:`^
+Once your opinion is formed, you don't change it. It is easier for the Kron 
+to bow before you than for you to change your mind.
+ 
+`#`CStammer:`^
+During those crucial moments of your life, whenever something important is at 
+game, you find yourself unable to easily communicate.
+ 
+`#`CTrue love:`^
+You found the meaning of that in your life. It is what gives you strength to 
+go on, when everything seems lost.
+ 
+-align restriction: no negative alliances.
+ 
+`#`CWeak will:`^
+You are easily manipulated by people, your opinions are so weakly exposed that 
+they hardly convince anyone, yourself included. You are usually unsure about 
+yourself, and happy to follow someone else's leadership.
+ 
+~
+END
+
+keyword PHYSICAL-TRAITS~
+level 1
+category undefined~
+text `#`R
+Physical Traits
+-------- ------`^
+ 
+ 
+`#`CAlbinism:`^
+Your skin is so pale that it is easily hurt by the sun. Thus, you don't like 
+to be in open places during the day, and prefer to travel during night.
+ 
+`#`CAllergy (must be specified):`^
+You are allergic to a substance, and you cannot sniff, eat or touch it, else 
+you fall sick, sneezing and with red dots all over your body.
+ 
+`#`CAmnesia:`^
+You don't remember who you are, what is your past, or part of it. Your mind is 
+empty of memories.
+ 
+`#`CBad hearing:`^
+You cannot understand well what people say to you. They usually have to repeat 
+two or three times, and shout, for you to fully understand.
+ 
+`#`CBad sight:`^
+The world is a blur, and it is hard to see beyond a few meters.
+ 
+`#`CBlind:`^
+You can't see a thing!
+ 
+`#`CColor blindness:`^
+You can't see any color at all. The world is black and white.
+ 
+`#`CDaltonism:`^
+You can't distinguish very well two colours, for they look the same to you.
+ 
+`#`CDeaf:`^
+You can't hear a sound in the world.
+ 
+`#`CLimp:`^
+You limp. Or in other words: you limp.
+ 
+`#`CLoss of a limb (must be specified):`^
+You lack a foot, leg, arm, finger, ear, or all of them.
+ 
+`#`CMedical condition (must be specified):`^
+You have a disease that may or may not be uncurable, in mild, medium or extreme 
+form (ex: sores, leporsy, unknown).
+ 
+`#`CMute:`^
+You can't talk.
+ 
+`#`CObesity:`^
+You are really fat, way above the average weight for your height.
+ 
+`#`CScar (must specify):`^
+You have some visible scar, or birthmark.
+~
+END
+
+keyword RP-SHEET RPSHEET~
+level 1
+category undefined~
+see_also METRIC LETTER PHYSICAL-TRAITS PERSONALITY-TRAITS TRAIT RACIAL-WEIGHT RACIAL-HEIGHT~
+text The RPsheet command is used to maintain your characters roleplaying sheet.
+This sheet can help you determine essential and yet basic characteristics.  
+It also allows you to choose traits that gives you a stable foundation 
+on which to build the RP of your character.
+ 
+`=lSyntax: `=_rpsheet`=?
+ 
+Your sheet will include the following:
+-Name, Age, Birthdate, Birthplace, Surname
+ 
+-Eye color, Hair color, Height and Weight
+ * see help `=_RACIAL-WEIGHT and `=_RACIAL-HEIGHT
+ 
+-Personality Traits and Physical Traits
+ * see help `=_TRAIT, help `=_PERSONALITY-TRAITS
+         And help `=_PHYSICAL-TRAITS
+ 
+-Family Crest
+ * see help `=_LETTER
+ 
+`#`BReminder:`^ when choosing a physical or personality trait, it is expected 
+    for you to role play that trait as detailed in the summary of that 
+    particular trait.
+ 
+Your rp sheet is your very own to change as you see fit up until you get 
+letgained.
+ 
+The metric command can be used to display measurements in metric terms.
+~
+END
+
+keyword RP-ITEM RP-OBJECT~
+level 1
+category undefined~
+text If you wish to obtain an item to enhance your character in roleplay please 
+observe the following proceedure:`+
+`+
+Write a `Ynote to rpsupport`=? or `Yhelp notes`=? if you do not know how to write one. 
+ `+
+`+
+If you wish any special affects on the item when a player reaches hero level 
+they have the option to restring items to your liking.  `+
+`+
+*No items will be made with special effects added to them and no requests 
+for pets.*`+
+`+
+Include three things on the item:`+
+`+
+A 'look' description.  - A {#{Bblue{^ rose is lying here.`+
+A 'get' description.  - You pick up a {#{Bblue{^ rose.  `+
+An 'extra' description.  - The rose looks lovely lying here.....  Etc.  `+
+`+
+Include the correct color coding in the note if possible.  `+
+`+
+`#`MNote:`^ Do not ask for items that do not fit in our setting. They must be 
+part of a magical fantasy world.
+`+
+`CSEE ALSO: COLOR`=? 
+~
+END
+
+keyword JOB-ITEM-PRICES~
+level 1
+category undefined~
+text `#`W
+ Object Prices
+ 
+`s ___________________________________________________
+|          Objects           |        Prices        |
+|                            |                      |
+| `mArmor, weapon              `s|      `Blevel x 25      `s|
+|                            |                      |
+| `mContainer, drinkcontainer, `s|      `Blevel x 20      `s|  
+| `mfood, furniture, light     `s|                      |
+|                            |                      |
+| `mBoat, clothing, jewelry,   `s|      `Blevel x 15      `s|
+| `mmap, trash, treasure       `s|                      |
+|____________________________|______________________|`^
+ 
+These prices are in silver, and that is the value you should use in oedit.
+~
+END
+
+keyword JOB-APPLICATIONS~
+level 92
+category undefined~
+text `#`B=======================================================================`^
+  `#`GNAME  `g|   `GSHOP (and comments)     `g|      `GVNUMS     `g|      `GSTATUS`^    
+`#`B=======================================================================`^
+`#`YTren      Bookshop                    25000 - 25049    Building, 
+          RP Items                                     Waiting for
+                                                       payment
+`yKioras    Weapons smithy              25150 - 25199    Paid 6250 (f)
+          in Mekali                                    Building   
+`YSlatosh   Kiosk - reading material    25200 - 25249    Paid 6000
+          RP Items                                     Building
+`yChirm     Weapons smithy              25250 - 25299    Paid 4000 (f)
+          in Dzagari                                   Building
+`YNakova    Apothecary - potions        25300 - 25349    Paid 13500   
+          Brewed by her, shop is                       (2 rooms)
+          for appearance only                          Building
+          Magic items (limited)
+`yKatrian   Animal furs and skins       25350 - 25399    Paid 3000
+          Dzagari                                      Building
+`YArminius  Liquor store                25050 - 25099    Paid 3000
+          Dzagari                                      Building
+`yGrulk     Butcher                     25400 - 25449    Paid 6000
+                                                       Building
+ 
+`YFuron     Weapons smithy              25100 - 25149    Paid 6000
+                                                       Building
+`^ 
+Sithelos  Exchange store                               Waiting for 
+          or bookshop                                  funding proposal
+                                                        
+`#`B=======================================================================`^
+ 
+Yiuleung - wants work, but has no ideas
+Ouallada  - paper boy maybe
+ 
+ 
+(f) = purchased furniture also
+~
+END
+
+keyword JOB-LOCATIONS~
+level 92
+category undefined~
+text `#`WPurpose:`^ to keep a balance of type and quantity of
+player-owned shops in the game
+ 
+`#`g=======================================================`^
+      `#`BSHOP         `^|  `#`BMEKALI  `^|  `#`BDZAGARI  `^|  `#`BUNDECIDED`^  
+`#`g=======================================================`^
+ Bookshop          |    1     |          |       2
+ Weapons smithy    |    2     |     1    |       
+ Apothecary        |    1     |          | 
+ Alcohol shop      |          |     1    |
+ Butchers          |    1     |          |
+ Animal skins/furs |          |     1    |
+`#`g=======================================================`^      
+~
+END
+
+keyword JOB-WHAT-IS~
+level 1
+category undefined~
+text `#`C         The Jobs Project`^
+ 
+This project allows players to have jobs ic, and make money out of it. Since 
+a job requires producing something, in game terms a job means building 
+something on olc. Jobs would include weaponsmiths, bakers, publishers, house 
+builders, etc.
+ 
+Players earn money with this system by selling what they crafted, ie built on 
+olc. That results in the player owning a shop, near one of Valarin's main 
+cities.
+ 
+It is required that those interested in a job/shop either know how to build in 
+olc, or know someone who can help them.
+ 
+To apply for a job/shop, you should write a `#`Wnote to Master Reyortsed`^ or to 
+`#`WMaster Skrynlaeth`^ (Mekali and Dzagari mayors), cc to `#`WRP`^. In your 
+application, you should include:
+   - olc experience
+   - ic reasons
+   - ic background showing your skills (ie, how did you get to know about 
+     weapons, etc)
+     
+The project is coordinated by Minyae and Mirgro.
+~
+END
+
+keyword JOB-RULES~
+level 1
+category undefined~
+text . 
+`#`MShops Rules`^
+ 
+Rules for building a shop are very simple. The main purpose of thi system is 
+to allow you to have customized items, and having fun, and not to have level 
+150 swords ;)
+ 
+Items built must abide to the following rules:
+ 
+  - they must follow the balance rules, including price (read `Yhelp item-price`=?);
+  - they CANNOT have modifiers, bonuses or special flags (like vorpal);
+  - they must be in agreement with our fantasy setting (no guns and the like);
+  - they must have acceptable shorts (no 'The Sword of Ogre Killing').
+ 
+Magical items (scrolls,potions etc) can only be sold if you have those skills, 
+making the shopfront an appearance only. In other words, you will not build 
+those items on olc, but rather make them ICly.
+~
+END
+
+keyword JOB-MECHANISM~
+level 1
+category undefined~
+text ..
+`#`mGetting yourself an olc area
+----------------------------`^
+ 
+`#`b1.`^ Once your application has been accepted, you will be given an area on 
+the olc port, where you will build your shop rooms, the merchandise you will 
+sell, and the necessary OOC tools to make your shop work (see below).
+ 
+`#`mWhat must be built
+------------------`^
+ 
+`#`b2.`^ The rooms that form your IC shop. There must be at least one room, like 
+ordinary shops in Mekali and Dzagari. That room must be bought by as per `#`Whelp 
+ic-house-price`^, meaning the you also have a right to one object and one pet 
+(nothing like a parrot in a shop to attract customers).
+ 
+`#`b3.`^ The items that you will sell. These must be built according to `#`Whelp 
+job-rules`^. Note that shops specialise in one product, not products of 
+different types. Although they can sell variants of the product... ie, a 
+bookshop cannot sell alchohol as well, but it can sell journals, magazines, 
+newspapers etc.
+ 
+`#`b4.`^ An OOC room, where all your merchandise will be reseted, and where an 
+assistant will be, ready to answer your call (see below).
+ 
+`#`mHow does the shop work
+----------------------`^
+ 
+`#`b5.`^ In the olc port, there is an area 'Example of a Shop', open to anyone who 
+wants to visit it. In there, there is a little shop, with one item made, and, 
+more importantly, the mprogs you will need. Take a look at them, and create 
+similar ones in your own shop.
+ 
+`#`b6.`^ Your assistant is a shopkeeper (remember to make him able to see the type 
+of item you craft), who will answer your call only (the mprogs mentioned above 
+are name-restricted). In the main port, it will be from him that you will get 
+your items.
+ 
+`#`mBuilding the OOC room and your assistant
+----------------------------------------`^
+ 
+`#`b7.`^ You need the assitant room, the mprog_mob and those mprogs in order to have 
+the ic system working. You can customize them (description, what the assistant 
+says, etc) to your linking, though.
+ 
+`#`b8.`^ Items must be reseted in the assistant room.
+ 
+`#`mFinishing your shop
+-------------------`^
+ 
+`#`b9.`^ Once you are finished with it, note the coordinators, telling them you're 
+done. Your shop will be checked and once a week (at max, less if it isnt 
+required) it will be port over to the main port.
+ 
+`#`b10.`^ You can build more items later, as they are required. Just note us 
+again, requesting a recheck, and report of your area.
+ 
+`#`mSelling items ICly
+------------------`^
+ 
+`#`b11.`^ Once the shop is built, it is linked to a location near one of the 
+main cities (players can choose near which city).
+ 
+`#`b12.`^ Once in your shop, you call your assistant, and buy the items from him/her.
+There are two reasons for this: 
+  - game balance: items can't get into the game for free;
+  - rp - your char bought the materials he used from his suppliers. Since there
+    are no built suppliers, this situation simulates that.
+    
+`#`b13.`^ After you buy your items, you simply dismiss your assistant, sending him 
+back to his ooc room. It is important that the assistant goes away, in order 
+that no one else buy from him, and get the items you created.
+ 
+`#`b14.`^ With the items in hand, you do with them whatever you like. You can sell 
+them for whichever price you want, or give them, or use them for rp.
+ 
+`#`mNotes
+-----`^
+ 
+`#`ba:`^ Players can have furniture in their shop, at the same prices as per `#`Yhelp 
+ic-house-price`^.
+ 
+`#`bb:`^ The assistant is not the real shopkeeper (that's the shop owner, the char 
+himself). He is an ooc-type of shopkeeper, whose function is to keep game balance (ie, 
+no free level 90 swords around).
+ 
+`#`bc:`^You do not have to pay for the supplier room.`^
+~
+END
+
+keyword A_GREAT_HISTORY~
+level 1
+helpflags noble~
+category undefined~
+text Nickel was born in 1158 to gnomish parents Brumblelar and Dehrani Khevac, 
+who both were in service to an accomplished human mage by the name of Jeval. 
+Prior to Nickel's birth, the Khevacs lived with Jeval in his secluded estate 
+in the outskirts of Osparatch, Elenarthia.  Brumblelar was an adept tinkerer 
+and was recruited by Jeval to assist him in artificing endeavors. 
+Specifically, the mage wanted to perfect artificing by imbuing gnomish 
+inventions with sorcery -- a practice much frowned upon in the Khevacs' 
+hometown.`+
+`+
+Jeval warmly received the wee gnomish tot, and Nickel was raised in a loving 
+environment for many, many years.  (He was named after his grandfather, but 
+given the human translation in honor of Jeval's heritage.)  Alas, there came 
+a time when Jeval grew old and frail.  When Nickel was at the tender age of 
+32, Jeval's died.  It was a heart-breaking time for the three gnomes, but 
+they persevered.  Having inherited the estate, Brumblelar and Dehrani 
+continued with the experiments, having been taught some of Jeval's sorcerous 
+ways.  For many years thereafter, they instructed Nickel in the basic 
+theories of magic -- well, as much as his youthful mind could comprehend.  
+He seemed to be an adequate aspirant.`+
+`+
+Eventually, there came a time when Nickel finally did understand the 
+underlying theories and workings of magic.  However, his parents' limited 
+expertise in the Art was insufficient for Nickel to graduate to actual spell 
+formulation and execution.  It was at that time, at the age of 60, that 
+Nickel left his home in search of an apprenticeship with a mentor or mage 
+guild.  Jeval had spoken often of the school of magic in Mekali, and so that 
+is where Nickel set his sights for.`+
+`+
+For weeks, the gnomish adolescent traveled to the port city that would give 
+him passage across the seas to Valarin.  It was during these travels that 
+the heretofore sheltered lad met with his first taste of the cruel, 
+unforgiving lands.  He was attacked by brigands and barely escaped with his 
+life, having thrown his gold and silver about to break off the chase.  When 
+he reached the port city, he was broke, cold, and hungry.  Accordingly, he 
+ended up working odd jobs for several months to earn enough money to 
+purchase passage to Valarin.  -- He was too ashamed to return home defeated.`+
+`+
+Finally, Nickel had the funds for his trip and eagerly set voyage to the 
+distant lands.  More misfortune befell Nickel, however.  During the long 
+voyage, a pair of orcs sought to pass the time by menacing the poor gnomish 
+lad.  Nickel was beaten up on several occasions, and often spent days locked 
+in his tiny, shared stateroom to avoid the bullies.  It was not a pleasant 
+time.`+
+`+
+Nickel's expedition ended finally on Day of Mist, 13th the Month of Light in 
+the year 1219.  He had arrived in Mekali.  The past few months had changed 
+him in many ways.  Nearly beaten in self-loathing for his vulnerabilities, 
+Nickel set out to make his parents proud and to become and accomplished mage 
+-- like Jeval -- so that he may one day return home and work once again with 
+his parents and their artificing experiments. 
+~
+END
+
+keyword STRING~
+level 91
+category undefined~
+see_also CHARDESC OBJDESC~
+text `=lSyntax:`=? string obj <obj name> <field> <string>
+        string mob <mob name> <field> <string>
+ 
+The string command changes the various strings associated with an object or
+mobile.  A full list of fields can be viewed by typing string obj or string
+mob.  Multi-line strings are supported, use CHARDESC.
+ 
+Ok a worked example of restringing a Mobile.  We are going to change a Janitor
+into a drunk.
+ 
+'This sets the keyword, for the mobile that it is refered to as'
+STRING mob janitor name drunk 
+ 
+'Changes the mobiles action description, what you see when fighting
+ and what you see when the mobile is sleeping, sitting or resting'
+STRING mob drunk short a drunk 
+ 
+'Sets the description you see when you walk in the room' 
+STRING mob drunk long A drunk is here. 
+ 
+~
+END
+
+keyword OEXTENDED~
+level 91
+helpflags rpsupport~
+category undefined~
+text Oextend is the restring of extra descriptions.  When you create an extended 
+description on an object, the former extra description are ignored, and the 
+extended becomes the new valid description, when looking at the object.  `+
+`+
+Once created, extended descriptions can be edited much the same way as 
+extra descriptions.  The syntax is: `+
+`+
+OEXTENDED object mode keyword ...`+
+`+
+Where mode can be: `+
+`#`yadd clear copy edit remove rename tag`^ `+
+`+
+`#`=? add - adds a new keyword with empty description.  `+
+`=? appendkey - appends keywords to existing keywords `+
+`=? clear - clears ALL extended description on an object!  `+
+`=? copy - copies an extended description from another object.  `+
+`=? edit - puts you into the description editor for keyword.  `+
+`=? remove - removes an extended description.  `+
+`=? rename - renames keyword to new keyword.  `^ `+
+`+
+Thus, to create a new extended description: `+
+`+
+`#`Woextended object name add blue`^ `+
+`+
+A keyword can be more than one word, just put the words between '' (use 
+the 'x y' syntax).  `+
+`+
+After creating the keywords, you can edit the description the same way you 
+do with extra descriptions, using the `#`yedit`^ mode.  `+
+`+
+The mode `#`yremane`^ replaces all former keywords, by the new one(s).  Once 
+again, if more than one new keyword, put them between ''.  `+
+`+
+`#`=? `#`Woextended <object name> add 'blue flower'`^ `+
+`=? --> adds one extended description with the keywords 'blue' and `+
+`=? 'flower.  `+
+`=? `#`Woextended <object name> rename blue 'white scepter'`^ `+
+`=? --> changes the keywords of the extended description from 'blue and `+
+`=? 'flower' to 'white' and 'scepter' `^ `+
+`+
+When copying an extended description, you cannot put more than one 
+keywords into the copied description, so you need to `#`yappend`^ new keywords 
+afterward.`+
+`+
+(for more help on any of these type 'OEXTENDED <object> <mode>' 
+~
+END
+
+keyword CADOREN_RECIPES~
+level 92
+category undefined~
+see_also CADOREN_RECIPES_2 CADOREN_RECIPES_3 CADOREN_RECIPES_4~
+immsee_also CADOREN_RECIPES_COOKS~
+text These help files document what would have been a cooking system that 
+didn't get completed - simular to the herbalism system.
+`#`CIngredients`^
+ 
+`#`c+====================================================================================+ 
+   `#`YBasics`^    |   `#`WFlour`^   | `#`rFlavourings`^ | `#`gFruit/Vegetables`^ |  `#`yMeats`^   |  `#`RExtras`^
++====================================================================================+`^
+`#`=?milk         | rye flour | cardammom   | parsley          |dragontail| almonds
+salt         | wheatflour| nutmeg      | apples           | pigeon   | figs
+water        |barleyflour| cinnamon    | oranges          | goose    | lemon juice
+yeast        |           | ginger      | lemons           | rabbit   | rose petals 
+flour        |           | vanilla     | black berries    | salmon   | citrus peel
+sugar        |           | rosemary    | mulberries       |          | lemon rind 
+baking powder|           | garlic      | elderberries     |          | spinach leaves
+butter       |           | cloves      | bananas          |          |
+oil          |           |             | carrots          |          |
+pastry       |           |             | fennel           |          |
+honey        |           |             | watercress       |          |
+eggs         |           |             | onions           |          |
+butter       |           |             | mushrooms        |          |
+pepper       |           |             | blueberries      |          |
+wine         |           |             | strawberries     |          |
+             |           |             | spinach leaves   |          |
+             |           |             | grapes           |          |`^
+`#`c+====================================================================================+`^
+ 
+`#`CUtensils`^
+ 
+Vessel: oven
+        bowl
+ 
+`#`CMeasurements`^
+ 
++==============================================+
+  `#`Ccup`^        `#`Yspoonful`^        `#`rbunch`^       `#`Mblock`^
++==============================================+
+`#`=? wine         oil           cloves       butter
+ water       salt           grapes
+ milk        sugar          berries
+ flour       yeast          flowers      
+ juice       honey          garlic
+ nuts        vanilla        watercress 
+ peel        cinnamon       fennel
+             ginger         parsley
+             cardammom
+             rind
+             nutmeg`^
++==============================================+
+             
+Optional - shape cutter
+ 
+~
+END
+
+keyword CADOREN_RECIPES_2~
+level 92
+category undefined~
+text `#`CRecipes`^
+ 
+Cakes - apple cake (1milk,2sugar,3flour,3egg,3apple)
+      - almond cake(4almonds,4eggs,1sugar,2flour,4milk)
+      - chocolate cake (1butter,1sugar,1chocolatechips,1milk,1flour)
+ 
+Breads/buns - scones (2flour,2bp,1salt,1sugar,1milk)
+            - rye bread (1milk,2salt,1water,2yeast,5ryeflour)
+            - braided bread (5wheatflour,2sugar,1salt,2yeast,2water)
+            - cardammom bread (2yeast,1butter,3milk,1cardammom,5flour)
+            - barley bagels (2barleyflour,4oil,3water,1salt)
+            - parsley bread (2yeast,1water,5flour,2parsley)
+            - apple bread (3flour,1salt,1sugar,2apples,1milk)           
+ 
+Cookies - princess cookies (1butter,2eggs,3sugar,4flour,1cinnamon)
+        - cupcakes (1butter,1sugar,2eggs,3flour,1milk)
+        - chocolate chip cookies (1butter,1sugar,1flour,1chocolatechips,1milk)    
+ 
+Pastries - pastry (1flour,1butter,1sugar,1salt,1milk)
+         - apple and orange tart (1pastry,4apples,5oranges,1honey,3water)
+         - baked apples in pastry (1pastry,5apples,1sugar,1nutmeg)
+         - apple dumplings (1pastry,3apples,1sugar,1nutmeg,1cinnamon)
+         - 
+ 
+Soups/stews - dragontail soup (1dragontail,1salt,1pepper,3water)
+            - onion soup (4onions,5mushrooms,1salt,1pepper,2water)
+            - stewed pigeons (2pigeons,1salt,1garlic,3water)
+            - rabbits stew (1rabbit,1salt,1garlic,3water)
+ 
+Meat - spit roasted meat with sauce (1meat,1sauce)
+     - gees in hotchpot (1goose,1salt,4onions,1wine)
+     - salmon roasted in sauce (1salmon,1wine,4onions,1ginger)
+ 
+Puddings - caramel bisque (3milk,2eggs,1sugar,2vanilla,5almonds)
+         - carrot pudding (4carrots,1cream,1butter,1sugar)
+         - figgy pudding (1water,3honey,5figs,5almonds)
+         - rose pudding (3milk,1sugar,1cinnamon,1ginger,5rosepetals)
+ 
+Sweets - stained glass candy (1water,4sugar,1lemonjuice,1foodcolouring)
+       - honey butterscotch (2honey,2sugar,1butter,1cinnamon)
+       - gyngerbrede (5milk,3flour,4sugar,1ginger) 
+       - shortbread (1flour,1bp,1butter,1honey,1milk)
+       - candied citrus peel (2peel,1water,1sugar)
+       - marchepane (8almonds,1water,4eggs,2sugar,1foodcolouring)
+       - candied violets (5violets,1egg,1sugar)
+ 
+Sauces - egerdouce sauce (roast meat) (2oil,1salt,1cloves,1wine,1sugar)
+ 
+Drinks - rose petal wine (5rosepetals,5water,5sugar,2lemons,1yeast)
+       - blackberry mead (2honey,5blackberries,1yeast,5water)
+       - hot honey lemonade (4lemonjuice,4honey,5water)
+       - mulberry mead (2honey,5mulberries,5water,1yeast)
+       - banana and elderberry wine (3bananas,5elderberries,3sugar,5water,1yeast)
+       - faerie wine (1milk,1honey,1vanilla,1cinnamon)
+ 
+Salad  - vegetable (1watercress,1fennel,2parsley,1rosemary)
+ 
+Dye    - blue (5water,3blueberries)
+       - red (5water,3strawberries)
+       - yellow (5water,3lemon rind)
+       - orange (5water,3orange rind)
+       - green (5water,3spinachleaves)
+       - purple (5water,3grapes)
+~
+END
+
+keyword CADOREN_RECIPES_3~
+level 92
+category undefined~
+text Table of ingredients:
+ 
+`#`W+--------------------------------------------------------------------------------------+
+|`c milk | salt | water | yeast | rye flour   |       |               |= rye bread       `W|
+----------------------------------------------------------------------------------------
+|`c milk | salt |       |       | flour       | sugar | baking powder |= scones          `W|
+----------------------------------------------------------------------------------------
+|`c milk | salt |       |       | flour       | sugar | butter        |= pastry          `W|
+----------------------------------------------------------------------------------------
+|`c milk |      |       | yeast | flour       | sugar | cardammom     |= cardammom bread `W|
+----------------------------------------------------------------------------------------
+|`c      | salt | water | yeast | wheat flour | sugar |               |= braided bread   `W|
+----------------------------------------------------------------------------------------
+|`c      | salt | water |       | barley flour|       | oil           |= barley bagels   `W|
+----------------------------------------------------------------------------------------
+|`c      |      | water | yeast | flour       |       | parsley       |= parsley bread   `W|
++--------------------------------------------------------------------------------------+`^
+ 
+`#`c+--------------------------------------------------------------------------------------+
+|`^ pastry | apples | honey | water | oranges                    |= apple/orange tart    `c|
+----------------------------------------------------------------------------------------
+|`^ pastry | apples | sugar |       | nutmeg                     |= bakedapple inpastry  `c|
+----------------------------------------------------------------------------------------
+|`^ pastry | apples | sugar |       | nutmeg | cinnamon          |= apple dumplings      `c|
++--------------------------------------------------------------------------------------+
+ 
+`#`W+--------------------------------------------------------------------------------------+
+|`^ water | eggs | sugar | almonds | dye                         |= marchepane           `W|
+----------------------------------------------------------------------------------------
+|`^ water |      | honey | almonds | figs                        |= figgy pudding        `W|
+---------------------------------------------------------------------------------------
+|`^ water |      | honey | lemon juice                           |= hot honey lemonade   `W|
+----------------------------------------------------------------------------------------
+|`^       | eggs | sugar | violets                               |= candied violets      `W|
+----------------------------------------------------------------------------------------
+|`^ water |      | sugar | lemons  | yeast | rose petals         |= rose petal wine      `W|
+----------------------------------------------------------------------------------------
+|`^ water |      | honey | blackberries    | yeast               |= blackberry mead      `W|
+----------------------------------------------------------------------------------------
+|`^ water |      | honey | mulberries      | yeast               |= mulberry mead        `W|
+----------------------------------------------------------------------------------------
+|`^ water |      | sugar | lemon juice | dye                     |= stained glass candy  `W|
+----------------------------------------------------------------------------------------
+|`^ water |      | sugar | citrus peel                           |= candied citrus peel  `W|
+----------------------------------------------------------------------------------------
+|`^ water |      | sugar | elderberries    | yeast | bananas     |= banana/elderberrywine`W|
++--------------------------------------------------------------------------------------+
+~
+END
+
+keyword CADOREN_RECIPES_4~
+level 92
+category undefined~
+text Table of recipes:
+ 
+`#`W+--------------------------------------------------------------------------------------+
+|`c milk | flour | eggs | sugar | almonds                       |= almond cake           `W|
+----------------------------------------------------------------------------------------
+|`c milk | flour |      | honey | butter | baking powder        |= shortbread            `W|
+----------------------------------------------------------------------------------------
+|`c milk |       |      | sugar | cinnamon | ginger | rosepetals|= rose pudding          `W|
+----------------------------------------------------------------------------------------
+|`c milk | flour | eggs | sugar | apples                        |= apple cake            `W|
+----------------------------------------------------------------------------------------
+|`c milk |       |      | honey | cinnamon | vanilla            |= faerie wine           `W|
+----------------------------------------------------------------------------------------
+|`c milk | flour |      | sugar | ginger                        |= gingerbread           `W|
+----------------------------------------------------------------------------------------
+|`c milk |       | eggs | sugar | vanilla | almonds             |= caramel bisque        `W|
+----------------------------------------------------------------------------------------
+|`c cream|       |      | sugar | butter | carrots              |= carrot pudding        `W|
+----------------------------------------------------------------------------------------
+|`c      |       |      | sugar | honey | butter | cinnamon     |= honey butterscotch    `W|
+----------------------------------------------------------------------------------------
+|`c milk | flour | eggs | sugar | butter                        |= cupcakes              `W|
+----------------------------------------------------------------------------------------
+|`c      | flour | eggs | sugar | butter | cinnamon             |= princess cookies      `W|
++--------------------------------------------------------------------------------------+
+ 
+`#`c+--------------------------------------------------------------------------------------+
+|`^ watercress | fennel | parsley | rosemary                    |= salad                 `c|
+----------------------------------------------------------------------------------------
+|`^ onions     | salt | pepper | water | mushroom               |= onion soup            `c|
+---------------------------------------------------------------------------------------
+|`^ dragontail | salt | pepper | water                          |= dragontail soup       `c|
+----------------------------------------------------------------------------------------
+|`^ pigeon     | salt | garlic | water                          |= stewed pigeon         `c|
+----------------------------------------------------------------------------------------
+|`^ goose      | salt | onions | wine                           |= gees in hotchpot      `c|
+----------------------------------------------------------------------------------------
+|`^ rabbit     | salt | garlic | water                          |= rabbit stew           `c|
+----------------------------------------------------------------------------------------
+|`^ salmon     | ginger | wine | onions |                       |= salmon roasted insauce`c|
+----------------------------------------------------------------------------------------
+|`^            | salt | oil    | wine | sugar | cloves          |= egerdouce sauce       `c|
++--------------------------------------------------------------------------------------+
+ 
+`#`W+--------------------------------------------------------------------------------------+
+|`c water | blueberries                                          |= blue dye             `W|
+----------------------------------------------------------------------------------------
+|`c water | strawberries                                         |= red dye              `W|
+----------------------------------------------------------------------------------------
+|`c water | lemon rind                                           |= yellow dye           `W|
+----------------------------------------------------------------------------------------
+|`c water | orange rind                                          |= orange dye           `W|
+----------------------------------------------------------------------------------------
+|`c water | spinach leaves                                       |= green dye            `W|
+----------------------------------------------------------------------------------------
+|`c water | grapes                                               |= purple dye           `W|
++--------------------------------------------------------------------------------------+
+~
+END
+
+keyword CADOREN_RECIPES_COOKS~
+level 92
+category undefined~
+text .  1) [19506] the kobold cook              [19516] The Middle of the Cave
+  2) [19506] the kobold cook              [19513] A Large Cave
+  3) [  943] a fat monk cook              [  961] Kitchen
+  4) [19528] the orc cook                 [19595] Kitchen
+  5) [19528] the orc cook                 [19554] The Kitchen
+  6) [ 6872] a minotaur cook              [ 6838] Dirty Kitchen
+  7) [23747] a chubby cook                [23757] Galley
+  8) [ 4902] a happy cook                 [ 4903] The kitchen
+  9) [16214] a mrem cook                  [16221] Kitchen
+ 10) [10047] a cook                       [10091] The Kitchen of the Gentle Rest
+ 11) [28011] a cook                       [28006] Kitchen
+ 12) [ 1914] the cook                     [ 1923] The Mess Tent
+ 13) [23627] a halfling cook              [23614] A Busy Kitchen
+ 14) [19116] a very fat male human        [19123] A Narrow Corridor
+ 15) [19676] a medium skeleton            [19713] A Kitchen
+ 16) [12002] a plump looking cook         [12007] The kitchen
+ 17) [26156] a jolly fat man              [26166] Kitchen
+  1) [ 6011] a red-scaled draconian       [ 6017] Kitchen
+  2) [ 3304] an orc chef                  [ 3302] Mess Tent
+~
+END
+
+keyword HEALER~
+category undefined~
+text Healers spend their whole life devoted to healing the hurt, curing the 
+diseased and refreshing the tired. They can be found usually in towns, or 
+where ever people gather. `+
+ `+
+ To enlist the help of the healer, you can type HEAL to see the list of 
+healing services the healer provides. `+
+ `+
+ For example, `+
+ light:    cure light wounds     1 gold `+
+ serious:  cure serious wounds   2 gold `+
+ critic:   cure critical wounds  5 gold `+
+ refresh:  restore movement      5 gold `+
+ disease:  cure disease          8 gold `+
+ heal:     healing spell        10 gold `+
+ blind:    cure blindness       10 gold `+
+ poison:   cure poison          10 gold `+
+ mana:     restore mana         10 gold `+
+ headache: cure headache        15 gold `+
+ uncurse:  remove curse         20 gold `+
+ cancel:   cancellation         30 gold `+
+ chaos:    chaotic poison       35 gold `+
+ `+
+ To heal yourself of poison for example, type `#`YHEAL POISON`^. `+
+ `+
+ To heal someone else in the same room as you are, type `+
+ `#`YHEAL POISON <someone's name or part of his short desc>`^. 
+~
+END
+
+EOF~
+#$

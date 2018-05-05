@@ -1,0 +1,1991 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Monastery~
+ShortName   Monastery~
+Builders    None~
+Credits     Reave~
+VNUMs       940 985
+LRange      20 80
+Security    9
+Colour      R~
+colourcode  `
+MapScale    5
+MapLevel    10
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#940
+Name young monk~
+ShortD a young monk~
+LongD A young monk is rushing about, doing some chore.~
+Desc This male human is young and apparently still new to the monastery.  He is 
+rushing about and seems to be working very hard.
+~
+Race human~
+Align 3 2
+Level 23
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+220
+DamDice 2d10+7
+DamType punch
+AC -70 -70 -70 -30
+Wealth 125
+Act    npc no_tame stay_area warrior~
+Off    bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#941
+Name bald monk~
+ShortD a bald monk~
+LongD A bald monk is here, looking over an old text.~
+Desc This middle-aged male human monk is busy studying an old text.  Although he 
+is not that old, he has gone completely bald.  Maybe he has shaved his head 
+intentionally.
+~
+Race human~
+Align 3 2
+Level 31
+Hitroll 1
+HitDice 5d6+210
+ManaDice 5d6+270
+DamDice 4d7+11
+DamType pound
+AC -110 -110 -110 -70
+Wealth 175
+Act    npc no_tame stay_area warrior~
+Off    bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#942
+Name powerful monk~
+ShortD a powerful monk~
+LongD A powerful-looking monk is here, peering at you suspiciously.~
+Desc This monk is very well built and has a powerful air about him.  He is dressed 
+very finely compared to the other monks, and looks like a person of some 
+authority.
+~
+Race human~
+Align 3 3
+XPMod 120
+Level 55
+Hitroll 2
+HitDice 6d9+300
+ManaDice 5d9+370
+DamDice 6d8+24
+DamType punch
+AC -270 -270 -270 -230
+Wealth 275
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary protect_evil~
+Off    bash disarm dodge fast kick parry~
+Imm    summon charm holy~
+Vuln   negative mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#943
+Name fat monk cook~
+ShortD a fat monk cook~
+LongD A fat monk is here, cooking up something tasty for dinner.~
+Desc This monk is rather nondescript - his only distinguishing feature is his huge 
+waistline.  He must weight at least 300 pounds.  He is busy cooking up 
+something that smells pretty good.
+~
+Race human~
+Align 2 2
+Level 30
+Hitroll 1
+HitDice 5d5+140
+ManaDice 5d5+245
+DamDice 4d6+8
+DamType punch
+AC -90 -90 -90 -70
+Wealth 150
+Act    npc dont_wander no_tame stay_area warrior~
+Off    bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#944
+Name grumpy monk~
+ShortD a grumpy monk~
+LongD A grumpy monk is here, looking pissed off about something.~
+Desc This male human looks to be in a pretty bad mood, judging from the look on 
+his face.  He is pissed off about something, maybe because you have 
+disturbed his meditations?. 
+~
+Race human~
+Align 0 3
+Level 40
+Hitroll 1
+HitDice 5d6+235
+ManaDice 5d6+295
+DamDice 4d8+13
+DamType punch
+AC -130 -130 -130 -100
+Wealth 200
+Act    npc no_tame stay_area cleric~
+Off    bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#945
+Name young boy~
+ShortD a young boy~
+LongD A young boy is here, running an errand.~
+Desc This young boy is dressed in simple robes,  He is too young to be a monk yet, 
+but is well on his way.  He is currently rushing about with some task.
+~
+Race human~
+Align 1 1
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+120
+DamDice 1d6+1
+DamType punch
+AC 50 50 50 50
+Wealth 25
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#946
+Name bird sparrow~
+ShortD a small sparrow~
+LongD A small sparrow is building a nest here.~
+Desc This bird is small and quick, and has brown feathers.
+~
+Race song bird~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+100
+DamDice 1d4+0
+DamType peck
+AC 90 90 90 60
+Wealth 10
+Act    npc dont_wander stay_area~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal bird~
+Part   head arms legs heart brains guts feet ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+END
+
+#947
+Name monk librarian~
+ShortD a monk librarian~
+LongD A monk librarian is shelving books here.~
+Desc This monk is small but he is carrying a pretty heavy stack of books.  He is 
+very studious looking, and wears spectacles.
+~
+Race human~
+Align 3 3
+Level 45
+Hitroll 1
+HitDice 5d7+255
+ManaDice 5d7+320
+DamDice 6d6+16
+DamType punch
+AC -150 -150 -150 -120
+Wealth 225
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_invis detect_hidden protect_evil~
+Off    bash~
+Vuln   holy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#948
+Name monk healer~
+ShortD a monk healer~
+LongD A monk healer is here, rearranging the shelves.~
+Desc This monk looks very old and wise.  He is quite frail but does seem to have 
+an aura of power about him.
+~
+Race human~
+Align 3 3
+XPMod 115
+Level 50
+Hitroll 2
+HitDice 5d9+285
+ManaDice 5d9+345
+DamDice 5d8+21
+DamType punch
+AC -210 -210 -220 -180
+Wealth 250
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_evil detect_invis sanctuary~
+Off    bash parry~
+Vuln   charm holy mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#949
+Name transparent wraith~
+ShortD a transparent wraith~
+LongD A slightly transparent wraith is floating just above the ground here.~
+Desc Something has prevented this poor soul from its final rest.  The body of 
+someone entombed here has faded away until it became this foul undead 
+creature.
+~
+Race human~
+Align 0 -3
+XPMod 110
+Level 74
+Hitroll 2
+HitDice 8d12+400
+ManaDice 5d10+900
+DamDice 9d10+41
+DamType drain
+AC -520 -520 -520 -420
+Wealth 0
+Act    npc no_tame stay_area undead~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good protect_good haste~
+Off    area_attack disarm dodge fade fast parry~
+Imm    charm poison negative mental disease drowning~
+Vuln   summon holy~
+Form   edible instant_decay sentient undead mist biped mammal~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#950
+Name hazy white ghost~
+ShortD a hazy white ghost~
+LongD A hazy white ghost floats here.~
+Desc This spirit is only visible as a thin hazy cloud, pulsating in the air in 
+front of you.
+~
+Race human~
+Align 0 -2
+XPMod 110
+Level 64
+Hitroll 2
+HitDice 7d11+360
+ManaDice 5d10+400
+DamDice 8d8+35
+DamType chill
+AC -420 -440 -410 -350
+Wealth 0
+Act    npc no_tame stay_area undead~
+AffBy  detect_invis detect_hidden~
+Off    area_attack fade fast~
+Imm    charm poison negative mental disease drowning~
+Vuln   holy~
+Form   edible instant_decay sentient undead mist biped mammal~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#951
+Name rotting corpe zombie~
+ShortD a rotting corpse~
+LongD A rotting corpse is roaming around here.~
+Desc This disgusting creature may once have been a real live human, but now is 
+little more than an undead shell of rotting flesh.  Chunks of flesh are torn 
+out of the body in various place, exposing the bones beneath, and the stench 
+is unbelieveable.
+~
+Race human~
+Align -2 -3
+XPMod 110
+Level 60
+Hitroll 2
+HitDice 6d10+320
+ManaDice 6d10+320
+DamDice 8d6+28
+DamType chomp
+AC -310 -310 -310 -260
+Wealth 0
+Act    npc no_tame aggressive stay_area undead~
+Off    bash~
+Imm    charm poison negative mental disease drowning~
+Vuln   holy~
+Form   edible poison sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#952
+Name huge animated skeleton~
+ShortD a skeleton~
+LongD A huge animated skeleton is wandering the area here.~
+Desc This flesh of this former resident seems to have rotted completely away 
+before some evil force animated or possesed it.  It is pretty big, and would 
+have been a huge person in life.
+~
+Race human~
+Align -1 -3
+XPMod 110
+Level 65
+Hitroll 2
+HitDice 7d10+340
+ManaDice 7d10+340
+DamDice 7d8+33
+DamType beating
+AC -380 -380 -370 -340
+Wealth 0
+Act    npc no_tame aggressive stay_area undead~
+Off    disarm dodge parry~
+Imm    charm poison negative mental disease drowning~
+Vuln   holy~
+Form   magical sentient undead biped mammal~
+Part   head arms legs hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#953
+Name leering ghoul~
+ShortD a ghoul~
+LongD A ghoul is here, leering evilly at you.~
+Desc This undead creature has been pretty well preserved.  It looks soemwhat 
+intelligent, and is leerinig at you with a very evil look.
+~
+Race human~
+Align -3 -3
+XPMod 110
+Level 71
+Hitroll 2
+HitDice 8d11+380
+ManaDice 7d11+380
+DamDice 8d9+40
+DamType pound
+AC -470 -470 -470 -420
+Wealth 0
+Act    npc no_tame stay_area undead~
+AffBy  detect_invis detect_hidden haste~
+Off    bash disarm dodge fast parry~
+Imm    charm poison negative mental disease drowning~
+Vuln   holy~
+Form   edible poison sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#954
+Name ancient vampire~
+ShortD the ancient vampire~
+LongD An ancient vampire is staring at you with absolute hatred.~
+Desc This ancient creature is as evil as they get.  The look of absolute
+malice in its eyes is beyond description.  The vampire is dressed in dark
+clothing, and has pale white skin with black hair and eyes.  
+~
+Race human~
+Align 0 -3
+XPMod 120
+Level 81
+Hitroll 4
+HitDice 9d12+450
+ManaDice 9d12+600
+DamDice 10d10+48
+DamType drain
+AC -540 -540 -540 -450
+Wealth 810
+Act    npc dont_wander scavenger no_tame stay_area undead~
+AffBy  detect_evil detect_invis detect_hidden detect_good infrared haste dark_vision~
+Off    disarm dodge fade fast kick parry~
+Imm    summon charm poison negative mental disease drowning~
+Res    cold lightning energy~
+Vuln   fire holy~
+Form   instant_decay sentient undead biped~
+Part   head arms legs heart brains guts hands feet fingers~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#940
+Name simple brown robe~
+Short a simple `#`ybrown`^ robe~
+Desc A simple `#`ybrown`^ robe has been left here.~
+Level 5
+ItemType armor~
+Cost 95
+Asize 5
+Rsize 50
+Values 2 2 2 2 0
+Weight 5
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc simple brown robe~
+A plain old simple brown robe, made of cotton.
+~
+End
+
+#941
+Name pine quarterstaff~
+Short a pine quarterstaff~
+Desc A pine quarterstaff has been left here.~
+Level 25
+ItemType weapon~
+Cost 500
+Asize 35
+Rsize 50
+Values exotic 3 9 beating 0
+Weight 20
+Material wood~
+Extra    bless nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc pine quarterstaff~
+A well-made pine quarterstaff.
+~
+End
+
+#942
+Name platinum amulet~
+Short a `#`Splatinum`^ amulet~
+Desc A `#`Splatinum`^ amulet has been left here.~
+Level 50
+ItemType jewelry~
+Cost 1000
+Asize 4
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material platinum~
+Extra    magic bless antievil nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage cleric druid paladin spellfilcher~
+Affect modifier -1 50 -1 mana 100 0
+ExtraDesc platinum amulet~
+A finely made platinum amulet.  There are religious symbols carved on it.
+~
+End
+
+#943
+Name heavy iron key~
+Short a heavy iron key~
+Desc A heavy iron key has been left here.~
+Level 1
+ItemType key~
+Cost 1
+Asize 4
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    burnproof~
+Wear     take hold~
+ExtraDesc heavy iron key~
+A plain old heavy iron key.
+~
+End
+
+#944
+Name piece firewood~
+Short a piece of cut firewood~
+Desc A piece of cut firewood has been left here.~
+Level 1
+ItemType weapon~
+Cost 5
+Asize 20
+Rsize 50
+Values mace 1 6 beating 0
+Weight 20
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc piece firewood~
+A piece of firewood.  Looks like maple.
+~
+End
+
+#945
+Name dusty old tome~
+Short a dusty old tome~
+Desc A dusty old tome has been left here.~
+Level 45
+ItemType scroll~
+Cost 800
+Asize 14
+Rsize 50
+Values 27 'mass healing' barkskin '' ''
+Weight 5
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc dusty old tome~
+An old book, with magical and religious writing inside.
+~
+End
+
+#946
+Name maple quarterstaff~
+Short a maple quarterstaff~
+Desc A maple quarterstaff has been left here.~
+Level 35
+ItemType weapon~
+Cost 700
+Asize 35
+Rsize 50
+Values exotic 2 19 beating 0
+Weight 20
+Material wood~
+Extra    bless nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc maple quarterstaff~
+A well-made maple quarterstaff.
+~
+End
+
+#947
+Name oak quarterstaff~
+Short an oak quarterstaff~
+Desc An oak quarterstaff has been left here.~
+Level 55
+ItemType weapon~
+Cost 1100
+Asize 35
+Rsize 50
+Values exotic 4 14 beating 0
+Weight 20
+Material wood~
+Extra    bless nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc oak quarterstaff~
+A well-made oak quarterstaff.
+~
+End
+
+#948
+Name poplar quarterstaff~
+Short a poplar quarterstaff~
+Desc A poplar quarterstaff has been left here.~
+Level 40
+ItemType weapon~
+Cost 800
+Asize 35
+Rsize 50
+Values exotic 2 22 beating 0
+Weight 20
+Material wood~
+Extra    bless nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc poplar quarterstaff~
+A well-made poplar quarterstaff.
+~
+End
+
+#949
+Name cherrywood quarterstaff~
+Short a `#`rcherrywood`^ quarterstaff~
+Desc A `#`rcherrywood`^ quarterstaff has been left here.~
+Level 45
+ItemType weapon~
+Cost 900
+Asize 35
+Rsize 50
+Values exotic 3 16 beating 0
+Weight 20
+Material wood~
+Extra    bless nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc cherrywood quarterstaff~
+A well-made cherrywood quarterstaff.
+~
+End
+
+#950
+Name white ash quarterstaff~
+Short a `#`wwhite ash`^ quarterstaff~
+Desc A `#`wwhite ash`^ quarterstaff has been left here.~
+Level 50
+ItemType weapon~
+Cost 1000
+Asize 35
+Rsize 50
+Values staff 4 13 beating 0
+Weight 20
+Material wood~
+Extra    bless nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc white ash quarterstaff~
+A well-made white ash quarterstaff.
+~
+End
+
+#951
+Name copper amulet~
+Short a `#`ycopper`^ amulet~
+Desc A `#`ycopper`^ amulet has been left here.~
+Level 65
+ItemType jewelry~
+Cost 1300
+Asize 4
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material platinum~
+Extra    magic bless antievil nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage cleric druid paladin~
+Affect modifier -1 65 -1 hp 4 0
+Affect modifier -1 65 -1 mana 100 0
+ExtraDesc copper amulet~
+A finely made copper amulet.  There are religious symbols carved on it.
+~
+End
+
+#952
+Name brass amulet~
+Short a `#`ybrass`^ amulet~
+Desc A `#`ybrass`^ amulet has been left here.~
+Level 73
+ItemType jewelry~
+Cost 1460
+Asize 4
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material brass~
+Extra    magic bless antievil antineutral nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage cleric druid paladin~
+Affect modifier -1 73 -1 mana 100 0
+Affect modifier -1 73 -1 selfdiscipline 3 0
+ExtraDesc brass amulet~
+A finely made brass amulet.  There are religious symbols carved on it.
+~
+End
+
+#953
+Name steel amulet~
+Short a `#`Ssteel`^ amulet~
+Desc A `#`Ssteel`^ amulet has been left here.~
+Level 80
+ItemType jewelry~
+Cost 1600
+Asize 4
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material steel~
+Extra    magic bless antievil antineutral nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage cleric druid paladin~
+Affect modifier -1 80 -1 ac -10 0
+Affect modifier -1 80 -1 hp 4 0
+Affect modifier -1 80 -1 mana 100 0
+ExtraDesc brass amulet~
+A finely made brass amulet.  There are religious symbols carved on it.
+~
+End
+
+#954
+Name fine brown robe~
+Short a fine `#`ybrown`^ robe~
+Desc A fine `#`ybrown`^ robe has been left here.~
+Level 50
+ItemType armor~
+Cost 1000
+Asize 5
+Rsize 50
+Values 12 12 12 15 0
+Weight 5
+Material cotton~
+Extra    antievil antineutral nonmetal nodegrade~
+Wear     take about~
+ClassAllowances mage cleric druid paladin~
+Affect modifier -1 50 -1 mana 60 0
+Affect modifier -1 50 -1 reasoning 3 0
+ExtraDesc fine brown robe~
+An extremely well made brown cotton robe.
+~
+End
+
+#955
+Name fancy pewter chalice~
+Short a fancy pewter chalice~
+Desc A fancy pewter chalice has been left here.~
+Level 1
+ItemType treasure~
+Cost 1000
+Asize 4
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material pewter~
+Extra    nodegrade burnproof~
+Wear     take hold~
+ExtraDesc fancy pewter chalice~
+A finely crafted pewter chalice.  There are engraved religious symbols.
+~
+End
+
+#956
+Name simple brown robe~
+Short a simple `#`ybrown`^ robe~
+Desc A simple `#`ybrown`^ robe has been left here.~
+Level 5
+ItemType armor~
+Cost 95
+Asize 5
+Rsize 50
+Values 2 2 2 2 0
+Weight 5
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc simple brown robe~
+A plain old simple brown robe, made of cotton.
+~
+End
+
+#957
+Name simple brown robe~
+Short a simple `#`ybrown`^ robe~
+Desc A simple `#`ybrown`^ robe has been left here.~
+Level 5
+ItemType armor~
+Cost 95
+Asize 5
+Rsize 50
+Values 2 2 2 2 0
+Weight 5
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc simple brown robe~
+A plain old simple brown robe, made of cotton.
+~
+End
+
+#958
+Name simple brown robe~
+Short a simple `#`ybrown`^ robe~
+Desc A simple `#`ybrown`^ robe has been left here.~
+Level 5
+ItemType armor~
+Cost 95
+Asize 5
+Rsize 50
+Values 2 2 2 2 0
+Weight 5
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc simple brown robe~
+A plain old simple brown robe, made of cotton.
+~
+End
+
+#959
+Name simple brown robe~
+Short a simple `#`ybrown`^ robe~
+Desc A simple `#`ybrown`^ robe has been left here.~
+Level 5
+ItemType armor~
+Cost 95
+Asize 5
+Rsize 50
+Values 2 2 2 2 0
+Weight 5
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc simple brown robe~
+A plain old simple brown robe, made of cotton.
+~
+End
+
+#960
+Name mithril amulet~
+Short a mithril amulet~
+Desc A mithril amulet has been left here.~
+Level 85
+ItemType jewelry~
+Cost 1750
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material mithril~
+Extra    magic antievil antineutral nolocate nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage cleric druid paladin~
+Affect modifier -1 85 -1 saves -2 0
+Affect modifier -1 85 -1 hp 4 0
+Affect modifier -1 85 -1 mana 100 0
+Affect modifier -1 85 -1 damroll 2 0
+Affect modifier -1 85 -1 hitroll 2 0
+ExtraDesc mithril amulet~
+This amulet is an incredible piece of workmanship, seemingly fashioned by
+the hands of some god.  It is made of mithril, and upon it are fashioned
+unrecognizable runes.  
+~
+End
+
+#961
+Name pitch black cape~
+Short a `#`Spitch black`^ cape~
+Desc A `#`Spitch black`^ cape has been left here.~
+Level 85
+ItemType armor~
+Cost 1700
+Asize 0
+Rsize 50
+Values 22 21 22 14 0
+Weight 5
+Material cloth~
+Extra    evil magic antigood nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances cleric warrior paladin ranger~
+Affect modifier -1 85 -1 strength 4 0
+Affect modifier -1 85 -1 hitroll 4 0
+Affect modifier -1 85 -1 damroll 4 0
+ExtraDesc pitch black cape~
+This cape is extremely finely made of the finest materials.  It has an
+unearthly feel to it.  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#940
+Name Entry Room~
+Desc This small room is bare aside from a few wooden chairs along one wall, and 
+some small baskets on the floor.  The walls are of dark stone and are very 
+smooth.  To the south is a wooden doorway, and an open arch is north.  A 
+dimly lit hallway runs east and west.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc chairs baskets~
+The chairs and baskets are very plain.  Functional, but not fancy.
+~
+Exit north 955
+EDesc A courtyard.
+~
+Exit east 941
+EDesc Hallway.
+~
+Exit south 30234
+Exit west 953
+EDesc Hallway.
+~
+End
+
+
+#941
+Name Hallway~
+Desc This hallway is dimly lit and runs east and west.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 942
+EDesc Hallway.
+~
+Exit west 940
+EDesc Entry Room.
+~
+End
+
+
+#942
+Name Hallway~
+Desc This hallway is dimly lit and runs west and north.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 943
+EDesc Hallway.
+~
+Exit west 941
+EDesc Hallway.
+~
+End
+
+
+#943
+Name Hallway~
+Desc This hallway is dimly lit and runs north and south.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.  There is a 
+small room through a doorway to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 944
+EDesc Hallway.
+~
+Exit east 971
+EDesc Sparse Living Quarters.
+~
+Exit south 942
+EDesc Hallway.
+~
+End
+
+
+#944
+Name Hallway~
+Desc This hallway is dimly lit and runs north and south.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.  There is a 
+small room through a doorway to the east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 945
+EDesc Hallway.
+~
+Exit east 970
+EDesc Sparse Living Quarters.
+~
+Exit south 943
+EDesc Hallway.
+~
+End
+
+
+#945
+Name Hallway~
+Desc This hallway is dimly lit and runs west and south.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.  There are 
+small rooms through doorways to the north and east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 968
+EDesc Living Quarters.
+~
+Exit east 969
+EDesc Sparse Living Quarters.
+~
+Exit south 944
+EDesc Hallway.
+~
+Exit west 946
+EDesc Hallway.
+~
+End
+
+
+#946
+Name Hallway~
+Desc This hallway is dimly lit and runs east and west.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.  A small room 
+is through a doorway to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 967
+EDesc Stair Room.
+~
+Exit east 945
+EDesc Hallway.
+~
+Exit west 947
+EDesc Small Chamber.
+~
+End
+
+
+#947
+Name Small Chamber~
+Desc This small chamber is completely bare except for a few uncomfortable looking 
+chairs.  There are open arches to the north and south, and hallways run east 
+and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 965
+EDesc Shrine.
+~
+Exit east 946
+EDesc Hallway.
+~
+Exit south 958
+EDesc Path through Garden.
+~
+Exit west 948
+EDesc Hallway.
+~
+End
+
+
+#948
+Name Hallway~
+Desc This hallway is dimly lit and runs east and west.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.  A small room 
+is through an opening to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 964
+EDesc Stair Room.
+~
+Exit east 947
+EDesc Small Chamber.
+~
+Exit west 949
+EDesc Hallway.
+~
+End
+
+
+#949
+Name Hallway~
+Desc This hallway is dimly lit and runs south and east.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.  There are 
+small rooms through doorways to the north and west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 963
+EDesc Library.
+~
+Exit east 948
+EDesc Hallway.
+~
+Exit south 950
+EDesc Hallway.
+~
+Exit west 962
+EDesc Infirmary.
+~
+End
+
+
+#950
+Name Hallway~
+Desc This hallway is dimly lit and runs north and south.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.  There is a 
+large room through a doorway to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 949
+EDesc Hallway.
+~
+Exit south 951
+EDesc Hallway.
+~
+Exit west 961
+EDesc Kitchen.
+~
+End
+
+
+#951
+Name Hallway~
+Desc This hallway is dimly lit and runs north and south.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.  There is a 
+small room through a doorway to the west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 950
+EDesc Hallway.
+~
+Exit south 952
+EDesc Hallway.
+~
+Exit west 960
+EDesc Storage Room.
+~
+End
+
+
+#952
+Name Hallway~
+Desc This hallway is dimly lit and runs north and east.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 951
+EDesc Hallway.
+~
+Exit east 953
+EDesc Hallway.
+~
+End
+
+
+#953
+Name Hallway~
+Desc This hallway is dimly lit and runs east and west.  The walls are of dark 
+stone, and there are no adornments or decorations of any type.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 940
+EDesc Entry Room.
+~
+Exit west 952
+EDesc Hallway.
+~
+End
+
+
+#954
+Name Courtyard~
+Desc The ground in this nice little courtyard is covered by small stone tiles.  
+There are a few old wooden benches scattered about, and a few plants in small 
+pots.  A stone wall blocks the way south and west, but the courtyard 
+continues east, and a lush garden is north.
+~
+Sector city~
+ExtraDesc stone tiles~
+Small stone tiles, a few inches wide, have been used to pave the courtyard.
+~
+ExtraDesc benches~
+Old, weathered, wooden benches.
+~
+ExtraDesc garden lush~
+A thick lush garden, full of colorful trees and flowers.
+~
+Exit north 957
+EDesc Garden.
+~
+Exit east 955
+EDesc Courtyard.
+~
+End
+
+
+#955
+Name Courtyard~
+Desc The ground in this nice little courtyard is covered by small stone tiles.  
+There are a few old wooden benches scattered about, and a few plants in small 
+pots.  There is an open archway that leads inside to the south, and a  path 
+heads north through a lush garden.
+~
+Sector city~
+ExtraDesc stone tiles~
+Small stone tiles, a few inches wide, have been used to pave the courtyard.
+~
+ExtraDesc benches~
+Old, weathered, wooden benches.
+~
+ExtraDesc garden plants lush~
+A thick lush garden, full of colorful trees and flowers.
+~
+Exit north 958
+EDesc Path through Garden.
+~
+Exit east 956
+EDesc Courtyard.
+~
+Exit south 940
+EDesc A small room.
+~
+Exit west 954
+EDesc Courtyard.
+~
+End
+
+
+#956
+Name Courtyard~
+Desc The ground in this nice little courtyard is covered by small stone tiles.  
+There are a few old wooden benches scattered about, and a few plants in small 
+pots.  A stone wall blocks the way south and east, but the courtyard 
+continues east, and a lush garden is north.
+~
+Sector city~
+ExtraDesc stone tiles~
+Small stone tiles, a few inches wide, have been used to pave the courtyard.
+~
+ExtraDesc benches~
+Old, weathered, wooden benches.
+~
+ExtraDesc garden lush~
+A thick lush garden, full of colorful trees and flowers.
+~
+Exit north 959
+EDesc Garden.
+~
+Exit west 955
+EDesc Courtyard.
+~
+End
+
+
+#957
+Name Garden~
+Desc You are in the midst of a nicely tended garden, full of plants and trees of 
+all varieties.  Many of them are of the flowering type, making the place very 
+colorful.  The way west and north are blocked by a stone wall, while a  small 
+path is to the east and a courtyard south.
+~
+Sector field~
+ExtraDesc plants trees flowering~
+All sort os plants and trees, all very healthy and colorful.  They seem to be
+well cared for.
+~
+Exit east 958
+EDesc Path through Garden.
+~
+Exit south 954
+EDesc Courtyard.
+~
+End
+
+
+#958
+Name Path through Garden~
+Desc Here a path runs north and south through a nice, lush garden.  Flowering 
+plants and trees surround you, providing quite a variety of colors and 
+aromas.  North the path leads inside through an archway, and south to a small 
+courtyard.
+~
+Sector field~
+ExtraDesc plants trees flowering~
+All sort os plants and trees, all very healthy and colorful.  They seem to be
+well cared for.
+~
+Exit north 947
+EDesc Small Chamber.
+~
+Exit east 959
+EDesc Garden.
+~
+Exit south 955
+EDesc Courtyard.
+~
+Exit west 957
+EDesc Garden.
+~
+End
+
+
+#959
+Name Garden~
+Desc You are in the midst of a nicely tended garden, full of plants and trees of 
+all varieties.  Many of them are of the flowering type, making the place very 
+colorful.  The way east and north are blocked by a stone wall, while a  small 
+path is to the west and a courtyard south.
+~
+Sector field~
+ExtraDesc plants trees flowering~
+All sort os plants and trees, all very healthy and colorful.  They seem to be
+well cared for.
+~
+Exit south 956
+EDesc Courtyard.
+~
+Exit west 958
+EDesc Path through Garden.
+~
+End
+
+
+#960
+Name Storage Room~
+Desc This small room appears to be used for storage of little-used items.  There 
+are a few stacks of cushions, and shelves full of religious items and books. 
+The only exit is east.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc cushions~
+Cushions for kneeling, as found in churches and place of worship.
+~
+ExtraDesc religious items books~
+Upon the shelves are old religious symbols and items used in worship.  There
+are some old books also, though none seem very interesting.
+~
+Exit east 951
+EDesc Hallway.
+~
+End
+
+
+#961
+Name Kitchen~
+Desc This large room is obviously a kitchen.  There are several tables for 
+preparing food, and cooking implements hang all over the walls.  Wooden 
+shelves are also placed about and covered with food, some packaged and some 
+fresh from the garden.  The only exit is east.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc tables~
+Tables with stone tops, for preparing food.
+~
+ExtraDesc cooking implements~
+Knives, big spoons, pots, pans, you name it...
+~
+ExtraDesc food~
+Lots of different types of healthy food, some dried for preservation.
+~
+Exit east 950
+EDesc Hallway.
+~
+End
+
+
+#962
+Name Infirmary~
+Desc This small room is apparently where the inhabitants treat any sick or wounded 
+people.  There are some hard beds against one wall, and a few shelves with 
+bandages and small jars of what is probably ointments and medications.  The 
+only exit is east.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc hard beds~
+They don't look very comfortable.
+~
+ExtraDesc bandages jars ointments medication~
+Lots of types of medicine and medical items.
+~
+Exit east 949
+EDesc Hallway.
+~
+End
+
+
+#963
+Name Library~
+Desc This small library is completely packed with books.  Every available space 
+either has a shelf or case filled with them.  Most of the books seem very 
+old, but are in very good shape and appear to have been well cared for.  The 
+only exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc shelf case books~
+There are old tomes packed in every available space in this room.
+~
+Exit south 949
+EDesc Hallway.
+~
+End
+
+
+#964
+Name Stair Room~
+Desc This very small room has no purpose except to house a staircase that leads 
+down.  There is a musty smell, and a lot of dust, giving the overall 
+appearance that not many people come in here.  There is an exit south to a 
+hallway.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc dust~
+A thick layer of dust covers everything.
+~
+Exit south 948
+EDesc Hallway.
+~
+Exit down 972
+EDesc Stairs.
+~
+End
+
+
+#965
+Name Shrine~
+Desc This room is dominated by a huge stone altar in its north end.  Upon the 
+altar are some religious items, including a few bowls and candles, and it is 
+surrounded by cushions for kneeling.  There are a few hardwood benches in the 
+southern part of the room, near the only exit.  A few tapestries are hung on 
+the wall behind the altar.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stone altar~
+A large altar carved from grey stone.  Upen it is a cloth cover, and some items.
+~
+ExtraDesc bowls candles~
+Regular religious worship items, not worth much.
+~
+ExtraDesc cushions~
+Pads to kneel on while praying.
+~
+ExtraDesc hardwood benches~
+Long hard benches.
+~
+ExtraDesc tapestry tapestries~
+The tapestries depict a great light in the sky, shedding its brilliance all 
+over mountains, plains, forests, and oceans.  While examining them you notice 
+a secret door concealed behind them!.
+~
+Exit north 966
+EFlags door closed nolock~
+EKeywords door~
+EDesc Small Hidden Room.
+~
+Exit south 947
+EDesc Small Chamber.
+~
+End
+
+
+#966
+Name Small Hidden Room~
+Desc This tiny room is bare except for a small table.  The exit is south, and 
+seems to be well concealed from the other direction.  Something valuable or 
+important to the inhabitants must be kept here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 965
+EFlags door closed nolock~
+EKeywords door~
+EDesc Shrine.
+~
+End
+
+
+#967
+Name Stair Room~
+Desc This very small room has no purpose except to house a staircase that leads 
+up.  The rooms is a bit drafty, maybe the stairs lead to the outside.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 946
+EDesc Hallway.
+~
+Exit up 982
+EDesc Bell Tower.
+~
+End
+
+
+#968
+Name Living Quarters~
+Desc This medium-sized room is warm and much more finely appointed than any of the 
+surrounding rooms you may have seen.  There is a narrow but comfortable bed, 
+a few padded chairs, a small table, and a wooden desk.  The floor is covered 
+by a thin red rug, and the only exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bed chair table desk~
+All the furniture is very nice, and looks quite comfortable.
+~
+ExtraDesc red rug~
+A nice red rug covers the stone floor.
+~
+Exit south 945
+EDesc Hallway.
+~
+End
+
+
+#969
+Name Sparse Living Quarters~
+Desc These living quarters are very sparse.  The walls and floor are cold stone, 
+with no carpet or rug.  Two hard and narrow beds sit along the walls, with a 
+small wooden desk between them.  An old wooden chair sits near the desk, and 
+the only exit is west.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bed desk chair~
+All of the furniture is very plain, and looks really uncomfortable.
+~
+Exit west 945
+EDesc Hallway.
+~
+End
+
+
+#970
+Name Sparse Living Quarters~
+Desc These living quarters are very sparse.  The walls and floor are cold stone, 
+with no carpet or rug.  Two hard and narrow beds sit along the walls, with a 
+small wooden desk between them.  An old wooden chair sits near the desk, and 
+the only exit is west.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bed desk chair~
+All of the furniture is very plain, and looks really uncomfortable.
+~
+Exit west 944
+EDesc Hallway.
+~
+End
+
+
+#971
+Name Sparse Living Quarters~
+Desc These living quarters are very sparse.  The walls and floor are cold stone, 
+with no carpet or rug.  Two hard and narrow beds sit along the walls, with a 
+small wooden desk between them.  An old wooden chair sits near the desk, and 
+the only exit is west.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bed desk chair~
+All of the furniture is very plain, and looks really uncomfortable.
+~
+Exit west 943
+EDesc Hallway.
+~
+End
+
+
+#972
+Name Stairs~
+Desc You are at the bottom of a staircase leading up.  This really isn't a room at 
+all, just a small area with a thick wooden door to the south.  There are
+runes of warding and protection on the door.
+~
+RoomFlags no_mob indoors~
+Sector inside~
+ExtraDesc runes warding protection~
+It is not certain whether the runes are to keep people out, or to keep things
+inside!
+~
+ExtraDesc thick wooden door~
+The door is very thick and strong.
+~
+Exit south 973
+EFlags door closed locked nopass infuriating~
+EKeyvnum 943
+EKeywords door~
+EDesc Dark Hallway.
+~
+Exit up 964
+EDesc Stair Room.
+~
+End
+
+
+#973
+Name Dark Hallway~
+Desc This hallway carved from stone runs south into darkness, or north to a thick 
+wooden door.  You are in catacombs, if the small entombment chambers to the 
+east and west are any indication.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 972
+EFlags door closed locked nopass infuriating~
+EKeyvnum 943
+EKeywords door~
+EDesc Stairs.
+~
+Exit east 979
+EDesc Tomb.
+~
+Exit south 974
+EDesc Dark Hallway.
+~
+Exit west 976
+EDesc Tomb.
+~
+End
+
+
+#974
+Name Dark Hallway~
+Desc This hallway carved from stone runs north and south into darkness.  You are 
+in catacombs, if the small entombment chambers to the east and west are any 
+indication.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 973
+EFlags door nopass infuriating~
+EKeyvnum 943
+EKeywords door~
+EDesc Dark Hallway.
+~
+Exit east 980
+EDesc Tomb.
+~
+Exit south 975
+EDesc Dark Hallway.
+~
+Exit west 977
+EDesc Tomb.
+~
+End
+
+
+#975
+Name Dark Hallway~
+Desc This hallway carved from stone runs north into the darkness, but south ends 
+abruptly in a stone wall.  You are in catacombs, if the small entombment 
+chambers to the east and west are any indication.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc stone wall~
+There is something strange about the wall.
+~
+Exit north 974
+EDesc Dark Hallway.
+~
+Exit east 981
+EDesc Tomb.
+~
+Exit south 983
+EFlags door closed infuriating~
+EKeywords door~
+Exit west 978
+EDesc Tomb.
+~
+End
+
+
+#976
+Name Tomb~
+Desc This small alcove is set into the stone, and is the final resting place of a 
+few of the former inhabitants of this place.  It is bare except for two stone 
+slabs, upon which are carved sigils and wards.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc stone slabs~
+The final resting place for some former inhabitant.
+~
+ExtraDesc sigils wards~
+Carved into the stone, they are meant to protect the body after death.
+~
+Exit east 973
+EDesc Dark Hallway.
+~
+End
+
+
+#977
+Name Tomb~
+Desc This small alcove is set into the stone, and is the final resting place of a 
+few of the former inhabitants of this place.  It is bare except for two stone 
+slabs, upon which are carved sigils and wards.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc stone slabs~
+The final resting place for some former inhabitant.
+~
+ExtraDesc sigils wards~
+Carved into the stone, they are meant to protect the body after death.
+~
+Exit east 974
+EDesc Dark Hallway.
+~
+End
+
+
+#978
+Name Tomb~
+Desc This small alcove is set into the stone, and is the final resting place of a 
+few of the former inhabitants of this place.  It is bare except for two stone 
+slabs, upon which are carved sigils and wards.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc stone slabs~
+The final resting place for some former inhabitant.
+~
+ExtraDesc sigils wards~
+Carved into the stone, they are meant to protect the body after death.
+~
+Exit east 975
+EDesc Dark Hallway.
+~
+End
+
+
+#979
+Name Tomb~
+Desc This small alcove is set into the stone, and is the final resting place of a 
+few of the former inhabitants of this place.  It is bare except for two stone 
+slabs, upon which are carved sigils and wards.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc stone slabs~
+The final resting place for some former inhabitant.
+~
+ExtraDesc sigils wards~
+Carved into the stone, they are meant to protect the body after death.
+~
+Exit west 973
+EDesc Dark Hallway.
+~
+End
+
+
+#980
+Name Tomb~
+Desc This small alcove is set into the stone, and is the final resting place of a 
+few of the former inhabitants of this place.  It is bare except for two stone 
+slabs, upon which are carved sigils and wards.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc stone slabs~
+The final resting place for some former inhabitant.
+~
+ExtraDesc sigils wards~
+Carved into the stone, they are meant to protect the body after death.
+~
+Exit west 974
+EDesc Dark Hallway.
+~
+End
+
+
+#981
+Name Tomb~
+Desc This small alcove is set into the stone, and is the final resting place of a 
+few of the former inhabitants of this place.  It is bare except for two stone 
+slabs, upon which are carved sigils and wards.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc stone slabs~
+The final resting place for some former inhabitant.
+~
+ExtraDesc sigils wards~
+Carved into the stone, they are meant to protect the body after death.
+~
+Exit west 975
+EDesc Dark Hallway.
+~
+End
+
+
+#982
+Name Bell Tower~
+Desc You are inside a small bell tower above what looks to be a small stone 
+monastery.  There is a heavy iron bell hanging in the middle, and openings to 
+the outside world all around the walls.  You can see the ocean down the slope 
+to the east, and tall trees all about to the west.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc heavy iron bell~
+The bell is huge!  It is however missing its ringer.
+~
+ExtraDesc ocean~
+You can see the ocean to the east.
+~
+ExtraDesc tall trees~
+The forest stretches its way west from here.
+~
+Exit down 967
+EDesc Stair Room.
+~
+End
+
+
+#983
+Name Small Dark Tomb~
+Desc This small dark room seems to be the final resting place for someone of
+importance.  Hanging from the walls are the remains of old rotten
+tapestries, and colorful mosaics are placed in several spots.  A raised
+platform sits in the middle of the room, taking up most of the space.  Upon
+it is an open stone coffin, from which evil seems to flow.  
+~
+RoomFlags indoors~
+Sector inside~
+Mana 75
+Heal 75
+Exit north 975
+EFlags door closed infuriating~
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 942 spec_cast_cleric
+M 944 spec_cast_cleric
+M 947 spec_cast_cleric
+M 948 spec_cast_cleric
+M 949 spec_cast_undead
+M 950 spec_cast_undead
+M 951 spec_cast_undead
+M 952 spec_cast_undead
+M 953 spec_cast_undead
+M 954 spec_cast_undead
+S
+
+
+
+#RESETS2
+M 0 940 10 941 2
+E 0 940 100 about~
+E 0 941 100 wielded~
+M 0 940 10 951 2
+E 0 940 100 about~
+E 0 941 100 wielded~
+M 0 941 4 954 1
+E 0 956 100 about~
+E 0 946 100 wielded~
+M 0 945 5 955 1
+E 0 958 100 about~
+M 0 940 10 957 2
+E 0 940 100 about~
+E 0 941 100 wielded~
+M 0 944 4 959 1
+E 0 957 100 about~
+E 0 948 100 wielded~
+M 0 945 5 960 1
+E 0 958 100 about~
+M 0 943 1 961 1
+E 0 957 100 about~
+E 0 944 100 wielded~
+M 0 944 4 961 1
+E 0 957 100 about~
+E 0 948 100 wielded~
+M 0 948 1 962 1
+E 0 959 100 about~
+E 0 950 100 wielded~
+G 0 3036 -1
+M 0 941 4 963 1
+E 0 956 100 about~
+E 0 946 100 wielded~
+M 0 947 1 963 1
+E 0 958 100 about~
+E 0 949 100 wielded~
+G 0 945 -1
+M 0 941 4 965 1
+E 0 956 100 about~
+E 0 946 100 wielded~
+M 0 944 4 965 1
+E 0 957 100 about~
+E 0 948 100 wielded~
+O 0 955 0 966
+M 0 940 10 967 2
+E 0 940 100 about~
+E 0 941 100 wielded~
+M 0 942 1 968 1
+E 0 954 100 about~
+E 0 947 100 wielded~
+E 0 942 100 neck1~
+G 0 943 -1
+M 0 941 4 969 1
+E 0 956 100 about~
+E 0 946 100 wielded~
+M 0 944 4 970 1
+E 0 957 100 about~
+E 0 948 100 wielded~
+M 0 951 3 976 2
+M 0 950 3 977 2
+G 0 951 -1
+M 0 952 3 977 2
+M 0 950 3 978 2
+G 0 951 -1
+M 0 953 2 978 2
+G 0 952 -1
+M 0 951 3 979 2
+M 0 952 3 980 2
+M 0 949 2 981 1
+G 0 953 -1
+M 0 946 2 982 2
+M 0 954 1 983 1
+E 0 961 -1 about~
+G 0 960 -1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

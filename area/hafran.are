@@ -1,0 +1,2596 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Army of Hafran~
+ShortName   Hafran Army~
+Builders    None~
+Credits     Braem~
+VNUMs       1900 1950
+LRange      45 75
+Security    9
+Colour      R~
+colourcode  `
+MapScale    6
+MapLevel    35
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#1900
+Name guard red cloaked~
+ShortD a red cloaked guard~
+LongD A guard swathed in a red cloak and uniform stands at attention here.~
+Desc This tall human male is dressed completely in red armor and a red cape, and 
+he stands stiffly at attention.  His eyes continually scan the approach to 
+the canyon, searching for any intruders.  He looks fairly young, his skin 
+unmarred by scars or wrinkles.
+~
+Race human~
+Align 0 -2
+Level 48
+Hitroll 2
+HitDice 5d9+290
+ManaDice 3d5+170
+DamDice 6d7+20
+DamType punch
+AC -220 -220 -220 -170
+Wealth 480
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  detect_evil detect_hidden detect_good dark_vision~
+Off    bash dodge kick parry trip assist_vnum~
+Res    drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1901
+Name horse~
+ShortD a horse~
+LongD A horse has been cobbled and tied in a stall here.~
+Desc This horse appears well-care for, if a little overly restrained.  It has a 
+freshly brushed, glossy brown coat, and is currently munching on a bucket 
+of oats.  It is cobbled and also tied by a rope around the neck to a wooden 
+post planted in the ground at the back of its roped-off stall.
+~
+Race horse~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+120
+DamDice 1d6+1
+DamType chomp
+AC 50 50 50 50
+Wealth 0
+Act    npc dont_wander docile stay_area noalign~
+Off    bash fast kick~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#1902
+Name soldier half-dresses~
+ShortD a soldier~
+LongD A half-dressed soldier looks at you in surprise.~
+Desc This tall young man is currently in the process of adorning his uniform and 
+various pieces of armor.  He is unarmed, and stares at you warily while 
+making motions to retrieve his weapons before you can approach.  He is 
+quite muscular, with sandy brown hair and brown eyes.
+~
+Race human~
+Align 2 0
+Level 49
+Hitroll 1
+HitDice 5d9+285
+ManaDice 2d5+165
+DamDice 5d8+20
+DamType punch
+AC -210 -210 -210 -160
+Wealth 490
+Act    npc dont_wander no_tame stay_area warrior~
+Off    dodge kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1902 70~
+END
+
+#1903
+Name prison guard~
+ShortD a prison guard~
+LongD A guard stands at attention before one of the tents here.~
+Desc This guard stands before the doorway to one of the tents that lie just off 
+the path here.  He has a stern expression on his face, and he glares at you 
+as he sees you scrutinizing him.  It is hard to tell what he looks like 
+under the armor he wears, but he looks like a big fellow.
+~
+Race human~
+Align 2 -1
+Level 56
+Hitroll 2
+HitDice 5d10+345
+ManaDice 5d10+300
+DamDice 10d4+24
+DamType beating
+AC -260 -260 -260 -190
+Wealth 560
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil detect_invis detect_good~
+Off    bash dodge trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 1902 100~
+END
+
+#1904
+Name helpless avian prisoner~
+ShortD an avian prisoner~
+LongD A helpless avian lies on the floor with its wings clipped and hands bound.~
+Desc This avian is a sad representative of its noble race.  It is missing an 
+eye, and its feathers are bedraggled and dirty.  To make matters worse, 
+it's wings have been painfully clipped, and it's hands and feet are bound 
+by rusty chains.  It's thin ribs are sticking out prominently from hunger, 
+and several of the slender bones appear to be broken.
+~
+Race avian~
+Align 0 2
+XPMod 90
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 2d5+165
+DamDice 8d4+16
+DamType chomp
+AC -150 -150 -150 -100
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis protect_evil flying weaken slow~
+Res    pierce~
+Vuln   bash mental~
+Form   edible sentient biped bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    random~
+Material unknown
+MProg COMMAND 1900 free avian~
+END
+
+#1905
+Name thin halfling prisoner~
+ShortD a halfling prisoner~
+LongD A thin halfling is chained to a stake in the ground.~
+Desc This halfing looks as if he once were quite stout and well-off, judging by 
+the loose folds of skin hanging from him and the tattered but once-fine 
+clothing he wears, but he is now very thin and in terrible condition.  His 
+curly hair is falling out of his head, and he is missing several teeth.  He 
+lies here in abject misery.
+~
+Race halfling~
+Align -1 1
+XPMod 90
+Level 47
+Hitroll 0
+HitDice 5d8+260
+ManaDice 2d5+160
+DamDice 6d6+17
+DamType scratch
+AC -170 -170 -170 -130
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared weaken slow~
+Res    magic~
+Vuln   charm poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   small~
+Sex    male~
+Material unknown
+MProg COMMAND 1901 free halfling~
+END
+
+#1906
+Name draconian prisoner~
+ShortD a draconian prisoner~
+LongD A draconian lies unconscious on the ground here.~
+Desc This draconian looks like he may have once belonged in the service of the 
+army.  He is naked except for a tattered breech cloth, and lies on the 
+floor in a daze.  His body is covered with oozing wounds, and his scales 
+are dirty and chipped.  The spines on his back are bent or broken, and his 
+wings are tattered and torn.
+~
+Race draconian~
+Align 0 -2
+XPMod 90
+Level 49
+Hitroll 1
+HitDice 5d9+275
+ManaDice 3d5+175
+DamDice 4d10+18
+DamType claw
+AC -190 -190 -190 -130
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  flying weaken slow~
+Off    tail~
+Res    fire cold lightning acid~
+Vuln   pierce lightning poison disease~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP sleeping~
+DefPos sleeping~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#1907
+Name acolyte hafran young~
+ShortD a young acolyte~
+LongD A young acolyte of Hafran is here, praying.~
+Desc This young man is dressed in golden robes trimmed with red.  He kneels 
+before the altar and prays loudly, seemingly unconcerned with your 
+presence.  He wears his blond hair very short, almost shaven, and has a 
+dark tan.
+~
+Race human~
+Align 1 -1
+Level 53
+Hitroll 2
+HitDice 5d9+290
+ManaDice 5d10+300
+DamDice 5d8+20
+DamType pound
+AC -230 -230 -230 -190
+Wealth 530
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_evil detect_good~
+Off    dodge parry~
+Imm    light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1908
+Name priest hafran~
+ShortD a priest of Hafran~
+LongD A priest shouts angrily at your intrusion.~
+Desc This man looks to be slightly older than most of the others in this camp, 
+perhaps middle-aged.  He is dressed in flowing, voluminous robes and 
+carries himself with an air of authority and power.  His dark hair is 
+starting to grey on the edges, but his body is in good shape and he looks 
+an experienced combatant.
+~
+Race human~
+Align 2 -1
+Level 61
+Hitroll 2
+HitDice 5d11+385
+ManaDice 5d11+400
+DamDice 8d6+28
+DamType none
+AC -310 -310 -310 -250
+Wealth 610
+Act    npc dont_wander no_tame aggressive stay_area cleric~
+AffBy  detect_evil detect_magic detect_hidden detect_good protect_evil protect_good~
+Off    dodge kick parry trip~
+Imm    light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1909
+Name officer senior~
+ShortD a senior officer~
+LongD A senior officer seems startled at your intrusion.~
+Desc This man looks rather older than the majority of the men here.  He has 
+thick dark hair and wears a mustache on his upper lip.  He glares at you in 
+surprise and anger when you enter, and prepares to do away with this threat 
+his men could not.
+~
+Race human~
+Align 2 -2
+Level 57
+Hitroll 2
+HitDice 6d10+335
+ManaDice 4d5+215
+DamDice 8d6+29
+DamType punch
+AC -310 -310 -310 -250
+Wealth 570
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  detect_evil detect_invis detect_good regeneration~
+Off    bash disarm dodge kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1910
+Name elite guard~
+ShortD an elite guard~
+LongD An elite guard mills about here, protecting the tent.~
+Desc This guardsman looks like death on two feet.  He continually scans the area 
+about, looking for any potential threat.  His hands never stray far from 
+the hilts of his weapons, and his thickly corded muscles are tense, ready 
+to explode into action at any moment.  He has a grim expression on his 
+smoothly shaven face, as if he expects trouble at any moment.
+~
+Race human~
+Align 3 -1
+Level 62
+Hitroll 1
+HitDice 6d10+325
+ManaDice 6d5+220
+DamDice 8d7+27
+DamType punch
+AC -310 -310 -310 -250
+Wealth 620
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_good infrared berserk~
+Off    bash berserk dodge fast kick dirt_kick parry trip assist_vnum~
+Res    lightning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1911
+Name general Verbesch man stern older~
+ShortD the general~
+LongD A stern older man glares at you as you enter his tent.~
+Desc This man looks fairly old, with stark white hair and a wrinkly face.  He is 
+very large, though, and his frame looks powerful despite his age.  His 
+eyes, too, shine clearly from within his withered form, attesting to the 
+knowledge and burning personality of this stern figure.
+~
+Race human~
+Align 3 -2
+Level 67
+Hitroll 2
+HitDice 7d10+365
+ManaDice 5d5+245
+DamDice 7d8+34
+DamType punch
+AC -380 -370 -380 -330
+Wealth 670
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good~
+Off    bash disarm dodge fast kick parry trip~
+Imm    poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1912
+Name soldier drunken~
+ShortD a drunken soldier~
+LongD A drunken soldier stumbles about here, singing at the top of his lungs.~
+Desc This man has a slack expression on his face, and looks a little ill, but he 
+seems determined to make it back to his tent.  His ebon skin is flushed as 
+he shouts at the top of his lungs in an incoherent manner.  Most of the 
+other soldiers around seem to be ignoring him.
+~
+Race human~
+Align -1 -1
+Level 45
+Hitroll 0
+HitDice 5d10+300
+ManaDice 3d5+185
+DamDice 10d4+23
+DamType beating
+AC -250 -250 -250 -200
+Wealth 450
+Act    npc no_tame stay_area warrior~
+AffBy  berserk~
+Off    bash berserk kick assist_vnum~
+Imm    charm~
+Res    poison~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1913
+Name soldier guard sleeping~
+ShortD a soldier~
+LongD A soldier lies wrapped in his bedroll here, fast asleep.~
+Desc This man is wrapped up tightly in his bedroll, snoring loudly.  His stringy 
+black hair lies plastered to his face as he tosses about, apparently in the 
+throes of some nightmare.  His sallow skin is flushed with the heat of the 
+tent, but he nonetheless clutches the bedroll tightly to himself.
+~
+Race human~
+Align 1 -1
+Level 55
+Hitroll 1
+HitDice 5d10+355
+ManaDice 3d5+195
+DamDice 6d8+24
+DamType punch
+AC -270 -270 -270 -220
+Wealth 550
+Act    npc dont_wander no_tame stay_area warrior~
+Off    bash dodge kick trip~
+Res    lightning poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1914
+Name soldier cook~
+ShortD the cook~
+LongD The head cook is here stirring a pot of soup.~
+Desc This soldier has been given the permanent duty of overseeing the cooking 
+operations, since the soldiers like his cooking so well.  He has grown a 
+little large with the easy duty, but he still retains much of his former 
+fighting edge.  His reddish hair is worn very short, and he has a short 
+beard on his fair face.
+~
+Race human~
+Align 2 -1
+Level 55
+Hitroll 1
+HitDice 5d10+355
+ManaDice 3d10+195
+DamDice 6d8+24
+DamType punch
+AC -270 -270 -270 -220
+Wealth 550
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  weaken~
+Off    bash dodge parry~
+Imm    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1915
+Name soldier bathing swimming~
+ShortD a soldier~
+LongD A soldier swims around here, bathing himself.~
+Desc This man is completely naked, and is currently swimming around, splashing 
+his fellows and diving beneath the surface now and then.  His long brown 
+hair is plastered to his back, and waves out like a fan when he dives 
+beneath the surface.
+~
+Race human~
+Align -2 -1
+Level 57
+Hitroll 1
+HitDice 5d10+365
+ManaDice 3d5+195
+DamDice 6d8+24
+DamType grep
+AC -270 -270 -270 -220
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  swim~
+Off    bash dodge parry~
+Res    drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1916
+Name grithnek form shadowy~
+ShortD a grithnek~
+LongD A shadowy form lurks in the dark depths of the pool.~
+Desc This strange looking beast hides down deep in the murky waters at the 
+bottom of the lake.  It has a large, tooth-filled maw and two small, beady 
+eyes.  Four long, sinuous tentacles sprout from it's back, waving around 
+lazily.  It's forelimbs are long and contain three clawed, webbed fingers, 
+while it's legs are joined together to form a fin-tipped tale.  It is 
+covered with thick, hard scales.
+~
+Race modron~
+Align -3 -3
+Level 68
+Hitroll 2
+HitDice 7d11+380
+ManaDice 5d6+400
+DamDice 8d8+34
+DamType none
+AC -400 -400 -400 -360
+Wealth 680
+Act    npc dont_wander scavenger no_tame stay_area~
+AffBy  invisible detect_evil detect_invis detect_magic detect_hidden detect_good infrared sneak hide haste dark_vision berserk~
+Off    bash berserk dodge tail crush assist_align assist_race~
+Imm    charm fire poison negative holy mental disease drowning~
+Res    fire cold lightning acid~
+Vuln   mental~
+Form   edible poison sentient biped mountable reptile fish cold_blood~
+Part   head arms legs heart brains hands feet fingers ear eye long_tongue tentacles tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#1917
+Name quarter master~
+ShortD the quartermaster~
+LongD The quartermaster is here, reparing a coat of mail at the forge.~
+Desc This tall, burly man serves as the quartermaster for this troop.  He issues 
+goods to those who need them, and is in charge of finding new supplies in 
+the lands the group passes through.  He also appears to have skill at 
+blacksmithing, evident by his thick muscles and the task he is currently 
+engaged in.  His thick, curly black hair is plastered to his face from the 
+heat of the forge.
+~
+Race human~
+Align 2 -1
+Level 57
+Hitroll 1
+HitDice 5d10+375
+ManaDice 4d5+205
+DamDice 8d6+28
+DamType pound
+AC -290 -290 -290 -240
+Wealth 570
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  berserk~
+Off    bash berserk dodge kick crush~
+Res    drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1918
+Name scout spy small figure~
+ShortD a scout~
+LongD A small figure dressed in brown and black leathers crouches in the shadows.~
+Desc This person is obviously taking great pains to conceal themselves.  They 
+are dressed in brown, black and green dyed leathers, which help conceal 
+them rather nicely from prying eyes.  They crouch motionless here, and it 
+is hard to tell what they are planning to do.
+~
+Race human~
+Align -2 -3
+Level 57
+Hitroll 2
+HitDice 6d10+325
+ManaDice 4d5+400
+DamDice 8d6+28
+DamType punch
+AC -310 -310 -310 -260
+Wealth 570
+Act    npc dont_wander no_tame stay_area thief~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sneak hide~
+Off    backstab dodge fast kick dirt_kick parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#1919
+Name figure red firewalker~
+ShortD a firewalker~
+LongD A figure wrapped in a heavy red cloak stands here.~
+Desc This person must be protected by magic or else insane.  They are wrapped in 
+a heavy red wool cloak, and yet they are still standing very close to the 
+fire.  Since they are covered from head to toe with cloth, you can tell 
+nothing about them, other than there is definitely something about this 
+person that isn't right.
+~
+Race human~
+Align 0 0
+Level 62
+Hitroll 2
+HitDice 6d10+335
+ManaDice 4d5+220
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -260
+Wealth 620
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_magic otterlungs berserk~
+Off    bash berserk disarm dodge fast kick parry trip~
+Imm    fire~
+Res    cold lightning acid drowning~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1920
+Name assassin dark figure~
+ShortD an assassin~
+LongD A dark figure stands here, his weapons readied.~
+Desc This figure stands perfectly motionless, and is almost impossible to see in 
+the murk that permeates this tent.  The person is small and lithe, though 
+they appear strong as well.  It is hard to tell much about them, due to 
+their extensive covering, but they appear dangerous.
+~
+Race human~
+Align -3 -3
+Level 64
+Hitroll 2
+HitDice 6d10+340
+ManaDice 4d5+230
+DamDice 8d7+31
+DamType punch
+AC -340 -340 -340 -280
+Wealth 640
+Act    npc dont_wander no_tame stay_area thief~
+AffBy  detect_invis detect_magic detect_hidden sneak hide pass_door~
+Off    backstab disarm dodge fast kick dirt_kick parry trip~
+Imm    charm poison~
+Res    light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1921
+Name icewalker man blue tattooed~
+ShortD an icewalker~
+LongD A blue-tattooed man glares at you icily as you enter the tent.~
+Desc This man is covered from head to toe with many intricate blue tattoos.  He 
+is bare to the waist, and does not seem to be bothered by the cold in here 
+at all.  His head and face are smoothly shaven, and it appears the rest of 
+his body is as well.  He glares at you as you enter his tent, not pleased 
+with your intrusion.
+~
+Race human~
+Align 3 -2
+Level 62
+Hitroll 1
+HitDice 6d10+335
+ManaDice 4d5+440
+DamDice 8d7+28
+DamType punch
+AC -320 -320 -320 -260
+Wealth 620
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_magic~
+Off    bash disarm dodge fast kick dirt_kick parry trip~
+Imm    cold~
+Res    fire lightning acid~
+Vuln   poison disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1922
+Name thunderwalker man wild~
+ShortD a thunderwalker~
+LongD A wild-eyed man stands here, grinning wickedly.~
+Desc This strange fellow appears to be quite young, but his hair is solid white. 
+ His eyes, too, are quite strange, seeming to be almost all white, with 
+only a small pupil.  His short hair stands up on it's ends, though whether 
+it is from style or the electricity it is hard to say.  He is quite 
+muscular, and wears a short beard and mustache.
+~
+Race human~
+Align -3 -2
+Level 62
+Hitroll 1
+HitDice 6d10+335
+ManaDice 4d5+440
+DamDice 8d7+28
+DamType pound
+AC -320 -320 -320 -260
+Wealth 620
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_magic detect_hidden berserk~
+Off    bash berserk dodge fast kick parry trip~
+Imm    lightning~
+Res    fire cold acid drowning~
+Vuln   negative holy light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#1923
+Name one-eyed avian 1923 ex-prisoner~
+ShortD an one-eyed avian~
+LongD An one-eyed avian is here.~
+Desc This avian is a sad representative of its noble race.  It is missing an 
+eye, and its feathers are bedraggled and dirty.  It's thin ribs are sticking 
+out prominently from hunger, and several of the slender bones appear to be 
+broken.  
+~
+Race avian~
+Align 0 2
+XPMod 90
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 2d5+165
+DamDice 8d4+16
+DamType chomp
+AC -150 -150 -150 -100
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_invis protect_evil flying weaken slow~
+Res    pierce~
+Vuln   bash mental~
+Form   edible sentient biped bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#1924
+Name thin halfling 1924 ex-prisoner~
+ShortD a thin halfling~
+LongD A thin halfling is here.~
+Desc This halfing looks as if he once were quite stout and well-off, judging by 
+the loose folds of skin hanging from him and the tattered but once-fine 
+clothing he wears, but he is now very thin and in terrible condition.  His 
+curly hair is falling out of his head, and he is missing several teeth.  He 
+lies here in abject misery.
+~
+Race halfling~
+Align -1 1
+XPMod 90
+Level 47
+Hitroll 0
+HitDice 5d8+260
+ManaDice 2d5+160
+DamDice 6d6+17
+DamType scratch
+AC -170 -170 -170 -130
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared weaken slow~
+Res    magic~
+Vuln   charm poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#1925
+Name DELETE ME!~
+ShortD dELETE ME!~
+LongD A draconian lies unconscious on the ground here.~
+Desc This draconian looks like he may have once belonged in the service of the 
+army.  He is naked except for a tattered breech cloth, and lies on the 
+floor in a daze.  His body is covered with oozing wounds, and his scales 
+are dirty and chipped.  The spines on his back are bent or broken, and his 
+wings are tattered and torn.
+~
+Race draconian~
+Align 0 -2
+XPMod 90
+Level 49
+Hitroll 1
+HitDice 5d9+275
+ManaDice 3d5+175
+DamDice 4d10+18
+DamType claw
+AC -190 -190 -190 -130
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  flying weaken slow~
+Off    tail~
+Res    fire cold lightning acid~
+Vuln   pierce lightning poison disease~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP sleeping~
+DefPos sleeping~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#1900
+Name small severed hand~
+Short a small severed hand~
+Desc A small, severed hand lies rotting here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material flesh~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#1901
+Name pool blood~
+Short a `#`rpool of blood`^~
+Desc A `#`rpool of blood `^congeals here in a small puddle.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flesh~
+Extra    nonmetal~
+End
+
+#1902
+Name corpse headless~
+Short a headless corpse~
+Desc A headless corpse has been hastily hidden beneath some dead grass.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material flesh~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc corpse headless~
+This corpse has furry feet and is rather overweight.  It appears to be the
+remains of an older halfling male.
+~
+End
+
+#1903
+Name cape red~
+Short a `#`Rred `^cape~
+Desc A fine red cape trimmed in gold lies in a pile here.~
+Level 52
+ItemType armor~
+Cost 1040
+Asize 30
+Rsize 50
+Values 13 13 13 10 0
+Weight 40
+Material wool~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ClassAllowances cleric paladin~
+Affect modifier -1 52 -1 mana 100 0
+End
+
+#1904
+Name copper leggings~
+Short a pair of `#`ycopper`^ leggings~
+Desc A pair of `#`ycopper`^ leggings have been left here.~
+Level 52
+ItemType armor~
+Cost 1050
+Asize 30
+Rsize 50
+Values 13 13 13 10 0
+Weight 70
+Material copper~
+Extra    nodegrade~
+Wear     take legs~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 52 -1 hp 4 0
+Affect modifier -1 52 -1 hitroll 3 0
+Affect modifier -1 52 -1 damroll 3 0
+End
+
+#1905
+Name chain mail vest red~
+Short a `#`Rred `^chain vest~
+Desc A vest of chainmail made of a strange red metal lies here.~
+Level 52
+ItemType armor~
+Cost 1065
+Asize 40
+Rsize 50
+Values 17 17 17 13 0
+Weight 80
+Material copper~
+Extra    nodegrade~
+Wear     take torso~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 52 -1 constitution 4 0
+Affect modifier -1 52 -1 hp 4 0
+Affect modifier -1 52 -1 quickness -1 0
+End
+
+#1906
+Name red leather boots~
+Short a pair of `#`Rred `^leather boots~
+Desc A pair of boots made from fine red leather lie here.~
+Level 52
+ItemType armor~
+Cost 1045
+Asize 20
+Rsize 50
+Values 10 10 10 9 0
+Weight 30
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+ClassAllowances cleric druid paladin ranger~
+Affect modifier -1 52 -1 move 10 0
+Affect modifier -1 52 -1 mana 60 0
+Affect modifier -1 52 -1 hp 2 0
+End
+
+#1907
+Name halberd bronze red polearm~
+Short a `#`ybronze`^ bladed halberd~
+Desc A `#`ybronze`^ bladed halberd lies here.~
+Level 52
+ItemType weapon~
+Cost 1055
+Asize 50
+Rsize 50
+Values polearm 7 8 cleave F
+Weight 50
+Material bronze~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin barbarian~
+Affect modifier -1 52 -1 hitroll 3 0
+Affect modifier -1 52 -1 damroll 3 0
+End
+
+#1908
+Name red iron bracer~
+Short a `#`Rred `^iron bracer~
+Desc A stout bracer made of red painted iron lies here.~
+Level 37
+ItemType armor~
+Cost 1035
+Asize 20
+Rsize 50
+Values 6 6 6 5 0
+Weight 20
+Material iron~
+Extra    nodegrade~
+Wear     take wrist~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 37 -1 ac -15 0
+End
+
+#1909
+Name sunburst ring~
+Short a `#`Ysunburst`^ ring~
+Desc A small ring topped with an engraved golden sunburst lies here.~
+Level 55
+ItemType jewelry~
+Cost 1133
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gold~
+Extra    magic nodegrade~
+Wear     take finger~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 55 -1 saves -6 0
+Affect modifier -1 55 -1 mana 40 0
+Affect modifier -1 55 -1 selfdiscipline 2 0
+Affect modifier -1 55 -1 hitroll -2 0
+End
+
+#1910
+Name necklace sunburst~
+Short a `#`Ygolden `^sunburst necklace~
+Desc A golden sunburst emblem hanging from a thin golden chain lies here~
+Level 55
+ItemType jewelry~
+Cost 1122
+Asize 8
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material gold~
+Extra    magic nodegrade~
+Wear     take neck~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 55 -1 memory 4 0
+Affect modifier -1 55 -1 ac -10 0
+End
+
+#1911
+Name red copper sleeves~
+Short a pair of `#`ycopper`^ sleeves~
+Desc A pair of `#`ycopper`^ sleeves lie here.~
+Level 52
+ItemType armor~
+Cost 1044
+Asize 40
+Rsize 50
+Values 13 13 13 10 0
+Weight 60
+Material copper~
+Extra    nodegrade~
+Wear     take arms~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 52 -1 hp 2 0
+Affect modifier -1 52 -1 hitroll 4 0
+Affect modifier -1 52 -1 damroll 4 0
+End
+
+#1912
+Name cruel leather whip~
+Short a cruel leather whip~
+Desc A long leather whip with bits of glass embedded in it lies coiled on the ground here.~
+Level 56
+ItemType weapon~
+Cost 1120
+Asize 35
+Rsize 50
+Values whip 2 28 whip 0
+Weight 50
+Material leather~
+Extra    hum evil magic antigood nonmetal nodegrade~
+Wear     take wield~
+End
+
+#1913
+Name robe scarlet~
+Short a gold trimmed `#`Rscarlet `^robe~
+Desc A fine scarlet robe trimmed with golden cloth lies crumpled here.~
+Level 55
+ItemType armor~
+Cost 1111
+Asize 30
+Rsize 50
+Values 12 12 12 18 0
+Weight 20
+Material cotton~
+Extra    magic nonmetal nodegrade~
+Wear     take about~
+ClassAllowances mage cleric thief druid spellfilcher~
+Affect modifier -1 55 -1 mana 40 0
+Affect modifier -1 55 -1 hp 4 0
+Affect modifier -1 55 -1 empathy 1 0
+End
+
+#1914
+Name small flail three headed~
+Short a small three headed flail~
+Desc A small flail with three spiked iron heads lies here.~
+Level 54
+ItemType weapon~
+Cost 1085
+Asize 30
+Rsize 50
+Values flail 11 4 pound 0
+Weight 40
+Material iron~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 54 -1 hitroll 3 0
+Affect modifier -1 54 -1 damroll 3 0
+End
+
+#1915
+Name mace steel shining~
+Short a shining `#`Ssteel`^ mace~
+Desc A brightly shining `#`Ssteel`^ mace lies here.~
+Level 61
+ItemType weapon~
+Cost 1220
+Asize 30
+Rsize 50
+Values mace 8 7 blast I
+Weight 40
+Material steel~
+Extra    glow magic~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+End
+
+#1916
+Name black steel leggings~
+Short a pair of `#`Sblack`^ steel leggings~
+Desc A pair of `#`Sblack`^ steel leggings lie here.~
+Level 61
+ItemType armor~
+Cost 1225
+Asize 50
+Rsize 50
+Values 15 15 15 12 0
+Weight 70
+Material steel~
+Extra    nodegrade~
+Wear     take legs~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 61 -1 ac -15 0
+Affect modifier -1 61 -1 hp 6 0
+End
+
+#1917
+Name black steel breastplate~
+Short a black steel breastplate~
+Desc A breastplate made of beaten black steel lies here.~
+Level 61
+ItemType armor~
+Cost 1230
+Asize 50
+Rsize 50
+Values 20 20 20 15 0
+Weight 80
+Material steel~
+Extra    nodegrade~
+Wear     take torso~
+ClassAllowances cleric paladin~
+Affect modifier -1 61 -1 ac -10 0
+Affect modifier -1 61 -1 selfdiscipline 2 0
+Affect modifier -1 61 -1 mana 60 0
+Affect modifier -1 61 -1 damroll -2 0
+End
+
+#1918
+Name long sword gleaming~
+Short a gleaming long sword~
+Desc A well-oiled and carefully cared for long sword lies on the ground here.~
+Level 61
+ItemType weapon~
+Cost 1235
+Asize 40
+Rsize 50
+Values sword 7 8 slice D
+Weight 40
+Material steel~
+Extra    evil magic antigood nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+End
+
+#1919
+Name red copper helmet~
+Short a `#`Rred `^copper helmet~
+Desc A studry helmet made of gleaming reddish copper lies here.~
+Level 52
+ItemType armor~
+Cost 1040
+Asize 30
+Rsize 50
+Values 13 13 13 10 0
+Weight 30
+Material copper~
+Extra    nodegrade~
+Wear     take head~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 52 -1 saves -4 0
+Affect modifier -1 52 -1 ac -10 0
+Affect modifier -1 52 -1 hp 4 0
+Affect modifier -1 52 -1 intuition -1 0
+End
+
+#1920
+Name black steel helmet~
+Short a `#`Sblack`^ steel helmet~
+Desc A `#`Sblack`^ steel helmet lies here.~
+Level 61
+ItemType armor~
+Cost 1222
+Asize 30
+Rsize 50
+Values 15 15 15 12 0
+Weight 30
+Material steel~
+Extra    evil magic antigood nodegrade~
+Wear     take head~
+ClassAllowances cleric paladin~
+Affect modifier -1 61 -1 selfdiscipline 2 0
+Affect modifier -1 61 -1 presence 2 0
+Affect modifier -1 61 -1 mana 40 0
+End
+
+#1921
+Name black steel shield~
+Short a `#`Sblack`^ steel shield~
+Desc A `#`Sblack`^ steel shield lies here.~
+Level 61
+ItemType armor~
+Cost 1234
+Asize 50
+Rsize 50
+Values 20 20 20 15 0
+Weight 60
+Material steel~
+Extra    nodegrade~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 61 -1 saves -5 0
+End
+
+#1922
+Name black scimitar wicked~
+Short a wicked `#`Sblack`^ scimitar~
+Desc A `#`Sblack`^ scimitar with a curving, serrated blade lies here.~
+Level 67
+ItemType weapon~
+Cost 1366
+Asize 40
+Rsize 50
+Values sword 3 22 slice E
+Weight 30
+Material steel~
+Extra    glow hum evil magic antigood antineutral nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger~
+End
+
+#1923
+Name small wooden mug foul alcohol cup grog~
+Short a cup of grog~
+Desc A small wooden mug filled with a foul smelling alcohol lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 15
+Asize 2
+Rsize 50
+Values 10 10 firebreather 0 0
+Weight 5
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#1924
+Name apron leather~
+Short a leather apron~
+Desc A leather apron covered with scorch marks lies on the ground here.~
+Level 57
+ItemType armor~
+Cost 1145
+Asize 40
+Rsize 50
+Values 10 10 10 6 0
+Weight 40
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take about~
+Affect modifier -1 57 -1 selfdiscipline 4 0
+End
+
+#1925
+Name heavy iron hammer~
+Short a heavy iron hammer~
+Desc A large, heavy iron hammer lies here.~
+Level 57
+ItemType weapon~
+Cost 1140
+Asize 55
+Rsize 60
+Values mace 7 8 blast 0
+Weight 80
+Material iron~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances cleric warrior paladin barbarian~
+End
+
+#1926
+Name brown black green leather vest chameleon~
+Short a chameleon vest~
+Desc A leather vest dyed random shades of brown, black and green lies here.~
+Level 62
+ItemType armor~
+Cost 1250
+Asize 30
+Rsize 45
+Values 19 19 19 17 0
+Weight 30
+Material leather~
+Extra    magic nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances thief druid ranger spellfilcher~
+Affect modifier -1 62 -1 saves -4 0
+Affect modifier -1 62 -1 mana 20 0
+Affect modifier -1 62 -1 quickness 3 0
+End
+
+#1927
+Name brown black green leather leggings chameleon~
+Short a pair of chameleon leggings~
+Desc A pair of leggings dyed a random pattern of brown, black, and green lie here.~
+Level 62
+ItemType armor~
+Cost 1245
+Asize 30
+Rsize 45
+Values 15 15 15 12 0
+Weight 30
+Material leather~
+Extra    magic nonmetal nodegrade~
+Wear     take legs~
+ClassAllowances thief druid ranger spellfilcher~
+Affect modifier -1 62 -1 agility 4 0
+Affect modifier -1 62 -1 move 40 0
+Affect modifier -1 62 -1 mana 40 0
+End
+
+#1928
+Name small black dagger~
+Short a small `#`Sblack`^ dagger~
+Desc A small `#`Sblack`^ dagger lies here.~
+Level 61
+ItemType weapon~
+Cost 1245
+Asize 10
+Rsize 45
+Values dagger 4 12 stab H
+Weight 20
+Material steel~
+Extra    evil magic antigood nodegrade~
+Wear     take wield~
+ClassAllowances mage thief ranger spellfilcher~
+Affect modifier -1 61 -1 hitroll 2 0
+Affect modifier -1 61 -1 damroll 2 0
+Affect modifier -1 61 -1 quickness 1 0
+End
+
+#1929
+Name concealing black cloak~
+Short a concealing `#`Sblack`^ cloak~
+Desc A concealing `#`Sblack`^ cloak lies here.~
+Level 62
+ItemType armor~
+Cost 1244
+Asize 30
+Rsize 50
+Values 15 15 15 12 0
+Weight 30
+Material wool~
+Extra    dark evil magic antigood nonmetal nodegrade~
+Wear     take about~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 62 -1 agility 4 0
+Affect modifier -1 62 -1 quickness 4 0
+Affect modifier -1 62 -1 memory -1 0
+End
+
+#1930
+Name wicked black shortsword~
+Short a wicked `#`Sblack`^ shortsword~
+Desc A wicked `#`Sblack`^ shortsword lies here.~
+Level 63
+ItemType weapon~
+Cost 1275
+Asize 25
+Rsize 45
+Values sword 2 28 slash 0
+Weight 30
+Material steel~
+Extra    evil magic antigood nodegrade~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 63 -1 damroll 3 0
+Affect modifier -1 63 -1 hitroll 2 0
+End
+
+#1931
+Name thick red cloak~
+Short a thick `#`Rred `^cloak~
+Desc A thick red woolen cloak lies here.~
+Level 62
+ItemType armor~
+Cost 1275
+Asize 40
+Rsize 50
+Values 15 15 15 12 0
+Weight 35
+Material wool~
+Extra    nonmetal nodegrade burnproof~
+Wear     take about~
+Affect resist -1 62 -1 none 0 fire
+Affect vuln -1 62 -1 none 0 cold
+Affect vuln -1 62 -1 none 0 lightning
+Affect vuln -1 62 -1 none 0 acid
+End
+
+#1932
+Name red hot axe~
+Short a `#`Rred`^ hot axe~
+Desc An axe that has been heated cherry red by some unkown magic lies here.~
+Level 62
+ItemType weapon~
+Cost 1255
+Asize 40
+Rsize 50
+Values axe 5 14 cleave AF
+Weight 50
+Material steel~
+Extra    glow hum magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin barbarian~
+End
+
+#1933
+Name leather pants frost covered~
+Short a pair of `#`wfrost`^ covered leather pants~
+Desc A pair of leather pants covered with a layer of frost lies here.~
+Level 62
+ItemType armor~
+Cost 1275
+Asize 30
+Rsize 50
+Values 15 15 15 12 0
+Weight 30
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take legs~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect resist -1 62 -1 none 0 cold
+Affect vuln -1 62 -1 none 0 lightning
+Affect vuln -1 62 -1 none 0 acid
+Affect vuln -1 62 -1 none 0 fire
+End
+
+#1934
+Name frost covered steel axe~
+Short a `#`wfrost `^covered steel axe~
+Desc A large axe lies here, gleaming under a layer of frost.~
+Level 62
+ItemType weapon~
+Cost 1255
+Asize 40
+Rsize 50
+Values axe 5 14 cleave BF
+Weight 50
+Material steel~
+Extra    hum magic nodrop noremove nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin barbarian~
+End
+
+#1935
+Name steel pole spear~
+Short a sharp steel pole~
+Desc A sharp steel pole lies here.  Flashes of electricity occasionally run over it.~
+Level 62
+ItemType weapon~
+Cost 1255
+Asize 60
+Rsize 50
+Values polearm 4 16 thrust FG
+Weight 70
+Material steel~
+Extra    glow hum magic nodegrade nouncurse~
+Wear     take wield~
+ClassAllowances warrior paladin barbarian~
+Affect resist -1 62 -1 none 0 lightning
+Affect vuln -1 62 -1 none 0 fire
+Affect vuln -1 62 -1 none 0 cold
+Affect vuln -1 62 -1 none 0 acid
+End
+
+#1936
+Name small steel key~
+Short a small steel key~
+Desc A small steel key lies forgotten in the dirt here.~
+Level 0
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material steel~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#1900
+Name A Trampled Path in the Plains~
+Desc The little grass that exists here has been trampled down by the feet of many 
+men and horses.  It appears as if a large group of people moved through here 
+recently.  The path is a muddy brown scar on the otherwise plain landscape of
+the windswept plain.  To the east the path continues, growing wider where 
+apparently more people began to tread on it, while to the west it abruptly 
+vanishes completely.
+~
+Sector field~
+Exit east 1901
+EDesc A Trampled Path in the Plains.
+~
+Exit west 30495
+EDesc Plains stretch out as far as the eye can see.
+~
+End
+
+
+#1901
+Name A Trampled Path in the Plains~
+Desc The rolling, windswept plains are marred here by a freshly made path.  It 
+apparently was trampled down by a force of many men and horses, who 
+appeared to be heading east.  The path is very wide, and quite muddy from
+the churning hooves of many horses.  A smaller path leads north from this
+one, while to the east the path begins to enter the rising foothills.  The
+path also leads back west, where it begins to grow smaller.
+
+~
+Sector field~
+Exit north 1902
+EDesc A Blood-Filled Hollow.
+~
+Exit east 1903
+EDesc Entering a Large Canyon.
+~
+Exit west 1900
+EDesc A Trampled Path in the Plains.
+~
+End
+
+
+#1902
+Name A Blood-Filled Hollow~
+Desc You enter this small dip in the smooth landscape and are immediately 
+greeted by the overwhelming stench of blood and rotting flesh.  The leaves 
+of small, twisted trees and the hearty shoots of prairie grass are covered 
+with bits of flesh and drying blood.  It looks as if not only was a battle 
+fought here, but the losers torn limb from limb by the victors.  A small 
+path leads southward, away from this horrible scene.
+
+~
+Sector field~
+Exit south 1901
+EDesc A Trampled Path in the Plains.
+~
+End
+
+
+#1903
+Name Entering a Large Canyon~
+Desc The northeastern foothills begin to rise steeply here, putting an abrupt 
+end to the plains.  A large canyon also begins to open up between two 
+craggy hills here, and a wide, trampled path leads east in to it.  Next to
+the path a stake has been placed in the ground, topped by the rotting head
+of a dead elf.  Something has been hastily scrawled on the smooth face
+of a craggy rock that thrusts from the ground next to the stake.  You can
+see many plumes of smoke rising from within the canyon, and the hoarse 
+cries of men and the neighs of horses.  To the west the path descends back 
+to the plains.
+
+~
+Sector hills~
+ExtraDesc stake rock writing scrawl smooth face~
+In human, elven, and dwarven runes:
+    "Beware, lest ye too fall victim to the evil that has been visited
+      upon us.  Venture within at your own risk."
+~
+Exit east 1904
+EDesc Within the Narrow Entrance to the Canyon.
+~
+Exit west 1901
+EDesc A Trampled Path in the Plains.
+~
+End
+
+
+#1904
+Name Within the Narrow Entrance to the Canyon~
+Desc You find yourself within the narrow walls of a large canyon. Just beyond 
+where you are presently located it seems the walls open up a great deal, 
+but at this location they are very narrow.  This point would be very easily 
+defendable by any force that decided to camp within.  You can hear the 
+sounds, and smell the smells, of many men located within; perhaps you are 
+not the first to realize the defensive value of this place.
+
+~
+Sector hills~
+Exit east 1905
+EDesc A Large Camp.
+~
+Exit west 1903
+EDesc Entering a Large Canyon.
+~
+End
+
+
+#1905
+Name A Large Camp~
+Desc You find yourself within a large campsite set within an easily defensible 
+canyon.  Many tents are set up all around you, and it appears that 
+thousands of men could easily stay here- and probably do.  Most of the 
+tents are white in color with banners of red and gold waving from their 
+tops.  A path trampled through the grass in the base of the canyon leads 
+east further in to the camp and westward out of the camp.  The tent to the 
+north serves as the stables, by the smell of things, while the large tent 
+to the south appears to be a barracks of sorts.
+
+~
+Sector field~
+Exit north 1906
+EDesc A Large, Smelly Stable.
+~
+Exit east 1908
+EDesc The Center of the Camp.
+~
+Exit south 1907
+EDesc A Crowded Tent.
+~
+Exit west 1904
+EDesc Within the Narrow Entrance to the Canyon.
+~
+End
+
+
+#1906
+Name A Large, Smelly Stable~
+Desc This large tent appears to serve as the stable for the men camping here.  
+Many stalls have been roped off to serve to house the horses in here.  It 
+does not appear as if there are enough mounts to serve the entire group, so 
+only a small number of them must be mounted.  The only exit in here appears 
+to be to the south.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 1905
+EDesc A Large Camp.
+~
+End
+
+
+#1907
+Name A Crowded Tent~
+Desc This large, spacious tent appears to serve as a common sleeping area or 
+barracks for the force encamped here.  Many bedrolls are laid out on the 
+ground, and a few enterprising souls have constructed rickety cots to 
+elevate themselves from the hard earth.  The bedrolls are all neatly made 
+and laid out, and small packs of personal effects lie on each.  To the 
+north and south the tent flaps have been propped up, letting the breeze in 
+and allowing you a way out.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1905
+EDesc A Large Camp.
+~
+Exit south 1922
+EDesc A Large Barracks Tent.
+~
+End
+
+
+#1908
+Name The Center of the Camp~
+Desc You stand in a large clearing in the forest of tents, which appears to be 
+the center of the camp.  A large bonfire burns in the middle, which appears 
+to provide no practical purpose.  To the east a large boulder rises from 
+the ground, and a small path snakes past the boulder towards several large 
+tents that are rather removed from the rest.  To the north the path heads 
+to another group of tent that stand off from the main body of the camp, as 
+well as one building that appears to be a more permanent construction.  To 
+the south a path winds through the main body of the camp.
+
+~
+Sector field~
+ExtraDesc fire bonfire~
+This fire is fairly low now, so you can see that it indeed may have once
+served a practical purpose.  You see several faintly humanoid forms lying
+still within the flames, and bleached bones poke out here and there.
+Perhaps this is how the soldiers dispose of their dead, or their enemies...
+~
+Exit north 1909
+EDesc On the Northern Path.
+~
+Exit east 1915
+EDesc A Narrow Path in the Camp.
+~
+Exit south 1920
+EDesc A Wide Path in the Camp.
+~
+Exit west 1905
+EDesc A Large Camp.
+~
+End
+
+
+#1909
+Name On the Northern Path~
+Desc This small path leaves the hubub of the main encampment and heads northward 
+towards a collection of smaller tents and one large building that is being 
+constructed using stone and wood from the canyon itself.  To the west you 
+see a large tent with a foul odor coming from it, and to the east, in the 
+distance, you spy some other tents.  South a large bonfire burns low in the 
+center of the camp.
+
+~
+Sector field~
+Exit north 1910
+EDesc On the Northern Path.
+~
+Exit south 1908
+EDesc The Center of the Camp.
+~
+End
+
+
+#1910
+Name On the Northern Path~
+Desc You are walking on a path that leads northward from the main collection of 
+tents to the south.  To the west and east you see small, heavily guarded 
+tents surrounded by stout wooden fences.  To the north the partially 
+completed structure of what appears to be a temple rises, and behind that 
+the tall, steep wall of the canyon looms above you.
+
+~
+Sector field~
+Exit north 1913
+EDesc Shrine of Eros.
+~
+Exit east 1912
+EFlags door closed locked easy~
+EKeyvnum 1936
+EKeywords fence~
+EDesc A Dank, Crowded Tent.
+~
+Exit south 1909
+EDesc On the Northern Path.
+~
+Exit west 1911
+EFlags door closed locked easy~
+EKeyvnum 1936
+EKeywords fence~
+EDesc A Dank, Crowded Tent.
+~
+End
+
+
+#1911
+Name A Dank, Crowded Tent~
+Desc This tent is small and dark, and the floor is nothing but churned mud and 
+the waste of its inhabitants.  Many people are chained here, lying on the 
+floor in misery.  The walls are merely canvas, but the stout fence that 
+circles the tent and the iron chains that bind the prisoners make this an 
+effective prison indeed.
+
+~
+Sector inside~
+Exit east 1910
+EFlags door closed locked easy~
+EKeyvnum 1936
+EKeywords fence~
+EDesc On the Northern Path.
+~
+End
+
+
+#1912
+Name A Dank, Crowded Tent~
+Desc This small tent is apparently used by the soldiers here for holding 
+prisoners.  The walls are merely canvas, but the stout fence encircling the 
+structure and the iron bands that bind the residents make this place as 
+secure as any stone cell.  The floor is muddy from spilled water and the 
+excrement of the prisoners, and is covered by a few strands of moldy straw.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 1910
+EFlags door closed locked easy~
+EKeyvnum 1936
+EKeywords fence~
+EDesc On the Northern Path.
+~
+End
+
+
+#1913
+Name Shrine of Hafran~
+Desc You are in a partially completed stone structure that looks as if it is 
+going to serve as some sort of temple.  Half assembled pews rest on the 
+floor in front of a large altar that is the color of burnished gold.  A 
+large golden disk hangs on the wall behind the altar.  It has been placed 
+so as to catch the rays of the sun and reflect them into the eyes of those 
+who enter, and as such it is hard to study closely.  To the south you can 
+exit this temple, while to the west a small passageway leads further into 
+the shrine.
+
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc altar~
+This altar is covered with a thin sheet of beaten and polished copper.
+The copper has been engraved in several places, showing scenes of elves,
+gnomes, and other non-humans burning under the light of the sun.
+~
+Exit south 1910
+EDesc On the Northern Path.
+~
+Exit west 1914
+EDesc Cleric's Sanctum.
+~
+End
+
+
+#1914
+Name Cleric's Sanctum~
+Desc This small chamber contains several neatly made cots, as well as a few 
+personal effects.  On several places on the walls you see sunbursts carved 
+of wood or made of beaten metal.  The floor is made of freshly cut stone 
+and is covered with a thick layer of sweet-smelling rushes.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 1913
+EDesc Shrine of Eros.
+~
+End
+
+
+#1915
+Name A Narrow Path in the Camp~
+Desc This small path leads eastward from the large bonfire, past a large boulder 
+and towards a collection of tents that has been set off to the east.  The 
+path does not look traveled as frequently as the others in the camp, and is 
+really more of an indentation in the tall grass than a path.  To the north 
+you spy a small tent with a red and black standard haning in front of it, 
+and to the south lies a tent with a gold and black standard in front.  To 
+the east is a heavily guarded large tent.
+
+~
+Sector field~
+Exit north 1916
+EFlags door closed nolock~
+EKeywords flap~
+EDesc An Officer's Tent.
+~
+Exit east 1918
+EDesc Outside a Large Tent.
+~
+Exit south 1917
+EFlags door closed nolock~
+EKeywords flap~
+EDesc An Officer's Tent.
+~
+Exit west 1908
+EDesc The Center of the Camp.
+~
+End
+
+
+#1916
+Name An Officer's Tent~
+Desc This tent, though small, is richly furnished.  The floor is covered with 
+freshly cut rushes, and a few rugs have been laid here and there.  A large, 
+comfortable cot sits towards the back of the tent.  A small table with 
+several maps laid out on it sits in one corner of the tent.  The only exit 
+appears to be to the south.
+
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc table maps~
+Several maps are laid out on this table.  The uppermost one is of the
+immediate region, centered on Mekali. It shows several marks around the
+city, apparently marking future troop formations.
+~
+Exit south 1915
+EFlags door closed nolock~
+EKeywords flap~
+EDesc A Narrow Path in the Camp.
+~
+End
+
+
+#1917
+Name An Officer's Tent~
+Desc This tent, though small, is richly furnished.  The floor is covered with 
+several thick carpets and the large cot, in the back, has several pillows 
+and cushions piled on top of it.  A large table in the center of the room 
+contains a few dishes from a half-eaten meal.  The only exit appears to be 
+to the north.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1915
+EFlags door closed nolock~
+EKeywords flap~
+EDesc A Narrow Path in the Camp.
+~
+End
+
+
+#1918
+Name Outside a Large Tent~
+Desc You find yourself in a small clearing in the grass before a large red tent. 
+The tent itself is very fancy, with gold trim on the edges and a small 
+pennant in red and gold flying from the top.  A flap in the tent leads to 
+the space within while the path you are standing on leads back west.
+ 
+~
+Sector field~
+Exit east 1919
+EFlags door closed nolock~
+EKeywords flap~
+EDesc The General's Quarters.
+~
+Exit west 1915
+EDesc A Narrow Path in the Camp.
+~
+End
+
+
+#1919
+Name The General's Quarters~
+Desc This tent, which seemed so large from the outside, seems even larger on the 
+inside due to the spare furnishings that may be found within.  The floor is 
+bare dirt, except for a small rug near the utilitarian cot near the north 
+wall.  On the south wall several leather cords hang, and from each one the 
+dried and rotting ears of non-human victims hang.  There must be thousands 
+in all, some barely recognisable they are so old.  The only exit from this 
+room appears to be the way you came in.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 1918
+EFlags door closed nolock~
+EKeywords flap~
+EDesc Outside a Large Tent.
+~
+End
+
+
+#1920
+Name A Wide Path in the Camp~
+Desc This path leads southward from a large clearing with a bonfire to the 
+north.  It is very wide already, due to the large amount of traffic it 
+apparently receives.  The main collection of tents lies to the south, while 
+to the east you see a small field with a little white tent in the 
+background.  To the west you see the blank white wall of one of the large 
+barracks tents.
+
+~
+Sector field~
+Exit north 1908
+EDesc The Center of the Camp.
+~
+Exit south 1921
+EDesc The Wide Path in the Camp.
+~
+End
+
+
+#1921
+Name The Wide Path in the Camp~
+Desc This path leads north and south through the large encampment you are in.  
+It is very wide and a little muddy, due to the large amount of traffic to 
+be found here.  To the south and north the path continues, while to the 
+east lies a huge tent with a delicious aroma wafting from it.  To the west 
+you see the open entrance to a large barracks tent.
+
+~
+Sector field~
+Exit north 1920
+EDesc A Wide Path in the Camp.
+~
+Exit east 1923
+EDesc The Mess Tent.
+~
+Exit south 1925
+EDesc The Wide Path in the Camp.
+~
+Exit west 1922
+EDesc A Large Barracks Tent.
+~
+End
+
+
+#1922
+Name A Large Barracks Tent~
+Desc This large tent apparently serves to house a great deal of the common 
+soldiers in the camp.  Many bedrolls are laid out on the floor, most of 
+them neatly made, though a few are being slept in.  The floor is grass, 
+covered here and there with a few rushes.  To the north, south, and east 
+the doors of the tent have been let open to let a little breeze in.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1907
+EDesc A Crowded Tent.
+~
+Exit east 1921
+EDesc The Wide Path in the Camp.
+~
+Exit south 1926
+EDesc A Large Barracks Tent.
+~
+End
+
+
+#1923
+Name The Mess Tent~
+Desc This huge tent contains several trestle tables, and many open cooking 
+fires, where those soldiers who have the duty for the day cook the meals.  
+Right now it appears there is no meal going on, for no soldiers are 
+present.  Over the fires several spits of meat roast, and a few pots of 
+stew have been left to simmer.  To the east the tent flap has been left 
+open and you can spy a small, crystal clear lake.  To the west the open 
+tent flap leads out to the wide path through the camp.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 1924
+EDesc The Small Mountain Lake.
+~
+Exit west 1921
+EDesc The Wide Path in the Camp.
+~
+End
+
+
+#1924
+Name The Small Mountain Lake~
+Desc This small, clear little lake is apparently serving as a water supply and 
+bathing area for the soldiers.  Several are in here now, splashing and 
+lathering soap over themselves.  A small stream leads from the lake towards 
+the south, while it is unclear where the water in this lake comes from.  
+The only real exit from this place is back into the mess tent to the west. 
+While the top of the water is very clear, it gets very dark and murky 
+towards the bottom, and it is hard to tell what is down there.
+
+~
+Sector noswim~
+ExtraDesc deep water murky ~
+It seems the water is so cloudy because it is so deep.  You must be looking
+down hundreds of meters, because the water is so clear only a great depth
+could cause such a murky area.  It almost looks like something is down there,
+but it could be a trick of the light.
+~
+Exit west 1923
+EDesc The Mess Tent.
+~
+End
+
+
+#1925
+Name The Wide Path in the Camp~
+Desc You are on a large north-south path leading through the camp.  It is very 
+wide, and a little muddy, from the constant traffic it sees.  To the east 
+lies the entrance to a large tent full of boxes and crates.  To the west 
+lies another large barracks tent.  The path itself continues north and 
+south.
+
+~
+Sector field~
+Exit north 1921
+EDesc The Wide Path in the Camp.
+~
+Exit east 1927
+EDesc The Supply Tent.
+~
+Exit south 1928
+EDesc The Wide Path in the Camp.
+~
+Exit west 1926
+EDesc A Large Barracks Tent.
+~
+End
+
+
+#1926
+Name A Large Barracks Tent~
+Desc This roomy tent is apparently given over to housing a portion of the common 
+soldiers of this troop.  The floor is covered with many neatly made 
+bedrolls, and a few enterprising soldiers have constructed cots for 
+themselves.  The floor is made of matted down grass, though it has been 
+worn to the dirt in a few places.  Tent flaps to the north and east have 
+been let open to allow a little breeze in, and appear to be the only exits.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 1922
+EDesc A Large Barracks Tent.
+~
+Exit east 1925
+EDesc The Wide Path in the Camp.
+~
+End
+
+
+#1927
+Name The Supply Tent~
+Desc This tent contains many of the supplies for the army, things they cannot 
+find easily on their route.  Many crates, bags, and boxes are stacked here 
+in neat rows.  Towards the back of the tent a small forge has been set up, 
+allowing the soldiers to repair their weapons and armor should they become 
+damaged.  The only exit from this tent appears to be back to the west.
+
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc crate box bag~
+These crates and bags contain a wide vareity of goods.  Some contain
+foodstuffs, such as flour and dried bacon.  Others have goods ranging from
+bars of iron, to candles, to coils of rope.  There are also several bolts of
+cloth lying about, which allow the men to make repairs to their uniforms,
+tents, and standards.
+~
+Exit west 1925
+EDesc The Wide Path in the Camp.
+~
+End
+
+
+#1928
+Name The Wide Path in the Camp~
+Desc You find yourself on a large, wide path travelling north and south through 
+the camp.  The path itself is rather muddy already, due to the amount of 
+traffic it sees.  To the east you see a large, red tent with an eerie glow 
+coming from inside.  To the west you see a small, low white tent.
+
+~
+Sector field~
+Exit north 1925
+EDesc The Wide Path in the Camp.
+~
+Exit east 1930
+EDesc A Sweltering Tent.
+~
+Exit south 1931
+EDesc The Wide Path in the Camp.
+~
+Exit west 1929
+EFlags door closed nolock~
+EKeywords flap~
+EDesc A Small White Tent.
+~
+End
+
+
+#1929
+Name A Small White Tent~
+Desc This small tent is almost unnoticeable where it sits, and is also rather 
+unremarkable on the inside.  A few empty cots lie here, they look as if 
+they haven't been used in days.  The grass on the ground here also looks as 
+if it hasn't seen nearly the amount of wear and tear that the terrain in 
+the rest of the camp has.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 1928
+EFlags door closed nolock~
+EKeywords flap~
+EDesc The Wide Path in the Camp.
+~
+End
+
+
+#1930
+Name A Sweltering Tent~
+Desc The inside of this red tent is even stranger than the outside.  The 
+temperature in here is almost unbearable.  You break out in a sweat almost 
+as soon as you enter.  The reason seems to be the numerous braziers of 
+coals placed about the room, as well as a roaring fire that has been built 
+in the center of the tent.  Around the fire, very close to it in fact, 
+several red-colored bedrolls have been laid.  Whoever sleeps in here must be 
+mad.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 1928
+EDesc The Wide Path in the Camp.
+~
+End
+
+
+#1931
+Name The Wide Path in the Camp~
+Desc This wide path leads north and south through the large camp.  It is muddy 
+from the heavy traffic it seems to get, though someone has spread some 
+gravel hear and there to help alleviate the problem.  To the west you see a 
+black tent that has been set off to one side, while to the east a large 
+blue tent sends a shiver down your spine.  The path itself continues to the 
+north and the south.
+
+~
+Sector field~
+Exit north 1928
+EDesc The Wide Path in the Camp.
+~
+Exit east 1933
+EDesc The Blue Tent.
+~
+Exit south 1934
+EDesc The End of the Wide Path.
+~
+Exit west 1932
+EFlags door closed nolock~
+EKeywords flap~
+EDesc The Black Tent.
+~
+End
+
+
+#1932
+Name The Black Tent~
+Desc This tent has been set off to one side, perhaps because those in the main 
+body of the camp do not wish to associate themselves with the men who live 
+here.  The inside is also dark and gloomy, though it is dimly lit by a 
+small lamp hung from the ceiling.  A few unmade cots rest about the room, 
+though they don't look like they have been slept on in a while.  A small 
+table in the center of the room contains a few parchment pages tacked down 
+by a small knife.
+
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc table parchment knife~
+"...the gnome chief must die as well.  His people will be easy to conquer,
+and will show the locals we mean business.  The hardest will be the wood elf
+king, but I am sure the lot of you can take him, if you make it past his
+guards and are your usual resourceful selves.  Remember, Hafran knows of your
+mission and sends his blessing."
+~
+Exit east 1931
+EFlags door closed nolock~
+EKeywords flap~
+EDesc The Wide Path in the Camp.
+~
+End
+
+
+#1933
+Name The Blue Tent~
+Desc The air in this tent almost knocks you off your feet as you enter, it is so 
+cold.  You cannot seem to tell where this chill is coming from, but it 
+makes this tent colder than the highest mountain peaks in the dead of 
+winter.  A few sparse bedrolls lie on the floor here, they don't seem like 
+they could even keep you warm on a cool summer night, let alone in here.  
+Whoever sleeps in this tent must be mad.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 1931
+EDesc The Wide Path in the Camp.
+~
+End
+
+
+#1934
+Name The End of the Wide Path~
+Desc You find yourself on a wide path that leads through the camp here.  It is 
+wide and muddy from constant traffic, but it appears someone has taken the 
+time to spread gravel on it, to help with the problem.  The path heads 
+northward; to the south it ends abruptly as the large cliff wall rises 
+steeply.  To the west the wall of the cliff rises as well.  To the east the 
+cliff wall is a little farther back and a yellow tent has been set between 
+it and the path.
+
+~
+Sector field~
+Exit north 1931
+EDesc The Wide Path in the Camp.
+~
+Exit east 1935
+EDesc Inside the Yellow Tent.
+~
+End
+
+
+#1935
+Name Inside the Yellow Tent~
+Desc As you enter this tent you begin to feel a tingling sensation and you 
+notice that your hair is standing up on it's ends.  The air in here seems 
+to be supercharged with some sort of electricity, much as if a lightning 
+bolt was about to strike.  Indeed, there does seem to be some sort of 
+lightning in here, as two iron poles set up in the back of the room 
+occasionally flash a miniaturized bolt of the substance between each other. 
+A few bedrolls lie on the floor here.  Whoever would sleep in such an 
+obviously dangerous place must be insane.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 1934
+EDesc The End of the Wide Path.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 1907 spec_cast_cleric
+M 1908 spec_cast_cleric
+M 1918 spec_thief
+M 1920 spec_thief
+S
+
+
+
+#RESETS2
+O 0 1900 1 1902
+O 0 1901 1 1902
+O 0 1902 1 1902
+M 0 1900 2 1904 1
+E 0 1903 20 about~
+E 0 1904 20 legs~
+E 0 1905 20 torso~
+E 0 1906 20 feet~
+E 0 1907 10 wielded~
+E 0 1908 20 lwrist~
+E 0 1919 20 head~
+M 0 1900 2 1905 1
+E 0 1903 20 about~
+E 0 1904 20 legs~
+E 0 1905 20 torso~
+E 0 1906 20 feet~
+E 0 1907 10 wielded~
+E 0 1908 20 lwrist~
+E 0 1919 20 head~
+M 0 1901 4 1906 4
+M 0 1901 4 1906 4
+M 0 1902 1 1907 1
+E 0 1904 20 legs~
+E 0 1906 20 feet~
+M 0 1903 2 1910 2
+E 0 1903 20 about~
+E 0 1904 20 legs~
+E 0 1905 20 torso~
+E 0 1906 20 feet~
+E 0 1912 10 wielded~
+E 0 1908 20 lwrist~
+E 0 1919 20 head~
+E 0 1911 10 arms~
+E 0 1936 2 hold~
+M 0 1903 2 1910 2
+E 0 1903 20 about~
+E 0 1904 20 legs~
+E 0 1905 20 torso~
+E 0 1906 20 feet~
+E 0 1912 10 wielded~
+E 0 1908 20 lwrist~
+E 0 1919 20 head~
+E 0 1911 10 arms~
+M 0 1904 1 1911 1
+M 0 1905 1 1911 1
+M 0 1906 1 1912 1
+M 0 1907 1 1913 1
+E 0 1909 5 lfinger~
+E 0 1910 5 neck1~
+E 0 1913 5 about~
+E 0 1914 2 wielded~
+M 0 1908 1 1914 1
+E 0 1909 5 lfinger~
+E 0 1910 5 neck1~
+E 0 1913 5 about~
+E 0 1915 2 wielded~
+M 0 1909 2 1916 1
+E 0 1916 5 legs~
+E 0 1917 5 torso~
+E 0 1918 5 wielded~
+E 0 1920 5 head~
+E 0 1903 20 about~
+E 0 1906 20 feet~
+M 0 1909 2 1917 1
+E 0 1916 5 legs~
+E 0 1917 5 torso~
+E 0 1918 5 wielded~
+E 0 1920 5 head~
+E 0 1903 20 about~
+E 0 1906 20 feet~
+M 0 1910 2 1918 2
+E 0 1916 5 legs~
+E 0 1917 5 torso~
+E 0 1918 5 wielded~
+E 0 1920 5 head~
+E 0 1903 20 about~
+E 0 1906 20 feet~
+E 0 1921 5 shield~
+M 0 1910 2 1918 2
+E 0 1916 5 legs~
+E 0 1917 5 torso~
+E 0 1918 5 wielded~
+E 0 1920 5 head~
+E 0 1903 20 about~
+E 0 1906 20 feet~
+E 0 1921 5 shield~
+M 0 1911 1 1919 1
+E 0 1916 5 legs~
+E 0 1917 5 torso~
+E 0 1922 1 wielded~
+E 0 1920 5 head~
+E 0 1903 20 about~
+E 0 1906 20 feet~
+E 0 1921 5 shield~
+M 0 1912 2 1921 2
+E 0 1903 20 about~
+E 0 1904 20 legs~
+E 0 1905 20 torso~
+E 0 1906 20 feet~
+E 0 1923 5 hold~
+M 0 1912 2 1921 2
+E 0 1903 20 about~
+E 0 1904 20 legs~
+E 0 1905 20 torso~
+E 0 1906 20 feet~
+E 0 1923 5 hold~
+M 0 1913 1 1922 1
+M 0 1914 1 1923 1
+M 0 1915 1 1924 1
+M 0 1916 1 1924 1
+M 0 1917 1 1927 1
+E 0 1924 2 about~
+E 0 1925 2 wielded~
+E 0 1904 20 legs~
+E 0 1906 20 feet~
+M 0 1918 1 1929 1
+E 0 1926 1 torso~
+E 0 1927 1 legs~
+E 0 1928 2 wielded~
+M 0 1919 1 1930 1
+E 0 1931 1 about~
+E 0 1932 1 wielded~
+M 0 1920 1 1932 1
+E 0 1929 1 about~
+E 0 1930 1 wielded~
+E 0 1928 2 second~
+M 0 1921 1 1933 1
+E 0 1933 1 legs~
+E 0 1934 1 wielded~
+M 0 1922 1 1935 1
+E 0 1935 1 wielded~
+E 0 1904 20 legs~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#1902
+title prisoner is killed~
+code if mobhere 1923
+or mobhere 1924
+say The prisoner is escaping!
+kill ex-prisoner
+endif
+~
+disabled false
+END
+
+#1901
+title halfling prisoner~
+code mob mload 1924
+mob echo $I struggles to stand up, smiling with his newly achieved freedom.
+mob force '1924' follow $n
+mob purge 'halfling prisoner'
+~
+disabled false
+END
+
+#1900
+title avian prisoner~
+code mob mload 1923
+mob echo $I struggles to stand up, smiling with his newly achieved freedom.
+mob force '1923' follow $n
+mob purge 'avian prisoner'
+~
+disabled false
+END
+
+#0
+
+
+#$

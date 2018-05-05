@@ -1,0 +1,1625 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Pirate Ship~
+ShortName   Pirate Ship~
+Builders    None~
+Credits     Alric~
+VNUMs       23741 23799
+LRange      20 40
+Security    9
+Colour      Y~
+colourcode  `
+MapScale    5
+MapLevel    10
+Vnum_offset 0
+Continent   markrist~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#23741
+Name skinny pirate~
+ShortD a skinny pirate~
+LongD A skinny pirate stands here, swabbing the deck.~
+Desc This pirate looks skinny and weak, but he's got a mean glint in his eyes, 
+and it looks like he knows how to use his daggers.  His face is rough, and 
+his skin is tanned like leather, from life on the sea.  He's a pirate 
+allright.  
+~
+Race human~
+Align -2 -2
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+66
+DamDice 2d8+5
+DamType punch
+AC -40 -40 -40 -30
+Wealth 50
+Act    npc no_tame stay_area~
+AffBy  swim~
+Off    backstab disarm dodge parry~
+Imm    drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#23742
+Name large burly pirate~
+ShortD a burly pirate~
+LongD A large burly pirate sits here, relaxing.~
+Desc This large burly pirate obviously likes to relax.  He's burly and tough 
+looking, unshaven with tanned leathery skin.  His muscles bulge underneath 
+his clothing, and he's got a scar on his cheek.  
+~
+Race human~
+Align -2 -1
+Level 25
+Hitroll 1
+HitDice 4d5+115
+ManaDice 2d10+50
+DamDice 2d10+7
+DamType beating
+AC -70 -70 -70 -50
+Wealth 10
+Act    npc stay_area warrior~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material flesh
+MProg DELAY 23746 100~
+END
+
+#23743
+Name buxom young lass~
+ShortD a buxom lass~
+LongD A buxom young lass has been tied to the mast.~
+Desc This poor lass has been tied to the mast for some reason...  Maybe it's what 
+pirates do in their spare time?  She's young, and slender, and her spare 
+clothing hangs on her revealing her considerable cleavage.  She wriggles 
+desperatly in her bonds.  
+~
+Race human~
+Align 2 2
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 2d4+5
+DamDice 1d5+0
+DamType slap
+AC 80 80 80 90
+Wealth 2
+Act    npc dont_wander stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material silicon
+MProg COMMAND 23743 untie lass~
+MProg GREET 23742 100~
+END
+
+#23744
+Name old hairy pirate~
+ShortD an old hairy pirate~
+LongD An old hairy pirate stands here, mending a net.~
+Desc This hairy old pirate looks degrade and bored.  He's got a patch over one 
+eye, and he has a mean scar on his cheek.  He's mending a net slowly, while 
+whistling an old sea shanty to himself.  
+~
+Race human~
+Align 0 0
+Level 28
+Hitroll 0
+HitDice 5d5+125
+ManaDice 5d5+125
+DamDice 2d12+8
+DamType beating
+AC -80 -80 -80 -70
+Wealth 3
+Act    npc stay_area~
+Off    disarm dodge parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GREET 23753 60~
+END
+
+#23745
+Name skinny pirate~
+ShortD a skinny pirate~
+LongD A skinny pirate stands here, looking throught a telescope.~
+Desc This pirate looks skinny and weak, but he's got a mean glint in his eyes, 
+and it looks like he knows how to use his daggers.  His face is rough, and 
+his skin is tanned like leather, from life on the sea.  He's a pirate 
+allright.  
+~
+Race human~
+Align -2 -2
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+66
+DamDice 2d8+5
+DamType punch
+AC -40 -40 -40 -30
+Wealth 50
+Act    npc dont_wander no_tame stay_area~
+AffBy  swim~
+Off    backstab disarm dodge parry~
+Imm    drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#23746
+Name captain pirate~
+ShortD a pirate captain~
+LongD The captain of the pirates sits here, playing a sad tune on the piano.~
+Desc This tall man looks strong a fit.  His clothes are clean and well kept, and 
+his face has an air of elegant arrogance to it.  His hai is white and it 
+curls to about shoulder length.  Is eyes are a piercing blue grey.  His skin 
+is tanned, and his frame muscular.  
+~
+Race human~
+Align -2 1
+Level 40
+Hitroll 1
+HitDice 5d7+240
+ManaDice 2d5+30
+DamDice 4d8+13
+DamType punch
+AC -130 -130 -130 -109
+Wealth 40
+Act    npc dont_wander stay_area warrior~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+MProg REPOP 23741 100~
+END
+
+#23747
+Name large chubby man cook~
+ShortD a chubby cook~
+LongD A large chubby man stands here cooking up gruel.~
+Desc This pasty man looks nervous and desperate.  His pale chubby frame quivers 
+slightly, as he stirs his big pot of gruel.  
+~
+Race human~
+Align 0 0
+Level 26
+Hitroll 0
+HitDice 4d5+115
+ManaDice 4d5+115
+DamDice 3d7+7
+DamType beating
+AC -70 -70 -70 -56
+Wealth 0
+Act    npc dont_wander stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#23748
+Name short ugly pirate~
+ShortD a short and ugly pirate~
+LongD A short and ugly pirate sits here at a table, playing cards.~
+Desc You see a short and ugly pirate here.  He amuses himself with playing a 
+solitaire type game.  He is definately a loner, without friends and such.  
+But it is actually pretty obvious, due to his ugliness and bad breath.  
+~
+Race human~
+Align -3 -3
+Level 31
+Hitroll 15
+HitDice 5d6+150
+ManaDice 5d6+150
+DamDice 4d6+9
+DamType none
+AC -100 -100 -100 -83
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    poison disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GRALL 23747 100~
+MProg SPEECH 23748 yes~
+MProg ACT 23748 nod~
+MProg SPEECH 23749 no~
+MProg ACT 23749 shake~
+MProg DEATH 23750 100~
+END
+
+#23749
+Name captain's first-mate mate~
+ShortD the captain's first-mate~
+LongD The captain's first-mate sits here by his bed.~
+Desc You see the captain's first mate here.  He sits by his bed, and when he 
+notices you, he growls with anger.  His eyes burn with fire.  His hair is 
+black, and his body reveals an excellent muscular build.  
+~
+Race human~
+Align -3 -3
+Level 34
+Hitroll 55
+HitDice 5d6+210
+ManaDice 2d5+18
+DamDice 4d7+10
+DamType none
+AC -110 -110 -110 -94
+Wealth 190
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden~
+Off    bash berserk dodge kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#23750
+Name skinny pirate~
+ShortD a skinny pirate~
+LongD A skinny pirate sleeps in a hammock.~
+Desc This pirate looks skinny and weak, but he's got a mean glint in his eyes, 
+and it looks like he knows how to use his daggers.  His face is rough, and 
+his skin is tanned like leather, from life on the sea.  He's a pirate 
+allright.  
+~
+Race human~
+Align -2 -2
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+66
+DamDice 2d8+5
+DamType punch
+AC -40 -40 -40 -30
+Wealth 50
+Act    npc no_tame stay_area~
+AffBy  swim~
+Off    backstab disarm dodge parry~
+Imm    drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    male~
+Material unknown
+MProg REPOP 23751 100~
+MProg RANDOM 23752 30~
+END
+
+#23751
+Name sea shaman~
+ShortD a sea shaman~
+LongD A sea shaman stands here, looking out to sea.~
+Desc This tall guant figure stands here, looking out at the ocean.  His tall body 
+is skinny, but radiates heat strangly.  His dark cloak and hood covers his 
+body, making you unable to tell his race.  
+~
+Race lizardman~
+Align 2 -2
+Level 37
+Hitroll 2
+HitDice 5d6+225
+ManaDice 2d5+25
+DamDice 3d10+12
+DamType claw
+AC -120 -120 -120 -104
+Wealth 10
+Act    npc dont_wander stay_area warrior~
+AffBy  haste~
+Off    bash disarm dodge fast kick tail trip~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped mammal reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#23741
+Name water barrel~
+Short a water barrel~
+Desc A large water barrel has been left here.~
+Level 1
+ItemType fountain~
+Cost 10
+Asize 0
+Rsize 50
+Values 100 100 water 0 0
+Weight 25000
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#23742
+Name heavy coil rope~
+Short a heavy coil of rope~
+Desc A heavy coil of rope lies here unattended.~
+Level 1
+ItemType weapon~
+Cost 2
+Asize 0
+Rsize 60
+Values whip 1 4 whip 0
+Weight 20
+Material rope~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+End
+
+#23743
+Name large barrel~
+Short a large barrel~
+Desc A large barrel stands here open.~
+Level 1
+ItemType container~
+Cost 2
+Asize 0
+Rsize 50
+Values 50 0 0 12 110
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take~
+End
+
+#23744
+Name salted fish chunk~
+Short a salted fish chunk~
+Desc A chunk of salted fish lies here.~
+Level 1
+ItemType food~
+Cost 10
+Asize 0
+Rsize 50
+Values 10 10 0 0 0
+Weight 0
+Material fish~
+Extra    nonmetal~
+Wear     take~
+End
+
+#23745
+Name small net hammock~
+Short a net hammock~
+Desc A small hammock is strung up on the east side of the room.~
+Level 1
+ItemType furniture~
+Cost 20
+Asize 0
+Rsize 50
+Values 1 200 EHK 101 101
+Weight 10
+Material hemp~
+Extra    nonmetal nodegrade~
+End
+
+#23746
+Name small net hammock~
+Short a net hammock~
+Desc A small hammock is strung up on the west side of the room.~
+Level 1
+ItemType furniture~
+Cost 20
+Asize 0
+Rsize 50
+Values 1 200 EHK 101 101
+Weight 10
+Material hemp~
+Extra    nonmetal nodegrade~
+End
+
+#23747
+Name comfortable large bed~
+Short a large bed~
+Desc A large comfortable looking bed is here.~
+Level 1
+ItemType furniture~
+Cost 10
+Asize 0
+Rsize 50
+Values 2 400 EHK 105 105
+Weight 9000
+Material wood and cloth~
+Extra    nonmetal nodegrade~
+End
+
+#23748
+Name large crate~
+Short a large crate~
+Desc A large crate lies open here.~
+Level 1
+ItemType container~
+Cost 1
+Asize 0
+Rsize 50
+Values 40 0 0 40 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#23749
+Name large black grand piano~
+Short a grand piano~
+Desc A large black piano is in the corner of the room.~
+Level 1
+ItemType furniture~
+Cost 100
+Asize 0
+Rsize 50
+Values 2 400 DEH 101 101
+Weight 10000
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#23750
+Name jagged dagger~
+Short a jagged edged dagger~
+Desc A long jagged dagger lies here.~
+Level 20
+ItemType weapon~
+Cost 40
+Asize 0
+Rsize 50
+Values dagger 2 6 slash D
+Weight 3
+Material metal~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+End
+
+#23751
+Name pair black hide leggings~
+Short a pair of `#`Sblack`^ hide leggings~
+Desc Some black hide leggings lie here.~
+Level 20
+ItemType armor~
+Cost 40
+Asize 0
+Rsize 50
+Values 6 8 8 4 0
+Weight 30
+Material hide~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 20 -1 ac -10 0
+End
+
+#23752
+Name frilly white shirt~
+Short a frilly `#`Wwhite`^ shirt~
+Desc A frilly white shirt lies here.~
+Level 10
+ItemType clothing~
+Cost 20
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+Affect modifier -1 10 -1 agility 1 0
+End
+
+#23753
+Name dirty mop~
+Short a `#`mdi`Mr`mt`My`^ mop~
+Desc A long dirty mop lies here.~
+Level 10
+ItemType weapon~
+Cost 20
+Asize 0
+Rsize 50
+Values mace 2 10 smash 0
+Weight 4
+Material wood~
+Extra    nonmetal nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian~
+End
+
+#23754
+Name red bandanna~
+Short a `#`rr`Red`r ba`Rn`rdann`Ra`^~
+Desc A red bandanna lies here.~
+Level 1
+ItemType clothing~
+Cost 2
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take head~
+End
+
+#23755
+Name copper plate telescope~
+Short a `#`ycopper plated`^ telescope~
+Desc A fine looking copper plate telescope lies here.~
+Level 20
+ItemType treasure~
+Cost 200
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material copper~
+Extra    nodegrade burnproof~
+Wear     take hold~
+End
+
+#23756
+Name mean looking cutlass~
+Short a mean looking cutlass~
+Desc A long curved cutlass lies here, looking quite mean.~
+Level 25
+ItemType weapon~
+Cost 50
+Asize 0
+Rsize 50
+Values sword 5 5 slash D
+Weight 10
+Material steel~
+Extra    evil nodegrade~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 25 -1 damroll 1 0
+Affect modifier -1 25 -1 hitroll 1 0
+End
+
+#23757
+Name torn flimsy dress~
+Short a torn and flimsy dress~
+Desc A pile of torn cloth lies here.~
+Level 1
+ItemType clothing~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+End
+
+#23758
+Name jagged skull hilted cutlass~
+Short a jagged `#`Wskull-hilted`^ cutlass~
+Desc A jagged cutlass, it's hilt a skull is here.~
+Level 40
+ItemType weapon~
+Cost 800
+Asize 0
+Rsize 55
+Values sword 6 6 slice E
+Weight 50
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 40 -1 empathy -4 0
+Affect modifier -1 40 -1 damroll 3 0
+Affect modifier -1 40 -1 hitroll 3 0
+Affect modifier -1 40 -1 quickness 2 0
+Affect modifier -1 40 -1 presence -4 0
+End
+
+#23759
+Name black full breast-plate~
+Short a `#`Sblack`^ full breast-plate~
+Desc A full breast plate made of black steel lies here.~
+Level 40
+ItemType armor~
+Cost 1600
+Asize 0
+Rsize 45
+Values 13 13 13 10 0
+Weight 70
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances warrior paladin barbarian~
+Affect modifier -1 40 -1 memory -1 0
+Affect modifier -1 40 -1 damroll 4 0
+Affect modifier -1 40 -1 hitroll 4 0
+End
+
+#23760
+Name black full plate leg armor~
+Short some `#`Sblack`^ full plate leg armor~
+Desc A set of full plate leg armor made of black steel lies here.~
+Level 40
+ItemType armor~
+Cost 800
+Asize 0
+Rsize 45
+Values 10 10 10 8 0
+Weight 70
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take legs~
+ClassAllowances warrior paladin barbarian~
+Affect modifier -1 40 -1 damroll 3 0
+Affect modifier -1 40 -1 hitroll 3 0
+End
+
+#23761
+Name black banded mail sleeves~
+Short some `#`Sblack`^ banded mail sleeves~
+Desc A pair of black sleeves made of banded mail is here.~
+Level 40
+ItemType armor~
+Cost 850
+Asize 0
+Rsize 45
+Values 10 10 10 8 0
+Weight 35
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take arms~
+ClassAllowances warrior barbarian~
+Affect modifier -1 40 -1 selfdiscipline -3 0
+Affect modifier -1 40 -1 hp 12 0
+End
+
+#23762
+Name skull crossbone pirate hat~
+Short a `#`Wskull`^ and `Wcrossbones`^ pirate's hat~
+Desc A black hat with a white skull and crossbones is here.~
+Level 10
+ItemType clothing~
+Cost 200
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take head~
+Affect modifier -1 10 -1 presence 1 0
+End
+
+#23763
+Name elegant black leather gloves~
+Short an elegant pair of `#`Sblack`^ leather gloves~
+Desc An elegant pair of black leather gloves are here~
+Level 40
+ItemType armor~
+Cost 890
+Asize 0
+Rsize 45
+Values 8 8 8 6 0
+Weight 20
+Material leather~
+Extra    nodegrade~
+Wear     take hands~
+Affect modifier -1 40 -1 reasoning -3 0
+Affect modifier -1 40 -1 strength 3 0
+End
+
+#23764
+Name elegant black leather boots~
+Short an elegant pair of `#`Sblack`^ leather boots~
+Desc An elegant pair of black leather boots are here.~
+Level 40
+ItemType armor~
+Cost 865
+Asize 0
+Rsize 50
+Values 8 8 8 6 0
+Weight 20
+Material leather~
+Extra    nodegrade~
+Wear     take feet~
+Affect modifier -1 40 -1 agility -2 0
+Affect modifier -1 40 -1 strength 3 0
+Affect modifier -1 40 -1 constitution 2 0
+End
+
+#23765
+Name black full plate taces~
+Short some `#`Sblack`^ full plate taces~
+Desc A set of taces made out of black steel lie here.~
+Level 40
+ItemType armor~
+Cost 1000
+Asize 0
+Rsize 45
+Values 8 8 8 6 0
+Weight 70
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take waist~
+ClassAllowances warrior paladin barbarian~
+Affect modifier -1 40 -1 saves 2 0
+Affect modifier -1 40 -1 hp 8 0
+End
+
+#23766
+Name vest pirate's skull~
+Short a vest with a pirate's skull~
+Desc A vest with a pirate's skull painted on it lies here.~
+Level 25
+ItemType armor~
+Cost 500
+Asize 0
+Rsize 50
+Values 7 9 9 6 0
+Weight 2
+Material leather~
+Extra    antigood nonmetal nodegrade~
+Wear     take torso~
+Affect modifier -1 25 -1 ac -10 0
+End
+
+#23767
+Name blade pirates~
+Short a pirate's blade~
+Desc A long sharp blade lies here, with a crossbone and skull.~
+Level 25
+ItemType weapon~
+Cost 1000
+Asize 0
+Rsize 50
+Values sword 7 3 slash H
+Weight 2
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+End
+
+#23768
+Name chef's apron~
+Short a chef's apron~
+Desc An apron with grease all over it lies here.~
+Level 26
+ItemType armor~
+Cost 350
+Asize 0
+Rsize 50
+Values 8 8 8 6 0
+Weight 2
+Material leather~
+Extra    nodegrade~
+Wear     take about~
+Affect modifier -1 26 -1 damroll 2 0
+Affect modifier -1 26 -1 hitroll 2 0
+End
+
+#23769
+Name white dirty shirt~
+Short a dirty `#`wwhite`^ shirt~
+Desc A dirty `#`wwhite`^ shirt lies here.~
+Level 10
+ItemType clothing~
+Cost 600
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+End
+
+#23770
+Name large rolling pin~
+Short a large rolling pin~
+Desc A large rolling pin lies here.~
+Level 26
+ItemType weapon~
+Cost 750
+Asize 0
+Rsize 50
+Values mace 2 18 smash F
+Weight 5
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+End
+
+#23771
+Name large black cauldron~
+Short a large cauldron~
+Desc A large black cauldron is here.~
+Level 1
+ItemType furniture~
+Cost 10
+Asize 0
+Rsize 50
+Values 1 900 FI -100 -100
+Weight 400
+Material steel~
+Extra    nodegrade~
+Wear     take~
+End
+
+#23772
+Name nasty two-handed bastard sword~
+Short a nasty two-handed bastard sword~
+Desc A nasty two-handed bastard sword gleams in the light here.~
+Level 25
+ItemType weapon~
+Cost 1800
+Asize 0
+Rsize 50
+Values sword 6 4 cleave DFH
+Weight 15
+Material steel~
+Extra    antigood nodegrade~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+End
+
+#23773
+Name large net~
+Short a large net~
+Desc A large net lies here.~
+Level 1
+ItemType trash~
+Cost 3
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material hemp~
+Extra    nodegrade~
+Wear     take about~
+End
+
+#23774
+Name black pirate's cape~
+Short a `#`Sblack`^ pirate's cape~
+Desc A `#`Sblack`^ pirate's cape is lying here.~
+Level 34
+ItemType armor~
+Cost 1800
+Asize 0
+Rsize 50
+Values 11 11 11 8 0
+Weight 5
+Material cloth~
+Extra    evil antigood nodegrade burnproof~
+Wear     take about~
+Affect modifier -1 34 -1 hp 2 0
+Affect modifier -1 34 -1 hitroll 2 0
+Affect modifier -1 34 -1 damroll 2 0
+End
+
+#23775
+Name black triangle-shaped hat~
+Short a `#`Sblack`^, triangle-shaped hat~
+Desc A `#`Sblack`^, triangle-shaped hat lies here.~
+Level 34
+ItemType clothing~
+Cost 1800
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material cloth~
+Extra    evil antigood nodegrade burnproof~
+Wear     take head~
+ClassAllowances thief warrior paladin ranger~
+Affect modifier -1 34 -1 hp 2 0
+Affect modifier -1 34 -1 mana 20 0
+Affect modifier -1 34 -1 reasoning 2 0
+End
+
+#23776
+Name pair blue padded leggings~
+Short a pair of`#`b blue`^ padded leggings~
+Desc A pair of padded leggings made of a blue cloth lie here.~
+Level 37
+ItemType armor~
+Cost 3500
+Asize 0
+Rsize 45
+Values 9 9 9 7 0
+Weight 10
+Material cloth~
+Extra    magic antigood antineutral nonmetal nodegrade burnproof~
+Wear     take legs~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 37 -1 hitroll 2 0
+Affect modifier -1 37 -1 mana 60 0
+End
+
+#23777
+Name blue diamond ring~
+Short a `#`cblue diamond`^ ring~
+Desc A large golden ring, with a large blue diamond rest here.~
+Level 37
+ItemType jewelry~
+Cost 991
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material gold diamond~
+Extra    magic antigood antineutral nodegrade burnproof~
+Wear     take finger~
+ClassAllowances mage cleric paladin ranger spellfilcher~
+Affect modifier -1 37 -1 mana 100 0
+End
+
+#23778
+Name blue diamond studded collar~
+Short a `#`cblue diamond`^ studded collar~
+Desc A leather collar studded with blue diamonds is here.~
+Level 37
+ItemType armor~
+Cost 1290
+Asize 0
+Rsize 45
+Values 6 6 6 4 0
+Weight 5
+Material leather~
+Extra    hum antigood antineutral nonmetal nodegrade burnproof~
+Wear     take neck~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 37 -1 hitroll 2 0
+Affect modifier -1 37 -1 damroll 2 0
+Affect modifier -1 37 -1 mana 60 0
+End
+
+#23779
+Name jagged blue diamond mace large~
+Short a jagged `#`cblue diamond`^ mace~
+Desc A large mace made of blue diamond lies here, jagged sharp edged sticking out wickedly.~
+Level 37
+ItemType weapon~
+Cost 1300
+Asize 0
+Rsize 50
+Values mace 3 12 crush E
+Weight 30
+Material diamon~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin ranger~
+End
+
+#23780
+Name eye-shaped diamond~
+Short an eye-shaped diamond~
+Desc An eye-shaped diamond is here.~
+Level 50
+ItemType jewelry~
+Cost 1500
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material diamond~
+Extra    magic nonmetal nolocate nodegrade~
+Wear     take hold~
+ExtraDesc eye-shaped diamond~
+This multifacated diamond, sparkles a myriad of colours as you stare upon 
+it.  Its prisms seem to reflect itself into infinity.  Its fairly large, and 
+heavy for a diamond.  You feel a strange surge of energy travel through you 
+as you hold it in your hands, how queer.  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#23741
+Name The Gangplank~
+Desc This small wooden plank leads up from the jetti to the large pirate ship.  
+To the east is the large ship, it's wide and flat bottom, with one large 
+main mast, and a small rise at the stern.  The stern is painted a deep red 
+color, with gold trimmings.  At the front of the ship is a large ram that is 
+craved into the likeness of a dragons' head, and painted blue.  
+~
+Sector city~
+Exit east 23742
+Exit west 31032
+EFlags oneway~
+End
+
+
+#23742
+Name Main Deck~
+Desc This is the main deck of a sailing ship. The ship is facing its front to the 
+south, its stern to the north. The deck continues in both of these 
+directions. In the middle of the deck is a large main mast, which can be 
+climbed. On the west side railing is the gangplank, leading off the ship. 
+~
+Sector city~
+Exit north 23743
+Exit south 23744
+Exit west 23741
+Exit up 23745
+End
+
+
+#23743
+Name Before the Stern House~
+Desc To the north, steps lead up to the top of the stern house.  A large wooden 
+door to the north leads into the stern house.  To the south is the main 
+decks of the ship.  The stern deck sways gently in the calm port waters.  
+~
+Sector city~
+Exit north 23748
+EFlags door closed~
+EKeywords door~
+Exit south 23742
+Exit up 23747
+End
+
+
+#23744
+Name The Bow of a Sailing Ship~
+Desc This is the bow of a sailing ship, it extends south.  Along the keel, at the 
+very bow is a large ram, painted blue and craved into the likeness of a 
+dragon's head.  The deck is fairly clean, and the salt sea air fills your 
+nose.  The rest of the deck extends to the north.  
+~
+Sector city~
+Exit north 23742
+End
+
+
+#23745
+Name Climbing the Mast~
+Desc This is the large wooden mast of a sailing ship, below , the large deck of 
+the ship spreads out, from bow to stern.  The sailors below look small and 
+tiny, like bugs.  Above is the crows nest, a small wooden barrel used for a 
+lookout.  
+~
+RoomFlags no_mob~
+Sector city~
+Mana 80
+Heal 80
+Exit up 23746
+Exit down 23742
+End
+
+
+#23746
+Name Crow's Nest~
+Desc This is the crows nest at the top of the main mast of a large sailing ship.  
+Below the deck spreads out, from bow to stern.  This small cramped 
+barrel-like structure is used for a look out by the sailors.  The crow's 
+nest sways gently in the breeze of the salty sea.  
+~
+Sector city~
+Exit down 23745
+End
+
+
+#23747
+Name The Stern of a Sailing Ship~
+Desc This is the top of the stern house, of the sailing ship.  Over the railing, 
+you can see the sea water lap up against the hull, and the large rudder of 
+the ship.  There are a set of stairs that lead down to the main decks.  On a 
+small wooden rise is the wheel of the ship, the helm.  This probably steers 
+the ship.  
+~
+Sector city~
+Exit down 23743
+End
+
+
+#23748
+Name A Wooden Room~
+Desc This is basically a small plain wooden room, with a hatch and ladder leading 
+down into the hull of the ship.  There is a plain wooden door on the south 
+of the room, and a large oak door on the north side.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 23749
+EFlags door closed~
+EKeywords door~
+Exit south 23743
+EFlags door closed~
+EKeywords door~
+Exit down 23750
+End
+
+
+#23749
+Name The Captain's Quarters~
+Desc This large room is well decorated and very clean, it must be the room of a 
+highly respected person.  There is a large door in the south wall.  Two 
+windows in the north wall open up, and the sea can be seen through them.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 23748
+EFlags door closed~
+EKeywords door~
+End
+
+
+#23750
+Name Cramped Hallway~
+Desc This cramped hallway sways a bit from side to side.  The floor, walls, and 
+ceiling are all made out of plank wood.  There is a door in north wall, and 
+a hall to the south.  A wooden ladder leads down from above.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 23751
+EFlags door closed~
+EKeywords door~
+Exit south 23752
+Exit up 23748
+End
+
+
+#23751
+Name First Mate's Quaters~
+Desc This room although not as nice as the captains room, is still quite nice.  
+The floor carpeted, and there is a window on the north wall.  There is a 
+wooden door to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 23750
+EFlags door closed~
+EKeywords wooden door~
+End
+
+
+#23752
+Name Cramped Hallway~
+Desc This dimly-lit cramped hallway sways a bit from side to side.  The floor, 
+walls, and ceiling are all made out of plank wood.  The halls leads from 
+south to north and there are doors on both sides of the hallway.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 23750
+Exit east 23757
+EFlags door closed~
+EKeywords door~
+Exit south 23753
+Exit west 23759
+EFlags door closed~
+EKeywords door~
+End
+
+
+#23753
+Name Cramped Hallway~
+Desc This dimly-lit cramped hallway sways a bit from side to side.  The floor, 
+walls, and ceiling are all made out of plank wood.  The halls leads from the 
+north and end with a door on the south wall.  There are also doors on both 
+sides of the hallway.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 23752
+Exit east 23758
+EFlags door closed~
+EKeywords door~
+Exit south 23754
+EFlags door closed~
+EKeywords door~
+Exit west 23760
+EFlags door closed~
+EKeywords door~
+End
+
+
+#23754
+Name Anchor Room~
+Desc This small wedge shaped room must be at the very bow of the ship.  On the 
+port side if a small hole, from which a large coil of rope extends and ties 
+to a large wooden beam that looks very strong.  There is a doorway to the 
+north, and a hatch and ladder leading down.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 23753
+EFlags door closed~
+EKeywords door~
+Exit down 23755
+End
+
+
+#23755
+Name Storage Room~
+Desc This room is dark and musty.  The ceiling is low.  There are large sealed 
+crates packed in here for storage, and some large storage bags.  To the 
+north is a opening between the crates.  There is a ladder here that leads 
+up.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 23756
+Exit up 23754
+End
+
+
+#23756
+Name Behind the Crates~
+Desc This small space is surrounded by stacked crates, the only exit is south, in 
+between some crates.  The floor here is very dusty, and there are many rat 
+droppings.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 23755
+End
+
+
+#23757
+Name Galley~
+Desc This large open room is very plain.  It seems to be the galley of this ship. 
+ There are two round windows on the west wall, through which water can be 
+seen.  The floors creaky.  The room is filled with a dense smoke.  The room 
+continues to the south, and there is a door in the west wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 23758
+Exit west 23752
+EFlags door closed~
+EKeywords door~
+End
+
+
+#23758
+Name Galley~
+Desc This large open room is very plain.  It seems to be the galley of this ship. 
+ There are two round windows on the west wall, through which water can be 
+seen.  The floors creaky.  The room is filled with a dense smoke.  The room 
+continues to the north, and there is a door in the west wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 23757
+Exit west 23753
+EFlags door closed~
+EKeywords door~
+End
+
+
+#23759
+Name Small Quarters~
+Desc This is a small wooden room with a door on the east side and a small round 
+window on the west side.  The rooms sways slightly, and the floor creaks.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 23752
+EFlags door closed~
+EKeywords door~
+End
+
+
+#23760
+Name Small Quarters~
+Desc This is a small wooden room with a door on the east side and a small round 
+window on the west side.  The rooms sways slightly, and the floor creaks.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 23753
+EFlags door closed~
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 23751 spec_breath_frost
+S
+
+
+
+#RESETS2
+O 0 23743 -1 23742
+P 0 23744 20 23743 10
+M 0 23742 2 23742 1
+E 0 23756 -1 wielded~
+E 0 23754 -1 head~
+E 0 23751 -1 legs~
+E 0 23752 -1 torso~
+M 0 23743 1 23742 1
+E 0 23757 -1 torso~
+M 0 23741 3 23743 1
+E 0 23751 -1 legs~
+E 0 23750 -1 second~
+E 0 23753 -1 wielded~
+E 0 23754 -1 head~
+E 0 23752 -1 torso~
+O 0 23742 -1 23743
+O 0 23741 -1 23744
+O 0 23742 -1 23744
+M 0 23741 3 23744 1
+E 0 23751 -1 legs~
+E 0 23750 -1 second~
+E 0 23753 -1 wielded~
+E 0 23754 -1 head~
+E 0 23752 -1 torso~
+M 0 23745 1 23746 1
+E 0 23754 -1 head~
+E 0 23751 -1 legs~
+E 0 23752 -1 torso~
+E 0 23750 -1 wielded~
+E 0 23755 -1 hold~
+O 0 23741 -1 23747
+O 0 23742 -1 23747
+M 0 23741 3 23747 1
+E 0 23751 -1 legs~
+E 0 23750 -1 second~
+E 0 23752 -1 torso~
+E 0 23753 -1 wielded~
+E 0 23754 -1 head~
+M 0 23742 2 23747 1
+E 0 23754 -1 head~
+E 0 23752 -1 torso~
+E 0 23756 -1 wielded~
+G 0 23742 -1
+E 0 23751 -1 legs~
+M 0 23751 1 23747 1
+E 0 23776 -1 legs~
+E 0 23777 -1 lfinger~
+E 0 23777 -1 rfinger~
+E 0 23778 -1 neck1~
+E 0 23774 -1 about~
+E 0 23766 -1 torso~
+E 0 23779 -1 wielded~
+O 0 23747 -1 23749
+O 0 23749 -1 23749
+M 0 23746 1 23749 1
+E 0 23758 -1 wielded~
+E 0 23759 -1 torso~
+E 0 23760 -1 legs~
+E 0 23761 -1 arms~
+E 0 23762 -1 head~
+E 0 23763 -1 hands~
+E 0 23764 -1 feet~
+E 0 23765 -1 waist~
+G 0 23780 -1
+O 0 23747 -1 23751
+M 0 23749 1 23751 1
+E 0 23772 -1 wielded~
+E 0 23766 -1 torso~
+E 0 23774 -1 about~
+E 0 23775 -1 head~
+O 0 23748 -1 23755
+P 0 23742 5 23748 1
+M 0 23748 1 23756 1
+E 0 23754 -1 head~
+E 0 23766 -1 torso~
+E 0 23767 -1 wielded~
+M 0 23747 1 23757 1
+E 0 23768 -1 about~
+E 0 23769 -1 torso~
+O 0 23771 -1 23757
+E 0 23770 -1 wielded~
+O 0 23743 -1 23758
+P 0 23744 20 23743 10
+M 0 23744 1 23758 1
+E 0 23751 -1 legs~
+E 0 23773 -1 hold~
+E 0 23752 -1 torso~
+O 0 23745 -1 23759
+O 0 23746 -1 23759
+M 0 23750 2 23759 1
+E 0 23752 -1 torso~
+E 0 23751 -1 legs~
+E 0 23754 -1 head~
+O 0 23745 -1 23760
+O 0 23746 -1 23760
+M 0 23750 2 23760 1
+E 0 23752 -1 torso~
+E 0 23751 -1 legs~
+E 0 23754 -1 head~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#23754
+title garbage~
+code mob remember $n
+~
+disabled false
+END
+
+#23753
+title old pirate - grall~
+code if sex $n < 2
+wink $n
+else
+pinch $n
+break
+endif
+ 
+~
+disabled false
+END
+
+#23752
+title skinny pirate snores!~
+code snore
+~
+disabled false
+END
+
+#23751
+title skinny pirate sleeps~
+code wake
+sleep hammock
+~
+disabled false
+END
+
+#23750
+title pirate death~
+code yell Mahyday! Hargh! Help yar fello' men get'a revenge!
+mob mload 23742
+mob echo A pirate comes from the south and draws his blade.
+mob vforce 23742 mob kill $n
+mob vforce 23742 yell Die!
+~
+disabled false
+END
+
+#23749
+title pirate response to no~
+code growl $n
+sayto $n Hargh hargh! See yar in hellishhh!
+mob kill $n
+~
+disabled false
+END
+
+#23748
+title pirate response to yes~
+code if sex $n < 2
+sayto $n Too bad you loser!
+laugh $n
+else
+sayto $n I like your type..
+wink $n
+break
+endif
+~
+disabled false
+END
+
+#23747
+title loner pirate greet~
+code if sex $n < 2
+sayto $n Want to play cards, buddy?
+else
+misc $n
+sayto $n Want to be penpals..?
+break
+endif
+~
+disabled false
+END
+
+#23746
+title angry sailor attacks you for rescuing damsel~
+code say >$q Oiy mate!  Whatcha go do that for?!
+growl $q
+say now you die!
+mob kill $q
+~
+disabled false
+END
+
+#23745
+title garbage~
+code mob remember $n
+mob delay 1
+~
+disabled false
+END
+
+#23743
+title rescue a damsel in distress~
+code say >$n Oh thank you! I'm free!
+emote rubs her wrists.
+emote does some strange motions with her hands, and mutters some arcane words.
+emote disappears in a flash!
+mob force burly mob remember $n
+mob force burly mob delay 1
+mob purge self
+~
+disabled false
+END
+
+#23742
+title damsel needs to be rescued~
+code emote wriggles furiously in her bonds.
+say >$n Please untie me!
+~
+disabled false
+END
+
+#23741
+title captain sits at the piano~
+code stand
+sit piano
+~
+disabled false
+END
+
+#0
+
+
+#$

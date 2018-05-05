@@ -1,0 +1,2392 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        The Fishing Village~
+ShortName   Fishing Village~
+Builders    None~
+Credits     Anita~
+VNUMs       11100 11150
+LRange      10 45
+Security    9
+Colour      Y~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#11100
+Name large ugly rat~
+ShortD a rat~
+LongD A large ugly rat is here snarling at you.~
+Desc An ugly rat skitters across the floor.  Grossly large for a rat, it looks 
+quite fearsome with the mucus dripping from its front teeth.
+~
+Race unique~
+Align -3 0
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType bite
+AC 10 10 10 9
+Wealth 0
+Act    npc scavenger stay_area~
+AffBy  infrared sneak~
+Off    dodge fast~
+Res    disease drowning~
+Vuln   poison~
+Form   edible poison animal mountable~
+Part   head legs heart brains guts feet ear eye long_tongue claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#11101
+Name deformed mutant rat~
+ShortD a mutant rat~
+LongD A deformed and mutated rat skitters across the floor.~
+Desc This rat had been mutated through years of inbreeding and disease and hisses
+at you in its present and hideous form.
+~
+Race unique~
+Align 0 -3
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 1d10+70
+DamDice 2d6+3
+DamType bite
+AC -20 -20 -20 -20
+Wealth 0
+Act    npc scavenger aggressive stay_area~
+AffBy  infrared sneak~
+Off    berserk dodge fast~
+Res    disease drowning~
+Form   edible poison animal mountable~
+Part   head legs heart brains guts hands feet ear eye long_tongue claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#11102
+Name small boy stow-away~
+ShortD a stow-away~
+LongD A small boy cowers in the corner.~
+Desc The small boy obviously lives in this filth and is attempting to stow-away.
+~
+Race human~
+Align -2 0
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 1d10+100
+DamDice 2d10+7
+DamType scratch
+AC -70 -70 -70 -20
+Wealth 50
+Act    npc scavenger no_tame stay_area wimpy thief~
+AffBy  hide weaken~
+Off    backstab dodge kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   small~
+Sex    male~
+Material flesh
+END
+
+#11103
+Name pirate ghost~
+ShortD a pirate~
+LongD The ghost of a pirate hovers here.~
+Desc This pirate was one of the old crew members that died on board after the
+ship sank.  Obviously its spirit stayed on.
+~
+Race human~
+Align 1 -1
+Level 24
+Hitroll 0
+HitDice 5d5+140
+ManaDice 1d10+130
+DamDice 4d6+8
+DamType drain
+AC -70 -70 -70 -20
+Wealth 240
+Act    npc no_tame stay_area undead thief~
+AffBy  curse flying pass_door~
+Off    backstab fade assist_vnum~
+Imm    charm poison negative mental disease drowning~
+Vuln   holy silver~
+Form   edible instant_decay sentient undead intangible biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material mist
+END
+
+#11104
+Name ghostly form captain's first-mate~
+ShortD the first-mate~
+LongD The ghostly form of the captain's first-mate hovers here.~
+Desc This pirate was obviously the captains right-hand man, you can tell by his
+missing right hand.
+~
+Race human~
+Align 3 -2
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 2d10+150
+DamDice 4d7+11
+DamType drain
+AC -110 -110 -110 -90
+Wealth 350
+Act    npc dont_wander no_tame aggressive stay_area undead thief~
+AffBy  curse flying pass_door~
+Off    backstab dodge fade~
+Imm    charm poison negative mental disease drowning~
+Vuln   holy silver~
+Form   edible instant_decay sentient undead intangible biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material mist
+END
+
+#11105
+Name ghostly form captain~
+ShortD the Captain~
+LongD The ghostly form of the ships captain hovers here.~
+Desc The ships captain has a peg-leg and a crook smile on his face.  His eyes light
+up when he sees your money pouch.
+~
+Race human~
+Align 1 -3
+XPMod 110
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 2d10+200
+DamDice 8d4+16
+DamType drain
+AC -150 -150 -150 -100
+Wealth 450
+Act    npc dont_wander no_tame stay_area undead thief~
+AffBy  curse flying pass_door~
+Off    backstab disarm dodge fade~
+Imm    charm poison negative disease drowning~
+Vuln   holy silver~
+Form   edible instant_decay sentient undead intangible biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material mist
+END
+
+#11106
+Name massive giant squid~
+ShortD a giant squid~
+LongD A massive giant squid is here.~
+Desc This massive sea dwelling creature is a giant squid.  It looks strong enough 
+to have sunk the ship alone.  Its tentacles wrap around the ships hull.
+~
+Race unique~
+Align 0 0
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 2d10+100
+DamDice 4d8+13
+DamType crush
+AC -130 -130 -130 -100
+Wealth 400
+Act    npc dont_wander aggressive stay_area~
+AffBy  haste~
+Off    area_attack disarm fast tail crush~
+Imm    drowning~
+Res    wood~
+Form   edible mammal amphibian cold_blood~
+Part   head heart brains guts tentacles~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material flesh
+END
+
+#11107
+Name pitch black crow~
+ShortD a crow~
+LongD A pitch black crow is here defending its nest.~
+Desc The crow is squawking furiously at you.  It's enough to wake the dead.
+~
+Race water fowl~
+Align 0 0
+XPMod 60
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 1d10+100
+DamDice 2d8+5
+DamType peck
+AC -20 -20 -20 -20
+Wealth 100
+Act    npc dont_wander aggressive stay_area~
+AffBy  infrared flying swim~
+Off    dodge~
+Res    drowning~
+Form   edible animal mountable bird~
+Part   head legs heart brains guts feet eye long_tongue wings~
+StartP resting~
+DefPos resting~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#11108
+Name vicious little crab~
+ShortD a crab~
+LongD A vicious little crab scuttles along.~
+Desc The crab is not out of the ordinary except for its temperament towards 
+intruders.
+~
+Race unique~
+Align -3 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType claw
+AC 10 10 10 8
+Wealth 0
+Act    npc aggressive stay_area~
+AffBy  swim~
+Off    fast assist_vnum~
+Imm    drowning~
+Form   edible crustacean mountable~
+Part   arms legs heart brains guts eyestalks claws~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material flesh
+END
+
+#11109
+Name strapping young lobster~
+ShortD a lobster~
+LongD A strapping young lobster rears up before you.~
+Desc This lobster looks like a little fighter.
+~
+Race unique~
+Align 0 2
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 1d10+80
+DamDice 2d4+2
+DamType claw
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  swim~
+Off    dodge crush~
+Imm    drowning~
+Form   edible crustacean mountable~
+Part   arms legs heart brains guts eyestalks claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#11110
+Name Fisherman~
+ShortD a fisherman~
+LongD A fisherman is sitting here tending to his nets.~
+Desc The fisherman has obviously been at this profession all his life and his
+hands are callused from tossing nets.
+~
+Race human~
+Align 2 2
+Level 23
+Hitroll 0
+HitDice 4d5+100
+ManaDice 1d10+150
+DamDice 3d6+6
+DamType punch
+AC -40 -40 -40 -20
+Wealth 230
+Act    npc dont_wander no_tame stay_area~
+AffBy  calm~
+Off    bash dodge dirt_kick rescue assist_vnum~
+Res    drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#11111
+Name fisherman's wife~
+ShortD a fisherman's wife~
+LongD The wife of a fisherman is gossiping away whilst knitting.~
+Desc Dressed in the common cloths of the working class, this lady of the house
+runs a tidy ship.
+~
+Race human~
+Align 1 3
+Level 18
+Hitroll 0
+HitDice 3d5+79
+ManaDice 1d10+130
+DamDice 2d7+4
+DamType slap
+AC -30 -30 -30 0
+Wealth 180
+Act    npc dont_wander no_tame stay_area~
+AffBy  calm~
+Off    bash dodge dirt_kick rescue assist_vnum~
+Res    drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#11112
+Name man missing limbs~
+ShortD a man with missing limbs~
+LongD A man with various missing limbs is here.~
+Desc The man is missing an arm and his leg from the knee down, he has a massive 
+scare on his face a he smiles at you crookedly.  
+~
+Race human~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 1d10+100
+DamDice 4d6+8
+DamType punch
+AC -90 -90 -90 -50
+Wealth 300
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden~
+Off    area_attack bash disarm dodge fast kick dirt_kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#11113
+Name night watchman~
+ShortD a night watchman~
+LongD The night watchman of this peaceful little village, guards the beach-front.~
+Desc This man looks slightly nervous at the night he has ahead of him you hear 
+him muttering under his breath.  
+~
+Race human~
+Align 2 3
+XPMod 105
+Level 35
+Hitroll 1
+HitDice 5d6+210
+ManaDice 2d10+150
+DamDice 4d7+11
+DamType punch
+AC -110 -110 -110 -90
+Wealth 350
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden sanctuary protect_evil haste~
+Off    bash dodge parry rescue~
+Res    negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#11114
+Name priest village~
+ShortD a village priest~
+LongD The village priest is here praying.~
+Desc The priest is praying fanatically to the gods to protect the village tonight.
+~
+Race human~
+Align 3 3
+Level 60
+Hitroll 2
+HitDice 5d20+500
+ManaDice 2d10+999
+DamDice 8d20+50
+DamType divine
+AC -300 -300 -300 -250
+Wealth 600
+Act    npc dont_wander no_tame stay_area cleric healer~
+AffBy  detect_evil sanctuary protect_evil~
+Off    dodge parry~
+Imm    summon charm~
+Res    magic~
+Vuln   negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+MProg SPEECH 11102 realm~
+MProg SPEECH 11101 worthy~
+MProg SPEECH 11100 humble~
+MProg PREKILL 11104 100~
+END
+
+#11115
+Name mage cloaked pure white robes~
+ShortD a mage~
+LongD A mage cloaked in pure white robes stands here.~
+Desc This elven mage is deep in concentration.  His white robes are covered in 
+runes and his pockets are bulging with spell books and components.
+~
+Race elf~
+Align 0 3
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+295
+DamDice 4d8+13
+DamType magic
+AC -130 -130 -130 -100
+Wealth 400
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  detect_evil detect_magic infrared pass_door~
+Off    dodge~
+Res    charm magic~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#11116
+Name large human paladin~
+ShortD a paladin~
+LongD A large human paladin is sharpening his sword.~
+Desc A man is carelessly sliding his sword along a whetstone, his eyes are closed 
+and he is muttering what sounds like a prayer.
+~
+Race human~
+Align 3 3
+Level 39
+Hitroll 0
+HitDice 5d6+230
+ManaDice 5d6+290
+DamDice 5d6+13
+DamType divine
+AC -130 -130 -130 -100
+Wealth 390
+Act    npc dont_wander no_tame stay_area cleric warrior~
+AffBy  detect_evil protect_evil regeneration~
+Off    bash disarm dodge parry~
+Res    negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg SPEECH 11103 flames~
+MProg SPEECH 11103 dancing~
+MProg SPEECH 11103 scimitar~
+END
+
+#11117
+Name massive humanoid barbarian~
+ShortD a barbarian~
+LongD A massive humanoid barbarian is here.~
+Desc This massive creature is covered in an array of weaponry including axes and 
+clubs.  He appears to be of the human race.  
+~
+Race minotaur~
+Align -1 1
+Level 36
+Hitroll 0
+HitDice 5d6+215
+ManaDice 5d6+275
+DamDice 3d11+12
+DamType pound
+AC -200 -200 -200 -130
+Wealth 360
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_hidden infrared berserk~
+Off    area_attack bash berserk disarm dodge kick parry crush~
+Form   edible sentient biped centaur mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail horns scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material flesh
+END
+
+#11118
+Name sly looking human rogue warrior~
+ShortD a rogue warrior~
+LongD A sly looking human is here.~
+Desc The human rogue looks like a hired assassin.  The scars all over his body 
+tell of his experience.  
+~
+Race human~
+Align -3 0
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+220
+DamDice 2d10+2
+DamType stab
+AC -70 -70 -70 -40
+Wealth 250
+Act    npc dont_wander no_tame stay_area wimpy thief warrior~
+AffBy  detect_hidden haste~
+Off    backstab dodge fast dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#11119
+Name squire~
+ShortD a squire~
+LongD A squire is training here.~
+Desc This student of the sword is lathered in sweat from his efforts.
+~
+Race human~
+Align 3 3
+Level 27
+Hitroll 0
+HitDice 4d5+120
+ManaDice 5d5+100
+DamDice 5d4+7
+DamType punch
+AC -80 -80 -80 -50
+Wealth 200
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  protect_evil dark_vision~
+Off    bash disarm parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#11120
+Name knight trainer~
+ShortD a knight~
+LongD A knight is here training his pupils.~
+Desc The knight is tall and heavily muscled.
+~
+Race human~
+Align 3 3
+Level 45
+Hitroll 4
+HitDice 5d8+255
+ManaDice 2d5+30
+DamDice 8d4+16
+DamType punch
+AC -150 -150 -150 -129
+Wealth 300
+Act    npc dont_wander no_tame stay_area train warrior~
+Off    bash berserk dodge kick parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#11121
+Name senior squire~
+ShortD a senior squire~
+LongD A senior squire is here.~
+Desc This squire has a wizened look to his face.  He is training the younger 
+squires.  
+~
+Race human~
+Align 3 3
+Level 28
+Hitroll 1
+HitDice 5d6+160
+ManaDice 10d10+100
+DamDice 6d4+9
+DamType punch
+AC -80 -80 -80 -50
+Wealth 280
+Act    npc dont_wander no_tame stay_area warrior~
+Off    bash disarm parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#11122
+Name village guard~
+ShortD a village guard~
+LongD A village guard is here on duty.~
+Desc This guard is clothed in full uniform.  He is walking through the village, 
+keeping a watchout for suspicious strangers.  
+~
+Race human~
+Align -3 3
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 10d10+100
+DamDice 4d6+8
+DamType punch
+AC -90 -90 -90 -50
+Wealth 300
+Act    npc dont_wander stay_area warrior~
+AffBy  protect_evil~
+Off    bash disarm dodge parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#11100
+Name crow telescope~
+Short a telescope~
+Desc A telescope with an eye on the end of it lies here.~
+Level 1
+ItemType wand~
+Cost 220
+Asize 10
+Rsize 50
+Values 10 50 50 farsight 0
+Weight 30
+Material brass~
+Extra    magic nolocate nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 1 -1 intuition 2 0
+ExtraDesc crow telescope~
+This telescope has the eye of some animal on the end of it when you extend
+and use it you can see far into the distance.
+~
+End
+
+#11101
+Name leather sandals pair~
+Short some sandals~
+Desc A pair of leather sandals lie here.~
+Level 1
+ItemType clothing~
+Cost 19
+Condition 90
+Asize 15
+Rsize 45
+Values 0 0 0 0 0
+Weight 10
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 1 -1 move 10 0
+ExtraDesc sandals~
+The sandals look well worn in and make you feel like going for a jog.
+~
+End
+
+#11102
+Name dark-blue overalls all-in-one suit~
+Short some `#`bdark-blue`^ overalls~
+Desc A `#`bdark-blue`^ all-in-one suit lies here.~
+Level 1
+ItemType clothing~
+Cost 22
+Condition 90
+Asize 20
+Rsize 45
+Values 0 0 0 0 0
+Weight 15
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc overalls~
+An all in one suit made from comfortable blue cotton.
+~
+End
+
+#11103
+Name smelly fishing hat~
+Short a fishing hat~
+Desc A smelly fishing hat sits here.~
+Level 10
+ItemType armor~
+Cost 14
+Condition 90
+Asize 5
+Rsize 50
+Values 2 2 2 2 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take head~
+Affect modifier -1 10 -1 selfdiscipline 1 0
+ExtraDesc fishing hat~
+This smelly old fishing hat has a bite taken out of the front of it.
+~
+End
+
+#11104
+Name plain dress~
+Short a plain dress~
+Desc A plain dress lies here.~
+Level 10
+ItemType clothing~
+Cost 42
+Condition 90
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 10 -1 empathy 1 0
+ExtraDesc dress~
+The dress is home made, but has been made with a lot time patience and a 
+loving hand.
+~
+End
+
+#11105
+Name pair lobster shell boots~
+Short a pair of `#`Rlobster shell`^ boots~
+Desc A pair of `#`Rlobster shell`^ boots lie here.~
+Level 30
+ItemType armor~
+Cost 605
+Asize 20
+Rsize 55
+Values 6 6 6 5 0
+Weight 30
+Material shell~
+Extra    nonmetal nodegrade burnproof~
+Wear     take feet~
+Affect modifier -1 30 -1 quickness 1 0
+Affect modifier -1 30 -1 agility 2 0
+ExtraDesc lobster shell boots~
+These red colored boots have been fashioned from the shells of many an
+unfortunate lobster.  They are both light weight and tough.
+~
+End
+
+#11106
+Name crab shell leggings~
+Short a set of crabshell leggings~
+Desc A set of crabshell leggings.~
+Level 29
+ItemType armor~
+Cost 595
+Asize 40
+Rsize 55
+Values 7 7 7 5 0
+Weight 50
+Material shell~
+Extra    nonmetal nodegrade burnproof~
+Wear     take legs~
+Affect modifier -1 29 -1 quickness 2 0
+ExtraDesc crab shell leggings~
+These leggings have large crab shells sewn as a protective layer on the 
+outside of them.
+~
+End
+
+#11107
+Name turtle shell~
+Short a turtle shell~
+Desc The shell of some sea creature lies here.~
+Level 30
+ItemType armor~
+Cost 615
+Asize 45
+Rsize 55
+Values 10 10 10 8 1
+Weight 60
+Material shell~
+Extra    nonmetal nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 30 -1 constitution 1 0
+Affect modifier -1 30 -1 hp 4 0
+ExtraDesc turtle shell~
+Two shells of a turtle have been joined to from a body plate.  Although it
+is very protective, its is somewhat cumbersome.
+~
+End
+
+#11108
+Name flashing bright blade sword necromancy~
+Short a sword of necromancy~
+Desc A flashing bright blade lies here.~
+Level 30
+ItemType weapon~
+Cost 644
+Asize 45
+Rsize 50
+Values sword 3 10 slice I
+Weight 70
+Material silver~
+Extra    magic bless antievil nodegrade~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger~
+Affect affects -1 30 -1 none 0 protect_evil
+ExtraDesc sword necromancy~
+This sword was specially crafted and blessed to help the village rid itself 
+of the continuing scourge of undead visitors.
+~
+End
+
+#11109
+Name shark hook large fish~
+Short a shark hook~
+Desc A large fish hook lies here.~
+Level 20
+ItemType weapon~
+Cost 400
+Asize 20
+Rsize 50
+Values dagger 3 6 slice 0
+Weight 30
+Material iron~
+Extra    nodegrade~
+Wear     take wield~
+ExtraDesc shark hook~
+This looks like an ordinary hook, only it is large enough to catch the 
+massive predators of the sea.
+~
+End
+
+#11110
+Name knitting needle long~
+Short a knitting needle~
+Desc A long needle lies here.~
+Level 18
+ItemType weapon~
+Cost 360
+Asize 20
+Rsize 50
+Values dagger 4 3 pierce 0
+Weight 20
+Material iron~
+Extra    nodegrade~
+Wear     take wield~
+ExtraDesc knitting needle~
+These knitting needles are well used and have seen many hours work in a small
+sea-side village.
+~
+End
+
+#11111
+Name clean white robe holy~
+Short a `#`Wholy`^ robe~
+Desc A `#`Wclean white`^ robe lies here.~
+Level 27
+ItemType armor~
+Cost 565
+Asize 30
+Rsize 45
+Values 7 7 7 5 0
+Weight 30
+Material cotton~
+Extra    magic antievil nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances mage cleric druid paladin ranger spellfilcher~
+Affect modifier -1 27 -1 reasoning 2 0
+ExtraDesc holy robe~
+This robe once belonged to one of the priesthood.  It has never known other
+than a pure heart beneath it.
+~
+End
+
+#11112
+Name intricately carved quarterstaff~
+Short an intricately carved quarterstaff~
+Desc An intricately carved quarter staff lies here.~
+Level 30
+ItemType weapon~
+Cost 621
+Asize 30
+Rsize 50
+Values staff 3 10 pound EF
+Weight 40
+Material wood~
+Extra    magic bless antievil nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 30 -1 intuition 2 0
+ExtraDesc quarter staff~
+This is the preferred weapon of the priesthood, and must never be wielded in
+an unworthy cause.
+~
+End
+
+#11113
+Name plain tied piece cloth loin~
+Short a loin cloth~
+Desc A plain tied piece of cloth lies here.~
+Level 5
+ItemType clothing~
+Cost 8
+Asize 15
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cotton~
+Extra    nonmetal~
+Wear     take about~
+Affect modifier -1 5 -1 memory -5 0
+ExtraDesc loin cloth~
+This is just an old rag with its ends tied together to form a loin cloth.
+~
+End
+
+#11114
+Name whale skin trousers~
+Short some whale skin trousers~
+Desc Some stitched whale skin lies here.~
+Level 22
+ItemType armor~
+Cost 455
+Condition 90
+Asize 20
+Rsize 50
+Values 5 5 5 4 0
+Weight 20
+Material leather~
+Extra    evil antigood rotdeath nonmetal nodegrade~
+Wear     take legs~
+Affect modifier -1 22 -1 quickness 1 0
+Affect modifier -1 22 -1 agility 1 0
+ExtraDesc whale skin trousers~
+These pants were made from a murdered baby blue whale during its first month
+in the realm.
+~
+End
+
+#11115
+Name leather vest pirate's~
+Short a pirate's vest~
+Desc A leather vest lies here.~
+Level 25
+ItemType armor~
+Cost 514
+Condition 90
+Asize 40
+Rsize 50
+Values 8 8 8 6 0
+Weight 30
+Material leather~
+Extra    evil antigood nonmetal nodegrade burnproof~
+Wear     take torso~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 25 -1 damroll 2 0
+Affect modifier -1 25 -1 hitroll 2 0
+ExtraDesc pirate vest~
+This vest has a few minor slashes in it from an enemy rogues sword.
+~
+End
+
+#11116
+Name buccaneer sword~
+Short a buccaneer's sword~
+Desc A sword lies here.~
+Level 24
+ItemType weapon~
+Cost 489
+Asize 45
+Rsize 50
+Values sword 2 12 slash D
+Weight 20
+Material brass~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger spellfilcher~
+ExtraDesc buccaneer sword~
+The sword is designed to kill with as much slow pain as possible inflicted
+on its victim.
+~
+End
+
+#11117
+Name hook~
+Short the `#`Shook`^~
+Desc The `#`Shook`^ hangs here.~
+Level 45
+ItemType weapon~
+Cost 866
+Asize 45
+Rsize 50
+Values dagger 2 14 slice C
+Weight 20
+Material iron~
+Extra    glow hum evil magic antigood burnproof~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect affects -1 45 -1 none 0 protect_good
+ExtraDesc hook~
+This hook is the embodiment and accumulation of all the evil deeds of the
+leader of the buccaneer's unscrupulous party.
+~
+End
+
+#11118
+Name harpoon long heavy~
+Short a harpoon~
+Desc A long heavy harpoon lies here.~
+Level 18
+ItemType weapon~
+Cost 377
+Condition 90
+Asize 80
+Rsize 60
+Values polearm 8 4 pierce F
+Weight 70
+Material iron~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior druid paladin ranger barbarian~
+ExtraDesc harpoon~
+The harpoon has been wrenched from the bow of an old ship, it looks very
+cumbersome, so that only the strongest professions could weild it.
+~
+End
+
+#11119
+Name bottle salty water seaspray~
+Short some seaspray in a bottle~
+Desc A bottle of salty water lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 12
+Asize 20
+Rsize 50
+Values 2 2 'salt water' 0 0
+Weight 10
+Material glass~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc bottle~
+The fishermen that brew this concoction, spend so much time on the water
+they can't stand not to have the taste of salt in their mouths.
+~
+End
+
+#11120
+Name white mages cloak~
+Short a `#`Wwhite`^ mages cloak~
+Desc A `#`Wwhite`^ cloak lies here.~
+Level 40
+ItemType clothing~
+Cost 1000
+Asize 5
+Rsize 52
+Values 0 0 0 0 0
+Weight 40
+Material cotton~
+Extra    magic antievil nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances mage spellfilcher~
+Affect modifier -1 40 -1 constitution -1 0
+Affect modifier -1 40 -1 mana 100 0
+End
+
+#11121
+Name long runed dagger~
+Short a long runed dagger~
+Desc A long runed dagger has been left here.~
+Level 40
+ItemType weapon~
+Cost 808
+Asize 6
+Rsize 50
+Values dagger 2 16 stab 0
+Weight 50
+Material quartz~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 40 -1 damroll 2 0
+Affect modifier -1 40 -1 hitroll 2 0
+ExtraDesc long runed dagger~
+A dagger with intricate runes carved in it.
+~
+End
+
+#11122
+Name silver breastplate~
+Short a `#`Ssilver`^ breastplate~
+Desc A `#`Ssilver`^ breastplate lies here.~
+Level 39
+ItemType armor~
+Cost 781
+Asize 20
+Rsize 56
+Values 12 12 12 10 0
+Weight 90
+Material silver~
+Extra    glow bless antievil nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 39 -1 saves -4 0
+Affect affects -1 39 -1 none 0 poison
+End
+
+#11123
+Name two-handed sword~
+Short a two-handed sword~
+Desc A two-handed sword lies here.~
+Level 35
+ItemType weapon~
+Cost 705
+Asize 10
+Rsize 50
+Values sword 8 5 slice F
+Weight 90
+Material iron~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 35 -1 damroll 2 0
+Affect modifier -1 35 -1 strength 2 0
+End
+
+#11124
+Name short-sword~
+Short a short-sword~
+Desc A short-sword lies here.~
+Level 25
+ItemType weapon~
+Cost 505
+Asize 6
+Rsize 50
+Values sword 5 4 slash D
+Weight 60
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian spellfilcher~
+End
+
+#11125
+Name comfortable leather vest~
+Short a comfortable leather vest~
+Desc A comfortable leather vest lies here.~
+Level 20
+ItemType armor~
+Cost 399
+Asize 5
+Rsize 50
+Values 7 7 7 5 0
+Weight 30
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher~
+Affect modifier -1 20 -1 constitution 1 0
+Affect modifier -1 20 -1 quickness 1 0
+End
+
+#11126
+Name pair comfortable leather pants~
+Short a pair of comfortable leather pants~
+Desc A pair of comfortable leather pants lie here.~
+Level 20
+ItemType armor~
+Cost 402
+Asize 10
+Rsize 50
+Values 5 5 5 4 0
+Weight 30
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+Affect modifier -1 20 -1 strength -1 0
+Affect modifier -1 20 -1 quickness 3 0
+End
+
+#11127
+Name silver scimitar~
+Short a `#`Ssilver`^ scimitar~
+Desc A `#`Ssilver`^ scimitar lies here.~
+Level 23
+ItemType weapon~
+Cost 430
+Asize 0
+Rsize 50
+Values sword 4 6 slice 0
+Weight 10
+Material silver~
+Extra    antievil nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior druid paladin ranger barbarian~
+Affect modifier -1 23 -1 damroll 2 0
+End
+
+#11128
+Name wide waistband~
+Short a wide waistband~
+Desc A wide waistband is here.~
+Level 25
+ItemType armor~
+Cost 500
+Asize 0
+Rsize 50
+Values 5 5 5 3 0
+Weight 5
+Material silk~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take waist~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 25 -1 reasoning 2 0
+End
+
+#11129
+Name glass ball luminescent light~
+Short a `#`Cluminescent`^ ball of glass~
+Desc A `#`Cluminescent`^ ball of glass glows here.~
+Level 20
+ItemType light~
+Cost 400
+Asize 0
+Rsize 50
+Values 0 0 100 0 0
+Weight 20
+Material glass~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 20 -1 mana 20 0
+End
+
+#11130
+Name standard village armor~
+Short some standard village armor~
+Desc Some standard armor has been left here.~
+Level 30
+ItemType armor~
+Cost 500
+Asize 0
+Rsize 50
+Values 8 8 8 6 0
+Weight 30
+Material steel~
+Extra    nodegrade~
+Wear     take about~
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 ac -10 0
+End
+
+#11131
+Name fountain~
+Short a fountain~
+Desc A stone fountain is here.~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material stone~
+Extra    nodegrade~
+End
+
+#11132
+Name talisman learning~
+Short a `#`ctalisman of learning`^~
+Desc A `#`ctalisman of learning`^ is here.~
+Level 11
+ItemType treasure~
+Cost 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    nodegrade burnproof~
+Wear     take neck~
+Affect modifier -1 11 -1 memory 1 0
+Affect modifier -1 11 -1 reasoning 2 0
+ExtraDesc talisman learning~
+You see an intricate talisman, with many symbols on it. At first glance 
+you do not know what are the symbols. Upon close inspection, you begin 
+to spot a tree, then a mountain, and other drawings. It hangs on a thin 
+chain.
+~
+End
+
+#11133
+Name token_talisman_learning~
+Short token_talisman_learning_mp11102~
+Desc Token_talisman_learning_mp11102~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#11150
+Name practice training armor padded~
+Short a set of padded training armor~
+Desc A set of padded training armor is here~
+Level 25
+ItemType armor~
+Cost 500
+Asize 0
+Rsize 50
+Values 8 8 8 7 0
+Weight 50
+Material leather~
+Extra    nodegrade burnproof~
+Wear     take torso~
+Affect modifier -1 25 -1 hp 4 0
+End
+
+#0
+
+
+
+#ROOMS
+#11100
+Name Along a Dry Salty Road~
+Desc This road is no more than a pathway through a sandy and salty earth.  The
+path has been carved from the earth by years of use from carts and walking.
+The smell of salt exfoliates from the path as you move along it.  Sea gulls
+circle high above you screaming their hungry cries for nourishment.
+~
+Sector desert~
+Mana 80
+Heal 80
+ExtraDesc road earth salt path~
+You stoop to examine the path a little closer and find the path is not unlike
+a hardened beach.
+~
+Exit north 11101
+EDesc The salty road continues to the north.
+~
+Exit south 31090
+End
+
+
+#11101
+Name Halfway Along the Salty Path~
+Desc The smell of salt is strong here bringing a dryness to the most robust 
+throat.  The path itself looks thirsty and is barren and void of life.  The 
+sun and salt has sucked the life from the earth, refusing to relinquish its 
+bareness to the life of plants and animals that relentlessly attempt to 
+reform it.  The fever of the seagulls above increases.
+~
+RoomFlags no_mob~
+Sector desert~
+Mana 80
+Heal 80
+ExtraDesc road earth salt path~
+You stoop to examine the path a little closer and find the path is not unlike
+a hardened beach.
+~
+Exit north 11103
+EDesc The road outside a small village.
+~
+Exit south 11100
+EDesc Along a salty path.
+~
+End
+
+
+#11102
+Name A Quaint Village Home~
+Desc This house has been lovingly crafted from wood scavenged from the beach
+and bound together with a strong hard setting sap.  Scarce ornaments are
+placed precisely over there traced shapes on the shelves.  Someone is 
+obviously pedantic about retaining a tidy home.  The smell of fresh fish 
+rises from a pot belly stove in the corner of the room, and bone handled 
+knives and forks are laid out on a table, which has been laced with a knitted 
+tablecloth.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc ornaments shelves~
+There are small figurines of various sea creatures and even a small carved
+statue of a shark with the inscription:
+
+      @@@ Largest catch.  Year of the great  sea goddess @@@
+
+~
+ExtraDesc Table fork knife~
+The table is covered with a delightfully knitted table cloth which hangs
+just below the sides of the table.
+~
+Exit east 11103
+EFlags door closed~
+EKeywords door~
+EDesc This leads out into the streets of the village.
+~
+End
+
+
+#11103
+Name Outside a Small Fishing Village~
+Desc Here the ground has been somewhat altered by human interference and the
+earth has been covered in shell rock to stabilize the surface.  A few weeds
+make a brave attempt at growing on the edges of the path.  You are thrown
+instantly into the tussle of life in this village, as you hear the carefree
+laughs of its inhabitants echoing from the nearby buildings.  
+~
+Sector city~
+ExtraDesc road earth salt path~
+You stoop to examine the path a little closer and find the path is not unlike
+a hardened beach.  It has been covered lightly in shell rock.
+~
+Exit north 11107
+EFlags door closed~
+EKeywords door~
+EDesc To the north you see can see the outside of a plain house made from wood.
+~
+Exit east 11104
+EDesc To the east you can see the path continuing deeper into the village.
+~
+Exit south 11101
+EDesc To the south you can see the path leading out of the village.
+~
+Exit west 11102
+EFlags door closed~
+EKeywords door~
+EDesc To the west you see can see the outside of a plain house made from wood.
+~
+End
+
+
+#11104
+Name Amidst the Village Streets~
+Desc Fishmongers and villagers walk about calmly and offer their wares. The 
+smell of fresh fish permeates in the air, accentuated by the fresh salt
+breeze blowing in of a nearby ocean.  Raucous laughter explodes from the north
+as an intoxicated local is removed forcibly from the tavern.  To the east the 
+path leads further into the village.
+~
+Sector city~
+Exit north 11108
+EFlags door closed~
+EKeywords door~
+EDesc To the north you see the village tavern.
+~
+Exit east 11105
+EDesc The path continues further into the village.
+~
+Exit west 11103
+EDesc The path leads into the main market place.
+~
+End
+
+
+#11105
+Name Turn in the Path~
+Desc Here the path makes a sharp turn, the smell of salt and sea spray is now so
+strong as to assault the nostrils.  You begin to notice that the sense of 
+carefree nature is not as strong as the centre of the village and the people 
+here seem slightly more tense.  The buildings here are reasonably secure and 
+have wooden bars over the windows to keep out unwelcome visitors.
+~
+Sector city~
+ExtraDesc bars windows~
+The bars over the empty windows are made from strong drift-wood.  The windows
+are open but by the look of the bolted shutters they get locked up tight at 
+times.
+~
+Exit north 11109
+Exit south 11106
+EFlags door closed~
+EKeywords door~
+EDesc South of here is another village house.
+~
+Exit west 11104
+EDesc To the west is the path leading to the main entrance of the tavern.
+~
+End
+
+
+#11106
+Name Village House~
+Desc This house is furnished only slightly differently to the others in the 
+village because of the owners security conscience.  The wooden door has 
+been re-enforced with shells and flax bindings.    The windows have strong 
+looking shutters on them with a bolt on the back and driftwood bars on the 
+inside.  Various incantations are imprinted on the walls a ceiling and a 
+wooden ward has been set hanging in the centre of the room to ward of evil 
+spirits.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc incantations ward~
+As you examine the various wards to evil you see a note pinned to the wall,
+it reads:
+
+     "Sorry, have shifted to a safer part of town until such time
+      as the evil ghosts are repelled."
+~
+ExtraDesc bars windows~
+The bars over the empty windows are made from strong drift-wood.  The windows
+are open but by the look of the bolted shutters they get locked up tight at 
+times.
+~
+Exit north 11105
+EFlags door closed~
+EKeywords door~
+EDesc This direction takes you back out into the village street.
+~
+End
+
+
+#11107
+Name A Village House~
+Desc The house has been lovingly created from the natural timbers that wash up
+on the nearby beach.  Every element of the house seems to be in dedication
+of the style of life of its inhabitants.  The house seems more of an altar
+to the sea than a home, with talismans and paintings of every sea creature
+imaginable, carefully crafted and displayed.  Like the other homes a pot-
+bellied stove sits in the corner, and next to it lies a small table for
+sacrifice.  Here the first catch of the day is sacrificed to the goddess of
+the ocean.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sacrifice table~
+The table is stained with fresh blood, and the scales of some gift for the 
+sea goddess.
+~
+Exit east 11108
+EFlags door closed~
+EKeywords door~
+EDesc Back door to the tavern.
+~
+Exit south 11103
+EFlags door closed~
+EKeywords door~
+EDesc Back out into the street.
+~
+End
+
+
+#11108
+Name A Village Tavern~
+Desc This tavern is one of the most frequented places in the village.  The stuffed
+sea creatures on the wall boast of the proficiency of the fishermen.  A long
+bench forms the bar and every chair in the tavern is lined up along it.  
+Broken splitters of wood lie scattered across the floor from many a drunken 
+fight which erupts into the tossing of furniture.  The saloon type door makes 
+for the easy expulsion of those who aren't handling their liquor well.  
+Topless mermaid monuments thrust their chests out provocatively suggesting at 
+the gender of most of the taverns visitors.  A large drinking vessel is 
+displayed on the wall behind the bar.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc drinking vessel~
+This is really a sea shell about a yard long.  It is used in the celebrations
+when the young male villagers come of age.
+~
+Exit north 11125
+Exit south 11104
+EFlags door closed~
+EKeywords door~
+EDesc Out the tavern doors and into the street.
+~
+Exit west 11107
+EFlags door closed~
+EKeywords door~
+EDesc The back exit from the tavern into the bar owners home.
+~
+End
+
+
+#11109
+Name Road to the Beach~
+Desc Here the path recedes and begins to give way to the sand.  The wind blows the
+sand up from the breach front and around your feet.  Before you, you can see 
+a stretch of beach enclosed by two sheer cliff faces just to the east and in 
+the distance to the west.  The water looks quite calm from here and is 
+obviously sheltered from the rage of the ocean by the cliffs.  The beach ahead 
+looks like the perfect place to launch a boat.
+~
+Sector field~
+Exit north 11114
+EDesc To the north you can see the beach front.
+~
+Exit east 11110
+EFlags door~
+EKeywords door~
+EDesc To the east lies the village temple.
+~
+Exit south 11105
+EDesc To the south lies the path back into the village.
+~
+End
+
+
+#11110
+Name Village Temple~
+Desc This is the village temple, it looks very new, almost as if it has been built 
+in a rush, to accommodate someone.  Like the rest of the village all the 
+ornaments are crafted in the form of relics from the sea.  Directly in front 
+towers a giant statue of the goddess of the sea.  She has a mermaid like tail 
+and scales down the length of her back.  Her torso is human, and her bounty is 
+covered in modesty by two giant clam shells.  Silver seaweed form the length 
+of her long shinning hair that reaches to the base of her tail.  An 
+expression of harmony radiates from her smile beseeching of you to stay a 
+while.  The temple itself although simple has been put to use, and incense 
+burn from hundreds of sea horse shaped candles, filling the air with an aroma 
+of tranquillity.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 150
+Heal 150
+ExtraDesc statue goddess sea~
+Although the rest of the room is relatively simple and hurried, the carved of
+this statue has gone to extraordinary lengths to create a beautiful likeness 
+of his goddess.
+~
+Exit west 11109
+EFlags door~
+EKeywords door~
+EDesc Out on to the road to the beach.
+~
+End
+
+
+#11111
+Name Entrance to the Ship Wreck~
+Desc A gaping hole opens in the side of the cliff, it is completely dark, and 
+moisture drips from the walls.  Water marks line the walls and you can see 
+that at high tide the water would be around knee deep for a human.  An unholy 
+air is emitted from deeper inside the cave which curves around to the north.  
+The continuous crashing of waves has been tearing at the edges of the cave so
+that it is slowly becoming visible from the beach front.  Although the 
+entrance is partially hidden from a certain angle, the opening is very large.
+~
+RoomFlags dark no_mob indoors~
+Sector swim~
+ExtraDesc waves~
+The waves are the clear blue color of this pristine ocean.  A thin froth 
+forms on the crest of each wave as is crashes against the land, sending a fine 
+mist spray drifting away from the ocean.
+~
+Exit north 11115
+EDesc Deeper into the cave mouth.
+~
+Exit east 11112
+EDesc Back to the beach.
+~
+End
+
+
+#11112
+Name Beach Front, Before a Ship Wreck~
+Desc You are on a section of the beach where the foot prints have vanished, it
+seems this is not a popular area of the beach front.  The sand itself seems
+to be pulling at your feet, entreating you to stay here.  There are no boats
+here and the sand is as smooth and flat as the horizon.  The waves seem
+oblivious to the land and continue their relentless pounding on the shore.
+~
+Sector desert~
+Mana 80
+Heal 80
+ExtraDesc waves~
+The waves are the clear blue color of this pristine ocean.  A thin froth 
+forms on the crest of each wave as is crashes against the land, sending a fine 
+mist spray drifting away from the ocean.
+~
+Exit east 11113
+EDesc The middle of the cove.
+~
+Exit west 11111
+EDesc Entrance to a cave in the rocks.
+~
+End
+
+
+#11113
+Name Middle of the Beach Front~
+Desc You are right in the middle part of the beach directly between the towering
+cliffs on either side of the cove.  The foot prints here are so thick they
+have managed to withstand the shallow water that keeps lapping about your
+ankles.  Several boats are tied up on the drier section of the beach, and the
+sledge like marks from where they were dragged onto shore vanish as you
+follow their path with your eyes into the vast ocean.
+~
+Sector desert~
+Mana 80
+Heal 80
+ExtraDesc waves~
+The waves are the clear blue color of this pristine ocean.  A thin froth 
+forms on the crest of each wave as is crashes against the land, sending a fine 
+mist spray drifting away from the ocean.
+~
+ExtraDesc Boats~
+The villagers have managed to make some very stable looking boats from the
+wood that washes ashore.  Almost like a raft with shallow sides and a single
+sail in the centre of the small vessel.  Several holes are drilled into the 
+port and starboard sides of the boat to accommodate fishing rods.
+~
+Exit east 11114
+EDesc The village access to the beach lies in this direction.
+~
+Exit west 11112
+EDesc Towards the western section of the beach.
+~
+End
+
+
+#11114
+Name Beach Front~
+Desc This is the section of the beach which the villagers use to gain access to and
+from the beach and the village.  To the north lies a vast and daunting ocean
+that spans endlessly into an infinite horizon.  The water here is quite calm 
+due to the shelter provided from the cliffs directly to the east and in the 
+distant west.  The cliffs form a cove which is the beach.  Several vessels 
+lay tied up higher on the beach.
+~
+Sector desert~
+Mana 80
+Heal 80
+ExtraDesc waves~
+The waves are the clear blue color of this pristine ocean.  A thin froth forms
+on the crest of each wave as is crashes against the land, sending a fine mist
+spray drifting away from the ocean.
+~
+ExtraDesc Boats~
+The villagers have managed to make some very stable looking boats from the
+wood that washes ashore.  Almost like a raft with shallow sides and a single
+sail in the centre of the small vessel.  Several holes are drilled into the 
+port and starboard sides of the boat to accommodate fishing rods.
+~
+Exit south 11109
+EDesc To the south is the path back into the village.
+~
+Exit west 11113
+EDesc This direction leads you towards the centre of the cove.
+~
+End
+
+
+#11115
+Name Stern of Ship~
+Desc What was a sandy path beneath your feet starts to firm up.  Below you sections
+of wood exude from the sand, whilst the darkness of the cave envelopes you
+despite any light source you may have.  Sections of the wooden floor have been 
+torn away leaving the rear.  A pole stands erected before you, and it looks like
+the mast of a ship.  Wooden rungs extend from the sides of the pole making it
+possible to climb up.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc Mast pole~
+The mast has been created by a felled Totara tree from a foreign land.  The
+strength of the wood makes it ideal for the purpose it is used for here.
+~
+Exit north 11118
+EDesc Toward the centre of the ship.
+~
+Exit east 11116
+EDesc To the rear Starboard side of ship.
+~
+Exit south 11111
+EDesc The cave entrance.
+~
+End
+
+
+#11116
+Name Rear Starboard End of Ship~
+Desc Here you can see the side of what is obviously an old sea going vessel.  The
+wooden sides of the ship have been seared black by flames, and rotten timber
+smells like the decomposing of flesh.  With the ships rear half covered in sand
+it is hard to tell how high the sides of the ship once went, because the wall
+in front of you is no more than the height of an average dwarf.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc wall sides~
+The wall in front of you is made from a deep brown timber that still has a lush
+coating of wax upon it.  The strips of wood are uniform in width and bound
+together by a sinew stronger than most rope, but as thin as fishing wire.
+~
+Exit north 11119
+EDesc To the north the ship rises out of the sand slightly.
+~
+Exit west 11115
+EDesc Towards the stern of the ship.
+~
+End
+
+
+#11117
+Name Port Midship~
+Desc On the port side of the ship the sides have risen almost entirely from the sand.
+A massive hole has been smashed into the wall which is spherical in shape.
+A long plank extends from about half way down the wall, and some stair lead
+up to the plank.  Right on the edge of the plank scratch marks scar the wood
+and you can see a sharks tooth deeply embedded into the plank.  Several turret
+holes have been carved from the wall allowing what must have been cannons
+to peer from the side of the vessel.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc shark tooth scar plank~
+On the edge of the plank you can see a sharks tooth deeply embedded in the
+wood, nothing short of carving up the wood itself would free the tooth.  Also
+along the edge of the plant a bite has been taken from the wood, and the
+circumference of the chomp is about the size of a large shield.
+~
+ExtraDesc turret holes cannon~
+Although the cannons themselves are missing the holes they used to protrude
+from still ensure a formidable sight.
+~
+Exit north 11120
+EDesc Towards the port side of the bow.
+~
+Exit east 11118
+EDesc Midship.
+~
+End
+
+
+#11118
+Name Midship~
+Desc You are directly in the middle of the old sea vessel, the planks beneath you 
+have been rotten and repatched several times to leave a slight lump in the deck.
+Here is where the ship was steered from and a massive brass wheel, dulled
+by years of disuse sits ridged upon a rusted axel.  Six feet back from the wheel
+is a gigantic mast reaching high into the caves mouth, the top of the mast
+almost scrapes the ceiling of the cave, and atop the mast is a crows nest.
+Small foot sized poles extend from the mast making it possible to climb it.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 11121
+EFlags door~
+EKeywords door~
+EDesc Captains quarters.
+~
+Exit east 11119
+EDesc Starboard.
+~
+Exit south 11115
+EDesc Towards the stern.
+~
+Exit west 11117
+EDesc Port.
+~
+Exit up 11124
+EDesc Up the main mast.
+~
+End
+
+
+#11119
+Name Starboard~
+Desc This side of the ship is half embedded into the cave wall.  The ship must 
+have continued on its route through the cave until finally striking the side 
+and running ground here.  There are heavy scraping marks in the rock wall of 
+the cave.  The skeletons of men are jammed between the rock and the ship and 
+have splintered neatly under the pressure.  A human skull is crammed tightly 
+into the actual rock surface, forming an eerie and unnerving spectacle. 
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc human scull~
+The humans scull has been squeezed tightly by the rock and the vessel, leaving
+it somewhat contorted and unnatural looking.  Whoever ordered these people
+to be placed on the side of the ship valued the ship more than life.
+~
+Exit south 11116
+EDesc Towards the stern of the ship on the starboard side.
+~
+Exit west 11118
+EDesc To port stern.
+~
+End
+
+
+#11120
+Name Port Bow~
+Desc The width of the ship begins to narrow here, and the slight list of the ship
+continues upward.  This section of the vessel looks in much better condition
+than the rest of the vessel, almost as if it has been preserved.  To the east is
+the side wall of a cabin which from the outside looks like the most luxurious
+section of the ship.  The wall comes right to the edge of the ship leaving no
+passage further north except through the cabin itself.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit south 11117
+EDesc Port side of ship.
+~
+End
+
+
+#11121
+Name Captain's Quarters~
+Desc The room despite its age is well kept, and furnished elegantly.  The wooden
+walls and ceiling have maintained their lustre, and radiate a dull glow from
+the thick wax coating them, making them look alive.  A tables has been placed
+slightly to the side of the pathway leading to the door on the northern side.
+Silver cutlery and a heavy silver goblets are layed out.  A bed covered in
+blood red sheets is pressed up against a corner of the room, and some iron
+shackles dangle from chains which have been secured to the wall.  A set of
+small shutters form a window, which would have let in only the slightest
+amount of light, the hinges on the shutters have long since rusted, and the
+left shutter dangles from a single strand of metal.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc Bed shackle chain~
+This bed has a valance and several layers of red satin sheets, the dark red
+color of blood.  Iron chains hang down from their bolted position above
+the bed with two slim wrist shackle too tight for a man attached to the ends.
+~
+ExtraDesc Table cutlery silver goblet~
+The table has been set for one person, and the silverware looks fit for a king.
+~
+Exit north 11122
+EFlags door~
+EKeywords door~
+EDesc Towards the bow.
+~
+Exit south 11118
+EFlags door~
+EKeywords door~
+EDesc Towards midship, and the rudder wheel.
+~
+End
+
+
+#11122
+Name Bow of the Ship~
+Desc The width of the ship narrows considerably, and tilts slightly upward.  The
+floor however is in relatively good condition and looks safe to walk on.
+To the north extends the a long pole with a the statue of a mermaid on its
+end.  The sides of the ship rise higher towards the front of the ship and
+join together in an amalgamation of strength and defiance to the waves
+they once crashed through.  Several barnacles cling to the railing on
+top of the walls, and have hardened with the wood beneath them.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc barnacle~
+These sturdy little creatures cling diligently to their perch.  It is hard to
+tell if they are living or not, but they refuse to budge even to a blade.
+~
+Exit north 11123
+EDesc The bow sprit.
+~
+Exit south 11121
+EFlags door~
+EKeywords door~
+EDesc The captains quarters.
+~
+End
+
+
+#11123
+Name On the Bow Sprit~
+Desc You are on a long pole about as thick as the main mast of the ship, it is
+round and hence takes some concentration to retain balance.  On the
+end of the pole is the beautiful carving of a mermaid, with long dark
+hair flowing down her back like foam cresting a wave.  Her lower half
+is intricately carved into a tail, with small yet detailed scales perforating
+the length of it.  Two clam shells cover her chest and a carved wooden
+necklace, made to look like a string of pearls clings tightly around her
+neck.  Barnacles also cling to the pole here yet none scar the carving of
+the mermaid.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc barnacle~
+These sturdy little creatures cling diligently to their perch.  It is hard to
+tell if they are living or not, but they refuse to budge even to a blade.
+~
+Exit south 11122
+EDesc The bow of the ship.
+~
+End
+
+
+#11124
+Name Up the Main Mast~
+Desc The climbing poles make ascending this pole easy.  The mast itself has been
+worn smooth by the rough hands of one of this ships sailors.  Right at the
+top of the mast is a crows nest.  From up here you can see the expanses of
+the cave.  It appears the ship has been dragged in here.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc barnacle~
+These sturdy little creatures cling diligently to their perch.  It is hard to
+tell if they are living or not, but they refuse to budge even to a blade.
+~
+Exit down 11118
+EDesc Midship
+~
+End
+
+
+#11125
+Name Training Room~
+Desc This roon is adorned with paintings of various warrior hero's.  Patches
+of blood lie on the floor as a reminder that the training is hard.  The
+centre of the floor has been cleared and foot-marks have been drawn on the
+floor to show students various sword patterns.  
+~
+Sector inside~
+Exit south 11108
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 11101 spec_fido
+M 11102 spec_nasty
+M 11104 spec_cast_undead
+M 11105 spec_cast_undead
+M 11113 spec_guard
+M 11114 spec_cast_cleric
+M 11115 spec_cast_mage
+M 11122 spec_guard
+S
+
+
+
+#RESETS2
+M 0 11111 5 11102 2
+E 0 11101 -1 feet~
+E 0 11104 -1 about~
+E 0 11110 -1 wielded~
+M 0 11122 6 11103 6
+E 0 11127 -1 wielded~
+E 0 11130 -1 about~
+M 0 11111 5 11104 2
+E 0 11101 -1 feet~
+E 0 11104 -1 about~
+E 0 11110 -1 wielded~
+M 0 11122 1 11104 1
+E 0 11127 -1 wielded~
+E 0 11130 -1 about~
+M 0 11122 6 11104 6
+E 0 11130 -1 about~
+E 0 11127 -1 wielded~
+M 0 11111 5 11105 2
+E 0 11101 -1 feet~
+E 0 11104 -1 about~
+E 0 11110 -1 wielded~
+M 0 11110 8 11106 1
+E 0 11101 -1 feet~
+E 0 11102 -1 about~
+E 0 11103 -1 head~
+E 0 11109 -1 wielded~
+M 0 11100 10 11108 2
+M 0 11110 8 11108 2
+E 0 11101 -1 feet~
+E 0 11102 -1 about~
+E 0 11103 -1 head~
+E 0 11109 -1 wielded~
+M 0 11110 8 11108 4
+E 0 11101 -1 feet~
+E 0 11102 -1 about~
+E 0 11103 -1 head~
+E 0 11109 -1 wielded~
+M 0 11110 8 11108 4
+E 0 11101 -1 feet~
+E 0 11102 -1 about~
+E 0 11103 -1 head~
+E 0 11109 -1 wielded~
+M 0 11110 8 11108 4
+E 0 11101 -1 feet~
+E 0 11102 -1 about~
+E 0 11103 -1 head~
+E 0 11109 -1 wielded~
+M 0 11112 1 11108 1
+G 0 11119 -1
+E 0 11101 -1 feet~
+E 0 11102 -1 about~
+E 0 11103 -1 head~
+E 0 11109 -1 wielded~
+M 0 11122 6 11109 6
+E 0 11127 -1 wielded~
+E 0 11130 -1 about~
+M 0 11110 8 11110 2
+E 0 11101 -1 feet~
+E 0 11102 -1 about~
+E 0 11103 -1 head~
+E 0 11109 -1 wielded~
+M 0 11114 1 11110 1
+E 0 11111 -1 about~
+E 0 11112 -1 wielded~
+E 0 11101 -1 feet~
+M 0 11122 6 11110 6
+E 0 11130 -1 about~
+E 0 11127 -1 wielded~
+M 0 11109 2 11111 2
+M 0 11108 10 11112 2
+M 0 11109 2 11112 2
+M 0 11108 10 11113 2
+M 0 11110 8 11113 1
+E 0 11101 -1 feet~
+E 0 11102 -1 about~
+E 0 11103 -1 head~
+E 0 11109 -1 wielded~
+M 0 11108 10 11114 2
+M 0 11108 10 11114 2
+M 0 11110 8 11114 1
+E 0 11101 -1 feet~
+E 0 11102 -1 about~
+E 0 11103 -1 head~
+E 0 11109 -1 wielded~
+M 0 11113 1 11114 1
+E 0 11105 -1 feet~
+E 0 11106 -1 legs~
+E 0 11107 -1 torso~
+E 0 11108 15 wielded~
+M 0 11115 1 11114 1
+E 0 11120 -1 about~
+E 0 11121 -1 wielded~
+E 0 11101 -1 feet~
+M 0 11116 1 11114 1
+E 0 11122 -1 torso~
+E 0 11105 -1 feet~
+E 0 11106 -1 legs~
+E 0 11108 15 wielded~
+M 0 11117 1 11114 1
+E 0 11123 -1 wielded~
+E 0 11105 -1 feet~
+E 0 11106 -1 legs~
+E 0 11107 -1 torso~
+M 0 11118 1 11114 1
+E 0 11124 -1 wielded~
+E 0 11125 -1 torso~
+E 0 11126 -1 legs~
+E 0 11101 -1 feet~
+M 0 11100 10 11115 2
+M 0 11100 10 11115 2
+M 0 11103 5 11115 5
+E 0 11114 -1 legs~
+E 0 11115 -1 torso~
+E 0 11116 -1 wielded~
+M 0 11103 5 11116 5
+E 0 11114 -1 legs~
+E 0 11115 -1 torso~
+E 0 11116 -1 wielded~
+M 0 11102 1 11117 1
+E 0 11113 -1 waist~
+M 0 11103 5 11117 5
+E 0 11114 -1 legs~
+E 0 11115 -1 torso~
+E 0 11116 -1 wielded~
+M 0 11100 10 11118 2
+M 0 11100 10 11118 2
+M 0 11104 1 11118 1
+E 0 11114 -1 legs~
+E 0 11115 -1 torso~
+E 0 11116 -1 wielded~
+M 0 11103 5 11119 5
+E 0 11114 -1 legs~
+E 0 11115 -1 torso~
+E 0 11116 -1 wielded~
+M 0 11105 1 11121 1
+E 0 11114 -1 legs~
+E 0 11115 -1 torso~
+E 0 11117 15 wielded~
+M 0 11101 2 11122 1
+M 0 11102 2 11122 1
+M 0 11106 1 11123 1
+O 0 11118 1 11123
+M 0 11107 1 11124 1
+G 0 11100 -1
+M 0 11119 1 11125 1
+E 0 11127 -1 wielded~
+E 0 11128 -1 waist~
+E 0 11150 -1 torso~
+E 0 11129 -1 light~
+M 0 11120 1 11125 1
+E 0 11150 -1 torso~
+M 0 11121 1 11125 1
+E 0 11127 -1 wielded~
+E 0 11128 -1 waist~
+E 0 11129 -1 light~
+E 0 11150 -1 torso~
+S
+
+
+
+#SHOPS
+#11112
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#11104
+title prevent players killing quest priest~
+code mob preventattack
+mob echoat $n $i utters the word 'calm'...
+mob echoat $n A wave of tranquility and peace washes over you.
+~
+disabled false
+END
+
+#11103
+title dancing flames quest-paladin talks of boris~
+code languge human
+say Ah yes, the scimitar of dancing flames..
+emote rubs his chin, lost in thought.
+say Mayhaps you should go speak to Barin, the Blacksmith in Dzagari.
+say Surely, he can inform you more so on this blade.
+~
+disabled false
+END
+
+#11102
+title talisman quest-priest gives prize~
+code say Indeed you have learnt humility.
+ 
+ if hastoken $n '11133'
+  say You already have my blessing.
+  say I hope it helped you.
+  smile $n
+ else
+ if hastoken $n 16272  
+pmote $n smiles at @.
+  say Here take this with my blessing.
+  mob oload 11132
+  give talisman $n
+  mob oload 11133
+  mob tgive 11133 $n
+else
+ pmote $n smiles at @.
+ say What about the realm?
+endif
+endif
+~
+disabled false
+END
+
+#11101
+title talisman quest-priest sends packing~
+code pmote $n frowns at @.
+say Obviously you are NOT humble!
+mob transfer $n 3000
+~
+disabled false
+END
+
+#11100
+title talisman quest-priest talks of humility~
+code if hastoken $i 16271
+emote mutters quietly.
+say Ahh yes humility...a wonderous virtue...all the goddesses children should be thus.
+say Well if you think you are worthy of the talisman of the goddess then say you are..
+say If you think you are unworthy as yet, say "I have more to learn in this realm "
+emote peers at $n intently
+mob oload 16272
+mob tgive 16272 $n
+else
+say Yes, we'd all like to think we're humble. Perhaps you should visit the mrem cleric 
+to learn a little more about humility.
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

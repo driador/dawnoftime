@@ -1,0 +1,392 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword NEWBIE~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_NEWBIE-SUPPORT`+
+`=?       For help on what Newbie Support is.`+
+`+
+`=lType:  `=Chelp `=_GAME`+
+`=?       To get the Newbie doco for new players.
+~
+END
+
+keyword DRUNK~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_DRUNKENESS`+
+`=?       For help on the spell Drunkeness.`+
+`+
+`=lType:  `=Chelp `=_DRINKING`+
+`=?       To get help on what drunk is.`+
+~
+END
+
+keyword AC ARMOR-CLASS~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_-AC`+
+`=?       To get help on what AC (Armor Class) stands for.`+
+`+
+`=lType:  `=Chelp `=_'ACID BLAST'`+
+`=?       For help on the spell Acid Blast.`+
+`+
+`=lType:  `=Chelp `=_ARMOUR`+
+`=?       For help on the spell Armour.`+
+ 
+~
+END
+
+keyword SHIELD~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_-SHIELD`+
+`=?       For help on the spell Shield.`+
+`+
+`=lType:  `=Chelp `=_'SHIELD BLOCK'`+
+`=?       To get help on the skill Shield Block. 
+~
+END
+
+keyword SCROLLS~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_-SCROLL`+
+`=?       For help on the scroll skill.`+
+`+
+`=lType:  `=Chelp `=_PAGE-SCROLL`+
+`=?       For help on how to set your page scroll length.`+
+~
+END
+
+keyword PASS~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_PASSWORD`+
+`=?       For help on how to change your password.`+
+`+
+`=lType:  `=Chelp `=_'PASS DOOR'`+
+`=?       For help on the spell pass door.`+
+`+
+`=lType:  `=Chelp `=_'PASS WITHOUT TRACE'`+
+`=?       For help on the spell pass without trace.`+
+~
+END
+
+keyword ITEMS~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_WEIGHT`+
+`=?       For help on what items, weight and encumberance mean.`+
+`+
+`=lType:  `=Chelp `=_RP-ITEM`+
+`=?       For help on requesting an item for roleplay.`+
+~
+END
+
+keyword OOC~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_'OUT OF CHARACTER'`+
+`=?       For help on what OOC stands for.`+
+`+
+`=lType:  `=Chelp `=_'CHANNELS'`+
+`=?       For help on the communication channel OOC.`+
+`+
+`=lType:  `=Chelp `=_'OOC-POLICY'`+
+`=?       For help on etiquette on OOC.`+
+~
+END
+
+keyword TIME~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=CTIME`+
+`=?       For a report on the current time, game and real life time.`+
+`+
+`=lType:  `=Chelp `=_CALENDAR`+
+`=?       For the relationship of how IC time relates to IRL time.`+
+`+ 
+`=lType:  `=Chelp `=_YEAR`+
+`=?       For help how you age and the time system.`+
+`+
+`=lType:  `=Chelp `=_TICK`+
+`=?       For help on how the In Character time relates to real time.
+~
+END
+
+keyword STATISTICS STATS~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_-STAT`+
+`=?       For help on the immortal command stat.`+
+`+
+`=lType:  `=Chelp `=_ATTRIBUTES`+
+`=?       For help on your characters statistics.`+
+~
+END
+
+keyword IC~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_'ICE STORM'`+
+`=?       For help on spell Ice Storm.`+
+`+
+`=lType:  `=Chelp `=_'IN CHARACTER'`+
+`=?       For help on what IC stands for.`+
+~
+END
+
+keyword SYSTEM~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_MAGIC-SYSTEM`+
+`=?       For help on the Magic system.`+
+`+
+`=lType:  `=Chelp `=_CLASS`+
+`=?       For help on the Class system. `+
+`+
+`=lType:  `=Chelp `=_RACE`+
+`=?       For help on the Race system`+
+`+
+`=lType:  `=Chelp `=_ATTRIBUTES`+
+`=?       For help on the Stat system.`+
+~
+END
+
+keyword SUMMON~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_SUMMONING`+
+`=?       For help on realm summoning.`+
+`+
+`=lType:  `=Chelp `=_-SUMMON`+
+`=?       For help on the spell summon.`+
+`+
+`=lType:  `=Chelp `=_NOSUMMON`+
+`=?       For help on turning off your ability to be summoned.`+
+`+
+`=lType:  `=Chelp `=_'SUMMON GUARDIAN'`+
+`=?       For help on the spell Summon Guardian.`+
+~
+END
+
+keyword SLEEPING~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_-SLEEP`+
+`=?       For help on the spell sleep.`+
+`+
+`=lType:  `=Chelp `=_REST`+
+`=?       For help on the command sleep.`+
+`+
+`=lType:  `=Chelp `=_'INDUCE SLEEP'`+
+`=?       For help on the sleep Induce Sleep.`+
+~
+END
+
+keyword NOTE~
+helpflags redirection_entry hide_keywords~
+category pointer~
+immsee_also NOTE-GROUPS~
+text `=lType:  `=Chelp `=_-NOTEACH`+
+`=?       For help on disabling the ability to be taught.`+
+`+ 
+`=lType:  `=Chelp `=_NOTES`+
+`=?       For help on how to write and read notes.`+
+`+
+`=lType:  `=Chelp `=_'NOTE EDIT'`+
+`=?       For information on editing unposted notes.`+
+~
+END
+
+keyword CHANNELS~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_-CHANNELS`+
+`=?       For help on methods of communicating.`+
+`+
+`=lType:  `=Chelp `=_CHANNELING`+
+`=?       For help on the skill Channel.`+
+`+
+`=lType:  `=CCHANNEL`+
+`=?       To list the status of all your current channels.`+
+~
+END
+
+keyword DESCRIPTION~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_DESCRIPTION-EDITOR`+
+`=?       For help on how to use the description editor.`+
+`+
+`=lType:  `=Chelp `=_SHORT`+
+`=?       For help on what a Short description is and hints.`+
+`+
+`=lType:  `=Chelp `=_SHORT-CHANGE`+
+`=?       For the policy about changing your short description.
+`+
+`=lType:  `=Chelp `=_LONG`+
+`=?       For help on what a Long description is and hints.`+
+`+
+`=lType:  `=Chelp `=_LONG-EXAMPLE`+
+`=?       For an example of a long description considered good.
+~
+END
+
+keyword CONVERT~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_-CONVERT`+
+`=?       For help on converting practices to trains.`+
+`+ 
+`=lType:  `=Chelp `=_'GOLD-CONVERT'`+
+`=?       For help on converting silver pieces to gold pieces.`+
+~
+END
+
+keyword CREATION~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType: `=Chelp `=_'CREATION POINTS'`+
+`=?      For information regarding your customized character`+
+`+
+`=lType: `=Chelp `=_-CREATION`+
+`=?      For information on the many spheres of magic`=?`+
+~
+END
+
+keyword RACE RACE-HELP~
+helpflags redirection_entry hide_keywords~
+category undefined~
+text `=lType:  `=Chelp `=_RACEINFO`+
+`=?       For help on a command which lists the available races`+
+`+
+`=lType:  `=Chelp `=_RACE-OVERVIEW`+
+`=?       For an overview of the racial strengths and weaknesses`+
+`+
+`=lType:  `=Chelp `=_RACIAL-SKILLS`+
+`=?       For a listing of inherent skills for each race`+
+`+
+`=lType:  `=Chelp RACE-<race_name>`+
+`=?       For help files on a specific race. IE `#`Shelp `=_race-human`^`+
+`+
+`=lType:  `=Chelp `=_RACE-CREATE`+
+`=?       For information about the requirements to create new races`+
+~
+END
+
+keyword BUILDING BUILDER~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType: `=Chelp `=_-BUILD`+
+`=?      To get help on the Build skill.`+
+`+ 
+`=lType: `=Chelp `=_AREA-BUILDING`+
+`=?      To get help on area building.`+
+`+
+`=lType: `=Chelp `=_OLC-EXAMPLE-PROPOSAL`+
+`=?      To get help on what a good area proposal should look like.`+
+~
+END
+
+keyword SIT~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_-SIT`+
+`=?       For help on changing your positions (rest/sit/stand, etc.)`+
+`+
+`=lType:  `=Chelp `=_SITE`+
+`=?       For information about various sites of the mud (login/website)`+
+~
+END
+
+keyword COMMAND~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_COMMANDS`+
+`=?       For help on mud-related command groups.`+
+`+
+`=lType:  `=Chelp `=_-COMMAND`+
+`=?       For help on the cleric spell, COMMAND 
+~
+END
+
+keyword LIGHT~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_-light`+
+`=?       For help on the enlightening druid spell of light.`+
+`+
+`=lType:  `=Chelp `=_'light bonding'`+
+`=?       For help on the healing druid spell of light bonding.`+
+`+
+`=lType:  `=Chelp `=_'light withering'`+
+`=?       For help on the offensive druid spell of light withering.`+
+`+
+`=lType:  `=Chelp `=_'lightning breath'`+
+`=?       For help on breath weapons of dragons.`+
+`+
+`=lType:  `=Chelp `=_'lightning-star'`+
+`=?       For help on the enchantment clerical spell of lightning star.`+
+`+
+`=lType:  `=Chelp `=_'lightning-bolt'`+
+`=?       For help on the offensive magi spell of lightning bolt. 
+~
+END
+
+keyword WEATHER~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=CWEATHER`+
+`=?       For a report on the current weather and conditions. Can only`+
+`=?       viewed from outdoors. (See `=Chelp `=_2.weather`=? for more details)`+
+`+
+`=lType:  `=Chelp `=_-WEATHER`+
+`=?       For help on the weather sphere of magic.`+
+~
+END
+
+keyword REALM REALMS~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_COUNCIL`+
+`=?       For help about the immortal Council of Realm.`+
+`+ 
+`=lType:  `=Chelp `=_-REALMS`+
+`=?       For help on spell realms.`+
+~
+END
+
+keyword DEATH~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_DYING`+
+`=?       For help on the mud death system.`+
+`+
+`=lType:  `=Chelp `=_-DEATH`+
+`=?       For help on the cleric sphere of Death.`+
+`+
+`=lType:  `=Chelp `=_DEATH-WAIL`+
+`=?       To get help on the mage spell of death wail. 
+~
+END
+
+keyword SOMEONE~
+helpflags redirection_entry hide_keywords~
+category pointer~
+text `=lType:  `=Chelp `=_REPLY`+
+`=?       For help on how to reply to "someone"`+
+`+
+`=lType:  `=Chelp `=_INVISIBILITY`+
+`=?       For help on seeing "someone" invisible`+
+ 
+~
+END
+
+EOF~
+#$

@@ -1,0 +1,677 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Dzagari Courier Service~
+ShortName   Dzagari Courier Service~
+Builders    None~
+Credits     Reave~
+VNUMs       3500 3520
+LRange      1 6
+Security    9
+Colour      G~
+colourcode  `
+MapScale    1
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#3500
+Name shopkeeper dirty old human~
+ShortD a dirty old human~
+LongD A dirty old human is here, scribbling in a ledger book.~
+Desc This human male is looks fairly old.  He is quite dirty, and has greasy grey 
+hair.  His beady eyes briefly look you over as you enter.  
+~
+Race human~
+Align -1 -1
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+10
+DamDice 1d7+1
+DamType punch
+AC 40 40 40 32
+Wealth 50
+Act    npc dont_wander no_tame stay_area changer~
+Off    dodge~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#3501
+Name small white pigeon~
+ShortD a small white pigeon~
+LongD A small white pigeon sits here on a perch.~
+Desc A small white pigeon.  It is hopping about on its perch.
+~
+Race song bird~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType peck
+AC 90 90 90 110
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#3502
+Name small black pigeon~
+ShortD a small black pigeon~
+LongD A small black pigeon sits here on a perch.~
+Desc A small black pigeon.  It is hopping about on its perch.  
+~
+Race song bird~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType peck
+AC 90 90 90 78
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#3503
+Name small blue white pigeon~
+ShortD a small blue and white pigeon~
+LongD A small blue and white pigeon sits here on a perch.~
+Desc A small blue and white pigeon.  It is hopping about on its perch.  
+~
+Race song bird~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType peck
+AC 80 80 80 70
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#3504
+Name fat white pigeon~
+ShortD a fat white pigeon~
+LongD A fat white pigeon is sitting on a perch here.~
+Desc This pigeon is so fat you wonder how it can fly at all.
+~
+Race song bird~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType peck
+AC 70 70 70 58
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#3505
+Name large black white pigeon~
+ShortD a large black and white pigeon~
+LongD A large black and white pigeon sits here on a perch.~
+Desc A large black and white pigeon.  It is hopping about on its perch.  
+~
+Race song bird~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType peck
+AC 60 60 60 50
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#3506
+Name huge blue pigeon~
+ShortD a huge blue pigeon~
+LongD A huge blue pigeon sits here on a perch.~
+Desc This is one monstrous mutant pigeon.  It is as bigger than your head and 
+looks quite ferocious.  
+~
+Race song bird~
+Align 0 0
+Level 5
+Hitroll 1
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType peck
+AC 50 50 50 44
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP resting~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#3507
+Name miniature red dragonet~
+ShortD a miniature red dragonet~
+LongD A miniature red dragonet sits here on a perch.~
+Desc This tiny reddish dragonet looks just like a regular dragon, except its only 
+2 feet long form head to tail.  It is covered in miniscule scales which 
+glisten in the light.  
+~
+Race dragon~
+Align 0 0
+Level 6
+Hitroll 1
+HitDice 2d5+4
+ManaDice 2d5+10
+DamDice 1d7+1
+DamType claw
+AC 40 40 40 32
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  infrared flying~
+Off    fast~
+Res    charm bash fire~
+Vuln   pierce cold~
+Form   edible sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP sitting~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#3500
+Name small sign~
+Short a small sign~
+Desc A small sign.~
+Level 0
+ItemType trash~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material wood~
+ExtraDesc small sign~
+Welcome to Dzagari Courier Service, where we'll deliver
+any message almost anywhere at affordable prices!
+ 
+Prices:
+ 
+Pigeon           10 Gold
+Minature Dragon  20 Gold  (faster and more reliable)
+ 
+ 
+****Sorry, delivery service temporarily closed!!!****
+~
+End
+
+#3501
+Name old fountain pen~
+Short an old fountain pen~
+Desc An old fountain pen is lying here.~
+Level 1
+ItemType weapon~
+Cost 55
+Asize 0
+Rsize 50
+Values dagger 1 4 pierce 0
+Weight 0
+Material steel~
+Extra    burnproof~
+Wear     take wield~
+ExtraDesc fountain pen old~
+An old pen.  Pretty sharp though.
+~
+End
+
+#3502
+Name old wooden bucket~
+Short an old wooden bucket~
+Desc An old wooden bucket has been left here.~
+Level 1
+ItemType drinkcontainer~
+Cost 15
+Asize 0
+Rsize 50
+Values 100 70 water 0 0
+Weight 20
+Material wood~
+Wear     take hold~
+ExtraDesc old bucket~
+An old wooden bucket.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#3500
+Name Dzagari Courier Service~
+Desc This small room is quite cramped, and full of disorganized piles of paper 
+and small wooden tubes.  Piles several feel high stand on just about every 
+surface, except for a small counter on the east side of the room.  Also on 
+that side of the room is a doorway, covered by an old beaded curtain.  A 
+peculiar smell and some odd noises come from that way.  The exit to the 
+street is west.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beaded curtain~
+An old curtain.
+~
+ExtraDesc small wooden tubes~
+Small wooden tubes, normally used for sending messages by pigeon or other 
+beast.  Some are sealed with wax on one or both ends.  
+~
+ExtraDesc parchment ledger books paper~
+From the ledger records and papers lying about, you can tell that this is 
+the office of some sort of courier service.  
+~
+ExtraDesc counter ~
+A smooth wooden counter, with some ledger books and parchment.
+~
+Exit east 3501
+Exit west 27001
+End
+
+
+#3501
+Name Dirty Hallway~
+Desc You are in a dirty hallway which leads north and east.  A beaded curtain 
+hangs across a doorway to the west, and a small alcove is south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beaded curtain~
+An old multicolored beaded curtain.
+~
+Exit north 3508
+Exit east 3502
+Exit south 3510
+Exit west 3500
+End
+
+
+#3502
+Name Dirty Hallway~
+Desc The dirty hallway leads east and west.  A small alcove is south, and a 
+doorway to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beaded curtain~
+An old multicolored beaded curtain.
+~
+Exit north 3509
+EFlags door closed~
+Exit east 3503
+Exit south 3511
+Exit west 3501
+End
+
+
+#3503
+Name Dirty Hallway~
+Desc The dirty hallway leads north and west from here.  Animal feces litters the 
+floor in several places.  There are small alcoves to the south and east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beaded curtain~
+An old multicolored beaded curtain.
+~
+Exit north 3504
+Exit east 3513
+Exit south 3512
+Exit west 3502
+End
+
+
+#3504
+Name Dirty Hallway~
+Desc The dirty hallway leads north and south.  A small alcove is to the east.  
+Strange noises come from all around.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beaded curtain~
+An old multicolored beaded curtain.
+~
+Exit north 3505
+Exit east 3514
+Exit south 3503
+End
+
+
+#3505
+Name Dirty Hallway~
+Desc The dirty hallway leads south and west from here.  Animal feces and a moldy 
+old bone litter the floor.  There are small alcoves to the north and east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beaded curtain~
+An old multicolored beaded curtain.
+~
+Exit north 3516
+Exit east 3515
+Exit south 3504
+Exit west 3506
+End
+
+
+#3506
+Name Dirty Hallway~
+Desc The dirty hallway leads east and west.  A small alcove is to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beaded curtain~
+An old multicolored beaded curtain.
+~
+Exit north 3517
+Exit east 3505
+Exit west 3507
+End
+
+
+#3507
+Name Dirty Hallway~
+Desc The dirty hallway leads south and east from here.  There is a small alcove 
+to the north.  Some rotten scraps of food litter the floor, and strange 
+noises come from all around.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beaded curtain~
+An old multicolored beaded curtain.
+~
+Exit north 3518
+Exit east 3506
+Exit south 3508
+End
+
+
+#3508
+Name Dirty Hallway~
+Desc The dirty hallway leads east and west.  A small alcove is south, and a 
+doorway to the north.  The hallway leads north and south from here.  It is 
+quite dirty, and refuse lies pushed up against the walls.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beaded curtain~
+An old multicolored beaded curtain.
+~
+Exit north 3507
+Exit south 3501
+End
+
+
+#3509
+Name Small Open-Roofed Room~
+Desc This small room has no roof and is open to the sky.  A circular staircase 
+stands in the center, and leads to a small platform near the top.  A doorway 
+leads south.  
+~
+Sector inside~
+Exit south 3502
+EFlags door closed~
+Exit up 3519
+End
+
+
+#3510
+Name Small Alcove~
+Desc You are in a small alcove south of the main hallway.  There is what looks 
+like a bar with a leather tether attached about halfway up the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3501
+End
+
+
+#3511
+Name Small Alcove~
+Desc You are in a small alcove south of the main hallway.  There is what looks 
+like a bar with a leather tether attached about halfway up the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3502
+End
+
+
+#3512
+Name Small Alcove~
+Desc You are in a small alcove south of the main hallway.  There is what looks 
+like a bar with a leather tether attached about halfway up the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3503
+End
+
+
+#3513
+Name Small Alcove~
+Desc You are in a small alcove east of the main hallway.  There is what looks 
+like a bar with a leather tether attached about halfway up the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 3503
+End
+
+
+#3514
+Name Small Alcove~
+Desc You are in a small alcove east of the main hallway.  There is what looks 
+like a bar with a leather tether attached about halfway up the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 3504
+End
+
+
+#3515
+Name Small Alcove~
+Desc You are in a small alcove east of the main hallway.  There is what looks 
+like a bar with a leather tether attached about halfway up the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 3505
+End
+
+
+#3516
+Name Small Alcove~
+Desc You are in a small alcove north of the main hallway.  There is what looks 
+like a bar with a leather tether attached about halfway up the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3505
+End
+
+
+#3517
+Name Small Alcove~
+Desc You are in a small alcove north of the main hallway.  There is what looks 
+like a bar with a leather tether attached about halfway up the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3506
+End
+
+
+#3518
+Name Storage Room~
+Desc This small room is used for storage.  Several crates are piled in a corner, 
+and a burlap sack full of small wooden tubes.  On one crate sits a large 
+stack of blank parchments.  There is also a large barrel and a few bowls, 
+and another open bag filled with small pellets of animal food.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc barrel bowls open bag pellets animal food~
+Seems to be used for feeding some animals.
+~
+ExtraDesc parchments ~
+Blank paper.
+~
+ExtraDesc small wooden tubes~
+These tupes are the type used to carry messages by homing pigeon.
+~
+ExtraDesc burlap sack~
+An old sack, nothing special about it.
+~
+ExtraDesc crates ~
+Plain wooden crates, nailed shut.
+~
+Exit south 3507
+End
+
+
+#3519
+Name On a Platform~
+Desc This small platform rests at the top of a spiral staircase leading to the 
+room below.  You appear to be in the center of a building, and below is a 
+small open courtyard of sorts.  The platform itself has a shaky wooden 
+railing, and is not really high enough to see much more than the few 
+surrounding buildings.  
+~
+Sector inside~
+Exit down 3509
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 3500 1 3500 1
+O 0 3500 -1 3500
+E 0 27000 -1 legs~
+E 0 27001 -1 arms~
+E 0 3501 -1 wielded~
+M 0 3501 2 3510 1
+M 0 3501 2 3511 1
+M 0 3504 4 3511 1
+M 0 3502 3 3511 1
+M 0 3502 3 3512 1
+M 0 3505 3 3513 1
+M 0 3502 3 3514 1
+M 0 3505 3 3514 1
+M 0 3506 2 3514 1
+M 0 3503 2 3515 2
+M 0 3503 2 3515 2
+M 0 3504 4 3516 1
+M 0 3506 2 3517 1
+O 0 3502 -1 3518
+M 0 3504 4 3518 2
+M 0 3504 4 3518 2
+M 0 3505 3 3518 1
+M 0 3507 1 3519 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

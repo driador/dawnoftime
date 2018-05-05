@@ -1,0 +1,32 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword SUMMARY TOPICS~
+helpflags hide_keywords~
+category undefined~
+text `c*******************************>*`GGETTING HELP`c*<*******************************
+`c*                                                                            *
+`c*`=?  This mud has extensive help entries for your use.  To get the most from   `c*
+`c*`=?  mudding here see help relating to your current status:                    `c*
+`c*                                                                            *
+`c*`G    1.  Are you a complete newbie to mudding?                               `c*
+`c*    `=?    [type `Yhelp `=_start-newbie`=?]                                            `c*
+`c*                                                                            *
+`c*`G    2.  Is it your first time at this mud?`=?                                  `c*
+`c*    `=?    [type `Yhelp `=_start-this-mud`=?]                                          `c*
+`c*                                                                            *
+`c*`G    3.  Do you need more info about this MUD in general terms?              `c*
+`c*    `=?    [type `Yhelp `=_start-general`=?]                                           `c*
+`c*                                                                            *
+`c*`G    4.  Our main informational document is `Yhighly`G recommended.              `c*
+`c*    `=?    [type `Yhelp `=_game`=?]                                                    `c*
+`c*                                                                            *
+******************************************************************************
+~
+END
+
+EOF~
+#$

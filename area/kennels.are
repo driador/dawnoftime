@@ -1,0 +1,1168 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        The Kennels~
+ShortName   Kennels~
+Builders    None~
+Credits     Tibault~
+VNUMs       4300 4349
+LRange      80 91
+Security    9
+Colour      R~
+colourcode  `
+MapScale    5
+MapLevel    70
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#4300
+Name six headed dark hound~
+ShortD the hound's `#`Rfiery red`^ head~
+LongD A six headed dark hound stands here.~
+Desc This six headed dog like beast stands proud here. It's heads sway on their 
+muscular necks, looking in all directions. The rest of it's body is equally 
+muscular and looks quite capable of pouncing on top of you. 
+~
+Race gnoll~
+Align 0 0
+Level 92
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d12+420
+DamDice 10d11+46
+DamType flbite
+AC -640 -640 -640 -600
+Wealth 840
+Act    npc dont_wander no_tame aggressive stay_area warrior noautosocial~
+AffBy  detect_invis detect_hidden infrared flying haste~
+Off    dodge fast parry gore~
+Imm    summon charm scry~
+Res    magic bash fire disease~
+Vuln   cold~
+Form   sentient biped mammal~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material flesh
+MProg REPOP 4312 100~
+MProg DEATH 4300 100~
+MProg FIGHT 4308 15~
+END
+
+#4301
+Name five headed dark hound fiveheaded~
+ShortD the hound's `#`Gacidic green`^ head~
+LongD A five headed dark hound stands here.~
+Desc Five heads leer at you with equal evil intention. This beast seems quite 
+capable of ripping his prey to small shreds, and then still be hungry enough 
+to eat some cattle. 
+~
+Race gnoll~
+Align 0 0
+Level 92
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d12+435
+DamDice 10d11+46
+DamType acbite
+AC -640 -640 -640 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior noautosocial~
+AffBy  detect_invis detect_hidden flying haste~
+Off    dodge fast parry gore~
+Imm    summon charm scry~
+Res    magic bash acid disease~
+Vuln   light~
+Form   edible sentient biped mammal~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material flesh
+MProg REPOP 4312 100~
+MProg DEATH 4301 100~
+MProg DELAY 4305 100~
+MProg FIGHT 4306 15~
+END
+
+#4302
+Name four headed dark hound fourheaded~
+ShortD the hound's `#`Wblinding white`^ head~
+LongD A four headed dark hound stands here.~
+Desc Ontop of a strong, muscular body four necks protrude in different 
+directions. On each of these massive necks a vicious head peers down at it's 
+prey. The jaws in these heads look rather strong and are filled with many 
+sharp teeth. 
+~
+Race gnoll~
+Align 0 0
+Level 92
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+440
+DamDice 10d11+46
+DamType shbite
+AC -640 -640 -640 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior noautosocial~
+AffBy  detect_invis detect_hidden flying haste~
+Off    dodge fast parry gore~
+Imm    summon charm scry~
+Res    magic bash disease light~
+Vuln   fire~
+Form   edible sentient biped mammal~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material flesh
+MProg REPOP 4312 100~
+MProg DEATH 4302 100~
+MProg DELAY 4305 100~
+MProg FIGHT 4307 15~
+END
+
+#4303
+Name three headed dark hound threeheaded~
+ShortD the hound's `#`Cicy blue`^ head~
+LongD A three headed dark hound stands here.~
+Desc Six eyes peer down at you from three heads all facing in your direction. 
+Pure evil eminates from this beast as it gets a sniff of fear. 
+~
+Race gnoll~
+Align 0 0
+Level 92
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+440
+DamDice 10d11+46
+DamType frbite
+AC -640 -640 -640 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior noautosocial~
+AffBy  detect_invis detect_hidden flying haste~
+Off    dodge fast parry gore~
+Imm    summon charm scry~
+Res    magic bash cold disease~
+Vuln   fire~
+Form   edible sentient biped mammal~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material flesh
+MProg REPOP 4312 100~
+MProg DEATH 4303 100~
+MProg DELAY 4305 100~
+MProg FIGHT 4309 15~
+END
+
+#4304
+Name two headed dark hound twoheaded~
+ShortD the hound's `#`sdark black`^ head~
+LongD A two headed dark hound stands here.~
+Desc This two headed beast looks just about ready to pounce on it's victim. The 
+strong paws under it's lean body have the look of agility to them. 
+~
+Race gnoll~
+Align 0 0
+Level 90
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+440
+DamDice 10d11+46
+DamType wrath
+AC -640 -640 -640 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior noautosocial~
+AffBy  detect_invis detect_hidden flying haste~
+Off    dodge fast parry gore~
+Imm    summon charm scry~
+Res    magic bash negative disease~
+Vuln   holy~
+Form   edible sentient biped mammal~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material flesh
+MProg REPOP 4312 100~
+MProg DEATH 4304 100~
+MProg DELAY 4305 100~
+END
+
+#4305
+Name dark hound oneheaded~
+ShortD a dark hound~
+LongD A dark hound stands here.~
+Desc A long, thin tail sways behind this beast of power. Four strong paws, a lean 
+body and a head form this enormous creature. Two dark silver eyes look 
+around, as if searching for something to set it's teeth into. 
+~
+Race gnoll~
+Align 0 0
+Level 92
+Hitroll 0
+HitDice 9d13+460
+ManaDice 9d13+440
+DamDice 10d11+46
+DamType bite
+AC -640 -640 -640 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area warrior noautosocial~
+AffBy  detect_invis detect_hidden haste~
+Off    dodge fast parry gore~
+Imm    charm scry~
+Res    magic weapon bash disease~
+Form   edible sentient biped mammal~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material flesh
+MProg DELAY 4305 100~
+MProg FIGHT 4311 15~
+END
+
+#4306
+Name beastmaster muscular man~
+ShortD a muscular man~
+LongD A hairy, muscular man stands here.~
+Desc A stern looking man stands here. His body is very muscular, if perhaps a 
+little stocky. He is covered in hair from head to toe. 
+~
+Race human~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 8d11+400
+DamDice 9d10+40
+DamType punch
+AC -500 -500 -500 -400
+Wealth 670
+Act    npc stay_area warrior~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#4307
+Name beastlord sturdy bald-headed man~
+ShortD a sturdy, bald-headed man~
+LongD A sturdy looking, bald-headed man stands here.~
+Desc This man is as broad as some of the ferocious beasts he keeps. His whole 
+body bulges with muscles, despite this he still looks lean and agile. His 
+head is as bald as a cannonball. 
+~
+Race human~
+Align 0 0
+Level 84
+Hitroll 0
+HitDice 9d12+420
+ManaDice 8d11+400
+DamDice 10d10+45
+DamType punch
+AC -550 -550 -550 -480
+Wealth 840
+Act    npc stay_area warrior~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#4300
+Name warm furry vest~
+Short a furry vest~
+Desc A warm furry vest lies here.~
+Level 80
+ItemType armor~
+Cost 2200
+Asize 45
+Rsize 50
+Values 24 26 26 20 0
+Weight 150
+Material fur~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances warrior barbarian~
+Affect modifier -1 80 -1 hp 8 0
+Affect modifier -1 80 -1 damroll 8 0
+Affect modifier -1 80 -1 agility -2 0
+ExtraDesc warm furry vest~
+Make of different furs, that have been intertwined in some way, this vest 
+looks extremely warm. 
+~
+End
+
+#4301
+Name thick leather kilt~
+Short a thick leather kilt~
+Desc A kilt made of thick leather lies here.~
+Level 80
+ItemType armor~
+Cost 2150
+Asize 30
+Rsize 50
+Values 22 20 18 16 0
+Weight 180
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+ClassAllowances barbarian~
+Affect modifier -1 80 -1 hitroll 8 0
+Affect modifier -1 80 -1 hp 6 0
+End
+
+#4302
+Name light brown tanned armguards~
+Short tanned leather armguards~
+Desc Some light brown armguards lie here.~
+Level 80
+ItemType armor~
+Cost 2000
+Asize 30
+Rsize 50
+Values 20 20 20 16 0
+Weight 80
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take arms~
+ClassAllowances barbarian~
+Affect modifier -1 80 -1 damroll 10 0
+Affect modifier -1 80 -1 hp 4 0
+End
+
+#4303
+Name saw-toothed serrated axe~
+Short a saw-toothed axe~
+Desc An axe with a saw-tooth serrated edge lies here.~
+Level 80
+ItemType weapon~
+Cost 1870
+Asize 50
+Rsize 50
+Values axe 9 8 slash EFH
+Weight 50
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances barbarian~
+Affect modifier -1 80 -1 damroll 10 0
+Affect modifier -1 80 -1 hitroll 8 0
+Affect modifier -1 80 -1 agility -2 0
+Affect modifier -1 80 -1 quickness -2 0
+End
+
+#4304
+Name thick dark leather knee boots~
+Short dark leather knee boots~
+Desc A pair of thick, dark leather knee high boots lie here.~
+Level 84
+ItemType armor~
+Cost 2265
+Asize 40
+Rsize 50
+Values 18 18 18 15 0
+Weight 45
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+ClassAllowances warrior barbarian~
+Affect modifier -1 84 -1 hitroll 8 0
+Affect modifier -1 84 -1 hp 10 0
+Affect modifier -1 84 -1 mana -40 0
+End
+
+#4305
+Name baggy dark leather leggings~
+Short baggy, dark leather leggings~
+Desc A pair of baggy, dark leather leggings lies here.~
+Level 84
+ItemType armor~
+Cost 2436
+Asize 50
+Rsize 50
+Values 24 20 20 17 0
+Weight 70
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 84 -1 hp 6 0
+Affect modifier -1 84 -1 damroll 6 0
+Affect modifier -1 84 -1 hitroll 6 0
+Affect modifier -1 84 -1 presence -2 0
+End
+
+#4306
+Name waist satchel soft fur~
+Short a soft furred waist satchel~
+Desc A waist satchel made of soft furs lies here.~
+Level 84
+ItemType container~
+Cost 2340
+Asize 40
+Rsize 50
+Values 10 A 0 35 75
+Weight 20
+Material fur~
+Extra    nonmetal nodegrade~
+Wear     take waist~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 84 -1 constitution 5 0
+Affect modifier -1 84 -1 hp 4 0
+Affect modifier -1 84 -1 strength 2 0
+Affect modifier -1 84 -1 presence -2 0
+End
+
+#4307
+Name heavy dark grey cape~
+Short a heavy, `#`sdark grey`^, leather cape~
+Desc A heavy, `#`sdark grey`^, leather cape lies here.~
+Level 84
+ItemType armor~
+Cost 2500
+Asize 60
+Rsize 50
+Values 25 20 20 15 0
+Weight 140
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ClassAllowances barbarian~
+Affect modifier -1 84 -1 hp 14 0
+Affect modifier -1 84 -1 damroll 6 0
+Affect modifier -1 84 -1 presence -2 0
+Affect modifier -1 84 -1 intuition -2 0
+End
+
+#4308
+Name tightly bound hard leather bracer~
+Short a hardened leather bracer~
+Desc A tightly bound, hard leather bracer lies here.~
+Level 84
+ItemType armor~
+Cost 1890
+Asize 35
+Rsize 50
+Values 14 11 11 9 0
+Weight 40
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take wrist~
+ClassAllowances warrior barbarian~
+Affect modifier -1 84 -1 hp 7 0
+Affect modifier -1 84 -1 damroll 7 0
+Affect modifier -1 84 -1 hitroll 4 0
+Affect modifier -1 84 -1 empathy -2 0
+End
+
+#4309
+Name inch thick polearm~
+Short an inch thick polearm~
+Desc An inch thick polearm with iron tips lies here.~
+Level 84
+ItemType weapon~
+Cost 2245
+Asize 100
+Rsize 50
+Values polearm 17 4 beating EF
+Weight 90
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances barbarian~
+Affect modifier -1 84 -1 damroll 10 0
+Affect modifier -1 84 -1 hitroll 8 0
+Affect modifier -1 84 -1 presence -2 0
+End
+
+#4310
+Name small white stone key~
+Short a small, `#`Wwhite stone`^ key~
+Desc A small, `#`Wwhite stone`^ key lies here.~
+Level 1
+ItemType key~
+Cost 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#4311
+Name small bronze key~
+Short a small, `#`ybronze`^ key~
+Desc A small, `#`ybronze`^ key lies here.~
+Level 1
+ItemType key~
+Cost 5
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#4312
+Name savagely half devoured corpse~
+Short a savagely devoured corpse~
+Desc A savagely half devoured corpse lies here, collecting flies.~
+Level 1
+ItemType npccorpse~
+Cost 0
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material flesh~
+Extra    nonmetal~
+ExtraDesc savagely devoured corpse~
+A pile of what looks like the parts of a hairy corpse lies here. It could 
+be a mrem or a gnoll, but you can't tell for sure from what is remaining of 
+it. Large chunks have been taken or bitten out of it. 
+~
+End
+
+#4313
+Name glistening red ruby~
+Short a glistening `#`rred`^ ruby~
+Desc A glistening `#`rred`^ ruby, connected to a delicate chain lies here.~
+Level 86
+ItemType clothing~
+Cost 2410
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gem~
+Extra    magic antigood antievil nonmetal nolocate nodegrade~
+Wear     take neck~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 86 -1 reasoning 6 0
+Affect modifier -1 86 -1 memory 6 0
+Affect modifier -1 86 -1 mana 60 0
+Affect modifier -1 86 -1 strength -4 0
+Affect modifier -1 86 -1 constitution -4 0
+End
+
+#4314
+Name frosty blue opal~
+Short a frosty `#`Cblue`^ opal~
+Desc A frosty `#`Cblue`^ opal, connected to a delicate chain lies here.~
+Level 86
+ItemType clothing~
+Cost 2410
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gem~
+Extra    magic antigood antievil nonmetal nolocate nodegrade~
+Wear     take neck~
+ClassAllowances mage cleric druid spellfilcher~
+Affect modifier -1 86 -1 saves -8 0
+Affect modifier -1 86 -1 mana 120 0
+Affect modifier -1 86 -1 ac -10 0
+Affect modifier -1 86 -1 constitution -2 0
+End
+
+#4315
+Name brilliant white diamond~
+Short a brilliant `#`Wwhite`^ diamond~
+Desc A brilliant `#`Wwhite`^ diamond, connected to a delicate chain lies here.~
+Level 86
+ItemType clothing~
+Cost 2410
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gem~
+Extra    magic antigood antievil nonmetal nolocate nodegrade~
+Wear     take neck~
+ClassAllowances cleric druid paladin ranger~
+Affect modifier -1 86 -1 presence 6 0
+Affect modifier -1 86 -1 selfdiscipline 6 0
+Affect modifier -1 86 -1 mana 40 0
+Affect modifier -1 86 -1 quickness -2 0
+Affect modifier -1 86 -1 agility -1 0
+End
+
+#4316
+Name pale green rhinestone~
+Short a pale `#`Ggreen`^ rhinestone~
+Desc A pale `#`Ggreen`^ rhinestone, connected to a delicate chain lies here.~
+Level 86
+ItemType clothing~
+Cost 2410
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material gem~
+Extra    magic antigood antievil nonmetal nolocate nodegrade~
+Wear     take neck~
+ClassAllowances thief warrior paladin ranger~
+Affect modifier -1 86 -1 ac -20 0
+Affect modifier -1 86 -1 strength 5 0
+Affect modifier -1 86 -1 constitution 5 0
+Affect modifier -1 86 -1 move -120 0
+Affect modifier -1 86 -1 intuition -3 0
+End
+
+#0
+
+
+
+#ROOMS
+#4300
+Name A Gloomy Path~
+Desc Whatever the position of the sun, no light shines on this path. The dark, 
+thick leaved trees on either side of the path, create dark heavy shadows on 
+the gravel path. Far up ahead in an eastward direction some construction 
+looms. Beside the gravel path the ground is quite dry and the scarce growths 
+that have managed to survive seem to be begging for moisture. 
+~
+Sector forest~
+Exit east 4301
+Exit northwest 4309
+End
+
+
+#4301
+Name A Gloomy Path~
+Desc The trees are close together here and their branches create a domed 
+structure above you. This has transformed this path amongst the trees into a 
+corridor of branches and tree trunks. Reflections off an iron gate provide a 
+little light towards the east. At the other end, the path takes you deeper 
+into the forest in a westward direction. 
+~
+Sector forest~
+Exit east 4302
+Exit west 4300
+End
+
+
+#4302
+Name Before the Iron Gates~
+Desc An iron gate runs in a north south line across a dirt gravel path here.  The 
+gate consists of thick, heavy vertical spikes that are fixed in horizontal 
+lattices.  They give an impenetrable impression and judging by some marks of 
+wear, consisting of scratchmarks mainly, they have been tested thoroughly.  
+Part of the gate seems to hang on a set of hinges and has a thick knob 
+attached to it.  
+~
+Sector forest~
+Exit east 4303
+EFlags door closed~
+EKeywords gate~
+Exit west 4301
+End
+
+
+#4303
+Name Inside the Compound~
+Desc A strange smell lingers in the air. A warm smell of cooking meat mixed with 
+something foul. Small scraps of meat lay scattered on the dirt in between 
+the empty cages that seem to be everywhere. Most of the cages are empty but 
+scratching noises can be heard coming from others. 
+~
+Sector city~
+Exit east 4305
+Exit south 4304
+Exit west 4302
+EFlags door closed~
+EKeywords gate~
+End
+
+
+#4304
+Name Amongst some Cages~
+Desc Cages in all sizes and shapes are racked up on top of each other here. Most 
+of the larger ones have thick large bars of metal to make sure no one or no 
+thing can escape. To the east you see a wooden wall of the main building in 
+this compound. Its wooden planks are nailed together with thick, long nails. 
+Some sawdust covers a large portion of the ground here. 
+~
+Sector city~
+Exit north 4303
+End
+
+
+#4305
+Name Inside the Compound~
+Desc Dirt, sawdust and scraps of food are what you see when looking at the floor. 
+ The bits of meat that lie here have been ripped at by something sharp and 
+ferocious. To the south the main building stands. Its sturdy walls and thick 
+planks appear strong enough to keep the strongest beasts out, or in as the 
+case may be. There is a door along the wall to the east of here. 
+~
+Sector city~
+Exit north 4308
+Exit east 4306
+Exit west 4303
+End
+
+
+#4306
+Name Inside the Compound~
+Desc A large steel enforced door stands between you and the warmth that this 
+building to your south can offer. All around you cages litter the ground, 
+filled with small creatures or simply empty. To the north you see the dark 
+coloured iron gate that surrounds this compound. Some scurrying noises can 
+be heard coming from some of the cages. 
+~
+Sector city~
+Exit north 4307
+Exit south 4310
+EFlags door closed locked~
+EKeyvnum 4311
+EKeywords door~
+Exit west 4305
+End
+
+
+#4307
+Name Inside the Northern Gate~
+Desc A dark, steel gate runs along the northern end of this compound. Its sturdy 
+rails are covered in claw marks. Some of the rails are slightly bent, which 
+is hardly believable considering their thickness. Beneath the gate, 
+something has dug a hole providing the only escape, or entrance, in that 
+direction. The sawdust on the ground is riddled with claw marks, as if 
+someone or something has recently been dragged across the ground here. 
+~
+Sector city~
+Exit north 4320
+Exit south 4306
+Exit west 4308
+End
+
+
+#4308
+Name Inside the Northern Gate~
+Desc This appears to be a refuse corner. Broken cages and empty crates have been 
+thrown on a large pile here. Some rats and other rodents scuttle around amid 
+the refuse, hoping to find some fresher meat that the torn, rotting chunks 
+that lie scattered over the rest of the compound. 
+~
+Sector city~
+Exit east 4307
+Exit south 4305
+End
+
+
+#4309
+Name A Gloomy Path~
+Desc This dark and gloomy path has seen very little light from the looks of the 
+soil beneath the trees. Few plants live beneath the large, thickly leaved 
+trees that stand here. Some animals can be hurd scattering about the 
+treetops, and the odd hooting of an owl echoes through the dark passageway. 
+~
+Sector inside~
+Exit north 4321
+Exit southeast 4300
+End
+
+
+#4310
+Name a Wooden Hallway~
+Desc A few torches, fastened tightly to the wooden walls in steel brackets, light 
+this hallway. The floor, consisting of sturdy, thick planks, is riddled 
+with scratch marks. A few of the planks are partialy ripped up out of the 
+ground. Heavy cell doors are situated to the west and the east, with 
+massive bolts on them. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4306
+EFlags door closed locked~
+EKeyvnum 4311
+EKeywords door~
+Exit east 4315
+EFlags door closed~
+EKeywords cell~
+Exit south 4311
+Exit west 4314
+EFlags door closed~
+EKeywords cell~
+End
+
+
+#4311
+Name A Wooden Hallway~
+Desc Sounds of beasts huffing and puffing taunt your ears. The doors to the west 
+and east of here look like those of a prison cell. Through a small slit in 
+the door, only darkness can be seen. There is a stench that fills the air 
+like a poisonous gas. To the south the hallway leads towards a metal 
+framework of steel and iron. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4310
+Exit east 4317
+EFlags door closed~
+EKeywords cell~
+Exit south 4312
+Exit west 4316
+EFlags door closed~
+EKeywords cell~
+End
+
+
+#4312
+Name Before the Framework~
+Desc This construction of steel and iron is amazing. Large plates of steel have 
+been attached over iron bars, creating a framework of metal. Many bumps on 
+the plate suggest alot of pressure has been asserted from the other side of 
+this construction. A small puddle of dried blood lies beneath the steel 
+plates. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4311
+Exit south 4313
+EFlags door closed locked~
+EKeyvnum 4310
+EKeywords cage~
+Exit southeast 4318
+End
+
+
+#4313
+Name Inside the Cage~
+Desc A foul stench immediately reaches you, the stench of rot. The immensity of 
+it is incredible. As soon as you wonder what it could be, your gaze falls 
+upon a large pile of corpses. Some of them have been carved in, others just 
+left intact. A large swarm of flies buzzes over this festering pile of 
+rotting meat. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Mana 60
+Heal 75
+Exit north 4312
+EFlags door closed locked~
+EKeyvnum 4310
+EKeywords cage~
+End
+
+
+#4314
+Name Inside a Cell~
+Desc This room resembles a prison cell in many ways. The stark walls and no 
+furniture give it a very cold feel indeed. Amongst the straw, a neat pile of 
+bones lies neatly stacked with the smaller bones on top, and the larger 
+bones at the bottom. The bones don't look very old, but they have been 
+completly stripped of meat. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 4310
+EFlags door closed~
+End
+
+
+#4315
+Name Inside a Cell~
+Desc The walls, bare of any marking what so ever, stand in great contrast with 
+the floor. Although the floor is of a simple rough rock, it is littered 
+with familiar objects. Bones, skulls and torn bits of clothing seem to 
+contribute to most of the mess on the floor. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 4310
+EFlags door closed~
+End
+
+
+#4316
+Name Inside a Cell~
+Desc The only light in this room comes from a small slit in the sturdy door to 
+the east. The small beam of light shows very little in this shadowy room. 
+There is no furniture, apart from an empty crate in the corner of the room. 
+A small pool of dried up blood lies in the center of the room where the 
+floor is slightly lower. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 4311
+EFlags door closed~
+EKeywords cell~
+End
+
+
+#4317
+Name Inside a Cell~
+Desc Sawdust and straw litter the floor of this cold cell room. The low ceiling 
+and the smooth walls give a claustrophobic feel to the room. On the far wall 
+some writing has been scribbled in blood `#`r"Beware of the heads"`^. 
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 4311
+EFlags door closed~
+EKeywords cell~
+End
+
+
+#4318
+Name The Gutter~
+Desc A gushing noise can be heard coming from the side of this corridor. The 
+source of this noise is a gutter, that has been dug along the wall to the 
+south. A dark red fluid flows quite forcefully through this gutter. The 
+wooden walls that enclose this hallway are stained along the gutter. After 
+a little inspection the dark red fluid appears to be blood. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4319
+Exit northwest 4312
+End
+
+
+#4319
+Name The Tannery~
+Desc Tall racks stand here with stretched animal hides spanned accross them. A 
+few objects of comfort also lie about this end of the corridor like a chair 
+and a table. To one corner of the room, a large pile of skinned carcasses 
+lies collecting flies. The smell coming from this pile is disgusting. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4318
+End
+
+
+#4320
+Name Before a Sturdy Fence~
+Desc The trees overhead form a gentle canopy, rustling softly in the breeze. 
+Strangely though, there are no sounds of animals in the branches, nor birds 
+singing. It is an uneasy quiet. To the north, the forest continues, but to 
+the south you catch a glimpse of a building of some sort. A fence bars 
+travel in that direction, but something has dug a hole beneath it. It's 
+impossible to tell if it was to enter or escape. 
+~
+RoomFlags no_mob~
+Sector inside~
+Exit south 4307
+End
+
+
+#4321
+Name A Gloomy Path~
+Desc Towards the south hardly any light penetrates the leaves and twigs that 
+create a corridor of plantlife here. The ground also undergoes a dramatic 
+change in that direction as it becomes very dark, although not necesarily 
+rich. Towards the north, the ground is very sandy and the trees thin out and 
+become alot smaller. 
+~
+Sector inside~
+Exit north 30469
+Exit south 4309
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 4306 3 4304 1
+E 0 4303 -1 wielded~
+E 0 4302 -1 arms~
+E 0 4301 -1 legs~
+E 0 4300 -1 torso~
+M 0 4306 3 4305 1
+E 0 4303 -1 wielded~
+E 0 4302 -1 arms~
+E 0 4301 -1 legs~
+E 0 4300 -1 torso~
+M 0 4306 3 4307 1
+G 0 4311 -1
+E 0 4300 -1 torso~
+E 0 4301 -1 legs~
+E 0 4302 -1 arms~
+E 0 4303 -1 wielded~
+M 0 4300 1 4313 1
+E 0 4313 -1 neck1~
+M 0 4305 4 4314 1
+M 0 4304 4 4315 1
+M 0 4303 4 4316 1
+O 0 4312 -1 4317
+M 0 4307 1 4318 1
+G 0 4310 -1
+E 0 4309 -1 wielded~
+E 0 4308 -1 rwrist~
+E 0 4308 -1 lwrist~
+E 0 4307 -1 about~
+E 0 4306 -1 waist~
+E 0 4305 -1 legs~
+E 0 4304 -1 feet~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#4312
+title purge the decay hound~
+code ** This is to stop the beasts repopping if the existing heads haven't been dealt with.
+** One negative downside being that it won't repop if a player with a pet is in the room. 
+if mobs > 0
+mob purge self
+endif
+~
+disabled false
+END
+
+#4311
+title decay~
+code mob echo $I opens it's mouth open wide and spews out a breath of decay.
+mob cast decay $q
+~
+disabled false
+END
+
+#4310
+title shadow breath~
+code mob cast 'shadow breath' $n
+~
+disabled false
+END
+
+#4309
+title frost breath~
+code mob cast 'frost breath' $q
+~
+disabled false
+END
+
+#4308
+title Fire breath~
+code mob cast 'fire breath' $q
+~
+disabled false
+END
+
+#4307
+title lightning breath~
+code mob cast 'lightning breath' $q
+~
+disabled false
+END
+
+#4306
+title acid breath~
+code mob cast 'acid breath' $q
+~
+disabled false
+END
+
+#4305
+title He who doesn't forget, will avenge!~
+code mob echo Acid steam streams from $I's nostrils as it darts in for the kill.
+mob kill $q
+~
+disabled false
+END
+
+#4304
+title Head two bites the dust~
+code mob mload 4305
+mob echo The last head turns it's head slowly and seems to be grinning evily.
+mob force oneheaded mob remember $n
+mob force oneheaded mob delay 2
+~
+disabled false
+END
+
+#4303
+title Head three bites the dust~
+code mob mload 4304
+mob force twoheaded mob remember $n
+mob force twoheaded mob delay 2
+mob echoat $n One of the remaining heads screams loudly as it turns towards you.
+mob echoaround $n One of the remaining heads screams loudly as it turns towards $N.
+~
+disabled false
+END
+
+#4302
+title Head four bites the dust~
+code mob mload 4303
+mob force threeheaded mob remember $n
+mob force threeheaded mob delay 2
+mob force threeheaded mob oload 4314 86 neck
+mob force threeheaded mob sil wear opal
+mob echoat $n The head to the left glares at you with an icy cold gaze.
+mob echoaround $n The head to the left glares at $N with an icy cold gaze.
+~
+disabled false
+END
+
+#4301
+title Head five bites the dust~
+code mob mload 4302
+mob force fourheaded mob remember $n
+mob force fourheaded mob delay 2
+mob force fourheaded mob oload 4315 86 neck
+mob force fourheaded mob sil wear diamond
+mob echoat $n Another head turns his head towards you and fumes angrily.
+mob echoaround $n Another head turns his head towards $N and fumes angrily.
+~
+disabled false
+END
+
+#4300
+title Head 6 bites the dust~
+code mob mload 4301
+mob force fiveheaded mob remember $n
+mob force fiveheaded mob delay 2
+mob force fiveheaded mob oload 4316 86 neck
+mob force fiveheaded mob sil wear rhinestone
+mob echoat $n The closest intact head swivels towards you, smoke streaming from it's nostrils.
+mob echoaround $n The closest intact head swivels towards $N, smokes streaming from it's nostrils.
+~
+disabled false
+END
+
+#0
+
+
+#$

@@ -1,0 +1,1741 @@
+from a~
+to a~
+END
+
+from as~
+to ve~
+END
+
+from ash~
+to lith~
+END
+
+from again~
+to en~
+END
+
+from anger~
+to ruth~
+END
+
+from abyss~
+to ia~
+END
+
+from abhorrence~
+to deloth~
+END
+
+from abominable~
+to saur~
+END
+
+from abide~
+to mar~
+END
+
+from abroad~
+to palan~
+END
+
+from axes~
+to baruk~
+END
+
+from autumn~
+to yavie~
+END
+
+from awe~
+to gaya~
+END
+
+from awakening~
+to coire~
+END
+
+from air~
+to wilya~
+END
+
+from all~
+to ilya~
+END
+
+from alas~
+to ai~
+END
+
+from alone~
+to er~
+END
+
+from b~
+to i~
+END
+
+from bow~
+to luva~
+END
+
+from book~
+to luine~
+END
+
+from beyond~
+to pella~
+END
+
+from beard~
+to fang~
+END
+
+from beautiful~
+to vana~
+END
+
+from behold~
+to aiy~
+END
+
+from bend~
+to lok~
+END
+
+from beside~
+to ar~
+END
+
+from between~
+to imbe~
+END
+
+from bird~
+to aiwe~
+END
+
+from blood~
+to serke~
+END
+
+from bloodstained~
+to agarwaen~
+END
+
+from blossom~
+to lote~
+END
+
+from blessed~
+to aman~
+END
+
+from brilliance~
+to rilde~
+END
+
+from bridge~
+to yanta~
+END
+
+from bride~
+to riel~
+END
+
+from breeze~
+to hwesta~
+END
+
+from battle~
+to thaaleh~
+END
+
+from bane~
+to dangir~
+END
+
+from c~
+to q~
+END
+
+from cut~
+to kir~
+END
+
+from cup~
+to yulma~
+END
+
+from cave~
+to rod~
+END
+
+from chill~
+to ring~
+END
+
+from children~
+to hini~
+END
+
+from chant~
+to lin~
+END
+
+from chambers~
+to sammath~
+END
+
+from champion~
+to arato~
+END
+
+from cloud~
+to fana~
+END
+
+from clouds~
+to fanyar~
+END
+
+from cloak~
+to collo~
+END
+
+from cleft~
+to cirith~
+END
+
+from cleave~
+to cir~
+END
+
+from cleaver~
+to crist~
+END
+
+from cover~
+to untup~
+END
+
+from coast~
+to falas~
+END
+
+from course~
+to rant~
+END
+
+from cold~
+to ring~
+END
+
+from come~
+to tul~
+END
+
+from commander~
+to kano~
+END
+
+from consumer~
+to vasa~
+END
+
+from cool~
+to him~
+END
+
+from cry~
+to nall~
+END
+
+from crow~
+to craban~
+END
+
+from d~
+to e~
+END
+
+from day~
+to re~
+END
+
+from daughter~
+to iel~
+END
+
+from darkness~
+to velkiin~
+END
+
+from demon~
+to rauko~
+END
+
+from devoted~
+to ndur~
+END
+
+from death~
+to gurth~
+END
+
+from dead~
+to firn~
+END
+
+from deep~
+to bale~
+END
+
+from direction~
+to men~
+END
+
+from dimness~
+to gwath~
+END
+
+from down~
+to ndu~
+END
+
+from doom~
+to ambar~
+END
+
+from double~
+to adu~
+END
+
+from draught~
+to yulda~
+END
+
+from dusk~
+to lome~
+END
+
+from dwell~
+to mar~
+END
+
+from dwelling~
+to mar~
+END
+
+from dwarves~
+to naugrim~
+END
+
+from dwarf~
+to naug~
+END
+
+from e~
+to z~
+END
+
+from ed~
+to ant~
+END
+
+from exalted~
+to hen~
+END
+
+from echo~
+to lom~
+END
+
+from elves~
+to eldar~
+END
+
+from elf~
+to elda~
+END
+
+from empty~
+to lost~
+END
+
+from ear~
+to lhaw~
+END
+
+from earth~
+to arda~
+END
+
+from eagle~
+to soron~
+END
+
+from east~
+to romen~
+END
+
+from end~
+to met~
+END
+
+from encircling~
+to echor~
+END
+
+from enter~
+to minn~
+END
+
+from eye~
+to hen~
+END
+
+from f~
+to y~
+END
+
+from for~
+to an~
+END
+
+from forest~
+to taure~
+END
+
+from forsaken~
+to elga~
+END
+
+from fortress~
+to ost~
+END
+
+from follow~
+to khil~
+END
+
+from foot~
+to tal~
+END
+
+from fence~
+to iath~
+END
+
+from feather~
+to quesse~
+END
+
+from feast~
+to mereth~
+END
+
+from fell~
+to aeg~
+END
+
+from fist~
+to quare~
+END
+
+from fill~
+to quant~
+END
+
+from figure~
+to fana~
+END
+
+from finish~
+to tel~
+END
+
+from find~
+to hir~
+END
+
+from first~
+to minya~
+END
+
+from fire~
+to nar~
+END
+
+from flow~
+to dui~
+END
+
+from flower~
+to lote~
+END
+
+from flowing~
+to sirith~
+END
+
+from flame~
+to lhach~
+END
+
+from flatlands~
+to talath~
+END
+
+from friend~
+to abbinaa~
+END
+
+from from~
+to ello~
+END
+
+from fruit~
+to yave~
+END
+
+from far~
+to hae~
+END
+
+from farewell~
+to namarie~
+END
+
+from fading~
+to quelle~
+END
+
+from fall~
+to lanta~
+END
+
+from fangs~
+to carca~
+END
+
+from fanfare~
+to rom~
+END
+
+from father~
+to atar~
+END
+
+from fate~
+to ambar~
+END
+
+from g~
+to o~
+END
+
+from green~
+to lai~
+END
+
+from gray~
+to sinda~
+END
+
+from gaze~
+to tir~
+END
+
+from gazing~
+to diriel~
+END
+
+from gape~
+to faug~
+END
+
+from gate~
+to ando~
+END
+
+from gift~
+to anna~
+END
+
+from gloom~
+to huine~
+END
+
+from gloomy~
+to dim~
+END
+
+from glorious~
+to alkarinque~
+END
+
+from glittering~
+to bril~
+END
+
+from glass~
+to heled~
+END
+
+from gleam~
+to glin~
+END
+
+from good~
+to man~
+END
+
+from gold~
+to malta~
+END
+
+from golden~
+to laurea~
+END
+
+from h~
+to p~
+END
+
+from hot~
+to ur~
+END
+
+from holy~
+to aina~
+END
+
+from hollow~
+to unque~
+END
+
+from home~
+to mar~
+END
+
+from hook~
+to ampa~
+END
+
+from hope~
+to estel~
+END
+
+from horn~
+to til~
+END
+
+from horror~
+to goroth~
+END
+
+from horse~
+to rokko~
+END
+
+from host~
+to rimbe~
+END
+
+from hour~
+to lumenn~
+END
+
+from hound~
+to huan~
+END
+
+from howl~
+to ngwaw~
+END
+
+from hand~
+to maite~
+END
+
+from harbor~
+to londe~
+END
+
+from haven~
+to londe~
+END
+
+from hair~
+to fin~
+END
+
+from hammer~
+to dring~
+END
+
+from here~
+to si~
+END
+
+from heavy~
+to blung~
+END
+
+from heaven~
+to menel~
+END
+
+from head~
+to dhol~
+END
+
+from heart~
+to ore~
+END
+
+from hearing~
+to lhaw~
+END
+
+from heat~
+to ur~
+END
+
+from helm~
+to thol~
+END
+
+from hither~
+to nev~
+END
+
+from hiding~
+to esgal~
+END
+
+from hidden~
+to dolen~
+END
+
+from high~
+to tan~
+END
+
+from hill~
+to amon~
+END
+
+from hunt~
+to faroth~
+END
+
+from i~
+to im~
+END
+
+from it~
+to yes~
+END
+
+from ice~
+to khelek~
+END
+
+from iron~
+to anga~
+END
+
+from in~
+to esse~
+END
+
+from is~
+to na~
+END
+
+from island~
+to tol~
+END
+
+from j~
+to y~
+END
+
+from jaws~
+to anca~
+END
+
+from jewel~
+to mire~
+END
+
+from k~
+to t~
+END
+
+from king~
+to aran~
+END
+
+from kindler~
+to thoniel~
+END
+
+from knowledge~
+to noldo~
+END
+
+from keep~
+to cheb~
+END
+
+from l~
+to r~
+END
+
+from love~
+to mel~
+END
+
+from lover~
+to dil~
+END
+
+from lofty~
+to tara~
+END
+
+from long~
+to an~
+END
+
+from lonely~
+to ereb~
+END
+
+from loop~
+to lok~
+END
+
+from lore~
+to nole~
+END
+
+from lord~
+to heru~
+END
+
+from lost~
+to vanwa~
+END
+
+from lawn~
+to partha~
+END
+
+from laughter~
+to lalaith~
+END
+
+from lady~
+to hiril~
+END
+
+from lair~
+to torech~
+END
+
+from lake~
+to aelin~
+END
+
+from lamp~
+to calma~
+END
+
+from lament~
+to denie~
+END
+
+from land~
+to nore~
+END
+
+from last~
+to vedui~
+END
+
+from letter~
+to tengwa~
+END
+
+from leaf~
+to asea~
+END
+
+from listen~
+to last~
+END
+
+from lie~
+to cait~
+END
+
+from lift~
+to ortan~
+END
+
+from life~
+to coi~
+END
+
+from like~
+to ve~
+END
+
+from live~
+to cui~
+END
+
+from m~
+to w~
+END
+
+from men~
+to atani~
+END
+
+from meeting~
+to omentielvo~
+END
+
+from mesh~
+to rem~
+END
+
+from metal~
+to tinco~
+END
+
+from mist~
+to his~
+END
+
+from middle~
+to ened~
+END
+
+from mighty~
+to beleg~
+END
+
+from mind~
+to ore~
+END
+
+from mouth~
+to anto~
+END
+
+from mountain~
+to orod~
+END
+
+from mountains~
+to ered~
+END
+
+from mound~
+to corol~
+END
+
+from month~
+to asta~
+END
+
+from months~
+to astar~
+END
+
+from mortal~
+to fir~
+END
+
+from moon~
+to isil~
+END
+
+from man~
+to atan~
+END
+
+from maiden~
+to ien~
+END
+
+from mastery~
+to tur~
+END
+
+from marry~
+to rig~
+END
+
+from make~
+to ech~
+END
+
+from magic~
+to faar~
+END
+
+from magical~
+to faarn~
+END
+
+from magician~
+to faeerban~
+END
+
+from n~
+to i~
+END
+
+from now~
+to si~
+END
+
+from noble~
+to ara~
+END
+
+from noise~
+to glam~
+END
+
+from north~
+to formen~
+END
+
+from not~
+to u~
+END
+
+from number~
+to rimbe~
+END
+
+from name~
+to esse~
+END
+
+from night~
+to du~
+END
+
+from nightingale~
+to tindomerel~
+END
+
+from net~
+to rembe~
+END
+
+from near~
+to nev~
+END
+
+from nectar~
+to miruvor~
+END
+
+from o~
+to a~
+END
+
+from out~
+to eth~
+END
+
+from outside~
+to ar~
+END
+
+from outflow~
+to ethir~
+END
+
+from ocean~
+to ear~
+END
+
+from open~
+to edr~
+END
+
+from oppression~
+to thang~
+END
+
+from of~
+to ello~
+END
+
+from old~
+to iaur~
+END
+
+from oliphaunt~
+to mumak~
+END
+
+from one~
+to ash~
+END
+
+from p~
+to s~
+END
+
+from pebble~
+to sarn~
+END
+
+from people~
+to nore~
+END
+
+from petty~
+to nibin~
+END
+
+from pursue~
+to faroth~
+END
+
+from pass~
+to cirith~
+END
+
+from pine~
+to thon~
+END
+
+from pillar~
+to tarma~
+END
+
+from plain~
+to talaht~
+END
+
+from platform~
+to talan~
+END
+
+from place~
+to sinome~
+END
+
+from pool~
+to aelin~
+END
+
+from power~
+to val~
+END
+
+from point~
+to til~
+END
+
+from prince~
+to ernil~
+END
+
+from prison~
+to mbando~
+END
+
+from praise~
+to lait~
+END
+
+from q~
+to d~
+END
+
+from queen~
+to tari~
+END
+
+from r~
+to f~
+END
+
+from re~
+to en~
+END
+
+from rest~
+to este~
+END
+
+from rememberance~
+to rin~
+END
+
+from reversed~
+to nuquerna~
+END
+
+from refuse~
+to avar~
+END
+
+from refill~
+to enquant~
+END
+
+from region~
+to arda~
+END
+
+from rain~
+to ulma~
+END
+
+from rainbow~
+to ninniach~
+END
+
+from ransom~
+to danwedh~
+END
+
+from radiance~
+to alata~
+END
+
+from rage~
+to aha~
+END
+
+from river~
+to sir~
+END
+
+from ridges~
+to pinnath~
+END
+
+from ride~
+to nor~
+END
+
+from ring~
+to cor~
+END
+
+from root~
+to thond~
+END
+
+from roads~
+to tier~
+END
+
+from royal~
+to ara~
+END
+
+from rune~
+to certa~
+END
+
+from rushing~
+to alag~
+END
+
+from s~
+to ath~
+END
+
+from son~
+to ion~
+END
+
+from sorcery~
+to morgul~
+END
+
+from south~
+to hyarmen~
+END
+
+from screen~
+to esgal~
+END
+
+from sunset~
+to andune~
+END
+
+from sunlight~
+to aze~
+END
+
+from sunrise~
+to romen~
+END
+
+from sudden~
+to bragol~
+END
+
+from summer~
+to laire~
+END
+
+from seven~
+to otso~
+END
+
+from serpent~
+to hloke~
+END
+
+from shore~
+to falas~
+END
+
+from shuddering~
+to girith~
+END
+
+from sharp~
+to maika~
+END
+
+from shadow~
+to lumbule~
+END
+
+from shit~
+to cirya~
+END
+
+from shine~
+to kal~
+END
+
+from sing~
+to lin~
+END
+
+from singer~
+to linde~
+END
+
+from sickly~
+to engwa~
+END
+
+from sign~
+to tehta~
+END
+
+from silver~
+to telep~
+END
+
+from silent~
+to din~
+END
+
+from skill~
+to curu~
+END
+
+from slim~
+to fim~
+END
+
+from slave~
+to snaga~
+END
+
+from slender~
+to fim~
+END
+
+from snow~
+to losse~
+END
+
+from snowy~
+to lossen~
+END
+
+from snake~
+to hloke~
+END
+
+from spirit~
+to fea~
+END
+
+from spider~
+to ungol~
+END
+
+from spiderweb~
+to ungwe~
+END
+
+from spark~
+to tinwe~
+END
+
+from sparkle~
+to tintil~
+END
+
+from speak~
+to quen~
+END
+
+from sword~
+to macil~
+END
+
+from swordsman~
+to macar~
+END
+
+from sweet~
+to lissi~
+END
+
+from switft~
+to linte~
+END
+
+from strength~
+to altrun~
+END
+
+from stream~
+to hir~
+END
+
+from street~
+to rath~
+END
+
+from strong~
+to thalion~
+END
+
+from stray~
+to raen~
+END
+
+from stirring~
+to coire~
+END
+
+from star~
+to elen~
+END
+
+from starlight~
+to silme~
+END
+
+from stake~
+to ceber~
+END
+
+from stem~
+to telco~
+END
+
+from stone~
+to ondo~
+END
+
+from t~
+to h~
+END
+
+from the~
+to i~
+END
+
+from these~
+to hin~
+END
+
+from thee~
+to le~
+END
+
+from them~
+to hain~
+END
+
+from this~
+to hi~
+END
+
+from thorn~
+to ereg~
+END
+
+from thou~
+to lye~
+END
+
+from thousand~
+to mene~
+END
+
+from throng~
+to sanga~
+END
+
+from three~
+to nelde~
+END
+
+from thread~
+to lain~
+END
+
+from twinkle~
+to tintil~
+END
+
+from twilight~
+to aduial~
+END
+
+from tall~
+to halla~
+END
+
+from tower~
+to minas~
+END
+
+from torrent~
+to thor~
+END
+
+from torment~
+to ngwalme~
+END
+
+from tongue~
+to lambe~
+END
+
+from treasure~
+to harma~
+END
+
+from tree~
+to alda~
+END
+
+from troll~
+to olog~
+END
+
+from u~
+to j~
+END
+
+from un~
+to u~
+END
+
+from unto~
+to tenn~
+END
+
+from unwilling~
+to avar~
+END
+
+from under~
+to nuin~
+END
+
+from underdark~
+to grod~
+END
+
+from underground~
+to groth~
+END
+
+from v~
+to z~
+END
+
+from voice~
+to oma~
+END
+
+from void~
+to ia~
+END
+
+from valley~
+to tumbo~
+END
+
+from valiant~
+to astaldo~
+END
+
+from veil~
+to fana~
+END
+
+from victor~
+to dacil~
+END
+
+from w~
+to x~
+END
+
+from way~
+to pata~
+END
+
+from wall~
+to ramba~
+END
+
+from wander~
+to raen~
+END
+
+from wanderer~
+to randir~
+END
+
+from water~
+to nen~
+END
+
+from waterfall~
+to lanthir~
+END
+
+from watch~
+to tir~
+END
+
+from wave~
+to falma~
+END
+
+from wright~
+to dan~
+END
+
+from whole~
+to iluve~
+END
+
+from white~
+to glos~
+END
+
+from wing~
+to rama~
+END
+
+from winter~
+to hrive~
+END
+
+from wind~
+to sul~
+END
+
+from window~
+to henneth~
+END
+
+from wisdom~
+to noldo~
+END
+
+from without~
+to ar~
+END
+
+from will~
+to uva~
+END
+
+from willow~
+to tasare~
+END
+
+from weapon~
+to saalah~
+END
+
+from werewolf~
+to nguar~
+END
+
+from week~
+to enquie~
+END
+
+from west~
+to numen~
+END
+
+from word~
+to quetta~
+END
+
+from wolf~
+to draug~
+END
+
+from woods~
+to taure~
+END
+
+from x~
+to n~
+END
+
+from y~
+to ime~
+END
+
+from year~
+to yen~
+END
+
+from years~
+to yeni~
+END
+
+from z~
+to k~
+END
+
+EOF~

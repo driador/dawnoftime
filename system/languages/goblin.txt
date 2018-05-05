@@ -1,0 +1,101 @@
+from a~
+to e~
+END
+
+from b~
+to r~
+END
+
+from c~
+to m~
+END
+
+from d~
+END
+
+from e~
+to i~
+END
+
+from f~
+to t~
+END
+
+from g~
+to h~
+END
+
+from h~
+END
+
+from i~
+to a~
+END
+
+from j~
+to v~
+END
+
+from k~
+to c~
+END
+
+from l~
+to p~
+END
+
+from m~
+to v~
+END
+
+from n~
+to i~
+END
+
+from o~
+to a~
+END
+
+from p~
+to rp~
+END
+
+from q~
+to bee~
+END
+
+from r~
+to f~
+END
+
+from s~
+to g~
+END
+
+from t~
+to b~
+END
+
+from u~
+to ish~
+END
+
+from v~
+to fr~
+END
+
+from w~
+END
+
+from x~
+END
+
+from y~
+to ie~
+END
+
+from z~
+to ees~
+END
+
+EOF~

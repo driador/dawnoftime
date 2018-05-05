@@ -1,0 +1,1383 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword TRACK FIELDTRACK~
+category undefined~
+text `=lSyntax:`=? track
+
+Rangers are masters of the wilderness, and the wylde betrays them no 
+secrets.  Using their natural instincts and talents of observation, a 
+skilled woodsman can discern who (or what) has passed through an area by 
+examining closely the tracks they have left behind. Naturally, even the 
+skills of the most seasoned trackers are limited by time and terrain. 
+~
+END
+
+keyword SECONDARY DUEL-WIELD DUAL-WIELD~
+category undefined~
+text Syntax:
+    second <weapon>
+
+Every character can wield 2 weapons.  This is not a skill you have to 
+gain but certain classes are better than others at using and hitting 
+with their off hand.  To second a make sure you are already wield one
+then type second <object> and you will wield another weapon.
+~
+END
+
+keyword DARK-VISION~
+category undefined~
+text Syntax:
+    automatic
+
+This is an ability inherent in some races which enables them to see 
+in the dark.  Usually it is racially based, those races living below 
+ground tending to have this skill naturally from birth.  Some mages 
+have been known to enchant items with the effect, but this is rare if
+not a myth.
+~
+END
+
+keyword SLICE~
+category undefined~
+text Syntax:
+    slice <corpse>
+
+This skill will slice meat off a corpse.  A useful skill for 
+gathering food.  You will need a sharp weapon.  People who are 
+not very well practiced in slicing should be careful, fingers
+are hard if not impossible to replace.
+~
+END
+
+keyword ULTRA-DAMAGE~
+category undefined~
+text Syntax:
+    automatic
+
+For experienced warriors allowing them to deal out huge amounts
+of damage.  Experience and many hours practice is needed for a 
+warrior to learn this skill.
+~
+END
+
+keyword SKILLS BASICS~
+category undefined~
+text Syntax:
+    skill
+
+This command will list the current skills you have.  Those that have 
+n/a beside them are unable to be used yet as your character is not of 
+sufficient level.
+
+Typing (help 'skill name') will give you help on a particular skill.  
+An example of this is (help disarm) this will provide help on what the 
+'disarm' skill is and does.
+
+Every character starts with two skill groups, one for their class and a 
+default set that all characters receive.  The default skills are:
+
+recall      essential escape skill (see help recall)
+scrolls     reading of scrolls and other magical volumes
+staves      use of magical staves
+wands	    use of magical wands
+
+For class defaults, check the classes themselves.
+
+SEE: PREMISE CLASSES RACIAL-SKILLS
+~
+END
+
+keyword PRACTICE PRACTICING PRACTICED~
+category undefined~
+text Syntax: 
+    practice
+Syntax: 
+    practice <skill|spell>
+ 
+PRACTICE without an argument tells you your current ability level in all
+the skills and spells available to you.  You can check this anywhere.
+ 
+PRACTICE with an argument practices that skill or spell.  Your learning
+percentage varies from 0% (unlearned) to a maximum 75%, any more 
+improvement in the skill is done by using the skill.  You must be at a 
+guild master to practice.
+ 
+The higher your memory and reasoning, the more you will learn at each 
+practice session.  The total number of bonuses from all the stats on 
+the `#`YRIGHT COLUMN`^ of your score sheet determines the numbers of 
+practices you gain per level.  Unused sessions are saved until you 
+do use them.
+ 
+Bonuses < 50  = 3 Pracs
+Bonuses < 100 = 4 Pracs
+Bonuses < 150 = 5 Pracs
+Bonuses < 200 = 6 Pracs
+ 
+`#`WBonuses`^ are those numbers by your attribute. They can be negative 
+or positive. Here are examples:
+ 
+Co: 30( 47)/ -5
+Sd: 35( 57)/+10
+ 
+The bonus to Co is `#`W-5`^ and to Sd is `#`W+10`^.
+~
+END
+
+keyword TRAINS TRAINING~
+category undefined~
+see_also ATTRIBUTES PRACTICE~
+text Syntax: 
+   train <st qu pr em in co ag sd me re hp mana>
+ 
+TRAIN increases one of your attributes.  When you start the game, your
+character has standard attributes based on your class and race, and
+several initial training sessions.  You can increase your attributes by
+using these sessions at a trainer (there are several in town).
+ 
+It takes one training session to improve an attribute from 1-15%, or to
+increase your mana or hp.  You receive two training sessions per level.
+ 
+e.g train st (Increases your strength.)
+ 
+~
+END
+
+keyword MODIFIERS~
+category undefined~
+see_also ATTRIBUTES TRAINS~
+text Your modifiers are the bonuses your particular percentage in an attribute
+entitle you to.  Modifiers are dependant on equipment and race to a large
+extent.
+
+~
+END
+
+keyword STRENGTH QUICKNESS PRESENCE INTUITION EMPATHY CONSTITUTION AGILITY SELF-DISCIPLINE MEMORY REASONING~
+category undefined~
+see_also TRAIN~
+text Each attribute is represented in the following manner on the score table:
+CURRENT (MAXIMUM) / MODIFIER
+
+Where CURRENT is your current percentage in that attribute.
+If CUR was 54, then you are better than 54% of your _RACE_ in that attribute.
+MAXIMUM is the highest possible percentage that you can hope to achieve in
+that attribute.  MODIFIER is the modifier that you character receives on
+various die rolls and checks that will be performed on your character.
+The value of MODIFIER is determined by looking at your CURRENT, any equipment
+modifiers, and any racial bonus that you received for your race.
+
+The 10 attributes that make up each character are:
+
+PRIMARY ATTRIBUTES:
+-------------------
+Strength:        The ability to use your muscles to their greatest advantage
+(ST)             Race plays a large determination in the real strength of your
+                 character.
+
+Quickness:       The measure of your reflexes and reaction time.
+(QU)
+
+Presence:        The ability to control your own mind - courage, bearing,
+(PR)             self-esteem.  It plays a major role your ability to influence
+                 others.
+
+Intuition:       The combination of your luck, genius, precognition, ESP, and
+(IN)             favor with the gods.
+
+Empathy:         The measure of your relationship to the all-pervading force
+(EM)             that is common in all things natural and supernatural.  The
+                 strength of your soul.
+
+
+DEVELOPMENTAL ATTRIBUTES:
+-------------------------
+Constitution:    Your general health and well being, resistance, and overall
+(CO)             durability.  Note CO is not as important on ROM muds.
+
+Agility:         Your manual dexterity, and litheness.
+(AG)
+
+Self-Discipline: The control of your mind over your body, concentration,
+(SD)             steadfastness, and inner strength.  Your ability to go on
+                 despite hardship.
+
+Memory:          Your ability to retain knowledge and what you have previously
+(ME)             encountered and learned. 
+
+Reasoning:       Your ability to absorb and comprehend, as well as to use your
+(RE)             knowledge to draw conclusions. Memory and Reasoning combined
+                 would be generally considered a reflection of intelligence 
+                 therefore affecting things like practicing.
+
+ 
+~
+END
+
+keyword WANDS STAVES -SCROLLS~
+category undefined~
+see_also BRANDISH RECITE ZAP~
+text Magical items require training to use properly.  If your character lacks the
+necessary skill to use an item, you may fail when you try, possibly destroying
+it.  The item skills are as follows:
+ 
+scrolls - The reading of magical scrolls, tomes and books.
+staves  - The use of staves and similar devices.
+wands  - The use of wands and similar items. 
+ 
+~
+END
+
+keyword RECALLS /~
+category undefined~
+see_also PANIC~
+text Syntax: 
+    RECALL
+
+RECALL prays for miraculous transportation from where you are back to a common 
+reference point. this varies from race to race.
+ ``good' races recall to the Large Plaza in Mekali.  
+ ``evil' races recall to the Blasted Main Square in Dzagari.
+
+ '/' is a synonym for RECALL.
+
+If you RECALL during combat, you will lose experience (more than for fleeing),
+and you will have a chance of failing (again, more than for fleeing).  This
+chance is based on your recall skill, although a 100% recall does not 
+guarantee success.
+
+RECALL costs half of your movement points.
+
+RECALL doesn't work in certain god-forsaken rooms.  Characters afflicted by a
+curse may not recall at all.
+ 
+~
+END
+
+keyword EXOTIC WEAPONS WEAPON WEAPONSMASTER AXE DAGGER FLAIL MACE POLEARM STAFF SWORD WHIP WEAPONMASTER~
+category undefined~
+see_also SHEATH BRANDISH~
+text Each weapon skill applies to a specific group of armaments, and determines 
+how well a character fights with a particular weapon.  The weaponsmaster 
+group provides talent in all weapons (save exotics), from chair legs to 
+halberds. If the character has the parry skill as well, he can parry 
+incoming attacks. The chance of parrying is best if the character in 
+question is skilled at both his weapon and his opponent's. `+
+`+
+The weapon skills consist of the following: `+
+`+
+weaponsmaster   skill group of all weapons listed below (save exotic weaponry)`+
+axe             the use of axes, ranging from hand to great (but not halberds)`+
+dagger          the use of knives and daggers, and other stabbing weapons `+
+flail           skill in ball-and-chain type weapons `+
+mace            this skill includes clubs and hammers as well as maces `+
+polearm         the use of pole weapons, including halberds and spears `+
+staff           the use of staffs, including cudgels and quarterstaffs
+sword           the warrior's standby, from rapier to claymore `+
+whip            the use of whips, chains, and bullwhips `+
+exotic          the use of strange magical weapons `+
+`+
+The exotic skill cannot be purchased, and is dependent solely upon level.`+
+`+
+~
+END
+
+keyword SHIELD-BLOCK~
+category undefined~
+text Syntax:
+    automatic
+
+Shield block is a rather fancy name for the art of parrying with a shield.
+Characters with no shield block skill will not be able to defend themselves
+well with a shield.  All classes may learn shield block, but only warriors and
+clerics are good at it.  Beware, flails ignore shield blocking attempts, and
+whips have an easier time getting around them.  Axes may split shields in two.
+~
+END
+
+keyword STUDY LEARNING~
+category undefined~
+text Syntax: 
+    study <scroll>
+
+You can learn spells by reading scrolls.  You must have all the required
+realms and spheres, and you must be of high enough level.  This will
+freeze your character for a while and use up the scroll, even if you are
+unsuccessful.
+~
+END
+
+keyword SORCERY~
+category undefined~
+text Syntax:
+    automatic
+
+Allows you to cast spells up to 20 levels above your current level.
+This power has been known to be unpredictable.  The spells you cast
+will vary between 1 and 20 levels higher than your own.  This is 
+a must have skill for all mages.
+~
+END
+
+keyword MANA-FOCUSING~
+category undefined~
+text Syntax:
+    automatic
+
+Mana focusing enables a spell caster to finely hone the use
+of their magic abilities.  A spell caster with this skill can focus 
+their mana to maximum efficiency, and therefore use less mana in the
+casting of a spell.
+
+Mana focusing reduces consumption of mana in the best cases
+by up to 50%.   Effectively adding to a spell casters overall mana 
+supply.
+~
+END
+
+keyword TEACH~
+category undefined~
+text Syntax: 
+    teach <character> <spell>
+
+The person being taught must be resting.  This will cause both the
+teacher and student to be frozen for a while, even if unsuccessful.
+~
+END
+
+keyword BACKSTAB~
+category undefined~
+text Syntax: backstab <victim>`1`1Backstab is the favoured attack of thieves, 
+murderers, and other rogues.  It can only be used while wielding a dagger or 
+similar weapon.  The damage inflicted by a backstab is determined by the 
+attacker's level, weapon skill, backstab skill, and the power of the 
+opponent.  Only thieves and spellfilchers may learn the backstab skill.  
+~
+END
+
+keyword BASH~
+category undefined~
+text Syntax:
+    bash <victim>
+
+The bash skill is a warrior talent, a brute-force attack designed to knock
+your foe to his knees.  It's success depends on many factors, including the
+bash rating, your weight, and the size of your opponent.  Bashing a dragon
+is not generally a wise idea.
+~
+END
+
+keyword BERSERK~
+category undefined~
+text Syntax:
+    berserk
+
+Only powerful warriors can master berserking, the ability to enter insane rage
+in combat.  It's effects are not altogether unlike the frenzy spell -- a huge
+surge of combat prowess, coupled with a disregard for personal safety.  
+Berserking warriors are more resistant to the effects of magic.
+Basically this means higher damroll and hitroll and worse armor class as well
+as a temporary boost in hitpoints.
+~
+END
+
+keyword DIRT DIRT-KICKING~
+category undefined~
+text Syntax:
+    dirt <victim>
+
+Consider by some to be a cowardly skill, dirt kicking gives the clever 
+combatant a chance to blind his opponent by casting dirt into his eyes.  The
+blindness does not last long, but can provide an edge in combat.  Dexterity
+helps in hitting or avoiding a dirt kick.  Only warriors and thieves may
+learn this skill.
+~
+END
+
+keyword DISARM~
+category undefined~
+text Syntax:
+    disarm <victim>
+
+Disarm is a somewhat showy and unreliable skill, designed to relieve your
+opponent of his weapon.  The best possible chance of disarming occurs when you
+are skilled in both your own and your opponent's weapon.  Only talented thieves
+and warriors may learn this skill.
+~
+END
+
+keyword DODGE~
+category undefined~
+text Syntax:
+    automatic
+
+In the words of one wise warrior, 'the best way to block a blow is to not
+be where it lands'.  The dodge skill honours this tradition, by improving the
+character's natural agility to the point where many blows will miss the 
+target. The chance of dodging is also affected by the dexterity of the
+attacker and the target.  Any class may learn dodging.
+~
+END
+
+keyword ENHANCED-DAMAGE~
+category undefined~
+text Syntax:
+    automatic
+
+Warriors and skilled thieves can become skilled enough in combat that they are
+able to inflict more damage than other classes.  Enhanced damage is checked
+for with each hit, although with a low skill, the chance of receiving a bonus
+is very low indeed.
+~
+END
+
+keyword ENVENOM~
+category undefined~
+text `=lSyntax:`=? envenom <object>`+
+`+
+The envenom skill is a cowardly skill practiced only by thieves, rangers, 
+and spellfilchers.  It is designed to win a battle through alchemy and 
+treachery rather than skill or strength.  Or, put another way, it's a skill 
+used by the smart to kill the foolish.  Food, drink, and weapons may be 
+envenomed, with varying effects.  Poisoned food or drink puts a mild poison 
+spell on the consumer, and is unlikely to be more than a minor inconvenience 
+(after all, the typical adventurer could drink sewer water with only a trace 
+of the runs).  A poisoned weapon, on the other hand, can inflict serious 
+damage on an opponent as the poison burns through his bloodstream.  But be 
+careful, blade venom evaporates quickly and is rendered almost powerless by 
+repeated blows in combat.  Some weapons can't be envenomed due to 
+enchantments.  
+~
+END
+
+keyword HAND-TO-HAND~
+category undefined~
+text Syntax:
+    automatic
+
+Hand to hand combat is a rare skill in the lands of the Dawn of Time.  Learning 
+this style of fighting gives the player a weapon even when disarmed -- bare 
+hands. Trained hand to hand experts are far more effective than many swordsmen.
+Clerics and warriors are the best at this skill, although thieves and mages
+may also learn it.
+~
+END
+
+keyword KICK~
+category undefined~
+text Syntax:
+    kick <victim>
+
+Kicking allows the adventurer to receive an extra attack in combat, a
+powerful kick.  However, a failed kick may throw an unwary fighter off
+balance.  Fighters and Clerics are the most skilled at kicking, although
+thieves may also learn it.
+~
+END
+
+keyword PARRY~
+category undefined~
+text Syntax:
+    automatic
+
+If at first you fail to dodge, block it.  Parry is useful for deflecting 
+attacks, and is successful more often than dodge.  Parry requires a weapon
+for full success, the hand-to-hand skill may also be used, but results in
+reduced damage instead of no damage.  The best chance of parrying occurs
+when the defender is skilled in both the parrying weapon and the attacker's
+weapon.
+~
+END
+
+keyword RESCUE~
+category undefined~
+text Syntax:
+    rescue <character>
+
+A friend in need is a friend indeed.  And when in combat, a warrior with
+the rescue skill is just the friend you need.  Rescue allows you to intercede
+in combat, protecting weaker characters from bodily harm.  Hopefully the
+favour will be returned.  Success in rescuing depends on the skill rating, as
+well as a comparison of level, dexterity, and speed between the character and
+the target. (note: you rescue a friend, not the monster)
+~
+END
+
+keyword TRIP~
+category undefined~
+text Syntax:
+    trip <victim>
+
+Back by popular demand.  Trip is a somewhat dastardly attack, and involves
+using any one of a number of methods to bring your opponent down to the ground.
+Tripping large monsters is generally not a good idea, and agile ones will
+find the attack easy to avoid.  Thieves and warriors may learn trip.
+~
+END
+
+keyword SECOND-ATTACK~
+category undefined~
+text Syntax:
+    automatic
+
+Training in second attack allows the character a chance at additional strikes
+in combat -- although a 100% second attack does NOT guarantee 2 attacks every
+round.  Any class may learn this skill, although clerics and mages have a 
+very hard time with it.
+~
+END
+
+keyword THIRD-ATTACK~
+category undefined~
+text Syntax:
+    automatic
+
+Training in third attack allows the character a chance at an additional strike
+in a combat, and increases the chance of a second attack as well.  Perfect
+third attack does NOT assure three attacks per round.  Only warriors and highly
+skilled thieves may learn this skill.
+~
+END
+
+keyword QUAD-ATTACK FOURTH-ATTACK~
+category undefined~
+text Syntax:
+    automatic
+
+Training in quad attack allows the character a chance at an additional strike
+in a combat, and increases the chance of a third attack as well.  Perfect
+quad attack does NOT assure four attacks per round.  Only warriors and highly
+skilled thieves may learn this skill.
+~
+END
+
+keyword HIDE SNEAK~
+category undefined~
+text Syntax:
+    hide
+    sneak
+ 
+Hide and sneak are similar skills, both related to remaining undetected.
+Hide has a very high chance of success, but only works for as long as the
+character remains stationary.  Sneak may be used when moving (including
+sneaking by monsters), but has a lower chance of success.  Only warriors and
+thieves may learn these skills.
+ 
+You can tell if you are sneaking or hidden by looking in your affects list.
+ 
+Even when hidden there is a slight chance you be seen... Someone affected 
+by the detect hidden spell has a significantly higher chance of seeing you.
+ 
+~
+END
+
+keyword FAST-HEALING~
+category undefined~
+text Syntax:
+    automatic
+
+The fast healing skill improves wound healing rates, when walking, resting,
+or sleeping. It represents knowledge of healing herbs or just general 
+toughness and stamina.  Fast healing is checked every tick, and it is 
+possible for it to fail.  All class may learn this skill, but mages find it
+very difficult to master, due to their bookish lifestyle.
+~
+END
+
+keyword LORE~
+category undefined~
+text Syntax:
+    lore <object>
+
+Lore is a general skill, consisting of knowledge of myths and legends. Use
+of the lore skill gives a chance of obtaining information on an object,
+concerning its power and uses.  It also may occasionally increase the value
+of an object, because more will be known about its worth.  All classes may
+learn lore, although thieves are best at it, and warriors find it very hard
+to use.
+~
+END
+
+keyword HAGGLE HAGGLING~
+category undefined~
+text Syntax:
+    automatic
+
+Haggling is an indispensable skill to the trader.  It allows a character to
+match wits with a merchant, seeking to get a better price for merchandise,
+or to buy at the lowest possible cost.  Unfortunately, most merchants are 
+already very skilled at haggling, so the untrained adventurer had best 
+guard his treasure closely.  Thieves are natural masters at haggling, 
+although other classes may learn it as well.
+~
+END
+
+keyword PEEK AUTOPEEK~
+category undefined~
+see_also LOOK GLANCE~
+text `=lSyntax: `=?peek <target>`+
+`+
+The peek skill is useful for seeing what a player or mob is carrying,
+the better to use the steal command with.  More intelligent characters are
+harder to peek at.  All characters may learn peek, but thieves are the most
+common students.`+
+`+
+You can also automatically peek when you look at someone by turning on the 
+autopeek option.`+
+ 
+~
+END
+
+keyword PICK PICK-LOCK~
+category undefined~
+text Syntax:
+    pick <object|door>
+
+Lock picking is one of the prime skills of thieves, allowing them to gain
+access to many secured areas.  Lock picking chances are improved by  
+intelligence, and hindered by the difficulty of the lock. Other classes may
+learn to pick locks, but they will never find it easy.
+~
+END
+
+keyword MEDITATION~
+category undefined~
+text syntax:
+    automatic
+
+This skill is similar to fast healing, but relies on the concentration and
+mantras to increase mana recovery when the character is sleeping or resting.
+Thieves and warriors, with their troubled minds and violent attitudes, have
+much trouble learning to meditate.
+~
+END
+
+keyword STEAL~
+category undefined~
+text `=lSyntax:`=? steal coins <character>`+
+`=?        steal <object> <character>`+
+`+
+Steal is a skill practiced only by those of the rogue classes.  Most 
+commonly practiced amongst thieves, and perhaps a few spellfilchers, this 
+skill allows one to carefully grab items or money off on another.  With a 
+little luck, and light fingers, those that know how to steal could rob 
+virtually any item that another carries.   
+~
+END
+
+keyword AWARENESS~
+helpflags wordwrapped~
+category undefined~
+text `Bsyntax: `=?awareness `+
+`+
+Awareness heightens your sense of hearing, and makes you more paranoid of 
+your surroundings.  Awareness makes It difficult to sleep in the paranoid 
+state when there are a lot of people nearby.  You are instantly awakened 
+when you sense a person walk into the room where you are sleeping.  `+
+`+
+Typing awareness by itself will toggle it on or off.  
+~
+END
+
+keyword SCAN~
+category undefined~
+text Syntax: 
+    scan <argument>
+
+Using the scan skill allows you to see off into the adjoining rooms.  
+Without an argument, it will scan in all directions, but you may use a 
+direction as an argument to limit your search.
+~
+END
+
+keyword CHANNELING~
+category undefined~
+text `=lSyntax: `=?chan <#>`+
+`=?        chan <#> <target>`+
+`+
+Channeling is a most common practice amongst mages, but any who can control 
+a spell is adept enough to learn the art of channeling.  This skill will 
+transfer magical energies, either from one person to another, or it may be 
+used to drain the life force to restore mana.`+
+`+
+Channeling without a recipient, or target, will convert hit points into 
+mana, at the conversion rate of usually about 50% but it varies quite 
+sporadically.`+
+`+
+Channeling with a target sends mana across the realm to the target 
+recipient, but they as well must have the channel skill to focus the 
+energies, and the amount of mana successfully sent is checked for by the 
+skills of both the target and the recipient. 
+~
+END
+
+keyword SCRIBING SCRIBE~
+helpflags wordwrapped~
+category undefined~
+text `=lSyntax:`=? scribe <spell> `+
+`+
+Scribing is a skill mastered by mages and clerics.  Some dabblers in magic 
+may also be able to scribe, but this is rare indeed.  Scribing a scroll 
+requires that you have an appropriate empty scroll and that you are holding 
+it while conducting the "Scribing".  Scribing a spell will expend 4 times 
+the normal magical energy required to cast the same spell.  You may scribe 
+more than one spell on one scroll, but this is difficult with increased 
+personal risk involved.  Failure to conduct the "Scribing" process properly 
+can often result in nasty fireballs as the scroll burns and sometimes death. 
+ 
+~
+END
+
+keyword BREWING~
+category undefined~
+text Syntax:
+    brew <spell>
+
+Brewing is a skill mastered by druids and mages.  Dabblers in magic
+may also be able to brew, but this is rare indeed.  Brewing a potion 
+requires that you have an appropriate empty potion bottle and that you 
+are holding it while conducting the "brewing".  Brewing a spell will
+expend 4 times the normal magical energy required to cast the same
+spell.  You may brew more than one spell in one potion bottle, but 
+this is difficult with increased personal risk involved.  Failure to 
+conduct the "brewing" process properly can often result in nasty 
+explosions and sometimes death.  
+~
+END
+
+keyword MOUNT RIDE RIDING HORSE~
+category undefined~
+see_also TAME ANIMAL-TRAINING~
+text `=?
+`=lSyntax:`=?
+    ride <animal>
+    tether <animal> or
+    dismount <animal>
+
+Is the basic skill of being able to stay on top of an animal that has 
+been tamed and trained for riding.  This would allow you to freely move
+through the realms in relative comfort (as comfortable as horse back 
+could be...). For the more skilled rider comes the added bonus of being 
+able to ride a horse into the fray, increasing your power in combat.
+But beware, those who are pitiful riders, are more likely to hamper 
+themselves, than help, if they ride into combat.
+
+The skill 'animal training' is used automatically when riding a 
+creature, making a huge difference in trying to break it in.
+
+~
+END
+
+keyword TAME DOMESTICATE~
+category undefined~
+see_also RIDE ANIMAL-TRAINING~
+text `=lSyntax:`=?
+    tame <animal>
+ 
+This is the ability to win over an animal and tame it to be your own.
+Difficult with any animal, it is even more so for those sentient or 
+more aggressive than the norm. It can take hours or days to properly
+train an animal so that it will obey your every command, to act like a 
+pet proper. Those of the magic professions will find this the hardest, 
+as their constant studies prevent them from the constant exposure to 
+wildlife needed.  Rangers and their cousins druids, on the other hand 
+often have huge success, and will find it much, much easier to tame
+most creatures do to their closeness to nature.
+ 
+The skill domesticate 
+ 
+~
+END
+
+keyword ANIMAL-TRAINING~
+category undefined~
+see_also TAME DOMESTICATE RIDE~
+text `=lSyntax:`=?
+    ride <animal>
+
+The skill animal-training is the ability for the seasoned player to
+break in all but the most unruly of creatures to be ridden.  Of 
+course, the creature in question must first be rideable (no use trying 
+to break in a snake if you can't actually ride it). This skill differs 
+somewhat from domesticate as it doesn't make the animal yours to order
+how you like.  It WILL make the animal more docile, and once broken, 
+that animal can be ridden by anyone.  Beware, if you don't keep an 
+eye on your mount it will wander off.
+
+The skill is used automatically whenever you try to ride a creature.
+
+~
+END
+
+keyword LAY LAY-ON-HANDS~
+category undefined~
+see_also PALADIN~
+text `=lSyntax:`=?
+    lay <person>
+Lay on hands is a skill for paladins that performs minor healing on the
+person specified.
+The success of the healing is determined if you have the faith within to do
+it (you can only use the skill a certain number of times a day - depending
+on your level)
+Also the effectiveness of the skill increases with the paladins level.
+Laying hands on yourself has no effect at all.
+
+~
+END
+
+keyword FORAGE FORAGING~
+category undefined~
+text `=lSyntax:`=? forage <food|herbs>
+ 
+The foraging skill is a skill most easily done by those in tune to the 
+workings of nature and the forests.  This skill will allow those to find 
+various nuts and berries if there is anything to eat in the proximity, or
+collect herbs for use with the herbalism skill.  Rangers, and their cousin 
+druids have huge success and can most easily find necessary food when they 
+feel the pang of hunger.  Barbarians are natural foragers of food, and 
+likewise have much success.  
+~
+END
+
+keyword GORE~
+category undefined~
+text `=lSyntax:  `=?gore`+
+`=?         gore <target>`+
+`+
+Sharpen your horns, lower your head, and charge into battle!  Gore is a 
+vicious skill for only those with the heart for battle.  You will attempt to 
+impale your victim on whatever horns you are wearing, whether your horns are 
+attached, or your helm sports a pair.  Just be sure to pick the entrails off 
+your head when finished. 
+~
+END
+
+keyword -BUILD~
+category undefined~
+text `=lSyntax:`=? build <object>`+
+`+
+This skill allows rangers and others practiced in woodcraft to build certain 
+things.  The only thing available at this stage is 'fire', but there will be 
+more soon.  Once the fire is built, you may sit, rest, sleep, or stand at 
+it, and it offers slight restorative bonuses.  You are also able to cook 
+food over fires, to preserve it.  `+
+`+
+ You may only build fires when outdoors.  If the room is dark, a fire will 
+light it quite well.  Rafts have been added to the build skill.  To build 
+one, you must be in an area with enough wood, and be wielding an axe.`1`+  
+***NEW*** You can now build a staff.  It's a relatively weak staff mind you, 
+doing a conservative amount of damage.  It's true purpose will be revealed 
+in the coming weeks.  
+~
+END
+
+keyword DIAGNOSE~
+category undefined~
+text `=lSyntax: `=?diagnose <character>`+
+`+
+This wonderful skill for those devoted to the healing profession allows a 
+person to look at another and determine their physical condition ailments.  
+Many adverse affects that can be cured will also appear in their diagnosis.  
+ 
+~
+END
+
+keyword HOBBLE~
+level 92
+category undefined~
+see_also SPECIALIZATION~
+text `=lSyntax: `=?hobble <target>`+
+`+
+This is a specialization skill for the mace.  Hobbling can best be described 
+as bashing your victim in the side of the knees with a very, bery heavy 
+object.  While it isn't as devastating as a good bash atop someone's head, 
+it can cause great pain, and occasionally the victim may fall to the ground 
+from his knee buckling.`+
+`+
+~
+END
+
+keyword ENTANGLE~
+level 92
+category undefined~
+text `=lSyntax:`=? entangle`+
+`+
+This skill is nearly identical to the skill of disarming your opponent.  The 
+only difference is when you disarm someone, you end up with their weapon so 
+they can't pick it up from the ground.  Only those fully proficient in the 
+whip can learn to entangle someone's weapon. 
+~
+END
+
+keyword SPECIALIZATION~
+level 92
+category undefined~
+text Weaponmasters have taken their skills to new heights.  In the realm of the 
+Dawn of Time, once a person has become 100% effective in their weapon of 
+choise, they can opt to learn skills to help enhance their usage of the 
+weapons.  This skill is called weapon specialization, and can give you an 
+advantage beyond any less skilled adversary.`+
+`+
+`YWeapon  `=?|  `ySpecial Techniques`+
+ 
+`XAxe         Shield cleave
+Mace        Hobble, Boneshatter
+Polearm     Cutoff, Charg
+e
+Spear       Dervish
+Whip        Entangle
+Dagger      Hurl
+Flail
+Sword
+Wildstrike? Overhead?
+~
+END
+
+keyword DERVISH~
+level 92
+category undefined~
+see_also SPECIALIZATION~
+text `=lSyntax: `=?dervish`+
+`+
+This is a specialization skill for the spear.  The wielder will twirl the 
+spear in a frenzy, possibly causing damage to any who stand around him, 
+cause great confusion to those avoiding the spear, and great pain to those 
+who aren't so fortunate.  When you see someone start to twirl their spear 
+like a maddened dervish, best watch out.`+
+`+
+~
+END
+
+keyword CUTOFF~
+level 92
+category undefined~
+see_also SPECIALIZATION~
+text `=lSyntax: `=?cutoff `+
+`+
+The cutoff is a specialization skill for the polearm.  When in melee, the 
+long shaft of the polearm can by used to reduce the success of someone 
+fleeing from battle, as well as those attempting to retreat.  The cutoff 
+skill is not automatic, and you must make a conscious decision to impede 
+someone when you begin combat.`+
+`+
+~
+END
+
+keyword HURL~
+level 92
+category undefined~
+text `=lSyntax: `=?hurl <target>`+
+`=?        remove <dagger>`+
+`+
+Throwing daggers has long been a trick of the nimble, a way to disable your 
+victims from afar.  But hurling daggers will surely cause a fight to break 
+out.  Only daggers can be properly thrown, and when thrown with enough 
+accuracy, can stick into the body and cause great pain with every movement.  
+Dislodge the dagger, and you can even hurl it back at your attacker.    
+~
+END
+
+keyword CHARGE~
+level 92
+category undefined~
+text `=lSyntax: `=?charge <target>`+
+`+
+When mounted atop a galloping steed, polearms can deliver tremendous damage 
+to an opponent. Hold your polearm horizontal, aim it at your opponents chest 
+area, and dash forward, slamming the tip of the polearm into the soon-to-be 
+mangled chest protection of your opponent.  Charging works with only 
+polearms, but a mount of personal choice may be substituted in place of a 
+horse. 
+~
+END
+
+keyword ATTRIBUTES~
+title Overview: Character Attributes~
+category undefined~
+see_also TRAIN PRACTICE PRIME CLASSINFO~
+text The attribute/stats system is based off of RollMaster stat rolling system, 
+which has 10 attributes instead of the 6 attribute system found on many 
+other muds. Each attribute is represented in the following manner on the 
+score table:`+
+CURRENT (MAXIMUM) / MODIFIER`+
+`+
+Where `YCURRENT `=?is your current percentage in that attribute, `YMAXIMUM `=?is your 
+max potential that you can train (see `=Chelp `=_train`=?) your stat up to, and 
+`YMODIFIER `=?which is use to determine how good you are at a specific skill.`+
+`+
+If CURRENT was 54, then you are better than 54% of your _RACE_ in that 
+attribute. MAXIMUM is the highest possible percentage that you can hope to 
+achieve in that attribute.  MODIFIER is the modifier that you character 
+receives on various die rolls and checks that will be performed on your 
+character. The value of MODIFIER is determined by looking at your CURRENT, 
+any equipment modifiers, and any racial bonus that you received for your 
+race. Any CURRENT stats above 60 will receive a bonus, with a max bonus of 
++63 for those that are 101%, while those below 26 will receive a negative 
+penalty.`+
+`+
+The attributes can be divited into two seperate sections. The primary 
+attributes, are those on the right side of your score sheet. The 
+developmental attributes are those on the left side of your score sheet. For 
+help on any of the attributes, see `Chelp <attribute>`=?.`+
+`+
+`gPrimary:`=?`+
+`=_Strength(ST) `=_Quickness(QU) `=_Presence(PR) `=_Intuition(IN) `=_Empathy(EM)`+
+`+
+`GDevelopmental:`=?`+
+`=_Constitution(CO) `=_Agility(AG) `=_Self-Discipline(SD) `=_Memory(ME)  `=_Reasoning(RE)`+
+~
+END
+
+keyword ARCAIC~
+category undefined~
+text The arcaic language is so old that not even the wisest sages or reputable 
+bards know of its true origins, but many venture a guess.  Some tales, many 
+more far fetched than others, link this mysterious tongue to times as old as 
+the Kron.  Others think that it's a disguised language of code, it's true 
+speech hidden by a power beyond  the scope of any magi, and only select 
+individuals are granted the abilities to comprehends the dialect or meaning. 
+
+`+
+(Arcaic was spelled this way purposely.)
+~
+END
+
+keyword STIFLE~
+category undefined~
+text `=lSyntax: `=?Automatic`+
+`+
+For those trained in the art of stealth and thievery, there is also training 
+to keep a victim from crying out.  With this training, a death cry can be 
+stopped so others do not hear your victims trying to mess up your plans. 
+Even those trained fully with stifling the cries of death, there is still a 
+chance, however small, that a victim might still be able to cry out. 
+~
+END
+
+keyword PRIME STATISTICS~
+title Prime Attributes~
+category undefined~
+see_also ATTRIBUTES CLASSINFO~
+text Every class has two `=_attributes which are guaranteed to be 80 or over,
+these attributes are often refered to their primary or prime attributes.
+During creation, the system works as follows:
+`+
+If your potential attribute/stat is below 80 after you pick your class, 
+the attribute is boosted to 80.`+
+`+
+If your potential stat is already above 80, you will get a bonus ranging 
+from +1 to +5 to your stat.  This is not a randomly generated number, it is 
+based on a formula that uses your existing potential stat.  If you have a 
+96+ in your classes' prime attribute, it will now be at the mighty 101!!`+
+`+
+The classinfo command can be used to display the prime stats for each class.`+
+`+
+`=?This system adds a whole new dimension to the character creation 
+process.  There is now a bit of strategy involved and you have a bit more 
+control on how your character will come out.  Let's say you want to make a 
+warrior, and have decent stats in almost everything, but your ST score is at 
+a measly 22...  If you accept that roll, the warrior's ST will be boosted to 
+80.  Or, do you reroll again, hoping for something in the 90s so that you 
+have a chance to get the 101, at the possible expense of your other stats?  
+In any case, the end result is in better stats, so be happy :) 
+~
+END
+
+keyword LETTER~
+level 1
+category undefined~
+see_also RP-SHEET~
+text `=lSyntax:`=? letter <command>
+ 
+Those who believe the art of letter writing is far from dead can take up the
+quill pen their words of wisdom on sheafs of parchment.  Letters expressing
+your true love, treaties ending long-standing rifts between feuding kingdoms,
+or a simple letter of introduction are all handled ideally using this IC note
+system.
+`W 
+To write your letter, use the following commands.
+`=? 
+ letter +          : Adds a single line of text to the letter.
+ letter -          : Removes a single line of text to the letter.
+ 
+ `BExample:`=? letter + This is my letter.
+ 
+ letter edit       : Edits the current letter in the string editor.
+ letter clear      : Clears the letter currently in progress.
+`W 
+As you pen your masterpiece, you can check the work in progress, and make
+any revisions you deem necessary before immortalizing your words onto a piece
+of parchment.
+`=?
+ letter showtext   : Shows the text of the letter you are working on.
+ letter showscroll : Shows what the letter will look like once posted.
+`W 
+Once you are satisfied, you must be holding a piece of parchment onto which
+you can record your words of wisdom.
+`=? 
+ letter scribe     : Scribes the current letter onto a parchment.
+`W 
+When you have decided you have nothing more to say, seal the parchment with
+wax and deliver it to its intended recipient.  Note, your letter will be 
+sealed with your family crest (if specified), which can be set in your 
+RPSheet.
+`=? 
+ letter seal       : Seals the parchment with wax.
+`W 
+Finally, should you decide your letter is more worthy of the wastepaper bin
+than in libraries, you can choose to tear it into a thousand pieces, never
+to be seen (or read) again.`=?
+ 
+ letter tear       : Destroys the letter you are currently holding.
+ 
+~
+END
+
+keyword EMPTY~
+level 92
+category undefined~
+text .. 
+~
+END
+
+keyword HERBALISM CAULDRON MORTAR HERBS~
+level 1
+category undefined~
+see_also HERBS-LIST POULTICE FORAGE~
+text `=lSyntax:`=? herbalism <cauldron|mortar>
+ 
+The ancient art of combining herbs to form powerful potions and 
+poultices is practiced only by the most skilled druids and rangers.  
+To a lesser degree, barbarians can learn this unique talent, though 
+their abilities are somewhat hampered by their berserker tendencies.
+ 
+The first step to creating a new potion is to collect the necessary
+components.  Most brews will require a variety of herbs, and often
+times water.  The herbs are gathered by using the `Wforage`=? skill,
+whereas the water must be drawn from freshwater lakes throughout
+the realm using the `Wcollect`=? command.  The type of herbs located
+while foraging is dependent on the landscape, the season, and the
+time of day.  Above and beyond these limitations, some herbs are 
+simply rarer than others.  These are often prized by druids for their 
+powerful properties, and worth their weight in gold.
+ 
+To practice this lost art, the herbalist must have a `Wmortar`=? or a 
+`Wcauldron`=? in which to combine the herbs.  A mortar is a bowl-shaped 
+apparatus used in conjunction with a pestle, a heavy stone or wooden 
+device used to grind herbs, yielding poultices and salves which can 
+be applied later.  A cauldron is used in brewing herbal mixtures which 
+are ingested, be it eaten or quaffed.
+ 
+The ingredients to be mixed are placed in the proper container, and 
+then combined.  If the measurements were correct, the mixture might 
+yield beneficial results.  Be warned, however, carelessly mixing herbs 
+together can often have deadly consequences.
+        
+Fortunately, the druids of the realm have compiled a complete list of 
+herbs which can be harvested and mixed (`Whelp `=_herbs-list`=?).
+ 
+~
+END
+
+keyword HERBS-LIST HERB-LIST~
+level 1
+category undefined~
+see_also HERBALISM~
+immsee_also HERBS-IMM~
+text .         `ySwamp/Marsh`=?
+   +-----------------+
+ 1 |   Arachnagelica |
+ 2 |       Blackrose |
+ 3 |  Fiend's Breath |
+ 4 |   Mandrake Root |
+ 5 |      Nightshade |
+ 6 |      Snakespike |
+ 7 |     Tarnas Root |
+ 8 |      Vipersweed |
+   +-----------------+
+              `RDesert`=? |
+   +-----------------+
+ 9 |  Adder's Tongue |
+10 |            Aloe |
+11 |  Bluespine Root |
+12 |      Djinn Fern |
+13 |  Dragon's Tears |
+14 |  Ettin's Breath |
+15 |      Sunblossom |
+   +-----------------+
+          `BRiverbanks`=? |
+   +-----------------+
+16 |       Bloodkelp |
+17 |       Draafroot |
+18 |        Flaxweed |
+19 |      Rheum Leaf |
+20 |     Serpentweed |
+21 |      Siren Root |
+22 |      Sharkswort |
+   +-----------------+
+          `GGrasslands`=? |
+   +-----------------+
+23 |    Amber Spores |
+24 |  Autumn Blossom |
+25 |     Blacknettle |
+26 |        Colewort |
+27 |       Giantweed |
+28 |     Doilan buds |
+29 |        Lavender |
+30 | Miretar's Crown |
+31 |       Red Morel |
+   +-----------------+
+           `mMountains`=? |
+   +-----------------+
+32 |    Comet's Tail |
+33 |      Featherfew |
+34 |     Hawk's Bane |
+35 |        Moonwort |
+36 |    Roc's Breath |
+37 |     Whitecandle |
+38 |    Wight Orchid |
+39 |      Winterbark |
+   +-----------------+
+             `gForests`=? |
+   +-----------------+
+40 |     Green Lotus |
+41 |         Hemlock |
+42 |        Milkwort |
+43 |     Mirthwillow |
+44 |      Red Willow |
+45 |         Thistle |
+46 |       Wolf Moss |
+47 |        Wormwood |
+   +-----------------+
+         `SUnderground`=? |
+   +-----------------+
+48 |      Aspblossom |
+49 |     Drider Leaf |
+50 |        Lhugruth |
+51 |          Ruthin |
+52 |      Spiderwort |
+53 |      Stoneberry |
+54 |   Hryia Blossom |
+   +-----------------+
+~
+END
+
+keyword POUNCE~
+category undefined~
+text `#`=lSyntax:`^ pounce <victim>`1`1The pounce skill allows the agile fighter to leap up into the air and
+send his flying oponent tumbling to the ground. Many factors will help the 
+warrior, or help the victim in avoiding this form of attack. Both success or 
+failure will however attract the attention of the victim and a fight is 
+inevitable. This skill is easily learned yet extremely hard to master, and 
+only the most talented and agile will ever excel at this tough skill. Be 
+warned that a missed pounce will send the aggressor tumbling and unable to 
+respond for quite some time. 
+~
+END
+
+keyword HERBALISM-FOR-DUMMIES~
+level 92
+category undefined~
+text Creating different herbal mixes requires many different combinations.`+
+`BTeas`=? for example consist of five of the same herbs placed within a cauldron 
+along with water.  The water will be explained more thoroughly while obtaining 
+this skill.  `+
+`+
+Eg.  (5x) put lavender cauldron, put water cauldron, herbalism cauldron.  `+
+`+
+`BElixirs`=? on the other hand are different mixes of herbs that can be acquired 
+from other adventurers you may meet on your journey, they also require a 
+cauldron and water.  The example is just one type of combination as there 
+are many.  These herbs are not real and are only examples.  `+
+`+
+Eg.  (6x) put redleaf cauldron, (2x) put goron cauldron, put water cauldron, 
+herbalism cauldron.  `+
+`+
+`BBalms`=? can be made by using many of the same herbs in a mortar without the 
+use of water.  `+
+`+
+(eg.  (20x) put redleaf mortar, herbalism mortar - redleaf is not really a 
+herb.  `+
+`+
+Helpfile complements of Talinus.  =) 
+~
+END
+
+keyword COLLECT~
+category undefined~
+see_also HERBALISM~
+text `#`=lSyntax:`^ collect water `+
+`+
+Practitioners of the art of `#`Wherbalism`^ know that for a `#`Wpotion`^ to be 
+successful, only the purest water can be used.  This pure water can be found 
+all over the realm in freshwater lakes.  `+
+`+
+To collect this pure water, one must have `#`Wdousing flasks`^ available in his 
+inventory.  And standing near the lake, one can carefully `#`Bcollect water`^.  `+
+`+
+ `#`C`^ 
+~
+END
+
+keyword CIRCLE~
+level 1
+category undefined~
+text Syntax: circle <target>
+ 
+Similar to backstab, the circle skill allows thieves and their ilk to find
+the best angle to strike from in combat.  This results in increased damage
+and somewhat easier fights.  Keep in mind though that one can only get an
+angle on what one can actually see.
+~
+END
+
+keyword PUSH DRAG PULL~
+level 1
+category undefined~
+text The push and drag commands will allow mobs, objs, other characters and 
+virtually anything else not bolted to the floor, to be forcably moved from room
+to room.  There are of course notable exceptions to this and anyone found to
+be abusing these abilities will be dealt with harshly.
+ 
+`BSyntax:`x
+Push <victim> <direction>
+Drag <victim> <direction>
+~
+END
+
+keyword RACEINFO~
+title RaceInfo - Racial Information~
+helpflags wordwrapped~
+category undefined~
+see_also ATTRIBUTES HP CP CLASSINFO~
+text The raceinfo command displays a list of creation selectable races.  This 
+list includes the racial attribute modifiers, the amount of creation points 
+(`=_cp) the race 'costs' and that maximum number of hit points (`=_hp) the race 
+can gain. 
+~
+END
+
+keyword CLASSINFO~
+title ClassInfo - Class Information~
+helpflags wordwrapped~
+category undefined~
+see_also RACEINFO PRIME ATTRIBUTES XP CP~
+text `=lSyntax:`=? classinfo <racename>`+
+`+
+The classinfo command is similar to the `=_raceinfo command, only it shows 
+`=_prime `=_attributes for each class, and in addition it displays the base 
+experience points per level for a particular race/class combination. `+
+`+
+For this reason, you must type the name of a race as the single parameter 
+for the classinfo command.  The prime attributes are the same regardless of 
+which race is playing that particular class.  If a class is not listed for a 
+race, that class is unavailable to that race. `+
+
+~
+END
+
+EOF~
+#$

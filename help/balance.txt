@@ -1,0 +1,401 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword RACIAL-WEIGHT RACIAL-HEIGHT~
+level 1
+category undefined~
+text `#`YRace             `CHeight         `RWeight`^
+`#`YName           `cMIN  `W| `CMAX     `rMIN  `W| `RMAX`^
+`#`W--------------------+--------------+-----`^
+`#`YAlaghi         `c72"  `W| `C84"     `r300  `W| `R400`^
+`#`YAvian          `c42"  `W| `C53"      `r50  `W|  `R80`^
+`#`YDraconian      `c72"  `W| `C84"     `r250  `W| `R350`^
+`#`YDrow           `c60"  `W| `C72"      `r80  `W| `R120`^
+`#`YDuergar        `c36"  `W| `C48"     `r150  `W| `R230`^
+`#`YDwarf          `c36"  `W| `C48"     `r150  `W| `R230`^
+`#`YElf            `c60"  `W| `C72"      `r80  `W| `R120`^
+`#`YGnoll          `c72"  `W| `C84"     `r220  `W| `R320`^
+`#`YGnome          `c30"  `W| `C46"      `r80  `W| `R150`^
+`#`YGoblin         `c42"  `W| `C60"      `r70  `W| `R200`^
+`#`YHalf-Elf       `c54"  `W| `C74"      `r80  `W| `R225`^
+`#`YHalf-Orc       `c68"  `W| `C80"     `r160  `W| `R310`^
+`#`YHalfling       `c24"  `W| `C48"      `r40  `W| `R100`^
+`#`YHuman          `c54"  `W| `C80"      `r80  `W| `R300`^
+`#`YKobold         `c24"  `W| `C36"      `r40  `W|  `R90`^
+`#`YLizardman      `c72"  `W| `C84"     `r200  `W| `R250`^
+`#`YMinotaur       `c84"  `W| `C92"     `r300  `W| `R400`^
+`#`YMrem           `c56"  `W| `C74"      `r80  `W| `R170`^
+`#`YOrc            `c72"  `W| `C84"     `r200  `W| `R320`^
+`#`YVoadkyn       `c108"  `W|`C120"     `r650  `W| `R750`^
+ 
+When setting player's height and weight values, please refer to this table 
+as a guideline.  In the case of a scrawny kobold one could drop the weight 
+by 10 to 30.  Unless it's an exceptional history and reason, try and remain 
+close to these values.  No 10'2" goblins please. 
+ 
+`#`R**`^ `#`BReminder:`^ IMM's reserve the right to change any and all heights 
+and weights they deem not acceptable; so, stay within the above limits.
+~
+END
+
+keyword AUTOBALANCE~
+level 1
+helpflags builder~
+category undefined~
+see_also AUTOBALANCE2 AUTOBALANCE3 AUTOBALANCE4~
+text .. 
+Stat    Mage  Spell  Thief Druid Cleric Paladin Ranger Warrior Barbarian
+             filcher
+ST, CO  +3    +4      +5    +4      +4    +5      +5      +6      +7
+QU, AG  +3    +6      +7    +3      +5    +5      +6      +5      +4
+ME, RE  +7    +6      +5    +6      +6    +5      +5      +4      +3
+IN, EM  +4    +3      +3    +6      +7    +7      +5      +4      +4
+SD, PR  +4    +4      +3    +7      +6    +7      +6      +5      +4
+AC      -10   -15     -20   -10     -15   -20     -20     -25     -30
+Saves   -12   -8      -6    -10     -8    -6      -6      -5      -4
+Hitroll +2    +4      +6    +2      +4    +6      +6      +10     +6
+Damage  +2    +4      +4    +2      +6    +6      +6      +8      +10
+Hp      +4    +6      +6    +4      +8    +10     +10     +12     +14
+Mana    +200  +120    +40   +160    +160  +100    +100    +40     +0
+Table 1:  Max modifier allowed for each class
+ 
+ 
+ 
+Table B7: Weapon Flags
+------------------------------------------------------------------------
+Flag            Description
+----            -----------
+A   flaming     Weapon is flaming
+B   frost       Weapon is a frost weapon
+C   vampiric    Weapon drains energy
+D   sharp       Moderate chance of doing extra damage each hit
+E   vorpal      Small chance of doing VERY much more damage each hit
+F   two-handed  Weapon requires two hands
+G   shocking    Weapon is an electrical weapon
+H   poisoned    Weapon is poisoned
+I   holy        Weapon is holy
+------------------------------------------------------------------------
+ 
+ 
+------------------------------------------------------------------------
+Table B15: Race size restrictions                         
+------------------------------------------------------------------------
+human     45-60
+elf       40-60
+dwarf     35-50
+half-elf  45-60
+gnome     30-50
+halfling  30-50
+half-orc  50-65
+orc       50-70
+draconian 50-70
+drow      45-55
+avian     45-55
+gnoll     50-70
+duergar
+mrem
+lizardman
+ 
+ 
+Table A4: Recommended Hit Point, Armor Classes, and Damage Rolls
+------------------------------------------------------------------------
+level hit pts     ac    damage          level  hit pts    ac    damage 
+------------------------------------------------------------------------
+  1   1d4+1       90     1d4+0            51  5d9+280      -210   5d8+20
+  2   1d4+2       80     1d5+0            52  5d9+285    -220   6d7+20
+  3   1d5+3       70     1d6+0            53  5d9+290      -230   6d7+21
+  4   2d4+1       60     1d5+1            54  5d9+295      -240   7d6+22
+  5   2d5+1       50     1d6+1            55  5d9+300      -250   10d4+23
+ 
+  6   2d5+4       40    1d7+1             56  6d9+300     -260   10d4+24
+  7   2d5+5       40     1d8+1            57  6d9+305     -270   6d8+24
+  8   2d5+8       30     1d7+2            58  6d9+310     -280   5d10+25
+  9   2d5+12      20     1d8+2            59  6d9+315     -290   8d6+26
+ 10   2d5+18      10     2d4+2            60  6d9+320     -300   8d6+27
+ 
+ 11   2d5+22      10     1d10+2           61  6d10+320     -310   8d6+28
+ 12   2d5+45      0     1d10+3            62  6d10+325     -320   8d7+28
+ 13   2d5+50     -10     2d5+3            63  6d10+330     -330   8d7+29
+ 14   2d5+55     -10     1d12+3           64  6d10+335     -340   8d7+30
+ 15   3d5+60     -20     2d6+3            65  6d10+340     -350   7d8+32
+ 
+ 16   3d5+67     -20    2d6+4             66  7d10+340     -360   7d8+32
+ 17   3d5+72     -30     3d4+4            67  7d10+345     -370   7d8+33
+ 18   3d5+79     -30     2d7+4            68  7d10+350     -380   7d8+34
+ 19   3d5+82     -40     2d7+5            69  7d10+355     -390   8d8+33
+ 20   3d5+88     -40     2d8+5            70  7d10+360     -400   8d8+34
+ 
+ 21   4d5+90     -50     4d4+5            71  7d11+360     -410   8d8+35
+ 22   4d5+95     -50     4d4+6            72  7d11+365     -420   8d8+36
+ 23   4d5+100    -60     3d6+6            73  7d11+370     -430   8d9+36
+ 24   4d5+105    -60     2d10+6           74  7d11+375     -440   8d9+37
+ 25   4d5+110    -70     2d10+7           75  7d11+380     -450   8d9+38
+ 
+ 26   4d5+115    -70     3d7+7            76  8d11+380     -460   8d9+39
+ 27   4d5+120    -80     5d4+7            77  8d11+385     -470   9d9+38
+ 28   5d5+125    -80     2d12+8           78  8d11+390     -480   9d9+39
+ 29   5d5+130    -90     2d12+8           79  8d11+395     -490   9d9+40
+ 30   5d5+140    -90     4d6+8            80  8d11+400     -500   9d9+41
+ 
+ 31  5d6+150      -100   4d6+9            81  8d12+400     -510   9d10+40
+ 32  5d6+160      -100   6d4+9            82  8d12+405     -520   9d10+41
+ 33  5d6+195      -110   6d4+10           83  8d12+410     -530   9d10+42
+ 34  5d6+205      -110   4d7+10           84  8d12+415     -540   9d10+43
+ 35  5d6+210      -110   4d7+11           85  8d12+420     -550   10d10+42
+ 
+ 36  5d6+215      -120   3d10+11          86  9d12+420     -560   10d10+43
+ 37  5d6+220      -120   3d10+12          87  9d12+425     -570   10d10+44
+ 38  5d6+225      -130   5d6+12           88  9d12+430     -580   10d10+45
+ 39  5d6+230      -130   5d6+13           89  9d12+435     -590   10d11+44
+ 40  5d6+235      -130   4d8+13           90  9d12+440     -600   10d11+45
+ 
+ 41  5d7+240      -140   4d8+14           91  9d13+440     -610   10d11+46
+ 42  5d7+242      -140   3d12+14          92  9d13+445     -620   10d11+47
+ 43  5d7+245      -150   3d12+15          93  9d13+450     -630   10d12+48
+ 44  5d7+247      -150   8d4+15           94  9d13+455     -640   10d12+49
+ 45  5d7+250      -150   8d4+16           95  9d13+460     -650   10d12+50
+ 
+ 46  5d8+255      -160   6d6+16           96  10d13+460    -660   10d12+51
+ 47  5d8+260      -170   6d6+17           97  10d13+465    -670   10d13+52
+ 48  5d8+265      -180   6d6+18           98  10d13+470    -680   10d13+53
+ 49  5d8+270      -190   4d10+18          99  10d13+475    -690   10d13+54
+ 50  5d9+275      -200   5d8+19           100 10d14+480    -700   10d13+55
+ 
+Thief mobiles should read their hp, ac, and damage at one level lower.
+Mage mobiles read hp and ac at one level lower, and damage three 
+levels lower.
+Cleric mobiles read damage at two levels lower.
+Warrior mobiles read hit points one level higher.
+Armor class vs. magical attacks should be 80-90% of the other AC's.
+~
+END
+
+keyword AUTOBALANCE2~
+level 1
+helpflags builder~
+category undefined~
+see_also AUTOBALANCE AUTOBALANCE3 AUTOBALANCE4~
+text ========================================================================
+Appendix B
+  OBJECT VALUE TABLES
+========================================================================
+Table B1: Materials
+Table B6: Weapon damage
+------------------------------------------------------------------------
+Here is a chart to be used for tabulating weapon damages
+ -8           1d4
+ -7           1d4
+ -6           1d4
+ -5           1d4
+ -4           1d4
+ -3           1d4
+ -2           1d5
+ -1           1d5
+ 0            1d5
+ 1            1d6  
+ 2            1d7  2d3  
+ 3            1d8  
+ 4            1d9  2d4  
+ 5            1d10  
+ 6            1d11  2d5  3d3  
+ 7            1d12  
+ 8            1d13  2d6  
+ 9            1d14  3d4  
+ 10-11        1d15  2d7  4d3  
+ 12-13        2d8  3d5  
+ 14           2d9  4d4  5d3  
+ 15           3d6  
+ 16-17        2d10  
+ 18           2d11  3d7  4d5  6d3  
+ 19           5d4  
+ 20           2d12  
+ 21           3d8  
+ 22-23        2d13  4d6  7d3  
+ 24-25        2d14  3d9  5d5  6d4  
+ 26           2d15  4d7  8d3  
+ 27           3d10  
+ 28           2d16  
+ 29           5d6  7d4  
+ 30-31        2d17  3d11  4d8  6d5  9d3  
+ 32           2d18  
+ 33           3d12  
+ 34-35        2d19  4d9  5d7  8d4  10d3  
+ 36-37        2d20  3d13  6d6  7d5  
+ 38           2d21  4d10  11d3  
+ 39           3d14  5d8  9d4  
+ 40-41        2d22  
+ 42           2d23  3d15  4d11  6d7  8d5  12d3  
+ 43           7d6  
+ 44           2d24  5d9  10d4  
+ 45           3d16  
+ 46-47        2d25  4d12  13d3  
+ 48           2d26  3d17  6d8  9d5  
+ 49           5d10  11d4  
+ 50           2d27  4d13  7d7  8d6  14d3  
+ 51           3d18  
+ 52-53        2d28  
+ 54-55        2d29  3d19  4d14  5d11  6d9  10d5  12d4  15d3  
+ 56           2d30  
+ 57           3d20  7d8  9d6  
+ 58           4d15  8d7  16d3  
+ 59           5d12  13d4  
+ 60-61        3d21  6d10  11d5  
+ 62           4d16  17d3  
+ 63           3d22  
+ 64-65        5d13  7d9  10d6  14d4  
+ 66-67        3d23  4d17  6d11  8d8  9d7  12d5  18d3  
+ 68-69        3d24  5d14  15d4  
+ 70           4d18  19d3  
+ 71           7d10  11d6  
+ 72-73        3d25  6d12  13d5  
+ 74           4d19  5d15  8d9  10d7  16d4  20d3  
+ 75-76        3d26  9d8  
+ 77-78        3d27  4d20  6d13  7d11  12d6  14d5  21d3  
+ 79-80        5d16  17d4  
+ 81           3d28  
+ 82-83        4d21  8d10  11d7  22d3  
+ 84           3d29  5d17  6d14  9d9  10d8  15d5  18d4  
+ 85           7d12  13d6  
+ 86           4d22  23d3  
+ 87-88        3d30  
+ 89           5d18  19d4  
+ 90-91        3d31  4d23  6d15  8d11  12d7  16d5  24d3  
+ 92           7d13  14d6  
+ 93           3d32  9d10  11d8  
+ 94-95        4d24  5d19  10d9  20d4  25d3  
+ 96-97        3d33  6d16  17d5  
+ 98           4d25  8d12  13d7  26d3  
+ 99           3d34  5d20  7d14  15d6  21d4  
+ 
+ With the following modifications:
+ 
+ Weapon or Affect              Read Damage at
+ ===========================================
+ dagger                             -8
+ whip                               -3
+ flail                              -2
+ sword or mace                      +0
+ axe or 2 handed spear(staff)       +3
+ two handed maces or swords         +6
+ polearms                           +8
+ 2 handed axes                      +9
+ -20 mana                           +1
+ +10 mana                           -1
+ -4 hp                              +1
+ +2 hp                              -1
+ -2 hit or dam                      +1
+ +2 hit or dam                      -1
+ +1 attribute                       -1
+ -2 attribute                       +1
+ sharp                              -4
+ vorpal                             -4
+ vampiric                           -3
+ flaming                            -3
+ freezing                           -3
+ empowered                          -3
+ poisoned                           -3
+ holy                               -3
+ 
+Note: Exotic weapons which are usable by mages are 
+restricted to read damage at -5.
+ 
+Please also note that weapons do NOT have the allowable 
+extra modifiers for other items.  The "free" modifiers for 
+items like armour, do not apply for weapons. Weapons do not
+have "free" modifiers. To make a weapon sharp, its damage 
+level must be reduced by 4. There are exceptions to this 
+rule and an appendix exists. But unless cleared by realm 
+to apply exceptions to this rule, builders are strongly 
+recommended to follow the above guidelines. 
+ 
+Mob Wealth:
+ 
+The MAXIMUM limit is to be 20 x mob level. 
+Eg. A lvl 50 mob should not have more than 1000 set at its 
+wealth. Unless there is special reason, like only one of 
+such a mob exists in the area or its an exceptionally rich 
+rob. Even then, this should be carefully controlled to 
+maintain economic balance in the game. Typical mobs should 
+not even be near 20 x lvl.
+ 
+Mob Mana:
+ 
+An average of 100 + 10xlevel for the mana value of mobs. 
+This is highly susceptive to change in accordance to the 
+type of mob. Mage mobs to have the above recommended values. 
+Warrior types to have 50%. Barbarian types (hatred to magic 
+type mobs) to have as low as even 10%. Use your discretion 
+for anything inbetween. 
+~
+END
+
+keyword AUTOBALANCE3~
+level 1
+helpflags builder~
+category undefined~
+see_also AUTOBALANCE AUTOBALANCE2 AUTOBALANCE4~
+text Armor Type        Ac Pierce   Ac Bash   Ac Slash   Ac Magic
+----------        ---------   -------   --------   --------
+Finger            level/10    level/10  level/10   level/15
+Neck              level/6     level/6   level/6    level/8
+Torso             level/3     level/3   level/3    level/4
+Head              level/4     level/4   level/4    level/5
+Legs              level/4     level/4   level/4    level/5
+Feet              level/5     level/5   level/5    level/6
+Hands             level/5     level/5   level/5    level/6
+Arm               level/4     level/4   level/4    level/5
+About Body        level/4     level/4   level/4    level/5
+About Waist       level/5     level/5   level/5    level/7
+Wrist             level/7     level/7   level/7    level/9
+Shield            level/3     level/3   level/3    level/4
+Floating ItemUse Type Jewelry, Treasure, etc. (no AC)
+~
+END
+
+keyword AUTOBALANCE4~
+level 1
+helpflags builder~
+category undefined~
+see_also AUTOBALANCE AUTOBALANCE2 AUTOBALANCE3~
+text Equip  Normal  1 Alliance  2 Alliance
+ level           flag or    flag and
+               magic flag  magic flag
+0-10      0         0         1
+11-20     1         1         2
+21-30     2         3         4
+31-40     3         4         5
+41-50     4         5         6
+51-60     5         6         7
+61-70     6         7         8
+71-80     7         8         9
+81-90     8         9         10
+91        9         10        11
+Table 2:  Max modifier based on items lev and alliance restrictions
+ 
+One Modifier Equals
++1 attribute
++2 hitpoints
++20 mana
++2 hitroll
++2 damage
+-2 save
+-5 AC
++40 movement
+bless flag
+ 
+Items for the face, ear, or ankle should have half the modifiers
+ordinarily given for that level eg. a normal level 42 earring 
+should have no more than 2 modifiers.
+ 
+Items which have an affect should only have up to half the modifiers
+given for that level, in addition to the affect eg. a normal level 
+85 item which has the affect of detect_good should have no more 
+than 4 additional modifiers.
+~
+END
+
+EOF~
+#$

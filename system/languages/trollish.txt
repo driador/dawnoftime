@@ -1,0 +1,160 @@
+from a~
+to a~
+END
+
+from b~
+to dh~
+END
+
+from bad~
+to tukkah~
+END
+
+from c~
+to k~
+END
+
+from d~
+to bh~
+END
+
+from die~
+to kurugh~
+END
+
+from e~
+to ih~
+END
+
+from evil~
+to tukkah~
+END
+
+from f~
+to k~
+END
+
+from g~
+to gh~
+END
+
+from good~
+to guck~
+END
+
+from h~
+END
+
+from i~
+to ih~
+END
+
+from j~
+to gh~
+END
+
+from k~
+to k~
+END
+
+from kill~
+to ghrakh~
+END
+
+from l~
+to l~
+END
+
+from m~
+to n~
+END
+
+from me~
+to megh~
+END
+
+from n~
+to n~
+END
+
+from nice~
+to guck~
+END
+
+from no~
+to ugh~
+END
+
+from o~
+to oh~
+END
+
+from p~
+to p~
+END
+
+from q~
+to k~
+END
+
+from r~
+to grr~
+END
+
+from s~
+to str~
+END
+
+from strong~
+to kagaragh~
+END
+
+from smash~
+to ughakhugh~
+END
+
+from skull~
+to headughbone~
+END
+
+from t~
+to tr~
+END
+
+from u~
+to ugh~
+END
+
+from v~
+to f~
+END
+
+from w~
+to f~
+END
+
+from weak~
+to snukrug~
+END
+
+from x~
+to k~
+END
+
+from y~
+to ih~
+END
+
+from you~
+to yugh~
+END
+
+from yes~
+to ugh~
+END
+
+from z~
+to s~
+END
+
+EOF~

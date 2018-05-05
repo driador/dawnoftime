@@ -1,0 +1,1980 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Halflings of PleasantField~
+ShortName   PleasantField~
+Builders    None~
+Credits     Parfimnon~
+VNUMs       23100 23149
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#23100
+Name pig swine hog~
+ShortD a pig~
+LongD A pig is snuffling here.~
+Desc This is a common pig. It is coloured pink with black splotches 
+on it. It has large ears and a huge nose. It smells pig like.
+~
+Race pig~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 1d100+1
+DamDice 1d7+2
+DamType smash
+AC 40 40 40 60
+Wealth 0
+Act    npc dont_wander stay_area wimpy noalign~
+AffBy  detect_hidden~
+Off    bash dodge kick~
+Res    bash~
+Vuln   acid~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#23101
+Name chicken bird~
+ShortD a chicken~
+LongD A chicken is clucking and pecking around here.~
+Desc This is a chicken. It is white in colour with a large yellow
+beak. It is pecking about in the dust.
+~
+Race water fowl~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d100+1
+DamDice 1d5+1
+DamType peck
+AC 70 70 70 100
+Wealth 0
+Act    npc dont_wander stay_area wimpy noalign~
+AffBy  flying haste swim~
+Off    dodge fast trip assist_vnum~
+Res    pierce cold drowning~
+Vuln   fire~
+Form   edible animal mountable bird~
+Part   head arms legs heart brains guts feet ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+END
+
+#23102
+Name cockerel~
+ShortD a cockerel~
+LongD A cockerel is crowing here.~
+Desc The cockerel is a large multicoloured chicken with a definitely
+male attitude to life. It chases the other chicken around like 
+it is the boss and looks at you in a way that would frighten
+another chicken.
+~
+Race water fowl~
+Align 0 0
+XPMod 120
+Level 6
+Hitroll 1
+HitDice 2d5+4
+ManaDice 1d100+1
+DamDice 1d6+2
+DamType peck
+AC 40 40 40 80
+Wealth 0
+Act    npc dont_wander aggressive stay_area wimpy noalign~
+AffBy  flying haste berserk swim~
+Off    bash berserk dodge fast trip assist_race~
+Res    pierce cold drowning~
+Vuln   fire~
+Form   edible animal mountable bird~
+Part   head arms legs heart brains guts feet ear eye wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+END
+
+#23103
+Name halfling militia guard~
+ShortD a halfling militia guard~
+LongD A halfling militia guard is standing here.~
+Desc This is the guard of the village.  He is a middle-aged halfling with a 
+little spear and no armour.  His clothing is covered with food splotches, 
+and his brown hair is cut short.  
+~
+Race halfling~
+Align 0 2
+XPMod 110
+Level 20
+Hitroll 1
+HitDice 3d5+90
+ManaDice 1d1+99
+DamDice 2d8+5
+DamType beating
+AC -40 -40 -40 0
+Wealth 200
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden protect_evil~
+Off    bash berserk dodge kick dirt_kick trip assist_align~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23104
+Name halfling farmer~
+ShortD a halfling farmer~
+LongD A halfling farmer is tending to the crops here.~
+Desc This a farmer and resident of PleasantField.
+He is wearing a rough cloth overall with a large straw hat. He
+has a huge inane grin on his face as he looks at you.
+~
+Race halfling~
+Align 0 2
+Level 15
+Hitroll 0
+HitDice 3d5+67
+ManaDice 1d1+99
+DamDice 2d6+4
+DamType punch
+AC -20 -20 -20 20
+Wealth 150
+Act    npc dont_wander scavenger no_tame stay_area wimpy warrior~
+Off    bash disarm dodge assist_race~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23105
+Name female halfling woman~
+ShortD a halfling woman~
+LongD A plump halfling woman smiles happily as she goes about her shopping.~
+Desc This is obviously a farmer's wife.  She is a portly halfling with large blue 
+eyes.  She is carrying nothing but a smile.  
+~
+Race halfling~
+Align -1 2
+Level 10
+Hitroll 0
+HitDice 2d5+22
+ManaDice 1d1+99
+DamDice 2d4+2
+DamType slap
+AC 10 10 10 40
+Wealth 100
+Act    npc dont_wander scavenger no_tame stay_area wimpy warrior~
+Off    trip assist_race~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#23106
+Name halfling child small~
+ShortD a halfling child~
+LongD A small halfling child is playing with some toys here.~
+Desc This is a small halfling child, probably the son of one of the local 
+farmers.  He has a big happy smile, and is wearing a patched playsuit.  
+~
+Race halfling~
+Align -2 1
+Level 5
+Hitroll 0
+HitDice 2d5+6
+ManaDice 1d1+99
+DamDice 1d6+2
+DamType scratch
+AC 50 50 50 70
+Wealth 50
+Act    npc scavenger no_tame stay_area wimpy warrior~
+Off    dodge fast assist_race~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23107
+Name halfling teenager~
+ShortD a teenaged halfling~
+LongD A young halfling kicks at the ground in front of you.~
+Desc This is a halfling teenager, with very sour looks.  He rarely smiles, and 
+scowls at any visitors that come past.  
+~
+Race halfling~
+Align -2 0
+XPMod 110
+Level 15
+Hitroll 0
+HitDice 3d5+70
+ManaDice 1d1+99
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 10
+Wealth 150
+Act    npc scavenger no_tame stay_area wimpy warrior~
+AffBy  haste~
+Off    bash berserk disarm dodge fast trip~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23108
+Name halfling shopkeeper~
+ShortD a halfling shopkeeper~
+LongD A halfling shopkeeper puffs a pipeweed pipe behind his counter.~
+Desc This is the shopkeeper of the general store in PleasantField.  He beams a 
+huge smile at you as you enter, and dusts off his floury hands.  
+~
+Race halfling~
+Align 2 2
+Level 120
+Hitroll 3
+HitDice 1d1000+1000
+ManaDice 1d100+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 10
+Act    npc dont_wander no_tame warrior~
+AffBy  dark_vision~
+Off    area_attack backstab bash berserk disarm dodge fade fast kick dirt_kick parry rescue tail trip crush~
+Imm    summon charm magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23109
+Name halfling child hardril~
+ShortD a halfling child~
+LongD A young halfling plays jacks here.~
+Desc This young chap has a little name sewn into his small overalls,
+Hardril. It seems this chap was named after the Leader of the
+Order of the White Banner (with Hardril being a Halfling nickname
+for him).Other than that he seems just like any other young
+halfling child.
+~
+Race halfling~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d1+100
+DamDice 1d5+1
+DamType punch
+AC 70 70 70 100
+Wealth 30
+Act    npc scavenger no_tame stay_area wimpy warrior~
+Off    bash fast trip~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23110
+Name pretty young halfling female woman~
+ShortD a halfling woman~
+LongD A pretty young halfling female smiles broadly at you.~
+Desc This is a pretty halfling, for her kind.  She carries the fragrance of wild 
+flowers as she walks through the village.  
+~
+Race halfling~
+Align 0 2
+Level 13
+Hitroll 0
+HitDice 2d5+50
+ManaDice 1d1+100
+DamDice 2d5+3
+DamType slap
+AC -10 -10 -10 30
+Wealth 130
+Act    npc dont_wander scavenger no_tame stay_area wimpy warrior~
+Off    bash fast trip~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#23111
+Name young halfling farmer~
+ShortD a young halfling farmer~
+LongD A young halfling farmer cheerfully tends to the animals here.~
+Desc This is a young farmer in PleasantField village.  He looks happy in his job. 
+ He wears cotton clothes dyed to a orange green colour.  
+~
+Race halfling~
+Align 0 2
+Level 18
+Hitroll 1
+HitDice 3d5+82
+ManaDice 1d1+99
+DamDice 2d7+4
+DamType punch
+AC -30 -30 -30 0
+Wealth 180
+Act    npc dont_wander scavenger no_tame stay_area wimpy warrior~
+AffBy  haste~
+Off    bash fast trip~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23112
+Name halfling shopkeeper~
+ShortD a halfling shopkeeper~
+LongD A halfling shopkeeper is polishing the weapons here.~
+Desc This plump halfling fellow has rosy red cheeks and a big grin.  He has curly 
+brown hair and dimples appear when he smiles.  He cheerfully greets 
+customers, as he tries to sell his goods.  
+~
+Race halfling~
+Align 2 2
+Level 120
+Hitroll 3
+HitDice 1d1000+1000
+ManaDice 1d100+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 10
+Act    npc dont_wander no_tame warrior~
+AffBy  dark_vision~
+Off    area_attack backstab bash berserk disarm dodge fade fast kick dirt_kick parry rescue tail trip crush~
+Imm    summon charm magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23113
+Name halfling baby~
+ShortD a halfling baby~
+LongD A young baby lies in a crib here.~
+Desc The child looks weak and sick and is quite big for 
+a halfling child.
+~
+Race halfling~
+Align 0 0
+XPMod 50
+Level 1
+Hitroll -1
+HitDice 1d4+1
+ManaDice 1d99+1
+DamDice 1d3+0
+DamType scratch
+AC 90 90 90 100
+Wealth 10
+Act    npc dont_wander no_tame stay_area~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+END
+
+#23114
+Name crow bird~
+ShortD a crow~
+LongD A small crow steals crops here.~
+Desc This is a small black crow. It pecks at the various crops here.
+~
+Race water fowl~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d99+1
+DamDice 1d5+1
+DamType peck
+AC 70 70 70 90
+Wealth 0
+Act    npc dont_wander stay_area wimpy noalign~
+AffBy  flying haste swim~
+Off    dodge fast~
+Res    drowning~
+Form   edible animal mountable bird~
+Part   head legs heart brains guts feet eye wings claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#23115
+Name plump halfling jeweler shopkeeper~
+ShortD a plump halfling jeweler~
+LongD A plump halfling is showing off the jewels on display here.~
+Desc This plump halfling fellow has rosy red cheeks and a big grin.  He has curly 
+brown hair and dimples appear when he smiles.  He cheerfully greets 
+customers, as he tries to sell his goods.  
+~
+Race halfling~
+Align 2 2
+Level 120
+Hitroll 3
+HitDice 1d1000+1000
+ManaDice 1d100+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 10
+Act    npc dont_wander no_tame warrior~
+AffBy  dark_vision~
+Off    area_attack backstab bash berserk disarm dodge fade fast kick dirt_kick parry rescue tail trip crush~
+Imm    summon charm magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23116
+Name happy middle-aged halfling mayor~
+ShortD the mayor of Pleasantfield~
+LongD A happy, middle-aged halfling stands here, looking important.~
+Desc This is the Mayor of PleasantField.  He seems happy to see you.  He is 
+middle-aged, and is a little on the tubby side.  He has ruddy red cheeks and 
+a wide grin.  
+~
+Race halfling~
+Align 2 2
+XPMod 105
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 1d1+99
+DamDice 2d10+9
+DamType punch
+AC -70 -70 -70 -30
+Wealth 250
+Act    npc dont_wander no_tame stay_area wimpy warrior~
+AffBy  haste~
+Off    bash fast trip~
+Res    magic fire cold poison disease~
+Vuln   slash mental drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23117
+Name halfling pony small~
+ShortD a halfling pony~
+LongD A small halfling pony eats the grass here.~
+Desc This pony is the perfect size for the halfling, its barely half the height 
+of an ordinary horse, and its limbs and features are more stumpy in nature.  
+
+~
+Race horse~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d99+1
+DamDice 1d6+1
+DamType crush
+AC 50 50 50 70
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  calm~
+Off    fast kick dirt_kick tail~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#23118
+Name large cow~
+ShortD a large cow~
+LongD A large brown cow is here.~
+Desc This large brown cow, stands around with a blank expression on her face.  An 
+expression of common animal stupidy, She wears a bell around her neck and 
+small white horns look like they have just started to grow out of her head.  
+
+~
+Race pig~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d99+1
+DamDice 1d6+1
+DamType crush
+AC 50 50 50 70
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  calm~
+Off    kick dirt_kick tail~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye tail~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#23119
+Name little halfling man shopkeeper baker~
+ShortD a halfling baker~
+LongD A little halfling man is icing a pastry here.~
+Desc This plump halfling fellow has rosy red cheeks and a big grin.  He has curly 
+brown hair and dimples appear when he smiles.  He cheerfully greets 
+customers, as he tries to sell his goods.  
+~
+Race halfling~
+Align 2 2
+Level 120
+Hitroll 3
+HitDice 1d1000+1000
+ManaDice 1d100+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 10
+Act    npc dont_wander no_tame warrior~
+AffBy  dark_vision~
+Off    area_attack backstab bash berserk disarm dodge fade fast kick dirt_kick parry rescue tail trip crush~
+Imm    summon charm magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#23120
+Name halfling lady shopkeeper seamstress~
+ShortD a halfling seamstress~
+LongD A halfling lady is sewing garments for her stall here.~
+Desc This is a halfling woman, perhaps in her early thirties.  She seems very 
+talented as she snips and tucks the garments she sews.  She has bright blue 
+eyes, and a cheerful smile.  
+~
+Race halfling~
+Align 2 2
+Level 120
+Hitroll 3
+HitDice 1d1000+1000
+ManaDice 1d100+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 10
+Act    npc dont_wander no_tame warrior~
+AffBy  dark_vision~
+Off    area_attack backstab bash berserk disarm dodge fade fast kick dirt_kick parry rescue tail trip crush~
+Imm    summon charm magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#23121
+Name halfling soft voice shopkeeper~
+ShortD a halfling shopkeeper~
+LongD A halfling with a soft voice is selling toys here.~
+Desc This halfling woman has a lovely soft voice, and curls of golden hair.  She 
+has a happy laugh as she helps the children choose a toy from her stall.  
+~
+Race halfling~
+Align 2 2
+Level 120
+Hitroll 3
+HitDice 1d1000+1000
+ManaDice 1d100+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 10
+Act    npc dont_wander no_tame warrior~
+AffBy  dark_vision~
+Off    area_attack backstab bash berserk disarm dodge fade fast kick dirt_kick parry rescue tail trip crush~
+Imm    summon charm magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#23122
+Name plump halfling woman shopkeeper grocer~
+ShortD a plump halfling grocer~
+LongD A plump halfling woman with a red apron, serves the customers here.~
+Desc This friendly halfling woman is selling locally grown fruit and vegetables.  
+She is plump and has brown curly hair.  A large grin adorns her face.  
+~
+Race halfling~
+Align 2 2
+Level 120
+Hitroll 3
+HitDice 1d1000+1000
+ManaDice 1d100+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 10
+Act    npc dont_wander no_tame warrior~
+AffBy  dark_vision~
+Off    area_attack backstab bash berserk disarm dodge fade fast kick dirt_kick parry rescue tail trip crush~
+Imm    summon charm magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#23123
+Name halfling man innkeeper~
+ShortD a halfling innkeeper~
+LongD A halfling man is the innkeeper here.~
+Desc This cheery fellow is the innkeeper in PleasantField.  He has a large tummy 
+and plump cheeks.  There is always a smile to be seen on his face.  
+~
+Race halfling~
+Align 2 2
+Level 120
+Hitroll 3
+HitDice 1d1000+1000
+ManaDice 1d100+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 10
+Act    npc dont_wander no_tame~
+AffBy  dark_vision~
+Off    area_attack backstab bash berserk disarm dodge fade fast kick dirt_kick parry rescue tail trip crush~
+Imm    summon charm magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#23100
+Name four poster bed~
+Short a four poster bed~
+Desc A four poster bed stands in the middle of the room.~
+Level 1
+ItemType furniture~
+Cost 400
+Condition 90
+Asize 1
+Rsize 45
+Values 1 1000 EHK 0 0
+Weight 10
+Material wood~
+Extra    noremove nonmetal nodegrade~
+End
+
+#23101
+Name chocolate mud cake~
+Short a chocolate mud cake~
+Desc A chocolate cake sits here looking delicious.~
+Level 1
+ItemType food~
+Cost 320
+Asize 0
+Rsize 10
+Values 6 3 0 0 0
+Weight 2
+Material flour~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#23102
+Name peaches~
+Short some `#`rpeaches`^~
+Desc Some soft succulent `#`rpeaches`^ rest on the ground here.~
+Level 1
+ItemType food~
+Cost 14
+Condition 90
+Asize 1
+Rsize 10
+Values 4 4 0 0 0
+Weight 10
+Material food~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc peaches~
+These peaches look as if they are quite tasty.
+~
+End
+
+#23103
+Name plums~
+Short some `#`mplums`^~
+Desc Some `#`mplums`^ rest on the ground.~
+Level 1
+ItemType food~
+Cost 14
+Condition 90
+Asize 1
+Rsize 10
+Values 4 4 0 0 0
+Weight 10
+Material plums~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc plums~
+These plums look perfectly ripe.
+~
+End
+
+#23104
+Name apples~
+Short some `#`Ggreen`^ apples~
+Desc Some `#`Ggreen`^ apples rest on the ground here.~
+Level 1
+ItemType food~
+Cost 14
+Condition 90
+Asize 1
+Rsize 50
+Values 4 4 0 0 0
+Weight 10
+Material apples~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc apples~
+These apples are crisp and rot free.
+~
+End
+
+#23105
+Name pears~
+Short some `#`ypears`^~
+Desc Some `#`ypears`^ lie on the ground here.~
+Level 1
+ItemType food~
+Cost 14
+Condition 90
+Asize 1
+Rsize 50
+Values 4 4 0 0 0
+Weight 10
+Material pears~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc pears~
+These pears look perfectly ripe.
+~
+End
+
+#23106
+Name bag pipeweed~
+Short a bag of pipeweed~
+Desc A bag of pipeweed lays here.~
+Level 10
+ItemType pill~
+Cost 200
+Condition 90
+Asize 1
+Rsize 45
+Values 20 'induce sleep' 'induce sleep' weaken ''
+Weight 1
+Material plant~
+Extra    bless inventory nonmetal~
+Wear     take~
+ExtraDesc pipeweed~
+This is the finest quality halfling pipeweed.
+~
+End
+
+#23107
+Name large cabbage~
+Short a large `#`Gcabbage`^~
+Desc A cabbage lies here.~
+Level 1
+ItemType food~
+Cost 14
+Condition 90
+Asize 1
+Rsize 50
+Values 4 4 0 0 0
+Weight 10
+Material plant~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc cabbage~
+This is a cabbage.
+~
+End
+
+#23108
+Name tomatoes~
+Short some `#`Rtomatoes`^~
+Desc Some large plump `#`Rtomatoes`^ lie here.~
+Level 1
+ItemType food~
+Cost 14
+Condition 90
+Asize 1
+Rsize 10
+Values 4 4 0 0 0
+Weight 10
+Material plant~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc tomatoes~
+These are some lovely plump tomatoes, just perfect in ripeness.
+~
+End
+
+#23109
+Name large pumpkin~
+Short a pumpkin~
+Desc `#`gA large pumpkin sits here.`^~
+Level 1
+ItemType food~
+Cost 15
+Condition 90
+Asize 1
+Rsize 10
+Values 4 4 0 0 0
+Weight 10
+Material plant~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc pumpkin~
+This large pumpkin looks good enough to eat.
+~
+End
+
+#23110
+Name small-hilted sword small~
+Short a small-hilted sword~
+Desc A small hilted sword lies here.~
+Level 20
+ItemType weapon~
+Cost 410
+Condition 90
+Asize 45
+Rsize 45
+Values sword 5 4 slash 0
+Weight 50
+Material iron~
+Extra    bless inventory nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 20 -1 hp 2 0
+ExtraDesc sword~
+This is a well crafted halfling sword, too small for the larger
+peoples.
+~
+End
+
+#23111
+Name leather breastplate~
+Short a small leather breastplate~
+Desc A small leather breastplate lies here.~
+Level 15
+ItemType armor~
+Cost 310
+Condition 90
+Asize 30
+Rsize 45
+Values 6 6 6 5 0
+Weight 50
+Material leather~
+Extra    bless inventory nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian~
+Affect modifier -1 15 -1 intuition 1 0
+ExtraDesc leather breastplate~
+The is a well crafted leather breastplate for a halfling. It is
+way too small for the larger peoples
+~
+End
+
+#23112
+Name small shield~
+Short a small shield~
+Desc A small shield lies here.~
+Level 15
+ItemType armor~
+Cost 300
+Condition 90
+Asize 30
+Rsize 45
+Values 6 6 6 5 0
+Weight 50
+Material wood~
+Extra    bless inventory nonmetal nodegrade~
+Wear     take shield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian~
+ExtraDesc small shield~
+This is a halfling's shield. It is too small for the larger
+people.
+~
+End
+
+#23113
+Name golden ring~
+Short a small golden ring~
+Desc A small golden ring lies in the dust here.~
+Level 15
+ItemType jewelry~
+Cost 330
+Condition 90
+Asize 30
+Rsize 30
+Values 0 0 0 0 0
+Weight 2
+Material gold~
+Extra    bless antievil nodegrade~
+Wear     take finger~
+Affect modifier -1 15 -1 hp 2 0
+ExtraDesc mayor ring~
+This is the mayor's ring of PleasantField. It is a perfect fit
+for those of a smaller size.
+~
+End
+
+#23114
+Name unused~
+Short a `#`Ws`Gp`Ba`Wr`Gk`Bl`Wi`Bn`Wg`^ crystal~
+Desc A crystal sparkles here.~
+Level 21
+ItemType jewelry~
+Cost 450
+Condition 90
+Asize 15
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gem~
+Extra    glow hum magic nodegrade burnproof~
+Wear     take float~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 21 -1 mana 20 0
+Affect modifier -1 21 -1 memory 2 0
+End
+
+#23115
+Name unused~
+Short a `#`Wwhite`Y-gold`^ bracelet~
+Desc A bracelet lies here.~
+Level 27
+ItemType jewelry~
+Cost 780
+Condition 90
+Asize 15
+Rsize 60
+Values 0 0 0 0 0
+Weight 10
+Material gem~
+Extra    glow magic nodegrade burnproof~
+Wear     take~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 27 -1 hitroll 4 0
+End
+
+#23116
+Name small hilted sword~
+Short a small sword~
+Desc A small hilted sword lies here.~
+Level 20
+ItemType weapon~
+Cost 405
+Condition 90
+Asize 30
+Rsize 30
+Values sword 5 4 slash 0
+Weight 50
+Material iron~
+Extra    bless nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 20 -1 hp 2 0
+ExtraDesc small sword~
+This is a well crafted halfling sword, too small for the larger
+peoples.
+~
+End
+
+#23117
+Name small leather breastplate~
+Short a small leather breastplate~
+Desc A small leather breastplate lies here.~
+Level 15
+ItemType armor~
+Cost 310
+Condition 90
+Asize 30
+Rsize 30
+Values 6 6 6 5 0
+Weight 50
+Material leather~
+Extra    bless nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian~
+Affect modifier -1 15 -1 strength 1 0
+ExtraDesc leather breastplate~
+This is a well crafted leather breastplate for a halfling. It is
+way too small for the larger peoples.
+~
+End
+
+#23118
+Name small shield~
+Short a small shield~
+Desc A small shield lies here.~
+Level 15
+ItemType armor~
+Cost 310
+Condition 90
+Asize 30
+Rsize 30
+Values 6 6 6 5 0
+Weight 50
+Material wood~
+Extra    bless nonmetal nodegrade~
+Wear     take shield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian~
+ExtraDesc small shield~
+This is a halfling's shield. It is too small for the larger
+peoples.
+~
+End
+
+#23119
+Name small room key~
+Short a small room key~
+Desc A small key lies here.~
+Level 1
+ItemType key~
+Cost 250
+Condition 90
+Asize 10
+Rsize 45
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    bless nonmetal~
+Wear     take~
+ExtraDesc small key~
+This is a small key made of iron.
+~
+End
+
+#23120
+Name apple pastry~
+Short an `#`rapple`^ pastry~
+Desc A delicious smelling pastry lies here.~
+Level 1
+ItemType food~
+Cost 59
+Asize 0
+Rsize 50
+Values 3 1 0 0 0
+Weight 2
+Material pastry~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#23121
+Name ocean blue silk shirt~
+Short an `#`Bocean-blue`^ silk shirt~
+Desc A blue silk shirt lies here.~
+Level 1
+ItemType clothing~
+Cost 240
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+End
+
+#23122
+Name ruby-red velvet dress~
+Short a `#`rruby-red`^ velvet dress~
+Desc A velvet dress has been left here.~
+Level 1
+ItemType clothing~
+Cost 310
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material velvet~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#23123
+Name small green yo-yo~
+Short a small `#`Ggreen`^ yo-yo~
+Desc A small `#`Ggreen`^ yo-yo is here.~
+Level 1
+ItemType trash~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material wood~
+Extra    inventory nodegrade~
+Wear     take hold~
+End
+
+#23124
+Name little rag doll~
+Short a little `#`Rr`ra`Bg`^ doll~
+Desc A little `#`Rr`ra`Bg`^ doll lies in a heap here.~
+Level 1
+ItemType trash~
+Cost 140
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material wood~
+Extra    inventory nodegrade~
+Wear     take hold~
+End
+
+#23125
+Name sticky lollipop~
+Short a sticky `#`Wl`Yo`Bl`rl`mi`Rp`Wo`Yp`^~
+Desc A sticky `#`Wl`Yo`Bl`rl`mi`Rp`Wo`Yp`^ is melting here.~
+Level 1
+ItemType food~
+Cost 59
+Asize 0
+Rsize 50
+Values 3 1 0 0 0
+Weight 2
+Material sugar~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#23126
+Name peaches~
+Short some juicy `#`rpeaches`^~
+Desc `#`gSoft succulent peaches rest on the ground here.`^~
+Level 1
+ItemType food~
+Cost 14
+Condition 90
+Asize 1
+Rsize 50
+Values 4 4 0 0 0
+Weight 10
+Material food~
+Extra    nonmetal~
+Wear     take~
+ExtraDesc peaches~
+These peaches look as if they are quite tasty.
+~
+End
+
+#23127
+Name bronze lantern~
+Short a `#`ybronze`^ lantern~
+Desc A bronze lantern lies here.~
+Level 1
+ItemType light~
+Cost 80
+Asize 0
+Rsize 45
+Values 0 0 500 0 0
+Weight 10
+Material bronze~
+Extra    nodegrade burnproof~
+Wear     take~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+End
+
+#23128
+Name bright yellow dress~
+Short a `#`Ybright yellow`^ dress~
+Desc A `#`Ybright yellow`^ dress is here.~
+Level 1
+ItemType clothing~
+Cost 310
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material velvet~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#23129
+Name blue overalls~
+Short some `#`Bblue`^ overalls~
+Desc Some `#`Bblue`^ overalls lie here.~
+Level 1
+ItemType clothing~
+Cost 240
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+End
+
+#0
+
+
+
+#ROOMS
+#23100
+Name A Path to a Halfling Village~
+Desc This is a small cobbled path about a pony cart width wide. It is
+well worn and has no pot holes. Around small leafy plants seem to
+have been planted along the side of the path, and flowers with
+huge heavy bumblebees buzzing around scent the air. Birds fly
+around in the thick hedges either side of the path. Through the
+hedge you can just make out fields with different crops.
+~
+Sector field~
+Exit north 23101
+EKeyvnum -1
+EDesc The path continues north
+~
+Exit south 30274
+End
+
+
+#23101
+Name A Quaint Little Bridge~
+Desc A quaint, brightly painted bridge, barely the width of a pony cart, crosses 
+a trickling stream here.  The bridge is paved with grey cobble stones, and 
+heads into the halfling village to the north.  Wild flowers are strewn along 
+the banks of the stream, and their fragrant scent fills the air.  
+~
+Sector field~
+Exit north 23102
+EDesc The entrance to the village is in this direction.
+~
+Exit south 23100
+EDesc The road leads south.
+~
+End
+
+
+#23102
+Name Entrance to the Village~
+Desc The cobbled path, about a pony cart in width continues to the north, and 
+heads over a small bridge to the south.  To the west is a cottage, and to 
+the east, a path leading to more cottages.  Clumps of brightly coloured 
+flowers adorn the pathside attracting butterflies.  
+~
+Sector city~
+Exit north 23103
+EDesc A small bridge is that way.
+~
+Exit east 23120
+Exit south 23101
+EDesc A path from the village is in this direction.
+~
+Exit west 23112
+End
+
+
+#23103
+Name The Town Square~
+Desc The town square, cobbled in patterns of grey stone, has paths leading off in 
+several directions.  To the south, cottages line the path, and to the north, 
+halfling villages hustle towards the market shops.  Just east of here is a 
+large dwelling with a `#`Ssign`^ dangling over the doorway.  West of here, a path 
+leads to smaller dwellings.  
+~
+Sector city~
+ExtraDesc sign ~
+`#`Y<< `GThe Jolly Traveller's Inn `Y>>`^ 
+~
+Exit north 23113
+EDesc The village entrance is in this direction.
+~
+Exit east 23122
+Exit south 23102
+EDesc The fields and path out of village are in this direction.
+~
+Exit west 23129
+End
+
+
+#23104
+Name PleasantField Guard's Office~
+Desc This small dwelling is the home of the village guards.  Two desks, covered 
+in paper and folders, stand alongside the walls.  A shrivelled pot plant 
+sits neglected in one corner, and a needlework picture hangs on the wall.  
+~
+Sector inside~
+Exit north 23127
+End
+
+
+#23105
+Name Jasper's Fine Jewels~
+Desc Underneath the bright green awning of this stall is a long glass display 
+case which has a tiny padlock, near where the shopkeeper is standing.  
+Inside the display case are a variety of sparkling, shiny, and colourful 
+gems and trinkets, rings and necklaces.  There are no prices showing, but at 
+a guess the jewels would be on the more expensive side.  
+~
+Sector inside~
+Exit north 23118
+End
+
+
+#23106
+Name A Field of Farm Animals~
+Desc You are standing in a field of long, vibrant green grass.  Animals move 
+around as you walk through the field, and birds fly out of the long grass as 
+you walk through it.  West of here, the fragrant smell of plums and peaches 
+drifts over, and in the distance you see many other fields and orchards.  
+~
+Sector field~
+Exit west 23124
+End
+
+
+#23107
+Name Briebaen's Bakery~
+Desc Below the bright pink awning of this stall, is a selection of delicious 
+smelling pastries and breads.  There are little cupcakes, and large cakes, 
+and sunflower breads, all of which look very tempting.  A plump little 
+fellow with an apron is tending to the stall.  
+~
+Sector inside~
+Exit south 23126
+End
+
+
+#23108
+Name A Field of Pumpkins and Tomatoes~
+Desc You are standing in a field of pumpkin and tomato plants.  The tendrils of 
+the plants end in big round pumpkins and juicy red tomatoes.  They smell 
+sweet and their bright colours indicate they are ready to be harvested.  
+South of here, the scent of apples and pears drifts over, and from the east, 
+the fragrance of peaches and plums.  
+~
+Sector field~
+Exit east 23124
+Exit south 23119
+End
+
+
+#23109
+Name Garments Made By Gibwyn~
+Desc Several racks display a selection of smallish clothing, beneath the yellow 
+and white awning of this stall.  The clothing looks like it would fit a 
+halfling or creature of similar size.  There are fancy garments with frills 
+and sparkles, and plain cotton threads.  There is a small rack of shoes near 
+where the shopkeeper is standing.  
+~
+Sector inside~
+Exit north 23126
+End
+
+
+#23110
+Name Frub's Weapons and Armor~
+Desc The bright red and white striped awning of this market stall covers a 
+display of small weapons and armor, suitable for a halfling, or other 
+similarly small creature.  The shopkeeper is taking his time to polish each 
+item, till the glare is almost blinding when the sun hits the display.  
+~
+Sector inside~
+Exit south 23118
+End
+
+
+#23111
+Name Deriand's Delights For Youngsters~
+Desc The brightly coloured awning is perfect for attracting the young halflings 
+to this stall.  On display are wooden toys, rag dolls, coloured yo-yos, and 
+other little toys.  On the counter near the shopkeeper is a large glass jar 
+filled with sticky sweets, lollipops, and gobstoppers.  
+~
+Sector inside~
+Exit south 23128
+End
+
+
+#23112
+Name A Small Cottage~
+Desc This is the house of a halfling family.  There is a row of pictures along 
+one of the walls showing the members of the family.  There are a number of 
+plush cushions on the floor and there is a chest of drawers against the 
+wall, which holds the clothes of the family.  To the east is the main street 
+of the village.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc chest drawers~
+This looks like a rather large chest of drawers. It only contains
+clothes of no worth.
+~
+Exit east 23102
+End
+
+
+#23113
+Name A Cobbled Path in the Village~
+Desc The path of grey cobblestones heads south towards the town square and north 
+towards the local market.  Halfling villagers walk through the streets, 
+smiling widely at locals and strangers alike.  The path has been carefully 
+decorated with brightly coloured flowers, and occasionally a butterfly will 
+flutter by, attracted by the sweet fragrance.  
+~
+Sector city~
+ExtraDesc sign~
+'Welcome to PleasantFields...spend well and keep this place
+tidy.'
+~
+Exit north 23117
+EDesc The street continues in that direction.
+~
+Exit south 23103
+EDesc The path leads out of the village that way.
+~
+End
+
+
+#23114
+Name The Mayor's Cottage~
+Desc This is the home of the mayor of PleasantField.  The furniture here is of 
+top elven quality and a little oversized for a halfling.  A few fragile 
+antiques adorn the furniture, and a large painting of the mayor himself, 
+hangs over a wooden mantlepiece.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 23129
+EFlags door closed~
+EKeywords door~
+End
+
+
+#23115
+Name A Cosy Bedroom~
+Desc The bedroom is lavishly decorated with a four-posted bed in the center of 
+the room, and a lush rug draped over the floor.  A brass lantern stands on a 
+finely carved chest of drawers, and there is a slightly faded painting of a 
+valley of apple trees overhaning the chest.  The earthern walls are painted 
+in a soft cream, and accompanied by burgandy velvet curtains and carpet.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 23122
+EFlags door closed locked~
+EKeyvnum 23119
+End
+
+
+#23116
+Name The General Store~
+Desc Clusters of shelves hang on the walls of this general store, and a counter 
+stands along one wall.  Bins of goods are strewn randomly through the shop, 
+selling various goods.  Dried pipeweed hangs from the walls in clumps, and 
+coiled ropes hang on hooks above the counter.  
+~
+Sector inside~
+Exit east 23117
+EDesc The village 'street' is in this direction.
+~
+End
+
+
+#23117
+Name A Cobbled Path in PleasantField Village~
+Desc The cheerful chatter of halflings drifts over from the east, where the path 
+heads towards the village market.  Brightly coloured stalls catch your eye, 
+and you hear the beckoning calls of the shopkeepers enticing you over to the 
+market.  A general store stands to the west of here, and in the distant 
+north you see various fields and orchards.  The town square is south of 
+here.  
+~
+Sector city~
+Exit north 23121
+EDesc The village 'street' continues.
+~
+Exit east 23118
+EFlags door~
+EKeywords door~
+EDesc The village trading post is that way.
+~
+Exit south 23113
+EDesc the village 'street' continues.
+~
+Exit west 23116
+EDesc The village common is that way.
+~
+End
+
+
+#23118
+Name Entrance to the Town Market~
+Desc The chatter of happy halflings drifts over from the market stalls 
+surrounding you, where the halflings are selling their locally made goods 
+and wares.  To the west the path heads back to the main street of 
+PleasantField.  You can see many brightly coloured stalls in the market, 
+each with a cheerful halfling boasting about their cheap prices.  
+~
+RoomFlags indoors~
+Sector city~
+Exit north 23110
+Exit east 23126
+Exit south 23105
+Exit west 23117
+EFlags door~
+EKeywords door~
+EDesc This is the way out of the shop.
+~
+End
+
+
+#23119
+Name The Apple and Pear Orchard~
+Desc This orchard is filled with apples and pears.  The fruit is almost ready to 
+pick and the ladders used by the halfling farmers are already out.  Birds 
+fly through the trees and moths flutter past you as you disturb the 
+branches.  The sweet smell of ripened fruit wavers in the air.  
+~
+Sector field~
+Exit north 23108
+Exit east 23121
+End
+
+
+#23120
+Name A Little Cottage~
+Desc This a cosy cottage for a small halfling family.  There a few cots set up 
+along one wall, and there is a little pot belly stove on the opposite wall.  
+On the bench are some tomatoes and plump peaches.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 23102
+End
+
+
+#23121
+Name A Cobbled Path in the Village~
+Desc This cobbled path is about a pony cart wide in width.  It leads north and 
+west to the orchards and fields of PleasantField, where the local halflings 
+grow their crops and produce.  To the south, it heads back towards the main 
+square.  
+~
+Sector city~
+Exit north 23124
+Exit south 23117
+EDesc The village 'street' continues.
+~
+Exit west 23119
+End
+
+
+#23122
+Name The Jolly Traveller's Inn~
+Desc This large dwelling is the local inn and tavern.  A polished oakwood bar 
+dominates the cluttered room, enticing the weary traveller to a quiet drink. 
+ A crackling fire sends flickers of light across the room, and cosy 
+armchairs have been placed before the fireplace.  A rosy-cheeked innkeeper 
+wipes down the bar, and grins at you as you enter.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 23115
+EFlags door closed locked~
+EKeyvnum 23119
+Exit west 23103
+End
+
+
+#23123
+Name Freraw's Fresh Fruit and Veggies~
+Desc On display at this stall is a selection of the locally grown fruit and 
+vegetables.  There are giant-sized pumpkins, plump red tomatoes, juicy 
+peaches and plums, crisp apples and crunchy pears.  A large bright blue 
+awning keeps the produce cool.  
+~
+Sector inside~
+Exit north 23128
+End
+
+
+#23124
+Name The Peach and Plum Orchard~
+Desc This is an orchard full of peach and plum trees.  The smell in the air is 
+sweet with ripened fruit and peach and plum blossoms.  There are large 
+ladders resting against the trees, for the halflings to gather the fruit.  
+West of here, you see a crop of pumpkins and tomatoes, and east, you here 
+the mingled sounds of animals.  Heading south, the path leads back into the 
+town centre.  
+~
+Sector field~
+Exit east 23106
+Exit south 23121
+Exit west 23108
+End
+
+
+#23125
+Name A Cobbled Path To And From The Fields~
+Desc This path leads to and from the orchards of the village of
+PleasantField. It has gates to the north, east and west leading
+to different orchards. To the east and west there are large fruit
+trees. To the north are some trees without fruit.
+~
+RoomFlags imm_only~
+Sector field~
+End
+
+
+#23126
+Name A Market Path~
+Desc Halflings doing their shopping bustle past you, chattering cheerfully.  
+Shopkeepers beckon to you as they see you past by, calling out their cheap 
+prices to entice you over to their stall.  East heads further into the 
+market, and west heads back towards the main street.  
+~
+Sector city~
+Exit north 23107
+Exit east 23128
+Exit south 23109
+Exit west 23118
+End
+
+
+#23127
+Name At the end of a Cobbled Path~
+Desc The cobblestone path ends at a small office to the south.  You can see in 
+the distance fields and orchards surrounding the village, and hear the buzz 
+of bees and chirping of birds.  A wooden `#`Ssign`^ hangs over the door to the 
+south, and to the east, the path heads back to the town square.  
+~
+Sector city~
+ExtraDesc sign ~
+`#`W[ `BPleasantField Guard's Office `W]`^ 
+~
+Exit east 23129
+Exit south 23104
+End
+
+
+#23128
+Name At the End of the Market~
+Desc You have reached the end of the market.  There are stalls north and south of 
+here, but looking east of here, you see only fields and orchards.  The path 
+heads west back towards the main street and other market stalls.  
+~
+Sector city~
+Exit north 23111
+Exit south 23123
+Exit west 23126
+End
+
+
+#23129
+Name A Cobbled Path in the Village~
+Desc The cobbled path heads east in to the town square, and to the north of here 
+there is a rather fancy, well-kept house.  The path continues to the west, 
+to a small office.  Bunches of brightly coloured flowers have been planted 
+along the path, and the scented fragrance drifts through the air.  
+~
+Sector city~
+Exit north 23114
+EFlags door closed~
+EKeywords door~
+Exit east 23103
+Exit west 23127
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 23103 spec_guard
+S
+
+
+
+#RESETS2
+M 0 23105 1 23102 1
+E 0 23128 -1 about~
+M 0 23103 2 23104 2
+E 0 23117 -1 torso~
+E 0 23118 -1 shield~
+E 0 23116 -1 wielded~
+M 0 23103 2 23104 2
+E 0 23117 -1 torso~
+E 0 23118 -1 shield~
+E 0 23116 -1 wielded~
+M 0 23115 1 23105 1
+G 0 23114 -1
+G 0 23115 -1
+E 0 23129 -1 torso~
+M 0 23100 2 23106 2
+M 0 23100 2 23106 2
+M 0 23102 1 23106 1
+M 0 23117 1 23106 1
+M 0 23118 1 23106 1
+M 0 23111 1 23106 1
+E 0 23129 -1 torso~
+M 0 23119 1 23107 1
+G 0 23120 -1
+G 0 23101 -1
+E 0 23129 -1 torso~
+O 0 23109 0 23108
+O 0 23108 -1 23108
+M 0 23104 5 23108 1
+E 0 23129 -1 torso~
+M 0 23120 1 23109 1
+G 0 23121 -1
+G 0 23122 -1
+E 0 23128 -1 about~
+M 0 23112 1 23110 1
+G 0 23110 -1
+G 0 23111 -1
+G 0 23112 -1
+E 0 23129 -1 torso~
+M 0 23121 1 23111 1
+G 0 23123 -1
+G 0 23124 -1
+G 0 23125 -1
+E 0 23128 -1 about~
+M 0 23106 10 23112 1
+M 0 23110 10 23112 1
+E 0 23128 -1 about~
+M 0 23116 1 23114 1
+E 0 23113 -1 lfinger~
+O 0 23100 -1 23115
+M 0 23108 1 23116 1
+G 0 23106 -1
+G 0 23127 -1
+E 0 23129 -1 torso~
+O 0 23104 0 23119
+O 0 23105 -1 23119
+M 0 23114 10 23119 1
+M 0 23104 5 23119 1
+E 0 23129 -1 torso~
+M 0 23110 10 23120 1
+E 0 23128 -1 about~
+M 0 23109 10 23120 1
+M 0 23113 10 23120 1
+M 0 23123 1 23122 1
+E 0 23129 -1 torso~
+G 0 23119 -1
+M 0 23122 1 23123 1
+G 0 23107 -1
+G 0 23126 -1
+E 0 23128 -1 about~
+G 0 23105 -1
+G 0 23104 -1
+O 0 23102 0 23124
+O 0 23103 -1 23124
+M 0 23114 10 23124 1
+M 0 23104 5 23124 1
+E 0 23129 -1 torso~
+M 0 23105 2 23126 1
+E 0 23128 -1 about~
+S
+
+
+
+#SHOPS
+#23108
+buy_type weapon~
+buy_type component~
+buy_type rp~
+buy_type armor~
+profit_buy 160
+profit_sell 60
+open_hour 2
+close_hour 22
+END
+
+#23112
+profit_buy 160
+profit_sell 60
+open_hour 2
+close_hour 22
+END
+
+#23115
+profit_buy 160
+profit_sell 60
+open_hour 2
+close_hour 22
+END
+
+#23119
+profit_buy 160
+profit_sell 60
+open_hour 2
+close_hour 22
+END
+
+#23120
+profit_buy 160
+profit_sell 60
+open_hour 2
+close_hour 22
+END
+
+#23121
+profit_buy 160
+profit_sell 60
+open_hour 2
+close_hour 22
+END
+
+#23122
+profit_buy 160
+profit_sell 60
+open_hour 2
+close_hour 22
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

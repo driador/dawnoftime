@@ -1,0 +1,3605 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Dire Swamp~
+ShortName   Dire Swamp~
+Builders    None~
+Credits     Eidolon Alric~
+VNUMs       23500 23599
+LRange      10 50
+Security    9
+Colour      Y~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#23500
+Name piranha fish black small~
+ShortD a piranha fish~
+LongD A small black fish, with a large, tooth filled mouth swims here.~
+Desc This is a small fish.  It has dark scales, and a large, tooth filled mouth.  
+It's large, bulbous eyes glow in the dark.  This small fish darts around 
+nervously, it's jaws opening and closing quickly.  
+~
+Race unique~
+Align -3 0
+Level 10
+Hitroll 0
+HitDice 2d5+20
+ManaDice 2d10+40
+DamDice 3d6+2
+DamType bite
+AC 20 20 20 30
+Wealth 0
+Act    npc dont_wander scavenger no_tame aggressive stay_area noalign outdoors~
+AffBy  detect_invis detect_hidden berserk~
+Off    assist_race~
+Imm    mental drowning~
+Res    bash~
+Vuln   light~
+Form   edible animal fish~
+Part   guts eye fins scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#23501
+Name swamp hag ugly old woman~
+ShortD the swamp hag~
+LongD An ugly old woman stands here, stirring her bubbling cauldron. ~
+Desc This is an ugly old woman, she's wearing dirty robes.  Her hair is dirty,
+and green, and look almost like swamp grass.  On her face is an insane grin,
+and every now and then she's start to cackle insanly.  This is one wierd
+woman, and she smells bad too.  
+~
+Race human~
+Align -2 -1
+Level 30
+Hitroll 1
+HitDice 5d5+140
+ManaDice 4d80+100
+DamDice 4d7+7
+DamType thwack
+AC -90 -90 -90 -70
+Wealth 20
+Act    npc dont_wander no_tame stay_area mage indoors~
+AffBy  detect_invis detect_hidden protect_evil~
+Res    charm disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg SPEECH 23522 cloak~
+MProg SPEECH 23522 shadow~
+MProg RANDOM 23504 5~
+MProg GREET 23503 70~
+END
+
+#23502
+Name Lizardman gatekeeper keeper~
+ShortD the lizardman gatekeeper~
+LongD A lizardman gatekeeper stands here, faithfully guarding the gate.~
+Desc Before you, stands a large lizardman, he's about 7' tall, and has large
+bulging muscles.  He looks at you with cautious eyes, swinging his tail
+slowly back and forth.  Like all Lizardmen, his scales are darkish green,
+and a row of larger bony plates form a line down his large spine.  He looks
+mean, but intelligent, and he dosen't look like he wants you to pass.  
+~
+Race lizardman~
+Align 1 -1
+Level 15
+Hitroll 0
+HitDice 3d5+67
+ManaDice 1d5+5
+DamDice 2d6+3
+DamType claw
+AC -20 -20 -20 -17
+Wealth 20
+Act    npc dont_wander no_tame stay_area warrior~
+Off    bash dodge tail~
+Imm    drowning~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped mammal reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GREET 23508 100~
+END
+
+#23503
+Name old large lizardman trainer~
+ShortD a lizardman trainer~
+LongD A large, old lizardman stands here, yelling at the younger lizardmen.~
+Desc This a big lizardman, with a mean look on his face.  He's yelling at the 
+younger lizardmen, pointing with his large muscular arms.  Like all 
+lizardmen, he's big and and has green scales.  He has a long tail, and large 
+clawed hands.  Maybe you shouldn't mess with this one...  
+~
+Race lizardman~
+Align 1 -1
+Level 30
+Hitroll 0
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType claw
+AC -90 -90 -90 -80
+Wealth 30
+Act    npc dont_wander no_tame stay_area warrior~
+Off    dodge parry tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear long_tongue tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GREET 23507 100~
+END
+
+#23504
+Name trainee young lizardman ~
+ShortD a lizardman trainee~
+LongD A young lizardman stands here, practicing his skills.~
+Desc This is a young lizardman, training to be a warrior, he's got a deep look
+of concentration, and he dosen't look very happy.  Looking at his large body
+and tail, it looks like he dosen't need much training, except for the clumsy
+way he swings his weapon.  
+~
+Race lizardman~
+Align 1 -1
+Level 21
+Hitroll 0
+HitDice 4d5+90
+ManaDice 4d5+90
+DamDice 4d4+5
+DamType claw
+AC -50 -50 -50 -41
+Wealth 2
+Act    npc dont_wander no_tame stay_area~
+Off    tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#23505
+Name lizardwoman mother nurse woman large~
+ShortD a large lizardwoman~
+LongD A large lizardwoman stands her, taking care of the young.~
+Desc This large lizardwoman stands here, taking care of the younger lizard 
+childs.  She is almost as big and muscular as some of the other lizardmen, 
+and she has an annoyed look on her face.  She peers at you, but quickly goes 
+back to caring for the young.  
+~
+Race lizardman~
+Align 1 -1
+Level 16
+Hitroll 0
+HitDice 3d5+67
+ManaDice 3d5+65
+DamDice 2d6+4
+DamType claw
+AC -20 -20 -20 -17
+Wealth 2
+Act    npc no_tame stay_area indoors~
+AffBy  berserk~
+Off    berserk tail assist_race~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material flesh
+END
+
+#23506
+Name young lizard-child child~
+ShortD a lizard-child~
+LongD A young lizard-child is running around playing here.~
+Desc You are looking at a young lizard child, it's scaly skin is lighter than an 
+adult lizardman's, and it's claws relativley small.  It looks pretty happy, 
+running, jumping and playing.  
+~
+Race lizardman~
+Align -1 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 2d5+15
+DamDice 1d8+1
+DamType punch
+AC 40 40 40 35
+Wealth 0
+Act    npc no_tame stay_area indoors~
+Off    tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped mammal reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#23507
+Name lizard-baby small baby bundle ~
+ShortD a lizard-baby~
+LongD Resting upon the fur is a small crying bundle. ~
+Desc This small bundle that is crying, is really a wrapped up lizard-baby.  It's 
+pretty big, considering it's only a baby.  When it's grows up, it's going to 
+be even bigger.  
+~
+Race lizardman~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType punch
+AC 50 50 50 44
+Wealth 0
+Act    npc no_tame stay_area indoors~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP resting~
+DefPos resting~
+Size   small~
+Sex    random~
+Material 'baby flesh'
+END
+
+#23508
+Name spear carver lizardman large craving~
+ShortD a large lizardman~
+LongD A large lizardman sits here, carving a spear out of bamboo.~
+Desc The large lizardman, is sitting, paying attention to his work.  In his 
+hands, he is holding a long piece of bamboo.  He is carving one end of the 
+bamboo into a sharp edge.  Like all lizardmen, he is large, with molted 
+green scales.  He has a long tail that curls behind him, and large claws on 
+his hands, which make him look awkward holding a dagger.  
+~
+Race lizardman~
+Align 1 -1
+Level 25
+Hitroll 0
+HitDice 4d5+115
+ManaDice 2d5+10
+DamDice 2d10+7
+DamType claw
+AC -70 -70 -70 -56
+Wealth 20
+Act    npc no_tame stay_area warrior indoors~
+Off    tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP sitting~
+DefPos sitting~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#23509
+Name large lizardman yellowish shaman~
+ShortD a lizardman shaman~
+LongD A large yellowish lizardman stands here performing a ritual.~
+Desc A large lizardman with ochre-yellow scales is here chanting to himself.  He 
+appears to be the village shaman.  
+~
+Race lizardman~
+Align -1 -1
+Level 48
+Hitroll 0
+HitDice 5d8+265
+ManaDice 5d8+275
+DamDice 6d6+17
+DamType none
+AC -180 -180 -180 -160
+Wealth 20
+Act    npc dont_wander no_tame stay_area cleric~
+Off    tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GREET 23500 95~
+END
+
+#23510
+Name small green swamp frog~
+ShortD a green swamp frog~
+LongD A small green frog sits here croaking.~
+Desc This small amphibian has green skin, long legs, and round eyes.  It's cute 
+in a slimy sort of way.  Every now and then, it's tongue whips out and snaps 
+at a insect.  
+~
+Race unique~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType suction
+AC 50 50 50 43
+Wealth 0
+Act    npc stay_area wimpy outdoors~
+Off    fast~
+Vuln   weapon bash~
+Form   edible sentient biped amphibian cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+MProg RANDOM 23502 5~
+END
+
+#23511
+Name large hairy blob decapus~
+ShortD a hairy decapus~
+LongD A large hairy blob is here, hanging from its large tentacles.~
+Desc This creature consists of a large blob, with two large yellow eyes that 
+stare at you, right above a large slit like mouth.  Extending from the 
+blob-like body, are nine thick tentacles, with suction cups on them.  This 
+is a truly ugly creature, it's brown in colour, and covered in thick black 
+hair.  
+~
+Race unique~
+Align 0 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 2d4+40
+DamDice 4d4+5
+DamType beating
+AC -40 -40 -40 -30
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  hide~
+Off    fast~
+Vuln   cold~
+Form   edible biped blob amphibian~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#23512
+Name bullfrog large giant ~
+ShortD a giant bullfrog~
+LongD A large bullfrog sits here, looking proud, and slimy.~
+Desc This large amphibian has big eyes, long slimy legs, and a white soft 
+underbelly.  It's common name is bullfrog.  
+~
+Race unique~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 2d5+15
+DamDice 1d8+1
+DamType smash
+AC 40 40 40 35
+Wealth 0
+Act    npc stay_area noalign~
+Vuln   cold~
+Form   edible poison amphibian cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#23513
+Name lizardwoman huntress~
+ShortD a lizardwoman huntress~
+LongD A lizardwoman stands here, paying attention to the water.~
+Desc This green scaled lizardwoman looks like she's hunting, as she intently 
+watches the water.  She is thin and wiry.  She holds her spear with skill, 
+while trying to spear fish, and other animals.  
+~
+Race lizardman~
+Align 1 -1
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType claw
+AC -110 -110 -110 -95
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#23514
+Name hunter lizardman~
+ShortD a lizardman hunter~
+LongD A lizardman hunter is closing in on some prey.~
+Desc A lizardman hunter is crouching and slowly making its way towards its prey.  
+The lizardman moves stealthily across the swamp nearly invisible because he 
+crouches so low.  From what you can see he must be a higly trained hunter 
+and he must have strong arms and legs as well as he seems quick and agile.  
+His skin is green with specks of brown and black.  He slips from here to 
+there constantly following his small prey.  
+~
+Race lizardman~
+Align 3 -3
+Level 37
+Hitroll 1
+HitDice 5d6+225
+ManaDice 2d5+25
+DamDice 3d10+12
+DamType claw
+AC -120 -120 -120 -98
+Wealth 0
+Act    npc stay_area warrior~
+Off    parry tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#23515
+Name large red-scaled lizardman chieftain~
+ShortD the lizardman Chieftain~
+LongD A large `#`Rred`^-scaled lizardman is here, sitting on his throne.~
+Desc This red-scaled lizardman is huge, his enormous body and long tail, make him 
+look like a fearsome foe.  He wears metal armor on his head, which makes him 
+seem more important than the other lizardmen.  He glares at you with large 
+red eyes, and he looks quite intelligent.  
+~
+Race lizardman~
+Align -1 -2
+Level 50
+Hitroll 1
+HitDice 5d9+280
+ManaDice 2d5+40
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -176
+Wealth 10
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil~
+Off    dodge parry tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP sitting~
+DefPos sitting~
+Size   large~
+Sex    male~
+Material unknown
+MProg GREET 23512 100~
+END
+
+#23516
+Name lizardman black highguard~
+ShortD a lizardman highguard~
+LongD A lizardman clad in black bamboo gear stands here, defending his Chieftain.~
+Desc This large dark scaled lizardman is large and burly.  The scars all over his 
+body tell you that he is no stranger to battle, and that he knows how to use 
+a sword.  His red reptile eyes glare at you, and his large maw hangs 
+slightly open, showing off the rows of large, yellow teeth.  
+~
+Race lizardman~
+Align 1 -1
+Level 45
+Hitroll 0
+HitDice 5d8+255
+ManaDice 2d5+30
+DamDice 8d4+16
+DamType claw
+AC -150 -150 -150 -127
+Wealth 0
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_invis detect_hidden~
+Off    dodge parry tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg GREET 23513 100~
+MProg DELAY 23514 100~
+END
+
+#23518
+Name lizardman muscular large warrior~
+ShortD a lizardman warrior~
+LongD A large, muscular lizardman stands here, practicing his battle skills.~
+Desc This huge lizardman looks like a warrior as he practices his spear thrust.  
+He looks like he is quite skilled at killing.  His large taill, and scaly 
+skin provide natural defense against swords.  
+~
+Race lizardman~
+Align -1 -2
+Level 40
+Hitroll 1
+HitDice 5d7+240
+ManaDice 2d5+30
+DamDice 4d8+13
+DamType claw
+AC -130 -130 -130 -117
+Wealth 100
+Act    npc dont_wander stay_area warrior~
+Off    parry tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#23520
+Name large surly lizardwoman villager woman~
+ShortD a lizardwoman villager~
+LongD A large, surly looking lizardwoman stands here, cleaning up the dust.~
+Desc This is a large lizardwoman.  She is more similar in size to the lizardmen 
+than other lizardwomen.  She has a surly look on her face, probably because 
+she has to do housework.  Her rippling muscles and long dangerous tail give 
+her an impression of strength.  
+~
+Race lizardman~
+Align 1 -1
+Level 17
+Hitroll 0
+HitDice 3d5+72
+ManaDice 3d5+70
+DamDice 3d4+4
+DamType claw
+AC -30 -30 -30 -24
+Wealth 0
+Act    npc stay_area indoors~
+Off    tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#23521
+Name lizardman villager~
+ShortD a lizardman villager~
+LongD A lizardman villager stands here, roasting a fish.~
+Desc This lizardman sits here roasting a fish on a stick.  He is big and burly, 
+like most lizardmen.  He doesn't look too happy about you disturbing him.  
+~
+Race lizardman~
+Align -1 -1
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType claw
+AC -40 -40 -40 -33
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#23522
+Name larzorath dog-like lizard creature~
+ShortD a larzorath~
+LongD A dog-like lizard creature snarls here, straining it's metal chain leash. ~
+Desc This lizard creature is about the size of a dog.  It has a large head, with 
+a big, saliva filled mouth.  It's tail is short and stubby, with spikes 
+running down the back of it's neck and tail.  It stands on four feet, much 
+like a dog, and the sounds it makes are simliar to a barking noise.  It is 
+quite active, straining hard on a large metal collar that is chained to the 
+stone wall.  
+~
+Race lizardman~
+Align 0 0
+XPMod 110
+Level 20
+Hitroll 1
+HitDice 4d5+90
+ManaDice 5d5+100
+DamDice 2d8+5
+DamType acbite
+AC -40 -40 -40 -10
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    berserk fast assist_vnum~
+Res    bash disease~
+Vuln   cold~
+Form   edible reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GREET 23518 100~
+MProg RANDOM 23519 5~
+END
+
+#23523
+Name slim blue scaled lizardman~
+ShortD a slim, blue scaled lizardman~
+LongD A slim, blue scaled lizardman is sneaking around here.~
+Desc This youngish looking lizardman is blue scaled, and slim.  He is sneaking 
+around in the shadows, trying not to be seen.  He has keen, focused eyes, 
+and an agile walk.  
+~
+Race lizardman~
+Align -1 -1
+Level 24
+Hitroll 0
+HitDice 4d5+100
+ManaDice 2d5+40
+DamDice 3d6+6
+DamType claw
+AC -60 -60 -60 -50
+Wealth 10
+Act    npc stay_area wimpy thief~
+AffBy  hide~
+Off    backstab tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#23524
+Name large surly lizardwoman villager gardener~
+ShortD a lizardwoman gardener~
+LongD A large surly looking lizardwoman kneels here, uprooting mushrooms.~
+Desc This is a large lizardwoman, with strong arms.  She is working in the 
+garden, uprooting mushrooms.  
+~
+Race lizardman~
+Align 1 -1
+Level 16
+Hitroll 0
+HitDice 3d5+67
+ManaDice 3d5+65
+DamDice 2d6+4
+DamType claw
+AC -20 -20 -20 -17
+Wealth 0
+Act    npc dont_wander stay_area outdoors indoors~
+Off    tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg GREET 23515 100~
+END
+
+#23525
+Name lizardman sleepy~
+ShortD a sleepy lizardman~
+LongD A lizardman lies on the floor here, asleep.~
+Desc This lizardman is snoring away on the floor.  His scaly skin is a light 
+green, and his large jaw is full of teeth.  
+~
+Race lizardman~
+Align -1 -1
+Level 19
+Hitroll 0
+HitDice 3d5+82
+ManaDice 3d5+80
+DamDice 2d7+5
+DamType claw
+AC -40 -40 -40 -34
+Wealth 0
+Act    npc stay_area~
+Off    tail~
+Res    bash disease~
+Vuln   cold~
+Form   edible sentient biped reptile cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos sleeping~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#23526
+Name eel long electric~
+ShortD an electric eel~
+LongD A long eel swims here, glowing with a blue light.~
+Desc This long snake-like creature is really a fish.  Along it's long, slippery 
+body, you notice a bluish glow.  Every now and then the water hums with 
+power as the blue light flares.  This eel also has a large mouth, filled 
+with small but sharp teeth.  
+~
+Race snake~
+Align 0 0
+Level 16
+Hitroll 0
+HitDice 3d5+67
+ManaDice 3d5+65
+DamDice 2d6+4
+DamType shbite
+AC -20 -20 -20 -16
+Wealth 0
+Act    npc dont_wander aggressive stay_area noalign~
+AffBy  swim~
+Off    fast assist_race~
+Res    poison~
+Vuln   cold~
+Form   edible animal sentient reptile snake cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#23527
+Name eel long black electric ~
+ShortD a black eel~
+LongD A long eel swims here, glowing with a blue light.~
+Desc This long snake-like creature, is really a fish, along it's long, slippery 
+body, you notice a bluish glow.  Every now and then the water hums with 
+power as the blue light flares.  This eel also has a large mouth, filled 
+with small but sharp teeth.  
+~
+Race snake~
+Align 0 0
+Level 16
+Hitroll 0
+HitDice 3d5+58
+ManaDice 5d5+60
+DamDice 3d4+4
+DamType shbite
+AC -20 -20 -20 0
+Wealth 0
+Act    npc dont_wander aggressive stay_area noalign~
+AffBy  swim~
+Off    fast assist_race~
+Res    poison~
+Vuln   cold~
+Form   edible animal sentient reptile snake cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#23528
+Name pirahna fish small black jet~
+ShortD a jet black fish~
+LongD A small black fish, with a large, tooth filled mouth swims here.~
+Desc This is a small fish.  It has dark scales, and a large, tooth filled mouth.  
+It's large, bulbous eyes glow in the dark.  This small fish darts around 
+nervously, it's jaws opening and closing quickly.  
+~
+Race unique~
+Align -3 0
+Level 10
+Hitroll 0
+HitDice 2d5+20
+ManaDice 5d5+20
+DamDice 3d6+2
+DamType bite
+AC 10 10 10 20
+Wealth 0
+Act    npc dont_wander scavenger no_tame aggressive stay_area noalign outdoors~
+AffBy  detect_invis detect_hidden berserk~
+Off    assist_race~
+Imm    mental drowning~
+Res    bash~
+Vuln   light~
+Form   edible animal fish~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#23529
+Name huge giant turtle ~
+ShortD a huge turtle~
+LongD A huge turtle rests here, deep in the muck.~
+Desc This is a huge turtle with a shell that forms a very good natural armor.  
+This turtle is about the size of a small building.  A huge head pokes out 
+from the shell.  Two large, dull cloudy eyes, above a large snap-jaw mouth, 
+form the head of this beast.  
+~
+Race unique~
+Align 0 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType chomp
+AC -40 -40 -40 -34
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  slow~
+Off    area_attack crush~
+Imm    charm~
+Res    weapon pierce slash acid~
+Form   edible sentient crustacean reptile cold_blood~
+Part   head arms legs heart brains guts feet fingers eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#23530
+Name snapping turtle large~
+ShortD a snapping turtle~
+LongD A large turtle snaps at you with it's beak-like mouth.~
+Desc This large turtle is about three feet long.  It has a spiky shell, and a 
+large sharp mouth, that is excellent at chomping.  It's beady eyes fix on 
+you, and it snaps it's jaw out at you.  The large jaw could easily take off 
+a finger, if the turtle wasn't lumbered by the large spiked shell.  
+~
+Race unique~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType chomp
+AC 10 10 10 8
+Wealth 0
+Act    npc stay_area noalign outdoors~
+AffBy  slow~
+Off    bash~
+Res    pierce slash acid~
+Form   edible sentient crustacean reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#23531
+Name snapping turtle large~
+ShortD a large snapping turtle~
+LongD A large turtle snaps at you with it's beak-like mouth.~
+Desc This large turtle is about four feet long.  It has a spiky shell, and a 
+large sharp mouth, that is excellent at chomping.  It's beady eyes fix on 
+you, and it snaps it's jaw out at you.  The large jaw could easily take off 
+a finger, if the turtle wasn't lumbered by the large spiked shell.  
+~
+Race unique~
+Align 0 0
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType chomp
+AC -110 -110 -110 -80
+Wealth 0
+Act    npc stay_area noalign outdoors~
+AffBy  slow~
+Off    bash~
+Res    pierce slash acid~
+Form   edible sentient crustacean reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#23532
+Name snapping turtle large~
+ShortD a black snapping turtle~
+LongD A large black turtle snaps at you with it's beak-like mouth.~
+Desc This large turtle is about five feet long.  It has a spiky shell, and a 
+large sharp mouth, that is excellent at chomping.  It's beady eyes fix on 
+you, and it snaps it's jaw out at you.  The large jaw could easily take off 
+a finger, if the turtle wasn't lumbered by the large spiked shell.  
+~
+Race unique~
+Align 0 0
+Level 14
+Hitroll 0
+HitDice 2d5+55
+ManaDice 2d5+55
+DamDice 1d12+3
+DamType chomp
+AC -10 -10 -10 -9
+Wealth 0
+Act    npc stay_area noalign outdoors~
+AffBy  slow~
+Off    bash~
+Imm    acid poison~
+Res    pierce slash~
+Form   edible sentient crustacean reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#23500
+Name crooked shelf~
+Short a crooked shelf~
+Desc A crooked shelf is attached to the side of the hut.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 0 0 3 60
+Weight 999
+Material wood~
+Extra    dark nonmetal nodegrade~
+End
+
+#23501
+Name hag's brew clay tube green small~
+Short a hag's brew~
+Desc A small clay tube, filled with green stuff lies here.~
+Level 25
+ItemType potion~
+Cost 400
+Asize 0
+Rsize 50
+Values 12 weaken poison barkskin fly
+Weight 9
+Material unknown~
+Extra    magic nonmetal~
+Wear     take hold~
+End
+
+#23502
+Name the ugly stick short gnarled stick~
+Short the ugly stick~
+Desc A large, ugly looking gnarled staff rest here.~
+Level 30
+ItemType staff~
+Cost 200
+Asize 0
+Rsize 50
+Values 32 9 9 'change sex' 0
+Weight 30
+Material ugly wood~
+Extra    evil nonmetal nodegrade~
+Wear     take hold~
+Affect modifier -1 30 -1 sex -1 0
+Affect modifier -1 30 -1 presence -5 0
+End
+
+#23503
+Name eye newt~
+Short a newt eye~
+Desc A big eyeball from a newt rest here.~
+Level 10
+ItemType pill~
+Cost 150
+Asize 0
+Rsize 50
+Values 5 plague farsight '' ''
+Weight 5
+Material unknown~
+Extra    nonmetal~
+Wear     take~
+End
+
+#23504
+Name swamp hair green mop hag hag's~
+Short some hag's hair~
+Desc A mop of greenish, dirty hair lies here.~
+Level 30
+ItemType trash~
+Cost 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material unknown~
+Extra    nonmetal~
+Wear     take head~
+Affect modifier -1 30 -1 reasoning -4 0
+Affect modifier -1 30 -1 intuition -10 0
+Affect modifier -1 30 -1 presence -10 0
+End
+
+#23505
+Name soiled robes~
+Short a soiled robe~
+Desc A soiled robe is bunched up here.~
+Level 10
+ItemType clothing~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+Affect modifier -1 10 -1 memory 1 0
+Affect modifier -1 10 -1 presence -2 0
+End
+
+#23506
+Name strange fish bone key~
+Short a fish bone key~
+Desc A strange key made out fish bones rest here.~
+Level 1
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material fishbone~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+ExtraDesc fish bone key strange~
+This a strange key made out of the ribs of a small fish, the various
+ribs, are cut to different sizes, almost like a skeleton key.  
+~
+End
+
+#23507
+Name bamboo spear long sharp pole~
+Short a `#`ybamboo`^ spear~
+Desc A long sharp pole of bamboo lies here.~
+Level 20
+ItemType weapon~
+Cost 300
+Asize 0
+Rsize 50
+Values polearm 5 4 thrust F
+Weight 30
+Material bamboo~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 20 -1 agility 1 0
+End
+
+#23508
+Name bamboo armor vest chest ~
+Short a `#`ybamboo`^ chest plate~
+Desc A chest plate made up of bamboo reeds tied together with vines, lies here.~
+Level 20
+ItemType armor~
+Cost 300
+Asize 0
+Rsize 50
+Values 7 5 6 5 0
+Weight 50
+Material bamboo~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 20 -1 hitroll 2 0
+Affect modifier -1 20 -1 damroll 2 0
+End
+
+#23509
+Name bamboo shield~
+Short a `#`ybamboo`^ shield~
+Desc A large shiled made up of bambo lies here.~
+Level 20
+ItemType armor~
+Cost 300
+Asize 0
+Rsize 50
+Values 7 5 6 5 0
+Weight 50
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take shield~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 20 -1 agility 1 0
+Affect modifier -1 20 -1 ac -5 0
+End
+
+#23510
+Name mock turtle large shell~
+Short a `#`Gturtle`^ shell~
+Desc A large turtle shell, with legs, sits here.~
+Level 1
+ItemType furniture~
+Cost 2
+Asize 0
+Rsize 50
+Values 1 999 BEHKN 120 120
+Weight 100
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take~
+ExtraDesc large turtle shell~
+This is a large turtle shell, that has been hollowed out.  Wooden legs
+have been attached to it, with large vines, and sticky sap.  This looks like
+a perfect place to sit down on, and rest, but only one at a time please.  A
+large wodden stylised head sticks out one end, smiling!  
+~
+End
+
+#23511
+Name trainee's spear blunt~
+Short a trainee's spear~
+Desc A blunt looking spear lies here.~
+Level 10
+ItemType weapon~
+Cost 100
+Condition 75
+Asize 0
+Rsize 50
+Values polearm 2 8 thrust F
+Weight 30
+Material 0~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+End
+
+#23512
+Name bamboo raft small~
+Short a small `#`ybamboo`^ raft~
+Desc A small raft made out bamboo, has been pulled on to the shore here.~
+Level 50
+ItemType boat~
+Cost 140
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 120
+Material bamboo~
+Extra    inventory nodegrade~
+Wear     take~
+End
+
+#23513
+Name beautiful lily flower water~
+Short a `#`Gwater lily`^~
+Desc A beautiful flower grows here, among the lily pads.~
+Level 40
+ItemType trash~
+Cost 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material unknown~
+Extra    nonmetal~
+Wear     take head~
+End
+
+#23514
+Name rug animal fur thick large~
+Short a large animal fur~
+Desc A large, thick animal fur has been spread out on the floor here.~
+Level 1
+ItemType furniture~
+Cost 500
+Asize 0
+Rsize 50
+Values 2 999999 BEHK 105 105
+Weight 30
+Material unknown~
+Extra    inventory nonmetal nodegrade~
+Wear     take about~
+End
+
+#23515
+Name ragged dirty blanket~
+Short a ragged blanket~
+Desc A ragged, dirty blanket lies here.~
+Level 1
+ItemType trash~
+Cost 2
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 8
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+End
+
+#23516
+Name bone necklace~
+Short a `#`Wbone`^ necklace~
+Desc A necklace made of stringed `#`Wbones`^ lies here.~
+Level 20
+ItemType jewelry~
+Cost 400
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 8
+Material bone~
+Extra    nonmetal nodegrade~
+Wear     take neck~
+Affect modifier -1 20 -1 constitution 2 0
+End
+
+#23517
+Name long slim carving knife dagger~
+Short a carving knife~
+Desc A long slim carving knife has been left here, on the ground.~
+Level 35
+ItemType weapon~
+Cost 350
+Asize 0
+Rsize 50
+Values dagger 3 10 stab 0
+Weight 30
+Material stone~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+End
+
+#23518
+Name stone bracelet~
+Short a `#`Sstone`^ bracelet~
+Desc An anklet made of `#`Sstone^` lies here.~
+Level 30
+ItemType jewelry~
+Cost 600
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take wrist~
+Affect modifier -1 30 -1 ac -5 0
+Affect modifier -1 30 -1 hp 4 0
+End
+
+#23519
+Name thick engraved copper bracelet~
+Short an engraved `#`ycopper`^ bracelet~
+Desc A thick `#`ycopper`^ bracelet has been left here.~
+Level 23
+ItemType jewelry~
+Cost 460
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Extra    hum magic nodegrade~
+Wear     take wrist~
+ClassAllowances mage cleric thief warrior paladin spellfilcher~
+Affect modifier -1 23 -1 hp 2 0
+Affect modifier -1 23 -1 quickness 1 0
+ExtraDesc engraving engravings bracelet copper thick ~
+A large snake, who has the sun in his mouth, has been engraved into this 
+thick copper bracelet.  It's crude, but very nice, in a barbaric sort off 
+way.  
+~
+End
+
+#23520
+Name firepit fireplace~
+Short a fireplace~
+Desc A large fire burns here brightly.~
+Level 1
+ItemType light~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 1000
+Material coals and wood~
+Extra    glow nonmetal nodegrade~
+ExtraDesc fireplac firepit large ~
+You are looking at a large fire pit, in it are large burning logs, and 
+burning coals.  
+~
+End
+
+#23521
+Name roasted fish~
+Short a roasted fish~
+Desc A roasted fish has been left here.~
+Level 1
+ItemType food~
+Cost 20
+Asize 0
+Rsize 50
+Values 5 0 0 0 0
+Weight 4
+Material flesh~
+Wear     take~
+End
+
+#23522
+Name fish rack~
+Short the fish rack~
+Desc A rack of roasting fish stands here, giving off spicy smells.~
+Level 1
+ItemType container~
+Cost 20
+Asize 0
+Rsize 50
+Values 200 E 0 400 60
+Weight 100
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#23523
+Name sacrifical lamb~
+Short a sacrifical lamb~
+Desc A lamb, ready for sacrificing is here.~
+Level 1
+ItemType food~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 5 0 A 0
+Weight 50
+Material unknown~
+Extra    nonmetal~
+Wear     take~
+End
+
+#23524
+Name boar skull head dress large~
+Short a large boar's skull~
+Desc A large boar's skull hangs on the wall here.~
+Level 34
+ItemType armor~
+Cost 600
+Asize 0
+Rsize 50
+Values 8 8 8 7 0
+Weight 40
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take head~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 34 -1 presence -1 0
+Affect modifier -1 34 -1 damroll 4 0
+Affect modifier -1 34 -1 ac -10 0
+End
+
+#23525
+Name green wand small~
+Short a small `#`Ggreen`^ wand~
+Desc A wand made out of `#`Ggreen`^ wood lies here.~
+Level 35
+ItemType wand~
+Cost 100
+Asize 0
+Rsize 50
+Values 30 10 10 'dispel good' 0
+Weight 0
+Material wood~
+Extra    glow hum evil antigood nonmetal nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+End
+
+#23527
+Name lizardman hunting shoes leather~
+Short some lizardman hunting shoes~
+Desc A pair of leather shoes have been left here.~
+Level 25
+ItemType armor~
+Cost 400
+Asize 0
+Rsize 50
+Values 5 5 5 4 0
+Weight 20
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 25 -1 quickness 1 0
+Affect modifier -1 25 -1 agility 1 0
+End
+
+#23528
+Name a large black cauldron stands here, boiling and bubbling.~
+Short a large cauldron~
+Desc A large black Cauldron stands here, boiling and bubbling.~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values 100 100 'slime mold juice' 0 0
+Weight 0
+Material iron~
+Extra    nodegrade~
+End
+
+#23529
+Name large granite throne stone~
+Short a large granite throne~
+Desc A large throne, made of white and black granite sits here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1000 BEH 103 103
+Weight 9999
+Material stone~
+Extra    nonmetal nodegrade~
+Wear     take~
+ExtraDesc large granite throne stone~
+This throne has been carved out of a single block of stone.  On it's arms 
+and back, are detailed carvings of strange people attacking a wierd 
+scratched blob thing..  The carvings look too delicate and detailed to be 
+lizardman's work.  
+~
+End
+
+#23530
+Name heavy turtle platemail~
+Short a heavy turtle platemail~
+Desc A large plate of mail sits here, dents all over it make it look well used.~
+Level 48
+ItemType armor~
+Cost 820
+Asize 0
+Rsize 50
+Values 16 16 16 12 0
+Weight 80
+Material turtle~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances warrior paladin barbarian~
+Affect modifier -1 48 -1 hitroll 4 0
+Affect modifier -1 48 -1 ac -5 0
+Affect modifier -1 48 -1 saves -2 0
+End
+
+#23531
+Name heavy stone bracer~
+Short a heavy `#`Sstone`^ bracer~
+Desc A heavy `#`Sstone`^ bracer rests on the ground here.~
+Level 48
+ItemType armor~
+Cost 800
+Asize 0
+Rsize 50
+Values 7 7 7 5 0
+Weight 40
+Material stone~
+Extra    nonmetal nodegrade~
+Wear     take wrist~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 48 -1 constitution 2 0
+Affect modifier -1 48 -1 strength 2 0
+End
+
+#23532
+Name large steel bladed sword ~
+Short a large `#`ssteel`^ bladed sword~
+Desc A large stone sword rests here.~
+Level 45
+ItemType weapon~
+Cost 810
+Asize 0
+Rsize 50
+Values sword 2 22 slash D
+Weight 0
+Material stone~
+Extra    glow hum magic nonmetal meltdrop nodegrade~
+Wear     take wield~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 45 -1 agility 2 0
+End
+
+#23533
+Name horned turtle skull horn~
+Short a horned turtle skull~
+Desc A turtle's skull, horned, and with leather straps attached, lies here.~
+Level 40
+ItemType armor~
+Cost 800
+Asize 0
+Rsize 50
+Values 10 10 10 8 0
+Weight 40
+Material turtle shell~
+Extra    glow nonmetal nodegrade horned~
+Wear     take head~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 40 -1 empathy -2 0
+Affect modifier -1 40 -1 presence -1 0
+Affect modifier -1 40 -1 hp 8 0
+Affect modifier -1 40 -1 strength 3 0
+End
+
+#23534
+Name black bamboo chest plate~
+Short a `#`Sblack bamboo`^ chest plate~
+Desc A `#`Sblack bamboo`^ chest plate lies here.~
+Level 35
+ItemType armor~
+Cost 500
+Asize 0
+Rsize 50
+Values 11 10 12 9 0
+Weight 30
+Material bamboo~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 35 -1 hp 2 0
+Affect modifier -1 35 -1 ac -10 0
+End
+
+#23535
+Name turtle large shield shell~
+Short a turtle shell shield~
+Desc A shield made out of a turtle's shell lies here.~
+Level 41
+ItemType armor~
+Cost 810
+Asize 0
+Rsize 50
+Values 14 14 14 11 0
+Weight 80
+Material bones~
+Extra    nonmetal nodegrade~
+Wear     take shield~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 41 -1 saves -4 0
+Affect modifier -1 41 -1 ac -5 0
+End
+
+#23536
+Name black bamboo shield~
+Short a `#`Sblack bamboo`^ shield~
+Desc A shield made of black bamboo lies here.~
+Level 40
+ItemType armor~
+Cost 300
+Asize 0
+Rsize 50
+Values 13 13 13 10 0
+Weight 50
+Material bamboo~
+Extra    nonmetal nodegrade~
+Wear     take shield~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 40 -1 quickness 2 0
+Affect modifier -1 40 -1 agility 2 0
+End
+
+#23537
+Name metal tipped bamboo spear large ~
+Short a metal tipped `#`ybamboo`^ spear~
+Desc A large spear made of black bamboo lies here.~
+Level 40
+ItemType weapon~
+Cost 600
+Asize 0
+Rsize 50
+Values polearm 2 22 stab FH
+Weight 40
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+End
+
+#23538
+Name stone table~
+Short stone table~
+Desc A large, ancient looking stone table sits here.~
+Level 20
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 900 N 100 100
+Weight 2000
+Material stone~
+Extra    nonmetal nodegrade~
+Wear     take~
+End
+
+#23539
+Name a glowing needle~
+Short a glowing needle~
+Desc A glowing needle lies here.~
+Level 1
+ItemType trash~
+Cost 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material metal~
+Extra    glow nolocate nodegrade burnproof~
+Wear     take~
+End
+
+#23540
+Name broom wicker bamboo~
+Short a wicker broom~
+Desc A wicker broom lies here.~
+Level 20
+ItemType weapon~
+Cost 300
+Asize 0
+Rsize 50
+Values mace 2 5 thwack D
+Weight 30
+Material bamboo~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+End
+
+#23541
+Name large reed apron ~
+Short a reed apron~
+Desc A large apron, made of weaved reed lies here.~
+Level 20
+ItemType clothing~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+End
+
+#23542
+Name fish skewer long pointed stick~
+Short a fish skewer~
+Desc A fish skewer lies here.~
+Level 1
+ItemType trash~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#23543
+Name large metal collar chain leash~
+Short a chain leash and collar~
+Desc A large metal collar and chain lies piled up here.~
+Level 10
+ItemType armor~
+Cost 100
+Asize 0
+Rsize 50
+Values 2 2 2 1 0
+Weight 60
+Material steel~
+Extra    nodegrade~
+Wear     take neck~
+ClassAllowances cleric warrior paladin barbarian~
+End
+
+#23544
+Name bone  rotten chew-bone~
+Short a rotten chew-bone~
+Desc A large chewed bone lies here, smelling bad.~
+Level 1
+ItemType food~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 1 0 A 0
+Weight 30
+Material bone~
+Extra    nonmetal~
+Wear     take~
+End
+
+#23545
+Name fiend's breath root strange red plant~
+Short a fiend's breath root~
+Desc A strange red plant grows here.~
+Level 25
+ItemType pill~
+Cost 550
+Asize 0
+Rsize 50
+Values 7 fireball 'giant strength' haste ''
+Weight 10
+Material plant~
+Extra    nonmetal~
+Wear     take~
+End
+
+#23546
+Name blue mushroom bluish~
+Short a `#`bblue`^ mushroom~
+Desc A strange bluish mushroom grows here.~
+Level 1
+ItemType food~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 2 0 0 0
+Weight 20
+Material unknown~
+Extra    nonmetal~
+Wear     take~
+End
+
+#23547
+Name strange root buckroot~
+Short a buckroot~
+Desc A strange looking root pokes out the ground.~
+Level 30
+ItemType pill~
+Cost 660
+Asize 0
+Rsize 50
+Values 15 poison 'illusions grandeur' '' ''
+Weight 10
+Material plant~
+Extra    nonmetal~
+Wear     take~
+End
+
+#23548
+Name folding cot fold-up cot~
+Short a fold-up cot~
+Desc A folding cot made of bamboo and animal skin lies here.~
+Level 20
+ItemType furniture~
+Cost 120
+Asize 0
+Rsize 50
+Values 1 1000 EHK 105 105
+Weight 20
+Material bamboo~
+Extra    nonmetal nodegrade~
+Wear     take~
+End
+
+#23549
+Name basket reed reeds~
+Short a reed basket~
+Desc A basket made of reeds lies here.~
+Level 0
+ItemType container~
+Cost 10
+Asize 0
+Rsize 50
+Values 30 0 0 20 100
+Weight 30
+Material reed~
+Extra    nonmetal nodegrade~
+Wear     take~
+End
+
+#23550
+Name stone turtle small jade~
+Short a `#`gturtle`^ stone~
+Desc A small turtle carved out of jade floats here, glowing with a green aura.~
+Level 50
+ItemType jewelry~
+Cost 1000
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    glow hum nodegrade~
+Wear     take float~
+ClassAllowances cleric warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 50 -1 damroll 1 0
+Affect modifier -1 50 -1 hitroll 1 0
+Affect modifier -1 50 -1 memory 2 0
+Affect modifier -1 50 -1 quickness -1 0
+Affect modifier -1 50 -1 ac -15 0
+End
+
+#23582
+Name cloak shadows~
+Short the `#`Scloak of shadows`^~
+Desc A strangely translucent cloak lies here.~
+Level 55
+ItemType armor~
+Cost 1000
+Asize 0
+Rsize 50
+Values 13 13 13 11 0
+Weight 0
+Material unknown~
+Extra    magic nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 55 -1 quickness 2 0
+Affect modifier -1 55 -1 agility 3 0
+End
+
+#23583
+Name copper key~
+Short a copper key~
+Desc A key made of copper lies here.~
+Level 1
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Wear     take~
+End
+
+#23590
+Name key silver~
+Short a silver key~
+Desc A key made of silver lies here.~
+Level 1
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material unknown~
+Extra    hum~
+Wear     take~
+End
+
+#23591
+Name Large golden beak~
+Short a `#`YGolden`^ Beak~
+Desc A large golden beak rest here...~
+Level 1
+ItemType jewelry~
+Cost 2100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 60
+Material unknown~
+Extra    glow nolocate nodegrade~
+Wear     take head~
+End
+
+#23594
+Name large gold key ~
+Short a large gold key~
+Desc A large gold key lies here.~
+Level 1
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material unknown~
+Extra    glow hum~
+Wear     take~
+End
+
+#23596
+Name Chared black steel key~
+Short a black steel key~
+Desc A large key made of chared black steel lies here.~
+Level 1
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 30
+Material unknown~
+Extra    nodegrade~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#23500
+Name Muddy Path into a Swamp~
+Desc Your are upon a muddy path that leeds through the swamp.  The sound of 
+insects buzzing and frogs croaking can be heard from the north.  The thick 
+green foliage in this area is tangled, and lush.  Large trees covered in 
+thick vines surround you.  
+~
+Sector swamp~
+Mana 90
+Heal 90
+Exit north 23501
+EDesc This path seems to go deeper into the swamp.
+~
+Exit south 31099
+End
+
+
+#23501
+Name In a Muddy Swamp~
+Desc You are standing upon a muddy path, all around you, you hear frogs croaking. 
+ Thick green foliage surrounds the path, creating living barriers.  The air 
+is hot and humid, and there are many bugs flying around your head.  Every 
+now and then you notice the strong stench of rotting leaves.  The path here 
+leads north, east, and south, and there is an opening in the foliage to the 
+west.  
+~
+Sector swamp~
+Mana 90
+Heal 90
+Exit north 23509
+EDesc In this direction you see........ More SWAMP!
+~
+Exit east 23502
+EDesc This leads toward a small hill.
+~
+Exit south 23500
+EDesc This direction leads to a dryer part of the swamp.
+~
+Exit west 23503
+EDesc You can just make out the edge of a small cloudy pool in this direction.  
+~
+End
+
+
+#23502
+Name At the Top of a Small Muddy Hill~
+Desc You are standing on a small muddy hill which is about a meter tall, and the 
+view from here is no better than the view on the ground.  Although this 
+ground is more dry than the path, it's slippery, and it's hard to keep your 
+footing on this hill.  The vines above you are closer, and you can just 
+about jump up and grab the vines, letting you climb up.  The path also leads 
+to the north and to the west.  
+~
+Sector hills~
+Mana 85
+Heal 85
+Exit north 23536
+EDesc In this direction you see........ More SWAMP!
+~
+Exit west 23501
+EDesc In this direction you see........ More SWAMP!
+~
+Exit up 23504
+EDesc You climb a vine up into the trees in this direction.
+~
+End
+
+
+#23503
+Name Small Cloudy Pool~
+Desc In this small clearing in the swamp, the ground gives way to a small pool of 
+cloudy water.  There are large lily pads covering the pool, and various 
+other reedy plants.  In the cloudy pool you see dark shapes swimming past 
+your legs.  The water smells of rotten foliage, and it dosen't seem like 
+good idea to stand here for very long.  There is a small opening in the 
+foliage to the east.  
+~
+Sector swim~
+Mana 80
+Heal 80
+Exit east 23501
+EDesc You can see a small, muddy path in this direction.
+~
+End
+
+
+#23504
+Name In the Swamp Trees~
+Desc You are standing on a large, incredibly strong branch of a tree.  The tangle 
+of vines and leaves make it hard to see the ground, but they also provide 
+good foot holds, making travelling through the trees suprisingly easy.  You 
+hear the harsh cry of strange birds, and the bugs are even worse up here.  
+There is a small opening down, to the ground.  The only other direction you 
+can go is north, and a tangle of vines provide a stable bridge.  
+~
+Sector swamp~
+Mana 80
+Heal 80
+Exit north 23505
+EDesc In this direction there is a natural bridge of vines, leading through the
+swamp trees.  
+~
+Exit down 23502
+EDesc A large stable vine hangs down, giving you a way to climb down to the
+ground.  
+~
+End
+
+
+#23505
+Name High in the Trees~
+Desc You are climbing high in a large tree, you can almost see the sky through 
+all the vines and leaves.  The air is cool and moist here, making a welcome 
+change from the hot air of the swamp.  The vines seem to be shaped by magic, 
+and form a stable path.  To your east, you can see a large, ancient gnarled 
+black tree.  
+~
+Sector forest~
+Exit east 23506
+EDesc In this direction a large, black narled tree.  It looks ancient, and
+ugly.  It's surprising that it's still alive.  
+~
+Exit south 23504
+EDesc A strange, unatural tangle of vines form a bridge leads in this direction.  
+~
+End
+
+
+#23506
+Name In the Big Black Tree~
+Desc You climb into a large, ancient looking tree.  It has black bark, and large 
+growths of fungus stick out here and there.  You smell a strange, rancid 
+smell wafting up from below.  The trees seem strangely sponge-like to your 
+touch, and their is a sticky `g greenish sap`x oozing out the edges of the tree. 
+ Looking up, you see that this tree leads up very high.  
+~
+Sector forest~
+Mana 70
+Heal 90
+ExtraDesc green greenish sap~
+The sticky oozing sap, is thick, and a deep `g green color`x.  It is
+clear, with areas of opaqness.  It has a very strange smell, almost like
+rotting plants and fish.  
+~
+Exit west 23505
+EDesc This way leads through the trees.
+~
+Exit down 23507
+EDesc This leads down, to a small, strange looking clearing.  You can almost
+see the edge of a small mud hut.  You can almost hear a strange cackling
+laughter..  Or can you?  
+~
+End
+
+
+#23507
+Name In a Small Clearing, Below a Large Black Tree~
+Desc You are standing a the base of a large, ancient tree.  It has black bark, 
+and large growths of fungus stick out here and there.  The tree seems 
+strangely sponge-like to the touch, and `ggreenish sap`x oozes out of the bark.  
+There are strange step-like growths, that would permit anyone to climb up 
+the tree.  Looking up, you see that this tree is really tall.  To the south, 
+at the very edge of the tree, is a small, mud and reed hut.  A rancid smell, 
+coming from the hut, assaults your senses.  
+~
+Sector forest~
+ExtraDesc green greenish sap~
+The sticky oozing sap, is thick, and a deep `ggreen`x color.  It is
+clear, with areas of opaqueness.  It has a very strange smell, almost like
+rotting plants and fish.  
+~
+Exit north 23508
+Exit up 23506
+EDesc Strange step like growths, from a convinent climb up this large black
+tree.  This directions leads deep, up into the heights of the swamp's trees.
+~
+End
+
+
+#23508
+Name In a Small Rancid Hut~
+Desc You are standing inside a small, dark hut.  It smells really bad in here.  
+Around you are various shelves, all containing wierd, and nasty concoctions. 
+ The hut is small, and cramped, and not very welcoming.  
+~
+Sector inside~
+Exit south 23507
+End
+
+
+#23509
+Name Path through the Swamp~
+Desc You are walking along a small, muddy path, that winds through the swamp.  
+Around you, insects and frogs are making a loud buzzing drone.  The path 
+leads from south to west.  The swamp seems to be wetter in this part, but it 
+could only be the humid air.  
+~
+Sector swamp~
+Mana 90
+Heal 90
+Exit south 23501
+EDesc To the south you see more swamp.
+~
+Exit west 23510
+EDesc To the west you see more swamp.
+~
+End
+
+
+#23510
+Name Soggy Path through the Swamp~
+Desc Two paths meet here, forming a kind of clearing.  The swamp around here is 
+very wet, and the path is muddy and slippery.  You see some large `Smuddy 
+footprints`x in the mud here.  At the edge of the path are large pools of 
+fetid water, and the noise of the swamp life is even louder.  
+~
+Sector swamp~
+Mana 85
+Heal 90
+ExtraDesc muddy footprints~
+These footprints are large, and clawed.  They are probably from some sort
+of large lizard type creature.  The tracks lead off to the north from here. 
+~
+Exit north 23513
+EDesc To the north, you see more swamp.
+~
+Exit east 23509
+EDesc To the east, you see more swamp.
+~
+Exit west 23511
+EDesc To the west, you see more swamp.
+~
+End
+
+
+#23511
+Name Soggy Little Clearing~
+Desc You are standing in a small, fairly soggy clearing in the swamp.  The 
+foliage here is large, wet and green.  
+~
+Sector forest~
+Exit east 23510
+EDesc To the east, you see more swamp.
+~
+Exit south 23512
+EDesc You see more swamp, although it does seem like there is a pool in this
+direction.
+~
+Exit west 23545
+End
+
+
+#23512
+Name In a Smelly Pool~
+Desc In this small clearing in the swamp, the ground here gives way to various 
+small reedy plants.  In the smelly pool you see dark shapes swimming past 
+your legs.  There is a small opening in the foliage to the north.  
+~
+Sector swim~
+Mana 80
+Heal 80
+Exit north 23511
+EDesc You can see a small, muddy path in this direction
+ 
+~
+End
+
+
+#23513
+Name Narrow Path Through the Swamp~
+Desc You stand on a small muddy path in the middle of a swamp.  There are a few 
+large clawed tracks here and there.  This path runs from north to south.  
+~
+Sector swamp~
+Mana 80
+Heal 80
+Exit north 23514
+EDesc You see more swamp, allthough you can just make out some sorta structure
+made of bamboo up ahead.  
+~
+Exit south 23510
+EDesc In this direction, you see more swamp.
+~
+End
+
+
+#23514
+Name Soggy Clearing before a Bamboo Gate~
+Desc You are standing in front of large stone wall.  This wall looks ancient, and 
+is covered in vines.  In front of you, where a large section of wall has 
+fallen away, somebody has built a bamboo gate, which vines have attached 
+themselves to.  Although crudely built, this gate does bar your way.  
+~
+Sector forest~
+ExtraDesc gate ~
+A large bamboo gate stands here, attached to large stone ruins.
+~
+Exit north 23519
+EFlags door closed locked~
+EKeyvnum 23506
+EKeywords gate~
+EDesc A large bamboo gate stands here, attached to large stone ruins.
+~
+Exit east 23516
+Exit south 23513
+Exit west 23517
+End
+
+
+#23516
+Name On the Shore of Small, Swampy Lake~
+Desc You are standing in a small opening of foliage on the shore of a small thin 
+lake.  The rest of the shore of this lake is blocked by large reeds and 
+other plants.  To the north, you see a shallow part of the lake.  The lake 
+gets deeper, and cleaner to the east of there.  In the shallow parts, large 
+reeds poke up, and large lilly pads float on the water.  The sound of frogs 
+can be heard to the north.  
+~
+Sector swamp~
+Exit south 23556
+Exit west 23514
+End
+
+
+#23517
+Name Along a Large Stone Wall~
+Desc You are walking along the side of a large stone wall.  This ancient high 
+wall shows great stone work, fitting perfectly together.  The swamp foliage 
+here has been cut back, forming a sort of path in between the wall and the 
+underbrush.  
+~
+Sector forest~
+Exit east 23514
+EDesc To the east you see a small clearing...
+~
+Exit west 23518
+EDesc To the west you see a small clearing, and you can make out figures doing
+strange actions...  are they training?
+~
+End
+
+
+#23518
+Name A Small Clearing Used for Training~
+Desc This is a small clearing next to the large, ancient looking stone walls.  
+The area here has been flattened to keep the ground firm and dry.  The 
+clearing is obviously used as some sort of training ground, because of the 
+many large footprints and battered old armor.  The foliage at the edge of 
+the clearing is swampy and thick.  The only exit is to the east.  
+~
+Sector forest~
+Exit east 23517
+EDesc To east, you see a path runnig along large stone walls.  
+~
+End
+
+
+#23519
+Name A Small Village, Among the Ruins~
+Desc You are standing on a road lined with large stone buildings, most of which 
+are collasped, or have no roof.  A small village has been set up in the 
+ruins, and from the acidic smell of lizard, it must be a lizardman village.  
+Houses have been built by placing reed roofs on the stone buildings.  To the 
+east and west are two such buildings.  A stone path leads north, and you see 
+a huge step pyramid, rising out of the swamp in that direction.  
+~
+Sector city~
+Mana 90
+Heal 90
+Exit north 23558
+Exit east 23521
+EDesc To the east, you see a largish stone building, with a reed roof.  This
+building's most likely only one story high, judging by the low roof.  There
+is only one small entrance to the building.  
+~
+Exit south 23514
+EFlags door closed locked~
+EKeyvnum 23506
+EKeywords gate~
+EDesc A large bamboo gate stands here, attached to large stone ruins.
+~
+Exit west 23520
+EDesc To the west, you see a largish stone building, with a reed roof.  This
+building's most likely only one story high, judging by the low roof.  There
+is only one small entrance to the building.  
+~
+End
+
+
+#23520
+Name Inside a Stone Building~
+Desc You are standing in a small, relativley bare stone room.  The stone walls 
+are thick and sturdy.  The original roof, obviously collasped and has been 
+replaced with a bamboo and reed roof.  The stone floor is cool and dry, and 
+the thick stone wall keeps this building cool compared to the swamp.  The 
+only exit to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 23519
+EDesc A small doorway, to the east, leads outside.
+~
+End
+
+
+#23521
+Name The Nursery~
+Desc This building is a lot smaller than it looks like from the outside.  It is 
+probably because the stone walls are so thick.  Over the stone floor, 
+various animal skins have been placed.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 23519
+EDesc A small doorway, to the west, leads outside.
+~
+End
+
+
+#23522
+Name Small Plaza, Before the Pyramid~
+Desc You are standing in a small plaza.  Before you is a large stone step pyramid 
+that soars into the sky.  Scattered about the plaza are some old stone 
+blocks, probably from the surrounding ruins.  Paved roads lead in all 
+directions, except north.  To the north, you can see a stone tunnel, in the 
+sides of the pyramid.  You can climb up the side of the step pyramid.  
+~
+Sector city~
+Mana 90
+Heal 90
+Exit north 23528
+EDesc A small stone tunnel, built into the steps, leads into darkness in this 
+direction.  
+~
+Exit south 23558
+Exit up 23529
+EDesc You easily can climb up the step pyramid, you can just make out a small 
+building, at the top.  The pyramid in some places is couvered in vines, but 
+their is a clear path.  
+~
+End
+
+
+#23523
+Name Stone Pathway~
+Desc You are walking along a small stone path, to the north and south are stone 
+buildings.  The stone path looks old, and small plants grow up in between 
+the stones.  There nothing is remarkable, just more stone rubble around, 
+similar to the rest of the ruins.  The path continues from east to west.  
+~
+Sector city~
+Exit north 23550
+EDesc A small stone building can be seen, in this direction.
+~
+Exit east 23524
+EDesc The large stone wall that surrounds the village can be seen in this direction.
+~
+Exit south 23549
+EFlags door closed~
+EKeywords door~
+EDesc A large stone door blocks you way into the building in this direction..
+~
+Exit west 23547
+End
+
+
+#23524
+Name Standing next to a Large Section of Crumbling Wall~
+Desc You are standing next to the stone wall that surrounds the village.  The 
+reeds to the east of here are thick, and are growing through cracks in the 
+wall.  Below you, there is a large muddy pool used for garbage and other 
+waste by the lizardmen.  
+~
+Sector inside~
+Exit west 23523
+EDesc A stone path leads through the ruins in this direction.
+~
+Exit down 23548
+EDesc You are looking down into a water pit, the stink from this direction tells 
+you that it's not used for drink water.  
+~
+End
+
+
+#23525
+Name Rubble-filled Stone Intersection~
+Desc You are standing at a small, rubble-filled plaza.  All around you piles of 
+stone rubble have been stacked up.  There are some stone buildings 
+surrounding the plaza, and the path continues to the east and north.  
+~
+Sector city~
+Exit north 23527
+EDesc A collasped stone building stands to the north.
+~
+Exit east 23559
+Exit south 23546
+EDesc A small stone building stands to the south.
+~
+Exit west 23526
+EDesc You can see a fire, in a larger plaza to the west.
+~
+End
+
+
+#23526
+Name In a Large, Almost Untouched Building~
+Desc The insides of this large one roomed building are almost untouched compared 
+to the ruins outside.  There are only a few small cracks in the floor.  The 
+furs in this building are thicker than most, and are cleaner.  This is 
+obviously the home of an important person in the village.  Animal skulls of 
+deer and boars hang on the walls here as hunting trophies.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 23525
+EDesc A small stone plaza surrounded by buildings can be seen in this direction.  
+~
+End
+
+
+#23527
+Name Stone Path~
+Desc This path is old and on the verge of collapsing.  Foliage is beginning to 
+grow up here and there.  A large creeper vine has engulfed one wall.  The 
+path continues to the north and south.  
+~
+Sector city~
+Exit north 23570
+EDesc You see a small stone path, in this direction.
+~
+Exit south 23525
+EDesc A small stone plaza surrounded by buildings can be seen in this direction.  
+~
+End
+
+
+#23528
+Name Narrow Stone Tunnel~
+Desc You are in a narrow stone tunnel.  The stone walls are slightly damp, and 
+cool.  The tunnel is dark and musty, and you can here muttering sounds to 
+the north.  The stone work inside, is very tightly fitted and smooth.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 23531
+EFlags door closed~
+EKeywords door~
+EDesc A large stone door stands before you.
+~
+Exit south 23522
+EDesc A small arch opening leads south, outside, into the ruins.
+~
+End
+
+
+#23529
+Name Standing at the Top of the Pyramid~
+Desc You are standing at the top of a large step pyramid made of well cut stone.  
+On all sides, except to the south, plants have grown over the pyramid.  It 
+looks like the swamp is trying to swallow the pyramid, and it looks like the 
+swamp is winning.  A small building stands to the north of you, with a small 
+opening.  
+~
+Sector inside~
+Exit north 23530
+EDesc A small opening leads into the small building.
+~
+Exit down 23522
+End
+
+
+#23530
+Name Inside the Altar Building~
+Desc You are standing in a small stone building.  On the floor are splatters of 
+dried blood.  Over the walls, are dried skins, hung as tribute to the gods 
+worshipped by the lizardmen.  Standing in the middle of this small room, is 
+a stone altar.  On the altar, there is more blood.  A small groove, to 
+collect blood has been carved into the altar.  
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit south 23529
+EDesc A small opening leads outside.
+~
+End
+
+
+#23531
+Name Large Hall~
+Desc You are standing in a large hall, which must be directly under the pinnacle 
+of the step pyramid.  This hall is dimly lit by two large metal flaming 
+torches.  In the middle of the room is a large stone throne.  The hall 
+smells musty, and it's damp and cool compared to the outside swamp.  The 
+only exit is the tunnel south.  
+~
+RoomFlags indoors~
+Sector inside~
+Mana 90
+Heal 90
+Exit south 23528
+EFlags door closed~
+EKeywords door~
+End
+
+
+#23536
+Name In Shallow Swamp Water~
+Desc You are standing in shallow water, but you sink in even deeper because of 
+all the mush at the bottom.  Thick foliage grows around the swamp.  The 
+plants grow close to together, and the air is hot and humid.  
+~
+Sector swamp~
+Mana 80
+Heal 80
+Exit north 23538
+EDesc In this direction you see a small lake.
+~
+Exit east 23537
+EDesc In this direction you see a small pool.
+~
+Exit south 23502
+EDesc In this direction you see... More swamp!
+~
+End
+
+
+#23537
+Name A Large Murky pool~
+Desc In this large clearing in the swamp, the ground here gives way to various 
+your legs, and large chunks of stuff you don't want to think about.  This 
+water smells not to bad, but it dosen't seem like good idea to stand in it 
+for very long.  There is a small opening in the foliage to the west.
+~
+Sector swamp~
+Mana 95
+Heal 95
+Exit west 23536
+EDesc In this direction you see........ More SWAMP!
+~
+End
+
+
+#23538
+Name In a Swampy, Shallow Lake~
+Desc You have come across the beginnings of a lake.  The lake stretches to the 
+west, becoming deeper quickly.  All around, in the reeds, and on lilly pads, 
+frogs croak, and insects buzz.  The water of the lake, smells bad, and you 
+feel strange things swim past your legs.  
+~
+Sector swim~
+Mana 85
+Heal 85
+Exit north 23560
+Exit south 23536
+EDesc So see the shore, and swampy water in this direction.
+~
+Exit west 23556
+EDesc The lake extend, and gets deeper, in this direction.
+~
+End
+
+
+#23539
+Name Reedy Maze~
+Desc You are standing on a reedy outcrop of foliage.  All around you, large reedy 
+plants grow.  The plants grow about 12 feet tall, and close together, 
+forming walls.  These thick wall are impassable, and the only way through is 
+by navigating a path through the reeds.  
+~
+Sector swim~
+Exit north 23542
+EDesc More Swamp, more mud, more reeds!  Ugh!  
+~
+Exit east 23541
+EDesc A path through the reads extends in this direction.
+~
+Exit south 23560
+EDesc More swamp.. more mud...
+~
+Exit west 23540
+EDesc A path through the reads extends in this direction.
+~
+End
+
+
+#23540
+Name Reedy Clearing~
+Desc This a bare clearing, all around it are reeds, and other plants, some large 
+bamboo stalks grow in the corner, they look quite strong, and could be 
+useful for making things.  
+~
+Sector swamp~
+Exit east 23539
+EDesc A small path throught the reeds lead in this direction.
+~
+End
+
+
+#23541
+Name Through the Reeds~
+Desc You are standing in a marshy path through the reeds.  All around you are 
+tall reeds, and buzzing insects.  This path continues from south to west.  
+~
+Sector swim~
+Exit south 23552
+EDesc You can only see more swamp in this direction.
+~
+Exit west 23539
+EDesc What more swamp!? How could this be!
+~
+End
+
+
+#23542
+Name Intersection In the Reads~
+Desc You are standing on a reedy outcrop of foliage.  All around you, large reedy 
+plants grow.  The plants grow about 12 feet tall, and close together, 
+forming walls.  These thick wall are impassable, and the only way through is 
+by navigating a path through the reeds.  
+~
+Sector swim~
+Mana 95
+Heal 95
+Exit north 23554
+EDesc Looks like, well swamp.
+~
+Exit east 23543
+EDesc Looks like, well swamp.
+~
+Exit south 23539
+EDesc Looks like more swamp in this direction too.
+~
+End
+
+
+#23543
+Name Through the Reeds~
+Desc You are standing at the edge of the reeds.  To the north the reeds thin out, 
+to the east, they are still quite thick.  This part of the swamp is muddy, 
+hot and wet, much like other parts.  
+~
+Sector swim~
+Exit north 23544
+EDesc The reed thin out in this direction, and you see more swamp.
+~
+Exit east 23551
+EDesc More reedy swamp in this direction.
+~
+Exit west 23542
+EDesc More reedy swamp in this direction.
+~
+End
+
+
+#23544
+Name Muddy Path Through the Swamp~
+Desc You are standing in a mucky, wild part of the swamp.  You can barely tell 
+where you are, the foliage surrounding you is so thick.  
+~
+Sector swamp~
+Mana 90
+Heal 90
+Exit east 23562
+EDesc All you can really see is folliage...
+~
+Exit south 23543
+EDesc Large tall reeds grow, forming strange barriers in this direction.  
+~
+End
+
+
+#23545
+Name A Small, Cloudy Pool~
+Desc In this small clearing in the swamp, the ground here gives way to various 
+small reedy plants.  In the cloudy pool here, you see dark shapes swimming 
+past your legs.  There is a small opening in the foliage to the east.  
+~
+Sector hills~
+Exit east 23511
+EDesc You see a small clearing to the east.
+~
+End
+
+
+#23546
+Name Inside a Small Stone Home~
+Desc This small building is obviously a lizardman home.  There are various things 
+lying around, none of them could be of use to you.  The sweet acidic smell 
+of lizardman permeates the home.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 23525
+EDesc A small stone plaza surrounded by buildings can be seen in this direction.  
+~
+End
+
+
+#23547
+Name Stone Pathway~
+Desc You are walking along a small stone path.  There nothing is remarkable, just 
+more stone rubble around, similar to the rest of the ruins.  The path 
+continues from east to west.  
+~
+Sector city~
+Mana 90
+Heal 90
+Exit east 23523
+Exit west 23558
+End
+
+
+#23548
+Name In the Water Hole~
+Desc Your are swimming in murky water, even your light source can't help you see 
+much here..  You feel slimy things swim past your feet, and reedy things 
+poking you here and there, you can't see much though.  
+~
+RoomFlags dark~
+Sector underwater~
+Exit east 23553
+EDesc Yeah! More dirty water!
+~
+Exit up 23524
+EDesc You can see some air up their..!
+~
+End
+
+
+#23549
+Name Inside a Small Dark Building~
+Desc This dark room smells bad!  There are large bones every where, and a stench 
+of rotting flesh and blood hangs in the air.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 23523
+EFlags door closed~
+EKeywords door~
+EDesc A large stone door blocks you way out of the building in this direction..
+~
+End
+
+
+#23550
+Name Inside a Small Stone Home~
+Desc This small building is obviously a lizardman home.  It is cramped and there 
+are various things lying around, none of them could be of use to you.  The 
+sweet acidic smell of lizardman permeates the home.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 23523
+EDesc A small opening to the south leads outside.
+~
+End
+
+
+#23551
+Name Dead End in The Reeds~
+Desc The reeds close up here, forming a wall, blocking your way.  This is a dead 
+end, the only way to go is back to the west.  The swamp here is particularly 
+mushy, and doesn't seem like a good place to stop.  
+~
+Sector swim~
+Mana 80
+Heal 80
+Exit west 23543
+EDesc A path throught the reeds extends in this direction.  
+~
+End
+
+
+#23552
+Name Dead End~
+Desc The reeds close up here, forming a wall, blocking your way.  This is a dead 
+end, the only way to go is back to the north.  The swamp here is 
+particularly mushy, and doesn't seem like a good place to stop.  
+~
+Sector swim~
+Mana 60
+Heal 60
+Exit north 23541
+EDesc Uugh.. not more muddy swamp! 
+~
+End
+
+
+#23553
+Name In the Murky Pool~
+Desc You can barly see in the muddy water, you light dosen't help at all, you can 
+feal a bit, and west seems like the only direction to go other than the 
+surface.  
+~
+RoomFlags dark~
+Sector underwater~
+Exit west 23548
+EDesc All you can see is murky water..
+~
+Exit up 23554
+EDesc You can see the surface of the water...  
+~
+End
+
+
+#23554
+Name In a Small Pool~
+Desc This small pool is very deep, and a strong stench wafts above it.  You can 
+probably swim to the bottom of it but the water looks mucky, and leaches 
+probably live down there!  
+~
+Sector swim~
+Exit south 23542
+EDesc A path throught the reeds goes in this direction, probably leads to more 
+swamp.  
+~
+Exit down 23553
+EDesc You can hardly make out anything down their, it's so muddy and murky.
+~
+End
+
+
+#23555
+Name In the shallows~
+Desc You are standing in a shallow, swampy part of a small lake.  The lake 
+stretches to the east, becoming deeper quickly.  All around, in the reeds 
+and on lily pads, frogs croak and insects buzz.  The water of the lake 
+smells bad, and you feel strange shapes swim past your legs.  
+~
+Sector swim~
+Mana 80
+Heal 80
+End
+
+
+#23556
+Name On the Water, in the Swampy Lake~
+Desc You are in the middle of a small, swampy lake that stretches from east to 
+west.  The northern and southern shores, are thick with plant life and 
+foliage, making them impassable.  You can faintly hear frogs croaking to the 
+east and west.  
+~
+Sector swim~
+Mana 80
+Heal 80
+Exit north 23516
+Exit east 23538
+EDesc The thin lake continues in this direction.
+~
+End
+
+
+#23558
+Name Stone Intersection~
+Desc You are standing at a small, rubble-filled intersection.  All around you 
+piles of stone rubble have been stacked up.  Up ahead to the north, you see 
+a step pyramid looming before you.  The path continues to the east and west. 
+ 
+~
+Sector city~
+Exit north 23522
+Exit east 23547
+Exit south 23519
+Exit west 23559
+End
+
+
+#23559
+Name A Stone Path~
+Desc You are walking along a small stone path.  The stone path looks old, and 
+small plants grow up in between the stones.  The path continues from east to 
+west.  
+~
+Sector city~
+Exit east 23558
+Exit west 23525
+End
+
+
+#23560
+Name On the Shore~
+Desc You are standing on a reedy outcrop of foliage.  All around you, large reeds 
+grow closely together forming a wall of plant life, thick and almost 
+impenitrable.  To your south, is a small lake.  The path continues knee deep 
+in water, going north, through the reeds.  
+~
+Sector swamp~
+Exit north 23539
+EDesc The path continues north, throught the reeds.  The water is just below human 
+knee hieght...  
+~
+Exit south 23538
+EDesc A small lake is to the south.
+~
+End
+
+
+#23562
+Name Marshy Swamplands~
+Desc You are standing in a marshy muddy area.  There is no real path here, but 
+because of the foliage, the only way you could hope to go is north, or east. 
+ 
+~
+Sector swamp~
+Exit north 23563
+EDesc Oh look, something speacial, more swamp!
+~
+Exit west 23544
+EDesc In this direction you see......
+ 
+ 
+ 
+ 
+More swamp!
+~
+End
+
+
+#23563
+Name Mucky Clearing~
+Desc You are standing in a large mucky clearing.  There are plants all around 
+you, and the earth here smells putrid.  Their is a strange scent in the air, 
+you can't quite tell what it is.  
+~
+Sector swamp~
+Mana 80
+Heal 80
+Exit north 23567
+EDesc In this direction, you see more swamp.
+~
+Exit east 23565
+EDesc In this direction, you see more swamp.
+~
+Exit south 23562
+EDesc In this direction, you see more swamp.
+~
+Exit west 23564
+EDesc In this direction, you see more swamp.
+~
+End
+
+
+#23564
+Name Small Clearing~
+Desc You are standing in a small clearing.  There are plants all around you, and 
+the earth here smells putrid.  There is a strange scent in the air.  The 
+foliage in all directions but east is extremely thick.  
+~
+Sector hills~
+Exit east 23563
+EDesc More swamp in this direction..
+~
+End
+
+
+#23565
+Name Muddy Path~
+Desc You are standing on a small mucky path.  All around, insects buzz, and frogs 
+croak.  There is a strange smell in this part of the swamp but it is hard to 
+tell where it is coming from.  
+~
+Sector swamp~
+Mana 80
+Heal 80
+Exit south 23566
+EDesc Oh look, more swamp...
+~
+Exit west 23563
+EDesc Oh look, more swamp..
+~
+End
+
+
+#23566
+Name Small Clearing~
+Desc This small clearing is similar to the rest of the swamp, mucky and wet.  The 
+foliage here is a little thinner, making a clearing.  The plant life grows 
+thick to the south, making an impassable barrier.  
+~
+Sector forest~
+Exit north 23565
+EDesc Looking in this direction you see more swamp.
+~
+End
+
+
+#23567
+Name Large Trail~
+Desc The ground here has been trampled by something big and heavy.  All around 
+you foliage has been ripped away, and there is a strange smell in the air.  
+This wide muddy path continues west.  The smaller path leaves south.  
+~
+Sector forest~
+Exit south 23563
+Exit west 23568
+End
+
+
+#23568
+Name Turn in the Large Trail~
+Desc You are standing in the middle of a large muddy trail.  Something big has 
+been through here as the path is trampled.  All around you, large clumps of 
+plants have been ripped up, and there is a strange odour in the air.  
+~
+Sector forest~
+Exit north 23569
+EDesc The Large trail extends in this direction.
+~
+Exit east 23567
+EDesc The Large trail extends in this direction.
+~
+End
+
+
+#23569
+Name Large Clearing~
+Desc This huge clearing smells unfamiliar and all around, vegetation has been 
+flattened.  In some places it looks like a large animal has been chewing the 
+reeds.  The foliage here is high and thick.  The only exit is to the south.  
+
+~
+Sector hills~
+Exit south 23568
+EDesc The large open trail continues in this direction.
+~
+End
+
+
+#23570
+Name Small Stone Path Beside the Pyramid~
+Desc This small stone path runs along the side of the pyramid.  Plants have 
+created large cracks here and there, and the swamp grows closely here.  To 
+the west is a long reed hut, made of wood, mud, and swamp grass, and to the 
+north, you can see a small field.  
+~
+Sector city~
+Exit north 23572
+EDesc You can see small feild in this direction.
+~
+Exit south 23527
+EDesc A ruined building in this directions.
+~
+Exit west 23571
+EDesc A long mud hut has been built in this direction.
+~
+End
+
+
+#23571
+Name The Front of the Mud Hut~
+Desc This long hut is made of mud, wood and reeds.  Another room extends off to 
+the west.  Rows of beds, and a sweaty smell hanging in the air suggest that 
+quite a few lizardmen live in this part of the village.  
+~
+Sector inside~
+Exit east 23570
+EDesc This doorway leads outside.
+~
+Exit west 23573
+EDesc The long hut streeches in this direction.
+~
+End
+
+
+#23572
+Name A Small Muddy Field~
+Desc You are standing in a small cleared out area which looks to be a place for 
+growing roots and crops.  The area is wet and muddy.  The mud is deep 
+brown-black, and looks like the perfect place to grow stuff.  There are 
+several plants, and roots growing here, some of them even look ripe for the 
+picking.  
+~
+Sector forest~
+Exit south 23570
+EDesc You see a small stone path in this direction.
+~
+End
+
+
+#23573
+Name The Back of the Mud Hut~
+Desc There are less beds here, and there is a small round hole in the roof.  This 
+room is probably a used as a meeting place of some sort.  A fire is burns 
+brightly here, illuminating the whole hut.  
+~
+Sector inside~
+Exit east 23571
+EDesc The large hut extends in this direction.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 23501 spec_cast_druid
+M 23509 spec_cast_cleric
+M 23512 spec_poison
+M 23522 spec_fido
+M 23523 spec_thief
+M 23527 spec_poison
+M 23532 spec_poison
+S
+
+
+
+#RESETS2
+M 0 23528 4 23552 2
+M 0 23528 4 23552 2
+M 0 23530 5 23554 1
+O 0 23513 -1 23555
+M 0 23510 5 23555 1
+M 0 23512 5 23556 1
+M 0 23514 1 23560 1
+E 0 23507 -1 wielded~
+E 0 23508 -1 torso~
+E 0 23527 -1 feet~
+M 0 23532 5 23562 2
+M 0 23532 5 23562 2
+M 0 23532 5 23566 1
+M 0 23531 5 23566 2
+M 0 23531 5 23566 2
+M 0 23531 5 23568 1
+M 0 23529 1 23569 1
+G 0 23550 -1
+O 0 23548 -1 23571
+M 0 23525 10 23571 1
+E 0 23519 -1 rwrist~
+E 0 23508 -1 torso~
+O 0 23547 -1 23572
+O 0 23546 -1 23572
+O 0 23545 -1 23572
+M 0 23524 10 23572 1
+E 0 23516 -1 neck1~
+E 0 23541 -1 torso~
+G 0 23549 -1
+G 0 23547 -1
+G 0 23546 -1
+G 0 23546 -1
+G 0 23546 -1
+G 0 23545 -1
+M 0 23525 10 23573 2
+E 0 23508 -1 torso~
+E 0 23519 -1 lwrist~
+M 0 23525 10 23573 2
+E 0 23508 -1 torso~
+E 0 23519 -1 rwrist~
+O 0 23520 -1 23573
+O 0 23548 -1 23573
+M 0 23510 5 23500 2
+M 0 23510 5 23500 2
+M 0 23532 5 23502 1
+M 0 23500 4 23503 2
+M 0 23500 4 23503 2
+M 0 23511 2 23505 2
+O 0 23500 -1 23508
+P 0 23501 1 23500 1
+P 0 23503 1 23500 1
+M 0 23501 2 23508 1
+E 0 23502 -1 hold~
+E 0 23504 -1 head~
+E 0 23505 -1 torso~
+O 0 23528 -1 23508
+M 0 23512 5 23509 1
+M 0 23510 5 23511 1
+M 0 23530 5 23511 1
+M 0 23528 4 23512 2
+M 0 23528 4 23512 2
+M 0 23532 5 23513 2
+M 0 23532 5 23513 2
+M 0 23502 1 23514 1
+G 0 23506 -1
+E 0 23507 -1 wielded~
+E 0 23508 -1 torso~
+E 0 23509 -1 shield~
+O 0 23512 -1 23516
+M 0 23513 1 23516 1
+E 0 23508 -1 torso~
+E 0 23507 -1 wielded~
+E 0 23516 -1 neck1~
+E 0 23527 -1 feet~
+M 0 23530 5 23517 1
+O 0 23510 -1 23518
+M 0 23503 1 23518 1
+E 0 23508 -1 torso~
+E 0 23509 -1 shield~
+M 0 23504 2 23518 2
+E 0 23508 -1 torso~
+E 0 23511 -1 wielded~
+M 0 23504 2 23518 2
+E 0 23508 -1 torso~
+E 0 23511 -1 wielded~
+O 0 23514 -1 23520
+M 0 23508 1 23520 1
+E 0 23508 -1 torso~
+G 0 23507 -1
+E 0 23517 -1 wielded~
+E 0 23518 -1 rwrist~
+E 0 23518 -1 lwrist~
+O 0 23514 -1 23521
+M 0 23507 1 23521 1
+E 0 23515 -1 about~
+M 0 23506 2 23521 2
+M 0 23506 2 23521 2
+M 0 23505 1 23521 1
+E 0 23516 -1 neck1~
+E 0 23519 -1 lwrist~
+O 0 23520 -1 23522
+O 0 23522 -1 23522
+P 0 23521 4 23522 4
+M 0 23521 1 23522 1
+E 0 23508 -1 torso~
+E 0 23516 -1 neck1~
+E 0 23542 -1 hold~
+G 0 23521 -1
+O 0 23514 -1 23526
+O 0 23524 -1 23526
+M 0 23518 4 23526 1
+E 0 23527 -1 feet~
+E 0 23537 -1 wielded~
+E 0 23534 -1 torso~
+E 0 23535 -1 shield~
+E 0 23516 -1 neck1~
+M 0 23523 1 23527 1
+E 0 23517 -1 wielded~
+E 0 23527 -1 feet~
+E 0 23516 -1 neck1~
+O 0 23523 -1 23530
+M 0 23509 1 23530 1
+E 0 23516 -1 neck1~
+E 0 23519 -1 rwrist~
+E 0 23518 -1 lwrist~
+E 0 23508 -1 torso~
+E 0 23524 -1 head~
+E 0 23525 -1 hold~
+O 0 23529 -1 23531
+M 0 23515 1 23531 1
+E 0 23530 -1 torso~
+E 0 23531 -1 lwrist~
+E 0 23531 -1 rwrist~
+E 0 23516 -1 neck1~
+E 0 23532 -1 wielded~
+E 0 23533 -1 head~
+E 0 23535 -1 shield~
+M 0 23516 2 23531 2
+E 0 23534 -1 torso~
+E 0 23536 -1 shield~
+E 0 23537 -1 wielded~
+M 0 23516 2 23531 2
+E 0 23534 -1 torso~
+E 0 23536 -1 shield~
+E 0 23537 -1 wielded~
+M 0 23530 5 23536 1
+M 0 23500 4 23537 2
+M 0 23500 4 23537 2
+O 0 23513 -1 23538
+M 0 23510 5 23539 2
+M 0 23512 5 23540 3
+M 0 23512 5 23540 3
+M 0 23512 5 23540 3
+M 0 23530 5 23540 1
+M 0 23526 4 23545 2
+M 0 23526 4 23545 2
+O 0 23514 -1 23546
+O 0 23538 -1 23546
+M 0 23520 5 23546 1
+E 0 23540 -1 wielded~
+E 0 23519 -1 lwrist~
+E 0 23541 -1 torso~
+M 0 23527 4 23548 2
+M 0 23527 4 23548 2
+M 0 23522 20 23549 3
+E 0 23543 -1 neck1~
+M 0 23522 20 23549 3
+E 0 23543 -1 neck1~
+M 0 23522 20 23549 3
+E 0 23543 -1 neck1~
+O 0 23544 -1 23549
+O 0 23538 -1 23550
+O 0 23514 -1 23550
+M 0 23520 5 23550 1
+E 0 23541 -1 torso~
+E 0 23540 -1 wielded~
+E 0 23518 -1 rwrist~
+E 0 23516 -1 neck1~
+M 0 23526 4 23551 2
+M 0 23526 4 23551 2
+M 0 23531 5 23551 2
+M 0 23531 5 23551 2
+M 0 23530 5 23551 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#23522
+title hag talks of cloak of shadows~
+code if hastoken $n 27154
+say So you seek the cloak of shadows, precious?
+say I suppose you'll be needing this.
+emote holds up a shiny needle the illuminates a shade of green.
+grin
+say I suppose I can let you borrow the needle.
+mob oload 23539 1 none 
+give needle $n
+say There is a man cloaked in darkness who will weave your cloak.
+say He lives some where east of Mekali in the forest.
+say A small hut built into the ground I think.
+say He should go by the name of Malache.
+mob oload 27155
+mob tgive 27155 $n
+else
+say The cloak of shadows? Perhaps you should visit the mrem ranger teacher first.
+endif
+~
+disabled false
+END
+
+#23519
+title random snarl~
+code snarl
+growl
+~
+disabled false
+END
+
+#23518
+title snarl~
+code snarl $n
+pmote $n jumps towards @, snarling!!
+snarl
+ 
+~
+disabled false
+END
+
+#23515
+title mushroom city?~
+code put mushroom basket
+put buckroot basket
+put root basket
+emote grunts.
+~
+disabled false
+END
+
+#23514
+title Highguards attack!~
+code pmote $q charges towards @, slashing with his spear!
+mob kill $q
+~
+disabled false
+END
+
+#23513
+title Do you remember?~
+code if race $n lizardman 
+nod $n
+else 
+mob remember $n
+mob delay 1
+endif
+~
+disabled false
+END
+
+#23512
+title SIR Lizi, of Lizardville~
+code if race $n lizardman
+lang lizardman 
+say Greetings, have you come to pay homage to me? 
+peer $n
+else
+lang human 
+say Who are you?!
+glare $n
+yell Guards! An intruder!
+point $n
+endif
+~
+disabled false
+END
+
+#23508
+title glaring~
+code if race $n lizardman
+lang lizardman
+say Welcome fellow lizardman, let me open the gate for you.
+unlock north
+open north
+smile $n 
+else 
+glare $n
+close north 
+lock north
+end if
+~
+disabled false
+END
+
+#23507
+title Trainer..~
+code if race $n lizardman
+lang lizardman 
+say Have you come to train?
+beam $n
+else 
+lang human
+Hey! Who are you!? Get out of here!
+growl $n
+end if
+~
+disabled false
+END
+
+#23504
+title Cackling old bi..uhh.. I mean witch~
+code if rand 33
+cackle
+else
+if rand 50
+emote stirs her cauldron.
+else
+emote stops stirring, and takes a spoon full of the brew.
+grimace
+emote goes back to stiring the cauldron.
+endif
+endif
+ 
+~
+disabled false
+END
+
+#23503
+title Old lady!~
+code Pmote $n stops stirring and turns to @!
+Human Hello my pretty!
+Pinch $n
+human Have you come to kiss me!?
+Cackle $n
+pmote $n goes back to stirring her cauldron, oblivious to @. 
+~
+disabled false
+END
+
+#23502
+title Rubbit Rubbit mr. Kermit!~
+code if rand 50
+emote croaks!  
+else
+lang native
+say `#`GRibbit ribbit!`^
+endif 
+~
+disabled false
+END
+
+#23500
+title Shaman's Greet~
+code if race $n lizardman
+emote dances around the room chanting!
+smile $n  
+lang lizardman
+say Greetings fellow Lizardman. 
+emote goes back to his chanting. 
+else 
+emote dances around the room chanting!
+human Who are you, and what do you want ?
+glare $n 
+human Get out, you disturb my ritual!
+yell GO!
+emote goes back to his chanting.
+end if 
+end if 
+~
+disabled false
+END
+
+#0
+
+
+#$

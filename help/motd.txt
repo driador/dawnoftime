@@ -1,0 +1,92 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword MOTD~
+helpflags hide_keywords hide_header_footer~
+category undefined~
+text `?`#`^***************************************************************************`+
+`^*`=? Welcome to a mud based on the Dawn of Time v1.69r,                      `^*`+
+`^*`=?  - If you are new to mudding, ask for help. (type 'newbie help please') `^*`+
+`^*`=?  - `YIf your name doesn't conform to 'help name policy' you might as well `^*`+
+`^*`=?    `Yrecreate now... (it is shown when you login)                         `^*`+
+`^*`=?  - `RPlease read the news for the latest on this mud.                     `^*`+
+`^*`=?  - `MMake sure you know the rules (sorry, I have to say it) (help rules)  `^*`+
+`^*`=?  - `BType 'Areas' to see a list of all areas and level ranges             `^*`+
+`^*`=?                                                                         `^*`+
+`^*`=? Happy mudding,                                                          `^*`+
+`^*`=?                                                                         `^*`+
+`^*`=? `GThe administration <email@thismud.dawnoftime.org>                       `^*`+
+`^*`=?                                                                         `^*`+
+`^***************************************************************************`=?`+
+`YNOTE: `xThis help entry SHOULD be changed/customised for this mud.  These 
+notes need to be removed.  Look into using `=_dawnftp which can be downloaded 
+for free from http://www.dawnoftime.org/dawnftp to edit the text within help 
+entries.`+
+ `+
+If this is a new mud which you have just started up and have just created a 
+player which you want to convert into an administrative character (commonly 
+called an immortal) read 'help `=_NEWMUD-GETTING-IMP' for further details.`+
+ 
+~
+END
+
+keyword IRC-MOTD~
+helpflags hide_keywords~
+category undefined~
+text `?`#
+`^*****************************************************************************
+`^*`=? Welcome to a mud based on the Dawn of Time,                               `^*
+`^*`=?  - If you are new to mudding, ask for help. (type 'ooc help me please')   `^*
+`^*`=?  - For those who have played other muds 'letgaining' is not required, but `^*
+`^*`=?    has huge advantages. (see help letgain)                                `^*
+`^*`=?  - If you aren't familar with the 'death system' here ;) see 'help death' `^*
+`^*`=?  - see help policy if you are interested in the policies of this mud.     `^*
+`^*`=?  - Make sure you know the rules (sorry, I have to say it) (help rules)    `^*
+`^*`=?  - Type 'Areas' to see a list of all areas and level ranges               `^*
+`^*`=? You are connecting to Dawn through an IRC gateway, The system you used    `^*
+`^*`=? to connect is located on a few large IRC networks.  Most players connect  `^*
+`^*`=? to the game using telnet or a mud client, if you are interested in trying `^*
+`^*`=? in trying this type `Yhelp `=_client`=? or `Yhelp `=_sites`=? once in the game.           `^*
+`^*`=? Happy mudding,                                                            `^*
+`^*`=?                                                                           `^*
+`^*`=? `YThe administration <email@thismud.dawnoftime.org>                         `^*
+`^*****************************************************************************`=?
+[Type Y to continue]
+~
+END
+
+keyword REMOVE-MOTD~
+category undefined~
+text *****************************************************************************
+ This is the Dawn of Time development site for the Dawn 1.69r release
+ 
+ The 1.69r release has been in development since June 2002 and had minimal 
+ testing.  The major sections of the code which have had development work 
+ include the rewriting of the language system (now olc based), and the core 
+ network code rewrite to support ipv6 connections.  You can find out more 
+ about ipv6 and getting free ipv6 connection from http://www.freenet6.net/
+ 
+ The purpose of this site, is to facilitate testing of the 1.69r prerelease 
+ code and development of the final 1.69r distribution (including help files
+ and areas).  Playing for the purpose of aiding in the testing of the code
+ is permited but you should be aware this development site will close upon
+ the release of 1.69r.  The current aim is to release 1.69r around the end
+ of the year.  This projection is based on the amount of development, 
+ testing and documentation to go.  It is possible this process will be
+ sped up if testers contribute helpfiles.
+ 
+ The code may not be stable at all times, as some major code changes have 
+ taken place and some significant changes to the internal structures within
+ the codebase are still being implemented.
+ 
+ - Kalahn, 14Nov03
+*****************************************************************************
+ 
+~
+END
+
+EOF~
+#$

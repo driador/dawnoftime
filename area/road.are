@@ -1,0 +1,781 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Dzagari Road~
+ShortName   ~
+Builders    None~
+VNUMs       19950 19999
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#19951
+Name eagle~
+ShortD an eagle~
+LongD An eagle flys here.~
+Desc You see a large and strong brown bird with very good eyesight. It looks
+at you with curiosity. A squirrel or a rabbit catchs its attention, and
+it flys away. 
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType peck
+AC 90 90 90 100
+Wealth 0
+Act    npc~
+AffBy  flying~
+Form   edible animal biped bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#19952
+Name canary~
+ShortD a canary~
+LongD A yellow canary flys here.~
+Desc You see a small yellow bird, singing happily. It appears to be a canary. 
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType peck
+AC 90 90 90 100
+Wealth 0
+Act    npc~
+AffBy  flying~
+Form   edible animal biped bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg GRALL 19955 30~
+END
+
+#19953
+Name vulture~
+ShortD a vulture~
+LongD A large black vulture flies here.~
+Desc You see a large black vulture flying here. It is a very large bird, and
+is circling in the sky, looking for something on the ground.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType peck
+AC 90 90 90 100
+Wealth 0
+Act    npc~
+AffBy  flying~
+Form   edible animal biped bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg GRALL 19953 30~
+END
+
+#19954
+Name vulture~
+ShortD a vulture~
+LongD A large black vulture stands here eating some rotted flesh.~
+Desc You see a large black vulture standing here eating some rotted flesh.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType peck
+AC 90 90 90 100
+Wealth 0
+Act    npc~
+Form   edible animal biped bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg GRALL 19952 30~
+END
+
+#19955
+Name small white goat~
+ShortD a goat~
+LongD A small white goat stands here.~
+Desc You see a small lively horned animal with long white hair. It appears 
+to be a small goat eating some green grass. It looks curiously at you 
+when you approach.
+~
+Race unique~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType charge
+AC 60 60 60 70
+Wealth 0
+Act    npc stay_area~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg GRALL 19956 10~
+END
+
+#19956
+Name small nanny-goat goat~
+ShortD a nanny-goat~
+LongD A small white nanny-goat stands here.~
+Desc You see a small lively horned animal with white hair. It appears to be
+a small goat eating some green grass. It looks curiously at you when you
+approach.
+~
+Race unique~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType charge
+AC 60 60 60 70
+Wealth 0
+Act    npc stay_area~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material flesh
+MProg GRALL 19956 10~
+END
+
+#19957
+Name small billy-goat goat~
+ShortD a billy-goat~
+LongD A small white billy-goat stands here.~
+Desc You see a small lively horned animal with white hair. It appears to be
+a small goat eating some green grass. It looks curiously at you when you
+approach.
+~
+Race unique~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 2d5+5
+DamDice 1d8+1
+DamType charge
+AC 60 60 60 70
+Wealth 0
+Act    npc stay_area~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material flesh
+MProg GRALL 19956 10~
+END
+
+#19958
+Name small white kid goat~
+ShortD a kid goat~
+LongD A small white kid goat stands here.~
+Desc You see a small lively horned animal with white hair, it appears to be
+a small goat eating some green grass. It looks curious at you when you
+approach.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType charge
+AC 90 90 90 100
+Wealth 0
+Act    npc stay_area~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg GRALL 19956 10~
+END
+
+#19959
+Name green snake~
+ShortD a green snake~
+LongD A long green snake is crawling here.~
+Desc You see a long green snake crawling on the ground. When you approach it
+hisses at you and trys to bite you. It appears to be a poisonous snake,
+covered with green and brown scales.
+~
+Race snake~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType bite
+AC 60 60 60 70
+Wealth 0
+Act    npc stay_area~
+Imm    poison~
+Res    poison~
+Vuln   cold~
+Form   edible poison animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg GREET 19951 100~
+END
+
+#19960
+Name rabbit~
+ShortD a rabbit~
+LongD A small white rabbit is here.~
+Desc You see a small rabbit with white hair. It is running around eating some
+green grass, and when you approach it runs away.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 100
+Wealth 0
+Act    npc stay_area~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg GRALL 19954 30~
+END
+
+#19961
+Name squirrel~
+ShortD a squirrel~
+LongD A small red squirrel is here.~
+Desc You see a small squirrel with long red hair. It is running around eating some
+small fruits, and when you approach it flees away.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 100
+Wealth 0
+Act    npc stay_area~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg GRALL 19954 30~
+END
+
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#19951
+Name Barren, Muddy Wasteland~
+Desc You are on a narrow and desolate path, the ground barren and muddy. 
+There are a few stunted trees here and there, but after a few moments
+of inspection you see that they are all dead. There is no sign of life
+here. You can see the walls of a large city to the north, and a path 
+from there and to the west.
+~
+RoomFlags no_mob~
+Sector field~
+Exit north 30449
+Exit east 30286
+Exit south 30443
+Exit west 19952
+EDesc The path goes west.
+~
+End
+
+
+#19952
+Name Barren, Muddy Wasteland~
+Desc You are on a narrow and desolate path, the ground barren and muddy. 
+There are few stunted trees here and there, but after a moment of
+inspection you see that they are all dead. The path goes east and 
+west.
+~
+Sector field~
+Exit east 19951
+EDesc The path goes east.
+~
+Exit west 19953
+EDesc The path goes west.
+~
+End
+
+
+#19953
+Name Barren Wasteland~
+Desc You are on a narrow and desolate path. There are few stunted trees here
+and there, but when you inspect the trees closely you see that they are
+dead. You see some tiny plants growing far away from the edge of the path.
+The path goes east and west.
+~
+Sector field~
+Exit north 30451
+Exit east 19952
+EDesc The path goes east.
+~
+Exit west 19954
+EDesc The path goes west.
+~
+End
+
+
+#19954
+Name Barren Wasteland~
+Desc You are on a narrow and desolate path. There are few stunted trees here
+and there, but when you inspect the trees closely you see that they are
+dead. You see some tiny plants growing far away from the edge of the path.
+The path goes east and west. Here and there you see small reptiles 
+sunning themselves. 
+~
+Sector field~
+Exit north 31106
+Exit east 19953
+EDesc The path goes east.
+~
+Exit west 19955
+EDesc The path goes west.
+~
+End
+
+
+#19955
+Name Barren Flatlands~
+Desc You are on a narrow east-west path. There are few stunted trees around,
+but after a moment of inspection you see that they are all dead. You see
+some small plants growing far away from the edge of the path.
+~
+Sector field~
+Exit north 31105
+Exit east 19954
+EDesc The path goes east.
+~
+Exit west 19956
+EDesc The path goes west.
+~
+End
+
+
+#19956
+Name Flatlands~
+Desc You are on a narrow path. The ground is covered with green grass, and
+small plants grow near the edge of the path. The path goes east and west,
+and occasionally you see a small rabbit or a squirrel fleeing when it 
+notices your approach.
+~
+RoomFlags no_mob~
+Sector field~
+Exit north 31104
+Exit east 19955
+EDesc The path goes east.
+~
+Exit west 19957
+EDesc The path goes west.
+~
+End
+
+
+#19957
+Name Green Flatlands~
+Desc You are on a narrow east-west path. The surrounding ground is covered 
+with green grass and colourful flowers. There are small plants and trees 
+here and there. You can hear a birds song from somewhere.  The ground 
+to the north seems to get a little swampy, and is under a few inches of 
+water in some places.  
+~
+Sector field~
+Exit north 31099
+Exit east 19956
+EDesc The path goes east.
+~
+Exit west 19958
+EDesc The path goes west.
+~
+End
+
+
+#19958
+Name Green Flatlands~
+Desc You are on a narrow east-west path. The surrounding ground is covered with 
+green grass and colourful flowers, and you see some small plants and trees 
+scattered about. Occasionally you see a small rabbit or a squirrel fleeing 
+when it notices your approach.
+~
+Sector field~
+Exit north 30158
+Exit east 19957
+EDesc The path goes east.
+~
+Exit west 19959
+EDesc The path goes west.
+~
+End
+
+
+#19959
+Name Green Flatlands~
+Desc You are on a narrow east-west path. The surrounding area is grassy and 
+there are many colourful flowers. Small trees and bushes are scattered
+around the area. From somewhere nearby you hear a bird chirping.
+
+~
+Sector field~
+ExtraDesc bushes ~
+When you examine the bushes you see a small path to the north.
+~
+Exit north 30338
+Exit east 19958
+EDesc The path goes east.
+~
+Exit west 19960
+EDesc The path goes west.
+~
+End
+
+
+#19960
+Name Rocky Flatlands~
+Desc You are on a narrow and rocky path. The ground is a bit rocky , but is still 
+covered with green grass and colorful flowers. Small plants, bushes and trees 
+grow here and there among the stones. The path goes east and west, and you can
+see mountains far to the west.
+~
+Sector field~
+Exit north 30335
+Exit east 19959
+EDesc The path goes east.
+~
+Exit west 19961
+EDesc The path goes west.
+~
+End
+
+
+#19961
+Name Rocky Flatlands~
+Desc You are on a narrow and rocky path. The ground is a bit rocky , but is still 
+covered with green grass and colorful flowers. Small plants, bushes and trees 
+grow here and there among the stones. The path goes east and west, and you can
+see mountains to the west.  A bird is singing somewhere nearby.
+~
+Sector hills~
+Exit north 30332
+Exit east 19960
+EDesc The path goes east.
+~
+Exit west 19962
+EDesc The path goes west.
+~
+End
+
+
+#19962
+Name Rocky Hills~
+Desc You are on a narrow and rocky path. The ground is a bit rocky , but is still 
+covered with green grass and colorful flowers. Small plants, bushes and trees 
+grow here and there among the stones. The path goes east and west, and you can
+see mountains to the west.
+~
+Sector hills~
+Exit north 30329
+Exit east 19961
+EDesc The path goes east.
+~
+Exit west 19963
+EDesc The path goes west.
+~
+End
+
+
+#19963
+Name Rocky Hills~
+Desc You are on a narrow and rocky path. The ground is a bit rocky , but is still 
+covered with green grass and colorful flowers. Small plants, bushes and trees 
+grow here and there among the stones. The path goes east and west, and you can
+see mountains not far to the west.
+~
+Sector hills~
+Exit north 30326
+Exit east 19962
+EDesc The path goes east.
+~
+Exit west 19964
+EDesc The path goes west.
+~
+End
+
+
+#19964
+Name Path through Hills~
+Desc You are on a narrow and rocky path. The ground is a bit rocky , but is still 
+covered with green grass and colorful flowers. Small plants, bushes and trees 
+grow here and there among the stones. The path goes east and west, and you can
+see mountains not far to the west.
+~
+Sector mountain~
+Exit north 30334
+Exit east 19963
+EDesc The path goes east.~
+Exit west 19965
+EDesc The path goes west.~
+End
+
+
+#19965
+Name Rocky Path~
+Desc You are on a narrow and rocky path which cuts through the hills.  The 
+ground is covered with grass and flowers, and there are many large grey
+stones scattered on the ground. The path goes east and west. To the south,
+you see some stones which appear to be unusually arranged.  
+~
+Sector mountain~
+ExtraDesc stones~
+When you examine the stones you see a small path to the south.
+~
+Exit north 30322
+Exit east 19964
+EDesc The path goes east.
+~
+Exit west 19966
+EDesc The path goes west.
+~
+End
+
+
+#19966
+Name Rocky Path~
+Desc You are on a narrow and rocky path which cuts through the hills.  The ground 
+is covered with grass and flowers, and there are many large grey stones 
+scattered on the ground.  The path goes east and west.  
+~
+Sector mountain~
+Exit north 30320
+Exit east 19965
+EDesc The path goes east.
+~
+Exit west 19967
+EDesc The path goes west.
+~
+End
+
+
+#19967
+Name Path Through Hills~
+Desc You are on a narrow and rocky path which winds through the hills.  There are 
+some large grey stones scattered on the ground, and colourful flowers here and
+there.  The path goes east, and to the north you see a small trail through 
+the rocky slopes.  The ground becomes much flatter to the west.  
+~
+Sector mountain~
+Exit north 19968
+EDesc The small trail goes north.
+~
+Exit east 19966
+EDesc The path goes east.
+~
+Exit west 30760
+End
+
+
+#19968
+Name Path Through Hills~
+Desc You are on a narrow and rocky path which winds through the hills.  There 
+are some large grey stones scattered on the ground, and here and there some 
+colourful flowers.  The path goes south through the hills, and north to a 
+small keep.  
+~
+Sector mountain~
+Exit north 30314
+Exit east 30320
+Exit south 19967
+EDesc A small trail goes south.
+~
+Exit west 30759
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 19953 spec_fido
+M 19954 spec_fido
+M 19959 spec_poison
+S
+
+
+
+#RESETS2
+M 0 19959 1 19953 1
+M 0 19953 2 19954 1
+M 0 19954 4 19954 1
+M 0 19952 2 19958 1
+M 0 19961 2 19959 1
+M 0 19960 2 19965 1
+M 0 19956 1 19966 1
+M 0 19957 1 19966 1
+M 0 19958 5 19966 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#19956
+title Goat~
+code if isnpc $n
+   look $n
+else
+   pmote $n looks at @.
+endif
+~
+disabled false
+END
+
+#19955
+title Canary~
+code if isnpc $n
+   look $n
+else
+   sing $n 
+endif
+~
+disabled false
+END
+
+#19954
+title Rabbit & Squirrel~
+code if isnpc $n
+   look $n
+else
+   pmote $n looks at @ with fear and flees.
+   west
+endif
+~
+disabled false
+END
+
+#19953
+title Vulture's cry~
+code if isnpc $n
+   look $n
+else
+   emote cries loudly and lands on the ground.
+endif
+~
+disabled false
+END
+
+#19952
+title Vulture's look~
+code if isnpc $n
+   look $n
+else
+   pmote $n look at @ and cries loudly.
+endif
+~
+disabled false
+END
+
+#19951
+title Snack~
+code if rand 75
+look $n
+else
+pmote $n hisses at @.
+pmote $n bites @ on the leg.
+mob cast poison $n
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

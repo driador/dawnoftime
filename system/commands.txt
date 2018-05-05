@@ -1,0 +1,4377 @@
+Name         north~
+Log         nolog~
+END
+
+Name         east~
+Log         nolog~
+END
+
+Name         south~
+Log         nolog~
+END
+
+Name         west~
+Log         nolog~
+END
+
+Name         up~
+Log         nolog~
+END
+
+Name         ne~
+Log         nolog~
+END
+
+Name         northeast~
+Log         nolog~
+END
+
+Name         se~
+Log         nolog~
+END
+
+Name         southeast~
+Log         nolog~
+END
+
+Name         sw~
+Log         nolog~
+END
+
+Name         southwest~
+Log         nolog~
+END
+
+Name         nw~
+Log         nolog~
+END
+
+Name         northwest~
+Log         nolog~
+END
+
+Name         down~
+Log         nolog~
+END
+
+Name         t~
+Log         nolog~
+END
+
+Name         g~
+Log         nolog~
+END
+
+Name         f~
+Log         nolog~
+END
+
+Name         r~
+Log         nolog~
+END
+
+Name         wiz~
+Level        92
+Log         normal~
+END
+
+Name         wizgrantlist~
+Level        98
+Log         normal~
+END
+
+Name         got~
+Level        92
+Log         normal~
+END
+
+Name         at~
+Level        93
+Log         normal~
+Show         1
+END
+
+Name         bu~
+Log         normal~
+END
+
+Name         ba~
+Log         normal~
+END
+
+Name         ban~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         :~
+Log         normal~
+END
+
+Name         affec~
+Log         normal~
+END
+
+Name         autolis~
+Log         normal~
+END
+
+Name         bec~
+Log         normal~
+END
+
+Name         c~
+Log         normal~
+END
+
+Name         chat~
+Log         normal~
+END
+
+Name         cas~
+Log         normal~
+END
+
+Name         com~
+Log         normal~
+END
+
+Name         class~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         sum~
+Log         normal~
+END
+
+Name         charinf~
+Level        92
+Log         always~
+END
+
+Name         channe~
+Log         normal~
+END
+
+Name         command~
+Log         normal~
+END
+
+Name         compar~
+Log         normal~
+END
+
+Name         enveno~
+Log         normal~
+END
+
+Name         exit~
+Log         normal~
+END
+
+Name         ge~
+Log         normal~
+END
+
+Name         grou~
+Log         normal~
+END
+
+Name         inventor~
+Log         normal~
+END
+
+Name         iwher~
+Level        92
+Log         normal~
+END
+
+Name         loo~
+Log         normal~
+END
+
+Name         lis~
+Log         normal~
+END
+
+Name         kil~
+Log         normal~
+END
+
+Name         mwher~
+Level        92
+Log         normal~
+END
+
+Name         mot~
+Log         normal~
+END
+
+Name         mob~
+Log         never~
+END
+
+Name         mq~
+Log         never~
+END
+
+Name         orde~
+Log         palways~
+END
+
+Name         pinf~
+Level        93
+Log         normal~
+END
+
+Name         practic~
+Log         normal~
+END
+
+Name         prefi~
+Level        92
+Log         normal~
+END
+
+Name         res~
+Log         normal~
+END
+
+Name         recit~
+Log         normal~
+END
+
+Name         retel~
+Log         normal~
+END
+
+Name         repl~
+Log         normal~
+END
+
+Name         sa~
+Log         normal~
+END
+
+Name         soc~
+Level        102
+Log         normal~
+END
+
+Name         socket~
+Level        96
+Log         normal~
+END
+
+Name         secon~
+Log         normal~
+END
+
+Name         sl~
+Log         normal~
+END
+
+Name         stan~
+Log         normal~
+END
+
+Name         scor~
+Log         normal~
+END
+
+Name         tel~
+Log         normal~
+END
+
+Name         unloc~
+Log         normal~
+END
+
+Name         wh~
+Log         normal~
+END
+
+Name         wiel~
+Log         normal~
+END
+
+Name         seevnu~
+Level        92
+Log         normal~
+END
+
+Name         wor~
+Log         normal~
+END
+
+Name         '~
+Log         normal~
+END
+
+Name         "~
+Log         normal~
+END
+
+Name         \~
+Log         normal~
+END
+
+Name         ,~
+Log         normal~
+END
+
+Name         .~
+Log         normal~
+END
+
+Name         >~
+Log         normal~
+END
+
+Name         [~
+Level        98
+Log         normal~
+END
+
+Name         ]~
+Level        99
+Log         normal~
+END
+
+Name         =~
+Level        92
+Log         normal~
+END
+
+Name         -~
+Level        92
+Log         normal~
+END
+
+Name         /~
+Log         normal~
+END
+
+Name         add~
+Log         always~
+Show         1
+END
+
+Name         affects~
+Log         normal~
+Show         1
+END
+
+Name         afk~
+Log         normal~
+Show         1
+END
+
+Name         alia~
+Log         normal~
+END
+
+Name         alias~
+Log         normal~
+Show         1
+END
+
+Name         alignstat~
+Log         normal~
+Show         1
+END
+
+Name         amote~
+Log         normal~
+END
+
+Name         answer~
+Log         normal~
+Show         1
+END
+
+Name         ansi~
+Log         normal~
+END
+
+Name         apply~
+Log         normal~
+Show         1
+END
+
+Name         append~
+Log         normal~
+END
+
+Name         areas~
+Log         normal~
+Show         1
+END
+
+Name         areasalpha~
+Log         normal~
+Show         1
+END
+
+Name         askname~
+Log         normal~
+Show         1
+END
+
+Name         attune~
+Log         normal~
+Show         1
+END
+
+Name         autoanswer~
+Log         always~
+Show         1
+END
+
+Name         autoassist~
+Log         normal~
+Show         1
+END
+
+Name         autodamage~
+Log         normal~
+Show         1
+END
+
+Name         autoexit~
+Log         normal~
+Show         1
+END
+
+Name         autoexamine~
+Log         normal~
+Show         1
+END
+
+Name         autogold~
+Log         normal~
+Show         1
+END
+
+Name         autokeepalive~
+Log         normal~
+Show         1
+END
+
+Name         autolandonrest~
+Log         normal~
+Show         1
+END
+
+Name         autolist~
+Log         normal~
+Show         1
+END
+
+Name         autoloot~
+Log         normal~
+Show         1
+END
+
+Name         autopeek~
+Log         normal~
+Show         1
+END
+
+Name         autopkassist~
+Log         normal~
+Show         1
+END
+
+Name         autorecall~
+Log         normal~
+Show         1
+END
+
+Name         autoreformat~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         autoself~
+Log         normal~
+Show         1
+END
+
+Name         autosubdue~
+Log         normal~
+Show         1
+END
+
+Name         autosplit~
+Log         normal~
+Show         1
+END
+
+Name         autotrack~
+Log         normal~
+Show         1
+END
+
+Name         autowhoinvislogin~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         autowizilogin~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         autowraptells~
+Log         normal~
+Show         1
+END
+
+Name         awareness~
+Log         normal~
+Show         1
+END
+
+Name         backstab~
+Log         normal~
+Show         1
+END
+
+Name         bank~
+Log         always~
+Show         1
+END
+
+Name         bash~
+Log         normal~
+Show         1
+END
+
+Name         battlelag~
+Log         normal~
+Show         1
+END
+
+Name         berserk~
+Log         normal~
+Show         1
+END
+
+Name         becomeactive~
+Log         always~
+Show         1
+END
+
+Name         brandish~
+Log         normal~
+Show         1
+END
+
+Name         brief~
+Log         normal~
+Show         1
+END
+
+Name         bs~
+Log         normal~
+END
+
+Name         bug~
+Log         normal~
+Show         1
+END
+
+Name         buy~
+Log         normal~
+Show         1
+END
+
+Name         brew~
+Log         normal~
+Show         1
+END
+
+Name         build~
+Log         normal~
+Show         1
+END
+
+Name         bury~
+Log         normal~
+Show         1
+END
+
+Name         bypassduel~
+Log         always~
+Show         1
+END
+
+Name         cannibalize~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         cast~
+Log         normal~
+Show         1
+END
+
+Name         changes~
+Log         normal~
+Show         1
+END
+
+Name         channels~
+Log         normal~
+Show         1
+END
+
+Name         circle~
+Log         normal~
+Show         1
+END
+
+Name         close~
+Log         normal~
+Show         1
+END
+
+Name         claw~
+Log         normal~
+Show         1
+END
+
+Name         classstats~
+Log         normal~
+Show         1
+END
+
+Name         classinfo~
+Log         normal~
+Show         1
+END
+
+Name         clantalk~
+Log         normal~
+Show         1
+END
+
+Name         cranks~
+Log         normal~
+END
+
+Name         clanranks~
+Log         normal~
+Show         1
+END
+
+Name         color~
+Log         normal~
+END
+
+Name         colour~
+Log         normal~
+Show         1
+END
+
+Name         collect~
+Log         normal~
+Show         1
+END
+
+Name         cook~
+Log         normal~
+Show         1
+END
+
+Name         combine~
+Log         normal~
+Show         1
+END
+
+Name         commands~
+Log         normal~
+END
+
+Name         commune~
+Log         normal~
+Show         1
+END
+
+Name         compact~
+Log         normal~
+Show         1
+END
+
+Name         compare~
+Log         normal~
+Show         1
+END
+
+Name         consider~
+Log         normal~
+Show         1
+END
+
+Name         continue~
+Log         normal~
+END
+
+Name         count~
+Log         normal~
+Show         1
+END
+
+Name         cskinfo~
+Log         normal~
+END
+
+Name         cspinfo~
+Log         normal~
+END
+
+Name         credits~
+Log         normal~
+Show         1
+END
+
+Name         ctalk~
+Log         normal~
+END
+
+Name         ctime~
+Log         normal~
+Show         1
+END
+
+Name         dawnftp~
+Log         normal~
+Show         1
+END
+
+Name         delet~
+Log         always~
+END
+
+Name         delete~
+Log         always~
+Show         1
+END
+
+Name         demote~
+Log         always~
+Show         1
+END
+
+Name         description~
+Log         normal~
+Show         1
+END
+
+Name         diagnose~
+Log         normal~
+Show         1
+END
+
+Name         dig~
+Log         normal~
+Show         1
+END
+
+Name         dirt~
+Log         normal~
+Show         1
+END
+
+Name         disarm~
+Log         normal~
+Show         1
+END
+
+Name         dismount~
+Log         normal~
+Show         1
+END
+
+Name         donate~
+Log         normal~
+Show         1
+END
+
+Name         drink~
+Log         normal~
+Show         1
+END
+
+Name         drag~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         draw~
+Log         normal~
+Show         1
+END
+
+Name         drop~
+Log         normal~
+Show         1
+END
+
+Name         duel~
+Log         always~
+Show         1
+END
+
+Name         acceptduel~
+Log         always~
+Show         1
+END
+
+Name         declineduel~
+Log         always~
+Show         1
+END
+
+Name         declineooc~
+Log         always~
+Show         1
+END
+
+Name         eat~
+Log         normal~
+Show         1
+END
+
+Name         emote~
+Log         normal~
+Show         1
+END
+
+Name         empty~
+Log         normal~
+Show         1
+END
+
+Name         enter~
+Log         normal~
+Show         1
+END
+
+Name         envenom~
+Log         normal~
+Show         1
+END
+
+Name         equipment~
+Log         normal~
+Show         1
+END
+
+Name         examine~
+Log         normal~
+Show         1
+END
+
+Name         exits~
+Log         normal~
+Show         1
+END
+
+Name         fill~
+Log         normal~
+Show         1
+END
+
+Name         fullexits~
+Log         normal~
+Show         1
+END
+
+Name         forget~
+Log         normal~
+Show         1
+END
+
+Name         fork~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         flee~
+Log         normal~
+Show         1
+END
+
+Name         flame~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         flourish~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         flip~
+Log         normal~
+Show         1
+END
+
+Name         fly~
+Log         normal~
+Show         1
+END
+
+Name         follow~
+Log         normal~
+Show         1
+END
+
+Name         for~
+Level        93
+Log         always~
+END
+
+Name         forage~
+Log         normal~
+Show         1
+END
+
+Name         freevnum~
+Log         normal~
+Show         1
+END
+
+Name         gain~
+Log         normal~
+Show         1
+END
+
+Name         gamble~
+Log         always~
+Show         1
+END
+
+Name         gamesettings~
+Log         normal~
+Show         1
+END
+
+Name         get~
+Log         normal~
+Show         1
+END
+
+Name         genname~
+Log         normal~
+Show         1
+END
+
+Name         give~
+Log         normal~
+Show         1
+END
+
+Name         glance~
+Log         normal~
+Show         1
+END
+
+Name         gs~
+Log         normal~
+Show         1
+END
+
+Name         go~
+Log         normal~
+END
+
+Name         goooc~
+Log         always~
+Show         1
+END
+
+Name         gore~
+Log         normal~
+Show         1
+END
+
+Name         gouge~
+Log         normal~
+Show         1
+END
+
+Name         gprompt~
+Log         normal~
+Show         1
+END
+
+Name         grab~
+Log         normal~
+Show         1
+END
+
+Name         grats~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         group~
+Log         normal~
+Show         1
+END
+
+Name         groups~
+Log         normal~
+Show         1
+END
+
+Name         heal~
+Log         normal~
+Show         1
+END
+
+Name         help~
+Log         normal~
+Show         1
+END
+
+Name         helpcat~
+Log         normal~
+Show         1
+END
+
+Name         helplist~
+Log         normal~
+Show         1
+END
+
+Name         helpprev~
+Log         normal~
+Show         1
+END
+
+Name         helpnext~
+Log         normal~
+Show         1
+END
+
+Name         herbalism~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         herblore~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         hide~
+Log         normal~
+Show         1
+END
+
+Name         history~
+Level        1
+Log         normal~
+Show         1
+END
+
+Name         hit~
+Log         normal~
+END
+
+Name         hlook~
+Level        1
+Log         normal~
+Show         1
+END
+
+Name         hold~
+Log         normal~
+Show         1
+END
+
+Name         ic~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         ictime~
+Log         normal~
+Show         1
+END
+
+Name         ideas~
+Log         normal~
+Show         1
+END
+
+Name         info~
+Log         normal~
+Show         1
+END
+
+Name         introduce~
+Log         normal~
+Show         1
+END
+
+Name         inventory~
+Log         normal~
+Show         1
+END
+
+Name         invitelist~
+Log         normal~
+Show         1
+END
+
+Name         ispell~
+Log         normal~
+Show         1
+END
+
+Name         kick~
+Log         normal~
+Show         1
+END
+
+Name         kill~
+Log         normal~
+Show         1
+END
+
+Name         kneel~
+Log         normal~
+Show         1
+END
+
+Name         knock~
+Log         normal~
+Show         1
+END
+
+Name         lay~
+Log         normal~
+Show         1
+END
+
+Name         lag~
+Log         always~
+Show         1
+END
+
+Name         language~
+Log         normal~
+Show         1
+END
+
+Name         land~
+Log         normal~
+Show         1
+END
+
+Name         laston~
+Log         normal~
+Show         1
+END
+
+Name         lastonreload~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         letter~
+Log         normal~
+Show         1
+END
+
+Name         lines~
+Log         normal~
+Show         1
+END
+
+Name         list~
+Log         normal~
+Show         1
+END
+
+Name         loc~
+Log         always~
+END
+
+Name         lock~
+Log         normal~
+Show         1
+END
+
+Name         lockers~
+Log         always~
+Show         1
+END
+
+Name         look~
+Log         normal~
+Show         1
+END
+
+Name         lore~
+Log         normal~
+Show         1
+END
+
+Name         losepet~
+Log         normal~
+Show         1
+END
+
+Name         mccp~
+Log         normal~
+Show         1
+END
+
+Name         metric~
+Log         normal~
+Show         1
+END
+
+Name         misc~
+Log         normal~
+Show         1
+END
+
+Name         mixflask~
+Log         always~
+Show         1
+END
+
+Name         mode~
+Log         always~
+Show         1
+END
+
+Name         moon~
+Log         normal~
+Show         1
+END
+
+Name         moot~
+Log         always~
+Show         1
+END
+
+Name         motd~
+Log         normal~
+Show         1
+END
+
+Name         msp~
+Log         always~
+Show         1
+END
+
+Name         mudstats~
+Log         always~
+Show         1
+END
+
+Name         mudftp~
+Log         normal~
+Show         1
+END
+
+Name         mxp~
+Log         always~
+Show         1
+END
+
+Name         mxpreflect~
+Log         always~
+Show         1
+END
+
+Name         name_b4short~
+Log         always~
+Show         1
+END
+
+Name         name_only_4known~
+Log         always~
+Show         1
+END
+
+Name         needlepoint~
+Log         always~
+Show         1
+END
+
+Name         news~
+Log         normal~
+Show         1
+END
+
+Name         newbietalk~
+Log         normal~
+Show         1
+END
+
+Name         nofollow~
+Log         normal~
+Show         1
+END
+
+Name         nomisc~
+Log         normal~
+Show         1
+END
+
+Name         nosummon~
+Log         normal~
+Show         1
+END
+
+Name         nocharm~
+Log         normal~
+Show         1
+END
+
+Name         nonames~
+Log         normal~
+Show         1
+END
+
+Name         noheromsg~
+Level        90
+Log         normal~
+Show         1
+END
+
+Name         notes~
+Log         normal~
+Show         1
+END
+
+Name         noteach~
+Log         normal~
+Show         1
+END
+
+Name         nspeak~
+Log         always~
+Show         1
+END
+
+Name         ntalk~
+Log         normal~
+Show         1
+END
+
+Name         ntell~
+Log         always~
+Show         1
+END
+
+Name         nreply~
+Log         always~
+Show         1
+END
+
+Name         ooc~
+Log         normal~
+Show         1
+END
+
+Name         open~
+Log         normal~
+Show         1
+END
+
+Name         order~
+Log         palways~
+Show         1
+END
+
+Name         outcast~
+Log         always~
+Show         1
+END
+
+Name         outfit~
+Log         normal~
+Show         1
+END
+
+Name         ownerlist~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         panic~
+Log         normal~
+Show         1
+END
+
+Name         password~
+Log         never~
+Show         1
+END
+
+Name         peek~
+Log         normal~
+Show         1
+END
+
+Name         pick~
+Log         normal~
+Show         1
+END
+
+Name         place~
+Log         always~
+Show         1
+END
+
+Name         pkinfo~
+Log         normal~
+Show         1
+END
+
+Name         pmote~
+Log         palways~
+END
+
+Name         pour~
+Log         normal~
+Show         1
+END
+
+Name         pose~
+Level        102
+Log         normal~
+Show         1
+END
+
+Name         pounce~
+Log         normal~
+Show         1
+END
+
+Name         practice~
+Log         normal~
+Show         1
+END
+
+Name         pray~
+Log         normal~
+Show         1
+END
+
+Name         promote~
+Log         always~
+Show         1
+END
+
+Name         prompt~
+Log         normal~
+Show         1
+END
+
+Name         push~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         put~
+Log         normal~
+Show         1
+END
+
+Name         quaff~
+Log         normal~
+Show         1
+END
+
+Name         question~
+Log         normal~
+Show         1
+END
+
+Name         quester~
+Log         always~
+Show         1
+END
+
+Name         qpoints~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         qui~
+Log         normal~
+END
+
+Name         quiet~
+Log         normal~
+Show         1
+END
+
+Name         quit~
+Log         normal~
+Show         1
+END
+
+Name         racestats~
+Log         normal~
+Show         1
+END
+
+Name         raceinfo~
+Log         normal~
+Show         1
+END
+
+Name         ride~
+Log         normal~
+Show         1
+END
+
+Name         read~
+Log         normal~
+Show         1
+END
+
+Name         recall~
+Log         normal~
+Show         1
+END
+
+Name         recite~
+Log         normal~
+Show         1
+END
+
+Name         remove~
+Log         normal~
+Show         1
+END
+
+Name         rent~
+Log         normal~
+Show         1
+END
+
+Name         replay~
+Log         normal~
+Show         1
+END
+
+Name         replaychannels~
+Log         normal~
+Show         1
+END
+
+Name         replayroom~
+Log         normal~
+Show         1
+END
+
+Name         reply~
+Log         normal~
+Show         1
+END
+
+Name         report~
+Log         normal~
+Show         1
+END
+
+Name         requestooc~
+Log         always~
+Show         1
+END
+
+Name         requestletgain~
+Log         always~
+Show         1
+END
+
+Name         rpsheet~
+Log         normal~
+Show         1
+END
+
+Name         rptell~
+Log         always~
+Show         1
+END
+
+Name         rpreply~
+Log         always~
+Show         1
+END
+
+Name         cletgain~
+Log         always~
+Show         1
+END
+
+Name         rletgain~
+Log         always~
+Show         1
+END
+
+Name         cancelletgain~
+Log         always~
+Show         1
+END
+
+Name         rescue~
+Log         normal~
+END
+
+Name         rest~
+Log         normal~
+Show         1
+END
+
+Name         retell~
+Log         normal~
+Show         1
+END
+
+Name         retreat~
+Log         normal~
+Show         1
+END
+
+Name         rules~
+Log         normal~
+Show         1
+END
+
+Name         save~
+Log         normal~
+Show         1
+END
+
+Name         rsay~
+Log         normal~
+END
+
+Name         say~
+Log         normal~
+Show         1
+END
+
+Name         saymote~
+Log         normal~
+Show         1
+END
+
+Name         sayto~
+Log         normal~
+Show         1
+END
+
+Name         scan~
+Log         normal~
+Show         1
+END
+
+Name         score~
+Log         normal~
+Show         1
+END
+
+Name         scroll~
+Log         normal~
+Show         1
+END
+
+Name         scribe~
+Log         normal~
+Show         1
+END
+
+Name         search~
+Log         normal~
+Show         1
+END
+
+Name         set~
+Level        97
+Log         always~
+Show         1
+END
+
+Name         setage~
+Log         always~
+Show         1
+END
+
+Name         setdeity~
+Level        98
+Log         normal~
+Show         1
+END
+
+Name         setichour~
+Level        100
+Log         normal~
+Show         1
+END
+
+Name         setrooms~
+Log         always~
+Show         1
+END
+
+Name         second~
+Log         normal~
+Show         1
+END
+
+Name         seek~
+Log         normal~
+Show         1
+END
+
+Name         sell~
+Log         normal~
+Show         1
+END
+
+Name         shadow~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         sharpen~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         show~
+Log         normal~
+Show         1
+END
+
+Name         showaffects~
+Log         normal~
+Show         1
+END
+
+Name         showmisc~
+Log         always~
+Show         1
+END
+
+Name         sheathe~
+Log         normal~
+Show         1
+END
+
+Name         sit~
+Log         normal~
+Show         1
+END
+
+Name         skills~
+Log         normal~
+Show         1
+END
+
+Name         skillgroups~
+Log         normal~
+Show         1
+END
+
+Name         slice~
+Log         normal~
+Show         1
+END
+
+Name         sleep~
+Log         normal~
+Show         1
+END
+
+Name         smote~
+Log         normal~
+END
+
+Name         sneak~
+Log         normal~
+Show         1
+END
+
+Name         social~
+Level        102
+Log         normal~
+Show         1
+END
+
+Name         socials~
+Log         normal~
+Show         1
+END
+
+Name         socshow~
+Log         always~
+Show         1
+END
+
+Name         spells~
+Log         normal~
+Show         1
+END
+
+Name         spinfo~
+Log         normal~
+Show         1
+END
+
+Name         sinfo~
+Log         normal~
+Show         1
+END
+
+Name         sing~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         speedwalk~
+Log         always~
+Show         1
+END
+
+Name         split~
+Log         normal~
+Show         1
+END
+
+Name         stand~
+Log         normal~
+Show         1
+END
+
+Name         steal~
+Log         normal~
+Show         1
+END
+
+Name         story~
+Log         normal~
+Show         1
+END
+
+Name         study~
+Log         normal~
+Show         1
+END
+
+Name         surrender~
+Log         normal~
+Show         1
+END
+
+Name         subdue~
+Log         always~
+Show         1
+END
+
+Name         summon~
+Log         normal~
+Show         1
+END
+
+Name         take~
+Log         normal~
+Show         1
+END
+
+Name         tame~
+Log         normal~
+Show         1
+END
+
+Name         teach~
+Log         normal~
+Show         1
+END
+
+Name         tell~
+Log         normal~
+Show         1
+END
+
+Name         tether~
+Log         normal~
+Show         1
+END
+
+Name         throw~
+Log         normal~
+Show         1
+END
+
+Name         date~
+Log         normal~
+Show         1
+END
+
+Name         time~
+Log         normal~
+Show         1
+END
+
+Name         title~
+Log         normal~
+Show         1
+END
+
+Name         train~
+Log         normal~
+Show         1
+END
+
+Name         tracks~
+Log         normal~
+Show         1
+END
+
+Name         trip~
+Log         normal~
+Show         1
+END
+
+Name         typo~
+Log         normal~
+Show         1
+END
+
+Name         unalias~
+Log         normal~
+Show         1
+END
+
+Name         unlock~
+Log         normal~
+Show         1
+END
+
+Name         unread~
+Log         normal~
+Show         1
+END
+
+Name         untether~
+Log         normal~
+Show         1
+END
+
+Name         uptime~
+Log         normal~
+Show         1
+END
+
+Name         value~
+Log         normal~
+Show         1
+END
+
+Name         vanish~
+Log         normal~
+Show         1
+END
+
+Name         visible~
+Log         normal~
+Show         1
+END
+
+Name         unhide~
+Log         normal~
+END
+
+Name         vote~
+Log         always~
+Show         1
+END
+
+Name         wake~
+Log         normal~
+Show         1
+END
+
+Name         wear~
+Log         normal~
+Show         1
+END
+
+Name         weather~
+Log         normal~
+Show         1
+END
+
+Name         whisper~
+Log         normal~
+Show         1
+END
+
+Name         who~
+Log         normal~
+Show         1
+END
+
+Name         whois~
+Log         normal~
+Show         1
+END
+
+Name         whoformat~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         wield~
+Log         normal~
+Show         1
+END
+
+Name         wimpy~
+Log         normal~
+Show         1
+END
+
+Name         wizlist~
+Log         normal~
+Show         1
+END
+
+Name         worship~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         worth~
+Log         normal~
+Show         1
+END
+
+Name         money~
+Log         normal~
+END
+
+Name         gold~
+Log         normal~
+END
+
+Name         silver~
+Log         normal~
+END
+
+Name         yell~
+Log         normal~
+Show         1
+END
+
+Name         testyell~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         zap~
+Log         normal~
+Show         1
+END
+
+Name         boneshatter~
+Level        92
+Log         always~
+END
+
+Name         charge~
+Level        92
+Log         always~
+END
+
+Name         conceal~
+Level        92
+Log         always~
+END
+
+Name         cutoff~
+Level        92
+Log         always~
+END
+
+Name         dervish~
+Level        92
+Log         always~
+END
+
+Name         entangle~
+Level        92
+Log         always~
+END
+
+Name         hobble~
+Level        92
+Log         always~
+END
+
+Name         hurl~
+Level        92
+Log         always~
+END
+
+Name         overhead~
+Level        92
+Log         always~
+END
+
+Name         shieldcleave~
+Level        92
+Log         always~
+END
+
+Name         vault~
+Level        92
+Log         always~
+END
+
+Name         automap~
+Log         always~
+Show         1
+END
+
+Name         autoreset~
+Log         always~
+Show         1
+END
+
+Name         autosaymote~
+Log         always~
+Show         1
+END
+
+Name         autosaycolourcodes~
+Log         always~
+Show         1
+END
+
+Name         autovote~
+Log         always~
+Show         1
+END
+
+Name         map~
+Log         always~
+Show         1
+END
+
+Name         mapclear~
+Log         always~
+Show         1
+END
+
+Name         nomapexits~
+Log         always~
+Show         1
+END
+
+Name         nomapblanks~
+Log         always~
+Show         1
+END
+
+Name         areamap~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         scalemap~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         scalemxp~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         mapnum~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         fullmap~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         amap~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         dump~
+Level        100
+Log         always~
+END
+
+Name         reboo~
+Level        98
+Log         normal~
+END
+
+Name         shutdow~
+Level        98
+Log         normal~
+END
+
+Name         sla~
+Level        97
+Log         normal~
+END
+
+Name         invis~
+Level        92
+Log         normal~
+END
+
+Name         admintalk~
+Level        98
+Log         normal~
+Show         1
+END
+
+Name         addclan~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         addcourt~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         addmoot~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         addscript~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         advance~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         allow~
+Level        97
+Log         always~
+END
+
+Name         allow~
+Level        97
+Log         always~
+END
+
+Name         allowimmtalk~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         anote~
+Level        98
+Log         normal~
+END
+
+Name         anote~
+Level        98
+Log         normal~
+END
+
+Name         atell~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         atlevel~
+Level        94
+Log         normal~
+Show         1
+END
+
+Name         ban~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         banedit~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         bardify~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         breaktell~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         boon~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         castatlevel~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         chardesc~
+Level        1
+Log         always~
+Show         1
+END
+
+Name         charhistory~
+Level        1
+Log         always~
+Show         1
+END
+
+Name         charinfo~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         charnotes~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         checkbug~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         checkclanbank~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         checkcode~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         checkdead~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         checkhelps~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         checklog~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         checkirc~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         checkbalance~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         checkexits~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         checkmoblog~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         checkooc~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         checkmultilog~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         checknewbie~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         checknsup~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         checkntalk~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         checktypos~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         checkban~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         cinfo~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         clist~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         clanlist~
+Level        92
+Log         normal~
+END
+
+Name         class~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         createspell~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         clone~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         cwhere~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         codetalk~
+Level        92
+Log         normal~
+END
+
+Name         clear_createcount~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         councillist~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         delmoot~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         delscript~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         delquest~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         deny~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         disable~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         disconnect~
+Level        97
+Log         always~
+Show         1
+END
+
+Name         disallowpkill~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         dlook~
+Level        1
+Log         normal~
+Show         1
+END
+
+Name         dofor~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         dream~
+Level        92
+Log         normal~
+END
+
+Name         echo~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         editcharnote~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         exitlist~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         exlist~
+Level        96
+Log         always~
+END
+
+Name         fadein~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         fadeout~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         flag~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         freeze~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         force~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         mforce~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         nforce~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         forcetick~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         gecho~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         got~
+Level        92
+Log         normal~
+END
+
+Name         goecho~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         goto~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         herbedit~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         holylist~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         holylight~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         holyname~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         holyspeech~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         holywalk~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         holyvnum~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         hotreboot~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         hightalk~
+Level        99
+Log         normal~
+Show         1
+END
+
+Name         ignoremulti~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         hideareas~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         immtalk~
+Log         normal~
+END
+
+Name         immget~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         immtitle~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         immwiznet~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         immwiznetc~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         imotd~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         incognito~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         inote~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         inroom~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         iwizi~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         iwhere~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         jail~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         ktell~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         lastoncouncil~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         lastonremove~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         lastonstats~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         langedit~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         letgain~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         lethero~
+Level        97
+Log         always~
+Show         1
+END
+
+Name         listscripts~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         listquest~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         load~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         localechos~
+Level        1
+Log         always~
+END
+
+Name         localecho~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         log~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         memory~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         mixedit~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         mixshow~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         mythostalk~
+Level        92
+Log         normal~
+END
+
+Name         mwhere~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         mpdump~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         mplist~
+Level        2
+Log         always~
+Show         1
+END
+
+Name         mpstat~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         mudclientstats~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         mxpinfo~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         newbielock~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         noble~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         nochannel~
+Level        2
+Log         always~
+END
+
+Name         nochannels~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         noemote~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         norp~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         noshout~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         notell~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         noterestrict~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         nopray~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         nsupport~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         owhere~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         listletgain~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         listmoot~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         clearletgain~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         offletgain~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         offlineletgain~
+Level        93
+Log         always~
+END
+
+Name         offmoot~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         declinelet~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         declineletgain~
+Level        93
+Log         always~
+END
+
+Name         page~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         pdisable~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         peace~
+Level        95
+Log         normal~
+Show         1
+END
+
+Name         pecho~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         penalty~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         penable~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         permban~
+Level        97
+Log         always~
+END
+
+Name         permban~
+Level        97
+Log         always~
+END
+
+Name         permrawcol~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         pinfo~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         playerlock~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         pload~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         poofin~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         poofout~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         prefix~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         pracsystester~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         protect~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         purge~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         qdie~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         rawcolour~
+Log         always~
+Show         1
+END
+
+Name         reboot~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         rebootresolver~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         removequester~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         rename~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         resolve~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         restore~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         release~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         return~
+Level        1
+Log         always~
+END
+
+Name         return~
+Level        1
+Log         always~
+END
+
+Name         rpobjload~
+Level        1
+Log         always~
+END
+
+Name         rpsupport~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         runscript~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         rwhere~
+Level        94
+Log         normal~
+Show         1
+END
+
+Name         seevnum~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         send~
+Level        1
+Log         always~
+Show         1
+END
+
+Name         setalliance~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         setrace~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         settendency~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         sgive~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         short~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         showaffectprofile~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         showban~
+Level        95
+Log         normal~
+END
+
+Name         shutdown~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         silently~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         slay~
+Level        97
+Log         always~
+Show         1
+END
+
+Name         snoop~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         snote~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         sockets~
+Level        96
+Log         normal~
+Show         1
+END
+
+Name         social_import~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         socedit~
+Level        96
+Log         always~
+END
+
+Name         socialedit~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         spdebug~
+Level        100
+Log         normal~
+Show         1
+END
+
+Name         stat~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         string~
+Level        91
+Log         always~
+Show         1
+END
+
+Name         stripaff~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         stransfer~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         switch~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         switchprefix~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         oextended~
+Level        91
+Log         always~
+Show         1
+END
+
+Name         olcwizi~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         owizi~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         tadvance~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         teleport~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         telnetga~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         telnetga~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         trapset~
+Level        1
+Log         always~
+Show         1
+END
+
+Name         trapshow~
+Level        1
+Log         normal~
+Show         1
+END
+
+Name         trapremove~
+Level        1
+Log         always~
+Show         1
+END
+
+Name         transfer~
+Level        93
+Log         always~
+Show         1
+END
+
+Name         trust~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         testhelps~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         tgive~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         tremove~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         ttimer~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         tjunk~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         toprpers~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         twhere~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         undeny~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         unletgain~
+Level        97
+Log         always~
+Show         1
+END
+
+Name         unlethero~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         update~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         updatemagic~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         webpass~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         where~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         whovis~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         whoinvis~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         whotext~
+Level        101
+Log         always~
+Show         1
+END
+
+Name         wizhelp~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         wizinvis~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         wizlistedit~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         wiznet~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         wiznetc~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         wiznet2~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         wiznet2c~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         wiznet3~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         wiznet3c~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         wiznetdefault~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         violate~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         visualdebug~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         vnum~
+Level        94
+Log         normal~
+Show         1
+END
+
+Name         vnummap~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         xpen~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         zecho~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         zoecho~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         notenet~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         skillgroupedit~
+Level        100
+Log         always~
+END
+
+Name         skgroupedit~
+Level        100
+Log         always~
+END
+
+Name         skgrpedit~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         gameedit~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         asave~
+Log         always~
+Show         1
+END
+
+Name         aslist~
+Log         olc~
+Show         1
+END
+
+Name         alist~
+Log         olc~
+Show         1
+END
+
+Name         aroomlist~
+Log         always~
+Show         1
+END
+
+Name         autobalance~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         bolist~
+Log         olc~
+Show         1
+END
+
+Name         bollist~
+Log         olc~
+Show         1
+END
+
+Name         bovlist~
+Log         olc~
+Show         1
+END
+
+Name         bmlist~
+Log         olc~
+Show         1
+END
+
+Name         bmllist~
+Log         olc~
+Show         1
+END
+
+Name         bmvlist~
+Log         olc~
+Show         1
+END
+
+Name         hlist~
+Log         olc~
+Show         1
+END
+
+Name         resets~
+Log         olc~
+Show         1
+END
+
+Name         redit~
+Log         olc~
+Show         1
+END
+
+Name         rlist~
+Log         olc~
+Show         1
+END
+
+Name         brlist~
+Log         olc~
+Show         1
+END
+
+Name         rpurge~
+Log         olc~
+Show         1
+END
+
+Name         medi~
+Log         normal~
+END
+
+Name         medit~
+Log         olc~
+Show         1
+END
+
+Name         mlist~
+Log         olc~
+Show         1
+END
+
+Name         mobloglist~
+Log         always~
+Show         1
+END
+
+Name         mxpmodlist~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         mobhelp~
+Log         always~
+Show         1
+END
+
+Name         ifhelp~
+Log         always~
+Show         1
+END
+
+Name         aedit~
+Log         olc~
+Show         1
+END
+
+Name         ashow~
+Log         olc~
+Show         1
+END
+
+Name         oedit~
+Log         olc~
+Show         1
+END
+
+Name         olist~
+Log         olc~
+Show         1
+END
+
+Name         oshow~
+Log         olc~
+Show         1
+END
+
+Name         hedit~
+Log         olc~
+Show         1
+END
+
+Name         hsave~
+Log         olc~
+Show         1
+END
+
+Name         mshow~
+Log         olc~
+Show         1
+END
+
+Name         mpshow~
+Log         olc~
+Show         1
+END
+
+Name         rshow~
+Log         olc~
+Show         1
+END
+
+Name         mpedit~
+Log         olc~
+Show         1
+END
+
+Name         vlist~
+Log         olc~
+Show         1
+END
+
+Name         olcgoto~
+Log         always~
+Show         1
+END
+
+Name         pkill~
+Log         normal~
+Show         1
+END
+
+Name         pknote~
+Log         normal~
+Show         1
+END
+
+Name         pbackstab~
+Log         normal~
+END
+
+Name         pbs~
+Log         normal~
+END
+
+Name         pip~
+Level        98
+Log         always~
+END
+
+Name         pipe~
+Level        98
+Log         always~
+END
+
+Name         syste~
+Level        98
+Log         always~
+END
+
+Name         system~
+Level        98
+Log         always~
+END
+
+Name         crashloo~
+Level        100
+Log         always~
+END
+
+Name         crashloop~
+Level        100
+Log         always~
+END
+
+Name         mpreset~
+Level        1
+Log         always~
+Show         1
+END
+
+Name         mpinfo~
+Level        1
+Log         always~
+Show         1
+END
+
+Name         mptrace~
+Level        1
+Log         always~
+Show         1
+END
+
+Name         showplayerlist~
+Level        100
+Log         always~
+END
+
+Name         reducelaston~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         remort~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         resetroo~
+Level        94
+Log         normal~
+END
+
+Name         resetroom~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         resetare~
+Level        95
+Log         normal~
+END
+
+Name         resetarea~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         rinfo~
+Level        96
+Log         normal~
+Show         1
+END
+
+Name         showplayerlist~
+Level        100
+Log         always~
+END
+
+Name         commandsnoop~
+Level        96
+Log         always~
+END
+
+Name         comedit~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         csnoop~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         dedit~
+Level        96
+Log         always~
+Show         1
+END
+
+Name         owritepassw~
+Level        99
+Log         always~
+END
+
+Name         overwritepassw~
+Level        99
+Log         always~
+END
+
+Name         overwritepassword~
+Level        99
+Log         always~
+END
+
+Name         owritepassword~
+Level        99
+Log         always~
+END
+
+Name         owritepasswd~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         objrestrict~
+Level        91
+Log         always~
+Show         1
+END
+
+Name         savedeitydb~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         saveherbs~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         savemixdb~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         relookup~
+Level        98
+Log         always~
+Show         1
+END
+
+Name         raceedit~
+Level        95
+Log         olc~
+Show         1
+END
+
+Name         npcinfo~
+Level        92
+Log         olc~
+Show         1
+END
+
+Name         racelist~
+Level        96
+Log         olc~
+Show         1
+END
+
+Name         classedit~
+Level        96
+Log         olc~
+Show         1
+END
+
+Name         write_skills~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         write_languages~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         cedit~
+Level        100
+Log         olc~
+Show         1
+END
+
+Name         clanedit~
+Level        100
+Log         olc~
+Show         1
+END
+
+Name         write_classes~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         read_classes~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         write_skillgroups~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         read_nameprofiles~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         write_nameprofiles~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         saveclans~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         loadclans~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         write_comtable~
+Level        99
+Log         always~
+Show         1
+END
+
+Name         saveraces~
+Level        95
+Log         always~
+Show         1
+END
+
+Name         savequestdb~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         savegameset~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         loadgameset~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         saveautostat~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         loadautostat~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         savecorpses~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         loadcorpses~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         material_list~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         sedit~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         sshow~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         spsklist~
+Level        92
+Log         always~
+Show         1
+END
+
+Name         qedit~
+Level        94
+Log         always~
+Show         1
+END
+
+Name         :~
+Log         normal~
+END
+
+Name         immtalk~
+Log         normal~
+END
+
+Name         saycolour~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         saycolor~
+Level        92
+Log         normal~
+END
+
+Name         motecolour~
+Level        92
+Log         normal~
+Show         1
+END
+
+Name         motecolor~
+Level        92
+Log         normal~
+END
+
+Name         textsearch~
+Level        92
+Log         always~
+END
+
+Name         debugroom~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         debugmob~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         debugobject~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         makecorefile~
+Level        100
+Log         always~
+Show         1
+END
+
+Name         detect_oldstyle_note_writing~
+Log         always~
+END
+
+EOF~

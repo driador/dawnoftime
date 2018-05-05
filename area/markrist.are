@@ -1,0 +1,3698 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Markrist Island~
+ShortName   Markrist Island~
+Builders    None~
+Credits     Braem~
+VNUMs       10000 10100
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   markrist~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#10021
+Name dolphin porpoise~
+ShortD a dolphin~
+LongD A dolphin leaps gracefully through the waves.~
+Desc This sleek shipfish, also known as a dolphin, seems right at home in the
+water.  It seems to be in a playful mood now, leaping through the waves
+with such grace and beauty that it almost seems unreal.
+~
+Race unique~
+Align 2 2
+Level 10
+Hitroll 0
+HitDice 2d5+20
+ManaDice 1d6+120
+DamDice 2d4+2
+DamType thrust
+AC 10 10 10 40
+Wealth 0
+Act    npc dont_wander stay_area wimpy indoors~
+AffBy  detect_invis detect_hidden infrared swim~
+Off    dodge fast assist_all~
+Imm    drowning~
+Res    charm fire mental~
+Vuln   lightning~
+Form   edible sentient biped mountable mammal~
+Part   head heart brains guts eye fins tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#10022
+Name serpent sea monster~
+ShortD a sea serpent~
+LongD A huge serpent raises its head from the water!~
+Desc This huge serpentine beast is something from a horrible nightmare.  Its
+long, jagged teeth are covered with the rotting flesh of its previous
+victims, and wisps of fire occasionally escape from its mouth.  It is
+covered with tough-looking scales, and its head is topped with
+two sharp horns.
+~
+Race unique~
+Align -3 -1
+Level 25
+Hitroll 1
+HitDice 4d5+115
+ManaDice 4d5+150
+DamDice 2d10+7
+DamType chomp
+AC -80 -80 -80 -50
+Wealth 0
+Act    npc dont_wander scavenger no_tame stay_area warrior indoors~
+AffBy  detect_invis detect_magic detect_hidden berserk swim~
+Off    bash berserk dodge tail crush~
+Imm    drowning~
+Res    bash fire acid poison~
+Vuln   pierce cold lightning~
+Form   edible poison animal mountable reptile cold_blood~
+Part   head heart brains guts ear long_tongue fins tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#10023
+Name rough-looking sailor~
+ShortD a sailor~
+LongD A rough-looking sailor walks by.~
+Desc This fellow looks like he has been at sea for a long time.  He has a full beard,
+which is quite dirty, and is covered with tattoos.  He has a scowl on his
+face, and appears to be heading towards a tavern to spend his pay on
+wine and women before he heads out to sea again.
+~
+Race human~
+Align -2 0
+Level 14
+Hitroll 0
+HitDice 3d5+60
+ManaDice 2d5+150
+DamDice 1d12+4
+DamType punch
+AC -10 -10 -10 10
+Wealth 140
+Act    npc no_tame stay_area warrior~
+Off    bash dodge kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10024
+Name dockworker large man~
+ShortD a dockworker~
+LongD A large dock worker carries a crate by you.~
+Desc This huge, sweaty, fellow has was given this job not for his brains but
+his brawn.  He carries about huge crates filled with heavy goods as if
+they were made of feathers, which is what keeps the trade going in
+this busy harbor.
+~
+Race human~
+Align 1 1
+Level 15
+Hitroll 1
+HitDice 3d5+67
+ManaDice 3d5+150
+DamDice 2d6+4
+DamType punch
+AC -20 -20 -20 0
+Wealth 150
+Act    npc scavenger no_tame stay_area warrior noautosocial~
+Off    bash dodge fast kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10025
+Name fisherman~
+ShortD a fisherman~
+LongD A fisherman carries an armful of nets by you.~
+Desc This thin fellow staggers by carrying a load of nets towards some unknown
+destination.  He reeks of fish and his own natural odor, and wears
+several days stubble on his face.
+~
+Race human~
+Align -1 1
+Level 12
+Hitroll 0
+HitDice 2d5+50
+ManaDice 1d10+120
+DamDice 1d10+3
+DamType punch
+AC 0 0 0 20
+Wealth 120
+Act    npc scavenger no_tame stay_area warrior~
+Off    dodge trip~
+Res    drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#10026
+Name smuggler thief figure black cloaked~
+ShortD a smuggler~
+LongD A black-cloaked figure slinks by you.~
+Desc This slender individual is completely covered in a black cloak, making it
+hard if not impossible to tell who or what it is.  It looks like it
+carries a large bundle under its arms, and continually moves its head
+from side to side, scanning for some unkown person.
+~
+Race human~
+Align -2 -2
+Level 23
+Hitroll 1
+HitDice 4d5+115
+ManaDice 3d5+150
+DamDice 2d10+7
+DamType punch
+AC -80 -90 -90 -60
+Wealth 230
+Act    npc no_tame stay_area thief~
+AffBy  detect_invis detect_hidden sneak hide dark_vision~
+Off    backstab dodge kick dirt_kick trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#10027
+Name smuggler thief black cloaked figure~
+ShortD a smuggler~
+LongD A black-cloaked figure crouches here.~
+Desc This figure is completely wrapped in a black cloak, making it impossible to 
+see who or what is beneath.  It is crouched in front of this door, hiding 
+behind a pile of debris.  You see the glint of steel coming from within the 
+folds of its cloak, but it quickly vanishes.  
+~
+Race human~
+Align -2 -2
+Level 30
+Hitroll 1
+HitDice 5d6+150
+ManaDice 5d5+150
+DamDice 4d6+8
+DamType punch
+AC -110 -110 -110 -90
+Wealth 300
+Act    npc dont_wander no_tame stay_area thief~
+AffBy  detect_invis detect_magic detect_hidden dark_vision~
+Off    backstab dodge fast kick dirt_kick trip assist_vnum~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+MProg SPEECH 10000 map~
+MProg SPEECH 10001 price~
+MProg SPEECH 10002 dragon~
+MProg GIVE 10003 811~
+MProg GIVE 10004 30520~
+MProg SPEECH 10006 diamond~
+MProg GIVE 10005 23780~
+END
+
+#10028
+Name harbor master~
+ShortD the harbor master~
+LongD The harbor master stands here.~
+Desc This tall, portly man serves as the harbor master for Markrist Island.
+It is his duty to make sure all the ships  pay their port fees, and he
+keeps track of what ships are due in and where the ships of Markrist are
+currently bound.  It is also his duty to stop the smugglers which have
+plagued Markrist in recent years.
+~
+Race human~
+Align -2 -1
+Level 35
+Hitroll 0
+HitDice 5d6+215
+ManaDice 5d6+210
+DamDice 4d7+11
+DamType punch
+AC -120 -120 -120 -90
+Wealth 350
+Act    npc dont_wander no_tame stay_area wimpy warrior~
+AffBy  detect_invis detect_magic detect_hidden~
+Off    bash dodge kick~
+Imm    summon~
+Res    cold poison disease~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10029
+Name huge brutish thug~
+ShortD a thug~
+LongD A huge, brutish thug swaggers by.~
+Desc This fellow makes his living breaking the kneecaps of people like you,
+and he looks like he is pretty good at it, too.  His bulging muscles
+and many scars leave little doubt that this scum has come out on top on
+almost every fight he has ever been in.
+~
+Race human~
+Align -2 -2
+Level 20
+Hitroll 1
+HitDice 4d5+90
+ManaDice 3d5+100
+DamDice 4d5+5
+DamType pound
+AC -50 -40 -50 -30
+Wealth 200
+Act    npc no_tame stay_area warrior~
+Off    bash berserk dodge parry trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#10030
+Name woman prostitute dead eyed~
+ShortD a prostitute~
+LongD A dead-eyed woman saunters up to you.~
+Desc This woman looks like she lost any will to live long ago.  Her eyes are
+empty of any emotion, and the smile she flashes you is a complete
+act.  She wears a thick layer of rouge, but that doesn't serve to hide
+the sickly pallor of her skin.
+~
+Race human~
+Align -1 1
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+100
+DamDice 2d4+2
+DamType punch
+AC 10 10 10 40
+Wealth 100
+Act    npc no_tame stay_area warrior~
+Off    dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#10031
+Name dirty waif child~
+ShortD a waif~
+LongD A dirty waif scampers by.~
+Desc This small child either has no parents, or none that care to look after
+it.  It is dressed in filthy rags that barely cover its starving body. 
+A layer of dirt and grime also serves to cloth the poor creature.  It
+scampers by with a bunch of its fellows, all of them in pursuit of a
+poor, hapless cat.
+~
+Race human~
+Align -3 1
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d5+100
+DamDice 1d6+1
+DamType punch
+AC 60 60 60 100
+Wealth 0
+Act    npc scavenger no_tame stay_area thief~
+Off    dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#10032
+Name cityguard guardsman guard~
+ShortD a guardsman~
+LongD A guardsman strolls by.~
+Desc This man has been charged by the king and the Council of Lords to keep
+peace in the city and hunt those who break the law.  Unfortunately, a
+long career and a good deal of cynicism have twisted this man's
+perspectives a bit.  He still keeps the peace, but turns a blind eye to a
+great deal of the crimes around him in exchange for a healthy bonus
+from the underground elements of Markrist.
+~
+Race human~
+Align -1 -1
+XPMod 110
+Level 20
+Hitroll 2
+HitDice 4d5+90
+ManaDice 3d5+120
+DamDice 4d4+5
+DamType punch
+AC -50 -50 -50 -30
+Wealth 200
+Act    npc scavenger no_tame stay_area warrior~
+Off    disarm dodge kick parry assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10033
+Name guard cityguard guardsman~
+ShortD a guardsman~
+LongD A guardsman stands here guarding the prefect's manor.~
+Desc This guardsman has been assigned to keep the prefect's manor safe from
+those who would like to have their pick of their lord's valuable possessions.
+These men are more loyal than many of their fellows and are adamant about
+protecting their lord's home from intruders.
+~
+Race human~
+Align 2 1
+XPMod 110
+Level 24
+Hitroll 2
+HitDice 4d5+110
+ManaDice 4d5+120
+DamDice 2d10+7
+DamType punch
+AC -70 -70 -70 -30
+Wealth 240
+Act    npc dont_wander no_tame aggressive warrior~
+AffBy  detect_invis detect_hidden~
+Off    disarm dodge fast kick parry assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10034
+Name fat barkeep stojnal~
+ShortD stojnal, the barkeep~
+LongD The fat barkeep of the Serpent stands behind the bar glaring at you.~
+Desc This fat old fellow has made the Serpent into what it is today: a seedy, run
+down ale-hall where rough sailors get drunk and mingle with cheap women.
+He wears a dirty, stained white shirt, and is currently cleaning out a mug
+with a rag that looks dirtier than the mug was before it was "cleaned".
+If you have the courage, he can serve you the Serpent's special: a mug
+of Rivengut ale.
+~
+Race human~
+Align -2 0
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+100
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10035
+Name barkeep azhra old woman~
+ShortD azhra, the barkeep~
+LongD A stern old woman stands behind the bar, scowling at her customers.~
+Desc This old woman is the owner and proprieter of this establishment, and
+like to run a tight ship.  She doesn't tolerate any fighting, and can
+easily enforce this rule, despite her advanced age.  She is also adept
+at mixing drinks, which makes her tavern popular in spite of the strict
+rules.
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+100
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#10036
+Name shipwright old man~
+ShortD a shipwright~
+LongD An old shipwright stands here overseeing the construction.~
+Desc This old man looks as if he has had many years of experience on the high 
+seas, experience which he has translated into a shrewd business sense 
+regarding all things nautical.  He currently operates the Markrist drydocks 
+in the name of the king, and has made the drydocks not only a necessity for 
+the government, but a profitable one at that.  
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+100
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge changer~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10037
+Name blacksmith master~
+ShortD the master blacksmith~
+LongD The master blacksmith stands here overseeing his workers.~
+Desc This huge old man has spent most of his life as a blacksmith in his own
+forge, and has become very successful working for the drydocks and
+the captains who dock here.  He has since retired from the hard labor
+he used to do, and now oversees his apprentices and journeymen as
+they not only learn a trade but also earn him much more gold than he
+could ever have earned on his own.
+~
+Race human~
+Align 3 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+100
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#10038
+Name mage old man hydrin~
+ShortD hydrin, the old mage~
+LongD An old mage sits behind the counter here with his eyes closed.~
+Desc This old man looks to be a mage, judging by his outrageous robes and
+his tall, conical hat.  Either that or someone who really wants to be a
+mage.  In any case, he is currently sitting on a tall stool behind the
+counter with the brim of his hat pulled over his eyes and a loud sound
+coming from his nose that sounds like snoring.  Soon after you enter,
+though, he quickly awakens, looks around in a daze, and smiles at you.
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+500
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area mage nopurge~
+AffBy  detect_invis detect_hidden~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#10039
+Name apprentice young man~
+ShortD a young apprentice~
+LongD A young man stands here with a bored expression on his face.~
+Desc This young man is wearing silly-looking purple robes that have strange,
+arcane-looking symbols stitched all over them.  He looks slightly bored
+and embarassed at the same time, as if he would rather be anywhere than
+here, and wearing anything but what he is.  Nonetheless, he turns towards
+you as you enter, and offers to help you find anything you need.
+~
+Race human~
+Align 1 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+500
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area mage nopurge changer~
+AffBy  detect_invis detect_hidden~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#10040
+Name dark beautiful woman smuggler~
+ShortD a beautiful smuggler~
+LongD A beautiful woman sits on a crate, waiting to sell illegal goods.~
+Desc This woman is almost beautiful beyond belief.  Long, dark tresses fall
+down past her shoulders, and her flawless dark skin is the stuff of
+poem and song.  Still, by the looks of things she is a smuggler, and a
+succesful one at that.  She smiles seductively at you, not alarmed at
+all by your presence.  In fact, she is willing to part with some of her
+goods at a reduced price in exchange for your silence about her
+little warehouse.
+~
+Race human~
+Align -2 -2
+Level 120
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -650
+Wealth 1000
+Act    npc dont_wander no_tame stay_area thief nopurge~
+AffBy  detect_invis detect_magic detect_hidden infrared dark_vision~
+Off    backstab dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#10041
+Name tanner leatherworker~
+ShortD a tanner~
+LongD The tanner is here, sewing a leather apron.~
+Desc This old man looks like he has been working at this profession since
+before you were born.  His thick, nimble finger sew stitches in the
+leather he holds with amazing speed, and his bright eyes are focused
+entirely on his work.  He looks up after a moment, however, ready to
+serve you.
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+100
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#10042
+Name tailor~
+ShortD a tailor~
+LongD The tailor sits at a table sewing a cheap dress.~
+Desc This man almost looks like a boy he is so young,  His curly brown locks
+rest over large blue eyes that look too innocent to be in this dark place.
+He seems skilled, though, even though most of his work is simply sewing
+simple clothing for peasants.  He does have a few finer pieces of clothing
+ready, though, and it is this that he offers to you when you enter.
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+100
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#10043
+Name baker woman large~
+ShortD a baker~
+LongD A large woman is kneading some dough here.~
+Desc This woman appears to the be baker, as she is currently preparing a loaf
+of cheap, dark bread to be put into the oven behind her.  She also seems
+to be a little overfond of sampling her own cooking, as evinced by her
+unusual girth.  Still, if she likes her own cooking that much, perhaps
+you will enjoy it as well.
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge changer~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#10044
+Name vegetable merchant~
+ShortD a vegetable merchant~
+LongD A merchant selling vegetables has his stand set up here.~
+Desc This young, enterprising man has bought and set up a cart here to sell
+dried fruits and vegetables he purchases from the mainland.  He has
+a selection of some of his finer produce on the cart, and also has a
+few bags of fruits and vegetables behind his cart that he reserves for
+orders from ship captains.
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+100
+DamDice 1d1+500
+DamType punch
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge changer~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#10045
+Name steward man prefect~
+ShortD the steward~
+LongD The prefect's steward stands here with a surprised look on his face.~
+Desc This older gentleman has been hired by the prefect for his skills at
+organization and his ability to mobilize the servants.  Right now he
+is caring for the prefect's manor in his absence, and is rather
+startled to find you here.
+~
+Race human~
+Align 2 2
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 1d1+99
+DamDice 2d8+5
+DamType punch
+AC -40 -40 -40 -10
+Wealth 200
+Act    npc dont_wander scavenger no_tame stay_area wimpy warrior~
+Off    dodge fast crush~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#10046
+Name servant maid~
+ShortD a maid~
+LongD A maid is here dusting a statue.~
+Desc This plump middle-aged woman seems rather surprised to see you.  She
+drops her feather duster and begins to shriek incoherently when she
+spots you.
+~
+Race human~
+Align 1 2
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 1d1+99
+DamDice 2d4+2
+DamType scratch
+AC 10 20 10 40
+Wealth 100
+Act    npc scavenger no_tame stay_area wimpy~
+Off    dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#10047
+Name cook old woman~
+ShortD a cook~
+LongD An old woman is here here stirring a pot of soup.~
+Desc This poor old woman can barely stand up, let alone try to cook a meal.
+By all rights she should be resting somewhere, ejoying her old age, but
+instead she is here, for some reason, cooking meals for the customers
+of the inn.  She may have been a good cook once, but she is so old now
+she can barely see her nose in front of her face, let alone the ingredients
+she puts into her creations.
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+99
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area nopurge~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#10048
+Name woodworker young man~
+ShortD the woodworker~
+LongD A broad-shouldered young man is here carving out a chest.~
+Desc This yound man has a very stern look on his face as he carves away
+at an ornate design on a walnut plank that he is preparing to add to
+a half-completed chest in front of him.  Its not that he appears to be
+bored or unhappy, just serious.  As he hears you enter he rises and
+bows low, then moves to show some of his completed works.
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+99
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10049
+Name dog stray big hound~
+ShortD a stray hound~
+LongD A stray hound wanders past you, sniffing the ground in search of food.~
+Desc This large dog looks as if he once lived in some lord's kennels and was
+fed whole horses for his meals.  Doubtless this is untrue, but he is
+still one of the largest hounds you have ever seen.  He currently
+pads through the crowd, searching for something vaguely horse-
+sized to fill his hollow stomach.
+~
+Race dog~
+Align 0 0
+XPMod 110
+Level 11
+Hitroll 0
+HitDice 3d5+65
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType chomp
+AC -20 -20 -20 10
+Wealth 0
+Act    npc scavenger stay_area noalign~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    fast~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#10050
+Name beggar old man~
+ShortD a beggar~
+LongD An old beggar lies here in the street, holding out a bowl for alms.~
+Desc This old man looks to be very poorly off.  He has lost one of his legs, and
+his body is covered with disgusting sores.  Most of the citizens seem to
+be giving him a wide berth, not wanting to catch whatever disease he
+has been inflicted with.  His sad eyes stare straight ahead, filled with
+little emotion other than despair.
+~
+Race human~
+Align 2 2
+XPMod 90
+Level 11
+Hitroll 0
+HitDice 2d5+22
+ManaDice 3d5+120
+DamDice 1d10+1
+DamType punch
+AC 10 10 10 50
+Wealth 5
+Act    npc dont_wander scavenger no_tame stay_area thief~
+AffBy  weaken slow~
+Off    dodge dirt_kick assist_vnum~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#10051
+Name witch wise woman old~
+ShortD a wise woman~
+LongD An old woman stands behind the counter, preparing a poultice.~
+Desc This old woman is rather unpleasing to the eye.  She appears to be missing
+one of her own eyes, and her face is covered with several hairy warts.
+Nonetheless, she is often sought after by the locals for her remedies,
+which are less expensive than the ones offered by the healers in the
+temples.
+~
+Race human~
+Align 2 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+99
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area cleric nopurge~
+AffBy  detect_invis detect_magic detect_hidden infrared dark_vision~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#10052
+Name fat old merchant~
+ShortD the fat merchant~
+LongD A fat old merchant sits behind the counter here.~
+Desc This old man has made himself quite rich through the years at this trade.
+His fine silk clothes cover a frame made overly bulky by his love of
+expensive foods and wines.  Nonetheless, he is a shrewd businessman,
+and has many contacts among the shipping industry, allowing him to
+make a tidy profit with a minimum of effort on his part.
+~
+Race human~
+Align 0 2
+Level 100
+Hitroll 0
+HitDice 1d1+999
+ManaDice 1d1+99
+DamDice 1d1+500
+DamType none
+AC -700 -700 -700 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area warrior nopurge~
+Off    dodge~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#10053
+Name sleazy innkeeper~
+ShortD the innkeeper~
+LongD The sleazy-looking innkeeper of the Gentle Rest sits here.~
+Desc This young man looks extremely dirty and extremely lazy.  He wears a
+tattered tunic and breeches, which are covered with grime, just as he
+is.  He is currently nodding off at his desk, but he awakens as soon
+as you enter.  He looks you over as if you have done him a great
+injustice by disturbing his rest, then sighs and stands to greet you.
+~
+Race human~
+Align -2 -1
+Level 22
+Hitroll 0
+HitDice 4d5+95
+ManaDice 2d10+120
+DamDice 4d4+6
+DamType punch
+AC -50 -50 -50 -10
+Wealth 220
+Act    npc dont_wander scavenger no_tame stay_area thief~
+Off    backstab dodge kick trip~
+Res    disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#10021
+Name cloth breeches~
+Short a pair of cloth breeches~
+Desc A pair of cloth breeches lie crumpled on the ground.~
+Level 1
+ItemType armor~
+Cost 11
+Asize 20
+Rsize 50
+Values 1 1 1 1 0
+Weight 20
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+ExtraDesc cloth breeches~
+These breeches are made of poorly woven cotton cloth and are stained
+and worn from heavy use.
+~
+End
+
+#10022
+Name crate~
+Short a big, wooden crate~
+Desc A big, wooden crate sits here.~
+Level 1
+ItemType container~
+Cost 12
+Asize 50
+Rsize 60
+Values 100 0 0 100 100
+Weight 3
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+ExtraDesc crate~
+Well, whaddya know.  It was empty!  No wonder he was having such an
+easy time carrying it.
+~
+End
+
+#10023
+Name smugglers smuggler's blackened dirk~
+Short a smuggler's dirk~
+Desc A blackened dirk lies here in the dirt.~
+Level 25
+ItemType weapon~
+Cost 535
+Asize 4
+Rsize 50
+Values dagger 2 10 pierce CD
+Weight 30
+Material steel~
+Extra    glow hum magic antigood nodegrade~
+Wear     take wield~
+Affect modifier -1 25 -1 hitroll 1 0
+Affect modifier -1 25 -1 damroll 1 0
+ExtraDesc dirk blackened~
+This small knife is very sharp, and is made of a light, black steel.  It is
+a very fine weapon, but the way it refuses to reflect any light makes you
+wonder about it.
+~
+End
+
+#10024
+Name dark cloak~
+Short a dark cloak~
+Desc A dark cloak lies in a crumpled pile here.~
+Level 20
+ItemType armor~
+Cost 410
+Asize 4
+Rsize 50
+Values 4 4 4 6 0
+Weight 3
+Material cloth~
+Extra    evil magic antigood nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 20 -1 saves -4 0
+ExtraDesc cloak dark~
+This cloak is made of finely woven silk, and seems unnaturally tough.  It
+is rather short for a cloak, used probably more for concealment than for
+warmth.
+~
+End
+
+#10025
+Name woolen dress~
+Short a woolen dress~
+Desc A cheap woolen dress lies in a heap here.~
+Level 1
+ItemType armor~
+Cost 13
+Asize 4
+Rsize 50
+Values 1 1 1 0 0
+Weight 3
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc dress woolen~
+This dress is made of thick, poorly spun wool.  It looks warm, but very
+itchy and dirty.
+~
+End
+
+#10026
+Name steel longsword~
+Short a `#`Ssteel`^ longsword~
+Desc A `#`Ssteel`^ longsword lies here.~
+Level 20
+ItemType weapon~
+Cost 425
+Asize 30
+Rsize 50
+Values sword 2 10 slash 0
+Weight 5
+Material steel~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 20 -1 hp 6 0
+Affect modifier -1 20 -1 hitroll 2 0
+ExtraDesc longsword steel~
+This weapon has been well-cared for, as it still gleams brightly even though
+you can tell by the slightly dulled edges and worn hilt that it has seen
+a long and faithful service to its former owner.
+~
+End
+
+#10027
+Name tarnished steel breastplate~
+Short a `#`ytarnished`^ steel breastplate~
+Desc A `#`ytarnished`^ steel breastplate lies here.~
+Level 20
+ItemType armor~
+Cost 400
+Asize 50
+Rsize 55
+Values 7 7 7 5 0
+Weight 15
+Material steel~
+Extra    nodegrade~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 20 -1 selfdiscipline -1 0
+Affect modifier -1 20 -1 ac -15 0
+ExtraDesc breastplate steel tarnished~
+This battered piece of armor looks like it will still absorb blows rather
+well, but it has obviously seen better days.  It is starting to rust, and
+the leather straps are pitted and cracked.
+~
+End
+
+#10028
+Name tarnished steel leggings~
+Short a pair of `#`ytarnished`^ steel leggings~
+Desc A pair of `#`ytarnished`^ steel leggings lie here.~
+Level 20
+ItemType armor~
+Cost 398
+Asize 40
+Rsize 55
+Values 5 5 5 4 0
+Weight 10
+Material steel~
+Extra    nodegrade~
+Wear     take legs~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 20 -1 quickness 2 0
+ExtraDesc leggings steel tarnished~
+This battered piece of armor looks like it will still absorb blows rather
+well, but it has obviously seen better days.  It is starting to rust, and
+the leather straps are pitted and cracked.
+~
+End
+
+#10029
+Name tarnished steel sleeves~
+Short a pair of `#`ytarnished`^ steel sleeves~
+Desc A pair of `#`ytarnished`^ steel sleeves lie here.~
+Level 20
+ItemType armor~
+Cost 399
+Asize 40
+Rsize 55
+Values 5 5 5 4 0
+Weight 11
+Material steel~
+Extra    nodegrade~
+Wear     take arms~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 20 -1 constitution 2 0
+ExtraDesc sleeves steel tarnished~
+This battered piece of armor looks like it will still absorb blows rather
+well, but it has obviously seen better days.  It is starting to rust, and
+the leather straps are pitted and cracked.
+~
+End
+
+#10030
+Name mug ale cheap~
+Short a mug of cheap ale~
+Desc A mug of cheap ale sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 6
+Asize 20
+Rsize 50
+Values 3 3 ale 0 0
+Weight 10
+Material ale~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10031
+Name mug rivengut ale~
+Short a mug of rivengut ale~
+Desc A mug of rivengut ale sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 18
+Asize 20
+Rsize 50
+Values 3 3 firebreather 0 0
+Weight 10
+Material ale~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10032
+Name whisky bottle~
+Short a bottle of whisky~
+Desc A bottle of whisky sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 30
+Asize 20
+Rsize 50
+Values 10 10 whisky 0 0
+Weight 10
+Material whisky~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10033
+Name mug azhra's special~
+Short a mug of azhra's special~
+Desc A mug of azhra's special sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 22
+Asize 20
+Rsize 50
+Values 5 5 'local specialty' 0 0
+Weight 10
+Material ale~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10034
+Name small skiff~
+Short a small skiff~
+Desc A small, sturdy skiff rests on its side here.~
+Level 1
+ItemType boat~
+Cost 202
+Asize 230
+Rsize 50
+Values 0 0 0 0 0
+Weight 400
+Material wood~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc boat small skiff~
+This small boat looks well-made, being constructed from stout wooden planks.
+It has a small seat in the center, and small metal hoops through which you
+can slip oars on either side of the seat.
+~
+End
+
+#10035
+Name flatboat~
+Short a flatboat~
+Desc A small wooden flatboat sits here.~
+Level 1
+ItemType boat~
+Cost 185
+Asize 200
+Rsize 50
+Values 0 0 0 0 0
+Weight 300
+Material wood~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10036
+Name chainmail vest~
+Short a chainmail vest~
+Desc A sturdy chainmail vest lies here.~
+Level 10
+ItemType armor~
+Cost 202
+Asize 60
+Rsize 50
+Values 3 4 3 2 0
+Weight 250
+Material steel~
+Extra    inventory nodegrade~
+Wear     take torso~
+End
+
+#10037
+Name sturdy steel shield~
+Short a sturdy `#`Ssteel`^ shield~
+Desc A sturdy `#`Ssteel`^ shield sits here.~
+Level 10
+ItemType armor~
+Cost 204
+Asize 50
+Rsize 50
+Values 4 4 4 3 0
+Weight 100
+Material steel~
+Extra    inventory nodegrade~
+Wear     take shield~
+End
+
+#10038
+Name huge axe~
+Short a huge axe~
+Desc A huge axe sits here.~
+Level 10
+ItemType weapon~
+Cost 200
+Asize 70
+Rsize 60
+Values axe 2 10 slash F
+Weight 150
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+End
+
+#10039
+Name dust~
+Short a package of `#`rreddish`^ dust~
+Desc A package full of `#`rreddish`^ powder sits here.~
+Level 8
+ItemType pill~
+Cost 838
+Asize 1
+Rsize 50
+Values 35 rage 'energy drain' '' ''
+Weight 10
+Material dust~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10040
+Name ancestor stone~
+Short an `#`cancestoral`^ stone~
+Desc A strange glowing stone sits here.~
+Level 35
+ItemType light~
+Cost 3195
+Asize 1
+Rsize 50
+Values 0 0 200 0 0
+Weight 10
+Material stone~
+Extra    glow hum magic antievil inventory nodegrade burnproof~
+Wear     take~
+Affect modifier -1 35 -1 mana 20 0
+Affect modifier -1 35 -1 hp 1 0
+Affect modifier -1 35 -1 ac -2 0
+Affect modifier -1 35 -1 hitroll 1 0
+Affect modifier -1 35 -1 damroll 1 0
+Affect modifier -1 35 -1 saves -1 0
+End
+
+#10041
+Name instrument sextant~
+Short a sextant~
+Desc A strange copper instrument sits here.~
+Level 30
+ItemType wand~
+Cost 605
+Asize 1
+Rsize 50
+Values 30 30 30 farsight 0
+Weight 10
+Material copper~
+Extra    magic nonmetal nodegrade~
+Wear     take hold~
+ExtraDesc sextant~
+This strange device can serve no purpose you can fathom, but apparently
+it must be used for something.
+~
+End
+
+#10042
+Name strange white portal~
+Short a strange white portal~
+Desc A strange white portal rises from the ground.~
+Level 0
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values 30000 0 F 3000 0
+Weight 0
+Material energy~
+Extra    magic nodegrade~
+End
+
+#10043
+Name potion bubbly red heroism~
+Short a potion of heroism~
+Desc A bubbly red potion sits here.~
+Level 15
+ItemType potion~
+Cost 768
+Asize 5
+Rsize 50
+Values 20 'giant strength' '' bless haste
+Weight 5
+Material potion~
+Extra    magic inventory~
+Wear     take hold~
+End
+
+#10044
+Name potion glowing green adventure~
+Short a potion of adventure~
+Desc A glowing green potion sits here.~
+Level 20
+ItemType potion~
+Cost 687
+Asize 5
+Rsize 50
+Values 20 teleport teleport invisibility ''
+Weight 5
+Material potion~
+Extra    magic inventory~
+Wear     take hold~
+End
+
+#10045
+Name potion white minty peace~
+Short a potion of peace~
+Desc A minty-smelling white potion sits here.~
+Level 15
+ItemType potion~
+Cost 528
+Asize 5
+Rsize 50
+Values 15 calm calm 'create buffet' 'create spring'
+Weight 5
+Material potion~
+Extra    magic inventory~
+Wear     take hold~
+End
+
+#10046
+Name potion clear blue disguise~
+Short a potion of disguise~
+Desc A clear blue potion sits almost unnoticed here.~
+Level 20
+ItemType potion~
+Cost 504
+Asize 5
+Rsize 50
+Values 25 invisibility '' '' ''
+Weight 5
+Material potion~
+Extra    magic inventory~
+Wear     take hold~
+End
+
+#10047
+Name quill pen~
+Short a quill pen~
+Desc A quill pen sits here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material feather~
+Extra    inventory nonmetal nodegrade~
+Wear     take hold~
+End
+
+#10048
+Name sheaf parchment~
+Short a sheaf of parchment~
+Desc A sheaf of parchment sits here.~
+Level 1
+ItemType scroll~
+Cost 6
+Asize 2
+Rsize 50
+Values 0 '' '' '' ''
+Weight 5
+Material leather~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10049
+Name tome magic theory~
+Short a tome of magic theory~
+Desc A tome of magic theory rests here.~
+Level 5
+ItemType scroll~
+Cost 210
+Asize 10
+Rsize 50
+Values 10 '' shield fly ''
+Weight 20
+Material paper~
+Extra    magic inventory~
+Wear     take hold~
+End
+
+#10050
+Name cuirass leather breastplate~
+Short a hardened leather breastplate~
+Desc A reinforced leather breastplate sits here in the dirt.~
+Level 10
+ItemType armor~
+Cost 222
+Asize 25
+Rsize 50
+Values 4 3 3 2 0
+Weight 45
+Material leather~
+Extra    magic inventory nonmetal nodegrade~
+Wear     take torso~
+Affect modifier -1 10 -1 agility 1 0
+ExtraDesc leather hardened~
+This breastplate has been dipped in wax till it was so hard that it could be
+used as an effective piece of armor.
+~
+End
+
+#10051
+Name reinforced leather leggings~
+Short a set of reinforced leather leggings~
+Desc A set of reinforced leather leggings sit here.~
+Level 10
+ItemType armor~
+Cost 217
+Asize 20
+Rsize 50
+Values 3 3 2 2 0
+Weight 40
+Material leather~
+Extra    magic inventory nonmetal nodegrade~
+Wear     take legs~
+Affect modifier -1 10 -1 strength 1 0
+ExtraDesc leather hardened~
+These leggings have been dipped in wax till they were so hard that they could
+be used as an effective piece of armor.
+~
+End
+
+#10052
+Name reinforced leather sleeves~
+Short a set of reinforced leather sleeves~
+Desc A set of reinforced leather sleeves sit here.~
+Level 10
+ItemType armor~
+Cost 219
+Asize 20
+Rsize 50
+Values 3 3 2 1 0
+Weight 40
+Material leather~
+Extra    magic inventory nonmetal nodegrade~
+Wear     take arms~
+Affect modifier -1 10 -1 hitroll 1 0
+ExtraDesc leather hardened~
+These sleeves have been dipped in wax till they were so hard that they could
+be used as an effective piece of armor.
+~
+End
+
+#10053
+Name silk doublet~
+Short a `#`Wsilk`^ doublet~
+Desc A `#`Wsilk`^ doublet lies crumpled on the ground.~
+Level 1
+ItemType armor~
+Cost 101
+Asize 8
+Rsize 50
+Values 0 0 1 0 0
+Weight 20
+Material silk~
+Extra    inventory nonmetal nodegrade~
+Wear     take torso~
+Affect modifier -1 1 -1 intuition -1 0
+Affect modifier -1 1 -1 presence 1 0
+End
+
+#10054
+Name elegant ruby-red gown~
+Short an elegant `#`rruby-red`^ gown~
+Desc An elegant `#`rruby-red`^ gown lies on the ground.~
+Level 1
+ItemType armor~
+Cost 120
+Asize 10
+Rsize 50
+Values 0 1 1 0 0
+Weight 20
+Material silk~
+Extra    inventory nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 1 -1 presence 1 0
+End
+
+#10055
+Name silk hose~
+Short a pair of `#`Wsilk`^ hose~
+Desc A pair of `#`Wsilk`^ hose lie on the ground.~
+Level 1
+ItemType armor~
+Cost 66
+Asize 5
+Rsize 50
+Values 0 1 0 0 0
+Weight 10
+Material silk~
+Extra    inventory nonmetal nodegrade~
+Wear     take legs~
+Affect modifier -1 1 -1 presence 1 0
+End
+
+#10056
+Name lace veil~
+Short a fine `#`Wlace`^ veil~
+Desc A fine `#`Wlace`^ veil sits on the ground.~
+Level 1
+ItemType armor~
+Cost 85
+Asize 3
+Rsize 50
+Values 1 0 0 0 0
+Weight 10
+Material silk~
+Extra    inventory nonmetal nodegrade~
+Wear     take head~
+Affect modifier -1 1 -1 presence 1 0
+End
+
+#10057
+Name hard tack biscuit~
+Short some hard tack biscuits~
+Desc Some hard tack biscuits sit on the ground here.~
+Level 1
+ItemType food~
+Cost 18
+Asize 1
+Rsize 50
+Values 5 15 0 0 0
+Weight 5
+Material bread~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10058
+Name meat pie~
+Short a stale meat pie~
+Desc A stale meat pie sits on the ground here.~
+Level 1
+ItemType food~
+Cost 12
+Asize 1
+Rsize 50
+Values 4 15 0 0 0
+Weight 10
+Material meat~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10059
+Name fresh loaf bread~
+Short a fresh loaf of bread~
+Desc A fresh loaf of bread sits on the ground.~
+Level 1
+ItemType food~
+Cost 14
+Asize 1
+Rsize 50
+Values 5 15 0 0 0
+Weight 10
+Material bread~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10060
+Name cherry tart~
+Short a `#`rcherry`^ tart~
+Desc A `#`rcherry`^ tart smells delicious here.~
+Level 1
+ItemType food~
+Cost 11
+Asize 1
+Rsize 50
+Values 5 20 0 0 0
+Weight 10
+Material pie~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10061
+Name dried apples~
+Short some dried `#`rapples`^~
+Desc Some dried `#`rapples`^ sit on the ground.~
+Level 1
+ItemType food~
+Cost 10
+Asize 1
+Rsize 50
+Values 1 20 0 0 0
+Weight 5
+Material fruit~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10062
+Name dried carrots~
+Short some dried `#`Rcarrots`^~
+Desc Some dried `#`Rcarrots`^ sits on the ground.~
+Level 1
+ItemType food~
+Cost 11
+Asize 1
+Rsize 50
+Values 2 20 0 0 0
+Weight 5
+Material vegetable~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10063
+Name coarse tunic~
+Short a coarse tunic~
+Desc A coarse tunic rests here.~
+Level 1
+ItemType armor~
+Cost 66
+Asize 5
+Rsize 50
+Values 1 1 1 0 0
+Weight 10
+Material cloth~
+Extra    inventory nonmetal nodegrade~
+Wear     take torso~
+End
+
+#10064
+Name thin stew bowl~
+Short a bowl of thin stew~
+Desc A bowl of thin stew sits here.~
+Level 1
+ItemType food~
+Cost 9
+Asize 1
+Rsize 50
+Values 1 10 0 0 0
+Weight 10
+Material stew~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10065
+Name platter cold mutton~
+Short a platter of cold mutton~
+Desc A platter of cold mutton sits here.~
+Level 1
+ItemType food~
+Cost 18
+Asize 2
+Rsize 50
+Values 5 15 0 0 0
+Weight 15
+Material meat~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10066
+Name wooden chest~
+Short a `#`ywooden`^ chest~
+Desc A `#`ywooden`^ chest sits here.~
+Level 1
+ItemType container~
+Cost 30
+Asize 100
+Rsize 50
+Values 100 A 0 100 100
+Weight 30
+Material wood~
+Extra    inventory nonmetal nodegrade~
+Wear     take hold~
+End
+
+#10067
+Name wooden shield~
+Short a `#`ywooden`^ shield~
+Desc A `#`ywooden`^ shield has been left here.~
+Level 10
+ItemType armor~
+Cost 220
+Asize 10
+Rsize 50
+Values 4 4 3 2 0
+Weight 20
+Material wood~
+Extra    inventory nonmetal nodegrade~
+Wear     take shield~
+End
+
+#10068
+Name ashen spear~
+Short an ashen spear~
+Desc An ashen spear lies here.~
+Level 15
+ItemType weapon~
+Cost 300
+Asize 70
+Rsize 50
+Values polearm 5 3 thrust DF
+Weight 40
+Material wood~
+Extra    inventory nonmetal nodegrade~
+Wear     take wield~
+End
+
+#10069
+Name filthy rags~
+Short some filthy rags~
+Desc Some filthy rags lie here.~
+Level 1
+ItemType armor~
+Cost 1
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cloth~
+Extra    magic nonmetal~
+Wear     take about~
+Affect affects -1 1 -1 none 0 hide
+End
+
+#10070
+Name vial fireroot~
+Short a vial of fireroot~
+Desc A vial of fireroot sits here.~
+Level 10
+ItemType pill~
+Cost 555
+Asize 1
+Rsize 50
+Values 30 'cure poison' 'cure poison' 'cure poison' ''
+Weight 10
+Material herb~
+Extra    magic inventory nonmetal~
+Wear     take hold~
+End
+
+#10071
+Name pouch gleniwort~
+Short a pouch of gleniwort~
+Desc A pouch of gleniwort sits here.~
+Level 10
+ItemType pill~
+Cost 808
+Asize 1
+Rsize 50
+Values 30 'cure disease' 'cure blindness' bless ''
+Weight 10
+Material herb~
+Extra    magic inventory nonmetal~
+Wear     take hold~
+End
+
+#10072
+Name packet lyfern~
+Short a packet of lyfern~
+Desc A packet of lyfern is here.~
+Level 10
+ItemType pill~
+Cost 699
+Asize 1
+Rsize 50
+Values 20 cancellation 'remove curse' cancellation ''
+Weight 10
+Material herb~
+Extra    magic inventory nonmetal~
+Wear     take hold~
+End
+
+#10073
+Name long candle~
+Short a long candle~
+Desc A long candle sits here.~
+Level 1
+ItemType light~
+Cost 5
+Asize 1
+Rsize 50
+Values 0 0 20 0 0
+Weight 5
+Material wax~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#10074
+Name coil rope~
+Short a coil of rope~
+Desc A coil of rope sits here.~
+Level 1
+ItemType trash~
+Cost 10
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material hemp~
+Extra    inventory nonmetal nodegrade~
+Wear     take hold~
+End
+
+#10075
+Name water bag~
+Short a water bag~
+Desc A water bag sits here~
+Level 1
+ItemType drinkcontainer~
+Cost 65
+Asize 10
+Rsize 50
+Values 30 30 water 0 0
+Weight 20
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take hold~
+End
+
+#10076
+Name feather duster~
+Short a feather duster~
+Desc A feather duster sits here in the dirt.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material feather~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#10077
+Name wooden club mace~
+Short a wooden club~
+Desc A wooden club lies here.~
+Level 10
+ItemType weapon~
+Cost 202
+Asize 10
+Rsize 50
+Values mace 2 8 pound 0
+Weight 20
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+End
+
+#10078
+Name comfortable bed~
+Short a comfortable bed~
+Desc A comfortable-looking bed sits here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 100
+Rsize 50
+Values 2 9999 BHK 105 105
+Weight 1000
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#10079
+Name unmade bed~
+Short an unmade bed~
+Desc An unmade bed rests is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 100
+Rsize 50
+Values 1 200 EHK 0 0
+Weight 1000
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#10080
+Name rotting corpse~
+Short a rotting corpse~
+Desc A rotting corpse lies here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 99
+Rsize 50
+Values 0 0 0 0 0
+Weight 1000
+Material flesh~
+Extra    nonmetal~
+Wear     take hold~
+End
+
+#10081
+Name wooden bench~
+Short a wooden bench~
+Desc A wooden bench sits here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 60
+Rsize 50
+Values 4 1000 EH 105 105
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#10082
+Name dagger~
+Short a dagger~
+Desc A dagger sits here.~
+Level 12
+ItemType weapon~
+Cost 240
+Asize 10
+Rsize 50
+Values dagger 1 9 stab 0
+Weight 20
+Material iron~
+Extra    nodegrade~
+Wear     take wield~
+End
+
+#10083
+Name longsword~
+Short a longsword~
+Desc A longsword lies here.~
+Level 12
+ItemType weapon~
+Cost 245
+Asize 20
+Rsize 50
+Values sword 3 5 slash 0
+Weight 40
+Material iron~
+Extra    nodegrade~
+Wear     take wield~
+End
+
+#10084
+Name key onyx~
+Short an onxy key~
+Desc An onyx key lies on the ground.~
+Level 0
+ItemType key~
+Cost 1
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material onyx~
+Wear     take hold~
+End
+
+#10085
+Name robes gaudy~
+Short some `#`Gga`Ru`md`gy`^ robes~
+Desc Some `#`Gga`Ru`md`gy`^ robes lie here.~
+Level 1
+ItemType armor~
+Cost 13
+Asize 1
+Rsize 50
+Values 0 0 1 0 0
+Weight 5
+Material coth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#10086
+Name strange black portal~
+Short a strange black portal~
+Desc A strange black portal rises from the ground.~
+Level 0
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values 30000 0 F 27003 0
+Weight 0
+Material energy~
+Extra    magic nonmetal nodegrade~
+End
+
+#10087
+Name white potion~
+Short an `#`woff white`^ potion~
+Desc An `#`woff white`^ potion lies here.~
+Level 11
+ItemType potion~
+Cost 770
+Asize 10
+Rsize 50
+Values 21 haste '' '' ''
+Weight 10
+Material oldstyle~
+Extra    magic nonmetal~
+Wear     take hold~
+End
+
+#10088
+Name potion dark blue~
+Short a `#`bdark blue`^ potion~
+Desc A `#`bdark blue`^ potion lies here.~
+Level 1
+ItemType potion~
+Cost 200
+Asize 10
+Rsize 50
+Values 10 'detect evil' refresh '' ''
+Weight 10
+Material oldstyle~
+Extra    magic nonmetal~
+Wear     take hold~
+End
+
+#10090
+Name #26
+
+old map~
+Short an old map~
+Desc An old map has been left here.~
+Level 1
+ItemType map~
+Cost 25
+Condition 75
+Asize 3
+Rsize 50
+Values A 0 0 0 0
+Weight 1
+Material paper~
+Wear     take~
+ExtraDesc writing back~
+Scrawled on the back in an unsteady hand is the following:
+
+Follow the river west and under the mountain, and X marks the spot. 
+The dwarf returned home in the end....
+
+"kharrad ghaaz"
+
+~
+ExtraDesc old map~
+This old map has some writing on the the back.
+
+                              __________________________
+               ______________/                          \
+   ___________/                                         |
+  /                                                     |
+  |         MM                                           \
+  |        MMM                          |                |
+   \      MMM                           |                |
+   |      MM                            |                |
+   /     MM                             |                |
+  |      MM                          Mekali ---------    |
+  |      MM             _______________________________  |
+  |      MM___________/  _____________________________   |
+  |    X _______________/                                |
+  |      MM                                             /
+  |      MM                                             |
+  |      MM                                             |
+  |                                ____________________/
+   \______________________________/
+
+~
+End
+
+#10100
+Name some dust~
+Short some dust~
+Desc Some dust on the ground~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#10050
+Name The Waterfront~
+Desc You are currently walking through the crowded waterfront area of Markrist 
+Island.  Many, many people bustle about, most of them sailors and dock- 
+workers.  Large stacks of crates wait to be carried onto the many waiting 
+ships, and many ships wait in turn to unload their cargoes.  The smell of 
+salt is strong in the air, as is the smell of fish and other less savory 
+substances.  To the north and south the waterfront continues, and to the 
+west you see a gap in the buildings leading to a busy street.  
+~
+Sector city~
+Exit north 10051
+Exit east 31112
+Exit south 10052
+Exit west 10055
+End
+
+
+#10051
+Name The Waterfront~
+Desc You are currently walking through the crowded waterfront area of Markrist 
+Island.  Many, many people bustle about, most of them sailors and dock- 
+workers.  Large stacks of crates wait to be carried onto the many waiting 
+ships, and many ships wait in turn to unload their cargoes.  The smell of 
+salt is strong in the air, as is the smell of fish and other less savory 
+substances.  To the north you can see the entrance to the Harbormaster's 
+office, and to the south the water front continues.  
+~
+Sector city~
+Exit north 10053
+EFlags door closed~
+EKeywords door~
+Exit south 10050
+End
+
+
+#10052
+Name The Waterfront~
+Desc You are currently walking through the crowded waterfront area of Markrist 
+Island.  Many, many people bustle about, most of them sailors and dock- 
+workers.  Large stacks of crates wait to be carried onto the many waiting 
+ships, and many ships wait in turn to unload their cargoes.  The smell of 
+salt is strong in the air, as is the smell of fish and other less savory 
+substances.  To the north the waterfront continues, and to the south lie the 
+large drydocks of Markrist Island where ships can go for repairs.  To the 
+east your way is blocked by the featureless backs of several dilapidated 
+wooden buildings.  
+~
+Sector city~
+Exit north 10050
+Exit south 10082
+End
+
+
+#10053
+Name The Harbormaster's Office~
+Desc This small, cramped wooden building is where the Harbormaster of Markrist 
+Island's docks does most of his work.  On the wall hang several maps 
+detailing the surrounding lands and seas.  Towards the rear sits a large 
+desk that is covered with many sheafs of parchment.  On the wall directly 
+behind the desk is a chart that lists what ships are expected to arrive in 
+the next few days, and where all the ships native to these waters are 
+currently headed.  The only exit appears to be to the doorway to the south.  
+
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc maps map~
+These maps detail the surrounding nations.  Apparently, Markrist is officially
+part of a large city known as Valinport, the majority of which lies across the
+bay.  Valinport, in turn, is part of a nation known as Kor, which is located on
+a long peninsula jutting from a sparsely detailed landmass on the map.  Many
+small islands also dot the waters around here, most of which have no 
+inhabitants and no place to drop anchor.
+~
+Exit north 10054
+EFlags door closed~
+EKeywords door~
+Exit south 10051
+EFlags door~
+End
+
+
+#10054
+Name A Small, Cramped Room~
+Desc This small room contains very little, other than a few crates full of a 
+strange reddish powder and a large, shimmering portal set in the north wall. 
+ It seems the Harbormaster is working with the very smugglers it is his duty 
+to stop.  The only apparent exit is to the south, and through the strange 
+portal, of course.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10053
+EFlags door closed~
+End
+
+
+#10055
+Name Rak Street~
+Desc This narrow, filthy boulevard doen't even look fit for a city of goblins, 
+yet it is nonetheless one of the major thoroughfares of Markrist Island.  
+The street is packed with people going about their business, mostly thugs, 
+sailors, and those who serve them, by the looks of things.  Several 
+buildings have their entrances on this street, including many a tavern and 
+other places of ill repute.  Rak street continues to the north and south, 
+and to the east the buildings open up into the waterfront of the island.  
+~
+Sector city~
+Exit north 10056
+Exit east 10050
+Exit south 10060
+End
+
+
+#10056
+Name Rak Street~
+Desc This narrow, filthy boulevard doen't even look fit for a city of goblins, 
+yet it is nonetheless one of the major thoroughfares of Markrist Island.  
+The street is packed with people going about their business, mostly thugs, 
+sailors, and those who serve them, by the looks of things.  Several 
+buildings have their entrances on this street, including many a tavern and 
+other places of ill repute.  To the east you see the entrance to the 
+Serpent's Arms, one of the rough taverns of the area, and to the west a dark 
+doorway leads to an unmarked building.  The street continues to the north 
+and south.  
+~
+Sector city~
+Exit north 10057
+Exit south 10055
+Exit west 10065
+End
+
+
+#10057
+Name Rak Street~
+Desc This narrow, filthy boulevard doen't even look fit for a city of goblins, 
+yet it is nonetheless one of the major thoroughfares of Markrist Island.  
+The street is packed with people going about their business, mostly thugs, 
+sailors, and those who serve them, by the looks of things.  Several 
+buildings have their entrances on this street, including many a tavern and 
+other places of ill repute.  The buidlings to the east and west have been 
+boarded up, but that doesn't seem to prevent people from living there, as 
+evinced by the smoke rising from the chimneys.  The street continues to the 
+north and south.  
+~
+Sector city~
+Exit north 10059
+Exit south 10056
+Exit west 10064
+End
+
+
+#10059
+Name Rak Street~
+Desc This narrow, filthy boulevard doen't even look fit for a city of goblins, 
+yet it is nonetheless one of the major thoroughfares of Markrist Island.  
+The street is packed with people going about their business, mostly thugs, 
+sailors, and those who serve them, by the looks of things.  Several 
+buildings have their entrances on this street, including many a tavern and 
+other places of ill repute.  To the north you see another boarded up 
+building, but this one has no evidence of habitation.  To the east is a 
+small apothecary and the street continues to the west and south.  
+~
+Sector city~
+Exit north 10066
+EFlags door closed locked infuriating~
+EKeyvnum 10084
+EKeywords board~
+Exit east 10067
+Exit south 10057
+Exit west 10068
+End
+
+
+#10060
+Name Rak Street~
+Desc This narrow, filthy boulevard doen't even look fit for a city of goblins, 
+yet it is nonetheless one of the major thoroughfares of Markrist Island.  
+The street is packed with people going about their business, mostly thugs, 
+sailors, and those who serve them, by the looks of things.  Several 
+buildings have their entrances on this street, including many a tavern and 
+other places of ill repute.  To the east and west you see small alley- ways 
+between the large buildings, but there seems to be nothing of interest down 
+them.  To the north and south the street continues.  
+~
+Sector city~
+Exit north 10055
+Exit south 10061
+Exit west 10078
+End
+
+
+#10061
+Name Rak Street~
+Desc This narrow, filthy boulevard doen't even look fit for a city of goblins, 
+yet it is nonetheless one of the major thoroughfares of Markrist Island.  
+The street is packed with people going about their business, mostly thugs, 
+sailors, and those who serve them, by the looks of things.  Several 
+buildings have their entrances on this street, including many a tavern and 
+other places of ill repute.  To the west you see the entrance to one of the 
+many taverns of Markrist: Azhra's Breath.  To the east lies a small 
+dry-goods store.  The street continues to the north and south.  
+~
+Sector city~
+Exit north 10060
+Exit south 10062
+End
+
+
+#10062
+Name Rak Street~
+Desc This narrow, filthy boulevard doen't even look fit for a city of goblins, 
+yet it is nonetheless one of the major thoroughfares of Markrist Island.  
+The street is packed with people going about their business, mostly thugs, 
+sailors, and those who serve them, by the looks of things.  Several 
+buildings have their entrances on this street, including many a tavern and 
+other places of ill repute.  To the west sits a three-story run down inn 
+inappropriately named the Gentle Rest.  To the east sit several tenament 
+buildings, and the street continues to the north and south.  
+~
+Sector city~
+Exit north 10061
+Exit east 10079
+Exit south 10063
+Exit west 10080
+End
+
+
+#10063
+Name Rak Street~
+Desc This narrow, filthy boulevard doen't even look fit for a city of goblins, 
+yet it is nonetheless one of the major thoroughfares of Markrist Island.  
+The street is packed with people going about their business, mostly thugs, 
+sailors, and those who serve them, by the looks of things.  Several 
+buildings have their entrances on this street, including many a tavern and 
+other places of ill repute.  The street continues to the west and north, 
+while to the east lies a large blacksmith's shop.  
+~
+Sector city~
+Exit north 10062
+Exit east 10081
+Exit west 10077
+End
+
+
+#10064
+Name The Serpent's Arms~
+Desc This small, filthy tavern is crammed full of sailors, street toughs, and 
+prostitutes.  The floor is covered with a thin layer of rotting rushes, and 
+a thick layer of spilled ale, discarded bones, and broken plates and mugs.  
+The air is thick with smoke from cheap pipe tobacco and with the putrid 
+stench of sour ale and vomit.  Towards the back of the room stands a rickety 
+wooden counter, behind which rest several large casks of ale and several 
+bottles of various other cheap liquors.  There are a few tables scattered 
+about the room, but these are mostly occupied, as are the stools at the bar. 
+ 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10057
+End
+
+
+#10065
+Name A Dirty Hovel~
+Desc This dilapidated old building looks like it was once used as an inn or 
+tenament, but now has been converted into a poorly disguised house of 
+prostitution.  Many sailors sit in the foyer here, waiting to be attended to 
+by the "ladies" of the house.  The place is filthy with dust and grime and 
+the air smells of sour sweat and ale.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10056
+End
+
+
+#10066
+Name A Smugglers' Hideout~
+Desc This aged building looks from the outside as if it can barely stand up 
+anymore, but from the inside it is a whole different story.  The walls have 
+been shored up recently, and the structure looks very stable.  The whole 
+room has been converted into a warehouse almost overflowing with illegal 
+goods.  Many crates are stacked here, some containing tallis-wood from the 
+Empire, others containing rare Saureon ancestor stones.  However, the 
+majority of the space in here is taken up by bags and crates containing a 
+strange red powder.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10059
+EFlags door closed locked infuriating~
+EKeyvnum 10084
+EKeywords board~
+End
+
+
+#10067
+Name A Small Apothecary~
+Desc This little shop appears to be an apothecary, where one can find a variety 
+of medicines, powders, and poultices.  The walls are covered with jars 
+containing a variety of liquids and powders in every imaginable size, shape, 
+and color.  From the ceiling hang several bundles of drying herbs.  Towards 
+the back of the room you see a counter covered with bowls in which herbs, 
+animal parts, and stones are being ground to make the shopkeep's medicines.  
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10059
+End
+
+
+#10068
+Name Intersection of Rak Street and Hadran's Way~
+Desc This thoroughfare is swarming with people who are heading towards the 
+waterfront from the more mercantile area of Hadran's Way, and those who are 
+heading to the market on the Way.  To the north the seawall rises to nearly 
+the top of the tallest buildings, and to the south you can see one of the 
+run down residential areas of Markrist Island. The sea wall to the north gives
+way to a large estate which a huge gate leads into. To the east lie the dark 
+twists and turns of Rak Street and to the west sits Hadran's Way, a more 
+open area.  
+~
+Sector city~
+Exit east 10059
+Exit west 10069
+End
+
+
+#10069
+Name Hadran's Way~
+Desc Hadran's Way, named after a former king of Kor, is much more open than Rak 
+Street.  The buildings here are a little nicer, and a little farther apart, 
+and the ground is slightly cleaner.  Many merchants have set up booths here, 
+and loudly hawk their wares over the din of the crowd.  To the north and 
+west lies a large building that contains a shop selling potions and 
+philtres, to the north, and one selling scrolls, pens, and other scholarly 
+items, to the west.  The Way continues to the south and east.  
+~
+Sector city~
+Exit north 10083
+Exit east 10068
+Exit south 10070
+Exit west 10084
+End
+
+
+#10070
+Name Hadran's Way~
+Desc Hadran's Way, named after a former king of Kor, is much more open than Rak 
+Street.  The buildings here are a little nicer, and a little farther apart, 
+and the ground is slightly cleaner.  Many merchants have set up booths here, 
+and loudly hawk their wares over the din of the crowd.  To the east you spot 
+a bakery, and to the west sits a stand selling vegetables and dried fruits.  
+The Way continues to the north and south.  
+~
+Sector city~
+Exit north 10069
+Exit south 10071
+Exit west 10086
+End
+
+
+#10071
+Name Hadran's Way~
+Desc Hadran's Way, named after a former king of Kor, is much more open than Rak 
+Street.  The buildings here are a little nicer, and a little farther apart, 
+and the ground is slightly cleaner.  Many merchants have set up booths here, 
+and loudly hawk their wares over the din of the crowd.  To the east you spot 
+a tailor's shop, while to the west you see the large walls of the prefect's 
+manor.  To the north and south the Way continues.  
+~
+Sector city~
+Exit north 10070
+Exit south 10072
+Exit west 10085
+End
+
+
+#10072
+Name Hadran's Way~
+Desc Hadran's Way, named after a former king of Kor, is much more open than Rak 
+Street.  The buildings here are a little nicer, and a little farther apart, 
+and the ground is slightly cleaner.  Many merchants have set up booths here, 
+and loudly hawk their wares over the din of the crowd.  To the southwest lie 
+the large gates leading to the prefect's manor.  The Way continues to the 
+north and south.  
+~
+Sector city~
+Exit north 10071
+Exit east 10087
+Exit south 10073
+End
+
+
+#10073
+Name Hadran's Way~
+Desc Hadran's Way, named after a former king of Kor, is much more open than Rak 
+Street.  The buildings here are a little nicer, and a little farther apart, 
+and the ground is slightly cleaner.  Many merchants have set up booths here, 
+and loudly hawk their wares over the din of the crowd.  To the west lie the 
+large gates leading to the prefect's manor.  The Way continues to the north 
+and south.  
+~
+Sector city~
+Exit north 10072
+Exit south 10074
+Exit west 10088
+EFlags door closed~
+EKeywords gates~
+End
+
+
+#10074
+Name Hadran's Way~
+Desc Hadran's Way, named after a former king of Kor, is much more open than Rak 
+Street.  The buildings here are a little nicer, and a little farther apart, 
+and the ground is slightly cleaner.  Many merchants have set up booths here, 
+and loudly hawk their wares over the din of the crowd.  To the east you 
+spot, and smell, a tanner's shop, and to the west you see the large walls of 
+the prefect's manor.  The Way continues to the north and south.  
+~
+Sector city~
+Exit north 10073
+Exit south 10075
+Exit west 10089
+End
+
+
+#10075
+Name Hadran's Way~
+Desc Hadran's Way, named after a former king of Kor, is much more open than Rak 
+Street.  The buildings here are a little nicer, and a little farther apart, 
+and the ground is slightly cleaner.  Many merchants have set up booths here, 
+and loudly hawk their wares over the din of the crowd.  To the east you spot 
+a cobbler's shop, which appears to be closed at the moment, and to the west 
+lies a woodworker's store.  The Way continues to the north and south.  
+~
+Sector city~
+Exit north 10074
+Exit south 10076
+Exit west 10090
+End
+
+
+#10076
+Name Hadran's Way~
+Desc Hadran's Way, named after a former king of Kor, is much more open than Rak 
+Street.  The buildings here are a little nicer, and a little farther apart, 
+and the ground is slightly cleaner.  Many merchants have set up booths here, 
+and loudly hawk their wares over the din of the crowd.  To the south and 
+west you see the Fallows, which is what Markristers call the local dump.  
+The stench is overpowering even from here, and stout wooden fences prevent 
+anyone from entering without permission.  The Way continues to the north and 
+east.  
+~
+Sector city~
+Exit north 10075
+Exit east 10077
+End
+
+
+#10077
+Name Intersection of Rak Street and Hadran's Way~
+Desc This thoroughfare is swarming with people who are heading towards the 
+waterfront from the more mercantile area of Hadran's Way, and those who are 
+heading to the market on the Way.  To the south the seawall rises to nearly 
+the top of the tallest buildings, and to the north you can see one of the 
+run down residential areas of Markrist Island.  To the east lie the dark 
+twists and turns of Rak Street and to the west sits Hadran's Way, a more 
+open area.  
+~
+Sector city~
+Exit east 10063
+Exit west 10076
+End
+
+
+#10078
+Name A Dry Goods Store~
+Desc This small shop makes a profit buying surplus or damaged items from the 
+merchantmen who dock here, and then selling these items at very low prices.  
+The selection is fairly unusual, and subject to constant change, but the 
+shop is still popular with the locals, who find many of their essential 
+items here for prices much less than they would pay elsewhere.  The shop 
+contains bolts of cloth stained by saltwater, iron ingots retrieved from a 
+shipwreck, boxes of surplus candles, and many other items.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10060
+End
+
+
+#10079
+Name Azhra's Breath~
+Desc Another of the taverns that dot Rak Street, the Breath is a little different 
+from its competitors.  Run by stern old Azhra, a former adventuring warrior, 
+the tavern is known to be a place of (relative) peace and quiet.  The place 
+is also a little nicer than it's competitors, with fairly fresh rushes 
+covering the floor, and recently wiped tables.  The place is still packed 
+with local toughs, sailors, and working men looking for a cheap drink, even 
+though all fights are quickly, and sometimes finally, ended by the Breath's 
+stern mistress.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10062
+End
+
+
+#10080
+Name The Gentle Rest~
+Desc This large room serves as the foyer to the Gentle Rest.  The wooden floor is 
+covered with a threadbare red rug, and the walls are bare save for the sooty 
+stains from candles and torches that are set in sockets.  To the north an 
+open doorway leads to the kitchen, where guests can buy a cheap meal, and to 
+the right of you a rickety staircase leads up to the rooms on the second 
+floor.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10091
+Exit east 10062
+Exit up 10092
+End
+
+
+#10081
+Name The Blacksmith's~
+Desc This blacksmith's shop seems much like any other, save for the fact that it 
+seems to specialize in fashioning parts for ships, such as the large keel 
+that lies on the floor to the rear of the shop.  Several young blacksmith's 
+work at different forges scattered around the large room as apprentices work 
+the bellows, carry more coal into the room, and bring the journeymen 
+blacksmiths anything they need to complete their work.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10063
+End
+
+
+#10082
+Name The Dry Docks~
+Desc A marvel of engineering, the Markrist dry docks are a blessing to many a sea 
+captain who finds him or herself with a damaged vessel.  Large hoists, 
+manned by strong horses, are fitted under all but the largest vessels.  
+These hoists then lift the vessels onto stands which allow workers to 
+repair, clean, and slather tar over every part of the vessel without even 
+getting wet.  Not only do the workers here repair ships, but they also sell 
+vessels which they have rescued from the treacherous shoals to the north of 
+the bay and repaired.  
+~
+Sector city~
+Exit north 10052
+End
+
+
+#10083
+Name Hydrin's Sovereign Remedies~
+Desc This small shop seems strangely out of place in the otherwise seedy section 
+of Valinport that is Markrist.  For one thing, the decorations that it's 
+eccentric owner uses are all of the highest quality, many of the tapestries 
+woven with gold and silver thread, and the rugs are plush and expensive.  
+The shelves behind the counter in the back contain a variety of potions 
+stored in slender glass and crystal vials, which must be the source of the 
+owner's wealth.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10069
+End
+
+
+#10084
+Name Hyrdrin's Tools of War~
+Desc Despite the name the owner has so eloquently painted on the sign hanging 
+above his door, this store does not deal in weapons, armor, or anything else 
+that remotely resembles a tool of war.  Instead, one may find here ink, 
+pens, parchment, sand, and a variety of other tools of writing.  The shop is 
+decorated almost as richly as it's neighbor to the north, with rich rugs and 
+tapestries providing the decoration.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10069
+End
+
+
+#10085
+Name A Bakery~
+Desc As you enter the door the delicious smell of baking bread wafts towards you, 
+a good reason to consider this man's goods if there ever was one!  It seems, 
+unfortunately, that most of the baker's goods are of low quality, though, as 
+most of his clientele cannot afford even a decent loaf of bread on a regular 
+basis.  There are some fine pastries, pies, and breads in one corner of his 
+store, but the majority of the goods consist of poorer peasant fare.  The 
+store seems clean, though, and reasonably well cared for.  It seems even in 
+hard times people must eat, and so the baker continues to do a brisk 
+business.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10071
+End
+
+
+#10086
+Name A Vegetable Stand~
+Desc An enterprising young merchant has set up his cart near the sea wall here 
+and is offering a variety of dried fruits and vegetables for sale.  Besides 
+what he has on his cart, he has several bags and crates containing stored 
+foodstuffs set out behind him in case one of the captains of a vessel comes 
+by with a large order.  The rest of the area around here contains several 
+other merchants with carts, but nothing they have for sale looks very 
+appealing, or of very high quality.  
+~
+Sector inside~
+Exit east 10070
+End
+
+
+#10087
+Name A Tailor's Shop~
+Desc This modest store seems to deal mainly in very basic clothing that is worn 
+for its low cost and sturdiness rather than for its aesthetic purposes.  
+There are several tables set about the front of the room containing basic 
+sizes and styles of breeches and tunics.  In the back, the owner has several 
+wooden dummies set up that have cloth draped over them, doubtless for sewing 
+special orders.  There are bits and pieces of thread on the floor, and a 
+little dust over every- thing, but the store seems relatively clean and well 
+cared for.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10072
+End
+
+
+#10088
+Name Entrance to the Prefect's Mansion~
+Desc Each district of the city of Valinport is ruled by a lord, or prefect, who 
+acts as a vassal to the king, who resides in the royal district of the city. 
+ This mansion belongs the prefect of the dock district, which includes 
+Markrist Island and the main docks of the city.  The entrance to this 
+mansion is grand compared to everything else on the isle, but is rather 
+shabby compared to the other manors of Valinport, or any noble residence, 
+really.  The red rug on the floor is nice but fraying, the walls covered 
+with dusty tapestries, and the candle- sticks in need of a good polish.  
+Needless to say, the lord of the manor doesn't get here as often as he 
+should.  To the west the foyer opens into a large reception area, while to 
+the east the gates lead out to Hadran's Way.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10073
+EFlags door closed~
+EKeywords gates~
+Exit west 10095
+End
+
+
+#10089
+Name A Leather Shop~
+Desc This large room is only part of the tanner's total operations, but it is the 
+only part you get to see, thankfully.  Even from here the smell coming from 
+the back, where hides are soaked in lye and other caustic fluids, is 
+revolting.  You cannot imagine what it would be like if you were back there, 
+and the hides were uncovered.  There are several uncut hides for sale, as 
+well as tunics, gloves, hats, breeches, boots, and more.  The tanner has 
+several wooden stands to display his merchandise, as well as a few tables 
+that are heaped high with his wares.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10074
+End
+
+
+#10090
+Name A Woodworker's Shop~
+Desc This large store seems to be both a shop and a workshop for this wood- 
+worker.  In the back of the room you see a work bench covered with saw dust 
+and wood chips, as well as several vats of water used to make wood more 
+supple.  In the front the proud craftsman has his finished work on display: 
+a beautiful wardrobe, a chest of drawers, and several simple wooden chests, 
+figurines, and models.  He also has some shields and armor that he has 
+carved out of wood, reinforced with steel, and covered with thick leather to 
+give added protection.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10075
+End
+
+
+#10091
+Name The Kitchen of the Gentle Rest~
+Desc This small, dirty kitchen has a rickety table and a few chairs for the 
+pampered guests of the Rest to feast upon.  Towards the back is the actual 
+kitchen itself, where the cook prepares the meals under the watchful eyes of 
+her customers.  The floor is covered with grease and spilled food and drink, 
+and doesn't look like it has been washed in some time.  Rats and bugs 
+fearlessly venture out to feast on this refuse.  It appears they are the 
+only ones who make any attempt at all to clean the place.  The only exit 
+appears to be back to the south, to the entrance of the inn.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10080
+End
+
+
+#10092
+Name A Hallway in the Gentle Rest~
+Desc Unfortunately, or fortunately as the case may be, the staircase stops here, 
+the way upward being blocked by a huge old wardrobe that has "Thurd Storey 
+Clost" painted on it.  However, there are a few rooms branching off the 
+hallway here.  Unforunately, all the doors are locked or stuck save for two, 
+to the north and east.  The floor here is covered with the same threadbare 
+rug as the floor below, save for this one has more stains on it, doubtless 
+from the late night revelries of the guests.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10093
+EFlags door closed~
+EKeywords door~
+Exit east 10094
+EFlags door closed~
+EKeywords door~
+Exit down 10080
+End
+
+
+#10093
+Name A Room in the Gentle Rest~
+Desc This room looks like it would not be a gentle place to rest.  The bed is 
+unmade and is giving off an awful smell, like there is something dead under 
+it.  The floor is covered with dust and several bugs, and the wood is 
+starting to peel off the walls.  The washbasin is half-filled with brownish 
+water, and seems to be stuck to the table it is sitting on.  The only exit, 
+for there is not even a window, is the door to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10092
+EFlags door closed~
+EKeywords door~
+End
+
+
+#10094
+Name A Room in the Gentle Rest~
+Desc This room is surprisingly clean compared to the rest of the inn.  It has 
+been swept recently, and the shutters on the window have been thrown open to 
+let a little air in.  The bed is neatly made, and looks fairly comfortable.  
+There is a rug on the floor that has recently been shaken out and the walls 
+are freshly painted.  A few springs of cullenberry placed around the room 
+keep the bugs out, and the lack of food on the floor keep the rats out, too. 
+ Either you have stumbled onto the innkeeper's room, or some disgruntled 
+guest has taken it upon themselves to tidy up a bit.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 10092
+EFlags door closed~
+EKeywords door~
+End
+
+
+#10095
+Name The Prefect's Reception Area~
+Desc This large room contains the prefect's desk, which he sits at when receiving 
+visitors.  The floor is made of polished wood and covered with a rich orange 
+rug, which seems a little nicer than the one in the foyer.  To the north you 
+see a dining room where the prefect takes his meals and entertains visitors 
+when he is on Markrist Island, and in the rear of the room a spiral 
+staircase leads up to the next level of the manor.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10096
+Exit east 10088
+Exit up 10097
+End
+
+
+#10096
+Name The Prefect's Dining Room~
+Desc As you step into this dining room you are amazed by the elegance of the 
+chamber.  The prefect as obviously spared no expense in furnishing this 
+room, which he uses to entertain his visitors.  Golden candlesticks sit atop 
+the table, which is made of polished kailwood and covered with a silk cloth. 
+ In the four corners sit stone statuettes of kings and deities, and the 
+floor is covered with marble tile.  Currently the chamber sits empty, for 
+the lord is away from the isle, but when he is here is sees much use.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10095
+End
+
+
+#10097
+Name A Hallway in the Prefect's Manor~
+Desc This small hallway connects the chambers of the prefect and his servants 
+with the chambers below.  It is fairly plain, the floor made of polished 
+wood and the walls covered with wood paneling.  To the north lies the 
+prefect's personal chambers, and to the west sit the chambers his servants 
+share.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 10099
+EFlags door closed~
+EKeywords door~
+Exit west 10098
+EFlags door closed~
+EKeywords door~
+Exit down 10095
+End
+
+
+#10098
+Name The Servant's Chambers~
+Desc This large room serves as the communal living quarters for the prefect's 
+servants.  Several cots sit in various corners of the room, usually with a 
+chest or wardrobe next to them.  Towards the back sits the privy, where the 
+servants can go to relieve themselves.  It seems that men and women share 
+the same accommodations, the prefect being too stingy to build separate 
+quarters.  Still, the servants manage to get along, even in these cramped 
+quarters.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 10097
+EFlags door closed~
+EKeywords door~
+End
+
+
+#10099
+Name The Prefect's Quarters~
+Desc These quarters the prefect shares with his steward, and any mistresses he 
+cares to bring with him when he visits.  The steward sleeps in a small bed 
+near the door, while the prefect sleeps in a large canopied bed to the back 
+of the room.  The walls are adorned with several beautiful paintings and 
+tapestries, and the floor is covered with a thick velvet colored rug, which 
+is so soft it feels as if you are walking on air.  A large wardrobe sits in 
+the back of the room near the bed, which must be where the prefect keeps his 
+clothing and other valuables when he is here.  Unfortunately, it is empty 
+now, as he is residing in his manor on the mainland right now.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 10097
+EFlags door closed~
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 10022 spec_breath_fire
+M 10026 spec_thief
+M 10027 spec_thief
+M 10031 spec_thief
+M 10049 spec_fido
+M 10050 spec_thief
+M 10053 spec_thief
+S
+
+
+
+#RESETS2
+M 0 10023 12 10050 2
+E 0 10021 150 legs~
+E 0 10082 100 wielded~
+M 0 10024 4 10050 1
+E 0 10021 150 legs~
+E 0 10022 4 hold~
+M 0 10026 10 10050 2
+E 0 10023 12 wielded~
+E 0 10021 150 legs~
+E 0 10024 13 about~
+M 0 10032 10 10050 2
+E 0 10026 12 wielded~
+E 0 10027 12 about~
+E 0 10028 12 legs~
+E 0 10029 12 arms~
+M 0 10023 12 10051 2
+E 0 10021 150 legs~
+E 0 10082 100 wielded~
+M 0 10024 4 10051 1
+E 0 10021 150 legs~
+E 0 10022 4 hold~
+M 0 10025 4 10051 1
+E 0 10021 150 legs~
+M 0 10026 10 10051 2
+E 0 10023 12 wielded~
+E 0 10021 150 legs~
+E 0 10024 13 about~
+M 0 10023 12 10052 2
+E 0 10021 150 legs~
+E 0 10082 100 wielded~
+M 0 10024 4 10052 2
+E 0 10021 150 legs~
+E 0 10022 4 hold~
+M 0 10025 4 10052 1
+E 0 10021 150 legs~
+M 0 10028 1 10053 1
+E 0 10021 150 legs~
+E 0 10063 150 torso~
+E 0 10083 100 wielded~
+E 0 10041 1 hold~
+O 0 10042 0 10054
+O 0 10086 0 10054
+M 0 10026 10 10055 2
+E 0 10023 12 wielded~
+E 0 10021 150 legs~
+E 0 10024 13 about~
+M 0 10023 12 10056 2
+E 0 10021 150 legs~
+E 0 10082 100 wielded~
+M 0 10025 4 10057 1
+E 0 10021 150 legs~
+M 0 10049 12 10057 3
+M 0 10027 2 10059 2
+E 0 10023 12 wielded~
+E 0 10021 150 legs~
+E 0 10024 13 about~
+G 0 10084 -1
+M 0 10029 9 10060 3
+E 0 10021 150 legs~
+E 0 10077 100 wielded~
+M 0 10025 4 10061 1
+E 0 10021 150 legs~
+M 0 10023 12 10062 2
+E 0 10021 150 legs~
+E 0 10082 100 wielded~
+M 0 10031 8 10062 2
+E 0 10069 50 about~
+M 0 10032 10 10062 2
+E 0 10026 12 wielded~
+E 0 10027 12 about~
+E 0 10028 12 legs~
+E 0 10029 12 arms~
+M 0 10050 12 10062 3
+E 0 10069 50 about~
+E 0 10082 100 wielded~
+M 0 10030 12 10063 3
+E 0 10025 100 about~
+M 0 10034 1 10064 1
+E 0 10063 150 torso~
+G 0 10030 -1
+G 0 10031 -1
+G 0 10032 -1
+O 0 10081 0 10064
+M 0 10030 12 10065 3
+E 0 10025 100 about~
+M 0 10040 1 10066 1
+E 0 10021 150 legs~
+E 0 10024 13 about~
+G 0 10039 -1
+G 0 10040 -1
+M 0 10051 1 10067 1
+E 0 10025 100 about~
+G 0 10070 -1
+G 0 10071 -1
+G 0 10072 -1
+M 0 10030 12 10068 3
+E 0 10025 100 about~
+M 0 10049 12 10068 3
+M 0 10023 12 10068 2
+E 0 10021 -1 legs~
+E 0 10082 -1 wielded~
+M 0 10026 10 10068 1
+E 0 10024 -1 about~
+E 0 10021 -1 legs~
+E 0 10023 -1 wielded~
+M 0 10032 10 10069 2
+E 0 10027 -1 torso~
+E 0 10026 -1 wielded~
+E 0 10028 -1 legs~
+E 0 10029 -1 arms~
+M 0 10050 12 10069 3
+E 0 10082 -1 wielded~
+E 0 10069 -1 about~
+M 0 10031 8 10070 2
+E 0 10069 50 about~
+M 0 10026 10 10071 2
+E 0 10023 12 wielded~
+E 0 10021 150 legs~
+E 0 10024 13 about~
+M 0 10030 12 10071 3
+E 0 10025 100 about~
+M 0 10032 10 10071 2
+E 0 10026 12 wielded~
+E 0 10027 12 about~
+E 0 10028 12 legs~
+E 0 10029 12 arms~
+M 0 10029 9 10072 3
+E 0 10021 150 legs~
+E 0 10077 100 wielded~
+M 0 10049 12 10073 3
+M 0 10032 10 10074 2
+E 0 10026 12 wielded~
+E 0 10027 12 about~
+E 0 10028 12 legs~
+E 0 10029 12 arms~
+M 0 10050 12 10074 3
+E 0 10069 50 about~
+E 0 10082 100 wielded~
+M 0 10029 9 10075 3
+E 0 10021 150 legs~
+E 0 10077 100 wielded~
+M 0 10031 8 10075 2
+E 0 10069 50 about~
+M 0 10049 12 10076 3
+M 0 10031 8 10077 2
+E 0 10069 50 about~
+M 0 10052 1 10078 1
+E 0 10063 150 torso~
+G 0 10073 -1
+G 0 10074 -1
+G 0 10075 -1
+M 0 10035 1 10079 1
+E 0 10063 150 torso~
+G 0 10030 -1
+G 0 10032 -1
+G 0 10033 -1
+O 0 10081 0 10079
+M 0 10053 1 10080 1
+E 0 10063 150 torso~
+E 0 10021 150 legs~
+E 0 10082 100 wielded~
+M 0 10037 1 10081 1
+E 0 10063 150 torso~
+G 0 10036 -1
+G 0 10037 -1
+G 0 10038 -1
+M 0 10036 1 10082 1
+E 0 10063 150 torso~
+G 0 10034 -1
+G 0 10035 -1
+M 0 10038 1 10083 1
+E 0 10085 2 about~
+G 0 10043 -1
+G 0 10044 -1
+G 0 10045 -1
+G 0 10046 -1
+G 0 10087 -1
+G 0 10088 -1
+M 0 10039 1 10084 1
+E 0 10085 2 about~
+G 0 10047 -1
+G 0 10048 -1
+G 0 10049 -1
+M 0 10043 1 10085 1
+E 0 10063 150 torso~
+G 0 10057 -1
+G 0 10058 -1
+G 0 10059 -1
+G 0 10060 -1
+M 0 10044 1 10086 1
+E 0 10063 150 torso~
+G 0 10061 -1
+G 0 10062 -1
+M 0 10042 1 10087 1
+E 0 10063 150 torso~
+G 0 10053 -1
+G 0 10054 -1
+G 0 10055 -1
+G 0 10056 -1
+M 0 10033 2 10088 2
+E 0 10026 12 wielded~
+E 0 10027 12 about~
+E 0 10028 12 legs~
+E 0 10029 12 arms~
+M 0 10041 1 10089 1
+E 0 10063 150 torso~
+G 0 10050 -1
+G 0 10051 -1
+G 0 10052 -1
+M 0 10048 1 10090 1
+E 0 10063 150 torso~
+G 0 10066 -1
+G 0 10067 -1
+G 0 10068 -1
+M 0 10047 1 10091 1
+E 0 10025 100 about~
+G 0 10064 -1
+G 0 10065 -1
+O 0 10079 0 10093
+P 0 10080 0 10079 1
+O 0 10078 0 10094
+M 0 10045 1 10095 1
+E 0 10063 150 torso~
+E 0 10021 150 legs~
+E 0 10083 100 wielded~
+M 0 10046 2 10096 1
+E 0 10025 100 about~
+E 0 10076 4 hold~
+M 0 10046 2 10098 1
+E 0 10025 100 about~
+E 0 10076 4 hold~
+S
+
+
+
+#SHOPS
+#10034
+profit_buy 120
+profit_sell 90
+close_hour 23
+END
+
+#10035
+profit_buy 130
+profit_sell 80
+close_hour 23
+END
+
+#10036
+buy_type boat~
+profit_buy 130
+profit_sell 90
+close_hour 23
+END
+
+#10037
+buy_type weapon~
+buy_type component~
+buy_type rp~
+buy_type armor~
+profit_buy 160
+profit_sell 50
+close_hour 23
+END
+
+#10038
+buy_type wand~
+buy_type staff~
+buy_type potion~
+profit_buy 160
+profit_sell 90
+close_hour 23
+END
+
+#10039
+buy_type scroll~
+buy_type container~
+profit_buy 120
+profit_sell 90
+close_hour 23
+END
+
+#10040
+buy_type weapon~
+buy_type treasure~
+buy_type armor~
+buy_type potion~
+buy_type pill~
+profit_buy 210
+profit_sell 50
+close_hour 23
+END
+
+#10041
+buy_type armor~
+profit_buy 150
+profit_sell 50
+close_hour 23
+END
+
+#10042
+buy_type clothing~
+profit_buy 140
+profit_sell 80
+close_hour 23
+END
+
+#10043
+profit_buy 130
+profit_sell 80
+close_hour 23
+END
+
+#10044
+profit_buy 130
+profit_sell 80
+close_hour 23
+END
+
+#10047
+profit_buy 130
+profit_sell 80
+close_hour 23
+END
+
+#10048
+buy_type weapon~
+buy_type armor~
+buy_type furniture~
+profit_buy 140
+profit_sell 50
+close_hour 23
+END
+
+#10051
+buy_type pill~
+profit_buy 140
+profit_sell 70
+close_hour 23
+END
+
+#10052
+buy_type light~
+buy_type treasure~
+buy_type trash~
+buy_type container~
+buy_type food~
+profit_buy 110
+profit_sell 50
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#10006
+title ronar quest, speech diamond~
+code say Yes, a perfect eye-shaped diamond.
+say The pirates in the seas surrounding markrist often boast of the 
+treasures they've found in the depths of the seas.
+say Perhaps they've come across one before.
+~
+disabled false
+END
+
+#10005
+title ronar quest, give diamond~
+code if hastoken $n 27163
+say Ah, finally.
+say I will get a good price for this.
+say Well, I guess I'd better live up to my side of the agreement.
+emote reaches into an inner pocket and pulls out a ragged old map.
+say Here is the map you seek.
+mob oload 10090
+give map $n
+mob oload 27164
+mob tgive 27164 $n
+mob junk all
+say There you go.
+say Good luck with that, I do not think you have an easy trip ahead of you.
+emote turns and strides away.
+else
+say Excellent.. I will get a good price for this.
+endif
+~
+disabled false
+END
+
+#10004
+title ronar quest, give rack~
+code if hastoken $n 27162
+say My, you are resourceful indeed!
+say This rack is exactly what I had in mind.
+say But since you are so good at this I am going to ask you to get one more thing for me.
+say And if you can bring it back here and give it to me I promise to give you the map.
+say I have a certain customer who is needing an eye shaped diamond for a magical item he is creating.
+say If you can find one, it will be most helpful.
+mob oload 27163
+mob tgive 27163 $n
+mob junk all
+else
+say A rack of antlers? What use have I for these?
+give rack $n
+endif
+~
+disabled false
+END
+
+#10003
+title ronar quest, give eye of dragon~
+code if hastoken $n 27161
+say Ah, just what I needed!
+say Nice job...
+say Hmm...you seem good at this sort of thing.
+say Perhaps there are a few other things you can get for me.
+say I need a rack of antlers from a deer to grind into powder.
+say The bigger the rack the better!
+say The powder is valuable as a spell component.
+say If you can find that, bring it here and give it to me.
+mob oload 27162
+mob tgive 27162 $n
+mob junk all
+else 
+say A dragon's eye.. I'll be able to get a good price for this.
+endif
+~
+disabled false
+END
+
+#10002
+title ronar quest, speech dragon~
+code say Yes, the eye of a dragon.
+say A blue dragon would be best, but any type will work I suppose.
+say And don't be asking me where to find one either.
+say You'll have to get that information elsewhere if you don't know.
+say If I knew where to find it i'd get it myself.
+say When you find one, come back here and give it to me.
+~
+disabled false
+END
+
+#10001
+title ronar quest, speech price~
+code if hastoken $n 27160
+say Well, it is not gold I seek.
+say I have enough of that already.
+say Magical components there is a market for however.
+emote thinks deeply for a moment.
+say If you can bring me the eye of a dragon, I will perhaps part with it.
+mob oload 27161
+mob tgive 27161 $n
+else
+say Ask any of the smugglers on this island.. they'll all pay a good price for valuable items.
+emote grins.
+endif
+~
+disabled false
+END
+
+#10000
+title ronar quest, speech map~
+code if hastoken 27159
+say Ah, you are here for the map.
+emote hesitates for a moment.
+say I am willing to part with it, for the right price.
+mob oload 27160
+mob tgive 27160 $n
+else
+say What map?
+emote turns away.
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

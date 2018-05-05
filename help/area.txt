@@ -1,0 +1,389 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword DRUID-REFUGE DRUIDS-REFUGE~
+level 92
+category undefined~
+text Background of `#`gDruid's Refuge`^
+
+The area is formed by a huge cliff, with a waterfall. This is where the 
+ancient avians lived (see avian-history). Over the cliff there is a plateau, 
+and beyond it a valley. In this valley the war that destroyed the avian 
+rave took place. Now, their ghosts and old skeletons haunt the place. The 
+whole area is surrounded by mountains, with the exception of the southern 
+part, which is a plain.
+
+Some decades ago, a group of druids decided to leave their communities. Their
+life style was too different, and they thought they would live a happier life 
+away. That group was formed by alaghis, mrems, avians and gnomes, all with the 
+intention of study and understand nature in some way, and, above all, live so 
+close to it that they would almost be merging with nature.
+
+The cliff and surrounding areas suited well their needs, and they settled 
+there. As a first effect of their presence, the plateau, once dead, came back 
+to life. Another effect is that they hate those undeads, and keep them 
+imprisoned in the valley.
+
+A last interesting feature of their Refuge is the waterfall. The sound that it 
+produces reminds one very much of a pungent cry, and their waters are salty 
+(see avian-history). Beyond the waterfall there is a cave, where the ghost of 
+the last and first of the avian princes rests. That one is a spirit the druids 
+respect, taking him as a symbol of a race that was reborn.
+~
+END
+
+keyword SILVER-TEMPLE~
+level 1
+category undefined~
+text Background of `#`sSilver Temple`^
+
+The Silver Temple was built mainly by Lyne, helped by Kreetyl. Their original 
+intention was to build a temple where all gods could be strengthened, but 
+Lanthos, causing him to become weaker, to be defeated. That is why it was 
+built in silver.
+
+With time, though, it turned out into a place of knowledge, wisdom and 
+understanding. There is no discrimination in there, towards beliefs, races, or 
+anything. All gods are represented. All people are respected. The only thing 
+that is not allowed in there is violence towards one that does not want so. If 
+orcs want to kill each other out of respect, that is all right. But murder is 
+deeply frowned upon.
+
+As a consequence, it attracted many different people, and that is a place 
+where one can find the exceptions of any group. A kind draconian is the 
+druid's guildmaster, while an alaghi is the cook.
+
+The temple was built with silver from the Silver Elves, and from the huge 
+construction, much silver, in small pieces, was left. That they use to build 
+any items they many need, including weapons, to protect the peace of the 
+temple. The excedant they sell, being that the basis for their economy.
+
+As the temple was being built, they stumbled on a cave, just under it. A cave 
+made of crystals and inhabited with wisps. That is why there are so many of 
+them around the temple.
+
+The temple is blessed by the gods. It is not uncommon for one to see, hear and 
+feel things that one would not, normally. Specially in the shrines. Also, 
+those black roses around the temple were planted there by Imidazole.
+
+The silver temple is composed of three sub-areas. North of the temple itself 
+there are shops and guilds (paladins and druids). Then there is the silver 
+temple, surrounded by exotic plants. And south of it there are the facilities 
+where the temple's inhabitants live.
+~
+END
+
+keyword CRYSTAL-CAVE~
+level 92
+category undefined~
+text Background of `#`WSilver Temple`^
+
+That is the cave directly under the Silver Temple, where the wisps come from. 
+Wisps are beings of chaos. They do not have a conscience, but react to many 
+stimuli, making them look almost intelligent at times.
+
+When wisps were created (something one would have to ask Imidazole himself), 
+they for some reason gathered in this place, and their presence changed the 
+ground into crystals.
+
+The cave is all formed by crystal formations, of many colors. Nothing exists 
+there but wisps and crystals.
+~
+END
+
+keyword DARKHATE-CASTLE CASTLE-DARKHATE~
+level 92
+category undefined~
+continues DARKHATE-CASTLE-2~
+text .                      `#`rThe Story of Castle Darkhate.`^
+ 
+ `#`y<Extracted from The history of Darkhate - book by an anonymous author>`^
+ 
+    At first, before the building of the castle, all this place was known as
+the golden plains, for here grew trees with golden leaves and silver fruits.
+At the center of the golden plains, stood the little town of Valderna. It was
+a town made by a farming people that lived from the abundance of life this
+valley offered. However, such abundance made the denizens of Valderna a lazy
+and prejudiced people, and they grew to become quite xenophobic.
+ 
+    At one time, came to town a strange man, like none had ever seen before.
+He had dark skin, something completely foreign to these people, dark,
+penetrating eyes, he kept to himself and barely spoke. His appearance and his
+demeanor brought him the suspition of the townspeople and he soon found his
+life here disturbed by unending bickerings and undesirable comments from all
+around. He would have leaved town for good, but when he was on the way out, he
+saw and helped a teenager girl get rid of a band of street robbers who were to
+become rapers. It happened so that she lived in Valderna, and so he brought
+her back, and earned her love.
+ 
+    The townsfolk had to accept the man after he saved young Anyia, and so he
+lived with them, and Anyia, enduring the ironies and malitious comments of his
+lover's friends. Little time went by, and soon the people's prejudices spoke
+higher and the man's life got indeed unbearable. In a town fight, he ended up
+killing one of the town's residents, one of Anyia's friends. With this, the
+town went after him, but Anyia stood beside him. She tried to help him, but
+they were many, and he ended up letting himself get caught. Anyia was
+desperate, for she knew they would kill her lover. She went out of town, to
+seek for help with the imperial guard on the capital, but on her way out, she
+was attacked and murdered by the same group of robbers who first tried to
+steal from her, way back.
+ 
+    Her death came to Valderna on the day that strange man was going to be
+executed. He went crazy, attacked the guards, killed them, killed all who
+stood on his way. One man, two man, ten man, unarmed, armed, whoever came, he
+slaughtered, and only on the end the few remaining citizens realized the
+reason for his power: He was a dragon, a polymorphed dragon on a human shape.
+He killed men, woman and children, all inhabitants of Valderna met death that
+day.
+ 
+    The capital of the kingdon. at the time called Cotrin, was ruled by King
+Erard. Without news from Valderna on quite a while, Erard organized a small
+expedition to go see what was the matter. They never came back. He then sent
+another group, and another, and another... and none returned. At last, one
+day, a scout from one of the sent groups managed to survive the slaughter and
+arrived with news about the situation: The town was destroyed, the valley was
+taken by an aggressive Black Dragon as dark as shadow itself... a shadow
+Dragon.
+~
+END
+
+keyword DARKHATE-CASTLE-2 CASTLE-DARKHATE-2~
+level 92
+category undefined~
+parent_help DARKHATE-CASTLE~
+text .    King Erard organized a great war expedition for Valderna, and invaded the
+golden plains with more than one hundred thousand men. None survived. The
+Dragon, called by all Darkhate, slew them all. Erard himself died there. His
+wife, Queen Chleon, who took over the throne, took for herself the task to put
+and end to this Dragon once and for all.
+ 
+    Years, decades passed on in wich Chleon arranged alliances and build the
+strenght of her kingdom on the goal to end Darkhate. In the end, she gathered
+what is said to be the greatest army ever. Three million soldiers. Four
+hundred mages, all under her command. Magic, at the time, was still developing
+into what it was to become, but there were already some capable of amazing
+feats. Among them, Chleon's first counselor: Bohr.
+ 
+    They still sing tales of this battle, of three million men and a magi
+against a shadow dragon. And the shadow dragon almost won. About three hundred
+men survived, Chleon among them, but, in the end, it was Bohr who, staying at
+the back lines, analyzed the pattern of the dragon and devised the glyph that
+even today keeps him arrested. They say that, were Darkhate not exausted from
+the battle, he could have whitstood Bohr's prison.
+ 
+    But he did not, and so ended Darkhate. The golden plains, on that day,
+turned into the wicked and dark place they are now, called the valley of
+blood. Chleon erected a castle upon Bohr's prison, and meant it to be only
+a minor prison.
+ 
+    From there on the castle went from owner to owner, until it happened so
+that Bohr, the old Queen's counselor, arranged to get the castle for himself
+after he battled the former owner, a Mage called Pharen, and won. In time, he
+came to lose that castle in the battle of the Kron, with the betrayal of his
+general, called Kephlen, but that, is another story...
+ 
+~
+END
+
+keyword NEWREALM-TODO~
+level 92
+category undefined~
+text `#`RMASTER REALM TODO LIST`^
+ 
+This is the prime directive of the realm council. All tasks and projects
+will be handled by one member or other of the realm council. Any interest
+in them will be cordially welcomed by realm, any interest in helping out
+will be gratefully received as well. Write to realm for any futher
+inquiries.
+ 
+`#`WAreas To Check`^`1`1
+ 
+`#`WAuto-Quests`^`1
+Make Auto-Quests for Druids & Rangers...Clerics & Paladins...
+ 
+`#`WMiscelaneous Stuff`^`1`1
+
+`#`WAttend Later`^
+ 
+~
+END
+
+keyword SKILL BONUSES RES/IMM/VULN~
+level 92
+category undefined~
+text Until some standards are defined for adding these skills to objects, 
+I'll just add the old guideline for adding res/vuln/imm flags to objects 
+ 
+For every resistance flag you add to an object, two vulnerabilities should be added.
+~
+END
+
+keyword ADDAPPLY~
+level 92
+category undefined~
+text `=lSyntax:`=? addapply <type> <location> <modifier> <bitvector>
+ 
+`WType`=?
+Possible addapply types are vuln/resist/immunity/affect.
+ 
+`WLocation`=?
+Possible locations are all stats, such as strength or memory.  This
+value should generally be none.
+ 
+`WModifier`=?
+The modifier refers to the location specified, and can be any value within
+the acceptable range.  This value should generally be 0.
+ 
+`WBitvector`=?
+In the case of vuln/resist/immunity, the possible options are:`S
+ 
+summon             charm              magic              weapon             
+bash               pierce             slash              fire               
+cold               lightning          acid               poison             
+negative           holy               energy             mental             
+disease            drowning           light              sound              
+sleep              wood               silver             iron               
+illusion           scry               `=?
+ 
+In the case of affect, the possible options are:`S
+ 
+blind              invisible          detect_evil        detect_invis       
+detect_magic       detect_hidden      detect_good        sanctuary          
+faerie_fire        infrared           curse              otterlungs         
+poison             protect_evil       protect_good       sneak              
+hide               sleep              charm              flying             
+pass_door          haste              calm               plague             
+weaken             dark_vision        berserk            swim               
+regeneration       slow               fear               
+ 
+`=?
+To add a vulnerability to fire, for example, one would type:
+ 
+`S              addapply vuln none 0 fire`=?
+ 
+To add the haste affect to an item, one would type:
+ 
+`S              addapply affect none 0 haste`=?
+ 
+By entering "none" and "0" for the location and modifier fields, the affects
+are not displayed if the item in question is identified.  This is nice, for
+obvious reasons.
+ 
+There are no hardfast rules regarding balance when addapplies are used.  The
+number of objects with built-in resistances should be very small -- in this
+case, they should be quest items, or particularly rare pieces of equipment.
+In other cases, a good ratio is 2:1 for vulnerabilities:resistances on items.
+ 
+Affects such as sanctuary and haste on items should be avoided, for obvious
+reasons.
+~
+END
+
+keyword PROJECT-GUILD-MAKEOVER PGM~
+level 92
+category undefined~
+text .                             `#`r/----------------------\`^
+                             `#`r|Project Guild Makeover|`^
+                             `#`r\----------------------/`^
+ 
+`#`c- What is it?
+ 
+Basicly we're going to add one room to each of the guilds with a guard inside. Kerenos
+will be removing the code that prevents other classes from enter each guild, and
+these new guards will "try" to manage that.
+We're also going to make a guild for each class, some will be outside of the towns.
+For example the rangers guild will be somewhere in the forest and the barbs guild will
+be in some cave somewhere.
+ 
+- How do we go about this?
+ 
+We start by making the guardrooms with free vnums in each town. We don't link them yet,
+but just have them on the ready. For instance I have done a <redit create 3086> to 
+create the mages guardroom. I think it would be fun if they all have a certain theme.
+I've decided to make an empty shop room for the mages guild, with a sleepy mage type
+shopkeeper. Let's add some fun dialog for the guards, each portraying it's class.
+ 
+- How to go about this in an organized way?
+ 
+I will add each of you to the builders list of the towns. So please be carefull! :)
+Each of you just pick a few guildrooms (the ones that are to remain in town for now)
+and create the guardrooms, edit this helpfile and add the vnum you've created along
+with the guild it's meant for.`^
+ 
+`#`s-=Guilds=-`^
+ 
+Arcanum(Mek): ROOM  3086
+              OBJ   6163
+              MOB   7073-7076
+              MPROG 7073-7075
+ 
+Cleric(Mek):  ROOM  3087
+              OBJ   6165
+              MOB   7077-7080
+              MPROG 7076-7078
+ 
+Fighter(Dza): ROOM 27055
+~
+END
+
+keyword LINKING-KINGDOM-ROOMS~
+level 92
+category undefined~
+text -----------------------------------------------------------------------------`1The following are links to be put into the castle concerning the wings. If `1geometrically this isnt possible, ill leave it up to your very good `1judgement ;) `1`1Anakae: South 6026`1Elenarthia: West 6021`1Taur-Talat: South 6034`1Confederates: North 6048`1Tsimbek: East 6047`1Rhynia: Delete 6059 and link 6020 East`1Endomar: South 6021`1Yon. `1=============================================================================
+~
+END
+
+keyword MAP_LINKS~
+level 92
+category undefined~
+text `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `g+`S-`g+`S-`g+`S-`b-`S-`g+`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `g+`S-`g+`S-`g+`S-`g+`S-`b-`S-`g+`S-`G-`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `g+`S-`g+`S-`b-`S-`b-`S-`b-`S-`b-`S-`g+`S-`G-`S-`g+`=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `g+`S-`b-`S-`g+`S-`g+`S-`g+`S-`g+`S-`G-`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`S/`S|`=? `S|`=? `S|`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `g+`S-`g+`S-`b-`S-`g+`S-`BU`S-`g+`S-`g+`S-`G-`S-`g+`=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `G-`S-`g+`S-`g+`S-`b-`S-`g+`S-`g+`S-`g+`S-`g+`S-`G-`S-`S#`=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `g+`S-`g+`S-`b-`S-`g+`S-`g+`S-`g+`S-`g+`S-`G-`S-`g+`=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `G-`=? `=? `=? `g+`S-`b-`S-`g+`S-`g+`S-`g+`S-`g+`S-`G-`S-`g+`S-`g+`=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `S|`=? `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `S-`G-`S-`G-`=? `=? `=? `G-`S-`G-`S-`Y*`S-`G-`S-`G-`S-`G-`S-`G-`S-`G-`S-`G-`=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `=? `=? `S|`=? `S|`=? `S|`S\`S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `S#`=? `G-`S-`g+`S-`g+`S-`b-`S-`g+`S-`g+`S-`g+`S-`g+`=? `g+`=? `g+`S-`g+`S-`g+`S-`g+`=? `=? 
+`=?  `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `=? 
+`=?  `b-`S-`BU`S-`b-`S-`b-`S-`b-`S-`b-`S-`b-`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+
+`=?  `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? 
+`=?  `=? `=? `G-`S-`G-`S-`G-`S-`b-`S-`G-`S-`G-`S-`G-`S-`WI`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`=? `=? 
+`=?  `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `G-`S-`G-`S-`b-`S-`b-`S-`b-`S-`b-`S-`G-`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `=? `=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `S|`=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `G-`S-`G-`S-`G-`=? `=? `=? `b-`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`S-`g+`=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `S|`=? `=? `=? `=? `=? `=? `=? `S|`=? `S|`=? `S|`=? `=? `=? `S|`=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `G-`=? `=? `=? `=? `=? `=? `=? `g+`S-`b-`S-`b-`=? `=? `=? `b-`=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `S|`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? 
+`=?  `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `g+`=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=? `=?
+~
+END
+
+keyword PLACE~
+category undefined~
+text `=lSyntax:`=? place <object> <character>`+
+`+
+A skill that requires stealth, this skill allows the sneaky persuer to 
+unknowingly place items into the unsuspecting pockets or bags of the victim 
+without being detected.  Theives are known to be able to do this with much 
+ease along with rangers and spellfilchers, although obviously a warrior 
+could not pull the same attempt off with any success.  
+~
+END
+
+EOF~
+#$

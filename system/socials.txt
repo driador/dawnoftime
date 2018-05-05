@@ -1,0 +1,4768 @@
+name aargh~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You throw your hands up in `Rf`rr`Ru`rs`Rt`rr`Ra`rt`Ri`ro`Rn`X and yell as loud as you can! `RAAAARRRRGGGGHHHHHH!!!!`X~
+acts[1] With `Ssteam`x coming out of $s ears, $n throws his hands up in frustration and yells "`RAAAAARRRRGGGHHHH!!!`x"~
+acts[2] You begin to `Rrip`x your hair out in total `Rf`rr`Ru`rs`Rt`rr`Ra`rt`Ri`ro`Rn`x.~
+acts[3] $n begins `rripping`x $s own hair out while `Cs`cc`Cr`ce`Ca`cm`Ci`cn`Cg`x curse words.~
+acts[4] Totally `Ca`cn`Cn`co`Cy`ce`Cd`x, you reach out with two hands and begin to `Rs`rt`Rr`ra`Rn`rg`Rl`re`x $S throat! Calm down!~
+acts[5] With $s face `Rred`x with frustration, $n grabs for your throat and `Ys`yq`Yu`ye`Ye`yz`Ye`ys`x. `GOuch!`x~
+acts[6] In a total act of frustration, $n jumps at $N and almost `Rr`ri`Rp`rs `Ro`ru`Rt`x their throat! `SFight! Fight! Fight!`x~
+END
+
+name accept1~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `Ca`Gc`Cc`Ge`Cp`Gt`x the apology given.~
+acts[1] $n `Ca`Gc`Cc`Ge`Cp`Gt`Cs`x the apology and `Rs`Cm`Si`Gl`Be`Ws`x.~
+acts[2] You accept your own apology. `RS`Gi`Rl`Gl`Ry`x you!~
+acts[3] $n apologizes to himself and accepts the apology. What an `Yi`yd`Yi`yo`Yt`x!~
+acts[4] You accept $S apology, feel any `Bb`Ce`Bt`Ct`Be`Cr`x now?~
+acts[5] $e `Ra`Gc`Cc`Re`Gp`Ct`Rs`x your apology and `Ysmiles`x `Ch`ca`Cp`cp`Ci`cl`Cy`x.~
+acts[6] $N `Gaccepts`x $n apology. They both `Ys`ym`Yi`yl`Ye`x at each other in return.~
+END
+
+name accuse~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Who do you want to `Ca`Rc`gc`Gu`Ss`Me`x today!?~
+acts[1] $n looks around in the `#`Ch`Wo`Cp`We`Cs`^ of finding someone to `#`Ca`Rc`gc`Gu`Ss`Me`^.~
+acts[2] You `Ca`Rc`gc`Gu`Ss`Me`x yourself. Feeling `Rguilty`x?~
+acts[3] $n `Ca`Rc`gc`Gu`Ss`Me`rs`x themselves for what they did wrong.~
+acts[4] You look `Ca`Rc`gc`Gu`Ss`Mi`cn`rg`ml`gy`x at $M. They did it!~
+acts[5] $n looks `Ca`Rc`gc`Gu`Ss`Mi`cn`rg`ml`gy`x at you. What did you do `Ythis`x time?~
+acts[6] $n looks `Ca`Rc`gc`Gu`Ss`Mi`cn`rg`ml`gy`x at $N and points a finger at them.~
+END
+
+name adjust~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou look around, make sure `Cn`Go`Cb`Go`Cd`Gy`x is watching, and you adjust your "``T``o``o``l`x."~
+acts[1] `x$n looks around `Rs`cl`Ry`cl`Ry`c, `Ysmiles`x, then reaches down and "`Madjusts`x" $mself...~
+END
+
+name agree~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `Ca`Mg`Cr`Me`Ce`x absolutely.~
+acts[1] `x$n `Ca`Mg`Cr`Me`Ce`Ms`x absolutely.~
+acts[2] `xYou find yourself most `Ca`Mg`Cr`Me`Ce`Ma`Cb`Ml`Ce`x.~
+acts[3] `x$n finds $mself the most `Ca`Mg`Cr`Me`Ce`Ma`Cb`Ml`Ce`x being alive.~
+acts[4] You nod in `Ye`yn`Yt`yh`Yu`ys`Yi`ya`Ys`yt`Yi`yc`x `Ca`Mg`Cr`Me`Ce`Mm`Ce`Mn`Ct`x with $N.~
+acts[5] `x$n nods in `Ye`yn`Yt`yh`Yu`ys`Yi`ya`Ys`yt`Yi`yc`x `Ca`Mg`Cr`Me`Ce`Mm`Ce`Mn`Ct`x with you.~
+acts[6] $n nods in `Y`ye`Yn`yt`Yh`yu`Ys`yi`Ya`ys`Yt`yi`Yc `Ca`Mg`Cr`Me`Ce`Mm`Ce`Mn`Ct `xwith $N.~
+END
+
+name air~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou grab your `Wa`wi`Wr`x `Wg`wu`Wi`wt`Wa`wr`x and play for all you're worth.~
+acts[1] `x$n `Wa`wi`Wr`w-`Wg`wu`Wi`wt`Wa`wr`Ws`x like a `Rmad man`x ... ``E``X``C``E``L``L``E``N``T``!``!``!`X~
+acts[2] `xYou play `bs`Bo`bf`Bt`bl`By`x to yourself.~
+acts[4] `xYou hope $E appreciates your (`Ct`Bo`Gt`Ca`Bl `Gl`Ca`Bc`Gk `Co`Bf`x) talent.~
+acts[5] `x$n plays a most `Ge`gx`Gc`ge`Gl`gl`Ge`gn`Gt`x tune for you on $s most excellent `Wa`wi`Wr`w g`Wu`wi`Wt`wa`Wr`x.~
+acts[6] $n is surrounded by `Wa`wi`Wr `wg`Wr`wo`Wu`wp`Wi`we`Ws`x. ~
+END
+
+name anticipate~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou murmur '`GS`Cs`Gs`Cs`Gs`Co`Go`Cn`Gn`Cn`X, `Bm`My `Rp`Wr`Re`Ws`Rs`Ws`Rs`Ws`Rc`Wi`Ro`Wu`Rs`Ws`Rs`Ws`Rs`W.`R.`W.`X' ~
+acts[1] `x $n murmurs '`GS`Cs`Gs`Cs`Gs`Co`Go`Cn`Gn`Cn`X, `Bm`My `Rp`Wr`Re`Ws`Rs`Ws`Rs`Ws`Rc`Wi`Ro`Wu`Rs`Ws`Rs`Ws`Rs`W.`R.`W.`X~
+END
+
+name apologize~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou apologize until you are `Bb`bl`Bu`be`x in the face.~
+acts[1] `x$n `Ca`Yp`Co`Yl`Co`Yg`Ci`Yz`Ce`Ys`x profusely.~
+acts[4] `xYou might as well `Ca`Yp`Co`Yl`Co`Yg`Ci`Yz`Ce`x because $E sure as `Rh`re`Rl`rl`x won't.~
+acts[5] `x$n `Ca`Yp`Co`Yl`Co`Yg`Ci`Yz`Ce`Ys`x to you and `Mb`me`Mg`ms`x for `Wforgiveness`x.~
+acts[6] $n `Ca`Yp`Co`Yl`Co`Yg`Ci`Yz`Ce`Ys`x to $N with a very `Bs`Ci`Bn`Cc`Be`Cr`Be`x look on $s face.~
+END
+
+name applaud~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You give a `#`Rr`Mo`Ru`Mn`Rd`^ of `#`Ca`Gp`Cp`Gl`Ca`Gu`Cs`Ge`^.~
+acts[1] $n gives a `#`Rr`Mo`Ru`Mn`Rd`^ of `#`Ca`Gp`Cp`Gl`Ca`Gu`Cs`Ge`^.~
+acts[2] You `#`Ca`Gp`Cp`Gl`Ca`Gu`Cd`^ at yourself. Boy, are we conceited!~
+acts[3] $n `#`Ca`Gp`Cp`Gl`Ca`Gu`Cd`Gs`^ at $mself. Boy, are we conceited!~
+acts[4] You `#`Rc`Ml`Ra`Mp`^ at $N's actions.~
+acts[5] $n gives you a `#`Rr`Mo`Ru`Mn`Rd`^ of `#`Ca`Gp`Cp`Gl`Ca`Gu`Cs`Ge`^. You `#`YMUST'VE`^ done something `#`Wgood`^!~
+acts[6] $n `#`Rc`Ml`Ra`Mp`Rs`^ at $N's actions.~
+END
+
+name babble~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`cb`Ca`cb`Cb`cl`Ce`^ endlessly.~
+acts[1] $n `#`cb`Ca`cb`Cb`cl`Ce`cs`^ endlessly, won't $e `#`BEVER`^ be quiet!~
+acts[2] You `#`cb`Ca`cb`Cb`cl`Ce`^ on and on to yourself, `#`Mfinally`^ someone who `#`rLISTENS!!`^~
+acts[3] $n `#`cb`Ca`cb`Cb`cl`Ce`cs`^ quietly to $smelf.~
+acts[4] You `#`cb`Ca`cb`Cb`cl`Ce`^ to $N for `#`Ghours on end`^.~
+acts[5] $n `#`cb`Ca`cb`Cb`cl`Ce`cs`^ at you. You nod `#`Sm`We`Sc`Wh`Sa`Wn`Si`Wc`Sa`Wl`Sl`Wy`^, hoping $e will be quiet soon.~
+acts[6] $n `#`cb`Ca`cb`Cb`cl`Ce`cs`^ to $N for what seems an `#`Se`Wt`Se`Wr`Sn`Wi`St`Wy`^, how can $N stand it?~
+END
+
+name bah~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `RBah`x!~
+acts[1] `w$n screams "`RBah`x!"`x~
+acts[2] `RBah`x!~
+acts[3] `w$n screams "`RBah`x!" at $mself.~
+acts[4] `wYou scream "`RBah`x!" at $N, and startle them quite a bit!~
+acts[5] `w$n screams in your face and yells "`RBah`x!".~
+acts[6] `w$n screams "`RBah`x!" at the startled $N!~
+END
+
+name bark~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Mb`Ba`Mr`Bk`^ `#`Rloudly`^.~
+acts[1] $n `#`Mb`Ba`Mr`Bk`Ms`^ like a dog. `#`CGO DAWGS SIC 'EM!!! `cWOOF! `CWOOF! `cWOOF! `CWOOF!`^~
+acts[2] You `#`Mb`Ba`Mr`Bk`^ at yourself and jump back in `#`Rfear`^.~
+acts[3] $n `#`Mb`Ba`Mr`Bk`Ms`^ at $mself and cowers in `#`Rfear`^.~
+acts[4] You `#`Mb`Ba`Mr`Bk`^ at $N scaring $M `#`Rsilly`^ -- `#`YSHAME ON YOU!!`^~
+acts[5] $n `#`Mb`Ba`Mr`Bk`Ms`^ loudly at you, you back away, because $e might `#`Ybite`^ too!!~
+acts[6] $n `#`Mb`Ba`Mr`Bk`Ms`^ at $N scaring $M senseless.~
+END
+
+name bat~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Mb`ma`Mt`^ your long, `#`Sdark`^ lashes and smile `#`Winnocently`^.~
+acts[1] $n `#`Mb`ma`Mt`ms`^ $s long, `#`Sdark`^ lashes and smiles `#`Winnocently`^.~
+END
+
+name bclub~
+social_flags 
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `BYOU `wstart to swing around your `s(===`rbillyclub`s===)!  `C YOU the `YCHANNEL POLICE `Care not happy.`x~
+acts[1] `B$n `wstarts to swing around $s `s(===`rbillyclub`s===)!`C the `YCHANNEL POLICE `Care not happy.`w Watch out there!`x~
+acts[2] `BYOU`w beat yourself `Csenseless with your own `s(===`rbillyclub`s===)`x  What are you thinking!!!?~
+acts[3] $n beats $self `Csenseless with $N own `s(===`rbillyclub`s===)`x  What was $n thinking just now?~
+acts[4] `BYOU`w beat $N `Csenseless with your `s(====`rbillyclub`s===). `C This bludgeoning is brought to you by the `YCHANNEL POLICE!`X~
+acts[5] `BYOU`w have been just beat `Csenseless with $n's `s(====`rbillyclub`s===).`R USES PROPER CHANNELS! `C This bludgeoning is brought to you by the `YCHANNEL POLICE!`X~
+acts[6] `B$N`w beats $n `Csenseless with $s `s(====`rbillyclub`s===). `C This bludgeoning is brought to you by the `YCHANNEL POLICE!`X~
+END
+
+name bdance~
+social_flags 
+	ooc
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `wYou `Rb`MR`Be`GA`Ck`YD`Da`RN`wc`CE`w and twirl on your head! Whoa that's making you dizzy!`x~
+acts[1] `w$n `Rb`MR`Be`GA`Ck`YD`Da`RN`wc`CE`Gs`w and twirls on $s head! Ummm? Didn't that go out with `GD`Bi`Ms`Cc`Ro?`x~
+acts[2] You throw yourself down to `Rb`MR`Be`GA`Ck`YD`Da`RN`wc`CE`w. `RMY GOD`w your gooooood!!!!`x~
+acts[3] $n throws $mself down to `Rb`MR`Be`GA`Ck`YD`Da`RN`wc`CE`w. `RMY GOD`w What is wrong with $s!!!!`x~
+acts[4] You throw yourself down and `Rb`MR`Be`GA`Ck`YD`Da`RN`wc`CE`w in front of $N trying to impress them.. `YOH YEAH`w, they look impressed!!`x~
+acts[5] $n  throws $mselves down in front of you to `Rb`MR`Be`GA`Ck`YD`Da`RN`wc`CE`w, almosts kicking you! `RSOMEONE HURRY`w Throw `Bcold water`w on $m!!`x~
+acts[6] $n `Rb`MR`Be`GA`Ck`YD`Da`RN`wc`CE`Gs`w almosts kicking $N! `RSOMEONE HURRY`w Splash `Bcold water`w on $m!!`x~
+END
+
+name beam~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`rb`Re`Ya`Gm `gd`ce`Cl`Bi`bg`mh`Mt`re`Rd`Yl`Gy`^ at nothing in particular.~
+acts[1] $n `#`rb`Re`Ya`Gm`gs `cb`Cr`Bo`ba`md`Ml`ry`^ at nothing in particular.~
+acts[2] Well, aren't you `#`rs`Rp`Ye`Gc`Bi`Ma`ml`^?~
+acts[3] $n `#`rb`Re`Ya`Gm`gs`^ at $mself, obviously `#`rp`Rl`re`Ra`rs`Re`rd`^.~
+acts[4] You `#`Rd`Ya`Gz`Bz`Ml`me`^ $N with your `#`rS`Rmil`rE`^.~
+acts[5] $n must like you `#`mA `MGREAT `mDEAL`^ to `#`Rb`Ye`Ga`Bm`^ at you so broadly!~
+acts[6] $n must like $N `#`mA `MGREAT DEA`mL`^ to `#`Rb`Ye`Ga`Bm`^ at $M so broadly!~
+END
+
+name bearhug~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Whom do you wish to `#`YB`rE`YA`rR`YH`rU`YG`^?~
+acts[2] You vainly clutch yourself in a `#`YB`rE`YA`rR`YH`rU`YG`^ for consolation.~
+acts[3] $n hugs $mself as tightly as possible.  Looks like $e could use a hand.~
+acts[4] You overwhelm $N with a great, big, hulking `#`YB`rE`YA`rR`YH`rU`YG`^.~
+acts[5] $n clutches you tightly in an overwhelming `#`YB`rE`YA`rR`YH`rU`YG`^!~
+acts[6] $n encompasses $N in an `#`WENORMOUS`^ `#`YB`rE`YA`rR`YH`rU`YG`^!~
+END
+
+name beckon~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You beckon for everyone to follow.~
+acts[1] $n beckons for everyone to follow.~
+acts[2] You beckon to your shadow to follow.~
+acts[3] $n beckons to $s shadow to follow.~
+acts[4] You beckon for $N to follow -- sure hope they do!~
+acts[5] $n beckons for you to follow.~
+acts[6] $n beckons $N to follow...hmmm what's going on?~
+END
+
+name beg~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You beg the gods for mercy.~
+acts[1] The gods fall down laughing at $n's request for mercy.~
+acts[2] Begging yourself for money doesn't help.~
+acts[4] You desperately try to squeeze a few coins from $M.~
+acts[5] $n begs you for money. You graciously let $m peep at your fortune.~
+acts[6] $n begs $N for a dime or two - or twenty !~
+END
+
+name bite~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Rglare`^ around, muttering "`#`RB`ri`Rt`re `Rm`re`R.`r.`R.`^" under your breath.~
+acts[1] $n `#`Rglares`^ around, muttering "`#`RB`ri`Rt`re `Rm`re`R.`r.`R.`^" under $s breath.~
+acts[2] You `#`Rb`ri`Rt`re`^ your knuckle in `#`Ranguish`^.~
+acts[3] $n `#`Rb`ri`Rt`re`Rs`^ $s knuckle in `#`Ranguish`^...the tragedy!.~
+acts[4] You `#`Rb`ri`Rt`re`^ $N on the neck.~
+acts[5] $n `#`Rb`ri`Rt`re`Rs`^ you on the neck.~
+acts[6] $n `#`Rb`ri`Rt`re`Rs`^ $N on the neck!~
+END
+
+name bkiss~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`WYou blow `rk`Ri`rs`Rs`re`Rs `Wto the air.`^~
+acts[1] `#`W$n blows `rk`Ri`rs`Rs`re`Rs `Wat no one in particular.`^~
+acts[2] `#`WYou blow a `rk`Ri`rs`Rs `Wto yourself... isn't the world beautiful?`^~
+acts[3] `#`W$n blows a `rk`Ri`rs`Rs `Wto $mself, obviously very in `Rlove`W.`^~
+acts[4] `#`WYou blow a `rk`Ri`rs`Rs `Wat $N and wonder if $E will catch it.`^~
+acts[5] `#`W$n blows a `rk`Ri`rs`Rs `Wat you and hopes you'll blow one back at $m.`^~
+acts[6] `#`W$n blows a `rk`Ri`rs`Rs `Wat $N ... isn't $e so `#`MCUTE`W?`^~
+END
+
+name bleed~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Rbleed`^ `#`Rp`rr`Wo`rf`Ru`rs`We`rl`Ry`^ -- making a `#`Whorrible mess!`^~
+acts[1] $n `#`Rw`re`Wa`rk`Rl`ry `Rbleeds`^ all over the floor.~
+acts[2] You `#`Rbleed`^ all over yourself.~
+acts[3] $n `#`Rbleeds`^ `#`Rp`rr`Wo`rf`Ru`rs`We`rl`Ry`^ all over $mself.`^~
+acts[4] You `#`Rbleed`^ on $N -- `#`Re`rw`Ww`rw!`^~
+acts[5] $n `#`Rbleeds`^ on you -- `#`Re`rw`Ww`rw!`^  `#`CGet Away!!`^~
+acts[6] $n `#`Rbleeds`^ on $N. `#`CWatch out`^! YOU might be next!~
+END
+
+name blink~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You bat your `#`Seyelashes`^.~
+acts[1] $n blinks `#`Wi`Yn`Wn`Yo`Wc`Ye`Wn`Yt`Wl`Yy`^.~
+acts[2] You try to convince yourself of your `#`Wi`Yn`Wn`Yo`Wc`Ye`Wn`Yc`We`^.~
+acts[4] You blink `#`Wi`Yn`Wn`Yo`Wc`Ye`Wn`Yt`Wl`Yy`^ at $N.~
+acts[5] $n blinks `#`Wi`Yn`Wn`Yo`Wc`Ye`Wn`Yt`Wl`Yy`^ at you.~
+acts[6] $n blinks `#`Wi`Yn`Wn`Yo`Wc`Ye`Wn`Yt`Wl`Yy`^ at $N.~
+END
+
+name blush~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`rYour cheeks are `Rburning.`^~
+acts[1] $n `#`rblushes`^.~
+acts[2] You blush at your own folly.~
+acts[4] You get all `#`rflustered`^ at seeing $M.~
+acts[5] $n `#`rblushes`^ as $e sees you here. Such an effect on people!~
+acts[6] $n `#`rblushes`^ as $e sees $N here.~
+END
+
+name boast~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`cYou `Cboast `Yloudly `cof all your `Camazing `caccomplishments.`^~
+acts[1] `#`c$n `Cboasts `Yloudly `cin a `Mpigheaded `cfashion.`^~
+acts[2] `#`cYou `Cboast `cto yourself of all your `Ygreat `cfeats! Your own `Cbiggest `Mfan.`^~
+acts[3] `#`c$n `Cboasts `cto $mself -- what an `Yego!`^~
+acts[4] `#`cYou `Cboast `cto $N of all your `Ygreat `cdeeds.`^~
+acts[5] `#`cOnce again, $n `Cboasts `cto you, what a `Mbloated `Yego!`^~
+acts[6] `#`c$n `Cboasts `cto $N.`^~
+END
+
+name boggle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Cb`Yo`mg`rg`Gl`ce`^ at the concept.~
+acts[1] $n `#`Cb`Yo`mg`rg`Gl`ce`Bs`^ at the concept.~
+acts[2] You `#`Cb`Yo`mg`rg`Gl`ce`^ at yourself. Hmmm... intriguing.~
+acts[3] $n `#`Cb`Yo`mg`rg`Gl`ce`Bs`^ quietly to $mself.~
+acts[4] You `#`Cb`Yo`mg`rg`Gl`ce`^ at $N.~
+acts[5] $n `#`Cb`Yo`mg`rg`Gl`ce`Bs`^ at you.~
+acts[6] $n `#`Cb`Yo`mg`rg`Gl`ce`Bs`^ at $N.~
+END
+
+name bonk~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`M***`gBONK!!!`M***`^~
+acts[2] You `#`M***`gBONK!!!`M***`^ yourself, fool that you are.~
+acts[3] $n `#`M***`gBONKS!!!`M***`^ $mself and grimaces in pain.~
+acts[4] You `#`M***`gBONK!!!`M***`^ $N on the head for being such a `#`Gm`Bo`Gr`Bo`Gn`^.~
+acts[5] $n `#`M***`gBONKS!!!`M***`^ you on the head for being so `#`Gf`Bo`Go`Bl`Gi`Bs`Gh`^.~
+acts[6] $n `#`M***`gBONKS!!!`M***`^ $N on the head for being such an `#`YUTTER`^ `#`Gm`Bo`Gr`Bo`Gn`^.~
+END
+
+name boulder~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WHit who with a `yboulder`W?`x~
+acts[1] `W$n is looking for someone to hit with a `yboulder`W.`x~
+acts[2] `WBeing stupid you lift a `yboulder`W above your head and drop it.`x~
+acts[3] `WBeing stupid $n lifts a `yboulder`W above his head and drops it.`x~
+acts[4] `WYou hit $N with a `yboulder`W so hard that the `yboulder`W cracks.`x~
+acts[5] `W$n hits you with a `yboulder`W so hard the `yboulder`W cracks. Crap that hurts.`x~
+acts[6] `W$n hits $N with a `yboulder`W so hard that the `yboulder`W cracks. $N is going to feel that in the morning.`x~
+END
+
+name bounce~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] B`WO`wI`gI`GN`gN`mN`MN`cN`CG`wG`x!~
+acts[1] $n bO`yuN`mc`gEs`w around with a happy smile.~
+acts[2] You bO`yuN`mc`gE`w your head like a `rb`Yasket`Rb`Ca`Bl`Gl`x.~
+acts[3] $n `Cplays `rb`Yasket`Rb`Ca`Bl`Gl`x with $s head!`x~
+acts[4] You bO`yuN`mc`gE`w onto $S lap and wiggle about.~
+acts[5] $n bO`yuN`mc`gE`w onto your lap and wiggles about.~
+acts[6] $n bO`yuN`mc`gE`w onto $N lap and wiggles about.`x~
+END
+
+name bow~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`WYou `Sbow `Wdeeply.`^~
+acts[1] `#`W$n `Sbows `Wdeeply.`^~
+acts[2] You kiss your toes.~
+acts[3] $n folds up like a jacknife and kisses $s own toes.~
+acts[4] `#`WYou `Sbow `Wbefore $M.`^~
+acts[5] `#`W$n `Sbows `Wbefore you.`^~
+acts[6] `#`W$n `Sbows `Wbefore $N.`^~
+END
+
+name brb~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Hope to see you soon!~
+acts[1] $n will be right back!~
+END
+
+name bscode~
+social_flags 
+	ooc
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WYou `WPoint a `Yb`yi`Yg `CCAN `rof `FBUGAWAY`x `GS`gP`GR`GA`gY `y `Winto the air!! `M GO get`em Tiger`Y!!!!!!`x~
+acts[1] `W$n `WPoints a `Yb`yi`Yg `CCAN `rof `FBUGAWAY`x `GS`gP`GR`GA`gY `y `Winto the air!! `M Good Grief`Y!!!!!!`x~
+acts[2] `WYou point a `Yb`yi`Yg `CCAN `rof `FBUGAWAY`x `GS`gP`GR`GA`gY `y `Wat Yourself !! `M You'll be sooOOrrrRy`Y!!!!!!`x~
+acts[3] `W$n points a `Yb`yi`Yg `CCAN `rof `FBUGAWAY`x `GS`gP`GR`GA`gY `y `Wat $mself !! `MWon't $E be sooOOrrrRy`Y!!!!!!`x~
+acts[4] `WYou point a `Yb`yi`Yg `CCAN `rof `FBUGAWAY`x `GS`gP`GR`GA`gY`W at $N and yell `M RAAAAAID`Y!!!!!!`x~
+acts[5] `W$n points a `Yb`yi`Yg `CCAN `rof `FBUGAWAY`x `GS`gP`GR`GA`gY `y `Wat You !! `M Uh Oh `Y!!!!!!`x~
+acts[6] `W$n points a `Yb`yi`Yg `CCAN `rof `FBUGAWAY`x `GS`gP`GR`GA`gY`W at $N and yells `M RAIDDDDD`Y!!!!!!`x~
+END
+
+name buff~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You buff your nails on your cloak. ~
+acts[1] $n buffs $s nails on $s cloak. ~
+END
+
+name burp~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You burp loudly.~
+acts[1] $n burps loudly.~
+acts[2] You burp at yourself.~
+acts[3] $n burps at $mself.  What a sick sight.~
+acts[4] You burp loudly to $M in response.~
+acts[5] $n burps loudly in response to your remark.~
+acts[6] $n burps loudly in response to $N's remark.~
+END
+
+name bwah~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You evilly laugh `YB`yW`yAAAA`YH`y!!`x~
+acts[1] $n evilly laughs `YB`yW`yAAAA`YH`y!!`x~
+acts[2] You grab yourself by the collar and evilly laugh `YB`yW`yAAAA`YH`y!!`x~
+acts[3] $n grabs themselves by their own collar, and evilly laughs `yB`YWAAA`yH`Y!!`X~
+acts[4] You grab $N by the collar pulls $S face close to yours and evilly laughs `YB`yW`yAAAA`YH`y!! `x~
+acts[5] $n grabs $N by the collar pulls $S face close to $s's and evilly laughs `YB`yWAAAA`YH`y!!`x~
+acts[6] $n grabs $N by the collar pulls $S face close to $s's and evilly laughs `YB`yWAAAA`YH`y!!`x~
+END
+
+name cackle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`CYou `Mc`ra`Mc`rk`Ml`re `Yg`Gl`Ce`Be`Mf`ru`Yl`Gl`Cy.`^~
+acts[1] `#`C$n throws back $s head and `Mc`ra`Mc`rk`Ml`re`Ms `Cwith `Yi`Gn`Cs`Ba`Mn`re `Yg`Gl`Ce`Be.`^~
+acts[2] `#`CYou `Mc`ra`Mc`rk`Ml`re `Cat yourself. Now, `YTHAT'S `Cstrange!`^~
+acts[3] `#`C$n is really `Ycrazy `Cnow! $e `Mc`ra`Mc`rk`Ml`re`Ms `Cat $mself.`^~
+acts[4] `#`CYou `Mc`ra`Mc`rk`Ml`re `Yg`Gl`Ce`Be`Mf`ru`Yl`Gl`Cy `Cat $N.`^~
+acts[5] `#`C$n `Mc`ra`Mc`rk`Ml`re`Ms `Yg`Gl`Ce`Be`Mf`ru`Yl`Gl`Cy `Cat you. Better keep your distance from $m.`^~
+acts[6] `#`C$n `Mc`ra`Mc`rk`Ml`re`Ms `Yg`Gl`Ce`Be`Mf`ru`Yl`Gl`Cy `Cat $N.`^~
+END
+
+name camel~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You pretend you are a camel.~
+acts[1] $n pretends to be a camel.~
+acts[2] You light a Camel cigarette and inhale sharply.~
+acts[3] $n lights a Camel cigarette and inhales sharply.~
+acts[4] You light a Camel cigarette for $M.~
+acts[5] $n lights a Camel cigarette for you.~
+acts[6] $n lights a Camel cigarette for $N.~
+END
+
+name charge~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`YYOU `g***`RC`GH`RA`GR`RG`GE`g*** `YINTO THE FRAY!`^~
+acts[1] `#`Y$n `g***`RC`GH`RA`GR`RG`GE`RS`g*** `YINTO THE FRAY! ALL GUTS, NO BRAINS.`^~
+acts[2] `#`YYOU RUN YOUR HEAD INTO A `RBRICK WALL. `g***`RO`GU`RC`GH`g***`^~
+acts[4] `#`YWITH SURPRISING DEXTERITY, YOU `g***`RH`GE`RA`GD`R-`GB`RU`GT`RT`g*** `Y$N!`^~
+acts[5] `#`g***`RO`GO`RF`G!`g*** `Y$n rammed $s head into your stomach! That `RHURT!`^~
+acts[6] `#`Y$n DUCKS DOWN LOW, CHARGES FORWARD, AND `g***`RH`GE`RA`GD`R-`GB`RU`GT`RT`GS`g*** `Y$N!`^~
+END
+
+name cheer~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`mYou `r*`Y*`r*`MCheeR and DaNcE`r*`Y*`r* `mas the `YJ`ro`YY `mwithin you `rB`Wu`rR`Ws`rT`Ws `mforth!`^~
+acts[1] `#`m$n `r*`Y*`r*`MCheeRs and SiNgS`r*`Y*`r* `m... $e is just `rB`Wu`rR`Ws`rT`Wi`rN`Wg `mwith `YJ`ro`YY!`^~
+acts[2] `#`mYou `r*`Y*`r*`MCheeR`r*`Y*`r* `m silently for yourself since nobody else will.`^~
+acts[3] `#`m$n resorts to `r*`Y*`r*`MCheeRinG`r*`Y*`r* `mfor $mself... how sad.`^~
+acts[4] `#`mYou `r*`Y*`r*`MCheeR`r*`Y*`r* `m$N on and wish $M `YG`ro`YO`rd `YL`ru`YC`rk`Y!`^~
+acts[5] `#`mYou are `r*`Y*`r*`MCheeReD`r*`Y*`r* `mon by $n... you feel so `rL`Wo`rV`We`rD`W!`^~
+acts[6] `#`r*`Y*`r*`YY`ra`YY!`r*`Y*`r* `mGo $N!!! $n `r*`Y*`r*`MCheeRs`r*`Y*`r* `m$M on.`^~
+END
+
+name chortle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`MHeh.`^~
+acts[1] `#`M$n `Wchortles `mm`Mi`ms`Wc`Mh`Wi`me`Mv`Wo`mu`Ms`ml`Wy.`^~
+acts[2] `#`MYou `Wchortle `Mat your own joke.`^~
+acts[3] `#`M$n `Wchortles `Mat $s own joke. Don't bother.`^~
+acts[4] `#`MYou `Wchortle `mm`Mi`ms`Wc`Mh`Wi`me`Mv`Wo`mu`Ms`ml`Wy `Mat $N.`^~
+acts[5] `#`M$n `Wchortles `mm`Mi`ms`Wc`Mh`Wi`me`Mv`Wo`mu`Ms`ml`Wy `Mat you.`^~
+acts[6] `#`M$n `Wchortles `mm`Mi`ms`Wc`Mh`Wi`me`Mv`Wo`mu`Ms`ml`Wy `Mat $N.`^~
+END
+
+name chuckle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Yc`Mh`Yu`Mc`Yk`Ml`Ye`^ quietly to yourself.~
+acts[1] $n `#`Yc`Mh`Yu`Mc`Yk`Ml`Ye`Ms`^ quietly to $mself.~
+acts[2] You `#`Yc`Mh`Yu`Mc`Yk`Ml`Ye`^ at your own joke, since no one else will.~
+acts[3] $n `#`Yc`Mh`Yu`Mc`Yk`Ml`Ye`Ys`^ at $s own joke, since none of you will.~
+acts[4] You `#`Yc`Mh`Yu`Mc`Yk`Ml`Ye`^ at $S joke.~
+acts[5] $n `#`Yc`Mh`Yu`Mc`Yk`Ml`Ye`Ms`^ at your joke.~
+acts[6] $n `#`Yc`Mh`Yu`Mc`Yk`Ml`Ye`Ms`^ at $N's joke.~
+END
+
+name clap~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`rc`Cl`ra`Cp`^ your hands together.~
+acts[1] $n shows $s approval by `#`rc`Cl`ra`Cp`rp`Ci`rn`Cg`^ $s hands together.~
+acts[2] You `#`rc`Cl`ra`Cp`^ at your own performance.~
+acts[3] $n `#`rc`Cl`ra`Cp`rs`^ at $s own performance.~
+acts[4] You `#`rc`Cl`ra`Cp`^ at $S performance.~
+acts[5] $n `#`rc`Cl`ra`Cp`rs`^ at your performance.~
+acts[6] $n `#`rc`Cl`ra`Cp`rs`^ at $N's performance.~
+END
+
+name claw~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You tighten your hands into a fist.~
+acts[1] $n clenches $s fists until blood drips from them...~
+acts[2] You claw yourself to shreds!~
+acts[3] $n rips $mself to shreds with $s fingernails!~
+acts[4] You claw $S eyes out... GROSS!~
+acts[5] $n buries $s nails in your eyes and you are blinded by your own blood!~
+acts[6] $n buries $s nails in $N's eyes ... OH GOD, THE BLOOD!~
+END
+
+name clue~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WBuy who a clue.`x~
+acts[1] `W$n wants to buy someone a clue. Someone give him a some money!`x~
+acts[2] `WNow why would you buy yourself a clue.`x~
+acts[3] `W$n buys $sself a clue.$n needs it.`x~
+acts[4] `W$N just doesn't get it! You buy $N a clue.`x~
+acts[5] `W$n buys you a clue. You might figure it out now.`x~
+acts[6] `W$n buys $N a clue. Maybe NOW they will get the jest of it!`x~
+END
+
+name cnod~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `Ccoolly`x nod.~
+acts[1] $n `Ccoolly`x nods.~
+END
+
+name coffee~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Give a coffee to whom?~
+acts[2] You drink some of your coffee.~
+acts[3] $n slowly sips away at $s coffee.~
+acts[4] You give $m a coffee. Wow! How nice of you!~
+acts[5] $n hands a coffee over to you. How nice!~
+acts[6] $n hands $N a large cup of coffee.~
+END
+
+name collapse~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`BC`coLLaPs`BE`^ on the floor from `#`CE`WX`Ch`Wa`Cu`Ws`CT`WI`CO`Wn.`^~
+acts[1] $n DRAMATICALLY `#`BC`coLLaPsE`Bs`^ on the floor from `#`CE`WX`Ch`Wa`Cu`Ws`CT`WI`CO`Wn.`^~
+acts[4] You `#`BC`coLLaPs`BE`^ right into $N's arms.`^~
+acts[5] Suddenly, $n `#`BC`coLLaPsE`Bs`^ into your arms from exhaustion.`^~
+acts[6] $n `#`BC`coLLaPsE`Bs`^ into $N's arms.`^~
+END
+
+name comfort~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Do you feel uncomfortable?~
+acts[2] You make a vain attempt to comfort yourself.~
+acts[3] $n has no one to comfort $m but $mself~
+acts[4] You `#`rc`mo`rm`mf`ro`mr`rt`^ $M.~
+acts[5] $n `#`rc`mo`rm`mf`ro`mr`rt`ms`^ you.~
+acts[6] $n `#`rc`mo`rm`mf`ro`mr`rt`ms`^ $N.~
+END
+
+name compliment~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Whose hand are you trying to shake?~
+acts[2] You compliment yourself, since everyone is ignoring you.~
+acts[3] $n shakes $s own hands. What a loser.~
+acts[4] You shake $S hand.~
+acts[5] $n shakes your hand.~
+acts[6] $n shakes $N's hand~
+END
+
+name concern~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WYou are showing `Bconcern`W on your face! It'll be ok.`x~
+acts[1] `W$n has a `Bconcerned`W look on $s face. Wonder what's bothering $m?`~
+acts[2] `WYou are very `Bconcerned `Wabout yourself, Ah, don't be, it'll be OK!!`x~
+acts[3] `W$n is very `Bconcerned`W about themselves, Well someone has to be!!`x~
+acts[4] `WYou show great `Bconcern `Wtoward $N. `x~
+acts[5] `W$n shows great `Bconcern`W toward you.`x-~
+acts[6] `W$n shows great `Bconcern`W toward $N. Wonder what's the matter?`x~
+END
+
+name confused~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Your `#`Cco`mn`Mf`rus`Wio`Gn`^ is showing.~
+acts[1] $n `#`Cb`ml`Mi`rn`Wk`Gs`^ slowly.~
+acts[4] You `#`Cb`ml`Mi`rn`Wk`^ slowly, trying to decipher $S comment.~
+acts[5] $n `#`Cb`ml`Mi`rn`Wk`Gs`^ slowly. Maybe you left a word out of your sentence?~
+acts[6] $n `#`Cb`ml`Mi`rn`Wk`Gs`^ slowly. Maybe $N left a word out of $S sentence...~
+END
+
+name conspire~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You conspire against the world, you villain!~
+acts[1] $n looks a little bit shady, $e's probably conspiring against you.~
+acts[2] You plot your demise carefully, don't let yourself find out!~
+acts[3] $n conspires against $mself, this can come to no good end..~
+acts[4] You conspire against $N, You'll show $M good..~
+acts[5] $n mutters about 'secret plans' while $e conspires against you.. How subtle...~
+acts[6] $n conspires against $N in a shady manner.~
+END
+
+name contemplate~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `Rbite`x your `Blip`x `Yc`yontemplatively`x.~
+acts[1] `x$n `Rbites`x $s `Blip`Y c`yontemplatively`x.~
+END
+
+name cough~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `YYuck`x!! try to `Wcover`x your mouth next `Ctime`x!!!~
+acts[1] `x$n `Ycoughs`x loudly.~
+END
+
+name cover~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You cover your ears to protect them from the noise.~
+acts[1] $n covers $s ears to protect them from all the noise.~
+acts[2] No... I don't think so.~
+acts[4] You glare at $N and cover your ears.~
+acts[5] $n covers $s ears because of you... you are TOO LOUD!~
+acts[6] $n glares at $N and covers $s ears.~
+END
+
+name cower~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`yYou `YCoWeR `yin a corner.`^~
+acts[1] `#`y$n `YCoWeRs `yin a corner and `YWhImPeRs `ysoftly.`^~
+acts[2] `#`yYou are `YAfRaId `yof your own shadow!`^~
+acts[3] `#`y$n `YCoWeRs `yin the corner afraid of $s own shadow!`^~
+acts[4] `#`yYou `YCoWeR `yaway from $N and $S `Yharsh `ywords.`^~
+acts[5] `#`yYou `YSCARED `Wpoor `y$n! Now $S is `YCoWeRiNg `yin a corner, afraid for $s life.`^~
+acts[6] `#`y$n `YCoWeRs `yin a corner, terrified that $N will come after $m.`^~
+END
+
+name cramp~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You gasp and clutch your abdomen, wheezing with the pain. ~
+acts[1] $n gasps and clutches $m abdomen in agony. ~
+acts[4] You hammerlock $M, screaming, "AAAAARRRRRGH!! I HAVE A CRAMP!!!" ~
+acts[5] $n hammerlocks you, screaming "AAAAARRRRRGH!! I HAVE A CRAMP!!!"~
+acts[6] $n hammerlocks $N, screaming, "AAAAARRRRRGH!! I HAVE A CRAMP!!!". ~
+END
+
+name cringe~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Ycr`Gin`Yge`^ in `#`RTERROR`^.~
+acts[1] $n `#`Ycr`Gin`Yges`^ in `#`RTERROR`^!~
+acts[2] I beg your pardon?~
+acts[4] You `#`Ycr`Gin`Yge`^ away from $M.~
+acts[5] $n `#`Ycr`Gin`Yges`^ away from you.~
+acts[6] $n `#`Ycr`Gin`Yges`^ away from $N in mortal `#`RTERROR`^.~
+END
+
+name criticize~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Yes, but who?~
+acts[2] You criticize yourself profusely.~
+acts[3] $n tears $mself apart, cursing $s own stupidity.~
+acts[4] You criticize $M with all the warmth of a snake.~
+acts[5] $n informs you that your attempts need some MAJOR adjustments.~
+acts[6] With a nasty grin, $n rips apart $Ns efforts.~
+END
+
+name crumpet~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] What you just can't crumpet!~
+acts[2] You feed yourself a yummy `yc`Yr`yu`Ym`yp`Ye`yt`x!~
+acts[3] $n eats a `yc`Yr`yu`Ym`yp`Ye`yt`x! Boy you wish you had one.~
+acts[4] You feed $N a yummy `yc`Yr`yu`Ym`yp`Ye`yt`x!~
+acts[5] $n feeds you a yummy `yc`Yr`yu`Ym`yp`Ye`yt`x! You know you want another one!~
+acts[6] $n feeds $N a yummy `yc`Yr`yu`Ym`yp`Ye`yt`x.~
+END
+
+name cry~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`CWaaaaah...`^~
+acts[1] `#`W$n bursts into `Ctears`^.~
+acts[2] `#`WYou `Ccry `Wto yourself.`^~
+acts[3] `#`W$n `Csobs `Wquietly to $mself.`^~
+acts[4] `#`WYou `Ccry `Won $S shoulder.`^~
+acts[5] `#`W$n `Ccries `Won your shoulder.`^~
+acts[6] `#`W$n `Ccries `Won $N's shoulder.`^~
+END
+
+name cuddle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Who do you feel like cuddling today?~
+acts[2] You must feel very cuddly indeed ... :)~
+acts[3] $n cuddles up to $s shadow.  What a sorry sight.~
+acts[4] You cuddle $M.~
+acts[5] $n cuddles you.~
+acts[6] $n cuddles $N.~
+END
+
+name curse~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You swear loudly for a long time.~
+acts[1] $n swears : #@*"*&^*#%@*&! !!!!!~
+acts[2] You swear at your own mistakes.~
+acts[3] $n starts swearing at $mself.  Why don't you help?~
+acts[4] You swear at $M.~
+acts[5] $n swears at you!  Where are the manners?~
+acts[6] $n swears at $N.~
+END
+
+name curtsey~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Wc`Murtse`Wy`^ to your audience.~
+acts[1] $n `#`Wc`Murtsey`Ws`^ gracefully.~
+acts[2] You `#`Wc`Murtse`Wy`^ to your audience (yourself).~
+acts[3] $n `#`Wc`Murtsey`Ws`^ to $mself, since no one is paying attention to $m.~
+acts[4] You `#`Wc`Murtse`Wy`^ to $M.~
+acts[5] $n `#`Wc`Murtsey`Ws`^ gracefully for you.~
+acts[6] $n `#`Wc`Murtsey`Ws`^ gracefully for $N.~
+END
+
+name dance~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Feels silly, doesn't it?~
+acts[1] $n dances wildly before you!~
+acts[2] You skip and dance around by yourself.~
+acts[3] $n skips a light Fandango.~
+acts[4] You lead $M to the dancefloor.~
+acts[5] $n sends you across the dancefloor.~
+acts[6] $n sends $N across the dancefloor.~
+END
+
+name daydream~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `Bd`Cr`Be`Ca`Bm`x of better `Mt`mimes`x.~
+acts[1] `x$n looks `Babsent`x-`Cminded`x, $s eyes `Ms`mtaring`x into `Sspace`x.~
+END
+
+name dazzle~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `wYour dashing `Wsmile `Cdazzles `xall that are around you!~
+acts[1] `w$n `Cdazzles `xyou with $s dashing `Wsmile`x.~
+acts[2] `wYou `Cdazzle `xyourself with your dashing `Wsmile`x!~
+acts[3] `w$n `Cdazzles `x$mself with $s own dashing `Wsmile`x!~
+acts[4] `wYou send your dashing `Wsmile `xin the direction of $N, and you `Cdazzle `xthem!-~
+acts[5] `w$n `Cdazzles `xyou with $s dashing `Wsmile`x.~
+acts[6] `w$n sends a dashing `Wsmile `xtowards $N in an attempt to `Cdazzle`x $M!-~
+END
+
+name discodance~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Groovy!~
+acts[1] $n discos wildly!~
+acts[4] You grab $N and disco wildly!  Groovy!~
+acts[5] $n grabs you and does $m best Travolta!~
+acts[6] $n grabs $N and does $m best Travolta!~
+END
+
+name doh~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `Gs`gmack `Yyour`Wself`x in the `Cfore`chead`x.~
+acts[1] `x$n `Gs`gmacks `Y$m`Wself`x in the `Cfore`chead`x.~
+END
+
+name drool~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You drool down the front of your shirt.~
+acts[1] $n drools all over $mself -- making a TERRIBLE mess!~
+acts[2] You drool down the front of your shirt.~
+acts[3] $n drools all over $mself -- making a TERRIBLE mess!~
+acts[4] You drool messily on $N.~
+acts[5] $n looks at you lustily and drools.~
+acts[6] $n drools upon $N.~
+END
+
+name duck~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] DUCK!!!!~
+acts[1] $n ducks defensively.~
+acts[4] You duck defensively, anticipating the oncoming swipe from $N.~
+acts[5] $n ducks, please oh please don't hit $m!~
+acts[6] $n ducks, anticipating $N's reaction.~
+END
+
+name embrace~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Who would you like to embrace?  ~
+acts[2] You try to console yourself with a loving embrace.~
+acts[3] $n tries to console $mself by wrapping $s arms around $mself.~
+acts[4] You wrap your arms around $N in a warm and loving embrace.~
+acts[5] $n takes you in $s arms in a warm and loving embrace.~
+acts[6] $n wraps $s arms around $N in a warm and loving embrace.~
+END
+
+name explode~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You feel the blood boiling in your veins!~
+acts[1] $n turns a deep red, fighting to contain $s temper...~
+acts[2] Your soul burns brightly then fades to nothing.~
+acts[3] $n implodes!!!  Only a grease spot remains where $e once stood.~
+acts[4] You feel your rage explode deep in the pit of your stomach...~
+acts[5] $n is ANGRY with you... I'd run if I were you!!!~
+acts[6] $n burns holes through $N with his explosive anger!~
+END
+
+name eyebrow~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You raise an eyebrow at the notion.~
+acts[1] $n raises an eyebrow.~
+acts[4] You raise your eyebrow at $N.~
+acts[5] $n raises an eyebrow at you.~
+acts[6] $n raises an eyebrow at $N's weird actions.~
+END
+
+name faint~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You faint.~
+acts[1] $n faints.~
+acts[4] You faint into $S arms.~
+acts[5] $n just fainted into YOUR arms.~
+acts[6] $n faints into $N's open arms.~
+END
+
+name fatality~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[4] You intone, '$N wins.  Fatality.' ~
+acts[5] $n intones, '$N wins.  Fatality.' ~
+acts[6] $n intones, '$N wins.  Fatality.' ~
+END
+
+name flare~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You flare your nostrils disdainfully.~
+acts[1] $n flares $s nostrils disdainfully.~
+acts[2] *Sniff*  But you should LOVE yourself!~
+acts[4] You flare your nostrils disdainfully at $N... HOW RUDE!~
+acts[5] $n flares $s nostrils disdainfully at you... what'd you DO???~
+acts[6] $n flares $s nostrils disdainfully at $N and turns up $s snobbish nose.~
+END
+
+name flex~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You flex your muscles proudly!~
+acts[1] $n flexes $s muscles...what a stud!?!~
+acts[4] You show off to $N, flexing your muscles proudly.~
+acts[5] $n flexes $s muscles in a vain attempt to show off to you.~
+acts[6] $n flexes $s muscles, in a vain attempt to impress $N.~
+END
+
+name flinch~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] EEEK... You flinch in obvious pain.~
+acts[1] $n flinches in obvious pain... you wonder what $e did THIS time.~
+acts[2] You can't believe what you've done...~
+acts[3] $n twitches violently, shocked at $s own behavior.~
+acts[4] Don't you wish you could just crawl under a rock and die?~
+acts[5] $n flinches in response to your cold rebuke.~
+acts[6] $n sneaks a glance at $N and flinches.~
+END
+
+name flip~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You flip head over heels.~
+acts[1] $n flips head over heels.~
+acts[2] You tumble all over the room.~
+acts[3] $n does some nice tumbling and gymnastics.~
+acts[4] You flip $M over your shoulder.~
+acts[5] $n flips you over $s shoulder.  Hmmmm.~
+acts[6] $n flips $N over $s shoulder.~
+END
+
+name flirt~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You flirt outrageously.~
+acts[1] $n is an outrageous flirt.~
+acts[2] You flirt with yourself -- what ARE you trying to gain!?!?!?~
+acts[3] $n flirts with $mself, wonder what $e is trying to accomplish?~
+acts[4] You flirt with $N trying to get $S attention.~
+acts[5] $n flirts with you.~
+acts[6] $n flirts with $N, hmmm wonder what $e wants? *wink*~
+END
+
+name flutter~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You flutter your eyelashes seductively.~
+acts[1] $n flutters $s eyelashes seductively.~
+acts[4] You flutter your eyelashes at $N, trying to be seductive.~
+acts[5] $n flutters $s eyelashes at you coyly.~
+acts[6] $n flirts with $N, flutters $s eyelashes at $M.~
+END
+
+name foot~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You insert your foot in your mouth.~
+acts[1] $n inserts $s foot in $s mouth.~
+END
+
+name french~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Kiss whom?~
+acts[2] You gather yourself in your arms and try to kiss yourself.~
+acts[3] $n makes an attempt at kissing $mself.~
+acts[4] You give $N a long and passionate kiss, it seems to last forever...~
+acts[5] $n gives you a long and passionate kiss, it seems to last forever...~
+acts[6] $n kisses $N passionately.~
+END
+
+name frolic~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `YYOU `ware so happy `YYOU `Mf`RR`Yo`ML`Ci`GC `wand `rv`y^`rv`y^`Ws`sK`Wi`WP`y^`rv`y^`rv`w around the room!`x~
+acts[1] `Y$n `wseems so happy `Y$e `Mf`RR`Yo`ML`Ci`GC`Ys `wand `rv`y^`rv`y^`Ws`sK`Wi`sP`Ws`y^`rv`y^`rv`w around the room!`x~
+acts[2] `YYOU `wfeels like `Mf`RR`Yo`ML`Ci`GC`Yi`CN`Gg`R! `YYOU `wmust be very happy!`x~
+acts[3] `Y$n `wfeels like `Mf`RR`Yo`ML`Ci`GC`Yi`CN`Gg`R! `wHope they dont start `rv`y^`rv`y^`rv`y^`Ws`sK`Wi`sP`Wp`sI`Wn`sG`y^`rv`y^`rv`w too!`x~
+acts[4] `YYOU `Mf`RR`Yo`ML`Ci`GC `x around $N! `YYOU`x must be very happy!~
+acts[5] `Y$n `Mf`RR`Yo`ML`Ci`GC`Ys`w around YOU! Drat it!! `WSomeone douse `Y$m with `Ccold `Bwater `x~
+acts[6] `Y$n `Mf`RR`Yo`ML`Ci`GC`Ys`w around `Y$N! Drat it!! `WSomeone douse `$m with `Ccold `Bwater `x~
+END
+
+name frown~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You frown disapprovingly.~
+acts[1] $n frowns.~
+acts[2] You frown at yourself.  Poor baby.~
+acts[3] $n frowns at $mself.  What a sad puppy....~
+acts[4] You frown at $M.~
+acts[5] $n frowns disapprovingly at you.~
+acts[6] $n frowns at $N.~
+END
+
+name fume~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Take it easy now! count to ten, very slowly.~
+acts[1] $n grits $s teeth and fumes with rage.~
+acts[2] That's right - hate yourself!~
+acts[3] $n clenches $s fists and stomps his feet, fuming with anger.~
+acts[4] You stare at $M, fuming.~
+acts[5] $n stares at you, fuming with rage!~
+acts[6] $n stares at $N, fuming with rage.~
+END
+
+name furrow~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You furrow your brow.~
+acts[1] $n furrows $s brow.~
+END
+
+name gack~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Gaaack!~
+acts[1] $n gacks with dismay!~
+acts[2] *GACK!*~
+acts[3] Appalled, $n gacks at $mself!~
+acts[4] Appalled, you gack at $N.~
+acts[5] $n gacks, and looks your way, dismayed.~
+acts[6] $n gacks expressively, shooting $N a dismayed look.~
+END
+
+name gasp~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You gasp in astonishment.~
+acts[1] $n gasps in astonishment.~
+acts[2] You look at yourself and gasp!~
+acts[3] $n takes one look at $mself and gasps in astonishment!~
+acts[4] You gasp as you realize what $E did.~
+acts[5] $n gasps as $e realizes what you did.~
+acts[6] $n gasps as $e realizes what $N did.~
+END
+
+name ghug~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `YYaHoo `GG`Br`Ro`Mu`Cp`Y Hug !!`x~
+acts[1] `ROh no! $n yells: `YYaHoo `GG`Br`Ro`Mu`Cp`Y Hug !!`x~
+acts[2] `YYou have wraped your arms around the whole room `Yin a `GG`BR`RO`MU`CP`Y HUG! `RYOU GOT SOME LONG ARMS THERE!`x~
+acts[3] `Y$n has wraped $s arms around the whole room `Yin a `GG`BR`RO`MU`CP`Y HUG! `RThey sure have SOME LONG ARMS THERE!`x~
+acts[4] `Y$n has wraped $s arms around the whole room `RAND YOU `Yin a `GG`BR`RO`MU`CP`Y HUG! `Rack!`x~
+acts[5] `YYou have wraped $s arms around the whole room `Yin a `GG`BR`RO`MU`CP`Y HUG! `Rack!`x~
+acts[6] `Y$n has wraped $s arms around the whole room `RAND YOU `Yin a `GG`BR`RO`MU`CP`Y HUG! `Rack!`x~
+END
+
+name giggle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `Mg`mi`Mg`mg`Ml`me`x.~
+acts[1] $n `Mg`mi`Mg`mg`Ml`me`Ms`x at $mself. $e must be nervous or something.~
+acts[2] You `Mg`mi`Mg`mg`Ml`me`x at yourself, which makes you `Mg`mi`Mg`mg`Ml`me`x at yourself, which makes you ...~
+acts[3] $n `Mg`mi`Mg`mg`Ml`me`Ms`x at $mself. $e must be nervous or something.~
+acts[4] You `Mg`mi`Mg`mg`Ml`me`x in $S presence.~
+acts[5] $n `Mg`mi`Mg`mg`Ml`me`Ms`x at you.  Hope it's not contagious!~
+acts[6] $n `Mg`mi`Mg`mg`Ml`me`Ms`x at $N's actions.~
+END
+
+name glare~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You glare at nothing in particular.~
+acts[1] $n glares around $m.~
+acts[2] You glare icily at your feet, they are suddenly very cold.~
+acts[3] $n glares at $s feet, what is bothering $m?~
+acts[4] You glare icily at $M.~
+acts[5] $n glares icily at you, you feel cold to your bones.~
+acts[6] $n glares at $N.~
+END
+
+name goose~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Who would you like to goose?~
+acts[2] You pinch yourself on the rear, you must be desperate.~
+acts[3] $n pinches $mself on the rear.~
+acts[4] You tenderly goose $N on the tush.~
+acts[5] $n gooses you tenderly!~
+acts[6] $n reaches around $N's backside and gooses $M tenderly.~
+END
+
+name greet~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You look around for someone to greet.~
+acts[1] $n looks around with a warm smile on $m face~
+acts[2] You greet yourself since no one else will.~
+acts[3] $n looks a bit sad as $e shakes $s own hand.~
+acts[4] You greet $N.~
+acts[5] $n greets you.~
+acts[6] $n greets $N.~
+END
+
+name grimace~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You grimace painfully at the thought.~
+acts[1] $n grimaces painfully at the thought.~
+acts[2] You grimace painfully at your thoughts.~
+acts[3] $n grimaces painfully to $mself.~
+acts[4] You grimace at $N.~
+acts[5] $n grimaces at you.  What could be wrong?~
+acts[6] $n grimaces at $n.~
+END
+
+name grin~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Rg`rrin`^ `#`rb`Yr`go`ba`md`Ml`ry.`^~
+acts[1] $n `#`Rg`rrins`^ `#`Rb`Yr`go`ba`md`Ml`ry`^ at nothing in particular.~
+acts[2] You `#`Rg`rrin`^ to yourself.~
+acts[3] $n `#`Rg`rrins`^ to $mself.~
+acts[4] You `#`Rg`rrin`^ `#`Rb`Yr`go`ba`md`Ml`ry`^ at $M.~
+acts[5] $n `#`Rg`rrins`^ `#`Rb`Yr`go`ba`md`Ml`ry`^ at you.~
+acts[6] $n `#`Rg`rrins`^ `#`Rb`Yr`go`ba`md`Ml`ry`^ at $N.~
+END
+
+name groan~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You groan loudly.~
+acts[1] $n groans loudly.~
+acts[2] You groan as you realize what you have done.~
+acts[3] $n groans as $e realizes what $e has done.~
+acts[4] You groan at the sight of $M.~
+acts[5] $n groans at the sight of you.~
+acts[6] $n groans at the sight of $N.~
+END
+
+name grovel~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You grovel in the dirt.~
+acts[1] $n grovels in the dirt.~
+acts[2] That seems a little silly to me.~
+acts[4] You grovel before $M~
+acts[5] $n grovels in the dirt before you.~
+acts[6] $n grovels in the dirt before $N.~
+END
+
+name growl~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Grrrrrrrrrr...~
+acts[1] $n growls.~
+acts[2] You growl at yourself.  Boy, do you feel bitter!~
+acts[3] $n growls at $mself.  This could get interesting...~
+acts[4] Grrrrrrrrrr....take that, $N!!!~
+acts[5] $n growls at you.  Hey, two can play it that way!~
+acts[6] $n growls at $N.  Better leave the room before the fighting starts.~
+END
+
+name grumble~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You grumble distractedly to yourself.~
+acts[1] $n grumbles and growls. You wonder what's wrong...~
+acts[2] Why bother?~
+acts[4] You grumble at $N, disgusted with their presence.~
+acts[5] $n is grumbling at you... what'd you do?~
+acts[6] $n seems to be a grumpy bear... $e is grumbling at poor $N.~
+END
+
+name gsigh~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `CYou `Bs`Ci`Bg`Ch happily.`w "Aahwww!"`x~
+acts[1] `C$n `Bs`Ci`Bg`Ch`Bs`C happily.`w "Aahwww!"`x~
+acts[2] `C$n `Bs`Ci`Bg`Ch happily`w "Aahww" `M You must be happy about something.`x~
+acts[3] `C$n `Bs`Ci`Bg`Ch happily`w "Aahww" `M $e must be happy about something.`x~
+acts[4] `C$n `Bs`Ci`Bg`Ch happily`w "Aahww" `M Something nice must have happened.`x~
+acts[5] `C$n `Bs`Ci`Bg`Ch happily`w "Aahww" `M Something nice must have happened.`x~
+acts[6] `C$n `Bs`Ci`Bg`Ch`Bs`C happily to $N`w "Aahww" `M Something nice must have happened.`x~
+END
+
+name gulp~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You swallow hard.~
+acts[1] $n swallows hard.~
+acts[4] You swallow hard, and look sheepishly at $M.~
+acts[5] $n swallows hard, and looks sheepishly at you.~
+acts[6] $n swallows hard, and looks sheepishly at $N.~
+END
+
+name gwhip~
+social_flags 
+	ooc
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `wYou get your `Dwhip `wout and snap it with unabashed `RG`YL`ME`GEeee!`x~
+acts[1] `w$n gets $e `Dwhip `wout and snaps it with unabashed `Rg`YL`Me`GE`w looking for a lazy `Mhiney.`x~
+acts[2] `wYou have cracked the `Dwhip `wand hit your `mself`w! Humm? A little `SS`W&`SM`w here maybe? `MPERVERT!`x~
+acts[3] `w$n cracks a `Dwhip `won `m$sself`w! Humm? A little `SS`W&`SM`w here maybe? `MPERVERTED!`x~
+acts[4] You scream `R"GET TO WORK!"`w and crack your `Dwhip`w on $N's `Mhiney!`x~
+acts[5] `w$n has caught you loafing and  screams `R"GET TO WORK!"`w and cracks a `Dwhip`w on your `Mhiney!`R Damn, Busted!`x~
+acts[6] `w$n screams `R"GET TO WORK!"`w and cracks $s `Dwhip`w on $N's `Mhiney!`x~
+END
+
+name hand~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Kiss whose hand?~
+acts[2] You kiss your own hand.~
+acts[3] $n kisses $s own hand.~
+acts[4] You kiss $S hand.~
+acts[5] $n kisses your hand.  How continental!~
+acts[6] $n kisses $N's hand.  How continental!~
+END
+
+name handshake~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WShake `xhands with whom?~
+acts[1] `x$n is trying to look for someone to `Wshake`x hands with?~
+acts[2] `wYou `Wshake `xyour hands together in an attempt to get friends.x~
+acts[3] `C$n `Wshakes `xhis hands together. $E must want friends...badly!`x~
+acts[4] `wYou `Wshake`x hands with $N.~
+acts[5] `C$n `Wshakes`x your hand.`x~
+acts[6] `C$n `Wshakes `x$N hand.`x~
+END
+
+name head~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You toss your head haughtily.~
+acts[1] $n tosses $s head haughtily.~
+acts[2] Why would you do that?~
+acts[4] You toss your head haughtily at $N.~
+acts[5] $n tossed $s head haughtily at you... :(~
+acts[6] $n tosses her head haughtily at $N... what an ATTITUDE!~
+END
+
+name heh~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You seem to get a laugh from something saying, "`Ch`Me`Ch `Mh`Ce`Mh `Ch`Me`Ch"`x~
+acts[1] $n seems to get a laugh from something saying, "`Ch`Me`Ch `Mh`Ce`Mh `Ch`Me`Ch"`x~
+acts[2] You seem to get a laugh from something saying, "`Ch`Me`Ch `Mh`Ce`Mh `Ch`Me`Ch"`x~
+acts[3] $N seem to get a laugh from something saying, "`Ch`Me`Ch `Mh`Ce`Mh `Ch`Me`Ch"`x~
+acts[4] `YYou`x seem to get a laugh from $N and say, "`Ch`Me`Ch `Mh`Ce`Mh `Ch`Me`Ch".`x~
+acts[5] `Y$N`x seem to get a laugh from $n and say, "`Ch`Me`Ch `Mh`Ce`Mh `Ch`Me`Ch".`x~
+acts[6] `Y$n`x seem to get a laugh from $N and say, "`Ch`Me`Ch `Mh`Ce`Mh `Ch`Me`Ch".`x~
+END
+
+name hiccup~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] *HIC*~
+acts[1] $n hiccups.~
+END
+
+name highfive~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You jump in the air and give a BIG high five to...umm...absolutely nothing.~
+acts[1] $n wildly high fives the air, looking very foolish -- very foolish indeed.~
+acts[2] You try to give yourself a high five.  What ARE you thinking?~
+acts[3] $n tries to high five $mself, but ends up looking foolish instead.~
+acts[4] You jump in the air and give a BIG high five to $N!~
+acts[5] $n gives you a BIG high five!  Way to go!!~
+acts[6] $n enthusiastically high-five's $N!~
+END
+
+name hmm~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`mHmm.`^~
+acts[1] $n `#`mhmms.`^~
+END
+
+name homework~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Your suddenly remember that you have to defend your thesis today...~
+acts[1] $n looks stricken.  Could $e have blown off some important homework?~
+END
+
+name hop~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You hop around like a little kid.~
+acts[1] $n hops around like a little kid.~
+END
+
+name howl~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You howl at the moon.~
+acts[1] $n howls at the moon.~
+acts[4] You howl soulfully at $N.~
+acts[5] $n howls soulfully at you.~
+acts[6] $n howls at $N.~
+END
+
+name hug~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Hug who?~
+acts[2] You hug yourself.~
+acts[3] $n hugs $mself in a vain attempt to get friendship.~
+acts[4] You hug $M.~
+acts[5] $n hugs you.~
+acts[6] $n hugs $N.~
+END
+
+name huggle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You huggle $n~
+acts[1] You `RH`Muggl`Re`w $N until $E `Bg`Ca`Bs`Cp`Bs`w for air!!`x ~
+acts[2] You `RH`Muggl`Re`w yourself until you `Bg`Ca`Bs`Cp `wfor air!! `Y=SILLY YOU!!=`x~
+acts[3] $n `RHuggle`Rs`w $sself until $e `Bg`Ca`Bs`Cp`Bs`W for air!! `Y=SILLY $s!!=`x~
+acts[4] You `RH`Muggl`Re`w $N until $E `Bg`Ca`Bs`Cp`Bs`w for air!!`x ~
+acts[5] `w$n `RH`Muggle`Rs`w YOU until you `Bg`Ca`Bs`Cp`w for air!!`x ~
+acts[6] $n `RH`Muggle`Rs`w $N until $E `Bg`Ca`Bs`Cp`Bs`w for air!!`x~
+END
+
+name hush~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] SHHHHHHHHHHHHHHHHHHHHHH~
+acts[1] $n requests everyone quiet down.  Shhhhhhhhhhh...~
+acts[2] You realize you are loud and obnoxious and try to silence yourself.~
+acts[3] $n covers $s mouth in an attempt to silence $mself.~
+acts[4] You nicely ask $N to be more quiet.~
+acts[5] $n kindly requests that you please quiet down.~
+acts[6] $n nicely asks $N to be more quiet.~
+END
+
+name innocent~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You innocently whistle a tune.~
+acts[1] $n looks around and whistles innocently.~
+acts[4] You look at $N and bat your eyelashes -- the picture of innocence!~
+acts[5] $n looks at you and innocently bats $s eyelashes.~
+acts[6] $n bats $s eyelashes innocently at $N.~
+END
+
+name insane~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You feel your sanity slipping away...~
+acts[1] Before your eyes, $n's sanity is slipping away...~
+END
+
+name judge~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Yes, but who?~
+acts[2] You don't REALLY want to do that.~
+acts[4] You judge $m on a scale of 1 to 10.~
+acts[5] $n judges your actions on a scale of 1 to 10 and comes up with ZERO!!!~
+acts[6] On a scale from 1 to 10, $n thinks $N is a complete ZERO!!!~
+END
+
+name kiss~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Isn't there someone you want to kiss?~
+acts[2] All the lonely people :(~
+acts[4] You kiss $M.~
+acts[5] $n kisses you.~
+acts[6] $n kisses $N.~
+END
+
+name knee~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You raise one knee, preparing to do justice...~
+acts[1] $n cocks one knee threateningly.~
+acts[2] What ARE you thinking !?!??!?!?!?!~
+acts[4] You knee $M hard in the groin.~
+acts[5] $n suddenly knees you in the groin!  You fall to your knees in agony.~
+acts[6] $N doubles over in pain as $n knees $M in the groin!~
+END
+
+name laces~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Whose laces?~
+acts[2] You tie your own shoelaces together, try to walk, and promptly fall.~
+acts[3] $n cleverly ties $s own shoelaces together, tries to walk, and sprawls flat on the floor.~
+acts[4] With the greatest of stealth, you tie $S shoelaces together.~
+acts[5] You try to take a step, and you hit the world facedown!  Someone must have tied your shoelaces together!~
+acts[6] $n sneaks up to $N and ties $S shoelaces together.~
+END
+
+name lag~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Yes, yes.~
+acts[1] $n is   m o v i n g      v  e    ry  sl  o w   l   y ...~
+END
+
+name laugh~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`rl`maugh`^ `#`YhaPPily`^.~
+acts[1] $n `#`rl`maughs`^ `#`YhaPPily`^.~
+acts[2] You `#`rl`maugh`^ at yourself. I would, too.~
+acts[3] $n `#`rl`maughs`^ at $mself. Let's all `#`Cjoin in!!!`^~
+acts[4] You `#`rl`maugh`^ at $M.~
+acts[5] $n `#`rl`maughs`^ at you. You must have done something `#`YfuNNy`^.~
+acts[6] $n `#`rl`maughs`^ at $N.~
+END
+
+name lean~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You lean on your weapon.~
+acts[1] $n leans on $s weapon.~
+acts[4] You lean on $M.~
+acts[5] $n leans on you.~
+acts[6] $n leans on $N.~
+END
+
+name lick~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You lick your mouth and smile. ~
+acts[1] $n licks $s mouth and smiles. ~
+acts[2] You try to lick your own neck but it's simply not possible!~
+acts[3] $n tries to lick $s own neck but it's simply not possible!~
+acts[4] You lick $N's neck and murmer "sweet" nothings into the hallow of it. They smell so good!~
+acts[5] $n licks your neck sensually and you begin to feel lightheaded and warm. MMMMmmmmMMMM!~
+acts[6] $n licks $N's neck sensually as $N rolls $s eyes back in $m head... Atta way to go!~
+acts[7] whap $N~
+END
+
+name life~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You try to get a life, and fail.~
+acts[1] $n tries to get a life, and fails.~
+acts[2] But you have none to give!~
+acts[3] $n attempts to give $mself a life, but has none to spare.~
+acts[4] $N needs to get a life!~
+acts[5] You need to get a life!~
+acts[6] $N needs to get a life!~
+END
+
+name listen~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`mlisten`^ to the `#`Gw`go`Br`Gl`Bd`^.~
+acts[1] $n looks `#`mdi`Cstra`cc`mte`cd`^.~
+acts[2] You `#`cignore`^ the `#`Bw`Go`gr`Bl`gd`^ around you.~
+acts[3] $n is not paying attention to anyone.~
+acts[4] You `#`mlisten`^ `#`catte`Cnt`cive`Cly`^ to $M.~
+acts[5] $n `#`mlistens`^ `#`catte`Cnt`cive`Cly`^ to what you are saying.~
+acts[6] $n `#`mlistens`^ `#`catte`Cnt`cive`Cly`^ to $N's words.~
+END
+
+name liver~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You look angrily for someone to disembowel. ~
+acts[1] $n looks angrily for someone to disembowel. ~
+acts[4] You disembowel $M with your eyes.~
+acts[5] $n disembowels you with $s eyes.~
+acts[6] $n disembowels $N with $s eyes.~
+END
+
+name love~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You love the whole world.~
+acts[1] $n loves everybody in the world.~
+acts[2] Well, we already know you love yourself (lucky someone does !)~
+acts[3] $n loves $mself, can you believe it ?~
+acts[4] You tell your true feelings to $N.~
+acts[5] $n whispers to you sweet words of love.~
+acts[6] $n whispers softly to $N.~
+END
+
+name massage~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Massage what?  Thin air?~
+acts[2] You practice yoga as you try to massage yourself.~
+acts[3] $n gives a show on yoga-positions, trying to massage $mself.~
+acts[4] You gently massage $N's shoulders.~
+acts[5] $n gently massages your shoulders - Ahhhhhhhhhh...~
+acts[6] $n massages $N's shoulders.~
+END
+
+name meditate~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You assume a very comfortable position and begin to meditate.~
+acts[1] $n rests and begins to meditate... $e chants softly to $mself.~
+END
+
+name melt~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WYou `Csigh`W happily and `cm`ye`Rl`mt`W into a gooey puddle.`x~
+acts[1] `W$n `Csighs`W happily and `cm`ye`Rl`mt`gs`W into a gooey puddle.`x~
+acts[2] `WYou look at `Syourself`W, like what you see, and `cm`ye`Rl`mt`W into a gooey puddle!`x~
+acts[3] `C$n`W thinks a lot of `Sthemself`W! They have gone all gooey and melty!`x~
+acts[4] `WYou look at $N all wide-eyed and `cm`Ye`Rl`mt`w into a puddle at $m feet.`x~
+acts[5] `W$n `cm`ye`Rl`mt`gs`W into a puddle at your feet, do you always have that affect??? `x~
+acts[6] `W$n `cm`ye`Rl`mt`gs`W into a gooey puddle at $N feet.`x~
+END
+
+name mischievous~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You give a mischievous smile at the trouble you have in mind. ~
+acts[1] $n grins mischievously at a nasty idea. ~
+acts[2] You grin mischievously to yourself. ~
+acts[3] $n grins mischievously to $mself.~
+acts[4] You grin mischievously at $M, thinking an evil thought. ~
+acts[5] $n grins mischievously at you.  You inch toward the door. ~
+acts[6] $n grins mischievously at $N.  $m must be thinking something evil.~
+END
+
+name mock~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You smile sheepishly.~
+acts[1] $n smiles sheepishly.~
+acts[2] Man... you are Pathetic.~
+acts[3] $N smiles sheepishly, obviously not taking himself very seriously.~
+acts[4] You laugh at $N's jest mercilessly.~
+acts[5] $n laughs at you mercilessly.  Hmmmmph.~
+acts[6] $n laughs at $N mercilessly.~
+END
+
+name moonp~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+END
+
+name mosh~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You mosh insanely around the room!~
+acts[1] $n moshes insanely around the room!~
+acts[2] Masochist!~
+acts[3] $n throws $mself on the floor, grinding $mself into a bloody pulp~
+acts[4] You mosh sadistically against $N ... you WILL be punished.~
+acts[5] $n slams into you, moshing painfully against you.  That REALLY hurts!~
+acts[6] $n bounces off of $N in a vain attempt to mosh... what a LOSER.~
+END
+
+name mull~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You mull over the idea at hand, asking for patience. ~
+acts[1] $n mulls over the idea at hand.  Please be patient. ~
+END
+
+name mutter~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You mutter quietly to yourself.~
+acts[1] $n mutters something quietly to $mself.~
+acts[2] You mutter quietly to yourself.~
+acts[3] $n mutters something quietly to $mself.~
+acts[4] You mutter something to $N.~
+acts[5] $n looks at you and mutters something nasty under $s breath.~
+acts[6] $n looks at $N and mutters something nasty under $s breath.                 ~
+END
+
+name nod~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`cn`mo`cd`^.~
+acts[1] $n `#`cn`mo`cd`ms`^.~
+acts[2] You attempt to nod at yourself and get dizzy instead.~
+acts[3] $n nods quietly to $mself.  What a wacko.~
+acts[4] You `#`cn`mo`cd`^ at $N.~
+acts[5] $n `#`cn`mo`cd`ms`^ at you.~
+acts[6] $n `#`cn`mo`cd`ms`^ at $N.~
+END
+
+name nodd~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] 'You nod.. nod.. nodnodnodnod..`RNoDdLeS@!`x~
+acts[1] $n nods..nods..nodsnodsnodsnods..`RNoDdLeS@`w their head!!`x~
+acts[2] You `RNodDdLe `wuntil your head rattles.`x~
+acts[3] $n `RNoDdLeS`w until $s head rattles.`x~
+acts[4] You `RNoDdLe`w at $N in utter agreement, delighted at the fact!`x~
+acts[5] $n `RNodDdLeS `wat you in utter agreement! Has $e lost it?!?!`x~
+acts[6] $n nods.. nodsnods`RNoDdLeS`w at $N in utter agreement until $s head almost falls off!'.`x~
+END
+
+name nodnod~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] 'You nod.. nod.. nodnodnodnod..`RNoDdLeS@!`x~
+acts[1] $n nods..nods..nodsnodsnodsnods..`RNoDdLeS@`w their head!!`x~
+acts[2] You `RNodDdLe `wuntil your head rattles.`x~
+acts[3] $n `RNoDdLeS`w until $s head rattles.`x~
+acts[4] You `RNoDdLe`w at $N in utter agreement, delighted at the fact!`x~
+acts[5] $n `RNodDdLeS `wat you in utter agreement! Has $e lost it?!?!`x~
+acts[6] $n nods.. nodsnods`RNoDdLeS`w at $N in utter agreement until $s head almost falls off!'.`x~
+END
+
+name noogie~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You can't noogie the AIR!  It has no head.~
+acts[2] You rub your head and create a static charge...~
+acts[3] $n rubs $s OWN head and creates a static charge... *ZAP*~
+acts[4] You grab $N, get $M in a head lock and NOOGIE $M!~
+acts[5] Oh NO, $n grabs you, throws you in a head lock and NOOGIES you!~
+acts[6] $n grabs $N in a head lock and NOOGIES $M... ARGH!!!~
+END
+
+name nudge~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Nudge whom?~
+acts[2] You nudge yourself, for some strange reason.~
+acts[3] $n nudges $mself, to keep $mself awake.~
+acts[4] You nudge $M.~
+acts[5] $n nudges you.~
+acts[6] $n nudges $N.~
+END
+
+name nuzzle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Nuzzle who??~
+acts[2] I'm sorry, friend, but that's impossible.~
+acts[4] You nuzzle $S neck softly.~
+acts[5] $n softly nuzzles your neck.~
+acts[6] $n softly nuzzles $N's neck.~
+END
+
+name pale~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You turn pale.~
+acts[1] $n turns pale!~
+END
+
+name passout~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You belch and pass out.~
+acts[1] $n is OBVIOUSLY intoxicated... $e burps loudly and passes out!~
+END
+
+name pat~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Pat who?~
+acts[2] You pat yourself on your head, very reassuring.~
+acts[3] $n pats $mself on the head.~
+acts[4] You pat $N on $S head.~
+acts[5] $n pats you on your head.~
+acts[6] $n pats $N on $S head.~
+END
+
+name peck~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Wouldn't you like to do that to a person, or do you prefer air?~
+acts[2] You must REALLY like yourself.~
+acts[3] $n tries in vain to wrap $s lips around $s cheeks.~
+acts[4] Risking a slap to the face, you give $N a peck on the cheek.~
+acts[5] $n pecks you on the cheek, how sweet!~
+acts[6] $n smiles and gives $N a chaste peck on the cheek.~
+END
+
+name peer~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You peer around yourself intently.~
+acts[1] $n peers around $mself intently.~
+acts[2] You get a little cross-eyed with your attempts to stare yourself down.~
+acts[3] $n peers at $mself, crossing $s eyes in the process.~
+acts[4] You peer intently at $N.~
+acts[5] $n peers at you intently.~
+acts[6] $n peers intently at $N.~
+END
+
+name pepper~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You look around for someone to kiss.~
+acts[1] $n looks around the room lovingly.~
+acts[2] You pepper your arm in tiny `rk`wi`rs`ws`re`ws`x.~
+acts[3] $n peppers their arm in tiny `rk`wi`rs`ws`re`ws`x.~
+acts[4] You pepper $N in a shower of tiny `rk`wi`rs`ws`re`ws`x.~
+acts[5] $n peppers you in a shower of tiny `rk`wi`rs`ws`re`ws`x.~
+acts[6] $n peppers $N in a shower of tiny `rk`wi`rs`ws`re`ws`x.~
+END
+
+name pet~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WHmmm, who or what would you like to pet?`x~
+acts[1] `W$n wants to pet something.....`x~
+END
+
+name pie~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You pick up a pie and toss it around for a bit.~
+acts[1] $n picks up a pie and tosses it around for a bit.~
+acts[2] You bury your face in the pie... yummmmm!!! :)~
+acts[3] $n buries $s face in the pie, licking the pan clean.~
+acts[4] You toss a pie at $N and hit $M right in the FACE!~
+acts[5] $n tossed a pie in your face... and now you are all covered in GOO!~
+acts[6] $n tosses a pie at $N and hits $m right in the FACE!~
+END
+
+name pillow~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] YOU `Ybrandish `wa `Cp`WI`Cl`WL`Co`WW `rmencacingly `wand peer around yourself intently.`x~
+acts[1] $n `Ybrandishes `wa `Cp`WI`CL`WL`CO`Ww `rmenacingly `wand peers around $mselves intently.`x~
+acts[2] `wYou peer intently around yourself, looking for someone to `Ww`CH`Wa`CP`w over the head with a pillow. `COof!`x~
+acts[3] `w$n peers intently around $mself then like an idiot `Ww`CH`Wa`CP`Ws`w $mself over the head with a pillow. `COuchies!`~
+acts[4] `wYOU peer about, and then `Ww`CH`Wa`CP `w$N over the head with a `Wp`wi`Wl`wl`Wo`ww.`W FEATHERS`w flying everywhere.. Anybody got `STAR?`x~
+acts[5] `w$n peers about, and then `Ww`CH`Wa`CP `w$N over the head with a `Wp`wi`Wl`wl`Wo`ww.`W FEATHERS`w flying everywhere.. Somebody get the `STAR?`x~
+acts[6] `w$n peers about, and then `Ww`CH`Wa`C`WPs `w$N over the head with a `Wp`wi`Wl`wl`Wo`ww.`W FEATHERS`w flying everywhere.. Anybody got `STAR?`x~
+END
+
+name pinch~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You say, 'A pinch of this, and a dab of that.' ~
+acts[1] $n says, 'A pinch of this and a dab of that.' ~
+acts[2] You pinch yourself to see if you are dreaming! ~
+acts[3] $n pinches $mself to see if $e is dreaming! ~
+acts[4] You squeeze $S bottom and grin. ~
+acts[5] $n pinches your bottom and grins. ~
+acts[6] $n pinches $N's bottom and grins. ~
+END
+
+name plead~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You get down on your knees and plead "`BP`Crud`By P`Cleas`Ce?"`x~
+acts[1] `X$n gets down on $s knees and pleads "`BP`Crud`By P`Cleas`Be`X?" You almost feel sorry for $m.~
+acts[4] `wOn your knees, you plead `BP`Curd`By P`Cleas`Be`w to $N.`x~
+acts[5] `WOn $s knees, $n pleads `BP`Curd`By P`Cleas`Be`w to you. Aw come on, `Ygive in!`x~
+acts[6] `wOn $s bended knees, $n pleads `BP`Curd`By P`Cleas`Be`w to $N. `c=snort=`w What a wimp!`x~
+END
+
+name point~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You point in every direction.~
+acts[1] $n points excitedly!~
+acts[2] You point at yourself, obviously very confused.~
+acts[3] $n points at $mself, obviously very confused.~
+acts[4] You point at $N.~
+acts[5] $n points at you.  What does $e want?~
+acts[6] $n points excitedly at $N!~
+END
+
+name poke~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Poke who??~
+acts[2] You poke yourself in the ribs, feeling very silly.~
+acts[3] $n pokes $mself in the ribs, looking very sheepish.~
+acts[4] You `#`Bp`Co`Bke`^ $M in the `#`Wribs`^.~
+acts[5] $n `#`Bp`Co`Bkes`^ you in the `#`Wribs`^.~
+acts[6] $n `#`Bp`Co`Bkes`^ $n in the `#`Wribs`^.~
+END
+
+name polite~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You give a polite little chuckle. ~
+acts[1] $n gives a polite little chuckle. ~
+acts[2] You chuckle at your own joke, since no one else would. ~
+acts[3] $n chuckles at $s own joke, since none of you would. ~
+acts[4] You indicate your underappreciation of $S joke. ~
+acts[5] $n gives a politle but unappreciative chuckle to your joke. ~
+acts[6] $n gives a polite little chuckle to $N's joke. ~
+END
+
+name ponder~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You ponder the question.~
+acts[1] $n sits down and thinks deeply.~
+END
+
+name pounce~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `mp`go`mu`gn`mc`ge`x on an invisible mouse.~
+acts[1] $n `mp`go`mu`gn`mc`ge`ms`x on an invisible mouse.~
+acts[2] It's not possible to `mp`go`mu`gn`mc`ge`x on yourself.~
+acts[4] You `mp`go`mu`gn`mc`ge`x on $N with catlike agility. $N topples to the ground and you land on top of them.~
+acts[5] $n `mp`go`mu`gn`mc`ge`ms`x on you with catlike agility. You topple to the ground with $n resting on top of you.~
+acts[6] $n `mp`go`mu`gn`mc`ge`ms`x on $N with catlike agility. They topple to the ground with $n resting on top of $N.~
+END
+
+name pound~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You make vague pounding motions with your fist at the thought. ~
+acts[1] $n makes vague pounding motions with $m fist at the thought. ~
+END
+
+name pout~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Ah, don't take it so hard.~
+acts[1] $n pouts.~
+acts[2] `YYOU`x pout at yourself. What exactly did you do to yourself?~
+acts[3] $n pouts at $sself. Makes you wonder what's wrong.~
+acts[4] `YYOU`x pout at $N because of the way $e is treating `Yyou`x~
+acts[5] $n pouts at `RYOU`x. Why are you being so mean!?~
+END
+
+name powertrip~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You scream 'The PPppppPOOOOoooWWWwwwErrRRR!' and writhe. ~
+acts[1] $n writhes, screaming 'The PPppppPOOOOoooWWWwwwErrRRR!' ~
+END
+
+name prance~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `wYou `Yp`MR`Ya`MN`Yc`ME`w around the room!`x~
+acts[1] `w$n `Yp`MR`Ya`MN`Yc`ME`Ys`w around the room!`x~
+acts[2] You `Yp`MR`Ya`MN`Yc`ME `waround the room strutting your `Rs`BT`Ru`BF`Rf`B!!`X~
+acts[3] $n `Yp`MR`Ya`MN`Yc`ME`Ys `waround the room strutting $s `Rs`BT`Ru`BF`Rf`B!!`~
+acts[4] You `Yp`MR`Ya`MN`Yc`ME`w up to $N till $E gets dizzy and falls down!`x~
+acts[5] $n `Yp`MR`Ya`MN`Yc`ME`Ys`w up to You till $e gets dizzy and falls down!`x~
+acts[6] $n `Yp`MR`Ya`MN`Yc`ME`Ys`w up to $N till $E gets dizzy and falls down!`x~
+END
+
+name pray~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You feel righteous, and maybe a little foolish.~
+acts[1] $n begs and grovels to the powers that be.~
+acts[2] Talk about narcissism...~
+acts[3] $n performs some strange yoga-exercises and mumbles a prayer to $mself.~
+acts[4] You crawl in the dust before $M.~
+acts[5] $n kisses the dirt at your feet.~
+acts[6] $n falls down and grovels in the dirt before $N.~
+END
+
+name propose~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You propose to everyone in the room.~
+acts[1] $n proposes to everyone in the room.  Very odd.~
+acts[2] You are SO full of yourself!~
+acts[3] $n proposes to $mself -- how narcissistic!~
+acts[4] You kneel and romantically propose to $N.~
+acts[5] $n gets down on one knee and romantically proposes to you.~
+acts[6] $n gets on one knee and proposes to $N.~
+END
+
+name puke~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You puke...chunks everywhere!!! YUK!~
+acts[1] $n pukes.~
+acts[2] You puke on yourself.~
+acts[3] $n pukes on $s clothes.~
+acts[4] You puke on $M.~
+acts[5] $n spews vomit and pukes all over your clothing!~
+acts[6] $n pukes on $N.~
+END
+
+name punch~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Punch whom?~
+acts[2] You punch yourself.  You deserve it.~
+acts[3] $n punches $mself.  Why don't you join in?~
+acts[4] You punch $M playfully.~
+acts[5] $n punches you playfully.  OUCH!~
+acts[6] $n punches $N playfully.~
+END
+
+name purr~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`SMMMMMMEEEEEEEEEOOOOOOOOOO`wOOOWWWWWWWW`WWWW!!!!!!!!!!!`^~
+acts[1] `#`S$n purrs `Wcontentedly.`^~
+acts[2] `#`SYou purr `Wquietly `Sto yourself.`^~
+acts[3] `#`S$n purrs `Wcontentedly `Sto $mself.`^~
+acts[4] `#`SYou rub up against $N and PURR `Wcontentedly.`^~
+acts[5] `#`S$n rubs up against you and PURRS `Wcontentedly.`^~
+acts[6] `#`S$n rubs up against $N and PURRS `Wcontentedly.`^~
+END
+
+name puzzle~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You are `Mp`CU`Rz`BZ`Yl`?e`Gd`w by it all?`x~
+acts[1] `w$n is `Mp`CU`?z`BZ`Yl`?e`Gd`w by it all?`x~
+acts[2] `wMost `Mp`CU`?z`BZ`Yl`Gi`Rng`w isn't it?`x~
+acts[3] `w$n is so `Mp`CU`?z`BZ`Yl`?e`Gd`w at $sself $e doesn't know which end is uP?`x~
+acts[4] `wYou are most certainly `Mp`CU`?z`BZ`Yl`?e`Gd`w by $S remark!?!`x~
+acts[5] `w$n is most certainly `Mp`CU`?z`BZ`Yl`?e`Gd`w by your remark?`x~
+acts[6] `w$n looks a bit `Mp`CU`?z`BZ`Yl`?e`Gd`w by $N's remark?`x~
+END
+
+name ramble~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You ramble on and on.~
+acts[1] $n rambles on about a boring exploit.~
+acts[4] You ramble on to $N about your past adventures.~
+acts[5] $n tells you a rather boring tale, you feign interest.~
+acts[6] $n blithers on and on to $N about something.~
+END
+
+name raspberry~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `#`rYou poke your `Rtongue `rout at ... well, no one.`^~
+acts[1] `#`r$n pokes $s `Rtongue `rout, catching a few `Sflies `rin the process.`^~
+acts[4] `#`rYou `RrassSSSssspberrY `r$N ... and `Wspit `rall over yourself.`^~
+acts[5] `#`r$N `RrassSSSssspberrYs `ryou ... `WHow Rude!`^~
+acts[6] `#`r$N `RrassSSSssspberrYs `r$N ... `WHow Rude!`^~
+END
+
+name rofl~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You roll on the floor, laughing hysterically.~
+acts[1] $n falls to the ground and rolls around laughing hysterically.~
+acts[4] You fall to the floor laughing at $N's remark.~
+acts[5] $n rolls on the floor laughing at your antics!~
+acts[6] $n rolls on the floor laughing at $N's antics!~
+END
+
+name roll~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You roll your eyes in disgust.~
+acts[1] $n rolls $s eyes, disgusted.~
+acts[2] At whom do you wish to roll your eyes?~
+acts[4] You look at $N and roll your eyes in disgust.~
+acts[5] $n rolls $s eyes at you.~
+acts[6] $n rolls $s eyes in disgust at $N.~
+END
+
+name romeo~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You light up a Romeo y Julietta cigar and puff contentedly.~
+acts[1] $n lights up a Romeo y Julietta cigar and puffs contentedly.~
+END
+
+name rub~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You rub your hands together in greedy anticipation.~
+acts[1] $n rubs $s hands together in greedy anticipation.~
+acts[4] You give $N a hearty rubdown.~
+acts[5] $n gives you a rubdown, running $s hands over your tense shoulders...Mmmm...~
+acts[6] $n gives $N a hearty rubdown.~
+END
+
+name ruffle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You've got to ruffle SOMEONE.~
+acts[2] You ruffle your hair, wondering how far you can go before the rest think you're crazy.~
+acts[3] $n ruffles $s hair - weirdo!~
+acts[4] You ruffle $N's hair playfully.~
+acts[5] $n ruffles your hair playfully.~
+acts[6] $n ruffles $N's hair playfully.~
+END
+
+name tar~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `YYou`x pull out a drum of `rbubbling `Rhot `Star`w with an evil grin on your face.~
+acts[1] $n pulls out a drum of `rbubbling `Rhot `Star`w with an evil grin on $s face.~
+acts[2] `YYou`x pull out a drum of `rbubbling `Rhot `Star`w and `Gpour `xit all over `YYOURSELF!`x Damn that sure did `MHURT!`x~
+acts[3] $n pulls out a drum of `rbubbling `Rhot `Star`w and `Gpour `xit all over `Ythemself!`x That had to `MHURT!`x~
+acts[4] $n pulls out a drum of `rbubbling `Rhot `Star`w and `Gpours `xit all over $N! That has to `MHURT!`x~
+acts[5] $n pulls out a drum of `rbubbling `Rhot `Star`w and `Gpours `xit all over `YYOU`x! That has to `MHURT!`x~
+acts[6] $n pulls out a drum of bubbling hot tar and pours it all over $N! That has to HURT!~
+acts[7] slaps $n ringly.~
+END
+
+name trun~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You run away in terror and horror!~
+acts[1] $n runs away in utter terror!~
+acts[2] Are you THAT ugly?~
+acts[3] $n looks in the mirror, sees $s face, and runs away terrified!~
+acts[4] You run away from $N in complete terror!~
+acts[5] $n runs from you, fearing for $s life!~
+acts[6] $n runs away from $N in utter terror and horror!~
+END
+
+name sage~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You nod sagely. ~
+acts[1] $n nods sagely. ~
+acts[2] Yes, you are smart, aren't you?~
+acts[3] $n nods slowly to $mselves in reflection.~
+acts[4] You nod sagely at $N.~
+acts[5] $n nods sagely at you.~
+acts[6] $n nods sagely at $N.~
+END
+
+name salute~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Straightening your posture you come to attention and give a sharp salute.~
+acts[1] Straightening their posture $n comes to attention and gives a sharp salute.~
+acts[2] You give yourself a sharp salute. Dork.~
+acts[3] In a pathetic attempt, $n salutes $mself. What a dork.~
+acts[4] Straightening your posture you come to attention and give $N a sharp salute out of the respect they deserve.~
+acts[5] Straightening their posture $n comes to attention and gives you a sharp salute. They respect you!~
+acts[6] $n straightens their posture coming to attention. $n gives $N a sharp salute out of respect and admiration.~
+END
+
+name scratch~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You scratch yourself contentedly.~
+acts[1] $n reaches down and scratches $mself...  Now $e looks VERY happy.~
+END
+
+name scream~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] ARRRRRRRRRRGH!!!!!~
+acts[1] $n screams loudly!~
+acts[2] You scream at yourself.  Yes, that's ONE way of relieving tension!~
+acts[3] $n screams loudly at $mself!  Is there a full moon up?~
+acts[4] ARRRRRRRRRRGH!!!!!  Yes, it MUST have been $S fault!!!~
+acts[5] $n screams at you!  That's not nice!  *sniff*~
+acts[6] $n screams loudly at $N.  Better leave before $n blames you, too!!!~
+END
+
+name scuff~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You scuff your foot sheepishly.~
+acts[1] $n scuffs $s foot in the dirt, looking very sheepish.~
+acts[4] You scuff your foot, avoiding $N's gaze.~
+acts[5] $n scuffs $s foot and shyly avoids your gaze.~
+acts[6] $n scuffs $s foot and shyly avoids $N's gaze.~
+END
+
+name serenade~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You raise your voice in a loud serenade to your invisible love.~
+acts[1] $n raises $s voice to serenade the world.~
+acts[2] You sing a loud serenade to yourself.  What type of person are you?!~
+acts[3] $n serenades $mself.  What an ego!~
+acts[4] You raise your voice in a loving serenade to $N.~
+acts[5] $n serenades you, you are swept away by $s voice.~
+acts[6] $n raises $s voice in a loving serenade to $N.~
+END
+
+name sfond~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `Ysmile fondly`w at no one in particular !?~
+acts[1] $n `Ysmiles fondly `wat no one in particular !?`x~
+acts[2] $n `Ysmiles fondly`w at yourself. Good Grief!! What an egomaniac!!'.`x~
+acts[3] $n `Ysmiles fondly`w at $mself. Good Grief!! What an egomaniac!!`x~
+acts[4] You `Ysmile fondly`w at $N as you think of them in a kind way.`x~
+acts[5] $n `Ysmiles fondly`w at you as $e thinks of you in a kind way.`x~
+acts[6] $n `Ysmiles fondly`w at $N as $e thinks of them in a kind way.`x~
+END
+
+name shake~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You shake your head.~
+acts[1] $n shakes $s head.~
+acts[2] You are shaken by yourself.~
+acts[3] $n shakes and quivers like a bowl full of jelly.~
+acts[4] You shake your head at $S words.~
+acts[5] $n shakes $s head at you, in disagreement.~
+acts[6] $n shakes $s head at $N.~
+END
+
+name shazbot~
+social_flags 
+	ooc
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `RS`WHA`CZ`WBO`RT`x!!!!!!~
+acts[1] `w$n screams `RS`WHA`CZ`WBO`RT`x!!!!!!~
+acts[2] `RS`WHA`CZ`WBO`RT`x!!!!!!~
+acts[3] `w$n screams, at $mself, `RS`WHA`CZ`WBO`RT`x!!!!!!~
+acts[4] `wYou turn to $N and scream `RS`WHA`CZ`WBO`RT`x!!!!!!~
+acts[5] `w$n turns to you and scream `RS`WHA`CZ`WBO`RT`x!!!!!!~
+acts[6] `w$n turns to $N and screams `RS`WHA`CZ`WBO`RT`x!!!!!!~
+END
+
+name shiver~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Brrrrrrrrr.~
+acts[1] $n shivers uncomfortably.~
+acts[2] You shiver to yourself?~
+acts[3] $n scares $mself to shivers.~
+acts[4] You shiver at the thought of fighting $M.~
+acts[5] $n shivers at the suicidal thought of fighting you.~
+acts[6] $n shivers at the thought of fighting $N.~
+END
+
+name shrug~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You shrug.~
+acts[1] $n shrugs helplessly.~
+acts[2] You shrug to yourself.~
+acts[3] $n shrugs to $mself.  What a strange person.~
+acts[4] You shrug in response to $S question.~
+acts[5] $n shrugs in response to your question.~
+acts[6] $n shrugs in response to $N's question.~
+END
+
+name shudder~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You shudder at the horror and repress tears. ~
+acts[1] $n shudders at the horror and represses tears. ~
+END
+
+name sigh~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You sigh.~
+acts[1] $n sighs.~
+acts[2] You sigh at yourself.  You MUST be lonely.~
+acts[3] $n sighs at $mself.  What a sorry sight.~
+acts[4] You sigh as you think of $M.~
+acts[5] $n sighs as $e thinks of you.  Touching, huh?~
+acts[6] $n sighs at the sight of $N.~
+END
+
+name silly~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You do the silly walk all around the room. ~
+acts[1] $n does the silly walk all around the room.  $e *is* silly. ~
+END
+
+name singl~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You raise your clear (?) voice towards the sky.~
+acts[1] HEY CLERICS! I COULD USE A HEAL!  $n has begun to sing.~
+acts[2] You sing a little ditty to yourself.~
+acts[3] $n sings a little ditty to $mself.~
+acts[4] You sing a ballad to $M.~
+acts[5] $n sings a ballad to you!  How sweet!~
+acts[6] $n sings a ballad to $N.~
+END
+
+name sjacket~
+social_flags 
+	ooc
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WSomeone around here is `Rbloody `YbOnKerRs!! `CSome one get a `sS`wtraigh`st Ja`wcke`at!!`x~
+acts[1] `G$n `Wfeels someone is going `Rbloody `YbOnKerRs!! `CStart looking for a `sS`wtraigh`st Ja`wcke`at!!`x~
+acts[2] `WYou feel you are going fairly much `YbOnKeRs`W, grab a `sS`wtraigh`st J`wacke`st`x `Wand wait for the `CPsychiatrist!!`x~
+acts[3] `WYou sense `G$n `Wis feeling fairly much `YbOnKeRs`W. Grab a `sS`wtraigh`st J`wacke`st `Wand wait for the `CPsychiatrist!!`x~
+acts[4] `G$N `Wis chewing on $S toes and `Mg`CI`Wg`GG`Ml`WI`Yn`MG`W. Someone grabs a `sS`wtraigh`st J`wacke`st `Wand throw `G$N `Winto a `gheadlock `Wand puts them in one.`x~
+acts[5] `WYou are `Rchewing `Won your toes even with a `sS`wtraigh`st J`wacke`st `Won. You are `YBoNkErS!!!`x~
+acts[6] `G$N `Wis `Rchewing `Won their toes even with a `sS`wtraigh`st J`wacke`st `Won. Man, are they ever `YBoNkErS!!`x~
+END
+
+name slap~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] What is the sound of one hand slapping?~
+acts[2] You slap yourself, silly you.~
+acts[3] $n slaps $mself, really strange ...~
+acts[4] *thwock!* You slap $N ringingly.~
+acts[5] $n slaps you stingingly.~
+acts[6] *thwock!* $n slaps $N!~
+acts[7] bonk $N~
+END
+
+name slobber~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You slobber down your front.~
+acts[1] $n slobbers all over $mself.~
+acts[4] You slobber on $N.~
+acts[5] $n slobbers disgustingly on you.~
+acts[6] $n slobbers on $N  **Yuck**~
+END
+
+name smile~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You smile warmly.~
+acts[1] $n smiles warmly.~
+acts[2] You smile at yourself.~
+acts[3] $n smiles at $mself.~
+acts[4] You smile at $M.~
+acts[5] $n smiles at you.~
+acts[6] $n beams a smile at $N.~
+acts[7] ,$N smiles at @.~
+END
+
+name smirk~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You smirk.~
+acts[1] $n smirks.~
+acts[2] You smirk at yourself.  Okay.....~
+acts[3] $n smirks at $s own 'wisdom'.~
+acts[4] You smirk at $S saying.~
+acts[5] $n smirks at your saying.~
+acts[6] $n smirks at $N's saying.~
+END
+
+name smooch~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You throw a `Msmooch`x into the air!~
+acts[1] $n throws a `Msmooch`x into the air!~
+acts[2] $n gives themselves a smooch on the nose. How did they do that?~
+acts[3] $n gives themselves a `Msmooch`x on the nose. How did they do that?`x~
+acts[4] You give $N a `Msmooch`x on the nose. You think they are so sweet!`x~
+acts[5] $n is giving you a `Msmooch`x on the nose. They think you are so sweet!`x~
+acts[6] $n is gives $N a `Msmooch`x on the nose. They are so sweet!`x~
+END
+
+name snap~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Eureka!  You snap your fingers. ~
+acts[1] $n snaps $s fingers. ~
+acts[2] You snap yourself to attention. ~
+acts[3] $n snaps $mself to attention. ~
+acts[4] You snap back at $M. ~
+acts[5] $n snaps back at you! ~
+acts[6] $n snaps back at $N. ~
+END
+
+name snarl~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You grit your teeth and look mean.~
+acts[1] $n snarls angrily.~
+acts[2] You snarl at yourself.~
+acts[3] $n snarls at $mself.~
+acts[4] You snarl at $M.~
+acts[5] $n snarls at you, for some reason.~
+acts[6] $n snarls at $N.~
+END
+
+name sneeze~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Gesundheit !~
+acts[1] $n sneezes.~
+END
+
+name snicker~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `Ys`Bn`Yi`Bc`Yk`Be`Yr`x softly.~
+acts[1] `x$n `Bs`Yn`Bi`Yc`Bk`Ye`Br`Ys`x softly.~
+acts[2] `xYou `Ys`Bn`Yi`Bc`Yk`Be`Yr`x at your own `Revil`x thoughts.~
+acts[3] `x$n `Bs`Yn`Bi`Yc`Bk`Ye`Br`Ys`x at their own `Revil`x thoughts.~
+acts[4] `xYou `Ys`Bn`Yi`Bc`Yk`Be`Yr`x with $M about your `Cs`Mh`Ca`Mr`Ce`Cd `Ms`Ce`Mc`Cr`Me`Ct`x.~
+acts[5] `x$n `Ys`Bn`Yi`Bc`Yk`Be`Yr`Bs`x with you about your `Cs`Mh`Ca`Mr`Ce`Cd `Ms`Ce`Mc`Cr`Me`Ct`x.~
+acts[6] `x$n `Ys`Bn`Yi`Bc`Yk`Be`Yr`Bs`x with $N about their `Cs`Mh`Ca`Mr`Ce`Cd `Ms`Ce`Mc`Cr`Me`Ct`Ms`x.~
+END
+
+name sniff~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You sniff sadly. *SNIFF*~
+acts[1] $n sniffs sadly.~
+acts[2] You sniff sadly at your lost opportunities.~
+acts[3] $n sniffs sadly at $mself.  Something MUST be bothering $m.~
+acts[4] You sniff sadly at the way $E is treating you.~
+acts[5] $n sniffs sadly at the way you are treating $m.~
+acts[6] $n sniffs sadly at the way $N is treating $m.~
+END
+
+name snore~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	sleeping
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `GZzzzzzzzzzzzzzz`x!~
+acts[1] `x$n `Gsnores`x loudly. `CA`Gn`Cn`Go`Cy`Gi`Cn`Gg`x ain't it?!~
+END
+
+name snort~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You snort derisively. ~
+acts[1] $n snorts derisively. ~
+acts[2] You snort derisively at yourself. ~
+acts[3] $n snorts derisively at $sself.~
+acts[4] You snort derisively at $N. ~
+acts[5] $n snorts at you. ~
+acts[6] $n snorts derisively at $N. ~
+END
+
+name snowball~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Who do you want to throw a snowball at?~
+acts[2] You conjure a snowball from the thin air and throw it at yourself.~
+acts[3] $n conjures a snowball out of the thin air and throws it at $mself.~
+acts[4] You throw a snowball in $N's face.~
+acts[5] $n conjures a snowball from the thin air and throws it at you.~
+acts[6] $n conjures a snowball from the thin air and throws it at $N.~
+END
+
+name snuggle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Who?~
+acts[2] You snuggle up, getting ready to sleep.~
+acts[3] $n snuggles up, getting ready to sleep.~
+acts[4] You snuggle $M.~
+acts[5] $n snuggles up to you.~
+acts[6] $n snuggles up to $N.~
+END
+
+name sob~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You sob quietly to yourself.~
+acts[1] $n sobs in misery.~
+acts[4] You sob quietly to yourself because $N has hurt your feelings so badly.~
+acts[5] You feel like a cad because you've made $n sob.~
+acts[6] $n sobs quietly to $mself because $N was a jerk!~
+END
+
+name spam~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You mutter, 'spam' quietly to yourself again and again.~
+acts[1] $n rests in a corner and mutters 'spam' quietly to $mself.~
+acts[2] You mutter "spam spam spam!" ~
+acts[3] $n mutters to themselves "spam, spam, spam!"~
+acts[4] You SPAM $N mercilessly!~
+acts[5] You've been SPAMMED by $n!~
+acts[6] $n spams $N!~
+END
+
+name spit~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You spit in utter disgust.~
+acts[1] $n spits in utter disgust!~
+acts[2] You spit on yourself, pretty nasty eh?~
+acts[3] $n spits on $mself...what a sicko!~
+acts[4] You spit on $N...you're gross!~
+acts[5] $n spits on you -- how gross!~
+acts[6] $n spits on $N.~
+END
+
+name spleen~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Your spleen seems to have burst, causing great discomfort.~
+acts[1] You hear a loud bang! Looks like $n's spleen exploded...~
+acts[2] You comfort your spleen, poor fella..~
+acts[3] $n gives $s spleen a great big hug, maybe it feels a little bit better now?~
+acts[4] Fighting a bit dirty, you beat $N with a nearby spleen.~
+acts[5] $n grabs a nearby spleen, beating you with it mercilessly.~
+acts[6] $n grabs a spleen and gives $N a beating with it.~
+END
+
+name spoke~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You wave around a sharp stick.~
+acts[1] $n waves around a sharp stick looking for an eye to poke.~
+acts[2] From some strange reason you poke yourself in the eye with a sharp stick.~
+acts[3] $n pokes themself in the eye with a sharp stick. What a moron.~
+acts[4] You poke $N in the eye with a sharp stick. You must feel proud of yourself. ~
+acts[5] $n pokes you in the eye with a sharp stick. THAT REALLY HURT!~
+acts[6] $n pokes $N in the eye with a sharp stick.~
+END
+
+name squeal~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You squeal with delight!~
+acts[1] $n lets out a sudden squeal of delight!~
+acts[4] You look at $N and squeal with delight!~
+acts[5] $n looks at you and squeals with delight!~
+acts[6] $n squeals with delight at $N.~
+END
+
+name squeeze~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Where, what, how, WHO ???~
+acts[2] You squeeze yourself - try to relax a little!~
+acts[3] $n squeezes $mself.~
+acts[4] You squeeze $M fondly.~
+acts[5] $n squeezes you fondly.~
+acts[6] $n squeezes $N fondly.~
+END
+
+name squirm~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You squirm uncontrollably in your consternation.~
+acts[1] $n squirms uncontrollably, suddenly looking very uncomfortable.~
+acts[4] You look at $N and squirm with delight.              ~
+acts[5] $n looks at you and squirms with delight.~
+acts[6] $n looks at $N and squirms with delight.~
+END
+
+name stagger~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You stagger blindly around the room.~
+acts[1] $n staggers blindly around the room.~
+acts[4] You stagger toward $N as the room begins to spin.~
+acts[5] $n staggers blindly into you.~
+acts[6] $n staggers into $N.~
+END
+
+name stare~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You stare at the sky.~
+acts[1] $n stares at the sky.~
+acts[2] You stare dreamily at yourself - enough narcissism for now.~
+acts[3] $n stares dreamily at $mself - NARCISSIST!~
+acts[4] You stare dreamily at $N, completely lost in $S eyes..~
+acts[5] $n stares dreamily at you, completely lost in your eyes.~
+acts[6] $n stares dreamily at $N.~
+END
+
+name starve~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You show your prominent ribs and hope that someone will take pity.~
+acts[1] $n is withering before your eyes!  Starvation!~
+acts[4] You throw yourself upon $S mercy, begging for food.~
+acts[5] $n is starving before your eyes!  Could you spare some food, please?~
+acts[6] $n begs $N for food.  One would think that magic would have cured hunger by now...~
+END
+
+name stretch~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You lean back and streeeeeettch your arms and legs.~
+acts[1] $n stretches luxuriously.  Kinda makes you want to doesn't it?~
+END
+
+name strut~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Strut your stuff.~
+acts[1] $n struts proudly.~
+acts[2] You strut to yourself, lost in your own world.~
+acts[3] $n struts to $mself, lost in $s own world.~
+acts[4] You strut to get $S attention.~
+acts[5] $n struts, hoping to get your attention.~
+acts[6] $n struts, hoping to get $N's attention.~
+END
+
+name sulk~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `Bsulk`x.~
+acts[1] `x$n `Bsulks`x in the corner.~
+END
+
+name support~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You fully support the plan. ~
+acts[1] $n fully supports the plan. ~
+acts[2] You hug yourself sadly. ~
+acts[3] $n hugs $mself sadly.  Perhaps you could help? ~
+acts[4] You hug $M supportively and smile. ~
+acts[5] $n hugs you supportively and smiles. ~
+acts[6] $n hugs $N supportively and smiles. ~
+END
+
+name sweep~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You look at your empty arms and sigh. ~
+acts[1] $n looks at $s empty arms and sighs. ~
+acts[4] You sweep $M into your arms and kiss $M long and deeply. ~
+acts[5] $n sweeps you into $s arms and kisses you long and deeply. ~
+acts[6] $n sweeps $N into $s arms and kisses $M long and deeply. ~
+END
+
+name swoon~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You swoon.~
+acts[1] $n swoons in absolute ecstasy.~
+acts[4] You look at $N and swoon in ecstasy.~
+acts[5] $n looks at you and swoons in ecstasy.~
+acts[6] $n looks at $N and swoons in ecstasy.~
+END
+
+name tackle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You're going to tackle everyone in the room?!~
+acts[4] You tackle $N playfully.~
+acts[5] $n brings you down in a playful tackle!~
+acts[6] $n playfully tackles $N.~
+END
+
+name tag~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Tag whom?~
+acts[1] $n casts about for someone to tag.~
+acts[2] Unable to catch anyone else, you do the intelligent thing and tag yourself. You're still IT!~
+acts[3] Unable to catch anyone else, $n tags $mself.  Are you impressed?~
+acts[4] >From nowhere, you pounce on $N and TAG $M remorselessly!  BWAHAHA!!!~
+acts[5] $n pounces on you and >>> TAGS <<< you!  You're IT!~
+acts[6] $n dives from the shadows and TAGS $N.  $N IS IT!~
+END
+
+name tank~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You boldly offer to tank for your everyone else.  Are you sure you know what you're getting into?~
+acts[1] $n offers to tank!~
+acts[2] No one will tank for you, eh?!? WELL, YOU'LL SHOW THEM!  (right?)~
+acts[3] In dazzling chivalry, $n offers to tank-- for $mself!~
+acts[4] You offer to tank for $N.~
+acts[5] $n offers to tank for you!~
+acts[6] $n offers to tank for $N.~
+END
+
+name tease~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] What a tease.   SHEESH.~
+acts[1] $n looks around for someone to tease.~
+acts[2] You tease yourself. NYAH NYAH NYAH.~
+acts[3] $n teases $mself.~
+acts[4] You tease $N in a playful way.~
+acts[5] $n sticks $s tongue out at you, what a DORK!!~
+acts[6] $n sticks $s tongue out at $N.~
+END
+
+name thank~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Thank you too.~
+acts[2] You thank yourself since nobody else wants to !~
+acts[3] $n thanks $mself since you won't.~
+acts[4] You `#`Mthan`mk`^ $N `#`Rhear`rt`Rily`^.~
+acts[5] $n `#`Mthank`ms`^ you `#`Rhear`rt`Rily`^.~
+acts[6] $n `#`Mthank`ms`^ $N `#`Rhear`rt`Rily`^.~
+END
+
+name think~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `wYou sit down and think.`x~
+acts[1] `w$n sits down and thinks.`x~
+END
+
+name threaten~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You threaten everyone with your overwhelming presence.~
+acts[1] You feel threatened in the presence of the great $n.~
+acts[4] You stand tall as you threaten $N.~
+acts[5] $n threatens you...oooooooh scary *laugh*~
+acts[6] $n threatens $N forcefully.~
+END
+
+name tickle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Whom do you want to tickle?~
+acts[2] You tickle yourself, how funny!~
+acts[3] $n tickles $mself.~
+acts[4] You tickle $N.~
+acts[5] $n tickles you - ho ho ho.~
+acts[6] $n tickles $N.~
+END
+
+name tigger~
+social_flags 
+	ooc
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `Gb`go`Gu`gn`Gc`ge`x around like `YT`yi`YGG`ye`YR`x saying "`RWhotywhoowhoo!!`x"~
+acts[1] `x$n `Gb`go`Gu`gn`Gc`ge`Gs`x around the room like `YT`yi`YGG`ye`YR`x saying "`RWhotywhoowhoo!!`x"~
+acts[2] `xYou `Gb`go`Gu`gn`Gc`ge`x around the room like `YT`yi`YGG`ye`YR`x and jumps back with a "`RWhotywhoowhoo!!`x"~
+acts[3] `xYou `Gb`go`Gu`gn`Gc`ge`Gs`x around the room like `YT`yi`YGG`ye`YR`x and jumps back with a "`RWhotywhoowhoo!!`x"~
+acts[4] `xYou `Gb`go`Gu`gn`Gc`ge`x around the room like `YT`yi`YGG`ye`YR`x and jump onto $N's back with a "`RWhotywhoowhoo!!`x"~
+acts[5] `x$n `Gb`go`Gu`gn`Gc`ge`Gs`x around the room like `YT`yi`YGG`ye`YR`x and jumps onto your back with a "`RWhotywhoowhoo!!`x"~
+acts[6] `x$n `Gb`go`Gu`gn`Gc`ge`Gs`x around the room like `YT`yi`YGG`ye`YR`x and jumps onto $N's back with a "`RWhotywhoowhoo!!`x"~
+END
+
+name tight~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[4] You hold $M tightly in your arms. ~
+acts[5] $n holds you in $m arms. ~
+acts[6] $n holds $N tightly in $m arms. ~
+END
+
+name tip~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You tip your hat gallantly.~
+acts[1] $n gallantly tips $s hat.~
+acts[4] You tip your hat to $N.~
+acts[5] $n gallantly tips $s hat to you.~
+acts[6] $n gallantly tips $s hat to $N.~
+END
+
+name toast~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You raise a glass of champagne in a toast. ~
+acts[1] $n raises $s glass of champagne in a toast. ~
+acts[2] You grin evilly and toast yourself. ~
+acts[3] $n grins evilly and toasts $mself. ~
+acts[4] You raise your glass of champagne to $S. ~
+acts[5] $n silently toasts you. ~
+acts[6] $n silently toasts $N. ~
+END
+
+name tsk~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WYOU click your tongue `stsk tsk"`x~
+acts[1] `G$n `Wclicks `G$m `Wtongue `s"tsk tsk"~
+END
+
+name tweak~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Tweak who?~
+acts[2] You can't DO that.~
+acts[4] You gently tweak $S cheek.  Isn't $E so CUTE?~
+acts[5] $n lovingly tweaks your cheek.  It reminds you of Grandma... sniff...~
+acts[6] $n tweaked $N's cheek... don't they look so adorable together?~
+END
+
+name twiddle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Ypatiently`^ `#`Wt`CW`Wi`CD`Wd`CL`We`^ your `#`Wthumbs`^.~
+acts[1] $n `#`Ypatiently`^ `#`Wt`CW`Wi`CD`Wd`CL`We`Cs`^ $s `#`Wthumbs`^.~
+acts[2] You `#`Wt`CW`Wi`CD`Wd`CL`We`^ your `#`Wears`^.~
+acts[3] $n `#`Wt`CW`Wi`CD`Wd`CL`We`Cs`^ $s `#`Wears`^.~
+acts[4] You `#`Wt`CW`Wi`CD`Wd`CL`We`^ $S `#`Wears`^.~
+acts[5] $n `#`Wt`CW`Wi`CD`Wd`CL`We`Cs`^ your `#`Wears`^.~
+acts[6] $n `#`Wt`CW`Wi`CD`Wd`CL`We`Cs`^ $N's `#`Wears`^.~
+END
+
+name twitch~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You twitch nervously.~
+acts[1] $n twitches nervously.~
+acts[4] You twitch involuntarily at $N's presence.~
+acts[5] $n notices you and twitches.~
+acts[6] $N must really be getting to $n...~
+END
+
+name type~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You can't type for crap tonight!  You give up in frustration!~
+acts[1] $n throws $s hands up in disgust at $s lousy typing skills!~
+END
+
+name view~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You sit back and watch the world go by.~
+acts[1] $n kicks back and enjoys the view.~
+END
+
+name wabe~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `wYou wabe happily.`x~
+acts[1] `w$n wabes in delight.`x~
+acts[2] `wStop. Just stop..`x~
+acts[3] $n wabes at $mself happily.~
+acts[4] You wabe at $N happily.~
+acts[5] $n wabes to you in a friendly manner.~
+acts[6] `w$n looks $N straight in the eye and wabes like a gibbering idiot.`x~
+END
+
+name waggle~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `RW`Ya`GG`Cg`ML`Be`x your `seyebrows`x to yourself. What `Rnasty`x thing are you `Ythinking`x of now??~
+acts[1] `xYou `RW`Ya`GG`Cg`ML`Be`WS`x $m `seyebrows`x to $mself. What `Rnasty`x thing is $e `Ythinking`x of now??~
+acts[2] `xYou `RW`Ya`GG`Cg`ML`Be`x your `seyebrows`x to yourself. What `Rnasty`x thing are you `Ythinking`x of now??~
+acts[3] `x$n `RW`Ya`GG`Cg`ML`Be`WS`x $s `seyebrows`x to $mself. What `Rnasty`x thing is $e `Ythinking`x of now??~
+acts[4] `xYou `RW`Ya`GG`Cg`ML`Be`x your `seyebrows`x `Gup`x and `Mdown`x and `rgrin`x `Revilly`x.~
+acts[5] `x$n `RW`Ya`GG`Cg`ML`Be`Ws`x $s `seyebrows`x `Gup`x and `Mdown`x and `rgrins`x `Revilly`x at you.~
+acts[6] `x$n `RW`Ya`GG`Cg`ML`Be`Ws`x $s `seyebrows`x `Gup`x and `Mdown`x and `rgrins`x `Revilly`x at $m.~
+END
+
+name wait~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You wait patiently. ~
+acts[1] $n waits patiently. ~
+acts[4] You drum your fingers, and wait for $M.~
+acts[5] $n drums his fingers, waiting for you!~
+acts[6] $n drums $s fingers, and waits for $N.~
+END
+
+name wave~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You `#`Ww`Sa`cv`Ce`^.~
+acts[1] $n `#`Ww`Sa`cv`Ce`Bs`^ happily.~
+acts[2] Are you going on adventures as well??~
+acts[3] $n waves goodbye to $mself.~
+acts[4] You `#`Ww`Sa`cv`Ce`^ `#`Bgood`bbye`^ to $N.~
+acts[5] $n `#`Ww`Sa`cv`Ce`cs`^ `#`Bgood`bbye`^ to you. Have a `#`Cgood`^ journey.~
+acts[6] $n `#`Ww`Sa`cv`Ce`cs`^ `#`Bgood`bbye`^ to $N.~
+END
+
+name whap~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Whap who?~
+acts[2] Ow! You give yourself a resounding whap upside the head.~
+acts[3] Biff!  $n whaps $mself upside the head!~
+acts[4] You whap $N upside the head!~
+acts[5] HEY!  $n whaps you upside the head!~
+acts[6] With a resounding WHAP!, $n reprimands $N.~
+END
+
+name whew~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `CW`cH`CE`cW`Y !!`x~
+acts[1] `W$n exclaims `CW`cH`CE`cW`Y !!`~
+acts[2] `WYou exclaim `CW`cH`CE`cW`Y !!`W to you, Ya got outta that one!!!`x~
+acts[3] `W$n exclaims `CW`cH`CE`cW`Y !!`W to themselves, They got outta that one!!!`x~
+acts[4] `WYou exclaim `CW`cH`CE`cW`Y !!`W to $N, you're so relieved!!!`x~
+acts[5] `W$n exclaims `CW`cH`CE`cW`Y !!`W to you, they're so relieved!!!`x~
+acts[6] `W$n exclaims `CW`cH`CE`cW`Y !!`W to $N, they're so relieved!!!`x~
+END
+
+name whine~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You whine to anyone who will listen to you.~
+acts[1] $n whines pathetically to anyone who will listen.~
+acts[2] You whine to yourself, probably the only one who will listen.~
+acts[3] $n whines to $mself.  At least $e isn't bitching to YOU.~
+acts[4] You whine to $M, hoping desperately that at least $E will give a damn.~
+acts[5] $n whines pathetically to you.  What a loser!~
+acts[6] $n whines pathetically to $N.~
+END
+
+name whistle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You whistle appreciatively.~
+acts[1] $n whistles appreciatively.~
+acts[2] You whistle a little tune to yourself.~
+acts[3] $n whistles a little tune to $mself.~
+acts[4] You whistle at the sight of $M.~
+acts[5] $n whistles at the sight of you.~
+acts[6] $n whistles at the sight of $N.~
+END
+
+name whoot~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `WYou let out a big, `mOrochi-style `G'WHOOT!'`x~
+acts[1] $n lets out a big, `mOrochi-style`G 'WHOOT!'`X~
+END
+
+name wiggle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You wiggle your bottom.~
+acts[1] $n wiggles $s bottom.~
+acts[2] You wiggle about like a fish.~
+acts[3] $n wiggles about like a fish.~
+acts[4] You wiggle your bottom toward $M.~
+acts[5] $n wiggles $s bottom toward you.~
+acts[6] $n wiggles $s bottom toward $N.~
+END
+
+name wince~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You wince in agony.~
+acts[1] $n winces in agony.~
+acts[4] You look at $N and wince at $S remark.~
+acts[5] $n winces at your remark.~
+acts[6] $n winces at $N's remark.~
+END
+
+name wink~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] Have you got something in your eye?~
+acts[1] $n winks suggestively.~
+acts[2] You wink at yourself ?? - what are you up to?~
+acts[3] $n winks at $mself - something strange is going on...~
+acts[4] You wink suggestively at $N.~
+acts[5] $n winks suggestively at you.~
+acts[6] $n winks at $N.~
+END
+
+name wonder~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You wonder about how things could have been.~
+acts[1] $n gets a blank stare on $s face.  What could $e be wondering about?~
+acts[2] You wonder about yourself and your purpose here.~
+acts[3] A blank stare crosses $n's face.  What could $e be wondering about?~
+acts[4] You look at $N and wonder what will happen.~
+acts[5] $n looks at you quizzically.~
+acts[6] $n looks at $N and wonders....~
+END
+
+name woohoo~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `GW`goo`GH`goo`x!!!~
+acts[1] `C$n `Wyells `GW`goo`GH`goo`x!!!~
+acts[2] `GW`goo`GH`goo`x!!!~
+acts[3] `C$n`W yells `GW`goo`GH`goo`x!!!~
+acts[4] `WYou turn to $N and yell, in pure excitement, `GW`goo`GH`goo`x!!!~
+acts[5] `C$n `Wturns to you and yells `GW`goo`GH`goo`x!!!~
+acts[6] `W$n turns to $N and yells `GW`goo`GH`goo`x!!!~
+END
+
+name worry~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] You worry about what's going to happen.~
+acts[1] A troubled look suddenly crosses $n's face.  Wonder what's wrong?~
+acts[2] You worry about what's going to happen.~
+acts[3] A troubled look suddenly crosses $n's face.  Wonder what's wrong?~
+acts[4] You look at $N worriedly.~
+acts[5] $n looks at you worriedly.~
+acts[6] $n looks at $N with a troubled gaze.~
+END
+
+name wrestle~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[2] You wrestle with your conscience. ~
+acts[3] $n wrestles with $m conscience. ~
+acts[4] You wrestle $M to the floor and pin $M there. ~
+acts[5] $n wrestles you to the floor and pins you. ~
+acts[6] $n wrestles $N to the floor, pinning $M there. ~
+END
+
+name wrist~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou hold out out a `ywrist`x for a `Mslap`x.~
+acts[1] `x$n holds out a `ywrist`x for a `Mslap`x.~
+acts[2] `xYou `Mslap`x your own `ywrist`x.~
+acts[3] `x$n `Mslaps`x $m own `ywrist`x.~
+acts[4] `xYou `Mslap`x $M `ywrist`x `Cs`ch`Ca`cr`Cp`cl`Cy`x.~
+acts[5] `x$n `Mslaps`x your `ywrist`x `Cs`ch`Ca`cr`Cp`cl`Cy`x.~
+acts[6] `x$n `Mslaps`x $N's `ywrist`x `Cs`ch`Ca`cr`Cp`cl`Cy`x.~
+END
+
+name writhe~
+social_flags 
+	ooc
+	ic
+	imm_only~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `wYes, feel the `RPP`rppp`RPP`yoo`YOO`yooo`YOO`gwww`GWW`gww`GWWW`ceee`CEE`cee`CEEE`brr`BRR`brrr`BRR`w!!~
+acts[1] arg `w$n writhes with `RPP`rppp`RPP`yoo`YOO`yooo`YOO`gwww`GWW`gww`GWWW`ceee`CEE`cee`CEEE`brr`BRR`brrr`BRR`w!!~
+END
+
+name yae~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou sigh, burdened with `CY`cet `YA`ynother `GE`geediot`x.~
+acts[1] `x$n sighs, burdened with `CY`cet `YA`ynother `GE`geediot`x.~
+acts[2] `xYou `Ybonk`x yourself for the `GE`geediot`x you are!~
+acts[3] `x$n `Ybonks`x $mself, `RHARD`x, and `Mcurses`x $mself for the `GE`geediot`x $e is!~
+acts[4] `xThere's `CY`cet `YA`ynother `GE`geediot`x in the room, and you're `Wlooking`x right at $M.~
+acts[5] `x$n `Yglares`x at you, obviously not `Mimpressed`x with your `Wintelligence`x.~
+acts[6] `x$n clearly `Ybelieves`x that $N is an `GE`geediot`x!~
+END
+
+name yawn~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou must be `Btired`x.~
+acts[1] `x$n `Byawns`x - it makes you want to do the `Ysame`x.~
+END
+
+name yeehaw~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `Gmount`x your `ypony`C(?)`x and `Yshout`x `RYEEEEEEE`WHAAAAAAAW`x!~
+acts[1] `x$n `Cbounces `Gup`x and `Mdown `Yscreaming`x *`RYEEEEEE`WHAAAAAAW`x!*~
+END
+
+name yodel~
+social_flags 
+	ooc~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou think of `MJulie `BAndrews`x and start to `yyodel`x.~
+acts[1] `x$n begins to `yyodel`x:  `YY`RO`BO`CO`MD`WE`GL`YL`RL`BA`CY`MY`WH`GE`YE`RE`BH`CO`MO`WO`GO`YO`RO`x........~
+acts[2] `xWell, it's up to you if you want to `Rdamage`x your `Chearing`x.~
+acts[3] `x$n `yyodels`x to $mself.  What a `Rsadomasochist`x.~
+acts[4] `x$N `Bcovers`x $S `Mears`x as you begin to `yyodel`x.~
+acts[5] `x$n `yyodels`x to `Yyou`x.... you want to `Rcringe`x in `Wterror`x and `Grun`x away.~
+acts[6] `x$n `yyodels`x to $N.~
+END
+
+name yowl~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xYou `Yyowl`x in `Rp`ra`Ri`rn`x.~
+acts[1] `x$n `Yyowls`x in `Rp`ra`Ri`rn`x.~
+END
+
+name zerbert~
+social_flags 
+	ooc
+	ic~
+position_flags 
+	resting
+	sitting
+	kneeling
+	fighting
+	standing~
+acts[0] `xGotta `GZ`Me`Br`Cb`Be`Mr`Gt`x `YSOMEBODY`x.~
+acts[1] `x$n looks around for a `Yt`Mu`Gm`Mm`Yy`x to `Bb`Cl`Bo`Cw`x on.~
+acts[2] `YCareful`X, people are `Rstaring`x...~
+acts[3] `x$n looks around `Gfurtively`x, and then bends over and `Bb`Cl`Bo`Cw`Bs`x loudly into $s own `Rnavel`x!~
+acts[4] `xYou lift $N's shirt and `Bb`Cl`Bo`Cw`x loudly into $S `Rnavel`x!~
+acts[5] `YYeek`x! $n lifts your shirt and `Bb`Cl`Bo`Cw`Bs`x loudly into your `Rnavel`x!~
+acts[6] `x$n lifts $N's shirt and `Bb`Cl`Bo`Cw`Bs`x loudly into $S `Rnavel`x!~
+END
+
+EOF~

@@ -1,0 +1,205 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword WHO -WHO IDLE WHOLIST~
+category undefined~
+see_also AFK DEATH LASTON OOC WHOIS WIZLIST WHO-LEVELS~
+text `=lSyntax:`=? who`+
+`+
+WHO shows the people currently in the game.  Sometimes you will not be 
+able to see everyone on the who list, this is because their character 
+might be hidden in the game. Example Output below
+ 
+There are 9 characters on, of which 7 are visible to you.
+The most characters on today so far has been 18.
+   [+++] Zynaen `c(ooc off)`=?
+   [***] Ka                     [Knight]
+   [***] Khover `B(in OOC)`=?
+ 2m[***] Kreetyl `Y[LD]`=?
+ 1m[***] Shoggoth               [Knight]
+`r-====== `GIMMORTALS`r =======-
+   `G[`r***`G] Kalahn
+   `G[`rCRE`G] Imidazole`=?
+ 
+Because we are a roleplaying mud you can not see a players level, race
+and class on the who list.  One of many reasons for this is that pkills
+here can be permanent.  And a player knowing you level has an OOC (out
+of character) advantage which doesn't help foster a roleplaying
+environment. (see help DEATH)
+ 
+In the above example there are 2 immortals currently online, and 7
+mortals (5 that you can see).  Points worth mentioning -
+ 
+Kreetyl has been idle for 2 minutes, and Shoggoth 1 minute.
+Khover is currently in an ooc room (see help OOC)
+ 
+If you are new, you will notice that some people might have a [+++]
+before their name, like Zynaen does above, this means that person is 
+a player who have played here for a while and are classified as part 
+of the newbie support team.  
+You can get help regarding any issue from an immortal and most issues
+from a newbie support player.
+ 
+If you see someone with `Y[LD]`=? behind their name, it means that they
+are link dead.  There are a few rules you may want to know about this.
+(See help LINKDEAD)
+ 
+`c(ooc off)`=? behind someone's name means that they cannot hear what is
+being said on the OOC channel.
+ 
+Any player with a `g(quiet)`=? behind their name is in quiet mode, they will
+not see anything pertaining to the Q/A channel (See HELP QUESTION)
+ 
+The codes `G[`r***`G]`=? and `G[`rCRE`G]`=? are representations of what level an immortal
+is.  (See help WHO-LEVELS)
+ 
+`g[AFK]`=? behind someone's name means that they are away from the keyboard.
+(See HELP AFK)
+ 
+A player that has `Y(OLC)`=? behind their name is currently in an area that is
+being built.  Alternatively, `G[Building]`=? means that that person is currently
+working hard at building an area, so please respect their work and don't bother
+them unless there is an important reason for you to do so.
+ 
+You can also see the players who are in the SAME clan as you on the 
+who list, the clan [Knight] can be seen here.
+ 
+~
+END
+
+keyword WHO-LEVELS~
+category undefined~
+see_also WHO WIZLIST~
+text `=?
+The immortal levels on the who list.
+ 
+  `G[`rIMP`G]`=? = level 100 - Implementor
+  `G[`rCRE`G]`=? = level  99 - Creator
+  `G[`rSUP`G]`=? = level  98 - Supreme Being
+  `G[`rDEI`G]`=? = level  97 - Deity
+  `G[`rGUA`G]`=? = level  96 - Guardian
+  `G[`rIMM`G]`=? = level  95 - Immortal
+  `G[`rDEM`G]`=? = level  94 - Demigod
+  `G[`rANG`G]`=? = level  93 - Angel
+  `G[`rAVA`G]`=? = level  92 - Avatar
+ 
+  [+++] = Newbie support player.
+  [***] = Normal player.
+  `B[`=?***`B]`=? = Player connecting through the IRC gateway da-
+  [new] = A newbie, unletgained character
+ 
+Type wizlist for a list of the immortals.
+ 
+~
+END
+
+keyword WHO-STORM~
+helpflags mud_specific~
+category undefined~
+see_also COUNCIL ALIGNMENT RACE CLASS MUDBALL QUEST AFK~
+text `BSyntax:
+        `Wwho
+ 
+`WInfo:-`x This help refers to the Default Stormbringer who format see help `=_who
+         if you are use that.
+ 
+`WThe Layout:-
+ 
+`xIdl `c[`BLvl`c][`W<`RAlign`W> `xRace Class`c] [`G-`S-`Y-`R-`C-`B-`c]`x Name Title
+ 
+Idl - Time Im Hrs Mins That a Player has been Inactive (Not displayed if active).
+ 
+Lvl - Level of Player, Displays Levels of Players in the same Clan as you.
+      However the Who list always displays in Level order, Highest level at the top.
+ 
+Align - Players Alignment, `WLaw(Lawfull) `BBal (Balanced) `xor `RChs (Chaotic)`x
+        the < >``s surrounding this field indicate Tendancy i.e `R<`WLaw`R>`x would indicate
+        that the player is Lawfull with Chaotic tendancies.
+ 
+Race - The Players race is displayed here, however when a character joins a Clan the Clan name
+       is displayed here instead (Immortals may also use this field for thier Immtitle).
+ 
+Class - The Players class is displayed here , i.e. War (Warrior) or Mag (Mage)
+        (This field is used to display Immortal Rank for Immortals i.e CRE for Creator).
+ 
+`x_____________________________________________________________________________________________
+ 
+ 
+`WThe Flags LIST:-   `c[`G-`S-`Y-`R-`C-`B-`c]`c
+ 
+`xThe following section explains in detail the meaning of each field and its associated letters.
+ 
+ 
+      `YThief/Killer/Jailed  -----`Y+`R+-----  `RCouncil (Nobles&Immortals)
+      `SHideSeak ----------------`S+`Y|`R|`C+--------- Wizi/Incog/Invis
+      `GMode  ------------------+`S|`Y|`R|`C|`B+------ Questing / Mudball(tm.)
+   `c[`BLvl`c][`W<`RAlign`W> `xRace Class`c] [`G-`S-`Y-`R-`C-`B-`c]`x Name Title
+ 
+ 
+ 
+`GMode:-`x Mainly for Immortals, This field refers to the mode that an Immortal is
+         currently in.
+         
+ Flags :-            `c[`G-     `c]`x
+ Building            `c[`GB`S-`Y-`R-`C-`B-`c]`x Currently involved in Building (often means the immortal is busy)
+ Coding -            `c[`GC`S-`Y-`R-`C-`B-`c]`x Currenly involved in Coding (often means the immortal is busy)
+ Quiet -             `c[`GQ`S-`Y-`R-`C-`B-`c]`x Currently in Quiet mode ( buisy and will not see or hear tells or ooc``s etc)
+ Playing -           This is the default state and shows no flag
+ 
+`SHideSeak:-`x
+ 
+ Flags :-            `c[ `S-    `c]`x
+ Invisible -         `c[`G-`SI`Y-`R-`C-`B-`c]`x Player Affected by Invisibility
+ Hiding -            `c[`G-`SH`Y-`R-`C-`B-`c]`x Player Hiding
+ Sneaking -          `c[`G-`SS`Y-`R-`C-`B-`c]`x Player Sneaking
+ 
+`YThief/Killer/Jailed:-`x
+ 
+ Flags :-            `c[  `Y-   `c]`x
+                     Not Yet Implemented
+        
+`RCouncils:-`x
+ 
+ Flags :-            `c[   `R-  `c]`x
+ Code Council        `c[`G-`S-`Y-`RC`C-`B-`c]`x        Head Code Council        `c[`G-`S-`Y-`WC`C-`B-`c]`x
+ Admin Coincil       `c[`G-`S-`Y-`RA`C-`B-`c]`x        Head Admin Coincil       `c[`G-`S-`Y-`WA`C-`B-`c]`x
+ Law Council         `c[`G-`S-`Y-`RL`C-`B-`c]`x        Head Law Council         `c[`G-`S-`Y-`WL`C-`B-`c]`x
+ Clan Council        `c[`G-`S-`Y-`MC`C-`B-`c]`x        Head Clan Council        `c[`G-`S-`Y-`YC`C-`B-`c]`x
+ Mythos Council      `c[`G-`S-`Y-`RM`C-`B-`c]`x        Head Mythos Council      `c[`G-`S-`Y-`WM`C-`B-`c]`x
+ Realm Council       `c[`G-`S-`Y-`RR`C-`B-`c]`x        Head Realm Council       `c[`G-`S-`Y-`WR`C-`B-`c]`x
+ Support Council     `c[`G-`S-`Y-`RS`C-`B-`c]`x        Head Support Council     `c[`G-`S-`Y-`WS`C-`B-`c]`x
+ Balance Council     `c[`G-`S-`Y-`RB`C-`B-`c]`x        Head Balance Council     `c[`G-`S-`Y-`WB`C-`B-`c]`x
+ 
+`CWizi/Incog/Invis:-`x Immortal Invis status.
+ 
+ Flags :-            `c[    `C- `c]`x
+ Imortal Invis       `c[`G-`S-`Y-`R-`CI`B-`c]`x    (iwizi)
+ OLC Wizinvis        `c[`G-`S-`Y-`R-`CO`B-`c]`x
+ Wizinvis            `c[`G-`S-`Y-`R-`CW`B-`c]`x
+ Incog               `c[`G-`S-`Y-`R-`RI`B-`c]`x
+ 
+`BQuesting / Mudball:-
+ 
+ Flags :-            `c[`G-`S-`Y-`R-`C-`B-`c]`x
+ ImmQuest            `c[`G-`S-`Y-`R-`C-`BQ`c]`x
+ SetQuest            `c[`G-`S-`Y-`R-`C-`GQ`c]`x (Not Yet Implemented)
+ PlrQuest            `c[`G-`S-`Y-`R-`C-`MQ`c]`x (Not Yet Implemented)
+ MudBall             `c[`G-`S-`Y-`R-`C-`WM`c]`x (Entered Mudball Game)
+ MudBall             `c[`G-`S-`Y-`R-`C-`RM`c]`x `Playing Mudball for Red Team)
+ MudBall             `c[`G-`S-`Y-`R-`C-`BM`c]`x `Playing Mudball for Blue Team)
+ 
+`x_____________________________________________________________________________________________
+ 
+Title :-  Title is set by a player using the title command and contains additional information
+          that the player may wish to display, it is also used to display an AFK (Away from
+          Keyboard) message when the user is in AFK mode.        
+ 
+ 
+~
+END
+
+EOF~
+#$

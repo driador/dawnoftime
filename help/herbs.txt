@@ -1,0 +1,178 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword POTION POULTICE~
+level 1
+category undefined~
+see_also HERBALISM QUAFF APPLY BREW~
+text `=lSyntax:`=? apply <poultice>
+        quaff <potion>            
+ 
+Poultices are herbal concoctions created by druids, while both
+mages and druids can create potions.  Some potions are magical
+in nature, whereas poulitces are simply natural remedies.
+ 
+To use a potion, it must be quaffed, whereas a poultice needs
+to be applied.
+ 
+~
+END
+
+keyword HERBEDIT~
+level 92
+category undefined~
+text `=lSyntax:`=? herbedit <herb>
+        herbedit create
+        herbedit list
+ 
+Herbedit allows one to edit and create herbs which can be found
+using the forage skill.  Once obtained, the herbs may be ground
+into potions and poultices, using the herbalism skill.  
+ 
+Once you have created a new herb, you are presented with a var-
+iety of options used in determining its rarity:
+ 
+ `CTime`=?
+ If set, the herb can only be found during the specified times. 
+ 
+    `cOptions:`=? midnight, small hours, dawn, morning, noon, afternoon, 
+             dusk, evening.
+ 
+ `CMonth`=?
+ If set, the herb can only be found during the specified month. 
+ 
+    `cOptions:`=? 1-12, see `Whelp calander`=? for months.
+ 
+ `CSector`=?
+ If set, the herb can only be found in the specified sector.
+ 
+    `cOptions:`=? hills, mountain, field, forest, swamp, underwater,
+             swim, desert, cave.
+ 
+ `CSeason`=?
+ If set, the herb can only be found during the specified season.
+ 
+    `cOptions:`=? Spring, Summer, Autumn, Winter.
+ 
+ `CContinent`=?
+ If set, the herb can only be found on the specified continent.
+ 
+    `cOptions:`=? Valarin, Delenth, Markrist.
+ 
+ `CDifficulty`=?
+ This determines the probability of finding the herb when foraging.
+ 
+    `cOptions:`=? trivial, east, light, medium, hard, very hard, absurd, 
+             sheer folly.
+ 
+ `CResulting VNUM`=?
+ This sets the object vnum which will be loaded if the herb is found.
+ 
+`CSEE ALSO: HERBS`=?
+~
+END
+
+keyword HERBS-IMM~
+level 92
+category undefined~
+text .      `ySwamp/Marsh`=?
++-----------------+--------------+---------+-----------------------+-------+
+|   Arachnagelica | Medium       | Summer  | Cure Disease          | 50000 |
+|       Blackrose | Hard         | Autumn  | Cure Blindness        | 50001 |
+|  Fiend's Breath | Light        | Any/All | Cure Deafness         | 50002 |
+|   Mandrake Root | Easy         | Any/All | Cure Poison           | 50003 |
+|      Nightshade | Sheer Folly  | Winter  | Cure Headache         | 50004 | 
+|      Snakespike | Very Hard    | Spring  | Cure Blindness        | 50005 |
+|     Tarnas Root | Absurd       | Summer  | Cure Disease          | 50006 |
+|      Vipersweed | Medium       | Autumn  | Cure Poison           | 50007 |
++-----------------+--------------+---------+-----------------------+-------+
+           `RDesert`=? |
++-----------------+--------------+---------+-----------------------+-------+
+|  Adder's Tongue | Hard         | Autumn  | Resist Poison         | 50008 |
+|            Aloe | Light        | Any/All | Cure Light Wounds     | 50009 |
+|  Bluespine Root | Medium       | Spring  | Eyes of the Nature    | 50010 |
+|      Djinn Fern | Absurd       | Summer  | Dragon Strength       | 50011 |
+|  Dragon's Tears | Sheer Folly  | Autumn  | Cure Critical Wounds  | 50012 |
+|  Ettin's Breath | Sheer Folly  | Winter  | Resist Fire           | 50013 |
+|      Sunblossom | Easy         | Any/All | Resist Fire           | 50014 |
++-----------------+--------------+---------+-----------------------+-------+
+       `BRiverbanks`=? |
++-----------------+--------------+---------+-----------------------+-------+
+|       Bloodkelp | Hard         | Autumn  | Lucidity (+em)        | 50015 |
+|       Draafroot | Light        | Any/All | Cure Light            | 50016 |
+|        Flaxweed | Easy         | Any/All | Cure Light            | 50017 |
+|      Rheum Leaf | Very Hard    | Autumn  | Clarity (+in)         | 50018 |
+|     Serpentweed | Hard         | Summer  | Logic (+re)           | 50019 |
+|      Siren Root | Sheer Folly  | Spring  | Persuasion (+pr)      | 50020 |
+|      Sharkswort | Absurd       | Winter  | Mnemonics (+me)       | 50021 |
++-----------------+--------------+---------+-----------------------+-------+
+       `GGrasslands`=? |
++-----------------+--------------+---------+-----------------------+-------+
+|    Amber Spores | Medium       | Winter  | Giant Strength        | 50022 |
+|  Autumn Blossom | Light        | Autumn  | Frenzy                | 50023 |
+|     Blacknettle | Very Hard    | Summer  | Haste                 | 50024 |
+|        Colewort | Hard         | Autumn  | Shield                | 50025 |
+|       Giantweed | Hard         | Spring  | Giant Strength        | 50026 |
+|     Doilan buds | Easy         | Any/All | Armour                | 50027 |
+|        Lavender | Easy         | Summer  | Resist Cold           | 50028 |
+| Miretar's Crown | Absurd       | Winter  | Haste                 | 50029 |
+|       Red Morel | Easy         | Spring  | Resist Acid           | 50030 |
++-----------------+--------------+---------+-----------------------+-------+
+        `mMountains`=? |
++-----------------+--------------+---------+-----------------------+-------+
+|    Comet's Tail | Absurd       | Autumn  | Cancellation          | 50031 |
+|      Featherfew | Light        | Any/All | Refresh               | 50032 |
+|     Hawk's Bane | Hard         | Summer  | Eagle Essence         | 50033 |
+|      Moonwillow | Absurd       | Winter  | Eyes of the Cat       | 50054 |
+|        Moonwort | Sheer Folly  | Winter  | Heal                  | 50034 |
+|    Roc's Breath | Absurd       | Spring  | Stone Skin            | 50035 |
+|     Whitecandle | Medium       | Autumn  | Snake Essence         | 50036 |
+|    Wight Orchid | Sheer Folly  | Winter  | Cure Critical         | 50037 |
+|      Winterbark | Light        | Winter  | Resist Cold           | 50038 |
++-----------------+--------------+---------+-----------------------+-------+
+          `gForests`=? |
++-----------------+--------------+---------+-----------------------+-------+
+|     Green Lotus | Medium       | Autumn  | Barkskin              | 50039 |
+|         Hemlock | Easy         | Any/All | Induce Sleep          | 50040 |
+|        Milkwort | Hard         | Winter  | Resist Magic          | 50041 |
+|     Mirthwillow | Absurd       | Spring  | Bless                 | 50042 |
+|      Red Willow | Medium       | Spring  | Resist Acid           | 50043 |
+|     Srotha Root | Sheer Folly  | Winter  | Assistance            | 50055 |
+|         Thistle | Easy         | Autumn  | Resist Cold           | 50044 |
+|       Wolf Moss | Light        | Any/All | Wolf Sense            | 50045 |
+|        Wormwood | Medium       | Summer  | Pass Without Trace    | 50046 |
++-----------------+--------------+---------+-----------------------+-------+
+      `SUnderground`=? |
++-----------------+--------------+---------+-----------------------+-------+
+|      Aspblossom | Hard         | Spring  | Snake Essence         | 50047 |
+|     Drider Leaf | Absurd       | Autumn  | Night Eyes            | 50048 |
+|        Lhugruth | Sheer Folly  | Winter  | Illusions Grandeur    | 50049 |
+|          Ruthin | Medium       | Any/All | Infravision           | 50050 |
+|      Spiderwort | Sheer Folly  | Winter  | Sanctuary             | 50051 |
+|      Stoneberry | Very Hard    | Autumn  | Stone Skin            | 50052 |
+|   Hyria Blossom | Light        | Any/All | Armour                | 50053 |
++-----------------+--------------+---------+-----------------------+-------+
+~
+END
+
+keyword ADDMIX DELMIX LISTMIX MIX~
+level 92
+helpflags wordwrapped~
+category undefined~
+text `#`=lSyntax:`^ addmix <vnum1> <vnum2> <vnum_of_result> <type> <difficulty> `+
+        delmix <mix_number> `+
+        listmix `+
+        mix <item1> <item2> `+
+`+
+Dawn is set up with a unique system of mixture and mixing. `+
+Mix one ingredient to another and create new things! The Listmix `+
+has an entire list of what is needed. Or create your own new `+
+one by using the addmix fomula.  
+~
+END
+
+EOF~
+#$

@@ -1,0 +1,1524 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Goblin Warrens~
+ShortName   Goblin Warrens~
+Builders    None~
+Credits     Reave~
+VNUMs       41700 41749
+LRange      1 15
+Security    9
+Colour      G~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#41700
+Name goblin guard~
+ShortD a goblin guard~
+LongD A goblin guard is standing here with a blank look on his face.~
+Desc This short green fellow has been posted here to guard the place.  He doesn't 
+look like he really knows what he is doing, however.
+~
+Race goblin~
+Align -1 -1
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+125
+DamDice 1d7+1
+DamType punch
+AC 40 30 40 70
+Wealth 60
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared dark_vision~
+Off    dirt_kick~
+Res    poison negative disease~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#41701
+Name carrion crawler~
+ShortD a carrion crawler~
+LongD A disgusting carrion crawler is rooting through the garbage here.~
+Desc This wormlike creature resembles a huge centipede, but is much nastier.  It 
+has long slimy tentacles.
+~
+Race centipede~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+115
+DamDice 1d5+1
+DamType acbite
+AC 60 60 60 80
+Wealth 0
+Act    npc dont_wander scavenger stay_area~
+AffBy  blind dark_vision~
+Off    disarm~
+Res    pierce cold~
+Vuln   bash~
+Form   edible poison animal insect mountable~
+Part   head legs heart brains eye tentacles~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#41702
+Name goblin sergeant~
+ShortD a goblin sergeant~
+LongD A goblin sergeant is here, bossing around the guards.~
+Desc This goblin is somewhat larger than average.  He is fairly well armed and 
+looks pretty strong.
+~
+Race goblin~
+Align 1 -2
+Level 9
+Hitroll 0
+HitDice 2d5+12
+ManaDice 2d5+12
+DamDice 1d8+2
+DamType punch
+AC 20 20 20 0
+Wealth 90
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared dark_vision~
+Off    dodge parry~
+Res    poison negative disease~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#41703
+Name female goblin~
+ShortD a female goblin~
+LongD A female goblin is here, staring stupidly at you.~
+Desc This female goblin is every bit as ugly as the males.  She is wearing some 
+old rags, and is staring at you presently, with a stupid glazed look in her 
+eyes.
+~
+Race goblin~
+Align -1 -1
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+110
+DamDice 1d6+0
+DamType scratch
+AC 70 70 70 90
+Wealth 30
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared dark_vision~
+Res    poison negative disease~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#41704
+Name goblin child~
+ShortD a goblin child~
+LongD A goblin child is here, drooling all over itself.~
+Desc This goblin is very young and weak.  It is small and naked, and at the moment 
+drooling al over the place.
+~
+Race goblin~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+105
+DamDice 1d5+0
+DamType scratch
+AC 80 80 80 90
+Wealth 1
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared dark_vision~
+Res    poison negative disease~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#41705
+Name goblin torturer~
+ShortD a goblin torturer~
+LongD A goblin torturer is here, examining a torture device.~
+Desc This goblin is dressed in black leather and has a sadistic leer on his face. 
+ He oblviously enjoys his work.
+~
+Race goblin~
+Align -2 -3
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+145
+DamDice 2d4+2
+DamType punch
+AC 20 10 0 30
+Wealth 100
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared dark_vision~
+Off    dodge kick parry~
+Res    poison negative disease~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg GREET 41717 70~
+END
+
+#41706
+Name mrem prisoner~
+ShortD a mrem prisoner~
+LongD A mrem prisoner is chained up here.~
+Desc This mrem is haggard and covered by many scars.  It looks like he has been 
+here for a long time, and tortured constantly.  
+~
+Race mrem~
+Align 1 2
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+115
+DamDice 1d5+1
+DamType punch
+AC 60 60 60 70
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  weaken dark_vision~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg COMMAND 41716 free mrem~
+MProg COMMAND 41716 free prisoner~
+END
+
+#41707
+Name elf prisoner~
+ShortD an elf prisoner~
+LongD An elf prisoner is here, chained to the wall.~
+Desc This elf is convered by many scars, and his face is a bloody mess.  He 
+doesn't look too healthy at all.
+~
+Race elf~
+Align 0 3
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+115
+DamDice 1d5+1
+DamType punch
+AC 60 60 60 80
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared weaken~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg COMMAND 41715 free prisoner~
+MProg COMMAND 41715 free elf~
+END
+
+#41708
+Name slime mold~
+ShortD a slime mold~
+LongD A slime mold is clinging to the wall here.~
+Desc This pile of grey ooze is alive, and is making its way toward you slowly.
+~
+Race snake~
+Align 0 0
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+125
+DamDice 1d7+1
+DamType digestion
+AC 30 50 20 60
+Wealth 60
+Act    npc dont_wander scavenger no_tame stay_area~
+AffBy  detect_invis~
+Res    poison~
+Vuln   cold~
+Form   edible poison animal reptile snake cold_blood~
+Part   head heart brains guts eye long_tongue tail fangs scales~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#41709
+Name trainee goblin~
+ShortD a goblin trainee~
+LongD A goblin is training to be a guard here.~
+Desc This young goblin is quite well built (for a goblin) and is currently 
+practicing his weapon skills.
+~
+Race goblin~
+Align -1 -1
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+120
+DamDice 1d6+1
+DamType punch
+AC 50 50 50 70
+Wealth 50
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared dark_vision~
+Off    dodge parry~
+Res    poison negative disease~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#41710
+Name goblin weaponmaster~
+ShortD a goblin weaponmaster~
+LongD A goblin weaponmaster is here, instructing trainees.~
+Desc This goblin is well armed, and looks like he knows what he is doign with his 
+weapons.  He is currently instructing the trainees.
+~
+Race goblin~
+Align 0 -2
+Level 11
+Hitroll 0
+HitDice 2d5+22
+ManaDice 2d5+150
+DamDice 1d10+2
+DamType punch
+AC 0 -10 10 20
+Wealth 110
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared dark_vision~
+Off    disarm dodge parry~
+Res    poison negative disease~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#41711
+Name bodyguard goblin~
+ShortD a goblin bodyguard~
+LongD A goblin bodyguard is sharpening his weapon here.~
+Desc This huge goblin is well armed and looks like one tough customer.  It is 
+obviously his job to guard someone or something.
+~
+Race goblin~
+Align 0 0
+Level 13
+Hitroll 0
+HitDice 2d5+50
+ManaDice 2d5+160
+DamDice 2d5+3
+DamType punch
+AC -10 -20 -10 10
+Wealth 130
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared dark_vision~
+Off    disarm dodge kick parry assist_race~
+Res    poison negative disease~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#41712
+Name huge goblin~
+ShortD a huge goblin leader~
+LongD A huge goblin is here, barking orders at the guards.~
+Desc This goblin is huge and powerful looking.  He has dark green skin, and small 
+fangs protrude from his mouth.  He is finely dressed (for a goblin) and well 
+armed.  He has an unusual gleam of intelligence in his eyes.
+~
+Race goblin~
+Align -1 -3
+XPMod 110
+Level 14
+Hitroll 1
+HitDice 3d5+69
+ManaDice 3d5+175
+DamDice 2d6+4
+DamType punch
+AC -30 -20 -30 0
+Wealth 140
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+Off    bash disarm dodge dirt_kick parry~
+Res    poison negative disease~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue eyestalks claws~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#41713
+Name goblin shaman~
+ShortD a goblin shaman~
+LongD A goblin shaman is working his voodoo here.~
+Desc This goblin seems fanatical about his religious beliefs.  He has bone
+ornaments all over him, and is shaking around a bone scepter.  Madness shows
+in his eyes.  
+~
+Race goblin~
+Align -1 -3
+Level 12
+Hitroll 0
+HitDice 2d5+55
+ManaDice 2d5+55
+DamDice 1d10+3
+DamType none
+AC 0 0 0 0
+Wealth 70
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  dark_vision~
+Res    poison negative disease~
+Vuln   magic fire mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#41714
+Name elf scar 41714 ex-prisoner~
+ShortD an elf covered with scars~
+LongD An elf covered with scars is here.~
+Desc This elf is convered by many scars, and his face is a bloody mess.  He 
+doesn't look too healthy at all.
+~
+Race elf~
+Align 0 3
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+115
+DamDice 1d5+1
+DamType punch
+AC 60 60 60 80
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  infrared weaken~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#41715
+Name scarred mrem 41715 ex-prisoner~
+ShortD a scarred mrem~
+LongD A scarred mrem is here.~
+Desc This mrem is haggard and covered by many scars.  It looks like he has been 
+tortured for a long time.  
+~
+Race human~
+Align 1 2
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+115
+DamDice 1d5+1
+DamType punch
+AC 60 60 60 70
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  weaken~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#41700
+Name studded leather armor~
+Short some studded leather armor~
+Desc Some studded leather armor has been left here.~
+Level 6
+ItemType armor~
+Cost 120
+Asize 10
+Rsize 50
+Values 2 3 2 1 0
+Weight 15
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ExtraDesc studded leather armor~
+A set of nice leather armor with metal studs.
+~
+End
+
+#41701
+Name rusty old short sword~
+Short a rusty old shortsword~
+Desc A rusty old shortsword has been left here.~
+Level 6
+ItemType weapon~
+Cost 120
+Asize 35
+Rsize 50
+Values sword 1 10 slash 0
+Weight 20
+Material steel~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian spellfilcher~
+ExtraDesc old rusty short sword~
+This old sword has seen better days.
+~
+End
+
+#41702
+Name rusty old longsword sword~
+Short a `#`yrusty`^ old longsword~
+Desc A `#`yrusty`^ old longsword has been left here.~
+Level 9
+ItemType weapon~
+Cost 180
+Condition 75
+Asize 45
+Rsize 50
+Values sword 1 14 slash 0
+Weight 24
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc rusty old longsword~
+This longsword has seen better days.
+~
+End
+
+#41703
+Name old rags~
+Short some old rags~
+Desc Some old rags have been left here.~
+Level 1
+ItemType clothing~
+Cost 7
+Condition 10
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material cotton~
+Extra    nonmetal~
+Wear     take about~
+ExtraDesc old rags~
+Some old rags, formerly nice clothing, but now worthless.
+~
+End
+
+#41704
+Name long leather whip~
+Short a long leather whip~
+Desc A long leather whip has been left here.~
+Level 10
+ItemType weapon~
+Cost 200
+Asize 5
+Rsize 50
+Values whip 1 12 sting 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc long leather whip~
+This whip is made from leather and is very long.
+~
+End
+
+#41705
+Name black leather vest~
+Short a `#`Sblack`^ leather vest~
+Desc A `#`Sblack`^ leather vest has been left here.~
+Level 10
+ItemType armor~
+Cost 205
+Asize 5
+Rsize 50
+Values 4 3 3 2 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+Affect modifier -1 10 -1 ac -5 0
+ExtraDesc black leather vest~
+A nice sturdy black leather vest.
+~
+End
+
+#41706
+Name wooden sword~
+Short a wooden sword~
+Desc A wooden sword has been left here.~
+Level 3
+ItemType weapon~
+Cost 60
+Asize 35
+Rsize 50
+Values sword 1 8 beating 0
+Weight 15
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc wooden sword~
+A sturdy wooden sword, probably used for training.
+~
+End
+
+#41707
+Name curved longsword sword~
+Short a curved longsword~
+Desc A curved longsword has been left here.~
+Level 11
+ItemType weapon~
+Cost 222
+Asize 45
+Rsize 50
+Values sword 1 15 slash 0
+Weight 35
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc curved longsword~
+a curved longsword of fairly decent make.
+~
+End
+
+#41708
+Name sharp broadsword sword~
+Short a sharp broadsword~
+Desc A sharp broadsword has been left here.~
+Level 13
+ItemType weapon~
+Cost 262
+Asize 50
+Rsize 50
+Values sword 1 14 slash D
+Weight 40
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc sharp broadsword~
+An extremely sharp broadsword.
+~
+End
+
+#41709
+Name steel ringmail~
+Short a `#`Ssteel`^ ringmail~
+Desc A `#`Ssteel`^ ringmail has been left here.~
+Level 16
+ItemType armor~
+Cost 325
+Asize 20
+Rsize 50
+Values 5 5 6 4 0
+Weight 60
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 16 -1 hp 2 0
+ExtraDesc steel ringmail~
+A nicely made steel ringmail armor.
+~
+End
+
+#41710
+Name jagged-edged sword~
+Short a jagged-edged sword~
+Desc A jagged-edged sword has been left here.~
+Level 16
+ItemType weapon~
+Cost 355
+Asize 48
+Rsize 50
+Values sword 2 8 slash D
+Weight 50
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc jagged-edged sword~
+This sword looks very deadly.
+~
+End
+
+#41711
+Name pile coins~
+Short a pile of coins~
+Desc A pile of coins lies here.~
+Level 1
+ItemType money~
+Cost 550
+Asize 10
+Rsize 50
+Values 450 1 0 0 0
+Weight 10
+Material steel~
+Wear     take~
+End
+
+#41712
+Name old steel bracer~
+Short an old `#`ssteel`^ bracer~
+Desc An old `#`Ssteel`^ bracer lies here.~
+Level 2
+ItemType armor~
+Cost 40
+Asize 0
+Rsize 50
+Values 1 1 1 1 0
+Weight 5
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wrist~
+Affect modifier -1 2 -1 constitution 1 0
+ExtraDesc old steel bracer~
+This old steel bracer is corroded but still looks usable.  It looks like
+it might have once been a fine peice of armor.  
+~
+End
+
+#41713
+Name old steel neckguard~
+Short an old `#`Ssteel`^ neckguard~
+Desc An old `#`Ssteel`^ neckguard has been left here.~
+Level 12
+ItemType armor~
+Cost 220
+Asize 0
+Rsize 50
+Values 2 2 2 1 0
+Weight 10
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take neck~
+Affect modifier -1 12 -1 hp 2 0
+End
+
+#41714
+Name bone sceptre~
+Short a `#`Wbone`^ sceptre~
+Desc A `#`Wbone`^ sceptre has been left here.~
+Level 14
+ItemType weapon~
+Cost 280
+Asize 0
+Rsize 50
+Values exotic 3 6 smash 0
+Weight 15
+Material bone~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc bone sceptre~
+A long heavy bone sceptre, the artifact of some barbaric religion.
+~
+End
+
+#41715
+Name small sacrificial dagger~
+Short a small sacrificial dagger~
+Desc A small sacrificial dagger has been left here.~
+Level 11
+ItemType weapon~
+Cost 222
+Asize 0
+Rsize 50
+Values dagger 2 3 pierce 0
+Weight 10
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+Affect modifier -1 11 -1 damroll 1 0
+Affect modifier -1 11 -1 hitroll 1 0
+ExtraDesc small sacrificial dagger~
+This small dagger is covered with dried blood, and has small barbaric
+religios symbols.  
+~
+End
+
+#41716
+Name rusty old axe~
+Short a `#`yrusty`^ old axe~
+Desc A `#`yrusty`^ old axe has been left here.~
+Level 6
+ItemType weapon~
+Cost 120
+Asize 35
+Rsize 50
+Values axe 1 10 cleave 0
+Weight 20
+Material steel~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc rusty old axe~
+A rusty old axe.  Nothign special about it.
+~
+End
+
+#41717
+Name matrix ring~
+Short a matrix ring~
+Desc A ring with interwoven gold threads lies here.~
+Level 11
+ItemType treasure~
+Cost 145
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 15
+Material lead~
+Extra    hum magic nodegrade~
+Wear     take finger~
+Affect modifier -1 0 -1 memory 1 0
+End
+
+#41718
+Name polished silver earring~
+Short a `#`Spolished silver`^ earring~
+Desc A `#`Spolished silver`^ earring is here.~
+Level 14
+ItemType jewelry~
+Cost 88
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material silver~
+Extra    nodegrade~
+Wear     take ear~
+Affect modifier -1 14 -1 constitution 1 0
+End
+
+#41719
+Name black mask~
+Short a `#`Sblack`^ mask~
+Desc A `#`Sblack`^ mask has been left here.~
+Level 10
+ItemType trash~
+Cost 35
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take face~
+End
+
+#0
+
+
+
+#ROOMS
+#41700
+Name Cave~
+Desc You are just inside the entrance of a rough cave.  There is not much light 
+here from the outside, but a torch firmly attached to the wall provides 
+enough to see by.  You can go east, out of the cave, or west, deeper into the 
+earth.  You hear noises from that direction.
+~
+RoomFlags no_mob indoors~
+Sector cave~
+ExtraDesc torch~
+A mostly burnt torch is attached to the wall.
+~
+ExtraDesc noises~
+Low voices in a strange language.
+~
+Exit east 30433
+Exit west 41701
+EDesc Cave.
+~
+End
+
+
+#41701
+Name Cave~
+Desc The cave continues east here, or to the west opens up into a larger cavern. 
+You can hear noise and voices from that direction, while to the east it is 
+silent.  A torch is firmly attached to the wall, providing a little light.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc torch~
+An old torch is attached to the wall here.
+~
+ExtraDesc noise~
+Guttural voices and strange sounds.
+~
+Exit east 41700
+EDesc Cave.
+~
+Exit west 41702
+EDesc A wide cavern.
+~
+End
+
+
+#41702
+Name Cavern~
+Desc You are in a huge cavern, which appears to be natural rather than created. 
+The walls are very rough, with many protrusions that cast strange shadows 
+from the torches placed here.  There is a small hole in the ceiling through 
+which smoke can escape, which is a good thing as there is a fire burning 
+brightly in the center of the room.  Scattered around on the floor is a lot 
+of garbage, including scraps of old meat, clothing, and armor.  There are
+exits to the west, northwest, north, northeast, east, and south.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc torch~
+A fire burns brightly in the center of the room.  You see some bones within 
+it.  There is a hole in the ceiling above to let out smoke.
+~
+ExtraDesc noise~
+Voices and metal clanging.
+~
+ExtraDesc fire hole~
+A small hole is in the ceiling above the fire.
+~
+Exit north 41704
+EDesc Cave.
+~
+Exit east 41701
+EKeywords A small cave.~
+EDesc Cave.
+~
+Exit south 41706
+EDesc Cave.
+~
+Exit west 41714
+EDesc Cave.
+~
+Exit northeast 41703
+EDesc Garbage Room.
+~
+Exit northwest 41716
+EDesc Cave.
+~
+End
+
+
+#41703
+Name Garbage Room~
+Desc This room appears to be where the inhabitants throw all their garbage. 
+It is more a pit than a room, and is full of all sorts of rotting and 
+disgusting things.  The only exit is southwest.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc garbage~
+Rotting meat, bones, scraps of cloth and metal.
+~
+Exit southwest 41702
+EKeywords A large cavern.~
+EDesc Cavern.
+~
+End
+
+
+#41704
+Name Cave~
+Desc This short cave merely connects a small room to the north with a huge cavern 
+to the south.  The walls are rough, and it is illuminated by a 
+torch firmly attached to the wall.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc torch~
+An old torch is firmly attached to the wall.
+~
+Exit north 41705
+EDesc Barracks.
+~
+Exit south 41702
+EDesc Cavern.
+~
+End
+
+
+#41705
+Name Barracks~
+Desc This relatively small room appears to be the quarters of whatever creatures 
+guard this place.  The walls are carved from the rough stone, and the room is 
+illuminated by a few torches.  You see about a dozen rough pallets made from 
+dirty straw and old rags, and there are a few odd weapon racks along the 
+walls.  The only exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc pallets rags straw~
+Very dirty beds, made of old straw and rags.
+~
+ExtraDesc weapon racks~
+Old wooden racks for hanging weapons.  They are empty.
+~
+Exit south 41704
+EKeywords A small cave.~
+EDesc Cave.
+~
+End
+
+
+#41706
+Name Cave~
+Desc This short cave serves no purpose but to link the huge cavern to the north 
+with a smaller room to the south.  There is a torch on the wall.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc torch~
+A torch is firmly attached to the wall.
+~
+Exit north 41702
+EKeywords A large cavern is this way.~
+EDesc Cavern.
+~
+Exit south 41707
+EDesc Torture Room.
+~
+End
+
+
+#41707
+Name Torture Room~
+Desc This appears the be the room in which the denizens of this foul place torture 
+the poor creatures that are unfortunate enough to fall into their clutches.  
+You see various painful-looking torture devices around the room. There are 
+several torches on the walls, and exits lead north and
+west.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc torture device~
+A rack, and iron maiden, and various other devices.
+~
+ExtraDesc torch~
+A torch attached to the wall.
+~
+Exit north 41706
+EKeywords A cave leads north.~
+EDesc Cave.
+~
+Exit west 41708
+EDesc Cave.
+~
+End
+
+
+#41708
+Name Cave~
+Desc This small cave leads west into the darkness, or east into a larger room.  
+There are doors to the north and south.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc door~
+Rotting old doors.
+~
+Exit north 41710
+EFlags door closed nolock~
+EKeywords cell door~
+EDesc Cell.
+~
+Exit east 41707
+EDesc Torture Room.
+~
+Exit south 41713
+EFlags door closed nolock~
+EKeywords cell door~
+EDesc Cell.
+~
+Exit west 41709
+EKeywords A cave goes west into darkness.~
+EDesc Cave.
+~
+End
+
+
+#41709
+Name Cave~
+Desc The small cave leads east into the darkness, but to the west runs into a dead 
+end.  There are doors on the north and south sides.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 41711
+EFlags door closed nolock~
+EKeywords cell door~
+EDesc Cell.
+~
+Exit east 41708
+EDesc Cave.
+~
+Exit south 41712
+EFlags door closed nolock~
+EKeywords cell door~
+EDesc Cell.
+~
+End
+
+
+#41710
+Name Cell~
+Desc You are in a small cell carved from the stone.  There is nothing here but 
+some old bones.  The exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bones~
+Old bones, of a human or something similar in build.
+~
+Exit south 41708
+EFlags door closed nolock~
+EKeywords cell door~
+EDesc Cave.
+~
+End
+
+
+#41711
+Name Cell~
+Desc You are in a small cell carved from the stone.  There is nothing here but 
+some old bones.  The exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bones~
+Old bones, of some poor human.
+~
+Exit south 41709
+EFlags door closed nolock~
+EKeywords cell door~
+EDesc Cave.
+~
+End
+
+
+#41712
+Name Cell~
+Desc You are in a small cell carved from the stone.  There is nothing here but 
+some old bones.  The exit is north.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bones~
+Old bones, from some poor creature.
+~
+Exit north 41709
+EFlags door closed nolock~
+EKeywords cell door~
+EDesc Cave.
+~
+End
+
+
+#41713
+Name Cell~
+Desc You are in a small cell carved from the stone.  There is nothing here but 
+some old bones.  The exit is north.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bones~
+Old bones, from some poor creature.
+~
+Exit north 41708
+EFlags door closed nolock~
+EKeywords cell door~
+EDesc Cave.
+~
+End
+
+
+#41714
+Name Cave~
+Desc This short cave connects a huge cavern to the east with a smaller room to the 
+west.  There is a torch firmly attached to the wall.
+~
+RoomFlags indoors~
+Sector cave~
+ExtraDesc bones~
+An old torch is attached firmly to the wall.
+~
+ExtraDesc torch~
+..
+~
+Exit east 41702
+EDesc Cavern.
+~
+Exit west 41715
+EDesc Training Room.
+~
+End
+
+
+#41715
+Name Training Room~
+Desc This appears to be a training room of some type.  There are some practice 
+dummies vaguely shaped like humans, with all the critical areas marked.  
+Broken wooden swords and other worthless garbage litter the floor.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 41714
+EDesc Cave.
+~
+End
+
+
+#41716
+Name Cave~
+Desc This narrow cave connects a large cavern to the southeast to a smaller
+room to the northwest.  A torch is firmly attached to the wall.  There is a
+door in the north wall.  
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 41720
+EFlags door closed~
+EKeywords door~
+Exit southeast 41702
+EDesc Cavern.
+~
+Exit northwest 41717
+EDesc Antechamber.
+~
+End
+
+
+#41717
+Name Antechamber~
+Desc This small room is more nicely appointed, and has less garbage lying around 
+than the caverns to the southeast.  A few old tapestries cover the walls, and 
+the fur of some creature covers the ground.  Several torches provide 
+illumination.  You can exit to the southeast or northwest.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc tapestr~
+Old cloth tapestries.  They are a little rotten.
+~
+ExtraDesc torch~
+Old torches line the walls.
+~
+ExtraDesc fur~
+A carpet made form the hide of some huge hairy beast.
+~
+Exit southeast 41716
+EDesc Cave.
+~
+Exit northwest 41718
+EDesc Fine Quarters.
+~
+End
+
+
+#41718
+Name Fine Quarters~
+Desc This room is richly furnished in all ways.  There are nice fur rugs covering 
+the stone floor, and large tapestries cover the walls.  A few chairs are 
+placed around a wooden table, and a soft bed sits against the wall.  There 
+are curtains all along the northwest wall, and the only exit that you can see 
+is southeast.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc torch~
+Dark brown fur from some huge beast makes up these fine carpets.
+~
+ExtraDesc tapest~
+Fine tapestries cover the walls.
+~
+ExtraDesc fur~
+Dark brown fur from some huge beast makes up these fine carpets.
+~
+Exit southeast 41717
+EDesc Antechamber.
+~
+Exit northwest 41719
+EFlags door closed nolock~
+EKeywords curtain~
+EDesc Secret Room.
+~
+End
+
+
+#41719
+Name Secret Room~
+Desc This secret room apparently holds the wealth of the goblin leader.  It is 
+very plain, with no decorations or objects other than a few shelves. A 
+curtain blocks the way southeast.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc shelf shelves~
+Old wood shelves.
+~
+Exit southeast 41718
+EFlags door closed nolock~
+EKeywords curtain~
+EDesc Fine Quarters.
+~
+End
+
+
+#41720
+Name Small Quarters~
+Desc These quarters are small, but somewhat finely furnished.  There is some
+wooden furniture, including a bed and a few chairs, and a stone table.  A
+few barbaric looking religious items are lying around.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc barbaric religious items~
+Various items made from bone mostly.
+~
+ExtraDesc furniture wooden stone table chair bed~
+Plain wooden and stone furniture.
+~
+Exit south 41716
+EFlags door closed~
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 41713 spec_cast_cleric
+S
+
+
+
+#RESETS2
+M 0 41700 18 41701 2
+E 0 41700 100 torso~
+E 0 41716 -1 wielded~
+M 0 41700 18 41701 2
+E 0 41700 100 torso~
+E 0 41712 -1 rwrist~
+E 0 41716 -1 wielded~
+M 0 41703 6 41702 2
+E 0 41703 100 torso~
+M 0 41703 6 41702 2
+E 0 41703 100 torso~
+M 0 41704 5 41702 2
+E 0 41703 100 torso~
+M 0 41704 5 41702 2
+E 0 41703 100 torso~
+M 0 41700 18 41702 1
+E 0 41700 100 torso~
+E 0 41701 100 wielded~
+M 0 41701 2 41703 1
+M 0 41700 18 41705 2
+E 0 41700 100 torso~
+E 0 41701 100 wielded~
+M 0 41700 18 41705 2
+E 0 41700 100 torso~
+E 0 41701 100 wielded~
+M 0 41702 2 41705 1
+E 0 41700 100 torso~
+E 0 41702 100 wielded~
+M 0 41709 4 41705 1
+E 0 41700 100 torso~
+E 0 41706 100 torso~
+M 0 41705 2 41707 1
+E 0 41704 100 wielded~
+E 0 41705 100 torso~
+E 0 41719 -1 face~
+M 0 41707 2 41711 1
+E 0 41703 100 torso~
+M 0 41708 2 41712 1
+M 0 41706 2 41713 1
+E 0 41703 100 torso~
+M 0 41700 18 41715 1
+E 0 41700 100 torso~
+E 0 41701 100 wielded~
+M 0 41709 4 41715 2
+E 0 41700 100 torso~
+E 0 41706 100 torso~
+M 0 41709 4 41715 2
+E 0 41700 100 torso~
+E 0 41706 100 torso~
+M 0 41710 2 41715 1
+E 0 41707 100 wielded~
+E 0 41700 100 torso~
+M 0 41700 18 41717 2
+E 0 41700 100 torso~
+E 0 41701 100 wielded~
+M 0 41700 18 41717 2
+E 0 41700 100 torso~
+E 0 41701 100 wielded~
+E 0 41712 -1 rwrist~
+M 0 41711 5 41718 2
+E 0 41713 -1 neck1~
+E 0 41700 100 torso~
+E 0 41708 100 wielded~
+M 0 41711 5 41718 2
+E 0 41713 -1 neck1~
+E 0 41700 100 torso~
+E 0 41708 100 wielded~
+M 0 41712 2 41718 1
+E 0 41718 -1 lear~
+E 0 41709 100 torso~
+E 0 41710 100 wielded~
+M 0 41703 6 41718 1
+E 0 41703 100 torso~
+O 0 41711 0 41719
+M 0 41713 1 41720 1
+E 0 41714 -1 wielded~
+G 0 41715 -1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#41717
+title prisoners are attacked~
+code if mobhere 41714
+or mobhere 41715
+say Grunt kill!
+kill ex-prisoner
+endif
+~
+disabled false
+END
+
+#41716
+title free mrem prisoner~
+code mob mload 41715
+mob echo $I struggles to stand up, smiling with his newly achieved freedom.
+mob oload 41717
+mob oload 41703
+mob silently give ring 41715
+mob silently give old 41715
+mob force 41715 mob silently wear old
+mob force 41715 say Please, take this as a sign of my gratitude.
+mob force '41715' give ring $n
+mob force '41715' follow $n
+mob purge prisoner
+~
+disabled false
+END
+
+#41715
+title elf prisoner~
+code mob mload 41714
+mob echo $I struggles to stand up, smiling with his newly achieved freedom.
+mob oload 41703
+mob silently give old 41714
+mob force 41714 mob silently wear old
+mob force '41714' follow $n
+mob purge prisoner
+~
+disabled false
+END
+
+#0
+
+
+#$

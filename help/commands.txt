@@ -1,0 +1,1860 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword CRANK CLANRANKS~
+category undefined~
+immsee_also CLANRANKS-IMM~
+text `=lSyntax:`=?
+    crank 
+  
+Lists the ranks within your clan.  You can not view the ranks of 
+another clan.  
+
+~
+END
+
+keyword REQUEST REQUESTOOC REQUEST-OOC~
+category undefined~
+see_also DECLINEOOC~
+text `=?
+`=lSyntax:`=?
+    Requestooc <charname>
+ 
+Requestooc sends a message telling someone that you want to talk to 
+them in the ooc rooms.  The obvious place to meet is in the main
+entrance, and then follow each other to the agreed room.
+ 
+~
+END
+
+keyword DISMOUNT~
+category undefined~
+see_also MOUNT TETHER~
+text `=lSyntax: `=?dismount`+
+`+
+You climb off your mount with this command.  Your pet will follow you around 
+until you tether it up.`+
+`+
+~
+END
+
+keyword TOGGLES~
+category undefined~
+text `=?
+Toggle means the command can be turned on or off merely by typing the 
+command name again.  For example autosubdue is a toggle, typing 
+autosubdue will turn it on or off depending on weather it is currently 
+on or off.  
+~
+END
+
+keyword COMBINE~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    Combine
+
+This command will toggle weather items of a kind are shown in groups
+or as separate items in your inventory or in a container:
+
+(2) a long thin dagger,
+
+or;
+
+a long thin dagger
+a long thin dagger
+~
+END
+
+keyword WHOIS~
+category undefined~
+see_also WHO LASTON~
+text The functionality of the whois command has been integrated into 
+the who command.  Previously it could be used to see who was on 
+with a name starting with a particular letter.  Use who <letter>
+to filter on name.`+
+ 
+~
+END
+
+keyword ATTACK KILL FIGHT~
+category undefined~
+see_also PKILL DEATH FLEE RECALL RESCUE~
+text `=?
+`=lSyntax:`=?
+    kill <victim>
+
+Use this command to start a fight.
+
+~
+END
+
+keyword WHISPER~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    Whisper <character> <message>
+    "       <character> <message>
+
+This command will send a message to another character in the same room as 
+you.
+Sometimes you will be overheard, this is a chance thing.  Some factors taken 
+into account for success of whispering are quickness, reasoning and empathy.
+Double quotes are a short cut key for whisper, 
+
+ie. " <character> <message>
+~
+END
+
+keyword SUBDUE~
+category undefined~
+see_also AUTOLIST DEATH GRAB~
+text `#`=lSyntax:`^ autosubdue
+ 
+AUTOSUBDUE will allow you to fight to subdue instead of killing.  When 
+a character (player or mob) is subdued, they will be rendered 
+incapacitated and bleeding to death.  Subduing is not an exact 
+science.  You should not count on subduing to prevent you from killing 
+your opponent.  If you hit your opponent too hard on the finishing 
+blow, they may be killed instead of subdued.  If you use an attack 
+spell on your opponent, they will also be killed.  When a character is 
+subdued, you may use the GRAB command to take items from them.  This 
+command is a toggle.  Typing AUTOSUBDUE will toggle it on and off.
+ 
+~
+END
+
+keyword BRIEF COMPACT~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    brief
+    compact
+
+Brief and compact help set your display options for the game. Typing brief
+toggles on and off the showing of room descriptions when you move around
+(considerably reducing the text to be processed), and typing compact 
+removes the extra blank line before your prompt.
+~
+END
+
+keyword LASTON~
+category undefined~
+see_also LETGAIN~
+immsee_also IMM-LASTON~
+text `=lSyntax:`=? laston <character>`+
+`+
+This command is available to letgained players and those over level 5 
+only.  What it enables you to do is to find out when another character 
+was last on.`+
+~
+END
+
+keyword AFK AWAY FROM KEYBOARD~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    afk
+
+Typing AFK puts your character in a tell-saving mode as follows: any tell
+to you is stored in a special buffer, and can be seen later by typing
+replay.  This is useful when you need to leave the mud for 5 or 10 minutes,
+but don't want to miss tells.  AFK shows up in your prompt until it is
+turned off.
+
+Tells to link-dead players are stored in a similar fashion, and can also be
+seen by typing replay (unless, of course, the character logs off before
+reading them).
+~
+END
+
+keyword PROMPT~
+category command~
+see_also PROMPT-TEMPLATES GPROMPT COLOUR CHANNELS~
+text `=?
+`=lSyntax:`=? prompt
+`=lSyntax:`=? prompt default
+`=lSyntax:`=? prompt <a `=_prompt-template keyword)
+`=lSyntax:`=? prompt <%*>
+ 
+PROMPT with out an argument will turn your prompt on or off.
+ 
+PROMPT ALL will give you the traditional "<hits mana moves>" prompt.
+ 
+PROMPT DEFAULT will assign you the mud wide default prompt.
+ 
+PROMPT <%*> where the %* are the various variables you may set yourself.
+ 
+    %% - percent character
+    %a - alignment
+    %b - position - Standing, Resting, etc
+    %c - carriage return (useful for multi-line prompts)
+    %e - exits for the room (displayed in NESWNeSeSwNwDU style)
+    %g - gold
+    %G - group stat system - see below
+    %h - hit points
+    %H - maximum hitpoints
+    %l - language you are speaking
+    %m - mana (disabled with switched)
+    %M - maximum mana
+    %p - role playing score (total)
+    %P - percentage of pets hitpoints
+    %r - room description
+    %s - silver
+    %t - game time
+    %T - server time
+    %v - movement points
+    %V - max movement points
+    %W - Word format of health (current hp/max hitpoints -> as words)
+    %x - experience total (disabled when switched)
+    %X - experience required to level (disabled when switched)
+    %z - zone you are in
+ 
+  The mud also supports group prompts with the `=_gprompt command.
+ 
+    `c== `GImmortal only codes `c==-`=?
+    %R - room vnum
+    %S - short description of switched mob
+    %Z - filename of zone you are in
+ 
+Example:  PROMPT <%hhp %mm %vmv>
+Will set your prompt to "<10hp 100m 100mv>"
+ 
+`RNotes:`=?
+ - You can also use colours in your prompt.
+ - To find out what you current prompt is type channels
+ - There are a number of template prompts available. 
+~
+END
+
+keyword PROMPT-TEMPLATES PROMPTS ROMPT-TEMPLATES'~
+category undefined~
+text `=lSyntax:`=?
+Prompt basic - '<%hhp %mm %vmv> '
+`g               <35hp 125m 265mv> `=?
+ 
+Prompt all   - '<%h/%Hhp %m/%Mm %vmv %Xxp> '
+`g               <35/43hp 125/137m 265mv 413xp> `=?
+ 
+Prompt all1  - '<%e %t %h/%Hhp %m/%Mm %vmv> '
+`g               <NESWDNeSeNw 5:55pm 40/43hp 130/137m 270mv> `=?
+ 
+Prompt all2  - '<%e %t %h/%Hhp %m/%Mm %vmv %Xxp> '
+`g               <NESWDNeSeNw 6:15pm 40/43hp 130/137m 270mv 413xp> `=?
+Prompt all2c - Colour version of prompt all2
+ 
+Prompt all3  - '<%e %t %l %gg %h/%Hhp %m/%Mm %vmv %Xxp> '
+`g               <NESWDNeSeNw 6:25pm human 128g 40/43hp 130/137m 270mv 413xp> `=?
+Prompt all3c - Colour version of prompt all3
+ 
+Prompt all4  - '<%e %t %l %gg %ss %h/%Hhp %m/%Mm %vmv %Xxp> '
+`g               <NESWDNeSeNw 6:35pm human 128g 2457s 40/43hp 130/137m 270mv 413xp> `=?
+Prompt all4c - Colour version of prompt all4
+ 
+Prompt all5  - '<%e %t %l %gg %ss %h/%Hhp %m/%Mm %v/%Vmv %Xxp> '
+`g               <NESWDNeSeNw 6:40pm human 128g 2457s 40/43hp 130/137m 270mv 413xp> `=?
+Prompt all5c - Colour version of prompt all5
+    
+Prompt all6  - Adds information about if you are hidden/sneaking/invis - far right.
+               '[%e %t %l %gg %ss %h/%Hhp %m/%Mm %v/%Vmv %Xxp%d> '
+Prompt all6c - Colour version of prompt all6 shown below (including sneaking):
+`g               [`YNESWDNeSeNw`g 6:45pm `xhuman `Y132`yg `s2837`ws `R42/`r45hp `B135/`b135m `M270/`m270mv `G413`gxp`#(`ms`&)> `=?
+ 
+Prompt olc   - '<{#{m%e{^ in %J;{R%o{mv{R%O%j8{mv{R%R %j2{o%J2{g%Z{^ - %T{^ - %t>'
+               (changes when in olc mode and in normal mode)
+Prompt olc2  - '<{#-==  {R%R  {^- {Y%T  {^-  {M%z  %JD{^-  {C%o {^-  %O {^==->'
+               (changes when in olc mode and in normal mode)
+ 
+~
+END
+
+keyword !~
+category undefined~
+text `=?
+`=lSyntax:`=? !
+
+! repeats the last command you typed.
+~
+END
+
+keyword DIRECTIONS MOVEMENT MV NORTH SOUTH EAST WEST NE NW SE SW UP DOWN~
+category undefined~
+text `=?
+`=lSyntax:`=? north
+`=lSyntax:`=? south
+`=lSyntax:`=? east
+`=lSyntax:`=? west
+`=lSyntax:`=? ne
+`=lSyntax:`=? nw
+`=lSyntax:`=? se
+`=lSyntax:`=? sw
+`=lSyntax:`=? up
+`=lSyntax:`=? down
+
+Use these commands to walk in the appropriate direction.
+Each time you move you use up movement points set on how difficult
+the terrain is to traverse.
+~
+END
+
+keyword CASTING~
+category undefined~
+text `=lSyntax: `=?c <spell>`+
+`=?        cast <spell>`+
+`=?        commune <spell>`+
+`=?        summon <spell>`+
+`+
+ Spell casters are divided into three different categories for IC, or In 
+Character, reasons.  Magi/Spellfilchers `rcast`=? spells, Clerics/Paladins `ccommune`=? 
+spells, and druids/rangers `ysummon`=? spells. For reasons of making everything 
+more simplistic, all classes can use "c" to cast spells and not worry about 
+the differing syntax.`+
+`+
+Before you can cast a spell, you have to practice it.  The more you 
+practice, the higher chance you have of success when casting.  Casting 
+spells costs mana.`+
+`+
+Some spells make require parameters, or targets of the spell, in order to be 
+cast properly.  Many spells which need targets will use an appropriate 
+default target, especially during combat. When starting combat with a combat 
+spell, a target is required.`+
+`+
+If the spell name is more than one word, then you must quote the spell name. 
+Example: cast 'cure critical' frag.  Quoting is optional for single-word 
+spells.  Also, you can abbreviate the spell names, but be careful about 
+which ones you abbreviate.  Example: cast 'fire' frag will most likely not 
+cast fire shield on your allie, but rather cast a fireball.  `+
+`+
+When you cast an offensive spell, the victim usually gets a saving throw. 
+The effect of the spell is reduced or eliminated if the victim makes the 
+saving throw successfully.  In order to find out what a spell does, check 
+the help file for individual spells. 
+~
+END
+
+keyword EXITS~
+category undefined~
+text `=?
+`=lSyntax:`=? 
+    exits
+
+Tells you the visible exits of the room you are in.  Not all exits are 
+visible.
+You can use the 'bump' technique to find hidden exits.  (Try to walk in a
+certain direction and see what you bump into).
+~
+END
+
+keyword DROP GET GIVE PUT TAKE~
+category undefined~
+text `=?
+`=lSyntax:`=? drop <object>
+`=lSyntax:`=? drop <amount> coins
+`=lSyntax:`=? get  <object>
+`=lSyntax:`=? get  <object> <container>
+`=lSyntax:`=? give <object> <character>
+`=lSyntax:`=? give <amount> silver <character>
+`=lSyntax:`=? give <amount> gold <character>
+`=lSyntax:`=? put  <object> <container>
+
+DROP drops an object, or some coins, on the ground. You cannot drop an object
+that is cursed or has a nodrop flag.
+
+GET gets an object, either lying on the ground, or from a container, or even
+from a corpse.
+
+GIVE gives an object, or some coins, to another character.
+
+PUT puts an object into a container.
+
+TAKE is a synonym for GET.
+
+DROP, GET and PUT understand the object names 'ALL' for all objects and
+'ALL.object' for all objects with the same name.
+~
+END
+
+keyword EQUIPMENT INVENTORY~
+category undefined~
+text `=?
+`=lSyntax:`=? equipment
+`=lSyntax:`=? inventory
+
+EQUIPMENT lists your equipment (worn armor, wielded weapons, and held items).
+INVENTORY lists your inventory. (items not worn, wielded, or held).
+~
+END
+
+keyword NOFOLLOW~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    nofollow
+
+Toggles you character's permission flag regarding following.  You cannot be
+followed by anyone when nofollow is on.
+~
+END
+
+keyword NOSUMMON~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    nosummon
+
+Toggles your character's permission flag regarding summoning.  You cannot be
+summoned by anyone when nosummon is on.
+~
+END
+
+keyword COMPARE~
+category undefined~
+text `=?
+`=lSyntax:`=? compare <object-1> <object-2>
+`=lSyntax:`=? compare <object>
+ 
+COMPARE compares two objects in your inventory.  If both objects are weapons,
+it will report the one with the better average damage.  If both objects are
+armor, it will report the one with the better armor class.
+ 
+COMPARE with one argument compares an object in your inventory to the object
+you are currently wearing or wielding of the same type.
+ 
+COMPARE doesn't consider any special modifiers of the objects, including
+enchantments.  THIS CAN LEAD TO COMPARE INCORRECTLY DECLARING A LESSER
+OBJECT AS THE BETTER OF TWO OBJECTS.
+~
+END
+
+keyword FLEE RETREAT~
+category undefined~
+see_also RECALL RESCUE WIMPY PANIC~
+text `#`=lSyntax:`^ flee
+`#`=lSyntax:`^ retreat <direction>
+ 
+Once you start a fight, you can't just walk away from it.  If the 
+fight is not going well, you can attempt to FLEE, RETREAT, RECALL, or 
+another character can RESCUE you.  Everyone has the ability to FLEE.  
+RETREAT is a skill that only certain classes may gain.  When you FLEE 
+or RETREAT, you will run from combat into an adjacent room.  You 
+cannot FLEE or RETREAT through closed doors.  When you FLEE, the 
+direction that you flee from combat is random.  If you RETREAT, you 
+can pick the direction that you run.  You can also RECALL from combat, 
+but this is less likely to work and costs more experience points than 
+fleeing.  
+ 
+If you lose your link during a fight, then your character will keep 
+fighting, and will attempt to RECALL from time to time.  Your chances 
+of making the recall are reduced, and you will lose much more 
+experience.
+ 
+~
+END
+
+keyword PANIC~
+category undefined~
+see_also RECALL WIMPY~
+text `#`=lSyntax:`^ panic
+`#`=lSyntax:`^ panic <number>
+ 
+PANIC sets your panic value.  When your character takes damage that 
+reduces your hit points below your panic value, you will automatically 
+attempt to recall.  You will only recall if your character is not in a 
+wait state -- i.e. has not been using combat commands like cast, trip 
+and bash, has not been tripped or bashed by an enemy, and is not 
+affected by a lethargy spell.
+ 
+PANIC with no argument sets your panic value to a fraction of your 
+maximum hit points.
+ 
+~
+END
+
+keyword EXAMINE LOOK~
+command_reference look examine~
+category undefined~
+see_also GLANCE PEEK~
+text `=?
+`=lSyntax:`=? look`+
+`=lSyntax:`=? look    <object>`+
+`=lSyntax:`=? look    <character>`+
+`=lSyntax:`=? look    <direction>`+
+`=lSyntax:`=? look    <keyword>`+
+`=lSyntax:`=? look in <container>`+
+`=lSyntax:`=? look in <corpse>`+
+`=lSyntax:`=? examine <container>`+
+`=lSyntax:`=? examine <corpse>`+
+`+
+LOOK looks at something and sees what you can see.`+
+`+
+EXAMINE is short for 'LOOK container' followed by 'LOOK IN container'.`+
+`+
+~
+END
+
+keyword ORDER~
+category undefined~
+text `=?
+`=lSyntax:`=? order <character> command
+`=lSyntax:`=? order all command
+
+ORDER orders one or all of your charmed followers (including pets) to
+perform any command.  The command may have arguments.  You are responsible
+for the actions of your followers, and others who attack your followers
+will incur the same penalty as if they attacked you directly.
+
+Most charmed creatures lose their aggressive nature (while charmed).
+
+If your charmed creature engages in combat, that will break the charm.
+~
+END
+
+keyword KNEEL REST -SIT SLEEP STAND WAKE~
+category undefined~
+see_also TIRED HUNGRY THIRST~
+text .. `=lSyntax:`=? kneel`+
+`=?         rest`+
+`=?         sleep`+
+`=?         sit`+
+`=?         stand`+
+`=?         wake`+
+`+
+These commands change your position.  When you REST or SLEEP, you regenerate 
+hit points, mana points, and movement points faster. However, you are more 
+vulnerable to attack, and if you SLEEP, you won't hear many things happen.`+
+`+
+When you sit or kneel, you don't recover hitpoints and mana as quickly as if 
+you are fully resting, but you aren't as unaware from attacks.  Use STAND or 
+WAKE to come back to a standing position.  You can also WAKE other sleeping 
+characters.  `+
+`+
+~
+END
+
+keyword TIREDNESS~
+category undefined~
+see_also HUNGER THIRST~
+text `=?
+At the Dawn of Time, your character will tire if they do not sleep.
+The longer you stay awake (standing or resting) you more you tire.
+Standing makes you tire quicker than resting, if you refuse to sleep
+your character will eventually collapse and you will have to wait a
+few ticks to be able to wake up again.  Sleeping will make you less 
+tired and prevent you from collapsing.  Hunger and thirst also prevent
+you from becoming less tired at the usual rate.
+
+~
+END
+
+keyword THIRSTY~
+category undefined~
+see_also TIRED HUNGER~
+text `=?
+If you do not drink your character will get thirsty, this slows the
+rate at which you recover from wounds and at which you regain from
+being tired.
+
+~
+END
+
+keyword HUNGER HUNGRY~
+category undefined~
+see_also TIRED THIRST~
+text `=?
+If you do not eat your character will get hungry, this slows the
+rate at which you recover from wounds and at which you regain from
+being tired.
+
+~
+END
+
+keyword NOTEACH -NOTEACH~
+category undefined~
+text `+
+`=lSyntax: `=?noteach`+
+`+
+Toggles your character's permission flag regarding teaching.  You cannot be
+taught any spells when noteach is on.
+~
+END
+
+keyword REPLY SAY TELL RETELL SAYMOTE~
+category undefined~
+see_also SAYTO REPLAY~
+text `=?
+`=lSyntax:`=? reply <message>
+`=lSyntax:`=? say   <message>
+`B    or:`=?  <message>
+`=lSyntax:`=? tell  <character> <message>
+`=lSyntax:`=? retell <message>
+`B    or:`=? > <message>
+ 
+ 
+All of these commands send messages to other players.
+ 
+SAY sends a message to all awake players in your room.  
+The single quote ' ' ' is a synonym for SAY. (lowercase version of ")
+Also, you can use emotes within says. Typing the emoted part between brackets:
+ 
+say >bob greetings, bob. [and then, with a bow] how have you been?
+ 
+would result in:
+ 
+Mike says to you: '`#`m(human)`=? Greetings, bob'`s and then, with a bow`=? 'how have you been?'`^
+ 
+TELL sends a message to one IMMORTAL player anywhere in the realm.  This form 
+Of communication is entirely OOC, and should never be used for IC messages.
+You can send tells to immortals at any time during the game... and to 
+newbie support players till you reach level 10 or are letgained.
+ 
+REPLY sends a message to the last player who sent you a TELL.  REPLY will 
+Work even if you can't see the player, and without revealing their identity.  
+This is handy for talking to invisible or switched immortal players.
+ 
+RETELL is like reply, but the person it goes to is the last person you sent a 
+tell to. 
+ 
+~
+END
+
+keyword CHAT GOSSIP INTERACTION TALKING YELL QUESTION ANSWER Q/A QUIET PRAY -CHANNELS COMMUNICATION~
+category undefined~
+see_also SAY REPLAYCHANNELS~
+text `=lSyntax:`=? ooc      <message>`+
+`=lSyntax:`=? yell     <message>`+
+`=lSyntax:`=? question <message>`+
+`=lSyntax:`=? answer   <message>`+
+`=lSyntax:`=? pray     <message>`+
+`=lSyntax:`=? quiet
+`=lSyntax:`=? newbie   <message>`+
+ 
+OOC will send a message to all players in the game without a 
+delay.  OOC stands for 'Out-of-character' -- the channel you will want to 
+use when discussing conventional (real life) issues.
+ 
+YELL sends a message to all awake players within your area.
+ 
+QUESTION and ANSWER are used for questions about MUD game mechanics.  This
+is an OOC channel, and should NEVER be used for IC questions.
+ 
+PRAY will allow you to pray to the gods that are listening.  PRAY is an IC 
+command.
+ 
+QUIET mode will disable all channels.  You will be able to hear only 
+says, emotes and tells from immortals.
+ 
+NEWBIE is for players that are new and newbie helpers. Any other players
+cannot see this channel.
+ 
+Type a channel name by itself to turn it off or on.
+~
+END
+
+keyword PMOTES~
+category undefined~
+see_also AMOTE EMOTE SMOTE~
+text `=lSyntax: `=?pmote <target> <action>`+
+`+
+Pmote is used to do an action and include someone else in it.  The text must 
+include a @ (or variation thereof) where you want the targets name.  PMOTE 
+is similar to emote, but will substitute for the target's name.  We'll use 
+Rathern as the example here.`+
+`+
+Here is an example of how the pmote works:`+
+`seg pmote guard smiles at @.`+
+`+
+Will be read by the guard as:`+
+Rathern smiles at you.`+
+`+
+Everyone else will SEE:`+
+Rathern smiles at the guard.`+
+`+
+`=?The variations of @ are as follows:`+
+`=? @   - Target will see as "you", others will see as "Rathern"`+
+`=? @r  - Target will see as "your", others will see as "Rathern's"`+
+`=? @'s - Target will see as "your", others will see as "Rathern's"`+
+`+
+~
+END
+
+keyword AMOTES~
+category undefined~
+see_also EMOTE PMOTE SMOTE SOCIAL~
+text `=?
+`=lSyntax:`=? 
+    amote <target> <text>
+ 
+The text must include * for your name and a @ where you want the 
+targets name.  Pretend Rathern is the one typing the command.
+
+eg amote guard Jumping from out of the shadows, * grabs @ by the neck.
+Will send to everyone in the room this message:
+Jumping from out of the shadows, Rathern grabs a guard by the neck.
+
+~
+END
+
+keyword EMOTES ,~
+category undefined~
+see_also EMOTE PMOTE SMOTE SOCIAL REPLAYROOM~
+text `=?
+`=lSyntax:`=? 
+    emote <text>
+ 
+The "," is short-hand for emote.
+ 
+If Rathern typed: 
+emote smiles and turns his head skyward.
+ 
+It would be read by others as:
+Rathern smiles and turns his head skyward.
+ 
+You can also use emotes, pmotes, amotes and smotes as a single
+emote command.
+ 
+If you place a * in the emote, it will replace your character's
+short description for the * wherever it is.
+ 
+Also, if you put a @ in an emote, the first word of the emote will
+be used as its target, and wherever there is a @, it will be replaced
+for the target's short description.
+ 
+example:
+ 
+emote Auryan looking up, * sighs and turns at @
+ 
+would result on:
+ 
+Looking up, a tall man with a dark beard sighs and turns at a blonde
+woman with a childlike face.
+
+Starting an emote with a # will cause the rps system to ignore it... 
+on Dawn the RPS audit system prevented people from spamming emotes to
+get RPS, so if you want to alias a social into a specific emote, it is
+recommended to put a # at the start of the emote.  The # will silently
+be discarded at the time the emote is processed.
+ 
+~
+END
+
+keyword SMOTES~
+category undefined~
+see_also AMOTE EMOTE PMOTE SOCIAL~
+text `=lSyntax:`=? smote <action>`+
+`+
+ You must include a `Y* `=?where you want your name to appear in the smote. So 
+basically a worked example looks like this, Pretend the person typing the 
+smote is Rathern.`+
+`+
+eg: `ssmote A long scraping sound is made as * draws his weapon.`=? `+
+`+
+Will send to everyone in the room this message:
+A long scraping sound is made as Rathern draws his weapon.`+
+`+
+~
+END
+
+keyword HOLD REMOVE WEAR WIELD USE~
+category undefined~
+text `=?
+`=lSyntax:`=? hold   <object>
+`=lSyntax:`=? remove <object>
+`=lSyntax:`=? wear   <object>
+`=lSyntax:`=? wear   all
+`=lSyntax:`=? wield  <object>
+
+Three of these commands will take an object from your inventory and start 
+using it as equipment.  HOLD is for light sources, wands, and staves.  WEAR 
+is
+for armor.  WIELD is for weapons.
+
+WEAR ALL will attempt to HOLD, WEAR, or WIELD each suitable item in your
+inventory.
+
+You may not be able to HOLD, WEAR, or WIELD an item if its alignment does not
+match yours, if it is too heavy for you, or if you are not experienced enough
+to use it properly.
+
+REMOVE will take any object from your equipment and put it back into your
+inventory.
+~
+END
+
+keyword BUG TYPO~
+category undefined~
+text `=?
+`=lSyntax:`=? bug  <message>
+`=lSyntax:`=? typo <message>
+ 
+These commands will take your message and record it into a file as feedback
+to the mud admins.  The room you record the bug in is also recorded 
+automatically.
+~
+END
+
+keyword REPORT~
+category undefined~
+text `=?
+Has been removed as it is OOC (help ooc).
+~
+END
+
+keyword TITLE~
+category undefined~
+text `=?
+Titles for the who list have been removed.  Instead when you meet
+someone IC (help ic) you can introduce yourself and use your title 
+then, ie "Hi I am Raine of Shadowdale".  Titles were removed because
+the who list is OOC (help ooc) and not for IC information.
+~
+END
+
+keyword AREAS~
+category undefined~
+text `=?
+`=lSyntax:`=? areas
+`=lSyntax:`=? report
+ 
+AREAS shows you a list of areas in the game.
+ 
+COMMANDS shows you all the commands in the game.
+ 
+`#`cIf you are interested in building an area, see `CAREA-BUILDING`c.`^
+~
+END
+
+keyword APPEND DESCRIPTION DESCRIPTION-EDITOR~
+category undefined~
+text `=?
+`=lSyntax:`=? description
+
+Append is an advanced and much more powerful form of the
+description command. Upon entering APPEND mode, you will be
+shown your present description (or lack of). This can then be
+edited, formatted, replaced, cleared, or shown, as per the
+following commands.
+
+If you do not have a description, you may just begin entering
+your description. After you are finished, press enter to go to
+a blank line. If you make a typo, you can use the replace
+command to replace the word, or even a whole sentence. When
+you are finished, and there are no typos, use the format
+command to format the lines to a regulated size. This also
+makes the description look much cleaner. Upon formatting, when
+you feel you are finished, hit enter to go to a blank line then
+type @ and press enter to save your description.
+
+If you already have a description, any line you type upon 
+entering will be added to the bottom of the current description.
+If you wish to start from scratch, use the clear command. Use 
+the above instructions for completing the description.
+
+Commands:
+.r 'old string' 'new string'  - replaces a given word or string
+                                of words. (The quotes are
+                                REQUIRED.)
+
+.h  - The help screen, shows a quick list of commands available 
+      in the append mode. 
+
+.s  - Shows your current description as you have entered it.
+
+.f  - Format and wordwrap your description to a regulated size.
+.n  - Note format and wordwrap your description to a regulated size.
+      a note format doesn't put 2 spaces after a fullstop, this has
+      the advantage of not converting email addresses into 
+      someone@somewhere.  Com.      
+
+.c  - Clear the description. Everything. (CAUTION: There is NO 
+      warning issued with this command. Be careful.)
+
+@   - End description. This will send you back to the mud and 
+      save your description.
+
+Note - All commands must have a . preceding them.
+~
+END
+
+keyword PASSWORD~
+category undefined~
+text `=?
+`=lSyntax:`=? 
+    password <old-password> <new-password>
+
+PASSWORD changes your character's password.  The first argument must be
+your old password.  The second argument is your new password.
+~
+END
+
+keyword SCORE WORTH~
+category undefined~
+see_also ATTRIBUTES~
+text `=lSyntax: `=?score`+
+`=?        worth`+
+`+
+These commads are useful fo see nearly any information about your character. 
+ Score displays all information that deals with info about your character, 
+including level, name, attributes, and AC information. Worth displays 
+everything else that doesn't fit in the score sheet, namely how much wealth 
+you have, and experience to level.`+
+`+
+~
+END
+
+keyword WIMPY~
+category undefined~
+see_also FLEE PANIC~
+text `=?
+`=lSyntax:`=? wimpy
+`=lSyntax:`=? wimpy <number>
+ 
+WIMPY sets your wimpy value.  When your character takes damage that reduces
+your hit points below your wimpy value, you will automatically attempt to 
+flee.
+You will only flee if your character is not in a wait state -- i.e. has not
+been using combat commands like cast, trip and bash, has not been
+tripped or bashed by an enemy, and is not affected by a lethargy spell.
+ 
+WIMPY with no argument sets your wimpy value to 20% of your maximum hit 
+points.
+ 
+Some monsters are wimpy.
+ 
+~
+END
+
+keyword OPEN CLOSE PICK LOCK UNLOCK PICK~
+category undefined~
+text `=?
+`=lSyntax:`=? open   <object|direction>
+`=lSyntax:`=? close  <object|direction>
+`=lSyntax:`=? lock   <object|direction>
+`=lSyntax:`=? unlock <object|direction>
+`=lSyntax:`=? pick   <object|direction>
+
+OPEN and CLOSE open and close an object or a door.
+
+LOCK and UNLOCK lock and unlock a closed object or door.  You must have
+the required key to LOCK or UNLOCK.
+
+PICK can open a lock without having the key.  In order to PICK successfully,
+you must practice the appropriate skill.
+~
+END
+
+keyword DRINK EAT FILL POUR~
+category undefined~
+text `=?
+`=lSyntax:`=? drink <object>
+`=lSyntax:`=? eat   <object>
+`=lSyntax:`=? fill  <object>
+`=lSyntax:`=? pour  <object> out
+`=lSyntax:`=? pour  <object> <object>
+`=lSyntax:`=? pour  <object> <character>
+
+When you are thirsty, DRINK something.
+
+When you are hungry, EAT something.
+
+FILL fills a drink container with water.
+
+POUR transfers a liquid to a container, or empties one.
+You can also pour from an object into something a character is holding.
+~
+END
+
+keyword BUY LIST SELL VALUE~
+category undefined~
+see_also LIST-FILTER~
+text `=?
+`=lSyntax:`=? buy   <object>
+`=lSyntax:`=? list
+`=lSyntax:`=? sell  <object>
+`=lSyntax:`=? value <object>
+ 
+BUY buys an object from a shop keeper.
+When multiple items of the same name are listed, type 'buy n.item', where n
+is the position of the item in a list of that name.  So if there are two
+swords, buy 2.sword will buy the second. If you want to buy multiples of
+an item, use an * (buy 5*pie will buy 5 pies).  These can be combined into
+(for example) buy 2*2.shield, as long as the * is first.  
+ 
+LIST lists the objects the shop keeper will sell you.
+List <name> shows you only objects of that name.
+ 
+SELL sells an object to a shop keeper.
+ 
+VALUE asks the shop keeper how much he, she, or it will buy the item for.
+ 
+Please note that grey objects when you use 'list' will not fit your
+character as they are too small or large.
+ 
+~
+END
+
+keyword PAGE-SCROLL DISPLAY~
+category undefined~
+text `=?
+`=lSyntax:`=? scroll
+`=lSyntax:`=? scroll <number>
+
+This command changes the number of lines the mud sends you in a page (the 
+default is 24 lines).  Change this to a higher number for larger screen
+sizes, or to 0 to disable paging.
+~
+END
+
+keyword BRANDISH QUAFF RECITE ZAP APPLY~
+category undefined~
+text `=?
+`=lSyntax:`=? apply    <poultice>
+`=lSyntax:`=? brandish
+`=lSyntax:`=? quaff    <potion>
+`=lSyntax:`=? recite   <scroll> <target>
+`=lSyntax:`=? zap      <target>
+`=lSyntax:`=? zap
+ 
+APPLY will apply an herbal poultice.
+ 
+BRANDISH brandishes a magical staff.  QUAFF quaffs a magical potion (as
+opposed to DRINK, which drinks mundane liquids).  RECITE recites a magical
+scroll; the <target> is optional, depending on the nature of the scroll.
+ZAP zaps a magical wand at a target.  If the target is not specified, and
+you are fighting someone, then that character is used for a target.
+ 
+You must HOLD a wand or a staff before using BRANDISH or ZAP.
+ 
+All of these commands use up their objects.  Potions and scrolls have a
+single charge.  Wands and staves have multiple charges.  When a magical
+object has no more charges, it will be consumed.
+ 
+These commands may require an item skill to be successful, see the help
+entries on the skills scrolls, staves, and wands for more information.
+~
+END
+
+keyword CONSIDER~
+category undefined~
+text `=?
+`=lSyntax:`=? 
+    consider <character>
+
+CONSIDER tells you what your chances are of killing a character.
+Of course, it's only a rough estimate.  Consider compares HP values,
+telling you if the mob is smaller or larger than you, and levels, telling 
+you if the mob is close to your own level.  There is some randomness built
+in to reflect the inaccuracy of the estimate.
+ ~
+END
+
+keyword FOLLOW PARTY GROUP~
+category undefined~
+text `=?
+`=lSyntax:`=? follow <character>
+`=lSyntax:`=? group
+`=lSyntax:`=? group  <character>
+
+FOLLOW starts you following another character.  To stop following anyone 
+else, just FOLLOW SELF.
+
+GROUP <character> makes someone who is following you a member of your group.
+Group members share experience points from kills and may use the SPLIT 
+command.
+If anyone in your group is attacked, you will automatically join the fight if
+you are in the same room as that character, and you have autoassist ON
+(see help autoassist).
+
+If the <character> is already a member of your group, then GROUP will
+kick out the <character> from your group.  Characters can also leave your
+group by using a FOLLOW command to stop following you.
+
+GROUP with no argument shows statistics for each character in your group.
+
+You may FOLLOW and GROUP only with characters who are within eight levels of
+your own.
+~
+END
+
+keyword VISIBLE~
+category undefined~
+see_also INVISIBILITY~
+text `=?
+`=lSyntax:`=?
+    visible
+ 
+VISIBLE cancels your hiding and sneaking, as well as any invisibility,
+making you visible again.
+ 
+~
+END
+
+keyword QUIT SAVE~
+category undefined~
+text `=?
+`=lSyntax:`=? QUIT
+`=lSyntax:`=? SAVE
+
+SAVE saves your character and objects.  The game saves your character every
+5 minutes regardless, and is the preferred method of saving.  Typing save
+will block all other commands for about 20 seconds, so use it sparingly.
+
+Some objects, such as keys and objects more than 2 levels above you,
+may not be saved.
+
+QUIT leaves the game.  You may QUIT anywhere.  When you re-enter the game 
+you will be back in the same room.
+
+QUIT automatically does a SAVE, so you can safely leave the game with just 
+one command.
+~
+END
+
+keyword RENT INN~
+helpflags wordwrapped~
+category undefined~
+immsee_also OLC-INNS~
+text `=lSyntax:`=? rent <roon number> <number of hours>`+
+`+
+The rent command is used to move your recall location for a period of time.  
+This command can only be used at an inn.  When you type list at an inn, the 
+list of rooms you can rent will be displayed.`+
+`+
+If you are renting a room and type 'recall reset', your recall location will 
+be reset to its original location.`+
+      
+~
+END
+
+keyword SPLIT~
+category undefined~
+text `=?
+`=lSyntax:`=? 
+    SPLIT <silver> <gold>
+
+SPLIT divides coins between you and all the members of your
+group who are in the same room as you.  It's customary to SPLIT
+the loot after a kill.  The first argument is the amount of silver
+to split (0 is acceptable), and the second gold (optional).
+Examples:
+split 30        --> split 30 silver
+split 20 50     --> split 20 silver, 50 gold
+split  0 10     --> split 10 gold
+~
+END
+
+keyword ALIAS UNALIAS~
+category undefined~
+text `=lSyntax:`=? alias`+
+        alias <word>`+
+        alias <word> <substitution>`+
+        unalias <word>`+
+`+
+The alias command allows limited shortening of command names.  At this time, 
+aliases cannot call other aliases, and cannot generate more than one 
+command.  Alias by itself lists your current aliases, Alias <word> lists the 
+alias with that name (if such exist), and alias with both a word and 
+argument produces a new alias.  You cannot alias either alias or unalias to 
+a new command.  Another nice feature of aliases is the ability to use 
+substitutions, very handy in creating personalized socials and whatnot.  The 
+way to use substitutions is to include numbers (up to 3) with a % in front.  
+Examples:`+
+`+
+`Yalias gc get all corpse`=?`+
+-This alias allows you to 'get all corpse' by simply typing in gc.  `+
+`+
+`Yalias ff cast 'fireball'`=?`+
+-This alias lets you cast fireball with ff, and 'ff orc' will cast 
+'fireball' orc`+
+`+
+`Yalias grin pmote %1 grins at @ slyly.  `=?`+
+-This alias is an example of a custom social.  Typing 'grin Celrion' will do 
+'pmote Celrion grins at @ slyly.  '`+
+`+
+Two notes about aliases: Using simple aliases such as the first two 
+examples, you do not need to include any arguments.  Simply typing in 'gc' 
+is just fine.  Using power aliasing with the %1, %2 and %3, you NEED to 
+include arguments or the results you'd wind up with could be rather 
+interesting (such as mis-pmotes, miscasts, etc).  Also, keep in mind that 
+when using simple aliases, any arguments given are simply added to the end 
+of the line (so typing 'gc look' would do 'get all corpse look') whereas 
+with Power aliases only the number of arguments needed are taken (typing 
+'grin Celrion cast invis' is essentially the same as typing 'grin Celrion') 
+~
+END
+
+keyword SUICIDE DELETE WIPE~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    delete <return> delete
+
+Use the delete command to erase unwanted characters, so the name will be
+available for use.  This command must be typed twice to delete a character,
+and you cannot be forced to delete.  Typing delete with an argument will
+return your character to 'safe' status if you change your mind after the
+first delete.
+~
+END
+
+keyword GAIN -CONVERT GAIN-LIST GAIN-CONVERT GAIN-POINTS~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    gain list    : list all groups and skills that can be learned
+    gain points  : lower your creation points by 1 (costs two sessions)
+    gain <name>  : add a skill or skill group, at the listed cost
+    gain convert : turns 10 practices into one training session
+
+The gain command is used to learn new skills, once the proper trainer has 
+been found. (Check with your guildmaster) The following options can be used 
+with gain:
+
+Gain uses training sessions, not practices. (see 'help train')
+Gained skills and groups do NOT increase your experience per level or total
+number of creation points. 
+ 
+Please note when using gain points it will decrease your amount to level by a certain value.
+This value (50exp per 1 Creation point) is deducted from your total to level and then 
+your current amount to level is also adjusted as if you had only just gained a level.
+ 
+What this means to you is, Use the gain points command straight after you level so you get
+the most benefit, if you used it with only say 100 To your next level your exp to level
+will be set all the way back to what you need for a whole level.
+~
+END
+
+keyword AUTO AUTOLIST AUTOGOLD AUTOEXIT AUTOASSIST AUTOSPLIT AUTOSUBDUE AUTOREFORMAT AUTOSELF AUTOLOOT~
+category undefined~
+text `=lSyntax:`=?
+    autolist     : lists all the toggles and there status.`+
+`+
+    autosubdue   : Toggles weather you attack to kill or subdue.`+
+    autoassist   : Makes you help other group members in combat.`+
+    autoexit     : Display room exits upon entering a room.`+
+    autogold     : Take all gold and silver from dead mobiles.`+
+    autoloot     : Take all items from dead mobiles.`+
+    autopeek     : Automatically peek when looking.`+
+    autosplit    : Split up spoils from combat among your group members.`+
+    autoself     : When on autoself makes it so you can only refer to`+
+                   yourself with the word self.`+
+    autoreformat : Automatically reformats notes. (imm only)`+
+    
+Typing a command sets the action, typing it again removes it. 
+~
+END
+
+keyword COUNT~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    Count
+
+The count command displays the number of people (that you can see) logged
+into the mud.  It also displays the highest number observed that day, if
+it is higher.
+~
+END
+
+keyword AFFECTS~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    Affect
+
+This command is used to show all the spells affecting your character. At
+low levels, only the spell name will be displayed, at higher levels the
+effects and duration of the spell will also be shown.  Spell effects
+are no longer shown on score (this can be changed by using 'show' command).
+~
+END
+
+keyword SHOW~
+category undefined~
+text `=?
+`=lSyntax:`=?
+    Show
+
+This command toggles weather your affects will be shown in your score chart.
+~
+END
+
+keyword NOTE-SEARCH NOTE-PEEK~
+level 1
+category undefined~
+immsee_also NOTE-MARKLASTREAD~
+text `=lSyntax: `=?note search <keywords>
+        note peek <#>
+`1The 'note search' command  will perform a filter all notes and return 
+information on which notes have the exact keywords you're searching for.  It 
+can also be used to search news, changes, and ideas.
+`1The 'note peek' command will display a note without marking it and all notes 
+before it as read.  This can be useful if you have limited time and have to 
+view a note quickly without reading all notes before it.
+ 
+~
+END
+
+keyword LIST-FILTER~
+level 1
+category undefined~
+see_also LIST~
+text `=lSyntax: `=?list <min level> <max level>
+`=?        list <max level>
+`=?        list <keyword(s)>
+
+Sometimes the shops can become over crowded with piles and piles of junk, and 
+it's next to impossible to find exactly what you need or are looking for.  
+For that, there are filter options when using the list command.  These 
+filter commands will let you search for stuff by maximum level, a specified 
+level range, or by a combination of keywords.  `1`1`C 
+~
+END
+
+keyword GOLD-CONVERT SILVER-CONVERT EXCHANGE~
+level 1
+category undefined~
+see_also CURRENCY~
+text `=lSyntax: `=?give <#> silver <shopkeeper>`+
+`+
+Have a need to convert some silver pieces into gold pieces?  Sometimes the 
+burdon of hundreds of silver pieces can weigh you down.  For a small price, 
+nearly any shopkeeper would be more than willing to trade in his hard earned 
+gold for some of your finer silver pieces.  Of course, there will be a 5% 
+non-refundable fee on all transactions.  Simply hand the shopkeeper your 
+silver pieces, and he'll hand you some gold and loose silver pieces in 
+return.`+
+`+
+~
+END
+
+keyword COMMANDS~
+category undefined~
+text `RMOVEMENT                                 `CGROUP`=?
+north south east west up down            follow group split
+northeast northwest southeast southwest
+exits recall
+stand kneel sit rest wake sleep`+
+`+
+`GOBJECTS                                  `YINFORMATION / COMMUNICATION`=?
+get put drop give sacrifice              help credits commands areas
+wear wield hold                          worth score affects who pkinfo
+recite quaff zap brandish                weather moon time 
+lock unlock open close pick              note idea bug typo
+inventory equipment look compare         say tell yell language
+eat drink fill                           emote pmote smote social
+list buy sell value                      description password `+
+`+
+`BCOMBAT                                   `MOTHER`=?
+kill pkill kick rescue subdue            save quit auto goooc
+backstab cast commune summon             practice train 
+kick bash disarm gouge gore rescue
+flee wimpy panic`+
+~
+END
+
+keyword ENTER~
+level 1
+category undefined~
+text `=lSyntax: `=?enter <portal>`1`1 Portals are extraordianary magical gateways leading to distant places in 
+the realm.  In order to step into a portal, use the 'ENTER <portal>' 
+command.  
+~
+END
+
+keyword NOTE-SHOWRAW~
+level 1
+category undefined~
+text `=lSyntax: `=?note show`1`=?        note showraw`1`1These commands are a good way of showing the progress of notes while you 
+are working on them.  NOTE SHOW will show you the completely formatted note, 
+including color, line spacing, and any other formatting you have done to the 
+note.  `1`1NOTE SHOWRAW will display the note prior to any formatting that was done on 
+it.  You can see where you placed the color codes, line spacing codes, and 
+any other formatting techniques.  These formatting techniques can be used on 
+ideas & changes, by just replacing the `Cnote`=? in syntax with the type you are 
+working on (i.e. idea showraw) 
+~
+END
+
+keyword AUTO-MAPPER AUTOMAPPER~
+level 1
+category undefined~
+text The automapper is an ASCII map display of the rooms in your proximity.  The 
+mapper will display the rooms according to their sector type, as listed 
+below.  The mapper makes getting to know the surrounding area simple, but it 
+is still critical to read the room descriptions.  Some of the general 
+features of the automapper are:`+
+`+
+`Y  * `=?Rooms within the line of sight are displayed `+
+`Y  * `=?Range is affected by darkness `+
+`Y  * `=?Ability to display rooms in all directions, including these not in the`+
+`=?     cardinal directions `+
+`Y  * `=?Abilty to clear the screen and display the map each time you move `+
+`Y  * `=?Map automatically refreshes when a door is opened or closed `+
+`Y  * `=?Areas that have different map scales  `+
+`+
+The mapper displays rooms according to their sector types, each with a 
+character and color code.  Listed below is the available sectors: `+
+`W  I `=?= inside                 `=?  `` `=?= swimable water `+
+`s  C `=?= city                   `=?  " `=?= `=?underwater `+
+`G  - `=?= field                  `b  - `=?= noswim `+
+`g  + `=?= forest                 `=?  . `=?= air `+
+`g  ^ `=?= hills                  `=?  = `=?= swamp `+
+`s  % `=?= mountain               `y  d `=?= desert `+
+`=?  @ `=?= cave`+
+ `+
+Also noted ASCII characters `S# `=?means that the map in that direction changes 
+scale, like leaving mekali, the world map is on a different scale. The `Y*`=? in 
+the middle of the map is you.`+
+`+
+Here are a few commands related to the automapper: `+
+`R map `=?- displays the map for the room you are currently in.`+
+`R automap `=?- toggles the automapper on or off, so you can see the map for `+
+`=?  the room when you look or move. `+
+`R mapclear `=?- the screen is cleared overtime you look or move, displaying `+
+`=?  the map at the top of the page. `+
+`R nomapexits `=?- the grey lines linking each room will not be displayed 
+~
+END
+
+keyword COOKING~
+helpflags hide_keywords~
+category undefined~
+text `=lSyntax:`=? cook <object>`+
+`+
+With this skill you may cook raw meat and some other types of food.  There
+must be a fire, and you must be holding cookware. Cooking the food will 
+enhance the quality of the food, and preserve it indefinitely. 
+~
+END
+
+keyword ISPELL~
+level 1
+category undefined~
+text `BSyntanx: `=?ispell <word>`+
+         `=?.i <string>  `s(when used in the editor)`=?`+
+`+
+The ISPELL command is a Unix spell-checker that will check your 
+notes/description/OLC stuff and return correct spellings for the word(s) you 
+have mistyped.  Like any spellchecker, it is far from perfect, and while you 
+may have typed a word correctly, it doesn't know the grammatical difference 
+in some cases `ctheir, there)`=?.`+
+`+
+There are two ways to check a word for its proper spelling:`+
+`+
+`Y1) `=?At your prompt, type `CISPELL <word>`=?.   This will check the one word and 
+tell you whether it is correct, or else give you a list of words that might 
+be correct.`+
+`+
+`Y2) `=?When in the editor, type `C.i <string)`=?.  This will check the string you put 
+in the editor, and tell you which words are misspelled.  You can then use .r 
+to replace the words that need to be. 
+~
+END
+
+keyword FLIP~
+category undefined~
+text `=lSyntax: `=?flip <silver or gold>`+
+`+
+This is perhaps the most basic of parlor games that any average schlep can 
+handle.  Flip your silver or gold piece high in the air, and make your best 
+guess whether it will land heads or tails.  After all, any conniving thief 
+will insist that you have a 50-50 chance of getting it right.  Right?   
+ 
+~
+END
+
+keyword SHEATHE DRAW~
+category undefined~
+text `=lSyntax: `=?sheath`+
+`=?        draw`+
+`+
+You don't have to always be on the battle ready and carry your weapons with 
+you.  In some towns, there might be laws against wielding weapons.  You can 
+sheath your weapon to free up your hands, and perhaps look more cordial to 
+the commoners.  Sheathing your weapon makes it more difficult to steal, and 
+might be easier to grab in the heat of battle.`+
+`+
+To wield your weapon again, just draw it from it's sheath.  Certain weapons, 
+such as polearms, spears, and exotic weapons can't be sheathed, simply 
+because they won't fit normal sheaths. 
+~
+END
+
+keyword GLANCE~
+category undefined~
+see_also DIAGNOSE LOOK PEEK~
+text `=lSyntax: `=?glance <target>`+
+`+
+To quickly diagnose how wounded someone is, glance at them.  You might not 
+see exactly what they look like, but their scratches and bruises, or lack 
+thereof, will give you a rough estimation of what shape they are in.`+
+`+
+For those of the clerical profession, they can diagnose their patient and 
+better determine what ails them.`+
+`+
+~
+END
+
+keyword REQUESTLETGAIN CANCELLETGAIN RLETGAIN CLETGAIN~
+helpflags mud_specific~
+category undefined~
+see_also SHORT-DESCRIPTION LONG-DESCRIPTION HISTORY~
+text `=lSyntax: `=Crequestletgain <what you want your short description to be>`+
+`=l        `=Ccancelletgain`=?`+
+`+
+`#`rATTENTION:`y do not put 'already have a short' as your short! Or that 
+will be come your new short!!!`^
+`+
+Requesting your letgain is the best way to get yourself letgained.  Your 
+personal information is stored in a letgain database so the imms can 
+efficiently find out who needs a letgain.  Next time you login, you will 
+automatically be letgained if you have done everything up to the standard.  
+Otherwise, you will get declined with a reason given so you can fix what 
+is incorrect, and reapply.`+
+`+
+If you are unsure what has to be up to standards in order to be letgained, 
+check the help for the short and long description, as well as history.`+
+`+
+If you decide to not proceed with your requestletgain or realize that you 
+don't have the proper necessities to be letgained, you must cancel the 
+request with cancelletgain.   `+
+`+
+`+`RNote:`^  Please remember when requesting a letgain, that you must have 
+`+       your long description completed.  You must also have sent your 
+`+       history to the histories email address in help `=_email
+~
+END
+
+keyword DIG BURY~
+category undefined~
+text `=lSyntax: `=?bury`+
+`=?        dig`+
+`+
+To help with the stench of decaying corpses, one can grab a shovel and grant 
+a corpse a proper burial.  In order to bury a corpse one must be holding a 
+shovel, and standing in a spot that is capable of being dug up, i.e. not the 
+Large Plaze in Mekali, perhaps somewhere in the woods. Digging is exhausting 
+work, as one will soon find out after burying even one corpse.`+
+`+
+One can dig for buried treasure as well.  Just as if digging a grave, a 
+shovel must be held, and you must be in a place penetrable by the spade of 
+the shovel. If there are such things buried as corpses, you'll quickly find 
+when they are exhumed.`+
+`+
+Of course, burying might also be used for hiding the evidence in an 
+assassination done in cold blood.  Whatever the motives are, one will have 
+to dig by many trees to find the corpse before it fully decays. 
+~
+END
+
+keyword WEATHER~
+category undefined~
+text `=lSyntax: `=?weather`+
+`+
+This command displays the current weather conditions.  As with any roleplaying
+system, the Dawn of Time has a weather system that changes over time to add 
+a little more color and variety to the environment. Results will show 
+whether it is windy or calm, raining or clear skies.  Weather can be a 
+factor in spells of nature and the elements (call lightning, for example), 
+and the strength of the moon will affect spell casters.`+
+`+
+`CSEE-ALSO: MOON TIME 
+~
+END
+
+keyword TETHER UNTETHER~
+category undefined~
+see_also MOUNT DISMOUNT~
+text `=lSyntax: `=?tether <animal>`+
+`=?        untether <animal>`+
+`+
+To keep an animal from wandering around or following you, take a leather 
+strap and tether it up.  When you want your pet to follow you once again, be 
+sure to untether it, else it won't be going anywhere. `+
+`+
+~
+END
+
+keyword SHARPEN WHETSTONE~
+category undefined~
+text `=lSyntax: `=?sharpen
+`+
+To correctly sharpen a weapon, you must wield the weapon in one hand, and 
+hold a whetstone to grind down its blade.  After several minutes of this 
+repetitious grinding, the blade will be ground into a sharper edge.  Only 
+edged weapons such as swords, daggers, and axes are capable of being 
+sharpened.  Be careful not to oversharpen a weapon though, for there won't 
+be much of an edge left to sharpen after being ground down. 
+~
+END
+
+keyword SPEEDWALKING~
+level 1
+category undefined~
+text This command allows you to enter a string of directions and your character will
+automatically start walking as if you entered each direction individually.`+
+`+
+`=lSyntax:`=? speedwalk <direction list>`+
+`+
+The <direction list> consists of a string of directions in the form of <#d>.
+The "#" is optional and represents the number of times to repeat the direction.
+The "d" is the actual direction you wish to travel.  You may also use <od> in the
+list, where "o" signifies open and "d" is the direction you'd like to open.`+
+`+
+  For Example: `Yspeedwalk 3e2now2wu`=?`+
+`+
+This will set your character walking 3 steps east, 2 north, open a door to the west,
+walk 2 west and one up.`+
+`+
+Since The Dawn of Time supports movement to: ne, nw, se and sw, it was necessary to
+abbreviate them to a one character command.`+
+`+
+`BR`=? stands for `Bnorthwest`+
+T`=? stands for `Bnortheast`+
+G`=? stands for `Bsoutheast `=?and`B`+
+F`=? stands for `Bsouthwest.`=?`+
+`+
+If you look at your keyboard you will notice that they are clustered in the correct
+format designated by those directions.  However, the abbreviation conflicts with
+previous shortcuts, namely r no longer equals rest and g no longer equals get.  If
+this presents a problem feel free to assign these letters to their previous commands
+via an alias, ie `Yalias g get`=?.
+~
+END
+
+keyword MSP SOUND MUD-SOUND-PROTOCOL~
+title `#`YM`^ud `YS`^ound `YP`^rotocol~
+helpflags wordwrapped~
+category undefined~
+text MSP stands for Mud Sound Protocol.  It enables people using supporting mud 
+clients to hear sounds linked to certain events on `N. `+
+`+
+MSP has a great feature that allows a mud client to download sounds from a 
+web server (configured with the msp url feature in game edit by the admin).  
+The download is done only once, and then the .wav or .midi file will be on 
+your computer, waiting to be activated.  This means that as more and more 
+sounds are added, the mud client will automate the sound installation for 
+you.`+
+`+
+Once you have enabled MSP in your mud client, type `#`=Cmsp`^ at the prompt to let 
+the mud know to send your client the MSP codes.  Alternatively, type msp 
+again to toggle the sound off.`+
+
+~
+END
+
+keyword DECLINEOOC DECLINE-OOC~
+category undefined~
+see_also REQUESTOOC~
+text `=?
+`=lSyntax:`=?
+    Declineooc <charname> <minutes>
+ 
+Declineooc sends a message telling someone that you are unable to meet them
+in the OOC rooms.  If you specify the <minutes> field, it will tell them how
+long you expect to be busy.
+`+
+~
+END
+
+keyword NOCHARM~
+level 1
+category undefined~
+text `=lSyntax:`=?
+    nocharm
+ 
+Toggles you character's permission flag regarding following.  You cannot be
+charmed by anyone when nocharm is on.
+ 
+~
+END
+
+keyword ATTUNE~
+category undefined~
+text `=lSyntax:`=? attune <object>  
+ 
+Ordinary items are crafted by ordinary means, and can be used readily 
+by ordinary people.  From time to time, however, special artifacts and 
+objects might fall into one's possession, crafted not by blacksmiths, but 
+by powerful sorcery.  These unique treasures are indeed valuable, not only 
+for their rarity, but for the magical properties imbued within them.  Their 
+extraordinary origins require one to attune oneself with the sorcery which 
+created them.  
+ 
+By attuning to an object, one seeks to harness and master the magical 
+properties imbued within it.  These remarkable artifacts have egos and will 
+not readily be swayed to serve your designs.  The attuning process requires 
+undivided focus and intense concentration.  Be warned!  Many of these 
+extraordinary items will sooner choose to destroy themselves than to serve 
+an undeserving master. 
+~
+END
+
+keyword KNOCK~
+category undefined~
+text `=lSyntax:`=? knock <direction>
+
+Mind your manners, and knock before entering.  This simple command will 
+allow you to inject a bit of civility into the otherwise inhospitable realm 
+of swords and sorcery.  Those concealed behind the door will hear your call, 
+and can choose to let you in at their discretion. 
+~
+END
+
+keyword GOOOC~
+level 1
+category undefined~
+see_also OOC RECALL~
+text `=lSyntax:`=? goooc
+
+This command is used to enter the OOC (Out of Character) rooms.  It can be 
+used from any room, save those from which you cannot recall.  To leave the 
+OOC rooms, simply recall, and you'll be in the room from which you left. 
+ 
+~
+END
+
+keyword INTRODUCE NONAME FORGET~
+level 1
+category undefined~
+text `=lSyntax:`=? introduce <player>`+
+`=lSyntax:`=? introduce all`+
+`=lSyntax:`=? forget <player>`+
+`=lSyntax:`=? noname`+
+`+
+Using the introduce command, you tell others your name in such a way that 
+your name appears beside your short description.  You can introduce yourself 
+to individual players, or everyone in the room using 'introduce all'.  If a 
+player doesn't want to see any names beside short descriptions they can turn 
+this feature off/on using the noname command.`+
+`+
+The forget player can be used to forget players who have introduced 
+themselves to you.`+
+ 
+~
+END
+
+keyword ALIGNSTAT CLASSSTATS RACESTATS~
+helpflags wordwrapped~
+category command~
+see_also ALIGN-CHANGE~
+immsee_also LASTONSTATS MUDCLIENTSTATS~
+text `=lSyntax: `=?alignstat`+
+`=?        classstats`+
+`=?        racestats`+
+`+
+Ever curious how many lawful good kobold paladins there are? Strange 
+combination, but we wonder as well. We can't help you determine precisely 
+that, but we can help you determine how many lawful or good or kobold or 
+paladin players there have been, based on all laston data. Just type up a 
+command and gaze in awe at who plays what. 
+~
+END
+
+keyword WEAPON-FLAGS WFLAG WEAPONFLAGS~
+title `N Weapon Flags~
+level 1
+category undefined~
+text . 
+`RF`rl`Ra`rm`Ri`rn`Rg `x- `WCauses Minor Damage Through Burning/Can Blind Opponent Through Smoke`x
+ 
+`CF`cr`Co`cs`Ct `x- `WCauses Minor Freeze Damage/Can Permanantly Shatter Unprotected Items (Random)`x
+ 
+`WH`wo`Wl`wy `x- `WTBD`x
+ 
+`GP`go`Gi`gs`Go`gn `x- `WCan Inject A Vile Poison Into Opponent`x
+ 
+`BS`bh`Ba`br`Bp `x- `WIncreases The Amount of Damage Done By Weapon`x
+ 
+`YS`yh`Yo`yc`Yk`yi`Yn`yg `x- `WInflicts Minor Electrical Damage/Can Permanantly Melt Any Enemy Item (Random)`x 
+ 
+`MT`mw`Mo`mh`Ma`mn`Md`ms `x- `WMakes The Weapon Two Handed To Use`x
+ 
+`RV`ra`Rm`rp`Ri`rr`Ri`rc `x- `WDraws A Small Amount Of Life From An Opponent Every Hit`x
+ 
+`WV`wo`Wr`wp`Wa`Wl `x- `WIncreases Amount Of Damage Done By Weapon/Marginal Chance Of Beheading (Beheading May Not Be In Use)`x
+
+~
+END
+
+keyword IMPROVED-PHANTASM~
+level 92
+category undefined~
+spell_name improved phantasm~
+text Phantasms are illusions of spirits of other monsters that perform mental 
+attacks on the victim.  While the damage is not real if the attacking 
+illusion is disbelieved, the will victim suffers great damage when he thinks 
+his attacker is real. With the affects of true seeing, the victim is granted 
+immunity to such illusionary attacks.
+~
+END
+
+keyword BATTLELAG BATTLE LAG~
+level 1
+category undefined~
+text `#`CSyntax: `^battlelag <text>`1        battlelag <off/on>`1        battlelag clear`1`1`#`YBattlelag <text>`^`1Sets the text shown before your prompt while you are affected by combat 
+lag.  The default is `#`RBattleLagged`^.`1`1`#`YBattlelag <off/on>`^`1Toggles the setting on and off.`1`1`#`YBattlelag clear`^`1Clears your battlelag text and uses the default `#`RBattleLagged`^. 
+~
+END
+
+keyword GPROMPT GROUPPROMPT~
+helpflags wordwrapped~
+category undefined~
+see_also PROMPT PROMPT-TEMPLATES GROUP~
+text `=lSyntax:`=? gprompt       (display your current group prompt setting)`+
+`=lSyntax:`=? gprompt <new group prompt>`+
+`=lSyntax:`=? gprompt help`+
+`+
+The gprompt command is used to set/display your group prompt (the prompt 
+which displays information about others in your group).   The group prompt 
+is only displayed when you have others group members/pets in the room.  For 
+more information about the group prompt and group prompt codes type 
+'`=Cgprompt help`=?' `+
+
+~
+END
+
+keyword INVITELIST~
+title Invite Lists~
+helpflags wordwrapped~
+category undefined~
+text `=lSyntax:`=? invitelist <playername>     (add/remove player from the list)`+
+`=lSyntax:`=? invitelist <clan=clanname>  (add/remove clan from the list)`+
+`+
+The invitelist command is used to manage the 'invitation list' for a given 
+room by its owner.  It is possible for a room to have an 'owner' set using 
+the online creation room editor (redit).  Once the onwer has been configured 
+he/she is then able to control who can come into the room. 
+~
+END
+
+keyword REPLAY REPLAYROOM REPLAYCHANNELS~
+category undefined~
+see_also TELL REPLY CHANNELS~
+text `=lSyntax:`=?   replay`+
+`=?          replaychannels`+
+`=?          replayroom`=?`+
+`+
+The replay command lists the most recent tells and replys you have received 
+since logging on (upto a maximum of 30).`+
+`+
+Replaychan displays the most recent text displayed on any channel you have 
+access too since you logged on (e.g. ooc, question etc).  The time that each 
+message is displayed to the far left (e.g. '17:33:39>').`+
+If you didn't have a particular channel enabled, the text will still be 
+shown in the replaychannel output, only the text will be in silver and the 
+time will be followed by the ] character (e.g. '17:33:46]').  You can replay 
+the most recent 40 channel messages since your login.`+
+`+
+Replayroom operates exactly like replaychan, only it lists all events (says, 
+emotes etc) for the rooms you have been in.  The - character is displayed on 
+a single line between events in different rooms.`+
+  
+~
+END
+
+EOF~
+#$

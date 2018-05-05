@@ -1,0 +1,49 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword OLCPOLICY-BALANCE-CHECK~
+level 92
+category undefined~
+text .   All the object must be checked by the Balance Council before entering
+in the game! And from time to time the balance will take a look on player's 
+items and immortal's items to be sure there is no unbalanced equipment. 
+`+
+Remember that immortal equipment must be at least level 92! The balance
+will check the objects that players can get using the mix command too.
+   If the balance finds any overpowered item it will be removed from
+the game without any warning! So, please, if you want include any obejct
+in the game ask the balance to check it to avoid misunderstandings. 
+   To ask the balance check your item, please, make a new line 
+on the `#`Rbalance-list`^ help file, and write:
+ 
+`#`Ryour name`^ (for whom we will write any note when necessary);
+`#`Rvnum of the object`^;
+`#`Rname of the player`^ who will receive the object;
+`#`Rkind of object`^: (`#`Btrash, normal, quest `^or`#`B artfact`^)
+`#`Robject's type`^;
+ 
+and how hard will be the quest for the player get this object:
+`#`Reasy`^ (`#`Be`^)`#`b.......`^: only solve a puzzle;
+`#`Rmedium`^ `#`B(m`^)`#`b.....`^: solve a puzzle in a dangerous situation, but will 
+                       not get killed, mob below player's level;
+`#`Rhard`^ (`#`Bh`^)`#`b.......`^: solve a puzzle in a dangerous situation probably 
+                       will get be killed, mob above player's level;
+`#`Rvery hard`^ (`#`Bvh`^)`#`b.`^: solve a puzzle and will get killed to get the object.
+ 
+And your request `#`Rrequest`^ on the stats.
+ 
+The balance will edit this file after checking your object, so the stats will
+change to:
+ 
+`#`Gok`^              : means it was checked and approved
+`#`Ychange`^          : means that it must be changed, you will receive a inote
+                        about what is wrong with the object.
+ 
+~
+END
+
+EOF~
+#$

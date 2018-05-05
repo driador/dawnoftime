@@ -1,0 +1,1921 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Orc Fortress~
+ShortName   Orc Fortress~
+Builders    None~
+Credits     Reave Xelton~
+VNUMs       3300 3399
+LRange      10 65
+Security    9
+Colour      G~
+colourcode  `
+MapScale    7
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#3300
+Name orc general~
+ShortD an orc general~
+LongD An orc general is here, studying the maps.~
+Desc This powerful orc is well armed and armored.  His skin is covered with
+numerous scars, and he looks quite tough.  
+~
+Race orc~
+Align 1 -3
+Level 65
+Hitroll 2
+HitDice 7d10+340
+ManaDice 7d10+340
+DamDice 7d8+32
+DamType punch
+AC -300 -300 -300 -250
+Wealth 341
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared~
+Off    bash disarm dodge kick parry~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg FIGHT 3304 20~
+END
+
+#3301
+Name orc aide~
+ShortD an orc aide~
+LongD An orc aide is here, assisting the high ranking orcs.~
+Desc This sniveling orc seems to be here to run errands for the more powerful
+orcs.  He is dressed only in dirty leather clothes.  
+~
+Race orc~
+Align -1 -2
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+18
+DamDice 2d4+2
+DamType chomp
+AC 0 0 0 0
+Wealth 50
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Off    trip~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#3302
+Name orc guard~
+ShortD an orc guard~
+LongD An orc guard is here, half asleep.~
+Desc This orc guard looks tough, but also half asleep.  He is fairly well
+armed.  
+~
+Race orc~
+Align 0 -2
+Level 45
+Hitroll 1
+HitDice 5d8+255
+ManaDice 5d8+100
+DamDice 6d6+16
+DamType punch
+AC -100 -100 -100 -90
+Wealth 250
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared~
+Off    bash disarm dodge parry~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg FIGHT 3300 20~
+END
+
+#3303
+Name orc trainee~
+ShortD an orc trainee~
+LongD An orc trainee is here, learning to fight.~
+Desc This orc is young, but looks tough enough.  He is here practicing his
+weapons skills with some masters and other trainees.  
+~
+Race orc~
+Align 0 -2
+Level 33
+Hitroll 1
+HitDice 5d6+215
+ManaDice 3d10+11
+DamDice 3d10+11
+DamType punch
+AC -100 -100 -100 -50
+Wealth 160
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared~
+Off    disarm parry~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#3304
+Name orc chef~
+ShortD an orc chef~
+LongD An orc chef is here serving up his latest kill.~
+Desc This orc seems to think he is a chef.  He is wearing a big white hat that
+he's stolen somewhere, and is currently whipping up his latest recipe, no
+doubt something with elf in it.  
+~
+Race orc~
+Align -2 -2
+Level 35
+Hitroll 1
+HitDice 5d6+210
+ManaDice 5d6+210
+DamDice 4d7+11
+DamType punch
+AC -100 -100 -100 -50
+Wealth 165
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Off    bash dodge kick parry~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#3305
+Name orc warrior~
+ShortD an orc warrior~
+LongD An orc warrior is showing off his swordwork here.~
+Desc This orc is very ugly, partly due to the battle scars which cover him. 
+He appears to be highly trained and well armed.  
+~
+Race orc~
+Align -1 -2
+Level 46
+Hitroll 1
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+20
+DamType punch
+AC -200 -200 -200 -150
+Wealth 255
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared~
+Off    berserk disarm dodge kick parry~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg FIGHT 3301 20~
+END
+
+#3306
+Name orc sergeant~
+ShortD an orc sergeant~
+LongD An orc sergeant is here, barking out orders.~
+Desc This orc is obviously a sergeant, judging from the marking on his armor.  He 
+looks very tough and is well armed.  
+~
+Race orc~
+Align 1 -2
+Level 53
+Hitroll 1
+HitDice 6d9+300
+ManaDice 6d9+300
+DamDice 10d4+24
+DamType punch
+AC -200 -200 -200 -180
+Wealth 276
+Act    npc no_tame stay_area warrior~
+AffBy  infrared~
+Off    bash disarm dodge kick parry~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg FIGHT 3302 20~
+END
+
+#3307
+Name orc lieutenant~
+ShortD an orc lieutenant~
+LongD An orc lieutenant is here, harassing the lower ranking orcs.~
+Desc This battle-hardened orc is well armed and looks like trouble.  His skin
+is covered with scars, but none of them look recent.  
+~
+Race orc~
+Align 0 -3
+Level 58
+Hitroll 1
+HitDice 6d10+320
+ManaDice 6d10+320
+DamDice 8d6+28
+DamType punch
+AC -300 -300 -300 -250
+Wealth 310
+Act    npc no_tame stay_area warrior~
+AffBy  infrared~
+Off    bash disarm dodge kick parry~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg FIGHT 3303 20~
+END
+
+#3308
+Name orc weaponmaster~
+ShortD an orc weaponmaster~
+LongD An orc weaponmaster is here, sharpening his weapons.~
+Desc This massive orc is surrounded by weapons, and looks like he knows how to
+use them all.  He has a fairly intelligent look in his eyes, for an orc.  
+~
+Race orc~
+Align -3 -3
+Level 50
+Hitroll 1
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+20
+DamType punch
+AC -200 -200 -200 -150
+Wealth 249
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared~
+Off    bash disarm dodge kick parry trip~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#3310
+Name orc torture master~
+ShortD an orc torture master~
+LongD An orc torture master is here, looking for an elf to beat.~
+Desc This orc is dressed in leather and seems to have tools for torturing others 
+all around him.  There is a mad gleam in his eyes.  
+~
+Race orc~
+Align -3 -3
+Level 50
+Hitroll 1
+HitDice 5d9+280
+ManaDice 5d9+280
+DamDice 5d8+20
+DamType punch
+AC -200 -200 -200 -150
+Wealth 260
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared~
+Off    disarm dodge dirt_kick parry~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#3311
+Name orc military advisor~
+ShortD an orc military advisor~
+LongD An orc military advisor is here, suggesting war strategies.~
+Desc This advisor is a small orc who has a very crafty look to him.  He
+probably knows a lot about war strategies.  
+~
+Race orc~
+Align 1 -2
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+88
+DamDice 2d8+5
+DamType punch
+AC 0 0 0 0
+Wealth 101
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Off    parry trip~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#3312
+Name kobold slave~
+ShortD a kobold slave~
+LongD A kobold slave is trudging along doing some menial task.~
+Desc This small kobold looks half-starved and frequently beaten.  There are
+even a few burnt spots on its body.  
+~
+Race kobold~
+Align -1 -2
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+18
+DamDice 2d4+2
+DamType chomp
+AC 0 0 0 0
+Wealth 0
+Act    npc scavenger stay_area~
+AffBy  infrared dark_vision~
+Off    dirt_kick~
+Res    bash pierce poison~
+Vuln   magic energy mental light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#3313
+Name goblin slave~
+ShortD a goblin slave~
+LongD A goblin slave looks up at you fearfully.~
+Desc This scrawny goblin is malnourished and appears to be frequently beaten.  
+~
+Race goblin~
+Align -2 -2
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+18
+DamDice 2d4+2
+DamType chomp
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  dark_vision~
+Off    kick~
+Imm    poison disease~
+Res    negative~
+Vuln   magic fire negative mental drowning light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#3314
+Name orc dungeon guard~
+ShortD an orc dungeon guard~
+LongD An orc dungeon guard is watching the prisoners.~
+Desc This orc looks pretty tough, and is clad in a thick suit of armor, with 
+weapons hanging at his sides.  
+~
+Race orc~
+Align 0 -2
+Level 45
+Hitroll 1
+HitDice 5d8+255
+ManaDice 5d8+255
+DamDice 6d6+16
+DamType punch
+AC -100 -100 -100 -50
+Wealth 222
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared~
+Off    bash dodge kick parry~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GREET 3308 90~
+END
+
+#3315
+Name elven prisoner~
+ShortD an elven prisoner~
+LongD An elven prisoner is here, recovering from his latest beating.~
+Desc This elf is in pretty bad shape.  He is bleeding in many places, and has had 
+some clumps of hair pulled out from his head.  
+~
+Race elf~
+Align 2 2
+Level 15
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType punch
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg COMMAND 3306 free elf~
+END
+
+#3316
+Name human prisoner~
+ShortD a human prisoner~
+LongD A human prisoner is cowering in a corner here.~
+Desc This human has obviously been tortured badly.  There are many burnt spots
+on his body, and he is cowering in the corner in fear.  
+~
+Race human~
+Align 2 2
+Level 17
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType punch
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg COMMAND 3307 free human~
+END
+
+#3317
+Name hurt elf 3317 ex-prisoner~
+ShortD a hurt elf~
+LongD A hurt elf is here.~
+Desc This elf is in pretty bad shape.  He is bleeding in many places, and has had 
+some clumps of hair pulled out from his head.  
+~
+Race elf~
+Align 2 2
+Level 15
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType punch
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  infrared~
+Res    charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#3318
+Name human tortured 3318 ex-prisoner~
+ShortD a tortured human~
+LongD A tortured human is here.~
+Desc This human has obviously been tortured badly.  There are many burnt spots
+on his body, and he is cowering in the corner in fear.  
+~
+Race human~
+Align 2 2
+Level 17
+Hitroll 0
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType punch
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#3300
+Name golden signet ring~
+Short a `#`Ygolden`^ signet ring~
+Desc A `#`Ygolden`^ signet ring lies here.~
+Level 63
+ItemType jewelry~
+Cost 1101
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take finger~
+ClassAllowances thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 63 -1 hp 4 0
+Affect modifier -1 63 -1 strength 3 0
+Affect modifier -1 63 -1 constitution 3 0
+Affect modifier -1 63 -1 mana -20 0
+ExtraDesc thick golden ring~
+This ring appears to be extremely magical in nature.  From the runes and
+symbols on it, it appears to be a ring of spell turning of some type.  
+~
+End
+
+#3301
+Name tightly linked ringmail~
+Short a tightly linked ringmail~
+Desc A tightly linked ringmail has been left here.~
+Level 60
+ItemType armor~
+Cost 1212
+Asize 0
+Rsize 50
+Values 20 19 22 15 0
+Weight 40
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 60 -1 damroll -2 0
+Affect modifier -1 60 -1 hitroll 4 0
+Affect modifier -1 60 -1 hp 8 0
+ExtraDesc tightly linked ringmail~
+This ringmail is finely made.  The rings are steel, and very small and
+tightly linked.  
+~
+End
+
+#3302
+Name double-bladed steel axe o3302~
+Short a double-bladed steel axe~
+Desc A double-bladed steel axe has been left here.~
+Level 61
+ItemType weapon~
+Cost 1212
+Asize 0
+Rsize 50
+Values axe 5 13 slash 0
+Weight 45
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc double-bladed steel axe~
+This axe is made of steel and is extremely sharp and deadly.  It has two
+blades, and a sturdy wooden handle.  
+~
+End
+
+#3303
+Name black steel helmet~
+Short a `#`Sblack steel`^ helmet~
+Desc A `#`Sblack steel`^ helmet has been left here.~
+Level 60
+ItemType armor~
+Cost 1203
+Asize 0
+Rsize 50
+Values 16 14 16 12 0
+Weight 20
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 60 -1 damroll 6 0
+Affect modifier -1 60 -1 hitroll 4 0
+ExtraDesc black steel helmet~
+This helmet is made of thick, sturdy steel.  It is black in color.  
+~
+End
+
+#3304
+Name thin leather armor~
+Short some thin leather armor~
+Desc Thin leather armor has been left here.~
+Level 10
+ItemType armor~
+Cost 200
+Asize 0
+Rsize 50
+Values 3 2 4 2 0
+Weight 10
+Material leather~
+Extra    nodegrade~
+Wear     take torso~
+ExtraDesc thin leather armor~
+This armor is thin and dirty.  Doesn't look all that protective.  
+~
+End
+
+#3305
+Name black scalemail~
+Short a `#`Sblack`^ scalemail~
+Desc A `#`Sblack`^ scalemail has been left here.~
+Level 40
+ItemType armor~
+Cost 802
+Asize 0
+Rsize 50
+Values 14 13 14 10 0
+Weight 70
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 40 -1 constitution 3 0
+Affect modifier -1 40 -1 selfdiscipline -2 0
+Affect modifier -1 40 -1 presence -2 0
+Affect modifier -1 40 -1 hp 4 0
+ExtraDesc black scalemail~
+This armor is very thick and appears durable.  It is made from blackened
+steel.  
+~
+End
+
+#3306
+Name spiked maul~
+Short a spiked maul~
+Desc A spiked maul has been left here.~
+Level 42
+ItemType weapon~
+Cost 842
+Asize 0
+Rsize 50
+Values mace 4 11 smash 0
+Weight 50
+Material wood~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+ExtraDesc spiked maul~
+This heavy club is made of thick wood and has big steel spikes.  
+~
+End
+
+#3307
+Name old splintmail~
+Short an old splintmail~
+Desc An old splintmail has been left here.~
+Level 32
+ItemType armor~
+Cost 641
+Asize 0
+Rsize 50
+Values 11 11 11 8 0
+Weight 60
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 32 -1 hp 6 0
+ExtraDesc old splintmail~
+This old splintmail might once have been good but is now in pretty poor
+shape.  Still looks like it could offer decent protection though.  
+~
+End
+
+#3308
+Name black steel shortsword sword~
+Short a `#`Sblack steel`^ shortsword~
+Desc A `#`Sblack steel`^ shortsword has been left here.~
+Level 32
+ItemType weapon~
+Cost 639
+Asize 0
+Rsize 50
+Values sword 2 18 slash 0
+Weight 35
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian~
+ExtraDesc black steel shortsword~
+This is pretty short for a sword, but appears sturdy enough.  It is made
+of blackened steel.  
+~
+End
+
+#3309
+Name old cooking apron~
+Short an old cooking apron~
+Desc An old cooking apron has been left here.~
+Level 1
+ItemType clothing~
+Cost 21
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc old cooking apron~
+This old apron is white but is very dirty.  In big red letters on the
+front it says "Kiss the Chef!"  
+~
+End
+
+#3310
+Name long wooden spoon~
+Short a long wooden spoon~
+Desc A long wooden spoon has been left here.~
+Level 1
+ItemType weapon~
+Cost 26
+Asize 0
+Rsize 50
+Values mace 1 6 beating 0
+Weight 5
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc long wooden spoon~
+This is pretty huge for a spoon, almost 3 feet long.
+~
+End
+
+#3311
+Name heavy black platemail~
+Short a heavy `#`Sblack`^ platemail~
+Desc A heavy `#`Sblack`^ platemail has been left here.~
+Level 46
+ItemType armor~
+Cost 920
+Asize 0
+Rsize 50
+Values 17 15 16 12 0
+Weight 90
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 46 -1 ac 20 0
+ExtraDesc heavy black platemail~
+This steel platemail is very thick and looks like it could absorb quite a
+beating.  It has been painted black.  
+~
+End
+
+#3312
+Name heavy steel bastard sword~
+Short a heavy steel bastard sword~
+Desc A heavy steel bastard sword has been left here.~
+Level 47
+ItemType weapon~
+Cost 945
+Asize 0
+Rsize 50
+Values sword 4 12 slash 0
+Weight 55
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc heavy bastard sword~
+This huge sword is double edged and very heavy.  Might take two hands for
+some to wield.  
+~
+End
+
+#3313
+Name sturdy platemail~
+Short a sturdy platemail~
+Desc A sturdy platemail has been left here.~
+Level 51
+ItemType armor~
+Cost 1010
+Asize 0
+Rsize 50
+Values 17 17 17 13 0
+Weight 70
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 51 -1 agility 2 0
+Affect modifier -1 51 -1 hp 2 0
+Affect modifier -1 51 -1 damroll 2 0
+Affect modifier -1 51 -1 hitroll 2 0
+ExtraDesc sturdy platemail~
+This platemail looks like it offers decent protection, and is not too
+heavy.  
+~
+End
+
+#3314
+Name metal-tipped spear o3314~
+Short a metal-tipped spear~
+Desc A metal-tipped spear has been left here~
+Level 50
+ItemType weapon~
+Cost 1002
+Asize 0
+Rsize 50
+Values polearm 2 28 thrust F
+Weight 25
+Material wood~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc metal-tipped spear~
+This long, sturdy wooden spear has a sharp steel tip with a barb.  
+~
+End
+
+#3315
+Name sturdy black scalemail~
+Short a sturdy `#`Sblack`^ scalemail~
+Desc A sturdy `#`Sblack`^ scalemail has been left here.~
+Level 56
+ItemType armor~
+Cost 1111
+Asize 0
+Rsize 50
+Values 18 18 19 14 0
+Weight 75
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 56 -1 saves -2 0
+Affect modifier -1 56 -1 ac 10 0
+Affect modifier -1 56 -1 hp 4 0
+ExtraDesc sturdy black scalemail~
+This scalemail is finely wrought from steel, and is painted black.
+~
+End
+
+#3316
+Name spiked ball chain flail o3316~
+Short a spiked ball and chain~
+Desc A spiked ball and chain has been left here.~
+Level 56
+ItemType weapon~
+Cost 1156
+Asize 0
+Rsize 50
+Values flail 2 30 smash 0
+Weight 40
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+ExtraDesc spiked ball chain~
+This weapon is a spiked steel ball attached to a wooden handle by a thick
+chain.  
+~
+End
+
+#3317
+Name thick black suit leather armor~
+Short a thick `#`Sblack`^ suit of leather armor~
+Desc A thick `#`Sblack`^ suit of leather armor has been left here.~
+Level 46
+ItemType armor~
+Cost 922
+Asize 0
+Rsize 50
+Values 14 14 16 11 0
+Weight 20
+Material leather~
+Extra    nodegrade~
+Wear     take torso~
+ClassAllowances cleric thief warrior paladin ranger barbarian~
+Affect modifier -1 46 -1 saves 2 0
+Affect modifier -1 46 -1 selfdiscipline 2 0
+Affect modifier -1 46 -1 ac -15 0
+ExtraDesc thick black suit leather armor~
+This is a very fine suit of leather armor, very thick and of good
+workmanship.  
+~
+End
+
+#3318
+Name long black leather whip~
+Short a long `#`Sblack`^ leather whip~
+Desc A long `#`Sblack`^ leather whip has been left here.~
+Level 46
+ItemType weapon~
+Cost 924
+Asize 0
+Rsize 50
+Values whip 7 6 whip 0
+Weight 20
+Material leather~
+Extra    nodegrade~
+Wear     take wield~
+ExtraDesc long black leather whip~
+This long whip is made of thick black leather braided together to form a
+very effective weapon.  The end has a steel tip.  
+~
+End
+
+#3319
+Name black curved dagger~
+Short a `#`Sblack`^ curved dagger~
+Desc A `#`Sblack`^ curved dagger has been left here.~
+Level 46
+ItemType weapon~
+Cost 918
+Asize 0
+Rsize 50
+Values dagger 11 3 pierce 0
+Weight 20
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+ExtraDesc black curved dagger~
+This nasty dagger is made of sturdy steel and has been painted black,
+except for the edges of the blade.  
+~
+End
+
+#3320
+Name burlap sack~
+Short a burlap sack~
+Desc A burlap sack with holes in it has been left here.~
+Level 1
+ItemType clothing~
+Cost 16
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material cloth~
+Extra    nodegrade~
+Wear     take torso~
+ExtraDesc burlap sack~
+This sack has some holes in it, and looks like someone has been wearing
+it as clothing!  
+~
+End
+
+#3321
+Name fancy leather armor~
+Short some fancy leather armor~
+Desc Some fancy leather armor has been left here.~
+Level 10
+ItemType armor~
+Cost 202
+Asize 0
+Rsize 50
+Values 3 3 5 2 0
+Weight 15
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ExtraDesc fancy leather armor~
+This black suit of leather armor is very decorative, though doesn't seem
+as thick or protective as it should be.  
+~
+End
+
+#3322
+Name metal-tipped flail~
+Short a metal-tipped flail~
+Desc A metal-tipped flail has been left here.~
+Level 46
+ItemType weapon~
+Cost 923
+Asize 0
+Rsize 50
+Values flail 5 9 beating 0
+Weight 25
+Material leather~
+Extra    nodegrade~
+Wear     take wield~
+ExtraDesc metal-tipped flail~
+This device could probably be used as either a weapon or a torture
+device.  It has a metal handle, to which is attached a dozen strips of
+leather, each with a steel tip.  The leather is very hard, and has
+apparently been specially treated with some unknown substance.  
+~
+End
+
+#3323
+Name red robes small insignia~
+Short some `#`Rred robes`^ with a small insignia~
+Desc Some `#`Rred robes`^ with a small insignia have been left here.~
+Level 1
+ItemType clothing~
+Cost 28
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 1 -1 constitution -1 0
+Affect modifier -1 1 -1 memory 1 0
+ExtraDesc red robes small insignia~
+These red robes are well made of fine cloth, and have a small insignia on
+the chest.  The insignia is of a fist in a yellow triangle.  
+~
+End
+
+#3324
+Name dirty leather loincloth~
+Short a dirty leather loincloth~
+Desc A dirty leather loincloth has been left here.~
+Level 1
+ItemType clothing~
+Cost 7
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ExtraDesc dirty leather loincloth~
+This old scrap of leather has been fashioned into a small loincloth.  
+~
+End
+
+#3325
+Name heavy banded mail~
+Short some heavy banded mail~
+Desc A heavy banded mail has been left here.~
+Level 40
+ItemType armor~
+Cost 795
+Asize 0
+Rsize 50
+Values 14 13 14 10 0
+Weight 60
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 40 -1 damroll 4 0
+Affect modifier -1 40 -1 hitroll 4 0
+ExtraDesc heavy banded mail~
+This sturdy armor is made of flexible metal bands attached in such a way
+to offer pretty good protection.  
+~
+End
+
+#3326
+Name steel spear~
+Short a steel spear~
+Desc A steel spear has been left here.~
+Level 41
+ItemType weapon~
+Cost 818
+Asize 0
+Rsize 50
+Values polearm 5 9 thrust F
+Weight 55
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc steel spear~
+This long spear is made of solid steel, and seem very strong.  
+~
+End
+
+#3327
+Name old cotton tunic~
+Short an old cotton tunic~
+Desc An old cotton tunic has been left here.~
+Level 1
+ItemType clothing~
+Cost 16
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ExtraDesc old cotton tunic~
+An old grey article of clothing that covers most of the body.  
+~
+End
+
+#3328
+Name heavy steel helmet~
+Short a heavy steel helmet~
+Desc A heavy steel helmet has been left here.~
+Level 55
+ItemType armor~
+Cost 1102
+Asize 0
+Rsize 50
+Values 14 13 13 11 0
+Weight 24
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take head~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 55 -1 strength 2 0
+Affect modifier -1 55 -1 quickness 3 0
+ExtraDesc heavy steel helmet~
+This helmet is made of thick steel and is very sturdy.  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#3300
+Name Just Inside Gates~
+Desc You are just inside the west gates of a small fortress, in a large
+courtyard.  The ground is covered with garbage and broken objects, mostly
+weapons and armor.  There are some straw practice dummies, some with arrows
+stuck in them.  The courtyard continues east and north, while to the south
+some large tents have been set up.  
+~
+Sector city~
+Exit north 3304
+Exit east 3301
+Exit south 3302
+Exit west 27014
+EFlags door closed~
+EKeywords gates~
+End
+
+
+#3301
+Name Courtyard~
+Desc The courtyard continues north and west from here, while to the south a
+large tent has been set up.  Straw and garbage covers the ground, including
+everything from rotting meat to broken weapons.  You can enter the
+fortress's main building through an archway to the east.  
+~
+Sector city~
+Exit north 3305
+Exit east 3308
+Exit south 3303
+Exit west 3300
+End
+
+
+#3302
+Name Mess Tent~
+Desc In this tent is where the residents of this fortress eat.  There are some
+crude wooden tables standing here, and some benches around them.  Some huge
+pots sit near a big firepit in the south end, and a hole has been cut in the
+tent above to let the smoke out.  A courtyard is outside the tent to the
+north, and another tent is connected to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3300
+Exit east 3303
+End
+
+
+#3303
+Name Soldier's Quarters~
+Desc There must be no room inside the buildings for the lowest rank of
+soldiers, because they all seem to have set up camp in this big tent.  Moldy
+straw mattresses cover the ground, and weapons, armours, and some personal
+items are lying about.  An exit leads outside to the north, and to another
+tent west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3301
+Exit west 3302
+End
+
+
+#3304
+Name Messy Courtyard~
+Desc Here in the northwest corner of the courtyard, things are especially
+messy.  Lots of refuse has been pushed up against the walls to get it out of
+the way, and has thus created a haven for rats and insects.  The yard
+continues south and east, and there is a small archway leading to a room in
+the thick north wall of the fortress.  
+~
+Sector city~
+Exit north 3306
+Exit east 3305
+Exit south 3300
+End
+
+
+#3305
+Name Messy Courtyard~
+Desc You are in the northeast section of a large courtyard.  The area is quite
+messy, with piles of trash lying all about.  A few beat-up straw combat
+practice dummies lean against the stone wall.  There is a small archway
+leading to a room in the thick northern wall, and the fortress's main
+building lies east.  There is no entrance from here, however.  
+~
+Sector city~
+Exit north 3307
+Exit south 3301
+Exit west 3304
+End
+
+
+#3306
+Name Guard Quarters~
+Desc This small room is where some of the fortress's guards live.  It is quite
+messy and smells like something has died here.  There is graffiti on the
+walls, most of it drawings of elves being beaten and the like.  The only
+exit is to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3304
+End
+
+
+#3307
+Name Guard Quarters~
+Desc This small room is where some of the fortress's guards live.  It is quite
+messy and smells like something has died here.  There is graffiti on the
+walls, most of it drawings of elves being beaten and the like.  The only
+exit is to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3305
+End
+
+
+#3308
+Name Wide Hall~
+Desc This wide hall runs east and west.  It seems that once this must have
+been the keep of some powerful lord, as the construction of the walls is
+very good and strong, but the current inhabitants have really ignored the
+upkeep.  The exit to outside is through an archway in the west wall, and
+there are doorways to the north and south.  Further down the hall to the
+east, you can see wide stairways leading up and down.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3310
+Exit east 3309
+Exit south 3311
+Exit west 3301
+End
+
+
+#3309
+Name Wide Hall~
+Desc The wide hallway stretches west from here, and seems to end in an exit to 
+the outside in that direction.  On this end there are entrances north and 
+south to small rooms, and wide curved stairways leading up and down.  
+Shouting and loud noises are coming from below.  A few old tapestries cling 
+to the walls, but are so torn and rotten that it is impossible to see what 
+they used to display.  A gate heads off to the east, to a small path.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3312
+Exit east 3332
+EFlags door closed~
+EKeywords door~
+Exit south 3313
+Exit west 3308
+Exit up 3314
+Exit down 3321
+End
+
+
+#3310
+Name Guard Room~
+Desc This small room houses some guards who are supposed to watch the front
+entrance.  There are two tables and some old wooden chairs, and a few pails
+of water and unrecognizable material.  On one of the tables are a deck of
+cards and wooden chips, perhaps you've interrupted the game.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3308
+End
+
+
+#3311
+Name Guard Room~
+Desc There's not much to look at in this small guard room.  A few tables,
+chairs, and buckets of water and slop.  There are posters on the south wall,
+and when you take a closer look you see that they all show naked female orcs
+in various poses!  The only exit is north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3308
+End
+
+
+#3312
+Name Armoury~
+Desc Here in the armoury the weapons and armours are stacked high on shelves,
+or hanging in racks.  There are mostly heavy leather armors and ringmails,
+as well as a few scalemails.  All are a little larger than human sized, and
+none seem to have been cared for very well.  In the weapon racks there are a
+lot of spears with various tips, and some dull longswords.  The only exit is
+south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3309
+End
+
+
+#3313
+Name Empty Room~
+Desc This large room is empty, except for a few piles of garbage, and smells
+very bad.  As you poke around you occasionally disturb a rat feasting on
+some old scrap of meat, and then you discover the source of the smell -
+Under an old tarp in a corner there are some rotting bodies.  Upon closer
+examination, they seem to be elves.  The only exit is north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3309
+End
+
+
+#3314
+Name Wide Hallway~
+Desc Burning torches line the walls of this wide east-west hallway.  The walls
+are of dark grey stone, and archways lead into rooms to the north and south.
+There is a curved staircase leading down.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3319
+Exit east 3328
+Exit south 3320
+Exit west 3315
+Exit down 3309
+End
+
+
+#3315
+Name Wide Hallway~
+Desc The wide hallway leads east from here.  There are open stone archways to
+the north and south, and a larger one to the west, from which a breeze
+comes.  Burning torches line the walls.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3316
+Exit east 3314
+Exit south 3318
+Exit west 3317
+End
+
+
+#3316
+Name War Room~
+Desc Here is the most important room in the fortress, the war room where the
+inhabitants plan their strategies.  There are several sturdy tables with
+maps all over them, and small figurines to symbolize troops.  A window is in
+the west wall and overlooks a city, and the only exit is south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3315
+End
+
+
+#3317
+Name Overlook~
+Desc You are on a small outdoor balcony which overlooks a courtyard, and
+beyond that a large city.  A stone archway leads east into the building. 
+There are some tents in the courtyard below.  
+~
+Sector city~
+Exit east 3315
+End
+
+
+#3318
+Name Soldier's Quarters~
+Desc This room is filled with pallets made of straw and covered with old
+cloth.  There is not much in the way of personal items, but there are some
+buckets and bowls of food and drink.  The only exit is through an archway to
+the north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3315
+End
+
+
+#3319
+Name Officer's Quarters~
+Desc These are the quarters of some high ranking officer, if the fine
+furnishings are any indication.  There is a wooden bed that has thick fur
+blankets, and even a few pillows.  Against the wall is a wooden desk, and a
+chair.  A table sits near the only exit, which is to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3314
+End
+
+
+#3320
+Name Soldier's Quarters~
+Desc This room is filled with pallets made of straw and covered with old
+cloth.  There is not much in the way of personal items, but there are some
+buckets and bowls of food and drink.  The only exit is through an archway to
+the north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3314
+End
+
+
+#3321
+Name Dungeon Hallway~
+Desc The hallway here leads west through the dungeons, and ends in a stone
+wall east.  There are torches on the walls to illuminate the place, and a
+curved stairway that leads upwards.  There are small rooms to the north and
+south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3323
+Exit south 3324
+Exit west 3322
+Exit up 3309
+End
+
+
+#3322
+Name Dark Dungeon Hallway~
+Desc Here at the west end of this hallway it is quite dark.  There are small
+cells to the north, south, and west, and the hallway leads east.  
+~
+Sector inside~
+Exit north 3325
+Exit east 3321
+Exit south 3326
+Exit west 3327
+End
+
+
+#3323
+Name Torture Chamber~
+Desc This cramped chamber is stuffed full of torture equipment of various
+types.  There are large items like a rack and iron maiden, and LOTS of whips
+and knives.  The only exit is south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3321
+End
+
+
+#3324
+Name Prison Cell~
+Desc This small cell has a stone floor and walls, and contains only a moldy
+straw pallet and some chains anchored to the walls.  The exit is north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3321
+End
+
+
+#3325
+Name Prison Cell~
+Desc This small cell has a stone floor and walls, and contains only a moldy
+straw pallet and some chains anchored to the walls.  The exit is south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3322
+End
+
+
+#3326
+Name Prison Cell~
+Desc This small cell has a stone floor and walls, and contains only a moldy
+straw pallet and some chains anchored to the walls.  The exit is north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3322
+End
+
+
+#3327
+Name Prison Cell~
+Desc This small cell has a stone floor and walls, and contains only a moldy
+straw pallet and some chains anchored to the walls.  The exit is east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 3322
+End
+
+
+#3328
+Name Wide Hallway~
+Desc You are at the far east end of a wide hallway.  There are stone archways
+leading into rooms to the north, east, and south.  The area is well-lit by
+torches.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3329
+Exit east 3331
+Exit south 3330
+Exit west 3314
+End
+
+
+#3329
+Name Officer's Quarters~
+Desc A few of the officers must stay here for there are only three beds in
+this large room, and it is quite nicely furnished.  Next to each bed is a
+desk, and in the center is a large round table and some chairs.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 3328
+End
+
+
+#3330
+Name Soldier's Quarters~
+Desc This room is filled with pallets made of straw and covered with old
+cloth.  There is not much in the way of personal items, but there are some
+buckets and bowls of food and drink.  The only exit is through an archway to
+the north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 3328
+End
+
+
+#3331
+Name Small Quarters~
+Desc This tiny room appears to be the quarters of someone with power or money.
+The furniture is very well made and comfortable, and includes a desk, table,
+and bed.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 3328
+End
+
+
+#3332
+Name Roughly Cut Path before a Fortress~
+Desc You are on a roughly cut path that leads up to the back entrance of a large 
+keep.  There is a heavy wooden gate to the west, to enter the fortress.  
+Footprints continue to the east, where you see a smaller keep in the distant 
+north.  
+~
+Sector field~
+Exit east 3333
+Exit west 3309
+EFlags door closed~
+End
+
+
+#3333
+Name Roughly Cut Path before a Keep~
+Desc Footprints lead up to a small keep, which you can see is guarded by several 
+orcs.  The path is roughly cut, and has been cleared by large heavy feet, 
+rather than by a sickle.  
+~
+Sector field~
+Exit north 19601
+Exit west 3332
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 3305 9 3300 1
+E 0 3312 -1 wielded~
+E 0 3311 -1 torso~
+M 0 3303 8 3300 2
+E 0 3307 -1 torso~
+E 0 3308 -1 wielded~
+M 0 3306 3 3300 1
+E 0 3313 -1 torso~
+E 0 3314 -1 wielded~
+M 0 3305 9 3301 1
+E 0 3312 -1 wielded~
+E 0 3311 -1 torso~
+M 0 3303 8 3301 2
+E 0 3307 -1 torso~
+E 0 3308 -1 wielded~
+M 0 3303 8 3301 2
+E 0 3307 -1 torso~
+E 0 3308 -1 wielded~
+M 0 3307 2 3301 1
+E 0 3328 -1 head~
+E 0 3315 -1 torso~
+E 0 3316 -1 wielded~
+M 0 3304 1 3302 1
+E 0 3309 -1 about~
+E 0 3310 -1 hold~
+M 0 3313 6 3302 1
+E 0 3324 -1 torso~
+M 0 3312 6 3303 1
+E 0 3324 -1 torso~
+M 0 3305 9 3304 1
+E 0 3312 -1 wielded~
+E 0 3311 -1 torso~
+M 0 3303 8 3304 2
+E 0 3307 -1 torso~
+E 0 3308 -1 wielded~
+M 0 3312 6 3304 1
+E 0 3324 -1 torso~
+M 0 3305 9 3305 1
+E 0 3312 -1 wielded~
+E 0 3311 -1 torso~
+M 0 3303 8 3305 2
+E 0 3307 -1 torso~
+E 0 3308 -1 wielded~
+M 0 3313 6 3305 1
+E 0 3324 -1 torso~
+M 0 3302 8 3306 2
+E 0 3305 -1 torso~
+E 0 3306 -1 wielded~
+M 0 3302 8 3306 2
+E 0 3305 -1 torso~
+E 0 3306 -1 wielded~
+M 0 3302 8 3307 2
+E 0 3305 -1 torso~
+E 0 3306 -1 wielded~
+M 0 3302 8 3307 2
+E 0 3305 -1 torso~
+E 0 3306 -1 wielded~
+M 0 3305 9 3309 1
+E 0 3311 -1 torso~
+E 0 3312 -1 wielded~
+M 0 3312 6 3309 1
+E 0 3324 -1 torso~
+M 0 3302 8 3310 2
+E 0 3305 -1 torso~
+E 0 3306 -1 wielded~
+M 0 3302 8 3310 2
+E 0 3305 -1 torso~
+E 0 3306 -1 wielded~
+M 0 3302 8 3311 2
+E 0 3306 -1 wielded~
+E 0 3305 -1 torso~
+M 0 3302 8 3311 2
+E 0 3305 -1 torso~
+E 0 3306 -1 wielded~
+M 0 3308 1 3312 1
+E 0 3317 -1 torso~
+E 0 3318 -1 wielded~
+E 0 3319 -1 hold~
+M 0 3313 6 3312 1
+E 0 3324 -1 torso~
+M 0 3306 3 3313 1
+E 0 3313 -1 torso~
+E 0 3314 -1 wielded~
+M 0 3313 6 3315 1
+E 0 3324 -1 torso~
+M 0 3305 9 3316 1
+E 0 3312 -1 wielded~
+E 0 3311 -1 torso~
+M 0 3300 1 3316 1
+E 0 3300 -1 rfinger~
+E 0 3301 -1 torso~
+E 0 3302 -1 wielded~
+E 0 3303 -1 head~
+M 0 3301 2 3316 2
+E 0 3304 -1 torso~
+M 0 3301 2 3316 2
+E 0 3304 -1 torso~
+M 0 3306 3 3316 1
+E 0 3313 -1 torso~
+E 0 3314 -1 wielded~
+M 0 3311 2 3316 2
+E 0 3323 -1 about~
+M 0 3311 2 3316 2
+E 0 3323 -1 about~
+M 0 3305 9 3317 1
+E 0 3311 -1 torso~
+E 0 3312 -1 wielded~
+M 0 3312 6 3318 1
+E 0 3324 -1 torso~
+M 0 3305 9 3320 1
+E 0 3311 -1 torso~
+E 0 3312 -1 wielded~
+M 0 3313 6 3321 1
+E 0 3324 -1 torso~
+M 0 3314 2 3321 1
+E 0 3325 -1 torso~
+E 0 3326 -1 wielded~
+M 0 3312 6 3322 1
+E 0 3324 -1 torso~
+M 0 3314 2 3322 1
+E 0 3325 -1 torso~
+E 0 3326 -1 wielded~
+M 0 3310 1 3323 1
+E 0 3321 -1 torso~
+E 0 3322 -1 wielded~
+M 0 3315 3 3323 1
+E 0 3327 -1 torso~
+M 0 3316 2 3324 1
+E 0 3327 -1 torso~
+M 0 3316 2 3325 1
+E 0 3327 -1 torso~
+M 0 3315 3 3326 1
+E 0 3327 -1 torso~
+M 0 3315 3 3327 1
+E 0 3327 -1 torso~
+M 0 3307 2 3328 1
+E 0 3315 -1 torso~
+E 0 3316 -1 wielded~
+E 0 3328 -1 head~
+M 0 3313 6 3329 1
+E 0 3324 -1 torso~
+M 0 3305 8 3331 1
+E 0 3311 -1 torso~
+M 0 3312 6 3331 1
+E 0 3324 -1 torso~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#3308
+title orc guards attack prisoner~
+code if mobhere 3317
+or mobhere 3318
+say Trying to escape, eh? Die!!
+kill ex-prisoner
+endif
+~
+disabled false
+END
+
+#3307
+title human prisoner~
+code mob mload 3318
+say [with hope] will you really help me out of here?
+mob oload 3327
+mob silently give old 3318
+mob force 3318 mob silently wear old
+mob force 3318 follow $n
+mob purge prisoner
+~
+disabled false
+END
+
+#3306
+title elven prisoner~
+code mob mload 3317
+say [with hope] will you really help me out of here?
+mob oload 3327
+mob silently give old 3317
+mob force 3317 mob silently wear old
+mob force 3317 follow $n
+mob purge prisoner
+~
+disabled false
+END
+
+#3305
+title Orc Warriors Fighting Styles~
+disabled false
+END
+
+#3304
+title Orc General~
+code get o3302
+wield o3302
+~
+disabled false
+END
+
+#3303
+title Orc Lieu Combat Mprg~
+code get o3316
+wield o3316
+~
+disabled false
+END
+
+#3302
+title Orc Sergeant Fighting mprog~
+code get o3314
+wield o3314
+~
+disabled false
+END
+
+#3301
+title Orc warrior Fighting prog~
+code get bastard
+wield bastard
+~
+disabled false
+END
+
+#3300
+title Re-Wield Weapons~
+code get maul
+wield maul
+~
+disabled false
+END
+
+#0
+
+
+#$

@@ -1,0 +1,39 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword GROUP-HEADER~
+helpflags hide_keywords~
+category undefined~
+text The following skills and groups are available to your character:
+(this list may be seen again by typing list)
+~
+END
+
+keyword GROUP-HELP~
+helpflags hide_keywords~
+category undefined~
+text The following commands are available:
+
+add  <name>  buy a skill or group
+done         exit the character generation process
+drop <name>  discard a skill or group
+explain      gives brief explanation of creation points and skill groups
+info <name>  list the skills or spells contained within a group
+learned      show all groups and skills bought, and skills you have 
+list         display all groups and skills not yet bought
+help <name>  help on skills and groups, or other help topics
+~
+END
+
+keyword MENU-CHOICE~
+helpflags hide_keywords~
+category undefined~
+text Choice (add, done, drop, explain, info, learned, list, help)?
+~
+END
+
+EOF~
+#$

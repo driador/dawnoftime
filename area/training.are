@@ -1,0 +1,621 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Training Fields~
+ShortName   Training Fields~
+Builders    None~
+Credits     Khan~
+VNUMs       12300 12314
+LRange      1 15
+Security    9
+Colour      G~
+colourcode  `
+MapScale    7
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#12300
+Name officer~
+ShortD an officer~
+LongD An officer is here, polishing a pair of boots.~
+Desc This officer wears his uniform proudly.  He is polishing his boots until the 
+shine reflects his own face.  
+~
+Race human~
+Align 0 3
+Level 10
+Hitroll 1
+HitDice 2d5+22
+ManaDice 1d4+5
+DamDice 2d4+2
+DamType punch
+AC 10 10 10 8
+Wealth 100
+Act    npc dont_wander scavenger no_tame stay_area warrior~
+AffBy  detect_invis regeneration~
+Off    bash parry~
+Imm    charm disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12301
+Name absent minded general~
+ShortD the absent minded general~
+LongD An absent minded general is here, trying to comprehend a map.~
+Desc This general smells of old maps, and seems a little absent-minded as he 
+plots his next move on the map before him.  
+~
+Race human~
+Align 0 3
+Level 13
+Hitroll 1
+HitDice 3d5+67
+ManaDice 3d5+170
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 10
+Wealth 130
+Act    npc dont_wander scavenger no_tame stay_area wimpy warrior~
+AffBy  detect_invis regeneration~
+Off    bash parry~
+Imm    charm disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12302
+Name novice soldier~
+ShortD a novice soldier~
+LongD A novice soldier is here, sparring with an imaginary enemy.~
+Desc This soldier holds his head high with pride.  On closer inspection you 
+notice a rose tattooed on his arm.  
+~
+Race human~
+Align 0 2
+Level 3
+Hitroll 0
+HitDice 2d4+1
+ManaDice 1d5+110
+DamDice 1d6+0
+DamType scratch
+AC 70 70 70 80
+Wealth 30
+Act    npc no_tame stay_area warrior~
+Off    parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12303
+Name veteran soldier~
+ShortD a veteran soldier~
+LongD A veteran soldier is here, annoying the novices.~
+Desc This veteran soldier appears tough, with his hair slicked back and his 
+muscular form showing through his uniform.  
+~
+Race human~
+Align 0 2
+Level 8
+Hitroll 1
+HitDice 2d5+12
+ManaDice 2d5+135
+DamDice 1d7+2
+DamType punch
+AC 30 30 30 50
+Wealth 80
+Act    npc no_tame stay_area warrior~
+Off    dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12304
+Name aide~
+ShortD an aide~
+LongD An aide with a permanent slouch is slaving over a map.~
+Desc The general's aide is here, peering at the map, and discussing plans with 
+the general.  
+~
+Race human~
+Align 0 2
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 2d5+15
+DamDice 1d8+1
+DamType scratch
+AC 40 40 40 36
+Wealth 30
+Act    npc dont_wander no_tame stay_area wimpy~
+Off    dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#12300
+Name lucky charm~
+Short a lucky charm~
+Desc Someone's lucky charm has been left here.~
+Level 1
+ItemType jewelry~
+Cost 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material leather~
+Wear     take neck~
+Affect modifier -1 1 -1 memory 1 0
+ExtraDesc lucky charm~
+This little charm is hanging on a thin leather string.
+~
+End
+
+#12301
+Name navy blue coat~
+Short a `#`bnavy blue`^ coat~
+Desc A `#`bnavy blue`^ coat lies here.~
+Level 3
+ItemType armor~
+Cost 25
+Asize 0
+Rsize 50
+Values 1 1 1 0 0
+Weight 5
+Material cotton~
+Extra    nodegrade~
+Wear     take about~
+End
+
+#12302
+Name navy blue trousers~
+Short a pair of `#`bnavy blue`^ trousers~
+Desc A pair of `#`bnavy blue`^ trousers lie here.~
+Level 3
+ItemType armor~
+Cost 25
+Asize 0
+Rsize 50
+Values 1 1 1 0 0
+Weight 5
+Material cotton~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#12303
+Name navy blue trench coat~
+Short a `#`bnavy blue`^ trench coat~
+Desc A `#`bnavy blue`^ trench coat lies here~
+Level 10
+ItemType armor~
+Cost 35
+Asize 0
+Rsize 50
+Values 2 2 2 2 0
+Weight 10
+Material cotton~
+Extra    nodegrade~
+Wear     take about~
+Affect modifier -1 10 -1 strength 1 0
+Affect modifier -1 10 -1 agility -1 0
+End
+
+#12304
+Name steel sword~
+Short a steel sword~
+Desc A steel sword lies here.~
+Level 3
+ItemType weapon~
+Cost 20
+Asize 0
+Rsize 50
+Values sword 1 8 slash 0
+Weight 10
+Material steel~
+Extra    nodegrade~
+Wear     take wield~
+End
+
+#12305
+Name long steel sword~
+Short a long steel sword~
+Desc A long steel sword lies here.~
+Level 8
+ItemType weapon~
+Cost 20
+Asize 0
+Rsize 50
+Values sword 2 6 slash 0
+Weight 10
+Material steel~
+Extra    nodegrade~
+Wear     take wield~
+End
+
+#12306
+Name navy blue general's coat~
+Short a `#`bnavy blue`^ general's coat~
+Desc A `#`bnavy blue`^ coat lies here.~
+Level 13
+ItemType armor~
+Cost 50
+Asize 0
+Rsize 50
+Values 4 4 4 2 0
+Weight 10
+Material cotton~
+Extra    nodegrade~
+Wear     take about~
+Affect modifier -1 13 -1 ac -5 0
+End
+
+#12307
+Name navy blue general's trousers~
+Short a pair of `#`bnavy blue`^ general's trousers~
+Desc A pair of `#`bnavy blue`^ trousers lie here.~
+Level 13
+ItemType armor~
+Cost 50
+Asize 0
+Rsize 50
+Values 4 4 4 2 0
+Weight 10
+Material cotton~
+Extra    nodegrade~
+Wear     take legs~
+Affect modifier -1 13 -1 ac -5 0
+End
+
+#12308
+Name navy blue cap insignia gold~
+Short a `#`bnavy blue`^ cap with a `#`ygold`^ insignia~
+Desc A `#`bnavy blue`^ cap lies here.~
+Level 13
+ItemType armor~
+Cost 50
+Asize 0
+Rsize 50
+Values 4 4 4 2 0
+Weight 8
+Material cotton~
+Extra    nodegrade~
+Wear     take head~
+Affect modifier -1 13 -1 ac -5 0
+End
+
+#0
+
+
+
+#ROOMS
+#12300
+Name Entrance to Training Fields~
+Desc Just to the east you can see the barracks and hills where you're sure many 
+young lads go to train everyday.  The beautiful landscape looks untouched 
+by the many years of wars that have plagued the surrounding nations.  You 
+may head east into the training fields or go west through the flatlands.
+~
+Sector field~
+Exit east 12301
+EDesc ..
+~
+Exit west 30238
+EDesc A path.
+~
+End
+
+
+#12301
+Name Pathway through Field~
+Desc You are on a path which leads straight east heading towards the barracks.  
+All around you is lush green grass and the sounds of insects happily 
+chirping can be heard.
+~
+Sector field~
+Exit north 12304
+Exit west 12300
+EDesc Entrance to Training Fields.
+~
+End
+
+
+#12302
+Name Eastern Field of Training Grounds~
+Desc Woods of tall trees surround the training ground to the east and south of 
+here.  The ground is worn with the soldier's sparring.  The path heads 
+around to the west, and up to the north where you can glimpse a small tent 
+just to the east of the path.  
+~
+Sector field~
+Exit north 12306
+Exit west 12304
+End
+
+
+#12303
+Name Western Field of Training Grounds~
+Desc The trees to the west are very majestic while the breeze is barely a whisper 
+here.  Crickets are chirping and birds fly by every once in a while.  A path 
+leads off to the east and north.  
+~
+Sector field~
+Exit north 12309
+Exit east 12304
+End
+
+
+#12304
+Name Path through the Training Fields~
+Desc You are moving along a well trodden dirt path.  There is tall grass to the 
+east and west of you and the path continues north into the main training 
+area.  The birds are still chirping and everything seems upbeat and happy.  
+You can head north, east or west through the training area.  
+~
+Sector field~
+Exit north 12305
+EDesc Training Fields.
+~
+Exit east 12302
+Exit south 12301
+Exit west 12303
+End
+
+
+#12305
+Name Main Training Area~
+Desc You have entered the Main Training Area. You can hear the clash of swords 
+and grunts of young men as they fight to better their skills with the arms 
+of war.  The ground is padded hard from the use and the wind blows through 
+with a refreshing breeze.  You can head in every direction.
+~
+Sector field~
+Exit north 12308
+EDesc Northern Field near a tent.
+~
+Exit east 12306
+Exit south 12304
+EDesc A path south.
+~
+Exit west 12309
+End
+
+
+#12306
+Name Path through the Training Fields~
+Desc The wind is stronger here and the woods are impassable to the east, although 
+a tent has been placed in perhaps the only gap within the woods.  The ground 
+is a little softer here and you glimpse a squirrel just before it runs up a 
+tree.  
+~
+Sector field~
+Exit north 12307
+EDesc ..
+~
+Exit east 12313
+Exit south 12302
+Exit west 12305
+End
+
+
+#12307
+Name North-Eastern Field of Training Area~
+Desc You are at the most north-east area of the field.  A wind is refreshing 
+against your back and the chirping of numerous crickets can be heard.  You 
+have the urge to sit and be one with the world.  You may go south, 
+southwest or west.
+~
+Sector field~
+Exit south 12306
+EDesc Eastern Field of Training Area.
+~
+Exit west 12308
+EDesc Training Fields.
+~
+End
+
+
+#12308
+Name Northern Field near a Tent~
+Desc You are at the highest part of the Training fields and you pause a second 
+to catch your breath.  The view is spectacular and you think maybe you can 
+see some town in the far south.  To the north you observe a very official 
+looking tent with a flag flying overtop.  
+~
+Sector field~
+Exit north 12312
+Exit east 12307
+EDesc North-Eastern Fields.
+~
+Exit south 12305
+EDesc Main Training Area.
+~
+Exit west 12310
+EDesc North-Western Field of Training Area.
+~
+End
+
+
+#12309
+Name Path through the Training Fields~
+Desc You see a forest to the west which is impassable.  The birds are chirping 
+and the ground is rather soft here.  A rusted sword is buried in the ground 
+and the handle has broken off.  Just to the west of here, a small tent has 
+been set up.  
+~
+Sector field~
+Exit north 12310
+EDesc North-Western Field of Training Area.
+~
+Exit east 12305
+Exit south 12303
+Exit west 12311
+End
+
+
+#12310
+Name North-Western Field of Training Area~
+Desc The trees to the west are very majestic while the breeze is barely a whisper 
+here.  Crickets are chirping and birds fly by every once in a while.  A path 
+leads off to the east and south.  
+~
+Sector field~
+Exit east 12308
+EDesc Northern Field near a tent.
+~
+Exit south 12309
+EDesc Western Field of Training Area.
+~
+End
+
+
+#12311
+Name Inside a Small Tent~
+Desc This tent is a small tent, with barely room for the cot which is pushed 
+against one side.  There is a makeshift desk, made from an old crate, on top 
+of which lies a worn notebook and a tin mug.  A thin blanket drapes over the 
+bed.  The flap opens to the east, to the training grounds.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc flag~
+The flag looks rather new and the rose looks a little gay.  You wonder how 
+proud an army would have to be to use a rose as their symbol and not feel a 
+loss of masculinity.
+~
+Exit east 12309
+End
+
+
+#12312
+Name Inside the Main Tent~
+Desc Maps, maps are everywhere.  Inside the tent is rather filthy with assorted 
+weapons along with food mixed in occasionally with the maps.  An aide 
+scurries by anxious to get away from its master for a little break or maybe 
+just for fear of you.  A flap opens to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 12308
+End
+
+
+#12313
+Name Inside a Small Tent~
+Desc This small tent is where one of the officers has set up camp.  There is an 
+uncomfortable cot against the lining of the tent, and a pair of worn boots 
+sit beneath the bed.  The flap of the tent opens to the west, onto the main 
+training grounds.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 12306
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 12302 11 12301 1
+E 0 12304 -1 wielded~
+M 0 12303 9 12301 1
+M 0 12303 9 12301 1
+M 0 12302 11 12302 1
+E 0 12300 -1 neck1~
+M 0 12302 11 12303 1
+M 0 12303 11 12303 1
+E 0 12301 -1 about~
+E 0 12302 -1 legs~
+M 0 12303 11 12303 1
+E 0 12305 -1 wielded~
+M 0 12302 11 12305 3
+E 0 12300 -1 neck1~
+M 0 12302 11 12305 3
+M 0 12302 11 12305 3
+M 0 12303 9 12305 1
+E 0 12305 -1 wielded~
+M 0 12303 9 12306 1
+E 0 12302 -1 legs~
+E 0 12301 -1 about~
+M 0 12302 11 12306 1
+M 0 12302 11 12306 1
+M 0 12302 11 12307 1
+E 0 12304 -1 wielded~
+M 0 12303 11 12308 1
+E 0 12302 -1 legs~
+E 0 12301 -1 about~
+M 0 12303 11 12308 1
+E 0 12305 -1 wielded~
+M 0 12302 11 12310 1
+M 0 12302 11 12310 1
+E 0 12304 -1 wielded~
+M 0 12300 5 12311 1
+E 0 12303 -1 about~
+M 0 12301 1 12312 1
+E 0 12306 -1 about~
+E 0 12307 -1 legs~
+E 0 12308 -1 head~
+M 0 12304 3 12312 3
+M 0 12304 3 12312 3
+M 0 12304 3 12312 3
+M 0 12303 9 12312 1
+M 0 12300 5 12313 1
+E 0 12303 -1 about~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

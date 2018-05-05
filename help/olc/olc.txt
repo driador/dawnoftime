@@ -1,0 +1,773 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword FREEVNUM~
+helpflags builder wordwrapped~
+category olc~
+text `=lSyntax:`=? freevnum <obj|mob|room>`+
+`+
+The freevnum command displays a list of unused vnums within the existing 
+area file for the type you specify.  E.g. `=Cfreevnum obj`=? will list all free 
+object vnums within the area file you are located.`+
+
+~
+END
+
+keyword OLC~
+title `#---=== OLC stands for `YO`^n`Yl`^ine `YC`^reation ===---~
+category olc~
+see_also OLC-COMMANDS OLC-EXITS OLC-SECURITY~
+text . Online Creation is a name given to the system or process of creating the 
+mud gaming environment.  `+
+ With OLC you can create text-based objects, mobs (monsters) and rooms while 
+being online - as the creation process is like another mode of using the 
+mud.  The online creation system goes beyond creating areas for the game
+but can be used for creating races (pc and npc), classes, socials, aliasing 
+spells and editing other various settings/systems within the game.`+
+ `+
+ A comparision of the building aspects of OLC would be like playing the game 
+SimCity, as compared to using the SimCity terrain editor.  (The SimCity 
+terrain editor is a program which you can create your own sim city landscapes 
+and maps)`+
+If you dont know what SimCity is then just ignore that useless comparision ;)`+
+ `+
+ The Objects, Monsters, Rooms and information telling the game were to put 
+all these things are stored in text files...  (called area files).  `+
+ Area files have a specific layout and order to put all the area information 
+in so that it can be understood by the mud, Before OLC these area files were 
+created manually with a text editor (like msdos edit), then uploaded to the 
+server which dawn runs on.  This process was very prone to human error as 
+would be expected if you see the raw layout of an area file.  `+
+ `+
+ To use OLC on The Dawn of Time, you must have an OLC security rating higher 
+than 0.  (for more info see '`=Chelp `=_olc-security`=?')`+
+ `+
+ For a reference of basic olc commands see '`=Chelp `=_olc-commands`=?'`+
+ `+
+ To get involved with area building using OLC, please see HELP BUILDING.  
+(You will generally have had to have been involved in the mud for at least a 
+few months before gaining any OLC access)`+
+ `+
+~
+END
+
+keyword OLC-SECURITY SECURITY~
+title OLC SECURITY~
+category olc~
+parent_help OLC~
+text OLC security is an olc setting that is stored on each player (including
+non OLC builders). The security value is in the range of 0 to 9,
+0 being non-builder, 9 being builder with full olc permissions.
+ 
+A players security value determines what he/she can do using OLC, this not
+only includes what commands they can use, but also what areas they can edit
+and what properties they can assign to areas they create.
+ 
+For example:
+- With a security of 1, a player can only use alist, vlist
+  and astat (to be added)
+- A security of 7 and below can't set the XP modifier on a mob, so it
+  defaults to 100%
+ 
+Security also determines what areas  a player can edit/expand?
+- Any player with a security of 1 or higher can work on an area that has
+  their character name specified as one of the builders or the word 'All'.
+- Players with a security of 6 or over can work on areas that have
+  a security value less than or equal to their security rating.
+~
+END
+
+keyword OLC-COMMANDS OLC-REFERENCE~
+title Some Basic OLC Commands~
+category olc~
+parent_help OLC~
+see_also OLC-AEDIT OLC-REDIT OLC-MEDIT OLC-OEDIT OLC-EXITS~
+text Syntax: AEDIT [create/reset] [vnum]   - Area Creation and Repoping.
+Syntax: REDIT ( [create] [vnum] )     - Room Creation and Editing.            
+Syntax: OEDIT [create] <vnum>         - Object Creation and Editing.
+Syntax: MEDIT [create] <vnum>         - Mobile Creation and Editing.
+ 
+Syntax: ASAVE  <./world/area/changed/list> - Save Editing to Disk.
+Syntax: ALIST                              - Listing of Areas.
+Syntax: VLIST                              - List all areas sorted by vnum.
+Syntax: RESET  See '`=CHELP `=_OLC-RESET`=?'        - View/Edit/Add room resets.
+ 
+Definition: [optional]  <required>  (combined arguments)
+ 
+     Inside an editor, typing COMMANDS lists working commands and ? gives
+help. 'AEDIT .' and REDIT default to the current area or room.
+ 
+EDIT ROOM RESET resets the current room.
+Most commands with no arguments display syntax.
+~
+END
+
+keyword OLC-RESETS~
+category olc~
+text `=?
+The resets command is used to view/add/delete the resets in a room.
+
+Resets are like a little set of scripting commands that tell the mud how
+and where to load objects and mobiles into rooms.  If an area had no resets
+the whole area would be just a set of empty rooms, regardless of how many
+mobs or objects were defined in the areas vnum range.
+
+Using resets you can load objects and mobs from any area file that is part
+of the mud, (assuming you have sufficient security)
+
+Syntax:
+RESET - will show you all the resets in the current room.
+
+`cTo add a mob into the current room `=?at the bottom of the reset list, type
+RESET 99 mob <mob vnum> <max world> <max room>
+The number 99 is the rooms reset number... putting it at 99 makes it appear
+at the bottom of the room reset list (assuming you have less than 99 resets).
+
+`cTo add an object into the current room`=? (on the floor)
+RESET 99 obj <obj vnum> room
+
+`cTo `Cplace`c an object into a mobs inventory`=?
+RESET %mob_reset_number+1% obj <obj vnum> none
+
+`cTo `Cequip`c an object onto a mob`=?
+RESET %mob_reset_number+1% obj <obj vnum> %wear_location%
+type `Y? wear-loc`=? for a list of wear locations.
+
+RESET <number> DELETE    - delete a reset
+
+NOTE:  These resets dont instantly take affect, if you want to see the
+affects if your resets type `=Crpurge`=? followed by `=Cresetroom`=?
+
+SEE: `=_OLC `=_OLC-AUTORESET `=_OLC-RPURGE `=_OLC-RESETROOM `=_OLC-SECURITY
+~
+END
+
+keyword OLC-EXITS~
+title Setting OLC Exits~
+helpflags builder~
+category olc~
+parent_help OLC~
+text While in room edit mode, you create/edit/remove exits from that room.
+ 
+The syntax for using the commands is to first specify the direction
+(as if you are walking in that direction) then followed by one of
+the following:
+ 
+dig  <vnum>        - creates the room and makes a two way link
+dig                - creates the room and makes a two way link
+                     by autoassigning the next free vnum in the area
+link <room vnum>   - make a two way link
+room <room vnum>   - make a one way link (use with caution)
+key  <object vnum> - makes specified object the vnum of the key required
+name <door name>   - makes the door's name/keywords = to the given name
+desc               - edit the description of the exit
+remove             - remove this exit
+<exit-flags>       - type ? EXIT for a list(make exit door, locked etc.)
+ 
+eg, you are in room 3000, to make a two way link into room 3001
+you could type:
+`#`=Cnorth link 3001`^
+this would an exit going north from room 3000 into room 3001.
+Because we used the word 'link' it will have also made a south exit from
+room 3001 to room 3000.  If the word 'room' was used instead of 'link' this
+reverse exit wouldn't have been created.
+ 
+The exit flags are presented in the following manner.  The capitalized
+flags are ones not included in the reset info.  i.e. closed is due to
+a player closing the door and not due to the door being set to be closed.
+ 
+-South to [ 3744] Key: [   -1] Exit flags: [door CLOSED bashed pickproof]
+~
+END
+
+keyword OLC-LRANGE OLCAEDIT-LCOMMENT~
+category olc:aedit~
+see_also OLC OLC-COMMANDS~
+text LRange - OLC redit command:
+Lrange <lower> <higher> sets the recommended player levels for the area, as
+appears on the area list.
+
+As an example it would simply be set to 'lrange 10 25' to recommend the
+area for players of level 10 to 25.
+
+LComment - OLC aedit command:
+Lcomment is for when you want something besides recommended levels to appear
+on the area list.
+It will override any lrange entered, and needs to be 7 characters wide,
+with the first and last being brackets [].
+
+For example, the areas showing [ test] on the area list were set that way
+by simply entering 'lcomment [ test]'
+
+If you want the area to remain mysterious, or if its a storage area etc,
+you can clear the lcomment ('lcomment clear') and have a lrange of -1 -1.
+
+~
+END
+
+keyword OLC-ALIST~
+category undefined~
+parent_help OLC~
+text Syntax: ALIST
+
+This command gives you a listing of all the areas along with their
+vnum assignments and the builder(s) assigned to editing them.
+~
+END
+
+keyword OLC-AEDIT AEDIT OLC-MEDIT MEDIT OLC-OEDIT OEDIT OLC-REDIT REDIT~
+helpflags builder~
+category olc~
+parent_help OLC~
+see_also OLC-COMMAND~
+text `+
+AEDIT - aedit is the entry point for editing information about an area... in 
+this editor you can change a number of things about the area including its
+name, level range and mapscale.  Typing `=Caedit`=? by itself will display
+instructions on how to use the aedit command.
+`+
+MEDIT - medit is the entry point for editing and creating mobiles. 
+Type `=Cmedit`=? for instructions on how to use the medit command.
+`+
+OEDIT - oedit is the entry point for editing and creating objects.
+Type `=Coedit`=? for instructions on how to use the oedit command.
+`+
+REDIT - redit is the entry point for editing and creating rooms.
+Typing `=Credit`=? by itself will edit the room you are currently in... type
+`=Credit <vnum>`=? to edit a particular room, or `=Credit create <vnum>`=? to
+create a new room.
+ 
+There are a number of commands available with in each olc editor, type 
+`=Ccommands`=? for a complete list of commands once in an editor.
+~
+END
+
+keyword OLC-EXAMPLE-PROPOSAL~
+helpflags hide_keywords wordwrapped~
+category undefined~
+text Here is an example of a decent area proposal.  If you expect to build an 
+area, we hope that you can at the least turn in a decent proposal.`+
+ `+
+Dear realm department,`+
+I would like to build a monastery area.  It would be near the eastern ocean, 
+on a hill, and be a large old stone structure.  The main part would be 
+filled with monks of varying levels, as well as a few atmosphere creatures 
+like sparrows in the garden etc.  There would also be a tomb underneath full 
+of much higher level undead creatures, mostly aggressive.  `+
+ `+
+The monks would wear normal monk type clothing, robes etc, and carry staffs 
+as well as have other objects like prayer books...there would be a cook in 
+the kitchen room, a librarian in the library, young monks rushing about 
+completing chores and so on... The undead locked in the tomb area by a 
+heavily warded door would have items on them that they might have been 
+entombed with and not rotted, like amulets.  There would be lots of 
+atmosphere items lying around like beds, tables, pots, etc.`+
+ `+
+I'd like to include some mob programs that allow the monks and undead to 
+interact in nice or nasty ways with PC's, such as making the monks greet 
+clerics and things like that.`+
+ `+
+The overall level range will be intended for players level 5-50 in the top 
+section, and 60-85 in the lower section.  There will be no aggressive 
+creatures in with the monks, so that will be safe enough, but the tombs will 
+be extremely dangerous.`+
+ `+
+As you can tell, the storyline behind the area will be simple. The monks 
+monks will just be going about their day to day life and studiously ignoring 
+the evil that they've sealed up below...The undead, former monks entombed, 
+were twisted by some evil that entered and took over their remains, and only 
+want one thing - to taste the warm blood of the monks above...`+
+`+
+As you may know, I have played the mud for 5 months and have gotten a 
+character to level 75, so feel that I am qualified to build an area with 
+levels this high.  If approved, I'd like to build it on the OLC Builders 
+port, as that seems to be the easiest way.  I don't have previous experience 
+elsewhere, but would be very dedicated to finishing what i start and making 
+sure i make it all detailed enough.`+
+ `+
+Thank you, I patiently await your answer.  I may be reached by note or at 
+example@example.com.`+
+ `+
+Builder`+
+ 
+~
+END
+
+keyword OLC-MODE MODE~
+level 1
+category undefined~
+text `=lSyntax:`=? mode build`+
+`=?        mode play`+
+`+
+`+
+The MODE BUILD command will show your building status next to your who name 
+when in OLC.  To return to normal mode, type MODE PLAY. 
+~
+END
+
+keyword OLC-MATERIALS OLC-MATERIAL-LIST~
+level 1
+helpflags builder wordwrapped~
+category undefined~
+text The following is a list of materials that DO make a difference for certain 
+special functions. This list is for objects only, though. (material on mobs 
+still does pretty much nothing).`+
+`+
+ `#`YMithril`^: Setting the material slot to 'mithril' will allow the item to be 
+used with the mithril glaze spell. Nothing fancy about that. `+
+ `+
+`#`YShovel`^: Setting the material to shovel allows the item to be used as a 
+shovel to bury corpses. It must also have the wear hold or wear wield flags 
+set on it, as bury and dig check those equipment slots. `+
+`+
+`#`YCookware`^: Should be pretty self explanatory... if you have an item with 
+material set as cookware, it can be used to cook things such as mushrooms, 
+slices of meat, etc. It must have the wear hold flag to work properly, as it 
+must be held. `+
+`+
+`#`YWhetstone`^: If you set the material to 'whetstone' the item is considered a 
+stone that must be used in conjunction with the sharpen skill. It must be 
+flagged wear hold in order to be used properly. `+
+`+
+`#`YDousingflask`^: For use with the skill of Herbalism. When in a room with a 
+spring of Untainted Water, the collect water command can be used. `+
+`+
+`#`YFlowers`^:I have NO IDEA what this is for. (: *peers at Jarren* `+
+`+
+`#`YAltar`^: Coming soon! `+
+`+
+`#`YHolysymbol`^: Coming soon! `+
+`+
+This list would be updated as more materials are added.   
+~
+END
+
+keyword IMM-MIX~
+level 92
+helpflags builder~
+category undefined~
+see_also HERBALISM CHEMISTRY~
+text In dawn we now have the ability to set certain items so that they can be 
+mixed to create different items.  The ability to mix is given to all 
+characters as long as an imm creates a mixture using addmix.  Mixtures can 
+also be set to only be done if a character has one of the few mixing skills 
+right now only `BChemistry`=? for mages and `GHerbalism`=? for rangers and druids.  
+`+
+`=lSyntax:`=? addmix <element1> <element2> <result> <type> <%success>
+    Where element1, element2, and result are vnums of objects that exsist
+    in the game.  Type is one of the current 4 mixing types.  %Success is
+    the percentage at which a successfull mix will pull off.
+`+
+Types of mixtures currently in use are:`+
+     none - You dont need a skill to use this mixture
+     herbalism - You need the herbalism skill to use this mixture
+     chemistry - You need the chemistry skill to use this mixture
+     any - You must have either of the mixing skills
+`+
+`+
+`=lSyntax:`=? listmix
+    Will display a list of all mixtures currently in game.
+`+
+`=lSyntax:`=? listmix <type>
+    Will display a list of all mixtures of that type currently in game.
+`+
+`=lSyntax:`=? delmix <number>
+    Deletes a mixture indicated by its number from listmix.
+`+
+`mNOTE: %success is modified slightly by the characters skill.  
+%success also determins how much damage a failed mixture will do
+to mages if it goes wrong.
+~
+END
+
+keyword QEDIT~
+level 92
+category undefined~
+text Qedit is an olc system to keep track of all imm run quest in the game.
+Before starting a new quest an entry into the system detailing your quest
+should be made.  Before helping in another imm run quest you can check to
+see if help is wanted as well as read an synopsis of the quest and any
+helpfiles that are related to it.`1
+`RQedit commands:`1
+`=lSyntax: `=?listquest
+     Lists all imm run quests currently in progress, who is running them.
+     The current status of the quest, and the last data the quest entry 
+     was modified.`1
+`=lSyntax: `=?listquest <questname>
+     With an argument of the name of a quest, listquest will show more
+     detailed information on that quest.`1
+`=lSyntax: `=?qedit create <questname>
+     Will open up a new quest for editing with its name as the argument
+     you give it.  If you create a quest you are automatically added to
+     the list of imms responsible for that quest.`1
+`=lSyntax: `=?qedit <questname>
+     Will open up a current quest for editing.  You may only edit a quest
+     if you are listed as one of the immortals responsible for it.`1
+`=lSyntax: `=?delquest <questname>
+     Will remove a quest and all its details from the list of quests.  You
+     must be one of the immortals responsible for a quest or an admin to
+     delete a quest.`1
+`RWhile editing a quest...`=?`1
+questname <string>
+     Will change the name of the quest to <string>.
+responsible <name>
+     Will toggle the person <name> as a responsible imm for the quest.
+status <string>
+     Will display the status of the quest as <string>.
+currentstatus <string>
+     Same as status.
+resources <string>
+     Will toggle <string> as the name of a helpfile on the list of
+     resources for a quest.  `Bnote: if <string> is set as "qedit"
+     that will direct people to "help qedit".  If <string> is set to
+     "help qedit" then that will direct people to "help help qedit"`=?
+help <help_flag>
+     Will set permissions on if you would like help from other imms on
+     the quest or not.  Flags are:
+          `yClosed-The quest is closed to all but the imms responsible.
+          `yPossible-Help is possible wanted.  Send a note to responsible imms.
+          `yFree-All imms are free to participate in this quest.
+          `yUndefined-Status has yet to be defined, closed until further notice.`1
+`=?immhelp <help_flag>
+     Same as help.
+synopsis
+     Will drop you in a text editor to write a small description of your
+     quest.
+~
+END
+
+keyword AREA-BUILDING~
+level 1
+category undefined~
+see_also AREA-BUILDING-FAQ~
+text All players who have played on this mud long enough to have become familiar 
+with the world, creatures and objects within, may try their hand at building 
+an area.`+
+`+
+The first (and most important) step in building an area is to write an area 
+proposal to the `WRealm`=? Council.  This note is designed to ensure that you 
+have given some detailed thought to the area you plan to build, as well as 
+allow the Realm department to make suggestions prior to beginning.  Be 
+advised, however, simply by writing a proposal, you will not be assured that 
+your area will be approved.  Areas which are deemed inappropriate for the 
+MUD, redundant, or otherwise unacceptable will not be approved and returned 
+to you for reworking.`+
+`+
+To ensure that your proposal is accepted, be certain to include the 
+following details in your note:`+
+ `+
+`S*`=? A brief outline of the area, including the general history an RP elements 
+for its existence.  Consider why and how it exists -- include an area mythos 
+or history, if possible.`+
+ `+
+`S*`=? The level range for the area you are planning.  Is it for high levels, or 
+newbies?  Such details are crucial in the planning and production of new 
+areas.`+
+ `+
+`S*`=? To whom the area is oriented?  Is it an RP area, or one designed for gear 
+and/or hunting?  Or a hybrid of two or more of these elements?  How large 
+will the area be once it is completed?`+
+ `+
+`S*`=? What sort of mobiles do you plan on including in this area.  Will it be 
+safe for all levels, or dangerous for newbies?`+
+ `+
+For a more detailed explanation and example, see help `=_OLC-EXAMPLE-PROPOSAL`+
+ `+
+In addition to this synopsis, it would be helpful if you could include three 
+or four room descriptions, describing integral parts of your area as you 
+have it planned.  This will help the Realm council make stylistic 
+suggestions which may be useful prior to beginning work on your area.`+
+ `+
+Once you have sent your proposal, please be patient and wait to be contacted 
+by the realm department.  If you do not hear back immediately concerning 
+your area, it does not imply your proposal has gone unnoticed, merely that 
+the department is busy with pressing matters.  Rest assured, your request 
+will be handled as soon as possible.`+
+`+
+ 
+~
+END
+
+keyword AREA-BUILDING-FAQ~
+level 1
+helpflags wordwrapped~
+category olc~
+see_also AREA-BUILDING OLC-EXAMPLE-PROPOSAL~
+text This file was compiled to answer a few frequently asked questions which tend 
+to crop up amongst prospective builders.  If you have additional questions, 
+or require clarification, feel free to con- tact the Realm Council.`+
+ `+
+`S"What is 'building'?"`=?`+
+Building, or Online Creation (OLC) refers to the process of creating new 
+areas for the MUD through any number of means, the most popular and easiest 
+being the OLC port.`+
+`+
+`S"How can I get started?"`=?`+
+To get involved in the fun, consult `Whelp `=_area-building`=?.`+
+`+
+`S"I submitted an area proposal, but no one got back to me"`=?`+
+As a rule, imms receive a tremendous amount of notes and ideas each day.  
+Though not commonplace, it is possible for notes to be lost in the shuffle 
+from time to time.  If you do not hear from the Realm Council within two 
+weeks, you might consider re-submitting your proposal.`+
+`+
+`S"I submitted an area proposal, but it was rejected.  Why?"`=?`+
+Areas which are deemed inappropriate for the MUD will be rejected out of 
+hand.  Mutant bunny rabbits with submachine guns are cuddly and cute, but 
+have no place in the MUD's environment.  To avoid this, make sure your area 
+proposal fits DoT's theme, eschewing any anachronistic elements (such as 
+guns and automobiles).`+
+`+
+Some areas will be returned for reworking, with a list of comments. Often 
+times, if an area is redundant (ie: Too similar to an existing area), it 
+will be sent back to you for revision.`+
+ 
+~
+END
+
+keyword OLC-ARMS-AND-ARMOUR~
+level 1
+category undefined~
+text Name             |Location| Description
+-----------------+--------+-------------------------------------------------
+Ailette          | Arms   | Leather plates which are laced to the shoulder,
+                 |        | designed to deflect blows rather than stop them.
+                 |        | Often decorated with coats-of-arms.  
+-----------------+--------+-------------------------------------------------
+Couter           | Arms   | Defense for elbow, affixed to armour with
+                 |        | laces or rivets. 
+-----------------+--------+-------------------------------------------------
+Epaule de mouton | Arms   | Steel defense for the entire arm, used for 
+                 |        | jousts.  Usually made from a single piece.
+-----------------+--------+-------------------------------------------------
+Pauldrons        | Arms   | Shoulder plates, usually made of leather or 
+                 |        | metal, known for flexibility.
+-----------------+--------+-------------------------------------------------
+Rerebrace        | Arms   | Plate armour worn on the upper arm.
+-----------------+--------+-------------------------------------------------
+Spaulder         | Arms   | A piece of leather or metal which is attached to
+                 |        | the shoulder, usually sewn to the rerebrace.
+-----------------+--------+-------------------------------------------------
+Vambrace         | Arms   | Plate armour worn on the forearm, generally
+                 |        | laced or riveted into the underlying mail.
+-----------------+--------+-------------------------------------------------
+Breastplate      | Torso  | A solid plate of metal or hardened leather,
+                 |        | used to cover the entire torso and sometimes
+                 |        | the back.
+-----------------+--------+-------------------------------------------------
+Brigandine       | Torso  | A heavy vest of reinforced leather, extending
+                 |        | just below the waist.
+-----------------+--------+-------------------------------------------------
+Gabeson          | Torso  | A quilted jacket of cloth or leather, usually
+                 |        | worn beneath other armour.  
+-----------------+--------+-------------------------------------------------
+Habergeon        | Torso  | A waist-long coat of chainmail.
+-----------------+--------+-------------------------------------------------
+Hauberk          | Torso  | A shirt of hardened leather or mail, usually
+                 |        | covering the entire arms and torso.
+-----------------+--------+-------------------------------------------------
+Jupon            | Torso  | A sleeveless shirt of leather or quilted cloth.
+-----------------+--------+-------------------------------------------------
+Lorica           | Torso  | A suit of overlapping metal plates, originally
+                 |        | worn by Roman legionaries.
+-----------------+--------+-------------------------------------------------
+Scale mail       | Torso  | Armour made from interlocking metal "scales",
+                 |        | sewn to a hardened leather backing.
+-----------------+--------+-------------------------------------------------
+Tunic            | Torso  | A leather or mail shirt which covers the torso, 
+                 |        | and sometimes the arms.
+-----------------+--------+-------------------------------------------------
+Aventail         | Neck   | A "skirt" which fits around the neck, extending 
+                 |        | to the mid-chest.  Usually worn over armour.
+-----------------+--------+-------------------------------------------------
+Bevier           | Neck   | A cupped plate which fits over the chin, usually
+                 |        | attached to a gorget.
+-----------------+--------+-------------------------------------------------
+Gorget           | Neck   | A ring of metal or leather which fits around the
+                 |        | neck, like a collar.
+-----------------+--------+-------------------------------------------------
+Mantle           | Neck   | A chainmail garment worn around the neck and 
+                 |        | shoulders. 
+-----------------+--------+-------------------------------------------------
+Gauntlet         | Hands  | Heavy gloves, designed for combat.
+-----------------+--------+-------------------------------------------------
+Armet            | Head   | A helmet which consists of a snug "bowl", with
+                 |        | attached plates to cover the cheeks secured with
+                 |        | hinges.
+-----------------+--------+-------------------------------------------------
+Barbute          | Head   | A rounded skullcap with a T-shaped visor for the
+                 |        | nose and face.
+-----------------+--------+-------------------------------------------------
+Coif             | Head   | A hood, usually chainmail.
+-----------------+--------+-------------------------------------------------
+Kettle hat       | Head   | A sturdy, open-faced helmet with a conical crown
+                 |        | and wide brim.  Usually made of metal.
+-----------------+--------+-------------------------------------------------
+Sallet           | Head   | Another type of open-faced helmet. 
+-----------------+--------+-------------------------------------------------
+Chauses          | Legs   | Leggings made of chainmail.
+-----------------+--------+-------------------------------------------------
+Greaves          | Legs   | Heavy leg armour made of metal, generally 
+                 |        | strapped to the legs, often in two seperate
+                 |        | pieces.
+-----------------+--------+-------------------------------------------------
+Buckler          | Shield | A small hand-shield, usually hide or leather.
+-----------------+--------+-------------------------------------------------
+Kite shield      | Shield | Popularized by Vikings, a shield which forms an
+                 |        | inverted triangle.
+-----------------+--------+-------------------------------------------------
+Pavaise          | Shield | A body shield, usually taller than the person 
+                 |        | carrying it, designed as a defense against 
+                 |        | missile weapons (arrows, etc).
+-----------------+--------+-------------------------------------------------
+Plaque belt      | Waist  | A heavy belt, usually made of chain links.
+-----------------+--------+-------------------------------------------------
+Girdle           | Waist  | A belt or sash worn around the waist.
+-----------------+--------+-------------------------------------------------
+Bracers          | Wrist  | Single-piece arm coverings made of leather 
+                 |        | or metal, secured to the forearms via straps.
+-----------------+--------+-------------------------------------------------
+~
+END
+
+keyword OLC-SPECIAL-DAM~
+level 1
+category undefined~
+text Valid Damtypes for Weapons
+ 
+Regular Damtypes | Special Damtypes
+-----------------+------------------
+slice            | wrath
+stab             | magic
+slash            | divine
+whip             | drain               
+chop             | shock
+thrust           | flame
+smash            | chill
+cleave           | radiance
+claw             | phantasm
+blast            | mental blast
+pound            |
+crush            |
+pierce           |
+beating          |
+-----------------+------------------
+~
+END
+
+keyword BALANCE-CHART~
+level 92
+category undefined~
+text .       MAG  SPF  THI  DRU  CLE  PAL  RAN  WAR  BAR
+ 
+ST/CO   3    4    5    4    4    5    5    6    7
+QU/AG   3    6    7    4    4    5    6    5    4
+ME/RE   7    6    5    6    6    5    5    4    3
+IN/EM   4    3    3    6    7    7    5    4    4
+SD/PR   4    4    3    7    6    7    6    5    4
+ 
+Hit     2    4    6    3    4    6    6   10    5
+Dam     2    4    4    3    4    6    6    8   12
+ 
+HP      4    6    6    5    6   10   10   12   14
+ 
+Mana   200  120  40   160  160  100  100  40    0
+ 
+AC     -10  -15  -15  -10  -15  -20  -20  -25  -30
+Saves  -12  -8   -6   -10  -8   -6   -6   -5   -4
+~
+END
+
+keyword ASHOW MSHOW OSHOW MPSHOW RSHOW~
+level 92
+helpflags wordwrapped~
+category undefined~
+text `=lSyntax:`=? ashow [area number]`+
+`=lSyntax:`=? rshow [room vnum]`+
+`=lSyntax:`=? mshow <mobile vnum>`+
+`=lSyntax:`=? mpshow <mobprog vnum>`+
+`=lSyntax:`=? oshow <object vnum>`+
+`+
+Ashow displays the olc information on a particular area.  The area number is 
+listed on the far left in alist and vlist.  If you don't specify an area 
+number, it displays the area olc information for the area you are currently 
+in.`+
+`+
+Rshow displays olc information for the specified room vnum.  If no room vnum 
+is specified, the olc information for the room you are currently in is 
+displayed.`+
+`+
+Mshow displays olc information for the specified mob vnum.`+
+`+
+Mpshow displays olc information for the specified mobprog vnum.`+
+`+
+Oshow displays olc information for the specified object vnum.`+
+
+~
+END
+
+keyword OLC-INNS~
+title Creating Inns Innkeepers for Set Recall~
+level 92
+helpflags wordwrapped~
+category undefined~
+text `=UInns:`=? This is an easy one, just make a room where your innkeeper will 
+stand, and add the flag `=Cinn `=?by typing `=Croom inn `=?while in redit. This room 
+is now designated as an inn, and when the player types list here, the code 
+will start looking for an innkeeper, to list his rooms. `+
+`+
+`=UInnkeepers:`=? Which brings us to the next thing... the innkeeper. Create a 
+new mob, or grab an old one, (whatever tickles your fancy) and in medit type 
+the following: `=Cinn assign`=? (much like shop assign). This mob is now an 
+innkeeper with the normal stats of any shopkeeper (opening hours, profit 
+markup) with default values set. `+
+`+
+The innkeeper also needs to have some rooms to be able to rent and neads to 
+earn a living too, so you want to define which rooms he rents, and for how 
+much. This is all done still from the comforts of `=Cmedit. `=?Type `=Cinn room 1 
+99`=? to make the innkeeper's first room for rent vnum 99. Then type `=Cinn rate 
+1 5000`=? to make that room cost 5000 silver per hour. `+
+`+
+The innkeeper has 4 rooms to rent, but if you don't want to use all of those 
+4, just leave the vnums 0 for the ones you don't need. That's about it for 
+now. Have a play around with it, by typing `=Crent `=?in the innkeeper's room.`+
+ 
+~
+END
+
+keyword ASAVE SAVECLANS SAVEAUTOSTAT SAVECORPSES SAVEDEITYDB SAVEHERBS SAVEMIXDB SAVEQUESTDB SAVERACES WRITE_CLASSES WRITE_COMTABLE WRITE_NAMEPROFILES WRITE_SKILLGROUPS WRITE_SKILLS~
+level 92
+category olc~
+text Various Immortal/Admin save related commands. 
+`Wasave . `m- `wsaves all changed zones 
+`Wasave changed `m- `wsaves all changed zones (same as above)
+`Wasave <vnum> `m- `wsaves a particular area as listed in vlist
+`Wasave area `m- `wsaves the area being edited 
+`Wasave list `m- `wsaves the area.lst file 
+`Wasave onefile `m- `wsaves the whole world into one file (db dump) 
+`Wasave world `m- `wsaves the world (db dump) 
+`Whsave `m- `wsaves changes made to helpfiles 
+`Wsaveclans `m- `wsave changes made to clans 
+`Wsaveautostat `m- `wsaves changes made to autostats data 
+`Wsavecorpses `m- `wsave pc corpses and the items within (do before reboots) 
+`Wsavedeitydb `m- `wsave changes made to the deity database 
+`Wsavegameset `m- `wsave changes to game set data 
+`Wsaveherbs `m- `wsave changes made to herbs data 
+`Wsavemixdb `m- `wsave changes made to the mixes database 
+`Wsavequestdb `m- `wsave the quest database 
+`Wsaveraces `m- `wsave changes made to races 
+`Wwrite_classes `m- `wsave changes to classes `R+++ 
+`Wwrite_comtable `m- `wsave changes to command (use after comedit) 
+`Wwrite_nameprofiles `m- `wsaves name profiles to namegen.txt 
+`Wwrite_skillgroups `m- `wsaves skill groups `R+++ 
+`Wwrite_skills `m- `wsaves skills `R+++ 
+ 
+`R+++ `m= `wwill make a backup of the pre-saved data`X 
+~
+END
+
+EOF~
+#$

@@ -1,0 +1,2978 @@
+name alaghi~
+short_name Alaghi~
+language alaghi~
+flags 
+	creation_activated
+	pcrace~
+size large~
+res 
+	cold~
+form 
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 10
+class_exp
+	mage 2500
+	cleric 1500
+	thief 2000
+	warrior 1000
+	druid 1600
+	paladin 2000
+	ranger 1200
+	barbarian 1050
+	spellfilcher 2000
+	bard 1000
+	knight 0
+~
+skills sneak 'enhanced damage' 'hand to hand'~
+statmod_ST 25
+statmod_QU -5
+statmod_EM -5
+statmod_IN -5
+statmod_CO 20
+statmod_AG 5
+statmod_ME -5
+statmod_RE -5
+start_hp 19
+max_hp 220
+low_size 50
+high_size 70
+recall_room 3000
+death_room 3
+min_height 72
+max_height 84
+min_weight 300
+max_weight 400
+food_vnum 200
+END
+
+name avian~
+short_name Avian ~
+language avian~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+aff 
+	detect_invis
+	flying~
+res 
+	pierce~
+vuln 
+	bash~
+form 
+	edible
+	sentient
+	biped
+	bird~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	wings~
+points 25
+class_exp
+	mage 1000
+	cleric 1000
+	thief 1250
+	warrior 1400
+	druid 1000
+	paladin 1000
+	ranger 1000
+	barbarian 2000
+	spellfilcher 1550
+	bard 1000
+	knight 0
+~
+statmod_QU 25
+statmod_PR 20
+statmod_EM 15
+statmod_IN 15
+statmod_CO 15
+statmod_AG 20
+statmod_SD 10
+statmod_ME 5
+statmod_RE 15
+start_hp 5
+max_hp 90
+low_size 45
+high_size 55
+recall_room 3000
+death_room 3
+min_height 42
+max_height 53
+min_weight 50
+max_weight 80
+food_vnum 201
+END
+
+name bat~
+language human~
+size tiny~
+aff 
+	flying
+	dark_vision~
+off 
+	dodge
+	fast~
+vuln 
+	light~
+form 
+	edible
+	animal
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	wings~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name bear~
+language human~
+size tiny~
+off 
+	berserk
+	disarm
+	crush~
+res 
+	bash
+	cold~
+form 
+	edible
+	animal
+	mountable
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	claws
+	fangs~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name bird~
+language human~
+size tiny~
+aff 
+	flying~
+off 
+	dodge
+	fast~
+res 
+	light~
+vuln 
+	fire~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name cat~
+language human~
+size tiny~
+aff 
+	dark_vision~
+off 
+	dodge
+	fast~
+form 
+	edible
+	animal
+	mountable
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	tail
+	claws
+	fangs~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name centipede~
+language human~
+size tiny~
+aff 
+	dark_vision~
+res 
+	pierce
+	cold~
+vuln 
+	bash~
+form 
+	edible
+	poison
+	animal
+	insect~
+parts 
+	head
+	legs
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name chicken~
+language human~
+size tiny~
+aff 
+	haste~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	eye
+	wings~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name deer~
+language human~
+size tiny~
+res 
+	disease~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name dog~
+language human~
+size tiny~
+off 
+	fast~
+form 
+	edible
+	animal
+	mountable
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	claws
+	fangs~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name doll~
+language human~
+size tiny~
+imm 
+	cold
+	poison
+	negative
+	holy
+	mental
+	disease
+	drowning~
+res 
+	bash
+	light~
+vuln 
+	slash
+	fire
+	lightning
+	acid
+	energy~
+form 
+	other
+	construct
+	biped
+	cold_blood~
+parts 
+	head
+	arms
+	legs
+	hands
+	feet
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name draconian~
+short_name Drac  ~
+language human~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+aff 
+	flying~
+res 
+	fire
+	cold
+	lightning
+	acid~
+vuln 
+	pierce~
+form 
+	edible
+	sentient
+	biped
+	reptile~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	long_tongue
+	wings
+	tail
+	claws
+	fangs
+	scales~
+points 25
+class_exp
+	mage 1250
+	cleric 1250
+	thief 1100
+	warrior 1000
+	druid 1250
+	paladin 1750
+	ranger 1000
+	barbarian 1500
+	spellfilcher 1750
+	bard 1000
+	knight 0
+~
+skills bash berserk claw~
+statmod_ST 15
+statmod_QU 5
+statmod_PR -5
+statmod_EM 10
+statmod_IN -5
+statmod_CO 10
+statmod_AG -5
+statmod_SD -5
+statmod_ME 5
+start_hp 12
+max_hp 200
+low_size 50
+high_size 70
+recall_room 27003
+death_room 4
+min_height 72
+max_height 84
+min_weight 250
+max_weight 350
+food_vnum 202
+END
+
+name dragon~
+short_name Dragon~
+language human~
+size giant~
+aff 
+	infrared
+	flying~
+res 
+	charm
+	bash
+	fire~
+vuln 
+	pierce
+	cold~
+form 
+	edible
+	sentient
+	mountable
+	reptile
+	dragon~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	wings
+	tail
+	claws
+	fangs
+	scales~
+points 40
+class_exp
+	mage 2000
+	cleric 2000
+	thief 2000
+	warrior 2000
+	druid 2000
+	paladin 2000
+	ranger 2000
+	barbarian 2000
+	spellfilcher 2000
+	bard 1000
+	knight 0
+~
+skills claw~
+statmod_ST 50
+statmod_QU -10
+statmod_PR 50
+statmod_EM 20
+statmod_IN 20
+statmod_CO 50
+statmod_AG -15
+statmod_SD -20
+statmod_ME 5
+statmod_RE 15
+start_hp 40
+max_hp 500
+low_size 50
+high_size 100
+recall_room 3000
+death_room 3
+END
+
+name drow~
+short_name Drow  ~
+language drow~
+flags 
+	creation_activated
+	pcrace
+	nightmap
+	regen_slow_in_light~
+size small~
+aff 
+	detect_magic
+	infrared
+	dark_vision~
+res 
+	magic~
+vuln 
+	light~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 21
+class_exp
+	mage 1000
+	cleric 1000
+	thief 1000
+	warrior 1050
+	druid 1400
+	paladin 1200
+	ranger 1500
+	barbarian 2500
+	spellfilcher 1300
+	bard 1000
+	knight 0
+~
+skills sneak hide~
+statmod_ST -5
+statmod_QU 15
+statmod_PR 5
+statmod_EM 5
+statmod_IN 5
+statmod_AG 20
+statmod_SD -15
+statmod_RE 10
+start_hp 10
+max_hp 100
+low_size 45
+high_size 55
+recall_room 27003
+death_room 4
+newbie_map_vnum 28
+min_height 60
+max_height 72
+min_weight 80
+max_weight 120
+food_vnum 203
+END
+
+name duergar~
+short_name Duergr~
+language dwarven~
+flags 
+	nightmap~
+size medium~
+aff 
+	infrared~
+res 
+	poison
+	mental
+	disease~
+vuln 
+	drowning
+	light~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 10
+class_exp
+	mage 1150
+	cleric 1100
+	thief 1000
+	warrior 1100
+	druid 1750
+	paladin 2250
+	ranger 1750
+	barbarian 1200
+	spellfilcher 1400
+	bard 1000
+	knight 0
+~
+skills sneak hide~
+statmod_QU 5
+statmod_PR -10
+statmod_EM -5
+statmod_IN -5
+statmod_CO 5
+statmod_AG 5
+statmod_SD 5
+statmod_ME 5
+statmod_RE 5
+start_hp 12
+max_hp 155
+low_size 35
+high_size 50
+recall_room 27003
+death_room 4
+min_height 36
+max_height 48
+min_weight 150
+max_weight 230
+END
+
+name dwarf~
+short_name Dwarf ~
+language dwarven~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+aff 
+	infrared~
+res 
+	poison
+	disease~
+vuln 
+	drowning~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 8
+class_exp
+	mage 1500
+	cleric 1000
+	thief 1250
+	warrior 1000
+	druid 1750
+	paladin 1150
+	ranger 1750
+	barbarian 1000
+	spellfilcher 1750
+	bard 1000
+	knight 0
+~
+skills berserk~
+statmod_ST 5
+statmod_QU -5
+statmod_PR -10
+statmod_EM -10
+statmod_CO 15
+statmod_AG -5
+statmod_SD 5
+start_hp 15
+max_hp 165
+low_size 35
+high_size 50
+recall_room 3000
+death_room 3
+min_height 36
+max_height 48
+min_weight 150
+max_weight 230
+food_vnum 204
+END
+
+name elf~
+short_name Elf   ~
+language elven~
+flags 
+	creation_activated
+	pcrace~
+size small~
+aff 
+	infrared~
+res 
+	charm~
+vuln 
+	iron~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 5
+class_exp
+	mage 1000
+	cleric 1250
+	thief 1000
+	warrior 1200
+	druid 1250
+	paladin 1300
+	ranger 1000
+	barbarian 1750
+	spellfilcher 1300
+	bard 1000
+	knight 0
+~
+skills sneak hide~
+statmod_QU 15
+statmod_PR 15
+statmod_EM 5
+statmod_AG 5
+statmod_SD -20
+statmod_ME 5
+start_hp 8
+max_hp 120
+low_size 40
+high_size 60
+recall_room 3000
+death_room 3
+min_height 60
+max_height 72
+min_weight 80
+max_weight 120
+food_vnum 205
+END
+
+name faerie~
+short_name Faerie~
+language faerie~
+flags 
+	creation_activated
+	pcrace
+	lowcost_launch~
+size small~
+aff 
+	detect_magic
+	flying~
+res 
+	magic
+	pierce
+	mental~
+vuln 
+	poison~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	wings~
+points 22
+class_exp
+	mage 1000
+	cleric 1150
+	thief 1400
+	warrior 1600
+	druid 1100
+	paladin 1800
+	ranger 1750
+	barbarian 2500
+	spellfilcher 2000
+	bard 1150
+	knight 0
+~
+skills meditation 'mana focusing' vanish~
+statmod_ST -10
+statmod_QU 30
+statmod_PR 20
+statmod_EM 15
+statmod_IN 15
+statmod_CO -10
+statmod_AG 30
+statmod_SD 15
+statmod_ME 15
+statmod_RE 15
+start_hp 4
+max_hp 70
+low_size 20
+high_size 50
+recall_room 3000
+death_room 3
+min_height 25
+max_height 40
+min_weight 20
+max_weight 50
+food_vnum 219
+END
+
+name fido~
+language human~
+size tiny~
+off 
+	dodge
+	assist_race~
+vuln 
+	magic~
+form 
+	edible
+	poison
+	animal
+	mountable
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	tail
+	fangs~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name fish~
+language human~
+size tiny~
+act 
+	noalign~
+aff 
+	haste
+	swim~
+imm 
+	drowning~
+form 
+	edible
+	sentient
+	fish~
+parts 
+	head
+	heart
+	brains
+	guts
+	eye
+	tail
+	scales~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name fox~
+language human~
+size tiny~
+aff 
+	dark_vision~
+off 
+	dodge
+	fast~
+form 
+	edible
+	animal
+	mountable
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	tail
+	fangs~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name frog~
+language human~
+size tiny~
+off 
+	dodge~
+imm 
+	poison
+	disease~
+vuln 
+	cold~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name giant~
+language human~
+size tiny~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name gnoll~
+short_name Gnoll ~
+language gnoll~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+res 
+	bash
+	cold
+	disease~
+vuln 
+	fire~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	tail~
+points 16
+class_exp
+	mage 1500
+	cleric 1300
+	thief 1250
+	warrior 1000
+	druid 1250
+	paladin 1750
+	ranger 1750
+	barbarian 1000
+	spellfilcher 2250
+	bard 1000
+	knight 0
+~
+skills berserk spear bash polearm~
+statmod_ST 20
+statmod_PR -5
+statmod_EM -5
+statmod_IN -5
+statmod_CO 30
+statmod_AG 5
+statmod_SD -20
+start_hp 15
+max_hp 200
+low_size 50
+high_size 70
+recall_room 27003
+death_room 4
+min_height 72
+max_height 84
+min_weight 220
+max_weight 320
+food_vnum 207
+END
+
+name gnome~
+short_name Gnome ~
+language gnomish~
+flags 
+	creation_activated
+	pcrace~
+size small~
+aff 
+	infrared~
+res 
+	magic
+	poison
+	disease~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 5
+class_exp
+	mage 1100
+	cleric 1200
+	thief 1000
+	warrior 1200
+	druid 2000
+	paladin 1750
+	ranger 1300
+	barbarian 2000
+	spellfilcher 2000
+	bard 1000
+	knight 0
+~
+statmod_ST -5
+statmod_QU -5
+statmod_PR -5
+statmod_EM 15
+statmod_IN -10
+statmod_CO 5
+statmod_SD 5
+statmod_ME 10
+statmod_RE 5
+start_hp 9
+max_hp 120
+low_size 30
+high_size 50
+recall_room 3000
+death_room 3
+min_height 30
+max_height 46
+min_weight 80
+max_weight 150
+food_vnum 208
+END
+
+name goblin~
+short_name Goblin~
+language goblin~
+size small~
+aff 
+	dark_vision~
+imm 
+	poison
+	disease~
+res 
+	negative~
+vuln 
+	fire
+	mental
+	drowning
+	light~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	claws~
+points 10
+class_exp
+	mage 2500
+	cleric 1750
+	thief 1000
+	warrior 1100
+	druid 2250
+	paladin 2000
+	ranger 2000
+	barbarian 1100
+	spellfilcher 1500
+	bard 1000
+	knight 0
+~
+skills 'dirt kicking' envenom orcish kobold~
+statmod_QU 15
+statmod_AG 10
+statmod_ME -5
+statmod_RE -5
+start_hp 13
+max_hp 140
+low_size 35
+high_size 55
+recall_room 27003
+death_room 4
+min_height 42
+max_height 60
+min_weight 70
+max_weight 200
+food_vnum 206
+END
+
+name golem~
+language human~
+size tiny~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name half-elf~
+short_name Hf-Elf~
+language human~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+aff 
+	infrared~
+res 
+	charm
+	poison~
+vuln 
+	iron~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 4
+class_exp
+	mage 1000
+	cleric 1000
+	thief 1000
+	warrior 1000
+	druid 1000
+	paladin 1000
+	ranger 1000
+	barbarian 1250
+	spellfilcher 1300
+	bard 1000
+	knight 0
+~
+statmod_ST 5
+statmod_QU 10
+statmod_PR 10
+statmod_CO 5
+statmod_AG 5
+statmod_SD -10
+start_hp 10
+max_hp 135
+low_size 45
+high_size 60
+recall_room 3000
+death_room 3
+min_height 54
+max_height 74
+min_weight 80
+max_weight 225
+food_vnum 218
+END
+
+name halfling~
+short_name Hfling~
+language halfling~
+flags 
+	creation_activated
+	pcrace~
+size small~
+aff 
+	infrared~
+res 
+	magic
+	poison
+	disease~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 8
+class_exp
+	mage 1500
+	cleric 1500
+	thief 1000
+	warrior 1000
+	druid 1250
+	paladin 2000
+	ranger 2000
+	barbarian 2500
+	spellfilcher 1400
+	bard 1000
+	knight 0
+~
+skills sneak hide~
+statmod_ST -10
+statmod_QU 20
+statmod_PR -15
+statmod_EM -5
+statmod_CO 20
+statmod_AG 20
+statmod_SD -10
+start_hp 8
+max_hp 110
+low_size 30
+high_size 50
+recall_room 3000
+death_room 3
+min_height 24
+max_height 48
+min_weight 40
+max_weight 100
+food_vnum 210
+END
+
+name half-orc~
+short_name Hf-Orc~
+language human~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+aff 
+	infrared~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 6
+class_exp
+	mage 1500
+	cleric 1250
+	thief 1000
+	warrior 1000
+	druid 2000
+	paladin 1750
+	ranger 1750
+	barbarian 1000
+	spellfilcher 2000
+	bard 1000
+	knight 0
+~
+skills berserk~
+statmod_ST 15
+statmod_PR -5
+statmod_EM -5
+statmod_IN -10
+statmod_CO 10
+statmod_SD -5
+statmod_ME -5
+start_hp 12
+max_hp 170
+low_size 50
+high_size 65
+recall_room 27003
+death_room 4
+min_height 68
+max_height 80
+min_weight 160
+max_weight 310
+food_vnum 209
+END
+
+name hobgoblin~
+language human~
+size tiny~
+aff 
+	infrared~
+res 
+	poison
+	disease~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	tusks~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name horse~
+language human~
+size tiny~
+off 
+	fast
+	kick~
+form 
+	edible
+	animal
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	tail
+	fangs~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name human~
+short_name Human ~
+language human~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+class_exp
+	mage 1000
+	cleric 1000
+	thief 1000
+	warrior 1000
+	druid 1000
+	paladin 1000
+	ranger 1000
+	barbarian 1000
+	spellfilcher 1300
+	bard 1000
+	knight 0
+~
+statmod_ST 5
+statmod_AG 5
+start_hp 10
+max_hp 150
+low_size 45
+high_size 60
+recall_room 3000
+death_room 3
+min_height 54
+max_height 80
+min_weight 80
+max_weight 300
+food_vnum 211
+END
+
+name insect~
+language human~
+size tiny~
+act 
+	no_tame
+	noalign
+	noautosocial~
+off 
+	fast~
+imm 
+	mental~
+vuln 
+	bash~
+form 
+	edible
+	insect~
+parts 
+	head
+	guts~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name kobold~
+short_name Kobold~
+language kobold~
+flags 
+	creation_activated
+	pcrace~
+size small~
+aff 
+	infrared
+	dark_vision~
+res 
+	pierce
+	poison~
+vuln 
+	energy
+	mental
+	light~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	claws~
+points 10
+class_exp
+	mage 2500
+	cleric 2000
+	thief 1000
+	warrior 1000
+	druid 2000
+	paladin 2000
+	ranger 2000
+	barbarian 1250
+	spellfilcher 2000
+	bard 1000
+	knight 0
+~
+skills sneak hide steal human gouge~
+statmod_ST -10
+statmod_QU 20
+statmod_CO 5
+statmod_AG 10
+statmod_ME -5
+statmod_RE -5
+start_hp 12
+max_hp 140
+low_size 30
+high_size 50
+recall_room 27003
+death_room 4
+min_height 24
+max_height 36
+min_weight 40
+max_weight 90
+food_vnum 212
+END
+
+name lizard~
+language human~
+size tiny~
+res 
+	poison~
+vuln 
+	cold~
+form 
+	edible
+	animal
+	mountable
+	reptile
+	cold_blood~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	eye
+	tail
+	fangs~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name lizardman~
+short_name Lzrdmn~
+language lizardman~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+res 
+	bash
+	disease~
+vuln 
+	cold~
+form 
+	edible
+	sentient
+	biped
+	reptile~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	long_tongue
+	tail
+	scales~
+points 15
+class_exp
+	mage 2500
+	cleric 1750
+	thief 1100
+	warrior 1000
+	druid 2000
+	paladin 1750
+	ranger 1250
+	barbarian 1000
+	spellfilcher 2000
+	bard 1000
+	knight 0
+~
+skills 'enhanced damage' spear claw sword~
+statmod_ST 15
+statmod_QU 15
+statmod_PR -5
+statmod_EM -5
+statmod_IN -5
+statmod_CO 15
+statmod_AG 15
+statmod_SD -5
+statmod_ME -5
+statmod_RE -5
+start_hp 12
+max_hp 170
+low_size 45
+high_size 65
+recall_room 27003
+death_room 4
+min_height 72
+max_height 84
+min_weight 200
+max_weight 250
+food_vnum 213
+END
+
+name minotaur~
+short_name Mintur~
+language human~
+flags 
+	creation_activated
+	pcrace~
+size large~
+aff 
+	detect_hidden
+	infrared~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	long_tongue
+	tail
+	horns
+	scales~
+points 20
+class_exp
+	mage 2500
+	cleric 2000
+	thief 2250
+	warrior 1000
+	druid 2250
+	paladin 1750
+	ranger 1500
+	barbarian 1000
+	spellfilcher 2250
+	bard 1000
+	knight 0
+~
+skills 'enhanced damage' bash gore~
+statmod_ST 20
+statmod_PR -5
+statmod_CO 15
+statmod_ME -5
+statmod_RE -5
+start_hp 16
+max_hp 185
+low_size 50
+high_size 70
+recall_room 27003
+death_room 4
+min_height 84
+max_height 92
+min_weight 300
+max_weight 400
+food_vnum 214
+END
+
+name Mist~
+short_name mist~
+language human~
+remort_number 3
+flags 
+	nightmap~
+size large~
+aff 
+	sanctuary
+	otterlungs
+	flying
+	pass_door
+	haste
+	dark_vision
+	regeneration~
+imm 
+	magic
+	weapon~
+form 
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	brains
+	hands
+	feet
+	ear
+	eye
+	claws~
+points 15
+class_exp
+	mage 1000
+	cleric 1000
+	thief 1000
+	warrior 1000
+	druid 1000
+	paladin 1000
+	ranger 1000
+	barbarian 1000
+	spellfilcher 1000
+	bard 1000
+	knight 0
+~
+statmod_ST 20
+statmod_QU 20
+statmod_PR 20
+statmod_EM 20
+statmod_IN 20
+statmod_CO 20
+statmod_AG 20
+statmod_SD 20
+statmod_ME 20
+statmod_RE 20
+start_hp 500
+max_hp 4000
+low_size 20
+high_size 70
+recall_room 55000
+min_height 1
+max_height 1000
+min_weight 1
+max_weight 1000
+END
+
+name modron~
+language human~
+size tiny~
+aff 
+	infrared~
+off 
+	assist_align
+	assist_race~
+imm 
+	charm
+	negative
+	holy
+	mental
+	disease~
+res 
+	fire
+	cold
+	acid~
+form 
+	sentient~
+parts 
+	head
+	arms
+	legs
+	hands
+	feet
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name mrem~
+short_name Mrem  ~
+language mremish~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+aff 
+	dark_vision~
+vuln 
+	sound~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	tail
+	claws
+	fangs~
+points 12
+class_exp
+	mage 1500
+	cleric 2500
+	thief 1100
+	warrior 1600
+	druid 1000
+	paladin 2500
+	ranger 1000
+	barbarian 2000
+	spellfilcher 1700
+	bard 1000
+	knight 0
+~
+skills sneak hide claw dodge~
+statmod_ST 5
+statmod_QU 30
+statmod_EM 5
+statmod_IN -20
+statmod_CO -5
+statmod_AG 25
+statmod_SD -10
+statmod_ME 5
+statmod_RE 5
+start_hp 8
+max_hp 130
+low_size 45
+high_size 60
+recall_room 3000
+death_room 3
+min_height 56
+max_height 74
+min_weight 80
+max_weight 170
+food_vnum 215
+END
+
+name orc~
+short_name Orc   ~
+language orcish~
+flags 
+	creation_activated
+	pcrace~
+size medium~
+aff 
+	infrared~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 8
+class_exp
+	mage 1500
+	cleric 1250
+	thief 1200
+	warrior 1000
+	druid 2000
+	paladin 1750
+	ranger 1750
+	barbarian 1000
+	spellfilcher 2250
+	bard 1000
+	knight 0
+~
+skills berserk mace bash~
+statmod_ST 20
+statmod_PR -5
+statmod_EM -5
+statmod_IN -5
+statmod_CO 20
+statmod_SD -5
+statmod_ME -5
+statmod_RE -5
+start_hp 13
+max_hp 220
+low_size 50
+high_size 70
+recall_room 27003
+death_room 4
+newbie_map_vnum 28
+min_height 72
+max_height 84
+min_weight 200
+max_weight 320
+food_vnum 216
+END
+
+name other~
+short_name Other ~
+language human~
+size medium~
+aff 
+	infrared
+	flying~
+imm 
+	light~
+res 
+	charm
+	bash
+	fire~
+vuln 
+	pierce
+	cold~
+form 
+	edible
+	sentient
+	mountable
+	reptile
+	dragon~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	wings
+	tail
+	claws
+	fangs
+	scales~
+points 40
+class_exp
+	mage 2000
+	cleric 2000
+	thief 2000
+	warrior 2000
+	druid 2000
+	paladin 2000
+	ranger 2000
+	barbarian 2000
+	spellfilcher 2000
+	bard 0
+	knight 0
+~
+statmod_ST 60
+statmod_PR 50
+statmod_EM 20
+statmod_IN 20
+statmod_CO 50
+statmod_AG 25
+statmod_SD 20
+statmod_ME 10
+statmod_RE 20
+start_hp 40
+max_hp 500
+low_size 50
+high_size 100
+recall_room 3000
+death_room 3
+END
+
+name owl~
+language human~
+size tiny~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name pig~
+language human~
+size tiny~
+form 
+	edible
+	animal
+	mountable
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name rabbit~
+language human~
+size tiny~
+off 
+	dodge
+	fast~
+form 
+	edible
+	animal
+	mountable
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name school monster~
+language human~
+size tiny~
+act 
+	noalign~
+imm 
+	summon
+	charm~
+vuln 
+	magic~
+form 
+	edible
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	tail
+	claws~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name snake~
+language human~
+size tiny~
+res 
+	poison~
+vuln 
+	cold~
+form 
+	edible
+	animal
+	reptile
+	snake
+	cold_blood~
+parts 
+	head
+	heart
+	brains
+	guts
+	eye
+	long_tongue
+	tail
+	fangs
+	scales~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name song bird~
+language human~
+size tiny~
+aff 
+	flying~
+off 
+	dodge
+	fast~
+form 
+	edible
+	animal
+	bird~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	eye
+	wings~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name sylvan~
+short_name sylvan~
+language elven~
+remort_number 1
+flags 
+	nightmap~
+size medium~
+aff 
+	infrared
+	dark_vision~
+off 
+	dodge~
+res 
+	charm
+	poison~
+vuln 
+	acid
+	disease~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+points 10
+class_exp
+	mage 1000
+	cleric 1000
+	thief 1000
+	warrior 1000
+	druid 1000
+	paladin 1000
+	ranger 1000
+	barbarian 1000
+	spellfilcher 1000
+	bard 1000
+	knight 0
+~
+skills sneak hide forage~
+statmod_ST 10
+statmod_QU 5
+statmod_PR 20
+statmod_EM 5
+statmod_IN 10
+statmod_CO -10
+statmod_AG 15
+statmod_SD -20
+start_hp 10
+max_hp 150
+low_size 40
+high_size 60
+recall_room 3014
+min_height 200
+min_weight 80
+max_weight 150
+END
+
+name troll~
+short_name Troll ~
+language trollish~
+flags 
+	creation_activated
+	pcrace~
+size large~
+aff 
+	regeneration~
+res 
+	bash~
+vuln 
+	fire
+	acid~
+form 
+	edible
+	poison
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	claws
+	fangs~
+points 18
+class_exp
+	mage 2500
+	cleric 1700
+	thief 1700
+	warrior 1600
+	druid 1250
+	paladin 2200
+	ranger 1100
+	barbarian 1000
+	spellfilcher 2000
+	bard 2000
+	knight 0
+~
+skills 'enhanced damage' berserk 'fast healing' bash~
+statmod_ST 30
+statmod_QU -15
+statmod_PR -10
+statmod_EM 5
+statmod_CO 30
+statmod_AG -10
+statmod_SD -10
+statmod_ME -5
+statmod_RE -5
+start_hp 20
+max_hp 235
+low_size 50
+high_size 70
+recall_room 27003
+death_room 4
+min_height 75
+max_height 95
+min_weight 350
+max_weight 425
+food_vnum 220
+END
+
+name turtle~
+language human~
+size tiny~
+aff 
+	slow~
+off 
+	parry~
+res 
+	bash~
+vuln 
+	cold~
+form 
+	edible
+	sentient
+	amphibian
+	cold_blood~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name undefined race~
+language human~
+size tiny~
+class_exp
+	mage 1000
+	cleric 1000
+	thief 1000
+	warrior 1000
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name unicorn~
+language human~
+size tiny~
+aff 
+	detect_evil
+	detect_invis
+	detect_hidden
+	sanctuary
+	protect_evil
+	regeneration~
+off 
+	fast
+	kick~
+imm 
+	summon
+	charm
+	negative
+	disease
+	drowning~
+form 
+	edible
+	animal
+	mountable
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	ear
+	eye
+	tail
+	fangs~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name unique~
+language human~
+size tiny~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name voadkyn~
+short_name Voadkn~
+language elven~
+flags 
+	creation_activated
+	pcrace~
+size large~
+aff 
+	infrared~
+form 
+	edible
+	sentient
+	biped
+	mammal~
+parts 
+	head
+	arms
+	legs
+	heart
+	brains
+	guts
+	hands
+	feet
+	fingers
+	ear
+	eye
+	long_tongue
+	tail
+	scales~
+points 12
+class_exp
+	mage 2000
+	cleric 2000
+	thief 2500
+	warrior 1200
+	druid 1500
+	paladin 1000
+	ranger 1000
+	barbarian 1200
+	spellfilcher 1700
+	bard 1000
+	knight 0
+~
+skills sneak~
+statmod_ST 20
+statmod_PR -10
+statmod_IN 10
+statmod_AG 10
+statmod_SD -10
+start_hp 10
+max_hp 190
+low_size 50
+high_size 75
+recall_room 3000
+death_room 3
+min_height 108
+max_height 120
+min_weight 650
+max_weight 750
+food_vnum 217
+END
+
+name water fowl~
+language human~
+size tiny~
+aff 
+	flying
+	swim~
+res 
+	drowning~
+form 
+	edible
+	animal
+	bird~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	feet
+	eye
+	wings~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name wolf~
+language human~
+size tiny~
+aff 
+	dark_vision~
+off 
+	dodge
+	fast~
+form 
+	edible
+	animal
+	mountable
+	mammal~
+parts 
+	head
+	legs
+	heart
+	brains
+	guts
+	ear
+	eye
+	tail
+	fangs~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 1
+END
+
+name wyvern~
+short_name wyvern~
+language unknown~
+flags 
+	dynamically_generated~
+size medium~
+class_exp
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+	knight 0
+~
+start_hp 10
+max_hp 150
+low_size 20
+high_size 70
+recall_room 2
+death_room 2
+END
+
+EOF~

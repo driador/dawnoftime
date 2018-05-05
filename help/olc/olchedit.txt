@@ -1,0 +1,74 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword OLC-HEDIT. HEDIT~
+helpflags builder wordwrapped~
+category olc:hedit~
+see_also DAWNFTP HELPLIST HLIST~
+text Hedit is the command used to create and edit help entries.  To get into 
+hedit mode, type `Yhedit <help_entry> `=?or simply typing `Yhedit`=? will show you 
+the proper syntax.  Once in hedit mode, type `Ycommands`=? to get a list of 
+available commands.`+
+`+
+`=lSyntax: `=?addkey <keywords>`+
+`=?  ADDKEY will add keywords for accessing the help entry`+
+`+
+`=lSyntax: `=?rekey <keywords>`+
+`=?  Keywords are what you name your help entry with. REKEY will delete all`+
+`=?  previous keywords and add the new keywords.`+
+`+
+`=lSyntax: `=?file <helpfile>`+
+`=?  FILE will move the helpentry into the designated file`+
+`=?  A list of all the help files can be seen using the `Yhlist`=? command`+
+`=?  with no parameter (more info on hlist lower).  The higher a helpfile `+
+`=?  is in hlist, the higher the search prority for help entries it contains.`+
+`+
+`=lSyntax: `=?text`+
+`=?  Typing TEXT will bring you into the description editor.  Once inside, `+
+`=?  edit the text file as you would a long description.`+
+`+
+`=lSyntax: `=?level <#>`+
+`=?  LEVEL will set the access level of the help entry.  A level of 0 would be`+
+`=?  readable at creation, a level of -1 would be not show the keywords in `+
+`=?  the helpentry header.`+
+`+
+`=lSyntax: `=?flags <noble|nsupport|builder>`+
+`=?  Flags will set the help entry so only a select group of people can`+
+`=?  read the entry.  An example is noble help on mooting people.`+
+`+
+`=lSyntax: `=?show`+
+`=?  SHOW will display the helpfile you are working on with`+
+`=?  keywords, level, and some text.  Hitting return will work as the same.`+
+`+
+`=lSyntax: `=?remove confirm`+
+`=?  REMOVE will flag the entry currently being edited for removal... removal`+
+`=?  is achieved by resaving the helpfile without the flagged entry.  Next`+
+`=?  hotreboot the helpfile will be gone.  An entry is still available using`+
+`=?  the help command while flagged for removal... it is listed with a red`+
+`=?  note indicating it is about to be removed in helplist.`+
+`=?  There are 2 features built in to the help editing system allow the `+
+`=?  restoration of an accidentally removed help entry.  If the mud hasn't`+
+`=?  rebooted since the item was flagged for removal, it can be restored`+
+`=?  using 'remove restore' in hedit.  If this is not the case, the contents`+
+`=?  can be manually restored from the removal dump file by an admin... this`+
+`=?  file is usually called admin/rem_help.txt.`+
+`+
+`=lSyntax: `=?hlist <helpfile>`+
+`=?  HLIST will list all available helpfile text files.  Enter the name of a`+
+`=?  helpfile, and you can see which entries are stored in it.`+
+`+
+`BSynxax: `=?hedit create <helpfile>`+
+`=?  This will create a new helpentry in the designated helpfile with name:`+
+`=?  new_entry_<creators_name>`+
+ 
+~
+END
+
+category undefined~
+END
+
+EOF~
+#$

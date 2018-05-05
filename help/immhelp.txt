@@ -1,0 +1,781 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword CRANK-IMM CLANRANKS-IMM~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also CRANK~
+immsee_also CLANLIST~
+text `=lSyntax:`=?     crank <clan name>  Lists the ranks within your clan.  If you 
+are an immortal crank will take an argument, that being a clan name, so you 
+can view the ranks of any clan.  Use the clans short name as listed in help 
+clan-list. 
+~
+END
+
+keyword CLANLIST CLIST~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+immsee_also CRANK-IMM~
+text `=lSyntax: `=?clanlist`+
+`+
+This command lists all clans within the game and specific info relating to 
+them, including Top Rank, Whoname, and Recall point.`+
+
+~
+END
+
+keyword PREFIX~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `=? `=lSyntax:`=? prefix <argument> `=lSyntax:`=? prefix The PREFIX command will take 
+an argument of any legal command and place that argument at your prompt and 
+await for addition or execution.  Typing PREFIX without an argument will 
+clear your prefix. 
+~
+END
+
+keyword BREAKTELL~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `#`=lSyntax:`^  breaktell <playername> `+
+    `#`BOr:`^  breaktell all `+
+`+
+This command enables you to disconnect the reply and retell connections any 
+player may have on you.  The all option disconnects this reply and retell 
+link for all those that can not see you on the wholist. 
+~
+END
+
+keyword CASTATLEVEL~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `=lSyntax:`=? castatlevel <lvl#> <spellname> <target>`+
+`+
+This command enables immortals to cast a spell at a level many times higher 
+or lower than their natural level.  Your level is unchanged when using this 
+command, so there is no chance of being killed if you cast an aggresive 
+spell at a low level.`+
+`+
+The level range is from 1 to about three times your level.`+
+
+~
+END
+
+keyword AMAP FULLMAP MAPNUM~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also SCALEMAP SCALEMXP AREAMAP~
+text `=lSyntax:`=? amap`+
+`=lSyntax:`=? fullmap`+
+`=lSyntax:`=? mapnum`+
+`+
+These commands made up the original mapping system which was not line of 
+sight based and breaks horribly on non grid perfect areas.  The commands 
+were never removed because one day they may be useful for something.`+
+`+
+Since the development of these commands, scalemap, scalemxp and areamap have 
+been written which produce much more attractive results.`+
+ 
+~
+END
+
+keyword LASTONSTATS MUDCLIENTSTATS~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also RACESTATS CLASSSTATS ALIGNSTAT~
+text `=lSyntax:`=? lastonstats`+
+`+
+Lastonstats displays a number of statistics about the playerbase.  This 
+information is generated entirely based on the active players recorded in 
+laston.  Active players are players which are over level 5 who have logged 
+on in the last week.`+
+`+
+Subsets of the information displayed in lastonstats are available to the 
+players using the racestats, classtats and alignstat commands.`+
+`+
+`=lSyntax:`=? mudclientstats`+
+`+
+Mudclientstats displays information about the mud clients used to connect to 
+the mud which is also recorded in laston.  This information is obtained by 
+clients which identify themselves to dawn using the MXP version facility or 
+the telnet suboption terminal type system.`+
+ 
+~
+END
+
+keyword ATELL KTELL~
+title Immortal Only Tell Commands~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also TELL~
+immsee_also BREAKTELL~
+text `=lSyntax:`=? atell <player> <message>`+
+`+
+atell is short for annoymous tell.  It is used to send a tell to a player 
+even while whovisible.  The player when receiving your tell will see it as 
+though it came from 'someone'.  If they reply to the tell and you use retell 
+the entire conversation will remain annoymous.  The equivilent of an atell 
+can be achieved using the normal tell command if you were to go whoinvis, 
+send a single tell, then go whovis.  There is no real in using atell over 
+tell if you are already whoinvis.`+
+`+
+You can use breaktell straight after sending a player an atell to prevent 
+them replying to you. `+
+`+
+`+
+`=lSyntax:`=? ktell <player> <message>`+
+`+
+ktell is short for known tell.  It is effectively the opposite of atell.  It 
+can be used to send a tell to a player while whoinvis in such a way that 
+your name is known to that player.  The player when receiving your tell will 
+see it as though it came from you even though they wont be able to see you 
+on the who list.  The equivilent of an ktell can be achieved using the 
+normal tell command if you were to go whovis, send a single tell, then go 
+whoinvis.  There is no benefit in using ktell over tell if you are already 
+whovis.`+
+  
+~
+END
+
+keyword CHECKCOMMANDS CHECKBUG CHECKCLANBANK CHECKCODE CHECKMULTILOG CHECKMOBLOG CHECKNTALK CHECKNEWBIE CHECKNSUP CHECKOOC CHECKTYPOS CHECKLOG CHECKDEAD CHECKIRC~
+title Immortal Check Commands~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also WIZHELP MOBLOG~
+text There are a number of immortal commands starting with the word 'check'.  You 
+can see the complete list by typing `=Cwizhelp check`=?.  The general rule for 
+these commands is they display the most recent output of a logged file or 
+the contents of a directory on the disk.`+
+`+
+An example of a command which displays the most recently logged information 
+from a logfile is `=Ccheckntalk`=?.  This command displays the logged use of the 
+ntalk command.  Typing checkntalk by itself will display the last 10 lines 
+of text transmitted over the ntalk channel.  You can also specify the number 
+of lines back into a log you want to see.  E.g. 'checkntalk 30' would 
+display the last 30 said on ntalk.  Obviously this could become overloading, 
+as a result, the check commands limit the output to upto 40 lines.  What 
+this means is if you attempt to look more than 40 lines back into a log, you 
+will see upto 40 lines starting back how far you specify... e.g. if you type 
+checkntalk 70... the mud will display lines 70 thru 30 from the end of the 
+log file.  Generally you are unable to look back beyond line 20000 in a log 
+file (assuming that many lines are logged). `+
+`+
+`=U  Check commands supporting the number of lines argument:`=?`+
+`=lSyntax:`=? checkbug      - look into the bugs log.`+
+`=lSyntax:`=? checkclanbank - look at the clanbanking records.`+
+`=lSyntax:`=? checkcode     - look into the coding log.`+
+`=lSyntax:`=? checkmultilog - look at recorded multilogging events`+
+`=lSyntax:`=? checkmoblog   - look at the `=_moblog output`+
+`=lSyntax:`=? checkntalk    - look into the ntalk log.`+
+`=lSyntax:`=? checknewbie   - look into the newbie channel log.`+
+`=lSyntax:`=? checknsup     - look into the newbie support tell log.`+
+`=lSyntax:`=? checkooc      - look into the ooc channel log.`+
+`=lSyntax:`=? checktypos    - look into the typos log.`+
+`+
+`=lSyntax:`=? checklog  [player] - look at a logged players logfile.  If you 
+don't specify the name checklog lists all player logfiles in date order.`+
+`+
+`=U  Check commands looking at files on the disk:`=?`+
+`=lSyntax:`=? checkdead - list all pfiles stored in the dead directory.`+
+`=lSyntax:`=? checkirc - used to read irc logs... not active by default.`+
+`+
+`=U  Other check commands documented elsewhere:`=?`+
+`=_checkbalance, `=_checkban, `=_checkexits`+
+`+
+Note: Not all checkcommands listed in this help will be available to lower 
+level immortals.`+
+ 
+~
+END
+
+keyword CWHERE~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also MWHERE IWHERE OWHERE~
+text `=lSyntax:`=? cwhere`+
+`+
+Cwhere is short for 'corpse where'... its output displays all player corpses 
+in the game.  Depending on the colour of the corpse listed determines its 
+status.`+
+`gGreen`=? pc corpses are empty.`+
+`RRed`=? pc corpses contain objects and is not being carried by anyone.`+
+`BBlue`=? pc corpses are being carried by someone (and contain objects).`+
+`+
+If are corpse is being carried by a player, cwhere will tell you who is 
+carrying it.`+
+ 
+~
+END
+
+keyword MPDUMP MPSTAT~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also MPSHOW MSHOW~
+text `=lSyntax:`=? mpdump <mobprog vnum>`+
+`=lSyntax:`=? mpstat <mob with mobprog>`+
+`+
+mpdump is an old command originally used to display a mobprog of a 
+particular vnum.  The command has actually been superceeded by the olc 
+mpshow command which displays more information.`+
+`+
+mpstat displays the mobprog status on a given mob.  Most of the information 
+shown here can be seen using the olc mshow command.`+
+
+~
+END
+
+keyword INOTE PENALTY ANOTE~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also NOTES~
+text Inote, anote and penalty are immortal/admin only note spools.  The use of 
+these commands is exactly like the standard note spools other than the fact 
+that they are imm/admin only. 
+~
+END
+
+keyword TJUNK~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also TOKENS MOBHELP~
+text `=?Syntax:`=? tjunk <tokennumber> <person>`+
+`=?Syntax:`=? tjunk all.<tokennumber> <person>`+
+`+
+These are immortal versions of the mobprog token junk commands.  They are 
+used to purge tokens on players/mobs.`+
+`+
+Type `=Cmobhelp tjunk`=? for futher information.`+
+ 
+~
+END
+
+keyword NPCINFO~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `=lSyntax:`=? npcinfo`+
+`+
+Npcinfo displays statistics on all mobs in the game.  Giving a breakdown of 
+the total different races in use and how they are distributed thru the areas 
+in the realm.`+
+
+~
+END
+
+keyword SEDIT SSHOW SPSKLIST~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also -CLASS~
+text `=lSyntax:`=? spsklist`+
+`+
+Displays a list of spells and skills grouped into categories.`+
+`+
+`=lSyntax:`=? sedit <spell/skill>`+
+`=lSyntax:`=? sedit create <spell>`+
+`+
+sedit is the olc editor used to edit a number of properties stored with 
+spells and skills.  Sedit can modify the mana, damage type, lag (4 beats per 
+second), realms, spheres, elements & seasons and spell function orientated 
+with a spell.   Sedit configures global properties of a spell/skill.  The 
+class command can be used to configure the level at which a class can get a 
+spell/skill.  See help `=_-class for more on that.`+
+`+
+Sedit can also be used to create spells which are aliased versions of 
+existing c++ spell functions.  This involves using sedit create, then 
+setting the spell function accordingly. `+
+`+
+`=lSyntax:`=? sedit <spell/skill>`+
+`+
+sshow displays the 'show' screen of the sedit olc editor.`+
+ 
+~
+END
+
+keyword TESTYELL~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `#`=lSyntax:`^ testyell`1This command shows how far a yell will go.`+
+`+
+Example:  Room vnum = 3000`+
+          Yellindex=455`+
+          Yell_enteredindir=0`+
+          Yell_amplitude=24.116692`+
+`+
+This command was used during the initial development of the yelling system.`+
+`+
+For lack of a place to put other testing information, testyell also includes 
+testing code relating to MSP, DawnFTP and the colour system.`+
+ 
+~
+END
+
+keyword REVERSE~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `=lSyntax:`=? reverse <text to say backwards>`+
+`+
+Reverse was just a language created for fun, it reverses the order of what 
+ever you say, making each word spelt backwards.`+
+
+~
+END
+
+keyword SEEVNUM~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also HOLYVNUM~
+text `=lSyntax:`=? seevnum <command>`+
+`+
+Seevnum has the affect of turning on `=_holyvnum for the duration of the 
+command.  Most people prefer to have `=_holyvnum on all the time.  But for the 
+few that don't they are able to turn it on temporarily... e.g. `=Cseevnum 
+look`=?`+
+
+~
+END
+
+keyword SETRACE~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `=lSyntax:`=? setrace <racename>`+
+`+
+The setrace command is used to change your own race quickly in order to test 
+mobprogs etc.  You can not change the race of others with this command.`+
+
+~
+END
+
+keyword ADDSCRIPT LISTSCRIPT RUNSCRIPT~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `=lSyntax:`=? addscript <script> [immortal name]`+
+`=lSyntax:`=? listscript`+
+`=lSyntax:`=? runscript <script to run>`+
+`+
+The runscript command is used to execute scripts stored on the file system 
+in the scripts directory.  The scripts have to be setup using the addscript 
+command.  You can list all scripts that have been setup using the listscript 
+command.`+
+`+
+Example uses of scripts include triggering a script which emails a backup of 
+the area files to the head builder without giving them site access.  Another 
+script could email a backup of the player files to the imp without requiring 
+the imp to go into the shell etc.`+
+ 
+~
+END
+
+keyword TELNETGA~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `=lSyntax:`=? telnetga`+
+`+
+TelnetGA is short for telnet Go Ahead.  Telnet Go Ahead is a telnet option 
+which is used to instruct a supporting telnet client where the prompt ends.  
+The system can be used with telnet clients that remove the prompt and 
+display it on a status bar.`+
+ 
+~
+END
+
+keyword SCALEMAP SCALEMXP AREAMAP~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+text `=lSyntax:`=? scalemap [range]`+
+`=lSyntax:`=? scalemxp [range]`+
+`=lSyntax:`=? areamap [range]`+
+`+
+Scalemap scans the rooms surrounding you to generate an ascii art type map 
+which represents the land surrounding you.  It is based on an extended form 
+of the automapper with extended range.  The mapper does not cross into areas 
+where the map scale changes.`+
+`+
+Scalemxp is an mxp enabled version of the scalemap with a few extra 
+features.  Firstly rooms a clickable, right clicking them will display 
+information about a selected room.  Secondly if the map is not grid perfect, 
+the scalemxp will show rooms which overlap in red.`+
+`+
+Areamap displays a map containing only rooms in the same area as you are 
+in... this command is very useful for determining the boundaries between 
+areas.`+
+     
+~
+END
+
+keyword CHECKBALANCE~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also CHECKCOMMANDS~
+text `=lSyntax:`=? checkbalance obj`+
+`+
+Checkbalance was written to help test the balance of items created within 
+the OLC interfaces of the dawn codebase.  Unfortunately it is uncompleted 
+and only currently checks objects.  The rules which it uses to check objects 
+are also dated and are generally not appropriate to every muds balance 
+guidelines. 
+~
+END
+
+keyword CHECKBAN BAN-EMAIL-EXAMPLE EMAIL-VERIFICATION~
+level 96
+helpflags wordwrapped~
+category command:immortal~
+see_also CHECKCOMMANDS~
+text `=lSyntax:`=? checkban <ip/host address of player as shown in sockets/laston>`+
+`+
+The checkban command is used to show you which if any of the ban matching 
+rules will match for a particular host.`+
+`+
+For example if you had a ban forcing email verification for all players 
+coming from aol.com.  If you typed `Ycheckban AC9HCFA4.ipt.aol.com`=? you would 
+expect to see something like the following:`+
+`+
+`S-===========================================================================--
+`=?`+
+==- CHECK BAN ON: 'AC9HCFA4.ipt.aol.com'`=?`+
+- Newbies: `Gallowed`x`+
+- Permit/Letgained check: `Gallowed`x`+
+- Email check: `Rdenied`x`+
+Ban #1`+
+`=t-========================== `=TBANEDIT SHOW `=t==========================-`+
+`x`=rSitemask:    '`=R*aol.com`+
+*msn.com`+
+*uunet.com`+
+`=r'`+
+IntendedPeople: `=R`N Email Verification System`+
+`=rEnabled: `=RTrue`+
+`=rPermanent: `=RTrue`+
+`=rType: `=Remail`+
+`=rban created on: `SSat May 25 12:05:00 2002`+
+`=rby: `SKalahn`x`+
+`=rReason: `=RTo require email verification for users from particular ISPs.`+
+`=rCustom disconnect message: `Snone`+
+`=rExpire date: `=Rnone`+
+`=ralways_allowed_email_masks: `=R`+
+exception1@hotmail.com`+
+goodplayer@hotmail.com`+
+anothergoodplayer@hotmail.com`+
+friend@yahoomail.com`+
+`=rallowed_email_masks: `=R`+
+*@aol.com`+
+*@msn.com`+
+*@uunet.com`+
+`=rdisallowed_email_masks: `=R`+
+badperson@aol.com`+
+idiot@msn.com`+
+`=rnote: disallowed_email_masks have a higher priority than allowed masks, if 
+a particular email addy matches the disallowed email mask, it will be denied 
+even if it matches the allowed mask also.  The only exception to this is if 
+the email address is on the always_allowed_email_masks list for this ban... 
+note the always allowed only applies to this particular ban... if the host 
+and email match a disallowed on another ban, it will be declined.`x`+
+`+
+`=rdisallowed_email_masks_message: `=R`+
+Access to this site has been denied!  Please contact the MUD Administration 
+for inquiries on why access is denied.`+
+`x- All: `Gallowed`x`+
+`S-===========================================================================--
+`=?`+
+ 
+~
+END
+
+keyword CHARNOTES EDITCHARNOTE~
+level 94
+helpflags wordwrapped~
+category command:immortal~
+see_also PINFO~
+text `=lSyntax:`=? charnotes <playername>`+
+`=lSyntax:`=? editcharnote <playername>`+
+`+
+The mud has the ability to store notes on each player that are saved with 
+their pfile.  These notes can be viewed by any immortal at any time using 
+the charnotes command.  Players with charnotes attached to them have a 
+yellow `Y-`=? beside their name in `=_pinfo`+
+`+
+Charnotes can be edited using the editcharnotes command.  
+~
+END
+
+keyword CHECKEXITS~
+level 94
+helpflags wordwrapped~
+category command:immortal~
+see_also CHECKCOMMANDS OLC-EXITS~
+text `=lSyntax:`=? checkexits area`+
+`=lSyntax:`=? checkexits all`+
+`+
+The checkexits command is used to check the linking of room exits with an 
+area and over the entire realm.  There are two types of linking errors 
+checkexits will detect.`+
+`+
+The first type of linking error is in the format:`+
+ 8200:S  ->  8201 has no  N exit, set 1way on  8200:S  or relink.`+
+`+
+In this particular example, this indicates that walking south from room 8200 
+will put you into room 8201.  But upon arriving in room 8201, you are unable 
+to walk north to get back to room 8200 since there is no north exit in room 
+8200.  If this unusual room linking is intentional (say in a maze area), you 
+should set the oneway flag on the exit to remove the error report in 
+checkexits.  The oneway flag in the above example would be set by typing 
+`=Credit 8200`=? followed by `=Csouth oneway`=? followed by `=Cdone`=?.`+
+`+
+The second type of linking error checkexits tests for is in the format:`+
+ 8205:N  ->  8200:S  -> 8201.`+
+`+
+This example shows that walking north from room 8205 would put you in room 
+8200.  Then walking south from there would put you in room 8201 (when you 
+would expect to be back in the starting room 8205).`+
+`+
+For any of the linking errors, they can be fixed by removing the incorrect 
+exits then recreating them... see help `=_olc-exits for more on this.`+
+ 
+~
+END
+
+keyword IMM-LASTON~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also LASTON~
+text `=lSyntax:`=? laston [options]`+
+`=lSyntax:`=? laston -?`+
+`+
+The immortal version of laston supports a lot of filtering options.  A list 
+of all these options can be displayed by typing "`=Claston -?`=?".`+
+`+
+The laston filtering options can be stacked, for example:`+
+`=Claston -c -r >5 <10 -x -a -f`=?`+
+Could be used to filter the laston database to display full (-f) records on 
+all (-a) characters between level 5 (>5) and 10 (<10).  Displaying their 
+class (-c) and race (-r) while numbering each match (-x).`+
+
+~
+END
+
+keyword GAMEEDIT SAVEGAMESET~
+title GameEdit - The Game Engine Parameter Editor~
+level 100
+helpflags wordwrapped~
+category command:immortal~
+text `=lSyntax:`=? gameedit confirm`+
+`+
+The gameedit command is used to access the olc editor for all the game 
+settings.`+
+`+
+There are a lot of settings which can be configured in the game editor, most 
+of which affect some aspect of the game engine.`+
+  `+
+Probably the most important setting in the gameeditor is the gamename.  This 
+is the name of your mud, and appears in the top of a number of commands 
+(e.g. mudstats, laston).  Once in the game editor, type `=Cgamename <your mud 
+name>`=? to set your gamename.`+
+`+
+A lot of dawn's vnums and parameters are not hard coded.  The values and 
+vnums which can be changed within gameedit can be viewed using the 
+`=Cshowvalues`=? command.  In addition these values can be modified using the 
+`=Cvalue`=? gameedit command.`+
+`+
+At this stage many options configurable within gameedit are undocumented... 
+they will most likely be documented in newer releases of the dawn codebase.`+
+`+
+Unlike all the other olc editors, changes in performed in gameedit do not 
+automatically save... they must be manually saved using the`=C savegameset 
+`=?command.  This command saves the gamesettings to gameset.txt located in the 
+same directory as the dawn executable binary.`+
+   
+~
+END
+
+keyword HOW-DAWN-WORKS~
+title How Dawn Works~
+level 92
+helpflags wordwrapped~
+category undefined~
+text This is based on a posted originally from the Dawn forums at 
+http://forums.dawnoftime.org/ by Kalahn in April 2003.`+
+`+
+The Dawn Codebase is written in C/C++, and is modular to a certain degree, 
+there is the core engine which drives the game, and various subcomponents 
+such as spells/skills which are hooked in in various places.`+
+`+
+Dawn is a very flexible mud codebase, and supports a significant amount of 
+customisation without requiring any programming knowledge (for example in 
+the olc editors).  If you are wanting major changes which can't be achieved 
+within the existing Dawn framework, you will need to modify the C/C++ source 
+code.`+
+`+
+If you are unfamilar with the C or C++ languages, it is very likely you will 
+need to do some background reading on the C language to help you get 
+orientated.  `+
+In order to understand how to hook your own features in, it helps to 
+understand how the core engine works (at least at a high level). `+
+`+
+======core engine======`+
+main() is located within comm.cpp, basically it boots up the mud loads in 
+the environment (system files, realm etc) then enters game_loop(). `+
+`+
+The core of game_loop() runs 4 times per second and does the following: `+
+- syncronise to a clock (to prevent it running more than 4 times per second) 
+`+
+- accept new TCP connections (people connecting) `+
+- disconnect connections in an network error state `+
+- process one queued command per player (unless speed walking, which does 2 
+movement commands - enabling speedwalkers to move 8 rooms per second instead 
+of 4 if using manual directions) `+
+- run update_handler() (more on this shortly) `+
+- send all queued output for all connections `+
+`+
+update_handler() is responsible for a lot of things including (but not 
+limited to): ticks, wandering mobs, combat, affects, weather messages, aggie 
+mobs, olc autosave and the mob queue system. `+
+====================== `+
+`+
+======user input====== `+
+game_loop() processes user input in various ways depending on the type of 
+connection and state the connection is in. When a connections state is 
+something other than CON_PLAYING (which is the state for logged in players) 
+all input is routed through nanny() in nanny.cpp. This handles creation and 
+redirects dawnftp transactions. `+
+`+
+If a player is fully logged, their connection state will be set to 
+CON_PLAYING and all input is directed interpret() - the only exception being 
+if they are in an olc editor, which means it is first handled by 
+run_olc_editor(). `+
+`+
+interpret() parses the user input using the cmd_table[] table to determine 
+which command a player is trying to use (you can see this table in 
+interp.cpp starting about 65 lines down). `+
+`+
+For example the first command in the cmd_table[] is "north"... so interp 
+matchs this with the user input and the player has access to that command, 
+the command function will be executed - do_north() in this case. A number of 
+attributes for entries in cmd_table[] are dynamically populated in at bootup 
+and can be edited using "comedit". `+
+`+
+Nearly all commands run via interpret() are prefixed with "do_"... this is 
+part of the coding style, not something that is enforced by a compiler. `+
+`+
+The "do_" functions are then stored in various files in the source, 
+depending on the type of commands... for example the act_*.cpp files, store 
+a number of do_ functions, act_obj.cpp typically stores do_ functions that 
+manipulate objects. act_wiz*.cpp are generally immortal commands. `+
+`+
+magic.cpp, contains do_cast() (and its variants) redirect to do_newcast()... 
+which is the core of the magic system. do_newcast looks up spells from 
+within skill_table[] and runs the spell function a simular was that commands 
+are located in cmd_table[]. skill_table[] is dynamically created at bootup 
+and can be edited using sedit. `+
+`+
+An example may make things clearer.. `+
+`+
+Lets take what is involved to cast the spell acid blast...(contained in the 
+function spell_acid_blast(). `+
+`+
+Lets assume a player is already connected, and logged in and has the spell 
+etc. `+
+The player types "cast 'acid blast' target", game_loop() recognises that 
+there is input waiting from the player connection, it redirects the input to 
+interpret() which finds there is a cast command... it then executes the 
+function for this command - do_cast(). do_cast() redirects to do_newcast() 
+which searchs skill_table[] for a spell called "acid blast", after finding 
+it and confirming it has a spell function set, it then executes the spell 
+function (Which is called spell_acid_blast() in this case), and that 
+function does what it is supposed to do. `+
+====================== `+
+`+
+Some other files in the source, some a pretty obvious: `+
+include.h - the main include file for the entire game. `+
+macros.h - a LOT of compiler macros used to save time. `+
+params.h - a LOT of hard coded limits and parameters are defined in here - 
+have a look. `+
+structs.h - almost all of the data structures used in the game. `+
+prototyp.h - function prototypes `+
+chardata.h - the definition of the char_data class. `+
+chardata.cpp - the implementation of the char_data class. `+
+act_move.cpp - functions to move players around (e.g. do_north()). `+
+*edit.cpp - olc editors e.g. aedit.cpp, comedit.cpp. `+
+colour.* - the colour system `+
+dynamics.* and dyntable.* - the core of code enabling classes and skills to 
+stored in text files. `+
+fight.cpp, duel.cpp - combat system and related code. `+
+ftp.cpp - dawnftp/mudftp implementation `+
+gio.cpp - the generic IO system - this is the heart of most of the muds 
+input and output. `+
+magic*.* contains all the spells `+
+global.h - global variables are defined in here using the "EXTERN" macro... 
+this macro is rewritten into "extern" in every file within the source code 
+other than global.cpp. In global.cpp it is renamed to "" so therefore the 
+variable is defined to be 'physically' stored in global.cpp. `+
+gsn.h - global skill/spell numbers `+
+handler.cpp - a heap of utility functions `+
+hreboot.* - the hotreboot system `+
+intro.* - the introduction system `+
+language.* - the language system `+
+mob_*.* - the mobprog engine and systems. `+
+msp.* - core msp libraries `+
+websvr.cpp - the integrated webserver implementation `+
+mud2web.cpp - support functions bridging websvr.cpp into the mud `+
+mob_q.cpp - the mobprog queuing system. `+
+mount.cpp - horse riding anyone? `+
+mxp.*- mxp library functions `+
+namegen.* the name generated accessed in creation `+
+nanny.cpp - handles non playing connections `+
+network.cpp - operating system specific low level network code `+
+noble.cpp - the noble system `+
+note.cpp - the notes system `+
+offmoot.cpp - offline mooting `+
+pipe.cpp - popen() and system() based commands. e.g. checklog, pipe. `+
+mem.cpp and recycle.cpp - memory management system `+
+resolve.* - dns resolver and ident related code `+
+save.cpp - this file saves pfiles `+
+socials.cpp - the socials system `+
+special.* - mob specials `+
+support.* - commands originally used by the dawn support council `+
+tables.* - a LOT of lookup tables - have a look. `+
+textsrch.* - the text search system `+
+tokens.* - the token system used by mobprogs `+
+track.* - the tracking system `+
+trap.* - traps perhaps? `+
+update.cpp - update_handler() and many functions it calls `+
+who.cpp - the core of the who engine `+
+whofmt.cpp - various display formats for different muds. `+
+wizlist.cpp - dynamic wizlist. `+
+`+
+In terms of starting out, I suggest adding a spell or two... that is 
+probably the easiest thing to start with. Work with little things, get them 
+reliable, then get more involved. `+
+`+
+- Kal, April 2003`+
+ 
+~
+END
+
+EOF~
+#$

@@ -1,0 +1,872 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Mekali Park~
+ShortName   Mekali Park~
+Builders    None~
+Credits     Reave~
+VNUMs       4400 4420
+LRange      1 6
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#4400
+Name goldfish~
+ShortD a goldfish~
+LongD A shimmering goldfish darts about the water.~
+Desc This small fish is bright shiny gold in color, and has big round eyes.  It 
+is swimming happily about the small pond.  
+~
+Race water fowl~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 100
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign~
+AffBy  swim~
+Off    fast~
+Imm    drowning~
+Res    bash disease~
+Vuln   cold~
+Form   edible animal sentient biped mammal fish~
+Part   head heart brains guts eye tail scales~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#4401
+Name park caretaker~
+ShortD the caretaker~
+LongD The park caretaker is here, tending to his work.~
+Desc This middle aged human man has a few days growth of beard, and is wearing 
+dirty clothing.  He appears to be responsible for taking care of the park.  
+~
+Race human~
+Align 2 2
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType punch
+AC 50 50 50 60
+Wealth 25
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#4402
+Name ferocious little badger~
+ShortD a ferocious little badger~
+LongD A ferocious little badger sits here, guarding its burrow. ~
+Desc This creature is small, but nvertheless looks quite tough.  It is glaring ar 
+you now, and baring its sharp teeth.  
+~
+Race rabbit~
+Align 0 0
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+4
+DamDice 1d7+1
+DamType bite
+AC 40 40 40 50
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#4403
+Name butterfly~
+ShortD a butterfly~
+LongD A butterfly flutters about from flower to flower.~
+Desc This gold and butterfly is flitting around, from flower to flower.  
+~
+Race song bird~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+0
+ManaDice 1d4+0
+DamDice 1d1+0
+DamType scratch
+AC 90 90 90 110
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped insect mammal~
+Part   head arms legs heart brains guts feet wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#4404
+Name bluebird bird~
+ShortD a bluebird~
+LongD A bluebird is perched here.~
+Desc This bird is mostly blue in color, but with a little black and white also.  
+~
+Race song bird~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+3
+DamDice 1d6+0
+DamType peck
+AC 70 70 70 80
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#4405
+Name small rabbit~
+ShortD a small rabbit~
+LongD A small rabbit is nibbling on a leaf here.~
+Desc This small rabbit is brown in color and is quite fluffly.  It sits here 
+nibbling on a leaf.  
+~
+Race rabbit~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+3
+DamDice 1d5+0
+DamType bite
+AC 70 70 70 90
+Wealth 0
+Act    npc stay_area noalign~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material flesh
+END
+
+#4406
+Name small brown sparrow bird~
+ShortD a small brown sparrow~
+LongD A small brown sparrow hops about here looking for seeds.~
+Desc This small brown bird is hopping about looking for a snack.
+~
+Race song bird~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d5+3
+DamDice 1d5+0
+DamType peck
+AC 80 80 80 100
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#4407
+Name black ant~
+ShortD a black ant~
+LongD A black ant is here, to ruin the picnic.~
+Desc This tiny black ant looks fairly harmless, though it can bite.
+~
+Race centipede~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+0
+ManaDice 1d4+0
+DamDice 1d1+0
+DamType bite
+AC 90 90 90 110
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  dark_vision~
+Off    dodge fast~
+Res    pierce cold~
+Vuln   bash~
+Form   edible poison animal sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#4408
+Name butterfly~
+ShortD a butterfly~
+LongD A butterfly flutters about from flower to flower.~
+Desc This gold and butterfly is flitting around, from flower to flower.  
+~
+Race song bird~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+0
+ManaDice 1d4+0
+DamDice 1d1+0
+DamType scratch
+AC 90 90 90 110
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying~
+Off    dodge fast~
+Form   edible animal sentient biped insect mammal~
+Part   head arms legs heart brains guts feet wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#4400
+Name nice little bench~
+Short a nice little bench~
+Desc A nice little bench.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 99999 BEHKN 105 105
+Weight 300
+Material wood~
+Extra    nodegrade~
+ExtraDesc nice little bench~
+A comfortable little bench sits along the path here.
+~
+End
+
+#4401
+Name garden rake~
+Short a garden rake~
+Desc A garden rake has been left here.~
+Level 1
+ItemType weapon~
+Cost 25
+Asize 60
+Rsize 50
+Values mace 1 6 beating 0
+Weight 15
+Material wood~
+Extra    nodegrade~
+Wear     take wield~
+ExtraDesc garden rake~
+A sturdy garden rake.
+~
+End
+
+#4402
+Name garden spade~
+Short a garden spade~
+Desc A garden spade has been left here.~
+Level 1
+ItemType weapon~
+Cost 23
+Asize 60
+Rsize 50
+Values dagger 1 5 pierce 0
+Weight 15
+Material shovel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ExtraDesc garden spade~
+A small metal spade, for digging in the garden.  
+~
+End
+
+#4403
+Name wheelbarrow~
+Short a wheelbarrow~
+Desc A wheelbarrow has been left here.~
+Level 0
+ItemType furniture~
+Cost 44
+Asize 0
+Rsize 50
+Values 1 9999 CFILO 95 95
+Weight 400
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take~
+ExtraDesc wheelbarrow ~
+A large container with wheels for moving heavy loads.
+~
+End
+
+#4404
+Name dirty coveralls~
+Short some dirty coveralls~
+Desc Some dirty coveralls have been left here.~
+Level 1
+ItemType clothing~
+Cost 32
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    nonmetal~
+Wear     take legs~
+ExtraDesc dirty coveralls~
+This dirty cotton piece of clothing has seen better days.  It is a bit 
+ragged in several places.  
+~
+End
+
+#4405
+Name broken rake handle~
+Short a broken rake handle~
+Desc A broken rake handle has been left here.~
+Level 5
+ItemType weapon~
+Cost 96
+Asize 0
+Rsize 50
+Values exotic 1 9 thrust 0
+Weight 19
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc broken rake handle~
+This long handle was broken off just before the metal end, and is now quite 
+sharp.  It could serve as a spear in a pinch.  
+~
+End
+
+#4406
+Name white marble statue skeel graceful woman flowing long hair~
+Short `#a `Wmarble statue`^ of a sleek graceful woman, with flowing long hair~
+Desc `#`gA`^ `#`Wmarble statue`^ `#`gof a sleek graceful woman, with long flowing hair.`^~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 100
+Values 10 50000 DGJQ 100 100
+Weight 10000
+Material marble~
+Extra    nonmetal nolocate nodegrade burnproof~
+ExtraDesc white marble statue sleek graceful woman flowing long hair~
+.
+The statue depicts a sleek graceful woman, with long flowing hair, sitting in a quaint garden. She is wearing a simple white gown, its subtle folds flow loosely behind her as if caught in a gentle breeze. A straw hat is cocked back on her head in a carefree manner. A small wicker basket is clutched in her hands, its brim overfilled with various wildflowers. her radiant face is turned towards the sky, a pleasant smile set firmly on her face. A small plaque is set into the base of the statue it reads:
+ 
+`W***********************************************************************
+`W*                                                                     *
+`W*    `cFarewell Hope, may our darkest hours be lit with your memory.    `W*
+`W*                                                                     *
+`W***********************************************************************
+~
+End
+
+#4407
+Name a pearl white rose~
+Short a pearl `#`Wwhite`^ rose~
+Desc A pearl `#`Wwhite`^ rose grows here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material plant~
+Extra    nodegrade~
+Wear     take~
+ExtraDesc pearl white rose~
+This rose blooms all along the sides of the cobblestone pathway.  Its petals 
+are a pearlish `W`#`W`#`Wwhite`^`X`^`^ `Xand glisten with a sense of radiance.  Almost holy in 
+nature it one seem, nonetheless your sure the cathedral is full of such 
+roses of this radiance.  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#4400
+Name Just Outside the Park Entrance~
+Desc A short brick-paved road leads east here from the main road to what looks to 
+be a nice little fenced-in park.  The decorative gates stand wide open, and 
+within you see the road become a path and split in two directions.  
+~
+Sector city~
+ExtraDesc gates decorative~
+Thin metal gates, more decorative than protective.
+~
+ExtraDesc brick road~
+A nicely made brick road.
+~
+Exit east 4401
+Exit west 3055
+End
+
+
+#4401
+Name Inside the Park Entrance~
+Desc You are just inside the decorative gates of a small park.  A brick road 
+leads east out of the park, and wide paths wander northeast and southeast 
+from here.  
+~
+Sector city~
+ExtraDesc gates decorative~
+Thin metal gates, more decorative than protective.
+~
+ExtraDesc wide paths~
+Neatly maintained dirt paths.
+~
+Exit west 4400
+Exit northeast 4402
+Exit southeast 4403
+End
+
+
+#4402
+Name Dirt Path~
+Desc The dirt path runs southwest and north through the flowers.  A few nicely 
+trimmed trees are placed here and there.  
+~
+Sector city~
+ExtraDesc flowers trees~
+The flowers and trees are healthy and well taken care of.  
+~
+Exit north 4404
+Exit southwest 4401
+End
+
+
+#4403
+Name Dirt Path~
+Desc The dirt path runs northwest and south through the flowers.  A few nicely 
+trimmed trees are placed here and there.  
+~
+Sector city~
+ExtraDesc flowers trees~
+The flowers and trees are healthy and well taken care of.  
+~
+Exit south 4411
+Exit northwest 4401
+End
+
+
+#4404
+Name Dirt Path~
+Desc You are on a dirt path in a park.  Colorful flowers and trees surround you.  
+The path here turns south and east.  
+~
+Sector city~
+ExtraDesc colorful flowers trees~
+The plants are all well cared for and healthy.  
+~
+Exit east 4405
+Exit south 4402
+End
+
+
+#4405
+Name Dirt Path~
+Desc The dirt path runs east and west through the park.  Bushes and trees line 
+the northern side, while to the south is a shallow pond.  
+~
+Sector city~
+ExtraDesc bushes trees~
+The plant life is all very well maintained and neatly trimmed.  
+~
+ExtraDesc shallow pond~
+A shallow pool full of shiny goldfish.
+~
+Exit east 4406
+Exit south 4416
+Exit west 4404
+End
+
+
+#4406
+Name Dirt Path~
+Desc You are on a dirt path in a park.  Colorful flowers and trees surround you.  
+The path here goes on towards the east and west, as well as forking south.  
+You notice that the bushes to the north appear disturbed, as if someone had 
+recently pushed their way through.  
+~
+Sector city~
+ExtraDesc colorful flowers trees~
+The plants are all well cared for and healthy.  
+~
+ExtraDesc bushes ~
+The bushes are fairly thick along the north side of the path here, and it 
+looks like someone has forced their way through.  
+~
+Exit north 4417
+EFlags door closed~
+EKeywords bushes~
+Exit east 4419
+Exit south 4407
+Exit west 4405
+End
+
+
+#4407
+Name Path Alongside the Pond~
+Desc The dirt path runs along the edge of a shallow pond to the west.  In the 
+water you can see many small fish swimming, mostly golden in color.  
+~
+Sector city~
+ExtraDesc shallow pond fish goldfish~
+Just a simple goldfish pond, only a few inches deep.
+~
+Exit north 4406
+Exit south 4408
+Exit west 4416
+End
+
+
+#4408
+Name Path Alongside the Pond~
+Desc The dirt path runs along the edge of a shallow pond to the west.  In the 
+water you can see many small fish swimming, mostly golden in color.  
+~
+Sector city~
+ExtraDesc shallow pond fish goldfish~
+Just a simple goldfish pond, only a few inches deep.
+~
+Exit north 4407
+Exit south 4409
+Exit west 4415
+End
+
+
+#4409
+Name Dirt Path~
+Desc You are on a dirt path in a park.  Colorful flowers and trees surround you.  
+The path here turns north and west.  A small grassy clearing is east.  
+~
+Sector city~
+ExtraDesc colorful flowers trees~
+The plants are all well cared for and healthy.  
+~
+Exit north 4408
+Exit east 4418
+Exit south 4414
+Exit west 4410
+End
+
+
+#4410
+Name Park Path, Just Outside a Shed~
+Desc The dirt path leads east-west through the park here.  Flowerbeds and trees 
+surround it, and to the south is a small wooden shed.  A shallow pond is 
+north.  
+~
+Sector city~
+ExtraDesc small wooden shed~
+The shed is south of here, why dont you go in and check it out?  
+~
+ExtraDesc flowerbeds trees~
+Pretty flowers of all colors, and nice little trees.  
+~
+ExtraDesc shallow pond~
+A shallow goldfish pond.
+~
+Exit north 4415
+Exit east 4409
+Exit south 4412
+EFlags door closed~
+Exit west 4411
+End
+
+
+#4411
+Name Dirt Path~
+Desc You are on a dirt path in a park.  Colorful flowers and trees surround you.  
+The path here turns north and east.  
+~
+Sector city~
+ExtraDesc colorful flowers trees~
+The plants are all well cared for and healthy.  
+~
+Exit north 4403
+Exit east 4410
+Exit south 4413
+End
+
+
+#4412
+Name Caretaker's Shed~
+Desc Tools and garden implements hang all over the walls inside this small shed.  
+There is only one small window in the east wall, and the only exit is 
+through the door to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc tools garden implements~
+Rakes, hoes, and other garden tools.
+~
+ExtraDesc window small~
+A small window.  A rosebush has grown over the outside of it and you can't 
+see much.  
+~
+Exit north 4410
+EFlags door closed~
+End
+
+
+#4413
+Name Flowerbed~
+Desc You are in the middle of a flowerbed.  Color red and purple flowers surround 
+you, as well as a few small trees.  A shed is just to the east, but the door 
+is not on this side.  The dirt path is just north.  
+~
+Sector inside~
+ExtraDesc flower red purple trees~
+The flowers and trees are all quite healthy and well cared for.  
+~
+ExtraDesc shed ~
+A small wooden shed.
+~
+Exit north 4411
+End
+
+
+#4414
+Name Flowerbed~
+Desc You are in the middle of a flowerbed.  Color white and yellow flowers 
+surround you, as well as a few small trees.  A shed is just to the west, but 
+the door is not on this side.  The dirt path is just north.  
+~
+Sector city~
+ExtraDesc flower white yellow trees.~
+The flowers and trees all seem to be well cared for.
+~
+ExtraDesc shed ~
+A small wooden shed.  
+~
+Exit north 4409
+End
+
+
+#4415
+Name Shallow Pond~
+Desc You are standing in a shallow goldfish pond.  The water is only a few inches 
+deep and is full of shiny fish.  A path travels along the edge of the pond 
+to the east and south.  
+~
+Sector city~
+ExtraDesc water ~
+The clear water is quite shallow.
+~
+ExtraDesc goldfish shiny fish~
+Small fish dart about the pool, trying to avoid you.
+~
+Exit north 4416
+Exit east 4408
+Exit south 4410
+End
+
+
+#4416
+Name Shallow Pond~
+Desc You are standing in a shallow goldfish pond.  The water is only a few inches 
+deep and is full of shiny fish.  A path travels along the edge of the pond 
+to the east and north.  
+~
+Sector city~
+ExtraDesc water ~
+The clear water is quite shallow.
+~
+ExtraDesc goldfish shiny fish~
+Small fish dart about the pool, trying to avoid you.
+~
+Exit north 4405
+Exit east 4407
+Exit south 4415
+End
+
+
+#4417
+Name Small Clearing Behind some Bushes~
+Desc You are in a small cleared area behind some bushes.  Petite trees grow in 
+such a way as to shield this area from sight from the main path.  There is a 
+hole leading down into the burrow of some animal.  
+~
+Sector city~
+ExtraDesc petite trees~
+Nice little trees.
+~
+ExtraDesc bushes ~
+You could probably force your way through them to the south.
+~
+ExtraDesc hole burrow~
+A foot-wide hole leadining into the earth.
+~
+Exit south 4406
+EFlags door closed~
+EKeywords bushes~
+End
+
+
+#4418
+Name Grassy Meadow~
+Desc This small grassy area looks like a great spot for a picnic.  There is even 
+a leafy tree in the middle to provide some shade.  A path runs by a bit to 
+the west.  A luscious green meadow spreads out in the distance.  
+~
+Sector field~
+ExtraDesc leafy tree~
+A big maple tree.
+~
+ExtraDesc path ~
+A dirt path, to the west.
+~
+Exit west 4409
+End
+
+
+#4419
+Name Dirt Path~
+Desc Trees and bushes surround the edge of this narrow dirt path.  The path here 
+turns south and west.  You notice what looks like a small grove just over 
+the horizon towards the south.  Birds can be heard all around singing their 
+songs in the distance.  
+~
+Sector city~
+Exit south 4420
+Exit west 4406
+End
+
+
+#4420
+Name A Beautiful Grove~
+Desc A beautiful myriad of flowers bloom in this small grove, their magnificent 
+appearance seem to flow with a gentle grace against the wind's soft touch.  
+Tree's of ancient origin grow along the rims in an embracing circle as if 
+protecting the inside of this grove, with their strong trunks.  The rustle 
+of the leaves high in the tree's seem to sing a song with their words 
+brushly gliding through in the soothing wind.  In the center of the grove 
+you notice a large marble statue standing proudly.  A small opening is to 
+the north, leading to a small road just up ahead.  
+~
+Sector city~
+Mana 110
+Heal 110
+Exit north 4419
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 4404 2 4403 1
+M 0 4403 2 4404 1
+O 0 4400 -1 4404
+M 0 4404 2 4406 1
+O 0 4400 -1 4406
+O 0 4400 -1 4409
+M 0 4406 2 4410 1
+M 0 4405 2 4411 1
+O 0 4400 -1 4411
+O 0 4401 -1 4412
+O 0 4402 -1 4412
+O 0 4403 -1 4412
+M 0 4401 1 4412 1
+E 0 4404 -1 legs~
+E 0 4405 -1 wielded~
+M 0 4403 2 4414 1
+M 0 4400 3 4415 1
+M 0 4400 3 4416 2
+M 0 4400 3 4416 2
+M 0 4402 1 4417 1
+M 0 4407 6 4418 6
+M 0 4407 6 4418 6
+M 0 4407 6 4418 6
+M 0 4407 6 4418 6
+M 0 4407 6 4418 6
+M 0 4407 6 4418 6
+M 0 4408 2 4420 2
+O 0 4406 -1 4420
+O 0 4407 -1 4420
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

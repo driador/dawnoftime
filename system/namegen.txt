@@ -1,0 +1,31 @@
+title Mixed fanasty names~
+part[0] A Ab Ac Ad Af Agr Ast As Al Adw Adr Ar B Br C C C Cr Ch Cad D Dr Dw Ed Eth Et Er El Eow F Fr G Gr Gw Gw Gal Gl H Ha Ib Jer K Ka Ked L Loth Lar Leg M Mir N Nyd Ol Oc On P Pr R Rh S Sev T Tr Th Th V Y Yb Z W W Wic~
+part[1] a ae ae au ao are ale ali ay ardo e ei ea ea eri era ela eli enda erra i ia ie ire ira ila ili ira igo o oa oi oe ore u y~
+part[2] _ _ _ _ _ _ a and b bwyn baen bard c ctred cred ch can d dan don der dric dfrid dus f g gord gan l li lgrin lin lith lath loth ld ldric ldan m mas mos mar mond n nydd nidd nnon nwan nyth nad nn nnor nd p r ron rd s sh seth sean t th th tha tlan trem tram v vudd w wan win win wyn wyn wyr wyr wyth~
+END
+
+Title Mrem names~
+part[0] A Ar B G Ga Gr Hr K L M Ma Mau Mr My N P R Ra Rau Ry S Th Tha Thau U V Vr Vy W Y~
+part[1] a ae ao au al ar arra atha aew aow aw e ei ea ell erra eoa eow ew ethe i ira ire ill ili irra irre irne ith o oa oe ou ol or ow oatha u ula uli y yra~
+part[2] a ara arn anth adra ath b bren cith ch dyn dra dro droa dwn e er eryn eth ess eret f fra g h hk i ir in il is ie ib ith k l la li le ler lar len lin lan m ma me mi mir mryn mar man men mer mes meth mith n na nla ne ni nao nith nath nal nel nil o om ow p r ra re ri rr rel ral ril ryn ran rn ren rin ron s sa si se ss sen son syn sth syth seth sre sra t th tha the thow u ur un um uv ua ue uo uoa us v veth ves vath vith vyth vyn vys w z za ze zao zaw~
+END
+
+Title Avian Names~
+part[0] A Ae Aei Ara Ari Aie Aye Ai Aie B Bi Ba Be Bei Bai Bri C Ca Ce Cei Cai Ch Ci Cri Cae Caw D De Di Da Dae Dar Dre E Ei Ea Eri Eir Eath F Fa Fe Fi Gha Ghi Gri Gli Gla Hi Ha He I Ia Il Ir Ire Ira Iri Ith Ig Io Iue Iv Iw Iwi Iwa Ix Iy Iz J K L Li Le La Lu Lue Lua M Mi Me Ma Mri Miri N Ne Na Ni Ndi Nid Nda Nde Nai Nae Oi P Pri Pa Q Qwi Qi Qu Qui R Ri Re Ra Rai Rae Rie Ria Rio Roi The Tha Thi Thea Thie Thra Thai Th U Ui Ue Uea Uie Una Uia Uae V Vi Ve Va Vae Vir Vri Vrae Vai W Wi Wa We Wea Wie Wil Y Zie Zei Za Ze Zi Zia~
+part[1] a ara ama ana atha ada ad e ea ei erai ethi etha i ie ia irdi ii itha ida ion oi ui ua ue uthe y~
+part[2] b ba bi be bue boi bren bran buain blethe bleth bythe d da di de due dua dlan dren dwen dran dwan din dithe dithe ethe eve eva evi ern erna ele ella elan elin faer frain fle f l lai lea lli lethe lan larn len lern lin liren lyn lyrn mrie mil mis mi me ma mai man min ni ndri na ne noi nethe neth neeth neith nath nathe oin oil oiz oith oithe parn pren prin pirn qeth qwern quain ri ra re rith reth rathe raq ren ran rin rea rain th the thera thra thrin thren thran thuan thuana uli ula ulan ulin ulian ven van vin vyn vryn vlyn vethe veth vathe vuathe val vel vil vi ve va we wi wa wia wei wil wal wel wathe wethe weth with withe y zer zir zri zre zra zi za ze~
+END
+
+title Draconian/Lizardman Names~
+part[0] A Ac Af Ag Agh Ah Aj Ak Ahk Ar As Ash At Ath Ax Az Ch Cr D Dr Dh Dhr Dj G Gh Gr Gw Gl H Hr J K Kh Kl Kr Kth Kw M N O Och Ox Q R Rh S Sr Sh Shr Sc Sk Skr Sl T Tr Tl U Uk Uch Uoch Ul Usk Vr Vh X Xo Xh Zr Zh Zrh Zg Zth~
+part[1] a ak ah agh e echa eka essa i issa isse ith ick o oss oug ogha oha och u uhk ulke ulka ulk ussu ussa usso~
+part[2] _ _ _ _ _ as arn ark ath arh ahk chra c ck cha cka chran chon ckon dath dreth drach drouk erk ech eth ek ess grach grak h hra hrak iss j k kar kor kul krah l r rg rk ruk ruch rul rah rak rhal s ss sh t tra th uss u ul ulk uhr ugh v x xh zrh ze za zk zak zul~
+END
+
+title Drowish Names~
+part[0] A Ab Ac Ad Ag Ah Aj Ak Al Am An Ar As At Ath Av Aw Az B Bhr Bl Br Bor C Ch Chr Ck Cl Cho Dr Dl Dh Dk Dz E Er Eh Ek Ez F Fr Fh G Gl Ghk Gr H Hr Hl I Ik Ih Id Ij Ig Im In Ir Ip J Jr Jh K Kh Kr Krh Kl L Lr Lh Lhr M Mr Mk Mh Mhr N Nr Nk Nh Nhr O Ob Oc Og Oj Ok Ol Om On Or Os Ot Oth Oz P Ph Phr Pr Pl Qu Qh Qr R Rh Rl S Sh Shr Sr Sl Sth T Ts Tz Th Thr U Ul Uc Uk Ud Uj Uh Uhr Um Un Ur Us Uth Ut Uv Uz V Vr Vsh Vhr W Wh Wr X Y Z Zh Zhr Zr Zl~
+part[1] a ae aoh e ea i ie ia iu o oi ona ou ouk u uo uhk ahs ash ath az el ehk ik irh ith ish ihs o orh ohk or uk ulh ul ush uth~
+part[2] _ _ _ _ _ _ _ a akth alth ar arn arl ark brn ban brak broch bru brul bruk cral crul clath cak can cun cul chath drach druk drun drin dran dan den drul dral dhra dhran dhral dhrul dro dhroh drouch dol doul dlath e en elth er erk erl ekth fal grul gha glan ghun gan gun grath grach gracth h harl hral hrul hrel hru hrach i ick ich il in ir ihr jharl jhul jral jrul k kal kul kth kath kuth koth khrol khral khrul kla klath l loch lul lol lal lar lath loth mak mok moch maz mas mul mal mol noch nih nath nth noth nul nal nas naz o ohk ol olth oc ok prach plak  ru rul ral rm ran ren rel roth rath reth rez res re ra rahn rhul rhal rhol rhel sith sro sra sh shrak shoud seth ts tz thral thrul trul threl thren thran thal thul thel thol tach toch tosh u us uz uth ul ur urn uv w xath xanth xhra xul xal xel xun xur xuth xoth z zark zar zan zal zhra zhro zhul zhal zhoch zul zel zol zil zun zan zin zyn zrn zrl~
+END
+
+EOF~

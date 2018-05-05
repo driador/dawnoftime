@@ -1,0 +1,4376 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Wilderness II~
+ShortName   ~
+Builders    None~
+Credits     Reave Tibault Ylerin~
+VNUMs       31000 31499
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#31000
+Name noisy seagull~
+ShortD a seagull~
+LongD A noisy seagull is hopping about looking for food.~
+Desc This white feathered bird is found over or near large bodies of water. 
+This one is hopping about on the beach, perhaps looking for food.  
+~
+Race water fowl~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType peck
+AC 0 0 0 10
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  flying swim~
+Res    drowning~
+Form   edible animal mountable bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#31001
+Name land turtle big~
+ShortD a big land turtle~
+LongD A big land turtle is walking around slowly, looking for food.~
+Desc This is a very big turtle. Its paws are thick and the shell it carries is 
+large and dirty with moss. Slowly and patiently, the turtle walks around, 
+looking for food.
+~
+Race snake~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+2
+ManaDice 1d4+0
+DamDice 1d6+0
+DamType bite
+AC 20 20 20 20
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  calm slow~
+Res    poison~
+Vuln   fire cold~
+Form   edible animal reptile cold_blood~
+Part   head heart brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GREET 31001 100~
+MProg GREET 31001 10~
+END
+
+#31002
+Name dark vulture~
+ShortD a dark vulture~
+LongD A dark vulture is flying in circles here.~
+Desc An ugly bird it is. Dark, with some grey feathers on the wings; its head is 
+featherless and its eyes are yellow. 
+~
+Race song bird~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d4+0
+DamDice 1d6+0
+DamType pierce
+AC 70 70 70 70
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying dark_vision~
+Off    dodge fast~
+Imm    disease~
+Vuln   weapon~
+Form   edible animal biped bird~
+Part   head legs heart brains guts feet fingers eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg GREET 31002 20~
+END
+
+#31003
+Name brown-feathered pigeon~
+ShortD a brown-feathered pigeon~
+LongD A brown-feathered pigeon is looking stupid here.~
+Desc This is a stupid-looking pigeon and it looks even more stupid when it walks, 
+waving its head back and forth. Its feathers are in different shades of brown.
+~
+Race song bird~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+0
+DamDice 1d5+0
+DamType peck
+AC 80 80 80 80
+Wealth 0
+Act    npc stay_area noalign~
+Off    dodge fast~
+Form   edible animal biped bird~
+Part   head heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 31003 5~
+END
+
+#31004
+Name multi-coloured butterfly~
+ShortD a `#`?m`?u`?l`?t`?i`?-`?c`?o`?l`?o`?u`?r`?e`?d`^ butterfly~
+LongD A `#`?m`?u`?l`?t`?i`?-`?c`?o`?l`?o`?u`?r`?e`?d`^ butterfly flies happily around here.~
+Desc ~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d1+0
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 100
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  detect_invis infrared flying haste~
+Form   insect~
+Part   head wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+MProg GREET 31004 10~
+END
+
+#31005
+Name owl white feathers~
+ShortD an owl with white feathers~
+LongD An owl with white feathers is looking for food here.~
+Desc This bird has large and round eyes, which are darker than a moonless night. 
+It is very small, but calls attention for being so white. 
+~
+Race song bird~
+Align 0 0
+Level 3
+Hitroll 1
+HitDice 15d3+70
+ManaDice 1d4+0
+DamDice 0d0+1
+DamType peck
+AC 70 70 70 0
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying dark_vision~
+Off    dodge fast~
+Imm    disease~
+Vuln   iron~
+Form   edible animal biped bird~
+Part   head legs heart brains guts feet fingers eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg ENTRY 31006 50~
+MProg RANDOM 31005 100~
+MProg RANDOM 31007 100~
+END
+
+#31006
+Name huge brown-furred bear~
+ShortD a huge brown-furred bear~
+LongD A huge brown-furred bear is rambling around here.~
+Desc You are looking at a very large bear. It is brown-furred and its eyes are 
+yellow. This bear is not frightening, though, on the contrary, it's quite 
+a fluffy picture.
+~
+Race bear~
+Align 0 0
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 2d4+0
+DamDice 8d6+16
+DamType claw
+AC -150 -150 -150 -150
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  haste calm berserk~
+Off    berserk disarm crush~
+Res    bash cold~
+Form   edible mountable~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+MProg DEATH 31013 100~
+MProg ENTRY 31008 100~
+END
+
+#31007
+Name yellow nightingale red feathers wings~
+ShortD a `#`Yyellow`^ nightingale with `#`Rred`^ feathers on the wings~
+LongD A `#`Yyellow`^ nightingale with `#`Rred`^ feathers on the wings is singing beautifully here.~
+Desc ~
+Race song bird~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d3+1
+DamDice 1d5+0
+DamType pierce
+AC 80 80 80 80
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying haste~
+Off    dodge fast~
+Form   edible animal biped bird~
+Part   head legs heart brains guts feet fingers eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg GREET 31011 100~
+END
+
+#31008
+Name black yellow bee~
+ShortD a black and yellow bee~
+LongD A black and yellow bee is working here.~
+Desc Its body is all striped with black and yellow. This bee has transparent wings, 
+which don't stop working, making a soft bzzzz...
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d1+0
+DamDice 1d4+0
+DamType sting
+AC 90 90 90 90
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  infrared flying haste~
+Imm    sleep~
+Form   edible insect~
+Part   head~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+MProg GREET 31012 100~
+END
+
+#31009
+Name deer white hoofs~
+ShortD a deer with white hoofs~
+LongD A deer with white hoofs is looking for a better place to browse.~
+Desc The colour of its fur is something between yellow and brown. This deer has 
+long ears and a brown snout. You notice its white hoofs.
+~
+Race fox~
+Align 0 0
+Level 16
+Hitroll 0
+HitDice 3d5+88
+ManaDice 1d4+4
+DamDice 2d8+5
+DamType crush
+AC -40 -40 -40 -40
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  detect_hidden~
+Off    dodge fast kick~
+Form   edible animal biped mountable mammal~
+Part   head legs heart brains guts feet ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#31010
+Name brown duck green wing tips~
+ShortD a brown duck with green wing tips~
+LongD A brown duck with green wing tips is waddling around the place.~
+Desc You are looking at a brown duck, which has a green head. Its wing tips are 
+green as well.
+~
+Race song bird~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d1+1
+DamDice 1d6+0
+DamType peck
+AC 70 70 70 80
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying swim~
+Off    dodge fast~
+Form   edible animal biped bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GREET 31015 10~
+END
+
+#31011
+Name red-furred wild dog~
+ShortD a red-furred wild dog~
+LongD A red-furred wild dog is sniffing the ground here.~
+Desc This wild dog has long legs and a thin tail. Its fur is red but its back is 
+white spotted. It seems that its ears are too big for its head.
+~
+Race dog~
+Align 0 0
+XPMod 6
+Level 30
+Hitroll 0
+HitDice 5d6+150
+ManaDice 1d3+0
+DamDice 4d6+9
+DamType bite
+AC -100 -100 -100 -160
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  haste dark_vision berserk~
+Off    fast~
+Vuln   disease~
+Form   edible animal biped mammal~
+Part   head legs heart brains guts feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GREET 31016 6~
+END
+
+#31012
+Name green grasshopper~
+ShortD a green grasshopper~
+LongD A green grasshopper is jumping all around the place.~
+Desc This insect is green and has brown legs. Its big round eyes have a colour 
+between orange and red.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d1+1
+DamDice 1d4+0
+DamType pierce
+AC 90 90 90 90
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  infrared haste~
+Form   edible insect~
+Part   head legs guts eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+MProg GREET 31017 2~
+END
+
+#31013
+Name red-brown ant~
+ShortD a red-brown ant~
+LongD A red-brown ant is carrying leaves here.~
+Desc You are looking at a small insect. This ant is redish brown and has three 
+short legs, which don't stop walking.
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d1+0
+DamDice 1d4+0
+DamType sting
+AC 90 90 90 90
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  infrared dark_vision~
+Form   edible animal insect~
+Part   guts eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+MProg GREET 31018 2~
+END
+
+#31014
+Name green-striped blue snake~
+ShortD a green-striped blue snake~
+LongD A green-striped blue snake is moving slowly here.~
+Desc This is a big snake, with triangular head and thick tail, which gets thinner 
+quickly at the end. 
+~
+Race snake~
+Align 0 0
+Level 9
+Hitroll 0
+HitDice 2d5+12
+ManaDice 1d1+1
+DamDice 1d8+2
+DamType bite
+AC 20 20 20 20
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  infrared pass_door haste dark_vision~
+Res    poison~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg RANDOM 31019 3~
+MProg GREET 31020 10~
+END
+
+#31015
+Name red scorpion~
+ShortD a red scorpion~
+LongD A red scorpion is walking around here.~
+Desc Frightening it is, with its poisoning tail. What a creepy figure it is, so red 
+and so scary.
+~
+Race snake~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d1+1
+DamDice 1d6+1
+DamType sting
+AC 50 50 50 50
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  pass_door haste dark_vision~
+Res    poison~
+Vuln   cold~
+Form   edible animal~
+Part   guts eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GREET 31021 100~
+END
+
+#31016
+Name brown otter~
+ShortD a brown otter~
+LongD A brown otter is standing gracefully here.~
+Desc You are looking at a brown otter, with a large tail. Its eyes are dark and it 
+has a small, black snout.
+~
+Race cat~
+Align 0 0
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 1d1+0
+DamDice 1d7+1
+DamType scratch
+AC 40 40 40 40
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  calm dark_vision swim~
+Off    dodge fast~
+Form   edible animal mammal~
+Part   head arms legs heart brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#31017
+Name silver-green dragonfly~
+ShortD a silver-green dragonfly~
+LongD A silver-green dragonfly is flying noisily here.~
+Desc This inssect has a long body and four long transparent wings. Its colour 
+varies, depending on the light, between silver and green.
+~
+Race unique~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+0
+DamDice 1d5+0
+DamType crush
+AC 80 80 80 80
+Wealth 0
+Act    npc no_tame stay_area noalign~
+AffBy  infrared flying haste~
+Form   edible insect~
+Part   head guts eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GREET 31022 5~
+END
+
+#31018
+Name silver fish~
+ShortD a silver fish~
+LongD A silver fish is swimming wildly here.~
+Desc You see a silver fish with big round eyes. It is a big fish, yet very fast.
+~
+Race lizard~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 1d1+1
+DamDice 1d7+1
+DamType chomp
+AC 40 40 40 40
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign~
+AffBy  haste swim~
+Res    poison~
+Vuln   fire~
+Form   edible animal fish cold_blood~
+Part   head brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg RANDOM 31023 3~
+END
+
+#31019
+Name coloured fish~
+ShortD a `#`?c`?o`?l`?o`?u`?r`?e`?d`^ fish~
+LongD A `#`?c`?o`?l`?o`?u`?r`?e`?d`^ fish is swimming calmly here.~
+Desc You see a `#`?c`?o`?l`?o`?u`?r`?e`?d`^ fish with small round eyes. It is a 
+small fish, yet very slow.
+~
+Race lizard~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 1d1+1
+DamDice 1d7+1
+DamType chomp
+AC 40 40 40 40
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign~
+AffBy  haste swim~
+Res    poison~
+Vuln   fire~
+Form   edible animal fish cold_blood~
+Part   head brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg GREET 31023 10~
+END
+
+#31020
+Name blue whale~
+ShortD a blue whale~
+LongD A blue whale is swimming peacefully here.~
+Desc You stare at a huge blue whale. Its tale is so large, that it could easily 
+sink a ship.
+~
+Race lizard~
+Align 0 0
+Level 80
+Hitroll 0
+HitDice 8d11+400
+ManaDice 4d1+1
+DamDice 9d9+41
+DamType crush
+AC -500 -500 -500 -590
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign~
+AffBy  haste calm dark_vision swim~
+Off    assist_race~
+Res    poison~
+Vuln   fire~
+Form   edible animal mammal cold_blood~
+Part   head brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material flesh
+MProg RANDOM 31024 2~
+END
+
+#31021
+Name white baby whale~
+ShortD a white baby whale~
+LongD A white baby whale is swimming joyfully here.~
+Desc You stare at a cute white whale. Its huge mouth, for being so big, seems to 
+be always smiling.
+~
+Race lizard~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 4d1+1
+DamDice 5d8+19
+DamType crush
+AC -200 -200 -200 -280
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign~
+AffBy  haste calm dark_vision swim~
+Res    poison~
+Vuln   fire~
+Form   edible animal mammal cold_blood~
+Part   head brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg RANDOM 31025 2~
+END
+
+#31022
+Name black yellow bee~
+ShortD a black and yellow bee~
+LongD A black and yellow bee is working here.~
+Desc Its body is all striped with black and yellow. This bee has transparent wings, 
+which don't stop working, making a soft bzzzz...
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d1+0
+DamDice 1d4+0
+DamType sting
+AC 90 90 90 90
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign~
+AffBy  infrared flying haste~
+Imm    sleep~
+Form   edible insect~
+Part   head~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+MProg GREET 31010 100~
+MProg RANDOM 31009 100~
+END
+
+#31023
+Name unseen-mob-for-pirate-ship Pirateship~
+ShortD unseen-mob-for-pirate-ship~
+LongD Unseen-mob-for-pirate-ship~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg HOUR 31027 0~
+MProg HOUR 31028 1~
+MProg HOUR 31029 2~
+MProg HOUR 31030 3~
+MProg HOUR 31031 4~
+MProg HOUR 31032 5~
+MProg HOUR 31033 6~
+MProg HOUR 31034 7~
+MProg HOUR 31035 8~
+MProg HOUR 31036 9~
+MProg HOUR 31037 10~
+MProg HOUR 31038 11~
+MProg HOUR 31039 12~
+MProg HOUR 31040 13~
+MProg HOUR 31041 14~
+MProg HOUR 31042 15~
+MProg HOUR 31043 16~
+MProg HOUR 31044 17~
+MProg HOUR 31045 18~
+MProg HOUR 31046 19~
+MProg HOUR 31047 20~
+MProg HOUR 31048 21~
+MProg HOUR 31049 22~
+MProg HOUR 31050 23~
+MProg COMMAND 31051 climb rope~
+MProg DELAY 31052 100~
+END
+
+#31024
+Name nwbyprot1 old wise man~
+ShortD an old, wise man~
+LongD A wise old man stands here, looking thoughtfully.~
+Desc A man, old in appearance stands here.  He has a long white beard that curls 
+tightly near the end.  His eyes show a wisdom, accustomed to those who have 
+years and years of experience.  His clothing is slightly tattered and show 
+signs of heavy use.  The state of his boots suggest he has traveled many 
+miles in them.  
+~
+Race human~
+Align 3 3
+Level 108
+Hitroll 0
+HitDice 10d13+475
+ManaDice 0d0+1
+DamDice 10d11+46
+DamType punch
+AC -670 -670 -670 -600
+Wealth 463
+Act    npc dont_wander stay_area~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GREET 31053 100~
+END
+
+#31025
+Name dolphin porpoise~
+ShortD a dolphin~
+LongD A dolphin leaps gracefully through the waves.~
+Desc This sleek shipfish, also known as a dolphin, seems right at home in the
+water.  It seems to be in a playful mood now, leaping through the waves
+with such grace and beauty that it almost seems unreal.
+~
+Race unique~
+Align 2 2
+Level 10
+Hitroll 0
+HitDice 2d5+20
+ManaDice 1d6+120
+DamDice 2d4+2
+DamType thrust
+AC 10 10 10 40
+Wealth 0
+Act    npc dont_wander stay_area wimpy indoors~
+AffBy  detect_invis detect_hidden infrared swim~
+Off    dodge fast assist_all~
+Imm    drowning~
+Res    charm fire mental~
+Vuln   lightning~
+Form   edible sentient biped mountable mammal~
+Part   head heart brains guts eye fins tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#31026
+Name serpent sea monster~
+ShortD a sea serpent~
+LongD A huge serpent raises its head from the water!~
+Desc This huge serpentine beast is something from a horrible nightmare.  Its
+long, jagged teeth are covered with the rotting flesh of its previous
+victims, and wisps of fire occasionally escape from its mouth.  It is
+covered with tough-looking scales, and its head is topped with
+two sharp horns.
+~
+Race unique~
+Align -3 -1
+Level 25
+Hitroll 1
+HitDice 4d5+115
+ManaDice 4d5+150
+DamDice 2d10+7
+DamType chomp
+AC -80 -80 -80 -50
+Wealth 0
+Act    npc dont_wander scavenger no_tame stay_area warrior indoors~
+AffBy  detect_invis detect_magic detect_hidden berserk swim~
+Off    bash berserk dodge tail crush~
+Imm    drowning~
+Res    bash fire acid poison~
+Vuln   pierce cold lightning~
+Form   edible poison animal mountable reptile cold_blood~
+Part   head heart brains guts ear long_tongue fins tail claws fangs horns scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#31027
+Name Unseen Storm~
+ShortD a Storm~
+LongD A storm~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Imm    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 31026 15~
+END
+
+#0
+
+
+
+#OBJECTS
+#31000
+Name bear fur~
+Short a bear fur~
+Desc A bear fur lies here.~
+Level 35
+ItemType armor~
+Cost 2500
+Asize 0
+Rsize 55
+Values 8 9 8 7 0
+Weight 10
+Material fur~
+Extra    nodegrade~
+Wear     take about~
+ExtraDesc bear fur~
+This is the fur of a brown bear. It is thick and heavy, able to protect you 
+not only from the cold.
+~
+End
+
+#31001
+Name bear claw~
+Short a bear claw~
+Desc A bear claw rests here.~
+Level 35
+ItemType weapon~
+Cost 20
+Asize 0
+Rsize 50
+Values dagger 2 12 claw D
+Weight 1
+Material bone~
+Extra    nodegrade~
+Wear     take wield~
+Affect modifier -1 35 -1 agility 3 0
+ExtraDesc bear claw~
+You see a pointy bear claw.
+~
+End
+
+#31002
+Name deer horn~
+Short a deer horn~
+Desc A deer horn lies here.~
+Level 20
+ItemType weapon~
+Cost 30
+Asize 0
+Rsize 50
+Values exotic 2 11 stab 0
+Weight 4
+Material bone~
+Extra    antievil nodegrade~
+Wear     take wield~
+Affect modifier -1 20 -1 strength 1 0
+Affect modifier -1 20 -1 damroll 2 0
+ExtraDesc deer horn~
+You see a pointy brown deer horn.
+~
+End
+
+#31003
+Name scorpion tail~
+Short a scorpion tail~
+Desc A scorpion tail is here.~
+Level 5
+ItemType weapon~
+Cost 0
+Asize 0
+Rsize 35
+Values dagger 1 4 pierce H
+Weight 0
+Material scale~
+Extra    antigood nodegrade~
+Wear     take wield~
+Affect modifier -1 5 -1 agility 1 0
+ExtraDesc scorpion tail~
+This is a red scorpion tail. It is frightening and seems to be full of 
+poison.
+~
+End
+
+#31004
+Name apple tree~
+Short an apple tree~
+Desc An apple tree grows here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 500 100
+Weight 0
+Material tree~
+ExtraDesc apple tree~
+This is a high tree, its leaves moving, at the will of the wind. You can see 
+many fruits, hanging on its branches.
+~
+End
+
+#31005
+Name red apple~
+Short a red apple~
+Desc A red apple is here, ready to be eaten.~
+Level 0
+ItemType food~
+Cost 2
+Asize 0
+Rsize 50
+Values 2 2 0 0 0
+Weight 1
+Material food~
+Wear     take~
+ExtraDesc red apple~
+This fruit is red, with some orange snd yellow strips, here and ther. Looks 
+very juicy and delicious.
+~
+End
+
+#31006
+Name a nut~
+Short a nut~
+Desc A nut is here, willing to be eaten.~
+Level 0
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 1
+Material food~
+Wear     take~
+ExtraDesc nut ~
+It is a brown nut, and it looks very tasty. Eating one wouldn't harm no one.
+~
+End
+
+#31007
+Name yellow pear~
+Short a yellow pear~
+Desc A yellow pear is looking celicious here.~
+Level 0
+ItemType food~
+Cost 2
+Asize 0
+Rsize 50
+Values 2 1 0 0 0
+Weight 1
+Material food~
+Wear     take~
+ExtraDesc yellow pear~
+A bit bigger than an apple, this pear is yellow and green. It looks so 
+deliciously juicy!
+~
+End
+
+#31008
+Name orange~
+Short an orange~
+Desc A juicy looking orange is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 2 0 0 0
+Weight 0
+Material food~
+Wear     take~
+ExtraDesc orange ~
+Like any other orange, this orange is orange. It is also small, but juicy.
+~
+End
+
+#31009
+Name silver berry~
+Short a silver berry~
+Desc A silver berry is here, ready to be eaten.~
+Level 0
+ItemType food~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1 0 A 0
+Weight 1
+Material food~
+Wear     take~
+ExtraDesc silver berry~
+A tiny silver berry is here. It seems that its taste would make any sacrifice 
+worthy.
+~
+End
+
+#31010
+Name brown root~
+Short a brownroot~
+Desc A brownroot lies here.~
+Level 0
+ItemType food~
+Cost 5
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 1
+Material food~
+Wear     take~
+ExtraDesc brown root~
+This is a small, brown root. Doesn't look much tasty, but could be satisfying.
+~
+End
+
+#31011
+Name blue herbs~
+Short some blue herbs~
+Desc Some blue herbs lie here.~
+Level 10
+ItemType pill~
+Cost 5
+Asize 0
+Rsize 50
+Values 10 'cure poison' '' '' ''
+Weight 1
+Material food~
+Wear     take~
+ExtraDesc blue herbs~
+These herbs have many small leaves. They are all blue and you wonder if they 
+could save you from starving.
+~
+End
+
+#31012
+Name pear tree~
+Short a pear tree~
+Desc A pear tree casts its shadow here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 500 100
+Weight 0
+Material tree~
+ExtraDesc pear tree~
+This tree isn't too high, nor too short. Its branches are covered with green 
+leaves and juicy fruits.
+~
+End
+
+#31013
+Name nut tree~
+Short a nut tree~
+Desc A nut tree stands here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 500 100
+Weight 0
+Material tree~
+ExtraDesc nut tree~
+Its stem is thik and its branches spread widely around it, casting a refreshing 
+shadow over the place
+~
+End
+
+#31014
+Name orange tree~
+Short an orange tree~
+Desc An orange tree spreads its branches here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 500 100
+Weight 0
+Material tree~
+ExtraDesc orange tree~
+This is a soft brown tree, with many thin branches spreading over the place. 
+Many leaves hang on the branches and some fruits as well.
+~
+End
+
+#31015
+Name bush berries~
+Short a bush with berries~
+Desc A bush with berries grows here~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 500 100
+Weight 0
+Material tree~
+ExtraDesc bush berries~
+Its a small bush with green leaves. There are many `#`Ssilver`^ berries 
+hanging on its branches.
+~
+End
+
+#31016
+Name beehive~
+Short a beehive~
+Desc A beehive hangs on a branch here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 500 100
+Weight 0
+Material unknown~
+ExtraDesc beehive ~
+You see a beehive and there is a lot of honey in it. A delicious smell comes 
+from the honey, but the sound of the bees flying around the hive reminds you 
+of the danger...
+~
+End
+
+#31017
+Name honeycomb~
+Short a honeycomb~
+Desc A honeycomb lies here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 1 0 0 0
+Weight 1
+Material unknown~
+Wear     take~
+ExtraDesc honeycomb ~
+You see a delicious looking honeycomb, filled with sweet smelling honey.
+~
+End
+
+#31018
+Name huge pirate ship~
+Short a huge pirate ship~
+Desc A HUGE pirate ship is here, sailing the seas.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nodegrade~
+ExtraDesc pirate huge ship~
+This HUGE pirate ship looks to be made from some sturdy wood for sure.  
+Looking about it for some way to get on board the only thing you see is a 
+long rope on by the starboard side.  Maybe you can `#`Cclimb rope`^ to get on 
+board.  
+~
+End
+
+#31019
+Name rope~
+Short a long rope hanging off the huge ship~
+Desc A long rope hangs off the starboard side of the ship.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#31020
+Name ripe red apple~
+Short a `#`rripe red`^ apple~
+Desc A `#`rripe red`^ apple lies on the ground here.~
+Level 1
+ItemType container~
+Cost 2
+Asize 0
+Rsize 50
+Values 2 0 0 2 0
+Weight 1
+Material food~
+Extra    nodegrade~
+ExtraDesc red apple~
+This fruit is red, and looks delicious to eat. If you kept the seed from inside, you could plant a new apple tree.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#31000
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31001
+EDesc More water.
+~
+Exit east 31010
+EDesc More water.
+~
+Exit south 30360
+EDesc More water.
+~
+End
+
+
+#31001
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31002
+EDesc More water.
+~
+Exit east 31011
+EDesc More water.
+~
+Exit south 31000
+EDesc More water.
+~
+End
+
+
+#31002
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31003
+EDesc More water.
+~
+Exit east 31012
+EDesc More water.
+~
+Exit south 31001
+EDesc More water.
+~
+End
+
+
+#31003
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31004
+EDesc More water.
+~
+Exit east 31013
+EDesc More water.
+~
+Exit south 31002
+EDesc More water.
+~
+End
+
+
+#31004
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31005
+EDesc More water.
+~
+Exit east 31014
+EDesc More water.
+~
+Exit south 31003
+EDesc More water.
+~
+End
+
+
+#31005
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31006
+EDesc More water.
+~
+Exit east 31015
+EDesc More water.
+~
+Exit south 31004
+EDesc More water.
+~
+End
+
+
+#31006
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31007
+EDesc More water.
+~
+Exit east 31016
+EDesc More water.
+~
+Exit south 31005
+EDesc More water.
+~
+End
+
+
+#31007
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31008
+EDesc More water.
+~
+Exit east 31017
+EDesc More water.
+~
+Exit south 31006
+EDesc More water.
+~
+End
+
+
+#31008
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31009
+EDesc More water.
+~
+Exit east 31018
+EDesc More water.
+~
+Exit south 31007
+EDesc More water.
+~
+End
+
+
+#31009
+Name On the Water~
+Desc You are in the middle of some great body of water.  There appears to
+be a decent sized island to the northeast.  The air carries the scent
+of salt, and the water looks very deep here.
+~
+Sector noswim~
+Exit north 31108
+Exit east 31019
+EDesc More water.
+~
+Exit south 31008
+EDesc More water.
+~
+End
+
+
+#31010
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31011
+EDesc More water.
+~
+Exit east 31020
+EDesc More water.
+~
+Exit south 30361
+EDesc More water.
+~
+Exit west 31000
+EDesc More water.
+~
+End
+
+
+#31011
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31012
+EDesc More water.
+~
+Exit east 31021
+EDesc More water.
+~
+Exit south 31010
+EDesc More water.
+~
+Exit west 31001
+EDesc More water.
+~
+End
+
+
+#31012
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31013
+EDesc More water.
+~
+Exit east 31022
+EDesc More water.
+~
+Exit south 31011
+EDesc More water.
+~
+Exit west 31002
+EDesc More water.
+~
+End
+
+
+#31013
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31014
+EDesc More water.
+~
+Exit east 31023
+EDesc More water.
+~
+Exit south 31012
+EDesc More water.
+~
+Exit west 31003
+EDesc More water.
+~
+End
+
+
+#31014
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31015
+EDesc More water.
+~
+Exit east 31024
+EDesc More water.
+~
+Exit south 31013
+EDesc More water.
+~
+Exit west 31004
+EDesc More water.
+~
+End
+
+
+#31015
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31016
+EDesc More water.
+~
+Exit east 31025
+EDesc More water.
+~
+Exit south 31014
+EDesc More water.
+~
+Exit west 31005
+EDesc More water.
+~
+End
+
+
+#31016
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31017
+EDesc More water.
+~
+Exit east 31026
+EDesc More water.
+~
+Exit south 31015
+EDesc More water.
+~
+Exit west 31006
+EDesc More water.
+~
+End
+
+
+#31017
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31018
+EDesc More water.
+~
+Exit east 31027
+EDesc More water.
+~
+Exit south 31016
+EDesc More water.
+~
+Exit west 31007
+EDesc More water.
+~
+End
+
+
+#31018
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31019
+EDesc More water.
+~
+Exit east 31028
+EDesc More water.
+~
+Exit south 31017
+EDesc More water.
+~
+Exit west 31008
+EDesc More water.
+~
+End
+
+
+#31019
+Name On the Water~
+Desc You are in the middle of some great body of water.  There appears to be
+a decent sized island to the north.  The air carries the scent of salt, 
+and the water looks very deep here.
+~
+Sector noswim~
+Exit north 31109
+Exit east 31029
+EDesc More water.
+~
+Exit south 31018
+EDesc More water.
+~
+Exit west 31009
+EDesc More water.
+~
+End
+
+
+#31020
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31021
+EDesc More water.
+~
+Exit south 30362
+EDesc More water.
+~
+Exit west 31010
+EDesc More water.
+~
+End
+
+
+#31021
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31022
+EDesc More water.
+~
+Exit south 31020
+EDesc More water.
+~
+Exit west 31011
+EDesc More water.
+~
+End
+
+
+#31022
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31023
+EDesc More water.
+~
+Exit south 31021
+EDesc More water.
+~
+Exit west 31012
+EDesc More water.
+~
+End
+
+
+#31023
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31024
+EDesc More water.
+~
+Exit east 31030
+EDesc More water.
+~
+Exit south 31022
+EDesc More water.
+~
+Exit west 31013
+EDesc More water.
+~
+End
+
+
+#31024
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31025
+EDesc More water.
+~
+Exit east 31031
+EDesc More water.
+~
+Exit south 31023
+EDesc More water.
+~
+Exit west 31014
+EDesc More water.
+~
+End
+
+
+#31025
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31026
+EDesc More water.
+~
+Exit east 31032
+EDesc More water.
+~
+Exit south 31024
+EDesc More water.
+~
+Exit west 31015
+EDesc More water.
+~
+End
+
+
+#31026
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31027
+EDesc More water.
+~
+Exit east 31033
+EDesc More water.
+~
+Exit south 31025
+EDesc More water.
+~
+Exit west 31016
+EDesc More water.
+~
+End
+
+
+#31027
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31028
+EDesc More water.
+~
+Exit south 31026
+EDesc More water.
+~
+Exit west 31017
+EDesc More water.
+~
+End
+
+
+#31028
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31029
+EDesc More water.
+~
+Exit south 31027
+EDesc More water.
+~
+Exit west 31018
+EDesc More water.
+~
+End
+
+
+#31029
+Name On the Water~
+Desc You are in the middle of some great body of water.  There appears to be 
+a decent sized island to the northwest.  The air carries the scent of salt, 
+and the water looks very deep here.
+~
+Sector noswim~
+Exit north 31110
+Exit south 31028
+EDesc More water.
+~
+Exit west 31019
+EDesc More water.
+~
+End
+
+
+#31030
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31031
+EDesc More water.
+~
+Exit east 31034
+EDesc More water.
+~
+Exit west 31023
+EDesc More water.
+~
+End
+
+
+#31031
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31032
+EDesc More water.
+~
+Exit east 31035
+EDesc More water.
+~
+Exit south 31030
+EDesc More water.
+~
+Exit west 31024
+EDesc More water.
+~
+End
+
+
+#31032
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31033
+EDesc More water.
+~
+Exit east 31036
+EDesc More water.
+~
+Exit south 31031
+EDesc More water.
+~
+Exit west 31025
+EDesc More water.
+~
+End
+
+
+#31033
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit east 31037
+EDesc More water.
+~
+Exit south 31032
+EDesc More water.
+~
+Exit west 31026
+EDesc More water.
+~
+End
+
+
+#31034
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31035
+EDesc More water.
+~
+Exit west 31030
+EDesc More water.
+~
+End
+
+
+#31035
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31036
+EDesc More water.
+~
+Exit south 31034
+EDesc More water.
+~
+Exit west 31031
+EDesc More water.
+~
+End
+
+
+#31036
+Name On the Water~
+Desc You are in the middle of some great body of water.  There is no land
+visible in any direction.  The air carries the scent of salt, and the
+water looks very deep here.
+~
+Sector noswim~
+Exit north 31037
+EDesc More water.
+~
+Exit south 31035
+EDesc More water.
+~
+Exit west 31032
+EDesc More water.
+~
+End
+
+
+#31037
+Name The Water~
+Desc You are in the middle of some great body of water.  There is a small island
+just to the northeast, upon which you can see a white castle.  The air carries
+the scent of salt, and the water looks very deep here.
+~
+Sector noswim~
+Exit south 31036
+EDesc More water.
+~
+Exit west 31033
+EDesc More water.
+~
+End
+
+
+#31038
+Name Mouth of the River~
+Desc The mighty river here finally reaches an end, emptying east into
+the sea.  A small section of sandy land lies north, and a rockier
+beach to the south.
+~
+Sector swim~
+Exit north 31042
+EDesc A thin sandy beach.
+~
+Exit east 31039
+EDesc The sea...
+~
+End
+
+
+#31039
+Name Just Offshore~
+Desc You are on the water, just offshore from where a mighty river meets
+the sea.  The water seems deep despite your proximity to land.  The
+sea stretches without end to the east.
+~
+Sector noswim~
+Exit north 31043
+EDesc More water.
+~
+Exit east 31040
+EDesc Deeper water.
+~
+Exit west 31038
+EDesc A river meets the sea.
+~
+End
+
+
+#31040
+Name On the Water~
+Desc You are on the water somewhat far out from the land to the west.  It
+seems to be pretty deep here.  You see storm clouds on the horizon to
+the northeast.
+~
+Sector noswim~
+Exit north 31044
+EDesc More water.
+~
+Exit east 31041
+EDesc Further out to sea.
+~
+Exit west 31039
+EDesc Towards shore.
+~
+End
+
+
+#31041
+Name On Deep Water~
+Desc You are on the water very far out at sea.  A line on the horizon 
+to the west seems to be land, but it is very far off.  There are
+storm clouds to the northeast.
+~
+Sector noswim~
+Exit north 31045
+EDesc More water.
+~
+Exit west 31040
+EDesc Towards the shoreline.
+~
+End
+
+
+#31042
+Name Thin Sandy Beach~
+Desc You are on a small strip of land that lies between a mighty river
+to the west and the sea to the east.  The ground is very sandy.
+~
+Sector field~
+Exit north 31047
+EDesc Rocky Beach.
+~
+Exit east 31043
+EDesc The sea...
+~
+Exit south 31038
+EDesc The river curves around in this direction.
+~
+End
+
+
+#31043
+Name Just Offshore~
+Desc You are on the water, just offshore from a thin sandy beach.  The 
+sea stretches endlessly to the east.
+~
+Sector noswim~
+Exit north 31048
+EDesc More water.
+~
+Exit east 31044
+EDesc Deeper water.
+~
+Exit south 31039
+EDesc More water.
+~
+Exit west 31042
+EDesc A beach.
+~
+End
+
+
+#31044
+Name On the Water~
+Desc You are on the water somewhat far out from the land to the west.  It
+seems to be pretty deep here.  You see storm clouds on the horizon to
+the east.
+~
+Sector noswim~
+Exit north 31049
+EDesc More water.
+~
+Exit east 31045
+EDesc More water, and storm clouds.
+~
+Exit south 31040
+EDesc More water.
+~
+Exit west 31043
+EDesc The shoreline is this way.
+~
+End
+
+
+#31045
+Name On Deep Water~
+Desc You are on the water very far out at sea.  A line on the horizon 
+to the west seems to be land, but it is very far off.  There are
+storm clouds to the east.
+~
+Sector noswim~
+Exit north 31050
+EDesc More water.
+~
+Exit east 31127
+Exit south 31041
+EDesc More water.
+~
+Exit west 31044
+EDesc Towards the shoreline.
+~
+End
+
+
+#31046
+Name Rocky Slope~
+Desc The ground is very rocky and uneven here.  There is a beach
+and water to the east, and you overlook a drop to a river
+that flows from beneath you to the south!  The ground to
+the west gets smoother and grassier.
+~
+Sector field~
+Exit north 30475
+EDesc More rocky ground.
+~
+Exit east 31047
+EDesc A rocky beach.
+~
+End
+
+
+#31047
+Name Rocky Beach~
+Desc This beach is fairly rocky, but does have some smooth sandy spots.
+The ground becomes a bit smoother as it rises to the west, and a
+huge expanse of water stretches to the east.
+~
+Sector field~
+Exit north 30476
+EDesc Rocky Beach.
+~
+Exit east 31048
+EDesc The sea...
+~
+Exit south 31042
+EDesc A sandy beach.
+~
+Exit west 31046
+EDesc Smoother ground.
+~
+End
+
+
+#31048
+Name Just Offshore~
+Desc You are on the water, just offshore from a rocky beach.  The 
+sea stretches endlessly to the east.
+~
+Sector noswim~
+Exit north 30477
+EDesc More water.
+~
+Exit east 31049
+EDesc Deeper water.
+~
+Exit south 31043
+EDesc More water.
+~
+Exit west 31047
+EDesc A beach.
+~
+End
+
+
+#31049
+Name On the Water~
+Desc You are on the water somewhat far out from the land to the west.  It
+seems to be pretty deep here.  You see storm clouds on the horizon to
+the east.
+~
+Sector noswim~
+Exit north 30478
+EDesc More water.
+~
+Exit east 31050
+EDesc More water, and storm clouds.
+~
+Exit south 31044
+EDesc More water.
+~
+Exit west 31048
+EDesc The shoreline is this way.
+~
+End
+
+
+#31050
+Name On Deep Water~
+Desc You are on the water very far out at sea.  A line on the horizon 
+to the west seems to be land, but it is very far off.  There are
+storm clouds to the east.
+~
+Sector noswim~
+Exit north 31123
+Exit east 31126
+Exit south 31045
+EDesc More water.
+~
+Exit west 31049
+EDesc Towards the shoreline.
+~
+End
+
+
+#31051
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit east 31052
+EDesc More Forest.
+~
+Exit west 30489
+End
+
+
+#31052
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit east 31053
+EDesc More Forest.
+~
+Exit west 31051
+EDesc More forest.
+~
+End
+
+
+#31053
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit east 31054
+EDesc More Forest.
+~
+Exit west 31052
+EDesc More forest.
+~
+End
+
+
+#31054
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit north 31056
+Exit west 31053
+EDesc More forest.
+~
+End
+
+
+#31056
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit east 31057
+EDesc More Forest.
+~
+Exit south 31054
+End
+
+
+#31057
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit east 31058
+EDesc More Forest.
+~
+Exit west 31056
+EDesc More forest.
+~
+End
+
+
+#31058
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit east 31059
+EDesc More Forest.
+~
+Exit west 31057
+EDesc More forest.
+~
+End
+
+
+#31059
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit east 31061
+Exit west 31058
+EDesc More forest.
+~
+End
+
+
+#31060
+Name Steep Foothills~
+Desc . Sheer walls of stone block travel west from here, but you can move in the 
+other directions if you feel like climbing.  Rocky hills stand all around, 
+and not much vegetation or shelter.  
+~
+Sector forest~
+Exit north 30277
+Exit east 30246
+Exit west 30639
+End
+
+
+#31061
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit north 31064
+EDesc More forest.
+~
+Exit east 31062
+EDesc More Forest.
+~
+Exit west 31059
+End
+
+
+#31062
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit north 31065
+EDesc More forest.
+~
+Exit east 31063
+EDesc More Forest.
+~
+Exit west 31061
+EDesc More forest.
+~
+End
+
+
+#31063
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit north 31066
+EDesc More forest.
+~
+Exit west 31062
+EDesc More forest.
+~
+End
+
+
+#31064
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit east 31065
+EDesc More Forest.
+~
+Exit south 31061
+EDesc More forest.
+~
+End
+
+
+#31065
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit north 31068
+EDesc More forest.
+~
+Exit east 31066
+EDesc More Forest.
+~
+Exit south 31062
+EDesc More forest.
+~
+Exit west 31064
+EDesc More forest.
+~
+End
+
+
+#31066
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit north 31069
+EDesc More forest.
+~
+Exit east 31067
+EDesc More Forest.
+~
+Exit south 31063
+EDesc More forest.
+~
+Exit west 31065
+EDesc More forest.
+~
+End
+
+
+#31067
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit north 31070
+EDesc More forest.
+~
+Exit west 31066
+EDesc More forest.
+~
+End
+
+
+#31068
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the sky with 
+their leaves and branches.  The ground here is completely covered with 
+colorful dead leaves, and the sounds of wildlife are all around.  To the 
+west, the trees grow shorter to the extent that they can no longer be 
+considered trees, but bushes.  
+~
+Sector forest~
+Exit east 31069
+EDesc More Forest.
+~
+Exit south 31065
+EDesc More forest.
+~
+End
+
+
+#31069
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit north 31072
+EDesc More forest.
+~
+Exit east 31070
+EDesc More Forest.
+~
+Exit south 31066
+EDesc More forest.
+~
+Exit west 31068
+EDesc More forest.
+~
+End
+
+
+#31070
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit north 31073
+EDesc More forest.
+~
+Exit east 31071
+EDesc More Forest.
+~
+Exit south 31067
+EDesc More forest.
+~
+Exit west 31069
+EDesc More forest.
+~
+End
+
+
+#31071
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit north 31074
+EDesc More forest.
+~
+Exit west 31070
+EDesc More forest.
+~
+End
+
+
+#31072
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit east 31073
+EDesc More Forest.
+~
+Exit south 31069
+EDesc More forest.
+~
+End
+
+
+#31073
+Name Pleasant Forest~
+Desc The forest here is very pleasant.  You are surrounded with all 
+types of trees, but they are spaced in such a way that travel is 
+easy.  The sounds of birds chirping and small animals scurrying 
+through the branches is all around.
+~
+Sector forest~
+Exit east 31074
+EDesc More Forest.
+~
+Exit south 31070
+EDesc More forest.
+~
+Exit west 31072
+EDesc More forest.
+~
+End
+
+
+#31074
+Name Pleasant Forest~
+Desc Tall trees of all varieties surround you, blocking out much of the
+sky with their leaves and branches.  Dry leaves crunch as you move,
+and the sounds of wildlife surround you.
+~
+Sector forest~
+Exit east 30166
+Exit south 31071
+EDesc More forest.
+~
+Exit west 31073
+EDesc More forest.
+~
+End
+
+
+#31076
+Name Thick Forest~
+Desc The forest here consists of pine, maple, spruce, and oak trees, and
+is somewhat dense.  It thins a bit to the west, and it looks like 
+there may be a road or path there.
+~
+Sector forest~
+Exit east 31080
+EDesc More trees.
+~
+Exit south 31077
+EDesc More trees.
+~
+Exit west 30122
+EDesc The forest thins a bit.
+~
+End
+
+
+#31077
+Name Thick Forest~
+Desc The forest here is rather dense and dark.  A thick canopy of leaves
+and branches prevent much light from getting through.  It seems to
+get a little lighter to the west.
+~
+Sector forest~
+Exit north 31076
+EDesc More trees.
+~
+Exit east 31081
+EDesc More trees.
+~
+Exit south 31078
+EDesc More trees.
+~
+Exit west 30121
+EDesc It gets a bit lighter this way.
+~
+End
+
+
+#31078
+Name Thick Forest~
+Desc The forest here consists of pine, maple, spruce, and oak trees, and
+is somewhat dense.  It thins a bit to the west, and it looks like 
+there may be a road or path there.
+~
+Sector forest~
+Exit north 31077
+EDesc More trees.
+~
+Exit east 31082
+EDesc More trees.
+~
+Exit south 31079
+EDesc More trees.
+~
+Exit west 30120
+EDesc The forest thins a bit.
+~
+End
+
+
+#31079
+Name Forest~
+Desc The forest is very pleasant here, consisting of all sorts of
+nice healthy trees.  It seems to get much thicker to the north,
+while to the south thins dramatically.  In fact, there seem to 
+be some buildings in that direction, but you can't reach them 
+from here because of heavy brush.
+~
+Sector forest~
+Exit north 31078
+EDesc More trees.
+~
+Exit east 31083
+EDesc More trees.
+~
+Exit west 30119
+EDesc The forest thins a bit.
+~
+End
+
+
+#31080
+Name Forest~
+Desc The forest here is made up of mostly pine and maple trees.  It 
+seems to get much thicker to the west, and thinner to the east.
+~
+Sector forest~
+Exit east 31085
+EDesc More trees.
+~
+Exit south 31081
+EDesc More trees.
+~
+Exit west 31076
+EDesc More trees.
+~
+End
+
+
+#31081
+Name Forest~
+Desc The forest is very active here.  You can hear many birds and animals
+moving around in the many trees.  The forest grows darker to the west,
+while to the east seems to thin.
+~
+Sector forest~
+Exit north 31080
+EDesc More trees.
+~
+Exit east 31086
+EDesc More trees.
+~
+Exit south 31082
+EDesc More trees.
+~
+Exit west 31077
+EDesc More trees.
+~
+End
+
+
+#31082
+Name Forest~
+Desc The forest here is made up of mostly pine and maple trees.  It 
+seems to get much thicker to the west, and thinner to the east.
+~
+Sector forest~
+Exit north 31081
+EDesc More trees.
+~
+Exit east 31087
+EDesc More trees.
+~
+Exit south 31083
+EDesc More trees.
+~
+Exit west 31078
+EDesc More trees.
+~
+End
+
+
+#31083
+Name Light Forest~
+Desc The forest isn't very heavy here, but does grow denser to the north.  
+There are some buildings a bit to the southwest, but you cannot reach 
+them from here because of heavy brush.
+~
+Sector forest~
+Exit north 31082
+EDesc More trees.
+~
+Exit east 31088
+EDesc More trees.
+~
+Exit south 31084
+EDesc More trees.
+~
+Exit west 31079
+EDesc More trees.
+~
+End
+
+
+#31084
+Name Light Forest~
+Desc The forest is light and pleasant here.  Through the trees you can see 
+some buildings to the west, and a road or path to the south.  Heavy
+brush blocks passage to the buildings from this direction.
+~
+Sector forest~
+Exit north 31083
+EDesc More trees.
+~
+Exit east 31089
+EDesc More trees.
+~
+Exit south 30113
+EDesc A road.
+~
+End
+
+
+#31085
+Name Light Forest~
+Desc You are just inside the edge of a light forest.  There is a large stone
+building or complex just to the east, but there is no entrance on this
+side.  Beyond the building the ground slopes downward, and you catch
+a glimpse of a large body of water.
+~
+Sector forest~
+Exit south 31086
+EDesc Light forest.
+~
+Exit west 31080
+EDesc More trees.
+~
+End
+
+
+#31086
+Name Light Forest~
+Desc You are just inside the edge of a light forest, which stretches off westward.
+Through the trees to the east you can see the ground slope downward towards
+a large body of water.  On the slope, a bit to the northeast, there is a large
+stone complex.
+~
+Sector forest~
+Exit north 31085
+EDesc More trees.
+~
+Exit east 31090
+EDesc Out of the forest.
+~
+Exit south 31087
+EDesc More trees.
+~
+Exit west 31081
+EDesc More trees.
+~
+End
+
+
+#31087
+Name Light Forest~
+Desc You are just inside the edge of a light forest, which stretches to the west.
+Through the trees to the east the ground slopes downward until it meets a
+wide body of water.  There are sounds of wildlife coming from all directions.
+~
+Sector forest~
+Exit north 31086
+EDesc More trees.
+~
+Exit east 31091
+EDesc The ground slopes to the water.
+~
+Exit south 31088
+EDesc More trees.
+~
+Exit west 31082
+EDesc More trees.
+~
+End
+
+
+#31088
+Name Light Forest~
+Desc The trees are few and far between in this section of the forest.  They seem
+to die out completely a short way to the east.  Beyond that point you can 
+see the ground slope downwards, towards a large body of water.
+~
+Sector forest~
+Exit north 31087
+EDesc More trees.
+~
+Exit east 31092
+EDesc The ground slopes downward.
+~
+Exit south 31089
+EDesc More trees.
+~
+Exit west 31083
+EDesc MOre trees.
+~
+End
+
+
+#31089
+Name Light Forest~
+Desc The trees are few and far between in this section of the forest.  They seem
+to die out completely a short way to the east and south.  To the east the
+ground slopes downward towards some water, adn to the south there is a road
+or path.
+~
+Sector forest~
+Exit north 31088
+EDesc More trees.
+~
+Exit east 31093
+EDesc The ground slopes downward.
+~
+Exit south 30114
+EDesc A road.
+~
+Exit west 31084
+EDesc More trees.
+~
+End
+
+
+#31090
+Name On a Slope, South of a Small Village~
+Desc You are just to the south of a stone structure.  It is quite large,
+and upon the top sits a small tower, which looks to have a bell
+hanging inside.  There is a wooden door through which you might
+enter.  The whole thing is built right onto a slope.  The ground
+drops down to the east, until it meets a huge body of water.  A
+light forest begins to the west.
+~
+Sector field~
+Exit north 11100
+Exit east 31095
+Exit south 31091
+EDesc More of the slope.
+~
+Exit west 31086
+EDesc Trees.
+~
+End
+
+
+#31091
+Name On a Slope~
+Desc You are on a rocky slope, that drops eastward until it meets a large
+body of water.  The ground levels off and becomes covered with trees
+to the west.  There is a large stone structure off to the north.
+~
+Sector field~
+Exit north 31090
+EDesc Along the slope.
+~
+Exit east 31096
+Exit south 31092
+EDesc The slope continues.
+~
+Exit west 31087
+EDesc Trees.
+~
+End
+
+
+#31092
+Name On a Slope~
+Desc You are on a rocky slope, that drops eastward until it meets a large
+body of water.  The ground levels off and becomes covered with trees
+to the west.
+~
+Sector field~
+Exit north 31091
+EDesc More of the slope.
+~
+Exit east 31097
+Exit south 31093
+EDesc More of the slope.
+~
+Exit west 31088
+EDesc Trees.
+~
+End
+
+
+#31093
+Name On a Slope~
+Desc Here the ground slopes downward to the east, until it turns into a flat
+beach and open water.  The ground flattens and there are trees to the
+west, and it appears that there is a road to the south.
+~
+Sector field~
+Exit north 31092
+EDesc The slope continues.
+~
+Exit east 31098
+Exit south 30115
+EDesc A road.
+~
+Exit west 31089
+EDesc Trees.
+~
+End
+
+
+#31094
+Name Slope~
+Desc You are on the middle of a slope, just lower than a huge stone structure
+to your west.  To the east, the ground continues to drop until it meets a
+sandy beach and water.  There seems to be no entrance to the stone structure
+from this direction.  
+~
+Sector field~
+Exit south 31095
+End
+
+
+#31095
+Name Slope~
+Desc You are on a slope which ends in a sandy beach to the east.  To the west
+the ground rises and becomes green and tree-covered.  There is some sort of
+large structure on the higher ground to the northwest.  
+~
+Sector field~
+Exit north 31094
+Exit south 31096
+Exit west 31090
+End
+
+
+#31096
+Name Slope~
+Desc You are towards the lower part of a slope which falls from west to east. 
+At the bottom of the drop there is a sandy beach, and water beyond.  To the
+west, the ground rises and becomes wooded.  
+~
+Sector field~
+Exit north 31095
+Exit south 31097
+Exit west 31091
+End
+
+
+#31097
+Name Beach~
+Desc Small waves crash on this nice beach as you travel across it.  The water
+stretches endlessly east, while to the west the ground rises and becomes
+tree-covered.  The shoreline seems to reach a bit further east as you travel
+northwards.  
+~
+Sector field~
+Exit north 31096
+Exit south 31098
+Exit west 31092
+End
+
+
+#31098
+Name Beach~
+Desc You are on a slightly sloped sandy beach, which meets water to the east. 
+Small rocks are half-buried in the sand here and there, and small pieces of
+seaweed lie about the area.  
+~
+Sector field~
+Exit north 31097
+Exit south 30116
+Exit west 31093
+End
+
+
+#31099
+Name Edge of Swamp~
+Desc You seem to be along the southern edge of a murky swamp.  Trees with vines 
+and other lush growth covering them stand around you, and get somewhat 
+thicker to the north.  To the south, the ground rises a bit and dries out.  
+~
+Sector hills~
+Exit north 23500
+Exit east 31104
+Exit south 19957
+Exit west 30158
+End
+
+
+#31100
+Name Swamp~
+Desc Moss covered trees surround you, as you travel through a murky swamp.  The 
+ground seems to get a bit drier to the north and east, but not by much.  The 
+trees die out in those directions.  A huge pile of dead trees blocks your 
+way south, but you can see the tip of a pyramid in that direction.  
+~
+Sector hills~
+Exit north 30461
+Exit east 30459
+Exit west 30276
+End
+
+
+#31101
+Name Swamp~
+Desc Murky water slaps in small waves against the trees as you travel through 
+this muddy swamp.  The way west is blocked by a pile of dead wood, but the 
+ground does seem to get a bit drier to the east.  
+~
+Sector hills~
+Exit north 30459
+Exit east 31102
+Exit south 31104
+End
+
+
+#31102
+Name Barren, Muddy Wasteland~
+Desc The ground is muddy here and dead trees surround you.  The walls of a city 
+lie very far off to the northeast, but there is not much in other 
+directions.  
+~
+Sector hills~
+Exit north 30458
+Exit east 31103
+Exit south 31105
+Exit west 31101
+End
+
+
+#31103
+Name Barren, Muddy Wastelands~
+Desc Barren, muddy wastelands surround you.  There are a few burnt tree stumps 
+around.  But not much else.  The tall dark walls of some city rise not far 
+to the east.  
+~
+Sector hills~
+Exit north 30457
+Exit east 30452
+Exit south 31106
+Exit west 31102
+End
+
+
+#31104
+Name Soggy Ground~
+Desc The ground is quite soggy here, and covered with moss.  Trees stand here and 
+there, also in many cases covered with moss.  It getts wetter to the west 
+and north, while to the south the ground becomes dry and rocky.  
+~
+Sector hills~
+Exit north 31101
+Exit east 31105
+Exit south 19956
+Exit west 31099
+End
+
+
+#31105
+Name Muddy Ground~
+Desc The ground is quite muddy here, with a scraggly half-dead tree here and 
+there.  A lot of jagged rocks poke up through the muck.  
+~
+Sector hills~
+Exit north 31102
+Exit east 31106
+Exit south 19955
+Exit west 31104
+End
+
+
+#31106
+Name Muddy Ground~
+Desc The ground is very muddy here, through rocks do poke up through the muck 
+here and there.  It gets a bit drier to the south, but remains desolate.  
+~
+Sector hills~
+Exit north 31103
+Exit east 30451
+Exit south 19954
+Exit west 31105
+End
+
+
+#31107
+Name Dead Forest~
+Desc The forest isn't so green here, and gets thinner to the east and south.  The 
+trees have lost some of their leaves, and are stunted in some cases.  There 
+is not much wildlife that you can see or hear.  
+~
+Sector hills~
+Exit north 30137
+Exit east 30439
+Exit south 30222
+Exit west 30692
+End
+
+
+#31108
+Name The Southwest Corner of the Island~
+Desc Here you go around the bend in the island, following your unwitting 
+merchantmen guides.  After you round the southern tip of the island you see 
+that the seawall begins to lower in height.  In the distance you glimpse 
+more of the island.  
+~
+Sector swim~
+Exit north 31119
+Exit east 31109
+Exit south 31009
+End
+
+
+#31109
+Name The Southern Side of the Island~
+Desc You continue to follow the merchantmen past the southern face of the island, 
+though there still is no sign of any sort of harbor or entrance.  To the 
+north, you notice the sea wall has lowered to around half of its former 
+height, and now the tops of many buildings are visible.  It appears as if 
+there is a whole village or city located on this island.  In the distance to 
+the east you think you see a slender white spire rising into the sky, but 
+you cannot tell for sure.  
+~
+Sector swim~
+Exit east 31110
+Exit south 31019
+Exit west 31108
+End
+
+
+#31110
+Name Southeast Corner of the Island~
+Desc Here you follow your merchantmen guides as they take you around the gently 
+curving southeast corner of the long, narrow island.  The sea wall is very 
+low here, allowing you a glimpse of the city that has grown up on the 
+island.  It seems to be a fairly rough looking area, full of run- down 
+buildings teeming with sailors, ruffians, and more poor and down- trodden 
+individuals.  
+~
+Sector swim~
+Exit north 31111
+Exit south 31029
+Exit west 31109
+End
+
+
+#31111
+Name Circling the Island~
+Desc You continue along this expanse of the large island.  To the south, you can 
+see a teeming harbor filled with ships of all sizes.  To the west you can 
+see over the low sea wall into the teeming city beyond.  
+~
+Sector swim~
+Exit north 31112
+Exit south 31110
+End
+
+
+#31112
+Name The Busy Harbor~
+Desc This large harbor is filled with many ships, from small, flat-bottomed 
+fishing skiffs to enormous trading vessels and galleons.  Long wooden docks 
+stretch out to sea, supported by enormous wooden pilons driven into the 
+sediment deep beneath the surface of the sea.  The cries of gulls and other 
+sea birds resound over the noisy din arising from the bustling harbor below. 
+ To the west it is possible to gain entrance to the not so fair city located 
+on the island.  To the north and south you can continue around the island.  
+~
+Sector swim~
+Exit north 31113
+Exit south 31111
+Exit west 10050
+End
+
+
+#31113
+Name Circling the Large Island~
+Desc You continue along this expanse of the large island.  To the north, you can 
+see a teeming harbor filled with ships of all sizes.  To the west you can 
+see over the low sea wall into the teeming city beyond.  
+~
+Sector swim~
+Exit north 31114
+Exit south 31112
+End
+
+
+#31114
+Name The Northeast Corner of the Island~
+Desc Here you follow your merchantmen guides as they take you around the gently 
+curving northeast corner of the long, narrow island.  The sea wall is very 
+low here, allowing you a glimpse of the city that has grown up on the 
+island.  It seems to be a fairly rough-looking area, full of run down 
+buildings teeming with sailors, ruffians, and more poor and down trodden 
+individuals.  
+~
+Sector swim~
+Exit south 31113
+Exit west 31115
+End
+
+
+#31115
+Name The Northern Side of the Island~
+Desc You continue to follow the merchantmen past the northern face of the island, 
+though there still is no sign of any sort of harbor or entrance.  To the 
+south, you notice the sea wall has lowered to around half of its former 
+height, and now the tops of many buildings are visible.  It appears as if 
+there is a whole village or city located on this island.  In the distance to 
+the east you think you see a slender white spire rising into the sky, but 
+you cannot tell for sure.  
+~
+Sector swim~
+Exit east 31114
+Exit west 31116
+End
+
+
+#31116
+Name The Northwest Corner of the Island~
+Desc Here you go around the bend in the island, following your unwitting 
+merchantmen guides.  After you round the northern tip of the island you see 
+that the seawall begins to lower in height.  In the distance you glimpse 
+more of the island.  
+~
+Sector swim~
+Exit east 31115
+Exit south 31117
+End
+
+
+#31117
+Name Circling the Large Island~
+Desc Following the lead of some other ships, you begin to head northward around 
+this small island.  You hope to find some sort of harbor or other place to 
+make a landing, but it appears as if nothing of that sort exists on this 
+side of the island.  However, the water here is very shallow, perhaps you 
+will find a harbor on the other side of the island.  
+~
+Sector swim~
+Exit north 31116
+Exit south 31118
+End
+
+
+#31118
+Name Nearing a Large Island~
+Desc At last you spot the land you sensed earlier!  It appears to be a low, flat 
+island that has had a large seawall built on this side of it, so you cannot 
+see what is on the island.  In front of the wall the water is very shallow, 
+and many rows of breakwaters have been built here.  It would be impossible 
+for anyone in a ship to negotiate their way through here, and a waste of 
+time for anyone using less mundane means, since there seems to be no 
+entrance to the seawall here.  You see a few merchant ships and fishing 
+skiffs to the north and south, though.  
+~
+Sector swim~
+Exit north 31117
+Exit south 31119
+Exit west 31120
+End
+
+
+#31119
+Name Nearing a Large Island~
+Desc At last you spot the land you sensed earlier!  It appears to be a low, flat 
+island that has had a large seawall built on this side of it, so you cannot 
+see what is on the island.  In front of the wall the water is very shallow, 
+and many rows of breakwaters have been built here.  It would be impossible 
+for anyone in a ship to negotiate their way through here, and a waste of 
+time for anyone using less mundane means, since there seems to be no 
+entrance to the seawall here.  You see a few merchant ships and fishing 
+skiffs to the north and south, though.  
+~
+Sector swim~
+Exit north 31118
+Exit south 31108
+Exit west 31124
+End
+
+
+#31120
+Name The Dragon Sea~
+Desc The sea here seems calm, though there are a few choppy waves as a good wind 
+sweeps in from the west.  Off in the distance to the east you can hear the 
+squawks of gulls and other sea birds, so you must not be too far from land, 
+though you can not see anything as of yet in that direction.  Off to the 
+west all you see is the featureless expanse of the Dragon Sea.  You think 
+you spot the dark blotch of a stormcloud on the horizon to the west, but you 
+cannot be sure from this distance.  
+~
+Sector noswim~
+Exit east 31118
+Exit south 31124
+Exit west 31121
+End
+
+
+#31121
+Name A Storm on the Dragon Sea~
+Desc A fierce storm seems to be forming here.  The waves are beginning to rise, 
+making making the surface a very rough place indeed.  The wind, too, is 
+picking up, bringing dark looking storm clouds in from the west.  A few 
+drops of warm rain are beginning to fall as well.  However, nothing here 
+looks even half as bad as the fierce maelstrom you see in the distance to 
+the west.  
+~
+Sector noswim~
+Exit east 31120
+Exit south 31125
+Exit west 31122
+End
+
+
+#31122
+Name A Storm on the Dragon Sea~
+Desc A terrible storm rages here.  The titanic waves rise and fall in erratic 
+patterns, and sheets of bitterly cold rain fall from the sky.  The wind 
+whips about at a frenzied pace, and it seems as if the whole world has gone 
+mad.  
+~
+Sector noswim~
+Exit east 31121
+Exit south 31126
+Exit west 31123
+End
+
+
+#31123
+Name A Storm on the Dragon Sea~
+Desc It seems almost impossible that such a fierce storm could have whipped up so 
+suddenly.  Thick, dark clouds hover menacingly above you, occasionally 
+sending a bright flash of lightning across the sky.  The wind swirls 
+fiercely about, and sheets of rain fall from the sky, pelting your skin till 
+it is red.  The waves rise and fall about you with titanic force.  
+~
+Sector noswim~
+Exit east 31122
+Exit south 31050
+Exit west 30478
+End
+
+
+#31124
+Name The Dragon Sea~
+Desc The sea here seems calm, though there are a few choppy waves as a good wind 
+sweeps in from the west.  Off in the distance to the east you can hear the 
+squawks of gulls and other sea birds, so you must not be too far from land, 
+though you can not see anything as of yet in that direction.  Off to the 
+west all you see is the featureless expanse of the Dragon Sea.  You think 
+you spot the dark blotch of a stormcloud on the horizon to the west, but you 
+cannot be sure from this distance.  
+~
+Sector noswim~
+Exit north 31120
+Exit east 31119
+Exit west 31125
+End
+
+
+#31125
+Name A Storm on the Dragon Sea~
+Desc A fierce storm seems to be forming here.  The waves are beginning to rise, 
+making making the surface a very rough place indeed.  The wind, too, is 
+picking up, bringing dark looking storm clouds in from the west.  A few 
+drops of warm rain are beginning to fall as well.  However, nothing here 
+looks even half as bad as the fierce maelstrom you see in the distance to 
+the west.  
+~
+Sector noswim~
+Exit north 31121
+Exit east 31124
+Exit south 31128
+Exit west 31126
+End
+
+
+#31126
+Name A Storm on the Dragon Sea~
+Desc A fierce storm rages here, one of the strongest you have ever seen in your 
+life, undoubtedly, and even more frightening because you are in the middle 
+of it!  The sky is covered with malevolent black clouds that spit forth 
+torrents of icy rain and an occasional bolt of lightning.  Off in the 
+distance to the south you think you see a waterspout rising from between the 
+enormous waves, but it seems to remain fairly stationary.  
+~
+Sector noswim~
+Exit north 31122
+Exit east 31125
+Exit south 31127
+Exit west 31050
+End
+
+
+#31127
+Name A Fierce Storm on the Dragon Sea~
+Desc As you fight your way through the wind and the waves, you begin to loose 
+track of where you are.  The only thing you can do is attempt to keep from 
+being forced underwater by the enormous waves.  It is a struggle to remain 
+in this place, and you fear that the storm will become quite deadly if you 
+remain.  
+~
+Sector noswim~
+Exit north 31126
+Exit east 31128
+Exit west 31045
+End
+
+
+#31128
+Name A Thick Bank of Fog~
+Desc As you head away from the storm brewing to the north, it seems at first as 
+if you are moving into sunnier weather.  Suddenly, however, you are closed 
+in by a thick wall of fog.  You try to head north, but it soon becomes clear 
+you are hopelessly lost in this morass.  You can continue to wander about in 
+here, waiting for it to burn off, but the fog is so thick that it will take 
+days for that to happen, even longer if that storm moves this way.  
+~
+Sector noswim~
+Exit north 31125
+Exit west 31127
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 31014 spec_poison
+M 31015 spec_poison
+M 31026 spec_breath_fire
+S
+
+
+
+#RESETS2
+M 0 31019 6 31000 1
+M 0 31018 6 31002 1
+M 0 31019 6 31003 1
+M 0 31020 3 31006 1
+M 0 31018 6 31011 1
+M 0 31019 6 31017 1
+M 0 31018 6 31019 1
+M 0 31019 6 31020 1
+M 0 31021 2 31024 1
+M 0 31020 3 31024 1
+M 0 31018 6 31026 1
+M 0 31018 6 31028 1
+M 0 31010 4 31029 1
+M 0 31019 6 31030 1
+M 0 31023 1 31031 1
+M 0 31018 6 31035 1
+M 0 31019 6 31036 1
+M 0 31017 3 31036 1
+M 0 31016 2 31038 1
+M 0 31010 4 31038 1
+M 0 31004 10 31038 1
+M 0 31008 6 31039 1
+M 0 31016 2 31040 1
+M 0 31012 5 31043 1
+M 0 31010 4 31043 1
+M 0 31002 5 31043 1
+M 0 31010 4 31044 1
+M 0 31021 2 31045 1
+M 0 31020 3 31045 1
+M 0 31017 3 31045 1
+M 0 31006 5 31046 1
+M 0 31003 4 31046 1
+M 0 31008 6 31047 1
+M 0 31015 3 31051 1
+M 0 31013 5 31053 1
+M 0 31008 6 31053 1
+O 0 31012 -1 31054
+P 0 31007 20 31012 10
+O 0 31004 -1 31057
+P 0 31005 20 31004 10
+M 0 31017 3 31058 1
+M 0 31003 4 31058 1
+O 0 31013 -1 31059
+P 0 31006 20 31013 10
+M 0 31012 5 31060 1
+M 0 31005 4 31061 1
+M 0 31013 5 31064 1
+M 0 31008 6 31064 1
+O 0 31012 -1 31066
+P 0 31007 20 31012 10
+M 0 31004 10 31067 1
+O 0 31004 -1 31068
+P 0 31005 20 31004 10
+O 0 31014 -1 31069
+P 0 31008 20 31014 10
+M 0 31013 5 31070 1
+O 0 31014 -1 31070
+P 0 31008 20 31014 10
+M 0 31006 5 31071 1
+O 0 31015 -1 31072
+P 0 31009 20 31015 10
+M 0 31011 2 31073 1
+M 0 31004 10 31073 1
+M 0 31004 10 31074 2
+O 0 31013 -1 31074
+P 0 31006 20 31013 10
+M 0 31005 4 31076 1
+O 0 31012 -1 31076
+P 0 31007 20 31012 10
+O 0 31016 -1 31077
+P 0 31017 10 31016 2
+M 0 31022 8 31077 8
+M 0 31006 5 31077 1
+M 0 31012 5 31078 1
+M 0 31007 3 31078 1
+M 0 31011 2 31079 1
+M 0 31009 3 31079 1
+O 0 31015 -1 31079
+P 0 31009 20 31015 10
+M 0 31002 5 31080 1
+M 0 31013 5 31081 1
+M 0 31008 6 31081 1
+O 0 31014 -1 31081
+P 0 31008 20 31014 10
+O 0 31004 -1 31081
+P 0 31005 20 31004 10
+O 0 31015 -1 31083
+P 0 31009 -1 31015 1
+M 0 31005 4 31084 1
+M 0 31003 4 31084 1
+M 0 31015 3 31085 1
+M 0 31007 3 31087 1
+O 0 31013 -1 31087
+P 0 31006 20 31013 10
+M 0 31009 3 31088 1
+O 0 31004 -1 31089
+P 0 31005 20 31004 10
+M 0 31009 3 31090 1
+M 0 31002 5 31090 1
+M 0 31007 3 31092 1
+M 0 31005 4 31093 1
+M 0 31013 5 31095 1
+O 0 31011 -1 31095
+M 0 31014 5 31096 1
+M 0 31012 5 31096 1
+M 0 31003 4 31097 1
+M 0 31000 200 31098 2
+M 0 31006 5 31099 1
+M 0 31014 5 31100 1
+O 0 31010 -1 31100
+M 0 31014 5 31101 1
+M 0 31001 2 31101 1
+O 0 31011 -1 31101
+M 0 31002 5 31102 1
+M 0 31014 5 31104 1
+O 0 31010 -1 31104
+M 0 31012 5 31105 1
+M 0 31014 5 31106 1
+M 0 31008 6 31106 1
+O 0 31011 -1 31106
+M 0 31015 3 31107 1
+M 0 31002 5 31107 1
+O 0 31010 -1 31107
+M 0 10021 8 31110 4
+M 0 10021 8 31110 4
+M 0 10021 8 31110 4
+M 0 10021 8 31110 4
+M 0 10021 8 31117 4
+M 0 10021 8 31117 4
+M 0 10021 8 31117 4
+M 0 10021 8 31117 4
+M 0 31027 5 31124 1
+M 0 31026 1 31127 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#31053
+title newby protection 1 : Wise old man stops levels < 30 entering defiled sanctuary~
+code if level $n <= 25
+pmote $n gives $n an evaluting look.
+sayto $n You'd best be carefull, traveler.
+sayto $n Danger lurks to the south of here.
+emote points towards the south with a gnarled finger.
+endif
+~
+disabled false
+END
+
+#31052
+title Ships Delay Trigger when climbing it~
+code mob echoat $q You climb aboard the HUGE ship.
+mob echoaround $q $N reaches the top of the sides of the ship, and dissapears over its rails, boarding the ship.
+mob transfer $q 23744
+mob forget
+~
+disabled false
+END
+
+#31051
+title Command "Climb Rope" to get on Board the Ship~
+code mob echoat $n You reach for the long rope and take it in your hands climbing up it slowly.
+mob echoaround $n $N reaches for the long rope dangling off the side of the HUGE ship.
+mob echoaround $n $N begins climbing up the side of the ship.
+mob remember $n
+mob delay 2
+~
+disabled false
+END
+
+#31050
+title Travel Mprog for Pirate Ship: Hour 23~
+code mob purge
+mob goto 31031
+mob oload 31019 1 room
+mob oload 31018 1 room
+~
+disabled false
+END
+
+#31049
+title Travel Mprog for Pirate Ship: Hour 22~
+code mob purge
+mob goto 31023
+mob oload 31019 1 room
+mob oload 31018 1 room
+~
+disabled false
+END
+
+#31048
+title Travel Mprog for Pirate Ship: Hour 21~
+code mob purge
+mob goto 31021
+mob oload 31019 1 room
+mob oload 31018 1 room
+~
+disabled false
+END
+
+#31047
+title Travel Mprog for Pirate Ship: Hour 20~
+code mob purge
+mob goto 31015
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31046
+title Travel Mprog for Pirate Ship: Hour 19~
+code mob purge
+mob goto 31009
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31045
+title Travel Mprog for Pirate Ship: Hour 18~
+code mob purge
+mob goto 31007
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31044
+title Travel Mprog for Pirate Ship: Hour 17~
+code mob purge
+mob goto 31005
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31043
+title Travel Mprog for Pirate Ship: Hour 16~
+code mob purge
+mob goto 31003
+mob oload 31019 1 room
+mob oload 31018 1 room
+~
+disabled false
+END
+
+#31042
+title Travel Mprog for Pirate Ship: Hour 15~
+code mob purge
+mob goto 31001
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31041
+title Travel Mprog for Pirate Ship: Hour 14~
+code mob purge
+mob goto 31036
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31040
+title Travel Mprog for Pirate Ship: Hour 13~
+code mob purge
+mob goto 31034
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31039
+title Travel Mprog for Pirate Ship: Hour 12~
+code mob purge
+mob goto 31032
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31038
+title Travel Mprog for Pirate Ship: Hour 11~
+code mob purge
+mob goto 31030
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31037
+title Travel Mprog for Pirate Ship: Hour 10~
+code mob purge
+mob goto 31028
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31036
+title Travel Mprog for Pirate Ship: Hour 9~
+code mob purge
+mob goto 10049
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31035
+title Travel Mprog for Pirate Ship: Hour 8~
+code mob purge
+mob goto 31026
+mob oload 31019 1 room
+mob oload 31018 1 room
+~
+disabled false
+END
+
+#31034
+title Travel Mprog for Pirate Ship: Hour 6~
+code mob purge
+mob goto 31024
+mob oload 31019 1 room
+mob oload 31018 1 room
+~
+disabled false
+END
+
+#31033
+title Travel Mprog for Pirate Ship: Hour 7~
+code mob purge
+mob goto 31022
+mob oload 31019 1 room
+mob oload 31018 1 room
+~
+disabled false
+END
+
+#31032
+title Travel Mprog for Pirate Ship: Hour 5~
+code mob purge
+mob goto 31020
+mob oload 31019 1 room
+mob oload 31018 1 room
+~
+disabled false
+END
+
+#31031
+title Travel Mprog for Pirate Ship: Hour 4~
+code mob purge
+mob goto 31018
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31030
+title Travel Mprog for Pirate Ship: Hour 3~
+code mob purge
+mob goto 31016
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31029
+title Travel Mprog for Pirate Ship: Hour 2~
+code mob purge
+mob goto 31014
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31028
+title Travel Mprog for Pirate Ship: Hour 1~
+code mob purge
+mob goto 31012
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31027
+title Travel Mprog for Pirate Ship: Hour 0~
+code mob purge
+mob goto 31010
+mob oload 31018 1 room
+mob oload 31019 1 room
+~
+disabled false
+END
+
+#31026
+title Storms Randomly Moves you.~
+code if level $n <= 10
+mob echo `#`BA storm blows you about on the sea.`^
+break
+endif
+ 
+mob echo `#`BA sudden storm erupts fiercely around you, throwing your directions to the wind.`^
+ 
+if rand 70
+mob transfer $n 31108
+break
+endif
+if rand 70
+mob transfer $n 31022
+break
+endif
+if rand 70
+mob transfer $n 31032
+break
+endif
+if rand 70
+mob transfer $n 31121
+break
+endif
+~
+disabled false
+END
+
+#31025
+title baby whale sims with mommy~
+code if mobhere 31020
+  pmote whale swims beside @.
+endif
+~
+disabled false
+END
+
+#31024
+title whale and tail~
+code emote dives into the water, raising its huge tail, which hits the water, 
+forming small waves.
+~
+disabled false
+END
+
+#31023
+title happy fish~
+code emote jumps off the water and falls back, splashing water joyfully.
+~
+disabled false
+END
+
+#31022
+title dragonfly flyz~
+code pmote $n flies noisily above @.
+~
+disabled false
+END
+
+#31021
+title scorpion threatens~
+code if isgood $n
+  pmote $n stays away from @.
+  else
+  pmote $n points its dangerous tail to @.
+endif
+~
+disabled false
+END
+
+#31020
+title snake versus magic~
+code if class $n mage
+or class $n spellfilcher
+or class $n ranger
+or class $n druid
+or class $n cleric
+or class $n paladin
+  pmote $n raises its head and threatens @, hissing softly.
+  else
+  pmote $n looks at @, hissing softly.
+endif
+~
+disabled false
+END
+
+#31019
+title hissing snake~
+code emote hisses softly with its long and thin tongue.
+~
+disabled false
+END
+
+#31018
+title ant likes good and doesnt like evil~
+code if isgood $n
+  pmote $n climbs on @.
+  else
+  if isevil $n 
+    pmote $n keeps some distance from @.
+  endif
+endif
+~
+disabled false
+END
+
+#31017
+title grasshopper likes green~
+code if wears $n green
+  pmote $n jumps on @.
+  follow $n
+else
+  pmote $n jumps away from @.
+  
+~
+disabled false
+END
+
+#31016
+title dog looking for food~
+code pmote $n sniffs @, seeking for some meat.
+~
+disabled false
+END
+
+#31015
+title duck and alligns~
+code if isevil $n
+  pmote $n beaks @ hardly.
+  mob echoat $n And it hurts a lot.
+else
+  if isgood $n
+  pmote $n looks hopefuly at @, waiting for some food.
+  else
+      pmote $n twists its tails in a comic way to @.
+  endif
+endif
+~
+disabled false
+END
+
+#31014
+title deer and races.~
+code if race $n orc
+or race $n draconian
+or race $n duergar
+or race $n goblin
+or race $n dragon
+or race $n lizardman
+or race $n half-orc
+or race $n drow
+or race $n alaghi
+  pmote $n threatens @ with its horns.
+else
+  if race $n human
+  or race $n elf
+  or race $n mrem
+  or race $n gnome
+  or race $n avian
+  or race $n half-elf
+  or race $n dwarf
+  or race $n gnoll
+  or reace $n voadkyn
+    pmote $n moves its ears at the sight of @.
+  else
+    if race $n minotaur
+      pmote $n points its horns to @, playfully.
+    endif
+  endif
+~
+disabled false
+END
+
+#31013
+title you get the fur from the bear~
+code mob oload 31000
+mob echoat $n You get the fur from a brown-furred bear.
+mob silently give fur $n
+~
+disabled false
+END
+
+#31012
+title bee likes roses~
+code if carries $n rose
+  pmote $n flies around @, trying to touch a red rose.
+endif
+~
+disabled false
+END
+
+#31011
+title the nightingale and its songs~
+code if isgood $n
+  pmote $n sings a beautiful song to @.
+else
+  if isevil $n
+    pmote $n sings a sad song to @.
+  else
+    if isneutral $n
+      pmote $n sings joyfully to @.
+    endif
+  endif
+endif
+~
+disabled false
+END
+
+#31010
+title bee attacking bear~
+code if name $n bear
+ mob kill $n
+endif
+~
+disabled false
+END
+
+#31009
+title bee protecting honey~
+code if carries $r honeycomb
+  mob remember $r
+  mob echoat $q `x
+  mob echoat $q You have been poisoned by a black and yellow bee's sting.
+  mob silently mob cast poison $q
+  mob echoat $q `#`YThat really did `RHURT!`^
+  mob echoat $q `x
+  mob kill $q
+endif
+~
+disabled false
+END
+
+#31008
+title bear gets honey~
+code if objhere 31016
+  get honeycomb beehive
+endif
+~
+disabled false
+END
+
+#31007
+title owl awake~
+code if hour == 6
+  wake
+endif
+~
+disabled false
+END
+
+#31006
+title hunting owl~
+code if mobhere ant
+  pmote ant dives and grabs @, eating it quickly.
+  mob purge ant
+else
+  if mobhere scorpion
+    pmote scorpion dives and grabs @, eating it quickly.
+    mob purge scorpion
+  else
+    if mobhere dragonfly
+      pmote dragonfly catches @ on the air and eats it quickly.
+      mob purge dragonfly
+    endif
+  endif
+endif
+~
+disabled false
+END
+
+#31005
+title sleeping owl~
+code if hour > 5
+and hour < 19
+  sleep
+endif
+~
+disabled false
+END
+
+#31004
+title happy butterfly.~
+code if carries $n rose
+or race $n elf
+or isgood $n
+  pmote $n rests softly on @.
+  else
+    if isevil $n 
+      pmote $n gets away from @.
+    else
+      if isneutral $n
+        pmote $n flies happily around @.
+      endif
+    endif
+endif
+ 
+~
+disabled false
+END
+
+#31003
+title stupid pigeon.~
+code emote stumbles and almost falls.
+~
+disabled false
+END
+
+#31002
+title vulture seeking death.~
+code if isvisible $n
+  pm $n flies in circles above @.
+endif
+~
+disabled false
+END
+
+#31001
+title turtle and its head.~
+code if isgood $n
+  pmote $n slowly turns its head to @.
+  else
+    if isevil $n 
+      pmote $n cautiously watches @.
+    else
+      if isneutral $n
+        pmote $n glares at @ for a moment, then turns its head.
+      endif
+    endif
+endif
+~
+disabled false
+END
+
+#31000
+title seagul fishing~
+code emote dives, and catches a fish, which is quickly eaten.
+~
+disabled false
+END
+
+#0
+
+
+#$

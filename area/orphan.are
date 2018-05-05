@@ -1,0 +1,4129 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        The Orphanage~
+ShortName   Orphanage~
+Builders    None~
+Credits     Cadoren~
+VNUMs       4900 4999
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#4900
+Name 4900 orphanage matron~
+ShortD an orphanage matron~
+LongD An orphanage matron stands here welcoming you.~
+Desc This large woman has a firm look on her face, although you can see wrinkles 
+around her eyes which have come from smiling often.  She looks well-fed and 
+stands a little taller than the average man.  Her hair is pulled back into a 
+bun and her clothes are neatly ironed.  She looks friendly enough, yet you 
+can tell from her face, that you wouldn't want to harm one of the children 
+she cares for.  
+~
+Race human~
+Align 3 2
+XPMod 120
+Level 110
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+475
+DamDice 10d11+46
+DamType beating
+AC -670 -670 -670 -600
+Wealth 100
+Act    npc dont_wander stay_area warrior noautosocial~
+AffBy  detect_evil detect_invis detect_hidden~
+Off    disarm dodge parry~
+Imm    summon charm sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg GRALL 4900 100~
+END
+
+#4901
+Name office matron~
+ShortD a matron~
+LongD A matron of the orphanage is shuffling papers here.~
+Desc This large woman has a firm look on her face, although you can see wrinkles 
+around her eyes which have come from smiling often.  She looks well-fed and 
+stands a little taller than the average man.  Her hair is pulled back into a 
+bun and her clothes are neatly ironed.  She looks friendly enough, yet you 
+can tell from her face, that you wouldn't want to harm one of the children 
+she cares for.  She is filing forms for new orphans.  
+~
+Race human~
+Align 3 3
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+320
+DamDice 8d6+27
+DamType beating
+AC -300 -300 -300 -240
+Wealth 100
+Act    npc dont_wander stay_area warrior noautosocial~
+AffBy  detect_evil detect_hidden~
+Off    disarm dodge parry~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4902
+Name cook happy ~
+ShortD a happy cook~
+LongD A cook is here, stirring a pot of oatmeal.~
+Desc This jolly cook has a wide smile and happy eyes.  Her cheeks are rosy from 
+cooking over a hot stove all day.  She has a loud hearty voice which is 
+comforting to listen to.  You can tell she has been sampling her own cooking 
+by the size of her.  Her hair is short and wispy and she has a double chin.  
+She is a favourite amongst all of the orphan children.  
+~
+Race human~
+Align 3 3
+XPMod 110
+Level 45
+Hitroll 0
+HitDice 5d7+250
+ManaDice 5d7+250
+DamDice 8d4+16
+DamType beating
+AC -150 -150 -150 -120
+Wealth 50
+Act    npc dont_wander stay_area warrior~
+AffBy  detect_evil detect_hidden~
+Off    disarm dodge parry~
+Imm    summon charm poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+MProg GREET 4903 70~
+MProg TICK 4902 100~
+END
+
+#4903
+Name nurse healer~
+ShortD a friendly nurse~
+LongD A nurse is here taking care of the children.~
+Desc A warm, comforting smile is the first thing you see when you look at this 
+lady.  She has tender hands and a soothing, gentle voice.  Her hair is 
+neatly tied up and she keeps her uniform neat and tidy.  She takes care of 
+the babies in the nursery, and any cuts and bruises the orphans have.  
+~
+Race human~
+Align 3 3
+XPMod 120
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+320
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -240
+Wealth 50
+Act    npc dont_wander stay_area healer~
+Off    disarm dodge parry~
+Imm    summon charm disease~
+Vuln   fire acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4904
+Name orphan child homeless~
+ShortD a homeless orphan~
+LongD An orphan is playing quietly here.~
+Desc This little child looks to be about six years old.  His face is grubby and 
+his hands are covered in dirt.  He seems very happy here, although you can't 
+help feeling sorry for him, being an orphan at such a young age.  He is 
+playing with some old toys and humming little noises to himself.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos kneeling~
+Size   small~
+Sex    male~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4905
+Name homeless orphan male boy~
+ShortD a homeless orphan~
+LongD An orphan boy is here banging his spoon on the table.~
+Desc This little child looks to be about six years old.  His face is grubby and 
+his hands are covered in dirt.  He seems very happy here, although you can't 
+help feeling sorry for him, being an orphan at such a young age.  He is 
+sitting here banging his spoon on the table.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   cold disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4906
+Name homeless orphan girl~
+ShortD a homeless orphan~
+LongD An orphan girl is sitting here, waiting for her dinner.~
+Desc This little girl is sitting here waiting for her sup.  Her hair looks as if 
+she forgot to brush it this morning and her teeth aren't exactly white.  Her 
+eyes shine brightly and she seems very happy.  She is a little on the 
+scrawny side but her face is beginning to fill out.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   cold disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos sitting~
+Size   small~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4907
+Name homeless orphan girl~
+ShortD a homeless orphan~
+LongD An orphan girl is playing in the sandpit here.~
+Desc This little girl is running about, laughing merrily.  Her hair looks as if 
+she forgot to brush it this morning and her teeth aren't exactly white.  Her 
+eyes shine brightly and she seems very happy.  She is a little on the 
+scrawny side but her face is beginning to fill out.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   cold disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4908
+Name homeless orphan male boy~
+ShortD a homeless orphan~
+LongD An orphan boy is running about wildly.~
+Desc This little child looks to be about six years old.  His face is grubby and 
+his hands are covered in dirt.  He seems very happy here, although you can't 
+help feeling sorry for him, being an orphan at such a young age.  He is 
+running about happily.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc stay_area~
+Vuln   disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4909
+Name teacher young lady junior~
+ShortD a young lady teacher~
+LongD A teacher is here leading the children in nursery rhymes.~
+Desc This smiling woman would take anyone in.  In fact, you'd be surprised if you 
+didn't see her cuddling a child or reading a story to a group of children.  
+She has a warm, friendly face that reminds you of the comforts of your own 
+mother.  She has a soft, gentle voice and when she speaks the children 
+always listen.  At the moment, she is telling the children nursery rhymes.  
+~
+Race human~
+Align 3 3
+XPMod 90
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+210
+DamDice 4d7+11
+DamType beating
+AC -110 -110 -110 -80
+Wealth 150
+Act    npc dont_wander stay_area~
+Off    disarm dodge parry~
+Imm    summon charm sleep~
+Vuln   fire acid iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+MProg GREET 4904 70~
+MProg ROOMDEATH 4901 100~
+END
+
+#4910
+Name elderly teacher senior~
+ShortD an elderly teacher~
+LongD An elderly teacher is writing on the board here.~
+Desc This elderly lady has a wise look on her face.  She has a serious demeanor 
+which gains the respect of her students.  She has a slim build and ties her 
+hair neatly behind her neck.  She has a tendency to be harsh on any students 
+who forget to do their homework, although she has a keen sense of humour 
+also.  She is standing at the front of the classing calling on the students, 
+for answers to the quiz.  
+~
+Race human~
+Align 3 3
+XPMod 90
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+210
+DamDice 4d7+11
+DamType beating
+AC -110 -110 -110 -80
+Wealth 150
+Act    npc dont_wander stay_area~
+Off    disarm dodge parry~
+Imm    summon charm~
+Vuln   disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg GREET 4905 70~
+END
+
+#4911
+Name orphan boy~
+ShortD a homeless orphan~
+LongD An orphan boy is running about wildly.~
+Desc This little child looks to be about six years old.  His face is grubby and 
+his hands are covered in dirt.  He seems very happy here, although you can't 
+help feeling sorry for him, being an orphan at such a young age.  He is 
+running about happily.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   cold disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4912
+Name orphan girl~
+ShortD a homeless orphan~
+LongD An orphan girl is here playing hopskotch.~
+Desc This little girl is running about, laughing merrily.  Her hair looks as if 
+she forgot to brush it this morning and her teeth aren't exactly white.  Her 
+eyes shine brightly and she seems very happy.  She is a little on the 
+scrawny side but her face is beginning to fill out.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   cold disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4913
+Name orphan boy~
+ShortD a homeless orphan~
+LongD An orphan boy is climbing a wooden frame here.~
+Desc This little child looks to be about six years old.  His face is grubby and 
+his hands are covered in dirt.  He seems very happy here, although you can't 
+help feeling sorry for him, being an orphan at such a young age.  He is 
+running about happily.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   cold disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4914
+Name orphan boy~
+ShortD a homeless orphan~
+LongD An orphan boy is singing nursery rhymes here.~
+Desc This little child looks to be about six years old.  His face is grubby and 
+his hands are covered in dirt.  He seems very happy here, although you can't 
+help feeling sorry for him, being an orphan at such a young age.  He is 
+singing nursery rhymes.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   cold disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos sitting~
+Size   small~
+Sex    male~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4915
+Name orphan boy~
+ShortD a homeless orphan~
+LongD An orphan boy is singing nursery rhymes here.~
+Desc This little child looks to be about six years old.  His face is grubby and 
+his hands are covered in dirt.  He seems very happy here, although you can't 
+help feeling sorry for him, being an orphan at such a young age.  He is 
+singing nursery rhymes.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+100
+DamDice 1d4+0
+DamType punch
+AC 90 90 90 110
+Wealth 10
+Act    npc stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material flesh
+END
+
+#4916
+Name orphan girl~
+ShortD a homeless orphan~
+LongD An orphan girl is singing here.~
+Desc This little girl is singing nursery rhymes in a happy voice.  Her hair looks 
+as if she forgot to brush it this morning and her teeth aren't exactly 
+white.  Her eyes shine brightly and she seems very happy.  She is a little 
+on the scrawny side but her face is beginning to fill out.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   cold disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4917
+Name orphan girl~
+ShortD a teenage orphan~
+LongD A teenage orphan girl is cheating on a quiz.~
+Desc This young teenager is going through a tough time, being an orphan at her 
+age.  She has a sulky look on her face and wears her clothes in a sloppy 
+fashion.  She is trying to copy the answers off a friend.  
+~
+Race human~
+Align 0 0
+XPMod 5
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+18
+DamDice 2d4+2
+DamType punch
+AC 10 10 10 10
+Wealth 0
+Act    npc dont_wander stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4918
+Name teenage boy~
+ShortD a young male orphan~
+LongD A teenage boy is scratching his name into a desk.~
+Desc This young teenager has a frown on his face.  He forgot to hand in his 
+homework and he doesn't know the answers to the quiz.  His mop of hair hangs 
+over his eyes and he avoids the teacher's glance.  
+~
+Race human~
+Align 0 0
+XPMod 5
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+18
+DamDice 2d4+2
+DamType punch
+AC 10 10 10 10
+Wealth 0
+Act    npc dont_wander stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos sitting~
+Size   small~
+Sex    male~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4919
+Name orphan girl~
+ShortD a teenage orphan~
+LongD A teenage orphan girl is sitting here with her hand up.~
+Desc This young girl has not let the misery of her childhood defeat her spirit.  
+She studies hard and has her hand up to answer every question.  
+~
+Race human~
+Align 0 0
+XPMod 5
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+18
+DamDice 2d4+2
+DamType punch
+AC 10 10 10 10
+Wealth 0
+Act    npc dont_wander stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos sitting~
+Size   small~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4920
+Name orphanage matron~
+ShortD an orphanage matron~
+LongD An orphanage matron is supervising the orphans.~
+Desc This large woman has a firm look on her face, although you can see wrinkles 
+around her eyes which have come from smiling often.  She looks well-fed and 
+stands a little taller than the average man.  Her hair is pulled back into a 
+bun and her clothes are neatly ironed.  She looks friendly enough, yet you 
+can tell from her face, that you wouldn't want to harm one of the children 
+she cares for.  
+~
+Race human~
+Align 3 2
+XPMod 120
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 6d9+320
+DamDice 8d6+27
+DamType beating
+AC -300 -300 -300 -240
+Wealth 100
+Act    npc stay_area warrior noautosocial~
+AffBy  detect_evil detect_hidden~
+Off    disarm dodge parry~
+Imm    summon charm sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4921
+Name children echo~
+ShortD children echo~
+LongD More children~
+Desc ~
+Race human~
+Align 0 0
+Level 150
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 4918 80~
+MProg RANDOM 4917 5~
+END
+
+#4922
+Name orphan girl~
+ShortD a homeless orphan~
+LongD An orphan girl is reading quietly here.~
+Desc This little girl is reading a book quietly.  Her hair looks as if 
+she forgot to brush it this morning and her teeth aren't exactly white.  Her 
+eyes shine brightly and she seems very happy.  She is a little on the 
+scrawny side but her face is beginning to fill out.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander stay_area~
+Vuln   cold disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4923
+Name orphan girl~
+ShortD a homeless orphan~
+LongD An orphan girl is playing happily.~
+Desc This little girl is playing happily.  Her hair looks as if 
+she forgot to brush it this morning and her teeth aren't exactly white.  Her 
+eyes shine brightly and she seems very happy.  She is a little on the 
+scrawny side but her face is beginning to fill out.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc stay_area~
+Vuln   cold disease drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg ROOMDEATH 4901 100~
+END
+
+#4924
+Name children echo 2~
+ShortD children echo 2~
+LongD Children playing~
+Desc ~
+Race human~
+Align 0 0
+Level 150
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 4916 80~
+MProg RANDOM 4915 5~
+END
+
+#4925
+Name librarian lady~
+ShortD a librarian lady~
+LongD A librarian is here, mending some of the books.~
+Desc This lady looks after the library. She likes things to be kept spick and span, and she especially likes children to be quiet in the library. She looks wise, or maybe its just the spectacles. She is mending some of the books.
+~
+Race human~
+Align 3 3
+XPMod 90
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d6+210
+DamDice 4d7+11
+DamType beating
+AC -110 -110 -110 -80
+Wealth 150
+Act    npc dont_wander stay_area~
+Off    disarm dodge parry~
+Imm    summon charm sleep~
+Vuln   fire acid iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material unknown
+MProg SPEECH 4923 thankyou~
+MProg SPEECH 4923 thanks~
+MProg GRALL 4919 80~
+MProg SPEECH 4924 no~
+MProg SPEECH 4922 yes~
+MProg SPEECH 4921 picture~
+MProg SPEECH 4920 chapter~
+MProg ROOMDEATH 4901 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#4900
+Name welcome mat~
+Short a `#`Ywelcome`^ mat~
+Desc A `#`Ywelcome`^ mat lies here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material material~
+Extra    noremove nodegrade~
+ExtraDesc welcome mat~
+. 
+`y############################################################
+############################################################
+#`y`#`YYb`^########`YdP`^#`Y888888`^#`Y88`^######`YdP""b8`^##`YdP"Yb`^##`Y8b`^####`Yd8`^#`Y888888`^#
+#`y#`#`YYb`^##`#`Ydb`^##`#`YdP`^##`#`Y88__`^###`#`Y88`^#####`#`YdP`^###`#`Y``"`^#`#`YdP`^###`#`YYb`^#`#`Y88b`^##`#`Yd88`^#`#`Y88__`^###
+#`y##`#`YYbdPYbdP`^###`#`Y88""`^###`#`Y88`^##`#`Y.o`^#`#`YYb`^######`#`YYb`^###`#`YdP`^#`#`Y88YbdP88`^#`#`Y88""`^###
+#`y####`#`YYP`^##`#`YP`^####`#`Y888888`^#`#`Y88ood8`^##`#`YYboodP`^##`#`YYbodP`^##`#`Y88`^#`#`YYY`^#`#`Y88`^#`#`Y888888`^#
+`y############################################################ 
+############################################################
+~
+End
+
+#4901
+Name wooden bookshelf shelf~
+Short a wooden bookshelf~
+Desc A wooden bookshelf stands here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 0 0 50 100
+Weight 50
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#4902
+Name polished wooden desk~
+Short a polished wooden desk~
+Desc A polished wooden desk stands here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 A 0 10 100
+Weight 0
+Material wood~
+Extra    nodegrade~
+ExtraDesc polished wooden desk~
+This desk has been made of wood and is finely polished.  It has a set of 
+draws on one side and a space for a chair on the other.  
+~
+End
+
+#4903
+Name form paper~
+Short a piece of paper~
+Desc A piece of paper is here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc form paper~
+You look at the paper and notice it is an application form for children 
+entering the orphanage.  It reads:
+ 
+`W,=============================================.
+|  `SName...................................    `W|
+|  `SDate of Birth..........................    `W|
+|  `SAge at entry...........................    `W|
+|  `SRace...................................    `W| 
+|  `SReasons for entering...................    `W|
+|  `S.......................................    `W|
+|  `SPossible difficulties..................    `W|
+|  `S.......................................    `W|
+|  `SOther..................................    `W|
+|  `S.......................................    `W|
+|  `SSigned...............Date..............    `W| 
+|                                             |
+``============================================='
+~
+End
+
+#4904
+Name long wooden table~
+Short a long wooden table~
+Desc A long wooden table stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 100 N 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc long wooden table~
+This table is long enough to fit six small children on either side.  It is 
+made of solid wood and has many scratches in it.  
+~
+End
+
+#4905
+Name hard wooden bench~
+Short a hard, wooden bench~
+Desc A hard, wooden bench stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 6 70 EH 100 100
+Weight 50
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#4906
+Name hard wooden bench~
+Short a hard, wooden bench~
+Desc A hard, wooden bench stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 6 70 EH 100 100
+Weight 50
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#4907
+Name small table~
+Short a small table~
+Desc A small table stands here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 0 0 30 0
+Weight 50
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc small table~
+This table is made of wood. It is the shape of a square and is big enough to fit about four large pots on it.
+~
+End
+
+#4908
+Name peeled potatoes~
+Short some peeled potatoes~
+Desc Some peeled potatoes are here waiting to be boiled.~
+Level 1
+ItemType food~
+Cost 5
+Asize 0
+Rsize 50
+Values 20 10 0 0 0
+Weight 20
+Material potato~
+Wear     take hold~
+End
+
+#4909
+Name pot belly stove~
+Short an iron pot belly stove~
+Desc An iron pot belly stove stands here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 AE 0 50 0
+Weight 100
+Material iron~
+Extra    noremove nodegrade~
+ExtraDesc iron pot belly stove~
+This pot belly oven is made of coarse, black iron. It has a small handle attached to the door. There is a small tray under the stove collecting ashes from the fire.
+~
+End
+
+#4910
+Name large pot~
+Short a large pot of oatmeal~
+Desc A large pot of oatmeal bubbles away here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 20 0 0 20 0
+Weight 0
+Material steel~
+Extra    noremove nodegrade~
+Wear     take hold~
+End
+
+#4911
+Name oatmeal~
+Short some hot oatmeal~
+Desc Some hot oatmeal has been left here.~
+Level 1
+ItemType food~
+Cost 10
+Asize 0
+Rsize 50
+Values 30 5 0 0 0
+Weight 2
+Material oatmeal~
+Wear     take~
+ExtraDesc oatmeal ~
+This oatmeal has just been cooked and is still steaming. It tastes a little salty.
+~
+End
+
+#4912
+Name blackboard black board~
+Short a blackboard~
+Desc A blackboard hangs on the wall here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc blackboard ~
+`#`S
+,---------------------------------------------------. 
+|                                                   |
+| `rA `Wis for Ayeni, the goddess of wisdom             `S|
+| `BB `Wis for Beauty, of whom Delhor is the goddess    `S|
+| `GC `Wis for Chaos, of whom Imidazole is the god      `S|
+|                                                   |
+| `W 3     5     9        :        `rHomework           `S|
+| `W+4    +2    -5        :   Write a story about     `S|
+| `W--    --    --        :   about your favourite    `S|
+| `W__    __    __        :     god or goddess.       `S|
+|                                                   |
+``---------------------------------------------------'`^
+~
+End
+
+#4913
+Name small child's desk~
+Short a small desk~
+Desc A small desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc small desk~
+A small desk is the perfect size for a child just starting school. It has a little hole with an inkpot inside. It is made of wood and is a little uncomfortable to sit on.
+~
+End
+
+#4914
+Name small child's desk~
+Short a small desk~
+Desc A small desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc small desk~
+A small desk is the perfect size for a child just starting school. It has a little hole with an inkpot inside. It is made of wood and is a little uncomfortable to sit on.
+~
+End
+
+#4915
+Name small child's desk~
+Short a small desk~
+Desc A small desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc small desk~
+A small desk is the perfect size for a child just starting school. It has a little hole with an inkpot inside. It is made of wood and is a little uncomfortable to sit on.
+~
+End
+
+#4916
+Name small child's desk~
+Short a small desk~
+Desc A small desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc small desk~
+A small desk is the perfect size for a child just starting school. It has a little hole with an inkpot inside. It is made of wood and is a little uncomfortable to sit on.
+~
+End
+
+#4917
+Name small child's desk~
+Short a small desk~
+Desc A small desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc small desk~
+A small desk is the perfect size for a child just starting school. It has a little hole with an inkpot inside. It is made of wood and is a little uncomfortable to sit on.
+~
+End
+
+#4918
+Name mobile~
+Short a mobile of storybook characters~
+Desc A mobile of storybook characters hangs from the ceiling here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc mobile ~
+A beautiful mobile of carved wooden storybook characters hangs from a thread. You can see trolls, fairies and unicorns dancing when the breeze blows through the room.
+~
+End
+
+#4919
+Name blackboard black board~
+Short a blackboard~
+Desc A blackboard hangs on the wall.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#4920
+Name big desk~
+Short a big desk~
+Desc A big desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc big desk~
+This desk is big enough to fit a child going through their teenage years. It is made of solid wood and you can see some scratchings on the desktop. There is an inkpot in the corner with a quill sticking out of it. 
+~
+End
+
+#4921
+Name big desk~
+Short a big desk~
+Desc A big desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc big desk~
+This desk is big enough to fit a child going through their teenage years. It is made of solid wood and you can see some scratchings on the desktop. There is an inkpot in the corner with a quill sticking out of it. 
+~
+End
+
+#4922
+Name big desk~
+Short a big desk~
+Desc A big desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc big desk~
+This desk is big enough to fit a child going through their teenage years. It is made of solid wood and you can see some scratchings on the desktop. There is an inkpot in the corner with a quill sticking out of it. 
+~
+End
+
+#4923
+Name big desk~
+Short a big desk~
+Desc A big desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc big desk~
+This desk is big enough to fit a child going through their teenage years. It is made of solid wood and you can see some scratchings on the desktop. There is an inkpot in the corner with a quill sticking out of it. 
+~
+End
+
+#4924
+Name big desk~
+Short a big desk~
+Desc A big desk is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 90 ADEFGH 100 100
+Weight 0
+Material wooden~
+Extra    noremove nodegrade~
+ExtraDesc big desk~
+This desk is big enough to fit a child going through their teenage years. It is made of solid wood and you can see some scratchings on the desktop. There is an inkpot in the corner with a quill sticking out of it. 
+~
+End
+
+#4925
+Name small cot~
+Short a small cot~
+Desc A small cot stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 50 HIKLNO 100 100
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc small cot~
+A small baby's cot stands here. It is painted white and has a soft, downy mattress inside. A quilt with animals sewn on it, covers the mattress.
+~
+End
+
+#4926
+Name small cot~
+Short a small cot~
+Desc A small cot stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 50 HIKLNO 100 100
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc small cot~
+A small baby's cot stands here. It is painted white and has a soft, downy mattress inside. A quilt with animals sewn on it, covers the mattress.
+~
+End
+
+#4927
+Name chest of drawers~
+Short a small chest of drawers~
+Desc A small chest of drawers stands here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 20 A 0 10 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#4928
+Name soft pink baby outfit~
+Short a soft `#`Mpink`^ baby outfit~
+Desc A soft `#`Mpink`^ baby outfit has been neatly folded here.~
+Level 1
+ItemType clothing~
+Cost 8
+Asize 0
+Rsize 30
+Values 0 0 0 0 0
+Weight 35
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+ExtraDesc baby outfit~
+A cute little `#`Mpink`^ outfit would make any baby look adorable wearing it. It has a tiny little collar and has sewn in booties. There are two domes on the back. It is made of very soft material.
+~
+End
+
+#4929
+Name soft yellow baby outfit~
+Short a soft `#`Yyellow`^ baby outfit~
+Desc A soft `#`Yyellow`^ baby outfit has been neatly folded here.~
+Level 1
+ItemType clothing~
+Cost 8
+Asize 0
+Rsize 30
+Values 0 0 0 0 0
+Weight 35
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+ExtraDesc yellow baby outfit~
+An adorable `#`Yyellow`^ baby outfit has been neatly folded and put away. It smells fresh and feels soft to the touch.
+~
+End
+
+#4930
+Name woven basket~
+Short a woven basket~
+Desc A woven basket is here.~
+Level 1
+ItemType container~
+Cost 10
+Asize 0
+Rsize 50
+Values 20 0 0 20 100
+Weight 50
+Material cane~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#4931
+Name wooden rattle bell~
+Short a wooden rattle with a bell inside~
+Desc A wooden rattle with a bell inside has been left here.~
+Level 1
+ItemType trash~
+Cost 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material wood~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#4932
+Name comfortable couch~
+Short a comfortable looking couch made of leather~
+Desc A comfortable looking couch made of leather stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 200 EHKN 100 100
+Weight 0
+Material leather~
+Extra    noremove nodegrade~
+End
+
+#4933
+Name beautifully painted wooden rocking horse~
+Short a beautifully painted wooden rocking horse~
+Desc A beautifully painted rocking horse rocks back and forth here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 100 E 100 100
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc rocking horse~
+A beautifully carved and painted rocking horse rocks back and forward. The body of the horse has been painted `#`Wwhite`^ like a stallion. It has been polished until the shapes of the muscles shine in the light. Fine horsehair has been used for the mane and tail and it has a little saddle attached, made of leather. The hooves have been painted a deep `#`rrose`^ colour. It looks as though it has been much loved.
+~
+End
+
+#4934
+Name colourful spinning top~
+Short a `#`Rc`ro`Yl`Go`gu`Br`bf`mu`Ml`^ spinning top~
+Desc A `#`Rc`ro`Yl`Go`gu`Br`bf`mu`Ml`^ spinning top, lies on its side here.~
+Level 1
+ItemType trash~
+Cost 15
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material wood~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc spining top~
+This `#`Rc`ro`Yl`Go`gu`Br`bf`mu`Ml`^ spinning top has been crafted out of wood and painted many bright colours. When it spins the colours blend into a blur of colour with a glimpse of pink.. or blue... or green.
+~
+End
+
+#4935
+Name delicate porcelain doll rosy cheeks~
+Short a delicate porcelain doll with `#`rrosy`^ cheeks~
+Desc A delicate porcelain doll with `#`rrosy`^ cheeks has been left here.~
+Level 1
+ItemType trash~
+Cost 12
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material porcelain~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc porcelain doll~
+This delicate looking doll has been made of `#`Wporcelain`^. It has a tiny little nose and sweet `#`Rred`^ lips. Its eyes are painted `#`Bblue`^ and are framed by long black eyelashes. Painted `#`rrosy`^ cheeks make this little doll look like a treasure that would captivate any little girl.
+~
+End
+
+#4936
+Name stone jacks knucklebones~
+Short some jacks~
+Desc Some jacks have been left here.~
+Level 1
+ItemType trash~
+Cost 12
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material metal~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc jacks knucklebones~
+These knucklebones have been made of melted down metal. They are well worn and feel hard. You wouldn't want to miss a catch because they could hurt your hand.
+~
+End
+
+#4937
+Name glass marbles~
+Short some glass marbles~
+Desc Some glass marbles lie scattered here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material glass~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc glass marbles~
+There are several marbles scattered here. Some have a `#`Cblue`^ streak running through them, some have a `#`Rred`^ swirl of colour in them, and some are just clear.
+~
+End
+
+#4938
+Name wooden horse and cart~
+Short a toy horse and cart~
+Desc A toy horse and cart lie here.~
+Level 1
+ItemType trash~
+Cost 14
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material wood~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc toy horse and cart~
+A little horse has been made out of wood. It is attached to a little wooden cart by two thick straps of leather.
+~
+End
+
+#4939
+Name skipping rope~
+Short a skipping rope with `#`Rred`^ wooden handles~
+Desc A skipping rope lies in a heap here.~
+Level 1
+ItemType trash~
+Cost 13
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material rope~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc skipping rope~
+`#`Rred`^ wooden handles are attached to this rope of twisted twine.
+~
+End
+
+#4940
+Name rope swing~
+Short a rope swing~
+Desc A rope swing hangs here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 200 EH 100 100
+Weight 0
+Material rope~
+Extra    noremove nodegrade~
+ExtraDesc rope swing~
+A swing made of rope hangs from the tree. It has been tied in a large knot at the loose end for children to sit on. The rope is thick and sturdy.
+~
+End
+
+#4941
+Name oak tree~
+Short a towering oak tree~
+Desc A towering oak tree grows here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#4942
+Name carrots~
+Short some `#`Rcarrots`^~
+Desc Some `#`Rcarrots`^ are growing here.~
+Level 1
+ItemType food~
+Cost 10
+Asize 0
+Rsize 50
+Values 5 0 0 0 0
+Weight 10
+Material carrot~
+Wear     take hold~
+End
+
+#4943
+Name cabbages~
+Short some `#`Gcabbages`^~
+Desc Some `#`Gcabbages`^ are growing here.~
+Level 1
+ItemType food~
+Cost 10
+Asize 0
+Rsize 50
+Values 10 0 0 0 0
+Weight 10
+Material cabbage~
+Wear     take hold~
+End
+
+#4944
+Name potatoes~
+Short some `#`Wpotatoes`^~
+Desc Some `#`Wpotatoes`^ are growing here.~
+Level 1
+ItemType food~
+Cost 16
+Asize 0
+Rsize 50
+Values 15 0 0 0 0
+Weight 10
+Material potato~
+Wear     take hold~
+End
+
+#4945
+Name watering can tin~
+Short a watering can made of tin~
+Desc A watering can made of tin has been left here.~
+Level 1
+ItemType drinkcontainer~
+Cost 14
+Asize 0
+Rsize 50
+Values 7 0 water 0 0
+Weight 40
+Material metal~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#4946
+Name bucket~
+Short a little bucket made of tin~
+Desc A little bucket made of tin has been left here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 10 0
+Weight 0
+Material tin~
+End
+
+#4947
+Name leather ball~
+Short a small ball made of leather~
+Desc A small ball made of leather has been left here.~
+Level 1
+ItemType trash~
+Cost 8
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material leather~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#4948
+Name hoop~
+Short a cane hoop~
+Desc A cane hoop has been left here.~
+Level 1
+ItemType trash~
+Cost 15
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 25
+Material cane~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#4949
+Name wardrobe~
+Short a tall, wooden wardrobe~
+Desc A tall, wooden wardrobe stands here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 A 0 5 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#4950
+Name dresser~
+Short a small dresser~
+Desc A small dresser stands here.~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 40 A 0 30 40
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc small dresser~
+A small dresser stands here. It has four drawers with tiny little knobs to open them. The polish is starting fade, suggesting it has been here for some time. There is a small mirror attached to it.
+~
+ExtraDesc mirror ~
+You look in the mirror and realise you forgot to brush your hair. What a mess!
+~
+End
+
+#4951
+Name cotton pinafore~
+Short a `#`Sgrey`^ cotton pinafore~
+Desc A `#`Sgrey`^ cotton pinafore has been left here.~
+Level 1
+ItemType clothing~
+Cost 14
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+ExtraDesc cotton pinafore~
+A small girl's pinafore is made of thick, `#`Sgrey`^ cotton. It has a little apron sewn over the top.
+~
+End
+
+#4952
+Name thin singlet~
+Short a thin, child's singlet~
+Desc A thin, child's singlet has been left here.~
+Level 1
+ItemType clothing~
+Cost 12
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cotton~
+Extra    nodegrade~
+Wear     take~
+End
+
+#4953
+Name hairbrush~
+Short a little hairbrush made of coarse goathair~
+Desc A little hairbrush has been left here.~
+Level 1
+ItemType trash~
+Cost 4
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material horsehair~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc hairbrush ~
+This little hairbrush has a small wooden handle which has clumps of coarse goathair tied to it.
+~
+End
+
+#4954
+Name overalls~
+Short some small `#`Sgrey`^ overalls~
+Desc Some small `#`Sgrey`^ overalls have been left here.~
+Level 1
+ItemType clothing~
+Cost 8
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+ExtraDesc overalls ~
+These `#`Sgrey`^ overalls have been made of thick, durable cotton. They have a little pocket sewn on the front.
+~
+End
+
+#4955
+Name small bed~
+Short a small, neatly made bed~
+Desc A small, neatly made bed stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 100 EHK 100 100
+Weight 0
+Material wood steel~
+Extra    noremove nodegrade~
+End
+
+#4956
+Name small bed~
+Short a small, neatly made bed~
+Desc A small, neatly made bed stands here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 100 EHK 100 100
+Weight 0
+Material wood steel~
+Extra    noremove nodegrade~
+End
+
+#4957
+Name small porcelain washbasin~
+Short a small porcelain washbasin~
+Desc A small porcelain washbasin sits here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material porcelain~
+Extra    noremove nodegrade~
+End
+
+#4958
+Name small porcelain jug~
+Short a small porcelain jug~
+Desc A small porcelain jug sits here.~
+Level 1
+ItemType drinkcontainer~
+Cost 21
+Asize 0
+Rsize 50
+Values 20 15 water 0 0
+Weight 10
+Material porcelain~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#4959
+Name white matron's uniform~
+Short a `#`Wwhite`^ matron's uniform~
+Desc A `#`Wwhite`^ matron's uniform has been left here.~
+Level 1
+ItemType clothing~
+Cost 12
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 30
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+ExtraDesc matron's uniform~
+This uniform is made of stiff `#`Wwhite`^ cotton. It is neatly ironed and has been recently starched.
+~
+End
+
+#4960
+Name long flowing purple dress~
+Short a long flowing `#`mpurple`^ dress~
+Desc A long flowing `#`mpurple`^ dress has been left here.~
+Level 1
+ItemType clothing~
+Cost 20
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 15
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#4961
+Name fresh baked cookies~
+Short some freshly baked cookies~
+Desc Some freshly baked cookies are here waiting to be eaten.~
+Level 1
+ItemType food~
+Cost 7
+Asize 0
+Rsize 50
+Values 15 0 0 0 0
+Weight 10
+Material flour~
+Wear     take hold~
+End
+
+#4962
+Name plain cotton dress~
+Short a plain cotton dress~
+Desc A plain cotton dress has been left here.~
+Level 1
+ItemType clothing~
+Cost 16
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 15
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#4963
+Name large apron~
+Short a large apron covered in crumbs~
+Desc A large apron covered in crumbs has been left here.~
+Level 1
+ItemType clothing~
+Cost 18
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 15
+Material cotton~
+Extra    nodegrade~
+Wear     take waist~
+End
+
+#4964
+Name plain grey dress~
+Short a plain `#`Sgrey`^ dress~
+Desc A plain `#`Sgrey`^ dress has been left here.~
+Level 1
+ItemType clothing~
+Cost 21
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 15
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#4965
+Name plain grey shorts~
+Short some plain `#`Sgrey`^ shorts~
+Desc Some plain `#`Sgrey`^ shorts have been left here.~
+Level 1
+ItemType clothing~
+Cost 18
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#4966
+Name cream silk dress~
+Short a `#`Wc`Yr`We`Ya`Wm`^ silk dress~
+Desc A `#`Wc`Yr`We`Ya`Wm`^ silk dress has been left here.~
+Level 1
+ItemType clothing~
+Cost 25
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 25
+Material silk~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#4967
+Name plain grey shirt~
+Short a plain `#`Sgrey`^ shirt~
+Desc A plain `#`Sgrey`^ shirt has been left here.~
+Level 1
+ItemType clothing~
+Cost 14
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material cotton~
+Extra    nodegrade~
+Wear     take arms~
+End
+
+#4968
+Name plain white nurse's uniform~
+Short a plain `#`Wwhite`^ nurse's uniform~
+Desc A plain `#`Wwhite`^ nurse's uniform has been left here.~
+Level 1
+ItemType clothing~
+Cost 14
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 28
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+ExtraDesc matron's uniform~
+This uniform is made of stiff `#`Wwhite`^ cotton. It is neatly ironed and has been recently starched.
+~
+End
+
+#4969
+Name woven basket~
+Short a woven basket~
+Desc A woven basket is here.~
+Level 1
+ItemType container~
+Cost 15
+Asize 0
+Rsize 50
+Values 20 0 0 20 100
+Weight 30
+Material cane~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#4970
+Name 4970 token_killing_in_orphanage~
+Short token_killing_in_orphanage~
+Desc Token_killing_in_orphanage~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Wear     take~
+End
+
+#4971
+Name 4971 token_matron_has_greeted~
+Short token_matron_has_greeted~
+Desc Token_matron_has_greeted~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Wear     take~
+End
+
+#4973
+Name 4973 token_answer_question1_correct~
+Short token_answer_question1_correct~
+Desc Token_answer_question1_correct~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#4974
+Name 4974 token_answer_question2_correct~
+Short token_answer_question2_correct~
+Desc Token_answer_question2_correct~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#4975
+Name 4975 token_answer_question3_correct~
+Short token_answer_question3_correct~
+Desc Token_answer_question3_correct~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#4976
+Name old cushion~
+Short an old cushion~
+Desc An old cushion lies here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 200 EH 100 100
+Weight 0
+Material featherdown~
+Extra    noremove nodegrade~
+End
+
+#4977
+Name old cushion~
+Short an old cushion~
+Desc An old cushion lies here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 200 EH 100 100
+Weight 0
+Material featherdown~
+Extra    noremove nodegrade~
+End
+
+#4978
+Name children's picture book animals~
+Short a children's picture book about `#`Ra`Yn`Bi`Gm`Ya`Rl`Bs`^~
+Desc A children's picture book lies here~
+Level 1
+ItemType map~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc picture animals~
+`Y ___________________________________
+|                 :                 |
+|                 :                 |
+|                 :       (`B@`Y_       |
+|  `RA `Yn `Bi `Gm `Ya `Rl `Bs  `Y:     \\\\        |
+|                 :     <___)       |
+|                 :                 |
+|                 :     `BDuck        `Y|
+|                 :                 |
+``-----------------------------------'
+ `yYou turn the page..
+`Y ___________________________________
+|                 :                 |
+|                 :                 |
+|      `S<:`M3`S)-      `Y:     `g<`Y*`g}`G}`g}`G>`g<     `Y|
+`Y|                 :                 |
+|                 :                 |
+|      `MMouse      `Y:      `GFish       `Y|
+|                 :                 |
+|                 :                 |
+``-----------------------------------'
+ `yYou turn the page..
+`Y ___________________________________
+|                 :                 |
+|                 :                 |
+|         `r>`W;      `Y:       >`Bo`Y)       |
+|     `B>`W;          `Y:       (_>       |          
+|                 :                 |
+|   `CButterflies   `Y:      `BBird       `Y|
+|                 :                 |
+|                 :                 |
+``-----------------------------------'
+ 
+ 
+ 
+~
+End
+
+#4979
+Name children's picture book numbers~
+Short a children's picture book about `#`Cn`cu`mm`cb`me`Cr`ms`^~
+Desc A children's picture book lies here~
+Level 1
+ItemType map~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc picture numbers~
+`Y ___________________________________
+|                 :                 |
+|                 :                 |
+|                 :      `m,::::,     `Y|
+|  `CN `cu `mm `cb `me `Cr `ms  `Y:      `m: -- |     `Y|
+|                 :      `m``::::'     `Y|
+|                 :                 |
+|                 :                 |
+``-----------------------------------'
+ `yYou turn the page..
+`Y ___________________________________
+|                 :                 |
+|                 :                 |
+|       `B::|       `Y:     `G::--:\      `Y|
+|        `B:|       `Y:       `G,:/       `Y|
+|       `B:::|      `Y:     `G/::::|      `Y|
+|                 :                 |
+|                 :                 |
+``-----------------------------------'
+ `yYou turn the page..
+`Y ___________________________________
+|                 :                 |
+|                 :                 |
+|      `M/:'``:,     `Y:     `C:| :|       `Y|
+|         `M|:<     `Y:     `C:::::|      `Y|          
+|      `M\:,,:'     `Y:        `C:|       `Y|
+|                 :                 |
+|                 :                 |
+``-----------------------------------'
+ `yYou turn the page..
+`Y ___________________________________
+|                 :                 |
+|                 :                 |
+|      `R:::::|     `Y:     `g,::::\      `Y|
+|      `R``:::\      `Y:     `g::---,      `Y|          
+|      `R,:::/      `Y:     `g``::::'      `Y|
+|                 :                 |
+|                 :                 |
+``-----------------------------------' 
+ `yYou turn the page..
+`Y ___________________________________
+|                 :                 |
+|                 :                 |
+|      `c:::::/     `Y:     `r,::::,      `Y|
+|        `c::/      `Y:     `r>----<      `Y|          
+|       `c::/       `Y:     `r``::::'      `Y|
+|                 :                 |
+|                 :                 |
+``-----------------------------------'  
+`Y ___________________________________
+|                 :                 |
+|                 :                 |
+|      `W,::::,     `Y:                 |
+|      `W\----|     `Y:                 |          
+|      `W,::::'     `Y:                 |
+|                 :                 |
+|                 :                 |
+``-----------------------------------' 
+~
+End
+
+#4980
+Name bright white book unicorn book1~
+Short a `#`Wbright white`^ book entitled in `#`Ssilver`^ "Unicorns Doom - Book1"~
+Desc A `#`Wbright white`^ book entitled in `#`Ssilver`^ "Unicorns Doom - Book1" has been left here~
+Level 1
+ItemType treasure~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc book white unicorn book1~
+`#`CUnicorn's doom`^ 
+ 
+ 
+Unicorns are creatures of nature and of magic.  They exist since the dawn 
+of times (*giggle*), having been created by no god or entity.  They were 
+born when the first sun ray shone, when the first rain drop fell, when the 
+first living being breathed, when the first fight occurred.  Each element of 
+nature (plants, animals, time, weather, sun, among others) gave birth to an 
+unicorn.  At first, they were formless, being just the essence of each 
+element.  As time went on, and the world defined its forms, so did the 
+unicorns, and they chose the form they now bear: that of a magical horse, 
+with a shinning horn.  Why they chose this form is another tale, to be told 
+another time.  
+ 
+ There 15 unicorns.  One for each of natures elements.  Each represent also 
+one aspect of magic, or one sphere, as it is often called by the mages.  All 
+unicorns have great magical power, but they master their element, with skill 
+that mortals cannot even grasp.  Except maybe for the Magi...  But that's 
+also another tale.  
+ 
+ The unicorn's power comes from the land, from nature.  There has been a 
+time that unicorns drew their power from all the world.  But that has changed
+a long time ago...  
+ 
+ When the world was still young, and the races were still learning about 
+its wonders, something happened.  At that time the gods were young yet, and 
+maybe not as wise as gods should be...  One of them, and I will not mention 
+names here, thought that he deserved more then the others, he wanted power.  
+Now, when the world was created, a lot of power had been needed.  What 
+better way to get power, then to drain the world itself from its energy?  
+For a while, the other gods didn't realize what was going on, and even when 
+they sensed something wrong, still they were manipulated to think nothing 
+was really wrong.  Yes...  That god was really good at this.  
+ 
+ There came a time, though, when they could not be blinded any more.  Well, 
+to be brief, soon the gods were at war.  A war between gods is something 
+more dreadful then the worst of nightmares.  Not measuring spells and 
+incantations, they fought each other.  Their energy ran free on the world.  
+Uncontrolled, this energy formed a great wave of divine power, devastating 
+most of what was in its way.  
+ 
+ The land was not being destroyed, but instead all of its magical power was 
+being drained.  The unicorns saw all this, unable to interfere.  They tried 
+to fight this negation of magic, but it was useless.  They were defeated, 
+and only survived because some parts of the world were still unaffected.  
+Weakened as they were, they knew they would not survive another struggle, so 
+they followed the only option left - they fled.  And run they did, to the 
+most remote parts of the world.  There, summoning all power they still had, 
+they created islands of magic and nature.  Each chose a place of their 
+liking, a lake, a volcano, a valley, and concentrated all their energies 
+there.  The unicorns knew they were dooming themselves, even if they 
+survived, for those places would be their weak point.  If ever destroyed, 
+they would die.  But they had no choice, and they waited, to see if death 
+would come to the world.  
+ 
+ Meanwhile, a goddess saw what they had done to the world.  Ayeni was her 
+name, and she was the wisest and more learned of all the gods.  She cried 
+for the others to stop, and then they all saw it.  In despair, else all they 
+had created be destroyed, they tried to stop it.  When all efforts resulted 
+in nothing, Ayeni suggested that they united themselves.  Even the one who 
+had started it all joined the others.  This was perhaps the only time when 
+all gods fought together.  But even this was not enough, and they were 
+losing...  
+ 
+ When all seemed beyond hope, Chaos, the goddess of all and nothing, quite 
+like the chaos that you created here'.  Then, turning serious, 'but 
+this was not meant to be'.  
+ 
+ 'You are young, you don't know yet what you are doing in this world.  Look 
+at all you have created, and that now you are destroying.  But I am pleased 
+to see that, in the end, wise you became.  Also, you have put differences 
+behind to fight for something greater...  This world.  You have shown your 
+strength.  That is why I will end this.' 
+ 
+ And so, she stopped the wave.  
+ 
+ `#`r<This story continues on Unicorns - Book2>`^ 
+ 
+~
+End
+
+#4981
+Name bright white book unicorn book2~
+Short a `#`Wbright white`^ book entitled in `#`Ssilver`^ "Unicorns Doom - Book2"~
+Desc A `#`Wbright white`^ book entitled in `#`Ssilver`^ "Unicorns Doom - Book2" has been left here~
+Level 1
+ItemType treasure~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc book white unicorn book2~
+`#`CUnicorn's doom - Part 2`^ 
+ 
+ 
+'Forget not what you learned today.  ' And with these words, she was gone.  
+The gods looked at each other, no words said, and then went to a safe place, 
+to heal their wounds.  If they understood what was said, if a lesson was 
+learned indeed, it is not known, but some say that the gods may have 
+forgotten some of what they saw at that distant past.  
+ 
+ The world began to heal too.  Slowly at first, but time heals all, so life 
+eventually returned to normality.  Or almost.  For the unicorns, it would 
+never again be the same.  They had survived because, at the very end, Ayeni, 
+who was very fond of them, protected the unicorns.  But all their power was 
+sealed in a tiny land, and they would have to protect it at all costs.  From 
+that moment on, they almost never left their places of power, and they would 
+watch the world, and act, from there.  
+ 
+ These lands, of course, are not normal ones.  They have been affected by 
+the unicorns power, and reflect now the unicorns element.  Animals and 
+plants that live there have been bestowed with unicorns wisdom, and they are 
+sentient and can talk.  
+ 
+ Nill Uni, of Time, lives in a valley where times goes on slower then the
+rest of the world.  
+ 
+ Unar, of Fire, lives on a deep vulcan, where birds of fire fly and fire 
+worms crawl under lava roses.  
+ 
+ Anver, of Air, lives in a floating island, made of clouds.  Her only 
+company are the eagles that fly high in the sky.  
+ 
+ Stea, of Water, hides in a crystal lake, surrounded by fishes.  
+ 
+ Ambion, of Earth, dwells a cave deep in earth, almost never seeing the 
+light of day.  
+ 
+ Ellarte, or Weather, dwells the highest mountain , where snow, rain, fog 
+and sun alternate in chaotic patterns.  
+ 
+ Osten, of Plant, lives in the heart of a dark forest, where the silence is 
+so intense, that one can hear a leaf falling.  
+ 
+ Iwlar, of Animal, chose a foggy swamp to live, where strange animals can 
+be seen.  
+Ytery, of Law, built a tower in her land, and there she dwells, surrounded 
+by books and lizards.  
+ 
+ Wescal, of Sun, lives in a oasis, deep in the desert, where the sun hits 
+hard the land, and is almost never annoyed by clouds.  No life can be found 
+there.  
+ 
+ Hilion, of Combat, dwells a ravine in the mountains, a perfect place for 
+an ambush.  Animals who go there get mad and start fighting all who passes 
+there.  
+ 
+ Tryss, of Healing, rests at the origins of a river.  There a sweet music 
+can always be heard, and small birds fly all over the place.  
+ 
+ Sahal, of Creation, chose a small island to live.  An island so small, 
+that you almost cannot see it.  But who enters there, never leaves again, 
+for the island seems not to ever end.  
+ 
+ Stini, of Protection, lives on the sea, deep in the water, well protected 
+from the world.  So protected, that loneliness is her only companion.
+Kasai, of the Wild, was the only one not to put his power on a land.  
+Instead, he sealed it within himself.  And now he walks the world.  
+ 
+ 
+ I do not know what would happen if an unicorn was killed.  They are so 
+tuned with nature and it's elements, that i fear all the world would feel it 
+somehow.  Maybe a flicker of the element?  I do not know and I believe even 
+the unicorns know not.  But one thing is sure.  If the element is not 
+destroyed, a new unicorn would be born, for the unicorn is part of the 
+element as much as the element is part of the unicorn.  
+ 
+ There have always been unicorns, and unless the gods change the world 
+laws, there will always be unicorns...  
+ 
+ 
+~
+End
+
+#4982
+Name bright yellow book golden faeries~
+Short a `#`Ybright yellow`^ book entitled in `#`ygolden`^ "Golden Faeries"~
+Desc A `#`Ybright yellow`^ book entitled in `#`ygolden`^ "Golden Faeries" has been left here~
+Level 1
+ItemType treasure~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc bright yellow book golden faeries~
+`#`YGolden Faeries`^
+ 
+Kasai, of the Wild, was the only one not to put his power on a land.  
+Instead, he sealed it within himself.  And now he walks the world.  
+ 
+ 
+ I do not know what would happen if an unicorn was killed.  They are so 
+tuned with nature and it's elements, that i fear all the world would feel it 
+somehow.  Maybe a flicker of the element?  I do not know and I believe even 
+the unicorns know not.  But one thing is sure.  If the element is not 
+destroyed, a new unicorn would be born, for the unicorn is part of the 
+element as much as the element is part of the unicorn.  
+ 
+ There have always been unicorns, and unless the gods change the world 
+laws, there will always be unicorns...  
+of Death.  
+  <Death bad!> 
+ 
+ As time passed, he realized that the consequences of the war were much 
+more serious than he had thought at first.  There had been to many deaths in 
+the war, and the mortal survivors, in their struggle to live, killed even 
+more animals, and plants, not worrying much in raise or plant more.  In 
+their despair, they killed themselves for a piece of bread.  
+  <That is awful!  Me doesn't want sad story!  Me wants a happy one!> 
+ Death continued to rule everywhere, he realized, at the same rating as 
+life was losing its grasp on the world.  
+ 
+ The cycle of life/death was broken.  Mellyn knew that death could only 
+come from life.  
+  <No!  We protect life!  Grrrrr!  No death!> 
+ Without life, the cycle would soon end, and he would be no more.  He was 
+already a lot weakened by the lack of living beings in the world, and now he 
+feared for his existence.  
+ 
+ He had to restore life.  Thus, he created a seed.  It glowed with divine 
+power.  Then, he looked for a good place in Mythrin, and he chose a valley, close to the homes of four unicorns.  
+  <Unicorns?  Unicorns!  Unicorns!  Unicorns!> 
+ There, he planted it.  
+ 
+ In a few moments, a huge mushroom...  
+  <Mushrooms are delicious!  Yummm!> 
+  ...  Had grown from it.  It shone in a pale golden light.  
+  <Beautiful...> 
+ Its spores are said to be magical, and to bestow special powers to those 
+who eat them.  Under this mushroom, from time to time, a special flower 
+blossoms.  Each flower is of a different color, and a different smell.  They 
+are among the most beautiful sights one can imagine.  They are the mothers 
+of the faeries.  From within each of these flowers, a faerie is born.  
+  <Hey, that is me!  Me is faerie!  Faeries are cool!> 
+ 
+ Andromeda, called Mellyn the first faerie that was born.  She was blessed 
+with divine powers.  She is the faerie of light and life.  
+  <Andromeda is golden!  She shiiiiiines!  Like the sun!> 
+ Mellyn instructed her to protect the faeries, and above all, to care for 
+life.  
+  <Me likes life!  Me likes!>
+The next four faeries to be born were special too.  They are silver 
+faeries, and the unicorns taught them the secrets of the elements.  
+  <Shiny horses with a stick on their heads!  Hihihihi> 
+ Selenia deals with fire she was born during summer, and has a dragon as 
+friend.  She loves gold, but no one knows what she does with it.  
+  <Selenia smart!> 
+ Pix has the powers of water, having been born in the winter.  
+  <Me!  Me!  Lilantra is me!> 
+ Tylara, the faerie of spring, masters air, and Titania, born in the fall, 
+has knowledge of earth.  Lastly, there is Lilantra, who is master of the 
+essence of magic.  She received her knowledge from all the unicorns.  
+  <Faeries good!> 
+ 
+ Faeries come from life, they are life and they protect life.  They aren't 
+much larger than the palm of the hand, and have colored wings...  
+ <Mine is full of stars!  Look!  Aren't stars pretty?> 
+...  And hair.  
+  <Cyan wings!  Like mine!> 
+ They are little spirits, sweetly smiling at you...  
+  <Me smiles!> 
+  ...  At one moment, biting you at the next.  Ouch!  They travel the world, 
+unseen to most eyes, protecting life.
+~
+End
+
+#4983
+Name thin light blue book tale princess fool part1~
+Short a thin `#`Clight blue`^ book entitled "The tale of the Princess and the Fool - Part1"~
+Desc A thin `#`Clight blue`^ book entitled "The tale of the Princess and the Fool - Part1" has been left here~
+Level 1
+ItemType treasure~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc thin light blue book tale princess fool~
+`#`BThe tale of the Princess and the Fool
+ 
+ 
+O`^nce upon a time when the world was young and elves ruled Mythrin, 
+there lived a beautiful princess by the name of Celaire, the only child of Gibrahil, ruler of the 
+Silver Elves of Endomar, the most powerful of the Kingdoms, sheltered 
+in the Great Forest. Now elves as a race are comely, but Princess 
+Celaire was a beauty as Mythrin had never seen and perhaps never will 
+see again. Her hair was like threads of gold, soft as webspun silk and 
+her features were so exquisitely fashioned she was almost blinding to 
+look at. Most extraordinary however, were her eyes.  Some say when 
+she first opened them, the gods paused in their mighty deeds to study 
+the blue of her tiny orbs. Others say that the ocean itself went so 
+mad with jealousy over Celaire's eyes that it wiped out three 
+continents! Some even say, the storyteller's voice lowers to a 
+reverent hush that her eyes contained the essence of Mythrin 
+itself.
+ 
+Despite her exquisite beauty, Celaire was a disappointingly ordinary 
+princess vain and petty and proud, as princesses tend to be. She 
+broke the hearts of the men who came to woo her or sent them on 
+impossible quests to win her favor which usually ended in their 
+ 
+deaths. She asked princes to go to war, promising her hand to the 
+victor. But she was wise, this princess and she chose her victims 
+carefully. So evenly matched were they that when the war was over not 
+a man was left standing.
+ 
+Yet her countenance was so lovely to the eye, her sweet voice so 
+melodious to the ear that no mortal man could resist her. So they 
+continued to fight and to die. 
+ 
+But as you all know children, the wheels of justice, though they may 
+grind slowly, grind well. 
+ 
+<The storyteller shifts in his seat, trying to ignore the cold chill 
+in his bones.>
+ 
+One day a stranger came to the castle. He was bedraggled, dressed in 
+a terrible suit of bright yellow and green squares. Small silver 
+bells were attached to the end of his too long shoes as well as to 
+the top of his floppy jester's hat. 
+ 
+"I come" he announced, bowing grandly to the King "to play the 
+fool! For a mere pithy of food and fine wine I shall entertain this
+illustrious court with countless tales and fabulous magic... or 
+countless magic and fabulous tales!" 
+ 
+He immediately began pulling flowers from his sleeve and riding 
+around on a unicycle (also produced from his sleeve) juggling a 
+multitude of colored balls. 
+ 
+Needless to say, everyone in the Court of Endomar was delighted. 
+That is almost everyone. 
+ 
+"Send him away father" Celaire whispered fiercely to the King "he 
+is ugly to look at for his chin is long. He is a most unpleasant creature."
+ 
+ The King reproached her with a look "judge not others for their 
+countenance daughter, for it is not in beauty which true greatness 
+lies. He makes thy mother laugh and amuses me and so thee shalt 
+forbear him."
+ 
+So the fool stayed on, amazing the Court anew each day with the wit 
+of his tongue and the skill of his hand.
+Despite herself, the princess began looking forward to his visits. 
+She began to seek him out, to engage him in conversation. His stories 
+were delightful, but she found his views on philosophy and theology 
+even more so. His ideas were so unique, his train of thought so well 
+crafted that he put the wise men in her father's court to shame. What 
+is more, unlike the other elves in the realm who seemed to interested 
+only in her face, this fool seemed enchanted with her mind. He taught 
+her the source of true magic and found in this princess a gifted 
+mage. The King was delighted with her progress, her sudden talent in 
+the arcane and her new found craving for knowledge.
+ 
+Things seemed to be going well.
+ 
+Then one night as the princess and the fool sat by the marble 
+fireplace of the palace's grand Hall, the fool suddenly asked 
+"Princess fair, you have won my heart. Will you be mine?"
+ 
+Celaire stared at his homely face in amazement then laughed. "I shalt 
+never be thine," she admonished him "for I am a princess and thou 
+art only a fool."
+ 
+The fool nodded sadly and turned away.
+For a year and a day, this continued. Each day they would talk and 
+learn but each night he would ask the same question "Princess fair, 
+you have won my heart. Will you be mine?"
+ 
+And she would answer "I shalt never be thine, for I am a princess and 
+thou art only a fool."
+ 
+`#`r<This story continues on part2>`^
+ 
+~
+End
+
+#4984
+Name thin light blue book part2~
+Short a thin `#`Clight blue`^ book entitled "The tale of the Princess and the Fool - Part2"~
+Desc A thin `#`Clight blue`^ book entitled "The tale of the Princess and the Fool - Part2" lies here~
+Level 1
+ItemType treasure~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material paper~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc thin light blue book part2~
+Finally, on the last day of midsummer, the fool again asked his 
+question. But this time the princess, deciding she had had enough 
+said "First, thou must prove thy love to me by climbing the glass 
+mountain of Avalen and pledging a blood oath to love only me."
+ 
+The courtiers gasped, knowing this to be impossible. But the fool 
+only nodded and turned away.
+ 
+The princess smiled, convinced she was rid of him forever.
+ 
+But after a fortnight the fool returned, his hand bandaged and a 
+distinctive shard of glass in his open palm. The task was done. 
+Looking at her, the fool asked his question. 
+ 
+The princess stared at him a moment, no suitor of hers had ever 
+returned from a quest! But she quickly regained her posture, "First, 
+thou must prove thy love to me by making me a gown from the rays of 
+the sun and the jewels from the Age of Wonder."
+ 
+The courtiers gasped, knowing this to be impossible. But the fool 
+only nodded and turned away.
+ 
+In a fortnight the fool returned, a shimmering dress in his scarred 
+hands. Again he asked his question.
+ 
+By now the princess knew something was exceedingly amiss, and felt 
+hopelessness welling within her, yet she persisted. "First, thou must 
+prove thy love to me by making me a circlet from the tail hairs of 
+Sahal, the Unicorn of Creation."
+ 
+The courtiers gasped, knowing this to be impossible. But the fool 
+only nodded and turned away.
+ 
+And, as he has done twice before, the fool returned, the prize in his 
+scarred hands. 
+ 
+Celaire knew then that there was nothing she could ask that he could 
+not give.
+ 
+"Princess fair," the Fool asked softly "you have won my heart. Will 
+you be mine?"
+The princess looked into his eyes and realized she had fallen in love 
+with the fool. But as she opened her mouth to give consent, her pride 
+overwhelmed her. How could she, the most exquisite of elves, child of 
+the great house of Endomar, love a fool? It could not be! She 
+replied then  "I shalt never be thine, for I am a princess and thou 
+art only a fool. That is my final answer."
+ 
+"Always?" 
+ 
+"Always."
+ 
+Suddenly the winds howled as if in mourning and the waves of the 
+jealous ocean crashed against the castle walls.
+ 
+And the fool stood, growing in stature till he was no longer a fool 
+but Reyortsed, one of the seven sons of fire. "Thy pride has consumed 
+thee Celaire," he thundered "thou didst not heed thy father's words. 
+Now thou stands in the presence of a God not a Fool. Prepare to meet 
+thy doom." But as he looked at her, his heart melted with love. He 
+remember his pact with Avalen and, as Gods could be bound by oaths 
+just as mere mortals could, he knew he too was doomed, for he could 
+love only her. 
+ 
+"Come," he told Celaire softly "take back thy answer and throw away 
+thy arrogance. For despite all thine faults I love thee. Be mine and 
+all shalt be forgiven."
+ 
+But Celaire's soul was filled with pride and she could remember only 
+that she had given her final answer.
+"No" she said, her voice steely with determination "I have given my 
+final answer thou shalt never have me."
+ 
+For a moment it seemed then as if all the realm screamed in anger. 
+The wind howled and the ocean raged, and the very earth shook. Then 
+all was a quiet calm.
+ 
+"Thou wouldst put at risk thine very life for thine pride" 
+Reyortsed's voice was soft as an adder's hiss "thou art an overgrown 
+child! Very well, if thou wilt insist on acting like a child," his 
+pointed a finger at the princess "then forever shalt thou be one!" 
+ 
+Without warning the elven princess vanished from the castle into 
+legend, never again to be seen by the Silver Elves of Endomar. 
+ 
+In her pride the Princess had been punished, doomed to be a child 
+forever. But the greater punishment lay in denying herself the only 
+man she had ever loved and in that she has only herself to blame.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#4900
+Name Entrance Foyer~
+Desc You are inside the foyer of a children's orphanage.  A long hallway with 
+polished wooden floorboards stretches before you.  The hallway is dimly lit 
+with a few lanterns.  There are a few scattered toys strewn about.  Doors 
+lead into rooms to the east and west and there is a staircase to the north.  
+There is a mat on the ground with the word "`#`Ywelcome`^" sewn on it.  
+ 
+     There is a framed `#`Rsign`^ on the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sign ~
+`Y*****************************************************
+*                                                   *
+*         `WWelcome to the home for orphans.          `Y*
+*       `WWe provide all orphans with a place         `Y*
+*     `Wto call "home", with a roof over their        `Y*
+*      `Wheads, food in their bellies, and a          `Y*
+*      `Wgood education. Our home is open to          `Y*
+*            `Weveryone, but be warned:               `Y*
+*                                                   *
+*       `RWe have a harsh discipline system           `Y*
+*      `Rand violence will NOT be tolerated.          `Y*
+*                                                   *
+*                `W- the matron                       `Y*
+*                                                   *
+*****************************************************
+~
+Exit north 4904
+Exit east 4901
+Exit south 4936
+EFlags door closed~
+EKeywords door~
+Exit west 4902
+End
+
+
+#4901
+Name A Small Office~
+Desc A small office is here, cluttered with jumbled papers.  A bookshelf stands 
+against the wall and a desk is up against another wall.  On the wall hangs a 
+picture of an old building with a large group of children standing next to 
+it.  The room is a little dingy with only one small window letting in the 
+light.  The door to the west leads back into the hallway.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4900
+End
+
+
+#4902
+Name A Dining Room~
+Desc You have entered a large room which is used for a dining room.  There is a 
+long table in the middle room which seats twelve, maybe more.  Long benches 
+are placed on either side of the table.  The table has been neatly set with 
+plates and spoons.  There is a framed cross-stitch hanging on the wall.  
+There is a door to the west leading into another room, probably the kitchen, 
+and a door to the east leading back to the hallway.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4900
+Exit west 4903
+End
+
+
+#4903
+Name The Kitchen~
+Desc The smell of baking wafts up to you as you enter the kitchen.  There is a 
+small table here with a pile of peeled potatoes lying on it.  A pot belly 
+stove is in the corner with a large pot of oatmeal bubbling inside it.  A 
+tray of cookies are being baked in the oven.  A basket of herbs hangs from 
+the ceiling.  The only exit is to the east which leads back to the dining 
+room.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4902
+End
+
+
+#4904
+Name A Stairwell~
+Desc There is a wide curved stairwell with a wooden banister leading upstairs.  
+The railing on the stairs is made of polished wood.  The hallway continues 
+to the north and south.  You can see a classroom to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4905
+Exit east 4912
+EFlags door~
+Exit south 4900
+Exit west 4937
+EFlags door closed locked pickproof nopass infuriating~
+EKeywords closet~
+Exit up 4911
+End
+
+
+#4905
+Name A Hallway~
+Desc Rays of light shine onto the polished wooden floorboards from two small 
+windows on either side of the door leading into the yard.  The sound of 
+children playing drifts in from the west and of babies crying from the east. 
+ 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4908
+Exit east 4906
+Exit south 4904
+Exit west 4907
+End
+
+
+#4906
+Name A Nursery~
+Desc A row of cots line this nursery.  A chest of baby clothes stands next to a 
+basket of rattles.  The walls are decorated with bright colours and light 
+streams in from several windows which look out onto the yard.  The room has 
+been recently tidied and the cots are all neatly made.  Mobiles of unicorns 
+and fairies hang from the ceiling.  A door leads into the yard to the north 
+and into the hallway to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4909
+Exit west 4905
+End
+
+
+#4907
+Name A Large Rumpus Room~
+Desc You have entered a room filled with orphans playing.  There is a large 
+selection of toys to be played with.  The walls are painted with bright 
+colours and the carpet is soft although well worn.  There is a comfortable 
+couch along one wall.  Many pictures hang on the walls of children playing.  
+Windows let in the light from outside in the yard.  A door to the north 
+opens into the western yard, and a door to the east leads back to the 
+hallway.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4910
+Exit east 4905
+End
+
+
+#4908
+Name A Vegetable Garden~
+Desc A small veggie garden is growing here.  It has been neatly raked and weeded 
+and grows an abundance of crop.  A watering can lies next to the garden and 
+there is a spade poking out of the dirt.  The garden has been neatly 
+organised with a row of carrots, a row of cabbages and a row of potatoes.  A 
+little stick stands at the end of each row with a drawing of the vegetable 
+attached to it.  A gate leads to the east and to the west.  To the south is 
+a door leading back inside the building.  
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit east 4909
+Exit south 4905
+Exit west 4910
+End
+
+
+#4909
+Name Eastern Yard~
+Desc This yard is surrounded by a small green hedge and is a delightful place to 
+play in.  A dugout sandpit takes up much of the area.  Holes have been 
+recently dug in the sand, and there is a toy bucket and spade half buried in 
+the sand.  A few outside toys lie scattered about, obviously some child 
+forgot to put them away.  A small gate leads to the west and a door opens to 
+the south.  
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit south 4906
+Exit west 4908
+End
+
+
+#4910
+Name Western Yard~
+Desc You are in a small yard which is surrounded by a small green hedge.  The 
+grass is green and has been kept trim.  A small flower bed is planted next 
+to the building.  There is a tall oak tree growing here with a rope swing 
+dangling from it.  An old, wooden bench stands near the hedge.  There is a 
+gentle breeze blowing through the place.  A small gate opens to the east and 
+a door leads to a room to the south.  
+~
+RoomFlags indoors noscry~
+Sector inside~
+Exit east 4908
+Exit south 4907
+End
+
+
+#4911
+Name Second Floor Stairwell~
+Desc You have climbed to the top of a short staircase.  At the top is a narrow 
+hallway leading off to the north and south, and another leading to the east 
+and west.  Many doors lead off the hallways.  The stairs lead down to the 
+first floor.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4918
+Exit east 4914
+Exit south 4921
+Exit west 4916
+Exit down 4904
+End
+
+
+#4912
+Name The Junior Classroom~
+Desc A large classroom is here filled with a few young children sitting in their 
+desks.  A lady who must be the teacher stands at the front of the room 
+leading the children in nursery rhymes.  The room is filled with small desks 
+each with its own inkpot.  Children's paintings cover the wall and hang from 
+the ceiling.  Big windows let in plenty of light and a gentle breeze blows 
+the mobiles of storybook characters about.  A door to the south opens into 
+another classroom and a door to the east opens into a playground.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4935
+EFlags door~
+Exit west 4904
+EFlags door~
+End
+
+
+#4913
+Name The Senior Classroom~
+Desc A large classroom is here filled with several young people writing in their 
+books.  The elderly lady at the front of the room is writing on the 
+`#`Sblackboard`^ and calling on the children for answers.  Maps of the `#`?eastern`^ and 
+`#`?western`^ world hang on the wall.  A bookshelf stands against the wall and 
+large desks a filed in rows for the children to sit in.  Large windows let 
+in the light and a gentle breeze ruffles the pages in the students' books.  
+A door opens into the junior classroom to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc eastern world~
+`B-------------------------------------------------- 
+-------------`G/^--\`B------------------------------`G__`B----
+------------`G|___/'`B----------------------`G____/-\/ /`B----
+-----------`RKerallyan`B-------------------`G/        /`B-----
+---------`G__`B-------------`G/-\_`B-----------`G\        \`B-----
+--------`G/  \-\_`B-----`G_/-/    \_`B--------`G_/         \`B----
+-------`G/      _>`B---`G<          \`B------`G/  `RRhynia  `G/_`B----
+------`G/      /-|`B-`G*@`B-`G| `REndomar `G/`B-----`G<__          |`B----
+------`G\        |`B-----`G\_      /`B---------`G|          \`B---
+------`G/         \`B------`G/     /_`B--------`G/         /-/`B--
+-----`G/  `RValarin  `G|`B--`G__`B-`G\       \`B-------`G\________/`B-----
+----`G/            /`B-`G/  |`B-`G|      |`B----------`G_`B-`G__`B---`G_`B---
+----`G\____/-\_/\_/`B--`G\--/`B-`G|____/\_ \`B--------`G|_|\/_`B-`G/_|`B--
+-`G_`B-------`GoO`B---------------------`G\/`B-------`G____`B-`G\_\`B-----
+`G/ \-\_`B---------`G__`B---------`RRing`B-----------`G\___\__`B------
+`G|     |_`B---`G// |/  |`B--------`G###`B------------`G/\__\/`B------
+-`G\      \_/      _|`B-------`G#`B---`G#`B-------`G__`B---`G\__\`B-------
+-`G|              /__`B-------`G#`B---`G#`B-------`G| \_/|`B----------
+-`G|    `ROrcs         `G\`B-------`G###`B--------`G|    |`B----------
+--`G\           _____/`B-----`RIsland`B------`G/ `RThe `G|`B----------
+---`G\__/---\__/`B--------------------`G__/`RConfe-`G/`B----------
+----------------------`G/-\`B--`G___`B---`G\   /-/ \/`B-----------
+-------------------`G__/   \/  /`B----`G\_/`B-----------------
+-------------`G_`B---`G_/         |`B-------------------------
+------------`G/ \_/            \`B------------------------
+------`G\\--\_\    `RElenarthia  `G<_`B-----------------------
+------`G|    ___       __    _ __|`B----------------------
+-------`G\--/`B---`G\_____/`B--`G\__/`B-`G\\`B------------------------
+------------------------------------------------------
+~
+ExtraDesc western world~
+`B------------------------------------------------------------------
+--------------------------------------------------`G/^--\`B---------------
+-------------------------------------------------`G|___/'`B---------------
+------------------------------------------------`RKerallyan`B-------------
+------------------------------`G/|`B--`G_____//`B-----`G__`B-------------`G/-\_`B-----
+--------------------------`G_`B--`G| |`B-`G/     |`B-----`G/  \-\_`B-----`G_/-/    \_`B---
+-------------------`G__`B---`G_/ \/   \|     |`B----`G/      _>`B---`G<          \`B--
+---------------`G/'\/  --/               |_`B--`G/      /-|`B-`G*@`B-`G| `REndomar `G/`B--
+----------`G/\__/\                      ___>`B-`G\        |`B-----`G\_      /`B---
+---------`G|     \                     /`B----`G/         \`B------`G/     /_`B---
+--------`G_\     \\      `RTsimbek      `G<`B----`G/  `RValarin  `G|`B--`G__`B-`G\       \`B--
+-------`G/        \                   /`B---`G/            /`B-`G/  |`B-`G|       |`B-
+-------`G\-\       \             ____/`B----`G\____/-\_/\_/`B--`G\--/`B-`G|____/\_ \
+`B---------`G|        \_         _/  _/`B----------`GoO`B---------------------`G\/
+`B-------`G_/          /__    __/   /`B----`G/ \-\_`B------`G_`B--`G__`B--------`RRing`B----
+--`G____/               /\__/    |`B----`G|     |_`B---`G// |/  |`B--------`G###`B----
+-`G/                  /          \`B-----`G\      \_/      _|`B-------`G#`B---`G#`B---
+`G/                  /            \`B----`G|              /__`B-------`G#`B---`G#`B---
+`G|      `RAnakae     `G| `RTaur-Talat `G_|`B----`G|    `ROrcs         `G\`B-------`G###`B----
+-`G\                 \          /`B-------`G\           _____/`B------`RIsland`B--
+-`G/                 |         /`B---------`G\__/---\__/     `B---------------
+`G|  /---\            \        |`B----------------------------------------
+`G\_/`B----`G/             \       \`B-----------------------------`G/-\`B--`G___`B---
+----`G__|        ____/-/        |`B-------------------------`G__/   \/  /`B---
+----`G\_        /`B----`G|       /--/`B-------------------`G_`B---`G_/         |`B----
+------`G\__   _/`B-----`G\__  /-/`B----------------------`G/ \_/            \`B---
+---------`G\_/ `B---------`G\/`B-------------------`G\\--\_\    `RElenarthia  `G<_`B--
+-------------------------------------------`G|    ___       __    _ __|`B-
+--------------------------------------------`G\--/`B---`G\_____/`B--`G\__/`B-`G\\`B---
+----------------------------------------------------------------------
+~
+Exit north 4935
+Exit east 4938
+EFlags door~
+End
+
+
+#4914
+Name Eastern Hallway~
+Desc The hallway is dimly lit with only one flickering lantern lighting the way.  
+The hallway continues to the east and leads back to the platform to the 
+west.  The walls are plain white-wash although if you look closely you can 
+see an occasional crayon marking.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4915
+Exit west 4911
+End
+
+
+#4915
+Name Eastend Hallway~
+Desc You have reached the end of the hallway.  Doors leading to more dorm rooms 
+are to the north and south.  The hallway leads back to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4926
+EFlags door closed~
+Exit south 4927
+EFlags door closed~
+Exit west 4914
+End
+
+
+#4916
+Name Western Hallway~
+Desc The hallway is dim but you can see a door to the north, probably leading to 
+a dorm room.  The hallway continues to the west and leads back to the 
+platform to the east.  The walls are plain white-wash although if you look 
+closely you can see an occasional crayon marking.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4928
+EFlags door closed~
+Exit east 4911
+Exit west 4917
+End
+
+
+#4917
+Name Westend Hallway~
+Desc You have reached the end of the hallway.  Doors leading to more dorm rooms 
+are to the north and south.  The hallway leads back to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4930
+EFlags door closed~
+Exit east 4916
+Exit south 4931
+EFlags door closed~
+End
+
+
+#4918
+Name Northern Hallway~
+Desc The hallway is dim but you can see a door to the east, probably leading to a 
+dorm room.  The hallway continues to the north and leads back to the 
+platform to the south.  The walls are plain white-wash although if you look 
+closely you can see an occasional crayon marking.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4919
+Exit east 4924
+EFlags door closed~
+Exit south 4911
+End
+
+
+#4919
+Name Northend Hallway~
+Desc You have reached the end of the hallway.  Doors leading to more dorm rooms 
+are to the east and west.  A door opens out onto a small balcony to the 
+north.  The hallway leads back to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4920
+Exit east 4932
+EFlags door closed~
+Exit south 4918
+Exit west 4933
+EFlags door closed~
+End
+
+
+#4920
+Name Northern Balcony~
+Desc You have walked out onto a small balcony which has a high railing around it. 
+ It looks down onto the yard below where you can see a vegetable garden and 
+a sandpit.  The railing is high enough to prevent a young child from leaning 
+too far over the edge.  The door to the south leads back inside to the 
+hallway and dorm rooms.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 4919
+End
+
+
+#4921
+Name Southern Hallway~
+Desc The hallway is dim but you can see doors to the east and west, probably 
+leading to dorm rooms.  The hallway continues to the south and leads back to 
+the platform to the north.  The walls are plain white-wash although if you 
+look closely you can see an occasional crayon marking.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4911
+Exit east 4925
+EFlags door closed~
+Exit south 4922
+Exit west 4929
+EFlags door closed~
+End
+
+
+#4922
+Name Southend Hallway~
+Desc You have reached the end of the hallway.  A door leading to another dorm 
+room is to the west.  A door opens out onto a small balcony to the south.  
+The hallway leads back to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4921
+Exit south 4923
+Exit west 4934
+EFlags door closed~
+End
+
+
+#4923
+Name Southern Balcony~
+Desc You have walked out onto a small balcony which overlooks the street below.  
+You can see the citizens going about their business and watch the travelers 
+go past.  There is a high railing around the balcony to prevent a child from 
+leaning over too far.  The only exit is to the north which leads back inside 
+to the hallway.  
+~
+Sector inside~
+Exit north 4922
+End
+
+
+#4924
+Name A Large Dormroom~
+Desc A large dorm room is here with two small beds in it.  The beds don't look 
+very comfortable and you can see a few springs poking through the slim 
+mattresses.  There is a washbasin with a water jug next to it.  On the wall 
+is a picture of a two little girls playing with some dolls.  The walls are 
+brightly coloured and there is a small window letting in the light.  The 
+carpet on the ground is well worn.  The only exit is to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4918
+EFlags door closed~
+End
+
+
+#4925
+Name A Large Dormroom~
+Desc A large dorm room is here with two small beds in it.  The beds don't look 
+very comfortable and you can see a few springs poking through the slim 
+mattresses.  There is a washbasin with a water jug next to it.  On the wall 
+is a picture of two little girls dancing.  The walls are brightly coloured 
+and there is a small window letting in the light.  The carpet on the ground 
+is well worn.  The only exit is to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4921
+EFlags door closed~
+End
+
+
+#4926
+Name A Small Dorm Room~
+Desc A small dorm room is here with one small bed in it.  The bed is neatly made 
+with clean sheets and it looks like it would be hard to sleep on.  A 
+wardrobe stands in the corner with children's' clothes hanging inside it.  A 
+dresser with a mirror and little hairbrush stands against the wall.  The 
+room is carpeted and the walls are brightly coloured.  A picture hangs on 
+the wall of a small puppy.  The only exit is to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 4915
+EFlags door closed~
+End
+
+
+#4927
+Name A Small Dorm Room~
+Desc A small dorm room is here with one small bed in it.  The bed is neatly made 
+with clean sheets and it looks like it would be hard to sleep on.  A 
+wardrobe stands in the corner with children's' clothes hanging inside it.  A 
+dresser with a mirror and little hairbrush stands against the wall.  The 
+room is carpeted and the walls are brightly coloured.  A picture hangs on 
+the wall of a kite flying in the wind.  The only exit is to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4915
+EFlags door closed~
+End
+
+
+#4928
+Name A Large Dormroom~
+Desc A large dorm room is here with two small beds in it.  The beds don't look 
+very comfortable and you can see a few springs poking through the slim 
+mattresses.  There is a washbasin with a water jug next to it.  On the wall 
+is a picture of a two little boys playing with yo-yos.  The walls are 
+brightly coloured and there is a small window letting in the light.  The 
+carpet on the ground is well worn.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4933
+EFlags door closed~
+Exit south 4916
+EFlags door closed~
+End
+
+
+#4929
+Name A Large Dormroom~
+Desc A large dorm room is here with two small beds in it.  The beds don't look 
+very comfortable and you can see a few springs poking through the slim 
+mattresses.  There is a washbasin with a water jug next to it.  On the wall 
+is a picture of a group of children playing tag.  The walls are brightly 
+coloured and there is a small window letting in the light.  The carpet on 
+the ground is well worn.  The only exit is to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4921
+EFlags door closed~
+End
+
+
+#4930
+Name A Small Dorm Room~
+Desc A small dorm room is here with one small bed in it.  The bed is neatly made 
+with clean sheets and it looks like it would be hard to sleep on.  A 
+wardrobe stands in the corner with children's' clothes hanging inside it.  A 
+dresser with a mirror and little hairbrush stands against the wall.  The 
+room is carpeted and the walls are brightly coloured.  A picture hangs on 
+the wall of a small kitten.  The only exit is to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 4917
+EFlags door closed~
+End
+
+
+#4931
+Name A Small Dorm Room~
+Desc A small dorm room is here with one small bed in it.  The bed is neatly made 
+with clean sheets and it looks like it would be hard to sleep on.  A 
+wardrobe stands in the corner with children's' clothes hanging inside it.  A 
+dresser with a mirror and little hairbrush stands against the wall.  The 
+room is carpeted and the walls are brightly coloured.  A picture hangs on 
+the wall of a colourful butterfly.  The only exit is to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 4917
+EFlags door closed~
+End
+
+
+#4932
+Name A Small Dorm Room~
+Desc A small dorm room is here with one small bed in it.  The bed is neatly made 
+with clean sheets and it looks like it would be hard to sleep on.  A 
+wardrobe stands in the corner with children's' clothes hanging inside it.  A 
+dresser with a mirror and little hairbrush stands against the wall.  The 
+room is carpeted and the walls are brightly coloured.  A picture hangs on 
+the wall of a field of daisies.  The only exit is to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 4919
+EFlags door closed~
+End
+
+
+#4933
+Name A Large Dormroom~
+Desc A large dorm room is here with two small beds in it.  The beds don't look 
+very comfortable and you can see a few springs poking through the slim 
+mattresses.  There is a washbasin with a water jug next to it.  On the wall 
+is a picture of a two boys sailing boats.  The walls are brightly coloured 
+and there is a small window letting in the light.  The carpet on the ground 
+is well worn.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 4919
+EFlags door closed~
+Exit south 4928
+EFlags door closed~
+End
+
+
+#4934
+Name A Small Dorm Room~
+Desc A small dorm room is here with one small bed in it.  The bed is neatly made 
+with clean sheets and it looks like it would be hard to sleep on.  A 
+wardrobe stands in the corner with children's' clothes hanging inside it.  A 
+dresser with a mirror and little hairbrush stands against the wall.  The 
+room is carpeted and the walls are brightly coloured.  A picture hangs on 
+the wall of a happy clown.  The only exit is to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc painting clown~
+`Y@    
+           `y/ \
+          /   \
+`W,======================.
+|           `C_          `W|
+|          `C{_}         `W|            
+|          `B/`M*`B\         `W| 
+|         `B/_`M*`B_\        `W|
+|        `G{`W(`B'`Ro`B'`W)`G}       `W|
+|     `WC`m{`({(`M[`Y^`g*`Y^`M]`m)}}`WD    |
+|         `M[ `g* `M]        `W|
+|        `Y/  Y  \       `W|
+|       `R_`Y\`R__`Y|__/`R_      `W|
+|      `R(___/ \___)     `W|
+|                      |
+``======================'
+~
+Exit east 4922
+EFlags door closed~
+End
+
+
+#4935
+Name A Cobbled Playground~
+Desc You have walked into a large cobbled playground area.  Children are running 
+about playing games.  You can see a wooden climbing frame and there are 
+chalk markings on the ground, it looks a little like the game hopskotch.  A 
+small fence surrounds the playground and there are a few solitary trees 
+providing shade for the children.  
+~
+Sector inside~
+Exit south 4913
+Exit west 4912
+EFlags door~
+End
+
+
+#4936
+Name A Cobblestone Path in Front of a Large Stone Building~
+Desc You are on a cobbled path with steps to the north, leading up to a large, 
+stone building.  The building is two-storeyed and when you look up you can 
+see a balcony overlooking the street.  There is a small `#`Wsign`^ attached to the 
+wall.  The building looks old and a little worn down, obviously they don't 
+have the funding to keep it well maintained.  You can hear children's voices 
+wafting out of the open windows.  
+~
+Sector inside~
+ExtraDesc sign ~
+`y**************************
+*                        *
+*      `rM E K A L I       `y*
+*       `Sorphanage        `y*
+*                        *
+**************************
+~
+Exit north 4900
+EFlags door closed~
+EKeywords door~
+Exit south 30262
+End
+
+
+#4937
+Name A Dark Closet~
+Desc You are in a dark closet with no way out.  There is no light and it feels 
+cold.  You shiver a little as you feel something tickle against your leg.  A 
+dusky smell fills your nostrils and the only sound you can hear is your own 
+heart beating.  
+~
+RoomFlags dark noscry~
+Sector inside~
+Exit east 4904
+EFlags door closed locked pickproof nopass infuriating~
+EKeywords closet~
+End
+
+
+#4938
+Name A Small Library~
+Desc You have entered a small room used as a library.  Bookshelves filled with 
+chapter books line the room and a basket of picture books sits in the middle 
+of the room.  Tall windows let in the natural light.  A pile of old raggedy 
+cushions are laid underneath the windows, making it a perfect place for 
+snuggling up with a good book.  
+~
+Sector inside~
+Exit west 4913
+EFlags door~
+End
+
+
+#4939
+Name A cobblestoned path~
+Desc n
+~
+RoomFlags imm_only~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 4903 spec_cast_adept
+S
+
+
+
+#RESETS2
+O 0 4900 -1 4900
+M 0 4900 1 4900 1
+E 0 4959 -1 torso~
+O 0 4902 -1 4901
+P 0 4903 15 4902 1
+O 0 4901 -1 4901
+M 0 4901 1 4901 1
+E 0 4959 -1 torso~
+O 0 4904 -1 4902
+O 0 4905 -1 4902
+O 0 4906 -1 4902
+M 0 4905 1 4902 1
+E 0 4954 -1 torso~
+M 0 4906 1 4902 1
+E 0 4951 -1 torso~
+O 0 4907 -1 4903
+O 0 4908 -1 4903
+O 0 4909 -1 4903
+P 0 4961 10 4909 1
+O 0 4910 -1 4903
+P 0 4911 10 4910 1
+M 0 4902 1 4903 1
+E 0 4962 -1 torso~
+E 0 4963 -1 waist~
+M 0 4924 10 4904 1
+M 0 4923 5 4905 2
+E 0 4951 -1 torso~
+M 0 4924 10 4905 1
+O 0 4925 -1 4906
+O 0 4926 -1 4906
+O 0 4927 -1 4906
+P 0 4928 1 4927 1
+P 0 4929 1 4927 1
+O 0 4930 -1 4906
+P 0 4931 1 4930 1
+M 0 4903 1 4906 1
+E 0 4968 -1 torso~
+O 0 4932 -1 4907
+O 0 4933 -1 4907
+O 0 4934 -1 4907
+O 0 4935 -1 4907
+O 0 4936 -1 4907
+O 0 4937 -1 4907
+O 0 4938 -1 4907
+O 0 4939 -1 4907
+M 0 4904 5 4907 2
+E 0 4954 -1 torso~
+M 0 4923 5 4907 1
+E 0 4951 -1 torso~
+M 0 4904 5 4907 2
+E 0 4954 -1 torso~
+M 0 4921 10 4907 1
+O 0 4942 -1 4908
+O 0 4943 -1 4908
+O 0 4944 -1 4908
+O 0 4945 -1 4908
+O 0 4937 -1 4909
+O 0 4946 -1 4909
+O 0 4947 -1 4909
+O 0 4948 -1 4909
+M 0 4907 5 4909 1
+E 0 4951 -1 torso~
+M 0 4904 5 4909 1
+E 0 4954 -1 torso~
+O 0 4905 -1 4910
+O 0 4940 -1 4910
+O 0 4941 -1 4910
+M 0 4908 1 4910 1
+E 0 4954 -1 torso~
+M 0 4920 5 4910 1
+E 0 4959 -1 torso~
+M 0 4924 10 4910 1
+O 0 4912 -1 4912
+O 0 4913 -1 4912
+O 0 4913 -1 4912
+O 0 4915 -1 4912
+O 0 4916 -1 4912
+O 0 4917 -1 4912
+O 0 4918 -1 4912
+M 0 4909 1 4912 1
+E 0 4960 -1 torso~
+M 0 4914 1 4912 1
+E 0 4954 -1 torso~
+M 0 4916 1 4912 1
+E 0 4951 -1 torso~
+O 0 4919 -1 4913
+O 0 4920 -1 4913
+O 0 4921 -1 4913
+O 0 4922 -1 4913
+O 0 4923 -1 4913
+O 0 4924 -1 4913
+O 0 4901 -1 4913
+M 0 4910 1 4913 1
+E 0 4966 -1 torso~
+M 0 4917 1 4913 1
+E 0 4964 -1 torso~
+M 0 4918 1 4913 1
+E 0 4965 -1 legs~
+E 0 4967 -1 arms~
+M 0 4919 1 4913 1
+E 0 4964 -1 torso~
+M 0 4920 10 4914 1
+E 0 4959 -1 torso~
+O 0 4955 -1 4924
+O 0 4956 -1 4924
+O 0 4957 -1 4924
+O 0 4958 -1 4924
+O 0 4955 -1 4925
+O 0 4956 -1 4925
+O 0 4958 -1 4925
+O 0 4957 -1 4925
+O 0 4949 -1 4926
+P 0 4952 1 4949 1
+O 0 4950 -1 4926
+P 0 4953 1 4950 1
+O 0 4955 -1 4926
+O 0 4949 -1 4927
+P 0 4954 1 4949 1
+O 0 4950 -1 4927
+P 0 4953 1 4950 1
+O 0 4955 -1 4927
+O 0 4955 -1 4928
+O 0 4956 -1 4928
+O 0 4957 -1 4928
+O 0 4958 -1 4928
+O 0 4955 -1 4929
+O 0 4956 -1 4929
+O 0 4957 -1 4929
+O 0 4958 -1 4929
+O 0 4949 -1 4930
+P 0 4952 1 4949 1
+O 0 4950 -1 4930
+P 0 4953 1 4950 1
+O 0 4955 -1 4930
+O 0 4949 -1 4931
+P 0 4951 1 4949 1
+O 0 4955 -1 4931
+O 0 4949 -1 4932
+P 0 4951 1 4949 1
+P 0 4952 1 4949 1
+O 0 4950 -1 4932
+P 0 4953 1 4950 1
+O 0 4955 -1 4932
+O 0 4956 -1 4933
+O 0 4955 -1 4933
+O 0 4957 -1 4933
+O 0 4958 -1 4933
+O 0 4949 -1 4934
+P 0 4952 1 4949 1
+O 0 4950 -1 4934
+P 0 4953 1 4950 1
+O 0 4955 -1 4934
+M 0 4911 1 4935 1
+E 0 4954 -1 torso~
+M 0 4912 1 4935 1
+E 0 4951 -1 torso~
+M 0 4913 1 4935 1
+E 0 4954 -1 torso~
+M 0 4921 10 4935 1
+M 0 4922 5 4938 2
+E 0 4951 -1 torso~
+M 0 4922 5 4938 2
+E 0 4951 -1 torso~
+O 0 4901 -1 4938
+P 0 4982 10 4901 1
+P 0 4981 10 4901 1
+P 0 4980 10 4901 1
+P 0 4984 10 4901 1
+P 0 4983 10 4901 1
+O 0 4969 -1 4938
+P 0 4978 10 4969 2
+P 0 4979 10 4969 2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#4924
+title librarian_answer_no~
+code sayto $n Alright then, feel free to browse, but remember to keep your voice down.
+pmote $n smiles at @ warmly.
+emote goes back to mending her books.
+~
+disabled false
+END
+
+#4923
+title librarian_thanks~
+code sayto $n It's a pleasure dear.
+pmote $n smiles at @.
+~
+disabled false
+END
+
+#4922
+title librarian_answer_yes~
+code pmote $n smiles at @ warmly.
+sayto $n We have picture books and chapter books.
+sayto $n What kind of book would you like to read lovey?
+~
+disabled false
+END
+
+#4921
+title librarian_assist_3~
+code pmote $n looks up from her work and smiles at $n.
+sayto $n ooh, a picture book.. how lovely.
+sayto $n You'll find some nice picture books in the basket there sweetie.
+emote points to the basket in the middle of the room and smiles.
+~
+disabled false
+END
+
+#4920
+title librarian_assist_2~
+code sayto $n A chapter book.. hmm.. yes..
+sayto $n You'll find all of our chapter books on the bookshelf there.
+emote points to the bookshelf.
+emote goes back to mending her books.
+~
+disabled false
+END
+
+#4919
+title librarian_assist~
+code pmote $n looks up from her books and smiles at @.
+sayto $n Hello dear, would you like some help choosing a book?
+ 
+~
+disabled false
+END
+
+#4918
+title echo_child_playing_alone~
+code mob echo You see a small child playing alone.
+mob echo A small child says '`#`M(human)`^Now, you can be the shopkeeper, and I'll come and buy some lollies'
+mob echo The child pretends to count some coins.
+mob echo You look around, and realising he is talking to an imaginary friend and not you, you leave him alone to play by himself.
+~
+disabled false
+END
+
+#4917
+title echo_children_crying~
+code mob echo The voices of two children arguing can be heard in the next room.
+mob echo You hear something break.
+mob echo A child runs past you `#`sscreaming`^ '`M(human)`^matron! matron! he broke my toy!
+~
+disabled false
+END
+
+#4916
+title echo_children_giggling~
+code mob echo You see two little girls whispering in the corner.
+mob echo They look at you and stop whispering.
+mob echo The two girls run out of the room giggling.
+~
+disabled false
+END
+
+#4915
+title echo_children_playing~
+code mob echo You hear a scurrying of feet.
+mob echo A childish voice yells '`#`M(human)`^You're it! You're it!
+mob echo A group of orphan children run past you, squealing with delight.
+mob echo A young orphan runs into the room, looks around and then runs out of the room.
+~
+disabled false
+END
+
+#4914
+title common message for number correct~
+code if  hastoken $n 4973
+    if hastoken $n 4974
+        if hastoken $n 4975
+            say Correct again! What a genius!
+            pmote $n claps at @'s performance.
+            mob echoaround $N Everyone points in $s direction `#`Ssneering`^ '`#`M(human)`^teacher's pet..teacher's pet!'
+            mob echoat $n Everyone points in your direction `#`Ssneering`^ '`#`M(human)`^teacher's pet..teacher's pet!'
+        else
+            pmote $n smiles at @ proudly.
+            say Correct again!
+        endif
+    else
+        if hastoken $n 4975
+            pmote $n smiles at @ proudly.
+            say Correct again!
+        else
+            say Correct! Well done!
+            pmote $n smiles at @.
+        endif
+    endif            
+else
+    if hastoken $n 4974
+        if hastoken $n 4975
+            pmote $n smiles at @ proudly.
+            say Correct again!
+        else
+            say Correct! Well done!
+            pmote $n smiles at @.
+        endif
+    else
+        if hastoken $n 4975
+            say Correct! Well done!
+            pmote $n smiles at @.
+        else
+        endif            
+    endif            
+endif
+~
+disabled false
+END
+
+#4913
+title question 3 answered right~
+code if hastoken $n 4975
+    sayto $n You've already answered that one, try another question.
+else
+    mob oload 4975 1 wear
+    mob tgive 4975 $n
+    mob ttimer $n 4975 60
+    mob call 4914 $n
+endif
+ 
+~
+disabled false
+END
+
+#4912
+title question 2 answered right~
+code if hastoken $n 4974
+    sayto $n You've already answered that one, try another question.
+else
+    mob oload 4974 1 wear
+    mob tgive 4974 $n
+    mob ttimer $n 4974 60
+    mob call 4914 $n
+endif
+ 
+~
+disabled false
+END
+
+#4911
+title question 1 answered right~
+code if hastoken $n 4973
+    sayto $n You've already answered that one, try another question.
+else
+    mob oload 4973 1 wear
+    mob tgive 4973 $n
+    mob ttimer $n 4973 60
+    mob call 4914 $n
+endif
+~
+disabled false
+END
+
+#4909
+title teacher_give_quiz_b~
+code Say Correct!  `1pmote $n beams a smile at @.  `1mob oload 4973`1mob tgive 4973 $n 
+~
+disabled false
+END
+
+#4908
+title teacher_quiz_5~
+code say Correct again! What a genius!
+pmote $n claps at @'s performance.
+~
+disabled false
+END
+
+#4907
+title teacher_quiz_3~
+code If hastoken $n 4973
+sayto $n Correct again!
+pmote $n smiles at @ proudly.
+mob oload 4974
+mob tgive 4974 $n
+else sayto $n Correct!
+emote smiles warmly.  
+mob oload 4973
+mob tgive 4973 $n
+endif 
+~
+disabled false
+END
+
+#4906
+title teacher_gives_the_quiz~
+code say Correct! 
+pmote $n beams a smile at @.
+~
+disabled false
+END
+
+#4905
+title teacher_giving_quiz~
+code emote writes the final question on the board.
+if level $n < 20
+ pmote $n looks up at @ and smiles slightly.
+ say Quickly, grab a seat, we're just about to start.
+else
+ pmote $n glares at @.
+ say You should know by now not to be late!
+endif
+~
+disabled false
+END
+
+#4904
+title teacher_singing_nursery_rhymes~
+code if isgood $n
+ say [singing]There was an old woman tossed up in a basket 
+ say [singing]Seventeen times as high as the moon. 
+ pmote $n looks up at @ and smiles.
+ sayto $n come on in, there's a spare seat just for you.
+ say [singing]But where she was going, no mortal could tell it, 
+ say [singing]For under her arm she carried a broom.
+else
+ if isevil $n
+  say [singing]There was an old woman tossed up in a basket 
+  say [singing]Seventeen times as high as the moon.
+  pmote $n looks up at @ and frowns.
+  sayto $n Late again! Hurry up, you're interrupting the class.
+  say [singing]But where she was going, no mortal could tell it, 
+  say [singing]For under her arm she carried a broom.   
+else
+ if isneutral $n
+  say [singing]There was an old woman tossed up in a basket 
+  say [singing]Seventeen times as high as the moon.
+  pmote $n looks up at @.
+  sayto $n quickly, find a seat.
+  say [singing]But where she was going, no mortal could tell it, 
+  say [singing]For under her arm she carried a broom.
+endif
+endif
+endif
+~
+disabled false
+END
+
+#4903
+title cook_greets_all~
+code say 'ello lovey, sup will be ready soon.
+emote smiles cheerfully.
+say go an' sit down at the table dear.
+~
+disabled false
+END
+
+#4902
+title cooks_check_on_cookies~
+code emote opens the stove door to check on her cookies.
+say mmm...they should be ready soon [and smiles.]
+emote closes the stove door.
+emote begins stirring the pot of oatmeal again.
+ 
+~
+disabled false
+END
+
+#4901
+title killing_in_orphanage~
+code if hastoken $n 4970
+else
+ mob oload 4970 1 wear
+ mob tgive 4970 $n
+ mob ttimer $n 4970 1000
+ yell Matron! Matron! Come quickly, there's a murderer!
+ mob echoaround $n A matron comes running in, and grabs $n by the scruff of their neck.
+ mob echoat $n A matron comes running in, and grabs you by the scruff of your neck.
+ mob echoat $n The matron says '`#`M(human)`^What kind of a creature are you, killing in my orphanage, didn't you read the sign when you came in!'
+ mob echoaround $n A matron comes running in, and grabs $n by the scruff of their neck.
+ mob echoat $n The matron drags you out of the room.
+ mob echoaround $n A matron drags $n out of the room.
+ mob echoat $n The matron says '`#`M(human)`^You are going to the room where all naughty children go.'
+ mob echoaround $n A matron comes running in, and grabs $n by the scruff of their neck.
+ mob echoat $n You are thrown into a dark room, and the door locks behind you.
+ mob transfer $n 4937
+endif
+~
+disabled false
+END
+
+#4900
+title Welcome~
+code if hastoken $n 4970  
+   say How dare you try and set foot in my orphanage again.
+   say I don't want to see you back here for a while.
+   pmote $n glares at @ and folds her arms firmly.
+   say This way please.
+   emote points towards the exit.
+   echoat $n You are escorted out of the building.
+   mob transfer $n 4936
+else
+   if hastoken $n 4971
+      smile $n
+   else
+      pmote $n Opens the door for @ and smiles warmly.
+      sayto $n [in a motherly voice]Come in, come in... we'll make you feel right at home.
+      mob oload 4971 1 wear
+      mob tgive 4971 $n 
+      mob ttimer $n 4971 60
+   endif
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

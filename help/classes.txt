@@ -1,0 +1,301 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword CLASSES~
+category undefined~
+text `=lSyntax:`=?
+    help <class name>
+
+At the Dawn of Time we have these classes available for playing characters:
+	
+	-Warrior
+	-Mage
+	-Thief
+	-Cleric
+	-Spellfilcher
+	-Ranger
+	-Druid
+	-Paladin
+	-Barbarian
+~
+END
+
+keyword INFO PREMISE CP POINTS CREATION-POINTS~
+category undefined~
+see_also LEVEL~
+text The Dawn of Time skill system allows you to fully customise your character,
+making him or her skilled in the skills you choose.  But be aware that the
+skills you pick at character creation are the only skills your character will
+start with, you will be able gain other skills during game play though.
+
+When creating skills are paid for with creation points, and the more creation
+points you have, the harder it is to gain a level.  Furthermore, higher-cost
+skills are harder to practice.
+
+Skill groups are like package deals for characters -- sets of skills or spells
+that are closely related, and hence can be learned as a unit.  There is a 
+default skill group for each class, which can be selected for a balanced 
+selection of skills - sometimes at a reduced cost. The experience breakdown
+is as follows: 
+
+`GPoints   Exp/lvl     Points   Exp/lvl`=?
+  40       1000        90       6000
+  50       1500       100       8000
+  60       2000       110      12000
+  70       3000       120      16000 
+  80       4000       130      24000
+
+The table continues in a similar manner for higher point totals.  Some races
+and classes have a minimum Exp/lvl above 1000.
+ 
+Type `#`bhelp party`^ for help on creating a group of people to fight with.
+ 
+~
+END
+
+keyword MAGES MAGE-BASICS MAGE-DEFAULT~
+category undefined~
+text Mages specialise in the casting of spells, offensive ones in particular. 
+Mages have the highest-powered magic of any class, and are also very skilled 
+at the use of magical items, though their combat skills are the weakest of 
+any class. `+
+`+
+All mages begin with skill in the dagger. Any other weapon skills must be 
+purchased, at a very high rate.  The default skill selection for mages is as 
+follows: `+
+`+
+`GSKILLS:`=?`+
+dagger          melee weapon of choice for all mages`+
+scan            allows you to look before you leap`+
+dodge           avoid blows in combat`+
+scrolls         allows you to study and cast magics written on parchment`+
+wands           who heard of a mage without knowledge of wands`+
+`+
+`GREALMS:`=?`+
+alteration      spells that change the physical nature of things`+
+conjuration     spells that create something from nothing`+
+essence         spells of the essence of the elementals`+
+evocation       offensive magics used for combat`+
+necromancy      spells that affect life force and physical condition`+
+summoning       spells of transportation`+
+~
+END
+
+keyword CLERICS CLERIC-BASICS CLERIC-DEFAULT~
+category undefined~
+text Clerics are the most defensively orientated of all the classes.  Most of 
+their spells focus on healing or defending the faithful, with their few 
+combat spells being far less powerful than those of mages. However, clerics 
+are the best class by far at healing magics, and they possess an impressive 
+array of protective magics, as well as fair combat prowess.`+
+`+
+All clerics begin with skill in the mace.  Other weapon or shield skills 
+must be purchased, many at a very dear cost.  The default skill selection 
+for clerics is as follows:`+
+`+
+`GSKILLS:`=?`+
+mace            the weapon of choice for any cleric`+
+scan            allows you to look before you leap`+
+meditation      recover your mana quickly`+
+scrolls         allows you to study and cast magics written on parchment`+
+staves          brandish staves for calling forth magics`+
+`+
+`GSPHERES:`=?`+
+combat          communes used in combat`+
+convocation     communes that call for direct divine intervention`+
+death           communes to drain or empower the life force`+
+healing         communes to alter the physical health`+
+protection      communes that grant protection`+
+
+~
+END
+
+keyword THIEVES THIEF-BASICS THIEF-DEFAULT~
+category undefined~
+text Thieves are a marginal class. They do few things better than any other 
+class, but have the widest range of skills available.  Thieves are 
+specialists at thievery and covert actions, being capable of entering areas 
+undetected where more powerful adventurers would fear to tread.  They are 
+better fighters than clerics, but lack the wide weapon selection of 
+warriors.`+
+`+
+All thieves begin with the dagger combat skill, and are learned in steal as 
+well.  Any other weapon skills must be purchased, unless the default 
+selection is chosen.  This default skill package includes:`+
+`+
+`GSKILLS:`=?`+
+backstab        the art of attacking from the shadows`+
+dagger          the weapon of choice for thieves, ideal for backstabbing`+
+dodge           avoid blows in combat`+
+hide            the art of remaining undetected in a room`+
+mace            the use of maces and other blunt weapons`+
+peek            used to look into a person's belongings`+
+dirt kicking    skill of trickery to blind your victim with dirt`+
+sneak           move undetected from room to room`+
+steal           any thief is adept in retrieving objects`+
+pick lock       a useful skill for breaking and entering`+
+disarm          used to deprive your opponent of his weapon`+
+second attack   with training, the skilled thief can hit twice as fast 
+~
+END
+
+keyword WARRIORS WARRIOR-BASICS WARRIOR-DEFAULT~
+category undefined~
+text Warriors live for combat and the thrill of battle. They are the best 
+fighters of all the classes, but lack the subtle skills of thieves and the 
+magical talents of mages and clerics.  Warriors are best for those who don't 
+mind taking the direct approach, even when another method might be called 
+for.`+
+`+
+Warriors begin with skill in the sword, and gain a second attack in combat. 
+Other weapon skills may be purchased cheaply, or gained in the default skill 
+package, which includes the following:`+
+`+
+`GSKILLS:`=?`+
+bash            a forceful rush with the body, designed to flatten your foes`+
+enhanced damage this skill multiplies your damage in battle`+
+parry           the art of parrying with weapons`+
+rescue          allows you to take the blows aimed for a companion`+
+shield block    the art of parrying with a shield`+
+disarm          used to deprive your opponent of his weapon`+
+third attack    allows the skilled warrior to land three blows in one round`+
+weaponsmaster   this group provides knowledge of all weapon types`+
+
+~
+END
+
+keyword DRUIDS DRUID-BASICS DRUID-DEFAULT~
+category undefined~
+text Druids are the healers of the forest.  Like clerics they do not use edged 
+weapons such as daggers and swords but may sometimes use a slightly curved 
+mini scythe type tool for cutting herbs etc. Maces and especially staves 
+(staffs) are a druids preferred weapon in combat.`+
+`+
+Their talents are also similar to clerics, but with a tendency towards 
+nature.  They can cast an extremely wide variety of spells, generally their 
+attack spells are more commonly those that use vines and plants etc to 
+entangle, as opposed to pierce.`+
+Their default skill package includes:`+
+`+
+`GSKILLS:`=?`+
+animal training  the ability to tame animals
+mace             the ability to fight with maces, clubs and hammers`+
+hand to hand     the art of fighting without a weapon`+
+scrolls          allows you to study and cast magics written on parchment
+scan             allows you to look before you leap`+
+`+
+`GELEMENTS:`=?`+
+animal           summons the powers of nature's animals`+
+land             summons that offers resistance to the elements`+
+plant            summons that call on the vegetation`+
+`+
+`GSEASONS:`=?`+
+autumn           summons related to the autumnal seasons`+
+spring           summons related to the vernal seasons`+
+summer           summons related to the summer seasons`+
+winter           summons related to the winter seasons 
+~
+END
+
+keyword RANGERS RANGER-BASICS RANGER-DEFAULT~
+category undefined~
+text A subclass of warrior that has taken to the woodlore for learning.  Rangers 
+dabble slightly in the druidic powers of summoning, though their prowess 
+lies in the melee combat.  This is quite a versatile class that provides a 
+bit of everything, including sword and second attack, and has the following 
+defaults:`+
+`+
+`GSKILLS:`=?`+
+awareness        wake up when someone approaches as you sleep`+
+scan             allows you to look before you leap`+
+sword            the warrior's standby, from rapier to claymore `+
+spear            this skill covers both spears and staves, but not polearms`+
+animal training  animal training  allows animals to be more friendly with you
+domesticate      tame animals as your own pet, to follow your commands`+
+axe              the use of axes, ranging from hand to great (but not halberds)`+
+build            skill of woodcraft to build certain things, including fires`+
+sneak            move undetected from room to room`+
+`+
+`GELEMENTS:`=?`+
+animal           summons the powers of nature's animals`+
+land             summons that offers resistance to the elements`+
+plant            summons that call on the vegetation`+
+water            summons that call on the elements of water`+
+~
+END
+
+keyword PALADINS PALADIN-BASICS PALADIN-DEFAULT~
+category undefined~
+text These is a class of warrior that prides itself on service and duty.  They 
+place honor above all else, and their devotion has gained them the ability 
+to heal much like a cleric.  Their default package is as follows:`+
+`+
+`GSKILLS:`=?`+
+sword           the warrior's standby, from rapier to claymore`+
+scan            allows you to look before you leap`+
+staves          brandish staves for calling forth magics`+
+scrolls         allows you to study and cast magics written on parchment`+
+second attack   with training, the skilled paladin can hit twice as fast`+
+third attack    allows the skilled paladin to land three blows in one round`+
+lay on hands    performs minor healing on wounds`+
+`+
+`GSPHERES:`=?`+
+combat          communes used in combat`+
+death           communes to drain or empower the life force`+
+healing         communes to alter the physical health`+
+protection      communes that grant protection 
+~
+END
+
+keyword BARBARIANS BARBARIAN-BASICS BARBARIAN-DEFAULT~
+category undefined~
+text These fierce warriors were born to fight.  They can enter into a berserker 
+rage, and attack in a frenzy.  They are so tough, they have a naturally 
+lower armor class.  Their default group contains:`+
+`+
+`GSKILLS:`=?`+
+bash            use your bodily weight to throw others off balance`+
+enhanced damage this skill multiplies your damage in battle`+
+fast healing    recover from your wounds quickly`+
+hand to hand    the art of fighting without a weapon`+
+scan            allows you to look before you leap`+
+second attack   with training, the skilled barbarian can hit twice as fast`+
+berserk         a very deadly fighting rage`+
+dodge           avoid blows in combat`+
+ultra damage    deal out tremendous amounts of damage`+
+weaponsmaster   this group provides knowledge of all weapon types 
+~
+END
+
+keyword SPELLFILCHERS SPELLFILCHER-BASICS SPELLFILCHER-DEFAULT~
+category undefined~
+text This class has the skills of both the thief and mage classes.  This nasty 
+combination allows you to use both physical and magical means to deceive and 
+achieve your desires.  Spellfilchers know the dagger and stealing right off 
+the bat.  Their default skill group includes:`+
+`+
+`GSKILLS:`=?`+
+backstab        the art of attacking from the shadows`+
+dagger          the weapon of choice for thieves, ideal for backstabbing`+
+second attack   with training, the skilled spellfilcher can hit twice as fast
+hide            the art of remaining undetected in a room`+
+sneak           move undetected from room to room`+
+wands           zap wands of magic`+
+scrolls         allows you to study and cast magics written on parchment`+
+dirt kicking    skill of trickery to blind your victim with dirt`+
+steal           any thief is adept in retrieving objects`+
+lore            recall a little knowledge of it items`+
+scan            allows you to look before you leap`+
+`+
+`GREALMS:`=?`+
+conjuration     spells that create something from nothing`+
+summoning       spells of transporting`+
+
+~
+END
+
+EOF~
+#$

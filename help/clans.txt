@@ -1,0 +1,840 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword CLAN-OVERVIEW~
+title `N CLANS~
+category undefined~
+see_also CLANS~
+text A Clan is a collection of players, united to follow and further a common 
+cause.  Each clan has rules and regulations, to find out more about clans 
+and their 'beliefs' type "help <clanlist>".   To join a clan you must be 
+letgained.  Speak to the Clan Leader about joining.  Joining a Clan is a 
+dangerous step.  Many adventurers live to kill and torture others and 
+chances are that your paths will cross.  Existing clans may buy special 
+rooms and mobiles by acquiring diamonds as payment.  To see room prices, 
+type "help prices".  New clans may be formed by petitioning the ADMIN.`+
+  `+
+Guilds are usually clans that have people related by class, ie a theives 
+guild or mages guild.  All characters belong to a guild as we all choose 
+classes at creation, but offical guilds / clans are an option.  The unique 
+nature of guilds means they can usually specialise in skills, spells etc.`+
+`+
+ 
+~
+END
+
+keyword CLAN-COMMANDS ADD DEMOTE OUTCAST SEEK~
+category undefined~
+see_also FOUNDING CLAN-LIST CLAN-SPECIALS FOUNDING CLAN-PRICES~
+text `+`=lSyntax:`X
+`+   Add       <player>
+`+   Demote    <player>
+`+   Outcast   <player>
+`+   Promote   <player>
+`+   Clan      <player>
+
+`+`+In order to add a player to your clan you must have the authority
+`+to do so.  Also, that player must currently be "seeking" your clan
+`+and have been letgained by an immortal.
+
+`+`+To outcast a player requires authority and will remove them from
+`+your clan.
+
+`+`+To Promote a player will increase their rank by one.  You cannot
+`+promote someone any higher then one rank below you.
+
+`+`+To Demote a player will decrease their rank by one. You can only
+`+demote players that are lower in rank then you.
+
+`+`+To seek to join a clan, type seek <clanname> and hopefully they
+`+will notice you.
+
+`+`+ `RNOTICE - Immortals WILL NOT outcast anyone from a Clan on request without
+`+ a note of permission from anyone in the Clan capable of outcasting.  This note will explain
+`+ why the person who gave permission for the outcasting did not do it him/her self.`X
+~
+END
+
+keyword CLAN-FOUNDING~
+category undefined~
+see_also CLAN-LIST CLAN-COMMANDS CLAN-SPECIALS CLAN-PRICES~
+text To found a clan you must have at least 4 followers, the only level 
+requirement is that they have been letgained , which will mean 5 total 
+members including yourself.  To petition - you must send a note to "clan" 
+with the following information: `+
+`+
+`G-Theme `+
+`+
+`G-Members to Be`+
+`+
+`G-Name `=?(The Knights of the Round, or The Elite Guard, etc) `+
+`+
+`G-Short Name for Who`=?([ KNIGHT ] [ GUARDS ] [ SHADOW ] etc)`+
+`+
+`G-At least 2, but up to 5 ranks for members in the following format:`=?`+
+ Rank:<one word rank up to 8 characters>`+
+ Can Promote?  : Y or N <- demotes by default`+
+ Can Add?  : Y or N`+
+ Can Outcast?  : Y or N`+
+`+
+`G -The color you would like your who clan name to be.  `^`+
+`+
+`ROne last note on creating a clan.  To help prevent the implication of a lot 
+of fly-by-night clans (clans that start and then fade as quickly as they 
+come), a clan hall is required for all new clans before they can be 
+implimented.  Speak to the Realms council when you are ready to create your 
+clan hall.  `^ `+
+`+
+~
+END
+
+keyword CLAN-SPECIALS~
+category undefined~
+see_also CLAN-LIST CLAN-COMMANDS CLAN-FOUNDING CLAN-PRICES ADMIN CLAN-MOBILES~
+text `=?
+As a general rule the ADMIN will do as much as they can to provide you 
+with exactly what you require for your clan.  This extends all the way
+from such things as a clan hall, to specific clan skills.  The ADMIN
+though does require from you something in return.  Any specials for your
+clan must have a decent roleplay reason for there exsistence.  
+For example we will not except a clan of barbarians having a "pass proof" 
+door.  Such a door would have to be magical and obviously magic and 
+barbarians do not mix.  Another example would be a clan of thieves with 
+a special skill to call animals to them, this would be more in line with
+nature or druid clan theme.  
+
+Below is a list of possible clan-specials.
+
+
+`GCommon clan-specials`=?
+  Clan halls / areas
+  Lockable doors
+  Objects
+
+`GUncommon clan-specials`=?
+  Pick / Pass proof doors
+  Mobiles
+  Hidden clan halls   
+
+`GRare clan-specials`=?
+  Mobile specials
+  Special clan skills 
+  Special clan spells 
+
+~
+END
+
+keyword CLAN-MOBILES~
+category undefined~
+see_also CLAN CLAN-PRICES CLAN-FOUNDING~
+text These are the formula with which to base your costs on any mobs you make for 
+your clan.  Healers, guards, etc.  The costs will be divided up into Level, 
+Hitpoints, Armor class, and Specials.  Mana will be set according to level, 
+since mobs have no need of mana for usage.  Specials refers to any 
+resistances, or permaffect spells that will be put on mobs.  NO IMMUNITIES 
+with the exception of charm and summon will be allowed.  Mobprog prices are 
+taken care of in the general help file for 'clan-prices'.  
+Level
+1-10th level mobs are 50 gold per level.  10th level mob being 500 gold base.
+11-25th level mobs are 100 gold per level.
+26-50th level mob is 150 gold per level.
+50-75th level mob is 200 gold per level.
+76-100 level mob is 300 gold per level.
+no mobs above level 100.
+So, a level 15 mob would be 1500, not 700.
+ 
+`GHit Points
+Hit points are not prorated by level.  They are simply 10 per hitpoint.
+`GHowever, each level has a cap, that hitpoints cannot exceed.
+As follows:
+1-10th level, max 40 hp.
+11-25th level, max 100 hp.
+26-40th level, max 170 hp.
+41-50th level, max 230 hp.
+51-65th level, max 300 hp.
+66-75th level, max 375 hp.
+76-85th level, max 425 hp.
+86-100th level, max 520 hp.
+ 
+`MSpecials
+Specials are just based on each indiviual affect.
+Some are fairly cheap, some are extravagantly expensive.
+Sanctuary.  At level of mob.  10000.
+Haste.  At level of mob.  10000.
+Armour, shield, stone skin, barkskin, windshield.  5000 Each.
+Invisibility.  500
+Chill shield or Fire shield.  500 for either.  not both (duh)
+-not allowed on mobs of low level that autoassist clan-members.
+Bless.  5000.
+Other spells, talk to Szordrin/Clan.  May add more later if popular ones appear.
+Mob act flags specials,
+any of the mob act flags (area attack, autoassist) 5000.
+ 
+`yArmor Class
+Change, armor classes will be set along with level as per the builder's doc.
+ 
+~
+END
+
+keyword CLAN-PRICES~
+category undefined~
+text These are the standard prices for clans, whether they wish to build rooms, 
+add mobs to the hall, or create clan items.  The prices are non-negotiable 
+and subject to change without notice.  The prices are a cumulative figure of 
+what special attibutes you have chosen, and it should also be notes that you 
+must pay per item.`+
+`+
+ [`YGold`=?]   [`WItem`=?]       [`SNotes`=?]`+
+  5000    room         standard room, 100% heal and mana, no flags`+
+   500    objects      standard`=?`+
+ 10000    objects     that are to be used to give advantages
+`+
+ 50000    room_flag    added room affects, such as noscry, nogate, norecall`+
+ 10000    room_rate    to get the room heal or mana rate to 110%`+
+ 20000    room_rate    to get the room heal or mana rate up to 120%`R *`=?`+
+ 40000    room_rate    to get the room heal or mana rate up to max 133%`R *`=?`+
+`+
+  1000    mob_act       mob's special ability (such as fighter, cleric, mage)`+
+  1000    mob_flag      to make your mob a healer or a shopkeeper`W *`=?`+
+ 10000    mob_special   special mob ability (such as spec_cast_mage)`B *`=?`+
+ 20000    mob_prog      price for each 'function' that the mobprog does`+
+`+
+If you have any questions or special requests, you can write a note to the 
+clan council (`CNOTE TO CLAN)`=?.  Prices for clan-items and the rest will be 
+available soon.`+
+`+
+`+
+ `Y - Special Notes -`+
+====================`+
+`R* `=?- Room heal/mana rate prices are additive.  It would cost 70,000 gold to 
+get either heal or mana rate maxed at 133%, or else 140,000 to get both of 
+them maxed, per room`+
+`+
+`W* `=?- The inventory on the shopkeeper will cost more, and you must contact the 
+Clan Council before it is set.`+
+`+
+`B* `=?- Mobprogs will not allow you to 'kick out' non-clan members, due to the 
+abuse and unbalance of power during clan pkills.`+
+`+
+`S* `=?- To be modified soon. `+
+~
+END
+
+keyword CLAN-PHALANX~
+category undefined~
+text A group of wolflike creatures huddle around a blazing fire, two males and a 
+female. The older male two speaks in a deep growling voice to the other male 
+wolf.. "Son, my tribe has been taken from me by evil. I would have fought 
+this evil, but I have spent the last years seeking you two, my children. You 
+were taken from me by this same evil." The fire blazes high and the sheds 
+more light on the three forms. The older male, the father of the other two 
+has still seems strong, but his silver fur is showing signs of his age. To 
+his right a young virile black wolven form. His thick fur makes him seem 
+extremely large in contrast to the bright flame. On the older wolves left is 
+a female. Snow white fur covers her strong body and her face has an 
+attractive smile. All three of the creatures have a distinguishing mark, a 
+birthmark in the shape of the moon and the sun. The father has both and the 
+children each carry one. "The time has come to start a new tribe..." the old 
+wolf sighs slightly and looks into the fire with a blank gaze ".. I have 
+become too old however, it wont be long before my wielding arms starts to 
+loose it's strength and my canines are growing dull." "Times have changed.. 
+and places also. We must change with them. There are many races worthy in 
+this town.... and many that are not." Silence creeps over the three forms 
+interupted only by the cackle of the fire.
+ 
+The young male looks over to his father and speaks in the same low growling 
+voice, perhaps a little steadier than his fathers "I will lead the tribe 
+father, I will start a tribe for those worthy. No longer will we be forced 
+to share the pit with weaklings and evil." The father casts his gaze from 
+the fire to his son and places his hand on his shoulder. A look of both 
+sadness and happiness crosses his face. "I know you will, son. I will help 
+in anyway I can." Then a grin fills his face as he remembers back to the 
+years when he was the highlord of his tribe. "And what fun we'll have". The 
+female tilts her head back, looks up at the starry night and cackles loudly. 
+The other two howl and join in the cackling.
+~
+END
+
+keyword CLAN-VEIL~
+level 92
+category undefined~
+text .   This is a seperate help text from the general public one because the veil is 
+a two faced clan.
+ 
+   On the IC part, we are a guild of merchants that will help otheres get 
+weapons, enchantments, and such services for a price. 
+ 
+   Underneath this facade, we are an organisation of thieves and assassins 
+for hire. We have a representative or two in each city, and we try to 
+control the thieving trade in each of them. We do hire ourselves out 
+secretly to seek out and kill those who were slain. For a price. The 
+genialilties and such help us mask our operations.. thus our clan namesake. 
+We seek to expand and further our goals and finally, when the time is ripe, 
+the first founders will disappear and lead others on by puppetstrings. The 
+lower ranking clanspeople will do good and follow orders from an unknown 
+source. - The Veil, whom will be never be known. 
+ 
+   We will earn a calling card, in which we can be identified by soon. 
+hopefully nothing too bizarre or ostentatious. The ranking structure has the 
+Veil on top, followed by the Masters, then Overseers, the Fence and finally 
+the Footpad. In the world of goodness, we are The Merchant Prince, the 
+merchant lords, the dealers, the merchants and the aides. in descending 
+order. 
+ 
+   The Veil, (for now).
+~
+END
+
+keyword CLAN-MERCHANT~
+category undefined~
+text .   You arrive in town, firmly believing in your own strengths and instincts, 
+ready to go adventuring. With a small pile of silver as your only 
+possessions, you marvel at the buildings and the people bustling around 
+town. The plaza seems brimming with populous of every race and of every 
+profession. You gaze at a young human dressed in gleaming silver plate, and 
+his sharp longswords glinting in the light. 
+ 
+   As you survey the multitude of people gathered talking, you feel a rumble 
+in your tummy, and decide to head to the nearby store to purchase some food. 
+To your horror, you find your pursestrings cut and the pouch of silver gone! 
+You gasp, howl in frustration, and feel the anger rising in your temples. 
+You look around, trying to seek out the villain who stole your money. 
+Suddenly, you feel a light tap on your shoulder. You whirl around, fists 
+clenched, ready for battle. Standing in front of you is an avian looking 
+straight at you. She speaks in melodic tones, 
+ 
+   "Do you need help, young one?" she asked. 
+ 
+   You nod, feeling lost and defeated. 
+ 
+   She smiles, and hands you a stack of coins numbering in the tens. You 
+hardly conceal your joy as you thank her. She nods, and turns, spreading her 
+wings for flight. She cocks her head back and says before departing, 
+ 
+   "Remember that the merchants are always there if you need help" 
+ 
+   Years pass.. and you feel much more experienced and wise in your 
+adventures. You have heard of a strong blade, that would aid thee in your 
+travels, but lack the knowledge to find it. Waiting at the plaza, you see a 
+gnoll sitting opposite you, looking cursorily at you. He speaks with a 
+gutteral accent, "Let me introduce myself, I am a Merchant of the Mythrin 
+Seas Trading Guild. May I be of service?" You outline your problem and he 
+smiles. "Indeed, i just so happen to have such a blade that you seek. Here, 
+give me a good offer, and i will gladly trade... " You barter with him for a 
+while, and the trade is done. "Do know that we are many, and you can seek us 
+by asking for us, the Merchants. We will gladly try to help if we can 
+accomodate it. Whatever the service, whatever the item." You nod, smiling to 
+yourself. 
+ 
+   Later, you begin to think about how such a guild can help you, and how 
+they operate. You ask other adventurers and commonfolk, and gather the 
+following information. The Merchant Guild seems founded on trade and gold. 
+They seem focused on being a help to those who need it and can afford it. 
+ 
+   Their services include enchantments and of item gathering and retrieval. You 
+wonder what else they might provide, and how you might benefit from joining 
+them. Pondering this, you step out of the city, ready for a new adventure.
+~
+END
+
+keyword CLAN-WALKERS CLAN-SHADOW-WALKERS CLAN-SHADOW-WALKER~
+category undefined~
+text `#`r(Whiling walking amongst town, ye happen to overhear a discussion spoken by 
+a guard to a weapon shopkeeper) 
+ 
+`=?The guards says, "`mGreetings!  Sir, do ye have any excellently crafted 
+swords for sale today?`=?" 
+ 
+The shopkeeper replies, "`mYes, here's some mighty fine swords for a fair 
+guard like yourself`=?".  The shopkeeper motions to some swords behind a glass 
+display case. 
+ 
+The guard frowns, and says, "`mThose don't seem too deadly, but they look 
+fine.. I've heard that some group of mortals decided to band together, 
+though I don't know their plans, it's best to equip myself with the 
+finest.`=?". 
+ 
+The shopkeeper seems interested, "`ma group of mortals?  Mysterious plans?  
+Sounds quite interesting...`=?". 
+ 
+The guard grunts, "`mYes, quite interesting.  Got some reports that they 
+formed to grow in strength, to be the most powerful group.  I found some 
+suspicious figure hidden among town, and captured him.  I took him to the 
+dungeons, and questioned him thoroughly..`=?". 
+ 
+The shopkeeper's eyes gleam with excitement, "`mWhat came of the 
+questioning?`=?" 
+ 
+The guard says, "`mNot much, the figure's a well trained spy, he seemed to 
+know of the new formed group sometime ago.  He seems to dislike the group 
+though, and so, getting the name of the group wasn't hard.  The figure said 
+that group called themselves the Shadow Walkers, not a lawful name I 
+suppose.  Nor chaotic in any case.  I suppose they don't pose much of a 
+threat.`=?" 
+ 
+The shopkeeper says, "`mAhh.. for your story, I have an excellent sword saved 
+up..`=?".  The shopkeeper pulls out a large, extremely sharp sword with a ruby 
+hilt.  The shopkeeper then says, "`mThis should serve you well!  Good luck 
+with your duties!`=?".  The shopkeeper hands the guard the sword, and waves 
+happily. 
+ 
+The guard beams broadly, and takes the sword, paying generously to the 
+shopkeeper and thanks him heartily. 
+ 
+The guard then walks out of the building, with a new sword equipped in his 
+right hand.)`^
+~
+END
+
+keyword CLAN-PRODIGY~
+level 1
+category undefined~
+text `CA beautiful pure white avian mage searched and searched for books of Magic 
+for years, in her search she heard rumors of a Clan of magic called "The 
+Circle of Magi".  It was a clan of only Magic users that taught all who came
+ for magic.  She made friends with many people of the many magic users of 
+the land and realized there was a great need for a center of learning for all 
+magic.
+ 
+One day as she searched through the streets of Melaki she found a door to the 
+sewers and as she descended she glimpsed a ghostly figure.   It was a ghost 
+who instead of attacking spoke to her.
+ 
+"I see you daughter of magic. I have heard echoes of your desire to join the 
+Circle."
+ 
+A deep sadness filled his eyes and a moan was torn from his lips. 
+ 
+"All gone my poor mages...   All gone from my halls of Magic.  Never did I 
+think we would be brought so low."
+ 
+Suddenly a light seemed to appear behind the eyes of the ghostly shape.
+ 
+"Come!"
+ 
+With that statement he turned and moved through a door, past some stone 
+gargoyles and through another door and down a hall. Angel followed hurried
+looking around with awe-struck eyes.  Finally they arrived in a ghostly hall 
+filled with shelves of books a fireplace and some over stuffed chairs.  As she 
+looked around curiously, the ghost sunk into a chair and looked at the ghostly
+fire broodingly.  
+ 
+"Do you think you could carry on the ideals I started this clan with?  That of 
+sharing magic and being apart of a whole community of magic?"  The ghost 
+stared penetratingly at Angel.
+ 
+"Yes I know I could carry on.  I have dreamed of a clan of such Ideals since 
+I was young.  However I would expand that to include all the users of magic
+for they all need to learn and communicate with others of their kind and meet
+people of all magical natures."  The young avian smiled dreamily but with 
+determination.
+ 
+"Your vision is a little flawed but I see no one in this land that can carry 
+on our Ideals.  Take then my blessings into you new clan and know I look 
+kindly upon you."
+ 
+With those words the ghost faded softly away smiling faintly at Angel.`^
+ 
+~
+END
+
+keyword CLAN-DARKNESS~
+level 1
+category undefined~
+text Many years ago, The Vl'arescht Family was the second most powerful
+drow family of the Underdark. They where followers of the God of
+Vengeance. Because of their religious belief they where prosecuted
+by the rest of the Underdark community. They fled towards the surface
+where they decided to settle down. Once there they founded the
+Temple of Vengeance. With time the Family became so powerful, that
+they became known to a few as the Vl'arescht Clan. With the wealth
+that they made when they discovered a mithril mine under the temple,
+they decided to found their keep under a great lake. This city is
+considered one of their greatest secrets, and they thrive to keep it
+that way.
+ 
+The Vl'arescht Clan attempt's to create a massive enough army to be
+able to go back to the Underdark and eliminate their brethrens who
+drove them away from their homelands. They attempt to gain allies
+who are strong, and usually enslave the week. They believe that by
+cleaning the world of their enemy's, The God of Vengeance will be
+able to claim the world as his and thus rule it with an iron fist.
+ 
+They believe that when their god rules the world; that they will be
+the chosen ones and will rule part of the kingdom's. The Clan is led
+by the Vl'arescht family (drow males mostly) and also has some of
+what they believe are the best and most loyal of the other race's as
+members. The Temple of Vengeance serve's as a recruiting area for
+more followers of their god, and hopefully for them to be able to
+recruit the best as Clan members.
+~
+END
+
+keyword CLAN-BONES~
+level 1
+category undefined~
+text After stumbling upon what seemed to be a deserted temple in the wilderness...
+ 
+"These spells are useless, we have been searching for the bones of the old dragon 
+god for too long now.  We are too old to continue this ourselves", an old priest said.
+ 
+ "Mirgro, will show us the way, it is the way of the dream...."
+ "Then we shall find someone who loves bones more than ourselves.", the second 
+priest continued.
+ 
+ "Those who seek to find the burial chamber as well, the chamber of bones....".
+ 
+ "What of the Clan of Bones?", the second priest asked.
+ 
+ "They are loyal and their bond with one another is like no other.  It is the 
+friendship that they share with one another that make them this way.  And their leader has 
+a love of bones. We shall talk with him and tell him of the grand hunt and of the 
+chamber. So that maybe one day, the bones shall be forged as the gods intended them to 
+be", the first priest continued.
+ 
+ "Then let us find this lover of bones, and tell him of the dream that Mirgro has 
+blessed me with."
+ 
+ "And who will believe you? You're not even a draconian..."
+ 
+ "Ah, but that is what makes this dream special and hold truth to it....
+ 
+ "True enough...let us begin our journey to find them...This Clan of  Bones!"
+ 
+The old priest drops a pinch of blood on the bone floor, and a skeleton erupts from the 
+floor, and pulls them both through the bones.
+~
+END
+
+keyword CLAN-MAGI~
+level 92
+category undefined~
+text `RThe Order of the Magi
+ 
+The Order has been formed to provide a means to further the pursuit of
+knowledge, to discover and control the forces of the universe. From
+this knowledge comes power, the ability to control our own destiny, and 
+from that we shall gain our freedom from those who might wish to
+manipulate our future. From this freedom we shall become the guardians
+of power, the holders of balance and from all this we shall discover
+the ultimate truth, the secret of immortality.
+ 
+The Order is ruled by a strict hierarchy of Magi who advance through
+the demonstration of skill, discipline, competence and strength.  Their
+only comfort comes from the Magic which they cherish so dearly.  With
+time discipline and training they could be great.  But will they follow
+the footsteps of the Magi of old, which eventually led to their doom?
+Or will they succeed where the old Magi failed.  This is a question
+that has yet to be answered.
+ 
+It is said that only a few Mages are found worthy and chosen to be a part
+of this elite Circle.  These few commit their lives to the path that they have
+chosen, they would give everything and anything for the benefit of the
+Order.  Such discipline is rarely found elsewhere.
+ 
+To this day their existence is kept a secret.  Many suspect but few know
+the truth of their existence, and even fewer know that flourish in
+the shadows determined not to be ruled by the inferior warriors who
+thrive only with the assistance of mages in their service.`^
+~
+END
+
+keyword CLAN-MAGIC CLAN-MSM CLAN-SCHOOL~
+level 1
+category undefined~
+text `CAs you wander about the streets , gazing into shop windows, considering your 
+next purchase, you see something and wander into a shop.  The shop is 
+cramped and full of goods you would like, but would they really be of use to 
+you?  No not really, you just feel like cheering yourself up by spending 
+some money.  Then you see an item you want, there, at the back, round that 
+little corner, between the racks piled high.  Its then that you realise you 
+cannot be seen but can hear someone whispering over near the counter.  `+
+`+
+"....  And so I dont know what to do.  All these things I still have to 
+learn...  And none with time to teach me..."  `+
+`+
+"Well there are plenty of people to ask...  Plenty of willing hands."  `+
+`+
+"Yes I know...  I am grateful to a few people for teaching me the odd spell 
+here and there, but they arn't always around..  And often too busy to help." 
+ `+
+And then there are all those clans...  They can provide help too."  `+
+`+
+"Clans ...  Yes but they all want powerfull people...  Those who have learnt 
+already...  Or they are to busy fighting their wars ...."  `+
+`+
+"Not all" says the shopkeeper with a gentle calming smile.  `+
+`+
+"Not all...  You mean there are some that take people who know little?"  He 
+asks the old man.  `+
+`+
+"Aye well there is one I know of...  Though its not really a clan as 
+such....  They call themselves a school...  Though I am sure you wouldn't be 
+interested in them.."  The shopkeepers voice trails off in a reproachfull 
+tone.  `+
+`+
+"And why do you say that?"  `+
+`+
+"Its just that they have proper lessons and such...  A really structered 
+timetable...  They demand little other than that you devote yourself to the 
+pursuit of knowledge...  I mean they are really strict about that...  
+Knowledge is everything they say....  Knowledge will lead to eternal life 
+they say" `+
+`+
+"Ah I see" says the young man "You mean that they have proper lessons like 
+when I was a young child..  Pah!  Doesn't sound like the thing for me....  I 
+like to go off and do what I want all the time ...  Perhaps you are right... 
+ Perhaps I should seek some other easier life" `+
+`+
+The shopkeeper takes the young mans silver coins, wraps up some goods in 
+tatty cloth and ties it in a neat ribbon, thanks him for his custom and 
+watches as he leaves the shop.  `+
+`+
+"Kids!"  Says the shopkeeper to himself "If only they would concentrate on 
+learning, but they all the same I suppose these days."  `+
+`+
+Excited by what you have overheard you gently ease yourself from between the 
+racks and approach the shopkeeper.  `+
+`+
+" Oh...  Er sorry young fellow....  I thought the shop was empty...  Ignore 
+me I am getting to cynical in my old age."  `+
+`+
+You say with an obvious gleam in your eye.  "By all means ...  You are 
+entitled to your thoughts...  But you are wrong...  Not all are like him.... 
+ I for instance have been looking for such a place as you speak of to 
+further my knowledge...  I too have the same goals as you say this school 
+has...  Do you know were I may join?"  `+
+`+
+The shopkeeper takes an appraising look at you and says.  "Are you sure its 
+what you want....  There is no reward other than the gaining of knowledge... 
+ " `+
+`+
+You stop the shopkeeper in mid sentance 'Please!  Please It really is what I 
+have been dreaming of...  Please tell me...  Please."  `+
+`+
+Then, with a start, you awake....  What a dream...  If only it was real....  
+Could it be true?  Could there possibly be a non-political organization 
+devoted to providing good education and help in the understanding and use of 
+the arts of magic?  `+
+`+
+The familiar voice of the old shopkeeper suddenly fills your mind as you 
+hear him say.....  `+
+`+
+"Then if it what you wish you must find a member of the school and SEEK 
+MAGIC" `^ 
+~
+END
+
+keyword CLAN_RANKS CLAN-RANKS~
+level 92
+category undefined~
+text `GBy popular demand (not to mention I think this is a damned good idea) the following
+is a list of the active clan ranks and what commands each can do:`X
+ 
+`bThe Veil:`X
+     Footpad: No commands available
+     Fence: Can Add
+     Overseer: Can Add, Can Promote
+     Master: Can Add, Can Promote, Can Outcast
+     The Veil: Can Add, Can Promote, Can Outcast
+ 
+`RThe Phalanxe of Honor:`X
+     Follower: No commands available
+     Hunter: No commands available
+     Guardian: Can Add
+     Lord: Can Add, Can Promote, Can Outcast
+     Hightlord: Can Add, Can Promote, Can Outcast
+ 
+`CMarduk Universal Academy:`X
+     Neophyte: No commands available
+     Apprentice: No commands available
+     Journeyman: Can Add, Can Promote, Can Outcast
+     Master: Can Add, Can Promote, Can Outcast
+     HeadMaster: Can Add, Can Promote, Can Outcast
+ 
+`SShadow Walkers:`X
+     Trainee: No commands available
+     Spy: Can Add
+     Assassin: Can Add, Can Promote
+     Leader: Can Add, Can Promote, Can Outcast
+     Shadow Lord: Can Add, Can Promote, Can Outcast
+ 
+`rThe Order of the Magi:`X
+     Student: No commands available
+     Tutor: No commands available
+     Magi: Can Add, Can Promote, Can Outcast
+     Master: Can Add, Can Promote, Can Outcast
+     ArchMagi: Can Add, Can Promote, Can Outcast
+ 
+`=?The Clan of Bones:`X
+     Traveler: No commands available
+     Knight: No commands available
+     General: Can Add
+     Sage: Can Add, Can Promote
+     BoneLord: Can Add, Can Promote, Can Outcast
+ 
+`RThe Clan of Vl'arescht:`X
+     Templar: No commands available
+     General: Can Add
+     Chaos: Can Add, Can Promote
+     Venerate: Can Add, Can Promote, Can Outcast
+     Darkone: Can Add, Can Promote, Can Outcast
+ 
+`RThe Circle of Chaos:`X
+     Phalanx: No commands available
+     Darkknight: Can Add
+     Heretic: Can Add, Can Promote
+     OverLord: Can Add, Can Promote, Can Outcast
+     ChaosLord: Can Add, Can Promote, Can Outcast
+ 
+`rMekali School of Magic:`X
+     Initiate: No commands available
+     Novice: No commands Available
+     Adept: No commands available
+     Sage: Can Add
+     Magus: Can Add, Can Promote, Can Outcast
+ 
+~
+END
+
+keyword CLAN-GAIANS~
+category undefined~
+text . For many thousands of years people have lived in the wilderness, as part of 
+nature.  However people have recently been moving in a new direction.  They 
+have been migrating into large cesspools that they call "cities."  These 
+cities mock the goodness that is nature, polluting the streams with sewage, 
+the air with smoke and the land with refuse.  At first the cities were 
+small, not taking up much of the beautiful forest that they were built in, 
+but now the cities are growing larger.  They expand daily, driving animals 
+from their homes and destroying that which Gaia created.  `+
+`+
+ However there are those who oppose this reckless expanshion.  For years 
+there have been the lone ranger, druid or concerned hermit fighting their 
+induvidual wars against the sprawling cities.  These attempts were largely 
+unsuccessful, but now there is hope for these induviduals.  A few determined 
+induviduals have banded together to form an organization to protect the 
+wildes from the growing threat of the cities.  The organization that they 
+have formed is called "The Children of Gaia."  `+
+`+
+ The purpose of this organization is to protect the wildes at all cost.  The 
+favored method is to educate the masses, teach them the errors of their 
+ways.  When this fails sabotoge or other extreme methods are considered.  To 
+fund the organization its members use their knowledge of the wilderness to 
+get money.  Acting as guides or searching for items brings as well as 
+donations brings in the money needed to support the Children.  `+
+`+
+ The Children are always seeking new members.  Those wishing to join must 
+seek out one of the elders of the Children.  Unless the one seeking is 
+obviously not truely interested in saving the wilderness the seeker will 
+almost always be admitted.  If you think that you or someone you know would 
+like to join the Children's fight for the wilderness seek us out, we have a 
+long fight ahead of us 
+~
+END
+
+keyword CLAN-CHAOS~
+category undefined~
+text `RThe soft sound of footsteps echoed throughout the campsite, a slight 
+crunch of a boot upon some dried leaves was the only warning of any approach 
+to his tent.  `+
+`+
+"Sir?"  , came a soft call from the flap that was the entrance to the tent.  
+"My Lord General, Sir, I've returned with the report you wanted..."  `+
+`+
+He turned slowly towards to voice that addressed him.  The soldier is a 
+young one, he thought to himself, still ready to please.  `+
+`+
+"Come in, Soldier.  Did you do what I asked" The soldier nodded slowly and 
+strode up to the make shift table in the center of the tent.  With a 
+slightly trembling hand, he pulled a rolled up document from beneath his 
+breastplate.  Using rocks as paperweights on each of the four corners, the 
+soldier spread the map out.  `+
+`+
+"It does not look good sir," The soldier started "The opposing army has 
+quite a reputation" `+
+`+
+The General let out a soft chuckle.  "Son, I've won dozens of campaigns, and 
+I shall not lose to a bunch of militia rag-tag soldier pretenders who call 
+themselves The Circle of Chaos" `+
+`+
+The soldier shifted uneasily and let out an unconfident laugh "I've heard 
+rumors milord...  They say" `+
+`+
+The General waved his hand cutting off the soldier.  Clasping his hands 
+behind his back, he started to pace the room muttering to him self in 
+thought.  `+
+`+
+"If my years taught me anything, it is to know your enemy...  What can you 
+tell me of them?"  He addressed the now very nervous army man.  `+
+`+
+"Well My Lord General, They say the Circle of Chaos is gathering of Warriors 
+and Mystics, with chapters stretching out from the corners of the world.  
+This group seems to be fairly new to the region, but they have picked up an 
+enormous amount of support.  They are very selective of who can be amongst 
+their group," The soldier paused for a moment to catch his thoughts "You 
+really have to be Elite for them to embrace you as one of theirs."  `+
+`+
+The General nodded slightly, taking in the facts "Sounds almost like a Cult 
+of Imidazole.  I've dealt with that Cult before."  `+
+`+
+The Soldier shook his head slightly "Nay, milord.  They do not seem to 
+worship Imidazole or his works of Chaos, despite their name.  The seem to 
+sow Chaos in their wake, like an unholy army, taking in consideration no 
+laws or edicts but their own...  Sir...  We outnumber them Five to One, but 
+the rumors...  The men are afraid, they wish to retur..."  `+
+`+
+The soldiers words were cut short by the General slamming his fist onto the 
+table in outrage, shattering it's fragile frame "I'll have no talk of mutiny 
+in my ranks Man!  Return to the Camp site and rouse the men.  We attack the 
+enemy camp at daybreak."  The Soldier gave a quick salute then bolted from 
+the tent.  `+
+`+
+The General sighed softly and rubbed his almost bald head with his hand 
+absently.  He was growing too old for this.  He needed his pot of tea, to 
+soothe his nerves before the battle.  Walking slowly towards the entrance 
+flap.  He poked his head out to address the Private who usually stands guard 
+at his tent.  He frowned with consternation when he saw that the private was 
+not there.  He must be off at his bedrolls, The general thought angrily to 
+himself.  I must berate him for such slackness.  He strode out of his tent, 
+and stumbled over a large object in his path, tumbling head first into the 
+dirt.  Standing up quickly, he turned to regard the object that tripped him. 
+ The corpse of the Soldier who reported to him lay silently at his feet, a 
+black-hilted dagger embedded deep in his throat, denying him even his death 
+scream.  `+
+`+
+"Beautiful...  Is it not?"  A hiss-like whisper came from the shadows.  The 
+General spun towards the direction of the sound.  A huge golden-scaled 
+lizardman stood half concealed by the shadows around him.  "Yes, Elgi think 
+it is time for your pathetic group to be destroyed..."  As the giant 
+lizardman spoke, three more figures slipped from the shadows.  A terrifying 
+silver haired voadkyn, a male mrem with black fur like the shadows 
+themselves, and a evil-looking grinning platinum scaled lizardman.  `+
+`+
+"To arms men!"  The General yelled on the top of his lungs, drawing his 
+bastard sword "We are under attack!"  The figures before him started to 
+laugh quietly, smiling wickedly in the dim light.  The voadkyn kicked a 
+round object towards the feet of the surrounded general.  His eyes adjusting 
+slightly, the General saw it was a severed head of his Second-in-command, 
+Lanth.  Growling in disgust the General leapt back.  Had he been paying more 
+attention, he would have noticed a dark-skinned female drow with silver hair 
+creeping up behind him, with a wicked looking dagger in her hand...  `X 
+~
+END
+
+keyword CLANS CLAN GUILDS GUILD~
+level 92
+helpflags redirection_entry~
+category undefined~
+text `=lType:`=?  help `=_CLAN-OVERVIEW
+       For an overview about the clans/guild system.
+ 
+`=lType:`=?  help `=_CLAN-FOUNDING
+       For information about starting a clan.
+~
+END
+
+EOF~
+#$

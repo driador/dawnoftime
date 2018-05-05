@@ -1,0 +1,25 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword EMAIL E-MAIL IMMEMAIL IMM-EMAIL ADDRESSES~
+title `N Email Addresses~
+helpflags hide_keywords mud_specific mud_should_customize~
+category undefined~
+see_also ADMIN IMMORTAL~
+text `=?          Custom email addresses should be listed here
+`=?          assuming immortal email addresses are published.
+`+
+`c            ---==== `GMailing lists`c ====---`+
+`=? 
+`=?           If this mud has any mailing lists, list them here. 
+`=?
+`RNB: Send all histories to the histories mailing list
+    With your players name as the subject!`=?
+~
+END
+
+EOF~
+#$

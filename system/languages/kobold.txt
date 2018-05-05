@@ -1,0 +1,159 @@
+from a~
+to aa~
+END
+
+from b~
+to m~
+END
+
+from c~
+to ch~
+END
+
+from corpse~
+to canjshan sha~
+END
+
+from d~
+to l~
+END
+
+from destroy~
+to canjshan~
+END
+
+from death~
+to canjshan~
+END
+
+from e~
+to ee~
+END
+
+from f~
+to y~
+END
+
+from g~
+to h~
+END
+
+from h~
+to p~
+END
+
+from him~
+to im~
+END
+
+from i~
+to ii~
+END
+
+from i ~
+to ssh ~
+END
+
+from j~
+to ff~
+END
+
+from k~
+to t~
+END
+
+from kill~
+to canjshan~
+END
+
+from l~
+to r~
+END
+
+from m~
+to w~
+END
+
+from murder~
+to canjshan~
+END
+
+from mine~
+to mine~
+END
+
+from magic~
+to magish~
+END
+
+from master~
+to mashter~
+END
+
+from me~
+to mesh~
+END
+
+from n~
+to k~
+END
+
+from no~
+to niooo~
+END
+
+from o~
+to oo~
+END
+
+from p~
+to d~
+END
+
+from q~
+to d~
+END
+
+from r~
+to j~
+END
+
+from s~
+to ssh~
+END
+
+from slay~
+to canjshan~
+END
+
+from t~
+to h~
+END
+
+from u~
+to uu~
+END
+
+from v~
+END
+
+from w~
+to whh~
+END
+
+from x~
+END
+
+from y~
+to p~
+END
+
+from yes~
+to yesh~
+END
+
+from z~
+to sshh~
+END
+
+EOF~

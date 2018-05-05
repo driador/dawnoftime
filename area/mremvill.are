@@ -1,0 +1,4238 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Mrem Village~
+ShortName   Mrem Village~
+Builders    None~
+Credits     Anita~
+VNUMs       16200 16299
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    9
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#16200
+Name lost kitten~
+ShortD a lost kitten~
+LongD A lost kitten is here.~
+Desc This kitten looks sad and meows at your approach.  Its large blue eyes
+peer up at you pleedingly.  
+~
+Race cat~
+Align -1 1
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 10d10+100
+DamDice 1d6+1
+DamType scratch
+AC 0 0 0 0
+Wealth 10
+Act    npc dont_wander stay_area~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16201
+Name Mrem guard~
+ShortD a mrem guard~
+LongD A mrem guard is here.~
+Desc The Mrem guard has small whiskers across his upper lip, and a tail
+protruding from a hole in his pants.  
+~
+Race mrem~
+Align 2 2
+Level 53
+Hitroll 0
+HitDice 6d9+300
+ManaDice 10d10+100
+DamDice 10d4+23
+DamType punch
+AC -200 -200 -200 -150
+Wealth 400
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  haste dark_vision~
+Off    disarm dodge dirt_kick parry trip~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+MProg GREET 16241 100~
+MProg SPEECH 16231 talisman~
+END
+
+#16202
+Name mrem leader guard~
+ShortD a mrem guard leader~
+LongD The leader of the mrem guard's is here.~
+Desc This mrem is quite large for his race.  Thick fur covers his entire body.  
+~
+Race mrem~
+Align 3 2
+Level 70
+Hitroll 2
+HitDice 7d10+360
+ManaDice 10d10+100
+DamDice 8d8+33
+DamType punch
+AC -400 -400 -400 -350
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden haste dark_vision~
+Off    bash disarm dirt_kick parry trip~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16203
+Name mrem archer~
+ShortD a mrem archer~
+LongD A mrem archer is here, tightening his bow.~
+Desc This mrem looks quite small, but has sharp piercing eyes.  Light colored
+furr covers its body.  
+~
+Race mrem~
+Align 2 1
+Level 35
+Hitroll 1
+HitDice 5d6+210
+ManaDice 10d10+100
+DamDice 4d7+11
+DamType punch
+AC -100 -100 -100 -80
+Wealth 250
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  haste dark_vision~
+Off    dodge fast dirt_kick parry trip~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+MProg GREET 16241 100~
+MProg SPEECH 16231 talisman~
+END
+
+#16204
+Name wild cat~
+ShortD a wild cat~
+LongD A wild cat prowls about here.~
+Desc This cat looks very lean and has blood all over its furr.  
+~
+Race cat~
+Align -3 1
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 10d10+100
+DamDice 2d4+2
+DamType scratch
+AC 0 0 0 0
+Wealth 1
+Act    npc stay_area~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16205
+Name cat domesticated~
+ShortD a domesticated cat~
+LongD A domesticated cat is here, licking its paws.~
+Desc This cat has long furr, with various colors to it.  It looks very clean,
+plump and contented.  
+~
+Race cat~
+Align 2 1
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 10d10+100
+DamDice 1d8+1
+DamType scratch
+AC 0 0 0 0
+Wealth 2
+Act    npc stay_area~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16206
+Name young male mrem~
+ShortD a young male mrem~
+LongD A young male mrem is wandering about here.~
+Desc This mrem is showing off as much of his chest as possible, and moves with
+an easy boasting grace.  
+~
+Race mrem~
+Align -1 2
+Level 17
+Hitroll 0
+HitDice 4d5+110
+ManaDice 10d10+100
+DamDice 2d10+7
+DamType punch
+AC -30 -30 -30 -10
+Wealth 170
+Act    npc no_tame stay_area warrior~
+AffBy  haste dark_vision~
+Off    dodge fast dirt_kick parry trip~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16207
+Name mrem female young~
+ShortD a young female mrem~
+LongD A young female mrem blushes seductively.~
+Desc This female mrem is batting her eyelashes, and her cheeks are a rosey
+shade of red.  
+~
+Race mrem~
+Align 3 3
+XPMod 80
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 10d10+100
+DamDice 2d8+5
+DamType slap
+AC -40 -40 -40 -20
+Wealth 150
+Act    npc no_tame stay_area wimpy~
+AffBy  haste dark_vision~
+Off    fast~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16208
+Name mrem elder~
+ShortD a mrem elder~
+LongD A mrem elder is here, watching the younger mrem.~
+Desc This mrem looks very old, and wise.  Lines are creased into its long
+shaggy furr.  
+~
+Race mrem~
+Align 3 3
+XPMod 90
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 10d10+100
+DamDice 4d7+11
+DamType none
+AC -110 -110 -110 -100
+Wealth 350
+Act    npc dont_wander no_tame stay_area~
+AffBy  dark_vision~
+Off    kick dirt_kick trip~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16209
+Name mrem wizard~
+ShortD a mrem wizard~
+LongD A mrem wizard is here, reading a book.~
+Desc This mrem has pale white fur, and acid scarrs all over its body.  A look
+of pure insanity is in its eyes.  
+~
+Race mrem~
+Align -2 3
+Level 65
+Hitroll 0
+HitDice 6d10+340
+ManaDice 10d10+200
+DamDice 7d7+32
+DamType magic
+AC -350 -350 -350 -300
+Wealth 400
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  protect_evil haste dark_vision~
+Off    berserk dodge fast~
+Res    magic~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16210
+Name mrem cleric~
+ShortD a mrem cleric~
+LongD A mrem cleric is here, tending to the wounded.~
+Desc This female mrem looks very serene.  Her green eyes are clear and strong.
+Her hair cascades over her furr in a contrasting color of red.  
+~
+Race mrem~
+Align 3 3
+Level 80
+Hitroll 2
+HitDice 8d11+400
+ManaDice 10d10+250
+DamDice 9d9+41
+DamType punch
+AC -500 -500 -500 -450
+Wealth 600
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  sanctuary dark_vision~
+Off    dodge fast kick~
+Res    magic~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg SPEECH 16293 delhor~
+MProg GIVE 16276 amalgum~
+MProg SPEECH 16291 talismans~
+MProg SPEECH 16292 holder~
+MProg SPEECH 16293 lust~
+MProg SPEECH 16293 seduction~
+MProg SPEECH 16294 humility~
+MProg GIVE 16295 matrix~
+MProg SPEECH 16291 talisman~
+END
+
+#16211
+Name mrem female~
+ShortD a female mrem~
+LongD A female mrem is here, cleaning her fur.~
+Desc This plain looking female mrem has a very long tail that swishes along
+the ground behind her.  She has pale green eyes and blistered paws.  
+~
+Race mrem~
+Align 3 2
+Level 18
+Hitroll 0
+HitDice 5d5+125
+ManaDice 10d10+100
+DamDice 2d12+8
+DamType slap
+AC -30 -30 -30 -10
+Wealth 180
+Act    npc no_tame stay_area~
+AffBy  haste dark_vision~
+Off    fast kick dirt_kick trip~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16212
+Name male mrem~
+ShortD a male mrem~
+LongD A male mrem is here, looking for something to do.~
+Desc This mrem appears to be in his middle years, he has frown lines across
+his brow and smiling lines around his mouth.  
+~
+Race mrem~
+Align 0 3
+Level 34
+Hitroll 0
+HitDice 5d6+205
+ManaDice 10d10+100
+DamDice 4d7+10
+DamType punch
+AC -110 -110 -110 -80
+Wealth 300
+Act    npc no_tame stay_area warrior~
+AffBy  haste dark_vision~
+Off    dodge fast kick~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16213
+Name mrem librarian~
+ShortD a mrem librarian~
+LongD A mrem librarian is sorting books here.~
+Desc This mrem is muttering to itself and scratching at his head.  Furr has
+been pulled out is clumps.  
+~
+Race mrem~
+Align 3 0
+Level 33
+Hitroll 0
+HitDice 5d6+195
+ManaDice 10d10+100
+DamDice 6d4+10
+DamType punch
+AC -110 -110 -110 -80
+Wealth 330
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  haste dark_vision~
+Off    dodge parry trip~
+Imm    summon charm magic sound~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16214
+Name mrem cook~
+ShortD a mrem cook~
+LongD A mrem cook is here, stirring a pot.~
+Desc This mrem is covered in food scrapes and moves very quickly.  Her hair
+and furr are tangled together and have come loose from their binding.  
+~
+Race mrem~
+Align 2 2
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 10d10+100
+DamDice 2d10+7
+DamType slap
+AC -70 -70 -70 -50
+Wealth 200
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  haste dark_vision~
+Off    dodge fast kick~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16215
+Name mrem kit~
+ShortD a mrem kit~
+LongD A mrem kit is playing here.~
+Desc This baby mrem is tiny and completely covered in fur.  If it weren't for
+its fingers and feet it would be a cat.  
+~
+Race mrem~
+Align -3 3
+XPMod 80
+Level 9
+Hitroll 0
+HitDice 2d5+12
+ManaDice 10d10+100
+DamDice 1d8+2
+DamType bite
+AC 0 0 0 0
+Wealth 10
+Act    npc dont_wander no_tame stay_area~
+AffBy  haste dark_vision~
+Off    fast~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+END
+
+#16216
+Name mrem druid~
+ShortD a mrem druid~
+LongD A mrem druid is mixing a brew here.~
+Desc This mrem has bits of leaves and plants all through her hair and fur 
+~
+Race mrem~
+Align 3 3
+Level 38
+Hitroll 0
+HitDice 5d6+235
+ManaDice 10d10+100
+DamDice 4d8+10
+DamType punch
+AC -130 -130 -130 -110
+Wealth 350
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  protect_evil haste dark_vision~
+Off    dodge fast kick parry~
+Res    magic~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16217
+Name student ranger junior~
+ShortD a junior ranger student~
+LongD A junior ranger student is studying here.~
+Desc This student appears to have a purpetually humble look on their face.
+~
+Race mrem~
+Align 3 3
+Level 48
+Hitroll 0
+HitDice 5d9+275
+ManaDice 10d10+100
+DamDice 5d8+19
+DamType punch
+AC -180 -180 -180 -160
+Wealth 480
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  haste dark_vision~
+Off    area_attack disarm dodge fast trip assist_race~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+MProg SPEECH 16231 talisman~
+END
+
+#16218
+Name intermediate ranger student~
+ShortD an intermediate ranger student~
+LongD An intermediate ranger student is teasing the junior students here.~
+Desc This ranger student looks reasonably adept in woodlore skills.  
+~
+Race mrem~
+Align 3 3
+Level 53
+Hitroll 0
+HitDice 5d9+300
+ManaDice 10d10+100
+DamDice 10d4+23
+DamType punch
+AC -230 -230 -230 -210
+Wealth 530
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  haste dark_vision~
+Off    area_attack disarm dodge fast kick trip assist_race~
+Res    poison~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16219
+Name senior ranger mrem student~
+ShortD a senior ranger student~
+LongD A senior ranger student is bossing the intermediate students around.~
+Desc This ranger student is lithe and firmly muscled.  A strong sense of
+confidence eminates from them.  
+~
+Race mrem~
+Align -3 3
+Level 60
+Hitroll 0
+HitDice 6d9+320
+ManaDice 10d10+100
+DamDice 8d6+27
+DamType punch
+AC -300 -300 -300 -270
+Wealth 600
+Act    npc dont_wander no_tame stay_area mage warrior~
+AffBy  haste dark_vision~
+Off    area_attack bash disarm dodge fast parry assist_race~
+Res    magic~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16220
+Name master mrem ranger~
+ShortD the master of mrem rangers~
+LongD The master of mrem rangers is here, teaching others.~
+Desc This mrem appears to be middle aged for a mrem.  He has a hard yet supple
+body and a very clear look to his gaze.  
+~
+Race mrem~
+Align 3 3
+Level 90
+Hitroll 2
+HitDice 9d13+440
+ManaDice 10d10+300
+DamDice 10d11+46
+DamType punch
+AC -610 -610 -610 -590
+Wealth 900
+Act    npc dont_wander no_tame stay_area mage warrior~
+AffBy  haste dark_vision~
+Off    bash disarm dodge fast dirt_kick parry~
+Res    magic~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GRALL 16247 100~
+MProg DELAY 16248 100~
+MProg SPEECH 16224 shadow~
+MProg SPEECH 16224 cloak~
+END
+
+#16221
+Name gnoll prisoner~
+ShortD an arrogant gnoll~
+LongD An arrogant looking gnoll prisoner is here.~
+Desc This gnoll appears to be in high spirits.  He looks about as if the whole
+realm was his to roam free in.  
+~
+Race gnoll~
+Align -3 -3
+Level 88
+Hitroll 4
+HitDice 9d12+435
+ManaDice 10d10+100
+DamDice 10d11+44
+DamType claw
+AC -590 -590 -590 -500
+Wealth 400
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden~
+Off    area_attack bash berserk disarm dodge fast kick dirt_kick parry crush~
+Res    bash cold disease~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg COMMAND 16296 free gnoll~
+END
+
+#16222
+Name wizard's familiar~
+ShortD a wizard's familiar~
+LongD A wizard's familiar is looking at you inquisitively.~
+Desc An intellegent looking feline looks at you inquisitively.  
+~
+Race cat~
+Align 0 0
+XPMod 50
+Level 25
+Hitroll 0
+HitDice 4d5+110
+ManaDice 10d10+100
+DamDice 2d10+7
+DamType scratch
+AC -70 -70 -70 -50
+Wealth 100
+Act    npc dont_wander stay_area~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16223
+Name mrem worshipper~
+ShortD a mrem worshipper~
+LongD A mrem worshipper is kneeling here.~
+Desc This mrem has scarrs on their knees from constantly kneeling in homage.  
+~
+Race mrem~
+Align 3 3
+XPMod 90
+Level 36
+Hitroll 0
+HitDice 5d6+235
+ManaDice 10d10+100
+DamDice 4d8+13
+DamType punch
+AC -120 -120 -120 -100
+Wealth 360
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  haste dark_vision~
+Off    bash disarm fast~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16224
+Name junior druid student~
+ShortD a junior druid student~
+LongD A junior druid student is sorting through its pockets here.~
+Desc This mrem looks more interested in the plants in their pocket than the world 
+around them.  
+~
+Race mrem~
+Align 3 3
+Level 52
+Hitroll 0
+HitDice 5d9+285
+ManaDice 10d10+100
+DamDice 6d6+20
+DamType punch
+AC -220 -220 -220 -200
+Wealth 500
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  haste dark_vision~
+Off    dodge kick assist_race~
+Res    magic~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16225
+Name intermediate druid student~
+ShortD an intermediate druid student~
+LongD An intermediate mrem druid is crushing plants in a mortar here.~
+Desc This mrem looks more interested in the plants in their pocket than the
+world around them.  
+~
+Race mrem~
+Align 2 2
+Level 57
+Hitroll 0
+HitDice 6d9+305
+ManaDice 10d10+100
+DamDice 6d7+24
+DamType punch
+AC -270 -270 -270 -250
+Wealth 400
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  haste dark_vision~
+Off    dodge fast kick assist_race~
+Res    magic~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16226
+Name senior druid student~
+ShortD a senior druid student~
+LongD A senior druid student is supervising here.~
+Desc This mrem has an intellegent look in their eyes, a strong smell of herbs comes from them.
+~
+Race mrem~
+Align 3 3
+Level 62
+Hitroll 0
+HitDice 6d10+325
+ManaDice 10d10+200
+DamDice 8d7+28
+DamType punch
+AC -320 -320 -320 -300
+Wealth 500
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  haste dark_vision~
+Off    dodge fast kick assist_race~
+Res    magic~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16227
+Name master druid mrem~
+ShortD the master of the mrem druids~
+LongD The master of the mrem druids is here teaching the young ones.~
+Desc This mrem looks completely at one with the world, she walks with an
+alarming grace.  
+~
+Race mrem~
+Align 3 3
+XPMod 150
+Level 92
+Hitroll 0
+HitDice 9d13+450
+ManaDice 10d10+300
+DamDice 10d11+48
+DamType punch
+AC -630 -630 -630 -610
+Wealth 700
+Act    npc dont_wander no_tame stay_area mage warrior~
+AffBy  haste dark_vision regeneration~
+Off    bash fast kick dirt_kick~
+Res    magic weapon~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg DELAY 16244 100~
+MProg GRALL 16242 100~
+MProg SPEECH 16231 talisman~
+END
+
+#16228
+Name sly looking mrem inexperienced~
+ShortD an inexperienced, sly looking mrem~
+LongD A sly looking mrem tries to slip by without being noticed.~
+Desc This mrem looks a little unsure of themself, but a devious look in their
+eyes shows there is more to them than first galnces.  
+~
+Race mrem~
+Align -3 2
+Level 48
+Hitroll 0
+HitDice 5d8+265
+ManaDice 10d10+100
+DamDice 6d6+18
+DamType none
+AC -180 -180 -180 -150
+Wealth 480
+Act    npc dont_wander no_tame stay_area thief~
+AffBy  haste dark_vision~
+Off    dodge fast kick dirt_kick parry assist_race~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16229
+Name sly looking mrem rogue~
+ShortD a sly looking mrem rogue~
+LongD A sly looking mrem rogue is peering about nervously.~
+Desc This mrem has a sly look in their eye and they seem to be watching you
+and the surrounding at the same time.  
+~
+Race mrem~
+Align -3 3
+Level 53
+Hitroll 0
+HitDice 5d9+290
+ManaDice 10d10+100
+DamDice 6d7+21
+DamType punch
+AC -230 -230 -230 -200
+Wealth 530
+Act    npc dont_wander no_tame stay_area thief~
+AffBy  sneak haste dark_vision~
+Off    area_attack dodge fast kick dirt_kick parry trip assist_race~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16230
+Name dangerous looking mrem sly~
+ShortD a dangerous and sly looking mrem~
+LongD A dangerous looking mrem rogue is watching others here.~
+Desc This mrem stands completely still.  They always seem to find a shadow to
+stand in, and attract very little attention.  
+~
+Race mrem~
+Align -3 3
+Level 58
+Hitroll 0
+HitDice 6d9+310
+ManaDice 10d10+100
+DamDice 5d10+25
+DamType punch
+AC -280 -280 -280 -250
+Wealth 580
+Act    npc dont_wander no_tame stay_area thief~
+AffBy  sneak hide haste dark_vision~
+Off    area_attack backstab dodge fast kick dirt_kick parry assist_race~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+END
+
+#16231
+Name master mrem rogue~
+ShortD the master of mrem rogues~
+LongD The master of mrem rogues is hiding in the shadows here.~
+Desc This mrem looks like a cat crouched ready to pounce on its prey.  His eyes 
+are alert and he seems to move in a glide.  
+~
+Race mrem~
+Align -3 3
+Level 88
+Hitroll 4
+HitDice 9d12+435
+ManaDice 10d10+100
+DamDice 10d11+44
+DamType punch
+AC -880 -880 -880 -850
+Wealth 880
+Act    npc dont_wander no_tame stay_area thief~
+AffBy  sneak hide haste dark_vision~
+Off    disarm dodge fast kick dirt_kick parry trip~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 16231 talisman~
+MProg GRALL 16245 100~
+MProg DELAY 16246 100~
+END
+
+#16233
+Name broad shouldered mrem blacksmith~
+ShortD the mrem blacksmith~
+LongD A broad shouldered mrem blacksmith is hammering here.~
+Desc This mrem is disproportionately large.  Huge arms extend from a barrel chest 
+that leads into a thick set waist.  
+~
+Race mrem~
+Align 2 2
+Level 60
+Hitroll 2
+HitDice 6d10+350
+ManaDice 10d10+200
+DamDice 8d7+30
+DamType crush
+AC -300 -300 -300 -250
+Wealth 600
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    bash disarm dodge parry crush assist_race~
+Res    bash~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GIVE 16275 3300~
+MProg GIVE 16274 814~
+MProg DELAY 16272 100~
+MProg GIVE 16271 3312~
+MProg SPEECH 16270 amalgum~
+MProg GIVE 16273 1925~
+MProg BRIBE 16277 500~
+END
+
+#16234
+Name burly mrem soldier shopkeeper~
+ShortD a mrem shopkeeper~
+LongD A burly mrem soldier is selling supplies here.~
+Desc ~
+Race mrem~
+Align 1 1
+Level 110
+Hitroll 4
+HitDice 11d15+535
+ManaDice 4d5+120
+DamDice 11d14+65
+DamType punch
+AC -800 -800 -800 -640
+Wealth 800
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden haste dark_vision~
+Off    bash berserk disarm dodge fast parry assist_race~
+Imm    summon charm~
+Res    magic weapon~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg FIGHT 16251 30~
+END
+
+#16235
+Name mrem footman~
+ShortD a mrem footman~
+LongD A mrem footman is standing at the edge of the path here.~
+Desc This mrem footman has thick set legs and is quite short.  
+~
+Race mrem~
+Align 3 2
+Level 70
+Hitroll 2
+HitDice 7d10+360
+ManaDice 10d10+200
+DamDice 8d8+34
+DamType punch
+AC -400 -400 -400 -350
+Wealth 400
+Act    npc no_tame stay_area warrior~
+AffBy  dark_vision~
+Off    bash disarm dodge fast parry assist_race~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+MProg FIGHT 16250 10~
+END
+
+#16236
+Name skillful looking mrem soldier~
+ShortD a mrem soldier~
+LongD A skillful looking mrem soldier is sparring with an imaginary enemy here.~
+Desc This mrem looks quick and skillfull.
+~
+Race mrem~
+Align 3 2
+Level 75
+Hitroll 4
+HitDice 7d11+380
+ManaDice 10d10+200
+DamDice 8d9+38
+DamType punch
+AC -450 -450 -450 -400
+Wealth 400
+Act    npc no_tame stay_area warrior~
+AffBy  haste dark_vision~
+Off    bash berserk disarm fast parry trip assist_race~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material flesh
+MProg FIGHT 16251 10~
+END
+
+#16237
+Name mrem general~
+ShortD the mrem general~
+LongD The mrem general is standing at attention here.~
+Desc This Mrem looks highly intelligent, and strong, and skillfull....
+~
+Race mrem~
+Align 3 3
+Level 95
+Hitroll 6
+HitDice 10d13+460
+ManaDice 10d10+100
+DamDice 10d12+50
+DamType punch
+AC -660 -660 -660 -550
+Wealth 700
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil detect_invis detect_hidden detect_good haste dark_vision~
+Off    area_attack bash berserk disarm fast parry assist_race~
+Res    magic weapon~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg FIGHT 16251 15~
+END
+
+#16238
+Name motherly looking mrem shopkeeper furrball~
+ShortD a motherly mrem shopkeeper~
+LongD A motherly looking mrem is selling medicinal items here.~
+Desc This mrem, known by the others as Furrball, operates a mobile medicinal 
+store.  She has a soft, motherly look to her.  
+~
+Race mrem~
+Align 3 3
+Level 110
+Hitroll 2
+HitDice 11d14+530
+ManaDice 11d15+734
+DamDice 11d14+64
+DamType slap
+AC -800 -800 -800 -640
+Wealth 550
+Act    npc no_tame stay_area cleric~
+AffBy  detect_invis detect_hidden sanctuary dark_vision~
+Off    bash dodge kick~
+Res    magic weapon~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg FIGHT 16265 50~
+END
+
+#16239
+Name male mrem shopkeeper thin built lyster~
+ShortD a male mrem shopkeeper~
+LongD A thin built male mrem is selling exotic items here.~
+Desc This mrem fellow is thinly built, with long arms and legs.  He is selling 
+exotic items here.  
+~
+Race mrem~
+Align -1 1
+XPMod 90
+Level 70
+Hitroll 6
+HitDice 7d10+400
+ManaDice 10d10+100
+DamDice 8d8+40
+DamType punch
+AC -400 -400 -400 -350
+Wealth 700
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden haste dark_vision~
+Off    fast trip~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#16200
+Name desk~
+Short a desk~
+Desc A desk stands here.~
+Level 1
+ItemType furniture~
+Cost 100
+Asize 0
+Rsize 50
+Values 2 100 EH 100 100
+Weight 100
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#16201
+Name chair~
+Short a chair~
+Desc A chair is here.~
+Level 0
+ItemType furniture~
+Cost 100
+Asize 0
+Rsize 50
+Values 1 -1 EH 100 100
+Weight 50
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#16202
+Name hard  green leather vest~
+Short a`#`g green`^ hard leather vest~
+Desc A `#`ggreen`^ hard leather vest has been left here.~
+Level 27
+ItemType armor~
+Cost 400
+Asize 0
+Rsize 50
+Values 9 9 9 7 0
+Weight 10
+Material leather~
+Extra    magic bless nonmetal nodegrade burnproof~
+Wear     take torso~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 27 -1 hp 2 0
+Affect modifier -1 27 -1 selfdiscipline 2 0
+End
+
+#16203
+Name hard green leather arm guards~
+Short some`#`g green`^ hard leather arm guards~
+Desc Some `#`ggreen`^ hard leather arm guards lie here.~
+Level 27
+ItemType armor~
+Cost 400
+Asize 0
+Rsize 50
+Values 7 7 7 5 0
+Weight 5
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take arms~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 27 -1 hp 2 0
+Affect modifier -1 27 -1 strength 2 0
+End
+
+#16204
+Name green hard leather leggings~
+Short some`#`g green`^ hard leather leggings~
+Desc Some `#`ggreen`^ hard leather leggings lie here.~
+Level 27
+ItemType armor~
+Cost 400
+Asize 0
+Rsize 50
+Values 7 7 7 5 0
+Weight 10
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take legs~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 27 -1 hitroll 2 0
+Affect modifier -1 27 -1 quickness 2 0
+End
+
+#16205
+Name green hard leather helm~
+Short a`#`g green`^ hard leather helm~
+Desc A `#`ggreen`^ hard leather helm rests here.~
+Level 27
+ItemType armor~
+Cost 400
+Asize 0
+Rsize 50
+Values 7 7 7 5 0
+Weight 5
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take head~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 27 -1 saves -2 0
+Affect modifier -1 27 -1 reasoning 2 0
+End
+
+#16206
+Name silver short-sword~
+Short a`#`s silver`^ short-sword~
+Desc A `#`Ssilver`^ short-sword lies here.~
+Level 27
+ItemType weapon~
+Cost 400
+Asize 0
+Rsize 50
+Values sword 2 13 slash A
+Weight 20
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger spellfilcher~
+End
+
+#16207
+Name silver broad-sword~
+Short a`#`s silver`^ broad-sword~
+Desc A `#`Ssilver`^ broad-sword lies here.~
+Level 55
+ItemType weapon~
+Cost 1000
+Asize 0
+Rsize 50
+Values sword 3 18 slash E
+Weight 30
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger spellfilcher~
+End
+
+#16208
+Name bow composite silver~
+Short a`#`s silver`^ composite bow~
+Desc A `#`Ssilver`^ composite bow lies here.~
+Level 35
+ItemType weapon~
+Cost 600
+Asize 0
+Rsize 50
+Values exotic 2 21 pierce F
+Weight 30
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior druid paladin ranger barbarian spellfilcher~
+End
+
+#16209
+Name silver shield~
+Short a`#`s silver`^ shield~
+Desc A `#`Ssilver`^ shield lies here.~
+Level 70
+ItemType armor~
+Cost 1400
+Asize 0
+Rsize 50
+Values 23 23 23 16 0
+Weight 40
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take shield~
+ClassAllowances thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 70 -1 hp 4 0
+Affect modifier -1 70 -1 saves -4 0
+Affect modifier -1 70 -1 ac -10 0
+End
+
+#16210
+Name silk jade-colored dress~
+Short a silk`#`G jade-colored`^ dress~
+Desc A silk `#`Gjade-coloured`^ dress has been left here.~
+Level 5
+ItemType clothing~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    bless nonmetal nodegrade~
+Wear     take about~
+End
+
+#16211
+Name marble fountain~
+Short a`#`W marble`^ fountain~
+Desc A `#`Wmarble`^ fountain is here.~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 milk 0 0
+Weight 0
+Material marble~
+Extra    nonmetal nodegrade~
+ExtraDesc fountain marble~
+This fountain has a naked statue of a lithe female mrem in the middle of
+it, with milk coming out her breasts.  
+~
+End
+
+#16212
+Name jade-colored cleric robes~
+Short some`#`G jade-colored`^ clerics robes~
+Desc Some `#`Gjade-coloured clerics robes lie here.~
+Level 80
+ItemType clothing~
+Cost 1600
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    magic bless nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances cleric~
+Affect modifier -1 80 -1 mana 60 0
+Affect modifier -1 80 -1 reasoning 5 0
+End
+
+#16213
+Name silver quarter-staff~
+Short a`#`s silver`^ quarter-staff~
+Desc A `#`Ssilver`^ quarter-staff lies here.~
+Level 80
+ItemType weapon~
+Cost 1600
+Asize 0
+Rsize 50
+Values exotic 4 21 pound FI
+Weight 30
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric druid paladin ranger~
+End
+
+#16214
+Name jade-colored mages cloak~
+Short a`#`G jade-colored`^ mages cloak~
+Desc A `#`Gjade-coloured`^ mages cloak lies here.~
+Level 60
+ItemType clothing~
+Cost 1200
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    magic bless nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances mage~
+Affect modifier -1 60 -1 hp 2 0
+Affect modifier -1 60 -1 mana 100 0
+End
+
+#16215
+Name silver dagger~
+Short a`#`S silver`^ dagger~
+Desc A `#`Ssilver`^ dagger has been left here.~
+Level 60
+ItemType weapon~
+Cost 1200
+Asize 0
+Rsize 50
+Values dagger 3 16 stab BD
+Weight 5
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief paladin spellfilcher~
+End
+
+#16216
+Name jade-colored librarian robes~
+Short some`#`G jade-colored`^ librarian robes~
+Desc Some `#`Gjade-coloured`^ librarian robes lie in a heap here.~
+Level 20
+ItemType clothing~
+Cost 400
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 20 -1 reasoning 1 0
+Affect modifier -1 20 -1 memory 1 0
+End
+
+#16217
+Name statue mrem female lithe~
+Short a statue of a lithe, female mrem~
+Desc A statue of a lithe, female mrem.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 200 DGJ 120 120
+Weight 0
+Material stone~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc lithe mrem statue female~
+The statue depicts a lithe female mrem, smiling michieviously at you.  
+~
+End
+
+#16218
+Name golden lithe female mrem figurine tiny~
+Short a tiny`#`Y golden`^ lithe female mrem figurine~
+Desc A tiny `#`Ygolden`^ female mrem figurine stands here.~
+Level 30
+ItemType gem~
+Cost 1000
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gold~
+Extra    glow nolocate nodegrade~
+Wear     take hold~
+End
+
+#16219
+Name oak barrel~
+Short an oak barrel~
+Desc An oak barrel is here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 500 0 0 100 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc barrel ~
+The barrels are made of oak, tightly bound with flax and sealed on top
+with an oak and silver lid.  
+~
+End
+
+#16220
+Name kitty snack~
+Short a kitty snack~
+Desc A kitty snack is here.~
+Level 1
+ItemType food~
+Cost 5
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 1
+Material food~
+Extra    nonmetal~
+Wear     take~
+End
+
+#16221
+Name all-in-one jade-colored apron~
+Short an all-in-one`#`G jade-colored`^ apron~
+Desc An all-in-one `#`Gjade-coloured`^ apron lies here.~
+Level 25
+ItemType clothing~
+Cost 500
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    bless nonmetal nodegrade~
+Wear     take about~
+End
+
+#16222
+Name silver key~
+Short a`#`S silver`^ key~
+Desc A `#`Ssilver`^ key lies here.~
+Level 0
+ItemType key~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material silver~
+Wear     take hold~
+End
+
+#16223
+Name shelf~
+Short a shelf~
+Desc A shelf hangs on the wall here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 100 E 0 20 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#16224
+Name red biscuit~
+Short a`#`R red`^ biscuit~
+Desc A `#`Rred`^ biscuit is here.~
+Level 25
+ItemType pill~
+Cost 100
+Asize 0
+Rsize 50
+Values 40 poison plague '' ''
+Weight 1
+Material food~
+Extra    magic nonmetal~
+Wear     take~
+End
+
+#16225
+Name yellow biscuit~
+Short a `#`yyellow`^ biscuit~
+Desc A `#`yyellow`^ biscuit lies here.~
+Level 25
+ItemType pill~
+Cost 100
+Asize 0
+Rsize 50
+Values 40 'faerie fire' weaken '' ''
+Weight 1
+Material food~
+Extra    magic nonmetal~
+Wear     take~
+End
+
+#16226
+Name green biscuit~
+Short a`#`g green`^ biscuit~
+Desc A `#`ggreen`^ biscuit lies here.~
+Level 25
+ItemType pill~
+Cost 100
+Asize 0
+Rsize 50
+Values 25 '' '' '' ''
+Weight 1
+Material food~
+Extra    magic nonmetal~
+Wear     take~
+End
+
+#16227
+Name white biscuit~
+Short a`#`w white`^ biscuit~
+Desc A `#`wwhite`^ biscuit is here.~
+Level 25
+ItemType pill~
+Cost 100
+Asize 0
+Rsize 50
+Values 25 haste '' '' ''
+Weight 1
+Material food~
+Extra    magic nonmetal~
+Wear     take~
+End
+
+#16228
+Name silver sickle~
+Short a`#`S silver`^ sickle~
+Desc A `#`Ssilver`^ sickle has been left here.~
+Level 40
+ItemType weapon~
+Cost 800
+Asize 0
+Rsize 50
+Values exotic 2 22 cleave 0
+Weight 5
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric druid paladin ranger spellfilcher~
+End
+
+#16229
+Name green rucksac~
+Short a`#`g green`^ rucksac~
+Desc A `#`ggreen`^ rucksac lies in a heap here.~
+Level 30
+ItemType container~
+Cost 600
+Asize 0
+Rsize 50
+Values 50 0 0 50 100
+Weight 5
+Material leather~
+Extra    magic bless nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+End
+
+#16230
+Name silver ring mrem ranger~
+Short the`#`S silver`^ ring of the mrem~
+Desc A `#`Ssilver`^ ring lies here.~
+Level 50
+ItemType jewelry~
+Cost 1000
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take finger~
+ClassAllowances cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 50 -1 ac 5 0
+Affect modifier -1 50 -1 agility 3 0
+Affect modifier -1 50 -1 quickness 3 0
+End
+
+#16231
+Name silver bracer mrem ranger~
+Short the`#`S silver`^ bracer of the mrem~
+Desc A `#`Ssilver`^ bracer lies here.~
+Level 45
+ItemType armor~
+Cost 900
+Asize 0
+Rsize 50
+Values 7 7 7 5 0
+Weight 5
+Material silver~
+Extra    bless nodegrade burnproof~
+Wear     take wrist~
+ClassAllowances cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 45 -1 saves -4 0
+Affect modifier -1 45 -1 constitution 2 0
+End
+
+#16232
+Name soft green leather shoes~
+Short some`#`g green`^ soft leather shoes~
+Desc Some `#`ggreen`^ soft leather shoes lie here.~
+Level 35
+ItemType armor~
+Cost 900
+Asize 0
+Rsize 50
+Values 6 6 6 5 0
+Weight 0
+Material leather~
+Extra    bless nonmetal nodegrade burnproof~
+Wear     take feet~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 35 -1 quickness 2 0
+Affect modifier -1 35 -1 move 50 0
+End
+
+#16233
+Name soft warm jade coloured cloak~
+Short a soft and warm `#`Gjade-coloured`^ cloak~
+Desc A soft and warm `#`Gjade-coloured`^ cloak lies here.~
+Level 45
+ItemType clothing~
+Cost 900
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silk~
+Extra    magic bless nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 45 -1 intuition 2 0
+Affect modifier -1 45 -1 selfdiscipline 2 0
+End
+
+#16234
+Name ranger rangers silver sword~
+Short a`#`S silver`^ rangers sword~
+Desc A `#`Ssilver`^ sword lies here.~
+Level 50
+ItemType weapon~
+Cost 1000
+Asize 0
+Rsize 50
+Values sword 3 16 slice E
+Weight 20
+Material silver~
+Extra    magic bless antievil nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger spellfilcher~
+Affect modifier -1 50 -1 damroll 2 0
+End
+
+#16235
+Name iron shackles~
+Short some iron shackles~
+Desc Some iron shackles are here.~
+Level 50
+ItemType armor~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material iron~
+Extra    burnproof~
+Wear     take wrist~
+Affect modifier -1 50 -1 move -200 0
+End
+
+#16236
+Name prison fatigues~
+Short some prisoner's fatigues~
+Desc Some prisoner's fatigues lie here.~
+Level 50
+ItemType clothing~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    nonmetal~
+Wear     take about~
+Affect modifier -1 50 -1 selfdiscipline -4 0
+End
+
+#16237
+Name chain iron chains~
+Short some iron chains~
+Desc Some iron chains hang here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 100 0 50 50
+Weight 0
+Material iron~
+Extra    nodegrade~
+ExtraDesc chain iron chains~
+These chains petrude from the insides of the tree.  The wood itself has
+grown around their ends making them impossible to pull free.  
+~
+End
+
+#16238
+Name fixed wooden quiver~
+Short a fixed wooden quiver~
+Desc A fixed wooden quiver is here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 10 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#16239
+Name arrow~
+Short a`#`S silver`^ arrow~
+Desc A `#`Ssilver`^ arrow lies here.~
+Level 35
+ItemType weapon~
+Cost 50
+Asize 0
+Rsize 50
+Values dagger 3 10 pierce 0
+Weight 2
+Material silver~
+Extra    magic bless burnproof~
+Wear     take wield~
+ClassAllowances mage thief paladin ranger spellfilcher~
+End
+
+#16240
+Name golden scroll~
+Short a`#`Y golden`^ scroll~
+Desc A `#`Ygolden`^ scroll lies here.~
+Level 50
+ItemType scroll~
+Cost 1000
+Asize 0
+Rsize 50
+Values 50 cancellation '' '' ''
+Weight 1
+Material paper~
+Extra    magic nonmetal~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+End
+
+#16241
+Name silver scroll~
+Short a`#`S silver`^ scroll~
+Desc A `#`Ssilver`^ scroll lies here.~
+Level 50
+ItemType scroll~
+Cost 1000
+Asize 0
+Rsize 50
+Values 50 invisibility '' '' ''
+Weight 1
+Material paper~
+Extra    magic nonmetal~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+End
+
+#16242
+Name book mrem~
+Short the book of the mrem~
+Desc The book of the mrem is here.~
+Level 1
+ItemType trash~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material paper~
+Extra    magic bless nonmetal burnproof~
+Wear     take hold~
+ExtraDesc book mrem~
+This cat like race evolved after the great war.  It is uncertain as to
+whether they mutated from humans or felines, or whether they developed
+individually in their own right.  What is certain though is they have the
+basic physical appearance of humans including height and stature.  However,
+apon closer examination cat-like features are to be found.  Mrem do not have
+a unique language but speak fluent human and have the ability to purr and
+hiss like other felines.  Other unique features of Mrem are extended hair
+growth to the head area, much like a mane found in some felines.  Whiskers
+on the upper lip with sharp eye teeth petruding over their lower lips.  All
+over body hair provide protection against the elements and their
+non-retractable claw like fingers protect against enemies.  The Mrem have
+soft, long tails which are more often than not conceiled under clothing
+rather than left to hang free.  Pointy ears provide exceptional hearing but
+also make them sensitive to loud noises.  Cat-like eyes provide exceptional
+night vision and a sensitive nose provides for an enhanced sense of smell. 
+Mrem prefer to not live in open spaces but in lightly wooded forests, often
+making their homes within the trees.  Mrem, being fond of communal living
+can also be found living quite happily in human communities.  Mrem spend
+much of the day sleeping because of their high metabolic rates, this means
+they will tire quicker than most other races when actively doing something. 
+Mrem are exceptionally fond of the night and can often be found hunting
+individually at this time.  Mrem young are called kits, whom are taught from
+an early age to hate and fear reptiles as all Mrem do.  Mrem rarely put
+faith in the gods and hence struggle as Clerics and Paladins.  Mrem are very
+agile creatures with lightning quick reflexes.  The woodland home of most
+Mrem and their enhanced senses provide an excellent basis for a Mrem to
+become versed in woodlore.  As such Mrem make excellent Rangers and Druids. 
+~
+End
+
+#16243
+Name book ranger~
+Short the book of the ranger~
+Desc The book of the ranger is here.~
+Level 1
+ItemType trash~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material paper~
+Extra    bless nonmetal~
+Wear     take hold~
+ExtraDesc book ranger~
+A subclass of warrior that has the ability to dabble in both mage and
+cleric spells.  This is quite a versatile class that provides a bit of
+everything, including sword and second attack, and has the following
+defaults: 
+ 
+ 
+SKILLS:
+ 
+ 
+awareness        wake up when someone approaches as you sleep
+scan             allows you to look before you leap
+sneak            move undetected from room to room
+spear            this skill covers both spears and staves, but not polearms
+third attack     allows the skilled ranger to land three blows in one round
+ 
+REALMS:
+ 
+abjuration      spells that protect, cure, and dispel
+divination      spells that detect and investigate
+evocation       offensive magics, used for combat;
+ 
+SPHERE:
+ 
+combat          offensive magics
+healing         spells that restore the physical condition
+~
+End
+
+#16245
+Name comfortable looking bed~
+Short a bed~
+Desc A comfortable looking bed is here.~
+Level 1
+ItemType furniture~
+Cost 100
+Asize 0
+Rsize 50
+Values 2 1000 EHK 110 110
+Weight 100
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc bed ~
+This bed looks very comfortable.
+~
+End
+
+#16246
+Name dresser~
+Short a dresser~
+Desc A dresser is here.~
+Level 1
+ItemType container~
+Cost 100
+Asize 0
+Rsize 50
+Values 100 A 0 10 100
+Weight 100
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#16247
+Name silver pot~
+Short a`#`S silver`^ pot~
+Desc A `#`Ssilver`^ pot is here.~
+Level 20
+ItemType container~
+Cost 400
+Asize 0
+Rsize 50
+Values 100 0 0 10 100
+Weight 30
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take hold~
+ExtraDesc pot silver~
+This pot glows with magic, and its weight keeps changing.
+~
+End
+
+#16248
+Name silver kitchen knife dagger~
+Short a`#`S silver`^ kitchen knife~
+Desc A `#`Ssilver`^ kitchen knife has been left here.~
+Level 20
+ItemType weapon~
+Cost 400
+Asize 0
+Rsize 50
+Values dagger 1 14 stab D
+Weight 1
+Material silver~
+Extra    magic bless burnproof~
+Wear     take wield~
+ClassAllowances mage thief paladin ranger spellfilcher~
+End
+
+#16249
+Name dull silver dagger~
+Short a dull looking`#`s silver`^ dagger~
+Desc A dull looking `#`Ssilver`^ dagger has been left here.~
+Level 48
+ItemType weapon~
+Cost 1100
+Asize 0
+Rsize 50
+Values dagger 2 22 stab H
+Weight 4
+Material silver~
+Extra    dark bless nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief paladin ranger spellfilcher~
+End
+
+#16250
+Name wooden shelf~
+Short a wooden shelf~
+Desc A wooden shelf.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 200 0 0 4 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+End
+
+#16251
+Name silver letter opener~
+Short a`#`S silver`^ letter opener~
+Desc A`#`S silver`^ letter opener is here.~
+Level 33
+ItemType weapon~
+Cost 650
+Asize 0
+Rsize 50
+Values dagger 2 14 slice 0
+Weight 2
+Material silver~
+Extra    glow bless antievil nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+End
+
+#16252
+Name treaty parchment scroll embedded wall~
+Short a scroll~
+Desc A scroll is embedded in the wall.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc scroll treaty embedded wall parchment~
+This scroll is written on brown parchment that has been embroidered with a silk boarder.
+ 
+                              TREATY
+ 
+This is to seal the permanent alliance between the Mrem, and the clan of Slayer.
+If ever in desperate need, Slayer will come to the aid of the Mrem, as will the
+Mrem come to the aid of Slayer.
+ 
+The village of the Mrem is to be considered under sanctuary, and hence
+not to be hunted in.  In return, Mrem shall respect the fortress of the
+Slayer.
+ 
+May this bond be forever unbroken, and forever signify the alliance of
+the clan of Slayer, and the race of the Mrem.
+ 
+Signed: (In Ink) Anita - Lady of the Mrem.
+Signed: (In Blood) Urai - war leader of the Slayer.
+~
+End
+
+#16253
+Name comfortable bed~
+Short a comfortable bed~
+Desc A comfortable looking bed with satin sheets is here.~
+Level 1
+ItemType furniture~
+Cost 300
+Asize 0
+Rsize 50
+Values 4 5000 BEHK 120 120
+Weight 100
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc satin sheets comfortable bed~
+The bed looks well worn and extremely comfortable.  Satin sheets have
+been roughly pulled over in an attempt to make the bed.  
+~
+End
+
+#16255
+Name silver druid sickle~
+Short a`#`S silver`^ druids sickle~
+Desc A`#`S silver`^ druids sickle lies here.~
+Level 30
+ItemType weapon~
+Cost 600
+Asize 0
+Rsize 50
+Values exotic 2 17 slice D
+Weight 5
+Material silver~
+Extra    magic bless nodegrade burnproof~
+Wear     take wield~
+ClassAllowances druid~
+End
+
+#16256
+Name sign wooden~
+Short a wooden sign~
+Desc A small wooden sign hangs here!~
+Level 97
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc wooden sign~
+The sign reads:
+ 
+ 
+Currently we have grown vines to:
+Markrist Island
+Mekali
+Dzagari
+~
+End
+
+#16257
+Name silver pike polearm~
+Short a`#`S silver`^ pike~
+Desc A`#`S silver`^ pike lies here.~
+Level 60
+ItemType weapon~
+Cost 1000
+Asize 0
+Rsize 50
+Values polearm 3 24 pierce DF
+Weight 50
+Material silver~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 60 -1 empathy -2 0
+Affect modifier -1 60 -1 quickness -2 0
+ExtraDesc silver pike~
+This pike is around six feet long and has a large, flax waxen handle.  
+~
+End
+
+#16258
+Name silver flail~
+Short a`#`S silver`^ handled flail~
+Desc A`#`S silver`^ handled flail lies here.~
+Level 65
+ItemType weapon~
+Cost 900
+Asize 0
+Rsize 50
+Values flail 3 22 pound 0
+Weight 30
+Material silver~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage cleric warrior paladin ranger barbarian~
+End
+
+#16259
+Name thin silver torso armor~
+Short some thin `#`Ssilver`^ torso armor~
+Desc Some thin `#`Ssilver`^ torso armor lies here.~
+Level 60
+ItemType armor~
+Cost 1000
+Asize 0
+Rsize 50
+Values 20 20 20 18 0
+Weight 40
+Material silver~
+Extra    bless nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher~
+Affect modifier -1 60 -1 strength 2 0
+Affect modifier -1 60 -1 hp 4 0
+Affect modifier -1 60 -1 ac -10 0
+ExtraDesc thin silver torso armor~
+This armor bears the insignia of the Mrem on it.
+~
+End
+
+#16260
+Name sword avatars mrem~
+Short sword of the Mrem avatars~
+Desc The sword of the Mrem avatars is here.~
+Level 80
+ItemType weapon~
+Cost 1600
+Asize 0
+Rsize 50
+Values sword 4 19 slice I
+Weight 50
+Material silver~
+Extra    glow bless nolocate nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 80 -1 hitroll 3 0
+Affect modifier -1 80 -1 damroll 3 0
+ExtraDesc sword avatar mrem~
+This sword is made from solid silver....  It has been blessed and the
+blade appears to be strong enough never to blunt.  It is encrusted on its
+handle with the insignia of the mrem armies....  A lithe female Mrem
+kneeling before a young girl.  
+~
+End
+
+#16261
+Name comfortable hammock~
+Short a comfortable looking hammock~
+Desc A comfortable looking hammock hangs here.~
+Level 1
+ItemType furniture~
+Cost 10000
+Asize 0
+Rsize 50
+Values 3 10000000 BEHK 110 110
+Weight 10000
+Material flax~
+Extra    nonmetal nodegrade burnproof~
+End
+
+#16262
+Name furrball furrballs biscuits soothing biscuit~
+Short furrballs' soothing biscuit~
+Desc A biscuit lies here.~
+Level 5
+ItemType pill~
+Cost 1000
+Asize 0
+Rsize 50
+Values 5 'cure serious' '' '' ''
+Weight 1
+Material food~
+Wear     take hold~
+End
+
+#16263
+Name amalgum shield~
+Short the `#`Yamalgum`^ shield~
+Desc A shield made of many metals lies here.~
+Level 50
+ItemType armor~
+Cost 400
+Asize 0
+Rsize 50
+Values 20 20 20 25 0
+Weight 40
+Material metal~
+Extra    nodegrade burnproof~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 50 -1 hp 6 0
+Affect modifier -1 50 -1 ac -15 0
+Affect modifier -1 50 -1 saves -2 0
+End
+
+#16265
+Name silken dress~
+Short a silken dress~
+Desc A silken dress lies here.~
+Level 70
+ItemType clothing~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material silk~
+Extra    nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 70 -1 mana 40 0
+End
+
+#16266
+Name 16266 token_amalgum_shield~
+Short token_amalgum_shield_mp16283~
+Desc Token_amalgum_shield_mp16283~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#16267
+Name token_quest_talisman_speech_talisman~
+Short token_quest_talisman_speech_talisman_mp16291~
+Desc Token_quest_talisman_speech_talisman_mp16291~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16268
+Name token_quest_talisman_speech_holder~
+Short token_quest_talisman_speech_holder_mp16292~
+Desc Token_quest_talisman_speech_holder_mp16292~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16269
+Name token_quest_talisman_speech_delhor~
+Short token_quest_talisman_speech_delhor_mp16293~
+Desc Token_quest_talisman_speech_delhor_mp16293~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16270
+Name token_quest_talisman_speech_humility~
+Short token_quest_talisman_speech_humility_mp16294~
+Desc Token_quest_talisman_speech_humility_mp16294~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16271
+Name token_quest_talisman_give_matrix~
+Short token_quest_talisman_give_matrix_mp16295~
+Desc Token_quest_talisman_give_matrix_mp16295~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16272
+Name token_quest_talisman_give_matrix~
+Short token_quest_talisman_speech_humble_mp11100~
+Desc Token_quest_talisman_speech_humble~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16273
+Name token_quest_amalgum_speech_amalgum~
+Short token_quest_amalgum_speech_amalgum_mp16270~
+Desc Token_quest_amalgum_speech_amalgum_mp16270~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16274
+Name token_quest_amalgum_give_sword~
+Short token_quest_amalgum_give_sword_mp16272~
+Desc Token_quest_amalgum_give_sword_mp16272~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16275
+Name token_quest_amalgum_give_hammer~
+Short token_quest_amalgum_give_hammer_mp16273~
+Desc Token_quest_amalgum_give_hammer_mp16273~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16276
+Name token_quest_amalgum_give_helm~
+Short token_quest_amalgum_give_helm_mp16274~
+Desc Token_quest_amalgum_give_helm_mp16274~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16277
+Name token_quest_amalgum_give_ring~
+Short token_quest_amalgum_give_ring_mp16275~
+Desc Token_quest_amalgum_give_ring_mp16275~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#0
+
+
+
+#ROOMS
+#16200
+Name A Giant Oak Tree~
+Desc Before you towers an immense oak tree, large roots boldly span out in all
+directions from the base of the tree.  The bark on the tree is worn by what
+appears to be thousands of claw marks.  Hushed voices and noises can be
+heard from above.  There is a suspicious looking knot in the base of the
+tree.  
+~
+Sector forest~
+ExtraDesc claw marks~
+The claw marks appear to have been scratched into the wood many times,
+almost as if some pleasure was derived from it.  
+~
+Exit north 30611
+Exit east 30543
+Exit south 30538
+Exit west 30563
+Exit up 16201
+Exit northeast 16233
+EFlags door closed~
+EKeywords knot~
+End
+
+
+#16201
+Name Guard Hut~
+Desc You are in a wooden thatched hut, that appears to be some sort of guard
+room.  Fine silver weapons racks line the walls and a simple desk and chair
+fill the floor space.  The high quality weapons and armor neatly readied for
+times of trouble seem out of place in this otherwise primitive looking room.
+~
+Sector forest~
+ExtraDesc weapons armor~
+The weapons and armor are all made from silver and kept polished like new.  
+~
+ExtraDesc chair desk~
+This desk and chair are facing the entrance to the hut and a quill pen
+and notebook sit on the desk.  
+~
+Exit north 16204
+Exit east 16203
+Exit south 16241
+Exit west 16202
+Exit up 16218
+Exit down 16200
+End
+
+
+#16202
+Name Watch Tower~
+Desc This room is made of thatched wood and is slightly higher than the others
+that can be seen from here.  Another identical tower stands directly east of
+here on the other side of the guard hut.  A number of arrow slotts have been
+carved into the walls facing the forest below.  A wooden quiver hangs on the
+wall.  
+~
+Sector forest~
+ExtraDesc arrow slotts~
+The arrow sloots are angled down towards the forest and are just wide
+enough to peer and shoot arrows through at the same time.  
+~
+Exit east 16201
+End
+
+
+#16203
+Name Watch Tower~
+Desc This room is made of thatched wood and is slightly higher than the others
+that can be seen from here.  Another identical tower stands directly west of
+here on the other side of the guard hut.  A number of arrow slotts have been
+carved into the walls facing the forest below.  
+~
+Sector forest~
+ExtraDesc arrow slotts~
+The arrow sloots are angled down towards the forest and are just wide
+enough to peer and shoot arrows through at the same time.  
+~
+Exit west 16201
+End
+
+
+#16204
+Name On a Swing Bridge~
+Desc A very thin swing bridge made from wood bound together with flax rope
+stretches to the north.  It moves unsteadily in the wind, and appears to
+require a lot of agility and balance to negotiate.  There are no side rails
+to grip on to and the flax ropes look extremely old and frayed.  
+~
+Sector forest~
+ExtraDesc ropes ~
+The ropes have had the resin that preserves them worn off by constant use.  
+~
+Exit north 16205
+Exit south 16201
+End
+
+
+#16205
+Name A Platform~
+Desc You are on a platform with a large cleared room to the north.  To the
+south is an unstable looking swing bridge.  The surface of the floor has
+been thatched together with branches, large preserved leaves and flax rope. 
+~
+Sector forest~
+ExtraDesc branches leaves ropes~
+The floor is covered in flax ropes branches and leaves all of which are
+coated in a resin of some sort to preserve them.  
+~
+Exit north 16206
+Exit south 16204
+End
+
+
+#16206
+Name Great Meeting Room~
+Desc You are in a large meeting room.  The floor has been thatched together as
+the others have, but unlike the other rooms it has been covered in a soft
+layer of moss.  The moss makes for a comfortable seat on the floor.  The
+room itself is centered around a large fountain.  Two circles appear to have
+been warn into the floor all surrounding the fountain.  The inner circle is
+much smaller than the outer and is set about ten hand spans closer to the
+middle.  One particular part of the inner circle looks unwarn and fresh
+foliage grows on it.  A stone tablet sits behind the space with the word
+"protector" written on it.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stone tablet protector~
+The stone tablet is about two knuckles thick on an adult human.  The word
+"protector" has been lovingly carved into its face.  The tablet looks
+generations old.  
+~
+Exit north 16211
+Exit east 16208
+Exit south 16205
+Exit west 16207
+End
+
+
+#16207
+Name On a Swing Bridge~
+Desc A very thin swing bridge made from wood bound together with flax rope
+stretches to the west.  It moves unsteadily in the wind, and appears to
+require a lot of agility and balance to negotiate.  There are no side rails
+to grip on to and the flax ropes look extremely old and frayed.  What
+appears to be a row of houses lies to the west, and a meeting room to the
+east.  
+~
+Sector inside~
+ExtraDesc ropes ~
+The ropes have had the resin that preserves them worn off by constant use.  
+~
+Exit east 16206
+Exit west 16209
+End
+
+
+#16208
+Name On a Swing Bridge~
+Desc A very thin swing bridge made from wood bound together with flax rope
+stretches to the east.  It moves unsteadily in the wind, and appears to
+require a lot of agility and balance to negotiate.  There are no side rails
+to grip on to and the flax ropes look extremely old and frayed.  What
+appears to be a temple lies to the east, and a meeting room to the west.  
+~
+Sector forest~
+ExtraDesc ropes ~
+The ropes have had the resin that preserves them worn off by constant use.  
+~
+Exit east 16210
+Exit west 16206
+End
+
+
+#16209
+Name Laboratory~
+Desc The walls of this room are blackened with soot.  Clumps of furr cling to
+the walls and patches of blood stain the floor.  Shelves on the eastern
+walls are littered with some full and some empty vials scattered about. 
+Shelves on the western wall have some very warn looking books on them.  The
+shelves, blackened by soot also have various parts melted away, and acid
+stains.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 16207
+End
+
+
+#16210
+Name Temple~
+Desc A primitive looking temple surrounds you.  On the eastern and western
+walls are rows of candles and in the northern part of the room sits an alter
+of sorts.  Three marble steps lead up to the alter and a beautifully carved
+oak bench rests on the upper most step.  Apon the bench stands a statue of a
+female Mrem smiling mischeviously at you.  The ground below the steps has
+three sets of knee imprints left in it, and just infront of each set is an
+imprint of a forehead.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 16208
+End
+
+
+#16211
+Name On a Swing Bridge~
+Desc A very thin swing bridge made from wood bound together with flax rope
+stretches to the north.  It moves unsteadily in the wind, and appears to
+require a lot of agility and balance to negotiate.  There are no side rails
+to grip on to and the flax ropes look extremely old and frayed.  
+~
+Sector forest~
+ExtraDesc ropes ~
+The ropes have had the resin that preserves them worn off by constant use.  
+~
+Exit north 16212
+Exit south 16206
+End
+
+
+#16212
+Name A Platform~
+Desc You are on a platform with rooms to the north east and west.  To the
+south is an unstable looking swing bridge.  The surface of the floor has
+been thatched together with branches, large preserved leaves and flax rope. 
+~
+Sector forest~
+ExtraDesc branches rope leaves~
+The floor is covered in flax ropes branches and leaves all of which are
+coated in a resin of some sort to preserve them.  
+~
+Exit north 16216
+Exit east 16217
+EKeywords door~
+Exit south 16211
+Exit west 16214
+End
+
+
+#16213
+Name A House~
+Desc This room looks like someone's home.  It is quite messy and has claw
+marks all around it.  Fairly modern cooking equipment and furniture adorns
+the room, but like the other rooms, the house itself looks very primitive. 
+Windows face out the western walls and the room has no door, only a flax mat
+hanging roughly over the entrance to the neighboors house.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc claw marks~
+The claw marks appear to have been scratched into the wood many times,
+almost as if some pleasure was derived from it.  
+~
+ExtraDesc flax mat~
+It seems the inhabitance have little care for privacy for no door
+exhists.  Simple flax mats hang between houses and outside to protect
+against the elements.  
+~
+Exit north 16214
+End
+
+
+#16214
+Name A House~
+Desc This room looks like someone's home.  It is quite messy and has claws
+marks all around it.  Fairly modern cooking equipment and furniture adorns
+the room, but like the other rooms, the house itself looks very primitive. 
+Windows face out the western walls, and the room has no door, only a flax
+mat hanging roughly over the entrance.  To the north and south lie this
+homes neighboors.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc claw marks~
+The claw marks appear to have been scratched into the wood many times,
+almost as if some pleasure was derived from it.  
+~
+ExtraDesc flax mat entrance~
+It seems the inhabitance have little care for privacy for no door
+exhists.  Simple flax mats hang between houses and outside to protect
+against the elements.  
+~
+Exit north 16215
+Exit east 16212
+Exit south 16213
+End
+
+
+#16215
+Name A House~
+Desc This room looks like someone's home.  It is quite messy and has claw
+marks all around it.  Fairly modern cooking equipment and furniture adorns
+the room, but like the other rooms, the house itself looks very primitive. 
+Windows face out the western walls, and the room has no door, only a flax
+mat hanging roughly over the entrance to the neighboors house.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc claw marks~
+The claw marks appear to have been scratched into the wood many times,
+almost as if some pleasure was derived from it.  
+~
+ExtraDesc flax mat~
+It seems the inhabitance have little care for privacy for no door
+exhists.  Simple flax mats hang between houses and outside to protect
+against the elements.  
+~
+Exit south 16214
+End
+
+
+#16216
+Name The Library~
+Desc You are in what appears to be a library.  There are rows of desks and
+chairs facing towards the center of the room and large bookshelves lining
+the walls.  The shelves and books themselves are of an impressive quality. 
+However the room itself looks primitive.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc chairs desks~
+The chairs and desks all face the ceter of the room and form a complete
+circle.  
+~
+ExtraDesc books shelves~
+Many books line these shelves and all look well worm and read.  No dust
+is to be found anywhere.  
+~
+Exit south 16212
+End
+
+
+#16217
+Name Home of the Protector~
+Desc This room is no less primitive that the others yet it has some very
+noteable distinctions.  This house has not been inhabited for many
+generations, yet it has been neatly maintained.  Rows of weapons wracks line
+the walls, all empty.  A lone chair stands before the eastern wall.  Out the
+southern window is a clear view of the Temple and through the temple window
+can be seen a statue.  A sign rests in a small stand in the center of the
+floor.  Several arrows stick out from all angles from the empty shell of
+armor, which has long since sunk deep into the floor.  
+~
+RoomFlags indoors noscry~
+Sector inside~
+ExtraDesc chair ~
+This chair has a hard wooden back with the insignia of a female Mrem
+carved into it making it very uncomfortable.  
+~
+ExtraDesc armor shell arrow~
+The armor although still shinning has sunk into the floor and has roots
+growing around it making it impossible to move.  The guantlet on the right
+hand looks as if once held a sword.  
+~
+ExtraDesc sign ~
+This is the home of the Protector whom failed in his task many years
+past.  May the godess have mercy on his soul and bring peace to his shamed
+family.  We wait for his return, knowing he shall be the shield against our
+enemy.  
+~
+Exit west 16212
+EKeywords door~
+End
+
+
+#16218
+Name A Guard Hut~
+Desc You are in a wooden thatched hut, that appears to be some sort of guard
+room.  Fine silver weapons racks line the walls.  The high quality weapons
+and armor neatly readied for times of trouble seem out of place in this
+otherwise primitive looking room.  
+~
+Sector forest~
+ExtraDesc weapons armor~
+The weapons and armor are all made from silver and kept polished like new.  
+~
+Exit north 16219
+Exit up 16228
+Exit down 16201
+End
+
+
+#16219
+Name On a Swing Bridge~
+Desc There are no side rails to grip on to and the flax ropes look extremely
+old and frayed.  A very thin swing bridge made from wood bound together with
+flax rope stretches to the north.  It moves unsteadily in the wind, and
+appears to require a lot of agility and balance to negotiate.  There are no
+side rails to grip on to and the flax ropes look extremely old and frayed.  
+~
+Sector forest~
+ExtraDesc ropes ~
+The ropes have had the resin that preserves them worn off by constant use.  
+~
+Exit north 16220
+Exit south 16218
+End
+
+
+#16220
+Name A Platform~
+Desc You are on a platform with a large cleared room to the north.  To the
+south is an unstable looking swing bridge.  The surface of the floor has
+been thatched together with branches, large preserved leaves and flax rope. 
+~
+Sector forest~
+ExtraDesc ropes branches leaves~
+The floor is covered in flax ropes branches and leaves all of which are
+coated in a resin of some sort to preserve them.  
+~
+Exit north 16223
+Exit east 16222
+Exit south 16219
+Exit west 16221
+End
+
+
+#16221
+Name Kitchen~
+Desc The kitchen is filled with cooking equipment all engraved with a figure
+of a female mrem.  Pots and pans litter bench tops and dirty dishes lie
+scattered on the floor.  The room itself is covered in thick resin to
+prevent the wood catching on fire.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc pots pans cooking equipment dishes~
+The cooking equipment is all made of blackened silver, it has baked on
+food stains and looks very poorly kept.  
+~
+Exit east 16220
+End
+
+
+#16222
+Name Storage Pit~
+Desc This room holds piles of food packed into barrels.  No windows are here
+to let the light in so it is quite dark.  Barrels containing milk also line
+the walls and the smell of off milk makes the pit stink.  Two unlit torch
+sconses rest on each wall.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc torch sconses~
+These torches have been unlit for so long that the wicks will not ignite.  
+~
+ExtraDesc barrels ~
+The barrels are made of oak, tightly bound with flax and sealed on top
+with a oak and silver lid.  
+~
+Exit west 16220
+End
+
+
+#16223
+Name The Nursery~
+Desc This room has windows set in the walls at a low hieght, it has no roof,
+and the walls are as primitive as the rest of the village.  Various play
+items litter the floor, from scratching poles, to balls of flax twine.  A
+make shift climbing structure sits in the middle of the room.  
+~
+Sector forest~
+ExtraDesc play scratching poles balls flax twine climbing structure~
+There are numerous items littering the floor here.  Balls of twine have
+been ravished and scratching poles decimated.  Most noteable is a large
+climbing structure made of oak branches.  
+~
+Exit north 16224
+Exit south 16220
+End
+
+
+#16224
+Name A Platform~
+Desc You are on a platform just north of a nursary.  The platform is larger
+than the others and looks as though it could support more weight.  The bound
+branches and ropes appear to have been organised better also.  To the north
+lies a room with a door on it.  
+~
+Sector forest~
+ExtraDesc ropes ~
+The floor is covered in flax ropes branches and leaves all of which are
+coated in a resin of some sort to preserve them.  
+~
+Exit north 16225
+EFlags door closed locked hard~
+EKeyvnum 16222
+EKeywords door~
+Exit east 16227
+Exit south 16223
+Exit west 16226
+End
+
+
+#16225
+Name Armoury~
+Desc Unlike most of the other rooms in the village this one has a door on it. 
+No windows are here to let in light but two torch sconces rest on the walls.
+Weapons racks line all of the walls, and a variety of weapons and armor
+reset on wracks and wooden mrem models.  The door has been encrusted with an
+engraving of a lithe female mrem.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc wooden model~
+These wooden models are really just crudely humanoid shaped grouping of
+stick for resting armor on.  
+~
+ExtraDesc engraving ~
+The engraving is finely carved, and painstakingly detailed.  
+~
+Exit south 16224
+EFlags door closed locked hard~
+EKeyvnum 16222
+EKeywords door~
+End
+
+
+#16226
+Name Observation Deck~
+Desc From here a grand view over looks most of the forest.  Some of the trees
+still tower over head.  To the south west a large city can be seen.  The
+giant oak from which the mrem enter their village spirals upward behind you,
+even with your neck arched back you cannot see the top of it.  There are no
+rails here to stop you falling and it would be easy to simply step off and
+plumet to the forest floor.  
+~
+Sector forest~
+Exit east 16224
+End
+
+
+#16227
+Name Druid's Den~
+Desc This den gives off a very pungent odour.  The smell of herbs, roots and
+forest plants mix together to give the air a fresh smell of the forest. 
+Rare plants are set in silver pots on the base of several windows, and
+strange looking biscuits are spread on a shelf.  The trimmings off branches
+litter the floor, and they crackle under foot.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc plants ~
+The plants are uniformily green and some even have vivid red flowers
+growing from them.  
+~
+Exit west 16224
+End
+
+
+#16228
+Name Platform~
+Desc You have reached the highest level of the village.  Not far above you is
+the top of the great tree, its branches span out through the rest of the
+forest boldly claiming its domain.  The platform on which you stand is well
+cared for, and has bleached patches on it where the sun has filtered through
+the tree top.  
+~
+Sector forest~
+ExtraDesc bleached ~
+These bleached patches have been burned into the wood by years of gentle
+sunlight.  
+~
+Exit north 16229
+Exit down 16218
+End
+
+
+#16229
+Name Swing Bridge~
+Desc A very thin swing bridge made from wood bound together with flax rope
+stretches to the north.  It moves unsteadily in the wind, and appears to
+require a lot of agility and balance to negotiate.  There are no side rails
+to grip on to and the flax ropes look extremely old and frayed.  To the
+south is a platform and a training ground lies to the north.  
+~
+Sector forest~
+Exit north 16230
+Exit east 16231
+Exit south 16228
+Exit west 16232
+End
+
+
+#16230
+Name Central Training Room~
+Desc Paintings of rangers line all the walls in here.  It seems that most Mrem
+aspire to become great rangers like those depicted in the paintings.  Drops
+of blood, spell components, herbs and sweat give tell tail signs of the
+training that is conducted in here.  Two golden rules are written in a
+scroll on the wall.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc painting ~
+One painting catches your attention.  It shows a tiger like striped male
+mrem encircling a five headed dragon.  
+~
+ExtraDesc golden rules scroll~
+A ranger always helps the weak.
+ 
+ 
+A ranger is always humbled by nature.
+~
+Exit south 16229
+End
+
+
+#16231
+Name Eastern Training Room~
+Desc This room is filled with plants in various stages of growth.  Biscuit
+crumbs litter the floor along with cutting from numerous exotic plants. 
+Many windows are set into the walls making the room somewhat like a green
+house.  Heat trapped in this room from the days sun makes it quite warm. 
+The floor is very well trampled and is showing signs of age.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 16229
+End
+
+
+#16232
+Name Western Training Room~
+Desc This room has a makeshift wooden and foam dumby in the centre of it.  The
+dumby has about twenty pcokets on it.  The back of the dumby has been
+decimated with stab markes.  Several fake doors line the northern wall, all
+of them have different sized locks on them.  Several sections are cast in
+shadow about the size a human could stand in and hide.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 16229
+End
+
+
+#16233
+Name Prison~
+Desc This room has been used as a prison.  Marks scarr the insides of the
+hollowed section of the tree.  Chains hang on the northern wall.  Although
+the room is round, parts of the wall have been carved flat to hand the
+chains on and put torch sconses on the wall.  The room contains no windows
+excpet for a small breathing hole near the bottom of the tree.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit southwest 16200
+EFlags door closed~
+EKeywords knot~
+End
+
+
+#16235
+Name War Barracks~
+Desc This room looks a little fortified as it has sharp branches protruding
+from the top of each wall.  There is no roof, but the lush growth of the
+tree provides some shelter.  There has been dirt loaded onto the floor of
+the room, and in it are the scuff marks of many a set of shoes.  Fake gnolls
+made from sticks are lines against the eastern wall with targets on their
+abdomens.  
+~
+Sector forest~
+Exit north 16241
+Exit east 16238
+Exit south 16236
+Exit west 16239
+End
+
+
+#16236
+Name Southern War Barracks~
+Desc This room also has a dirt floor covered in footprints....  The foot
+prints seems somewhat lighter though and in different patterns.  Again fake
+Gnoll made from stick line the eastern wall, but this time the targets are
+on their shoulders and chests.  A door lies to the east and has the emblem
+of the mrem armies on it.  
+~
+Sector forest~
+Exit north 16235
+Exit east 16237
+EFlags door closed~
+EKeywords door~
+Exit west 16240
+End
+
+
+#16237
+Name General's Headquarters~
+Desc This room has no fortification but it atleast has a roof.  It seems far
+more comfortable than the barracks and has a soft leaf floor.  The portraits
+of several tall and proud looking Mrem line the northern wall, and they
+appear to be the sucsessive generals of the army.  A desk and chair furnish
+the room and a door to the west leads back into the barracks.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 16236
+EFlags door closed~
+EKeywords door~
+End
+
+
+#16238
+Name Mrem Armorer~
+Desc This store has been built from solid oaken wood, it has no roof but thick
+foliage grows above it.  A heavy anvil lies behind the counter and several
+solid looking hammers hang on the wall behind the counter.  
+ 
+A sign rests on the counter.
+~
+Sector forest~
+ExtraDesc sign ~
+The sign reads:
+ 
+Temporarily not trading
+I am on a personal assignment.
+~
+Exit west 16235
+End
+
+
+#16239
+Name Kreans War Supplies~
+Desc This room has been set up as a temporary shop.  The weapons and armor lie at 
+the ready behind the counter.  Roughly made walls and a lumpy, unstable 
+looking floor show that this room is not meant to be permanent.  
+~
+Sector forest~
+Exit east 16235
+End
+
+
+#16240
+Name Lysters' Exotic Items~
+Desc A large counter has been made from makeshift branches from the tree you are 
+in.  It seems the only way to get to the other side is to climb over.  On 
+the other side are piles of various shades of leather and reams of cotton 
+and twine on a wrack.  
+~
+Sector forest~
+Exit east 16236
+End
+
+
+#16241
+Name Anita's Study~
+Desc This room is beautifully furnished.  The interior walls are lined with
+waxen oak, and the supporting beams are laden with intricate carvings of
+exotic vines.  A polished oak desk rests against the northern wall and a
+book-shelf filled with dusty books covered in threaded bindings is set into
+the wall.  On the desk lies a globe, candles, parchment and writing
+impliments.  The oak floor is softened by a lush carpet which covers half
+the room.  Statues of a silver and golden dragon line the western wall, and
+a large hammock supported by two lush oak trees that grow into the walls,
+adornes the eastern side of the room.  A fireplace is set behind the
+statues, and the ever burning flames within send shadows of the dragons
+flittering across the room.  Brass fire-stokers stand in a brass hold just
+infront of the fireplace.  An oil painting hangs above the desk.  Alight
+candles flicker to either side of the painting illuminating the scene
+within.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc candles candle~
+These candles are made from pure white wax.  
+~
+ExtraDesc painting oil~
+This painting depicts a mrem village in the trees.  It is half destroyed
+and burning.  Swing bridges link what is left of the village, and mrem's
+rush along them carrying buckets.  In the forefront of the painting is a
+lithe female mrem.  She lies bleeding and writhing in pain on the ground.  A
+young girl sits next to her crying in her lap.  In the distance three looming
+figures are flying away, they appear to be three dragons.  One of them has
+five heads.  
+~
+ExtraDesc fire-stokers brass hold~
+A brass holder is here, with two unused fire pokers in it.
+~
+ExtraDesc flames fire fireplace~
+These flames burn evenly and constantly making the room comfortably warm
+even on the coldest nights.  The flickering lights send shadows accross the
+room.  
+~
+ExtraDesc statue dragon silver golden~
+These statues have been carved from marble.  They show a silver and
+golden dragon in all their glory.  A small enscription on each reads..... 
+Our eternal thanks...  Lady of the silver elves.  
+~
+ExtraDesc carpet ~
+The carpet is made from a mixture of silk and wool.  It depicts a lithe
+female Mrem kneeling before a young girl.  
+~
+ExtraDesc desk ~
+The desk has been beautifully carved from the oak off this very tree. 
+You can see the signature of its crafter whom gifted it to anita, scribed on
+its edge.  
+~
+ExtraDesc carvings beam vines~
+The beams extend both from the floor to the roof and across the roof
+making the room appear very stable.  
+~
+Exit north 16201
+Exit south 16235
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 16202 spec_guard
+M 16209 spec_cast_mage
+M 16210 spec_cast_cleric
+M 16213 spec_cast_mage
+M 16227 spec_cast_mage
+M 16239 spec_cast_druid
+S
+
+
+
+#RESETS2
+M 0 16200 1 16200 1
+M 0 16201 15 16201 2
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16232 -1 feet~
+E 0 16205 -1 head~
+E 0 16206 -1 wielded~
+O 0 16200 -1 16201
+O 0 16201 -1 16201
+M 0 16203 2 16202 1
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16232 -1 feet~
+E 0 16205 -1 head~
+E 0 16208 -1 wielded~
+O 0 16238 -1 16202
+P 0 16239 20 16238 10
+M 0 16203 2 16203 1
+E 0 16208 -1 wielded~
+E 0 16205 -1 head~
+E 0 16204 -1 legs~
+E 0 16232 -1 feet~
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+O 0 16238 -1 16203
+P 0 16239 20 16238 10
+M 0 16204 1 16204 1
+M 0 16205 1 16204 1
+M 0 16206 6 16205 1
+E 0 16203 -1 arms~
+E 0 16202 -1 torso~
+E 0 16204 -1 legs~
+E 0 16232 -1 feet~
+E 0 16205 -1 head~
+E 0 16206 -1 wielded~
+M 0 16207 6 16205 1
+M 0 16208 2 16206 2
+E 0 16206 -1 wielded~
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16232 -1 feet~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16218 -1 hold~
+M 0 16208 2 16206 2
+E 0 16205 -1 head~
+E 0 16232 -1 feet~
+E 0 16218 -1 hold~
+E 0 16204 -1 legs~
+E 0 16203 -1 arms~
+E 0 16202 -1 torso~
+E 0 16206 -1 wielded~
+O 0 16211 -1 16206
+M 0 16205 8 16207 1
+M 0 16209 1 16209 1
+E 0 16214 -1 about~
+E 0 16215 -1 wielded~
+E 0 16232 -1 feet~
+O 0 16223 -1 16209
+P 0 16240 1 16223 1
+P 0 16241 1 16223 1
+M 0 16222 1 16209 1
+M 0 16210 1 16210 1
+E 0 16222 -1 hold~
+E 0 16232 -1 feet~
+E 0 16212 -1 about~
+E 0 16213 -1 wielded~
+O 0 16217 -1 16210
+M 0 16223 2 16210 2
+E 0 16233 -1 about~
+E 0 16232 -1 feet~
+M 0 16204 5 16212 1
+M 0 16205 5 16212 1
+M 0 16206 6 16212 1
+E 0 16202 -1 torso~
+E 0 16232 -1 feet~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16206 -1 wielded~
+M 0 16207 6 16212 1
+E 0 16210 -1 about~
+E 0 16232 -1 feet~
+O 0 16245 -1 16213
+O 0 16246 -1 16213
+P 0 16210 20 16246 1
+M 0 16211 3 16214 3
+E 0 16232 -1 feet~
+E 0 16210 -1 about~
+M 0 16211 3 16214 3
+E 0 16232 -1 feet~
+E 0 16210 -1 about~
+M 0 16211 3 16214 3
+E 0 16232 -1 feet~
+E 0 16210 -1 about~
+M 0 16212 3 16214 3
+E 0 16202 -1 torso~
+E 0 16232 -1 feet~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16206 -1 wielded~
+M 0 16212 3 16214 3
+E 0 16206 -1 wielded~
+E 0 16232 -1 feet~
+E 0 16205 -1 head~
+E 0 16204 -1 legs~
+E 0 16203 -1 arms~
+E 0 16202 -1 torso~
+M 0 16212 3 16214 3
+E 0 16232 -1 feet~
+E 0 16206 -1 wielded~
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+O 0 16245 -1 16214
+O 0 16246 -1 16214
+P 0 16210 20 16246 1
+O 0 16245 -1 16215
+O 0 16246 -1 16215
+P 0 16210 20 16246 1
+M 0 16213 1 16216 1
+E 0 16216 -1 about~
+E 0 16251 -1 wielded~
+E 0 16232 -1 feet~
+O 0 16223 -1 16216
+P 0 16242 20 16223 1
+P 0 16243 20 16223 1
+P 0 17784 20 16223 1
+P 0 17785 20 16223 1
+O 0 16247 -1 16217
+P 0 16220 30 16247 5
+O 0 16211 -1 16217
+O 0 16253 -1 16217
+M 0 16201 15 16218 1
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16206 -1 wielded~
+E 0 16232 -1 feet~
+M 0 16214 1 16221 1
+E 0 16221 -1 about~
+E 0 16232 -1 feet~
+O 0 16247 -1 16221
+P 0 16220 30 16247 5
+E 0 16248 -1 wielded~
+M 0 16204 4 16222 1
+O 0 16219 -1 16222
+P 0 16220 30 16219 5
+M 0 16215 3 16223 3
+M 0 16215 3 16223 3
+M 0 16215 3 16223 3
+M 0 16201 3 16223 1
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16232 -1 feet~
+E 0 16205 -1 head~
+E 0 16206 -1 wielded~
+M 0 16211 5 16223 1
+E 0 16210 -1 about~
+E 0 16232 -1 feet~
+M 0 16207 5 16224 1
+E 0 16232 -1 feet~
+E 0 16210 -1 about~
+M 0 16204 4 16224 1
+O 0 16202 -1 16225
+O 0 16203 -1 16225
+O 0 16204 -1 16225
+O 0 16205 -1 16225
+O 0 16206 -1 16225
+O 0 16207 -1 16225
+O 0 16208 -1 16225
+O 0 16209 -1 16225
+O 0 16215 -1 16225
+O 0 16218 -1 16225
+O 0 16228 -1 16225
+O 0 16234 -1 16225
+O 0 16231 -1 16225
+O 0 16230 -1 16225
+O 0 16228 -1 16225
+M 0 16216 1 16227 1
+E 0 16228 -1 wielded~
+E 0 16204 -1 legs~
+E 0 16203 -1 arms~
+E 0 16202 -1 torso~
+G 0 16226 -1
+G 0 16227 -1
+E 0 16229 -1 about~
+E 0 16232 -1 feet~
+O 0 16250 -1 16227
+P 0 16225 1 16250 1
+P 0 16224 1 16250 1
+M 0 16202 1 16228 1
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16232 -1 feet~
+E 0 16202 -1 torso~
+E 0 16207 -1 wielded~
+E 0 16209 -1 shield~
+M 0 16217 4 16230 1
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16230 -1 lfinger~
+E 0 16230 -1 rfinger~
+E 0 16231 -1 rwrist~
+E 0 16231 -1 lwrist~
+E 0 16233 -1 about~
+E 0 16234 -1 wielded~
+M 0 16217 4 16230 1
+E 0 16234 -1 wielded~
+E 0 16233 -1 about~
+E 0 16232 -1 feet~
+E 0 16231 -1 lwrist~
+E 0 16231 -1 rwrist~
+E 0 16230 -1 rfinger~
+E 0 16230 -1 lfinger~
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+M 0 16218 4 16230 1
+E 0 16205 -1 head~
+E 0 16204 -1 legs~
+E 0 16203 -1 arms~
+E 0 16202 -1 torso~
+E 0 16230 -1 lfinger~
+E 0 16230 -1 rfinger~
+E 0 16231 -1 lwrist~
+E 0 16231 -1 rwrist~
+E 0 16232 -1 feet~
+E 0 16233 -1 about~
+E 0 16234 -1 wielded~
+M 0 16219 4 16230 1
+E 0 16234 -1 wielded~
+E 0 16202 -1 torso~
+E 0 16232 -1 feet~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16230 -1 lfinger~
+E 0 16230 -1 rfinger~
+E 0 16231 -1 rwrist~
+E 0 16231 -1 lwrist~
+E 0 16233 -1 about~
+M 0 16220 1 16230 1
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16230 -1 rfinger~
+E 0 16230 -1 lfinger~
+E 0 16231 -1 lwrist~
+E 0 16231 -1 rwrist~
+E 0 16233 -1 about~
+E 0 16207 -1 wielded~
+E 0 16209 -1 shield~
+E 0 16232 -1 feet~
+M 0 16224 4 16231 1
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16232 -1 feet~
+E 0 16255 -1 wielded~
+M 0 16225 4 16231 1
+E 0 16228 -1 wielded~
+E 0 16232 -1 feet~
+E 0 16205 -1 head~
+E 0 16204 -1 legs~
+E 0 16203 -1 arms~
+E 0 16202 -1 torso~
+M 0 16226 4 16231 1
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16232 -1 feet~
+E 0 16228 -1 wielded~
+M 0 16227 1 16231 1
+E 0 16228 -1 wielded~
+E 0 16232 -1 feet~
+E 0 16205 -1 head~
+E 0 16204 -1 legs~
+E 0 16203 -1 arms~
+E 0 16202 -1 torso~
+M 0 16229 4 16232 1
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16249 -1 wielded~
+E 0 16233 -1 about~
+E 0 16232 -1 feet~
+M 0 16230 4 16232 1
+E 0 16232 -1 feet~
+E 0 16233 -1 about~
+E 0 16249 -1 wielded~
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+M 0 16231 1 16232 1
+E 0 16205 -1 head~
+E 0 16204 -1 legs~
+E 0 16203 -1 arms~
+E 0 16202 -1 torso~
+E 0 16249 -1 wielded~
+E 0 16233 -1 about~
+E 0 16232 -1 feet~
+M 0 16228 4 16232 1
+E 0 16232 -1 feet~
+E 0 16233 -1 about~
+E 0 16249 -1 wielded~
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+M 0 16221 1 16233 1
+E 0 16235 -1 hands~
+E 0 16236 -1 about~
+O 0 16237 -1 16233
+M 0 16201 15 16233 4
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16206 -1 wielded~
+E 0 16232 -1 feet~
+M 0 16235 10 16235 2
+E 0 16257 -1 wielded~
+E 0 16259 -1 torso~
+M 0 16236 10 16236 2
+E 0 16258 -1 wielded~
+E 0 16259 -1 torso~
+M 0 16238 1 16236 1
+G 0 16262 -1
+M 0 16237 1 16237 1
+E 0 16259 -1 torso~
+E 0 16209 -1 shield~
+E 0 16204 -1 legs~
+E 0 16203 -1 arms~
+E 0 16205 -1 head~
+E 0 16230 -1 lfinger~
+E 0 16230 -1 rfinger~
+O 0 16200 -1 16237
+O 0 16201 -1 16237
+E 0 16260 -1 wielded~
+M 0 16233 1 16238 1
+M 0 16234 1 16239 1
+G 0 16257 -1
+G 0 16258 -1
+G 0 16259 -1
+G 0 16209 -1
+M 0 16239 1 16240 1
+E 0 16202 -1 torso~
+E 0 16203 -1 arms~
+E 0 16204 -1 legs~
+E 0 16205 -1 head~
+E 0 16230 -1 lfinger~
+E 0 16230 -1 rfinger~
+E 0 16231 -1 lwrist~
+E 0 16231 -1 rwrist~
+E 0 16232 -1 feet~
+E 0 16233 -1 about~
+G 0 16240 -1
+G 0 16241 -1
+E 0 16249 -1 wielded~
+G 0 16202 -1
+G 0 16203 -1
+G 0 16204 -1
+G 0 16205 -1
+G 0 16230 -1
+G 0 16231 -1
+G 0 16232 -1
+O 0 16211 -1 16241
+O 0 16250 -1 16241
+O 0 16247 -1 16241
+P 0 16220 40 16247 10
+O 0 16261 -1 16241
+S
+
+
+
+#SHOPS
+#16234
+buy_type weapon~
+buy_type armor~
+profit_buy 150
+profit_sell 40
+close_hour 23
+END
+
+#16238
+buy_type pill~
+profit_buy 140
+profit_sell 50
+close_hour 23
+END
+
+#16239
+profit_buy 120
+profit_sell 40
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#16296
+title arrogant gnoll prisoner~
+code mob echoat $n You can't break his shackles.
+~
+disabled false
+END
+
+#16295
+title talisman quest-mrem cleric-sends to priest~
+code if hastoken $n 16270
+pmote $n embraces @.
+say It seems ye are indeed worthly of the knowledge I have.....
+say The holder of the talismans is a priest in a small fishing village far north of Dzagari.
+say Go to him and tell him that you have been sent by one who is humble.
+emote grins and turns away.
+mob oload 16271
+mob tgive 16271 $n
+else
+say Thank you, I always wanted one of these.
+smile $n
+endif
+~
+disabled false
+END
+
+#16294
+title talisman quest-mrem cleric-asks for matrix~
+code if hastoken $n 16269
+pmote $n smiles at @.
+say Not bad for one so young...
+say Next, you must prove your courage and strength.
+say One of our mrems have been taken prisoner by the goblins to the south.
+say You must free our mrem, and bring me proof of your heroic work.
+say Then I shall tell you of the talisman.
+mob oload 16270
+mob tgive 16270 $n
+else
+say Thank you, I do consider myself to be quite humble.
+chuckle
+endif
+~
+disabled false
+END
+
+#16293
+title talisman quest-mrem cleric-asks for word humility~
+code if hastoken $n 16268
+pmote $n smiles at @.
+say Correct young one....
+say Next, name to me the virtue that leads to knowledge and learning.
+say I will give you a clue....it is very close to the word humidity.
+emote chuckles to herself.
+mob oload 16269
+mob tgive 16269 $n
+else
+say Yes, I know of Delhor.
+say Why do you ask?
+endif 
+~
+disabled false
+END
+
+#16292
+title talisman quest-mrem cleric-asks for mother of anita~
+code if hastoken $n 16267
+say You want to find the one who has the talismans eh?
+say Well first ye must proove yourself worthy of such an artifact.
+say Name me the mother, of the goddess, of the people in this village.
+mob oload 16268
+mob tgive 16268 $n
+else
+say The holder? The holder of what?
+endif
+~
+disabled false
+END
+
+#16291
+title talisman quest-mrem cleric-tells of talisman~
+code say The talismans eh?
+say I suppose the old man told you of there origins...
+say Well I'll bet he didn't tell you about where they are...
+say Only I know of the holder of talismans.
+emote looks extremely proud of herself.
+mob oload 16267
+mob tgive 16267 $n
+ 
+~
+disabled false
+END
+
+#16277
+title amalgum shield quest -give money~
+code if hastoken $n 16266
+ say Didnt I already made you a shield?
+ say I am sorry, but I have more to do.
+ emote turns back to his anvil.
+endif
+if hastoken $n 16277
+ mob oload 16263
+ give amalgum $n
+ mob oload 16266
+ mob tgive 16266 $n
+ emote grins.
+ say You will find it is of the finest quality...
+ emote looks very proud of himself.
+ say Now I have other work to do.  If you'll excuse me.
+ whisper $n I hear the mrem cleric may bless my work if you give it to her.
+ emote turns back to his anvil.
+else
+ say Thanks, I could do with a little money.
+ emote grins.
+endif
+ 
+~
+disabled false
+END
+
+#16276
+title cleric blesses~
+code emote nods at $N.
+emote mutters a small prayer before the statue.
+mob cast bless amalgum
+give amalgum $n
+~
+disabled false
+END
+
+#16275
+title amalgum shield quest given golden mask~
+code if hastoken $n 16276
+emote looks anxious.
+say Excellent...
+emote turns to the red hot molten metal and quickly adds the mask.
+mob echo flames surge from the furnace and $I drops the mould into a barrel of water.
+mob echo steams pours through the room.....and when it clears...
+mob echo $I stands before you holding a shield swirling with colours.
+say now there is just a small matter of payment.
+say for 50 gold it is yours.
+emote holds out his paw for payment.
+mob oload 16277
+mob tgive 16277 $n
+else
+say A golden ring.. I could melt this into a fine piece of jewellery.. Thanks
+endif
+~
+disabled false
+END
+
+#16274
+title amalgum shield quest given silver~
+code if hastoken $n 16275
+say Aha...its coming together nicely.
+say now just a little gold to give it maluability.
+mob echo The metals in the mould begin to bubble slightly.
+say we must be quick it is almost done...
+say bring me a golden signet ring! I think it is an orcish thing...
+mob oload 16276
+mob tgive 16276 $n
+else
+say A silver helm, how useful..
+endif
+~
+disabled false
+END
+
+#16273
+title amalgum quest given hammer~
+code if hastoken $n 16274
+say Ah yes this will do nicely...
+say now we'll be needing some silver to help in the protection against magic.
+say The old revenant at the lighthouse near the beach, used to wear a silver helm.
+say I'm not sure if he wears it still, but that would do nicely, if you can find it.
+emote begins melting the iron hammer into the mould.
+mob oload 16275
+mob tgive 16275 $n
+else
+say I could melt this down and make something really useful.. Thanks
+endif
+~
+disabled false
+END
+
+#16272
+title amalgum shield quest - asks for iron hammer~
+code if hastarget $i
+say ahh yes well that worked fine....
+emote shows $q the melted sword.
+say see how it is an amber colour?
+say That means it is ready to have the iron added.
+say Bring me a heavy iron hammer.
+whisper $q I hear a the hafran quartermaster carries one.
+emote concentrates on keeping the steel hot.
+mob oload 16274
+mob tgive 16274 $n
+endif
+~
+disabled false
+END
+
+#16271
+title amalgum sword quest get steel~
+code if hastoken $n 16273
+emote begins melting down the steel sword.
+say Wait there...if this works I will tell you the next ingredient.
+mob remember $n
+mob delay 5
+else 
+say Hmm.. I always wanted one of these.. Thanks
+endif
+~
+disabled false
+END
+
+#16270
+title the amalgum shield quest~
+code . 
+say Oh the amalgum shield eh.
+say well I can make one of those sure....
+say There is a lot of materials I will need though.
+say First I'll be needing some good solid steel..
+say Bring me a heavy steel bastard sword..
+say So I can melt it down...
+emote turns back to his anvil.
+whisper $n I hear the Orcs near the town of Dzagari use them.
+mob oload 16273
+mob tgive 16273 $n
+~
+disabled false
+END
+
+#16265
+title Anita-Furrballs eats her own biscuits~
+code mob oload 16262
+eat soothing
+~
+disabled false
+END
+
+#16251
+title Anita-soldiers cast heal on themselves~
+code mob cast 'cure serious' self
+~
+disabled false
+END
+
+#16250
+title Anita-footman cast heal on themselves~
+code mob cast 'cure light' self
+emote casts a spell of healing on $kself.
+~
+disabled false
+END
+
+#16248
+title master of mrem rangers-greeting~
+code if hastarget $i
+say You see students....everyone likes to learn of natures wonder.
+emote smiles proudly.
+mob forget
+endif
+~
+disabled false
+END
+
+#16247
+title master of mrem rangers-wait~
+code if mobhere 16219
+say ....so by placing our foot thus we make far less noise....
+say Oh <ahem> hello there.
+mob delay 10
+break
+~
+disabled false
+END
+
+#16246
+title master of mrem thieves-wait~
+code if hastarget $i
+say You will never learn our secrets.
+say unless you wish to join our ...err....profession.
+mob forget
+endif
+~
+disabled false
+END
+
+#16245
+title master of mrem thieves-greet~
+code if mobhere 16230
+say .....the trick you see is to move around behind them.....
+pmote $n notices @ and coughs.
+say Can I help you?
+mob delay 10
+break
+~
+disabled false
+END
+
+#16244
+title master of mrem druids-wait~
+code if hastarget $i
+say You are still here eh...
+say maybe you want to be a druid?
+mob forget
+endif
+~
+disabled false
+END
+
+#16242
+title master of mrem druids-greet~
+code if mobhere 16226
+say .......and so you see, if you combine buck root and....
+say It seems we have a visitor, carry on students.
+mob remember $n
+mob delay 10
+break
+~
+disabled false
+END
+
+#16241
+title the mrems smile at good mrem and frown at evil align~
+code if race $n mrem
+and isgood $n
+pmote $n bows before @.
+endif
+if isevil $n
+pmote $n watches @ suspiciously.
+endif
+if race $n mrem
+and isneutral $n
+pmote $n nods at @.
+endif
+~
+disabled false
+END
+
+#16231
+title Mrem guide for talisman quest~
+code pmote $n smiles at @.
+say If you wish to find about the talisman of learning, go and see the cleric on the bottom floor.
+~
+disabled false
+END
+
+#16224
+title Master Rangers talk on Cloak of Shadows~
+code . 
+say In search of the items needed to weave the cloak of shadows, are you?
+say Well then, I have a class of students to attend to as you can see.
+say You'll need to get spidersilk, a zaradine......
+emote scratches his head.
+say Ah yes, this strange magical needle as well.
+chuck
+say I think the swamp hag carries these needles.
+say But I'm not to sure, go check it out and see.
+mob oload 27154
+mob tgive 27154
+~
+disabled false
+END
+
+#0
+
+
+#$

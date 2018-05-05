@@ -1,0 +1,964 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Haunted Lighthouse~
+ShortName   Haunted Lighthouse~
+Builders    None~
+Credits     Reave~
+VNUMs       43200 43249
+LRange      30 60
+Security    9
+Colour      R~
+colourcode  `
+MapScale    6
+MapLevel    20
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#43200
+Name zombie rotting~
+ShortD a rotting zombie~
+LongD A rotting zombie is here.~
+Desc This creature was once a human man, but is now an animated rotting corpse.  
+Chunks of skin are missing in many places, exposing the organs and bones 
+below. 
+~
+Race human~
+Align -1 -2
+Level 30
+Hitroll 0
+HitDice 5d5+150
+ManaDice 5d5+245
+DamDice 4d6+8
+DamType pound
+AC -110 -110 -110 -70
+Wealth 300
+Act    npc no_tame stay_area undead~
+Off    parry~
+Imm    summon charm poison negative mental disease drowning~
+Vuln   fire holy~
+Form   edible poison sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#43201
+Name animated skeleton~
+ShortD an animated skeleton~
+LongD An animated skeleton is here.~
+Desc This undead creature is nothing but a skeleton that has somehow been 
+magically animated.  It is about human sized.
+~
+Race human~
+Align -1 -1
+Level 33
+Hitroll 0
+HitDice 5d6+205
+ManaDice 2d5+18
+DamDice 6d4+10
+DamType beating
+AC -110 -110 -110 -88
+Wealth 300
+Act    npc no_tame stay_area undead warrior~
+Off    parry~
+Imm    summon charm poison negative mental disease drowning~
+Vuln   fire holy~
+Form   edible sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#43202
+Name grey ooze~
+ShortD a grey ooze~
+LongD A grey ooze clings to the wall here.~
+Desc This strange creature is not much more than a pile of smelly grey slime.  It 
+seems to be able to cling to the wall quite well, and from the damage done to 
+the area around it looks quite toxic.
+~
+Race centipede~
+Align 0 0
+Level 40
+Hitroll 0
+HitDice 5d6+235
+ManaDice 5d6+235
+DamDice 4d8+13
+DamType digestion
+AC -130 -130 -130 -115
+Wealth 350
+Act    npc dont_wander no_tame stay_area~
+AffBy  dark_vision regeneration slow~
+Off    area_attack~
+Imm    charm poison disease~
+Res    bash pierce cold~
+Vuln   fire~
+Form   edible poison animal insect blob~
+Part   head brains eye~
+StartP resting~
+DefPos resting~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#43203
+Name ghost~
+ShortD a ghost~
+LongD The ghost of some poor human is floating here.~
+Desc This is the ghost of some poor human, probably killed in such a way as to 
+trap the soul behind.  It is a whispy white color, and is transparent.
+~
+Race human~
+Align -1 0
+Level 38
+Hitroll 0
+HitDice 5d7+242
+ManaDice 5d7+245
+DamDice 3d12+14
+DamType chill
+AC -140 -140 -140 -116
+Wealth 360
+Act    npc no_tame stay_area undead~
+Off    fade~
+Imm    charm poison negative mental disease drowning~
+Res    magic~
+Vuln   weapon fire holy~
+Form   edible instant_decay sentient undead mist biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#43204
+Name revenant lighthouse keeper~
+ShortD a revenant~
+LongD The revenant of the lighthouse keeper is here.~
+Desc This is the undead body of the former lighthouse keeper.  Apparently some 
+soul is still trapped inside, if the burning hate visible in its eyes is any 
+indication.
+~
+Race human~
+Align -2 -3
+Level 57
+Hitroll 2
+HitDice 6d9+305
+ManaDice 6d9+310
+DamDice 6d8+24
+DamType punch
+AC -270 -270 -270 -243
+Wealth 430
+Act    npc dont_wander no_tame aggressive stay_area undead~
+Off    dodge parry~
+Imm    charm poison negative mental disease drowning~
+Form   edible poison sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#43205
+Name spectre~
+ShortD a spectre~
+LongD A spectre is floating here.~
+Desc This ghostlike undead creature is staring at you with glowing red eyes filled 
+with hate.  Its body is mostly transparent, and is hard to make out.  
+~
+Race human~
+Align -1 -2
+Level 46
+Hitroll 2
+HitDice 5d8+255
+ManaDice 5d8+265
+DamDice 6d6+16
+DamType chill
+AC -160 -160 -160 -132
+Wealth 390
+Act    npc no_tame stay_area undead~
+Off    fade~
+Imm    charm poison negative mental disease~
+Res    light~
+Vuln   holy~
+Form   edible instant_decay sentient undead intangible biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#43206
+Name thin wraith~
+ShortD a wraith~
+LongD A thin wraith is here.~
+Desc This tall gaunt undead creature looks quite powerful.  It has an expression 
+of pure malice on its face, and is eyeing you hungrily.
+~
+Race human~
+Align -3 -3
+Level 53
+Hitroll 0
+HitDice 5d9+290
+ManaDice 5d9+290
+DamDice 6d7+21
+DamType punch
+AC -230 -230 -230 -186
+Wealth 420
+Act    npc dont_wander no_tame stay_area undead~
+Off    fade~
+Imm    charm poison negative mental disease drowning~
+Vuln   fire holy~
+Form   edible poison sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#43207
+Name ghoul~
+ShortD a ghoul~
+LongD A ghoul is here, leering evilly at you.~
+Desc This creature was perhaps once a normal human, but it's body has been 
+horribly twisted by some foul means into a warped imitation.  It is leering 
+evilly at you.
+~
+Race human~
+Align -1 -3
+Level 36
+Hitroll 2
+HitDice 5d6+215
+ManaDice 5d6+200
+DamDice 3d10+11
+DamType claw
+AC -120 -120 -120 -96
+Wealth 330
+Act    npc no_tame stay_area undead~
+Off    dodge parry~
+Imm    charm poison negative mental disease drowning~
+Vuln   fire holy~
+Form   edible poison sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#43208
+Name huge blue dragon~
+ShortD a blue dragon~
+LongD A huge blue dragon is resting here.~
+Desc This huge dragon is incredibly long and is covered with ocean blue scales.  
+It is resting here in a deep pool of water.
+~
+Race dragon~
+Align 0 -2
+XPMod 120
+Level 60
+Hitroll 2
+HitDice 6d10+525
+ManaDice 6d10+525
+DamDice 10d6+45
+DamType claw
+AC -440 -440 -460 -350
+Wealth 600
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_magic detect_hidden detect_good infrared flying~
+Off    area_attack crush~
+Imm    charm lightning light~
+Res    summon charm bash slash fire~
+Vuln   pierce cold~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP resting~
+DefPos resting~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#43209
+Name huge black rock worm~
+ShortD a rock worm~
+LongD A huge black worm is eating the stone here.~
+Desc This huge worm is black in color and very grotesque.  It has a mouth of sorts 
+at one end, and is using it to devour some rocks here.
+~
+Race centipede~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType chomp
+AC -200 -200 -200 -164
+Wealth 0
+Act    npc dont_wander aggressive stay_area~
+AffBy  dark_vision~
+Off    bash~
+Res    bash pierce~
+Vuln   cold~
+Form   edible poison animal insect mountable snake~
+Part   head legs brains eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#43200
+Name rusty cutlass~
+Short a `#`yrusty`^ cutlass~
+Desc A `#`yrusty`^ cutlass has been left here.~
+Level 30
+ItemType weapon~
+Cost 606
+Condition 75
+Asize 40
+Rsize 50
+Values sword 9 3 slash 0
+Weight 30
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc rusty cutlass~
+This old short curved sword is of fine make, but has not been taken
+care of and is very rusty.
+~
+End
+
+#43201
+Name dragon's eye~
+Short a dragon's eye~
+Desc A dragon's eye has been left here.~
+Level 60
+ItemType light~
+Cost 1313
+Asize 2
+Rsize 50
+Values 0 0 300 0 0
+Weight 5
+Material gemstone~
+Extra    glow nonmetal nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 60 -1 hp 4 0
+Affect modifier -1 60 -1 hitroll 2 0
+Affect modifier -1 60 -1 damroll 2 0
+Affect modifier -1 60 -1 mana 40 0
+ExtraDesc dragon's eye~
+This large gem is clear with a blue pulsing light in the center.  It is
+also vibrating slightly.
+~
+End
+
+#43202
+Name rusty old key~
+Short a `#`yrusty`^ old key~
+Desc A `#`yrusty`^ old key has been left here.~
+Level 1
+ItemType key~
+Cost 1
+Condition 75
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take hold~
+ExtraDesc rusty old key~
+This large key is made of steel and is old and rusty.
+~
+End
+
+#43203
+Name portable hole~
+Short a portable hole~
+Desc A portable hole has been folded up and left here..~
+Level 10
+ItemType container~
+Cost 640
+Condition 50
+Asize 0
+Rsize 50
+Values 9999 A 0 400 50
+Weight 1
+Material nothing~
+Extra    nonmetal burnproof chaos~
+Wear     take hold~
+ExtraDesc portable hole~
+This flat piece of extradimensional material can be folded up, and seems
+to magically store a lot.  
+~
+End
+
+#43204
+Name dusty silver helm~
+Short a dusty `#`Ssilver`^ helm~
+Desc A dusty `#`Ssilver`^ helm lies here.~
+Level 50
+ItemType armor~
+Cost 1000
+Asize 0
+Rsize 50
+Values 12 12 12 10 0
+Weight 70
+Material elvish silver~
+Extra    magic inventory nodegrade burnproof~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger~
+End
+
+#43205
+Name blue dragon fang~
+Short a `#`Bblue dragon's`^ fang~
+Desc The fang from a `#`Bblue dragon`^ lies here.~
+Level 60
+ItemType weapon~
+Cost 850
+Asize 0
+Rsize 50
+Values dagger 4 12 pierce H
+Weight 50
+Material unknown~
+Extra    nolocate nodegrade~
+Wear     take wield~
+Affect modifier -1 60 -1 quickness 2 0
+End
+
+#0
+
+
+
+#ROOMS
+#43200
+Name Entrance Room~
+Desc This small room is a mess.  Broken and rotting chairs are lying here, along 
+with an overturned table.  There is an exit to the outside to the west, and 
+small rooms to the north and south.  Just to the east are stairs leading up 
+and down.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc chair table~
+rotten old furniture, mostly broken.
+~
+Exit north 43201
+EDesc Storage Room.
+~
+Exit east 43203
+EDesc Stairs.
+~
+Exit south 43202
+EDesc Storage Room.
+~
+Exit west 30437
+EDesc You can exit this way.
+~
+End
+
+
+#43201
+Name Storage Room~
+Desc This small room appears to have once been used for storage.  There are hooks 
+on the wall, from which hang the remains of old ropes, and several rotting 
+wooden bins on the floor.  The exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bin~
+Old rotten wooden bins.  Empty and worthless.
+~
+ExtraDesc rope hook~
+Rotting old ropes hang on hooks.
+~
+Exit south 43200
+EDesc Entrance Room.
+~
+End
+
+
+#43202
+Name Storage Room~
+Desc This small room is completely bare except for a few stone blocks on the 
+floor.  Upon close inspection the walls and ceiling appear to be covered with 
+a thin layer of grey slime.  The exit is north.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stone blocks~
+Plain old stone blocks.  Heavy and boring.
+~
+ExtraDesc slime~
+Grey slime.
+~
+Exit north 43200
+EDesc Entrance Room.
+~
+End
+
+
+#43203
+Name Stairs~
+Desc The stone stairs lead up and down here.  Shuffling and grinding noises come 
+from both directions.  You can also go west into a room.
+
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 43200
+EDesc Entrance Room.
+~
+Exit up 43208
+EDesc Stairs.
+~
+Exit down 43213
+EDesc Stairs.
+~
+End
+
+
+#43204
+Name Living Quarters~
+Desc This appears to once have been the living quarters of whoever lived in 
+this place.  It is obviously unused for a long time, though.  The few 
+furnishings that remain are broken and overturned, and a thick layer of dust 
+covers everything.  There are small rooms to the north, south, and west, and 
+stairs to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc furnishings~
+Broken old furniture.
+~
+Exit north 43205
+EDesc Living Quarters.
+~
+Exit east 43208
+EDesc The stairs.
+~
+Exit south 43206
+EDesc Living Quarters.
+~
+Exit west 43207
+EDesc Storage Area.
+~
+End
+
+
+#43205
+Name Living Quarters~
+Desc This small bedroom once belonged to a resident of this place.  There is an 
+old bed here, along with a wooden desk.  A broken chair lies in pieces on the 
+floor, as do glass shards from a shattered oil lamp.  The only exit is south.
+
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc bed~
+An old bed.  Nothing unusual about it.
+~
+ExtraDesc desk~
+A nice old wooden desk.  There is nothing on it or in the drawers.
+~
+Exit south 43204
+EDesc Living Quarters.
+~
+End
+
+
+#43206
+Name Living Quarters~
+Desc This small room appears to have once belonged to a resident of this place. 
+There is an old bed here, and a chair, but not much else.  The only exit is 
+north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 43204
+EDesc Living Quarters.
+~
+End
+
+
+#43207
+Name Storage Area~
+Desc This tiny room was once a storage room for food.  Shelves line the
+walls, upon which are some old bottles and jars.  A small barrel sits 
+in the corner.  The only exit is east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 43204
+EDesc Living Quarters.
+~
+End
+
+
+#43208
+Name Stairs~
+Desc The stone stairs go up and down here, and there is a room to the west.  You 
+hear shuffling sounds from all three directions.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 43204
+EDesc Living Quarters.
+~
+Exit up 43209
+EDesc Stairs go up.
+~
+Exit down 43203
+EDesc Stairs.
+~
+End
+
+
+#43209
+Name Walkway~
+Desc You are on a walkway on the top of a lighthouse.  A huge glass sphere is 
+supported by chains to your west, but is not lit up in any way at the moment. 
+It doesn't appear to have anything to burn in it, perhaps it is powered 
+magically.  To the east you can see the ocean, and forest lies in all other 
+directions.  The walkway leads northwest or southwest, or stairs lead down 
+into the lighthouse.
+~
+Sector inside~
+ExtraDesc sphere globe~
+A huge thick glass sphere.
+~
+Exit down 43208
+EDesc Stairs.
+~
+Exit southwest 43212
+EDesc Walkway.
+~
+Exit northwest 43210
+EDesc Walkway.
+~
+End
+
+
+#43210
+Name Walkway~
+Desc You are on a walkway on the top of a lighthouse.  A huge glass sphere is 
+supported by chains to your south, but is not lit up in any way at the 
+moment.  It doesn't appear to have anything to burn in it, perhaps it is 
+powered magically.  To the east you can see the ocean, and forest lies in all 
+other directions.  The walkway leads southeast or southwest.
+~
+Sector inside~
+Exit southeast 43209
+EDesc Walkway.
+~
+Exit southwest 43211
+EDesc Walkway.
+~
+End
+
+
+#43211
+Name Walkway~
+Desc You are on a walkway on the top of a lighthouse.  A huge glass sphere is 
+supported by chains to your east, but is not lit up in any way at the moment. 
+It doesn't appear to have anything to burn in it, perhaps it is powered 
+magically.  To the east you can see the ocean, and forest lies in all other 
+directions.  The walkway leads northeast or southeast.
+~
+Sector inside~
+Exit northeast 43210
+EDesc Walkway.
+~
+Exit southeast 43212
+EDesc Walkway.
+~
+End
+
+
+#43212
+Name Walkway~
+Desc You are on a walkway on the top of a lighthouse.  A huge glass sphere is 
+supported by chains to your north, but is not lit up in any way at the 
+moment.  It doesn't appear to have anything to burn in it, perhaps it is 
+powered magically.  To the east you can see the ocean, and forest lies in all 
+other directions.  The walkway leads northwest or northeast.
+~
+Sector inside~
+Exit northeast 43209
+EDesc Walkway.
+~
+Exit northwest 43211
+EDesc Walkway.
+~
+End
+
+
+#43213
+Name Stairs~
+Desc Here some stone stairs lead upwards.  A small dark room is to the west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 43214
+EDesc Cellar.
+~
+Exit up 43203
+EDesc Stairs.
+~
+End
+
+
+#43214
+Name Cellar~
+Desc This small room is wet and cold.  Some old wooden shelves line the walls, but 
+look quite rotten.  There are stone stairs to the east, and you also notice a 
+metal trapdoor in the floor.
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc trapdoor~
+A metal door with a handle, set in the stone floor.
+~
+ExtraDesc shelves~
+Old wooden shelves, wet and rotting.
+~
+Exit east 43213
+EDesc Stairs.
+~
+Exit down 43215
+EFlags door closed locked hard~
+EKeyvnum 812
+EKeywords trapdoor~
+EDesc Natural Cave.
+~
+End
+
+
+#43215
+Name Natural Cave~
+Desc This narrow cave is wet and dark.  The stone walls are rough, and appear to 
+be formed naturally as opposed to man-made.  You can go west through the 
+cave, and there is a metal trapdoor set in the roof.
+
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc trapdoor~
+A metal trapdoor with a lock.
+~
+Exit west 43216
+EDesc Damp Cave.
+~
+Exit up 43214
+EFlags door closed locked hard~
+EKeyvnum 812
+EKeywords trapdoor~
+EDesc Cellar.
+~
+End
+
+
+#43216
+Name Damp Cave~
+Desc The narrow cave runs south and east here.  It is rather damp, and there are a 
+few trickles of water running along the walls and floor.  The stone is rough, 
+and the cave appears to have been formed naturally.
+
+~
+RoomFlags dark indoors~
+Sector cave~
+ExtraDesc water trickle~
+Water coming form some unknown source.
+~
+Exit east 43215
+EDesc Natural Cave.
+~
+Exit south 43217
+EDesc Natural cave.
+~
+End
+
+
+#43217
+Name Damp Cave~
+Desc The narrow cave runs north and south here.  It is rather damp, and there are 
+a few trickles of water running along the walls and floor.  The stone is 
+rough, and the cave appears to have been formed naturally.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 43216
+EDesc The cave runs north.
+~
+Exit south 43218
+EDesc The cave runs south.
+~
+End
+
+
+#43218
+Name Damp Cave~
+Desc The narrow cave runs north and southeast here.  It is rather damp, and there 
+are a few trickles of water running along the walls and floor.  The stone is 
+rough, and the cave appears to have been formed naturally.  To the southeast 
+it is a tight squeeze, but looks to open up into a larger cavern.
+~
+RoomFlags dark indoors~
+Sector cave~
+Exit north 43217
+EDesc Damp Cave.
+~
+Exit southeast 43219
+EDesc Cavern.
+~
+End
+
+
+#43219
+Name Cavern~
+Desc This huge cavern has somehow been hollowed out of the stone, perhaps by the 
+water that currently covers part of its floor.  The walls are very smooth, 
+and have water trickling down them in a few spots.  There is a salty scent to 
+the air, and a slight breeze from the east.  There is a wide opening in that 
+direction, and also a small tunnel leading northwest.
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 43220
+EDesc Damp Passage.
+~
+Exit northwest 43218
+EDesc Damp Cave.
+~
+End
+
+
+#43220
+Name Damp Passage~
+Desc This wide tunnel stretches west into the darkness, and east opens to a rocky 
+beach.  There are a few inches of water covering the ground now, but maybe 
+its not such a good idea to be here later during high tide.  There is water 
+trickling down the smooth walls in a few places.
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 43221
+EDesc Rocky Beach.
+~
+Exit west 43219
+EDesc Cavern.
+~
+End
+
+
+#43221
+Name Rocky Beach~
+Desc You are on a rocky beach on the edge of a great body of water.  The water 
+stretches east as far as you can see.  There is a wide tunnel leading into 
+the ground to your west. 
+~
+Sector field~
+Exit west 43220
+EDesc Damp Passage.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 43200 spec_fido
+M 43204 spec_cast_undead
+M 43205 spec_cast_undead
+M 43206 spec_cast_undead
+M 43208 spec_breath_lightning
+S
+
+
+
+#RESETS2
+M 0 43200 12 43200 3
+E 0 43200 100 wielded~
+M 0 43200 12 43200 3
+E 0 43200 100 wielded~
+M 0 43201 12 43201 3
+E 0 43200 100 wielded~
+M 0 43201 12 43201 3
+M 0 43201 12 43201 3
+M 0 43202 5 43202 5
+G 0 43202 -1
+M 0 43202 5 43202 5
+M 0 43202 5 43202 5
+M 0 43202 5 43202 5
+M 0 43202 5 43202 5
+M 0 43201 12 43204 3
+E 0 43200 100 wielded~
+M 0 43204 1 43205 1
+O 0 43204 -1 43205
+M 0 43207 12 43206 6
+M 0 43207 12 43206 6
+M 0 43207 12 43206 6
+M 0 43207 12 43206 6
+M 0 43207 12 43206 6
+M 0 43207 12 43206 6
+M 0 43203 10 43207 5
+M 0 43203 10 43207 5
+M 0 43203 10 43207 5
+M 0 43203 10 43207 5
+M 0 43203 10 43207 5
+M 0 43205 2 43210 1
+M 0 43203 10 43212 2
+M 0 43206 1 43214 1
+M 0 43209 2 43217 2
+M 0 43209 2 43217 2
+M 0 43208 1 43219 1
+G 0 43201 -1
+G 0 43205 -1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

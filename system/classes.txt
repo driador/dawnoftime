@@ -1,0 +1,195 @@
+######NAME        mage~
+Who_name          Mag~
+attr_prime[0] 3
+attr_prime[1] 9
+skill_adept       75
+thac0_00          20
+thac0_32          6
+hp_min            2
+hp_max            5
+fMana             true
+spinfo_letter     M~
+default_group     mage default~
+creation_selectable  true
+class_cast_type   1
+cast_type        cast~
+Flags            casting_affected_by_moon~
+recall 3000
+END
+
+
+######NAME        cleric~
+Who_name          Cle~
+attr_prime[0] 4
+attr_prime[1] 7
+skill_adept       75
+thac0_00          20
+thac0_32          2
+hp_min            2
+hp_max            7
+fMana             true
+spinfo_letter     C~
+default_group     cleric default~
+creation_selectable  true
+class_cast_type   2
+cast_type        commune~
+END
+
+
+######NAME        thief~
+Who_name          Thi~
+attr_prime[0] 1
+attr_prime[1] 6
+skill_adept       75
+thac0_00          20
+thac0_32          -4
+hp_min            2
+hp_max            8
+fMana             false
+spinfo_letter     -~
+default_group     thief default~
+creation_selectable  true
+cast_type        none~
+Flags            safe_flee_from_combat~
+END
+
+
+######NAME        warrior~
+Who_name          War~
+attr_prime[1] 6
+skill_adept       75
+thac0_00          20
+thac0_32          -10
+hp_min            3
+hp_max            10
+fMana             false
+spinfo_letter     -~
+default_group     warrior default~
+creation_selectable  true
+cast_type        none~
+Flags            deities~
+END
+
+
+######NAME        druid~
+Who_name          Dru~
+attr_prime[0] 4
+attr_prime[1] 8
+skill_adept       75
+thac0_00          20
+hp_min            2
+hp_max            7
+fMana             true
+spinfo_letter     D~
+default_group     druid default~
+creation_selectable  true
+class_cast_type   3
+cast_type        conjurer~
+Flags            totems~
+END
+
+
+######NAME        paladin~
+Who_name          Pal~
+attr_prime[1] 4
+skill_adept       75
+thac0_00          20
+thac0_32          -9
+hp_min            3
+hp_max            9
+fMana             false
+spinfo_letter     P~
+default_group     paladin default~
+creation_selectable  true
+class_cast_type   2
+cast_type        commune~
+Flags            poison_immunity curse_immunity plague_immunity dammods_with_holyweapons~
+END
+
+
+######NAME        ranger~
+Who_name          Ran~
+attr_prime[0] 4
+attr_prime[1] 5
+skill_adept       75
+thac0_00          20
+thac0_32          -8
+hp_min            3
+hp_max            10
+fMana             false
+spinfo_letter     R~
+default_group     ranger default~
+creation_selectable  true
+class_cast_type   3
+cast_type        conjurer~
+END
+
+
+######NAME        barbarian~
+Who_name          Bar~
+attr_prime[1] 5
+skill_adept       70
+thac0_00          20
+thac0_32          -16
+hp_min            4
+hp_max            12
+fMana             false
+spinfo_letter     -~
+default_group     barbarian default~
+creation_selectable  true
+cast_type        none~
+Flags            magic_antipathy level_based_ac~
+END
+
+
+######NAME        spellfilcher~
+Who_name          Spf~
+attr_prime[0] 2
+attr_prime[1] 6
+skill_adept       75
+thac0_00          20
+thac0_32          5
+hp_min            2
+hp_max            8
+fMana             true
+spinfo_letter     S~
+default_group     spellfilcher default~
+creation_selectable  true
+class_cast_type   1
+cast_type        cast~
+Flags            casting_halfaffected_by_moon~
+END
+
+
+######NAME        bard~
+Who_name          Brd~
+attr_prime[0] 2
+attr_prime[1] 7
+skill_adept       75
+thac0_00          20
+thac0_32          -4
+hp_min            2
+hp_max            8
+fMana             false
+spinfo_letter     B~
+default_group     bard default~
+creation_selectable  false
+class_cast_type   4
+cast_type        sing~
+END
+
+
+######NAME        knight~
+Who_name          ???~
+skill_adept       75
+hp_min            1
+hp_max            5
+fMana             false
+spinfo_letter     -~
+default_group     knight default~
+creation_selectable  false
+cast_type        none~
+END
+
+
+EOF~

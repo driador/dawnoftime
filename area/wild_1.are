@@ -1,0 +1,5939 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Wilderness I~
+ShortName   ~
+Builders    None~
+Credits     Reave Siobhan~
+VNUMs       30500 30999
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#30500
+Name woodchuck~
+ShortD a woodchuck~
+LongD A woodchuck is sitting on its hind legs looking at you.~
+Desc This small fat creature is covered with short brown fur.  It has a short 
+black tail.
+~
+Race rabbit~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 90
+Wealth 0
+Act    npc stay_area noalign~
+Off    dodge fast~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye~
+StartP sitting~
+DefPos sitting~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#30501
+Name rabbit~
+ShortD a rabbit~
+LongD A rabbit is here, eating some leaves.~
+Desc This small rabbit is covered with fluffy brown hair.  Its teeth look pretty 
+sharp.
+~
+Race rabbit~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 90
+Wealth 0
+Act    npc stay_area noalign~
+Off    dodge fast~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye~
+StartP sitting~
+DefPos sitting~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#30502
+Name pheasant~
+ShortD a pheasant~
+LongD A pheasant blends in with the background here.~
+Desc This large bird has brown and black feathers, and blends in with the forest 
+very nicely.
+~
+Race water fowl~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+1
+DamDice 1d5+0
+DamType peck
+AC 80 80 80 80
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying swim~
+Res    drowning~
+Form   edible animal mountable bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#30503
+Name grey squirrel~
+ShortD a grey squirrel~
+LongD A grey squirrel is searching for nuts.~
+Desc This big squirrel has short grey fur, and is searching around for
+some nuts.
+~
+Race rabbit~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 90
+Wealth 0
+Act    npc stay_area noalign~
+Off    dodge fast~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#30504
+Name Malache A dark figure amassed in shadows~
+ShortD a dark figure amassed in shadows~
+LongD A dark figure amassed in shadows is here.~
+Desc This figure stands near seven feet in height, its body is completely 
+surrounded by some sort of flowing darkness, that is like the such of smoke 
+yet flows like water.  Piercing crimson eyes glimmer from out of the 
+darkness of its face, and a sudden sting of fear seems to sweep over you.  
+~
+Race human~
+Align -3 -2
+Level 300
+Hitroll 0
+HitDice 100d1+5000
+ManaDice 100d1+5000
+DamDice 10d10+60
+DamType none
+AC -500 -500 -500 -500
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden infrared~
+Off    area_attack bash kick~
+Imm    summon charm magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 30500 malache~
+MProg BRIBE 30501 500000~
+MProg DELAY 30503 100~
+MProg GIVE 30502 30500~
+END
+
+#30505
+Name unseen-mob-of-laughter-and-music~
+ShortD unseen-mob-of-laughter-and-music~
+LongD Unseen-mob-of-laughter-and-music~
+Desc ~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 30504 10~
+END
+
+#30506
+Name lady-bug~
+ShortD a lady-bug~
+LongD A lady-bug is flying here.~
+Desc This bug is ronded and has black-spotted red wings. Its tiny and has six short 
+legs. 
+~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d1+0
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 90
+Wealth 0
+Act    npc stay_area~
+AffBy  flying~
+Form   edible~
+Part   head guts eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#30507
+Name blue bat~
+ShortD a blue bat~
+LongD A blue bat is hanging upside-down here.~
+Desc This bat is blue and each wing is twice the size of the body. Its a small bat 
+with dark blue eyes.
+~
+Race bat~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 1d2+1
+DamDice 1d5+1
+DamType drain
+AC 60 60 60 60
+Wealth 0
+Act    npc stay_area~
+AffBy  flying dark_vision~
+Off    dodge fast~
+Vuln   light~
+Form   edible animal biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#30508
+Name grey monkey golden mane~
+ShortD a grey monkey with a golden mane~
+LongD A grey monkey with a golden mane is making tricks here.~
+Desc You see a grey monkey with a long tail. On its head, the fur grows longer, 
+forming a golden mane.
+~
+Race human~
+Align 0 0
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 1d1+1
+DamDice 1d7+1
+DamType thwack
+AC 40 40 40 40
+Wealth 0
+Act    npc stay_area~
+AffBy  detect_hidden hide~
+Off    dodge~
+Form   edible biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#30509
+Name dark skunk white strips~
+ShortD a dark skunk with two white strips~
+LongD A dark skunk with two white strips is stinking here.~
+Desc ~
+Race fox~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d2+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 50
+Wealth 0
+Act    npc stay_area~
+AffBy  calm dark_vision~
+Off    dodge fast~
+Imm    disease~
+Form   edible animal mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#30510
+Name silver-green dragonfly~
+ShortD a silver-green dragonfly~
+LongD A silver-green dragonfly is flying noisily here.~
+Desc This inssect has a long body and four long transparent wings. Its colour 
+varies, depending on the light, between silver and green.
+~
+Race unique~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+0
+DamDice 1d5+0
+DamType crush
+AC 80 80 80 80
+Wealth 0
+Act    npc stay_area~
+AffBy  infrared flying haste~
+Form   edible insect~
+Part   head guts eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#30511
+Name silver fish~
+ShortD a silver fish~
+LongD A silver fish is swimming wildly here.~
+Desc You see a silver fish with big round eyes. It is a big fish, yet very fast.
+~
+Race lizard~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 1d1+1
+DamDice 1d7+1
+DamType chomp
+AC 40 40 40 40
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  haste swim~
+Res    poison~
+Vuln   fire~
+Form   edible animal fish cold_blood~
+Part   head brains guts eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#30512
+Name yellow firefly~
+ShortD a yellow firefly~
+LongD `#`Y(Glowing)`^ A yellow firefly is shining here.~
+Desc This is a yellow-coloured firefly. It is glowing in the dark of the night, 
+looking like a star, which came down from the sky.
+~
+Race unique~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d1+0
+DamDice 1d5+0
+DamType crush
+AC 80 80 80 80
+Wealth 0
+Act    npc stay_area~
+AffBy  infrared flying haste~
+Form   edible insect~
+Part   head guts eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#30513
+Name grey wolf~
+ShortD a grey wolf~
+LongD A grey wolf is hunting around here.~
+Desc You see a `#`sgrey`c wolf with a long tail. This wolf is not huge, nor small, but its legs 
+seem too long for his body. His snout is small, but his ears are big. A funny wolf, 
+indeed.
+~
+Race wolf~
+Align 0 0
+Level 27
+Hitroll 0
+HitDice 4d5+120
+ManaDice 1d1+0
+DamDice 5d4+7
+DamType bite
+AC -80 -80 -80 -60
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#30514
+Name green-striped blue snake~
+ShortD a green-striped blue snake~
+LongD A green-striped blue snake is moving slowly here.~
+Desc This is a big snake, with triangular head and thick tail, which gets thinner 
+quickly at the end. 
+~
+Race snake~
+Align 0 0
+Level 9
+Hitroll 0
+HitDice 2d5+12
+ManaDice 1d1+1
+DamDice 1d8+2
+DamType bite
+AC 20 20 20 20
+Wealth 0
+Act    npc stay_area~
+AffBy  infrared pass_door haste dark_vision~
+Res    poison~
+Vuln   cold~
+Form   edible animal reptile snake cold_blood~
+Part   head brains guts eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+MProg RANDOM 31019 3~
+MProg GREET 31020 10~
+END
+
+#30515
+Name big brown spider~
+ShortD a big brown spider~
+LongD A big brown spider is looking for a place to make its web.~
+Desc This is a big spider, with furry long legs. Its eight legs move slowly, as the spider 
+walks aroung, searching for a safe place.
+~
+Race snake~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 1d1+0
+DamDice 1d6+1
+DamType sting
+AC 50 50 50 50
+Wealth 0
+Act    npc stay_area noalign~
+Res    poison~
+Vuln   cold~
+Form   edible animal insect cold_blood~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#30516
+Name white badger red strips~
+ShortD a white badger with red strips~
+LongD A white badger with red strips is sniffing the ground here.~
+Desc You see a white badger with red strips. It is small for a badger, but not that 
+small. Its eyes are dark green and its claws are dark grey.
+~
+Race cat~
+Align 0 0
+Level 13
+Hitroll 1
+HitDice 2d5+50
+ManaDice 0d0+1
+DamDice 2d5+3
+DamType none
+AC -10 -10 -10 0
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal mammal~
+Part   head legs heart brains guts ear eye tail claws~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#30517
+Name dark cougar~
+ShortD a dark cougar~
+LongD A dark cougar is sneaking around you.~
+Desc This is a dark cougar. Its eyes are red and it has a huge mouth, filled with sharp 
+teeth. Its long tail keeps on waving, while its ears move backwards.
+~
+Race cat~
+Align 0 0
+Level 38
+Hitroll 0
+HitDice 5d6+225
+ManaDice 1d1+0
+DamDice 5d6+12
+DamType claw
+AC -130 -130 -130 -100
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#30518
+Name red fox~
+ShortD a red fox~
+LongD A red fox is running around here~
+Desc You see a red fox with a huge furry tail. It has a small mouth, but its teeth 
+are very sharp. Its eyes are dark blue and its paws are small and delicate.
+~
+Race fox~
+Align 0 0
+Level 16
+Hitroll 0
+HitDice 3d5+67
+ManaDice 1d1+0
+DamDice 2d6+4
+DamType bite
+AC -20 -20 -20 -10
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   animal mountable mammal~
+Part   head legs heart brains guts ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#30519
+Name white eagle~
+ShortD a red fox~
+LongD A red fox is running around here.~
+Desc You see a white feathered eagle. Its wing tips are black and there are several 
+black spots on its breast. This eagle has a big beak and some respectable claws.
+~
+Race song bird~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 1d1+0
+DamDice 1d7+1
+DamType peck
+AC 40 40 40 40
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  flying dark_vision~
+Off    dodge fast~
+Form   edible animal biped bird~
+Part   head legs heart brains guts eye wings tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#30520
+Name dark brown elk~
+ShortD a dark brown elk~
+LongD A dark brown elk is moving its ears back and forward here.~
+Desc This is a dark elk with huge and pointy horns. Its ears are a little too big for 
+its head, but they can only make the elk look charming. Its hoofs are grey and 
+shiny, just like its eyes.
+~
+Race horse~
+Align 0 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 1d1+0
+DamDice 2d8+5
+DamType none
+AC -40 -40 -40 -40
+Wealth 0
+Act    npc stay_area noalign~
+Off    fast kick~
+Form   edible animal mammal~
+Part   head legs heart brains guts ear eye tail~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#30521
+Name white mole~
+ShortD a white mole~
+LongD A white mole is moving its nose here.~
+Desc You see a very small and white mole, with white eyes. When you look at its paws, 
+you are able to see some sharp claws. This mole has a small pink snout, which is 
+kept up, to sniff the air.
+~
+Race cat~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 1d1+0
+DamDice 1d8+1
+DamType bite
+AC 40 40 40 40
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal mammal~
+Part   head legs heart brains guts ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#30522
+Name small mole~
+ShortD a small mole~
+LongD A small mole is digging the ground around here.~
+Desc This is a small mole. You can see its eyes are soft grey, while its fur is dark 
+grey. It has some big claws, which much be very useful to dig the ground.
+~
+Race fox~
+Align 0 0
+Level 9
+Hitroll 0
+HitDice 2d5+12
+ManaDice 1d1+0
+DamDice 1d8+2
+DamType claw
+AC 20 20 20 20
+Wealth 0
+Act    npc stay_area noalign~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal mammal~
+Part   head legs heart brains guts ear eye tail~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#30523
+Name Borlin tall human spirit wizened old ranger~
+ShortD the spirit of an old ranger~
+LongD A tall human spirit of a wizened old ranger is here, hovering around the spring.~
+Desc This tall humanoid figure looks as if he used to be a human but now is 
+nothing more than an ethereal apparition of what he used to be.  His 
+appearance is that of stern features and appearance.  
+~
+Race human~
+Align 1 3
+XPMod 120
+Level 68
+Hitroll 1
+HitDice 7d10+350
+ManaDice 100d10+500
+DamDice 7d8+32
+DamType punch
+AC -380 -380 -380 -310
+Wealth 500
+Act    npc dont_wander no_tame stay_area undead cleric warrior noautosocial~
+AffBy  detect_invis detect_hidden sanctuary infrared protect_evil sneak flying pass_door haste regeneration~
+Off    bash disarm dodge fast kick parry trip~
+Imm    summon charm poison negative disease sleep wood~
+Res    magic holy~
+Vuln   fire light~
+Form   edible instant_decay sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 30511 holy water~
+MProg SPEECH 30524 honesty~
+MProg FIGHT 30506 5~
+MProg GRALL 30507 100~
+MProg DELAY 30508 100~
+END
+
+#30524
+Name Merk~
+ShortD a thin grizzled old man~
+LongD A thin grizzled old man rocks slowly in his rocking chair.~
+Desc A gaunt old man with a grizzled beard sits in a rocking chair by the window. 
+ He rocks slowly back and forth, listening to the to the sound of the trees 
+and chirping of the birds.  An absent smile breaks over his wrinkled face 
+as if remembering days of old.  He still proudly wearing his white robes, 
+now a little thread-bare and a worn.  A dark green wool shawl is draped 
+loosely around his neck to protect him from the elements.  His hair is the 
+colour of silver and his limbs are thin and gnarled.  
+~
+Race human~
+Align 0 0
+Level 96
+Hitroll 0
+HitDice 10d13+460
+ManaDice 0d0+1
+DamDice 10d12+50
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#30525
+Name old_man_stage_1 old man~
+ShortD an old and stooped man~
+LongD A stooped and grungy old man is here~
+Desc This man is dressed in rags, he is unshaven and looks to be
+suffering from sleep deprevation or some wasting disease.
+His finger nails are long and his hair unkept, his eyes
+although sunken are keen and his apperance masks the obvious
+intelligence lurking behind the visage.
+~
+Race unique~
+Align 3 -2
+XPMod 5
+Level 100
+Hitroll 2
+HitDice 5d10+10000
+ManaDice 5d10+4000
+DamDice 8d6+2000
+DamType drain
+AC -600 -600 -600 -600
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign outdoors indoors~
+AffBy  detect_invis detect_hidden infrared flying pass_door haste berserk regeneration~
+Off    area_attack bash dodge fade parry crush~
+Imm    magic weapon fire~
+Vuln   cold~
+Form   instant_decay undead blob~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material mist
+MProg SPEECH 30509 merk~
+END
+
+#30526
+Name deer buck~
+ShortD a white-tailed buck~
+LongD A white-tailed buck is startled by your approach~
+Desc This buck is a majestic creature, curiously unafraid of you.  It has an 
+impressive rack of at least 20 points.  
+~
+Race dog~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 1d1+90
+ManaDice 3d9+208
+DamDice 2d6+3
+DamType charge
+AC -20 -20 -20 10
+Wealth 0
+Act    npc stay_area wimpy noalign indoors~
+Off    bash dodge fast kick~
+Vuln   pierce~
+Form   edible animal mountable mammal~
+Part   head legs heart brains guts feet ear eye claws fangs horns~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#30500
+Name a large burlap pouch~
+Short a large burlap pouch~
+Desc A large burlap pouch lies here.~
+Level 0
+ItemType container~
+Cost 10
+Asize 0
+Rsize 50
+Values 1000 A 0 20 100
+Weight 5
+Material cloth~
+Extra    nonmetal nolocate nodegrade~
+Wear     take hold~
+End
+
+#30501
+Name beautiful blue glass coffin~
+Short `#a beautiful `Cblue glass`^ coffin~
+Desc `#a beautiful `Cblue glass`^ coffin stands here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 1000 0 0 5 100
+Weight 500
+Material glass~
+Extra    nodegrade~
+ExtraDesc beautiful blue coffin~
+This magnificent coffin has been made from some sort of translucent bluish 
+glass.  It seems to emit some sort of white aura, and its unmistakable 
+craftsmanship is extraordinaire to the least.  
+~
+ExtraDesc glass~
+Looking through the glass of the coffin, you notice a sleek graceful woman, 
+with flowing long hair lying inside of it.  She wears a white flowing dress 
+and two small silver necklaces dangle from her neck.  A blue-steel ring 
+sparkles off her finger, as if glimmering and calling out to you.  Her face 
+is peaceful and the beauty that marks her is enchanting to say the least.  
+She looks as if she is asleep in some sort of deep slumber, straining your 
+eyes to look more closer at her through the translucent glass, you can't 
+tell if she is breathing or not.  
+~
+End
+
+#30502
+Name sleek graceful woman flowing long hair corpse body~
+Short a sleek graceful woman, with flowing long hair~
+Desc A sleek graceful woman, with flowing long hair lies here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flesh~
+Extra    nodegrade~
+End
+
+#30503
+Name cloak of shadows~
+Short a cloak of shadows~
+Desc A cloak of shadows lies here.~
+Level 50
+ItemType armor~
+Cost 2500
+Asize 0
+Rsize 50
+Values 8 10 9 7 0
+Weight 5
+Material spidersilk~
+Extra    nonmetal nolocate nodegrade burnproof~
+Wear     take about~
+Affect modifier -1 50 -1 quickness 5 0
+ExtraDesc cloak shadows~
+This exotic looking cloak, has been sewn from a rare sort of silk more 
+commonly known as spidersilk. its as light as a feather and seems to
+amass you in shadows just by holding it.
+~
+End
+
+#30504
+Name a pearl white rose~
+Short `#a bouquet of pearl `Wwhite`^ roses~
+Desc `#a bouquet of pearl `Wwhite`^ roses lies here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material plant~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc pearl white rose~
+These beautiful pearl white roses have bloomed to an enormous size.  
+Wrapped into a bouquet with fine white silk tied around it.  Their scent is 
+mysteriously and sweet all in one, such beauty and smell that sends your 
+senses tingling.  
+~
+End
+
+#30505
+Name small crystal clear spring~
+Short a small crystal clear spring~
+Desc A small crystal clear spring is here, gushing out of the ground.~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 -1 water 0 0
+Weight 0
+Material water~
+Extra    nodegrade burnproof~
+End
+
+#30506
+Name dull brass neckguard~
+Short `#a `ydull brass`^ neckguard~
+Desc `#a `ydull brass`^ neckguard lies here.~
+Level 65
+ItemType armor~
+Cost 2650
+Asize 0
+Rsize 50
+Values 12 10 11 8 0
+Weight 30
+Material brass~
+Extra    magic antievil antineutral nolocate nodegrade burnproof~
+Wear     take neck~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hitroll 4 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hp 8 0
+ExtraDesc dull brass neckguard~
+This simple and rather plain appearing neckguard looks to be made from some 
+sort of dull in colour type of brass.  It has a strange pattern or symbol of 
+some sorts engraved on it.  
+~
+End
+
+#30507
+Name radiant white broadaxe avenger axe~
+Short a radiant white broadaxe~
+Desc A broadaxe radianting an aura of white lies here.~
+Level 70
+ItemType weapon~
+Cost 3150
+Asize 0
+Rsize 50
+Values axe 15 4 divine I
+Weight 50
+Material iron~
+Extra    magic antievil antineutral nolocate nodegrade burnproof~
+Extra2   nochaoslace~
+Wear     take wield~
+ClassAllowances ranger~
+Affect modifier -1 70 -1 damroll 4 0
+ExtraDesc radiant white broadaxe avenger~
+This fairly large iron axe seems to glimmer with a white aura of sorts, its 
+blade looks rather shape and looks as if it could slice a tree down in one 
+swipe.  
+~
+End
+
+#30508
+Name dark green leather tunic~
+Short a dark green leather tunic~
+Desc A dark green leather tunic lies here.~
+Level 65
+ItemType armor~
+Cost 2650
+Asize 0
+Rsize 50
+Values 21 23 23 16 0
+Weight 30
+Material leather~
+Extra    magic antievil antineutral nolocate nodegrade burnproof~
+Wear     take torso~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 damroll 5 0
+Affect modifier -1 65 -1 hitroll 5 0
+Affect modifier -1 65 -1 hp 8 0
+ExtraDesc dark green leather tunic~
+This decent looking tunic has been made from a sort of leather and been dyed 
+to a dark green.  With leather strippings hanging off the sides of it, and a 
+few chain link straps dangling from the sides, its appearance is rather 
+exotic and looks to be expensive.  
+~
+End
+
+#30509
+Name dark green leather pants~
+Short some dark green leather pants~
+Desc Some dark green leather pants lie here.~
+Level 65
+ItemType armor~
+Cost 2650
+Asize 0
+Rsize 50
+Values 15 17 17 13 0
+Weight 25
+Material leather~
+Extra    magic antievil antineutral nolocate nodegrade burnproof~
+Wear     take legs~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hp 6 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc dark green leather pants~
+This leather pants have been dyed in a dark green dye and polished over with 
+some sort of clear acrylic.  On the belt loops of the pants there is small 
+metal links with holes in them and on the sides the leather is fringed 
+slightly.  
+~
+End
+
+#30510
+Name dark green leather boots~
+Short some dark green leather boots~
+Desc Some dark green leather boots lie here.~
+Level 65
+ItemType armor~
+Cost 2755
+Asize 0
+Rsize 50
+Values 12 14 14 11 0
+Weight 20
+Material leather~
+Extra    magic antievil antineutral nolocate nodegrade burnproof~
+Wear     take feet~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hitroll 4 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hp 6 0
+ExtraDesc dark green leather boots~
+These leather books have been dyed in a dark green dye, the soles of the 
+boots appear to have been nailed together to the leather and have been sewn 
+into many layers.  
+~
+End
+
+#30511
+Name spiraled green stone~
+Short `#a spiraled `ggreen stone`^~
+Desc `#a spiraled `ggreen stone`^ lies here.~
+Level 65
+ItemType gem~
+Cost 2475
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    magic antievil antineutral nolocate nodegrade burnproof~
+Wear     take float~
+ClassAllowances ranger~
+Affect modifier -1 65 -1 hitroll 6 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hp 4 0
+ExtraDesc spiraled green stone~
+This small stone looks irregular and exotic in dimensional features.  
+Spiraling in a strange way and the colour of emerald this little stone looks 
+like it could be quite valuable.  
+~
+End
+
+#30512
+Name white metal bracer valor ~
+Short `#the bracer of `WValor`^~
+Desc `#A `Wwhite metallic`^ bracer lies here, humming softly.~
+Level 65
+ItemType armor~
+Cost 4500
+Asize 0
+Rsize 50
+Values 10 10 10 10 0
+Weight 20
+Material metal~
+Extra    glow hum magic bless antievil antineutral nolocate nodegrade burnproof norestring~
+Wear     take wrist~
+ClassAllowances paladin~
+Affect modifier -1 65 -1 hp 8 0
+Affect modifier -1 65 -1 saves -4 0
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hitroll 4 0
+End
+
+#30513
+Name red metal bracer malice~
+Short `#the bracer of `RMalice`^~
+Desc `#A `Rred metallic`^ bracer lies here, humming softly.~
+Level 65
+ItemType armor~
+Cost 4500
+Asize 0
+Rsize 50
+Values 10 10 10 10 0
+Weight 20
+Material metal~
+Extra    hum dark evil magic antigood antineutral nolocate nodegrade burnproof chaos norestring~
+Wear     take wrist~
+ClassAllowances paladin~
+Affect modifier -1 65 -1 strength 3 0
+Affect modifier -1 65 -1 saves -4 0
+Affect modifier -1 65 -1 hitroll 5 0
+Affect modifier -1 65 -1 damroll 5 0
+End
+
+#30514
+Name grey metal bracer temperance~
+Short `#the bracer of `XTemperance`^~
+Desc }#A `Xgrey metallic`^ bracer lies here, humming softly.~
+Level 65
+ItemType armor~
+Cost 4500
+Asize 0
+Rsize 50
+Values 10 10 10 10 0
+Weight 20
+Material metal~
+Extra    hum magic bless antigood antievil nolocate nodegrade burnproof norestring~
+Wear     take wrist~
+ClassAllowances paladin~
+Affect modifier -1 65 -1 hp 8 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hitroll 6 0
+End
+
+#30515
+Name Green Quilted Bed~
+Short a green quilted bed~
+Desc A small bed with a fluffy quilted matress stands against a wall.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 10000 BEHKR 100 100
+Weight 0
+Material unknown~
+Extra    nonmetal nodegrade~
+ExtraDesc bed ~
+The bed is pushed up against the wall, presumably to make the rather cramped 
+room look a little larger.  It is a small bed but apparently very 
+comfortable.  A thick fluffy green quilt has been carelessly draped over it 
+and two goosedown white pillows are thrown against the wooden headboard.  
+~
+End
+
+#30516
+Name flask crystal holy blessed water~
+Short a flask of holy water~
+Desc A flask of holy water swirls about magically here.~
+Level 1
+ItemType drinkcontainer~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10 water 0 0
+Weight 10
+Material holy water~
+Extra    magic bless nolocate nodegrade norestring~
+Wear     take~
+End
+
+#30517
+Name token_5_aarislan_quest~
+Short token_5_aarislan_quest_mprog30511~
+Desc Token_5_aarislan_quest_mprog30511~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#30518
+Name token_6_aarislan_quest~
+Short token_6_aarislan_quest_mprog30511~
+Desc Token_6_aarislan_quest_mprog30511~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#30519
+Name token_7_aarislan_quest~
+Short token_7_aarislan_quest_mprog6926~
+Desc Token_7_aarislan_quest_mprog6926~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#30520
+Name 30 thirty rack antlers~
+Short a 30-point rack~
+Desc A large set of antlers rest here.~
+Level 15
+ItemType armor~
+Cost 60
+Asize 20
+Rsize 50
+Values 2 2 2 2 0
+Weight 20
+Material bone~
+Extra    nonmetal nolocate nodegrade~
+Wear     take head~
+Affect modifier -1 0 -1 strength 2 0
+ExtraDesc antlers rack~
+This set of antlers has thirty points and would look nice in any
+living room.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#30500
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their leaves 
+blocking out the sky above.  You can hear animals moving around in the 
+branches.  The way south is blocked by extremely heavy growth.  Looking more 
+closely in the thick growth you notice what looks like a small path behind 
+the bushes.  
+~
+Sector forest~
+Exit north 30501
+EDesc More trees. 
+~
+Exit east 30503
+EDesc More trees.
+~
+Exit south 30776
+EFlags door closed~
+EKeywords bush~
+Exit west 30348
+EDesc More trees.
+~
+End
+
+
+#30501
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30353
+EDesc More trees.
+~
+Exit east 30504
+EDesc More trees.
+~
+Exit south 30500
+EDesc More trees.
+~
+Exit west 30349
+EDesc More trees.
+~
+End
+
+
+#30502
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their leaves 
+blocking out the sky above.  You can hear animals moving around in the 
+branches.  
+~
+Sector forest~
+Exit north 30312
+EDesc More trees.
+~
+Exit east 30507
+EDesc More trees.
+~
+Exit south 30643
+Exit west 30352
+EDesc More trees.
+~
+End
+
+
+#30503
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30504
+EDesc More trees.
+~
+Exit east 30511
+EDesc More trees.
+~
+Exit south 30145
+EDesc More trees.
+~
+Exit west 30500
+EDesc More trees.
+~
+End
+
+
+#30504
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30505
+EDesc More trees.
+~
+Exit east 30512
+EDesc More trees.
+~
+Exit south 30503
+EDesc More trees.
+~
+Exit west 30501
+EDesc More trees.
+~
+End
+
+
+#30505
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30506
+EDesc More trees.
+~
+Exit east 30513
+EDesc More trees.
+~
+Exit south 30504
+EDesc More trees.
+~
+Exit west 30353
+EDesc More trees.
+~
+End
+
+
+#30506
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their leaves 
+blocking out the sky above.  You can hear animals moving around in the 
+branches.  
+~
+Sector forest~
+Exit north 30507
+EDesc More trees.
+~
+Exit east 30514
+EDesc More trees.
+~
+Exit south 30505
+EDesc More trees.
+~
+Exit west 30643
+End
+
+
+#30507
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30313
+EDesc More trees.
+~
+Exit east 30193
+EDesc More trees.
+~
+Exit south 30506
+EDesc More trees.
+~
+Exit west 30502
+EDesc More trees.
+~
+End
+
+
+#30508
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their leaves 
+blocking out the sky above.  You can hear animals moving around in the 
+branches.  There is what looks like a faint animal path leading east through 
+the brush.  
+~
+Sector forest~
+Exit north 30509
+EDesc More trees.
+~
+Exit east 21500
+Exit south 30107
+EDesc More trees.
+~
+Exit west 30140
+EDesc More trees.
+~
+End
+
+
+#30509
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30510
+EDesc More trees.
+~
+Exit east 30516
+EDesc More trees.
+~
+Exit south 30508
+EDesc More trees.
+~
+Exit west 30143
+EDesc More trees.
+~
+End
+
+
+#30510
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30511
+EDesc More trees.
+~
+Exit east 30517
+EDesc More trees.
+~
+Exit south 30509
+EDesc More trees.
+~
+Exit west 30145
+EDesc More trees.
+~
+End
+
+
+#30511
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30512
+EDesc More trees.
+~
+Exit east 30518
+EDesc More trees.
+~
+Exit south 30510
+EDesc More trees.
+~
+Exit west 30503
+EDesc More trees.
+~
+End
+
+
+#30512
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their leaves 
+blocking out the sky above.  You can hear animals moving around in the 
+branches.  To the northeast a small keep rises up out of the shadows and 
+stands dilapidated.  
+~
+Sector forest~
+Exit north 30513
+EDesc More trees.
+~
+Exit east 30519
+EDesc More trees.
+~
+Exit south 30511
+EDesc More trees.
+~
+Exit west 30504
+EDesc More trees.
+~
+End
+
+
+#30513
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30514
+EDesc More trees.
+~
+Exit east 30539
+Exit south 30512
+EDesc More trees.
+~
+Exit west 30505
+EDesc More trees.
+~
+End
+
+
+#30514
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30193
+EDesc More trees.
+~
+Exit east 30521
+EDesc More trees.
+~
+Exit south 30513
+EDesc More trees.
+~
+Exit west 30506
+EDesc More trees.
+~
+End
+
+
+#30515
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+End
+
+
+#30516
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their leaves 
+blocking out the sky above.  You can hear animals moving around in the 
+branches.  The brush is so heavy to the south that it is impassable.  
+~
+Sector forest~
+Exit north 30517
+EDesc More trees.
+~
+Exit east 30523
+EDesc More trees.
+~
+Exit west 30509
+EDesc More trees.
+~
+End
+
+
+#30517
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30518
+EDesc More trees.
+~
+Exit east 30524
+EDesc More trees.
+~
+Exit south 30516
+EDesc More trees.
+~
+Exit west 30510
+EDesc More trees.
+~
+End
+
+
+#30518
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30519
+EDesc More trees.
+~
+Exit east 30525
+EDesc More trees.
+~
+Exit south 30517
+EDesc More trees.
+~
+Exit west 30511
+EDesc More trees.
+~
+End
+
+
+#30519
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all directions, 
+but the heavy growth makes it hard to see where they are at.  The roots and 
+branches crossing your way make it difficult to travel.  
+~
+Sector forest~
+Exit north 30539
+Exit east 30526
+EDesc More trees.
+~
+Exit south 30518
+EDesc More trees.
+~
+Exit west 30512
+EDesc More trees.
+~
+End
+
+
+#30520
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+RoomFlags imm_only~
+Sector forest~
+End
+
+
+#30521
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30192
+EDesc More trees.
+~
+Exit east 30528
+EDesc More trees.
+~
+Exit south 30539
+Exit west 30514
+EDesc More trees.
+~
+End
+
+
+#30522
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their leaves 
+blocking out the sky above.  You can hear animals moving around in the 
+branches.  The brush is so think to the west that it is impassable.  
+~
+Sector forest~
+Exit north 30523
+EDesc More trees.
+~
+Exit east 30529
+EDesc More trees.
+~
+Exit south 30109
+EDesc More trees.
+~
+End
+
+
+#30523
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30524
+EDesc More trees.
+~
+Exit east 30530
+EDesc More trees.
+~
+Exit south 30522
+EDesc More trees.
+~
+Exit west 30516
+EDesc More trees.
+~
+End
+
+
+#30524
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30525
+EDesc More trees.
+~
+Exit east 30531
+EDesc More trees.
+~
+Exit south 30523
+EDesc More trees.
+~
+Exit west 30517
+EDesc More trees.
+~
+End
+
+
+#30525
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30526
+EDesc More trees.
+~
+Exit east 30532
+EDesc More trees.
+~
+Exit south 30524
+EDesc More trees.
+~
+Exit west 30518
+EDesc More trees.
+~
+End
+
+
+#30526
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30527
+EDesc More trees.
+~
+Exit east 30533
+EDesc More trees.
+~
+Exit south 30525
+EDesc More trees.
+~
+Exit west 30519
+EDesc More trees.
+~
+End
+
+
+#30527
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all directions, 
+but the heavy growth makes it hard to see where they are at.  The roots and 
+branches crossing your way make it difficult to travel. The high walls of 
+some abandoned keep rise up to the west. 
+~
+Sector forest~
+Exit north 30528
+EDesc More trees.
+~
+Exit east 30534
+EDesc More trees.
+~
+Exit south 30526
+EDesc More trees.
+~
+Exit west 30539
+End
+
+
+#30528
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30191
+EDesc More trees.
+~
+Exit east 30535
+EDesc More trees.
+~
+Exit south 30527
+EDesc More trees.
+~
+Exit west 30521
+EDesc More trees.
+~
+End
+
+
+#30529
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30530
+EDesc More trees.
+~
+Exit east 30118
+EDesc More trees.
+~
+Exit south 30110
+EDesc More trees.
+~
+Exit west 30522
+EDesc More trees.
+~
+End
+
+
+#30530
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30531
+EDesc More trees.
+~
+Exit east 30119
+EDesc More trees.
+~
+Exit south 30529
+EDesc More trees.
+~
+Exit west 30523
+EDesc More trees.
+~
+End
+
+
+#30531
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30532
+EDesc More trees.
+~
+Exit east 30120
+EDesc More trees.
+~
+Exit south 30530
+EDesc More trees.
+~
+Exit west 30524
+EDesc More trees.
+~
+End
+
+
+#30532
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30533
+EDesc More trees.
+~
+Exit east 30121
+EDesc More trees.
+~
+Exit south 30531
+EDesc More trees.
+~
+Exit west 30525
+EDesc More trees.
+~
+End
+
+
+#30533
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30534
+EDesc More trees.
+~
+Exit east 30122
+EDesc More trees.
+~
+Exit south 30532
+EDesc More trees.
+~
+Exit west 30526
+EDesc More trees.
+~
+End
+
+
+#30534
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.
+~
+Sector forest~
+Exit north 30535
+EDesc More trees.
+~
+Exit east 30128
+EDesc More trees.
+~
+Exit south 30533
+EDesc More trees.
+~
+Exit west 30527
+EDesc More trees.
+~
+End
+
+
+#30535
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.
+~
+Sector forest~
+Exit north 30190
+EDesc More trees.
+~
+Exit east 30129
+EDesc More trees.
+~
+Exit south 30534
+EDesc More trees.
+~
+Exit west 30528
+EDesc More trees.
+~
+End
+
+
+#30536
+Name Light Forest~
+Desc The forest here is very peaceful and quiet.  There are the 
+occasional sounds of animals moving, and water trickling
+from the west, but not much else disturbs the tranquil scene.
+The trees get thicker and closer to the east.
+~
+Sector forest~
+Exit north 30537
+EDesc More trees.
+~
+Exit east 30540
+EDesc More trees.
+~
+Exit south 30101
+EDesc There seems to be a cleared space in this direction.
+~
+Exit west 30560
+EDesc It seems that the trees thin out this way.
+~
+End
+
+
+#30537
+Name Light Forest~
+Desc You are now in the midst of some maple trees, part of a
+light forest.  To the east, it gets darker and more dense,
+while to the west it becomes sparse.  You can hear water
+trickling in that direction.
+~
+Sector forest~
+Exit north 30538
+EDesc More trees.
+~
+Exit east 30541
+EDesc Thick forest.
+~
+Exit south 30536
+EDesc More trees.
+~
+Exit west 30561
+EDesc It seems that the tress thin out this way.
+~
+End
+
+
+#30538
+Name Light Forest~
+Desc The forest here is very peaceful and quiet.  There are the occasional
+sounds of animals moving, and water trickling from the west, but not much
+else disturbs the tranquil scene.  The trees get thicker and closer to the
+north and east.  
+~
+Sector forest~
+Exit north 16200
+Exit east 30542
+EDesc More trees.
+~
+Exit south 30537
+EDesc More trees.
+~
+Exit west 30562
+EDesc The trees seem to thin out this way.
+~
+End
+
+
+#30539
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all directions, 
+but the heavy growth makes it hard to see where they are at.  The roots and 
+branches crossing your way make it difficult to travel.  
+~
+RoomFlags dark indoors~
+Sector forest~
+Exit north 30521
+Exit east 30527
+Exit south 30519
+Exit west 30513
+End
+
+
+#30540
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.  It seems to lighten up a bit to the west.
+~
+Sector forest~
+Exit north 30541
+EDesc More trees.
+~
+Exit east 30544
+EDesc More trees.
+~
+Exit south 30102
+EDesc More trees.
+~
+Exit west 30536
+EDesc More trees.
+~
+End
+
+
+#30541
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all
+directions, but the heavy growth makes it hard to see where
+they are at.  The roots and branches crossing your way make
+it difficult to travel.  It seems to lighten up to the west.
+~
+Sector forest~
+Exit north 30542
+EDesc More trees.
+~
+Exit east 30545
+EDesc More trees.
+~
+Exit south 30540
+EDesc More trees.
+~
+Exit west 30537
+EDesc More trees.
+~
+End
+
+
+#30542
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.  It seems to lighten up a bit to the west.
+~
+Sector forest~
+Exit north 30543
+EDesc More trees.
+~
+Exit east 30546
+EDesc More trees.
+~
+Exit south 30541
+EDesc More trees.
+~
+Exit west 30538
+EDesc More trees.
+~
+End
+
+
+#30543
+Name Thick Forest~
+Desc You are in a dense, dark forest.  Animal noises come from all directions,
+but the heavy growth makes it hard to see where they are at.  The roots and
+branches crossing your way make it difficult to travel.  It seems to lighten
+a bit to the north, while remaining thick in all other directions.  
+~
+Sector forest~
+Exit north 30615
+Exit east 30547
+EDesc More trees.
+~
+Exit south 30542
+EDesc More trees.
+~
+Exit west 16200
+End
+
+
+#30544
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.  It seems to lighten up to the south.
+~
+Sector forest~
+Exit north 30545
+EDesc More trees.
+~
+Exit east 30138
+EDesc More trees.
+~
+Exit south 30103
+EDesc More trees.
+~
+Exit west 30540
+EDesc More trees.
+~
+End
+
+
+#30545
+Name Thick Forest~
+Desc You are in a dense, dark forest.  No sound can be heard from anywhere.  The 
+roots and branches crossing your way make it difficult to travel.  
+~
+Sector forest~
+Mana 10
+Heal 10
+Exit north 30546
+EDesc More trees.
+~
+Exit east 30141
+EDesc More trees.
+~
+Exit south 30544
+EDesc More trees.
+~
+Exit west 30541
+EDesc More trees.
+~
+End
+
+
+#30546
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches. 
+~
+Sector forest~
+Exit north 30547
+EDesc More trees.
+~
+Exit east 30144
+EDesc More trees.
+~
+Exit south 30545
+EDesc More trees.
+~
+Exit west 30542
+EDesc More trees.
+~
+End
+
+
+#30547
+Name Thick Forest~
+Desc The forest is very thick here.  Tall trees surround you, their 
+leaves blocking out the sky above.  You can hear animals moving 
+around in the branches.  It seems to lighten up a bit to the north.
+~
+Sector forest~
+Exit north 30619
+Exit east 30348
+EDesc More trees.
+~
+Exit south 30546
+EDesc More trees.
+~
+Exit west 30543
+EDesc More trees.
+~
+End
+
+
+#30548
+Name Light Forest~
+Desc You are just inside the edge of a light, pleasant forest.  Through
+the trees to the west you can see meadows and beyond that the walls
+of a city.
+~
+Sector forest~
+Exit north 30549
+EDesc More trees.
+~
+Exit east 30552
+EDesc You hear water trickling from this way.
+~
+Exit south 30218
+EDesc The trees are cleared in this direction.
+~
+Exit west 30183
+EDesc You can see city walls and some meadows.
+~
+End
+
+
+#30549
+Name Light Forest~
+Desc You are just inside the western edge of a light forest.  You can 
+see the walls of some city through the trees some ways to the 
+southwest. You notice a small trapdoor half buried in the grass.
+~
+Sector forest~
+Exit north 30550
+EDesc More trees.
+~
+Exit east 30553
+EDesc MOre trees and the sound of water moving.
+~
+Exit south 30548
+EDesc More trees.
+~
+Exit west 30178
+EDesc Through the trees you see meadows and plains.
+~
+Exit down 30772
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#30550
+Name Light Forest~
+Desc You are just inside the edge of a light, pleasant forest.  Through
+the trees you can see grassy plains stretching to the west.  The 
+sound of water trickling comes from the east.
+~
+Sector forest~
+Exit north 30551
+EDesc More trees.
+~
+Exit east 30554
+EDesc More trees, and the sound of water moving.
+~
+Exit south 30549
+EDesc More trees.
+~
+Exit west 30570
+EDesc Plains.
+~
+End
+
+
+#30551
+Name Light Forest~
+Desc You are just inside the western edge of a light forest.  Through the
+trees you can see plains stretch out to the west.  The sound of water
+trickling comes from the east.
+~
+Sector forest~
+Exit north 30576
+EDesc More Trees.
+~
+Exit east 30555
+EDesc More trees, and the sound of water trickling.
+~
+Exit south 30550
+EDesc More trees.
+~
+Exit west 30571
+EDesc Plains.
+~
+End
+
+
+#30552
+Name Riverbank~
+Desc You are on the bank of a wide, slow river.  The trees are dead and rotting 
+near the water on both sides, making walking along it difficult.  You can go 
+into the forest to the west, or follow the river north or south.  
+~
+Sector forest~
+Exit north 30553
+EDesc The riverbank.
+~
+Exit east 30556
+EDesc The river.
+~
+Exit south 30219
+EDesc The trees seem to be cleard in this direction.
+~
+Exit west 30548
+EDesc More trees.
+~
+End
+
+
+#30553
+Name Riverbank~
+Desc The forest comes right up to the edge of the water here.  A wide, slow
+river runs south to north, and you are on its west bank.  You can see
+more light forest on the other bank.
+~
+Sector forest~
+Exit north 30554
+EDesc More trees.
+~
+Exit east 30557
+EDesc A wide, slow, river.
+~
+Exit south 30552
+EDesc More trees.
+~
+Exit west 30549
+EDesc More trees.
+~
+End
+
+
+#30554
+Name Riverbank~
+Desc You are on the bank of a wide, slow river.  The trees come right up
+to the water on both sides, making walking along it difficult.  You
+can go into the forest to the west, or follow the river north or south.
+~
+Sector forest~
+Exit north 30555
+EDesc More trees.
+~
+Exit east 30558
+EDesc A wide, slow river.
+~
+Exit south 30553
+EDesc More trees.
+~
+Exit west 30550
+EDesc More trees.
+~
+End
+
+
+#30555
+Name Riverbank~
+Desc The forest comes right up to the edge of the water here.  A wide, slow
+river runs south to north, and you are on its west bank.  You can see
+more light forest on the other bank.
+~
+Sector forest~
+Exit north 30599
+Exit east 30559
+EDesc A wide, slow, river.
+~
+Exit south 30554
+EDesc More trees.
+~
+Exit west 30551
+EDesc More trees.
+~
+End
+
+
+#30556
+Name On the River~
+Desc You are on a wide, slow moving river, that flows south to north.  A
+wooden bridge crosses it just to the south, and trees line the sides
+at this point.
+~
+Sector noswim~
+Exit north 30557
+EDesc The river flows north.
+~
+Exit east 30560
+EDesc The forest..
+~
+Exit south 30220
+Exit west 30552
+EDesc The forest.
+~
+End
+
+
+#30557
+Name On the River~
+Desc You are on a wide, slow moving river, that flows south to north.  A
+wooden bridge crosses some distance to the south, while trees line the
+sides at this point.
+~
+Sector noswim~
+Exit north 30558
+EDesc The river flows north.
+~
+Exit east 30561
+EDesc The forest..
+~
+Exit south 30556
+EDesc The river.
+~
+Exit west 30553
+EDesc The forest.
+~
+End
+
+
+#30558
+Name On the River~
+Desc You are on a wide, slow moving river, that flows south to north.  
+Trees line the banks on both sides, and you think you see a bridge
+a long way to the south.
+~
+Sector noswim~
+Exit north 30559
+EDesc The river flows north.
+~
+Exit east 30562
+EDesc The forest.
+~
+Exit south 30557
+EDesc The river.
+~
+Exit west 30554
+EDesc The forest.
+~
+End
+
+
+#30559
+Name On the River~
+Desc You are on a wide, slow moving river, that flows south to north.  
+A pleasant forest stretches away on either side, and you can
+hear the sounds of animals from both ways.
+~
+Sector noswim~
+Exit north 30603
+Exit east 30563
+EDesc The forest.
+~
+Exit south 30558
+EDesc The river.
+~
+Exit west 30555
+EDesc The forest.
+~
+End
+
+
+#30560
+Name Riverbank~
+Desc The forest comes right up to the edge of the water here.  A wide, slow
+river runs south to north, and you are on its east bank.  You can see
+more light forest on the other bank.  There appears to be a wooden bridge
+crossing the water to the south.
+~
+Sector forest~
+Exit north 30561
+EDesc The riverbank.
+~
+Exit east 30536
+EDesc More trees.
+~
+Exit south 30221
+EDesc More trees.
+~
+Exit west 30556
+EDesc The river.
+~
+End
+
+
+#30561
+Name Riverbank~
+Desc You are on the bank of a wide, slow river.  The trees come right up
+to the water on both sides, making walking along it difficult.  You
+can go into the forest to the east, or follow the river north or south.
+~
+Sector forest~
+Exit north 30562
+EDesc The riverbank.
+~
+Exit east 30537
+EDesc More trees.
+~
+Exit south 30560
+EDesc More trees.
+~
+Exit west 30557
+EDesc The river.
+~
+End
+
+
+#30562
+Name Riverbank~
+Desc The forest comes right up to the edge of the water here.  A wide, slow
+river runs south to north, and you are on its east bank.  You can see
+more light forest on the other bank.
+~
+Sector forest~
+Exit north 30563
+EDesc The riverbank.
+~
+Exit east 30538
+EDesc More trees.
+~
+Exit south 30561
+EDesc More trees.
+~
+Exit west 30558
+EDesc The river.
+~
+End
+
+
+#30563
+Name Riverbank~
+Desc You are on the bank of a wide, slow river.  The trees come right up to
+the water on both sides, making walking along it difficult.  You can follow
+the river north or south, or head east into the thick forest.  
+~
+Sector forest~
+Exit north 30607
+Exit east 16200
+Exit south 30562
+EDesc More trees.
+~
+Exit west 30559
+EDesc The river.
+~
+End
+
+
+#30564
+Name Grassy Plains~
+Desc The plains stretch north and west from here.  A short way to the east
+a light forest begins, and to the south are the high walls of a city.
+The only sign of movement is the tall grass swaying in the wind. 
+~
+Sector field~
+Exit north 30565
+EDesc Grassy Plains.
+~
+Exit east 30570
+EDesc A forest is this way.
+~
+Exit south 30181
+EDesc A city is this way.
+~
+Exit west 30147
+EDesc A path is beaten into the grass this way.
+~
+End
+
+
+#30565
+Name Grassy Plains~
+Desc You are in the middle of grassy plains, which stretch to the horizon in
+every way except east.  In that direction, you see the edge of a forest 
+off in the distance.
+~
+Sector field~
+Exit north 30566
+EDesc Grassy plains.
+~
+Exit east 30571
+EDesc A forest is this way.
+~
+Exit south 30564
+EDesc Plains, and is that a city off in the distance?
+~
+Exit west 30186
+EDesc A path cuts through the grass to the west.
+~
+End
+
+
+#30566
+Name Grassy Plains~
+Desc The plains stretch north, south, and west from here.  A short way to 
+the east a light forest begins.  The only sign of movement is the tall
+grass swaying in the wind. 
+~
+Sector field~
+Exit north 30567
+EDesc Grassy plains.
+~
+Exit east 30572
+EDesc A forest is this way.
+~
+Exit south 30565
+EDesc Plains.
+~
+Exit west 30187
+EDesc A path cuts through the grass to the west.
+~
+End
+
+
+#30567
+Name Grassy Plains~
+Desc You are in the middle of grassy plains, which stretch to the horizon in
+every way except east.  In that direction, you see the edge of a forest 
+off in the distance.
+~
+Sector field~
+Exit north 30568
+EDesc Grassy plains.
+~
+Exit east 30573
+EDesc A forest is this way.
+~
+Exit south 30566
+EDesc Plains.
+~
+Exit west 30188
+EDesc A path cuts through the grass to the west.
+~
+End
+
+
+#30568
+Name Grassy Plains~
+Desc The plains stretch north, south, and west from here.  A short way to
+the east a light forest begins.  The only sign of movement is the tall
+grass swaying in the wind. 
+~
+Sector field~
+Exit north 30569
+EDesc Grassy plains.
+~
+Exit east 30574
+EDesc A forest is this way.
+~
+Exit south 30567
+EDesc Plains.
+~
+Exit west 30189
+EDesc A path cuts through the grass to the west.
+~
+End
+
+
+#30569
+Name Grassy Plains~
+Desc You are in the middle of grassy plains, which stretch to the horizon in
+every way except east.  In that direction, you see the edge of a forest 
+off in the distance.
+~
+Sector field~
+Exit north 30279
+EDesc Grassy plains.
+~
+Exit east 30575
+EDesc A forest is this way.
+~
+Exit south 30568
+EDesc Plains.
+~
+Exit west 30148
+EDesc A path cuts through the grass to the west.
+~
+End
+
+
+#30570
+Name Edge of Plains~
+Desc Grassy plains stretch out to the west here, and a pleasant forest lies
+to the east.  You can see the walls of a large city to the southwest.
+~
+Sector field~
+Exit north 30571
+EDesc Along the edge of the forest.
+~
+Exit east 30550
+EDesc Forest.
+~
+Exit south 30178
+EDesc A city.
+~
+Exit west 30564
+EDesc Plains.
+~
+End
+
+
+#30571
+Name Edge of Plains~
+Desc Grassy plains lie to the west of here, and a pleasant forest begins
+to the east.
+~
+Sector field~
+Exit north 30572
+EDesc Along the edge of the plains.
+~
+Exit east 30551
+EDesc Forest.
+~
+Exit south 30570
+EDesc Along the edge of the plains.
+~
+Exit west 30565
+EDesc Plains.
+~
+End
+
+
+#30572
+Name Edge of Plains~
+Desc Grassy plains lie to the west of here, and a pleasant forest begins
+to the east.
+~
+Sector field~
+Exit north 30573
+EDesc Along the edge of the plains.
+~
+Exit east 30576
+EDesc Forest.
+~
+Exit south 30571
+EDesc Along the edge of the plains.
+~
+Exit west 30566
+EDesc Plains.
+~
+End
+
+
+#30573
+Name Edge of Plains~
+Desc Grassy plains lie to the west of here, and a pleasant forest begins
+to the east.
+~
+Sector field~
+Exit north 30574
+EDesc Along the edge of the plains.
+~
+Exit east 30577
+EDesc Forest.
+~
+Exit south 30572
+EDesc Along the edge of the plains.
+~
+Exit west 30567
+EDesc Plains.
+~
+End
+
+
+#30574
+Name Edge of Plains~
+Desc Grassy plains lie to the west of here, and a pleasant forest begins
+to the east.
+~
+Sector field~
+Exit north 30575
+EDesc Along the edge of the plains.
+~
+Exit east 30578
+EDesc Forest.
+~
+Exit south 30573
+EDesc Along the edge of the plains.
+~
+Exit west 30568
+EDesc Plains.
+~
+End
+
+
+#30575
+Name Edge of Plains~
+Desc Grassy plains lie to the west of here, and a pleasant forest begins
+a short way to the east.  It looks like there is a path to the north.
+~
+Sector field~
+Exit north 30280
+EDesc Along the edge of the plains.
+~
+Exit east 30579
+EDesc Forest.
+~
+Exit south 30574
+EDesc Along the edge of the plains.
+~
+Exit west 30569
+EDesc Plains.
+~
+End
+
+
+#30576
+Name Edge of Forest~
+Desc You are just inside the western edge of a forest.  Pine, maple, and 
+oak trees stand tall around you, and seem to be home for all sorts of
+wildlife.  Plains lie beyond the trees just to the west.
+~
+Sector forest~
+Exit north 30577
+EDesc More trees.
+~
+Exit east 30599
+Exit south 30551
+EDesc More trees.
+~
+Exit west 30572
+EDesc Plains.
+~
+End
+
+
+#30577
+Name Edge of Forest~
+Desc Trees of all types surround you.  They seem to become thicker to the east, 
+while to the west they thin and give way to grassy plains.  You can hear all 
+sorts of birds and animals nearby.  A wisp of white smoke curls in the sky 
+and upon closer inspection you think you see a log cabin in the distance.  
+~
+Sector forest~
+Exit north 30578
+EDesc More trees.
+~
+Exit east 30600
+Exit south 30576
+EDesc More trees.
+~
+Exit west 30573
+EDesc Plains.
+~
+End
+
+
+#30578
+Name Edge of Forest~
+Desc You are just inside the western edge of a forest.  Pine, maple, and 
+oak trees stand tall around you, and seem to be home for all sorts of
+wildlife.  Plains lie beyond the trees just to the west.
+~
+Sector forest~
+Exit north 30579
+EDesc More trees.
+~
+Exit east 30601
+Exit south 30577
+EDesc More trees.
+~
+Exit west 30574
+EDesc Plains.
+~
+End
+
+
+#30579
+Name Edge of Plains~
+Desc The ground here is flat and grassy, while a forest begins to the east
+and south.  
+~
+Sector forest~
+Exit north 30281
+EDesc More trees.
+~
+Exit east 30602
+Exit south 30578
+EDesc More trees.
+~
+Exit west 30575
+EDesc Plains.
+~
+End
+
+
+#30580
+Name Steep Foothills~
+Desc You are among the steep foothills, just east of towering mountains.  
+A faint path leads north and south.
+~
+Sector hills~
+Exit north 30581
+EDesc More steep hills.
+~
+Exit south 30246
+Exit west 30277
+End
+
+
+#30581
+Name Steep Foothills~
+Desc You are among the steep foothills, just east of towering mountains.  
+A faint path leads north and south.
+~
+Sector hills~
+Exit north 30582
+EDesc More steep hills.
+~
+Exit south 30580
+EDesc More hills.
+~
+Exit west 30278
+End
+
+
+#30582
+Name Steep Foothills~
+Desc You are among the steep foothills, just east of towering mountains.  It 
+looks like a path led through a pass to the north at one time, but a 
+rockslide has completely blocked it off.  
+~
+Sector hills~
+Exit east 30583
+EDesc More hills, and mountains.
+~
+Exit south 30581
+EDesc More hills.
+~
+Exit west 30450
+End
+
+
+#30583
+Name Steep Foothills~
+Desc You are among the steep foothills, just south of towering mountains.  
+A faint path leads east and west.
+~
+Sector hills~
+Exit east 30584
+EDesc More steep hills.
+~
+Exit west 30582
+EDesc More hills, and mountains.
+~
+End
+
+
+#30584
+Name Steep Foothills~
+Desc You are among the steep foothills, southeast of towering mountains.  
+A faint path leads west and north.
+~
+Sector hills~
+Exit north 30585
+EDesc More steep hills.
+~
+Exit west 30583
+EDesc More hills, and mountains.
+~
+End
+
+
+#30585
+Name Steep Foothills~
+Desc You are among the steep foothills, just east of towering mountains.  
+A faint path leads north and south.
+~
+Sector hills~
+Exit east 30214
+Exit south 30584
+EDesc More hills.
+~
+End
+
+
+#30586
+Name On A River~
+Desc You are on a strong, wide river, just east of the point where it flows
+from underneath a huge mountain.  A sheer cliff blocks the north side
+of the river, with hills to the south.
+~
+Sector noswim~
+Exit east 30587
+EDesc The river flows east.
+~
+Exit south 30623
+Exit west 926
+End
+
+
+#30587
+Name On a River~
+Desc You are on the middle of a strong, wide, river, which flows from west to
+east.  A cliff stands along the north side of the river, and hills are
+to the south.
+~
+Sector noswim~
+Exit east 30588
+EDesc The river.
+~
+Exit south 30625
+Exit west 30586
+EDesc The river.
+~
+End
+
+
+#30588
+Name On a River~
+Desc You are on the middle of a strong, wide, river, which flows from west to
+east.  A cliff stands along the north side of the river, and small hills
+are to the south.
+~
+Sector noswim~
+Exit east 30589
+EDesc The river.
+~
+Exit south 30629
+Exit west 30587
+EDesc The river.
+~
+End
+
+
+#30589
+Name On a River~
+Desc You are on the middle of a strong, wide, river, which makes a turn here, and 
+flows from west to south. A short cliff stands along the north side of the river, 
+and small hills are to the east.
+~
+Sector noswim~
+Exit south 30590
+EDesc The river flows south.
+~
+Exit west 30588
+EDesc The river.
+~
+End
+
+
+#30590
+Name On a River~
+Desc The river makes a turn here, and flows north from the hills, or east into flatter
+lands.  It is fairly calm and wide at this point.
+~
+Sector noswim~
+Exit north 30589
+EDesc The river flows fromt he north.
+~
+Exit east 30591
+EDesc The river flows east.
+~
+Exit south 30635
+Exit west 30629
+End
+
+
+#30591
+Name On the River~
+Desc The river flows west to east, and is fairly wide and calm at this point.  It is
+surrounded by rocky flatlands, which stretch north and south.
+~
+Sector noswim~
+Exit east 30592
+EDesc The river.
+~
+Exit west 30590
+EDesc The river.
+~
+End
+
+
+#30592
+Name On the River~
+Desc The river flows west to east, and is fairly wide and calm at this point.  It is
+surrounded by rocky flatlands, which stretch north and south.  The land seems
+to get greener to the east, but more barren to the west.
+~
+Sector noswim~
+Exit east 30593
+EDesc The river.
+~
+Exit west 30591
+EDesc The river.
+~
+End
+
+
+#30593
+Name On the River~
+Desc The river flows west to east, and is fairly wide and calm at this point.  It is
+surrounded by grassy flatlands, which stretch north and south.
+~
+Sector noswim~
+Exit east 30594
+EDesc The river.
+~
+Exit west 30592
+EDesc The river.
+~
+End
+
+
+#30594
+Name On the River~
+Desc The river makes a bend here, flowing from the west to the north.  It is very
+wide and calm at this point.  Grassy meadows surround it in all directions.
+~
+Sector noswim~
+Exit north 30595
+EDesc The river flows north.
+~
+Exit west 30593
+EDesc The river flows from the west.
+~
+End
+
+
+#30595
+Name On the River~
+Desc You are on a wide, slow river that is flowing south to north.  It appears to
+be pretty deep, at least in the middle.  Grassy meadows lie to the east and west.
+~
+Sector noswim~
+Exit north 30596
+EDesc The river flows north.
+~
+Exit south 30594
+EDesc The river flows from the south.
+~
+End
+
+
+#30596
+Name On the River~
+Desc The river makes a bend here, flowing from the south to the east.  It is very
+wide and calm at this point.  Grassy meadows surround it in all directions,
+and it appears to run near a walled city to the east.
+~
+Sector noswim~
+Exit east 30597
+EDesc The river flows east.
+~
+Exit south 30595
+EDesc The river flows from the south.
+~
+End
+
+
+#30597
+Name On the River~
+Desc You are on a wide, calm river that flows west to east.  There are grassy meadows
+to the north and south at this point, but if you move east a bit the river runs
+along the south edge of a large walled city.
+~
+Sector noswim~
+Exit north 30184
+EDesc Grassy meadows along a city wall.
+~
+Exit east 30598
+EDesc The river flows along the south edge of the city.
+~
+Exit west 30596
+EDesc The river flows from the west.
+~
+End
+
+
+#30598
+Name On the River~
+Desc You are on a wide, slow river, flowing west to east along the south edge of a
+large city.  You can enter the city by putting ashore on the north bank, or
+there are grassy meadows to the south.  The river flows under a wooden bridge
+just to the east of here.
+~
+Sector noswim~
+Exit east 30771
+Exit west 30597
+EDesc The river.
+~
+End
+
+
+#30599
+Name Riverbank~
+Desc You are on the western bank of a wide slow river.  The river flows from 
+south to north at this point.  Tall trees stretch towards the sky all around 
+the water, and become thicker away from the river.  You can hear all sorts 
+of wildlife moving around in the forest.  A wisp of white smoke curls in the 
+sky and upon closer inspection you think you see a log cabin in the 
+distance.  
+~
+Sector forest~
+Exit north 30600
+Exit east 30603
+Exit south 30555
+Exit west 30576
+End
+
+
+#30600
+Name A Cabin in The Woods~
+Desc You come upon the northern bank of a wide slow river.  The river flows from 
+west to east at this point.  Tall trees stretch towards the sky all around 
+the water, and become thicker away from the river.  There is a tiny cabin 
+made of thick logs nestled in between the redwood and oak trees.  A 
+well-tended garden grows in front of it.  A wisp of white smoke curls from 
+atop the chimney.  You can hear all sorts of wildlife moving around in the 
+forest.  
+~
+Sector forest~
+Exit north 30601
+Exit east 30604
+Exit south 30599
+Exit west 30577
+End
+
+
+#30601
+Name Forest, Northwest of River~
+Desc Tall trees with thick leafy branches surround you, blocking much of the sky. 
+ The sounds of wildlife are all around.  You can hear water trickling to the 
+southeast.  A wisp of white smoke curls in the sky and upon closer 
+inspection you think you see a log cabin in the distance.  
+~
+Sector forest~
+Exit north 30602
+Exit east 30605
+Exit south 30600
+Exit west 30578
+End
+
+
+#30602
+Name Just Inside Forest~
+Desc You are just inside the edge of a dark forest.  Trees stretch to the
+east, while to the west they thin and die out entirely, becoming grassy
+plains.  
+~
+Sector forest~
+Exit north 30282
+Exit east 30606
+Exit south 30601
+Exit west 30579
+End
+
+
+#30603
+Name On the River~
+Desc You are on a wide, slow river which flows south to north here.  Trees
+from the surrounding forest stretch above, partly blocking the sky from your
+view.  The river makes a turn just to the north.  
+~
+Sector noswim~
+Exit north 30604
+Exit east 30607
+Exit south 30559
+Exit west 30599
+End
+
+
+#30604
+Name On the River~
+Desc You are on a wide, slow river which flows from south to east here.  Trees 
+from the surrounding forest stretch above, partly blocking your view of the 
+sky.  A wisp of white smoke curls in the sky and upon closer inspection you 
+think you see a log cabin in the distance.  
+~
+Sector noswim~
+Exit north 30605
+Exit east 30608
+Exit south 30603
+Exit west 30600
+End
+
+
+#30605
+Name Riverbank~
+Desc You are on the northern bank of a wide slow river.  The river flows from
+west to east at this point.  Tall trees stretch towards the sky all around
+the water, and become thicker away from the river.  You can hear all sorts
+of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30606
+Exit east 30609
+Exit south 30604
+Exit west 30601
+End
+
+
+#30606
+Name Forest~
+Desc Tall trees with thick leafy branches surround you, blocking much of the
+sky.  The sounds of wildlife are all around.  
+~
+Sector forest~
+Exit north 30283
+Exit east 30610
+Exit south 30605
+Exit west 30602
+End
+
+
+#30607
+Name Riverbank~
+Desc You are on the southeastern bank of a wide slow river.  The river flows
+from the south and makes a turn eastwards at this point.  Tall trees stretch
+around the water, and become thicker away from the river.  You can hear all
+sorts of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30608
+Exit east 30611
+Exit south 30563
+Exit west 30603
+End
+
+
+#30608
+Name On the River~
+Desc You are on a wide, slow river which flows from west to east here.  Trees
+from the surrounding forest stretch above, partly blocking your view of the
+sky.  Just to the west, the river makes a turn to the south.  
+~
+Sector noswim~
+Exit north 30609
+Exit east 30612
+Exit south 30607
+Exit west 30604
+End
+
+
+#30609
+Name Riverbank~
+Desc You are on the northern bank of a wide slow river.  The river flows from
+west to east at this point.  Tall trees stretch towards the sky all around
+the water, and become thicker away from the river.  You can hear all sorts
+of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30610
+Exit east 30613
+Exit south 30608
+Exit west 30605
+End
+
+
+#30610
+Name Forest~
+Desc Tall trees with thick leafy branches surround you, blocking much of the
+sky.  The sounds of wildlife are all around.  
+~
+Sector forest~
+Exit north 30308
+Exit east 30614
+Exit south 30609
+Exit west 30606
+End
+
+
+#30611
+Name Riverbank~
+Desc You are on the southern bank of a wide slow river.  The river flows from
+the west to the east at this point.  Tall trees stretch towards the sky all
+around the water, and become thicker away from the river.  You can hear all
+sorts of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30612
+Exit east 30615
+Exit south 16200
+Exit west 30607
+End
+
+
+#30612
+Name On the River~
+Desc You are on a wide, slow river which flows from west to east here.  Trees
+from the surrounding forest stretch above, partly blocking your view of the
+sky.  To the east, the river seems to turn north.  
+~
+Sector noswim~
+Exit north 30613
+Exit east 30616
+Exit south 30611
+Exit west 30608
+End
+
+
+#30613
+Name Riverbank~
+Desc You are on the northwestern bank of a wide slow river.  The river flows
+from the west and makes a turn northwards at this point.  Tall trees stretch
+towards the sky all around the water, and become thicker away from the
+river.  You can hear all sorts of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30614
+Exit east 30617
+Exit south 30612
+Exit west 30609
+End
+
+
+#30614
+Name Riverbank~
+Desc You are on the western bank of a wide slow river.  The river flows from
+south to north at this point.  Tall trees stretch towards the sky all around
+the water, and become thicker away from the river.  You can hear all sorts
+of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30307
+Exit east 30618
+Exit south 30613
+Exit west 30610
+End
+
+
+#30615
+Name Riverbank~
+Desc You are on the southern bank of a wide slow river.  The river flows from
+the west to the east at this point.  Tall trees stretch towards the sky all
+around the water, and become thicker away from the river.  You can hear all
+sorts of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30616
+Exit east 30619
+Exit south 30543
+Exit west 30611
+End
+
+
+#30616
+Name On the River~
+Desc You are on a wide, slow river which flows from west to north here.  Trees
+from the surrounding forest stretch above, partly blocking your view of the
+sky.  
+~
+Sector noswim~
+Exit north 30617
+Exit east 30620
+Exit south 30615
+Exit west 30612
+End
+
+
+#30617
+Name On the River~
+Desc You are on a wide, slow river which flows from south to north here. 
+Trees from the surrounding forest stretch above, partly blocking your view
+of the sky.  To the south, the river seems to turn west.  
+~
+Sector noswim~
+Exit north 30618
+Exit east 30621
+Exit south 30616
+Exit west 30613
+End
+
+
+#30618
+Name On the River~
+Desc You are on a wide, slow river which flows from south to north here. 
+Trees from the surrounding forest stretch above, partly blocking your view
+of the sky.  You notice a crude bridge crossing the river a bit to the
+north.  
+~
+Sector noswim~
+Exit north 30309
+Exit east 30622
+Exit south 30617
+Exit west 30614
+End
+
+
+#30619
+Name Forest, Southeast of River~
+Desc Tall trees with thick leafy branches surround you, blocking much of the
+sky.  The sounds of wildlife are all around.  You can hear water trickling
+to the northwest.  
+~
+Sector forest~
+Exit north 30620
+Exit east 30349
+Exit south 30547
+Exit west 30615
+End
+
+
+#30620
+Name Riverbank~
+Desc You are on the eastern bank of a wide slow river.  The river flows from
+the west and makes a turn north at this point.  Tall trees stretch towards
+the sky all around the water, and become thicker away from the river.  You
+can hear all sorts of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30621
+Exit east 30350
+Exit south 30619
+Exit west 30616
+End
+
+
+#30621
+Name Riverbank~
+Desc You are on the eastern bank of a wide slow river.  The river flows from
+south to north at this point.  Tall trees stretch towards the sky all around
+the water, and become thicker away from the river.  You can hear all sorts
+of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30622
+Exit east 30351
+Exit south 30620
+Exit west 30617
+End
+
+
+#30622
+Name Riverbank~
+Desc You are on the eastern bank of a wide slow river.  The river flows from
+south to north at this point.  Tall trees stretch towards the sky all around
+the water, and become thicker away from the river.  You can hear all sorts
+of wildlife moving around in the forest.  
+~
+Sector forest~
+Exit north 30310
+Exit east 30352
+Exit south 30621
+Exit west 30618
+End
+
+
+#30623
+Name Foothills, South of River~
+Desc Low Foothills surround you, and lead up to mountains to the west.  You
+can't go any further in that direction due to steep walls of stone.  You can
+hear and see a rushing river through a gap to the north.  
+~
+Sector hills~
+Exit north 30586
+Exit east 30625
+Exit south 30624
+End
+
+
+#30624
+Name Steep Foothills~
+Desc You are in the steep foothills of a large mountain range.  The mountains
+tower over you to the west, and block travel in that direction, while the
+terrain seems to become flatter and more hospitable to the east.  
+~
+Sector hills~
+Exit north 30623
+Exit east 30626
+End
+
+
+#30625
+Name Foothills, South of River~
+Desc You are just south of a rushing, noisy river.  Rocky hills surround you. 
+They have little in the way of vegetation, and grow steeper to the west and
+southwest, until they become mountains.  
+~
+Sector hills~
+Exit north 30587
+Exit east 30629
+Exit south 30626
+Exit west 30623
+End
+
+
+#30626
+Name Steep Foothills~
+Desc You are in the middle of the steep foothills, somewhat east of a tall
+mountain range.  The ground seems to grow more even as you travel east.  
+~
+Sector hills~
+Exit north 30625
+Exit east 30630
+Exit south 30627
+Exit west 30624
+End
+
+
+#30627
+Name Steep Foothills~
+Desc Here the steep foothills meet impassable mountainsides, blocking travel
+to the west.  The rocky hills stretch out in all other directions, as far as
+you can see.  
+~
+Sector hills~
+Exit north 30626
+Exit east 30631
+Exit south 30628
+EFlags door~
+End
+
+
+#30628
+Name Steep Foothills~
+Desc Sheer walls of stone block travel west and south from here, but you can move 
+in the other directions if you feel like climbing.  Rocky hills stand all 
+around, and not much vegetation or shelter.  
+~
+Sector hills~
+Exit north 30627
+EFlags door~
+Exit east 30632
+End
+
+
+#30629
+Name Foothills, South of River~
+Desc You are in the midst of some low rocky hills, near the bank of a loud and
+strong river.  The river is to your north, and makes a bend south just to
+your east.  Tall mountains stand beyond the hills to the west.  
+~
+Sector hills~
+Exit north 30588
+Exit east 30590
+Exit south 30630
+Exit west 30625
+End
+
+
+#30630
+Name Foothills~
+Desc Low foothills surround you, becoming taller and rockier to the west.  To
+the east the ground becomes smoother and less broken, and much greener. 
+Tall mountains stand mejestically beyond the hills to the west.  
+~
+Sector hills~
+Exit north 30629
+Exit east 30635
+Exit south 30631
+Exit west 30626
+End
+
+
+#30631
+Name Foothills~
+Desc Low foothills surround you, and lead up to a mountain range to the west. 
+The ground is very rocky and doesn't support much wildlife.  
+~
+Sector hills~
+Exit north 30630
+Exit east 30636
+Exit south 30632
+Exit west 30627
+End
+
+
+#30632
+Name Steep Foothills~
+Desc Travel here is extremely difficult due to the uneven, rocky terrain. 
+Tall foothills surround you, leading up to mountains to the west.  A few
+hardy bushes and weeds provide the only color in the area.  
+~
+Sector hills~
+Exit north 30631
+Exit east 30637
+Exit south 30633
+Exit west 30628
+End
+
+
+#30633
+Name Steep Foothills~
+Desc Here the steep foothills meet impassable mountainsides, blocking travel
+to the west.  The rocky hills stretch out in all other directions, as far as
+you can see.  
+~
+Sector hills~
+Exit north 30632
+Exit east 30638
+Exit south 30634
+End
+
+
+#30634
+Name Steep Foothills~
+Desc The steep foothills meet mountainsides here.  You cannot travel west or
+south, as sheer walls of stone block the way, but the hills in the other
+directions seem passable.  
+~
+Sector hills~
+Exit north 30633
+Exit east 30639
+End
+
+
+#30635
+Name Flatlands, Just South of River~
+Desc The ground here is fairly flat, and only broken in a few places by large
+rocks.  Some hardy grass and bushes are scattered about, but nothing in the
+way of heavy vegetation.  A strong, noisy river is just north.  The ground
+rises and becomes rockier to the west and south.  
+~
+Sector field~
+Exit north 30590
+Exit south 30636
+Exit west 30630
+End
+
+
+#30636
+Name Foothills~
+Desc You are among some low, rocky hills.  They seem to grow steeper to the
+west, while to the east the ground flattens and becomes greener.  
+~
+Sector hills~
+Exit north 30635
+Exit east 30450
+Exit south 30637
+Exit west 30631
+End
+
+
+#30637
+Name Foothills~
+Desc The hills that surround you are not steep, but are quite rocky, making
+travel dangerous.  They seem to disappear and give way to flatter ground
+east of here, while to the west grow steeper.  
+~
+Sector hills~
+Exit north 30636
+Exit east 30278
+Exit south 30638
+Exit west 30632
+End
+
+
+#30638
+Name Foothills~
+Desc Low foothills surround you, and lead up to a mountain range to the west. 
+The ground is very rocky and doesn't support much wildlife or vegetation.  
+~
+Sector hills~
+Exit north 30637
+Exit east 30277
+Exit south 30639
+Exit west 30633
+End
+
+
+#30639
+Name Steep Foothills~
+Desc Sheer walls of stone block travel west from here, but you can move in the 
+other directions if you feel like climbing.  Rocky hills stand all around, 
+and not much vegetation or shelter.  
+~
+Sector hills~
+Exit north 30638
+Exit east 31060
+Exit south 30640
+Exit west 30634
+End
+
+
+#30640
+Name Steep Foothills~
+Desc You are amongst steep, rocky foothills.  Sheer mountainsides lie to the
+west, while the hills continue in other directions.  The area seems
+completely dead of wildlife of any type.  
+~
+Sector hills~
+Exit north 30639
+Exit south 30641
+End
+
+
+#30641
+Name Steep Foothills~
+Desc The way west and south is blocked by steep mountainsides here, but if you
+feel like some climbing you can set off through the steep hills that lie in
+the other directions.  Through a gap to the east there is a building.  It
+appears to have once been a well-built structure, but has long since fallen
+into disrepair.  
+~
+Sector hills~
+Exit north 30640
+Exit east 30642
+End
+
+
+#30642
+Name Foothills~
+Desc You are in a small open area in the middle of rocky foothills. 
+Immediately to your east is the entrance to an old building.  It appears to
+have once been an impressive place, but seems to have become quite derelict.
+The rocky hills stretch out in all directions.  
+~
+RoomFlags no_mob~
+Sector hills~
+Exit north 23600
+Exit south 30770
+Exit west 30641
+End
+
+
+#30643
+Name Thick Forest~
+Desc The forest is thick and dark here.  The many varieties of trees have grown 
+very close here, their branches and leaves blocking out much of the light.  
+~
+Sector forest~
+Exit north 30502
+Exit east 30506
+Exit south 30353
+Exit west 30351
+End
+
+
+#30644
+Name Thick Forest~
+Desc You are just south of a cleared roadway, among the tightly growing trees.  
+Leaves and branches scratch at you as you move through this section of thick 
+forest.  The sounds of wildlife are all around.  
+~
+Sector forest~
+Exit north 30103
+Exit east 30651
+Exit south 30653
+Exit west 30645
+End
+
+
+#30645
+Name Thick Forest~
+Desc The forest is thick and dark here.  The many varieties of trees have
+grown very close here, their branches and leaves blocking out much of
+the light.  There appears to be a cleared path or road to the north.  
+~
+Sector forest~
+Exit north 30102
+Exit east 30644
+Exit south 30652
+Exit west 30244
+End
+
+
+#30646
+Name Thick Forest~
+Desc You are just south of a cleared roadway, among the tightly growing trees.  
+Leaves and branches scratch at you as you move through this section of thick 
+forest.  The sounds of wildlife are all around.  
+~
+Sector forest~
+Exit north 30105
+Exit east 30647
+Exit south 30655
+Exit west 30651
+End
+
+
+#30647
+Name Thick Forest~
+Desc The forest is thick and dark here.  The many varieties of trees have
+grown very close here, their branches and leaves blocking out much of the
+light.  There appears to be a cleared path or road to the north.  
+~
+Sector forest~
+Exit north 30106
+Exit east 30648
+Exit south 30656
+Exit west 30646
+End
+
+
+#30648
+Name Thick Forest~
+Desc You are just south of a cleared roadway, among the tightly growing trees.
+Leaves and branches scratch at you as you move through this section of thick
+forest.  The sounds of wildlife are all around.  
+~
+Sector forest~
+Exit north 30107
+Exit east 30649
+Exit south 30657
+Exit west 30647
+End
+
+
+#30649
+Name Thick Forest~
+Desc The forest is thick and dark here.  The many varieties of trees have
+grown very close here, their branches and leaves blocking out much of the
+light.  There appears to be a cleared path or road to the north.  
+~
+Sector forest~
+Exit north 30108
+Exit south 30658
+Exit west 30648
+End
+
+
+#30650
+Name Thick Forest~
+Desc You are just south of a cleared roadway, among the tightly growing trees.
+Leaves and branches scratch at you as you move through this section of thick
+forest.  The sounds of wildlife are all around.  
+~
+Sector forest~
+Exit east 30660
+Exit south 30668
+Exit west 30658
+End
+
+
+#30651
+Name Thick Forest~
+Desc The forest is thick and dark here.  The many varieties of trees have
+grown very close here, their branches and leaves blocking out much of the
+light.  There appears to be a cleared path or road to the north.  
+~
+Sector forest~
+Exit north 30104
+Exit east 30646
+Exit south 30654
+Exit west 30644
+End
+
+
+#30652
+Name Forest~
+Desc You are deep among the tightly growing trees.  Leaves and branches scratch 
+at you as you move through this section of thick forest.  The sounds of 
+wildlife are all around.  
+~
+Sector forest~
+Exit north 30645
+Exit east 30653
+Exit south 30661
+Exit west 30245
+End
+
+
+#30653
+Name Forest~
+Desc The forest is thick and dark here.  The many varieties of trees have
+grown very close here, their branches and leaves blocking out much of the
+light.  
+~
+Sector forest~
+Exit north 30644
+Exit east 30654
+Exit south 30662
+Exit west 30652
+End
+
+
+#30654
+Name Forest~
+Desc You are deep among the tightly growing trees.  Leaves and branches scratch 
+at you as you move through this section of thick forest.  The sounds of 
+wildlife are all around.  
+~
+Sector forest~
+Exit north 30651
+Exit east 30655
+Exit south 30663
+Exit west 30653
+End
+
+
+#30655
+Name Forest~
+Desc The forest is thick.  The many varieties of trees are all struggling to live 
+here, their rotting and leaves blocking out much of the light.  
+~
+Sector forest~
+Exit north 30646
+Exit east 30656
+Exit south 30664
+Exit west 30654
+End
+
+
+#30656
+Name Forest~
+Desc You are deep among the tightly growing trees.  Leaves and branches
+scratch at you as you move through this section of thick forest.  The sounds
+of wildlife are all around.  
+~
+Sector forest~
+Exit north 30647
+Exit east 30657
+Exit south 30665
+Exit west 30655
+End
+
+
+#30657
+Name Forest~
+Desc The forest is thick and dark here.  The many varieties of trees have
+grown very close here, their branches and leaves blocking out much of the
+light.  
+~
+Sector forest~
+Exit north 30648
+Exit east 30658
+Exit south 30666
+Exit west 30656
+End
+
+
+#30658
+Name Forest~
+Desc You are deep among the tightly growing trees.  Leaves and branches
+scratch at you as you move through this section of thick forest.  The sounds
+of wildlife are all around.  
+~
+Sector forest~
+Exit north 30649
+Exit east 30650
+Exit south 30667
+Exit west 30657
+End
+
+
+#30660
+Name Forest~
+Desc You are deep among the tightly growing trees.  Leaves and branches
+scratch at you as you move through this section of thick forest.  The sounds
+of wildlife are all around.  
+~
+Sector forest~
+Exit east 30133
+Exit south 30135
+Exit west 30650
+End
+
+
+#30661
+Name Forest~
+Desc Tall trees surround you here, but are not so tightly growing as to the
+north.  The ground is covered with pine needles and leaves that crunch as
+you move around.  The forest continues in all directions.  
+~
+Sector forest~
+Exit north 30652
+Exit east 30662
+Exit south 30669
+End
+
+
+#30662
+Name Forest~
+Desc The forest is light and pleasant here.  Nicely spaced trees of several
+types surround you, and seem full of life.  The ground is flat, and covered
+with leaves and pine needles.  
+~
+Sector forest~
+Exit north 30653
+Exit east 30663
+Exit south 30670
+Exit west 30661
+End
+
+
+#30663
+Name Forest~
+Desc A healthy forest air fills your lungs as you breath deeply.  The trees 
+around you and the forest sounds you here, suggest that this forest is full 
+of life.  A small squirrel can be seen scaling a tall treetrunk now and 
+again, and birds fly low through the arced branches.  
+~
+Sector forest~
+Exit north 30654
+Exit east 30664
+Exit west 30662
+End
+
+
+#30664
+Name Thinning Forest~
+Desc The trees here are nicely spaced, and moving around is not difficult. 
+They seem to grow even farther apart as you head east or south, while to the
+west and north it becomes denser.  
+~
+Sector forest~
+Exit north 30655
+Exit east 30665
+Exit south 30672
+Exit west 30663
+End
+
+
+#30665
+Name Thinning Forest~
+Desc Here the forest makes a transition from thick dense forest to the north, to 
+thinning trees to the south.  
+~
+Sector forest~
+Exit north 30656
+Exit east 30666
+Exit south 30673
+Exit west 30664
+End
+
+
+#30666
+Name Thinning Forest~
+Desc At this part of the forest, the trees begin to thin out.  To the south,
+the ground gets muddy, and some of the trees are dead or dying.  To the
+north, the vegetation gets denser.  
+~
+Sector forest~
+Exit north 30657
+Exit east 30667
+Exit south 30674
+Exit west 30665
+End
+
+
+#30667
+Name Thinning Forest~
+Desc The trees here are much more widely spaced than those to the north, and
+seem to die out even more to the south.  There is not much animal life that
+you can see or hear.  
+~
+Sector forest~
+Exit north 30658
+Exit east 30668
+Exit south 30675
+Exit west 30666
+End
+
+
+#30668
+Name Thinning, Dying Forest~
+Desc The forest isn't so green here, and gets thinner to the east and south. 
+The trees have lost some of their leaves, and are stunted in some cases. 
+There is not much wildlife that you can see or hear.  
+~
+Sector forest~
+Exit north 30650
+Exit east 30135
+Exit south 30676
+Exit west 30667
+End
+
+
+#30669
+Name Forest~
+Desc Tall trees surround you on all sides, and stretch out as far as you can
+see.  Animals seem plentiful, and the area is full of life.  The ground is
+covered with a thin layer of leaves and pine needles.  
+~
+Sector forest~
+Exit north 30661
+Exit east 30670
+Exit south 30677
+Exit west 30247
+End
+
+
+#30670
+Name Forest~
+Desc Trees of several types surround you.  They are not so close that travelling 
+is difficult.  Sounds of forest animals and birds chirping comes from all 
+around.  
+~
+Sector forest~
+ExtraDesc stoned blood bones~
+The stones and bones disposed in circle are everywhere, all covered in
+cotted blood.  
+~
+ExtraDesc altar ~
+In this altar you see great amounts of cotted blood and a stylized 'Z'
+engraved on the stone.  
+~
+Exit north 30662
+Exit south 30678
+Exit west 30669
+End
+
+
+#30672
+Name Thinning Forest~
+Desc The forest has grown quite thin here, with large spaces between trees,
+and even some dead ones.  It grows thicker and greener to the west, but to
+the east seems to die out even more.  
+~
+Sector forest~
+Exit north 30664
+Exit east 30673
+Exit south 30680
+End
+
+
+#30673
+Name Dying Forest~
+Desc There are more dead trees than living trees in this section of the
+forest.  To the north and west, it seems a little better, but east and south
+only gets more barren.  There is little in the way of animal life.  
+~
+Sector forest~
+Exit north 30665
+Exit east 30674
+Exit south 30681
+Exit west 30672
+End
+
+
+#30674
+Name Dying Forest~
+Desc The trees here are in bad shape, with many stunted or dead.  The ground
+is muddy, and there are few signs of animal life.  
+~
+Sector forest~
+Exit north 30666
+Exit east 30675
+Exit south 30682
+Exit west 30673
+End
+
+
+#30675
+Name Dying Forest~
+Desc The forest here is mostly dead, with only a few trees clinging to life. 
+The ground is quite muddy.  It seems to get worse to the south, but to the
+north is greener.  
+~
+Sector forest~
+Exit north 30667
+Exit east 30676
+Exit south 30683
+Exit west 30674
+End
+
+
+#30676
+Name Dying Forest~
+Desc The forest isn't so green here, and gets thinner to the east and south.  The 
+trees have lost some of their leaves, and are stunted in some cases.  There 
+is not much wildlife that you can see or hear.  
+~
+Sector forest~
+Exit north 30668
+Exit east 30136
+Exit south 30684
+Exit west 30675
+End
+
+
+#30677
+Name Riverbank~
+Desc You are on the north shore of a wide, calm river, which flows from west
+to east.  Tall trees surround you, and from them you hear sounds of the
+forest animals.  Just west, someone has constructed a simple rope bridge
+across the river.  
+~
+Sector forest~
+Exit north 30669
+Exit east 30678
+Exit south 30685
+Exit west 30248
+End
+
+
+#30678
+Name Riverbank~
+Desc You are on the north shore of a wide river.  Tall trees of several types
+surround you, and seem full of wildlife.  The river is fairly calm here, and
+flows eastwards.  
+~
+Sector forest~
+Exit north 30670
+Exit east 30679
+Exit south 30686
+Exit west 30677
+End
+
+
+#30679
+Name Riverbank~
+Desc The forest lies in all ways but south; in that direction a wide, calm
+river is flowing eastwards.  The area is very quiet, with no sounds of
+wildlife, only the gurgle of moving water.  Across the river to the south
+there are no trees, only mud.  
+~
+Sector forest~
+Exit east 30680
+Exit south 30687
+Exit west 30678
+End
+
+
+#30680
+Name Riverbank~
+Desc The many trees of the forest here surround a river to your south.  They
+seem to thin as you look east, The river is quite calm here, though a little
+muddy.  
+~
+Sector forest~
+Exit north 30672
+Exit east 30681
+Exit south 30688
+Exit west 30679
+End
+
+
+#30681
+Name Riverbank, Dying Forest~
+Desc You are on the north bank of a wide, slow river.  Trees surround you, but
+they don't look very healthy.  As a matter of fact they seem to completely
+die out to the east.  The river, though calm, is very muddy and dark.  
+~
+Sector forest~
+Exit north 30673
+Exit east 30682
+Exit south 30689
+Exit west 30680
+End
+
+
+#30682
+Name Dead Forest, Northeast of River~
+Desc It is not pleasant or easy travelling through this area, due to the deep
+mud bogging you down.  Dead trees and burnt stumps are all around, but
+nothing living that you can see.  
+~
+Sector hills~
+Exit north 30674
+Exit east 30683
+Exit south 30690
+Exit west 30681
+End
+
+
+#30683
+Name Dead Forest~
+Desc You are in the middle of a dead forest.  The ground is mud, broken only
+by a burnt stump or rotting branch sticking up here and there.  It is very
+quiet.  
+~
+Sector hills~
+Exit north 30675
+Exit east 30684
+Exit south 30691
+Exit west 30682
+End
+
+
+#30684
+Name Dead Forest~
+Desc You are in a muddy, dead forest.  Stumps and branches lie around you, and
+a small village is southeast.  A thin wooden wall surrounds the village, nut
+there are no signs of life from it.  
+~
+Sector hills~
+Exit north 30676
+Exit east 30137
+Exit south 30692
+Exit west 30683
+End
+
+
+#30685
+Name On the River~
+Desc You are on the wide river, flowing west to east through a dense forest. 
+It is quite calm here.  There is a flimsy bridge crossing just to the west. 
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30677
+Exit east 30686
+Exit south 30251
+Exit west 30249
+End
+
+
+#30686
+Name On the River~
+Desc The river flows eastwards through the dark forest here.  It is wide and
+calm at this point, and overhanging branches block parts of the sky.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30678
+Exit east 30687
+Exit south 30693
+Exit west 30685
+End
+
+
+#30687
+Name On the River~
+Desc You are on the wide river, flowing west to east through a forest.  It is
+quite calm here, although the water is quite muddy.  To the south, the trees
+are mostly dead.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30679
+Exit east 30688
+Exit south 30694
+Exit west 30686
+End
+
+
+#30688
+Name Muddy River~
+Desc The river here is wide and quite muddy at this point.  It flows from the
+west, and is surrounded by dying trees and a lot of mud.  Just east it
+appears to make a turn south, and gets muddier.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30680
+Exit east 30689
+Exit south 30695
+Exit west 30687
+End
+
+
+#30689
+Name Muck-Filled River~
+Desc The river flows from west to south here, and is hard to distinguish where
+it stops and the shore begins because it is so muddy and filled with sludge.
+A muddy wasteland surrounds it to the southeast, while to the west the area
+looks a little healthier, with some live trees still standing.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30681
+Exit east 30690
+Exit south 30696
+Exit west 30688
+End
+
+
+#30690
+Name Riverbank, Dead Forest~
+Desc You are on the north bank of a sludge-filled river, among the dead trees.
+Burnt stumps and branches poke up through the mud all around, and there are
+no signs of life.  
+~
+Sector hills~
+Exit north 30682
+Exit east 30691
+Exit south 30697
+Exit west 30689
+End
+
+
+#30691
+Name Riverbank, Dead Forest~
+Desc You are just north of a muck-filled river, in a muddy, dead forest. 
+Stumps and rotting branches poke through the dirt here and there, but all
+are dead.  
+~
+Sector hills~
+Exit north 30683
+Exit east 30692
+Exit south 30698
+Exit west 30690
+End
+
+
+#30692
+Name Riverbank, Dead Forest~
+Desc The river just to your south is disgusting - it is filled with sludge and
+much and barely flows at all.  A flimsy wooden wall blocks your way east. 
+Dying forest lies in other directions.  
+~
+Sector hills~
+Exit north 30684
+Exit east 31107
+Exit south 30699
+Exit west 30691
+End
+
+
+#30693
+Name Riverbank, Dying Forest~
+Desc You are near the south bank of a wide river.  The river is very calm at
+this point, and makes hardly a gurgle or splash.  There are some trees
+around you, but they are in pretty bad shape, and seem to die out completely
+to the east and south.  
+~
+Sector forest~
+Exit north 30686
+Exit east 30694
+Exit south 30700
+Exit west 30251
+End
+
+
+#30694
+Name Riverbank, Muddy Wasteland~
+Desc You are on the south shore of a wide, muddy river.  The river appears to
+be full of sludge and is flowing very slowly.  Muddy wastelands stretch
+south, but there are a few trees on the north shore.  
+~
+Sector hills~
+Exit north 30687
+Exit east 30695
+Exit south 30701
+Exit west 30693
+End
+
+
+#30695
+Name Riverbank, Muddy Wasteland~
+Desc You are on the southwest shore of a muck-filled river.  It flows from the
+west and makes a bend to the south, and is moving very sluggishly.  The
+whole area around you is nothing but mud, with occasional burnt stumps
+sticking through.  
+~
+Sector hills~
+Exit north 30688
+Exit east 30696
+Exit south 30702
+Exit west 30694
+End
+
+
+#30696
+Name Muck-Filled River~
+Desc The river is difficult to tell from the shore here, because it is so
+muddy and full of muck.  From what you can tell, it flows from the north and
+takes a turn east.  The current is very slow and hardly exists at all.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30689
+Exit east 30697
+Exit south 30703
+Exit west 30695
+End
+
+
+#30697
+Name Muck-Filled River~
+Desc The river flows slowly eastwards here.  It is so full of mud and slime at
+this point that is is actually more of a marsh or swamp in some spots.  To
+the south lies a muddy wasteland, while north a dying forest.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30690
+Exit east 30698
+Exit south 30704
+Exit west 30696
+End
+
+
+#30698
+Name Muck-Filled River~
+Desc The river is full of muck and slime here.  It flows eastwards, but
+barely, and is hard to tell from the shore because the shore is all mud. 
+Wastelands stretch south, and a muddy, dying forest to the north.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30691
+Exit east 30699
+Exit south 30705
+Exit west 30697
+End
+
+
+#30699
+Name Muck-Filled River~
+Desc The muck-filled river flows slowly eastward.  To the north, dying forest, 
+while south is muddy wastelands.  Some way to the southeast stands a walled 
+city, from which you can even from here hear guttural shouts and voices.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30692
+Exit east 30222
+Exit south 30455
+Exit west 30698
+End
+
+
+#30700
+Name Edge of Barren, Scorched Wastelands~
+Desc The ground here is slightly dry and cracked, and gets worse to the south.
+There is no vegetation of any type, but off to the north there are some
+sparse trees.  The ground gets wetter to the east.  
+~
+Sector field~
+Exit north 30693
+Exit east 30701
+Exit south 30463
+Exit west 30252
+End
+
+
+#30701
+Name Muddy Wastelands~
+Desc You are near the northwestern edge of some muddy wastelands.  The ground
+to the west is drier, but east the much gets thick and deep.  A few burnt
+stumps stick up here and there, but not much else.  
+~
+Sector hills~
+Exit north 30694
+Exit east 30702
+Exit south 30462
+Exit west 30700
+End
+
+
+#30702
+Name Muddy Wasteland, Southwest of River~
+Desc You are in the midst of muddy wastelands, just southwest of a river. 
+Aside from some dead stumps and rotten logs, there is not much else.  
+~
+Sector hills~
+Exit north 30695
+Exit east 30703
+Exit south 30461
+Exit west 30701
+End
+
+
+#30703
+Name Riverbank, Muddy Wasteland~
+Desc You are near the south bank of a sludge filled river, standing in the
+muck.  Muddy wastelands stretch out on all directions this side of the
+river.  
+~
+Sector hills~
+Exit north 30696
+Exit east 30704
+Exit south 30460
+Exit west 30702
+End
+
+
+#30704
+Name Riverbank, Muddy Wasteland~
+Desc The land is hard to distinguish from the river to the north here, due to
+the water containing lots of dirt and sludge.  Muddy wastelands stretch
+south.  
+~
+Sector hills~
+Exit north 30697
+Exit east 30705
+Exit south 30706
+Exit west 30703
+End
+
+
+#30705
+Name Riverbank, Muddy Wasteland~
+Desc You are south of a muck-filled river, standing in muddy wastelands. 
+There is what looks like a walled city to the southeast, but you are too far
+away to make out any details.  
+~
+Sector hills~
+Exit north 30698
+Exit east 30455
+Exit south 30707
+Exit west 30704
+End
+
+
+#30706
+Name Muddy Wasteland~
+Desc Burnt and dead tree stumps poke up through the mud all around you.  There
+are few signs of life in any direction but east.  Off in that way you see
+the walls of a city, from which you can hear laughing and loud voices.  
+~
+Sector hills~
+Exit north 30704
+Exit east 30707
+Exit south 30458
+Exit west 30460
+End
+
+
+#30707
+Name Muddy Wasteland, West of a City~
+Desc You stand in a muddy wasteland, just west of a walled city.  Burnt stumps
+stick up through the much here and there, but there are no signs of life. 
+Occasional metal clanging and deep voices come from the directions of the
+city.  
+~
+Sector hills~
+Exit north 30705
+Exit east 30454
+Exit south 30457
+Exit west 30706
+End
+
+
+#30708
+Name Light Forest~
+Desc Maple and pine trees loosely surround you, making up a nice forest.  Dry
+leaves cover the ground, and from the east comes the sound of trickling
+water.  It looks like there is a cleared path or roadway just north.  
+~
+Sector forest~
+Exit north 30218
+Exit east 30709
+Exit south 30714
+Exit west 30185
+End
+
+
+#30709
+Name Riverbank~
+Desc You are near the western bank of a wide river.  It is flowing by
+northwards.  Around you are trees of various types, most tall and old.  Just
+north it appears that a path or road cuts through the forest and crossed
+over a wooden bridge.  
+~
+Sector forest~
+Exit north 30219
+Exit east 30710
+Exit south 30715
+Exit west 30708
+End
+
+
+#30710
+Name On the River~
+Desc You are on a river, just south of a wooden bridge that crosses it.  Dead 
+trees cover both the east and west banks.  The river flows northward, and is 
+slow and wide at this point.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Mana 10
+Heal 10
+Exit north 30220
+Exit east 30711
+Exit south 30716
+Exit west 30709
+End
+
+
+#30711
+Name Riverbank~
+Desc You are on the east bank of a slow river, among some trees.  The river is
+wide, and flows to the north.  The forest stretches away in all directions,
+but does seem to be interrupted by a cleared path just north of here.  
+~
+Sector forest~
+Exit north 30221
+Exit east 30244
+Exit south 30717
+Exit west 30710
+End
+
+
+#30712
+Name On the River~
+Desc You are on the water just south of a large city.  There are boats of
+several types and sizes tethered to the shore here.  Grassy flatlands
+stretch away to the south.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit east 30713
+Exit south 30718
+Exit west 30771
+End
+
+
+#30713
+Name On the River~
+Desc The river here is wide and calm, and flows slowly eastwards.  In that
+direction, not far from here it seems to split into two directions.  A large
+walled city is just northwest.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30185
+Exit east 30714
+Exit south 30719
+Exit west 30712
+End
+
+
+#30714
+Name Fork In River~
+Desc You are on the middle of a wide, calm river.  It flows from the west, and
+here forks off in two directions.  One continues east, and the other south. 
+The surrounding area is mostly flat, and is covered by some scattered trees.
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30708
+Exit east 30715
+Exit south 30720
+Exit west 30713
+End
+
+
+#30715
+Name On the River~
+Desc The river cuts through the land here, flowing from west to east.  It is
+bordered on the north by some light forest, and to the south mostly grassy
+flatlands.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30709
+Exit east 30716
+Exit south 30721
+Exit west 30714
+End
+
+
+#30716
+Name Bend in River~
+Desc The river makes a turn here, flowing from the west and bending to the
+north.  It is wide and calm at this point.  Light forest surrounds you.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30710
+Exit east 30717
+Exit south 30722
+Exit west 30715
+End
+
+
+#30717
+Name Riverbank~
+Desc You are on the eastern bank of a wide river.  The river flows from the west, 
+and bends north.  Trees line the banks, and a pleasant forest lies in all 
+directions.  Towards the east you notice a thick circle of tree's lined 
+together, their appearance seems strange, its as if they are trying to mask 
+something.  
+~
+Sector forest~
+Exit north 30711
+Exit east 30245
+Exit south 30723
+Exit west 30716
+End
+
+
+#30718
+Name Riverbank~
+Desc You are near the south shore of a wide, slow river.  Tall grass waves in
+the breeze all around you.  Beyond the river, to the north, lies a fairly
+large walled city.  A wooden bridge crosses the water just to the west of
+here.  
+~
+Sector field~
+Exit north 30712
+Exit east 30719
+Exit south 30724
+Exit west 30236
+End
+
+
+#30719
+Name Riverbank~
+Desc You are along the south bank of a wide river.  A ways to the west you can
+see a wooden bridge crossing it, and a walled in city at the north end of
+that bridge.  The ground is grassy, with some small bushes.  A light forest
+seems to spring up to the east.  
+~
+Sector field~
+Exit north 30713
+Exit east 30720
+Exit south 30725
+Exit west 30718
+End
+
+
+#30720
+Name On the River~
+Desc You are on a wide, slow river, flowing north to south.  Grassy flatlands 
+surround it.  
+~
+RoomFlags no_mob~
+Sector noswim~
+Exit north 30714
+Exit east 30721
+Exit south 30726
+Exit west 30719
+End
+
+
+#30721
+Name Point at Fork in River~
+Desc The river forks here, flowing from the west to the north and the south 
+around a strip of land to the east.  
+~
+Sector field~
+ExtraDesc 'north'~
+The river forks to the north.
+~
+ExtraDesc south ~
+The river forks to the south.
+~
+ExtraDesc east ~
+To the east is a strip of land, around which the river flows.  
+~
+ExtraDesc west ~
+The river flows from the west.
+~
+Exit north 30715
+Exit east 30722
+Exit south 30727
+Exit west 30720
+End
+
+
+#30722
+Name Strip of Land between Two Forks of the River~
+Desc This small strip of land stands between two forks in the river, one to the 
+north and one to the south.  The sandy soil supports only some hardy grasses 
+which provide shelter for nesting water fowl.  To the west you can see the 
+beginning of the fork in the river.  Eastward, the sandy soil becomes a 
+riverbank.  
+~
+Sector field~
+Exit north 30716
+Exit east 30723
+Exit south 30728
+Exit west 30721
+End
+
+
+#30723
+Name Riverbank~
+Desc The hazy hum of mosquitoes dominates this section of the riverbank.  A heavy 
+growth of reeds to the south has created a perfect breeding ground for the 
+insects, but it does seem passable.  
+~
+Sector field~
+Exit north 30717
+Exit south 30729
+Exit west 30722
+End
+
+
+#30724
+Name Flatlands~
+Desc You are on the flatlands.  Small trees stand in clumps here and there.  
+Short grass covers the rest of the ground.  There are some tents to the 
+south, but the way is blocked by a deep ditch.  
+~
+Sector field~
+Exit north 30718
+Exit east 30725
+Exit west 30237
+End
+
+
+#30725
+Name Riverbank~
+Desc You are on the west bank of a wide river.  It flows form the north, and 
+takes a turn east here.  The ground is flat and covered by small clumps of 
+trees.  
+~
+Sector field~
+Exit north 30719
+Exit east 30726
+Exit south 30730
+Exit west 30724
+End
+
+
+#30726
+Name On the River~
+Desc You are on a wide, slow river, flowing from the north and bending here to 
+the east.  Grassy flatlands and small clumps of trees surround it.  
+~
+Sector noswim~
+Exit north 30720
+Exit east 30727
+Exit south 30731
+Exit west 30725
+End
+
+
+#30727
+Name On the River~
+Desc The river continues its lazy course here, flowing eastward.  The riverbank 
+to the south teems with life.  
+~
+Sector noswim~
+Exit north 30721
+Exit east 30728
+Exit south 30732
+Exit west 30726
+End
+
+
+#30728
+Name On the River~
+Desc Continuing it's course from west to east, the river narrows some here.  To 
+the north there is a sandy strip of land and southward lies a riverbank.  
+~
+Sector noswim~
+Exit north 30722
+Exit east 30729
+Exit south 30733
+Exit west 30727
+End
+
+
+#30729
+Name On the River~
+Desc The river makes a slow turn here, flowing from the west and turning 
+southward.  North and east, the banks of the river seem like ideal landing 
+spots.  
+~
+Sector noswim~
+Exit north 30723
+Exit east 30247
+Exit south 30734
+Exit west 30728
+End
+
+
+#30730
+Name Flatlands~
+Desc You are on the flatlands.  Small trees stand in clumps here and there.  
+Short grass covers the rest of the ground.  There are some tents to the 
+west, but the way is blocked by a deep ditch.  
+~
+Sector field~
+Exit north 30725
+Exit east 30731
+Exit south 30736
+End
+
+
+#30731
+Name Riverbank~
+Desc You are on the south bank of a wide, slowly flowing river.  It runs from the 
+north and makes a turn east here.  The ground is flat and grassy, but does 
+get rockier as you look south.  
+~
+Sector field~
+Exit north 30726
+Exit east 30732
+Exit south 30737
+Exit west 30730
+End
+
+
+#30732
+Name Riverbank~
+Desc The ground here slopes gently downwards to the river to the north.  The 
+grass is lush, a contrast to the rockier grounds to the south.  
+~
+Sector field~
+Exit north 30727
+Exit east 30733
+Exit south 30738
+Exit west 30731
+End
+
+
+#30733
+Name Riverbank~
+Desc This bank here is bordered to the north and east by the slowly flowing 
+river.  You can hear the buzz of insects here, sheltered in the plants 
+growing at the rivers edge.  
+~
+Sector field~
+Exit north 30728
+Exit east 30734
+Exit south 30739
+Exit west 30732
+End
+
+
+#30734
+Name On the River~
+Desc The river continues streaming to the south in a fluid motion.  The soft 
+waves beat softly against both shores.  To the east and west the small muddy 
+banks have been left behind by the force of the river.  
+~
+Sector noswim~
+Exit north 30729
+Exit east 30248
+Exit south 30740
+Exit west 30733
+End
+
+
+#30735
+Name Rocky Flatlands~
+Desc The ground here is flat, but fairly rocky.  To the north, it flattens out 
+and gets greener, but to the south rises into rocky hills.  
+~
+Sector field~
+Exit east 30736
+Exit south 30741
+Exit west 30239
+End
+
+
+#30736
+Name Rocky Flatlands~
+Desc The ground here is flat, but fairly rocky.  To the north, it flattens out 
+and gets greener, but to the south rises into rocky hills.  
+~
+Sector field~
+Exit north 30730
+Exit east 30737
+Exit south 30742
+Exit west 30735
+End
+
+
+#30737
+Name Rocky Flatlands~
+Desc The ground here is flat, but fairly rocky.  To the north, it flattens out 
+and gets greener, but to the south rises into rocky hills.  
+~
+Sector field~
+Exit north 30731
+Exit east 30738
+Exit south 30743
+Exit west 30736
+End
+
+
+#30738
+Name Rocky Flatlands~
+Desc The ground here is flat, but fairly rocky.  To the north, it flattens out 
+and gets greener, but to the south rises into rocky hills.  
+~
+Sector field~
+Exit north 30732
+Exit east 30739
+Exit south 30744
+Exit west 30737
+End
+
+
+#30739
+Name Riverbank~
+Desc Soft bubbling water runs just to the east of this slightly muddy bank.  Some 
+reeds obscure the view in that direction.  
+~
+Sector field~
+Exit north 30733
+Exit east 30740
+Exit south 30745
+Exit west 30738
+End
+
+
+#30740
+Name On the River~
+Desc The slow torrent of the river makes a wide turn to the east.  Some water 
+lilies bob gently as the flow changes direction and some frogs can be heard 
+croaking amongst the reeds of the bank.  
+~
+Sector noswim~
+Exit north 30734
+Exit east 30249
+Exit south 30746
+Exit west 30739
+End
+
+
+#30741
+Name Rocky Flatlands~
+Desc The ground here is flat, but fairly rocky.  To the north, it flattens out 
+and gets greener, but to the south rises into rocky hills.  
+~
+Sector field~
+Exit north 30735
+Exit east 30742
+Exit south 30242
+Exit west 30240
+End
+
+
+#30742
+Name Rocky Flatlands~
+Desc The ground here is flat, but fairly rocky.  To the north, it flattens out 
+and gets greener, but to the south rises into rocky hills.  
+~
+Sector field~
+Exit north 30736
+Exit east 30743
+Exit south 30255
+Exit west 30741
+End
+
+
+#30743
+Name Rocky Flatlands~
+Desc The ground here is flat, but fairly rocky.  To the north, it flattens out 
+and gets greener, but to the south rises into rocky hills.  
+~
+Sector field~
+Exit north 30737
+Exit east 30744
+Exit south 30256
+Exit west 30742
+End
+
+
+#30744
+Name Rocky Flatlands~
+Desc The ground here is flat, but fairly rocky.  To the north, it flattens out 
+and gets greener, but to the south rises into rocky hills.  
+~
+Sector field~
+Exit north 30738
+Exit east 30745
+Exit south 30257
+Exit west 30743
+End
+
+
+#30745
+Name Barren Flatlands~
+Desc The ground here is flat, but fairly rocky.  To the north, it flattens out 
+and gets greener, but to the south rises into rocky hills.  
+~
+Sector field~
+Exit north 30739
+Exit east 30746
+Exit south 30258
+Exit west 30744
+End
+
+
+#30746
+Name Riverbank~
+Desc A few trees sprout up along side this rather muddy riverbank.  A bend in the 
+river creates a large bank to the north, where some reeds sway with the 
+current.  
+~
+Sector field~
+Exit north 30740
+Exit east 30250
+Exit south 30747
+Exit west 30745
+End
+
+
+#30747
+Name Barren Flatlands~
+Desc What little vegetation there is here is sickly and dying, for some reason.  
+To the north, it looks a little healthier, perhaps because of the river that 
+flows through the area.  To the south the ground appears to be even more 
+barren, and even scorched.  It looks like there is a small keep of some type 
+off in that direction.  
+~
+Sector field~
+Exit north 30746
+Exit east 30748
+Exit south 30260
+Exit west 30258
+End
+
+
+#30748
+Name Barren Flatlands~
+Desc What little vegetation there is here is sickly and dying, for some reason.  
+To the north, it looks a little healthier, perhaps because of the river that 
+flows through the area.  To the south the ground appears to be even more 
+barren, and even scorched.  It looks like there is a small keep of some type 
+off in that direction.  
+~
+Sector field~
+Exit north 30250
+Exit east 30252
+Exit south 30261
+Exit west 30747
+End
+
+
+#30756
+Name Among Small Rocky Hills~
+Desc You are among many small, rocky hills.  There is little plant or animal
+life here, and it is very quiet.  The way west is blocked by a particularly
+steep hill.  
+~
+Sector hills~
+Exit north 30241
+Exit east 30243
+Exit south 30757
+Exit west 30297
+End
+
+
+#30757
+Name Among Small Rocky Hills~
+Desc You are among the small, rocky hills.  There is little plant or animal life 
+around.  The ground seems to get flatter to the south, but no less desolate. 
+ A particularly large fissure blocks travel to the east.  
+~
+Sector hills~
+Exit north 30756
+Exit east 30315
+Exit south 30758
+End
+
+
+#30758
+Name Rocky Flatlands~
+Desc You are in the midst of some small rocky hills.  Travel is not easy, as the 
+ground is quite broken.  There is no noise whatsoever here, aside from the 
+sounds of your movement.  A particularly large fissure blocks your way east. 
+~
+Sector field~
+Exit north 30757
+Exit east 30314
+Exit south 30759
+End
+
+
+#30759
+Name Desolate Flatlands~
+Desc Dry, desolate flatlands surround you.  There are few signs of life, and it 
+is very quiet.  The ground gets quite broken and hilly to the east.  
+~
+Sector field~
+Exit north 30758
+Exit east 19968
+Exit south 30760
+End
+
+
+#30760
+Name Desolate Flatlands~
+Desc You stand amidst a huge region of desolate flatlands.  Very far off to the 
+west and north, and closer to the east, there are hills, but not much life 
+in any direction.  
+~
+Sector field~
+Exit north 30759
+Exit east 19967
+Exit west 30761
+End
+
+
+#30761
+Name Desolate Flatlands~
+Desc Desolate Flatlands surround you.  It is very quiet, and there is little
+plant or animal life.  The ground rises into hills some way to the west.  
+~
+Sector field~
+Exit east 30760
+Exit west 30762
+End
+
+
+#30762
+Name Desolate Flatlands~
+Desc You are on the arid, desolate flatlands, not far from some hills to the
+west.  There are a few scraggly plants, but not much else.  
+~
+Sector field~
+Exit east 30761
+Exit west 30763
+End
+
+
+#30763
+Name Western Edge of Desolate Flatlands~
+Desc You stand on the western edge of some dry flatlands, near some hills to
+the west.  Beyond the hills tall mountains tower to meet the sky.  
+~
+Sector field~
+Exit east 30762
+Exit west 30764
+End
+
+
+#30764
+Name Among the Foothills~
+Desc You are among the short, rocky foothills.  Small bushes and occasional
+trees are scattered about.  Mountains rise to the west, and the ground
+flattens to the east.  
+~
+Sector hills~
+Exit east 30763
+Exit south 30765
+Exit west 30768
+End
+
+
+#30765
+Name Among the Foothills~
+Desc You are among the short, rocky foothills.  Small bushes and occasional
+trees are scattered about.  Mountains rise to the west, and the ground
+flattens to the east.  
+~
+Sector hills~
+Exit north 30764
+Exit south 30766
+Exit west 30767
+End
+
+
+#30766
+Name Foothills~
+Desc You are among rocky foothills.  A sheer mountain wall blocks the way
+south, but the hills do seem to flatten to the east.  A faint path forms
+here, and leads west.  
+~
+Sector hills~
+Exit north 30765
+Exit west 17700
+End
+
+
+#30767
+Name Steep Foothills~
+Desc You are among the steep foothills.  To the west stands a huge mountain, a 
+narrow rocky trail winding up its face.  There is little around besides grey 
+stone and a few hardy plants.  
+~
+Sector hills~
+Exit north 30768
+Exit east 30765
+Exit south 17700
+End
+
+
+#30768
+Name Foothills~
+Desc You are among the rocky foothills.  There is not much to look at except
+for some thorny patches of brambles.  
+~
+Sector hills~
+Exit east 30764
+Exit south 30767
+Exit west 30769
+End
+
+
+#30769
+Name Steep Foothills~
+Desc Steep, rocky foothills surround you.  There are few signs of life, and no 
+noise except for an occasional small stone tumbling down a mountainside.  
+The way south is blocked by a steep wall of stone, but to the west lie the 
+ruins of a small village in a narrow valley.  
+~
+Sector hills~
+Exit north 30770
+Exit east 30768
+End
+
+
+#30770
+Name Foothills~
+Desc You are among the rocky foothills.  There is no trail, making travel
+difficult.  Tall mountains reach to the sky to the west, blocking passage in
+that direction.  
+~
+Sector hills~
+Exit north 30642
+Exit south 30769
+End
+
+
+#30771
+Name Under a Bridge~
+Desc You are floating on the river under a long wooden bridge.  The bridge is 
+pretty wide and made of thick wooden beams, and it is quite dark under here. 
+~
+Sector noswim~
+Exit east 30712
+Exit west 30598
+Exit up 30235
+End
+
+
+#30772
+Name Underground Tunnel~
+Desc A dank musty smell feels this area, with its ancient stench.  Mildew and a 
+sickening pale green moss grows in every corner.  It seems that this small 
+tunnel seems to be man-made.  To the east you notice a small wooden door 
+built into the dirt of the earth itself.  Above you, you notice a trapdoor 
+leading to the way out of the tunnel.  
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 30773
+EFlags door closed~
+Exit up 30549
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#30773
+Name Dirty Hovel~
+Desc Dirt and grind seem to corrode this place in every square inch.  Rottening 
+food lies on a table in the corner of the room, never finished.  Clothes and 
+trash lies sprawled out wherever the occupant of this hovel felt like 
+throwing it.  Though, the strange thing would be the glass potion bottles 
+and glass instruments lying all about.  In the southeastern corner of the 
+room you notice a block of wood covered in silk and needles.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 30772
+EFlags door closed~
+End
+
+
+#30776
+Name A Small Briar-filled Path through the Forest~
+Desc Briars and weeds stick out in all directions, the growth in this area is 
+thick and you can barely make out the path that leads through here towards 
+the south.  Further down the path you can make out a small opening in the 
+thick growth.  
+~
+Sector forest~
+Exit north 30500
+EFlags door closed~
+EKeywords bush~
+Exit south 30777
+End
+
+
+#30777
+Name A Small Opening in a Thick Forest~
+Desc This small clearing is around thirty feet in diameter.  Large trees of 
+ancient origin grow around this area like a barricade of nature's embrace.  
+Towards the southeast edges of the opening you notice a small spring of 
+crystal clear water gushing out of the ground and the smell of sweet pine 
+and flowers mingle in the air.  
+~
+RoomFlags no_recall noscry~
+Sector forest~
+Mana 125
+Heal 150
+Exit north 30776
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 30504 spec_shadow_dragon
+M 30524 spec_cast_mage
+S
+
+
+
+#RESETS2
+M 0 30514 6 30738 1
+M 0 30504 1 30773 1
+O 0 30505 -1 30777
+M 0 30523 1 30777 1
+E 0 30506 -1 neck1~
+E 0 30506 -1 neck2~
+E 0 30507 -1 wielded~
+E 0 30508 -1 torso~
+E 0 30509 -1 legs~
+E 0 30510 -1 feet~
+E 0 30511 -1 floating~
+M 0 30506 10 30500 2
+M 0 30502 6 30502 1
+M 0 30509 5 30502 1
+M 0 30513 6 30503 2
+M 0 30501 6 30505 1
+M 0 30515 2 30508 2
+M 0 30515 2 30508 2
+M 0 30500 5 30509 1
+M 0 30510 5 30510 1
+M 0 30509 5 30511 1
+M 0 30506 10 30520 2
+M 0 30522 2 30522 1
+M 0 30503 6 30526 1
+M 0 30521 2 30534 1
+M 0 30506 10 30540 2
+M 0 30503 6 30542 1
+M 0 30517 2 30544 2
+M 0 30516 4 30546 2
+M 0 30513 6 30548 2
+M 0 30513 6 30548 2
+M 0 30509 5 30551 1
+M 0 30501 6 30554 1
+M 0 30521 2 30554 1
+M 0 30522 2 30555 1
+M 0 30511 6 30558 2
+M 0 30511 6 30558 2
+M 0 30506 10 30560 2
+M 0 30514 6 30577 1
+M 0 30506 10 30580 2
+M 0 30524 2 30600 1
+M 0 30511 6 30608 2
+M 0 30511 6 30608 2
+M 0 30513 6 30610 2
+M 0 30511 6 30612 2
+M 0 30514 6 30620 1
+M 0 30514 6 30649 2
+M 0 30514 6 30649 2
+M 0 30500 5 30653 1
+M 0 30501 5 30667 1
+M 0 30503 5 30678 1
+M 0 30526 1 30682 1
+E 0 30520 -1 head~
+M 0 30514 6 30690 1
+M 0 30514 6 30691 1
+M 0 30509 5 30708 1
+M 0 30510 5 30709 1
+M 0 30510 5 30711 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#30524
+title speech honesty~
+code if hastoken $n 30517
+pmote $n smiles at @ thoughtfully.
+sayto $n Indeed, honesty is to be highly esteemed.
+sayto $n As you possess this quality, you are worthy to take a flask of holy water.
+emote takes a flask from the shelf, and kneels slowly, filling it from the crystal clear water.
+emote prays the words 'bless'.
+mob oload 30516
+give flask $n
+sayto $n Take that flask, and may your heart remain true and honest all your days.
+emote smiles gently.
+mob oload 30518
+mob tgive 30518 $n
+endif
+~
+disabled false
+END
+
+#30511
+title blessing holy water~
+code if hastoken $n 7164
+pmote $n looks at @ with a wise glance.
+sayto $n Blessed water, did you say?
+sayto $n Well, let me see..
+sayto $n Are you worthy to behold such a thing?
+sayto $n If you are, tell me honestly, the name of a worthy quality that you possess.
+mob oload 30517
+mob tgive 30517 $n
+endif
+~
+disabled false
+END
+
+#30510
+title SPEECH: Merk~
+code sayto $n Yes?
+emote looks up and squints his watery eyes at $N
+sayto $n Why hello there! If it isn't a visitor! I like visitors. 
+emote pats the chair beside him.
+sayto $n Have a seat my friend and tell me what old merk can do for you.
+~
+disabled false
+END
+
+#30509
+title Merk's Pointer~
+code emote looks at $N sharply.
+sayto $n I see, you are looking for ol' Merk eh?
+emote points to the north. 
+sayto $n follow the flow of the river north stranger and there you will find what you seek.
+emote coughs, a spittle flying from his mouth.
+mob echoat $n looks at you from with watery eyes. 
+mob echoaround $n looks at $n from with watery eyes. 
+sayto $n [muttering to himself] I wonder if you are coming to ask him the question I once asked....
+shake
+sayto $n I can only pray what happens to me does not happen to you.... [the old man is suddenly racked by coughing]... I was once... strong....
+emote turns away.
+~
+disabled false
+END
+
+#30508
+title Delay for wizened ranger spirit: attack for evil.~
+code mob seeall
+glare $q
+sayto $q I fair warned ye to leave my sanctuary!
+sayto $q Taste then bitter death of defeat!
+mob cast 'blind' $q
+mob cast 'plague' $q
+mob cast 'curse' $q
+mob cast 'thorny feet' $q
+mob cast 'weaken' $q
+mob cast 'chaotic poison' $q
+mob kill $q
+mob forget
+~
+disabled false
+END
+
+#30507
+title wizened ranger ghost's greeting~
+code mob seeall
+if isgood $n
+pmote $n looks up at @.
+sayto $n Tis Fate that led ye to this sacred place, traveller.
+sayto $n Rest by yon cooling waters and ease thy weary bones.
+else
+if isevil $n
+sayto $n Thy presence defiles my sacred sanctuary!
+sayto $n The Oak shall grant ye no solace... begone or taste my blade!
+mob remember $n
+mob delay 2
+else
+pmote $n looks up at @.
+sayto $n Greetings, traveller.
+endif
+endif
+~
+disabled false
+END
+
+#30506
+title unused~
+code . 
+~
+disabled false
+END
+
+#30505
+title unused~
+code mob echoat $n A magical force shield of some sort prevents you.
+~
+disabled false
+END
+
+#30504
+title unused~
+code if rand 89
+mob echo The sweet melody of music fills the air.
+else
+if rand 65
+mob echo You hear the faint sounds of laughter in the distance.
+else
+if rand 66
+mob echo A faint scent of pine flows through the air.
+else
+if rand 81 
+mob echo A strange sensation of happiness overcomes you.
+else
+mob echo A beautiful chorus of music feels the air.
+endif
+endif
+endif
+endif
+~
+disabled false
+END
+
+#30503
+title malache's delay trigger for cloak of shadows~
+code ** 20 feb 2000 review(Tib)
+ 
+if carries $i 23539
+and carries $i 3077
+and carries $i 987
+ say hmph...This looks like everything, I'll need.
+ emote walks to the northeastern corner of the room with his back turned.
+ mob echo An amass of shadows seeps through the ground and covers the room in pitch blackness!
+ pmote $q turns towards @.
+ mob oload 30503 50 none
+ give cloak $q
+ mob junk all
+ say Come back anytime, I welcome gold much so.
+ grin
+ mob forget
+else
+ say This is not everything. Return with the rest of the items.
+ give needle $q
+ give zara $q
+ give spidersilk $q
+ give pouch $q
+ mob junk all
+ mob forget
+endif
+ 
+** Changes made :
+** mob now returns the pouch instead of 5000 gold if not all
+**the correct elements were included.
+~
+disabled false
+END
+
+#30502
+title give pouch malache~
+code emote looks through the pouch, for the necessary items.
+mob silently open pouch
+mob silently get all pouch
+mob remember $n
+mob delay 1
+~
+disabled false
+END
+
+#30501
+title Malache's Cost to make the cloak~
+code if hastoken $n 27156
+say Put the items in this pouch.
+mob oload 30500 1 none
+give pouch $n
+say Give it back when you've placed the items in the pouch.
+else
+say That's an awful lot of money to be giving away to a stranger.
+say But its very welcome, thank you.
+smile $n
+endif
+~
+disabled false
+END
+
+#30500
+title Malache's Speech~
+code if hastoken $n 27155
+say What is it I can do for you, traveler?
+echo An amass of shadows rises from the ground.
+say If you ask for me to weave the cloak of shadows?
+say Then I hope you brought the items I will need to carry it out.
+say I'll ask for a fee of five thousand gold to make this for you.
+mob oload 27156
+mob tgive 27156 $n
+else
+say What is it I can do for you, traveler?
+echo An amass of shadows rises from the ground.
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

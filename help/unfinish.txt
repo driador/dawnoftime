@@ -1,0 +1,55 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword CANNIBALIZE~
+level 92
+helpflags wordwrapped~
+category unfinished~
+text `=lSyntax:`=? cannibalize`+
+`+
+This command converts hitpoints into mana.  It can not be used during combat 
+as it takes immense concentration.`+
+  
+~
+END
+
+keyword VAULT~
+level 92
+category unfinished~
+text `#`=lSyntax:`^ vault <player>`+
+`+    
+This command is used to initiate combat with a pole vault type manoeuver.
+~
+END
+
+keyword FORK~
+level 92
+helpflags wordwrapped~
+category unfinished~
+text `=lSyntax:`=? fork <spell> <target> `+
+`+
+The FORK command is much like cast but can only be used at the begining of 
+engagement.  If used successfully will result in the spell being cast 
+twice... the amount of mana used by the second casting is random between 0 
+and 100. 
+~
+END
+
+keyword SHIELDCLEAVE SHIELD-CLEAVE~
+level 92
+category undefined~
+see_also SPECIALIZATION~
+text This is a specialization skill for the axe.  A perfectly wielded axe is 
+perhaps the most lethal of weapons around.  Axes have been known to cleave 
+shields, as well as heads, in two or more pieces when swung with deadly 
+precision.  It's no longer safe to cower behind a shield when facing an axe 
+wielder.`+
+
+~
+END
+
+EOF~
+#$

@@ -1,0 +1,1016 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword **DUEL~
+helpflags hide_keywords~
+category undefined~
+see_also PKSYSTEM ACCEPTDUEL DECLINEDUEL BYPASSDUEL PK-REASON~
+text This help entry assumes you have already read all of `Yhelp pksystem`=?.`+
+`+
+The duel system provides the mechanism to gain mutual consent before pk 
+aggressive situations occur, the first stage in gaining mutual consent is 
+performed using the duel command.`+
+`+
+`=lSyntax:`=? duel <playername>`+
+`+
+The duel command is used to challenge another player to a duel.  The player 
+you challenge must be in the same room as you and able to see you.  When you 
+duel a player, the challenge is seen by all those in the room (like a social 
+or personal emote).`+
+`+
+If you are challenged by someone, there are three things you can do:`+
+1. Accept the duel - using `Yacceptduel`=?`+
+2. Decline the duel - using `Ydeclineduel`=?`+
+3. Ignore the duel - if you fail to accept or decline a duel within 60 
+seconds of being challenged, the duel is automatically ignored.`+
+`+
+A duel from a player can only be declined while in the same room as the 
+person who challenged you.  The declining of a challenge to duel is seen by 
+all in the room.  If you ignore a duel, you are informed the challenge to 
+duel has expired, and at the same time the the person who challenged you 
+receives a message stating something to the same effect.`+
+`+
+When a duel is accepted, those in the room see the acceptance.  The duel 
+then changes to a '`gduelling about to begin`=?' stage.  This 'about to begin' 
+stage lasts approximately 15 seconds, and once it is over the duel becomes 
+active. In the 'about to begin' stage, neither player is able to initiate pk 
+activities  with the other... it is provided to prevent players from 
+attacking at the same time as accepting a duel.`+
+`+
+Once a challenge to duel becomes an active duel, it lasts for 30 minutes.`+
+`+
+If you are pkilled by anyone, all duels with you that are active change to 
+'safe'. In the 'safe' state, they cant attack you, but you can choose to 
+attack them.  If you attack or steal from them your duel returns to an 
+active state.`+
+`+
+When 30 minutes have past, the duel automatically expires and both people 
+involved in the duel are informed.`+
+`+
+If you logout during a duel then all duels involving you are cancelled.`+
+`+
+A `Bpeaceful`=? character cant duel an `Ractive`=? player, unless the active
+player has recently been stealing.`+
+`+
+~
+END
+
+keyword **PKILL~
+helpflags hide_keywords~
+category undefined~
+see_also BECOMEACTIVE DUEL BYPASSDUEL KARN DEATH PKSYSFAQ PKREASON~
+text Player Killing is allowed on The Dawn of Time under certain circumstances. 
+The player combat systems have been designed in a way that it is possible 
+for a player to roleplay a peaceful character and never be pkilled, while at 
+the same time if a player is being abusive to others they are not immune to 
+the attacks of others.`+
+`+
+This particular help entry gives a complete overview of all aspects in the 
+pksystem.  It directs you to additional help entries for specific details on 
+particular aspect of the system.  In Dawns documentation the terms 'Player 
+Killing' and 'Player Killer' are often abbreviated to PK, and are used 
+interchangeably.`+
+`+
+The PK System on Dawn works by having two categories of player (`Ractive`=? and 
+`Bpeaceful`=?) to suit the varing tastes of our players. All players begin the 
+game as `Bpeaceful`=? and may choose to become `Ractive`=? at any stage (read `YHELP 
+BECOMEACTIVE`=? for more on this).`+
+`+
+The rules for engaging in any pkill related activities vary depending on 
+what category combination of `Ractive`=? and `Bpeaceful`=? any two players make.  
+Pkill related activities here is defined to include Pkill, Pbackstab and any 
+spell that initiates combat with a mob when casting fails (agressive spells 
+as well as any spell with a ! to the immediate right of the classes in 
+cspinfo - sleep, charm, weaken...)).`+
+`+
+If both players are `Ractive`=?, then pkill actions may be initiated without 
+requiring the use of any special commands prior to the pkill activities. In 
+all other situations PK activities can not occur unless there is mutual 
+agreement which is gained using the duel system (see `Yhelp duel`=?) or the duel 
+system is bypassed using the `Ybypassduel`=? command.`+
+`+
+The ability to bypass the duel system has the advantage that it prevents 
+someone from using their `Bpeaceful`=? status as a form of immunity, ignoring or 
+declining all challenges to duel, while at the same time being extremely 
+abusive and insulting in the IC realm.`+
+`+
+Because the bypassduel system will often result in losses for the attacker 
+it is only used when there is a strong enough in character basis for its 
+use, for more info on bypassing the duel system see `Yhelp bypassduel`=?.`+
+`+
+The dueling system does not protect you from being stolen from, when you 
+steal or attempt to steal from someone, you will automatically accept all 
+challenges to a duel regardless of your PK status for the 20 minutes (real 
+time) following your use of the steal command (even if you failed to get 
+anything).`+
+`+
+It is `RREQUIRED`=? that `RALL`=? players have an IC basis for killing or subduing 
+another player. There must be at least some role-playing prior to starting 
+pkill combat, and you MUST NOT initiate pkill combat within 5 minutes of 
+logging into the game. The administration obviously dont have large amounts 
+of time to try and determine if a particular pkill had enough IC basis and 
+therefore unless a pkill is obviously OOC, or a number of people mention 
+that a particular player has consistently had strong OOC undercurrents in 
+their pkilling, the admin will not be getting involved.`+
+`+
+The consequences to your character when you die varies depending on a few 
+aspects involved around your death.  `YHelp death`=? documents the general 
+situation when you die as a result of a non playing character killing you. 
+If you are killed by another player (pkilled), then you may possibly lose a 
+'karn'... if you die in a situation where you would lose a karn, and you 
+have zero karns you are permanently dead!  For more on the specifics of the 
+karn system see `Yhelp karn`=?.  A quick summary of important features of the 
+karn system follow:`+
+* You will lose a karn if pkilled by someone lower level than you`+
+* You will lose a karn if pkilled by someone up to 10 levels higher than you`+
+* You automatically regenerate karns by simply spending time in the game 
+playing.`+
+* The maximum number of karns you can have at any time is 5.`+
+* The maximum number of karns you can have may be less than 5 if you have   
+pkilled a lot of players, and you did not 'becomeactive' at level 10 or 
+lower.`+
+`+
+`GNOTES:`=?`+
+* Becoming a `Ractive`=? player, is done using the `Ybecomeactive`=? command and is 
+irreversible.`+
+* Any noble can request players involved in a pkill to write a note explaining
+  the IC basis of it... This includes fights between two `Ractive`=? players, and
+  fights where all involved have accepted duels.  If there is not enough IC basis
+  then futher steps may be taken.`+
+* PKNotes are only required to be written if the `Ybypassduel`=? command was used 
+by someone involved in the incident.`+
+* `RActive`=? players can not be dueled by a `Bpeaceful`=? player (unless they have 
+been stealing), if a `Bpeaceful`=? player wishes to attack a `RActive`=? player that 
+hasnt been stealing they must either use bypassduel or become active 
+themself. * The `Ypkinfo`=? command shows you the state all your duels are in.`+
+* You can duel as many people as you like, and each duel can be in any of 
+the dueling stages.`+
+* If a player is seen to be continually abusing their `Bpeacful`=? status, they 
+will be forced to become an `Ractive`=? player.`+
+* Autoassist in pkcombat is slightly different, if there are 3 people 
+involved in combat, (A, B and C)... B and C are grouped... B somehow gets 
+into a fight with A, C will only automatically assist in the following 
+situations:`+
+- If both A and C are `Ractive`=?, C will be able to autoassist`+
+- C is actively duelling A`+
+- B is actively duelling A`+
+- C is bypasses the duel system to attack A`+
+`+
+~
+END
+
+keyword **ACCEPTDUEL~
+helpflags hide_keywords~
+category undefined~
+see_also PKSYSTEM DUEL DECLINEDUEL PKINFO~
+text `=lSyntax:`=? acceptduel [playername]`+
+`+
+The acceptduel command is used to accept a challenge to duel that you have 
+received from another player.  You can type acceptduel without the 
+playername, and if you are currently being challenged to duel by only one 
+player it will accept the duel with them (otherwise tell you to specify the 
+name).  For more info about what happens when you accept a duel read `Yhelp 
+duel`=?.`+
+`+
+`YPkinfo`=? shows a list of everyone dueling you.`+
+`+
+To decline a duel use `Ydeclineduel`=?. `+
+`+
+~
+END
+
+keyword DECLINEDUEL PK-DECLINEDUEL~
+helpflags hide_keywords~
+category undefined~
+see_also PKSYSTEM DUEL ACCEPTDUEL PKINFO~
+text `=lSyntax:`=? declineduel [playername]`+
+`+
+The declineduel command is used to decline challenge to duel that you have 
+received from another player.  You can type declineduel without the 
+playername, and if you are currently being challenged to duel by only one 
+player it will decline the duel with them.`+
+`+
+`YPkinfo`=? shows a list of everyone dueling you.`+
+`+
+To accept a duel use `Yacceptduel`=?. `+
+`+
+~
+END
+
+keyword **BECOMEACTIVE~
+helpflags hide_keywords~
+category undefined~
+see_also PKSYSTEM DUEL~
+text `=lSyntax:`=? becomeactive confirm`+
+`+
+The becomeactive command is used to become an `Ractive`=? player.  When you are 
+an `Ractive`=? player, the game is most similar to the original dawn pksystem.  
+You may attack other `Ractive`=? players with no requirement to duel them first.`+
+`+
+There are a few advantages of being an `Ractive`=? player, because anyone other 
+`Ractive`=? player can attack you without warning, you never know when you might 
+be attacked (increases the excitement of the game for some).  While it is 
+required that there is some IC basis for PKilling, those the expectations of 
+the `Ractive`=? players killing other `Ractive`=? players is lower than those that are 
+`Bpeaceful`=?, so long as it has some IC basis (some IC basis doesn't mean making 
+up an IC reason for an ooc pkill).  If you are the type that prefers a 
+playing style where pkilling is more accepted, then being `Ractive`=? player is 
+for you.`+
+`+
+Those that becomeactive before or at level 10 have the benefit, that the 
+maximum number of karns they can attain remains at 5 regardless of the 
+number of players they have pkilled.`+
+`+
+`YDURING the first 2 weeks of this pksystem going live, anyone who becomes a 
+`Ractive`Y player will receive the fixed maxkarn of 5 benefit as described 
+above.`=?`+
+`+
+`BPeaceful`=? players have to duel you to attack you, and you will automatically 
+accept any challenge to duel.`+
+`+
+You must be letgained before being an `Ractive`=? player.`+
+`+
+Becoming an `Ractive`=? player is an irreversible step. `+
+`+
+~
+END
+
+keyword BYPASSDUEL PK-BYPASSDUEL~
+helpflags hide_keywords~
+category undefined~
+see_also PKSYSTEM DUEL~
+text `=lSyntax:`=? bypassduel <player>`+
+`+
+The bypassduel command is used to bypass the requirement to duel a nonPK 
+player before attacking them.  Once the duel system has been bypassed, you 
+can initiate agressive pk activites against the player you have 
+bypassduel'ed.`+
+`+
+`WTheir MUST be excellent IC reasons for using the bypassduel command!`=?`+
+`+
+Using this command to allow you to attack someone comes with a cost, if you 
+pkill them, you lose a karn.  You will also lose a karn when you subdue for 
+the first time. After that, you will lose 1 karn every 5 times you subdue, 
+by use of this system.`+
+`+
+In all situations this command is used to attack someone, if they are 
+subdued or pkilled everyone involved MUST write a pk note explaining the IC 
+reasons why bypassduel was used, be prepared to provide logs of conflict if 
+required to justify your IC reasons if required.`+
+`+
+You can not use the bypassduel command to allow you to cast pkagressive 
+spells on others.. `+
+`+
+~
+END
+
+keyword PKSYSFAQ PK-PKSYSFAQ~
+helpflags hide_keywords~
+category undefined~
+text These are the answers to some questions that have been asked about the 
+pksystem.`+
+`+
+`gIf a peaceful player stole from me, do I have to duel him?`=?`+
+Yes, a duel is required.`+
+`+
+`gOr can I just cast sleep?`=?`+
+Nope, sleep can be cast after the duel has been accepted, which they will 
+automatically accept because they have stolen something within the last 20 
+minutes.`+
+`+
+`gIs there still the 15 seconds delay before a duel goes active even when they 
+autoaccept because they have been stealing?`=?`+
+Yes.`+
+`+
+`gIf I duel someone and they're in the group, do the other members of the 
+group automatically jump in?`=?`+
+The other members dont have a duel with you specifically, they can 
+autoassist the person you are duelling, but can not enter combat in any 
+other way with you without bypassingduel (assuming you are peaceful).`+
+`+
+`gIf they group afterwards can they still join in a fight using autoassist?`=?`+
+Yes.`+
+`+
+`gWhen I'm dueling one person, can someone else who's not dueling either of us 
+jump in and attack me/the other person?`=?`+
+Assuming all three people in this scenario are peaceful, then for the person 
+who isn't duelling anyone to initiate combat with either of you, they would 
+need to either use bypassduel or duel first.
+ 
+~
+END
+
+keyword ***PKILL~
+level 92
+category undefined~
+see_also ACCEPTDUEL ACTIVE BECOMEACTIVE BYPASSDUEL DEATH DECLINEDUEL DUEL KARN PEACEFUL PKINFO PKFAQ PK-NOTE PK-REASON~
+text `#`M<Pkills are not the goal of this mud. We respect only pkills derived from 
+roleplay, but only that. If all you are looking for are pkills, this is not 
+the mud for you>`^  `m------------------------------`+
+`sTerms:`=?`+
+`+
+Pk'ed/pkilled = Player killed`+
+Permed = Permanent death (your character is unplayable permanently)`+
+Aggie spells = Any spell when you type `Ycspinfo <class>`=? that can initiate a 
+fight with a mob or has a ! beside it.`+
+Mob = Mobile - an NPC (non player character - ie. a rabbit.)`+
+Karn = A life - `Whelp karn`=?`+
+Pkinfo = A useful info command - `Ypkinfo`=?.`+
+`MActive`=? = A player who can be pk'ed on the spot without need for dueling.`+
+`MPeaceful`=? = A player who cannot be pk'ed without a duel or bypassduel.`+
+ `m------------------------------`=?`+
+`+
+Read `Yhelp BECOMEACTIVE`=? to decide of you would like `MActive `=?or `MPeaceful`=?.`+
+`+
+`m------------------------------`+
+`sRules for pkill:`=?`+
+`+
+`M*`=? You must logged on for more than five minutes to pkill a player`+
+`M*`=? There must be some roleplay in the pkill: emotes/says/yells`+
+`M*`=? Pkills are totally In Character`+
+`M*`=? You must have an IC reason to pkill - `Whelp pk-reason`=?`+
+`M*`=? Do not use OOC as a safe haven from pkills`+
+`M*`=? Pkill notes are to be written In Character`=?`+
+`M*`=? Write a `Ynote to law`=? if the above rules are broken`+
+ `m------------------------------`+
+`sDuels and bypassduels:`=?`+
+ If the player is peaceful and you wish to pkill them you must duel them - 
+`Whelp duel`=?.`+
+`+
+If the player is peaceful and they decline the duel, you can go on 
+roleplaying or if you think they really deserve it you may bypassduel - `Whelp 
+bypassduel`=?.`+
+ `m------------------------------`+
+`sYou start a pkill:`=?`+
+ - When you type:`+
+  `YPbackstab <player>`=?`+
+  `YPkill <player>`=?`+
+or`+
+- When you cast any pk-agressive spell ie:   `Yc 'heat surge' <player>`=?`+
+`+
+`m------------------------------`+
+`sPk notes:`=?`+
+ When you are involved in a pkill, you are required to write a `Mpknote to 
+pkill`=? (`Whelp pk-note`=?).`+
+ `m------------------------------`=?`+
+ You will get this message if the player is `Mpeaceful:`=?`+
+-You must duel them or bypass the dueling system before you attempt to  
+initiate conflict!`+
+`+
+You will not get a message and go straight to combat if the player is 
+`Mactive`=?.`+
+`+
+If you type `Ysteal <player>`=? at any time for 20 minutes real time you will be 
+made temporarily `Mactive`=? which means you automatically `Yacceptduel`=?.`+
+`+
+Note that if you die fighting a mob you do not loose a karn! This only 
+happens when you fight a player. When you get to 0 karns and you are pkilled 
+you will be permed. `WHelp death`=? for mob deaths. `WHelp karn`=? for more info on 
+karns.`=?`+
+`+
+Please also note that if you are pkilled in a group pkill fight, apon 
+returning you are still grouped! This could lead to automatically assisting 
+at 1hit point which is not benifical to your character's karns.`+
+`+
+DISCLAIMER: Administration will not reimburse for pkills unless the rules 
+above stated are plainly broken or there is a bug. We urge you to `Ynote to 
+law`=? if you have any problems with pkills.`+
+`+
+ 
+~
+END
+
+keyword ACTIVE PEACEFUL~
+level 1
+category undefined~
+text . 
+`MActive and peaceful information`+
+ 
+`m------------------------------`+
+`sTerms:`=?`+
+ 
+- OOC noble: See `Whelp `=_noble`+`=?`+
+- Pknote: A creative peice of writing such as journal entry, a note to a 
+cousin/friend, a conversation or a narrative that is written to pkill 
+explaining the details of the pkill.`+
+`+
+`m------------------------------`+
+`sThe rules of the `Mactive`=?:`+
+ 
+`M*`=? You must be letgained`+
+`M*`=? Once you type `Ybecomeactive`=? it is irreversible`+
+`M*`=? You may attack other active players without warning (dueling)`+
+`M*`=? Pkills must have an IC reason`+
+`M*`=? Those that becomeactive before or at level 10 have the benefit, that the 
+maximum number of karns they can attain remains at 5 regardless of the 
+number of players they have pkilled`+
+`M*`=? Pknotes are only required to be written if the `Ybypassduel`=? command was used 
+by a player involved in the incident, BUT...`+
+`M*`=? Any OOC noble can request players involved in a pkill to write a note 
+regardless of `Mactive`=? or `Mpeaceful`=? status. A -ve moot will apply if this is 
+not conformed to within 48 hours of request`+
+`+
+`m------------------------------`+
+`sRules of the `Mpeaceful`=?:`+
+ 
+`M*`=? Peaceful cannot duel active. Unless they have been theiving, they must 
+`Mbypassduel`=? or become active themself`+
+`M*`=? If a player is reviewed to be abusing their `Mpeaceful`=? status, they will be 
+automatically turned to an `Mactive`=? player`+
+`M*`=? Pkills must have an IC reason`+
+`+
+The choice:`+
+`+
+If you wish to be `Mactive`=? type:`+
+`+
+`Ybecomeactive confirm`=?`+
+`+
+If you wish to be `Mpeaceful`=? do not type anything - you start out this way. 
+ 
+ 
+~
+END
+
+keyword BECOMEACTIVE~
+level 1
+category undefined~
+see_also ACTIVE PEACEFUL~
+text `=lSyntax:`=? becomeactive`+
+`+
+This command allows you to be pk-active. Please refer to `Whelp active`=?.`+
+`+
+Please note this command once typed is irreversible!`+
+`+
+~
+END
+
+keyword PK-REASON PKREASON~
+level 1
+category undefined~
+see_also PK-NOTE~
+text Reasons you may use to justify initiating pk combat:`+
+`+
+`RStrong ones:`+
+------ ----`=?`+
+ `+
+You can initiate pk combat with one of more of these reasons:`+
+`+
+`Y*`=? Revenge - If A pkills B for reason 'x', then B pkills A for revenge, A 
+cannot pkill B or get a friend to pkill B for revenge.`+
+`Y*`=? In a group if A and C pkill B, B can attempt revenge on BOTH A and C once. 
+Note: Attempting revenge can be once, you cannot repeatedly attempt to pkill 
+a player for the same reason, if your attempt fails then your reason is 
+cleared.`+
+`Y*`=? Revenge by mobdeath - A charms mob to pkill B. B can attempt revenge and 
+it stops there, A cannot attempt revenge on B again.`+
+`Y*`=? A cool rp situation - mind you, a true rp situation - stealing a 
+girlfriend, or a court plot.`+
+`Y*`=? Assassination - A gets paid to pkill B. - This is a special case. The 
+killer doesn't need any other reasons, but the employer does.`+
+`Y*`=? Revenge for a friend - C pkills B. C was then pkilled by B for 'revenge'. 
+So C's friend A gets mad and pkills B for his friend C. A and C no longer 
+have a reason to pkill B, however, B can pkill A for 'revenge' but not C. 
+Why? C has already been pkilled once by B for 'revenge'. `+
+`Y*`=? Assisting in a pkill - If A made a portal/nexus for B to step through and 
+pkill C. This would be classed as assisting a pkill and therefore C could 
+revenge both A and B.`+
+ `+
+`cMild ones:`+
+---- ----`=?`+
+ `+
+Here are the reasons which, by themselves, do not justify initiating pk combat, but if 
+joined, might - 2 will not always been enough, sometimes 3 will be needed depending
+specific circumstances.  This is because some reasons will weight more than others. 
+An example: being teleported counts more than a spit, a spit counts more than being 
+verbally insulted.`+
+ `+
+`Y*`=? Invasion of your clan.`+
+`Y*`=? Invasion of your house.`+
+`Y*`=? Spitting, swearing, general harrassment.`+
+`Y*`=? Being teleported.
+`Y*`=? Being slept.`+
+`Y*`=? Being stolen from.`+
+`Y*`=? Killing innocent people (mobs).`+
+ `+
+`mThe rules and law:`+
+--- ----- --- ---`=? `+
+If you have a complaint please `Ynote to law`=?. If you feel a pkill is 
+unjustified without reason or a rule was broken in `Yhelp pkill`=?.The nobles and 
+immortals reserve the right to judge each situation independently, and to 
+change the afford mentioned reasons, as they seem fit.`+
+ `+
+All the above reasons are subject to your alignment. A +3/+3, for example 
+would not kill for any of the above, but he might rescue a little child 
+who's is being attacked though.`+
+ `+
+Once you pkill someone, all your pkreasons are reset. That is, you won't 
+have any reason left to pkill the same person again. Even if you had 1,000 
+reasons, 1 pkill eliminates them all. You can only think of pkilling the 
+same person if that person gives you brand new reasons.`+
+`+
+'He was going to pkill me so I killed him first', is not a good reason. If 
+you attack first you must supply adequate reasoning of their offensive 
+actions towards your character.`+
+ `+
+Suspicions are not valid pk-reasons! All your reasons must be concrete, ie, 
+you must be able to prove them if asked. Be prepared to provide a log or 
+record of roleplay in the pkill if asked by a noble or immortal.`+
+ `+
+Punishment can result in moots in the order of around -5000xp or even
+deletion/banning if really really out of line.  Attempting to pk with 
+not enough valid cause or insufficient roleplaying is unacceptable.`+ 
+`+
+~
+END
+
+keyword DUEL~
+level 1
+category undefined~
+see_also DUEL DECLINEDUEL ACCEPTDUEL BYPASSDUEL~
+text .
+`=lSyntax:`=? duel <player>`+
+`+
+`M*`=? You can duel as many people as you like`+
+ 
+`M*`=? Peaceful players cannot duel active players`+
+`+
+When you are asked to duel you can:`+
+`+
+`m1.`=? Decline the duel, `Whelp declineduel`=?`+
+`m2.`=? Accept the duel, `Whelp acceptduel`=?`+
+`m3.`=? Ignore the duel - if you fail to `Macceptduel`=? or `Mdeclineduel`=? within 60 
+seconds of being dueled, the challenge is automatically ignored.`+
+`+
+`M*`=? If you logout during a duel then all duels involving you are cancelled.`+
+`+
+`M*`=? If you are pkilled in a duel:`+
+- All duels with you that are 'active duel' change to 'safe' state. In the 
+'safe' state they cannot attack you, but you can choose to attack them.`+
+- If you attack or steal from them your duel returns to an 'active duel' 
+state.`+
+ 
+`M*`=? Autoassist in pkcombat is slightly different, if there are 3 people 
+involved in combat, (A, B and C)... B and C are grouped... B somehow gets 
+into a fight with A, C will only automatically assist in the following 
+situations:`+
+- If both A and C are `Ractive`=?, C will be able to autoassist`+
+- C is actively duelling A`+
+- B is actively duelling A`+
+- C bypasses the duel system to attack A`+
+ 
+`M*`=? The player must be in the same room and visible to you`+
+ 
+`M*`=? Duels are seen by all players in the room`+
+`+
+ 
+~
+END
+
+keyword ACCEPTDUEL~
+level 1
+category undefined~
+see_also DECLINEDUEL DUEL~
+text `=lSyntax:`=? acceptduel <player>`+
+`+
+Accepting duels are seen by all the players in the room.`+
+`+
+Refer to `Whelp `=_duel`+`=?.`+
+`+
+This command accepts your opponent's duel and you will go into 'dueling 
+about to begin' stage lasting 15 seconds where you both cannot attack each 
+other.`+
+`+
+After 15 seconds the stage becomes 'active duel' stage and lasts 30 minutes. 
+When you enter 'active duel' stage you may type `Ypkill <player>`=?.`+
+`+
+~
+END
+
+keyword PK-NOTE PKNOTE~
+level 1
+category undefined~
+see_also PKNOTE-EXAMPLE PK-REASON~
+text You should structure your pkill notes in the following way and should be 
+told as IN CHARACTER:`+
+`+
+`YPknote to PKILL`+
+pknote subject Pkill of <player>`+
+pknote + <insert your creative piece of writing/proof of RP and reason here>`+
+pknote post`+
+`=?`+
+Your note must be a minimum of five sentences, describing the `Mic background `=?for 
+the pkill, preferably with the IC time on it (`Ytime`=?). It also must include 
+your `Mpk-reasons`=?, after you describe the ic background. See `Yhelp pknote-example`=?`+
+`+
+You may, if you write it well enough get a +ve moot for it so be creative!`+
+`+
+~
+END
+
+keyword **PK-NOTE~
+level 92
+category undefined~
+see_also PK-REASON PK-NOTE~
+text .. 
+`CExample 1:`=?
+ 
+============================================================================ 
+Note subject: pkill of Gychal
+------------------------------------------------------------------------------
+`yIC background:`=?
+ 
+I am writing to let you know that I, Thoran Boomhammer, have player killed a 
+blue feathered winged being (alias Gychal) at 6 o'clock pm, Day of the 
+Drake, 14th the Month of the Shadows (Sun Jan 25 19:23:00 1998 system time). 
+ The fight occurred in the middle of the town Dzagari.  The reason that I 
+was forced to confront Gychal is because I was being hunted by him and 
+others for the death of a duergar.  I had no choice but to defend myself and 
+fight back.  I have appointed myself protector of the good and innocent 
+within the vicinity of the town Mekali.  Many a time I intervened, casting 
+protective spells on the victims of those murderers. I will continue to fight 
+in the name of the good and just and will not allow innocent humans or other 
+goodly races to be killed in cold blood within the town.  This is why I have 
+brought the blue feathered winged being to justice.`+
+ `+
+Thoran Boomhammer`+
+ 
+`cSummary of pk-reasons: `=?
+ 
+ - he started the pkill
+ - I defend the innocent in Mekali
+ - he insulted me - he threatened me 3 times  
+ - i am at war with his clan 
+ 
+============================================================================--
+ 
+`CExample 2:`=?
+ 
+=============================================================================
+Note subject:  Pkill of Tankarn`+
+-----------------------------------------------------------------------------
+`yIC background:`=?
+ 
+The sun was setting slowly when I spotted him, the foul, disgusting beast of 
+an orc that had so mercilessly slaughtered me not three days ago.  As I drew 
+and readied my weapons and dropped to a crouch, my mind drifted back to the 
+first time he saw the orc. 
+ 
+I was in the Plaza, enjoying the late afternoon summer sun and chatting with 
+a few acquaintances about nothing at all.  A disgusting stench drifted from 
+the east, announcing louder than grunts the orcs arrival. It came slouching 
+and shuffling into the plaza, grunting loudly as his pig eyes slowly scanned 
+the plaza with a look of malice and hatred. 
+ 
+His eyes feel on me, laughing with my friends.  He must have taken exception 
+to my having a good time because he came over to me, demanding money.  I was 
+in a rather jovial mood so I politely told him that I didn't have any to 
+spare and perhaps he should look to the monestary for charity.  I'm not sure 
+what it was I said because he suddenly howled in a deep and primal fury and 
+drove his axe deeply into my side. 
+ 
+I fought back of course, as best I could but I wasn't prepared for combat 
+and the orc made short work of me.  I barely had a chance to draw my dagger. 
+ 
+Now, three days later, my revenge would be complete.  As one hand tightened 
+on the hilt of my double-edged dagger, I quickly quaffed a potion I 
+purchased in an apothecary shop on Markrist Island.  The fire of the potion 
+burned through me, filling my muscles with strength and speed.  I paused 
+just for a moment and drew my second dagger, figuring to end this as quickly 
+as I could. 
+ 
+On silent feet, I approached the beast as he was terrorizing a young female 
+elf.  His stench was as powerful as ever but I quelled my natural retching 
+instince and leaned in close. 
+ 
+"Now you die, beast.", I whispered in the orc's ear as I sank one dagger 
+between the third and fourth ribs and quickly drew the edge of the other 
+across its throat.  The orc fell into a puddle of its own blood, looking up 
+at me.  I smiled thinly. 
+ 
+As the fire of life faded from its eyes, I simply said "Our score is 
+settled, Orc." 
+ `+
+Liaknar Handernol`+
+ 
+`cSummary of pk-reasons: `=?
+ 
+ - he killed me first; I took revenge.
+ 
+=============================================================================
+`+
+~
+END
+
+keyword PKINFO~
+level 1
+category undefined~
+see_also PKILL DUEL~
+text `=lSyntax:`=? pkinfo`+
+`+
+The pkinfo command is used to display various information relating to the 
+pksystem and duelling system.  It informs you of any duels that involve you 
+that are in progress and how long the particular stage in the duel will 
+last.`+
+`+
+If you have recently stolen from someone and are autoaccepting all 
+challenges to duel, then the amount of time remaining before your autoaccept 
+status finishes is displayed.  All of the above information is only 
+displayed if relevant, for example if you arent duelling anyone then the 
+duelling information isn't shown. `+
+`+
+It will always show information relating to how long you must wait to "Out 
+of Level" kill again (Killing a low level - 10 or below), how long you are 
+safe from being pkilled, how long you must wait to recall and quit, and also 
+tell you how many times you have defeated others in pkill combat, the number 
+of times you have been defeated by players and mobs. `+
+`+
+~
+END
+
+keyword PKFAQ~
+level 1
+category undefined~
+text `cPkill System FAQ`=?`+
+`+
+`YQ:`=? What is the difference getting killed by a player or a mob?`+
+`+
+`cA:`=? If you are killed by a mob you do not lose a 'karn', if you lose a 
+fight with a player you do.`+
+`+
+`YQ:`=? Why is this system better than the old system?`+
+`+
+`cA:`=? It has been designed in a way that a player can roleplay a peaceful 
+character and never be pkilled, while at the same time if a player is being 
+abusive to others, they are not immune to the attacks of others.`+
+`+
+`YQ:`=? Why do we have bypassduel?`+
+`+
+`cA:`=? This ability gives every player the chance to pkill a peaceful player 
+without dueling (asking them first) and keeps them from being totally immune 
+if they are really insulting and deserve it.`+
+`+
+`YQ:`=? If a peaceful player stole from me, do I have to duel him or can I cast 
+sleep?`+
+`+
+`cA:`=? Yes, a duel is required but they autoaccept the duel, after 15 seconds 
+you may cast sleep.`+
+`+
+`YQ:`=? Is there still the 15 seconds delay before a duel goes active even when 
+they autoaccept because they have been stealing?`+
+`+
+`cA:`=? Yes.`+
+`+
+`YQ:`=? If I duel someone and they're in the group, do the other members of the 
+group automatically jump in?`+
+`+
+`cA:`=? The other members dont have a duel with you specifically, they can 
+autoassist the person you are duelling, but can not enter combat in any 
+other way with you without 'bypassduel' (assuming you are peaceful).`+
+`+
+`YQ:`=? If they group afterwards can they still join in a fight using autoassist?`+
+`+
+`cA:`=? Yes.`+
+`+
+`YQ:`=? When I'm dueling one person, can someone else who's not dueling either of 
+us jump in and attack me/the other person?`+
+`+
+`cA:`=? Assuming all three people in this scenario are peaceful, then for the 
+person who isn't duelling anyone to initiate combat with either of you, they 
+would need to either use bypassduel or duel first.`+
+ 
+~
+END
+
+keyword DYING CORPSE DEAD~
+level 1
+category undefined~
+see_also PKILL KARN~
+text If you died from a playing killing you, please see `Yhelp pkill`=?.`+
+`+
+When your character dies any spells that were affecting you are cancelled 
+upon death. If you follow and are grouped, dying will not affect it.`+
+`+
+You do not lose karns through dying from mobs (non-player characters) but 
+you do lose experience points for dying:`+
+`+
+`Y*`=? If level <= 20, the amount you lose is two-thirds of the experience you 
+have earned since the gaining of your last level.`+
+`+
+`Y*`=? If level > 20, you lose a constant 500 XP per death, and can lose a level.`+
+`+
+Corpses decay after time, lasting *roughly* 30 hours of game time (15 
+minutes of real time). When a player's corpse decays, the equipment is left 
+on the ground where the player's corpse was.`+
+`+
+~
+END
+
+keyword KARNS~
+level 1
+category undefined~
+see_also DEATH PKILL PKRATIO BECOMEACTIVE~
+text A karn is best described as a life.  Dawn of Time is a role-playing mud 
+where we hope to achieve some aspects of reality into the system, while at 
+the same time, keeping the system playable and enjoyable.  Only pkill deaths 
+count against the karns, while deaths from NPC's, or mobs, are not 
+permanent.  `+
+`+
+There are two ways to have your karns decreased.  The first way is to lose a 
+pkill fight.  If someone Out Of Level (greater than 10 levels above you) 
+kills you, then no karns are lost.  The second way is to `#`YBYPASSDUAL`^ a 
+peaceful player.  `#`C(help ACTIVE, PEACEFUL)`^`+
+`+
+All players start out with 3 karns.  For those that `#`SBECOMACTIVE`^ at or before 
+level 10, they will get a permanent maximum karns of 5 and get their current 
+karns set to 5 as well.  `+
+`+
+Those that choose to remain `#`SPEACEFUL`^ will have a max karn dependant on their 
+pkill ratio of wins to losses.  Using the pkratio, the maximum number of 
+karns will be at most 5, but may be 0 if they have many pkills.  `#`C(help 
+PKRATIO)`^`+
+`+
+You automatically regenerate karns by simply spending time IC.  At lower 
+levels karns regen much more quickly, while at higher levels a bit more 
+patience is required.  You can always keep track of your karns since they 
+are displayed in the upper right corner of your score sheet.  `+
+`+
+~
+END
+
+keyword PKNOTE-EXAMPLE PK-NOTE-EXAMPLE~
+level 1
+category undefined~
+see_also PK-REASON PK-NOTE~
+text `CExample 1:`=?
+ 
+============================================================================ 
+Note subject: pkill of Gychal
+------------------------------------------------------------------------------
+`yIC background:`=?
+ 
+I am writing to let you know that I, Thoran Boomhammer, have player killed a 
+blue feathered winged being (alias Gychal) at 6 o'clock pm, Day of the 
+Drake, 14th the Month of the Shadows (Sun Jan 25 19:23:00 1998 system time). 
+ The fight occurred in the middle of the town Dzagari.  The reason that I 
+was forced to confront Gychal is because I was being hunted by him and 
+others for the death of a duergar.  I had no choice but to defend myself and 
+fight back.  I have appointed myself protector of the good and innocent 
+within the vicinity of the town Mekali.  Many a time I intervened, casting 
+protective spells on the victims of those murderers. I will continue to fight 
+in the name of the good and just and will not allow innocent humans or other 
+goodly races to be killed in cold blood within the town.  This is why I have 
+brought the blue feathered winged being to justice.`+
+ `+
+Thoran Boomhammer`+
+ 
+`cSummary of pk-reasons: `=?
+ 
+ - he started the pkill
+ - I defend the innocent in Mekali
+ - he insulted me - he threatened me 3 times  
+ - i am at war with his clan 
+ 
+============================================================================--
+ 
+`CExample 2:`=?
+ 
+=============================================================================
+Note subject:  Pkill of Tankarn`+
+-----------------------------------------------------------------------------
+`yIC background:`=?
+ 
+The sun was setting slowly when I spotted him, the foul, disgusting beast of 
+an orc that had so mercilessly slaughtered me not three days ago.  As I drew 
+and readied my weapons and dropped to a crouch, my mind drifted back to the 
+first time he saw the orc. 
+ 
+I was in the Plaza, enjoying the late afternoon summer sun and chatting with 
+a few acquaintances about nothing at all.  A disgusting stench drifted from 
+the east, announcing louder than grunts the orcs arrival. It came slouching 
+and shuffling into the plaza, grunting loudly as his pig eyes slowly scanned 
+the plaza with a look of malice and hatred. 
+ 
+His eyes feel on me, laughing with my friends.  He must have taken exception 
+to my having a good time because he came over to me, demanding money.  I was 
+in a rather jovial mood so I politely told him that I didn't have any to 
+spare and perhaps he should look to the monestary for charity.  I'm not sure 
+what it was I said because he suddenly howled in a deep and primal fury and 
+drove his axe deeply into my side. 
+ 
+I fought back of course, as best I could but I wasn't prepared for combat 
+and the orc made short work of me.  I barely had a chance to draw my dagger. 
+ 
+Now, three days later, my revenge would be complete.  As one hand tightened 
+on the hilt of my double-edged dagger, I quickly quaffed a potion I 
+purchased in an apothecary shop on Markrist Island.  The fire of the potion 
+burned through me, filling my muscles with strength and speed.  I paused 
+just for a moment and drew my second dagger, figuring to end this as quickly 
+as I could. 
+ 
+On silent feet, I approached the beast as he was terrorizing a young female 
+elf.  His stench was as powerful as ever but I quelled my natural retching 
+instince and leaned in close. 
+ 
+"Now you die, beast.", I whispered in the orc's ear as I sank one dagger 
+between the third and fourth ribs and quickly drew the edge of the other 
+across its throat.  The orc fell into a puddle of its own blood, looking up 
+at me.  I smiled thinly. 
+ 
+As the fire of life faded from its eyes, I simply said "Our score is 
+settled, Orc." 
+ `+
+Liaknar Handernol`+
+ 
+`cSummary of pk-reasons: `=?
+ 
+ - he killed me first; I took revenge.
+ 
+=============================================================================
+`+
+~
+END
+
+keyword PK-RULES~
+level 1
+category undefined~
+text In order to create a pkill environment that everyone enjoys and is most 
+fair, there has been a small, but important, list of rules created.  
+Memorize these rules in case you ever ever in a pkill situation.  `+
+`+
+`#`CPKILL RULES:`^`+
+`#`S1.  `^You must have an IC reason to pkill.  `+
+`#`S2.  `^You must logged on for more than `#`WTEN minutes `^prior to starting a pkill.  
+`#`S3.  `^There must be established roleplay prior to any pkill.  By established 
+roleplay, it means roleplay that leaves little doubt in either side about 
+why the pkill happened.  `+
+`#`S4.  `^Safe rooms are not to be used as a pkill haven.  Those that have 0 karns 
+and sit in OOC rooms to avoid getting pkilled may find themselves thrown 
+out.  `+
+`#`S5.  `^Every pkill will be done in character.  Using OOC reasons to kill 
+someone will result in deletion and/or siteban.  `+
+`#`S6.  `^A pknote is required within `#`Y2 hours`^ for any pkill involvement.`+
+`#`S7.  `^Write a `Ynote to law`=? if the above rules are broken.  `+
+`#`S8.  `^Dawn of Time is a game.  If you can't handle getting pkilled, then don't 
+go ACTIVE.  `+
+`#`S9.  `^You must have an IC reason to pkill.  `+
+`#`S10.  `^Read these rules, know these rules.  Your character's life may depend 
+on it.  
+~
+END
+
+keyword **PK-TERMINOLOGY~
+level 1
+category undefined~
+text When reffering to the pkill system on Dawn, there are certain terms that one 
+might want to be familiar with.  Listed below are the basic terms that might 
+come up.  `+
+`+
+Pk or Pkill = Player kill`+
+Permed = Permanent death, happens when a player is pk'd with 0 karns`+
+Aggie spells = An aggressive spell shown on spinfo that has !  Beside it 
+and/or can initiate a fight`+
+Mob = Mobile - an NPC (non player character - ie.  A rabbit)`+
+Karn = A life - `Whelp karn`=?`+
+Pkinfo = A useful info command displaying pkill information`+
+Active = A player who can be pk'ed on the spot without need for dueling.  `+
+Peaceful = A player who cannot be pk'ed without a duel or bypassduel.  `+
+~
+END
+
+keyword PKILL~
+level 1
+category undefined~
+see_also PK-RULES KARN PK-REASON ACTIVE PEACEFUL PK-NOTE~
+text Dawn of Time has a feature called pkill, or player killing.  While it is a 
+feature, pkills are not taken lightly.  There is a long list of rules for 
+pkill, and they are here for game balance and the enjoyment to others.  `+
+`+
+You are reading this and probably thinking, "How do I pkill?"  Not so fast - 
+first you need to understand everything about pkill.  Ignorance of the rules 
+does not get you off the hook, so read on.  `#`C(help PK-RULES)`^`+
+`+
+At Dawn of Time, everyone has karns, or a finite number of lives.  This 
+means that you can't live a happy life of pkilling very for long.  `#`C(help 
+KARN)`^`+
+`+
+Every pkill must have a reason.  While at Dawn roleplay is encouraged and 
+not necessary, that isn't true for pkills.  `#`REVERY PKILL MUST HAVE A REASON.  
+`^ `#`C(help PK-REASON)`^`+
+`+
+Everyone starts out the game in a pkill status called PEACEFUL.  You may 
+choose to go ACTIVE if you plan to be aggressive and/or pkill others.  You 
+need an agreement in order to pkill a peaceful person, or else you'll lose a 
+karn.  `#`C(help ACTIVE, PEACEFUL)`^`+
+`+
+When a pkill is executed, all those involved have `#`Y2 hours `^to write their 
+pknote explaining everything that led up to the showdown.  Those that fail 
+to do so will be dealt with accordingly.  `#`C(help PK-NOTE)`^ 
+ 
+~
+END
+
+EOF~
+#$

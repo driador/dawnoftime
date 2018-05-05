@@ -1,0 +1,1005 @@
+from goddess~
+to Quar'valsharess~
+END
+
+from house~
+to qu'ellar~
+END
+
+from lloth~
+to Quarvalsharess~
+END
+
+from a~
+to natha~
+END
+
+from al~
+to ol~
+END
+
+from all~
+to jal~
+END
+
+from ally~
+to abban~
+END
+
+from alert~
+to kyone~
+END
+
+from alone~
+to maglust~
+END
+
+from alive~
+to dro~
+END
+
+from authority~
+to quarth~
+END
+
+from agreement~
+to inthigg~
+END
+
+from accomplish~
+to xun~
+END
+
+from achievement~
+to xundus~
+END
+
+from about~
+to bauth~
+END
+
+from apart~
+to maglust~
+END
+
+from aim~
+to ilindith~
+END
+
+from are~
+to phuul~
+END
+
+from argument~
+to qua'laelay~
+END
+
+from around~
+to bauth~
+END
+
+from as~
+to izil~
+END
+
+from and~
+to lueth~
+END
+
+from b~
+to b~
+END
+
+from be~
+to tlu~
+END
+
+from below~
+to harl~
+END
+
+from behind~
+to rathrae~
+END
+
+from beware~
+to sarn~
+END
+
+from best~
+to alurl~
+END
+
+from bravery~
+to honglath~
+END
+
+from brightness~
+to ssussun~
+END
+
+from blade~
+to velve~
+END
+
+from black~
+to vel'oloth~
+END
+
+from blockage~
+to klug~
+END
+
+from both~
+to tuth~
+END
+
+from band~
+to akh~
+END
+
+from battlemight~
+to sargh~
+END
+
+from barrier~
+to kluggen~
+END
+
+from back~
+to rath~
+END
+
+from backs~
+to ratha~
+END
+
+from c~
+to q~
+END
+
+from climb~
+to z'orr~
+END
+
+from creature~
+to phindar~
+END
+
+from consider~
+to talinth~
+END
+
+from concealment~
+to veldrin~
+END
+
+from continue~
+to elendar~
+END
+
+from continued~
+to elendar~
+END
+
+from continuing~
+to elendar~
+END
+
+from confidence~
+to sargh~
+END
+
+from confrontation~
+to qua'laelay~
+END
+
+from conqueror~
+to ultrin~
+END
+
+from conquering~
+to ultrinnan~
+END
+
+from comrade~
+to abbil~
+END
+
+from commanded~
+to quarthen~
+END
+
+from council~
+to talthalra~
+END
+
+from coinage~
+to belaern~
+END
+
+from calm~
+to honglath~
+END
+
+from caution~
+to olist~
+END
+
+from careful~
+to kyone~
+END
+
+from carrion~
+to iblith~
+END
+
+from d~
+to e~
+END
+
+from do~
+to xun~
+END
+
+from down~
+to harl~
+END
+
+from dominance~
+to z'ress~
+END
+
+from dodge~
+to bautha~
+END
+
+from doing~
+to xundus~
+END
+
+from discover~
+to ragar~
+END
+
+from disagreement~
+to qua'laelay~
+END
+
+from danger~
+to sreen~
+END
+
+from darkness~
+to oloth~
+END
+
+from death~
+to elghinn~
+END
+
+from destiny~
+to elamshin~
+END
+
+from destroy~
+to elgg~
+END
+
+from e~
+to z~
+END
+
+from er~
+to uk~
+END
+
+from excrement~
+to iblith~
+END
+
+from expedition~
+to z'hind~
+END
+
+from enemy~
+to ogglin~
+END
+
+from enduring~
+to elendar~
+END
+
+from encounter~
+to thalra~
+END
+
+from elves~
+to darthiir~
+END
+
+from es~
+to ir~
+END
+
+from ess~
+to th~
+END
+
+from f~
+to y~
+END
+
+from fun~
+to jivvin~
+END
+
+from fearlessness~
+to streeaka~
+END
+
+from faeries~
+to darthiir~
+END
+
+from facing~
+to alust~
+END
+
+from find~
+to ragar~
+END
+
+from first~
+to ust~
+END
+
+from from~
+to dal~
+END
+
+from food~
+to cahallin~
+END
+
+from fool~
+to wael~
+END
+
+from foolish~
+to waela~
+END
+
+from force~
+to z'ress~
+END
+
+from foremost~
+to alurl~
+END
+
+from g~
+to o~
+END
+
+from gift~
+to belbol~
+END
+
+from give~
+to belbau~
+END
+
+from goal~
+to ilindith~
+END
+
+from goblin~
+to gol~
+END
+
+from guard~
+to kyrol~
+END
+
+from guarding~
+to kyorlin~
+END
+
+from guide~
+to mrimm~
+END
+
+from group~
+to akh~
+END
+
+from grave~
+to phalar~
+END
+
+from h~
+to p~
+END
+
+from her~
+to usstils~
+END
+
+from human~
+to rivvil~
+END
+
+from humans~
+to rivvin~
+END
+
+from hand~
+to kyonss~
+END
+
+from holy~
+to orthae~
+END
+
+from honored~
+to malla~
+END
+
+from him~
+to usstil~
+END
+
+from highest~
+to ultrin~
+END
+
+from highpriestess~
+to yathtallar~
+END
+
+from hidden~
+to velkyn~
+END
+
+from i~
+to usstan~
+END
+
+from ion~
+to mm~
+END
+
+from illithid~
+to haszak~
+END
+
+from illithids~
+to haszakkin~
+END
+
+from item~
+to bol~
+END
+
+from is~
+to zhah~
+END
+
+from in~
+to wun~
+END
+
+from ing~
+to in~
+END
+
+from inspiration~
+to mrimm~
+END
+
+from invisible~
+to velkyn~
+END
+
+from j~
+to y~
+END
+
+from journey~
+to z'hind~
+END
+
+from k~
+to t~
+END
+
+from kill~
+to ellg~
+END
+
+from knowledge~
+to zhaunil~
+END
+
+from l~
+to r~
+END
+
+from life~
+to dro~
+END
+
+from light~
+to ssussun~
+END
+
+from learning~
+to zhaunil~
+END
+
+from lost~
+to noamuth~
+END
+
+from longing~
+to ssinssrigg~
+END
+
+from m~
+to w~
+END
+
+from ment~
+to lay~
+END
+
+from meet~
+to thalra~
+END
+
+from meeting~
+to talthalra~
+END
+
+from might~
+to xal~
+END
+
+from may~
+to xal~
+END
+
+from matron~
+to ilharess~
+END
+
+from matrons~
+to ilharessen~
+END
+
+from master~
+to jabbuk~
+END
+
+from magic~
+to faer~
+END
+
+from magical~
+to faerl~
+END
+
+from more~
+to mzild~
+END
+
+from monster~
+to phindar~
+END
+
+from mother~
+to ilhar~
+END
+
+from n~
+to i~
+END
+
+from no~
+to nau~
+END
+
+from o~
+to a~
+END
+
+from on~
+to pholor~
+END
+
+from one~
+to uss~
+END
+
+from opponent~
+to ogglin~
+END
+
+from order~
+to quarth~
+END
+
+from ordered~
+to quarthen~
+END
+
+from out~
+to doeb~
+END
+
+from outcast~
+to dobluth~
+END
+
+from of~
+to del~
+END
+
+from p~
+to s~
+END
+
+from play~
+to jivvin~
+END
+
+from priestess~
+to yathrin~
+END
+
+from perhaps~
+to xal~
+END
+
+from power~
+to z'ress~
+END
+
+from path~
+to colbauth~
+END
+
+from patron~
+to ilharn~
+END
+
+from parley~
+to talthalra~
+END
+
+from passion~
+to ssinssrigg~
+END
+
+from q~
+to d~
+END
+
+from queen~
+to valsharess~
+END
+
+from r~
+to f~
+END
+
+from ride~
+to z'har~
+END
+
+from rival~
+to ogglin~
+END
+
+from recklessness~
+to streeaka~
+END
+
+from ruse~
+to golhyrr~
+END
+
+from raid~
+to tha-lackz'hind~
+END
+
+from rampart~
+to kluggen~
+END
+
+from s~
+to g~
+END
+
+from slay~
+to ellg~
+END
+
+from scheme~
+to inth~
+END
+
+from second~
+to drada~
+END
+
+from supreme~
+to ultrin~
+END
+
+from superior~
+to alur~
+END
+
+from surprise~
+to brorn~
+END
+
+from surprises~
+to brorna~
+END
+
+from stealth~
+to olist~
+END
+
+from strength~
+to z'ress~
+END
+
+from stratagem~
+to inth~
+END
+
+from striving~
+to xund~
+END
+
+from spider~
+to orbb~
+END
+
+from sieze~
+to plynn~
+END
+
+from sacred~
+to orthae~
+END
+
+from shit~
+to iblith~
+END
+
+from shield~
+to kluggen~
+END
+
+from shadows~
+to veldrin~
+END
+
+from t~
+to h~
+END
+
+from th~
+to nn~
+END
+
+from the~
+to lil~
+END
+
+from them~
+to usstina~
+END
+
+from they~
+to usstin~
+END
+
+from three~
+to llar~
+END
+
+from those~
+to nind~
+END
+
+from than~
+to taga~
+END
+
+from thing~
+to bol~
+END
+
+from think~
+to talinth~
+END
+
+from third~
+to llarnbuss~
+END
+
+from temple~
+to yath~
+END
+
+from trip~
+to z'hind~
+END
+
+from trick~
+to golhyrr~
+END
+
+from traitors~
+to darthiir~
+END
+
+from traditional~
+to elend~
+END
+
+from treaty~
+to inthigg~
+END
+
+from treasure~
+to belaern~
+END
+
+from trust~
+to khaless~
+END
+
+from to~
+to uss~
+END
+
+from two~
+to draa~
+END
+
+from take~
+to plynn~
+END
+
+from u~
+to j~
+END
+
+from us~
+to usstens~
+END
+
+from upon~
+to pholor~
+END
+
+from under~
+to harl~
+END
+
+from unaware~
+to waela~
+END
+
+from unwary~
+to waela~
+END
+
+from uncover~
+to ragar~
+END
+
+from unseen~
+to velkyn~
+END
+
+from unknown~
+to noamuth~
+END
+
+from v~
+to z~
+END
+
+from valor~
+to sargh~
+END
+
+from w~
+to x~
+END
+
+from war~
+to thalack~
+END
+
+from wary~
+to kyone~
+END
+
+from warning~
+to sarn~
+END
+
+from warrior~
+to sargtlin~
+END
+
+from wanderer~
+to noamuth~
+END
+
+from watch~
+to kyrol~
+END
+
+from watching~
+to kyorlin~
+END
+
+from wait~
+to kyrol~
+END
+
+from waiting~
+to kyorlin~
+END
+
+from walk~
+to z'hin~
+END
+
+from wealth~
+to belaern~
+END
+
+from wisdom~
+to zhaunil~
+END
+
+from wizard~
+to faern~
+END
+
+from x~
+to n~
+END
+
+from y~
+to l~
+END
+
+from you~
+to dos~
+END
+
+from yours~
+to dosst~
+END
+
+from yourself~
+to dosstan~
+END
+
+from z~
+to k~
+END
+
+EOF~

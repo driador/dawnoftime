@@ -1,0 +1,1007 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword FREEZING-STAR~
+category undefined~
+text `=lSyntax: `=?commune 'freezing star' <weapon>`+
+`+
+This commune allows certain types of weapons to become imbued with a 
+chilling enchantment that freezes bare skin upon contact.  This freeze can 
+sink into muscles and slow movements, sapping the victim of their natural 
+strength.  Flasks of magical potions and other liquids can also become 
+frozen and explode on contact.`+
+`+
+`GSPHERES: `=?`=_combat `=_elemental 
+~
+END
+
+keyword BENEDICT~
+category undefined~
+see_also MALEDICT~
+text `=lSyntax: `=?commune benedict <person>`+
+`+
+A faithful cleric may call down the favor of their diety on another, 
+producing nothing but good affects.  The recipient of this will feel like 
+the gods are smiling upon them.`+
+`+
+`GSPHERES: `=?convocation protection`+
+`+
+~
+END
+
+keyword FIND-OBJECT~
+category undefined~
+text `=lSyntax: `=?commune 'find object' <keyword(s)>`+
+`+
+This commune will seek the aid of the dieties to locate an object in the 
+realm. The spell shows an image of the one who carries the object, or the 
+vicinity of where it lies. If you are vague in your search details, you may 
+find many more items that fit the description than you were looking for.`+
+`+
+`GSPHERES: `=?`=_divination 
+~
+END
+
+keyword FORCE-SLEEP~
+category undefined~
+text `=lSyntax: `=?commune 'force sleep' <victim>`+
+`+
+This commune forces the victim into a deep sleep that's beyond their will or 
+control, if successful.  If this commune fails, the victim may feel the 
+intrusion on their body and mind, and know the intent of this offensive 
+spell, and take actions.`+
+`+
+`GSPHERES: `=?`=_body `=_mind 
+~
+END
+
+keyword HEAT-METAL~
+category undefined~
+text `=lSyntax: `=?commune 'heat metal' <target>`+
+`+
+Heat metal is a powerful divine attack commune, with effects that vary 
+according to the armor of the victim.  It heats up the metal equipment 
+(assumed to be all weapons and armor at this point in time) on the target, 
+causing him or her to drop them if possible, taking serious burns in the 
+process (possibly fatal if the equipment is too heavy to remove easily).  
+This spell does no damage to creatures who are immune to fire.  `+
+`+
+`GSPHERES: `=?`=_combat `=_elemental 
+~
+END
+
+keyword HOLY-AURA UNHOLY-AURA~
+category undefined~
+text `=lSyntax: `=?commune 'unholy aura' <character>`+
+`=?        commune 'holy aura' <character>`+
+`+
+These spells conjure an aura of protection around the target of the commune. 
+Holy aura works only on the pure and good, grants them protection from 
+damage, as well as protection from negative energies, and any evil that 
+touches the target will be hurt by their aura.`+
+`+
+Unholy Aura is simply the version for those who lead 'less virtuous' lives.  
+It also offers protection from damage, protection from the more holy 
+energies, and creates an aura which hurts good creatures.`+
+`+
+`GSPHERES: `=?`=_convocation `=_protection 
+~
+END
+
+keyword HOLY-WORD~
+category undefined~
+text `=lSyntax: `=?commune 'holy word' `+
+`+
+Holy word involves the invocation of the full power of a cleric's god, with 
+disastrous effects upon the enemies of the cleric coupled with powerful 
+blessings on the cleric's allies.  All creatures of like alignment in the 
+room are blessed and filled with righteous divine wrath, while those of 
+opposite morals (or both good and evil in the case of neutral clerics) are 
+struck down by holy (or unholy might) and cursed.  The cleric suffers 
+greatly from the strain of this spell, being left unable to move and drained 
+of vitality.  `+
+`+
+`GSPHERES: `=?`=_combat `=_convocation
+~
+END
+
+keyword KNOW-ALIGNMENT~
+category undefined~
+text `=lSyntax: `=?commune 'know alignment' <person>`+
+`+
+Everyone is enveloped by an aura that reveals their true alignment, 
+depending on their deeds and how this wish to act in any given situation. 
+This commune reveals the nature of the person in question, allowing the 
+caster to see the revealing auras.`+
+`+
+`GSPHERES: `=?`=_divination
+~
+END
+
+keyword PLAGUE~
+category undefined~
+spell_name plague~
+text The plague spell infests the target with a disease of great virulence, 
+sapping the strength and causing horrific suffering to the victim, possibly 
+leading to death.  It is a risky spell to use, as the contagion can spread 
+like wildfire if the victim makes it to a populated area.`+
+~
+END
+
+keyword POISON~
+category undefined~
+see_also ENVENOM~
+spell_name poison~
+text Poison can have devestating effects when injected into the body.  It reduces 
+the strength of the victim, causing them to feel week and nausious, as well 
+as reduces the victim's regeneration rate. It may also be used to poison 
+food, drink, or a weapon in a fashion similar to envenom, but with 
+drastically reduced effectiveness.`+
+~
+END
+
+keyword POISON-IMMUNITY~
+category undefined~
+spell_name poison immunity~
+text This spell enhances the body's abilities to fend off unknown toxins and 
+various poisons.  When affected by this spell, the caster is virtually 
+immune to all poisons.  `+
+~
+END
+
+keyword PROTECTION-LIGHTNING PROTECTION-ACID~
+category undefined~
+spell_name protection acid~
+text `=?        commune 'protection lightning'`+
+`+
+These communes for protection will offer protection against against two of 
+the the many natural elements that can cause much damage: acid and 
+lightning.  When protected from these elements, the caster takes upto 50% 
+less damage when coming into contact with them, whether they be magical 
+attacks or something in the wilds.  Unlike many other protective commune, 
+both can be in use at the same time.`+
+`+
+~
+END
+
+keyword REFRESH~
+category undefined~
+spell_name refresh~
+text This commune grants the person a refreshing boost of energy when they are 
+feeling tired and beat.  It is rumored that the first who asked this of 
+their diety has stayed awake for days straight off a constant supply of 
+refresh, but with adverse affects to his thought patterns.  It is also 
+possible to walk further distances without the constant need to rest.  `+
+~
+END
+
+keyword REMOVE-CURSE~
+category undefined~
+spell_name remove curse~
+text This is a cleansing commune, in the eyes of the holy ones.  When someone is 
+cursed, they have the ill favors of the gods.  This commune will attempt to 
+lighten the curse on the person, granting them favors lost, such as recall.  
+If an object is cursed, cast this commune directly on it to remove the 
+curse.`+
+~
+END
+
+keyword REGENERATION~
+category undefined~
+spell_name regeneration~
+text This commune increases the heartbeat and metabolism of person that will, in 
+turn, cause old wounds to heal much faster. The recipient might also notice 
+an increase in appetite as well.`+
+~
+END
+
+keyword SANCTUARY~
+category undefined~
+spell_name sanctuary~
+text This spell calls down the protection and defense from powers above.  A 
+distinctively white aura protects the target character from damage received 
+in battle.  The target of this spell will only feel half of all damage 
+received while under protection.  `+
+~
+END
+
+keyword WRATH~
+category undefined~
+spell_name wrath~
+text This spell focuses the wrath of your diety upon your enemy.  The wrath 
+invades your enemy's soul and and renders them much weaker, and much more 
+susceptible to death. This spell has a limited use and can only be activated 
+for dark knights and those that wish to cause havoc in the enemy's being.`+
+~
+END
+
+keyword SOBER~
+category undefined~
+spell_name sober~
+text This will remove any trace of alcohol, and completely sober up the one 
+that's apparently had too much to drink.  Those that are known violent 
+drunks may not appreciate the act of kindness at first..`+
+~
+END
+
+keyword MALEDICT~
+category undefined~
+see_also BENEDICT~
+text `=lSyntax: `=?commune maledict <target>`+
+`+
+A faithful cleric may call down the anger of their diety on another, 
+producing nothing but ill effects.  The recipient of this will fell like the 
+gods are looking upon then with distaste, and may take action against the 
+offensiveness of this commune.`+
+`+
+`GSPHERES: `=?`=_combat `=_convocation`+
+`+
+~
+END
+
+keyword SMITE~
+category undefined~
+spell_name smite~
+text By invoking this prayer, powerful and faithful clerics may bring down the 
+wrath of their god on an enemy.  It is quite a powerful strike, and not to 
+be used lightly.  Some have found that the damage will be greater when used 
+on those of opposite beliefs, and very little damage will be inflicted on 
+those with similar views.`+
+~
+END
+
+keyword HOLY-BEAM~
+category undefined~
+text `=lSyntax: `=?commune 'holy beam' <target>`+
+`+
+With this spell a cleric can summon forth a divine beam of light from their 
+god.  This light is shot down from the sky onto the hands of the cleric.  
+This spectacular light glows with blue, pink, yellow, white and green colors 
+and in a matter of seconds this light forms into a glistening ball.  If 
+blessed by their god this ball of magnificent light will grow more powerful 
+in the hands of the cleric.  When targeted correctly this beam will BLAST a 
+striking force of light leaving an opponent blind.  Since this light is 
+divine it will be more permanent than any other blinding spell.  In its full 
+effect this spell will sear the retina and will cause severe pain in the 
+opponent as it rips through their flesh.`+
+`+
+`GSPHERES: `=?`=_combat `=_convocation
+~
+END
+
+keyword PROTECTION-GOOD PROTECTION-EVIL~
+category undefined~
+spell_name protection evil~
+text `=?        commune 'protection good'`+
+`+
+These communes for protection will offer only protection against an entity 
+of good/evil, depending on which protection is conjured. The protections may 
+not be granted to others and only one or the other may protect the
+caster at a given time.  A person may not have both prayers active at the
+same time.
+~
+END
+
+keyword CREATE-WATER~
+category undefined~
+text `=lSyntax: `=?commune 'create water' <container>`+
+`+
+This commune creates water from thin air, which in turn replenishes the 
+empty drink container that this spell is focused at, with a refreshing, 
+crystal clear water free of minerals and impurities.`+
+`+
+`GSPHERES: `=?`=_creation `=_elemental 
+~
+END
+
+keyword CURE-BLINDNESS~
+category undefined~
+text `=lSyntax: `=?commune 'cure blindness' <person>`+
+`+
+This commune, which some praise as nothing short of a miracle, attempts to 
+alleviate the person of temporary blindness, that which is caused by the 
+malicious spell of blindness.  This does not work on blindness from smoke, 
+dirt, or those that are naturally born blind.  Best leave those miracles to 
+the deities themselves.`+
+`+
+`GSPHERES: `=?`=_death `=_healing 
+~
+END
+
+keyword CURE-DISEASE~
+category undefined~
+text `=lSyntax: `=?commune 'cure disease' <person>`+
+`+
+This commune works to halt the spread of plague before it breaks out into 
+epidemic proportions.  Any who are suffering the ill effects of the dreaded 
+plague may be alleviated with the assistance of such a cure, or take the 
+traumatic chance of beating the plague before it claims your life.`+
+`+
+`GSPHERES: `=?death healing 
+~
+END
+
+keyword CURE-POISON~
+category undefined~
+text `=lSyntax: `=?commune 'cure poison' <person>`+
+`+
+This commune cleanses the blood of those affected with any of the several 
+known poisons in the realm.`+
+`+
+Signs that you might be affected by poison include, but are not limited to: 
+weakness, nausea, uncontrolled perspiration and/or shivering, or a 
+slithering snake with huge fangs latched on to your heel.`+
+`+
+`GSPHERES: `=?`=_death `=_healing 
+~
+END
+
+keyword PROTECTION-MAGIC~
+category undefined~
+spell_name protection magic~
+text This commune brings forth the protection of the gods to help fend of magical 
+attacks and any other malignant spells. The beneficiary of this protection 
+has a larger chance of saving vs. spells, and only taking half damage.`+
+~
+END
+
+keyword ACCURATE-VISION~
+category undefined~
+text ..  `=lSyntax: `=?commune 'accurate vision' <direction>`+
+`+
+Accurate vision grants a vision from above to the dedicated cleric.  This 
+vision will give images of who is nearby.  While this commune take more 
+effort than a simple scan, it's possible to see through doors and see 
+farther away with this god-granted vision.`+
+`+
+`GSPHERES: `=?divination 
+~
+END
+
+keyword ANALYSE~
+category undefined~
+text `=lSyntax: `=?commune analyse <object>`+
+`+
+No one knows more about the lands than those that created it.  Whether you 
+want to know what something is made of or what enchantments affect it, a 
+simple commune will reveal much information.  Speak with the omniscient, and 
+much will be revealed in a simple analysis.`+
+`+
+`GSPHERES: `=?divination 
+~
+END
+
+keyword ASSISTANCE~
+category undefined~
+text `=lSyntax: `=?commune assistance <object>`+
+`+
+Ask for a favor, and thou shalt receive.  A commune for assistance will 
+randomly increase your performance in some way, whether it be reasoning, 
+stength, or perhaps quickness, to name a few.  Now that you have the favor 
+of the gods, what you do with it is your decision.`+
+`+
+`GSPHERES: `=?combat convocation 
+~
+END
+
+keyword BLOOD-STAR BLOODSTAR~
+category undefined~
+text `=lSyntax: `=?commune 'blood star' <weapon>`+
+`+
+Truly an art for the wicked at heart, blood star invokes an life draining 
+aura on the weapon that has a chance of transferring the life force to the 
+attacker, from the victim with every slash.  The power doesn't cohere well 
+with the weapons, and thus aren't very powerful, but it is quite a 
+mischievious enchantment. `+
+`+
+`GSPHERES: `=?`=_combat `=_death 
+~
+END
+
+keyword CANCEL-MAGIC~
+category undefined~
+text `=lSyntax: `=?commune 'cancel magic' <person>`+
+`+
+This spell actually strips dwoemers from an ally.  It is much less effective 
+than other spells that might remove magic, but it isn't considered a form of 
+attack.`+
+`+
+`GSPHERES: `=?`=_convocation `=_protection 
+~
+END
+
+keyword -COMMAND~
+category undefined~
+text `=lSyntax: `=?commune command <target> `+
+`+
+Command is a mind penetrating spell that renders the victim hopeless against 
+your willpower, and causes then to become your devoted follower.  When you 
+control someone, you can ORDER then to do certain things, given they aren't 
+too dangerous.`+
+`+
+When you command someone, you are responsible for their actions. `+
+`+
+`GSPHERES: `=?mind 
+~
+END
+
+keyword CLEANSING-WINDS~
+category undefined~
+text `=lSyntax: `=?commune 'cleansing winds' <target> `+
+`+
+Cleansing winds calls forth a powerful blast of wind which will try to 
+cleanse the soul of the victim, but will most likely only succeed in causing 
+great damage.`+
+`+
+`GSPHERES: `=?`=_combat `=_convocation 
+~
+END
+
+keyword DESTROY-MAGIC~
+category undefined~
+text `=lSyntax: `=?commune 'destroy magic' <target> `+
+`+
+With the help of divine powers, this commune attempts to unbind all that 
+binds the magics together.  This spell causes a ripping sensation in the 
+victim when unbinding magics, causing a great pain that will most likely 
+provoke combat.`+
+`+
+`GSPHERES: `=?`=_combat `=_protection 
+~
+END
+
+keyword ETERNAL-LIGHT~
+category undefined~
+text `=lSyntax: `=?commune 'eternal light'`+
+`=?        commune 'eternal light' <object> `+
+`+
+And then He said, "Let there be light."  This commune will create a ball of 
+light out of nothing, and it will glow for what appears to be an indefinate 
+time.  The commune can also be used to give objects a glow of magic 
+enchantment.`+
+`+
+`GSPHERES: `=?`=_creation 
+~
+END
+
+keyword DREAMLAND~
+category undefined~
+text `=lSyntax: `=?commune dreamland <person>`+
+`+
+This spell grants the person a moment of peace from the hectic life of the 
+adventure traveler.  Whether they are tired, or just need a quick nap, 
+dreamland will send them dozing until they can't sleep any longer.  This 
+only works on those willing to fall asleep.`+
+`+
+`GSPHERES: `=?`=_body `=_mind 
+~
+END
+
+keyword SACRED-SANCTUARY~
+category undefined~
+spell_name sacred sanctuary~
+text This commune prays for a quick teleport to a place of known safety, the 
+place where safety comes in numbers.  Depending on who you pray to, you will 
+be transported to either the center of Mekali, or Dzagari.`+
+~
+END
+
+keyword WRATH-OF-THE-LAND~
+category undefined~
+spell_name wrath of the land~
+text The earth churns and trembles as the the final words of this commune are 
+uttered.  Wrath of the land brings forth the anger of the Goddess of Mythrin 
+to any who are nearby the caster.  Small children may stumble from this, and 
+shelves will be cleared as the earth tosses and turns until for the duration 
+of this spell.`+
+~
+END
+
+keyword LIFE-DRAIN~
+category undefined~
+text `=lSyntax: `=?commune 'life drain' <victim>`+
+`+
+This commune allows the clerical caster to act as a conduit and draw in 
+external energies from the source of this wicked spell, the victim.  The 
+caster will attempt to transfer the mind, body, and soul of the target unto 
+themself.`+
+`+
+`GSPHERES: `=?`=_combat `=_death 
+~
+END
+
+keyword HOLY-VISION UNHOLY-VISION~
+category undefined~
+text `=lSyntax: `=?commune 'holy vision' <person>`+
+`+
+This commune grants the cleric a short termed vision from the all seeing 
+deities.  It grants the vision to see someone else, where ever they are in 
+the realms.  Certain areas are protected from such scrying attempts, and the 
+no god would betray the others and scry upon the other gods.`+
+`+
+`GSPHERES: `=?`=_convocation `=_divination
+~
+END
+
+keyword FLAMING-STAR FREEZING-STAR~
+category undefined~
+text `=lSyntax: `=?commune 'flaming star' <weapon>`+
+`=?        commune 'freezing star' <weapon>`+
+`+
+These commune allows certain types of weapons to become imbued with a fiery 
+or freezing enchantment that burns or freezes bare skin upon contact, 
+respectively.  The smokey flame from the flaming weapon can cause a 
+temporary smoke blindness if exposed to the eyes, and can burn combustibles, 
+such as parchments and scrolls, on contact. On the otherhand, the freezing 
+weapon can cause frost burn on bare skin, creating a coldness that sinks 
+deep into the muscles, and can freeze potion flasks and waterskin on 
+contact.`+
+`+
+`GSPHERES: `=?`=_combat `=_elemental 
+~
+END
+
+keyword COMMUNE-WITH-DEAD~
+category undefined~
+text ..  `=lSyntax: `=?commune 'commune with dead' <corpse>`+
+`+
+This commune grants the holy cleric the last words with the deceased before 
+eternal rest.  The cleric summons a ghostly spirit from whatever remains of 
+the corpse there is, which will reveal who had brought on that terrible fate 
+and slayed the victim. `+
+`+
+`GSPHERES: `=?`=_death `=_divination 
+~
+END
+
+keyword PROTECTION-COLD PROTECTION-FIRE~
+category undefined~
+spell_name protection cold~
+text These communes for protection will offer protection against magics of cold 
+or heat, depending on which protection is conjured, and will reduce damage 
+taken from those attacks by upto 50%. The protections may not be granted to 
+others, and only one or the other may protect the caster at a given time.`+
+~
+END
+
+keyword STARVATION~
+category undefined~
+spell_name starvation~
+text This will cause the target to be gripped with instant hunger.  The unlucky 
+victim will need to consume food immediately, or could die from lack of 
+food.`+
+~
+END
+
+keyword DEHYDRATION~
+category undefined~
+text `=lSyntax: `=?commune 'dehydration' <target>`+
+`+
+This commune will cause the victim to be gripped with instant thirst.  The 
+unlucky victim may be required to consume water or other liquid immediately, 
+or could perish from lack of water.`+
+`+
+`GSPHERES: `=?`=_death `=_time 
+~
+END
+
+keyword BLESS~
+category undefined~
+text `=lSyntax: `=?commune bless <person>`+
+`=?        commune bless <object>`+
+`+
+Those who serve the gods can bestow the blessing of their diety to help with 
+such things as combats, saves against spells, and do more damage to the 
+unholy.  Blessings can be cast directly on someone, or even cast on objects 
+such as armor and weapons, to grant assistance.`+
+`+
+`GSPHERES: `=?`=_combat `=_convocation 
+~
+END
+
+keyword BLINDNESS~
+category undefined~
+text `=lSyntax: `=?commune blindness <target>`+
+`+
+Casting blindness on someone will cause the diety to revoke the sight of the 
+person for what seems like an infinitely long time, if you're the one 
+suffering from lack of vision.  `+
+`+
+`GSPHERES: `=?`=_death `=_healing 
+~
+END
+
+keyword CALM~
+category undefined~
+text `=lSyntax: `=?commune 'calm' <person>`+
+`+
+One of the most useful and often overlooked abilities of the master cleric 
+is the calm spell, which can put an end to all violence in a room.  Calmed 
+creatures will not attack of their own volition, and are at a disadvantage 
+in combat as long as the spell soothes their minds.  The more violent 
+activity there is in a room, the harder the spell, and it is all or nothing 
+-- either all combat in the room is ended (with the exception of those who 
+are immune to magic) or none is.`+
+`+
+`GSPHERES: `=?`=_convocation `=_mind 
+~
+END
+
+keyword CALL-LIGHTNING~
+category undefined~
+text `=lSyntax: `=?commune 'call lightning' <target>`+
+`+
+When the conditions for thunderstorms are right, a cleric can call down a 
+searing bolt of lightning upon his target.  This spell, naturally, only works 
+when outdoor.`+
+`+
+`GSPHERES: `=?`=_combat `=_weather 
+~
+END
+
+keyword CAUSE-LIGHT CAUSE-SERIOUS CAUSE-CRITICAL HARM~
+category undefined~
+text `=lSyntax: `=?commune 'cause light' <victim>`+
+`=?        commune 'cause critical' <victim>`+
+`=?        commune 'cause serious' <victim>`+
+`=?        commune harm <victim>`+
+`+
+Those trained in the healing arts are equally proficient in causing damage 
+as well.  Instead of channeling life force into the victim, it is sucked out 
+and channeled back to the diety.  Upon laying hands on the victim, the sheer 
+life force is drained and old wounds open as pain is inflicted on the 
+victim.  It is almost as if watching old wounds open up.`+
+`+
+`GSPHERES: `=?`=_death `=_healing 
+~
+END
+
+keyword CONTROL-WEATHER~
+category undefined~
+text `=lSyntax: `=?commune 'control weather' <better|worse>`+
+`+
+This commune asks for divine assistance in changing the affects of the 
+weather. This works best when outdoors, since there isn't much of a 
+noticeable weather change from indoors.  Change weather will cause the 
+weather to get better or worse, depending on the will of the of the cleric.`+
+`+
+`GSPHERE: `=?`=_weather 
+~
+END
+
+keyword CREATE-FOOD~
+category undefined~
+text `=lSyntax: `=?commune 'create food'`+
+`+
+This commune creates a single enhanced mushrooms for those times when only 
+one will do.  Not many other types of foods compare in how full a single 
+mushroom can make you.  This is truly a gift of the gods.`+
+`+
+`GSPHERES: `=?`=_creation `=_nature 
+~
+END
+
+keyword CREATE-BUFFET~
+category undefined~
+text `=lSyntax: `=?commune 'create buffet'`+
+`+
+This commune creates a whole buffet of enhanced mushrooms. Not many other 
+types of foods compare in how full a single mushroom can make you.  This is 
+truly a gift of the gods.`+
+`+
+`GSPHERES: `=?`=_creation `=_nature 
+~
+END
+
+keyword CREATE-SPRING~
+category undefined~
+text `=lSyntax: `=?commune 'create spring'`+
+`+
+This commune creates a fountain-type spring to be placed in the middle of 
+the room, where anyone can drink from it.  The refreshing water has no 
+impuritues, has a refreshing taste, and might possibly be bottled and sold, 
+if there were such a market for that.`+
+`+
+`GSPHERES: `=?`=_creation `=_elemental 
+~
+END
+
+keyword CURE-LIGHT CURE-SERIOUS CURE-CRITICAL HEAL REJUVENATE MASS-HEALING~
+category undefined~
+text `=lSyntax: `=?commune 'cure light' <person>`+
+`=?        commune 'cure  critical' <person>`+
+`=?        commune 'cure serious' <person>`+
+`=?        commune heal <person>`+
+`=?        commune 'mass healing'`+
+`=?        commune rejuvinate <person>`+
+`+
+What would a cleric or paladin be without powers to mend wounds. These 
+communes send forth healing energies into the target when the caster lays 
+hands on them. The intensity of healing ranges from closing a few scratches, 
+to healing all in the general vicinity, to completely mending all wounds, 
+but the latter creates great strain on the cleric.`+
+`+
+`GSPHERES: `=?`=_death `=_healing 
+~
+END
+
+keyword CURSE~
+category undefined~
+text `=lSyntax: `=?commune curse <target> `+
+`=?        commune curse <object>`+
+`+
+Those who serve the gods can brings down the fury of their diety to cause 
+greate discomfort to their enemies.  This spell causes the target to perform 
+much worse in combats, and reduces the chance to save against spells. It 
+also renders the character unclean in the eyes of their god and unable to 
+RECALL. Curse may be used to fill equipment with evil power as well, 
+allowing (for example) weapons to do more damage to particularly holy 
+opponents.  `+
+`+
+`GSPHERES: `=?`=_combat `=_convocation
+~
+END
+
+keyword DETECT-HIDDEN~
+category undefined~
+text `=lSyntax: `=?cast 'detect hidden' `+
+`+
+This spell enhanced the senses of the caster to help detect creatures and 
+characters that are sneaking or otherwise hiding in the shadows. This does 
+not help in any way to sense those that are magically hidden.`+
+`+
+`GREALMS: `=?`=_divination 
+~
+END
+
+keyword DETECT-INVIS~
+category undefined~
+text `=lSyntax: `=?commune 'detect invis' `+
+`+
+This spell grants the caster the ability to detect those that are magically 
+invisible to the naked eye.  This also works to detect objects that are 
+hidden by the same nature.`+
+`+
+`GSPHERES: `=?`=_divination
+~
+END
+
+keyword DETECT-MAGIC~
+category undefined~
+text `=lSyntax: `=?commune 'detect magic' `+
+`+
+Magic is everywhere, though it can't be detected when not in a more 
+concentrated form.  This spell grants the caster to detect the auras around 
+objects with strong magical enchantments on them. `+
+`+
+`G`GREALMS: `=?`=_divination 
+~
+END
+
+keyword DETECT-POISON~
+category undefined~
+text `=lSyntax: `=?commune 'detect poison' <object> `+
+`+
+This commune detects the presence of poison in food or drink by altering the 
+poison so that it releases obnoxious fumes that are easy for a trained 
+cleric to smell.`+
+`+
+`GSPHERES: `=?`=_divination `=_nature 
+~
+END
+
+keyword DISPEL-EVIL DISPEL-GOOD~
+category undefined~
+text `=lSyntax: `=?commune 'dispel good' <target>`+
+`=?        commune 'dispel evil' <target>`+
+`+
+The communes of dispel will channel forth energies of spiritual cleansing, 
+inflicting horrific torment when used against those of opposing alliance to 
+the summoned energies.  Care must be taken when channeling, for these 
+energies will inflict damage on the caster as well if they require the 
+spiritual cleansing as well.`+
+`+
+`GSPHERES: `=?`=_combat `=_protection 
+~
+END
+
+keyword DETECT-GOOD DETECT-EVIL~
+category undefined~
+text `=lSyntax: `=?commune 'detect good'`+
+`=?        commune 'detect evil'`+
+`+
+This group of communes enables the caster to more easily determine who are 
+the goodly and evil people with merely a passing glance.  It will reveal a 
+characteristic golden and reddish aura, respectively, which fully envelops 
+their entity of those that have strong tendencies to act one way or another.`+
+`+
+`GSPHERES: `=?`=_divination 
+~
+END
+
+keyword FLAMESTRIKE~
+category undefined~
+text `=lSyntax: `=?commune flamestrike <target> `+
+`+
+Flamestrike calls down a billowing vertical column of blistering hot fire on 
+the target, inflicting severe damage and critical burns.  Those standing 
+near the victim have been known to have singed many hairs, and should be 
+advised to not stand so close.`+
+`+
+`GSPHERES: `=?`=_combat `=_elemental 
+~
+END
+
+keyword FRENZY~
+category undefined~
+see_also CALM~
+text `=lSyntax: `=?commune frenzy <person> `+
+`+
+Frenzy fills the recipient with righteous fury, greatly increasing his or 
+her melee attack skills and damaging capacity.  Unfortunately, this divine 
+wrath is coupled with a tendency to ignore threats to personal safety, 
+making the character easier to hit.  Frenzy provides immunity to the calm 
+spell and may only be used on those of that share the caster's alliance.  `+
+`+
+`GSPHERES: `=?combat convocation`+
+`+
+~
+END
+
+keyword DRUNKENESS~
+category undefined~
+text `=lSyntax: `=?commune drunkeness <person>`+
+`+
+This spell is more for cheap amusement by the caster than anything harmful.  
+It grants the victim the same side-affects of a full night at the local 
+tavern.  The target character will instantly feel his head spin, start 
+talking in a slur, and may even feel like throwing up, depending on the 
+intoxicity of the spell.  The only side affects may be a mean drunk or a 
+nasty hangover.  `+
+`+
+`GREALMS: `=?`=_body
+~
+END
+
+keyword AURA-OF-TEMPERANCE~
+category undefined~
+text `=lSyntax: `=?commune 'aura of temperance'`+
+`+
+Discovered long ago by a humble cleric searching for her peace and harmony 
+during the violent times of war, this spell granted her something she always 
+desired, but had been out of reach.  She was being charged by a pack of war 
+dogs when approaching the gory battle scenes.  Uttering a quick prayer of 
+mercy, her prayers were answered, and the fierce glare of the charging 
+canines turned into a look of indifference as they slowed to a halt and soon 
+turned their back in her.  The cleric, when granted protection from the 
+diety, is surrounded by an undetectable aura that has a tendency to sooth 
+even the most aggressive of beasties.  `+
+`+
+`GSPHERES: `=?combat protection   
+~
+END
+
+level 200
+category undefined~
+text **********************************************************************
+*                Clerics magic help file                             *
+**********************************************************************
+~
+END
+
+keyword LIGHTNING-STAR~
+category undefined~
+text `=lSyntax: `=?commune 'lightning star' <weapon>`+
+`+
+This commune imbues a weapon with an electrified shocking enchantment, which 
+lets out a jolt of searing electricity upon contact.  The victim suffers 
+double damage: damge from the weapon wounds, and also damage from the 
+nerve-numbing shocks.`+
+`+
+`GSPHERES: `=?`=_combat `=_elemental 
+~
+END
+
+keyword ROTTING-TOUCH~
+category undefined~
+spell_name rotting touch~
+text This commune grants the caster the chilling touch similar to that of the 
+undead, which saps all energies and strength from the muscles of the one 
+touched, causing a weakening sensation until the muscles have time to relax 
+and warm up.`+
+~
+END
+
+keyword PROTECTION-POISON~
+category undefined~
+spell_name protection poison~
+text This commune grants the caster the protection to naturally fend off toxins 
+and poisons found in the realms.  While the protection doesn't grant 
+immunity to such poisons, there is a higher chance that the caster can shrug 
+off the ill effects before becoming seriously ill.`+
+~
+END
+
+keyword DARKVISION~
+category undefined~
+text `=lSyntax: `=?commune darkvision`+
+`+
+This commune grants the caster the abilities to visualize heat patterns and 
+see others in the dark, when the normal eyesight doesn't work.  Only 
+warm-blooded creatures are detectable using darkvision, and exits are easier 
+to spot as well.`+
+`+
+`GSPHERES: `=?`=_body `=_divination 
+~
+END
+
+keyword DEAFNESS~
+category undefined~
+text `=lSyntax: `=?commune prayer <target>`+
+`+
+The deafness prayer, though not as painful as some, causes the victim to 
+lose any and all hearing.  It may not seem like a long time to the cleric 
+who brought about this prayer upon the victim, but to the victim it will 
+seem like an eternity.`+
+`+
+`GSPHERES: `=?`=_death `=_healing 
+~
+END
+
+keyword CURE-DEAFNESS~
+category undefined~
+text `=lSyntax: `=?commune 'cure deafness' <person>`+
+`+
+When a healer finds a soul tormented by a loss of all hearing, they may pray 
+to their Gods or Goddesses in hope that they will help the tormented in 
+regaining their hearing. Only those close to their deity seem to get an 
+answer though.`+
+`+
+`GSPHERES: `=?`=_death `=_healing 
+~
+END
+
+keyword DIVINE-LIGHT~
+category undefined~
+text `=lSyntax:`=? cast 'divine light'`+
+`+
+The communer of this spell summons a glowing light from the heavens,`+
+which floats down upon the floor only to disperse into an ethereal,`+
+glowing mist.  This mist provides increased regeneration to all who`+
+rest or sleep by it.`+
+`+
+`GSPHERES:`=? `=_creation `=_healing`+
+~
+END
+
+keyword SPIRIT-HAMMER~
+level 1
+category undefined~
+spell_name spirit hammer~
+text This powerful prayer can save the faithful cleric's life, should he find 
+himself disarmed or otherwise without a weapon.  To call upon this power, 
+the priest raises his arm toward the heavens and murmurs a devotion of 
+faith.  As the syllables are uttered, a sturdy warhammer hewn from ether 
+materializes in his palm, a gift from his patron.  The hammer can be used as 
+any ordinary weapon for the duration of this prayer, dealing out holy (or 
+unholy) retribution before disappearing into thin air. 
+~
+END
+
+keyword HOLYGRIP~
+level 1
+category undefined~
+text `BSyntax:`w commune holygrip
+ 
+This spell grants the caster the intensely powerful grip 
+which prevents any weapons wielded from being disarmed in combat.
+ 
+`GSpheres:`w `=_body `=_creation`x
+~
+END
+
+EOF~
+#$

@@ -1,0 +1,2493 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Dandenong Town~
+ShortName   Dandenong Town~
+Builders    None~
+Credits     Raine Kriis~
+VNUMs       29300 29349
+LComment    [  ALL  ]
+Security    9
+Colour      Y~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#29300
+Name innkeeper~
+ShortD an innkeeper~
+LongD An innkeeper stands here, writing in a visitor's book.~
+Desc This elderly man is the innkeeper of this quiet inn.  He has an aged face, 
+and whispery white hair.  He fumbles slightly as he handles the keys, due to 
+his knobbly, old fingers.  
+~
+Race human~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 10d400+999
+ManaDice 20d10+50
+DamDice 10d20+150
+DamType punch
+AC -700 -600 -600 -600
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+AffBy  infrared~
+Off    disarm dodge kick trip~
+Imm    summon charm~
+Res    magic weapon poison disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#29301
+Name tavern keeper~
+ShortD a tavern keeper~
+LongD A tavern keeper is here staggering around.~
+Desc The Tavern keeper has served many a drink in his time in the realm.  
+Unfortunately today he has done most of the drinking as he swaggers 
+about the small tavern widely.
+~
+Race human~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType punch
+AC -900 -900 -900 -765
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Off    disarm dodge kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#29302
+Name souvenir seller~
+ShortD a souvenir seller~
+LongD A souvenir seller is here smiling at you.~
+Desc A dark skinned individual, this person seems eager to sell his wares to 
+naive travellers.  His dark eyes twinkle slightly as you enter his shop.  
+~
+Race human~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 10d20+999
+ManaDice 20d10+50
+DamDice 10d15+123
+DamType punch
+AC -700 -700 -700 -600
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Off    disarm dodge kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#29303
+Name dwarf dwarven metalsmith~
+ShortD a dwarven metalsmith~
+LongD A dwarven metalsmith is muttering to himself.~
+Desc This dwarf is very grumpy looking, he has his hand wrapped firmly 
+around the hilt of a beautiful engraved axe.  The dwarf's eyes never 
+leave you as he turns to see what you want.  
+~
+Race dwarf~
+Align 3 0
+Level 120
+Hitroll 5
+HitDice 10d15+999
+ManaDice 20d10+50
+DamDice 10d13+123
+DamType punch
+AC -700 -700 -700 -600
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+AffBy  infrared~
+Off    disarm dodge kick trip~
+Imm    summon charm~
+Res    magic weapon poison disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#29304
+Name Food store attendant~
+ShortD a food store attendant~
+LongD A food store attendant is here waiting to serve you.~
+Desc A lovely young lady, this girl is obviously one of the towns gems.
+Her deep blue eyes are enchanting, and you feel yourself drawn to 
+sample one of her pastries.  
+~
+Race human~
+Align 3 0
+Level 120
+Hitroll 2
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType slap
+AC -900 -900 -900 -810
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Off    disarm dodge kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#29305
+Name old retired miner mining shop keeper~
+ShortD a mining shop keeper~
+LongD An old retired miner is here, tending to the store.~
+Desc This poor old fellow has no teeth to speak of.  Obviously retired, his 
+beard has had time to grow, it now reaches down to his belt.  Slightly 
+insane, this fellow looks like he could tell you stories till the lamias 
+come home.
+~
+Race human~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 4d20+999
+ManaDice 20d10+50
+DamDice 4d10+120
+DamType beating
+AC -700 -700 -700 -650
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Off    disarm dodge kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#29306
+Name arena ticket seller~
+ShortD an arena ticket seller~
+LongD A ticket seller is here offering you the best seat in the house.~
+Desc Dressed from head to toe in colorful robes, this is an interesting looking 
+fellow.  He has a few missing teeth, which you notice when he grins.  He's 
+standing here, holding a handful of tickets.  
+~
+Race human~
+Align 3 0
+Level 120
+Hitroll 0
+HitDice 12d16+585
+ManaDice 5d5+140
+DamDice 12d16+75
+DamType smash
+AC -900 -900 -900 -729
+Wealth 500
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Off    disarm dodge kick trip~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#29307
+Name town mayor~
+ShortD the mayor~
+LongD The town mayor is here, enjoying a dip in the baths.~
+Desc The mayor of this town is enjoying a dip in his heated indoor baths.  
+Startled by your presence, he looks up at you with a solemn look on his 
+face.  
+~
+Race human~
+Align 3 0
+Level 65
+Hitroll 0
+HitDice 1d1+390
+ManaDice 20d10+50
+DamDice 4d10+50
+DamType crush
+AC -300 -300 -300 -240
+Wealth 650
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+Off    disarm dodge kick trip~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#29308
+Name mayor's wife beautiful lady~
+ShortD the mayor's wife~
+LongD The mayor's wife is here, smiling warmly.~
+Desc This lady is very beautiful, and on closer examination you realise she is of 
+elven descent.  She is tending to the mayor, bringing his grapes and wine.  
+~
+Race human~
+Align 3 0
+Level 30
+Hitroll 0
+HitDice 5d6+150
+ManaDice 2d5+15
+DamDice 4d6+8
+DamType slap
+AC -90 -90 -90 -77
+Wealth 120
+Act    npc dont_wander no_tame stay_area warrior outdoors~
+AffBy  infrared~
+Off    disarm dodge kick trip~
+Imm    summon charm~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#29309
+Name guard warden~
+ShortD a guard warden~
+LongD The guard warden stands here eyeing everyone and everything 
+suspiciously.~
+Desc This is one impressive specimum of a human.  Standing seven feet tall and at 
+least three feet wide, this man makes an ideal guard.  Muscles bulge under 
+his plate armor, and you notice a scar that runs down from the left side of 
+his face.  
+~
+Race human~
+Align 3 3
+Level 65
+Hitroll 0
+HitDice 1d1+390
+ManaDice 20d10+50
+DamDice 4d10+45
+DamType crush
+AC -350 -350 -350 -300
+Wealth 650
+Act    npc no_tame stay_area warrior~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good sanctuary infrared protect_evil protect_good haste regeneration~
+Off    bash berserk disarm dodge fast kick parry~
+Vuln   poison~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#29310
+Name guard~
+ShortD a guard~
+LongD A guard of this town sits here gambling with his friends.~
+Desc This guard looks as if he has served most of his career around the gambling 
+mat.  He is obviously not a gambler of merit, as his armor is in poor keep.  
+
+~
+Race human~
+Align -3 3
+Level 25
+Hitroll 0
+HitDice 1d1+150
+ManaDice 3d10+100
+DamDice 2d10+7
+DamType slash
+AC -50 -70 -50 -20
+Wealth 250
+Act    npc dont_wander scavenger no_tame stay_area wimpy warrior~
+AffBy  detect_invis detect_hidden~
+Off    bash disarm dodge parry assist_all assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#29311
+Name guard~
+ShortD a guard~
+LongD A guard stands here watching for trouble.~
+Desc This guard looks as if he has served most of his career walking the 
+beat.  He obviously not a stranger to a fight, as his armor is dented and 
+battered.
+~
+Race human~
+Align -3 3
+Level 30
+Hitroll 0
+HitDice 1d1+180
+ManaDice 3d10+100
+DamDice 4d6+8
+DamType slash
+AC -70 -90 -70 -40
+Wealth 300
+Act    npc dont_wander scavenger no_tame stay_area wimpy warrior~
+AffBy  detect_invis detect_hidden~
+Off    assist_all assist_guard~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#29312
+Name citizen mining person~
+ShortD a citizen~
+LongD A mining citizen wanders among the shops and stalls.~
+Desc This person casts a wary eye over you.  Obviously the mining business
+does not pay well, as this person is dressed very plainly.
+~
+Race human~
+Align -3 0
+Level 21
+Hitroll 0
+HitDice 4d5+90
+ManaDice 4d5+90
+DamDice 4d4+5
+DamType beating
+AC -50 -50 -50 -41
+Wealth 10
+Act    npc no_tame stay_area wimpy~
+AffBy  slow~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#29313
+Name lay healer priest~
+ShortD the priest~
+LongD A lay healer is here trying to look the part.~
+Desc This middle-aged man is dressed in the garb of a priest.  Oddly though, he 
+carries a sword at his side.  
+~
+Race human~
+Align 0 -3
+Level 35
+Hitroll 0
+HitDice 1d1+210
+ManaDice 12d10+100
+DamDice 4d8+14
+DamType slash
+AC -100 -150 -80 -50
+Wealth 350
+Act    npc dont_wander scavenger no_tame stay_area~
+AffBy  slow~
+Off    disarm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#29314
+Name sick person~
+ShortD a sick person~
+LongD A sick looking person is here, grumbling with pain.~
+Desc Obviously in a lot of discomfort, this persons face is contorted with
+pain.  Numerous objects have been placed around the persons neck in an
+attempt to ward off the sickness.  
+~
+Race human~
+Align 3 3
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType grep
+AC -40 -40 -40 -34
+Wealth 50
+Act    npc no_tame stay_area wimpy~
+AffBy  poison weaken slow~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sleeping~
+DefPos sleeping~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#29315
+Name champion aphdol gahan~
+ShortD the Aphdol champion~
+LongD The champion of Aphdol is here.~
+Desc Standing here is a small man, barely five feet high.  His body ripples 
+with muscle as he shadow boxes ready to fight the next contender.  You 
+notice this man bears no weapons but his hands move faster than any 
+you have seen before.    
+~
+Race human~
+Align 3 -3
+Level 70
+Hitroll 1
+HitDice 1d1+432
+ManaDice 20d10+200
+DamDice 4d10+42
+DamType punch
+AC -400 -400 -400 -300
+Wealth 700
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden haste regeneration~
+Off    disarm dodge fast kick parry trip~
+Res    cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#29316
+Name dzagari champion~
+ShortD the dzagari champion~
+LongD The champion of Dzagari is here.~
+Desc Standing here is a huge man, nearly seven feet high.  His body is one solid 
+mass and you wonder how any one ever wins against such an immovable force.  
+You notice this man bears no weapons but his arms are scarred with many bite 
+marks.  The bites must be last attempts to escape this man's fearsome 
+bearhug.  
+~
+Race human~
+Align 3 3
+Level 70
+Hitroll 1
+HitDice 1d1+432
+ManaDice 20d10+200
+DamDice 4d10+57
+DamType crush
+AC -400 -400 -400 -300
+Wealth 700
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden slow~
+Off    bash disarm dodge kick parry crush~
+Res    bash~
+Vuln   pierce mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#29317
+Name underdark champion~
+ShortD the Underdark champion~
+LongD The champion of the Underdark is here.~
+Desc Standing here is a slight drow, six feet high she sneers at you.  
+At her side is a dark blade made of some strange metal.  This drow 
+looks very confident and seems to enjoy the mortal combat of the arena 
+for it is not often her kind venture out, especially in public.
+~
+Race human~
+Align -3 0
+Level 72
+Hitroll 1
+HitDice 1d1+432
+ManaDice 20d10+200
+DamDice 4d10+42
+DamType slash
+AC -200 -150 -200 -150
+Wealth 720
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_invis detect_hidden~
+Off    bash disarm dodge fast kick parry~
+Res    charm magic~
+Vuln   holy light silver iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#29318
+Name Mekali champion Shaaron~
+ShortD the Mekali champion~
+LongD The champion of Mekali is here.~
+Desc Standing here dressed in the most basic armor is a man of medium 
+build.  This man stands just under six feet tall and carries himself with 
+an air of nonchalance.
+~
+Race human~
+Align 3 3
+Level 72
+Hitroll 1
+HitDice 1d1+432
+ManaDice 20d10+200
+DamDice 4d10+47
+DamType slash
+AC -300 -250 -300 -200
+Wealth 720
+Act    npc dont_wander no_tame stay_area warrior~
+Off    bash disarm dodge kick parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#29319
+Name giant allethrin worm~
+ShortD the worm Allethrin~
+LongD A giant worm lies here curled in a tight ball.~
+Desc You estimate the giant worm to be almost thirty feet long, but you can't 
+tell exactly because it is curled up as it sleeps.  Hard scales cover its 
+top side but you notice it has a very soft underbelly, the perfect spot for 
+a dagger.  A huge suction like mouth sucks in the air as the worm stirs.  
+This monstrosity can only be the one know as Allethrin.  
+~
+Race unique~
+Align -3 -3
+XPMod 110
+Level 71
+Hitroll 0
+HitDice 1d1+450
+ManaDice 20d10+200
+DamDice 6d10+60
+DamType suction
+AC -300 -800 -400 -300
+Wealth 710
+Act    npc dont_wander scavenger no_tame aggressive stay_area cleric~
+AffBy  detect_invis detect_hidden infrared~
+Off    bash disarm fade dirt_kick tail crush~
+Res    magic weapon~
+Vuln   cold~
+Form   edible sentient biped mountable mammal~
+Part   heart brains guts long_tongue eyestalks tentacles scales~
+StartP sitting~
+DefPos sitting~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#29320
+Name giant statue~
+ShortD a statue~
+LongD A giant statue stands guard here.~
+Desc Looming above you is perhaps the biggest statue you have ever seen.  Made 
+entirely of some indescribable material, the features of this statue are 
+resolute.  It stands straight and stares out into the land beyond.  
+~
+Race unique~
+Align 3 3
+XPMod 110
+Level 80
+Hitroll 0
+HitDice 1d1+480
+ManaDice 20d10+400
+DamDice 6d10+60
+DamType pound
+AC -400 -250 -500 -400
+Wealth 800
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_evil detect_magic detect_good sanctuary infrared protect_evil dark_vision~
+Off    bash dodge parry crush~
+Imm    charm poison mental disease drowning~
+Res    magic weapon~
+Vuln   lightning~
+Form   magical other animal construct biped cold_blood~
+Part   head arms legs hands feet fingers eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#29321
+Name selnor figure~
+ShortD an elusive figure~
+LongD A figure reclines in the shadows.~
+Desc You look into the eyes of a man of magic.  Sparkles of light rotate around 
+him, forming and unforming like puddles on a slate floor.  He is passive for 
+all intents and purposes.  He shows no sign of fear, and looks as though he 
+has the weight of the world on his shoulders.
+~
+Race unique~
+Align 0 0
+XPMod 115
+Level 80
+Hitroll 0
+HitDice 1d1+480
+ManaDice 20d10+400
+DamDice 6d10+70
+DamType divine
+AC -200 -300 -500 -400
+Wealth 800
+Act    npc dont_wander no_tame stay_area mage warrior~
+AffBy  detect_evil detect_magic detect_good sanctuary infrared protect_evil dark_vision~
+Off    crush~
+Imm    poison mental disease drowning~
+Res    magic weapon~
+Vuln   lightning~
+Form   magical other animal construct biped cold_blood~
+Part   head arms legs hands feet fingers eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#29322
+Name champion Xarcotar Crixler~
+ShortD the Xarcotar champion~
+LongD The champion of Xarcotar is here.~
+Desc This lithe dark-elf has a sinister and uncanny feature about him.  His 
+beguiling appearance seems dark and mysterious, yet some how alluring.  
+Standing nearly six feet in height, extremely tall for the drow community.  
+~
+Race drow~
+Align -3 3
+Level 70
+Hitroll 1
+HitDice 1d1+432
+ManaDice 20d10+200
+DamDice 8d8+34
+DamType punch
+AC -400 -400 -400 -300
+Wealth 700
+Act    npc dont_wander no_tame stay_area thief~
+AffBy  detect_invis detect_magic detect_hidden infrared dark_vision regeneration~
+Off    backstab disarm dodge fast kick parry trip~
+Imm    charm~
+Res    magic cold~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#29300
+Name allethrin gem~
+Short the gem of Allethrin~
+Desc a strange gem lies here, it pulsates with a malevolent glow.~
+Level 65
+ItemType gem~
+Cost 1313
+Asize 35
+Rsize 50
+Values 0 0 0 0 0
+Weight 40
+Material diamond~
+Extra    glow evil magic antigood visdeath nodegrade burnproof~
+Wear     take float~
+ClassAllowances cleric paladin ranger spellfilcher~
+Affect modifier -1 65 -1 strength -2 0
+Affect modifier -1 65 -1 move -40 0
+Affect modifier -1 65 -1 hp 8 0
+Affect modifier -1 65 -1 mana 100 0
+ExtraDesc gem allethrin~
+This gems is huge, it glows dully giving off a faint light.  Deep inside 
+the gem figures writhe in pain.  This gem must be a holder of souls.  
+You imagine all the victims of allethrin have been consumed by this 
+artifact, best be careful least it consumes you to.
+~
+End
+
+#29301
+Name champion's girth huge~
+Short the `#`Ychampion's`^ girth~
+Desc A huge, finely crafted girth is here.~
+Level 65
+ItemType armor~
+Cost 1487
+Asize 100
+Rsize 50
+Values 9 16 12 9 0
+Weight 40
+Material iron~
+Extra    magic bless otterlungs nodegrade burnproof~
+Wear     take waist~
+ClassAllowances warrior paladin ranger~
+Affect modifier -1 65 -1 quickness 3 0
+Affect modifier -1 65 -1 hitroll 3 0
+Affect modifier -1 65 -1 damroll 3 0
+ExtraDesc girth champion cusson~
+This girth hums with innate power, it is most certainly magical and one 
+of a kind.  Thick inlaid runes run from left to right across the girth face 
+forming intricate patterns.  You stare at perhaps the most powerful 
+armor you have ever seen.
+~
+End
+
+#29302
+Name plain key innkeep~
+Short a plain key~
+Desc a rather plain key is here.~
+Level 0
+ItemType trash~
+Cost 1
+Asize 1
+Rsize 1
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc key plain innkeep~
+This is an ordinary looking key, nothing special here.
+~
+End
+
+#29303
+Name bottle trekar wine~
+Short a bottle of Trekar wine~
+Desc a bottle of wine is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 11
+Asize 1
+Rsize 1
+Values 10 10 'red wine' 0 0
+Weight 1
+Material glass~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc bottle trekar wine~
+This bottle is dirty from many users the wine inside is dark and looks 
+to be off.
+~
+End
+
+#29304
+Name handle foaming beer~
+Short a handle of foaming beer~
+Desc a handle of beer is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 9
+Asize 1
+Rsize 1
+Values 10 10 beer 0 0
+Weight 1
+Material glass~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc handle beer foaming~
+This handle contains a lovely looking beer, it has just the right head 
+and looks very drinkable.
+~
+End
+
+#29305
+Name souvenir dandenong worthless junk~
+Short a souvenir of Dandenong~
+Desc A worthless piece of junk lies here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 1
+Rsize 1
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc worthless junk souvenir dandenong~
+This is a worthless object at first glance.  After much examination you 
+determine that it is still worthless after three or four glances.
+~
+End
+
+#29306
+Name clump iron souvenir allethrin~
+Short a souvenir of Allethrin~
+Desc A clump of iron lies here.~
+Level 1
+ItemType trash~
+Cost 10
+Asize 1
+Rsize 1
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc symbol Allethrin souvenir~
+Looking at the clump of iron, you notice that it is in the shape of a 
+sleeping worm.  On the underside you see inscribed "The Worm of Allethrin".  
+
+~
+End
+
+#29307
+Name magical plate dwarf~
+Short a suit of dwarven made plate~
+Desc a suit of plate mail is here.~
+Level 20
+ItemType armor~
+Cost 440
+Asize 1
+Rsize 50
+Values 7 5 9 5 0
+Weight 1
+Material iron~
+Extra    glow inventory rotdeath nodegrade~
+Wear     take torso~
+ClassAllowances warrior paladin barbarian~
+Affect modifier -1 20 -1 hitroll -1 0
+Affect modifier -1 20 -1 damroll 1 0
+Affect modifier -1 20 -1 strength 2 0
+ExtraDesc plate magical dwarf~
+This plate mail is or very fine make, the runes that run over it must 
+bestow some properties.  It looks very expensive.
+~
+End
+
+#29308
+Name magical leggings dwarf~
+Short a pair of dwarven made leggings~
+Desc a pair of leggings lies here.~
+Level 20
+ItemType armor~
+Cost 438
+Asize 1
+Rsize 50
+Values 5 7 3 4 0
+Weight 1
+Material iron~
+Extra    glow inventory rotdeath nodegrade~
+Wear     take legs~
+ClassAllowances warrior paladin barbarian~
+Affect modifier -1 20 -1 constitution 1 0
+Affect modifier -1 20 -1 damroll 1 0
+ExtraDesc leggings magical dwarf~
+These legging are of excellent quality, they have intricate runes and 
+patterns etched into them.  
+~
+End
+
+#29309
+Name pink frosted pastry~
+Short a `#`Mpink frosted`^ pastry~
+Desc A pastry, iced with pink icing, lies here.~
+Level 1
+ItemType food~
+Cost 10
+Asize 1
+Rsize 1
+Values 10 10 0 0 0
+Weight 1
+Material food~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc lovely pastries~
+An extremely tasty looking pastry.
+~
+End
+
+#29310
+Name hot bread~
+Short some hot bread~
+Desc Some bread is here.~
+Level 1
+ItemType food~
+Cost 10
+Asize 1
+Rsize 1
+Values 10 10 0 0 0
+Weight 1
+Material food~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc hot bread~
+An extremly hot loaf of bread, YUMMY!!
+~
+End
+
+#29311
+Name miner's pick axe~
+Short a miner's pick~
+Desc a rock pick is here.~
+Level 20
+ItemType weapon~
+Cost 476
+Asize 35
+Rsize 50
+Values axe 3 8 stab 0
+Weight 6
+Material iron~
+Extra    inventory meltdrop nodegrade burnproof~
+Wear     take wield~
+Affect modifier -1 20 -1 damroll 1 0
+ExtraDesc miners pick~
+This miners pick looks extremely durable and might double as a good 
+weapon.
+~
+End
+
+#29312
+Name miners hat~
+Short a miners hat~
+Desc a miners hat is here.~
+Level 20
+ItemType armor~
+Cost 404
+Asize 35
+Rsize 50
+Values 5 5 5 4 0
+Weight 6
+Material iron~
+Extra    inventory meltdrop nodegrade burnproof~
+Wear     take head~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian~
+Affect modifier -1 20 -1 constitution 2 0
+ExtraDesc miners hat~
+This miners hat looks extremely durable and might double as good 
+armor.
+~
+End
+
+#29313
+Name ticket arena~
+Short the arena ticket~
+Desc A ticket of some sort is here.~
+Level 0
+ItemType trash~
+Cost 100
+Asize 1
+Rsize 1
+Values 0 0 0 0 0
+Weight 1
+Material paper~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc arena ticket~
+This is a ticket to the arena.  It reads 'Come see the best fighters in all 
+the realm fight at Dandenong'.
+~
+End
+
+#29314
+Name green emerald silk dress~
+Short an `#`Gemerald green`^ silk dress~
+Desc An `#`Gemerald green`^ silk dress lies here.~
+Level 1
+ItemType clothing~
+Cost 128
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material silk~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc silken dress~
+This is a long, evening dress made of emerald green silk.  
+~
+End
+
+#29315
+Name heavy plate~
+Short some heavy plate mail~
+Desc Some heavy plate mail is here.~
+Level 30
+ItemType armor~
+Cost 596
+Asize 35
+Rsize 50
+Values 11 10 9 8 1
+Weight 30
+Material iron~
+Extra    nodegrade~
+Wear     take torso~
+ClassAllowances warrior paladin barbarian~
+Affect modifier -1 30 -1 memory -1 0
+Affect modifier -1 30 -1 hp 6 0
+ExtraDesc heavy plate mail~
+This is very well used platemail.  It looks of strong design.
+~
+End
+
+#29316
+Name strong sword~
+Short a strong sword~
+Desc A strong sword is here.~
+Level 30
+ItemType weapon~
+Cost 606
+Asize 35
+Rsize 50
+Values sword 4 8 slash 0
+Weight 30
+Material iron~
+Extra    nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc strong sword~
+This is a very well used sword.  It looks of strong design.
+~
+End
+
+#29317
+Name heavy girth~
+Short a heavy girth~
+Desc A heavy girth is here.~
+Level 30
+ItemType armor~
+Cost 600
+Asize 35
+Rsize 50
+Values 6 7 6 4 0
+Weight 30
+Material iron~
+Extra    nodegrade~
+Wear     take waist~
+ClassAllowances warrior paladin barbarian~
+Affect modifier -1 30 -1 damroll -2 0
+Affect modifier -1 30 -1 hitroll 6 0
+ExtraDesc heavy girth~
+This is very well used girth.  It looks of strong design.
+~
+End
+
+#29318
+Name heavy leggings~
+Short some heavy leggings~
+Desc A pair of heavy leggings are here.~
+Level 30
+ItemType armor~
+Cost 599
+Asize 35
+Rsize 50
+Values 7 8 7 5 0
+Weight 30
+Material iron~
+Extra    nodegrade~
+Wear     take legs~
+ClassAllowances cleric warrior druid paladin barbarian~
+Affect modifier -1 30 -1 agility -1 0
+Affect modifier -1 30 -1 constitution 2 0
+Affect modifier -1 30 -1 ac -10 0
+ExtraDesc heavy leggings~
+This is very well used pair of leggings.  They look of strong design.
+~
+End
+
+#29319
+Name plain dress~
+Short a plain dress~
+Desc a plain dress is here.~
+Level 1
+ItemType clothing~
+Cost 18
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc plain dress~
+This is a very plain looking dress.  
+~
+End
+
+#29320
+Name runed sword~
+Short a runed sword~
+Desc a runed sword is here.~
+Level 40
+ItemType weapon~
+Cost 810
+Asize 35
+Rsize 50
+Values sword 3 12 slash EH
+Weight 30
+Material iron~
+Extra    evil antigood nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc a runed sword~
+This is a very well used sword.  It has deep runes running down its 
+length.
+~
+End
+
+#29321
+Name cleric robe~
+Short the robes of a cleric~
+Desc A heap of cloth is here.~
+Level 1
+ItemType clothing~
+Cost 33
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 1 -1 mana 10 0
+ExtraDesc cleric robe~
+This is a very strange looking outfit, it looks to be something a cleric 
+would use.
+~
+End
+
+#29322
+Name strange odd-looking necklace~
+Short a strange necklace~
+Desc An odd-looking necklace lies here.~
+Level 1
+ItemType jewelry~
+Cost 35
+Asize 1
+Rsize 1
+Values 0 0 0 0 0
+Weight 1
+Material iron~
+Extra    nonmetal nodegrade~
+Wear     take neck~
+End
+
+#29323
+Name champions gauntlets~
+Short the `#`YChampion's`^ gauntlets~
+Desc Some gauntlets, suited to a champion, lie here.~
+Level 65
+ItemType armor~
+Cost 1372
+Asize 10
+Rsize 50
+Values 13 13 13 10 0
+Weight 10
+Material iron~
+Extra    hum meltdrop nodegrade burnproof~
+Wear     take hands~
+ClassAllowances cleric warrior paladin~
+Affect modifier -1 65 -1 hp 2 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc champion gauntlets~
+These are the fabled gauntlets of Gahan, one of the four champions of 
+Thera.  These gauntlets radiate innate power and pulse with energy.
+~
+End
+
+#29324
+Name champion boots~
+Short the `#`Ychampion's`^ boots~
+Desc Some champion's boots are here.~
+Level 65
+ItemType armor~
+Cost 1354
+Asize 10
+Rsize 50
+Values 13 14 12 10 0
+Weight 10
+Material iron~
+Extra    hum antievil meltdrop nodegrade burnproof~
+Wear     take feet~
+ClassAllowances cleric warrior paladin~
+Affect modifier -1 65 -1 saves 2 0
+Affect modifier -1 65 -1 ac -10 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc champion boots~
+These are the fabled boots of Tygor, one of the four champions of 
+Thera.  These boots radiate innate power and pulse with energy.
+~
+End
+
+#29325
+Name marah blade sword dark~
+Short a dark blade~
+Desc A dark blade is here.~
+Level 65
+ItemType weapon~
+Cost 1420
+Asize 35
+Rsize 50
+Values sword 7 8 slash C
+Weight 30
+Material steel~
+Extra    glow hum antigood meltdrop nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger~
+Affect modifier -1 65 -1 damroll 4 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc blade dark~
+This is the fabled blade of Marah, one of the four champions of Thera.  
+This blade radiates innate power and pulses with energy.
+~
+End
+
+#29326
+Name helm defiance~
+Short the helm of `#`Sdefiance`^~
+Desc A helm is here.~
+Level 65
+ItemType armor~
+Cost 1366
+Asize 35
+Rsize 50
+Values 13 13 13 11 0
+Weight 30
+Material iron~
+Extra    glow bless antievil meltdrop nodegrade burnproof~
+Wear     take head~
+ClassAllowances cleric warrior paladin~
+Affect modifier -1 65 -1 intuition -1 0
+Affect modifier -1 65 -1 constitution 2 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc helm defiance~
+This is the Helm of defiance worn by the champion Shaaron.  It glows 
+softly all the while giving off a peaceful aura.
+~
+End
+
+#29327
+Name glowing sword defiance~
+Short the sword of `#`Sdefiance`^~
+Desc A glowing sword lies here.~
+Level 65
+ItemType weapon~
+Cost 1318
+Asize 35
+Rsize 50
+Values sword 2 30 slash EG
+Weight 30
+Material iron~
+Extra    glow bless antievil meltdrop nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger~
+Affect modifier -1 65 -1 damroll 2 0
+Affect modifier -1 65 -1 hitroll 2 0
+ExtraDesc sword defiance~
+This is the fabled sword of Defiance, Shaaron, one of the four 
+champions of Thera, wields this weapon.  The sword glows softly and 
+makes you feel at peace.
+~
+End
+
+#29328
+Name vest defiance~
+Short the vest of `#`Sdefiance`^~
+Desc A vest is here.~
+Level 65
+ItemType armor~
+Cost 1327
+Asize 35
+Rsize 50
+Values 24 20 22 16 0
+Weight 30
+Material iron~
+Extra    glow bless antievil meltdrop nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin~
+Affect modifier -1 65 -1 quickness 1 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc vest defiance~
+This is the Vest of defiance worn by the champion Shaaron.  It glows 
+softly all the while giving off a peaceful aura.
+~
+End
+
+#29329
+Name leggings defiance~
+Short the leggings of `#`Sdefiance`^~
+Desc Some leggings are here.~
+Level 65
+ItemType armor~
+Cost 1312
+Asize 35
+Rsize 50
+Values 16 16 16 13 0
+Weight 30
+Material iron~
+Extra    glow bless antievil meltdrop nodegrade burnproof~
+Wear     take legs~
+ClassAllowances cleric warrior paladin~
+Affect modifier -1 65 -1 hp 2 0
+Affect modifier -1 65 -1 damroll 6 0
+Affect modifier -1 65 -1 hitroll 4 0
+ExtraDesc leggings defiance~
+These are the Leggings of defiance worn by the champion Shaaron.  
+They glow softly all the while giving off a peaceful aura.
+~
+End
+
+#29330
+Name rod enchantment~
+Short the rod of enchantment~
+Desc A nice looking rod is here.~
+Level 65
+ItemType weapon~
+Cost 1330
+Asize 35
+Rsize 50
+Values exotic 4 16 pound CDF
+Weight 30
+Material wood~
+Extra    dark magic visdeath meltdrop nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage cleric druid paladin ranger~
+Affect modifier -1 65 -1 damroll 2 0
+Affect modifier -1 65 -1 hitroll 2 0
+ExtraDesc rod enchantment~
+This is a rod of enchantment.
+~
+End
+
+#29331
+Name finely crafted girdle grey leather~
+Short a girdle made of `#`Sgrey leather`^~
+Desc A finely crafted girdle lies here.~
+Level 81
+ItemType container~
+Cost 1749
+Asize 100
+Rsize 50
+Values 1000 AC 0 1000 50
+Weight 50
+Material leather~
+Extra    magic bless antigood antievil otterlungs nonmetal nolocate nodegrade burnproof~
+Wear     take waist~
+ClassAllowances mage cleric druid paladin ranger spellfilcher~
+Affect modifier -1 81 -1 hitroll 2 0
+Affect modifier -1 81 -1 strength 3 0
+Affect modifier -1 81 -1 quickness 3 0
+Affect modifier -1 81 -1 mana 60 0
+ExtraDesc girdle selnor~
+This girdle hums with innate power, it is most certainly magical and one 
+of a kind.  Thick inlaid runes run from left to right across the girdles side 
+forming intricate patterns.
+~
+End
+
+#29332
+Name grey leather pants~
+Short some `#`Sgrey leather`^ pants~
+Desc Some leather pants lie here.~
+Level 80
+ItemType armor~
+Cost 1616
+Asize 10
+Rsize 50
+Values 19 20 17 20 0
+Weight 10
+Material leather~
+Extra    magic bless antigood antievil nonmetal nolocate nodegrade burnproof~
+Wear     take legs~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 80 -1 hp 4 0
+Affect modifier -1 80 -1 mana 40 0
+Affect modifier -1 80 -1 ac -10 0
+Affect modifier -1 80 -1 quickness 3 0
+ExtraDesc pants~
+These Grey leather pants are more that what they seemed on first inspection.
+They are magical, maybe the creation of some great wizard.
+~
+End
+
+#29333
+Name grey leather vest~
+Short a `#`Sgrey leather`^ vest~
+Desc A leather vest lies here.~
+Level 80
+ItemType armor~
+Cost 1698
+Asize 10
+Rsize 50
+Values 27 27 27 20 0
+Weight 10
+Material leather~
+Extra    magic bless antigood antievil nonmetal nolocate nodegrade burnproof~
+Wear     take torso~
+Affect modifier -1 80 -1 hp 8 0
+Affect modifier -1 80 -1 constitution 3 0
+Affect modifier -1 80 -1 strength 3 0
+ExtraDesc vest~
+This Grey leather vest is more that what it seems on first inspection.  
+It is magical, maybe the creation of some great wizard.
+~
+End
+
+#29334
+Name grey leather boots~
+Short some `#`Sgrey leather`^ boots~
+Desc Some leather boots lie here.~
+Level 80
+ItemType armor~
+Cost 1712
+Asize 10
+Rsize 50
+Values 20 20 20 16 0
+Weight 10
+Material leather~
+Extra    magic bless antigood antievil nonmetal nolocate nodegrade burnproof~
+Wear     take feet~
+Affect modifier -1 80 -1 agility 3 0
+Affect modifier -1 80 -1 quickness 3 0
+Affect modifier -1 80 -1 constitution 2 0
+ExtraDesc boots~
+These grey leather boots are more that what they seemed on first inspection. 
+They are magical, maybe the creation of some great wizard.
+~
+End
+
+#29335
+Name grey leather cowl~
+Short a `#`Sgrey leather`^ cowl~
+Desc A leather cowl lies here.~
+Level 80
+ItemType armor~
+Cost 1718
+Asize 10
+Rsize 50
+Values 19 21 21 16 0
+Weight 10
+Material leather~
+Extra    magic bless antigood antievil nonmetal nolocate nodegrade burnproof~
+Wear     take head~
+Affect modifier -1 80 -1 memory 3 0
+Affect modifier -1 80 -1 reasoning 3 0
+Affect modifier -1 80 -1 selfdiscipline 3 0
+ExtraDesc cowl grey leather~
+This grey leather cowl is more that what it seems on first inspection.  
+It is magical, maybe the creation of some great wizard.
+~
+End
+
+#29336
+Name gloves of striking~
+Short some gloves of `#`Sstriking`^~
+Desc Some leather gloves lie here.~
+Level 80
+ItemType armor~
+Cost 1776
+Asize 10
+Rsize 50
+Values 16 15 17 13 0
+Weight 10
+Material leather~
+Extra    magic bless antigood antievil nonmetal nolocate nodegrade burnproof~
+Wear     take hands~
+Affect modifier -1 80 -1 hp 2 0
+Affect modifier -1 80 -1 quickness 2 0
+Affect modifier -1 80 -1 agility 2 0
+Affect modifier -1 80 -1 hitroll 2 0
+Affect modifier -1 80 -1 damroll 2 0
+Affect modifier -1 80 -1 strength 2 0
+ExtraDesc gloves~
+These grey leather gloves are more that what they seemed on first inspection.
+They are magical, maybe the creation of some great wizard.
+~
+End
+
+#29337
+Name dagger shadowy Defiance~
+Short the dagger of `#`Sdefiance`^~
+Desc A shadowy black steel dagger lies here.~
+Level 65
+ItemType weapon~
+Cost 2400
+Asize 0
+Rsize 50
+Values dagger 7 7 pierce E
+Weight 20
+Material steel~
+Extra    magic antievil nolocate nodegrade burnproof chaos~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger spellfilcher~
+Affect modifier -1 65 -1 hitroll 2 0
+Affect modifier -1 65 -1 damroll 2 0
+Affect modifier -1 65 -1 quickness 2 0
+End
+
+#0
+
+
+
+#ROOMS
+#29301
+Name Road~
+Desc You stand before a bustling town, and see people hurrying about with 
+slightly frowned looks.  The town is very old and its walls are almost 
+crumbling with age.  The front gates have long since given in and now sit 
+rotting in the nearby fields.  
+~
+Sector field~
+ExtraDesc gates old rotting~
+These old gates are useless beyond repair.  They look as though they 
+have not being used in a long time.  They have though been moved 
+recently as a patch of dead grass gives away the gates previous resting 
+place.
+~
+Exit north 29302
+EDesc Inside Dandenong
+~
+Exit south 30347
+EDesc A path through the mountains.
+~
+End
+
+
+#29302
+Name Inside the Town~
+Desc You stand inside the walls of this city.  The town is bustling with 
+energy.  The market to the north looks very busy.  Looking around you 
+see interesting shops west and east.  As you stand inside this town 
+you get the feeling something is wrong, you cant quite place it, but 
+something isn't quite right.
+~
+Sector city~
+ExtraDesc market shops people dandenong~
+Everything seems normal here but something is amiss.  Things just are 
+not right, but, you cant seem to put your finger on it.
+~
+Exit east 29305
+EDesc Quiet street
+~
+Exit south 29301
+EDesc Road before Dandenong
+~
+Exit west 29303
+EDesc Inn foyer
+~
+End
+
+
+#29303
+Name Inn Foyer~
+Desc You stand inside a very neat foyer.  Various signs about prices and rules 
+line the walls.  This must be where all the wary travels come to rest before 
+they visit the market.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sign wall~
+The signs here reads: Leave the place as you find it, or ELSE.
+                              Overnight stay: 10 Gold.
+~
+Exit east 29302
+EDesc Inside the gate
+~
+Exit west 29304
+EFlags door closed locked pickproof nopass~
+EKeyvnum 29302
+EKeywords door~
+EDesc A room in the inn
+~
+End
+
+
+#29304
+Name A Room in the Inn~
+Desc You are in a very spacious room.  No beds are here but straw has been 
+laid out over one side of the room.  The instant you enter this room you 
+feel safe and secure.  The walls are plain stone and the only way out is 
+the way you came in.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 150
+Heal 150
+ExtraDesc straw~
+Some comfortable looking straw is piled in a corner here it looks as 
+though it will make a nice place to sleep.
+~
+Exit east 29303
+EFlags door closed locked pickproof nopass~
+EKeyvnum 29302
+EKeywords door~
+End
+
+
+#29305
+Name Quiet Street~
+Desc You stand in a quiet street which runs parallel to the market.  Shops 
+are north and south of you.  The street is old and battered from use.  A 
+shallow ditch runs across the street.
+~
+Sector city~
+ExtraDesc ditch street shallow~
+These ditches can not be for drainage, as they run randomly across the 
+street.  It looks as though some monster has made them. A big monster, 
+some giant snake maybe.
+~
+Exit north 29307
+EDesc Guard room
+~
+Exit east 29310
+EDesc Quiet street
+~
+Exit south 29306
+EDesc Tavern
+~
+Exit west 29302
+EDesc Inside Dandenong
+~
+End
+
+
+#29306
+Name Tavern~
+Desc You stand in a glorious tavern, thick wood paneling covers the stone 
+walls and a dark wood bar runs the full length of the room.  Pictures of 
+all sorts hang on the walls.  In stark contrast to the rest of the bar, 
+tables and chairs are scattered about the room making it impossible to 
+get a seat.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc pictures walls~
+These pictures represent everyday life in Dandenong, they seem pretty 
+normal.  One picture does catch your eye though, it pictures a giant 
+worm fighting a mage, the mage is using some magical power to force 
+the worm down a well, the worm fights in vain as it is forced into the 
+well.
+~
+Exit north 29305
+EDesc Quiet street
+~
+End
+
+
+#29307
+Name Guard Room~
+Desc You are inside the head quarters of the city guard.  This room smells of 
+beer and is very messy.  The door to this room has been caved in and 
+now stands hopelessly ajar, useless.  The far side of the room has blood 
+stains smeared across the wall.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc blood wall smeared~
+Blood is smeared across the walls here, it looks as though someone or 
+something has being crushed up against the wall and bleed alot.  The 
+stone wall is slightly caved in but it still supports the weight of the roof.
+~
+Exit east 29308
+EDesc Sleeping quarters
+~
+Exit south 29305
+EDesc Quiet street
+~
+End
+
+
+#29308
+Name Guard's Sleeping Quarters~
+Desc This room is the guards bunk house.  It is smelly and messy like the 
+rest of the place.  One bunk though is made very neatly.  In the far 
+corner of the room is a ladder that leads up.  The walls of this bunk 
+house are painted white.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc ladder up~
+A ladder is here which leads to somewhere above the bunk room.
+~
+Exit west 29307
+EDesc Guard room
+~
+Exit up 29309
+EDesc Lookout
+~
+End
+
+
+#29309
+Name Lookout~
+Desc From this vantage point above the guards sleeping quarters you can 
+look out over all the market.  To the east you see a grand house, to the 
+west you see hills and a mine, to the north the bustling market sprawls 
+out before you.  This must be where the guards monitor the city.  As 
+you turn away you notice a darkness over the north west corner of the 
+town.
+~
+Sector city~
+ExtraDesc darkness northwest north west~
+A strange darkness looms over this corner of the town, it is almost 
+impenetrable, you barely make out the shape of a well.
+~
+Exit down 29308
+EDesc Sleeping quarters
+~
+End
+
+
+#29310
+Name Quiet Street~
+Desc You stand in a quiet street which runs parallel to the market.  Shops 
+are north and south of you.  The street is old and battered from use.  A 
+shallow ditch runs across the street.
+~
+Sector city~
+ExtraDesc ditch street shallow~
+These ditches can not be for drainage as they run randomly across the 
+street.  It looks as though some monster has made them a big monster, some 
+giant snake maybe.  
+~
+Exit east 29312
+EDesc Quiet street
+~
+Exit south 29311
+EDesc Temple
+~
+Exit west 29305
+EDesc Quiet street
+~
+End
+
+
+#29311
+Name Temple~
+Desc You stand in what resembles a temple.  You can not make out who the 
+god of this temple is for there are no symbols of any deity you know.  
+The walls are solid stone and a musty hue hangs in the air, this 
+certainly smells more like a bog than a temple.  Interesting place to 
+visit but you felt safer in any ordinary city shop rather than this place.  
+A strange plaque hangs in the far corner of the temple.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc plague hang wall~
+This plaque reads: For those that seek the mighty Allethrin, their will 
+be only death, but if thee wilt go to him go bravely and with sharpened 
+dagger.
+~
+Exit north 29310
+EDesc Quiet street
+~
+End
+
+
+#29312
+Name Quiet Street~
+Desc You stand in a quiet street which runs parallel to the market.  Shops 
+are north and south of you.  The street is old and battered from use.  A 
+shallow ditch runs across the street.
+~
+Sector city~
+ExtraDesc ditch street shallow~
+These ditches can not be for drainage as they run randomly across the 
+street.  It looks as though some monster has made them.  A big monster, some 
+giant snake maybe.  
+~
+Exit north 29313
+EDesc Quiet street
+~
+Exit west 29310
+EDesc Quiet street
+~
+End
+
+
+#29313
+Name Quiet Street~
+Desc You stand in a quiet street which runs parallel to the market.  Shops 
+are north and south of you.  The street is old and battered from use.  A 
+shallow ditch runs across the street.
+~
+Sector city~
+ExtraDesc ditch street shallow~
+These ditches can not be for drainage as they run randomly across the 
+street.  It looks as though some monster has made them.  A big monster, some 
+giant snake maybe.  
+~
+Exit north 29314
+EDesc Outside mayors house.
+~
+Exit south 29312
+EDesc Quiet street
+~
+End
+
+
+#29314
+Name Outside the Mayor's House~
+Desc You stand outside an impressive mansion.  This house you stand before 
+stretches out to the north. Directly east is the entrance, and west is 
+the back of a shop, no doubt one of the many shops in the market.  Looking 
+closely at the house you realize it was built a long time ago. it has faded 
+white paint cracking all over but none the less still a very impressive house.
+~
+Sector city~
+Exit north 29318
+EDesc Entrance to market
+~
+Exit east 29315
+EDesc Inside the mansion
+~
+Exit south 29313
+EDesc Quiet street
+~
+End
+
+
+#29315
+Name Inside the Mansion~
+Desc You stand inside the entrance to this grand old house.  Old tapestries 
+line the walls, and torches burn around the room.  This room is 
+extremely well lit and you see why -  a table in the room's center is set 
+with five chairs.  This must be the meeting room of the town council.  
+After soaking up much of the tapestries around the room you turn 
+away.  As you go to leave the room you look up, and the entire ceiling is 
+one huge mural.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc mural wall ceiling~
+This mural depicts two stone statutes standing guard at the towns main 
+gate, defending the town against hoards of Duergar, the evil looking 
+cousins of the Dwarf restlessly attack the town only to be slaughtered 
+by the statutes.  Standing on the towns ramparts is an old wizard, 
+supported by two men, one a huge cityguard the other a wizened dwarf, 
+the old wizard barely keeps his feet even with the help of the two.
+~
+Exit north 29316
+EDesc Living room
+~
+Exit west 29314
+EDesc Outside the mayors house
+~
+End
+
+
+#29316
+Name Living Room~
+Desc You stand inside a cozy living room.  Thick carpets line the floors, 
+while long hanging curtains cover the walls.  This room is very hot, not 
+only because of it carpets and curtains, but also because heat is pouring 
+out of the next room to the north.  A fire crackles in the room corner, 
+sending a rosy glow around the room. This place looks great, maybe 
+time to put up those adventuring boots for a while and settle in.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc fireplace corner~
+This is a lovely fire it gives of a lot of heat but most of the heat seems 
+to come from the room to the north.
+~
+Exit north 29317
+Exit south 29315
+End
+
+
+#29317
+Name Natural Baths~
+Desc Yes, you think to yourself.  A heated indoor pool.  This room has 
+water bubbling up through the ground and gathering in natural pool.  
+Things could not get much better than this.  The pool takes up nearly 
+the entire room, leaving little room for anything else.  The steam rises 
+and glides around the room seeking escape, and finds it into the living 
+room.  You wonder where exactly the heat is coming from, insignificant you 
+muse, but something nags you about that question.  You resolve to find out 
+later.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 29316
+EDesc Living room
+~
+End
+
+
+#29318
+Name Entrance to the Market~
+Desc You stand before the market place of the town.  This is perhaps one 
+of the most interesting markets in the realm.  The market sprawls out in 
+front of you, a sea of stalls and people.  Looking down the street you 
+see people hurrying to and fro.
+~
+Sector city~
+Exit north 29319
+EDesc Alley corner 
+~
+Exit south 29314
+EDesc Outside the mayors house
+~
+Exit west 29320
+EDesc In the market
+~
+End
+
+
+#29319
+Name Alley Corner~
+Desc This is a quiet alley corner, you feel very alone in this corner and the 
+place seems a little darker than the rest of the town.  In the corner of 
+the alley some writing is on the wall.  Save for the writing this is the 
+most boring alley you have ever been in.  
+~
+Sector city~
+ExtraDesc writing wall~
+Someone has written something on the wall here it reads: The worm 
+is not the threat it was the Duer... .. The writing ends abruptly with a 
+line as though the writers hand has been pulled away.  You can only 
+guess what the author meant but have no doubt something is up.
+~
+Exit south 29318
+EDesc Entrance to the market
+~
+End
+
+
+#29320
+Name Inside the Market~
+Desc Inside the market the noise hits you, people are yelling prices, others 
+screaming 'stop thief,' and yet others talking shop with each other.  You 
+realize that the market is one nasty place after all.  The road beneath your 
+feet is cobbled unlike the other roads in the town.  Although old, it has 
+held up to the hundreds of feet well and now remains one of the few things 
+about the town unchanged. 
+~
+Sector city~
+Exit north 29321
+EDesc Metal smith
+~
+Exit east 29318
+EDesc Entrance to the market
+~
+Exit south 29322
+EDesc Souvenir shop
+~
+Exit west 29323
+EDesc Center of the market
+~
+End
+
+
+#29321
+Name Metal Smith~
+Desc You are in side a metal smith's shop.  Searing heat comes from the 
+forge out the back of the shop and you feel that if you were any closer 
+you would surely burn.  This shop sells rare dwarven make equipment, 
+which looks very expensive.  The shop its self is bland.  The ceiling of this 
+shop has a rather large hole in it, this is obviously to let out the heat.  
+You notice the shop's counter is badly damaged, looks like axe marks.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc counter marks~
+There are axe marks here on this counter, someone has tried to wreck 
+this metal smith shop once.  The imprint of a crest from an axe is left 
+on the underside of the counter, must have been a bad swing for it to 
+hit side on.  The crest is dwarven in nature.
+~
+Exit south 29320
+EDesc Inside the market
+~
+End
+
+
+#29322
+Name Souvenir Shop~
+Desc You are inside a bright little shop.  A quaint little counter separates
+you from the merchandise which seems mostly to be worthless trinkets.  
+This shop has a floor made entirely of wood.  The wood must be covering
+the stone floors.  Light streams in from the outside as this shop has no
+roof.  Wooden beams run above your head holding the shop together.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 29320
+EDesc Entrance to market
+~
+End
+
+
+#29323
+Name Market Center~
+Desc You stand in what you approximate to be the center of the market.  
+This is a busy spot.  People pour into a stall south of you in eager 
+anticipation, and you wonder where they are going.  Directly north of you 
+the stone wall rises up from the cobbled market floor almost ten feet 
+high.  This wall is strong and solid, you estimate it at four feet deep.  
+The walls back against mountain terrain and you are left wondering why 
+such a strong wall faces the mountain.  Surely the front gates would be 
+more important to defend.
+~
+Sector city~
+Exit east 29320
+EDesc Inside the market
+~
+Exit south 29324
+EDesc Ticket shop
+~
+Exit west 29326
+EDesc Street in the market
+~
+End
+
+
+#29324
+Name Ticket Shop~
+Desc You stand inside very busy shop, with people hustling and bustling around.  
+Many people disappear behind some curtains then you see no more, strange,
+so many people can fit behind those curtains.  A counter is here, which has
+pictures of great fighters on the front, most of which you don't recognize.
+On the walls hangs a painting representing two crossed forearms, this is 
+the symbol of the gladiator.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc curtain~
+This curtain conceals what is really happening behind it, but by the 
+looks of things the people who go behind the curtain are not returning.  
+You also here the unmistakable sound of a door opening and closing.
+~
+Exit north 29323
+EDesc Market center
+~
+Exit down 29325
+EFlags door closed locked pickproof~
+EKeyvnum 29313
+EKeywords trap~
+EDesc Underground arena
+~
+End
+
+
+#29325
+Name Underground Arena~
+Desc So this is where all the people have been going.  As you enter the 
+underground arena you are hit by the smell of blood, leather and sweat.  
+In the center of the makeshift arena is a large circle, formed in the 
+dirt by a thick rope.  Outwards and around the circle people mill 
+around jostling for the best seat.  This is the obviously one of the 
+infamous gladiatorial pits.  In the far corner of the room a large 
+man walks forward from the crowd and shouts "I WILL CHALLENGE."
+You sit back to watch just one fight.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc fight huge man~
+You prepare to watch one of the opening fights of the day,  The large 
+man strides forward from the crowd and plants his feet firmly in the 
+center of the circle.  The arena announcer shouts out Drelkaeu, squire 
+of Marah come forward and let the games begin.  Out of the back of 
+the arena comes a skinny drow female, she carries nothing.  Drelkaeu 
+walks into the circle and stops, she remains motionless.  The 
+announcer shouts "begin".   The huge man leaps to the attack meaning 
+to squash this petty creature in his hands, as he runs forward the drow 
+ducks pulls a dagger from a sheath and plunges it into the back of the 
+large man as he goes charging by.  He falls without a cry, Drelkaeu 
+slips away.  The announcer then shouts "well that was quick, um Is 
+there anybody out their wanting to face our champions?"    
+~
+Exit up 29324
+EFlags door closed locked pickproof~
+EKeyvnum 29313
+EKeywords trap~
+EDesc Ticket shop
+~
+End
+
+
+#29326
+Name Street in the Market~
+Desc You stand in one of the many streets of the market, nothing unusual or 
+interesting about this spot.  To the west the crowd thins out 
+dramatically.  
+~
+Sector city~
+Exit east 29323
+EDesc Market center
+~
+Exit south 29327
+EDesc Street in the market
+~
+Exit west 29331
+EDesc Before the well
+~
+End
+
+
+#29327
+Name Street in the Market~
+Desc You stand in one of the many streets of the market, nothing unusual or 
+interesting about this spot.  To the west the crowd thins out 
+dramatically.  
+~
+Sector city~
+Exit north 29326
+EDesc Street in the market
+~
+Exit south 29328
+EDesc Street in the market
+~
+End
+
+
+#29328
+Name Street in the Market~
+Desc You stand in one of the many streets of the market, nothing unusual or 
+interesting about this spot.  To the west the crowd thins out 
+dramatically.  
+~
+Sector city~
+Exit north 29327
+EDesc Street in the market
+~
+Exit west 29329
+EDesc Food store
+~
+End
+
+
+#29329
+Name Food Store~
+Desc You walk into a lovely food store, it smells of lavender and honeysuckle.
+Pretty objects hang on the walls, like dried flowers and pictures.  The
+bakery out back lets nice hot air flow through to the store front, and the 
+smell of fresh bread and pastry fills your nostrils.  What a lovely shop, 
+you cant wait to be served.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 29328
+EDesc Street in the market
+~
+End
+
+
+#29330
+Name Mining Shop~
+Desc This an old mining shop which sells mining goods to those who would 
+venture into the mines west of the town.  It is run down and in need of 
+repair.  The wooden ceiling boards are all but decayed and the water can 
+get through the roof.  Scattered about the room are old broken bottles 
+and some empty handles of beer.  For a town built on mining this is 
+most strange that this shop would be out of business.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 29331
+EDesc Before the gates
+~
+End
+
+
+#29331
+Name Before the Gates~
+Desc To the west are solid iron gates.  They are ten feet high with sharp
+spikes on the top of each length of iron.  The gates are locked tight,
+barred and chained.  Not so much as to stop people from heading in to
+the mines beyond but to stop something from getting out.  You stare past the
+gates and see the dark entrance to the mine, the mainstay of the local
+community.  What has happened that you can no longer get to the mine?  To
+the north is something almost as disturbing, a dark corner of the town.  You
+peer hard in the darkness but cannot make anything out.  
+~
+Sector city~
+ExtraDesc gates ~
+The gates are locked tight.  There doesn't seem to be a way to open them.
+~
+Exit north 29332
+EDesc Darkness
+~
+Exit east 29326
+EDesc Quiet street in the market
+~
+Exit south 29330
+EDesc Mining shop
+~
+End
+
+
+#29332
+Name The Well~
+Desc This area is dark and forbidding.  Nothing lives here, the grass is dead,
+and the air still.  What may have occurred here you can only guess at.  In
+the far corner of the town up against the wall there is a well.  It seems to
+be the source of your discomfort.  Around the well bones twisted and
+lifeless glare at you a reminder of your mortality.  The walls of the town
+look twisted and misshapen from here.  Surely this a dangerous place and one to
+stay clear of.  
+~
+Sector city~
+ExtraDesc well bones~
+The see bones scattered about the well they are broken and misshapen, the well 
+itself seems alive.  Dark black the well draws you closer, you feel the evil of 
+this place draw away your courage.  Thick moss lines the base of the well and 
+dead vines reach out from the cracks between the mine and the town wall like 
+fingers searching for a way out.  Upon looking in the well you see a rusty 
+ladder descending into the mine's depths.  
+~
+Exit south 29331
+EDesc Before the gates
+~
+Exit down 29333
+EDesc Darkness
+~
+End
+
+
+#29333
+Name Allethrin's Prison~
+Desc You reach the bottom of the ladder, and stand perhaps ten feet below the
+ground level.  You are in a circular cave with rock walls all the way round.
+This room is very dark and you find it hard to see even with lighting.  You
+see no water in the bottom of this well. How strange, the place feels more 
+like a prison.  
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit up 29332
+EDesc Darkness
+~
+Exit northeast 29334
+EFlags door closed~
+EKeywords door~
+End
+
+
+#29334
+Name Selnor's Prison~
+Desc This room is non-descript.  A basin in one corner, a matress in the other.  
+A door leads north but it looks barred.  A small hole in the door allows 
+food to be passed through by the looks.
+~
+RoomFlags dark indoors no_recall~
+Sector inside~
+Exit southwest 29333
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 29321 spec_cast_mage
+M 29322 spec_thief
+S
+
+
+
+#RESETS2
+M 0 29320 3 29301 2
+E 0 29330 6 hold~
+M 0 29300 1 29303 1
+G 0 29302 -1
+M 0 29301 1 29306 1
+G 0 29303 -1
+G 0 29304 -1
+M 0 29310 6 29307 6
+E 0 29315 -1 torso~
+E 0 29316 -1 wielded~
+E 0 29318 -1 legs~
+E 0 29317 -1 waist~
+M 0 29309 1 29309 1
+E 0 29301 1 waist~
+E 0 29315 -1 torso~
+E 0 29316 -1 wielded~
+E 0 29318 -1 legs~
+M 0 29313 1 29311 1
+E 0 29320 -1 wielded~
+E 0 29321 -1 torso~
+E 0 29322 -1 neck1~
+M 0 29314 1 29311 1
+E 0 29322 -1 neck1~
+E 0 29322 -1 neck2~
+M 0 29320 3 29314 1
+E 0 29330 6 hold~
+M 0 29308 1 29316 1
+E 0 29314 -1 torso~
+M 0 29307 1 29317 1
+M 0 29303 1 29321 1
+G 0 29307 -1
+G 0 29308 -1
+M 0 29302 1 29322 1
+G 0 29305 -1
+G 0 29306 -1
+M 0 29311 8 29323 22
+E 0 29315 -1 torso~
+E 0 29316 -1 wielded~
+E 0 29318 -1 legs~
+E 0 29317 -1 waist~
+M 0 29306 1 29324 1
+G 0 29313 -1
+M 0 29315 1 29325 1
+E 0 29323 3 hands~
+M 0 29316 1 29325 1
+E 0 29324 3 feet~
+M 0 29317 1 29325 1
+E 0 29325 3 wielded~
+M 0 29318 1 29325 1
+E 0 29326 3 head~
+E 0 29327 3 wielded~
+E 0 29328 3 torso~
+E 0 29329 3 legs~
+M 0 29322 1 29325 1
+E 0 29337 -1 wielded~
+M 0 29312 10 29328 2
+M 0 29304 1 29329 1
+E 0 29319 1 torso~
+G 0 29309 -1
+G 0 29310 -1
+M 0 29305 1 29330 1
+G 0 29311 -1
+G 0 29312 -1
+M 0 29319 1 29333 1
+E 0 29300 1 floating~
+M 0 29321 1 29334 1
+E 0 29331 1 waist~
+E 0 29332 1 legs~
+E 0 29333 1 about~
+E 0 29334 1 feet~
+E 0 29335 1 head~
+E 0 29336 1 hands~
+S
+
+
+
+#SHOPS
+#29300
+profit_buy 150
+profit_sell 50
+close_hour 23
+END
+
+#29301
+profit_buy 150
+profit_sell 50
+close_hour 23
+END
+
+#29302
+profit_buy 150
+profit_sell 50
+close_hour 23
+END
+
+#29303
+buy_type armor~
+buy_type weapon~
+profit_buy 150
+profit_sell 50
+close_hour 23
+END
+
+#29304
+profit_buy 150
+profit_sell 50
+close_hour 23
+END
+
+#29305
+buy_type armor~
+buy_type weapon~
+buy_type clothing~
+buy_type container~
+profit_buy 150
+profit_sell 40
+close_hour 23
+END
+
+#29306
+profit_buy 150
+profit_sell 50
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

@@ -1,0 +1,24 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword IMOTD~
+level 92
+helpflags hide_header_footer~
+category undefined~
+text This is the IMOTD (Immortal Message of the Day) which is only shown to 
+Immortals when they login.  You can customise this using the command 'hedit 
+imotd' (once you have configured your olc security).`+
+`+
+If you are looking to start coding, we recommend you check out help 
+`=_HOW-DAWN-WORKS as a starting point, and then possibly progress to reading 
+some of the posts on the Dawn of Time forums at 
+http://forums.dawnoftime.org/`+
+`+
+~
+END
+
+EOF~
+#$

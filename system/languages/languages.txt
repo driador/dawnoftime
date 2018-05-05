@@ -1,0 +1,96 @@
+name draconian~
+skillname draconian~
+commandname draconian~
+END
+
+name kobold~
+skillname kobold~
+commandname kobold~
+END
+
+name mremish~
+skillname mremish~
+commandname mremish~
+END
+
+name faerie~
+skillname faerie~
+commandname faerie~
+END
+
+name trollish~
+skillname trollish~
+commandname trollish~
+END
+
+name haxor~
+skillname haxor~
+commandname haxor~
+END
+
+name goblin~
+skillname goblin~
+commandname goblin~
+END
+
+name alaghi~
+skillname alaghi~
+commandname alaghi~
+END
+
+name lizardman~
+skillname lizardman~
+commandname lizardman~
+END
+
+name gnoll~
+skillname gnoll~
+commandname gnoll~
+END
+
+name avian~
+skillname avian~
+commandname avian~
+END
+
+name drow~
+skillname drow~
+commandname drow~
+END
+
+name orcish~
+skillname orcish~
+commandname orcish~
+END
+
+name halfling~
+skillname halfling~
+commandname halfling~
+END
+
+name gnomish~
+skillname gnomish~
+commandname gnomish~
+END
+
+name dwarven~
+skillname dwarven~
+commandname dwarven~
+END
+
+name elven~
+skillname elven~
+commandname elven~
+END
+
+name human~
+skillname human~
+commandname human~
+END
+
+name arcaic~
+skillname arcaic~
+commandname arcaic~
+END
+
+EOF~

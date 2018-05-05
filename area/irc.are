@@ -1,0 +1,136 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        IRC Mud School~
+ShortName   ~
+Builders    None~
+Credits     Kalahn~
+VNUMs       4200 4249
+AFlags  noteleport~
+LRange      1 5
+Security    9
+Colour      G~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   none~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#0
+
+
+
+#OBJECTS
+#0
+
+
+
+#ROOMS
+#4200
+Name Welcome to the Dawn of Time~
+Desc The Dawn of Time is an advanced roleplaying mud with many plots and sub
+plots happening all the time.  You have just sucessfully finished creating a
+character and have now entered the game...  You may not realise but you are
+actually in one of the 8400+ rooms in the game.  The follow series of rooms
+you will travel through before starting to interact with other players will
+give you some of the basics you need to get started.  
+If you do not wish to play this game type `#`.delete`^ now.
+Typing delete will disconnect you and your player file will not be saved.
+If you want to disconnect but continue playing your character... you can
+type `.quit`^ at anytime, and then when you connect next time logon with
+you characters name and password.
+To continue now you need to go into the room to your north... type `.n`^
+to go north into the next room.
+~
+RoomFlags ooc~
+Sector inside~
+Exit north 4201
+End
+
+
+#4201
+Name IRC vs Mud part 1~
+Desc Most people who start playing via IRC find the game quite hard at first
+due to some major differences than IRC.  The first one is communicating. 
+Here you cant just type what you want to say.  The reason for this is there
+is so much more than just talking here.  Type `#`YWho`^ now and you will
+see who is currently logged on to the game.  The people who appear on that
+list are located anywhere in the 5300+ rooms the game currently contains.  
+The rooms you are currently in are new... and will be extended with more 
+info on the differences of IRC vs MUD when we get time.  To continue at this
+stage type `#`Yrecall`^ and follow the instructions there.
+~
+RoomFlags ooc~
+Sector inside~
+Exit south 4200
+End
+
+
+#4248
+Name Starting out~
+Desc You have just moved north into another room in the game.  We are in the 
+process of writing a set of rooms within Dawn like these which act as a 
+school on mudding - commonly called a mud school...  At this stage the 'mud 
+school' has not be completed but will cover all the basics of playing the 
+game.  `1 `1 You do however have a newbie guide book in your possession, this book has 
+10 short chapters which has the information you need to get on your feet 
+quickly.  `1`1It is `Wstrongly`x advised that you read the newbie guide book now if you arent 
+familar with dawn, at least peek at the first page of it which shows you the 
+chapters...  To do this type `Ylook guide`x.  `1`1 Once you have finished any reading you wish to perform, type `Yrecall`x to be 
+transported into the game.  `1`1Happy mudding,`1`1- Kalahn.  
+~
+RoomFlags ooc~
+Sector inside~
+Exit south 4249
+End
+
+
+#4249
+Name Welcome to the Dawn of Time!~
+Desc The Dawn of Time is an advanced roleplaying mud with many plots and sub 
+plots happening all the time.  You have just sucessfully finished creating a 
+character and have now entered the game...  You may not realise but you are 
+actually in one of the 8400+ rooms in the game.  The following series of rooms 
+you will travel through before starting to interact with other players will 
+give you some of the basics you need to get started.  `1`1If you do not wish to play this game type `Ydelete`x now.  Typing delete will 
+disconnect you and your player file will not be saved.  If you want to 
+disconnect but continue playing your character at a later stage...  Type 
+`Yquit`x at anytime, and then when you connect next time logon with you 
+characters name and password.  `1`1 To continue now you need to go into the room to your north...  Type `Yn`x to 
+go north into the next room.  
+~
+RoomFlags ooc~
+Sector inside~
+Exit north 4248
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

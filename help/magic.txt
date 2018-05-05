@@ -1,0 +1,251 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword -REALMS SPHERES SEASONS ELEMENTS~
+category undefined~
+see_also SPINFO MAGIC-SYSTEM~
+text Spell casters must study certain sources of power, from the Realms, Spheres,
+and Seasons/Elements of magic in order to be able to obtain and cast spells.
+There are several unique classes of spellcasters, each with their own 
+source of power. The mage draws power for spell casting from realms of magic.
+The cleric draws power for prayers from spheres.  Druids draws power for 
+summoning from the elements and seasons.`+
+`+
+Each spell requires certain sources of power as specified in each spell's 
+help text.  You should practice your sources of power as high as possible to 
+increase the chances that you will receive spells upon leveling.  It will 
+also increase your chances of teaching and/or learning the appropriate 
+spells as well.
+ 
+`GREALMS:`w
+Abjuration       Alteration         Charm           Conjuration
+Enchantment      Evocation          Foretelling     Illusion
+Necromancy       Phantasm           Summoning       Wild
+Essence
+ 
+`GSPHERES:`w
+Body             Combat             Convocation     Creation
+Death            Divination         Elemental       Healing
+Mind             Nature             Protection      Time
+Weather
+ 
+`GELEMENTS/SEASONS`w
+Air              Animal             Earth           Fire
+Land             Moon               Plant           Sun
+Water
+Autumn           Spring             Summer          Winter
+ 
+For help on what any of these are for, just type help & the name of what you 
+are looking for.
+~
+END
+
+keyword ABJURATION ALTERATION CHARM CONJURATION ENCHANTMENT ESSENCE EVOCATION FORETELLING ILLUSION NECROMANCY PHANTASM SUMMONING WILD~
+category undefined~
+see_also SPINFO MAGIC-SYSTEM~
+text `+
+Mages must learn spells from the different realms of magic.  Below is a 
+listing of the various realms and their descriptions.`+
+`+
+`GREALMS:`=?`+
+abjuration      spells of anti-magic, that protect and dispel`+
+alteration      spells that change the physical nature of things`+
+charm           spells that allow you to control others`+
+conjuration     spells that create something from nothing`+
+enchantment     spells that enhance weapons and armors`+
+evocation       offensive magics used for combat`+
+foretelling     spells of enhancing senses and divining`+
+illusion        magics for concealing`+
+necromancy      spells that affect life force and physical condition`+
+phantasm        spells of trickery and summoning images`+
+summoning       spells of transporting`+
+wild            spells of unpredictable, chaotic nature`+
+essence         spells of the essence of the elementals`+
+`+
+`RFor a list of the spells in these realms use SPINFO.`+
+`+
+~
+END
+
+keyword MAGIC SPELLS CSPINFO SPINFO SINFO~
+category undefined~
+see_also -REALMS MAGIC-SYSTEM SPINFO-KEY~
+text `BSyntax:`w spinfo <spell realm or sphere>
+        sinfo <part of spell name>
+        cspinfo <class>
+        help <spell name>
+        help <realm or sphere name>
+ 
+* Spinfo with no arugument will list all the available realms and spheres.
+ 
+* Sinfo allows you to search for spells and returns the info from cspinfo
+  and spinfo (ie sinfo poi)
+ 
+* Spinfo with an arugument will list the spells in the specificed sphere or
+  realm. (ie spinfo enchantment)
+ 
+* cspinfo will list the spells available to a certain class.
+  (ie cspinfo mag)
+ 
+* help <realm or sphere name> Will explain what that realm or sphere is
+  specificially about. (ie help 'enchantment')
+ 
+* help <spell name> Will give help on what a particular spell does.
+  (ie help 'acid blast')
+~
+END
+
+keyword MOONS~
+category undefined~
+text The moon only has an affect on Mages, and Spellfilchers to a lesser extent.
+
+The waxing and waning of the moons affects your spell casting abilities.  
+The moons' affects will mainly only work during the night.  As the moons 
+gets higher, your casting strength will increase.... and the other way 
+around obviously.  Also certain times of the year have stronger moons, 
+and every once and a while there is an eclipse.  All these things will 
+have an effect.  The details are not disclosed on purpose, you are meant
+to use your common sence to use the affects to your advantage.  
+
+You can check the status of the moon at anytime during the night by typing 
+weather and you must obviously be outdoors.
+~
+END
+
+keyword MAGIC-SYSTEM SPELL-SYSTEM~
+category undefined~
+see_also REALMS MAGIC SPELL SPINFO MOONS~
+text Under the new DOT codebase, spell casting classes have a much 
+greater control over what spells they learn. Gone are the days of being 
+guaranteed a certain spell simply by gaining a level. 
+Now, each spell caster chooses different spell Spheres and Realms that 
+dictate what spells will be available during their character's life. As 
+you gain experience, other spheres and realms can be gained (see also 
+help GAIN) to increase your character's spell casting ability. 
+ 
+Also the time of month and year affects a mages and spellfilchers casting
+ablities. (See help moons for more info)
+ 
+- There are 3 ways you can gain a spell:
+ 
+`GTeaching`=? - This is when you are taught a spell by another character who 
+  already knows the spell. This method has the greatest chance of success.
+ 
+`GStudying`=? - you can learn a spell by studying it from a scroll.
+ 
+`GLevelling`=? - when you level a series of random checks are made to see if you 
+  learn a new spell. The higher your level and the higher percentage you
+  have all the realms and spheres for a certain spell practised, the better
+  chance you have of learning it.
+  Technically, it is possible for a second level mage to learn acid blast,
+  but that would be a rare case indeed! (about 1 in 100,000)
+ 
+`RNotes:`=? 
+- You must have ALL the requirements `Yfor your class category`=?
+  (`rrealm`=? for mage based, `Gsphere`=? for cleric based, `Belement&season`=? for druid)
+- To see what realms and spheres give what spells type spinfo.
+- To encourage role-playing and character interaction, the system is 
+  designed to make it easier to gain a spell by being taught from another
+  player.  (rather than by gaining levels)
+- There are some spells that are classified as role-playing spells, You 
+  can't get these spells by levelling, only teaching and studying.
+- Mages and Clerics will almost alway start getting spells at a lower level
+  levels than the classes that are not specifically a magic class.
+  e.g. spellfilchers, paladins, rangers and druids.  So be aware that it
+  can be 10-20 levels before you start gaining spells if you are a
+  non dedicated magic user.
+ 
+~
+END
+
+keyword SPINFO-KEY CSPINFO-KEY~
+category undefined~
+see_also SPINFO REALMS MAGIC-SYSTEM MOONS~
+text `=?
+`=lSyntax:`=?
+    spinfo <realm|sphere name>
+ 
+The key used in spell info (SPINFO) shows which classes can get which spells
+and identifies roleplaying spells.  A roleplaying spell is one which you can
+only gain by either roleplaying it into existence, or someone teaches you the
+spell, you can not gain a roleplaying spell by leveling.
+ 
+The key is as follows.
+    M - Mage
+    C - Cleric
+    D - Druid
+    P - Paladin
+    R - Ranger
+    S - Spellflicher
+    ! - Will not attack pc's
+    * - Roleplaying spell
+    x - Spell is not attainable anymore that class, but once was... The 
+        spell is still usable by those who had the spell before it was
+        removed for balance reasons.        
+ 
+NOTES: SPINFO does not tell you what level a class gets a certain spell at,
+your class might get that spell by level 3 on average, or it might get that
+spell at level 80 on average... the level is different for every class.
+~
+END
+
+keyword BODY COMBAT CONVOCATION -CREATION -DEATH DIVINATION ELEMENTAL HEALING MIND NATURE PROTECTION TIME -WEATHER~
+category undefined~
+see_also SPINFO MAGIC-SYSTEM ~
+text `+
+Clerics must learn their spells from the different spheres of magic.  
+Below is a listing of the various spheres and their descriptions.`+
+`+
+`GSPHERES:`=?`+
+body            communes to control ones body`+
+combat          communes used in combat`+
+convocation     communes that call for direct divine intervention`+
+creation        communes of to create the essentials of life`+
+death           communes to drain or empower the life force`+
+divination      communes that enhance perception`+
+elemental       communes that alter the pure forces of nature`+
+healing         communes to alter the physical health`+
+mind            communes to control ones mind`+
+nature          communes that shape nature`+
+protection      communes that grant protection`+
+time            communes to manipulate the time`+
+weather         communes to manipulate the weather`+
+`+
+`RFor a list of the spells in these spheres use SPINFO.`=?`+
+~
+END
+
+keyword AIR EARTH FIRE LAND MOON PLANT SUN WATER AUTUMN SPRING SUMMER WINTER ANIMAL~
+category undefined~
+see_also SPINFO MAGIC-SYSTEM~
+text `+
+Druids must learn their spells from the different elementals and seasons of 
+magic.  Below is a listing of the various elements/seasons and their 
+descriptions.`+
+`+
+`GELEMENTS:`=?`+
+air             summons that call on the elements of air`+
+animal          summons the powers of nature's animals`+
+earth           summons that call on the elements of earth`+
+fire            summons that call on the elements of fire`+
+land            summons that offers resistance to the elements`+
+moon            summons that call on the lunar power`+
+plant           summons that call on the vegetation`+
+sun             summons that call on the solar power`+
+water           summons that call on the elements of water`+
+`GSEASONS:`=?`+
+autumn          summons related to the autumnal seasons`+
+spring          summons related to the vernal seasons`+
+summer          summons related to the summer seasons`+
+winter          summons related to the winter seasons`+
+`+
+`RFor a list of the spells in these elements/seasons use SPINFO.`=?`+
+`+
+~
+END
+
+EOF~
+#$

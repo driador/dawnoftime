@@ -1,0 +1,76 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword NEWMUD-GETTING-IMP~
+title Creating the Muds First Immortal~
+helpflags wordwrapped~
+category undefined~
+text The following help entry, explains how to manually convert a players pfile 
+(player file) to an immortal pfile.  This manual process is only necessary 
+once - when there are no immortal characters on the mud.  After an immortal 
+character exists on the mud, that character can use the immortal advance 
+command to convert other players.  (There is an immortal help entry on 
+advance)`+
+`+
+Lets assume, you have just created a character which you want to be the top 
+level immortal (The Implementor).  This character we have called bob.`+
+ `+
+Information about bob is saved and stored in his pfile.  Bob's pfile will be 
+saved as players/b/bob.plr on a linux|bsd|unix based system (along with all 
+pfiles starting with the letter b) and as players\bob.plr on a windows 
+system (all player pfiles are in the same directory on windows).  Bob's 
+pfile needs to be moved into the immortal directory.  Once the pfile has 
+been moved the level needs to be increased to 100.`+
+`+
+Obviously all changes done to Bob's pfile MUST be done after Bob has logged 
+out.`+
+`+
+`Y  MOVING THE PFILE:`=?  `+
+After making sure Bob is logged out, manually move his pfile to the 
+player/immortal directory.  In windows you can move it with explorer.  In a 
+unix based environment use the mv command in the shell `+
+(e.g. mv player/b/bob.plr player/immortal/).  `+
+Note: You must MOVE it, NOT copy it.  If you copy it, delete the copy in the 
+old location.`+
+`+
+`Y  EDITING THE PFILE:`=?  `+
+Load up pfile with your favourite editor.  You will find the top 6 lines of 
+the pfile appears follows:`+
+ `+
+`x   #PLAYER`+
+`x   Vers  9`+
+`x   SubV  2`+
+`x   Name  Bob`-`+
+`x   Level 1`+
+`x   Trust 0`+
+`x`+
+Modify the number after the Level keyword to 100 so your file looks like 
+this:`+
+ `+
+`x   #PLAYER`+
+`x   Vers  9`+
+`x   SubV  2`+
+`x   Name  Bob`-`+
+`x   Level 100`+
+`x   Trust 0`+
+`x`+
+Save the file and exit the editor.`+
+`+
+Now you can logon as bob, which you will find is an immortal of level 100. `+
+We recommend you type the following commands to quickly configure any new 
+immortal character:`+
+`=C  set char self security 9`=?  (giving full OLC editing access/security)`+
+`=C  wiznetdefault confirm`=?     (configuring default wiznet settings)`+
+`+
+After you are an immortal, you may wish to edit the message of day (so it no 
+longer displays a reference to this help NEWMUD-GETTING-IMP).  This is 
+achieved using the OLC based help editing command hedit.  The exact syntax 
+is `=Chedit motd`=?. 
+~
+END
+
+EOF~
+#$

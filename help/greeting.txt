@@ -1,0 +1,36 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword GREETING~
+helpflags hide_keywords~
+category undefined~
+text `B             ---===== T h e   D a w n   o f   T i m e =====---               `=?
+`?`#                                                                             `=?
+`^                                                  __----''''''''''''------__ `=?
+`^                                      .  .   --//====......          __--- --`=?
+`^                      -.            \_|//     |||\\  ------::::... /-        `=?
+`^                   ___-==_       _--`Yo`^-  \/    |||  \\            _/---       `=?
+`^           __------.=='||\=_    -_--'/_-'|-   |\\   \\        _/'            `=?
+`^       _-'``     .='    |  \\-_    '--7  /-   /  ||    \      /               `=?
+`^     .'       .'       |   \\ -_    /  /-   /   ||      \   /                `=?
+`^    /  ____  /         |     \\ '-_/  /|- _/   .||       \ /                 `=?
+`^    |''    ''|--''''--_ \     '==-/   | \'--===''        .\                  `=?
+`^             '         '-|      /|    |-'\''       __--''                    `=?
+`^                         |-''-_/ |    |   '\_   _-'            /\            `=?
+`=? Based on Diku by Hans,`^       /  \     \__   \/'               \__           `=?
+`=? Katya, Tom, Michael, and`^ _--' _/ | .-''____--'-/                  ''==.     `=?
+`=? Sebastian,  MERC 2.1 by `^((->/'   '.|||' -_|    ''-/ ,              . _||    `=?
+`=? Hatchet, Furey and Kahn `^           -_     '\      ''---l__i__i__i--''_/     `=?
+`=? ROM 2.4 (c)1993-1996 by `^          _-'-__   ')  \--______________--''        `=?
+`=? Russ Taylor, Oblivion 2.0`^       //.-'''-'_--'- |-------''''''''             `=?
+`=? (C)1996-97 by Wes Wagner,`^              //.-'''--\                           `=?
+`=? Based on The Dawn of Time v1.69r by`^             `Bhttp://www.dawnoftime.org  `=?
+`=? Michael Garratt (c)1997-2004`^                    `?telnet dawnoftime.org 1234  `=?
+~
+END
+
+EOF~
+#$

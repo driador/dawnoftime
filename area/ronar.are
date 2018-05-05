@@ -1,0 +1,641 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Ronar's Tomb~
+ShortName   ~
+Builders    None~
+Credits     Reave~
+VNUMs       926 939
+LComment    [ QUEST ]
+Security    9
+Colour      R~
+colourcode  `
+MapScale    7
+MapLevel    50
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#926
+Name undead dwarven priest~
+ShortD an undead dwarven priest~
+LongD An undead dwarven priest is here, protecting the tomb.~
+Desc This dwarf seems to have gone on serving his god in this realm
+after his death.  He is mostly solid-looking, but occasionally
+becomes slightly transparent as you watch.  His eyes are glowing
+white, perhaps with the religious fervor caught inside.
+~
+Race dwarf~
+Align 2 2
+Level 55
+Hitroll 2
+HitDice 5d9+300
+ManaDice 5d7+650
+DamDice 10d4+23
+DamType pound
+AC -260 -260 -260 -210
+Wealth 550
+Act    npc dont_wander scavenger no_tame aggressive stay_area undead cleric~
+AffBy  detect_evil detect_invis detect_hidden infrared protect_evil~
+Off    parry~
+Imm    summon charm holy~
+Res    poison disease~
+Vuln   negative drowning~
+Form   edible instant_decay sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#927
+Name undead dwarven mage~
+ShortD an undead dwarven mage~
+LongD An undead dwarven mage is here, protecting the tomb.~
+Desc This dwarf has continued serving his master in death.  His body
+seems mostly solid, but becomes slightly transparent every now
+and then as you watch.  The dwarf's eyes are glowing with a green
+light, perhaps reflecting the magical energies trapped within.
+~
+Race dwarf~
+Align 2 2
+Level 60
+Hitroll 2
+HitDice 6d9+320
+ManaDice 5d7+650
+DamDice 8d6+27
+DamType pierce
+AC -310 -310 -310 -260
+Wealth 600
+Act    npc dont_wander scavenger no_tame aggressive stay_area undead mage~
+AffBy  detect_evil detect_invis detect_hidden infrared protect_evil~
+Off    parry~
+Imm    summon charm holy~
+Res    poison disease~
+Vuln   negative drowning~
+Form   edible instant_decay sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#928
+Name undead dwarven warrior~
+ShortD an undead dwarven warrior~
+LongD An undead dwarven warrior is here, protecting the tomb.~
+Desc This dwarf is hellbent on serving his master, apparently even in death.
+He is slightly transparent, but you can still make out the spectral 
+platemail he wears.  The dwarf's eyes are glowing a bright red, perhaps
+showing you a glimpse of the berserker rage trapped within.
+~
+Race dwarf~
+Align 2 2
+Level 65
+Hitroll 2
+HitDice 7d10+340
+ManaDice 5d7+650
+DamDice 7d8+33
+DamType slice
+AC -360 -360 -360 -310
+Wealth 650
+Act    npc dont_wander scavenger no_tame aggressive stay_area undead warrior~
+AffBy  detect_evil detect_invis detect_hidden infrared protect_evil~
+Off    bash disarm dodge parry~
+Imm    summon charm holy~
+Res    poison disease~
+Vuln   negative drowning~
+Form   edible instant_decay sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#929
+Name ghost dwarf dwarven ruler~
+ShortD the ghost of Ronar~
+LongD The ghost of a dwarven ruler presides over his undead minions here.~
+Desc Regal even in death, this dwarf was obviously a great leader while
+alive.  He is slightly transparent now, but you can make out the
+fine garments and armor he wears.  His eyes are lit with a soft
+white light, and around his neck hangs a necklace, from which dangles
+a large and glowing red gemstone.
+~
+Race dwarf~
+Align 2 2
+XPMod 125
+Level 80
+Hitroll 2
+HitDice 8d12+400
+ManaDice 5d9+750
+DamDice 9d10+42
+DamType wrath
+AC -540 -540 -540 -480
+Wealth 650
+Act    npc dont_wander scavenger no_tame stay_area undead warrior~
+AffBy  detect_evil detect_invis detect_hidden sanctuary infrared protect_evil~
+Off    bash berserk disarm dodge fade fast parry~
+Imm    summon charm holy~
+Res    poison disease~
+Vuln   negative drowning~
+Form   edible instant_decay sentient undead biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg DEATH 933 100~
+MProg GRALL 928 100~
+MProg SPEECH 929 treasure~
+MProg SPEECH 930 homage~
+MProg SPEECH 931 leg~
+MProg SPEECH 932 hole~
+END
+
+#930
+Name doorwarden1~
+ShortD door warden~
+LongD The door warden checks for the password!~
+Desc ~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 1
+HitDice 1d6+1
+ManaDice 5d7+650
+DamDice 1d10+1
+DamType punch
+AC 10 10 10 10
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   instant_decay~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 926 kharrad ghaaz~
+END
+
+#931
+Name doorwarden2~
+ShortD another door warden~
+LongD Another door warden checks for the password~
+Desc ~
+Race unique~
+Align 0 0
+Level 1
+Hitroll 1
+HitDice 1d6+1
+ManaDice 5d7+650
+DamDice 1d10+1
+DamType punch
+AC 10 10 10 10
+Wealth 0
+Act    npc dont_wander no_tame stay_area unseen~
+Form   instant_decay~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 927 kharrad ghaaz~
+END
+
+#0
+
+
+
+#OBJECTS
+#926
+Name flat platinum disk~
+Short a flat `#`Splatinum`^ disk~
+Desc A flat `#`Splatinum`^ disk has been left here.~
+Level 75
+ItemType treasure~
+Cost 10
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material gemstone~
+Extra    magic antievil nodegrade burnproof~
+Wear     take hold~
+Affect modifier -1 75 -1 damroll 5 0
+Affect modifier -1 75 -1 hitroll 5 0
+Affect modifier -1 75 -1 memory 2 0
+Affect modifier -1 75 -1 reasoning 2 0
+ExtraDesc dwarven runes~
+The initials 'RS'.
+~
+ExtraDesc platinum disk~
+This flat platinum disk is engraved with a small dragon and some dwarven 
+runes, and is very slightly humming and vibrating.
+~
+End
+
+#927
+Name token_quest_ronar_grall~
+Short token_quest_ronar_grall_mp928~
+Desc Token_quest_ronar_grall_mp928~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#928
+Name token_quest_ronar_speech_homage~
+Short token_quest_ronar_speech_homage_mp930~
+Desc Token_quest_ronar_speech_homage_mp930~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#929
+Name token_quest_ronar_speech_leg~
+Short token_quest_ronar_speech_leg_mp931~
+Desc Token_quest_ronar_speech_leg_mp931~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#926
+Name On an Underground River~
+Desc You are on a rapid underground river, flowing from west to east.  To the west,
+the ceiling drops closer and closer to the water, and it doesn't look like you
+can go much further in that direction.  To the east the river flows through a 
+wide opening to the outside.
+~
+RoomFlags indoors~
+Sector noswim~
+ExtraDesc water river~
+The river is flowing rapidly, and looks dark and deep.
+~
+Exit east 30586
+Exit west 927
+EDesc The ceiling drops lower.
+~
+End
+
+
+#927
+Name On an Underground River, Near a Landing~
+Desc You are on a deep, dark underground river, which flows rapidly from the west.
+In that direction the stone ceiling drops too low to continue, but does rise
+to the east.  Strangely, on the north side of the river, there are stone steps
+rising right out of the water, leading to a small landing.  Perhaps this was
+once a dry tunnel, before the inhabitants delved a little too deep...
+~
+RoomFlags dark indoors~
+Sector noswim~
+ExtraDesc steps stone landing~
+Mossy stone steps rise right out of the water, and lead up to a dark stone landing.
+~
+ExtraDesc river water~
+The river is flowing rapidly, and looks dark and deep.
+~
+Exit north 928
+EDesc Steps to a landing.
+~
+Exit east 926
+EDesc The river flows east.
+~
+End
+
+
+#928
+Name Small Stone Landing, Overlooking River~
+Desc You are on a small stone landing, overlooking a mighty underground river to the
+south.  Stone steps lead down, right into the water.  On the north side of the
+landing a set of huge stone doors are built right into the stone.  The doors are
+of very fine craftsmanship, and fit perfectly into the wall.  Upon the doors are
+carved some runes, which are covered with mossy growth and are hard to read.
+~
+RoomFlags dark indoors~
+Sector city~
+ExtraDesc runes~
+The runes are carved in an ancient language, perhaps dwarvish, but are hard to make
+out because of wear and mossy growth.  They seem to indicate that some password or
+phrase is required to pass.
+~
+ExtraDesc doors~
+The doors are of very fine workmanship.  There are runes on them.  Strangely, the
+doors seem to be completely sealed shut, not in any material way, but with some
+magical means.
+~
+ExtraDesc steps river~
+Stone steps lead down into the river.
+~
+ExtraDesc stone landing~
+The stone that the landing and walls are formed from is dark grey, perhaps granite.
+~
+Exit south 927
+EDesc The steps lead down into the river.
+~
+End
+
+
+#929
+Name Small Stone Corridor~
+Desc This small stone corridor runs north into the darkness, and south ends in a
+huge set of stone doors.  The walls are very smooth, and carved from the dark
+grey stone.  There is a thick layer of dust covering the floor.  Footprints
+disturb the dust, heading north, but before long they just...stop...
+~
+RoomFlags dark indoors noscry~
+Sector inside~
+ExtraDesc doors~
+The doors seem to be magically sealed somehow.
+~
+ExtraDesc dust footprints~
+The dust is almost an inch thick.  It is unnerving indeed how the footprints
+just...stop...
+~
+ExtraDesc walls grey stone~
+Dark grey stone, granite perhaps.
+~
+Exit north 930
+EDesc The corridor continues north.
+~
+End
+
+
+#930
+Name Small Room, Carved from the Stone~
+Desc You are in a square stone room with a fairly low ceiling.  A thick layer
+of dust covers the floor, but otherwise the room is empty.  A corridor
+leads south, and there is an exit to a larger room to the north.
+~
+RoomFlags dark indoors noscry~
+Sector inside~
+ExtraDesc dust layer~
+A thick layer of dust.
+~
+Exit north 931
+EDesc A larger room.
+~
+Exit south 929
+EDesc A corridor.
+~
+End
+
+
+#931
+Name Large Room, Carved from the Stone~
+Desc You are in a square stone room with a fairly low ceiling.  A thick layer
+of dust covers the floor, but otherwise the room is empty.  Exits lead
+north and south, into other rooms.
+~
+RoomFlags dark indoors noscry~
+Sector inside~
+ExtraDesc dust layer~
+A thick layer of dust.
+~
+Exit north 932
+EDesc A larger room.
+~
+Exit south 930
+EDesc A smaller room.
+~
+End
+
+
+#932
+Name Large Room, Carved from the Stone~
+Desc You are in a square stone room with a fairly low ceiling.  A thick layer
+of dust covers the floor, but otherwise the room is empty.  Exits lead
+north and south, into other rooms.  Through the north one a faint light
+is shining.
+~
+RoomFlags dark indoors noscry~
+Sector inside~
+ExtraDesc dust layer~
+A thick layer of dust.
+~
+Exit north 933
+EDesc A larger room.
+~
+Exit south 931
+EDesc A smaller room.
+~
+End
+
+
+#933
+Name The Tomb of Ronar Silverstone~
+Desc You stand in an ancient room, the tomb of some great leader.  The ceiling
+arches so far above that you cannot see it in the darkness.  It is round
+in shape, and carved from dark grey stone.  There is one exit, an archway
+to the south, leading to darkness.  The room is softly illuminated, but
+strangely no light source is visible.  The floor is empty except for a
+raised rectangular platform in the center, upon which stands a coffin
+carved from the rock below.  The coffin is covered with a heavy stone
+slab, upon which are carved ancient dwarven runes and symbols.
+~
+RoomFlags indoors noscry~
+Sector inside~
+ExtraDesc ancient dwarven runes~
+Ancient dwarven runes, perhaps spelling out the name of the great 
+leader laid to rest here.
+~
+ExtraDesc slab~
+A heavy stone slab, which is carved with ancient dwarven runes.
+~
+ExtraDesc coffin~
+A coffin, carved from the stone below.
+~
+ExtraDesc raised platform~
+Carved from the stone below.
+~
+ExtraDesc grey stone~
+The room is carved out of dark grey stone, perhaps granite.
+~
+Exit south 932
+EDesc A smaller room.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 926 spec_cast_cleric
+M 927 spec_cast_mage
+M 928 spec_cast_undead
+M 929 spec_cast_undead
+S
+
+
+
+#RESETS2
+M 0 930 1 928 1
+M 0 931 1 929 1
+M 0 926 1 930 1
+M 0 927 1 931 1
+M 0 928 1 932 1
+M 0 929 1 933 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#933
+title dwarf ruler is killed~
+code mob oload 926
+mob echo The ghost wails one last time and fades into nothingness.
+mob echo You feel a great presence leave the room.
+mob echo You have completed the quest!
+~
+disabled false
+END
+
+#932
+title ronar quest-speech hole-quest complete~
+code if hastoken $n 929
+say Very well.
+say You do seem knowledgeable enough to use this great item properly.
+emote nods in satisfaction.
+say Take my treasure, then.
+say You can use it better in life than I can in death.
+if carries $n disk
+emote pauses and frowns slightly.
+say Hmm, it appears that you already have one.
+break
+else
+if hastoken $n 929
+mob oload 926
+give disk $n
+else
+say Hole? What hole?
+endif
+endif
+endif
+~
+disabled false
+END
+
+#931
+title ronar quest-speech leg~
+code if hastoken $n 928
+say Very good.
+say Now can you answer this riddle for me?
+say What is made from nothing, yet you can see it?
+mob oload 929
+mob tgive 929 $n
+else
+say My leg? What's wrong with my leg?
+frown $n
+endif
+~
+disabled false
+END
+
+#930
+title ronar quest-speech homage~
+code if hastoken $n 927
+say If you are really worthy of this item, can you answer these riddles to prove your worth?
+say What living thing has only one foot?
+mob oload 928
+mob tgive 928 $n
+else 
+say Well.. pay homage to me then!
+endif
+~
+disabled false
+END
+
+#929
+title ronar quest-speech treasure~
+code if hastoken $n 927
+say You seek my treasure, do you?
+say I'm afraid you will have to pry it from my cold dead hands!
+mob kill $n
+else
+endif
+~
+disabled false
+END
+
+#928
+title ronar quest-grall~
+code if hastoken $n 27164
+say Who disturbs my rest?
+say What have you come here looking for?
+say Do you come to pay homage to me, or to steal my great treasure?
+emote eyes you suspiciously.
+mob oload 927
+mob tgive 927 $n 
+else
+say Who disturbs my rest?
+glare $n
+endif
+~
+disabled false
+END
+
+#927
+title ronar quest-opens door~
+code mob echo The stone doors swing silently open and you move south.
+mob echo The stone doors close behind you.
+mob transfer $n 928
+~
+disabled false
+END
+
+#926
+title ronar quest-closes door~
+code mob echo The stone doors swing silently open and you move north.
+mob echo The stone doors close behind you.
+mob transfer $n 929
+~
+disabled false
+END
+
+#0
+
+
+#$

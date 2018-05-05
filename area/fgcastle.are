@@ -1,0 +1,3109 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Fire Giant Castle~
+ShortName   Fire Giants~
+Builders    None~
+Credits     Ralen Xelton~
+VNUMs       1800 1899
+LRange      75 91
+Security    9
+Colour      R~
+colourcode  `
+MapScale    6
+MapLevel    65
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#1800
+Name giant troll~
+ShortD a giant troll~
+LongD A giant troll is sleeping here.~
+Desc Before you is a giant troll.  It is larger than most trolls of the realm
+standing about 11 feet tall.  Its skin reddish brown in color and covered
+with warts and bumps.  It has evil looking red-rimmed eyes that are sunken
+into its face.  The troll has a bit of a pot belly and is hunched over.  Its
+long , muscled arms almost drag on the ground when it is walking.  The troll
+has a strong stench that would drive even flies away.  
+~
+Race troll~
+Align -3 -3
+Level 79
+Hitroll -1
+HitDice 18d11+295
+ManaDice 10d10+10
+DamDice 8d10+38
+DamType claw
+AC -450 -450 -450 -400
+Wealth 80
+Act    npc scavenger no_tame aggressive stay_area warrior~
+AffBy  detect_hidden infrared regeneration~
+Off    bash berserk disarm kick parry crush~
+Res    charm bash~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP sleeping~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#1801
+Name young fire giant guard black skinned~
+ShortD a fire giant guard~
+LongD A young, black skinned giant is standing here.~
+Desc Before you stands a young fire giant guard.  The guard is tall at almost
+18 feet, but squat and bulky.  He looks something like an oversized dwarf. 
+The fire giant has large, corded muscles and coal black skin.  The scowl on
+his face and bright orange hair make him look very mean.  
+~
+Race human~
+Align 2 -3
+Level 73
+Hitroll 0
+HitDice 8d11+385
+ManaDice 10d10+200
+DamDice 9d9+38
+DamType crush
+AC -470 -470 -470 -400
+Wealth 700
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  slow~
+Off    bash disarm kick parry crush assist_all~
+Res    charm fire~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material flesh
+END
+
+#1802
+Name giant troll guard~
+ShortD a giant troll guard~
+LongD A giant troll guard is walking about.~
+Desc Before you is a giant troll.  It is larger than most trolls of the realm
+standing about 11 feet tall.  Its skin reddish brown in color and covered
+with warts and bumps.  It has evil looking red-rimmed eyes that are sunken
+into its face.  The troll has a bit of a pot belly and is hunched over.  Its
+long , muscled arms almost drag on the ground when it is walking.  The troll
+has a strong stench that would drive even flies away.  
+~
+Race troll~
+Align -3 -3
+Level 79
+Hitroll -1
+HitDice 18d11+295
+ManaDice 10d10+10
+DamDice 8d10+38
+DamType claw
+AC -450 -510 -450 -400
+Wealth 80
+Act    npc scavenger no_tame aggressive stay_area warrior~
+AffBy  detect_hidden infrared regeneration~
+Off    bash berserk disarm parry crush~
+Res    charm bash~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#1803
+Name fire hound large fierce red~
+ShortD a large fire hound~
+LongD A large, fierce looking hound with red fur is chained up here.~
+Desc The large fire hound before you is a fiery creation from another plane of
+existence.  It has rust-red fur and red glowing eyes.  There are small black
+spots on the hounds body.  Its sharp teeth and tongue are soot black in
+color.  A strong sulfur odor is coming from the fire hound.  
+~
+Race wolf~
+Align 2 -3
+Level 75
+Hitroll 1
+HitDice 7d11+380
+ManaDice 7d10+200
+DamDice 8d9+38
+DamType flbite
+AC -430 -430 -430 -380
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area~
+AffBy  detect_invis detect_magic detect_hidden sneak dark_vision~
+Off    dodge fade fast assist_all~
+Imm    summon charm fire~
+Vuln   cold~
+Form   magical animal sentient biped mountable mammal~
+Part   head legs heart hands feet ear eye tail claws fangs~
+StartP resting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+END
+
+#1804
+Name ettin large two-headed giant~
+ShortD an ettin~
+LongD A large two-headed giant is sitting here.~
+Desc You are looking at a large, two-headed giant.  The giant has light brown
+skin that appears to be very soiled.  The two fierce looking heads have
+long, stringy unkempt hair and large, watery eyes.  Their noses look more
+like piggish snouts.  They have large mouths with disgustingly yellow teeth
+many of which are missing.  The giant stinks badly apparently not having
+taken a bath in quite some time, if ever.  
+~
+Race human~
+Align -3 -3
+Level 81
+Hitroll 1
+HitDice 8d12+400
+ManaDice 5d10+0
+DamDice 9d10+45
+DamType crush
+AC -540 -540 -540 -490
+Wealth 500
+Act    npc dont_wander no_tame aggressive stay_area~
+AffBy  dark_vision~
+Off    bash disarm parry crush~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material flesh
+END
+
+#1805
+Name cyclops large one-eyed giant~
+ShortD a cyclops~
+LongD A large, one-eyed giant is resting here.~
+Desc Before you is a monstrous giant with only one eye in the center of its
+head.  The giant is over 20 feet tall and looks very muscular.  The eye is
+very large and deep red in color making the giant look quite angry.  This
+warrior wears now armor, but probably doesnt need it because it has a very
+thick hide.  
+~
+Race human~
+Align -2 -3
+Level 79
+Hitroll -1
+HitDice 9d12+410
+ManaDice 10d10+0
+DamDice 10d10+45
+DamType pound
+AC -560 -560 -560 -480
+Wealth 790
+Act    npc dont_wander no_tame stay_area~
+Off    area_attack bash disarm parry crush~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material flesh
+END
+
+#1806
+Name fire giant warrior large bulky black skinned giant~
+ShortD a fire giant warrior~
+LongD A large and bulky black skinned giant is standing here.~
+Desc Before you stands a large fire giant warrior.  The warrior is tall at
+almost 19 feet, but squat and bulky.  He looks something like an oversized
+dwarf.  The fire giant has large, corded muscles and coal black skin.  The
+scowl on his face and bright orange hair make him look very mean.  
+~
+Race human~
+Align 2 -3
+Level 83
+Hitroll 0
+HitDice 9d12+430
+ManaDice 10d10+200
+DamDice 10d10+48
+DamType crush
+AC -580 -580 -580 -530
+Wealth 830
+Act    npc no_tame aggressive stay_area warrior~
+AffBy  slow~
+Off    bash disarm dodge parry crush assist_all~
+Res    charm fire~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material flesh
+END
+
+#1807
+Name ancient red dragon huge old~
+ShortD an ancient red dragon~
+LongD A huge, old looking red dragon is resting here.~
+Desc Before you is an enormous red dragon.  Its body is almost 150 feet long
+with its tail being just as long.  The dragons body is covered with thick
+red scales that are as hard as metal.  The scales have a smooth, dull
+finish.  This dragon looks quite old by dragon standards.  It has large
+intelligent- looking eyes and long, sharp teeth.  The dragons wings are so
+large that they could shelter a small army from rain.  Heat radiates from
+the dragon.  
+~
+Race dragon~
+Align -3 -3
+XPMod 115
+Level 85
+Hitroll 2
+HitDice 9d12+430
+ManaDice 9d12+430
+DamDice 10d11+49
+DamType claw
+AC -580 -620 -600 -550
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area mage~
+AffBy  detect_invis detect_hidden infrared flying~
+Off    area_attack fast tail crush~
+Imm    summon charm fire~
+Res    charm bash slash fire~
+Vuln   pierce cold~
+Form   edible sentient biped mountable mammal reptile dragon~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP resting~
+DefPos resting~
+Size   huge~
+Sex    female~
+Material flesh
+END
+
+#1808
+Name fire giant king huge noble black skinned giant~
+ShortD the fire giant king~
+LongD A huge, noble looking black skinned giant is sitting here.~
+Desc Before you stands huge, noble looking fire giant.  The giant is tall at
+more than 20 feet, but squat and bulky.  He looks something like an
+oversized dwarf.  The fire giant has large, corded muscles and coal black
+skin.  The scowl on his face and bright orange hair make him look very mean.
+~
+Race human~
+Align 2 -3
+Level 87
+Hitroll 1
+HitDice 9d13+455
+ManaDice 10d10+200
+DamDice 10d11+52
+DamType crush
+AC -640 -640 -640 -580
+Wealth 870
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  slow~
+Off    bash dodge parry crush~
+Res    charm fire~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material flesh
+END
+
+#1809
+Name fire giant witch doctor cloaked black skinned~
+ShortD a fire giant witch doctor~
+LongD A cloaked, black skinned giant is here.~
+Desc Before you stands large, cloaked fire giant.  The giant is tall at more
+than 18 feet, but squat and bulky.  He looks something like an oversized
+dwarf.  The fire giant has large, corded muscles and coal black skin.  The
+scowl on his face and bright orange hair make him look very mean.  
+~
+Race human~
+Align 2 -3
+Level 88
+Hitroll -1
+HitDice 8d12+415
+ManaDice 9d12+435
+DamDice 9d11+40
+DamType crush
+AC -570 -570 -570 -500
+Wealth 850
+Act    npc dont_wander no_tame aggressive stay_area cleric mage~
+AffBy  slow~
+Off    crush~
+Res    charm magic weapon fire~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material flesh
+END
+
+#1810
+Name young warrior~
+ShortD a young human prisoner~
+LongD A young warrior is being kept prisoner here.~
+Desc This young man, once a warrior, is now looking beaten and worn.  He perhaps 
+came here as a brave warrior seeking to destroy the giants, but his battle 
+ended in misfortune, as he is now kept as a prisoner.  
+~
+Race human~
+Align 2 2
+XPMod 80
+Level 1
+Hitroll -2
+HitDice 1d2+1
+ManaDice 1d2+1
+DamDice 1d2+0
+DamType slap
+AC 100 100 100 100
+Wealth 0
+Act    npc~
+Imm    summon charm~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP resting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#1811
+Name fire elemental flame animated huge~
+ShortD a fire elemental~
+LongD A huge animated flame is moving about here.~
+Desc Before you is what appears to be a huge flame that is animated with life.
+The flame is about 12 feet tall.  It is quite bright and emanates a great
+deal of heat.  There appears to be a face in the flame but with all the
+flickering, it is hard to make out.  Tiny balls of fire periodically shoot
+out of the large flame and arc out a couple feet falling to the ground.  
+~
+Race unique~
+Align 0 -3
+Level 87
+Hitroll 3
+HitDice 9d12+425
+ManaDice 9d12+425
+DamDice 9d12+52
+DamType flame
+AC -610 -610 -610 -610
+Wealth 0
+Act    npc aggressive stay_area~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    area_attack fade fast~
+Imm    fire~
+Res    charm bash pierce slash~
+Vuln   magic cold~
+Form   magical instant_decay sentient construct intangible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material fire
+END
+
+#1812
+Name fire elemental flame animated huge~
+ShortD a fire elemental~
+LongD A huge animated flame is moving about here.~
+Desc Before you is what appears to be a huge flame that is animated with life.
+The flame is about 12 feet tall.  It is quite bright and emanates a great
+deal of heat.  There appears to be a face in the flame but with all the
+flickering, it is hard to make out.  Tiny balls of fire periodically shoot
+out of the large flame and arc out a couple feet falling to the ground.  
+~
+Race unique~
+Align 0 -3
+Level 91
+Hitroll 3
+HitDice 9d12+425
+ManaDice 9d12+425
+DamDice 9d12+52
+DamType flame
+AC -610 -610 -610 -610
+Wealth 0
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    area_attack fade fast~
+Imm    fire~
+Res    charm bash pierce slash~
+Vuln   magic cold~
+Form   magical instant_decay sentient construct intangible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material fire
+MProg DEATH 1800 70~
+END
+
+#1813
+Name hermit mage old man~
+ShortD a hermit mage~
+LongD A tall old man sits on a large rock here, twiddling a ball of fire.~
+Desc This man has to be at a hundred years old.  His skin is covered in wrinkles, 
+so many in fact his face looks like that of a tapestry of spider webs.  
+~
+Race human~
+Align 0 0
+Level 110
+Hitroll 0
+HitDice 11d14+525
+ManaDice 12d16+818
+DamDice 11d13+61
+DamType punch
+AC -790 -790 -790 -647
+Wealth 20
+Act    npc dont_wander stay_area cleric mage~
+AffBy  sanctuary protect_evil protect_good haste dark_vision regeneration~
+Off    dodge fast parry~
+Imm    summon charm magic weapon sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#1814
+Name a huge fire giant guard black skinned~
+ShortD a huge fire giant guard~
+LongD A huge, black skinned giant is standing here, abusing the prisoner.~
+Desc This huge fire giant, stands at least twenty five feet tall.  He looks like 
+a gargantuan dwarf in comparison and has coal black skin.  His eyes burn 
+with a deep fiery ember and his sinister features shows only so much as to 
+what he really maybe.  
+~
+Race human~
+Align 2 -3
+Level 98
+Hitroll 1
+HitDice 10d13+480
+ManaDice 10d10+200
+DamDice 10d11+54
+DamType crush
+AC -690 -690 -690 -500
+Wealth 980
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  haste regeneration~
+Off    bash disarm fast kick parry crush assist_all~
+Imm    summon charm~
+Res    charm fire~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material flesh
+END
+
+#1815
+Name fire giant warrior large bulky black skinned giant~
+ShortD a fire giant warrior~
+LongD A large and bulky black skinned giant is standing here.~
+Desc Before you stands a large fire giant warrior.  The warrior is tall at
+almost 19 feet, but squat and bulky.  He looks something like an oversized
+dwarf.  The fire giant has large, corded muscles and coal black skin.  The
+scowl on his face and bright orange hair make him look very mean.  
+~
+Race human~
+Align 2 -3
+Level 87
+Hitroll 0
+HitDice 9d12+430
+ManaDice 10d10+200
+DamDice 10d10+48
+DamType crush
+AC -580 -580 -580 -530
+Wealth 870
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  slow~
+Off    bash disarm dodge parry crush assist_all~
+Res    charm fire~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material flesh
+END
+
+#1816
+Name fire elemental flame animated huge~
+ShortD a fire elemental~
+LongD A huge animated flame is moving about here.~
+Desc Before you is what appears to be a huge flame that is animated with life.
+The flame is about 12 feet tall.  It is quite bright and emanates a great
+deal of heat.  There appears to be a face in the flame but with all the
+flickering, it is hard to make out.  Tiny balls of fire periodically shoot
+out of the large flame and arc out a couple feet falling to the ground.  
+~
+Race unique~
+Align 0 -3
+Level 91
+Hitroll 3
+HitDice 9d12+425
+ManaDice 9d12+425
+DamDice 9d12+52
+DamType flame
+AC -610 -610 -610 -610
+Wealth 0
+Act    npc aggressive stay_area~
+AffBy  detect_invis detect_hidden dark_vision~
+Off    area_attack fade fast~
+Imm    fire~
+Res    charm bash pierce slash~
+Vuln   magic cold~
+Form   magical instant_decay sentient construct intangible~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material fire
+MProg DEATH 1800 70~
+END
+
+#0
+
+
+
+#OBJECTS
+#1800
+Name huge spiked breast plate~
+Short a spiked breast plate~
+Desc A huge, spiked breast plate is here.~
+Level 91
+ItemType armor~
+Cost 1900
+Asize 75
+Rsize 70
+Values 30 27 30 21 0
+Weight 2000
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger~
+Affect modifier -1 91 -1 damroll 6 0
+Affect modifier -1 91 -1 hitroll 4 0
+Affect modifier -1 91 -1 ac -15 0
+Affect modifier -1 91 -1 hp 4 0
+ExtraDesc spike breast plate~
+This is a huge, spiked breast plate.  The spikes are on the shoulders and
+extend over a foot into the air.  The plate is made of steel that has a blue
+hue.  
+~
+End
+
+#1801
+Name huge open faced helmet~
+Short an open-faced helmet~
+Desc A huge, open-faced helmet is here.~
+Level 91
+ItemType armor~
+Cost 1800
+Asize 40
+Rsize 70
+Values 23 22 24 18 0
+Weight 775
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take head~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 91 -1 hp 8 0
+Affect modifier -1 91 -1 hitroll 4 0
+Affect modifier -1 91 -1 damroll 6 0
+ExtraDesc open faced helmet~
+This is a huge, open-faced helmet.  The helmet is bowl shaped and extends
+down to protect the sides and back of the neck.  It is made of steel that
+has a blue hue.  
+~
+End
+
+#1802
+Name green brilliant floating stone~
+Short a `#`Gbrilliant green`^ stone~
+Desc A `#`Gbrilliant green`^ stone is floating here.~
+Level 75
+ItemType gem~
+Cost 1000
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    glow magic nonmetal nodegrade burnproof~
+Wear     take float~
+ClassAllowances mage cleric paladin ranger~
+Affect modifier -1 75 -1 ac -15 0
+Affect modifier -1 75 -1 mana 40 0
+Affect modifier -1 75 -1 hp 4 0
+ExtraDesc green stone~
+This is a stone that seems to float on its own.  The stone it transparent 
+and green in color.  The stone give off light and is shining brightly.  
+~
+End
+
+#1803
+Name pair black leather gloves~
+Short a pair of `#`Sblack`^ leather gloves~
+Desc A pair of `#`Sblack`^ leather gloves lie here.~
+Level 80
+ItemType clothing~
+Cost 1200
+Asize 15
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material cloth~
+Extra    glow magic nonmetal nodegrade burnproof~
+Wear     take hands~
+ClassAllowances thief warrior paladin ranger~
+Affect modifier -1 80 -1 agility 2 0
+Affect modifier -1 80 -1 strength 5 0
+Affect modifier -1 80 -1 quickness 1 0
+ExtraDesc black leather gloves~
+These gloves are made out of leather that has been stained black.  The 
+gloves are very light.  The palm side of the gloves seems to grip very well. 
+ 
+~
+End
+
+#1804
+Name large round shield~
+Short a large round shield~
+Desc A large round shield is here.~
+Level 89
+ItemType armor~
+Cost 1300
+Asize 60
+Rsize 50
+Values 29 29 29 22 0
+Weight 300
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take shield~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 89 -1 damroll 2 0
+ExtraDesc large round shield~
+This is a large, round shield.  The shield is fairly heavy and made out of 
+steel.  There is a round spike protruding from the center of the shield.  
+~
+End
+
+#1805
+Name crystalline wand~
+Short a `#`Wcrystalline`^ wand~
+Desc A `#`Wcrystalline`^ wand lies here.~
+Level 75
+ItemType wand~
+Cost 1100
+Asize 20
+Rsize 50
+Values 75 3 3 sleep 0
+Weight 20
+Material wood~
+Extra    glow hum magic nonmetal nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 75 -1 move -250 0
+Affect modifier -1 75 -1 mana -100 0
+Affect modifier -1 75 -1 hp -25 0
+ExtraDesc crystalline wand~
+This is a brightly glowing wand.  The wand is clear and completely 
+transparent.  There is a faint humming sound coming from the wand.  
+~
+End
+
+#1806
+Name smelly ragged loin cloth~
+Short a smelly, ragged loin cloth~
+Desc Before you is a pile of cloth emanating an awful stench.~
+Level 1
+ItemType clothing~
+Cost -5
+Condition 50
+Asize 30
+Rsize 70
+Values 0 0 0 0 0
+Weight 20
+Material cloth~
+Extra    nonmetal~
+Wear     take waist~
+ExtraDesc stain ~
+Dark colored stains cover this cloth.  Perhaps they are the source of the
+odor.  It does not look like any amount of washing will get the stains out. 
+~
+ExtraDesc loin cloth ragged~
+Before you is a foul looking loincloth.  The cloth is torn and ready to fall 
+apart.  It has several stains on it.  The loincloth has a pungent odor coming 
+from it.
+~
+End
+
+#1807
+Name huge spiked club mace~
+Short a huge, spiked club~
+Desc Before you is a huge, spiked club.~
+Level 77
+ItemType weapon~
+Cost 1250
+Asize 65
+Rsize 70
+Values mace 4 19 smash 0
+Weight 550
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin barbarian~
+Affect modifier -1 77 -1 damroll 2 0
+Affect modifier -1 77 -1 hitroll 2 0
+Affect modifier -1 77 -1 hp 2 0
+ExtraDesc club ~
+This club looks like it was made from the trunk of a young tree.  There
+are several rusted spikes protruding from the crude weapon.  It is quite
+heavy, and not well balanced.  
+~
+End
+
+#1808
+Name scattered gold coins~
+Short some gold coins~
+Desc There are some gold coins scattered about here.~
+Level 0
+ItemType money~
+Cost 1000
+Asize 100
+Rsize 50
+Values 10 0 0 0 0
+Weight 10
+Material gold~
+Extra    nonmetal~
+Wear     take~
+End
+
+#1809
+Name glowing fiery red cloak~
+Short a `#`Rfiery red`^ cloak~
+Desc A `#`Rfiery red`^ cloak has been left here.~
+Level 91
+ItemType clothing~
+Cost 1750
+Asize 50
+Rsize 60
+Values 0 0 0 0 0
+Weight 200
+Material cloth~
+Extra    glow nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 91 -1 ac -20 0
+Affect modifier -1 91 -1 saves -4 0
+Affect modifier -1 91 -1 hp 6 0
+ExtraDesc fiery red cloak~
+This is a huge, fiery red cloak that is glowing brightly.  The cloak is
+made out of a thin cloth material that does not seem to burn no matter how
+hot it gets.  
+~
+End
+
+#1810
+Name huge scalemail skirt~
+Short a huge scalemail skirt~
+Desc A huge scalemail skirt is here.~
+Level 91
+ItemType armor~
+Cost 1800
+Asize 55
+Rsize 70
+Values 18 18 18 13 0
+Weight 1000
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take waist~
+ClassAllowances cleric warrior paladin ranger~
+Affect modifier -1 91 -1 ac -15 0
+Affect modifier -1 91 -1 hp 6 0
+Affect modifier -1 91 -1 damroll 6 0
+ExtraDesc huge scalemail skirt~
+This is a huge scalemail skirt.  The skirt is quite heavy and would be
+difficult to wear for any normal sized humanoid.  The skirt is made of steel
+that has a blue hue.  
+~
+End
+
+#1811
+Name pair huge leather boots~
+Short a pair of huge leather boots~
+Desc A pair of huge, leather boots is here.~
+Level 91
+ItemType armor~
+Cost 1800
+Asize 40
+Rsize 70
+Values 16 16 16 11 0
+Weight 250
+Material leather~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take feet~
+Affect modifier -1 91 -1 agility 2 0
+Affect modifier -1 91 -1 quickness 2 0
+Affect modifier -1 91 -1 hitroll 2 0
+Affect modifier -1 91 -1 damroll 2 0
+Affect modifier -1 91 -1 hp 2 0
+Affect modifier -1 91 -1 ac -10 0
+ExtraDesc pair huge leather boots~
+These huge boots are made of cured leather.  They are in perfect shape
+and also seem to be glowing.  
+~
+End
+
+#1812
+Name huge glowing two-handed sword~
+Short a huge, glowing two-handed sword~
+Desc Before you is a huge, glowing two-handed sword.~
+Level 91
+ItemType weapon~
+Cost 1800
+Asize 70
+Rsize 70
+Values sword 3 32 slash DF
+Weight 2000
+Material steel~
+Extra    glow magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 91 -1 damroll 6 0
+Affect modifier -1 91 -1 hitroll -6 0
+ExtraDesc huge glowing two-handed sword~
+This two-handed sword is gigantic and could only be wielded by the
+strongest of warriors.  It has a long, glowing blade which is made out steel
+that has a blue hue.  
+~
+End
+
+#1813
+Name pair huge steel greeves~
+Short a pair of huge, steel greeves~
+Desc This is a pair of huge, steel greeves.~
+Level 91
+ItemType armor~
+Cost 1750
+Asize 40
+Rsize 70
+Values 22 19 22 17 0
+Weight 500
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take legs~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 91 -1 hp 8 0
+Affect modifier -1 91 -1 ac -15 0
+Affect modifier -1 91 -1 hitroll 4 0
+ExtraDesc pair huge steel greeves~
+Before you is a huge pair of steel greeves.  They are quite heavy and
+would be difficult to wear for any normal sized humanoid.  They are made out
+of steel that has a blue hue.  
+~
+End
+
+#1814
+Name giant ruby ring~
+Short a giant `#`rruby`^ ring~
+Desc A giant `#`rruby`^ ring lies here.~
+Level 91
+ItemType jewelry~
+Cost 2000
+Asize 1
+Rsize 70
+Values 0 0 0 0 0
+Weight 5
+Material gold~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take finger~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 91 -1 ac -20 0
+Affect modifier -1 91 -1 saves -4 0
+Affect modifier -1 91 -1 hp 6 0
+ExtraDesc giant ruby ring~
+This is a huge ruby ring.  The ring is made of gold and has a flawless
+ruby attached.  The ruby is mesmerizing when looked into.  
+~
+End
+
+#1815
+Name huge glowing steel bracer~
+Short a huge, glowing steel bracer~
+Desc Before you is a huge, glowing steel bracer.~
+Level 91
+ItemType armor~
+Cost 1800
+Asize 30
+Rsize 70
+Values 10 12 14 9 0
+Weight 500
+Material steel~
+Extra    glow magic nodegrade burnproof~
+Wear     take wrist~
+ClassAllowances cleric thief warrior paladin ranger spellfilcher~
+Affect modifier -1 91 -1 strength 4 0
+Affect modifier -1 91 -1 constitution 4 0
+Affect modifier -1 91 -1 hp 2 0
+ExtraDesc huge glowing steel bracer~
+This is a huge glowing bracer made of steel with a blue hue.  It is so
+large that it could fit around the leg of most men.  
+~
+End
+
+#1816
+Name huge steel helmet~
+Short a huge, steel helm~
+Desc A huge, steel helmet is here.~
+Level 87
+ItemType armor~
+Cost 1700
+Condition 90
+Asize 40
+Rsize 70
+Values 22 21 23 17 0
+Weight 650
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take head~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 87 -1 hitroll 4 0
+Affect modifier -1 87 -1 damroll 6 0
+Affect modifier -1 87 -1 saves -4 0
+Affect modifier -1 87 -1 hp 4 0
+ExtraDesc huge steel helmet~
+This is a huge, steel helmet.  The helmet is bowl shaped and extends down
+to protect the sides and back of the neck.  It is in good shape, but it
+looks like it has seen a couple battles in its time.  
+~
+End
+
+#1817
+Name huge chainmail tunic~
+Short a huge chainmail tunic~
+Desc A huge chainmail tunic is here.~
+Level 87
+ItemType armor~
+Cost 1780
+Asize 55
+Rsize 70
+Values 28 29 30 21 0
+Weight 1000
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 87 -1 strength 4 0
+Affect modifier -1 87 -1 constitution 4 0
+ExtraDesc huge chainmail tunic~
+This is a huge chainmail tunic.  The chain links are a bit larger and
+thicker than normally used in chain armor, but there is still little room
+for weapons to slip through.  
+~
+End
+
+#1818
+Name huge chainmail skirt~
+Short a huge chainmail skirt~
+Desc A huge scalemail skirt is here.~
+Level 87
+ItemType armor~
+Cost 1710
+Asize 55
+Rsize 70
+Values 16 17 18 12 0
+Weight 1000
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take waist~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 87 -1 quickness 4 0
+Affect modifier -1 87 -1 agility 4 0
+ExtraDesc huge scalemail skirt~
+This is a huge chainmail skirt.  The skirt is quite heavy and would be
+difficult to wear for any normal sized humanoid.  The skirt is made of steel
+chains that are a bit larger and thicker than normally used in chain armor,
+but there is still little room for weapons to slip through.  
+~
+End
+
+#1819
+Name pair huge leather sandals~
+Short a pair of huge, leather sandals~
+Desc A pair of huge, leather sandals is here.~
+Level 87
+ItemType armor~
+Cost 1710
+Asize 35
+Rsize 70
+Values 17 17 17 14 0
+Weight 180
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take feet~
+Affect modifier -1 87 -1 move 40 0
+Affect modifier -1 87 -1 ac -10 0
+Affect modifier -1 87 -1 hp 4 0
+Affect modifier -1 87 -1 saves -4 0
+ExtraDesc huge leather sandals~
+Before you is a pair of huge, leather sandals.  They are so big that they
+would not fit the feet any normal sized humanoid.  The sandals appear to be
+in remarkably good condition.  
+~
+End
+
+#1820
+Name huge two-handed sword~
+Short a huge two-handed sword~
+Desc Before you is a huge two-handed sword.~
+Level 87
+ItemType weapon~
+Cost 1740
+Asize 70
+Rsize 70
+Values sword 5 18 slash F
+Weight 1750
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 87 -1 damroll 2 0
+Affect modifier -1 87 -1 hitroll -2 0
+ExtraDesc huge two-handed sword~
+This two-handed sword is gigantic and could only be wielded by the
+strongest of warriors.  It has a long blade which is made out steel that has
+a blue hue.  
+~
+End
+
+#1821
+Name huge steel bracer~
+Short a huge steel bracer~
+Desc Before you is a huge stell bracer.~
+Level 87
+ItemType armor~
+Cost 1700
+Asize 30
+Rsize 70
+Values 12 9 12 8 0
+Weight 450
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wrist~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 87 -1 strength 2 0
+Affect modifier -1 87 -1 quickness 2 0
+Affect modifier -1 87 -1 constitution 2 0
+Affect modifier -1 87 -1 agility 2 0
+ExtraDesc huge steel bracer~
+This is a huge bracer made of steel with a blue hue.  It is so large that
+it could fit around the leg of most men.  
+~
+End
+
+#1822
+Name huge studded leather tunic~
+Short a huge studded leather tunic~
+Desc A huge studded leather tunic is here.~
+Level 77
+ItemType armor~
+Cost 1450
+Asize 50
+Rsize 65
+Values 24 24 27 19 0
+Weight 650
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take torso~
+Affect modifier -1 77 -1 hp 4 0
+Affect modifier -1 77 -1 ac -10 0
+Affect modifier -1 77 -1 memory 2 0
+Affect modifier -1 77 -1 reasoning 2 0
+ExtraDesc huge studded leather tunic~
+This is a huge studded leather tunic.  The leather looks quite thick and
+strong.  The tunic is in good condition.  
+~
+End
+
+#1823
+Name huge studded leather skirt~
+Short a huge studded leather skirt~
+Desc A huge studded leather skirt is here.~
+Level 77
+ItemType armor~
+Cost 1450
+Asize 50
+Rsize 65
+Values 14 15 14 11 0
+Weight 750
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take waist~
+Affect modifier -1 77 -1 hitroll 4 0
+Affect modifier -1 77 -1 damroll 4 0
+Affect modifier -1 77 -1 hp 4 0
+End
+
+#1824
+Name huge black cloak~
+Short a huge, `#`Sblack`^ cloak~
+Desc A huge, `#`Sblack`^ cloak lies here.~
+Level 88
+ItemType clothing~
+Cost 1750
+Asize 50
+Rsize 60
+Values 0 0 0 0 0
+Weight 150
+Material cloth~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances mage cleric druid paladin ranger spellfilcher~
+Affect modifier -1 88 -1 saves -6 0
+Affect modifier -1 88 -1 reasoning 3 0
+Affect modifier -1 88 -1 memory 3 0
+ExtraDesc black cloak~
+This is a huge, black cloak that seems to absorb light.  The cloak is
+made out of a thin cloth material that does not seem to burn no matter how
+hot it gets.  
+~
+End
+
+#1825
+Name long skull headed staff~
+Short a long `#`wskull headed`^ staff~
+Desc A long `#`wskull headed`^ staff lies here.~
+Level 88
+ItemType staff~
+Cost 1200
+Asize 65
+Rsize 50
+Values 88 20 20 fireball 0
+Weight 150
+Material wood~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take hold~
+ExtraDesc skull head staff~
+This staff is very long and thick.  There is a humanoid skull attached to
+the end of the staff.  The wood of the staff is smooth and has no visible
+imperfections.  
+~
+End
+
+#1826
+Name gold pendant~
+Short a `#`Ygold`^ pendant~
+Desc A `#`Ygold`^ pendant has been left here.~
+Level 1
+ItemType jewelry~
+Cost 2000
+Asize 1
+Rsize 45
+Values 0 0 0 0 0
+Weight 2
+Material gold~
+Extra    rotdeath visdeath nonmetal nolocate~
+Wear     take neck~
+ExtraDesc shiny gold pendant~
+This is a small, shiny gold pendant.  It has an insignia of a falcon
+engraved in it.  
+~
+End
+
+#1827
+Name large catapult stone wheels~
+Short a large catapult~
+Desc Some large catapults with stone wheels are here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 5000
+Rsize 50
+Values 6 7500 CFILOP 50 100
+Weight 20000
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc large catapult stone wheels~
+The catapults here are quite large and look like they could hurl a handful of 
+men at a time.  They have stone wheels that could easily crush a man unlucky 
+enough to get caught under them.
+~
+End
+
+#1828
+Name large crossbow device~
+Short a large crossbow device~
+Desc Some large crossbow devices are here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 3500
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc large crossbow device~
+These crossbow devices appear to fire huge missiles the size of a man.  They 
+are much too large and cumbersome to move around let alone take.  
+~
+End
+
+#1829
+Name huge stone key~
+Short a huge stone key~
+Desc A huge stone key is here.~
+Level 1
+ItemType key~
+Cost 1
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 150
+Material stone~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc huge stone key~
+This is a huge stone key.  The key is as thick as a humans wrist and is
+quite heavy.  The stone is polished and made of speckled rock; possibly
+granite.  
+~
+End
+
+#1830
+Name dirty tattered pants~
+Short some dirty tattered pants~
+Desc A dirty pile of tattered fabric is here.~
+Level 1
+ItemType clothing~
+Cost 0
+Asize 35
+Rsize 45
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nonmetal~
+Wear     take torso~
+End
+
+#1831
+Name large rock~
+Short a large rock~
+Desc A large rock is here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 65
+Rsize 50
+Values 0 0 0 0 0
+Weight 200
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+ExtraDesc rock ~
+This is a large rock that is a grayish color.  It is almost a foot in 
+diameter.  The rock doesn't look like it is all that valuable.
+~
+End
+
+#1832
+Name huge stone pillars~
+Short a huge stone pillar~
+Desc Some huge stone pillars extend high into the air.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 10000
+Rsize 50
+Values 0 0 0 0 0
+Weight -25536
+Material stone~
+Extra    nonmetal nodegrade~
+ExtraDesc stone pillar~
+These are gigantic stone pillars.  The stone they are made out of is grayish 
+tan in color.  The pillars are rather plain, but they look like they could 
+hold up any amount of weight imaginable.  
+~
+End
+
+#1833
+Name crates~
+Short a large wooden crate~
+Desc Some large wooden crates are here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 300
+Rsize 50
+Values 5000 0 0 500 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc crate ~
+Before you are many large wooden crates that are piled up.  Most of them are 
+empty.  
+~
+End
+
+#1834
+Name large wooden barrels~
+Short a large wooden barrel~
+Desc Some large wooden barrels are here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 275
+Rsize 50
+Values 5000 0 0 500 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc barrel ~
+Before you are many large wooden barrels that are piled up.  Most of them 
+are empty.  
+~
+End
+
+#1835
+Name grain~
+Short some grain~
+Desc Some grain is here.~
+Level 0
+ItemType food~
+Cost 1
+Condition 75
+Asize 2
+Rsize 50
+Values 1 1 0 0 0
+Weight 5
+Material grain~
+Extra    nonmetal~
+Wear     take~
+End
+
+#1836
+Name large leather pelt~
+Short a large leather pelt~
+Desc A large leather pelt is here.~
+Level 1
+ItemType clothing~
+Cost 10
+Condition 90
+Asize 40
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+ExtraDesc leather pelt~
+This is a large leather pelt.  Most likely, it was taken from a cow or 
+something bigger yet.  The pelt is a bit worn.  
+~
+End
+
+#1837
+Name large iron key~
+Short a large iron key~
+Desc A large iron key is here.~
+Level 0
+ItemType key~
+Cost 0
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material iron~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#1838
+Name smoky quartz shiny black stone~
+Short a piece of `#`Ssmoky quartz`^~
+Desc A `#`Sblack coloured`^ stone taht shines is sitting here.~
+Level 15
+ItemType gem~
+Cost 50
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material quartz~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+Affect modifier -1 15 -1 selfdiscipline 1 0
+ExtraDesc quartz stone~
+This is a black colored stone that is slightly transparent.  The stone gives 
+off a dull shine.  It looks like it might be a gem of sorts, but is not cut 
+very well.  
+~
+End
+
+#1839
+Name hard leather pouch~
+Short a hard leather pouch~
+Desc A hard leather pouch is stuck in the gold here.~
+Level 0
+ItemType container~
+Cost 20
+Condition 50
+Asize 15
+Rsize 50
+Values 20 AC 0 3 100
+Weight 10
+Material leather~
+Extra    nonmetal~
+Wear     hold~
+ExtraDesc leather pouch~
+This is a hard leather pouch.  The pouch is stuck in the gold, but it looks 
+like it can still be opened.  
+~
+End
+
+#1840
+Name small ruby~
+Short a small `#`rruby`^~
+Desc A small `#`rruby`^ has been left here.~
+Level 1
+ItemType gem~
+Cost 250
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hold~
+ExtraDesc ruby ~
+This ruby is quite small.  It looks like it is of fair quality.  
+~
+End
+
+#1841
+Name onyx ring~
+Short an `#`Sonyx`^ ring~
+Desc An `#`Sonyx`^ ring has been left here.~
+Level 85
+ItemType jewelry~
+Cost 1700
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material gold~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 85 -1 saves -4 0
+Affect modifier -1 85 -1 ac -10 0
+Affect modifier -1 85 -1 quickness 3 0
+Affect modifier -1 85 -1 agility 1 0
+End
+
+#1842
+Name wyrm shaped dagger~
+Short a wyrm shaped dagger~
+Desc A wyrm shaped dagger is here.~
+Level 88
+ItemType weapon~
+Cost 1750
+Asize 20
+Rsize 50
+Values dagger 6 13 stab A
+Weight 20
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+ExtraDesc wyrm dagger~
+This is a wyrm shaped dagger.  The hilt and guard look like the head, body, 
+and wings of a wyrm.  There are tiny rubies set in they eyes of the beast.  
+~
+End
+
+#1843
+Name blue colored vial~
+Short a `#`Bblue`^ coloured vial~
+Desc A `#`Bblue`^ coloured vial is here.~
+Level 0
+ItemType container~
+Cost 20
+Asize 5
+Rsize 50
+Values 5 AC 0 2 100
+Weight 10
+Material glass~
+Extra    glow magic nonmetal nodegrade burnproof~
+Wear     take hold~
+ExtraDesc blue vial~
+This vial is blue in color and is transparent.  The glass of the vial is 
+giving off a faint glow.  There is a cork set in the top of the vial.  
+~
+End
+
+#1844
+Name light green pill~
+Short a `#`Glight green`^ pill~
+Desc A `#`Glight green`^ pill is here.~
+Level 15
+ItemType pill~
+Cost 150
+Asize 0
+Rsize 50
+Values 4 poison poison poison poison
+Weight 1
+Material herbs~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc light green pill~
+This is a light green colored pill.  It is round in shape and quite small.  
+The coating on the pill is smooth.  It should be easy to swallow.  
+~
+End
+
+#1845
+Name redwood staff~
+Short a `#`rredwood`^ staff~
+Desc A `#`rredwood`^ staff is here.~
+Level 80
+ItemType staff~
+Cost 1000
+Asize 0
+Rsize 50
+Values 80 5 3 'dispel magic' 0
+Weight 50
+Material wood~
+Extra    magic nonmetal nodegrade burnproof~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+ExtraDesc redwood staff~
+This is a redwood staff.  Half of the staff is sticking out of the gold on 
+the floor, the other half is buried within.  It doesn't look like its going 
+to be possible to get the staff out.  
+~
+End
+
+#1846
+Name sword blade~
+Short a half-buried sword~
+Desc A half-buried sword is here.~
+Level 77
+ItemType weapon~
+Cost 1000
+Asize 50
+Rsize 50
+Values sword 14 5 slash 0
+Weight 100
+Material steel~
+Extra    magic nodegrade burnproof~
+ClassAllowances thief warrior paladin ranger barbarian spellfilcher~
+ExtraDesc half-buried sword buried~
+The blade of a sword is sticking out of the gold here.  You cannot see any 
+part of the hilt.  The sword looks like it will be impossible to dig out.  
+~
+End
+
+#1847
+Name suit platemail plate mail~
+Short a suit of platemail~
+Desc A suit of platemail is stuck in the gold here.~
+Level 89
+ItemType armor~
+Cost 1200
+Asize 75
+Rsize 50
+Values 29 29 29 22 0
+Weight 200
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 89 -1 hitroll 4 0
+Affect modifier -1 89 -1 damroll 4 0
+Affect modifier -1 89 -1 hp 4 0
+Affect modifier -1 89 -1 saves -4 0
+ExtraDesc suit platemail~
+This is a shining suit of platemail.  It looks like it is in remarkably good 
+condition.  The only problem is that half of it is buried within the gold on 
+the floor.  There isn't any easy way to extract it.  
+~
+End
+
+#1848
+Name half-buried half buried humanoid skeleton~
+Short a half-buried skeleton~
+Desc A half-buried humanoid skeleton is here.~
+Level 0
+ItemType trash~
+Cost 0
+Condition 50
+Asize 75
+Rsize 50
+Values 0 0 0 0 0
+Weight 150
+Material bone~
+Extra    nonmetal~
+ExtraDesc half buried skeleton humanoid~
+Before you is a half-buried skeleton.  The head and torso are sticking out 
+of the gold on the floor and its entire lower half is underneath.  
+~
+End
+
+#1849
+Name enormous stone table~
+Short an enormous stone table~
+Desc An enormous stone table is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 5000
+Rsize 50
+Values 200 20000 BEHN 100 100
+Weight 10000
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc enormous stone table~
+This table is large enough to seat an entire army of men, but there are only 
+about thirty seats around it.  The table is made out of a slate-like stone.  
+
+~
+End
+
+#1850
+Name stone blocks~
+Short a block of stone~
+Desc Many stone blocks are set around the table for use as chairs.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 1000
+Rsize 50
+Values 30 10000 BEHN 100 100
+Weight 10000
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc stone blocks~
+These are huge stone blocks that are spaced evenly around the huge table.  
+They are aparently here for use as chairs.  
+~
+End
+
+#1851
+Name huge stone chair~
+Short a huge stone chair~
+Desc A huge stone chair is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 2000
+Rsize 50
+Values 1 10000 BEHN 100 100
+Weight 10000
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc huge stone chair~
+This is a huge stone chair.  It is so large, it is almost throne-like.  The 
+chair is positioned at the end of the huge stone table.  
+~
+End
+
+#1852
+Name large stone table~
+Short a large stone table~
+Desc A large stone table is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 5000
+Rsize 50
+Values 50 5000 BEHN 100 100
+Weight 10000
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc stone table~
+This is a large stone table.  The table is made from hard gray-black rock 
+that looks like slate.  
+~
+End
+
+#1853
+Name some animal bones~
+Short some animal bones~
+Desc Some animal bones are rotting away here.~
+Level 0
+ItemType trash~
+Cost 0
+Condition 75
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material bone~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc bones ~
+These are the bones of a large mammal.  They have been picked clean of meat 
+and seem to have been rotting away for quite a while.  
+~
+End
+
+#1854
+Name large wooden barrels~
+Short a large wooden barrel~
+Desc Some large wooden barrels are here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 275
+Rsize 50
+Values 5000 0 0 500 100
+Weight 0
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc barrel ~
+There are several large wooden barrels lined up here.  Most of them are 
+empty.  
+~
+End
+
+#1855
+Name weapon rack~
+Short a weapon rack~
+Desc A weapon rack is here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 200
+Rsize 50
+Values 1000 0 0 200 100
+Weight 500
+Material wood~
+Extra    nonmetal nodegrade~
+ExtraDesc weapon rack~
+This is a large weapon rack.  It is designed to store weapons.  The rack is 
+made out of wood and seems quite heavy.  
+~
+End
+
+#1856
+Name huge stone throne~
+Short a huge stone throne~
+Desc A huge stone throne is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 2000
+Rsize 50
+Values 1 10000 BEHN 100 100
+Weight 10000
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc huge stone throne~
+This is a huge stone throne.  The throne is made out of gray-black rock.  
+There is no padding on the throne and it doesn't look too comfortable.  
+~
+End
+
+#1857
+Name large wooden steel table~
+Short a large wooden and steel table~
+Desc A large wooden and steel table is here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 5000
+Rsize 50
+Values 2000 0 0 1000 100
+Weight 10000
+Material wood~
+Extra    nodegrade burnproof~
+ExtraDesc wooden steel table~
+This is a large wooden and steel table.  The table is so large that it is as 
+high as the shoulders on a normal man.  
+~
+End
+
+#1858
+Name milky orange potion~
+Short a `#`wmilky `Rorange`^ coloured potion~
+Desc A `#`wmilky `Rorange`^ coloured potion is here.~
+Level 80
+ItemType potion~
+Cost 1200
+Asize 10
+Rsize 50
+Values 80 fly '' '' ''
+Weight 20
+Material liquid~
+Extra    magic nonmetal~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+End
+
+#1859
+Name transparent baby blue potion~
+Short a transparent baby blue colored potion~
+Desc A transparent baby blue colored potion is here.~
+Level 80
+ItemType potion~
+Cost 1200
+Asize 10
+Rsize 50
+Values 80 sober '' '' ''
+Weight 20
+Material liquid~
+Extra    magic nonmetal~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+End
+
+#1860
+Name murky red potion~
+Short a `#`rmurky red`^ coloured potion~
+Desc A `#`rmurky red`^ coloured potion is here.~
+Level 80
+ItemType potion~
+Cost 1200
+Asize 10
+Rsize 50
+Values 80 'protection good' '' '' ''
+Weight 20
+Material liquid~
+Extra    magic nonmetal~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+End
+
+#1861
+Name vial green powder~
+Short a vial of green colored powder~
+Desc A vial of green colored powder is here.~
+Level 80
+ItemType pill~
+Cost 1200
+Asize 5
+Rsize 50
+Values 80 regeneration poison poison ''
+Weight 5
+Material glass~
+Extra    magic nonmetal~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+End
+
+#1862
+Name glowing neon-green stone neon green~
+Short a glowing `#`Gneon-green`^ stone is here.~
+Desc A glowing neon-green stone is here.~
+Level 80
+ItemType warpstone~
+Cost 1200
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    glow hum magic nonmetal nolocate nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid paladin ranger spellfilcher~
+Affect modifier -1 80 -1 mana 100 0
+Affect modifier -1 80 -1 saves -6 0
+End
+
+#1863
+Name huge battleaxe battle axe marble hilt~
+Short a huge battleaxe with a `#`Wmarble`^ hilt~
+Desc A huge battleaxe with a `#`Wmarble`^ hilt is here.~
+Level 80
+ItemType weapon~
+Cost 1300
+Asize 70
+Rsize 70
+Values axe 4 21 slash 0
+Weight 750
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin barbarian~
+ExtraDesc battleaxe battle axe marble~
+This is a huge battleaxe that has a hilt made of marble.  The battleaxe is 
+in excellent condition and doesn't look like it has seen battle yet.  
+~
+End
+
+#1864
+Name huge morning star marble hilt~
+Short a huge morningstar with a `#`Wmarble`^ hilt~
+Desc A huge morningstar with a `#`Wmarble`^ hilt is here.~
+Level 85
+ItemType weapon~
+Cost 1400
+Asize 60
+Rsize 70
+Values flail 11 7 smash 0
+Weight 750
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric warrior paladin ranger barbarian~
+ExtraDesc morning star marble~
+This is a huge morning star that has a hilt made of marble.  The morning 
+star is in excellent condition and doesn't look like it has seen battle yet. 
+ 
+~
+End
+
+#1865
+Name huge mace marble hilt~
+Short a huge mace with a `#`Wmarble`^ hilt~
+Desc A huge mace with a `#`Wmarble`^ hilt is here.~
+Level 90
+ItemType weapon~
+Cost 1500
+Asize 60
+Rsize 70
+Values mace 16 5 smash 0
+Weight 750
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric warrior paladin ranger barbarian~
+ExtraDesc mace marble~
+This is a huge mace that has a hilt made of marble.  The mace is in 
+excellent condition and doesn't look like it has seen battle yet.  
+~
+End
+
+#1866
+Name emerald golden goblet~
+Short a `#`Ygolden`^ goblet adorned with `#`Gemeralds`^~
+Desc A `#`Ygolden`^ goblet adorned with `#`Gemeralds`^ is here.~
+Level 0
+ItemType drinkcontainer~
+Cost 1000
+Asize 20
+Rsize 50
+Values 10 4 vodka 0 0
+Weight 50
+Material gold~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take hold~
+ExtraDesc golden goblet emeralds~
+This is a large golden goblet.  The gold doesn't seem to be very pure but is 
+still shiny.  There are emeralds set in a circle around the goblet.  
+~
+End
+
+#1867
+Name emerald golden plate~
+Short a `#`Ygolden`^ plate adorned with `#`Gemeralds`^~
+Desc A `#`Ygolden`^ plate adorned with `#`Gemeralds`^ is here.~
+Level 0
+ItemType treasure~
+Cost 1000
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material gold~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take hold~
+ExtraDesc golden plate emeralds~
+This is a large golden plate.  The gold doesn't seem to be very pure but is 
+still shiny.  There are emeralds set in a circle around the plate.  
+~
+End
+
+#1868
+Name large wooden steel table~
+Short a large wooden and steel table~
+Desc A large wooden and steel table is here.~
+Level 0
+ItemType container~
+Cost 0
+Asize 5000
+Rsize 50
+Values 2000 0 0 1000 100
+Weight 10000
+Material wood~
+Extra    nodegrade burnproof~
+ExtraDesc wooden steel table~
+This is a large wooden and steel table.  The table is so large that it is as 
+high as the shoulders on a normal man.  
+~
+End
+
+#1869
+Name large marble key~
+Short a large marble key~
+Desc A large marble key is here.~
+Level 0
+ItemType key~
+Cost 0
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material marble~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#1870
+Name large steel key~
+Short a large steel key~
+Desc A large steel key is here.~
+Level 0
+ItemType key~
+Cost 0
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material steel~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#1871
+Name A globe of fire~
+Short a globe of `#`Rfire`^~
+Desc A globe of `#`Rfire`^ lies here.~
+Level 60
+ItemType light~
+Cost 3500
+Asize 0
+Rsize 50
+Values 0 0 300 0 0
+Weight 5
+Material glass~
+Extra    inventory nonmetal nodegrade~
+Wear     take~
+Affect modifier -1 60 -1 hp 4 0
+Affect modifier -1 60 -1 saves -4 0
+Affect modifier -1 60 -1 damroll 2 0
+Affect modifier -1 60 -1 hitroll 2 0
+End
+
+#1872
+Name heart fire~
+Short a heart of `#`Rfire`^~
+Desc A heart of `#`Rfire`^ hovers here, crackling with flame.~
+Level 85
+ItemType treasure~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 100
+Material fire~
+Extra    magic nodegrade burnproof~
+Wear     take float~
+Affect modifier -1 85 -1 strength 2 0
+Affect modifier -1 85 -1 damroll 2 0
+Affect modifier -1 85 -1 hitroll 2 0
+Affect modifier -1 85 -1 hp 2 0
+Affect modifier -1 85 -1 saves -2 0
+Affect modifier -1 85 -1 constitution 2 0
+End
+
+#0
+
+
+
+#ROOMS
+#1800
+Name Canyon's Path~
+Desc The terrain is very barren and lifeless.  The walls remain steep and 
+unclimbable in this area.  The pass abruptly ends here, where it seems a 
+massive pile of rocks have fallen and blocked the path any further.  
+~
+Sector inside~
+Exit north 1802
+End
+
+
+#1801
+Name A Deep, Narrow Pass~
+Desc You are within a deep, narrow pass in the mountains.  There is no vegetation 
+or life of any sort to be seen.  The walls here are very steep and 
+unclimbable.  You can make your way east or west through the pass.  
+~
+Sector mountain~
+Mana 80
+Heal 80
+ExtraDesc walls ~
+The walls rise up on both sides of this pass.  They are made of hard,
+gray colored rock.  They are very steep and would be treacherous to climb.  
+~
+Exit east 30480
+Exit west 1802
+End
+
+
+#1802
+Name A Bend in the Pass~
+Desc You are at a bend in the deep, narrow pass.  The terrain is very barren
+and lifeless.  The walls here remain steep and unclimbable.  The pass bends
+to the north and widens a bit off in the distance, or you can leave east. 
+All other directions are blocked by steep walls of rock.  
+~
+Sector mountain~
+Mana 80
+Heal 80
+ExtraDesc rock ~
+There is rock everywhere you look.  The rocks covering the floor of this
+narrow pass would make resting very uncomfortable.  
+~
+Exit north 1803
+Exit east 1801
+Exit south 1800
+End
+
+
+#1803
+Name End of a Canyon~
+Desc This is the east end of a large Canyon.  The canyon walls rise up around
+you.  The walls here are almost vertical and impossible to climb.  The
+terrain is barren.  There is a mountain pass leading off to the north and
+south.  The canyon floor leads to the west.  On the ground near you, there
+is a dried up puddle.  
+~
+Sector mountain~
+Mana 80
+Heal 80
+ExtraDesc puddle ~
+This dried up puddle is shaped like a humanoid foot.  If it was actually
+made by a foot, the being that made it must be very large.  The imprint is
+about three and a half feet long from end to end.  
+~
+Exit north 1804
+Exit south 1802
+Exit west 1805
+End
+
+
+#1804
+Name A Dead End Pass~
+Desc You have reached the end of a long, narrow pass.  Mountains surround you
+on all sides except to the south.  The steep sides of the mountains are
+impossible to climb.  There is no vegetation to be seen.  There is no way to
+go except back to the south.  
+~
+Sector mountain~
+Mana 80
+Heal 80
+ExtraDesc mountains ~
+The mountains in this region are very high.  Some of the tips even
+disappear into the clouds beyond sight.  
+~
+Exit south 1803
+End
+
+
+#1805
+Name Within a Canyon~
+Desc You are in the middle of a wide canyon.  The canyon is several hundred
+feet across at this point.  The walls of the canyon are very steep and go up
+as far as the eye can see.  The canyon floor is covered with crushed rocks. 
+They might have fallen from far above.  Aside from the countless rocks, the
+canyon is barren.  You can see mountains far off to the north and south and
+you can travel through the canyon in those directions.  
+~
+Sector mountain~
+Mana 80
+Heal 80
+ExtraDesc rocks ~
+The rocks on the canyon floor vary in size.  The rocks are worthless and
+could not be used for much.  
+~
+Exit east 1803
+Exit west 1806
+End
+
+
+#1806
+Name Entrance to a Castle~
+Desc The canyon comes to an end here.  On the west end of the canyon you can
+see what appears to be the entrance to a strange looking castle.  The castle
+is built into the side of a huge mountain.  Half of the walls appear to be a
+part of the mountain, and the other half made out of enormous blocks of
+stone.  Gigantic stone pillars stand before the entrance to the castle and
+hold up a balcony far above.  Beyond the stone pillars is a set of oversized
+double doors that are also made of hard rock.  
+~
+Sector mountain~
+Mana 80
+Heal 80
+ExtraDesc doors double~
+These doors are huge by human standards.  They are about 25 feet tall and made 
+completely of stone.  It looks like it would take ten men just to open them.
+~
+Exit east 1805
+Exit west 1809
+EFlags door closed locked hard~
+EKeyvnum 1829
+EKeywords doors~
+Exit up 1807
+End
+
+
+#1807
+Name Before the Balcony~
+Desc You are flying before a large stone balcony.  From here, you can see
+large crossbow devices and catapults on the balcony.  There are also several
+piles of large boulders lying on the balcony.  There is an entry way leading
+into the castle to the west.  This castle appears to be in a very defensible
+position and would be hard for any army to assault.  
+~
+RoomFlags no_mob~
+Sector air~
+Mana 80
+Heal 80
+ExtraDesc boulders pile~
+The boulders here vary in size, but most of them average three feet in
+thickness.  It would be difficult for a man to roll one of these stones let
+alone pile them up as they are.  
+~
+Exit west 1808
+Exit down 1806
+End
+
+
+#1808
+Name On a Balcony~
+Desc You are on a large stone balcony.  There are several large crossbow
+devices and catapults on the balcony.  There are also many large piles of
+boulders scattered about.  From here it would be easy to attack any
+approaching force from below.  You can see far into the canyon to the east
+from here.  There is an entryway leading into the castle to the west.  
+~
+Sector city~
+ExtraDesc boulders ~
+These boulders are piled high.  They vary in size, but each weighs about
+200 pounds and is a couple feet thick.  The boulders look rather useless and
+would be difficult to carry around.  
+~
+Exit east 1807
+Exit west 1810
+End
+
+
+#1809
+Name Inside a Castle on the Lower Level~
+Desc You are just inside the castle on the lower level.  The walls are smooth, 
+but appear to be a part of the mountain.  There are several large pillars 
+going from the floor to ceiling.  The ceiling is far above in the air and is 
+hard to make out.  To the east lies the entrance to the castle and a hallway 
+begins to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc ceiling ~
+The ceiling almost 50 feet into the air and is hard to see because of the 
+dim lighting.  There doesn't seem to be anything special about it.  
+~
+Exit east 1806
+EFlags door closed locked hard~
+EKeyvnum 1829
+EKeywords door~
+Exit west 1811
+End
+
+
+#1810
+Name Inside a Castle on the Upper Level~
+Desc You are just inside the castle on the upper level.  The walls are smooth, 
+but appear to be a part of the mountain.  There are several large pillars 
+going from the floor to ceiling.  The ceiling is almost 50 feet into the air 
+and is hard to make out.  To the east lies the balcony and a hallway begins 
+to the west.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc ceiling ~
+The ceiling almost 50 feet into the air and is hard to see because of the 
+dim lighting.  There doesn't seem to be anything special about it.  
+~
+Exit east 1808
+Exit west 1812
+End
+
+
+#1811
+Name The Lower Hallway~
+Desc You are in a short hallway.  The walls here are made out of dark, relatively 
+smooth stone which appears to be a part of the mountain.  The ceiling is 
+quite high in the air.  Torches are set in the wall to light the hallway.  
+There is a huge spiraling stone stair case leading upwards.  There are 
+passageways going to the north, south, east, and west.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc torch ~
+There are several torches fastened to the wall here that light the hallway.  
+
+~
+ExtraDesc spiraling stair~
+These spiraling stone stairs extend far into the air.  The stairs themselves 
+are huge, with each step being almost three feet up.  
+~
+Exit north 1820
+Exit east 1809
+Exit south 1823
+Exit west 1822
+Exit up 1812
+End
+
+
+#1812
+Name The Upper Hallway~
+Desc You are in a short hallway.  The walls here are made out of dark, relatively 
+smooth stone which appears to be a part of the mountain.  The ceiling is 
+quite high in the air.  There is a huge spiraling stone stair case leading 
+downwards.  You can see a door in the southern and northern walls.  There is 
+a huge decorated stone archway on the west end of the hallway.  There is a 
+glow coming from beyond the archway.  There is also a passageway going to 
+the east.  
+~
+RoomFlags no_mob indoors~
+Sector inside~
+ExtraDesc archway ~
+This archway is made of gigantic stone blocks.  It is so large that a mid 
+sized tree could easily fit through it.  The stone blocks are decorated with 
+symbols of war.  
+~
+Exit north 1813
+EFlags door closed nolock~
+EKeywords door~
+Exit east 1810
+Exit south 1814
+EFlags door closed nolock~
+EKeywords door~
+Exit west 1815
+Exit down 1811
+End
+
+
+#1813
+Name The Armory~
+Desc You have entered what appears to be an armory.  There are parts of weapons 
+and armor scattered about the room.  There are various weapons in a rack 
+that is sitting on the floor.  You can see some armor hanging from the 
+walls.  Most of the items here look too large for a normal sized person to 
+use.  There are also scraps of useless metal and leather on a large table 
+that are being used to create or mend armor.  Close to the west wall is a 
+gigantic forge.  The only visible exit is the door to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc forge ~
+This is a huge forge.  It is cold at the moment and has the remnants of coal 
+in the bottom.  
+~
+ExtraDesc table ~
+There is a large wooden table here that has scraps of metal and leather 
+spread across the top of it.  The scraps do not seem to be worth much.  
+~
+Exit south 1812
+EFlags door closed nolock~
+EKeywords door~
+End
+
+
+#1814
+Name Some Living Quarters~
+Desc This is a large cavernous area.  There are several stone beds tucked away in 
+different corners and pockets that loosely define rooms.  The beds are 
+covered with some cheap furs.  There is a huge stone table in the middle of 
+the cavern with several stone blocks around it that must be used as chairs.  
+The air in this room is a bit stagnant.  The only visible exit is the door 
+to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc beds ~
+These beds are large enough to sleep ten men comfortably.  They are made 
+from huge stone blocks and covered with animal furs.  
+~
+Exit north 1812
+EFlags door closed nolock~
+EKeywords door~
+End
+
+
+#1815
+Name The Throne Room~
+Desc This is a huge brightly lit throne room.  There is a gigantic throne on the 
+far end of the room that is made of a dark gray colored stone.  In the 
+middle of the room is a huge stone pit.  Burning embers are ablaze within 
+the pit.  The heat emanating from the pit can be felt throughout the room.  
+The air in the room smells of sulfur.  There are fancy steel doors set in 
+the northern and southern walls of the throne room.  The only other visible 
+exit is a huge stone archway to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Heal 0
+ExtraDesc throne ~
+Beyond the throne you can see the silhouette of a door.  
+~
+ExtraDesc pit ~
+This pit is filled with burning coals and gives off a tremendous amount of 
+heat and light.  Even in the farthest reaches of the throne room, the heat 
+is strong enough to cause a burning sensation on the skin of anyone who 
+isn't protected properly.  
+~
+Exit north 1816
+EFlags door closed locked easy~
+EKeyvnum 1870
+EKeywords door~
+Exit east 1812
+Exit south 1817
+EFlags door closed locked hard~
+EKeyvnum 1869
+EKeywords door~
+Exit west 1818
+EFlags door closed locked hard~
+EKeyvnum 1869
+EKeywords door~
+Exit down 1819
+End
+
+
+#1816
+Name The Witch Doctors Quarters~
+Desc This room looks out of place compared to the rest of the rooms in the 
+castle.  There are strange decorations hanging on the walls and ceiling.  
+There is a large steel and wooden table in the center of the room that holds 
+several potions and powders.  On the far end of the room is a stone bed 
+covered with furs.  The only exit is the door to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc decorations ~
+There are various decorations hanging from the walls and ceiling.  Most of 
+them appear to be religious symbols of some sort.  
+~
+ExtraDesc bed furs~
+This bed is large enough to sleep ten men comfortably.  It is made from huge 
+stone blocks and is covered with animal furs.  
+~
+Exit south 1815
+EFlags door closed locked easy~
+EKeyvnum 1870
+EKeywords door~
+End
+
+
+#1817
+Name The Kings Quarters~
+Desc You have entered an extravagantly decorated room.  There are exotic 
+tapestries and fine weapons adorning the walls.  The floor is covered with 
+what appears to be a dragon skin rug.  There is a table in the middle of the 
+room that has a golden goblet and plate on it.  There is a huge stone bed on 
+the far end of the room that is covered with furs.  The only exit is the 
+door to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc tapestries ~
+The tapestries are covered with scenes of battle and war.  
+~
+ExtraDesc bed furs~
+This bed is large enough to sleep ten men comfortably.  It is made from huge 
+stone blocks and is covered with animal furs.  
+~
+Exit north 1815
+EFlags door closed locked hard~
+EKeyvnum 1869
+EKeywords door~
+End
+
+
+#1818
+Name A Secret Treasure Room~
+Desc You have found a large treasure room.  The room is perfectly square.  The 
+walls are made out of smooth gray stone.  There are shelves built into the 
+north, south, and west walls.  These must be hard times because there isn't 
+much treasure to be found.  The only visible exit is the door to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc shelves ~
+These shelves are depressions that have been dug into the wall.  They are 
+large enough to serve as a bed for a normal sized human.  
+~
+Exit east 1815
+EFlags door closed locked hard~
+EKeyvnum 1869
+EKeywords door~
+End
+
+
+#1819
+Name The Fire Pit~
+Desc You have fallen into a pit filled with burning coals.  It is hot enough in 
+here to melt ore.  A terrible stench of sulfur is rising from the coals.  
+The walls of the pit are made of smooth gray colored stone.  There doesn't 
+seem to be any way out of the pit except for up.  
+~
+RoomFlags indoors~
+Sector inside~
+Heal 0
+Exit up 1815
+End
+
+
+#1820
+Name The Mess Hall~
+Desc This room looks like it is the main mess hall of the castle.  There is an 
+enormous stone table that stretches from one end of the mess hall to the 
+other.  There are large stone blocks spaced evenly on three sides of the 
+table that look like they are used for chairs.  There is a large stone chair 
+on the far end.  There is a pair of swinging double steel doors at the west 
+end of the hall and a passageway to the south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc table ~
+This table is large enough to seat an entire army of men, but there are only 
+about thirty seats around it.  The table is made out of a slate-like stone.  
+
+~
+Exit south 1811
+Exit west 1821
+EFlags door closed nolock~
+EKeywords doors~
+End
+
+
+#1821
+Name The Kitchen~
+Desc You have entered a large kitchen.  There are huge stone stoves lined up 
+along the north wall of the kitchen.  There are large pots and kettles 
+scattered about.  There is a large stone table in the center of the room 
+that is covered with crumbs.  There are large barrels sitting by the south 
+wall.  The only visible exit is a pair of swinging steel double doors to the 
+east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stoves ~
+These stoves are large enough to fit a whole cow into.  There are remnants 
+of burnt coal within the stoves.  
+~
+Exit east 1820
+EFlags door closed nolock~
+EKeywords doors~
+End
+
+
+#1822
+Name The Barracks~
+Desc This is a huge, round room that looks like a large cave.  The floor of the 
+room is relatively smooth and flat.  All of the walls are made of a dark 
+gray stone.  There are many animal skins on the floor that are used for 
+beds.  The air in this room is dank and musty and the temperature is quite 
+hot.  The only visible way out of the room is a passageway to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc animal skin beds~
+The animal skin beds here do not look like they are very comfortable and are 
+mostly worthless.  
+~
+Exit east 1811
+End
+
+
+#1823
+Name A Store Room~
+Desc You have entered a large store room.  The walls are made of a rough gray 
+stone.  There are crates and barrels piled up on the floor.  Dust covers 
+most of the room and there are cob webs hanging from the ceiling.  There is 
+a staircase leading downward in the back of the store room.  The only other 
+exit is the passage to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc cobwebs web cob~
+These cobwebs look like they have been here a while.  The inhabitant isn't 
+anywhere to be seen at the moment.  
+~
+Exit north 1811
+Exit down 1824
+End
+
+
+#1824
+Name The Beginning of a Passageway~
+Desc This is the beginning of a large passageway that leads to the west.  The 
+passageway is round in shape.  The ceiling is at least thirty feet into the 
+air.  The walls are made out of rough gray rock.  There are small stones and 
+pebbles covering the floor.  On the north wall you can see some bars that 
+form a jail cell.  You can go west into the passageway, up the large stair 
+case, or north through the door of the jail cell.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stones pebbles~
+The stones and pebbles here look like they came from the walls.  They are 
+essentially useless.  
+~
+Exit north 1834
+EFlags door closed locked hard~
+EKeyvnum 1837
+EKeywords cell door~
+Exit west 1825
+Exit up 1823
+End
+
+
+#1825
+Name Turn in a Passageway~
+Desc You have come to a turn in the passageway.  The passageway is round in 
+shape.  The ceiling is at least thirty feet into the air.  The walls are 
+made out of rough gray rock.  There are small stones and pebbles covering 
+the floor.  The passageway is dark and silent.  You can either continue to 
+the north, or go east into the passageway.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc ceiling ~
+The ceiling here is made out of rough gray rock similar to that of the walls 
+and floor.  
+~
+Exit north 1826
+Exit east 1824
+End
+
+
+#1826
+Name Bend in a Passageway~
+Desc You have come to a bend in the passageway.  The passageway is round in 
+shape.  The ceiling is at least thirty feet into the air.  The walls are 
+made out of rough gray rock.  There are small stones and pebbles covering 
+the floor.  The passageway is dark and silent.  As you travel through the 
+passageway, it seems as though the temperature is rising.  You can either 
+continue to the west, or go south into the passageway.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc walls ~
+The walls here are made out of hard gray colored rock.  Upon closer 
+inspection you can see shiny black particles imbedded in the rock.  
+~
+Exit south 1825
+Exit west 1827
+End
+
+
+#1827
+Name Intersection in a Passageway~
+Desc This is an intersection in the passageway.  The passageway is round in 
+shape.  The ceiling is at least thirty feet into the air.  The walls are 
+made out of rough gray rock.  There are small stones and pebbles covering 
+the floor.  The air in the passageway smells of sulfur and it has gotten 
+noticeably hotter.  The main passageway leads to the east and west, or there 
+is a slightly smaller tunnel going to the north.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stones pebbles~
+The stones and pebbles here look like they came from the walls.  They are 
+essentially useless.  
+~
+Exit north 1828
+Exit east 1826
+Exit west 1829
+End
+
+
+#1828
+Name A Winding Tunnel~
+Desc You are walking through a long, winding tunnel.  The tunnel is round in 
+shape.  The ceiling is more than twenty feet into the air.  The walls of the 
+tunnel are made out of rough gray rock.  There are small stones and pebbles 
+covering the floor.  The winding tunnel continues on to the west, or you can 
+go back south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc ceiling ~
+The ceiling here is made out of rough gray rock similar to that of the walls 
+and floor.  
+~
+Exit south 1827
+Exit west 1830
+End
+
+
+#1829
+Name Front End of a Huge Lair~
+Desc The passageway comes to an end here and opens into a wide cavern.  The 
+cavern is brightly lit by molten lava on the far west side.  Farther into 
+the cavern, the floor is covered with what appears to be a huge amount of 
+melted gold.  The walls of the cavern are made of smooth gray-black stone.  
+It is extremely hot within the cavern and the air reeks of sulfur.  From 
+here, you can go west further into the cavern, or back east.  
+~
+RoomFlags indoors~
+Sector cave~
+Heal 0
+ExtraDesc walls ~
+The walls are made out of grayish-black stone.  They are quite smooth as 
+though the stone was melted into liquid form at one point.  
+~
+Exit east 1827
+Exit west 1835
+End
+
+
+#1830
+Name Turn in a Tunnel~
+Desc You are walking through a long, winding tunnel.  The tunnel is round in 
+shape.  The ceiling is more than twenty feet into the air.  The walls of the 
+tunnel are made out of rough gray rock.  There are small stones and pebbles 
+covering the floor.  It is very dark and eerily silent here.  The winding 
+tunnel turns to the north here, or you can go back east.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc walls ~
+The walls here are made out of hard gray colored rock.  Upon closer 
+inspection you can see shiny black particles imbedded in the rock.  
+~
+Exit north 1831
+Exit east 1828
+End
+
+
+#1831
+Name Bend in a Tunnel~
+Desc You are walking through a long, winding tunnel.  The tunnel is round in 
+shape.  The ceiling is more than twenty feet into the air.  The walls of the 
+tunnel are made out of rough gray rock.  There are small stones and pebbles 
+covering the floor.  The air here smells of sulfur and the temperature is 
+quite hot.  The winding tunnel bends to the west here, or you can go back 
+south.  There is a glow coming from the west.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stones pebbles~
+The stones and pebbles here look like they came from the walls.  They are 
+essentially useless.  
+~
+Exit south 1830
+Exit west 1832
+End
+
+
+#1832
+Name A Dead End~
+Desc You have reached the end of the winding tunnel.  It is very bright here and 
+the heat here is almost unbearable.  To the south, you can see a huge pool 
+of molten lava.  Its impossible to proceed any further due to the heat of 
+the lava.  There is a strong odor of sulfur coming from the south.  The only 
+way that you can travel is back to the east.  
+~
+RoomFlags indoors~
+Sector inside~
+Heal 0
+ExtraDesc pool molten lava~
+There is a huge pool of lava to the south.  You cannot see a ceiling over 
+the lava, but its too hot to move close enough to look further up.  
+~
+Exit east 1831
+End
+
+
+#1833
+Name Above a Pool of Molten Lava~
+Desc You are above a pool of molten lava.  The lava is bubbling and boiling below 
+you.  It is extremely hot here and reeks of sulfur.  
+~
+Sector inside~
+Heal 0
+Exit north 1832
+EFlags oneway~
+End
+
+
+#1834
+Name A Jail Cell~
+Desc This is a large jail cell.  Three of the walls are made of hard gray rock 
+and the south wall is comprised of iron bars.  There are chains and shackles 
+hanging from the north wall.  You can see the bones of previous visitors 
+scattered about on the floor.  The iron bars are very thick and spaced close 
+enough together to keep the smallest halfling captive.  The only apparent 
+way out is through the door on the bars to the south, if you are lucky 
+enough to have the key.  
+~
+RoomFlags dark indoors~
+Sector inside~
+Mana 75
+Heal 75
+ExtraDesc bones ~
+These bones look like they have been rotting away here for quite some time.  
+They smell of decay and don't look like they could be used for much.  
+~
+Exit south 1824
+EFlags door closed locked hard~
+EKeyvnum 1837
+EKeywords cell door~
+End
+
+
+#1835
+Name Back End of a Huge Lair~
+Desc You are in the far side of the cavern.  The cavern is brightly lit by molten 
+lava just to the west.  The floor of the cavern is covered with what appears 
+to be a huge amount of melted gold.  There are many items sticking up from 
+the gold-like floor including weapons, wands, staves, and bones.  Most of 
+the items are held in place firmly and will not budge.  The walls of the 
+cavern are made of smooth gray-black stone.  There is a huge lava pool in 
+the west end of the cavern, but it is not possible to get close enough to it 
+to see what is beyond.  It is extremely hot within the cavern and the air 
+reeks of sulfur.  The only exit is back to the east.  
+~
+RoomFlags indoors noscry~
+Sector cave~
+Heal 0
+ExtraDesc floor melted gold~
+The floor appears to be covered with a huge layer of melted gold.  Upon 
+closer inspection, you find that the gold is rock hard and not worth the 
+time that would be spent trying to dig into it.  
+~
+Exit east 1829
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 1803 spec_breath_fire
+M 1807 spec_breath_fire
+M 1809 spec_cast_cleric
+M 1811 spec_breath_fire
+M 1812 spec_breath_fire
+M 1813 spec_cast_adept
+M 1816 spec_breath_fire
+S
+
+
+
+#RESETS2
+M 0 1813 1 1800 1
+G 0 1871 -1
+O 0 1831 -1 1802
+M 0 1800 1 1804 1
+G 0 1829 -1
+E 0 1807 -1 wielded~
+E 0 1806 -1 waist~
+O 0 1832 -1 1806
+M 0 1803 4 1808 1
+O 0 1827 -1 1808
+O 0 1828 -1 1808
+M 0 1801 4 1808 1
+E 0 1823 -1 waist~
+E 0 1822 -1 torso~
+E 0 1807 -1 wielded~
+M 0 1803 3 1809 1
+O 0 1832 -1 1809
+O 0 1832 -1 1810
+M 0 1801 4 1812 1
+E 0 1823 -1 waist~
+E 0 1822 -1 torso~
+E 0 1807 -1 wielded~
+M 0 1805 1 1813 1
+E 0 1806 -1 waist~
+E 0 1807 -1 wielded~
+O 0 1817 -1 1813
+O 0 1822 -1 1813
+O 0 1852 -1 1813
+O 0 1855 -1 1813
+P 0 1820 5 1855 1
+P 0 1807 10 1855 2
+M 0 1806 3 1814 1
+E 0 1821 -1 rwrist~
+E 0 1821 -1 lwrist~
+E 0 1819 -1 feet~
+E 0 1817 -1 torso~
+E 0 1820 -1 wielded~
+E 0 1818 -1 waist~
+E 0 1816 -1 head~
+O 0 1852 -1 1814
+O 0 1850 -1 1814
+M 0 1808 1 1815 1
+G 0 1869 -1
+G 0 1870 -1
+E 0 1815 -1 rwrist~
+E 0 1815 -1 lwrist~
+E 0 1814 -1 rfinger~
+E 0 1813 -1 legs~
+E 0 1812 -1 wielded~
+E 0 1809 -1 about~
+E 0 1811 -1 feet~
+E 0 1810 -1 waist~
+E 0 1801 -1 head~
+E 0 1800 -1 torso~
+O 0 1856 -1 1815
+M 0 1809 1 1816 1
+E 0 1819 -1 feet~
+E 0 1825 -1 hold~
+E 0 1824 -1 about~
+E 0 1823 -1 waist~
+E 0 1822 -1 torso~
+O 0 1857 -1 1816
+P 0 1858 1 1857 1
+P 0 1859 1 1857 1
+P 0 1860 1 1857 1
+P 0 1861 1 1857 1
+P 0 1862 1 1857 1
+O 0 1863 -1 1817
+O 0 1864 -1 1817
+O 0 1865 -1 1817
+O 0 1868 -1 1817
+P 0 1866 1 1868 1
+P 0 1867 1 1868 1
+M 0 1803 5 1818 1
+M 0 1803 3 1818 1
+O 0 1808 -1 1818
+M 0 1812 1 1819 1
+M 0 1804 1 1820 1
+E 0 1806 -1 waist~
+O 0 1849 -1 1820
+O 0 1850 -1 1820
+O 0 1851 -1 1820
+M 0 1806 3 1821 1
+E 0 1821 -1 rwrist~
+E 0 1821 -1 lwrist~
+E 0 1819 -1 feet~
+E 0 1817 -1 torso~
+E 0 1820 -1 wielded~
+E 0 1818 -1 waist~
+E 0 1816 -1 head~
+O 0 1852 -1 1821
+O 0 1854 -1 1821
+P 0 1853 5 1854 1
+M 0 1801 4 1822 1
+E 0 1823 -1 waist~
+E 0 1822 -1 torso~
+E 0 1807 -1 wielded~
+M 0 1802 2 1823 1
+E 0 1807 -1 wielded~
+E 0 1806 -1 waist~
+O 0 1833 -1 1823
+P 0 1836 6 1833 3
+O 0 1834 -1 1823
+P 0 1835 10 1834 2
+M 0 1801 4 1824 1
+E 0 1823 -1 waist~
+E 0 1822 -1 torso~
+E 0 1807 -1 wielded~
+O 0 1838 -1 1825
+M 0 1802 2 1826 1
+E 0 1806 -1 waist~
+E 0 1807 -1 wielded~
+M 0 1806 3 1828 1
+G 0 1837 -1
+E 0 1816 -1 head~
+E 0 1818 -1 waist~
+E 0 1820 -1 wielded~
+E 0 1817 -1 torso~
+E 0 1819 -1 feet~
+E 0 1821 -1 lwrist~
+E 0 1821 -1 rwrist~
+M 0 1807 1 1829 1
+M 0 1806 3 1830 1
+G 0 1837 -1
+E 0 1821 -1 rwrist~
+E 0 1821 -1 lwrist~
+E 0 1819 -1 feet~
+E 0 1817 -1 torso~
+E 0 1820 -1 wielded~
+E 0 1818 -1 waist~
+E 0 1816 -1 head~
+M 0 1816 1 1832 1
+M 0 1811 1 1833 1
+M 0 1810 1 1834 1
+E 0 1830 -1 torso~
+E 0 1826 -1 neck1~
+M 0 1814 1 1834 1
+E 0 1822 -1 torso~
+E 0 1816 -1 head~
+E 0 1820 -1 wielded~
+O 0 1808 -1 1835
+O 0 1846 -1 1835
+O 0 1802 -1 1835
+O 0 1848 -1 1835
+O 0 1839 -1 1835
+P 0 1840 5 1839 5
+O 0 1841 -1 1835
+O 0 1803 -1 1835
+O 0 1847 -1 1835
+O 0 1842 -1 1835
+O 0 1804 -1 1835
+O 0 1845 -1 1835
+O 0 1843 -1 1835
+P 0 1844 3 1843 3
+S
+
+
+
+#SHOPS
+#1813
+buy_type light~
+profit_buy 300
+profit_sell 5
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#1800
+title heart of fire~
+code mob echo The elemental's crackling heart of `#`Rfire`^ falls to the ground unharmed.
+mob oload 1872 1 none
+~
+disabled false
+END
+
+#0
+
+
+#$

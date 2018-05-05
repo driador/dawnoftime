@@ -1,0 +1,1407 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        The Outlands~
+ShortName   Outlands~
+Builders    None~
+Credits     Siobhan Tibault~
+VNUMs       33000 33099
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#33000
+Name healer avian green plumage~
+ShortD a male avian with dark green plumage~
+LongD A male avian with dark green plumage is perched upon a branch here.~
+Desc This avian looks at you with small, beady eyes.  Although small in size they 
+hint towards possession of great wisdom and knowledge.  Dark green feathers 
+in several shades cover it's body and also line the edges and tips of his 
+wings.  Sharp claws and beak look like this bird can give as good as he 
+gets.  
+~
+Race avian~
+Align 2 3
+XPMod 120
+Level 60
+Hitroll 2
+HitDice 5d20+500
+ManaDice 5d10+999
+DamDice 8d20+50
+DamType punch
+AC -750 -750 -750 -750
+Wealth 400
+Act    npc dont_wander no_tame stay_area cleric nopurge healer~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good flying~
+Off    disarm dodge parry~
+Imm    summon charm~
+Res    magic weapon pierce~
+Form   edible sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#33001
+Name outlands barbarian guildguard oafish human male~
+ShortD an oafish human male of gigantic proportions~
+LongD An oafish human male of gigantic proportions hunches over here.~
+Desc Standing about 7 feet tall and 4 feet wide, this human form could simply be 
+described as a wall of muscle. His unproportioned upper body causes him to 
+hunch over slightly. This gives the barbarian a oafish, perhaps stupid look. 
+But what he lacks in intelligence he more than makes up for in stupidity. 
+~
+Race human~
+Align 3 1
+XPMod 0
+Level 100
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+475
+DamDice 11d11+56
+DamType punch
+AC -710 -710 -710 -600
+Wealth 0
+Act    npc dont_wander stay_area noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    area_attack disarm dodge fast parry~
+Imm    summon charm sleep~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg EXALL 33002 west~
+MProg DEATH 33001 100~
+END
+
+#33002
+Name outlands barbarian guildguard oafish human male~
+ShortD an oafish human male of gigantic proportions~
+LongD An oafish human male of gigantic proportions hunches over here.~
+Desc Standing about 7 feet tall and 4 feet wide, this human form could simply be 
+described as a wall of muscle. His unproportioned upper body causes him to 
+hunch over slightly. This gives the barbarian a oafish, perhaps stupid look. 
+But what he lacks in intelligence he more than makes up for in stupidity. 
+~
+Race human~
+Align 3 1
+XPMod 0
+Level 110
+Hitroll 0
+HitDice 10d15+600
+ManaDice 10d13+475
+DamDice 10d16+70
+DamType punch
+AC -810 -810 -810 -700
+Wealth 0
+Act    npc dont_wander stay_area noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    area_attack disarm dodge fast parry~
+Imm    summon charm sleep~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg EXALL 33002 west~
+MProg DEATH 33001 100~
+END
+
+#33003
+Name outlands barbarian guildguard oafish human male~
+ShortD an oafish human male of gigantic proportions~
+LongD An oafish human male of gigantic proportions hunches over here.~
+Desc Standing about 7 feet tall and 4 feet wide, this human form could simply be 
+described as a wall of muscle. His unproportioned upper body causes him to 
+hunch over slightly. This gives the barbarian a oafish, perhaps stupid look. 
+But what he lacks in intelligence he more than makes up for in stupidity. 
+~
+Race human~
+Align 3 1
+XPMod 0
+Level 120
+Hitroll 0
+HitDice 10d17+700
+ManaDice 10d13+475
+DamDice 10d17+75
+DamType punch
+AC -900 -900 -900 -800
+Wealth 0
+Act    npc dont_wander stay_area noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    area_attack disarm dodge fast parry~
+Imm    summon charm sleep~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg EXALL 33002 west~
+MProg DEATH 33001 100~
+END
+
+#33004
+Name unseen_barbarianO_guildguard_loader~
+ShortD unseen_barbarianO_guildguard_loader~
+LongD Unseen_barbarianO_guildguard_loader~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg REPOP 33000 100~
+END
+
+#33005
+Name outlands ranger guildguard tall voadkyn female~
+ShortD a tall voadkyn female~
+LongD A tall, voadkyn female stands concealed amongst the trees.~
+Desc From behind a heavy cloak, two almost black eyes peer at you.  Aware of your 
+every move, they follow you.  Aside from the heavy cloak what you can see of 
+this female ranger is that she is tall, and reasonably strong.  
+~
+Race human~
+Align 3 1
+XPMod 0
+Level 100
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+475
+DamDice 11d11+56
+DamType punch
+AC -710 -710 -710 -600
+Wealth 0
+Act    npc dont_wander stay_area noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    area_attack disarm dodge fast parry~
+Imm    summon charm sleep~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg EXALL 33005 up~
+MProg DEATH 33004 100~
+END
+
+#33006
+Name outlands ranger guildguard tall voadkyn female~
+ShortD a tall voadkyn female~
+LongD A tall, voadkyn female stands concealed amongst the trees.~
+Desc From behind a heavy cloak, two almost black eyes peer at you.  Aware of your 
+every move, they follow you.  Aside from the heavy cloak what you can see of 
+this female ranger is that she is tall, and reasonably strong. 
+~
+Race human~
+Align 3 1
+XPMod 0
+Level 110
+Hitroll 0
+HitDice 10d15+600
+ManaDice 10d13+475
+DamDice 10d16+70
+DamType punch
+AC -810 -810 -810 -700
+Wealth 0
+Act    npc dont_wander stay_area noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    area_attack disarm dodge fast parry~
+Imm    summon charm sleep~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg EXALL 33005 up~
+MProg DEATH 33004 100~
+END
+
+#33007
+Name outlands ranger guildguard tall voadkyn female~
+ShortD a tall voadkyn female~
+LongD A tall, voadkyn female stands concealed amongst the trees.~
+Desc From behind a heavy cloak, two almost black eyes peer at you.  Aware of your 
+every move, they follow you.  Aside from the heavy cloak what you can see of 
+this female ranger is that she is tall, and reasonably strong.
+~
+Race human~
+Align 3 1
+XPMod 0
+Level 120
+Hitroll 0
+HitDice 10d17+700
+ManaDice 10d13+475
+DamDice 10d17+75
+DamType punch
+AC -900 -900 -900 -800
+Wealth 0
+Act    npc dont_wander stay_area noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    area_attack disarm dodge fast parry~
+Imm    summon charm sleep~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg EXALL 33005 up~
+MProg DEATH 33004 100~
+END
+
+#33008
+Name unseen_rangerO_guildguard_loader~
+ShortD unseen_rangerO_guildguard_loader~
+LongD Unseen_rangerO_guildguard_loader~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg REPOP 33003 100~
+END
+
+#33009
+Name outlands druid guildguard hunchbacked alaghi male~
+ShortD a hunchbacked alaghi~
+LongD A hunchbacked alaghi stands here chanting.~
+Desc Looking almost crippled under the weight of his hunched back, the fur covering this alaghi's flesh is like the colour of burnt leaves. His eyes, recessed and shadowed, rarely meet yours, but instinctively you know there is little he misses.
+~
+Race human~
+Align 3 1
+XPMod 0
+Level 100
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+475
+DamDice 11d11+56
+DamType punch
+AC -710 -710 -710 -600
+Wealth 0
+Act    npc dont_wander stay_area noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    area_attack dodge parry~
+Imm    summon charm sleep~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg DEATH 33007 100~
+MProg EXALL 33008 west~
+END
+
+#33010
+Name outlands druid guildguard hunchbacked alaghi male~
+ShortD a hunchbacked alaghi~
+LongD A hunchbacked alaghi stands here chanting.~
+Desc Looking almost crippled under the weight of his hunched back, the fur 
+covering this alaghi's flesh is like the colour of burnt leaves.  His eyes, 
+recessed and shadowed, rarely meet yours, but instinctively you know there 
+is little he misses.  
+~
+Race human~
+Align 3 1
+XPMod 0
+Level 110
+Hitroll 0
+HitDice 10d15+600
+ManaDice 10d13+475
+DamDice 10d16+70
+DamType punch
+AC -810 -810 -810 -700
+Wealth 0
+Act    npc dont_wander stay_area noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    area_attack dodge parry~
+Imm    summon charm sleep~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg DEATH 33007 100~
+MProg EXALL 33008 west~
+END
+
+#33011
+Name outlands druid guildguard hunchbacked alaghi male~
+ShortD a hunchbacked alaghi~
+LongD A hunchbacked alaghi stands here chanting.~
+Desc Looking almost crippled under the weight of his hunched back, the fur 
+covering this alaghi's flesh is like the colour of burnt leaves. His eyes, 
+recessed and shadowed, rarely meet yours, but instinctively you know there 
+is little he misses. 
+~
+Race human~
+Align 3 1
+XPMod 0
+Level 120
+Hitroll 0
+HitDice 10d17+700
+ManaDice 10d13+475
+DamDice 10d17+75
+DamType punch
+AC -900 -900 -900 -800
+Wealth 0
+Act    npc dont_wander stay_area noautosocial~
+AffBy  detect_invis detect_hidden sanctuary~
+Off    area_attack dodge parry~
+Imm    summon charm sleep~
+Res    weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+MProg DEATH 33007 100~
+MProg EXALL 33008 west~
+END
+
+#33012
+Name unseen_druidO_guildguard_loader~
+ShortD unseen_druidO_guildguard_loader~
+LongD Unseen_druidO_guildguard_loader~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg REPOP 33006 100~
+END
+
+#33013
+Name barbarian guild master dark furred gnoll~
+ShortD a dark furred, snarling gnoll male~
+LongD A dark furred, snarling gnoll male stands here.~
+Desc This gnoll appears to be the size of a small cottage. Well, perhaps a very 
+small cottage, but he is big to say the least. Beneath his fur large bulges 
+betray muscles that have been trained steadily over the years. He casts a 
+slightly vacant glance, but looks like he knows alot about what he does 
+best. Smashing things to small crumbs. 
+~
+Race gnoll~
+Align 1 0
+Level 110
+Hitroll 1
+HitDice 10d15+600
+ManaDice 10d15+100
+DamDice 10d16+70
+DamType punch
+AC -810 -810 -810 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area train practice warrior gain changer~
+AffBy  detect_invis detect_hidden infrared~
+Off    bash disarm dodge parry crush~
+Imm    summon charm sleep~
+Res    weapon bash cold disease~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#33014
+Name ranger guild master dark green cloaked drow~
+ShortD a dark-green cloaked male drow~
+LongD A dark-green cloaked male drow assumes a wide stance here.~
+Desc This drow, although not very tall as is usual for it's race, stands ready. 
+He has assumed a wide stance, and gives the impression that a blade would be 
+in his hands within seconds of trouble arrising. The dark green cloak he 
+wears looks like it would offer warmth, yet would not hinder the drow's 
+movement. 
+~
+Race drow~
+Align 1 0
+Level 110
+Hitroll 1
+HitDice 10d15+600
+ManaDice 10d15+400
+DamDice 10d16+70
+DamType punch
+AC -810 -810 -810 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area train practice warrior gain changer~
+AffBy  detect_invis detect_magic detect_hidden infrared dark_vision~
+Off    bash disarm dodge parry~
+Imm    summon charm sleep~
+Res    magic weapon disease~
+Vuln   light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#33015
+Name druid guild master loosely robed mrem female~
+ShortD a loosely robed, female mrem~
+LongD A loosely robed, female mrem stands here.~
+Desc This female mrem carries herself with a certain grace, her form is lean 
+although the thin, white robe she has draped loosely around herself does not 
+confirm this with any certainty. Her fur is silver in colour and shimmers 
+softly when it catches the light. 
+~
+Race mrem~
+Align 1 0
+Level 110
+Hitroll 0
+HitDice 10d15+600
+ManaDice 10d15+600
+DamDice 10d16+70
+DamType claw
+AC -810 -810 -810 -700
+Wealth 1000
+Act    npc dont_wander no_tame stay_area train practice cleric gain changer~
+AffBy  detect_invis detect_magic detect_hidden infrared dark_vision~
+Off    dodge parry~
+Imm    summon charm sleep~
+Res    magic weapon disease~
+Vuln   light sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#33000
+Name token33000 token_barbarianO_guildguard_warned_before~
+Short token33000 token_barbarianO_guildguard_warned_before~
+Desc Token33000 token_barbarianO_guildguard_warned_before~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#33001
+Name token 33001 token_rangerO_guildguard_warned_before~
+Short token 33001 token_rangerO_guildguard_warned_before~
+Desc Token 33001 token_rangerO_guildguard_warned_before~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#33002
+Name token33002 token_druidO_guildguard_warned_before~
+Short token33002 token_druidO_guildguard_warned_before~
+Desc Token33002 token_druidO_guildguard_warned_before~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#33003
+Name small grassy knoll~
+Short a small, grassy knoll~
+Desc A small, grassy knoll has risen up from the ground.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 100
+Rsize 50
+Values 5 10000 EH 100 100
+Weight 10000
+Material stone~
+Extra    nonmetal nodegrade burnproof nogetall~
+End
+
+#33004
+Name fresh-water brook fresh water~
+Short a fresh-water brook~
+Desc A fresh-water brook runs along the western side of the clearing.~
+Level 1
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 100000 water 0 0
+Weight 0
+Material water~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc fresh water brook fresh-water~
+A small brook runs along the western side of this clearing. The water looks 
+clear and refreshing. 
+~
+End
+
+#33005
+Name small torch~
+Short a small torch~
+Desc A small torch lies here.~
+Level 1
+ItemType light~
+Cost 20
+Asize 5
+Rsize 50
+Values 0 0 10 0 0
+Weight 5
+Material wood~
+Extra    inventory nonmetal nodegrade~
+Wear     take~
+End
+
+#33006
+Name battlaxe axe~
+Short a battleaxe~
+Desc A battleaxe is lying here~
+Level 1
+ItemType weapon~
+Cost 71
+Asize 40
+Rsize 50
+Values axe 1 9 slice F
+Weight 45
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc battleaxe~
+A standard battleaxe.  Nothing special about it.  Looks like you'd need two 
+hands to wield this properly.  
+~
+End
+
+#33007
+Name mace~
+Short a mace~
+Desc A mace is lying here.~
+Level 1
+ItemType weapon~
+Cost 62
+Asize 30
+Rsize 50
+Values mace 1 6 smash 0
+Weight 40
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ExtraDesc mace~
+A standard mace.  Nothing special about it.
+~
+End
+
+#33008
+Name small whetstone~
+Short a small whetstone~
+Desc A small whetstone is lying here.~
+Level 1
+ItemType trash~
+Cost 65
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material whetstone~
+Extra    burnproof~
+Wear     take hold~
+ExtraDesc small whetstone~
+This is a small stone used for sharpening blades.
+~
+End
+
+#33009
+Name sturdy shovel~
+Short a sturdy shovel~
+Desc A sturdy shovel has been left here.~
+Level 1
+ItemType trash~
+Cost 39
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 45
+Material shovel~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc sturdy shovel~
+This sturdy shovel has a steel blade and a thick wooden handle.
+~
+End
+
+#33010
+Name frying pan~
+Short a frying pan~
+Desc A frying pan is lying here.~
+Level 1
+ItemType trash~
+Cost 33
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 35
+Material cookware~
+Extra    nodegrade burnproof~
+Wear     take hold~
+ExtraDesc frying pan~
+A steel frying pan.  Nothing special about it.
+~
+End
+
+#33011
+Name bedroll~
+Short a bedroll~
+Desc A bedroll has been left here.~
+Level 1
+ItemType furniture~
+Cost 106
+Asize 30
+Rsize 50
+Values 1 9999 BEHKN 115 115
+Weight 20
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take~
+ExtraDesc bedroll~
+This comfortable bedroll is made from thick cloth and is filled 
+with feathers or some soft material.  It would be great for
+those times when it's necessary to sleep in the wilderness.
+~
+End
+
+#33012
+Name waterskin water skin~
+Short a waterskin~
+Desc A waterskin is lying here.~
+Level 1
+ItemType drinkcontainer~
+Cost 32
+Asize 5
+Rsize 50
+Values 70 70 water 0 0
+Weight 10
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take hold~
+End
+
+#33013
+Name bowl stew~
+Short a bowl of stew~
+Desc A bowl of stew is lying here.~
+Level 1
+ItemType food~
+Cost 17
+Asize 5
+Rsize 50
+Values 20 15 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#33014
+Name granite stone~
+Short a granite stone~
+Desc A granite stone floats here.~
+Level 1
+ItemType gem~
+Cost 99
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    nodegrade burnproof~
+Wear     take float~
+Affect modifier -1 1 -1 damroll 2 0
+End
+
+#33015
+Name horned helmet~
+Short a horned helmet~
+Desc A horned helmet lies here.~
+Level 1
+ItemType armor~
+Cost 120
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material horns~
+Extra    nonmetal nodegrade~
+Wear     take head~
+End
+
+#33016
+Name glistening stone~
+Short a glistening stone~
+Desc A glistening stone floats here.~
+Level 1
+ItemType gem~
+Cost 99
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    magic nodegrade burnproof~
+Wear     take float~
+Affect modifier -1 1 -1 hp 2 0
+End
+
+#33017
+Name empty potion bottle~
+Short an empty potion~
+Desc A potion bottle is here.~
+Level 1
+ItemType potion~
+Cost 70
+Asize 0
+Rsize 50
+Values 1 '' '' '' ''
+Weight 0
+Material clay~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#33018
+Name stone mortar~
+Short a stone mortar~
+Desc A stone mortar has been left here.~
+Level 1
+ItemType mortar~
+Cost 190
+Asize 0
+Rsize 50
+Values 5 0 0 100 0
+Weight 5
+Material stone~
+Extra    nodegrade~
+Wear     take hold~
+ClassAllowances druid ranger barbarian~
+End
+
+#33019
+Name bound parchment fresh water~
+Short a bound parchment~
+Desc A bound parchment is lying here.~
+Level 5
+ItemType scroll~
+Cost 222
+Asize 3
+Rsize 50
+Values 5 'fresh water' '' '' ''
+Weight 10
+Material paper~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#33020
+Name shimmering stone~
+Short a shimmering stone~
+Desc A shimmering stone floats here.~
+Level 1
+ItemType gem~
+Cost 99
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material stone~
+Extra    magic nodegrade burnproof~
+Wear     take float~
+Affect modifier -1 1 -1 hp 2 0
+End
+
+#33021
+Name tanned leather cloak~
+Short a tanned leather cloak~
+Desc A tanned leather cloak lies here.~
+Level 1
+ItemType armor~
+Cost 120
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#0
+
+
+
+#ROOMS
+#33000
+Name A Path Amongst the Trees~
+Desc There is a stillness to this path that is at once comforting and unsettling. 
+The thick trunks of the trees combined with the heavy undergrowth make it 
+difficult to see far in any direction off of the path. The path itself seems 
+well used, and is free of weeds and plants. The path splits into two seperate
+paths leading north and east. Both look equally well-trodden.
+~
+Sector forest~
+Exit north 30110
+Exit east 30117
+Exit southwest 33001
+End
+
+
+#33001
+Name A Path Amongst the Trees~
+Desc The trees surrounding this path grow strong and tall, their branches 
+reaching and meeting overhead. The foliage allows only a bit of light to 
+filter through, creating dancing shadows on the ground with each whisper of 
+the wind. It's strangely quiet, and though you can hear the occasional 
+rustle indicating the passage of a small animal, there are no sounds of 
+birds in the trees. The trail curves almost gently, extending to the south 
+and northeast. 
+~
+Sector forest~
+Exit south 33002
+Exit northeast 33000
+Exit northwest 42418
+End
+
+
+#33002
+Name A Small Clearing~
+Desc This small clearing is more the connection of several trails than a true 
+clearing. The ground has been worn  smooth with the passage of many feet. 
+The variety of trees bordering the clearing grow closely together preventing 
+you from seeing very far into the undergrowth. Five trails lead off from 
+this clearing, to the north, the northwest, the west, the southwest and the
+south. 
+~
+RoomFlags light~
+Sector forest~
+Exit north 33001
+Exit south 33004
+Exit west 33003
+Exit southwest 33005
+Exit northwest 33006
+End
+
+
+#33003
+Name Beside the Standing Stones~
+Desc The trees have been cleared from this area, or perhaps they never grew here. 
+Before you stand a series of large, stones arranged roughly in a circle. 
+Each stone is about twenty feet high, and five feet in depth. One cannot 
+help but wonder how these stones came to be here, or who created this place.
+~
+RoomFlags light~
+Sector forest~
+Exit east 33002
+Exit west 33009
+EFlags door nopass~
+End
+
+
+#33004
+Name Before a Small Cave~
+Desc The forest path has led to a small embankment, which banks a sparkling 
+brook. The trees are as thick here as elsewhere near by, growing so closely 
+together that you cannot see through them deeper than a few feet. In the 
+embankment itself, you notice a small opening in the earth supported by 
+roughly hewn timbers, the entrance to a cave. 
+~
+RoomFlags light~
+Sector forest~
+Exit north 33002
+Exit southwest 33007
+End
+
+
+#33005
+Name Before the Oak Tree~
+Desc The path ends abruptly at the base of a huge oak tree. Towering hundreds of 
+feet above your head, the tree's trunk is enormous and the bark is gnarled 
+and withered. Some sort of moss hangs from the branches brushing the ground 
+and creating a secluded area, free from prying eyes. Some crude steps lead
+up to a large hole in the tree. The hole is more than spacious enough to 
+climb inside.
+~
+RoomFlags light~
+Sector forest~
+Exit up 33008
+EFlags door nopass~
+Exit northeast 33002
+End
+
+
+#33006
+Name The Grove of Giving~
+Desc You find yourself in a small cultivated wood. The trees around you are in 
+excellent shape. Their leaves have a luscious green shine to them and none 
+of the firm branches seem out of place. One larger branch stands out and 
+crosses the lane that leads into this grove. It seems right here, as if the 
+tree it belongs too placed it there for some reason or for some purpose. 
+~
+RoomFlags light~
+Sector forest~
+Exit southeast 33002
+End
+
+
+#33007
+Name A Low-ceilinged Cave~
+Desc This cave, dug into the earth of the hillside, is roughly circular though it 
+doesn't seem that whoever created it gave a lot of thought to aesthetics. 
+The ceiling is low and torches that cast more smoke than light have been 
+attached to the walls. Through the dim light you can make out some broken 
+axes and swords, cast aside and left where they were dropped. 
+~
+RoomFlags indoors light~
+Sector cave~
+Exit northeast 33004
+End
+
+
+#33008
+Name Inside the Oak Tree~
+Desc This fairly large, circular room looks quite inhabited, despite it being the 
+inside of an oak tree. The walls, it's bark, are smooth and light brown in 
+colour and are riddled with roots and vein-like twigs growing up them. There 
+is no obvious source of light in here, but the walls just seem to glow 
+softly. The floor is like a chopped off tree and shows the circles of the 
+tree stump. Counting them would take years, yet a mere fraction of the time 
+this tree has stood here. 
+~
+RoomFlags indoors light~
+Sector inside~
+Exit down 33005
+EFlags door nopass~
+End
+
+
+#33009
+Name The Standing Stones~
+Desc Surrounded by towering stones, any sounds in this glade seem muted. The 
+stones themselves are arranged in a circle, thirteen of them in total. You 
+notice that three of them, the largest of the thirteen, are grouped closer 
+together at the western edge of the circle. How the stones were brought here 
+is unclear, but it is certain that this is no natural formation. 
+~
+RoomFlags light~
+Sector forest~
+Exit east 33003
+EFlags door nopass~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 33000 spec_cast_adept
+M 33009 spec_cast_druid
+M 33010 spec_cast_druid
+M 33011 spec_cast_druid
+M 33015 spec_cast_druid
+S
+
+
+
+#RESETS2
+O 0 33003 -1 33002
+O 0 33004 -1 33002
+M 0 33012 1 33003 1
+M 0 33004 1 33004 1
+M 0 33008 1 33005 1
+M 0 33000 1 33006 1
+G 0 33005 -1
+G 0 33013 -1
+G 0 33012 -1
+G 0 33011 -1
+G 0 33010 -1
+G 0 33009 -1
+G 0 33008 -1
+G 0 33007 -1
+G 0 33006 -1
+G 0 3055 -1
+G 0 3054 -1
+O 0 19 -1 33006
+M 0 33013 1 33007 1
+G 0 33014 -1
+G 0 33008 -1
+G 0 33015 -1
+M 0 33014 1 33008 1
+G 0 33020 -1
+G 0 33011 -1
+G 0 33021 -1
+M 0 33015 1 33009 1
+G 0 33016 -1
+G 0 33017 -1
+G 0 33018 -1
+G 0 33019 -1
+S
+
+
+
+#SHOPS
+#33000
+profit_buy 100
+close_hour 23
+END
+
+#33013
+buy_type poultice~
+profit_buy 130
+profit_sell 65
+close_hour 23
+END
+
+#33014
+buy_type herb~
+profit_buy 130
+profit_sell 65
+close_hour 23
+END
+
+#33015
+buy_type cauldron~
+buy_type herb~
+buy_type mortar~
+buy_type poultice~
+profit_buy 130
+profit_sell 65
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#33012
+disabled false
+END
+
+#33011
+disabled false
+END
+
+#33010
+disabled false
+END
+
+#33009
+disabled false
+END
+
+#33008
+title Block entrance into the guild `#`g[Druid Out]`^~
+code ** Druid (Out) guild guard 23-12-99 **
+** The basic check to see if they should be allowed in or not **
+ 
+lang human
+mob seeall
+ 
+if class $n druid
+ mob letpass
+else
+ if hastoken $n 5.33002
+  sayto $n Off with you![and casts a frightning stare]
+  pmote $n conjures up a whirling wind that sweeps @ into the clearing.
+  mob transfer $n 33002
+  mob echo The wind dies down again.
+  mob at $n mob echoaround $n $N is blown into the clearing by a whirlwind.
+ else
+  sayto $n You can not enter, you are not one with nature.
+  mob oload 33002 1 none
+  mob tgive 33002 $n
+ endif
+endif
+ 
+mob noseeall
+~
+disabled false
+END
+
+#33007
+title purge the unseen guard loader `#`g[Druid Out]`^~
+code ** Purge the unseen_loader mob so that it will load another guard on a repop **
+if mobhere 33012
+ mob vforce 33012 mob purge self
+endif
+~
+disabled false
+END
+
+#33006
+title load a defferent leveled guard `#`g[Druid Out]`^~
+code ** Load a different leveld guard mob to keep the morts guessing :) **
+if mobhere 33009 or 
+   mobhere 33010 or
+   mobhere 33011
+ ** Somehow the unseen has died without the guard dying. 
+ ** Strange but ehm, can't rule it out **
+ break
+else
+ if rand 33
+  ** The scrawny level 100 guard **
+  mob mload 33009
+ else
+  if rand 50
+  ** The medium level 110 guard **
+   mob mload 33010
+  else
+  ** The high mean ass level 120 guard **
+   mob mload 33011
+  endif
+ endif
+endif
+~
+disabled false
+END
+
+#33005
+title Block entrance into the guild `#`G[Ranger Out]`^~
+code ** Ranger (Out) guild guard 22-12-99 **
+** The basic check to see if they should be allowed in or not **
+ 
+lang human
+mob seeall
+ 
+if class $n ranger
+ mob letpass
+else
+ if hastoken $n 5.33001
+  sayto $n [from by the trees]You have violated our grounds often enough.
+  pmote $n steps out from amongst the trees and leads @ into the clearing.
+  mob transfer $n 33002
+  emote resumes her position secluded amongst the foliage.
+  mob at $n mob echoaround $n $N is lead into the clearing by $I.
+ else
+  sayto $n The oak will offer you no solace. Do not attempt to defile our grounds.
+  mob oload 33001 1 none
+  mob tgive 33001 $n
+ endif
+endif
+ 
+mob noseeall
+~
+disabled false
+END
+
+#33004
+title purge the unseen guard loader `@`G[Ranger Out]`^~
+code ** Purge the unseen_loader mob so that it will load another guard on a repop **
+if mobhere 33008
+ mob vforce 33008 mob purge self
+endif
+~
+disabled false
+END
+
+#33003
+title load a different leveled guard `#`G[Ranger Out]`^~
+code ** Load a different leveld guard mob to keep the morts guessing :) **
+if mobhere 33005 or 
+   mobhere 33006 or
+   mobhere 33007
+ ** Somehow the unseen has died without the guard dying. 
+ ** Strange but ehm, can't rule it out **
+ break
+else
+ if rand 33
+  ** The scrawny level 100 guard **
+  mob mload 33005
+ else
+  if rand 50
+  ** The medium level 110 guard **
+   mob mload 33006
+  else
+  ** The high mean ass level 120 guard **
+   mob mload 33007
+  endif
+ endif
+endif
+~
+disabled false
+END
+
+#33002
+title Block entrance into the guild `#`s[Barbarian Out]`^~
+code ** Barbarian (Out) guild guard 22-12-99 **
+** The basic check to see if they should be allowed in or not **
+ 
+lang human
+mob seeall
+ 
+if class $n barbarian
+ mob letpass
+else
+ if hastoken $n 5.33000
+  sayto $n [with a simple grin]Me seen ugly face too much.
+  mob echoat $n $I picks you up and throws you into the clearing.
+  mob echoaround $n $I picks $N up and throws $m into the clearing.
+  mob transfer $n 33002
+  mob at $n mob echoaround $N is thrown into the clearing by $I.
+  mob zecho A loud roar of laughter shatters the peacefull silence.
+ else
+  sayto $n You no go in there. You stay right here![and places his arms over each other]
+  mob oload 33000 1 none
+  mob tgive 33000 $n
+ endif
+endif
+ 
+mob noseeall
+~
+disabled false
+END
+
+#33001
+title purge the unseen guard loader `#`s [Barbarian Out]`^~
+code ** Purge the unseen_loader mob so that it will load another guard on a repop **
+if mobhere 33004
+ mob vforce 33004 mob purge self
+endif
+~
+disabled false
+END
+
+#33000
+title load a different leveled guard `#`s[Barbarian outlands]`^~
+code ** Load a different leveld guard mob to keep the morts guessing :) **
+if mobhere 33001 or 
+   mobhere 33002 or
+   mobhere 33003
+ ** Somehow the unseen has died without the guard dying. 
+ ** Strange but ehm, can't rule it out **
+ break
+else
+ if rand 33
+  ** The scrawny level 100 guard **
+  mob mload 33001
+ else
+  if rand 50
+  ** The medium level 110 guard **
+   mob mload 33002
+  else
+  ** The high mean ass level 120 guard **
+   mob mload 33003
+  endif
+ endif
+endif
+ 
+~
+disabled false
+END
+
+#0
+
+
+#$

@@ -1,0 +1,161 @@
+from a~
+to aya~
+END
+
+from al~
+to a~
+END
+
+from ay~
+to a~
+END
+
+from b~
+to bla~
+END
+
+from c~
+to c~
+END
+
+from ck~
+to c~
+END
+
+from d~
+to lom~
+END
+
+from dru~
+to d~
+END
+
+from e~
+to effe~
+END
+
+from f~
+to flem~
+END
+
+from g~
+to gel~
+END
+
+from gh~
+to g~
+END
+
+from h~
+to hen~
+END
+
+from i~
+to ilya~
+END
+
+from in~
+to i~
+END
+
+from j~
+to jenya~
+END
+
+from k~
+to c~
+END
+
+from l~
+to ille~
+END
+
+from m~
+to mol~
+END
+
+from mana~
+to mana~
+END
+
+from magic~
+to magic~
+END
+
+from n~
+to nel~
+END
+
+from no~
+to nadya~
+END
+
+from o~
+to olle~
+END
+
+from oh~
+to o~
+END
+
+from p~
+to p~
+END
+
+from q~
+to qua~
+END
+
+from r~
+to r~
+END
+
+from s~
+to sil~
+END
+
+from st~
+to s~
+END
+
+from sh~
+to s~
+END
+
+from t~
+to tl~
+END
+
+from u~
+to uva~
+END
+
+from un~
+to u~
+END
+
+from v~
+to vi~
+END
+
+from w~
+to vi~
+END
+
+from x~
+to x~
+END
+
+from y~
+to ye~
+END
+
+from yes~
+to enya~
+END
+
+from z~
+to z~
+END
+
+EOF~

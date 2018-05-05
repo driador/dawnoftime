@@ -1,0 +1,1277 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Brigand Camp~
+ShortName   Brigand Camp~
+Builders    None~
+Credits     Reave~
+VNUMs       21500 21549
+LRange      10 30
+Security    9
+Colour      G~
+colourcode  `
+MapScale    7
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#21500
+Name brigand guard~
+ShortD a brigand guard~
+LongD A brigand guard is here, doing the rounds.~
+Desc This wiry fellow is cloaked in dark clothing and seems to be human.  He 
+carries his weapon close to his side, with one hand absently holding the 
+handle.  He walks to and fro through the camp, keeping watch for anything 
+suspicious.  
+~
+Race human~
+Align -1 -2
+Level 24
+Hitroll 0
+HitDice 4d5+105
+ManaDice 4d5+105
+DamDice 2d10+6
+DamType punch
+AC -60 -60 -60 -54
+Wealth 0
+Act    npc no_tame stay_area~
+Off    dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#21501
+Name young brigand soldier~
+ShortD a young brigand soldier~
+LongD A young brigand soldier sits near the fire, cooking meat on a stick.~
+Desc This scruffy human is wrapped in a dark cloak.  He is sitting near the
+large campfire roasting some meat on a stick.  
+~
+Race human~
+Align 0 -2
+Level 11
+Hitroll 0
+HitDice 2d5+22
+ManaDice 3d5+60
+DamDice 1d10+2
+DamType punch
+AC 10 10 10 10
+Wealth 75
+Act    npc dont_wander no_tame stay_area~
+Off    parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#21502
+Name veteran brigand soldier~
+ShortD a veteran soldier~
+LongD A veteran brigand soldier is here, sharpening his weapon.~
+Desc This veteran brigand has many scars on his body, a tell-tale sign that he is 
+an experienced soldier, having fought many battles.  His face is somewhat 
+grim, with a furrowed brow.  
+~
+Race human~
+Align -1 -2
+Level 17
+Hitroll 0
+HitDice 3d5+72
+ManaDice 3d5+70
+DamDice 3d4+4
+DamType punch
+AC -30 -30 -30 -24
+Wealth 110
+Act    npc dont_wander no_tame stay_area~
+Off    dodge parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#21503
+Name brown horse~
+ShortD a horse~
+LongD A brown horse is eating from a bucket here.~
+Desc A plain old brown horse.  It is eating from a bucket or oats.
+~
+Race horse~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+3
+DamDice 1d6+0
+DamType chomp
+AC 70 70 70 80
+Wealth 0
+Act    npc dont_wander docile stay_area~
+Off    fast kick~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material flesh
+END
+
+#21504
+Name brigand archer~
+ShortD a brigand archer~
+LongD A brigand archer is here, practicing his skills.~
+Desc This tall wiry human is dressed in dark clothes and is holding a bow.  He
+is here plunking arrows at some straw dummy targets.  
+~
+Race human~
+Align 0 -2
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+85
+DamDice 2d8+5
+DamType punch
+AC -40 -40 -40 -34
+Wealth 101
+Act    npc dont_wander no_tame stay_area~
+Off    dodge fast~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#21505
+Name brigand leader~
+ShortD the brigand leader~
+LongD The leader of the brigands is here, scowling at your presence.~
+Desc This powerful looking human is very well built and in great shape, and
+unlike most of the other brigands this one has a look of intelligence in his
+eyes.  He is wearing drab clothing the color of the forest.  
+~
+Race human~
+Align 0 -2
+Level 30
+Hitroll 1
+HitDice 5d6+150
+ManaDice 5d6+150
+DamDice 4d6+9
+DamType punch
+AC -100 -100 -100 -80
+Wealth 150
+Act    npc dont_wander no_tame stay_area warrior~
+Off    dodge parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#21506
+Name brigand cook~
+ShortD the brigand cook~
+LongD The brigand cook is here, stirring a pot of stew.~
+Desc This human has a face smeared with grease.  His hair is stringy and dangles 
+over his eyes.  He is cooking up a stew in a large pot.  
+~
+Race human~
+Align -2 -2
+Level 13
+Hitroll 0
+HitDice 2d5+50
+ManaDice 2d5+50
+DamDice 2d5+3
+DamType punch
+AC -10 -10 -10 -8
+Wealth 75
+Act    npc dont_wander no_tame stay_area~
+Off    dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#21507
+Name brigand officer~
+ShortD a brigand officer~
+LongD A brigand officer is here, looking important.~
+Desc This tall officer walks and talks with a slight air of arrogance.  His hair 
+is cut close to his head, and his face is clean-shaven.  
+~
+Race human~
+Align -1 -2
+Level 27
+Hitroll 0
+HitDice 4d5+120
+ManaDice 4d5+120
+DamDice 5d4+7
+DamType punch
+AC -80 -80 -80 -68
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Off    dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#21500
+Name camoflauged cloak~
+Short a `#`yc`ga`ym`gou`yf`gl`yage`gd`^ cloak~
+Desc A `#`yc`ga`ym`gou`yf`gl`yage`gd`^ cloak has been left here.~
+Level 24
+ItemType armor~
+Cost 158
+Asize 0
+Rsize 50
+Values 6 6 6 4 0
+Weight 14
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+Affect modifier -1 24 -1 hp 2 0
+Affect modifier -1 24 -1 hitroll 2 0
+ExtraDesc camoflauge cloak~
+This cloak is colored green and black, to help the wearer blend into the
+terrain.  
+~
+End
+
+#21501
+Name wicked little shortsword sword~
+Short a wicked little shortsword~
+Desc A wicked little shortsword has been left here.~
+Level 24
+ItemType weapon~
+Cost 155
+Asize 0
+Rsize 50
+Values sword 4 6 slash 0
+Weight 19
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 24 -1 hp 2 0
+ExtraDesc wicked little shortsword~
+This nasty little sword is fairly sharp, and in the right hands could be
+quite deadly.  
+~
+End
+
+#21502
+Name suit padded armor~
+Short a suit of padded armor~
+Desc A suit of padded armor has been left here.~
+Level 11
+ItemType armor~
+Cost 257
+Asize 0
+Rsize 50
+Values 4 4 5 3 0
+Weight 6
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher~
+Affect modifier -1 11 -1 strength 2 0
+Affect modifier -1 11 -1 presence -1 0
+ExtraDesc padded armour suit~
+This armour isn't really much more than heavily padded clothing.  Most
+leather armour would probably be better.  
+~
+End
+
+#21503
+Name sharp stick~
+Short a sharp stick~
+Desc A sharp stick has been left here.~
+Level 11
+ItemType weapon~
+Cost 21
+Asize 0
+Rsize 50
+Values staff 4 3 thrust 0
+Weight 3
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher~
+ExtraDesc sharp stick~
+This sturdy stick has been sharpened to a point at one end, and blackened
+by fire.  
+~
+End
+
+#21504
+Name thin copper ring~
+Short a thin `#`ycopper`^ ring~
+Desc A thin `#`ycopper`^ ring is lying here.~
+Level 11
+ItemType jewelry~
+Cost 289
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material copper~
+Extra    magic nodegrade burnproof~
+Wear     take finger~
+Affect modifier -1 11 -1 hp 2 0
+ExtraDesc thin copper ring~
+This old ring is thin and made of copper.  
+~
+End
+
+#21505
+Name bone-hilted dagger~
+Short a `#`Wbone-hilted`^ dagger~
+Desc A `#`Wbone-hilted`^ dagger has been left here.~
+Level 17
+ItemType weapon~
+Cost 384
+Asize 0
+Rsize 50
+Values dagger 2 7 pierce 0
+Weight 0
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 17 -1 hitroll 1 0
+ExtraDesc bone-hilted dagger~
+This sharp steel dagger has a hilt made of bone.
+~
+End
+
+#21506
+Name old leather armor~
+Short some old leather armor~
+Desc Some old leather armor has been left here.~
+Level 17
+ItemType armor~
+Cost 380
+Asize 0
+Rsize 50
+Values 6 6 8 4 0
+Weight 0
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher~
+Affect modifier -1 17 -1 hp 2 0
+ExtraDesc old leather armour~
+This old suit of leather armour has seen better days, but is still
+serviceable.  
+~
+End
+
+#21507
+Name dim blue ball of light~
+Short a `#`cdim blue`^ ball of light~
+Desc A `#`cdim blue`^ ball of light floats here.~
+Level 10
+ItemType light~
+Cost 198
+Asize 0
+Rsize 50
+Values 0 0 100 0 0
+Weight 0
+Material glass~
+Extra    nonmetal nodegrade~
+Wear     take~
+Affect modifier -1 10 -1 mana 10 0
+End
+
+#21508
+Name leather saddle~
+Short a leather saddle~
+Desc A leather saddle has been left here.~
+Level 1
+ItemType clothing~
+Cost 42
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ExtraDesc leather saddle~
+.
+A plain leather saddle, for a horse.
+~
+End
+
+#21510
+Name old cooking apron~
+Short an old cooking apron~
+Desc An old cooking apron has been left here.~
+Level 1
+ItemType clothing~
+Cost 21
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#21511
+Name bone-hilted longsword sword~
+Short a `#`Wbone-hilted`^ longsword~
+Desc A `#`Wbone-hilted`^ longsword lies here.~
+Level 30
+ItemType weapon~
+Cost 602
+Asize 0
+Rsize 50
+Values sword 6 5 slash 0
+Weight 40
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc bone-hilted longsword sword~
+This longsword is very well made, and quite sharp.  The hilt is made of
+strong bone.  
+~
+End
+
+#21512
+Name thick leather leggings~
+Short some thick leather leggings~
+Desc Thick leather leggings are lying here.~
+Level 30
+ItemType armor~
+Cost 585
+Asize 0
+Rsize 50
+Values 7 8 8 6 0
+Weight 20
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher~
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 damroll 2 0
+ExtraDesc thick leather leggings~
+A pair of nice thick leather pants, very warm and protective.
+~
+End
+
+#21513
+Name thick leather belt~
+Short a thick leather belt~
+Desc A thick leather belt has been left here.~
+Level 30
+ItemType armor~
+Cost 550
+Asize 0
+Rsize 50
+Values 6 6 6 5 0
+Weight 10
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take waist~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian spellfilcher~
+Affect modifier -1 30 -1 hp 2 0
+Affect modifier -1 30 -1 ac 10 0
+Affect modifier -1 30 -1 intuition -1 0
+ExtraDesc thick leather belt~
+This sturdy and protective belt is made of thick leather.
+~
+End
+
+#21514
+Name shiny bracelet~
+Short a `#`Wshiny`^ bracelet~
+Desc A `#`Wshiny`^ bracelet has been left here.~
+Level 30
+ItemType jewelry~
+Cost 622
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material gemstone~
+Extra    nodegrade burnproof~
+Wear     take wrist~
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 hp 2 0
+ExtraDesc shiny bracelet~
+This bracelet is made of silver or some other shiny metal, and has a few
+gemstones set in it.  
+~
+End
+
+#21515
+Name black leather pants~
+Short a pair of `#`Sblack`^ leather pants~
+Desc A pair of `#`Sblack`^ leather pants have been left here.~
+Level 27
+ItemType armor~
+Cost 180
+Asize 0
+Rsize 50
+Values 2 2 3 1 0
+Weight 8
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+Affect modifier -1 27 -1 agility 1 0
+Affect modifier -1 27 -1 quickness 1 0
+ExtraDesc black leather pants~
+These black leather pants are dirty, but wel made and generally in good 
+condition.  
+~
+End
+
+#21516
+Name dirty black shirt~
+Short a dirty `#`Sblack`^ shirt~
+Desc A dirty `#`Sblack`^ shirt lies in a crumpled heap here.~
+Level 1
+ItemType clothing~
+Cost 18
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ExtraDesc dirty black shirt~
+This shirt is cotton, and black in color.  It is quite dirty.  
+~
+End
+
+#21517
+Name tiny emerald~
+Short a tiny `#`Gemerald`^~
+Desc A tiny `#`Gemerald`^ has been left here.~
+Level 27
+ItemType gem~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material emerald~
+Extra    nonmetal nodegrade burnproof~
+Wear     take float~
+Affect modifier -1 27 -1 mana 40 0
+ExtraDesc tiny emerald~
+A very small green gem.  Might be worth a bit at the jeweler's.
+~
+End
+
+#21518
+Name sturdy longbow~
+Short a sturdy longbow~
+Desc A sturdy longbow made of wood and horsehair.~
+Level 20
+ItemType weapon~
+Cost 200
+Asize 0
+Rsize 50
+Values exotic 2 12 pierce 0
+Weight 16
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc sturdy longbow~
+A nice wooden longbow with a strong string.
+~
+End
+
+#21519
+Name tattered cloak~
+Short a tattered cloak~
+Desc A tattered cloak has been left here.~
+Level 20
+ItemType armor~
+Cost 99
+Asize 0
+Rsize 50
+Values 5 5 5 4 0
+Weight 2
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc tattered cloak~
+An old black cloak, with some tears in the fabric.  It looks like it used to 
+be a very fine cloak.  
+~
+End
+
+#21520
+Name leather ankle wrap~
+Short a `#`yleather`^ ankle wrap~
+Desc A `#`yleather`^ ankle wrap lies here.~
+Level 30
+ItemType jewelry~
+Cost 145
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take ankle~
+Affect modifier -1 30 -1 quickness 1 0
+End
+
+#0
+
+
+
+#ROOMS
+#21500
+Name Dense Forest~
+Desc This part of the forest is quite dark and gloomy.  The growth is very
+thick, making travel in any direction difficult.  It is especially dense to
+the east because of some thorny thickets, but you might be able to squeeze
+between two of them.  In fact, it seems like there is a faint path in that
+direction.  
+~
+RoomFlags no_mob~
+Sector forest~
+ExtraDesc growth thicket thorny path~
+The growth is extremely thick.  A faint path does cut through it to the east though.
+~
+Exit east 21501
+Exit west 30508
+End
+
+
+#21501
+Name Path through Heavy Growth~
+Desc You are on a faint path running east and west through some heavy
+undergrowth.  Tall leafy trees block the sky, and thorny bushes surround
+you.  The smell of smoke is in the air.  
+~
+RoomFlags no_mob~
+Sector forest~
+ExtraDesc path undergrowth growth leafy trees thorny bushes~
+The forest and undergrowth are very thick around this faint path.
+~
+Exit east 21502
+Exit west 21500
+End
+
+
+#21502
+Name Path through Heavy Brush~
+Desc The path runs east and west through the heavy brush.  It seems to get
+thicker to the west, but opens into a clearing to the east.  You can see
+some dark tents in that direction, and the smell of smoke hangs in the air. 
+~
+Sector forest~
+ExtraDesc tents clearing dark~
+You can't get a good look from here.
+~
+ExtraDesc heavy brush path~
+The path runs east and west through heavy undergrowth.
+~
+Exit east 21503
+Exit west 21501
+End
+
+
+#21503
+Name A Wide Path through the Camp~
+Desc Along the path here someone has set up a place to leave horses.  There is a 
+wooden log to tether them to, and some buckets of grain and water.  The 
+brush is extremely thick, but you can see a clearing to the south where a 
+campfire is burning.  
+~
+Sector field~
+ExtraDesc faint path~
+The path leads west fromt he clearing.
+~
+ExtraDesc tent ~
+The tents are thick green material,a nd stand all around the edges of the
+clearing.  
+~
+ExtraDesc unique ~
+There is a place to tether horses to the north.
+~
+ExtraDesc wood cut~
+The firewood is stacked next tot he fire.
+~
+ExtraDesc pots ~
+The pots are full of water.
+~
+ExtraDesc campfire fire~
+The campfire is burning brightly.
+ 
+~
+ExtraDesc kegs sacks~
+The kegs and sacks are full of food and drink, probably stolen by the
+brigands.  
+~
+Exit east 21506
+Exit south 21509
+Exit west 21502
+End
+
+
+#21504
+Name Campfire amongst Several Tents~
+Desc This wide clearing in the midst of the forest has been made into an 
+encampment of sorts.  There is a large campfire with some pots hanging over 
+it in the center, and a pile of cut wood next to it.  Some large kegs and 
+piles of sacks sit nearby.  There are dark green tents all around.  
+~
+Sector field~
+Exit east 21515
+EFlags door closed~
+EKeywords flap~
+Exit south 21506
+Exit west 21516
+EFlags door closed~
+EKeywords flap~
+Exit northeast 21517
+EFlags door closed~
+EKeywords flap~
+Exit northwest 21518
+EFlags door closed~
+EKeywords flap~
+End
+
+
+#21505
+Name Inside a Small Tent~
+Desc You are inside a small dark green tent.  Two cots have been set up along
+the edge, and a few personal possessions lie about.  The exit is southeast. 
+~
+RoomFlags no_mob indoors imm_only~
+Sector inside~
+ExtraDesc cots ~
+Plain old cots.
+~
+ExtraDesc personal possessions~
+Just some old clothing mostly.
+~
+End
+
+
+#21506
+Name A Grassy Path through the Camp~
+Desc The path runs east and west through the brush which has been roughly cleared 
+to make a path.  You can see some dark tents to the north, and the smell of 
+smoke hangs in the air.  
+~
+Sector field~
+Exit north 21504
+Exit east 21519
+Exit west 21503
+End
+
+
+#21507
+Name Inside a Large Tent~
+Desc This large tent is mostly empty, except for some sleeping pallets scattered 
+about.  There is a barrel cut in half filled with clean water, and a few 
+empty crates.  The exit is through a flap to the southwest. 
+~
+RoomFlags indoors imm_only~
+Sector inside~
+ExtraDesc empty crates~
+Empty wooden crates.
+~
+ExtraDesc barrel water clean~
+A barrel cut in half, dilled with water.
+~
+End
+
+
+#21508
+Name Leader's Tent~
+Desc This tent is larger that it looked from the outside.  There is some nice
+furniture scattered about, including a bed, table, and chairs.  The exit is
+through a flap to the northwest.  
+~
+RoomFlags indoors imm_only~
+Sector inside~
+ExtraDesc furniture bed table chairs~
+The furniture is all nicely made from pine wood.
+~
+End
+
+
+#21509
+Name Campfire amongst Several Tents~
+Desc This wide clearing in the midst of the forest has been made into an 
+encampment of sorts.  There is a large campfire with some pots hanging over 
+it in the center, and a pile of cut wood next to it.  Some large kegs and 
+piles of sacks sit nearby.  There are dark green tents pitched all around 
+here.  
+~
+Sector field~
+Exit north 21503
+Exit east 21511
+EFlags door closed~
+EKeywords flap~
+Exit west 21512
+EFlags door closed~
+EKeywords flap~
+Exit southeast 21513
+EFlags door closed~
+EKeywords flap~
+Exit southwest 21514
+EFlags door closed~
+EKeywords flap~
+End
+
+
+#21510
+Name Storage Tent~
+Desc This tent is packed full of supplies and containers of various items.  It is 
+so full that it is difficult to even move around.  Crates of everything from 
+clothing to dried food are stacked about, along with some barrels of unknown 
+liquids.  The only exit is through a flap to the northeast.  
+~
+RoomFlags indoors imm_only~
+Sector inside~
+ExtraDesc barrels liquids~
+These barrels are full of water and wine, but are too heavy too be easily 
+moved.  
+~
+ExtraDesc crates clothing dried food~
+Lots of large crates are stacked here, filled with everythign from fine 
+clothing to dried foods.  Most bear the insignia of the city of Mekali.  
+~
+End
+
+
+#21511
+Name Inside a Brigand Archer's Tent~
+Desc In this tent there are some straw dummies that have been set up as targets.  
+They are humanoid shaped, and have a number of arrows stuck in them.  The 
+flap to the east opens up to a clearing surrounded by other green tents.  
+~
+Sector inside~
+Exit west 21509
+EFlags door closed~
+End
+
+
+#21512
+Name Inside a Brigand Archer's Tent~
+Desc In this tent there are some straw dummies that have been set up as targets.  
+They are humanoid shaped, and have a number of arrows stuck in them.  The 
+flap to the east opens up to a clearing surrounded by other green tents.  
+~
+Sector inside~
+Exit east 21509
+EFlags door closed~
+End
+
+
+#21513
+Name Inside a Soldier's Tent~
+Desc You are inside a small dark green tent.  Two cots have been set up along the 
+edge, and a few personal possessions lie about.  The exit is through a flap 
+to the northwest.  
+~
+Sector inside~
+Exit northwest 21509
+EFlags door closed~
+End
+
+
+#21514
+Name Inside a Soldier's Tent~
+Desc You are inside a small dark green tent.  Two cots have been set up along the 
+edge, and a few personal possessions lie about.  The exit is through a flap 
+to the northeast.  
+~
+Sector inside~
+Exit northeast 21509
+EFlags door closed~
+End
+
+
+#21515
+Name Inside the Cook's Tent~
+Desc This tent is packed full of supplies and containers of various items.  It is 
+so full that it is difficult to even move around.  Crates of everything from 
+clothing to dried food are stacked about, along with some barrels of unknown 
+liquids.  The only exit is through a flap to the west.  
+~
+Sector inside~
+Exit west 21504
+EFlags door closed~
+End
+
+
+#21516
+Name Inside a Brigand Archer's Tent~
+Desc In this tent there are some straw dummies that have been set up as targets.  
+They are humanoid shaped, and have a number of arrows stuck in them.  The 
+flap to the east opens up to a clearing surrounded by other green tents.  
+~
+Sector inside~
+Exit east 21504
+EFlags door closed~
+End
+
+
+#21517
+Name Inside a Soldier's Tent~
+Desc You are inside a small dark green tent.  Two cots have been set up along the 
+edge, and a few personal possessions lie about.  The exit is through a flap 
+to the southwest.  
+~
+Sector inside~
+Exit southwest 21504
+EFlags door closed~
+End
+
+
+#21518
+Name Inside a Soldier's Tent~
+Desc You are inside a small dark green tent.  Two cots have been set up along the 
+edge, and a few personal possessions lie about.  The exit is southeast.  
+~
+Sector inside~
+Exit southeast 21504
+EFlags door closed~
+End
+
+
+#21519
+Name A Well-Trodden Path~
+Desc The path runs east and west through the brush which has been roughly cleared 
+to make a path.  The grass is almost flat, its been trodden over so much.  
+You can see some dark tents off the path to the north and south, and the 
+smell of smoke hangs in the air.  
+~
+Sector field~
+Exit east 21521
+Exit west 21506
+End
+
+
+#21520
+Name Campfire Amongst Several Tents~
+Desc This wide clearing in the midst of the forest has been made into an 
+encampment of sorts.  There is a large campfire with some pots hanging over 
+it in the center, and a pile of cut wood next to it.  Some large kegs and 
+piles of sacks sit nearby.  There are dark green tents all around.  
+~
+Sector field~
+Exit north 21521
+Exit east 21522
+EFlags door closed~
+EKeywords flap~
+Exit west 21523
+EFlags door closed~
+EKeywords flap~
+Exit southeast 21524
+EFlags door closed~
+EKeywords flap~
+Exit southwest 21525
+EFlags door closed~
+EKeywords flap~
+End
+
+
+#21521
+Name A Path through the Camp~
+Desc Along the path here someone has set up a place to leave horses.  There is a 
+wooden log to tether them to, and some buckets of grain and water.  The 
+brush is extremely thick, but you can see a clearing to the south where a 
+campfire is burning.  
+~
+Sector field~
+Exit east 21526
+Exit south 21520
+Exit west 21519
+End
+
+
+#21522
+Name Inside an Officer's Tent~
+Desc This large tent is mostly empty, except for some sleeping pallets scattered 
+about.  There is a barrel cut in half filled with clean water, and a few 
+empty crates.  The exit is through a flap to the west.  
+~
+Sector inside~
+Exit west 21520
+EFlags door closed~
+End
+
+
+#21523
+Name Inside an Officer's Tent~
+Desc This large tent is mostly empty, except for some sleeping pallets scattered 
+about.  There is a barrel cut in half filled with clean water, and a few 
+empty crates.  The exit is through a flap to the east.  
+~
+Sector inside~
+Exit east 21520
+EFlags door closed~
+End
+
+
+#21524
+Name Inside an Officer's Tent~
+Desc This large tent is mostly empty, except for some sleeping pallets scattered 
+about.  There is a barrel cut in half filled with clean water, and a few 
+empty crates.  The exit is through a flap to the northwest.  
+~
+Sector inside~
+Exit northwest 21520
+EFlags door closed~
+End
+
+
+#21525
+Name Inside an Officer's Tent~
+Desc This large tent is mostly empty, except for some sleeping pallets scattered 
+about.  There is a barrel cut in half filled with clean water, and a few 
+empty crates.  The exit is through a flap to the northeast.  
+~
+Sector inside~
+Exit northeast 21520
+EFlags door closed~
+End
+
+
+#21526
+Name A Trodden Path~
+Desc The path runs east and west through the brush which has been roughly cleared 
+to make a path.  You can see some dark tents to the south, and a larger tent 
+in the distant north and the smell of smoke hangs in the air.  
+~
+Sector field~
+Exit east 21527
+Exit west 21521
+End
+
+
+#21527
+Name A Path through the Brush~
+Desc The path has been cleared turning to the north, where you can see a large 
+tent has been pitched.  Further along to the west, you see other small 
+encampments of tents, blending into the greens of the surrounding brush.  
+~
+Sector field~
+Exit north 21528
+Exit west 21526
+End
+
+
+#21528
+Name Before a Large Tent~
+Desc The path here leads up to a large tent with a closed flap.  A few guards 
+wander about protectively, keeping watch.  The brush on either side of the 
+path is dense, and cutting a path through it seems a little impossible.  
+~
+Sector field~
+Exit north 21529
+EFlags door closed~
+EKeywords flap~
+Exit south 21527
+End
+
+
+#21529
+Name Inside the Brigand Leader's Tent~
+Desc This tent is larger that it looked from the outside.  There is some nice 
+furniture scattered about, including a bed, table, and chairs.  The exit is 
+through a flap to the south.  
+~
+Sector inside~
+Exit south 21528
+EFlags door closed~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 19 -1 21504
+M 0 21501 10 21504 3
+E 0 21504 -1 rfinger~
+E 0 21503 -1 wielded~
+E 0 21502 -1 torso~
+M 0 21501 10 21504 3
+E 0 21503 -1 wielded~
+E 0 21502 -1 torso~
+M 0 21501 10 21504 3
+E 0 21502 -1 torso~
+O 0 19 -1 21509
+M 0 21501 10 21509 2
+E 0 21504 -1 rfinger~
+E 0 21503 -1 wielded~
+E 0 21502 -1 torso~
+M 0 21501 10 21509 2
+E 0 21503 -1 wielded~
+E 0 21502 -1 torso~
+M 0 21504 10 21511 2
+E 0 21519 -1 about~
+E 0 21518 -1 wielded~
+M 0 21504 10 21512 2
+E 0 21519 -1 about~
+E 0 21518 -1 wielded~
+M 0 21504 10 21512 2
+E 0 21519 -1 about~
+E 0 21518 -1 wielded~
+M 0 21502 10 21513 2
+E 0 21505 -1 wielded~
+E 0 21506 -1 torso~
+E 0 21507 -1 light~
+M 0 21502 10 21513 2
+E 0 21505 -1 wielded~
+E 0 21506 -1 torso~
+E 0 21507 -1 light~
+M 0 21502 10 21514 1
+E 0 21505 -1 wielded~
+E 0 21506 -1 torso~
+E 0 21507 -1 light~
+M 0 21506 1 21515 1
+E 0 21510 -1 about~
+M 0 21504 10 21516 2
+E 0 21518 -1 wielded~
+E 0 21519 -1 about~
+M 0 21504 10 21516 2
+E 0 21519 -1 about~
+E 0 21518 -1 wielded~
+M 0 21502 10 21517 1
+E 0 21505 -1 wielded~
+E 0 21506 -1 torso~
+E 0 21507 -1 light~
+M 0 21502 10 21518 3
+E 0 21506 -1 torso~
+E 0 21507 -1 light~
+E 0 21505 -1 wielded~
+M 0 21502 10 21518 3
+E 0 21505 -1 wielded~
+E 0 21506 -1 torso~
+E 0 21507 -1 light~
+M 0 21502 10 21518 3
+E 0 21507 -1 light~
+E 0 21506 -1 torso~
+E 0 21505 -1 wielded~
+M 0 21500 10 21519 2
+E 0 21500 -1 about~
+E 0 21501 -1 wielded~
+M 0 21500 10 21519 2
+E 0 21500 -1 about~
+E 0 21501 -1 wielded~
+O 0 19 -1 21520
+M 0 21501 10 21520 2
+E 0 21504 -1 rfinger~
+E 0 21503 -1 wielded~
+E 0 21502 -1 torso~
+M 0 21501 10 21520 2
+E 0 21503 -1 wielded~
+E 0 21502 -1 torso~
+M 0 21503 10 21521 2
+E 0 21508 -1 torso~
+M 0 21503 10 21521 2
+E 0 21508 -1 torso~
+M 0 21507 10 21522 1
+G 0 21517 -1
+E 0 21516 -1 torso~
+E 0 21515 -1 legs~
+M 0 21507 10 21523 2
+G 0 21517 -1
+E 0 21516 -1 torso~
+E 0 21515 -1 legs~
+M 0 21507 10 21523 2
+E 0 21516 -1 torso~
+E 0 21515 -1 legs~
+G 0 21517 -1
+M 0 21507 10 21524 1
+E 0 21515 -1 legs~
+G 0 21517 -1
+E 0 21516 -1 torso~
+M 0 21507 10 21525 1
+E 0 21516 -1 torso~
+G 0 21517 -1
+E 0 21515 -1 legs~
+M 0 21500 10 21526 2
+E 0 21500 -1 about~
+E 0 21501 -1 wielded~
+M 0 21500 10 21526 2
+E 0 21501 -1 wielded~
+E 0 21500 -1 about~
+M 0 21500 10 21527 2
+E 0 21500 -1 about~
+E 0 21501 -1 wielded~
+M 0 21500 10 21527 2
+E 0 21501 -1 wielded~
+E 0 21500 -1 about~
+M 0 21505 1 21529 1
+E 0 21514 -1 rwrist~
+E 0 21513 -1 waist~
+E 0 21512 -1 legs~
+E 0 21511 -1 wielded~
+E 0 21520 -1 lankle~
+M 0 21503 10 21503 2
+E 0 21508 -1 torso~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

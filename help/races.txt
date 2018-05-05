@@ -1,0 +1,1379 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword RACE-OVERVIEWS RACIAL-OVERVIEW~
+category race~
+see_also RACE-APPLY CLASS~
+text -------------------------------------------------------------------
+-  [Race    ][CP] [Description                                  ] -
+-------------------------------------------------------------------
+-  Avian      25  Good clerics, mages and druids.                 -
+-  Draconian  25  Good warriors and thieves.                      -
+-  Drow       21  Good mages and spellfilchers.                   -
+-  Dwarf       8  Good warriors, clerics, paladins, and rangers.  -
+-  Elf         5  Good mages, thieves, and spellfilchers.         -
+-  Gnoll      16  Good warriors and barbarians.                   -
+-  Gnome       5  Good mages, clerics, and druids.                -
+-  Half-Elf    4  Good mages, thieves, and spellfilchers.         -
+-  Half-Orc    6  Good warriors and barbarians.                   -
+-  Halfling    8  Good mages, thieves, and spellfilchers.         -
+-  Human       0  Jack of all trades.                             -
+-  Orc         8  Good warriors and barbarians                    -
+-  Kobold     10  Good thieves and warriors                       -
+-  Duergar    10  Good mages and thieves                          -  
+-  Mrem       12  Good rangers and druids                         -
+-  Lizardman  15  Good warriors and barbarians                    -
+-  Voadkyn    12  Good rangers and paladins                       -
+-  Alaghi     10  Good rangers and barbarians                     -
+-  Minotaur   20  Good barbarians and warriors                    -
+-  Goblin     10  Good thieves, warriors and barbarians           -
+-  Troll      18  Good barbarians, rangers                        -
+-  Faerie     22  Good mages, druids and clerics                  -
+-------------------------------------------------------------------
+Different races have different starting statistics, and also different
+stat maximums.  For more information, see the help files for each race
+(i.e. 'help race-dwarf')
+~
+END
+
+keyword RACIAL-SKILLS~
+category undefined~
+text `=?
+-------------------------------------------------------------------
+-  [Race    ]     [Race skills                                  ] -
+-------------------------------------------------------------------
+-  Avian                                                          -
+-  Draconian       claw, `Y*`=?tail                                    -
+-  Drow                                                           -
+-  Dwarf           `Y*`=?appraise                                      -
+-  Elf                                                            -
+-  Gnoll                                                          -
+-  Gnome           `Y*`=?cobble                                        -
+-  Half-Elf                                                       -
+-  Half-Orc                                                       -
+-  Halfling                                                       -
+-  Human                                                          -
+-  Orc                                                            -
+-  Kobold          gouge                                          -
+-  Duergar         `Y*`=?appraise                                      -  
+-  Mrem            claw                                           -  
+-  Lizardman       claw                                           -  
+-  Voadkyn                                                        -  
+-  Alaghi                                                         -  
+-  Minotaur        gore                                           -  
+-  Goblin                                                         -  
+-  Dragon-kin      claw, `Y*`=?tail                                    -
+-  Faerie          vanish                                         -
+-------------------------------------------------------------------
+`Y*`=? = Marked racial skills are not implemented yet.
+ 
+`CSEE: RACE-OVERVIEW RACE
+~
+END
+
+keyword DRAGON-KIND DRAGON-KIN DRAGONS~
+category undefined~
+see_also DRAGON-MYTHS LANGUAGES BREATH-WEAPONS~
+text Of all the races, none are as powerful or as awe inspiring as the 
+dragon-kin. Some say that the dragon-kin are as old as time itself, 
+certainly there were dragons around to be recorded in the first 
+histories of mortal-kind.
+
+Dragons are reptilian in looks, but that is about all they share with 
+those dim-witted animals. Dragons are huge, often as big as a house, 
+graced with the strength and power to match. A dragon is capable of 
+vanquishing a small army by itself. Covered in scales which will 
+deflect all but the most powerful blows, resistant to the elements, 
+most dragons have little to fear physically. 
+
+Mentally dragons do not suffer either. Dragons are gifted with an 
+intellect to match their size (awe-inspiring considering their size). 
+This intellect also extends to the magus-realms, where dragons are 
+often the most powerful spell-casters to be found in time.
+
+One of the reasons for their power is the age of dragon-kin. Dragons 
+are the oldest living race, with some dragons reaching ages in excess of 
+millennia. A dragon has centuries in which to become proficient in their 
+chosen arts, time which is often not granted to other "mortal" races.
+Unfortunately, the immense age of dragons also means that they 
+reproduce slowly. Thus dragons are the least common of the races, and 
+this coupled with their solitary nature means rarely will they be seen, 
+and more rarely will they be friendly.
+
+One last item concerning dragons are their breath weapons. Without 
+doubt this is one of the more deadly forces on the planes. Most dragons 
+can breathe a concentrated form of a particular element. This could be 
+a cone of frost, or fire or lightning, or even poisonous gas.
+
+~
+END
+
+keyword KOBOLDS-GENERAL KOBOLD-GENERAL~
+category undefined~
+see_also LANGUAGES~
+text Kobold's are small, barely three feet tall, every inch packed with diabolical 
+cunning.  Their skin is a tough, horny substance that covers their body like 
+scaled armour and can deflect all but the most direct hits from blades and 
+arrows.  The digits of their feet and hands end in sharp claws that can 
+sometimes inflict infection and disease by the merest contact.
+ 
+Their heads are ugly, bare skulls ridged with a hard, horny crest, and bestial 
+snouts whose mouths are filled with jagged teeth.  Their presence above ground 
+is unusual.  Kobold's are subterranean creatures most often found in dank dark 
+places like caves or overgrown swamps.
+ 
+The pupil of the kobold eye is similar to that of a cat and open in darkness 
+to utilize whatever light is available.  Kobold night vision is exceptional, 
+as it must be for the dark underground environs they normally inhabitate. They 
+have a developed sense of heat, as well.
+ 
+Rumors have it that kobold women have in the past "placed prisoners in cages 
+using and abusing them sexually until they begged for death."  Kobold's are 
+inherently evil.  A kobold of good intentions is as likely as a kobold with an 
+affinity to magic.  Troubled minds and restless thoughts make kobolds 
+excellent thieves, sturdy warriors and capable barbarians.
+ 
+Kobolds speak with whining and excitable tones which are distinct to 
+themselves.  Kobolds do have their own language but most kobolds are 
+reasonable fluent in human as well, this is often because of their servantile 
+relationship to some powerful human masters.  Kobolds are scorned by most 
+races often to the point of being hunted for sport.  Kobolds generally keep to 
+their own, and are led easily.  It would not be entirely uncommon for kobolds 
+to accompany a more powerful individual of another race, on a caravan raid for 
+example.  Kobolds are most comfortable in groups and when alone are generally 
+afraid and cowardly.
+ 
+Kobolds are not a smart race, nor a strong one. They are slightly weaker and 
+sturdier than a human, but do not have their durability. Their constitution 
+makes them resistant to normal blows, and poison. Yet, that same nature, makes 
+them weak to magic.
+ 
+Kobold are skilled thieves, that lurk in the darkness, sneaking and hiding, 
+ready to steal from others. They are not a clean people, and use that as an 
+advantage. It is common that those who were scratched by a kobold die of some 
+weird sickness.
+ 
+`#`c<OOC>:`^ Kobolds should be played by experienced "mudders" and Roleplayers.
+Do not be offended if you are killed on sight when playing one.  
+ 
+~
+END
+
+keyword AVIANS-GENERAL AVIAN-GENERAL~
+category undefined~
+see_also AVIAN-MYTHS AVIAN-SOCIETY LANGUAGES~
+text This race of bird-like beings is noted for their superb mental abilities.
+Avians tend to find their lot in life to fall along the path of mages, 
+clerics and druids.  Aside from their affinity for magic, avians also 
+possess several extra abilities that set them apart from other races. 
+ 
+As their name would imply, all avians have a fully grown set of wings 
+that allow them to move across the land with little effort on their part.
+Avians have feathers covering their bodies, as well as a beak and tails. 
+In one thing, though, they differ from common birds. They have an extra 
+set of members, arms, with bird-like hands.
+ 
+Their ties to the divine have allowed them to see invisible beings as well. 
+In physical terms, avians are almost completely superior to humans. These 
+benefits come at a price however. Light boned avians tend to suffer greatly 
+in physical combat. Avians are not very sturdy, as such a well placed blow 
+with a blunt weapon is likely to kill most avians easily. 
+ 
+As a race, avians tend to form tight groups in their mountain aeries. They 
+often come down to meet and talk to other races in the attempt to broaden 
+their already impressive knowledge of the world around them. And to do 
+some business also. Avians are the main merchants of Mythrin. All commercial 
+treats of some importance have an avian signature also. 
+ 
+Avians speak in their own musical language that seems very confusing to those 
+that are not born to it. 
+ 
+They worship mainly Raven, the Goddess of Ressurection, who brought them 
+back from extinction, and turned them into a smarter race, not too ready to 
+trust others.
+ 
+~
+END
+
+keyword DRACONIANS-GENERAL DRACONIAN-GENERAL~
+category undefined~
+see_also DRACONIAN-MYTHS LANGUAGES~
+text Draconians are a race of dragon like people. Their myths tell of how a 
+dragon and a human fell in love, and were later destroyed. Draconians were 
+their children, and to this day they carry in their hearts the hatred that 
+was born from their parents slaughter. Thus they hold a grudge against all 
+other races. If you were to look directly at a Draconian, their eyes would 
+show pure hatred, and a want for war.
+
+Because they are like dragons, they do have wings, giving them the ability to 
+constantly fly. Also, because they are part dragon, they are naturally 
+resistant to all the elements... Fire, lightning (weather), cold, and acid. 
+Something else they have in common with dragons is their arrogance.
+
+They excel in fighting abilities, and are often very strong, although not very 
+agile. Because they are so close to dragons, they are feared almost as much as 
+dragons are. If you were to even think of engaging battle with a Draconian, 
+watch out... they have sharp claws and teeth, as well as a tail, and may end 
+up using them in combat. Not to mention their great endurance.
+
+Draconian society is very strict. They have a rigid social structure, women 
+have almost no rights, and children are kicked until they have proved 
+themselves out. Draconians never developed a language of their own, and speak 
+mainly 
+human.
+
+~
+END
+
+keyword DWARF-GENERAL DWARVES-GENERAL~
+category undefined~
+see_also DWARF-MYTHS LANGUAGES~
+text Dwarves are short, stocky fellows, easily identified by their size and shape.
+They average 4 to 4 1/2 feet tall. They have ruddy cheeks, dark eyes, and 
+dark hair. Dwarves tend to be dour and taciturn. They are given to hard work
+and care little for most humor. They are strong and brave. They enjoy beer,
+ale, mead, and even stronger drink. Their chief love, however, is precious
+metal, particularly gold. They prize gems, of course, especially diamonds
+and opaque gems (except pearls, which they do not like, perhaps because it
+reminds them of the water).
+
+Dwarves like the earth and dislike the sea. Not overly fond of elves, they 
+have a fierce hatred of orcs and goblins. They are ill-disposed toward magic 
+and have little talent for it, but revel in fighting, warcraft, and scientific 
+arts such as engineering. Though dwarves are suspicious and avaricious, their 
+courage and tenacity more than compensate for these shortcomings. Dwarves 
+typically dwell in hilly or mountainous regions. They prefer life in the 
+comforting gloom and solidness that is found underground.
+ 
+Dwarves are very resistant to poison and disease, but cannot swim, and so are 
+very vulnerable to drowning. Their warriors can go into such a rage when 
+fighting, that they ignore even deep wounds when in this berserk state. 
+Dwarves, due to their living in dark caves, can see as well in the dark as 
+in the light.
+ 
+Though not exactly charismatic or fast, dwarves have an endurance that makes 
+them some of the toughest people to defeat, be it by the weather, environment 
+harshness or a plain fight. It is this same endurance that makes them most 
+resistant to poisons and diseases.
+
+~
+END
+
+keyword ELF-GENERAL ELVES-GENERAL~
+category undefined~
+see_also ELF-MYTHS LANGUAGES~
+text Elves tend to be somewhat shorter and slimmer than normal humans.  Their 
+features are finely chiseled and delicate, and they speak in melodic tones. 
+Although they appear fragile and weak, as a race they are quick and
+intelligent, making them excellent mages, thieves, or spellfilchers. Elves 
+are not, though, a people who distinguishes themselves for their 
+self-discipline.
+
+Elves are often considered frivolous and aloof. In fact, they are not, 
+although humans often find their personalities impossible to fathom.  They 
+concern themselves with natural beauty, dancing and frolicking, playing and 
+singing, unless necessity dictates otherwise. They are not fond of water or 
+mines, but they enjoy growing things and gazing at the open sky. Even though 
+elves tend toward haughtiness and arrogance at times, they regard their 
+friends and associates as equals. They do not make friends easily, but a 
+friend (or enemy) is never forgotten. They prefer to distance themselves
+from humans, have little love for dwarves, and hate the evil denizens that
+would threaten their precious woods.  Their humor is clever, as are their 
+songs and poetry. Elves are brave but never foolhardy. They eat sparingly: 
+they drink mead and wine, but seldom to excess. While they find well wrought 
+jewelry a pleasure to behold, they are not overly interesting in money or 
+gain. They find magic and swordplay (or any refined combat art) fascinating. 
+If they have a weakness it lies in these interests.
+
+Elves resist charm spells most effectively, due to their magical nature. 
+However, they are burned by the touch of iron. Elves are notoriously hard 
+to spot, so elven warriors and thieves are specialists in the arts of 
+sneaking and hiding. They may see in the dark with infravision.
+
+Elves are one of the most ancient races of Mythrin. For some unexplained 
+reason, though, their early history, that before the Magi War, was lost and 
+forgotten. Few knowledge remains from that era, but it is known that once 
+elves and drows once formed one race only, and that a terrible war led to 
+their separation.
+
+The God of the elves, Lanthos, talks of glory and power to the one race who 
+will defeat all the others, and have the world for them alone. Thus, the 
+elves see themselves as a superior race, the chosen one to survive and rule 
+all the lands.
+
+
+~
+END
+
+keyword HUMAN-GENERAL HUMANS-GENERAL~
+category undefined~
+see_also HUMAN-MYTHS LANGUAGES~
+text Although humans are treated as a single race in Mythrin, there are a great 
+deal of varieties. A human can have whatever racial characteristics one 
+can imagine. Their skins range from pale white to dark black, and some have 
+reddish, yellowish skins, or of an olive color.
+
+Humans are more social and tolerant than most other races, accepting the 
+company of dwarves, elves, and the like with noticeably less complaining. 
+Because of these abilities and tendencies, humans have become significant 
+powers within the world and often rule empires that other races (because of 
+their racial tendencies) would find difficult to manage.
+
+Although humans have no special talents like the other races, they are more 
+versatile, being skilled in all activities. Humans are slightly agile and 
+strong, but nothing compared to the strength of orcs or the agility of 
+avians.
+
+~
+END
+
+keyword DROW-GENERAL DROWS-GENERAL~
+category undefined~
+see_also DROW-MYTHS LANGUAGES~
+text Drow are similar in physical build to elves, but of slightly shorter
+stature. Unlike land elves, Drow have black skin and red eyes,
+with hair color usually white or varying shades of grey. As drow are 
+a sub-terranian race, they posses infravision and have keen vision in 
+the dark. Unfortunately, both of these traits result in difficulty above
+ground in daytime.
+ 
+Drows are faster than humans, and have powerful mental abilities. They 
+lack strength, though, and even a full trained drow cannot take as many 
+blows as a human.
+ 
+Because of their magical origins, all Drow are resistant to most forms of
+magical attacks and can determine if an item is magical merely by looking
+at it. They are vulnerable to light however. Drow are reasonable warriors,
+but they more often tend to be dabblers in magic if they are not trained
+spellcasters... at least those encountered by other races tend to be. Due 
+to their living in the dark, they naturally develop skills in hiding and 
+sneaking.
+ 
+Drow society is primarily matriarchal, with the females heading each
+family and almost always trained as priests to some god. Themales are 
+typically trained as either warriors or thieves, but magical aptitude is 
+also relatively common among the males as well. Each house is headed by 
+the Matron Mother.
+ 
+When the time comes, the Drow feel that it is their duty to subjugate all 
+other races of the known world, to take their righteous place. The exception 
+is the elves, whom the Drow bear a mutual hatred for, and that will be 
+exterminated, instead of subjugated. This hatred stems from a war fought 
+against the elves roughly a thousand years ago, when the Drow were forced 
+from their old homes on the eastern side of the sea.
+ 
+Most Drow are relatively friendly with Avians and Dwarves, neutral towards 
+halflings, gnomes, and Humans. Orcs, Half-orcs, Gnolls, and Kobolds they 
+generally look upon with contempt. Elves and half-elves they despise 
+utterly ... those of elven descent are safe when a drow is around only if 
+they are substantially stronger - or if the Drow has a reason to let them 
+live.
+ 
+~
+END
+
+keyword HALFLING-GENERAL HALFLINGS-GENERAL~
+category undefined~
+see_also HALFLING-MYTHS LANGUAGES~
+text Halflings are short, generally plump people, very much like small 
+humans. Their faces are round and broad and often quite florid. Their 
+hair is typically curly and the tops of their feet are covered with 
+coarse hair. They prefer not to wear shoes whenever possible, their 
+feet having thick soles that offer protection enough.
+
+Halflings are sturdy and industrious, generally quiet and peaceful. 
+Overall they prefer the comforts of their homes to dangerous adventuring. 
+They enjoy good living, rough humor, and homespun stories. Halflings are 
+not forward, but they are observant and conversational if in friendly 
+company. Halflings see wealth only as a means of gaining creature 
+comforts, which they love. Though they are not overly brave or 
+ambitious, they are generally honest and hardworking when there is 
+need. Halloing homes are well furnished burrows, although most of their 
+work is done on the surface. Elves generally like them in a 
+patronizing sort of way. Dwarves cheerfully tolerate them, thinking 
+halflings somewhat soft and harmless. Gnomes, although they drink 
+more and eat less, like halflings best, feeling them kindred spirits. 
+Because halflings are more open and outgoing than any of these other 
+three, they get along with other races far better.
+
+Strength is not a halfling's pride, nor are their abilities with the arcane 
+arts. Their agility and stealth, though, compensate those flaws by far. 
+Halflings know how to use their natural nimbleness to their best interests, 
+and are very skilled in the arts of sneaking and hiding. The fact that 
+halflings have infrared vision only improves those skills. The very nature 
+of the halflings gives them resistance to poison, disease and magic.
+
+
+~
+END
+
+keyword HALF-ELF-GENERAL HALF-ELVES-GENERAL~
+category undefined~
+see_also HALF-ELF-MYTHS LANGUAGES~
+text Half elves are the most common mixed race beings. They are usually
+much like their elven parent in appearance. They are handsome folk, with the
+good features of each of their races. They mingle freely with either race,
+being only slightly taller than the average elf and weighing about 150 lbs.
+
+In some nations, half elves are viewed with suspicion and superstition. In 
+general, a half elf has curiosity, inventiveness and ambition of his human 
+ancestors and the refined senses, love of nature, and artistic tastes of his 
+elven ancestors. Half elves do not form communities themselves; rather, they 
+can be found living in both elven and human communities. The reactions of 
+humans and elves to half elves ranges from intrigued fascination to outright 
+bigotry. Having lived mostly among humans, half elves adopted the human 
+language as their own.
+
+Half elves do not have all the abilities of the elf, nor do they have the
+flexibility of the human. They are not quite as agile as true elves, but 
+they are built more solidly, and do not have the weakness of elves either. 
+Half elves inherited the enhanced vision of elves, that allows them to see 
+in the absence of light, and their resistance to charm. As a drawback, they 
+still have their elven ancestors' vulnerability to iron in general. Finally, 
+half elves have a special feature of their own, that being an incredible 
+resistance to poisons.
+
+ 
+~
+END
+
+keyword HALF-ORC-GENERAL HALF-ORCS-GENERAL~
+category undefined~
+see_also HALF-ORC-MYTHS LANGUAGES~
+text A cross breed of humans and orcs, these individuals are scorned by both
+halves of their parentage. Both races consider the other to be 
+undesirable, and the fact that they can exist in the same body is hardly
+accepted by either race. Because of this, half orcs tend to lead solitary
+lives, drifting from place to place, never staying put for too long.
+
+These half-breeds are a lot more similar to their orcs parents than to 
+humans. They have their backs slightly curved, sharp canines, and their 
+bodies are all covered with a dark colored fur, much similar to that of 
+orcs, though not as much thick. In some cases, it is only a very thin, 
+soft fur. Half-orcs inherited from humans more delicate features, and a 
+smaller height.
+
+Half-orcs have some of the advantages of either race. They are still
+stronger than humans, smarter than orcs, and have retained the dark vision
+of their orcish side. Also, they inherited the ability of the orcs to go into 
+a berserk rage, during fights, becoming fearsome foes. It will take several 
+blows to defeat a well trained half-orcs.
+
+
+~
+END
+
+keyword ORCS-GENERAL ORC-GENERAL~
+category undefined~
+see_also LANGUAGES HALF-ORC~
+text Orcs are humanoids, but they are higher than humans, their bones and 
+muscles stronger. Their hands and feet are larger, and they have their 
+backs slightly curved. It is not a hunchback, it is just an inclination 
+that makes the head stay a little ahead of the body. Their skin is thick 
+and dark, covered by a fur of a dark color, that can be red, brown, grey, 
+black or green, this last one being extremely rare. The orcs who are part 
+of the oldest clans, and live in cold places, have long fur. The orcs that 
+had contact with towns, and are part of the new clans have short fur or no 
+fur at all.
+ 
+The orcs face is somewhat similar to that of humans, but their maxilla is 
+larger and more prominent; their teeth are as sharp as a dog's, and they 
+have such large canines, that they can't close their mouths, plainly 
+showing those long, sharp canines. Orcs have a small and very rounded nose,
+and long, pointed ears, with thin skin. They don't have much fur on their 
+faces. Males can have some all around their faces, like a beard, but 
+females usually have only a soft hair. Most orcs have eyes with a reddish 
+color. Due to their infravision, orcs dislike bright lights, and prefer to 
+hunt in the dark night. 
+ 
+Granted legendary strength, these humanoids do very well for themselves as 
+warriors and barbarians. Their great constitution allows them to survive even 
+the toughest conditions, but they are also known for not being able to keep 
+their concentration for long on any kind of study and thus an orcish mage is 
+a very rare thing indeed.
+ 
+Orcs in general have a deep hatred, and fear, for magic and the unnatural, 
+and keep themselves as far as possible from those. When faced with such 
+hateful beings and powers, they can go into a berserk state, that turns 
+them into fearsome foes. All orcs are skilled with maces, that being their 
+primary weapon, and in the art of knocking an enemy down with a powerful 
+bash.
+ 
+Orcs live mostly everywhere, usually in harsh landscapes, but one of the 
+most common places to find them are caves and, due to long times living in 
+them, they can see perfectly well in the darkest tunnels with no extra 
+light needed.
+ 
+Orcs are tribal in nature, preferring to live in small groups rather than 
+alone. Their primary purpose on these realms is to destroy the weaklings 
+that hide from battle, be it in deep caves, dark forests, or behind 
+unnatural magic. Orcs are mortal enemies of dwarves, who they battle since 
+the beginning of times. 
+ 
+Orcs believe that Grummsh, their God, created them to battle and to conquer 
+the land from the weak. They have managed to form their own way of speaking, 
+and tend to keep to it, rather than learn other ways of communicating.
+ 
+ 
+~
+END
+
+keyword GNOLLS-GENERAL GNOLL-GENERAL~
+category undefined~
+see_also GNOLL-MYTHS LANGUAGES~
+text This race of northerners is clearly defined by their menacing appearance.  
+Bearing strong ties to canines, the gnoll are well known on battle fields. 
+Although their origins are lost in the sands of time, it is known that some 
+magical force was involved in the early days of the gnoll. Their northern 
+climate suits the cold resistant gnoll very well.  Thick pelts of fur help 
+to keep them warm in places no other race would think of living.
+
+Aside from that natural defense, gnolls are also known for their ability 
+to shrug off diseases that would cripple weaker beings.  As if this assortment 
+of physical prowess was not enough reason to leave a gnoll well enough alone, 
+they also are unthinkably tough.  Blows from blunt objects are no more than 
+minor annoyances to your average gnoll. On the other hand, gnolls don't have 
+much patience or talent to deal with magic or other mental abilities.
+
+Gnolls are practically born with fighting abilities. From early age, they 
+learn, by themselves, to handle spears and polearms, and to bash their enemies 
+to the ground. It is part of their way of fighting to go berserk.
+
+Because of their natural affinity to battle, most gnolls can be found inlisted 
+as mercenaries or conscripted as soldiers.  Gnoll speak their own harsh and 
+snarling language that in unmistakable for anything but gnoll-speak.  Gnolls 
+tend to stay among their own kind.  Whether or not this is due to their language 
+barriers, or that nobody else wants them near is unclear.
+
+~
+END
+
+keyword GNOME-GENERAL GNOMES-GENERAL~
+category undefined~
+see_also GNOME-MYTHS LANGUAGES~
+text `=?
+Kin to dwarves, gnomes are noticeably smaller than their distant cousins. 
+Gnomes, as they proudly maintain, are also less rotund than dwarves. Their 
+noses, however, are significantly larger. Most gnomes have a dark tan or 
+brown skin and white hair.
+
+Gnomes have lively and sly senses of humor, especially for practical jokes. 
+They have a great love of living things and finely wrought items, 
+particularly gems and jewelry. Gnomes love all sorts of precious stones and 
+are masters of gem polishing and cutting. They are also master tinkerers. 
+When one thinks of research and inventions, one thinks of gnomes. They are 
+always creating some new gizmo, which use remains a mystery to almost 
+everyone.
+
+Gnomes prefer to live in areas of rolling, rocky hills, well wooded and 
+uninhabited by humans. The diminutive stature has made them suspicious of 
+the larger races -- humans and elves -- although they are not hostile. 
+They are sly and furtive with those they do not know or trust, and somewhat 
+reserved even under the best of circumstances.  Dwelling mines and burrows, 
+they are sympathetic to dwarves, but find their cousins' aversion to surface 
+dwellers foolish. Gnomes speak their own language.
+
+This small race of tinkerers is very intelligent and wise, making them 
+excellent mages and clerics. Being weaker and less nimble than humans, 
+gnomes to not excel in fighting abilities.
+
+They worship two gods, Knor and Delhor, brother and sister out of a triplet 
+that created them.
+
+~
+END
+
+keyword DUERGARS-GENERAL DUERGAR-GENERAL~
+category undefined~
+see_also DUERGAR-MYTHS LANGUAGES~
+text `=?
+Duergar, otherwise known as dark dwarves or gray dwarves, are a malevolent
+breed that typically exist at extreme depths underground.  They appear to
+be emaciated, nasty-looking dwarves, with complexions ranging from medium
+to dark gray.  They prefer drab clothing designed to blend into their
+background.  Duergar sometimes wear jewelry, although such items are usually 
+dull.  Duergar society is very harsh, because of the hostile environment in
+which they are usually found.  They are more intelligent and dexterous than 
+their dwarven cousins, but usually physically weaker and less hardy.
+
+Duergar have infravision, from many years living in the dark, and are very
+resistant to poison, disease, and mental attacks.  Like their dwarven 
+counterparts however, they are very vulnerable to drowning, and dislike
+water very much.  In addition, because of their many years living in near
+complete darkness, Duergar are very vulnerable to light and attacks based
+on light.  In fact, like Drow, Duergar will even tend to recover from
+wounds and fatigue faster in darkness than in light.  Duergar are also
+well practiced in sneaking and hiding, and get these skills for free.
+
+Duergar are good at a wide variety of professions, but tend to be best
+as thieves, mages, spellfilchers, and even warriors in some cases.  They
+speak the same tongue as their dwarven relatives, but do not get along
+well with them at all, often attacking each other on sight.  Other races
+are not often friendly to them either, but that is alright with the 
+Duergar, who'd rather not deal with them whenever possible anyway.
+
+Duergar have a common past with dwarves, but none of the races like to talk 
+much about that.
+
+~
+END
+
+keyword MREM-GENERAL MREMS-GENERAL~
+category undefined~
+see_also MREM-MYTHS LANGUAGES~
+text This cat like race appeared after the great war. Their myths state that their 
+goddess, Anita, created them.
+ 
+What is certain though is they have height and stature similar to that of 
+humans.  However, all similarities end there.  All cat-like features are to be 
+found.  Mrem's native language is called mremish.
+ 
+Other unique features of Mrem are extended hair growth to the head area, much 
+like a mane found in some felines.  Whiskers on the upper lip with sharp eye 
+teeth protruding over their lower lips.  All over body hair provide protection 
+against the elements and their non-retractable claw like fingers protect 
+against enemies.  
+ 
+The Mrem have soft, long tails which are more often than not concealed under 
+clothing rather than left to hang free.  Pointy ears provide exceptional 
+hearing but also make them sensitive to loud noises.  Cat-like eyes provide 
+exceptional night vision and a sensitive nose provides for an enhanced sense 
+of smell.
+ 
+Mrem live in highly structured social environments.  Mrem prefer to not live 
+in open spaces but in lightly wooded forests, often making their homes within 
+the trees.  Mrem, being fond of communal living can also be found living quite 
+happily in human communities.
+ 
+Mrem spend much of the day sleeping because of their high metabolic rates, 
+this means they will tire quicker than most other races when actively doing 
+something.  Mrem are exceptionally fond of the night and can often be found 
+hunting individually at this time.  
+ 
+Mrem young are called kits, whom are taught from an early age to hate and fear 
+reptiles as all Mrem do.  Mrem rarely put faith in the gods and hence struggle 
+as Clerics and Paladins.
+ 
+Mrem are very agile creatures with lightning quick reflexes. They are also 
+slightly stronger, even if their constitution is not at tough as that of a 
+human, and they have good memory and reasoning.
+ 
+The woodland home of most Mrem and their enhanced senses provide an excellent 
+basis for a Mrem to become versed in woodlore.  As such Mrem make excellent 
+Rangers and Druids.  
+ 
+ 
+~
+END
+
+keyword LIZARDMAN-GENERAL LIZARDMEN-GENERAL~
+category undefined~
+see_also LANGUAGES~
+text `=?
+Lizard men are savage, semi-aquatic, reptilian humanoids that live through
+scavenging, raiding, and, in less hostile areas, by fishing and gathering. 
+Adult lizard men (and women) stand 6 to 7 feet tall, weighing 200 to 250
+pounds.  Skin tones range from dark green to gray  to brown, and their
+scales give them a flecked appearance.  Their tails average 3 to 4 feet
+long and are not prehensile.  Males are nearly impossible to tell from
+females without close inspection.  Lizard man garb typically consists of
+strings of bones and other barbaric ornaments.  They speak their own
+language, and very often gnoll as well.
+
+Lizard men usually have excellent strength, durability, and agility, thus
+make good fighters, thieves, barbarians, or even rangers.  Often lacking
+intelligence and rational thought patterns, lizard men make very poor
+magic-users, although rarely a shaman with clerical abilities may be found. 
+They are naturally resistant to both disease and bashing attacks.
+
+Lizard men are typically well-practiced with their weapon of choice, being 
+spear and sword weapons they learn to use the moment they have the strength 
+to hold one. Warfare is part of lizard men day-to-day life, and their 
+warrior skills are sharpened to the point any of them can use their weapons 
+to their limits.
+
+~
+END
+
+keyword VOADKYN-GENERAL VOADKYNS-GENERAL~
+category undefined~
+text Voadkyn are also known by more common name of wood giants. They are one of
+the smallest of the giant-kin races, vaguely resembling giant-sized wood
+elves. They stand about 9 1/2 feet tall and with approximately 700 pounds.
+They have the same physical proportions as humans, which gives them a
+thinner, lighter look then other giant-kin. Wood giants have no facial or
+body hair They have large heads as compared to their bodies, and their
+jaws, chins and mouths are especially prominent. Their ears are on a
+higher plane then human ears, resting almost completely above the line of
+the eyes.
+
+The skin of a wood giant can be any shade of brown mixed with yellow or
+green. They like to wear leather armor or ring mail, and they carry a
+special steel-tipped sheath for their sword which allows them to use it as
+a walking stick. They often disdain footwear, leaving their feet bare,
+though they do wrap their ankles in strips of leather. They dress in loose
+trousers or short kilts stained in forest colors, and always wear a
+leather forearm sheath to protect their bow arm.
+
+Wood giants usually live in the same forests favored by wood elves, whom 
+they are good friends with. In fact, the two races often co-exist. They 
+share a bond that goes back further than the oldest legends. They do not 
+make their own lairs, preferring to live under the stars or to share a wood 
+elf lair when shelter is needed. They do not have a language of their own, 
+sharing the elven language, as well.
+
+The bond between wood giants and wood elves extends to the other elven
+races. Wood giants tolerate the company of most elves. Usually, they do
+not mix with other intelligent creatures, except for the occasional
+treat.
+
+Voadkyn are flighty and frivolous by nature. They have a fondness for
+finely cut gems and well-crafted magical items. They also love to eat and
+drink wine, usually in large amounts.
+
+Wood giants give in to sudden whims and rarely take anything seriously.
+Those that decide to become adventurers are mostly in it for the fun they
+believe awaits them and for the treasures they believe they will earn.
+They are fun-loving beings. More serious companions consider them to be
+irrational, foolish, and even obnoxious. Still most believe wood giants to
+be friendly and enjoyable company.
+
+Wood giants love to eat, and they always have a sack of nuts and seeds
+from which to snack. When traveling with other adventurers, a wood giant
+can be heard munching on some plant by product almost constantly. They eat
+all kinds of vegetables and plants, including leaves and roots that other
+humanoid races find inedible. They do not eat meat.
+
+Voadkyns are known to be a lithe and intuitive people. Their strength is 
+also over the human average, but they aren't known as the most charismatic of 
+races. The living in the woods granted them the ability to sneak silently, and 
+natural to their race is the ability to sense the proximity of heat, even that 
+of living beings.
+
+`CSEE: VOADKYN-MYTHS VOADKYN-SOCIETY LANGUAGES
+~
+END
+
+keyword ALAGHI-GENERAL ALAGHIS-GENERAL~
+category undefined~
+see_also ALAGHI-MYTHS LANGUAGES~
+text The Alaghi are distant relatives to elhi, an extinct race of snow dwelling 
+animals. Alaghi are forest dwelling humanoids. They have barreled chests, 
+short necks, and wide flat heads. Their short legs are thick, their hands 
+and feet large, and their hair is thick: blond, reddish, brown, or charcoal 
+gray. They stand about 6 feet tall, weigh over 300 pounds and are very strong.
+
+Most Alaghi live as semi-nomadic hunter-gathers. Sedentary alaghi set
+up communities of crude huts or large cave complexes. Alaghi communities
+are generally mistrusted, though some neighbors will trade manufactured
+good for pelts, game and ore. The rarest alaghi are philosophical hermits.
+
+These forest dwellers tend to be shy and peaceful. The hermitic alaghi
+are curious and helpful to those in need. They love  riddles and games of
+strategy, often seeking competition from willing humans and demihumans. They 
+especially enjoy a good game of chess. And above all alaghi love hunting, for 
+the sport of it. They all know how to stealthily follow animals.
+
+Alaghis usually brawl to settle disputes, and they are skilled in placing 
+blows in the right places, causing more damage.
+
+Alaghi tend to fear things which appear to them as unnatural, including wizard 
+spells, undead creatures, and metal arms and armor. They worship the God of 
+Stability, Kerenos, who is said to have given them the gift of conscience.
+
+~
+END
+
+keyword MINOTAUR-GENERAL MINOTAURS-GENERAL~
+category undefined~
+see_also MINOTAUR-MYTHS LANGUAGES~
+text Most minotaurs are a cursed race, created by magic, to be used as slaves. They 
+have a deep hatred for all kinds of magic, and do not worship any god. 
+Minotaurs are a xenophobic race, and dislike all other races, preferring to 
+live their lives by their own, with few contact with others. Interestingly, 
+they lack a language of their own, and have adopted the human language.
+
+While many minotaurs are brutal, uncivilized savages, they are not mindless 
+killers. Most are ruthless, harsh, and stubborn, but some are thoughtful and 
+even sophisticated. A few are known for gentleness and kindness. And those are 
+the ones that do not share the xenophobia of their race.
+
+All of these minotaurs are ver muscular, broad and very tall (7 to 7 1/2 feet 
+tall). They have the head of a bull and the body of a human male. They usually 
+live in a very primitive fashion, in caves, forests, or ruins.
+
+Minotaurs venerate physical strength above all else. The strong, they
+believe, should naturally rule. Surrender is viewed as weakness, so
+minotaurs almost always fight (or argue) to the death. They are
+extremely cunning and have excellent senses. They will attack without fear 
+and retreat only if the opponent is obviously beyond their ability to
+defeat. Minotaurs seldom spend much time developing their mental abilities. 
+
+Suspicious of other people, as they are, they all study fighting skills to 
+defend themselves, like bashing the enemies, or dealing powerful blows. 
+Minotaurs also know how to use very well their horns on a fight. They have a 
+great durability and their magical nature gives them the abilities to see 
+heat sources, as well as those that are hiding around them.
+
+~
+END
+
+keyword GOBLIN-GENERAL GOBLINS-GENERAL~
+category undefined~
+see_also LANGUAGES~
+text Goblins are small humanoids, growing to a height of about four feet
+tall.  They have flat faces, broad noses, pointed ears, wide mouths, and
+small sharp fangs. Though they walk upright, their arms hang down to their
+knees.
+
+Their dull, glazed eyes range in color from bright red to gleaming
+yellow.  Their speech is harsh and of a higher pitch than humans. They 
+don't have a language of their own, but usually speak kobold and orc.
+
+These humanoids are general evil in nature, and often they are great
+cowards as well. They avoid direct confrontations whenever possible,
+preferring the safety of ambushes. They use simple, even crude,
+strategies and tactics. They do not believe in fair fights, for many-on-one 
+works much better than one-on-one to the goblin mindset.
+
+Goblins live in dark caves and dismal underground dwellings. They only
+come above ground at night or on dark, cloudy days. Goblins and their
+lairs carry a foul stench, due to their lack of sanitation. Their
+tribes share with large common area set aside for eating and sleeping.
+
+Treasure and property belongs to the entire tribe, though the chief and his
+subchiefs watch over it. Only their leaders have separate living areas.
+
+Each tribe has an exact pecking order, and every goblin knows his exact
+place in it. The way to move up the social ladder is through battle,
+and goblins constantly fight among themselves to improve their station in
+life.
+
+Tribes regularly take slaves for food and labor. They keep these slaves 
+constantly shackled and under guard.
+
+Females are not afforded the same rights as males in goblin society,
+and females never learn to fight. Their role is to service the males and
+care for the young.
+
+Goblins take great pleasure in killing. They do not eat much, but they
+eat almost anything. Rats, snakes, humans, and other humanoids make up the
+bulk of their diets. When food is scarce, they will even eat carrion.
+
+They hate most other humanoid races, especially gnomes and dwarves.
+
+Goblins are a sneaky race, lacking some smartness in their thinking, and are 
+specially vulnerable to magic. Their god, Zeok, the God of Seas, gave them 
+the mission of defeating all other races.
+ 
+~
+END
+
+keyword RACE-APPLY~
+category race~
+parent_help RACE-OVERVIEW~
+text To have a new race please send an email to `=_ADMIN with this info.
+ 
+ *  Race help file.  (see help `=_race-elf for example)
+ *  Race table information. (see help `=_race-table)
+ *  Race stat information. (see help `=_race-stat)
+ *  Race language. (see help `=_race-language)
+ 
+And any other relevant info.
+~
+END
+
+keyword RACE-LANGUAGE~
+level 92
+category undefined~
+text `=?
+Either use an existing language or create your own language
+
+Current languages: "human", "elven", "dwarven", "gnomish", "halfling", "orcish",
+"drow", "avian", "gnoll", "lizardman", "kobold".             
+
+Information needed.
+This is how human looks:
+
+/* human */ 
+   {
+     { " ", " " },
+     { "1", "1" }, { "2", "2" }, { "3", "3" }, { "4", "4" },
+     { "5", "5" }, { "6", "6" }, { "7", "7" }, { "8", "8" },
+     { "9", "9" }, { "0", "0" },
+     { ",", "," }, { ".", "." }, { "!", "!" }, { "'", "'" },
+     { "_", "_" }, { ";", ";" }, { ":", ":" }, { "=", "=" },
+     { "\"", "\"" }, { ")", ")" }, { "(", "(" },
+     { "*", "*" }, { "&", "&" }, { "^", "^" }, { "%", "%" },
+     { "$", "$" }, { "#", "#" }, { "<", "<" }, { ">", ">" },
+     { "-", "-" }, { "?", "?" }, { "@", "@" }, 
+     { "a", "a" }, { "b", "b" }, { "c", "q" }, { "d", "e" },
+     { "e", "z" }, { "f", "y" }, { "g", "o" }, { "h", "p" },
+     { "i", "u" }, { "j", "y" }, { "k", "t" }, { "l", "r" },
+     { "m", "w" }, { "n", "i" }, { "o", "a" }, { "p", "s" },
+     { "q", "d" }, { "r", "f" }, { "s", "g" }, { "t", "h" },
+     { "u", "j" }, { "v", "z" }, { "w", "x" }, { "x", "n" },
+     { "y", "l" }, { "z", "k" },
+     { "", "" }
+   },
+
+This is how another language might look:
+   {
+     { " ", " " },
+     { "1", "1" }, { "2", "2" }, { "3", "3" }, { "4", "4" },
+     { "5", "5" }, { "6", "6" }, { "7", "7" }, { "8", "8" },
+     { "9", "9" }, { "0", "0" },
+     { ",", "," }, { ".", "." }, { "!", "!" }, { "'", "'" },
+     { "_", "_" }, { ";", ";" }, { ":", ":" }, { "=", "=" },
+     { "\"", "\""}, { ")", ")" }, { "(", "(" },
+     { "*", "*" }, { "&", "&" }, { "^", "^" }, { "%", "%" },
+     { "$", "$" }, { "#", "#" }, { "<", "<" }, { ">", ">" },
+     { "-", "-" }, { "?", "?" }, { "@", "@" }, 
+     { "master", "mashter"   }, { "him", "im" },
+     { "yes", "yesh"         }, { "no", "niooo" },
+     { "mine", "mine"        }, { "magic", "magish" },
+     { "me", "mesh"          }, { "i", "ssh" },
+     { "kill", "canjshan"    }, { "murder", "canjshan" },
+     { "death", "canjshan"   }, { "slay", "canjshan" },
+     { "destroy", "canjshan" }, { "corpse", "canjshan sha" },
+     { "a", "aa" }, { "b", "m"}, { "c", "ch" }, { "d", "l" },
+     { "e", "ee" }, { "f", "y"}, { "g", "h" }, { "h", "p" },
+     { "i", "ii" }, { "j", "ff"}, { "k", "t" }, { "l", "r" },
+     { "m", "w" }, { "n", "k" }, { "o", "oo" }, { "p", "d" },
+     { "q", "d" }, { "r", "j" }, { "s", "ssh" }, { "t", "h" },
+     { "u", "uu" }, { "v", "" }, { "w", "whh" }, { "x", "" },
+     { "y", "p" }, { "z", "sshh" },
+     { "", "" }
+   }
+
+Basically just replace an actual word with how it will look to someone
+who isn't versed in the language.
+
+`CSEE: EMAIL ADMIN POLICY RACE
+~
+END
+
+keyword RACE-STAT~
+level 92
+category undefined~
+see_also EMAIL ADMIN POLICY RACE~
+text `=?
+Information you need.
+
+race name         (for example "kobold")
+short name        (for example "Duergar" can only be 6 digits long)
+points        (for example 10, meaning the race costs 10 creation points)
+class multipliers (for example 100 means they are good at a class 200 means they are bad)
+bonus skills      (for example kobold get `"sneak", "hide", "steal") for free)
+base stats        (for example orcs are strong ie + 20 to strength)
+size              (see builders docs for sizes)
+language          (see language-apply)
+recall_room       (depending on races basic alignment GOOD_RECAL_VNUM or EVIL_RECAL_VNUM)
+
+How I would like to see it.
+
+    {
+ /* "Name", "Sh_Name",  CP,  {MAG, CLE, THI, WAR, DRU, PAL, RAN, BAR, SPE}, */
+    "kobold", "Kobold", 10,  {250, 200, 100, 110, 200, 200, 200, 125, 200},
+    {"sneak", "hide", "steal", "human", "gouge" },
+ /* { ST   QU   PR   EM   IN   CO   AG   SD   ME   RE}, Size,               */   
+    {-10,   5,   0,   0,   0,   5,  10,   0,  -5,  -5}, SIZE_SMALL,
+ /* language  min_hp's  max_hp's  min_size  max_size                        */
+    "kobold",      12,      140,       30,       50,  ROOM_VNUM_EVIL_RECAL, N
+    },
+
+~
+END
+
+keyword RACE-TABLE~
+level 92
+category undefined~
+see_also EMAIL ADMIN POLICY RACE~
+text `=?
+Information you need and how I would like it set out.
+ 
+{
+      name_for_race,       TRUE,
+      action bits,
+      affected_by bits, 
+      offensive bits,
+      immunities,               
+      resistances,
+      vulnerabilities,
+      form flags,               
+      part flags 
+),
+
+See builders document for flags and bits.
+
+~
+END
+
+keyword BREATH-WEAPONS FIRE-BREATH FROST-BREATH GAS-BREATH LIGHTNING-BREATH ACID-BREATH~
+category undefined~
+text `=?
+Dragons are the most ancient of the races. Their powers are legendary 
+to all, not the least of which is their breath weapons. This is an 
+ability of which a dragon can breathe out a powerful concentration of a 
+particular element, often that most closely associated with their 
+nature.
+ 
+The different breathe weapons are flame, frost, acid, gas, and 
+lightning. And while a particular dragon will be most proficient in 
+that closest to his particular nature, he may still be able to use 
+multiple different breathe weapons.
+
+Each breathe weapon can be a power in its own. Acid's able to dissolve 
+armor, Flames which sublime diamonds, Lightning to paralyze a person 
+with its sheer energy, clouds of Poisons or Frost which can strike down 
+whole groups of foes at a time and sap their strength.
+~
+END
+
+keyword GOUGE~
+category undefined~
+see_also RACIAL-SKILLS KOBOLD~
+text `=?
+`=lSyntax:`=?
+    gouge <victim>
+
+Kobolds carry many diseases and germs under their sharp finger nails.
+Although this may seem a hindrance, it is often a kobolds first line 
+of attack, kobolds are well known to attempt to gouge opponents, a side
+effect of this is that the unlucky victim is poisoned.  Kobolds can
+continually gouge a victim even to the point of death, that is unless 
+you don't squash the little pest first.
+
+~
+END
+
+keyword CLAW~
+category undefined~
+see_also RACIAL-SKILLS DRAGON-KIN DRACONIAN-GENERAL MREM~
+text `=?
+`=lSyntax:`=?
+    claw <victim>
+
+Common attack of races endowed with claws.  A claw will cause great damage 
+to the unwary victim, often resulting in death from loss of blood.
+
+~
+END
+
+keyword TAIL~
+category undefined~
+see_also RACIAL-SKILLS DRAGON-KIN DRACONIAN~
+text `=?
+`=lSyntax:`=?
+    tail <victim>
+ 
+Common attack of races endowed with tails.  A tail will cause great harm
+to the unwary victim, often causing a victim to lose balance and fall as
+well as taking a nasty knock.
+ 
+~
+END
+
+keyword APPRAISE~
+category undefined~
+see_also RACIAL-SKILLS DWARF DUERGAR~
+text `=?
+`=lSyntax:`=?
+    Appraise <object>
+
+A skill inherent of dwarves and duergar, enabling them to value and assess an
+object at a glance.
+
+~
+END
+
+keyword COBBLE~
+category undefined~
+see_also RACIAL-SKILLS GNOME~
+text `=?
+`=lSyntax:`=?
+    cobble <object>
+
+Gnomes being a tinkering race, are able to naturally learn to fix and mend some
+items.  
+
+~
+END
+
+keyword HUMAN-SOCIETY~
+helpflags hide_keywords~
+category undefined~
+text The Humans Society.  `1`1 The humans of Mythrin live, mainly, on the continent of Endomar, on a 
+monogamist, patriarchal society.  To the man, is given the duties of earning a 
+living and taking care of the physical maintenance of the family's life, and 
+the woman has the duty of caring for their children and supporting her 
+husband whenever possible.  However, it is not uncommon to see women in 
+places of command, or a man caring for his children (usually in the event of 
+his wife's death).  `1 The human society is basically centered around self-supporting towns 
+governed by the few men who show leadership skills or a wide view of things. 
+ Humans believe in magic and are not surprised by it, in the general, but 
+are innately afraid and careful around a mage, even when he is a mage 
+himself.  It is not unusual to see some cities or castles governed by mages. 
+ `1 Their society is agrarian in nature and is basically centered around 
+practical creativity.  They do not invent many new tools or equipment (the 
+gnomes do it far better), but, rather, use the other's tools and equipment 
+to their own purposes.  This adaptation (or perversity, as some call it), is 
+a rather predominant characteristic of their society.  `1 They do have temples dedicated to their gods, and usually attend 
+ceremonies help in honor of one god or another.  They do not serve one of 
+their gods in specific, but, rather, believe and (at least in the outside) 
+follow every one in general (with the exception of paladins and clerics, who 
+dedicate their lives to serving one specific deity, without, however, 
+ignoring or leaving the others behind).  `1 Human society is quite deterministic in that there is little chance for 
+one to advance socially in life, without leaving his/her town and going 
+somewhere where he is mostly unknown.  Children are raised to follow their 
+father's steps and are expected to continue their profession, "As I served 
+this lord, and my father before me, and my grandfather before him, and my 
+great-grandfather before him, will you serve him as well" is a common enough 
+line to hear. 
+~
+END
+
+keyword HUMAN-PSYCHE HUMAN-PSICOLOGY~
+helpflags hide_keywords~
+category undefined~
+text For extensive information and formation on the human psyche, please, refer 
+to any book from the following authors: `1 `1 Sigmund Freud `1 Carl Jung `1 Adler `1 
+Lacan `1 `1 If you have any other psychiatrist and/or analyst you wish to see 
+added to this list, please, note rp about him.  
+~
+END
+
+keyword AVIAN-SOCIETY~
+category undefined~
+text Avians are basically a merchant race, and so, a great deed to an avian 
+usually involves some great commercial achievement. They are respected for 
+their administrative and economic discernment.
+   The most respected professions are those in the commerce. Nor 
+necessarily those that are worth a great deal of money. Amazingly, wealth 
+is not the most wanted goal among avians. To them, to be in a position 
+that allows them to enhance commerce, and wealth, for the race as a 
+whole, is much nobler. Those who, in a selfish way, pile up gold in 
+chests under their beds are hardly respected.
+   Avians work for avians. They care and look for each other, and seldom 
+worry about other races problems. Specially draconians, who, for an 
+unknown reason, are deeply hated.
+   Males and females share work, and there is no division of activities, 
+both can do all types of work. All children go to school, and usually 
+join their parents in their fields of activity afterwards. Due to this, 
+there isn't much change in the avian's society structure, for those 
+who achieve something are commonly those who were close to great commercial 
+activities.
+   Avians are famous for their distrust. They seldom trust other races, 
+and even among themselves, commercial relations are sometimes shaken by 
+distrust. That is the reason why avians are not the economical leaders of 
+Mythrin.
+~
+END
+
+keyword VOADKYN-SOCIETY~
+category undefined~
+text Voadkyns are somewhat individualists, and take all decisions concerning 
+their lives by themselves. Seldom will a Voadkyn forest have a leader. That 
+does not mean that voadkyns don't have a social life. On the contrary. There 
+are clearings in their forests where they gather every day to chat and 
+perform certain ceremonies.
+   When there is something that affects all the local Voadkyn community, like 
+a war, a danger to their forest, or a treaty with some other race, all of the 
+reunite at the Great Clearing. From the oldest to the youngest, even the newly 
+born, come to discuss important matters. Each of them can speak and tell their 
+thoughts. At the end, they vote, and the majority decides which course will 
+be taken.
+   Children's votes are counted the same way an adult's is, for they are very 
+much respected. Voadkyns are a race that reproduce very slowly, thus they 
+cherish all their children.
+   This way of life makes any decision need a long time to be made. Thus, 
+Voadkyn influence in Mythrin's politics is very small.
+
+~
+END
+
+keyword RACE-CREATE~
+category undefined~
+text `CRedirection help file.`=?`+
+`+
+The following help files are about creating new races for the Dawn of Time 
+players.  Check out the builders doc for more information regarding new 
+races and meaningful flags.`+
+`+
+`=lType:  `=Chelp `=_'RACE-APPLY`+
+`=?       For information on applying for a new race (email to ADMIN)`+
+`+
+`=lType:  `=Chelp `=_'RACE-LANGUAGE`+
+`=?       For help on how to create a new language for a race`+
+`+
+`=lType:  `=Chelp `=_'RACE-STAT`+
+`=?       For help on the stat information about a new race`+
+`+
+`=lType:  `=Chelp `=_'RACE-TABLE`+
+`=?       For more help on the layout of a new race 
+~
+END
+
+keyword INTERBREEDING HALF-RACES~
+level 1
+category undefined~
+text .. 
+`#`GExistant half-races in Mythrin`^
+ 
+These are the races that can interbreed and produce fertile offspring, in the 
+realms of Mythrin. 
+ 
+`#`B Parents                 Children
+`b -------                 --------`^
+ 
+ orc+human               half-orc
+ elf+human               half-elf
+ drow+human              drow or human
+ drow+elf                drow or elf
+ draconian+human         draconian or human
+ lizardman+draconian     lizardman or draconian
+ mrem+gnoll              mrem or gnoll
+ dwarf+duergar           dwarf or duergar
+ gnome+dwarf             gnome or dwarf
+ gnome+duergar           gnome or duergar
+ gnome+halfling          gnome or halfling
+ minotaur+human          minotaur or human
+ goblin+kobold           goblin or kobold
+ 
+The children, though, do not carry features of both parents. One of the races 
+always takes precedence, and so it is impossible to tell these children from 
+pure ones. The exceptions are half-orcs, and half-elves.
+~
+END
+
+keyword RACE-AGES RACES-AGES~
+level 1
+category undefined~
+text . 
+Below is a table with the lifespans of Mythrin races. Release age is the age 
+maturity is reached. Note that this list is a guideline to rp, and your 
+character's background. Ages listed below have no gameplay effect, since death 
+due to old age doesn't exist in the game.
+ 
+`#`m Race            Release    Life-Expectancy 
+ `M----            -------    ---------------`^
+ 
+ Alaghi            `#`s20`^            85 
+ Avian             `#`s15`^           120 
+ Draconian         `#`s12`^           250 
+ Drow             `#`s100`^           850 
+ Dwarf/Duergar     `#`s40`^           450 
+ Elf              `#`s100`^           750 
+ Faerie           `#`s200`^           850
+ Gnoll              `#`s5 `^           35 
+ Gnome             `#`s60 `^          500 
+ Goblin             `#`s8`^            35 
+ Halfling          `#`s20`^           200 
+ Half-Elf          `#`s15`^           185 
+ Half-Orc          `#`s15`^            90 
+ Human             `#`s15`^           110 
+ Kobold             `#`s8`^            40 
+ Lizardman         `#`s10`^            60 
+ Minotaur          `#`s10`^           110 
+ Mrem              `#`s20`^           200 
+ Orc               `#`s10`^            60 
+ Voadkyn           `#`s50 `^          800  
+ Troll             `#`s10`^            80
+~
+END
+
+keyword TROLL-GENERAL TROLLS-GENERAL~
+category undefined~
+text Little is known of these fearsome predators, neither of their origins nor 
+their insatiable thirst for blood.  Trolls are found in all climates, from 
+the bitter cold of the northlands, to tropical jungles, and everything 
+imaginable in between. The appearance of a troll is unmistakable -- they 
+tower at a height averaging nine feet, with a thick, rubbery hide which 
+ranges from sickly yellow, to mottled green, to night black.  Their hunched
+frames ripple with muscle, giving them unsurpassed strength, but hindering 
+their agility.  Their powerful arms end in maladroit paws, best suited to 
+handling heavy weapons. 
+ 
+Trolls organize themselves into loosely-knit clans, generally led by the last
+one left standing after a period of in-fighting.  As a whole, trolls are
+savage, brutal killers, with little regard for things such as honor or
+morality.  In truth, such concepts are likely beyond a troll's limited
+capacity, evidenced in their unsettling thirst for blood and violence.
+ 
+A troll's thick hide is all but impervious to bludgeoning attacks, shrugging 
+off blows which might easily cripple a human.  Their endurance is similarly
+impressive, earning trolls a storied reputation of being able to withstand
+attacks for impossible periods of time.  Trolls are unsurpassed in their
+ability to recuperate after battles, even the deepest gashes and scars are
+quick to bind.  Only when burned by acid or fire might a troll be slow to
+recover.
+ 
+Trolls are all but born with fighting abilities.  From an early age, they
+learn to protect themselves, mastering the secrets of bashing and enhanced
+damage with ease.  As such, they excel as barbarians, but find it almost
+impossible to advance in the realms of spellcraft or the priestly arts.
+Having long ago forsaken civilized communities, trolls might also function
+as competant rangers; a few have even been known to dabble in the druidic
+arts.
+ 
+Trolls speak their own language, a gutteral hybrid of human, orcish, and
+several other tongues, which is characterized by its baritone growls and
+brass-throated tones.  Trolls are generally shunned by civilized societies,
+and as such, will most often be found in the company of their own.
+~
+END
+
+keyword FAERIE-GENERAL FAERIES-GENERAL~
+category undefined~
+text Faeries are a shy and reclusive people found predominantly in sylvan 
+settings, living in harmony with nature.  They stand no taller than two and 
+a half feet in height, and have thin, semi-transparent wings which seem to 
+flutter constantly.  Their features are reminiscent of elves, cast in 
+miniature, with slender faces and finely tapered ears.  They have silken 
+hair in a myriad of vibrant colours, ranging from spun gold to stormy 
+violet.
+ 
+By nature, faeries are kind, if mischievous, and would never willfully cause 
+harm to another, except to protect their beloved woodlands.  That said, 
+faeries abhor evil and ugliness, their somewhat uppity aesthetic causing long 
+standing conflicts with orcs and trolls.
+ 
+These little beings are not born, as commonly known. In their magical land, 
+a huge mushroom grows. Under it, from time to time, a flower blossoms, and 
+from within it, a faerie is born. They don't grow during their lives, nor 
+change physically, unless they are harmed.
+ 
+Faeries possess exceptional intelligence.  Their mental faculties lend faeries 
+a natural resistance to magic and illusions.  Their keen memory and reasoning 
+abilities are unparalleled, and as such, faeries excel in the arcane arts.  
+Even from an early age, faeries are trained at meditation and mana focusing, 
+lending them an unsurpassed aptitude at sorcery and spellcraft.  Their close 
+bond with nature also makes them uniquely talented as druids, as well.  
+Though incapable of malice, faeries are merry pranksters, and some have been 
+known to delve into the roguish disciplines.  The obvious lack of 
+musculature and their mercurial nature makes faeries unlikely warriors.
+ 
+Their diminuitive form and frailty makes faeries vulnerable to all forms of 
+poisons, as well as earning them a reputation for being short-lived in melee 
+combat.  Faeries speak their own tongue, a musical language which sounds more 
+like singing than speech.  It is indeed a rarity to find an outsider with any 
+degree of fluency in this melodic language. 
+~
+END
+
+keyword VANISH~
+category undefined~
+see_also RACIAL-SKILLS FAERIE~
+text `#`=lSyntax:`^`1    vanish`1`1Because of the weak physical nature of faeries, they have been forced to be 
+masters of stealth. Faeries have the ability to vanish from plain sight, 
+making them invisible to anyone but other faeries. This is only meant as a 
+quick means of escape though, because they will reappear just minutes after 
+vanishing, leaving them unable to vanish again for quite some time.`1
+~
+END
+
+EOF~
+#$

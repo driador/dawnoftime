@@ -1,0 +1,4156 @@
+Name         north~
+Category    undefined~
+Position    standing~
+END
+
+Name         east~
+Category    undefined~
+Position    standing~
+END
+
+Name         south~
+Category    undefined~
+Position    standing~
+END
+
+Name         west~
+Category    undefined~
+Position    standing~
+END
+
+Name         up~
+Category    undefined~
+Position    standing~
+END
+
+Name         ne~
+Category    undefined~
+Position    standing~
+END
+
+Name         northeast~
+Category    undefined~
+Position    standing~
+END
+
+Name         se~
+Category    undefined~
+Position    standing~
+END
+
+Name         southeast~
+Category    undefined~
+Position    standing~
+END
+
+Name         sw~
+Category    undefined~
+Position    standing~
+END
+
+Name         southwest~
+Category    undefined~
+Position    standing~
+END
+
+Name         nw~
+Category    undefined~
+Position    standing~
+END
+
+Name         northwest~
+Category    undefined~
+Position    standing~
+END
+
+Name         down~
+Category    undefined~
+Position    standing~
+END
+
+Name         t~
+Category    undefined~
+Position    standing~
+END
+
+Name         g~
+Category    undefined~
+Position    standing~
+END
+
+Name         f~
+Category    undefined~
+Position    standing~
+END
+
+Name         r~
+Category    undefined~
+Position    standing~
+END
+
+Name         wiz~
+Category    undefined~
+Position    dead~
+END
+
+Name         wizgrantlist~
+Category    undefined~
+Position    dead~
+END
+
+Name         got~
+Category    undefined~
+Position    dead~
+END
+
+Name         at~
+Category    undefined~
+Position    dead~
+END
+
+Name         bu~
+Category    undefined~
+Position    resting~
+END
+
+Name         ba~
+Category    undefined~
+Position    fighting~
+END
+
+Name         ban~
+Category    undefined~
+Position    dead~
+END
+
+Name         :~
+Category    undefined~
+Position    dead~
+END
+
+Name         affec~
+Category    undefined~
+Position    dead~
+END
+
+Name         autolis~
+Category    undefined~
+Position    dead~
+END
+
+Name         bec~
+Category    undefined~
+Position    dead~
+END
+
+Name         c~
+Category    undefined~
+Position    dead~
+END
+
+Name         chat~
+Category    undefined~
+Position    dead~
+END
+
+Name         cas~
+Category    undefined~
+Position    dead~
+END
+
+Name         com~
+Category    undefined~
+Position    dead~
+END
+
+Name         class~
+Category    undefined~
+Position    dead~
+END
+
+Name         sum~
+Category    undefined~
+Position    dead~
+END
+
+Name         charinf~
+Category    undefined~
+Position    dead~
+END
+
+Name         channe~
+Category    undefined~
+Position    standing~
+END
+
+Name         command~
+Category    undefined~
+Position    dead~
+END
+
+Name         compar~
+Category    undefined~
+Position    resting~
+END
+
+Name         enveno~
+Category    undefined~
+Position    resting~
+END
+
+Name         exit~
+Category    undefined~
+Position    resting~
+END
+
+Name         ge~
+Category    undefined~
+Position    resting~
+END
+
+Name         grou~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         inventor~
+Category    undefined~
+Position    dead~
+END
+
+Name         iwher~
+Category    undefined~
+Position    dead~
+END
+
+Name         loo~
+Category    undefined~
+Position    resting~
+END
+
+Name         lis~
+Category    undefined~
+Position    resting~
+END
+
+Name         kil~
+Category    undefined~
+Position    fighting~
+END
+
+Name         mwher~
+Category    undefined~
+Position    dead~
+END
+
+Name         mot~
+Category    undefined~
+Position    dead~
+END
+
+Name         mob~
+Category    undefined~
+Position    dead~
+END
+
+Name         mq~
+Category    undefined~
+Position    dead~
+END
+
+Name         orde~
+Category    undefined~
+Position    resting~
+END
+
+Name         pinf~
+Category    undefined~
+Position    dead~
+END
+
+Name         practic~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         prefi~
+Category    undefined~
+Position    dead~
+END
+
+Name         res~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         recit~
+Category    undefined~
+Position    resting~
+END
+
+Name         retel~
+Category    undefined~
+Position    dead~
+END
+
+Name         repl~
+Category    undefined~
+Position    dead~
+END
+
+Name         sa~
+Category    undefined~
+Position    resting~
+END
+
+Name         soc~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         socket~
+Category    undefined~
+Position    dead~
+END
+
+Name         secon~
+Category    undefined~
+Position    resting~
+END
+
+Name         sl~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         stan~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         scor~
+Category    undefined~
+Position    dead~
+END
+
+Name         tel~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         unloc~
+Category    undefined~
+Position    resting~
+END
+
+Name         wh~
+Category    undefined~
+Position    dead~
+END
+
+Name         wiel~
+Category    undefined~
+Position    resting~
+END
+
+Name         seevnu~
+Category    undefined~
+Position    dead~
+END
+
+Name         wor~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         '~
+Category    undefined~
+Position    resting~
+END
+
+Name         "~
+Category    undefined~
+Position    resting~
+END
+
+Name         \~
+Category    undefined~
+Position    standing~
+END
+
+Name         ,~
+Category    undefined~
+Position    resting~
+END
+
+Name         .~
+Category    undefined~
+Position    dead~
+END
+
+Name         >~
+Category    undefined~
+Position    dead~
+END
+
+Name         [~
+Category    undefined~
+Position    dead~
+END
+
+Name         ]~
+Category    undefined~
+Position    dead~
+END
+
+Name         =~
+Category    undefined~
+Position    dead~
+END
+
+Name         -~
+Category    undefined~
+Position    dead~
+END
+
+Name         /~
+Category    undefined~
+Position    fighting~
+END
+
+Name         add~
+Category    clan~
+Position    dead~
+END
+
+Name         affects~
+Category    statistics~
+Position    dead~
+END
+
+Name         afk~
+Category    utilities~
+Position    sleeping~
+END
+
+Name         alia~
+Category    undefined~
+Position    dead~
+END
+
+Name         alias~
+Category    utilities~
+Position    dead~
+END
+
+Name         alignstat~
+Category    statistics~
+Position    dead~
+END
+
+Name         amote~
+Category    rp~
+Position    resting~
+END
+
+Name         answer~
+Category    communication~
+Position    dead~
+END
+
+Name         ansi~
+Category    undefined~
+Position    dead~
+END
+
+Name         apply~
+Category    magic~
+Position    standing~
+END
+
+Name         append~
+Category    undefined~
+Position    dead~
+END
+
+Name         areas~
+Category    statistics~
+Position    dead~
+END
+
+Name         areasalpha~
+Category    statistics~
+Position    dead~
+END
+
+Name         askname~
+Category    rp~
+Position    resting~
+END
+
+Name         attune~
+Category    object~
+Position    standing~
+END
+
+Name         autoanswer~
+Category    auto~
+Position    dead~
+END
+
+Name         autoassist~
+Category    auto~
+Position    dead~
+END
+
+Name         autodamage~
+Category    auto~
+Position    dead~
+END
+
+Name         autoexit~
+Category    auto~
+Position    dead~
+END
+
+Name         autoexamine~
+Category    auto~
+Position    dead~
+END
+
+Name         autogold~
+Category    auto~
+Position    dead~
+END
+
+Name         autokeepalive~
+Category    auto~
+Position    dead~
+END
+
+Name         autolandonrest~
+Category    auto~
+Position    dead~
+END
+
+Name         autolist~
+Category    statistics~
+Position    dead~
+END
+
+Name         autoloot~
+Category    auto~
+Position    dead~
+END
+
+Name         autopeek~
+Category    auto~
+Position    dead~
+END
+
+Name         autopkassist~
+Category    auto~
+Position    dead~
+END
+
+Name         autorecall~
+Category    auto~
+Position    dead~
+END
+
+Name         autoreformat~
+Category    undefined~
+Position    dead~
+END
+
+Name         autoself~
+Category    auto~
+Position    dead~
+END
+
+Name         autosubdue~
+Category    auto~
+Position    dead~
+END
+
+Name         autosplit~
+Category    auto~
+Position    dead~
+END
+
+Name         autotrack~
+Category    auto~
+Position    dead~
+END
+
+Name         autowhoinvislogin~
+Category    undefined~
+Position    dead~
+END
+
+Name         autowizilogin~
+Category    undefined~
+Position    dead~
+END
+
+Name         autowraptells~
+Category    auto~
+Position    dead~
+END
+
+Name         awareness~
+Category    misc~
+Position    sleeping~
+END
+
+Name         backstab~
+Category    combat~
+Position    fighting~
+END
+
+Name         bank~
+Category    misc~
+Position    standing~
+END
+
+Name         bash~
+Category    combat~
+Position    fighting~
+END
+
+Name         battlelag~
+Category    utilities~
+Position    dead~
+END
+
+Name         berserk~
+Category    combat~
+Position    fighting~
+END
+
+Name         becomeactive~
+Category    pkrelated~
+Position    dead~
+END
+
+Name         brandish~
+Category    magic~
+Position    resting~
+END
+
+Name         brief~
+Category    utilities~
+Position    dead~
+END
+
+Name         bs~
+Category    undefined~
+Position    fighting~
+END
+
+Name         bug~
+Category    utilities~
+Position    dead~
+END
+
+Name         buy~
+Category    object~
+Position    resting~
+END
+
+Name         brew~
+Category    magic~
+Position    resting~
+END
+
+Name         build~
+Category    object~
+Position    resting~
+END
+
+Name         bury~
+Category    misc~
+Position    standing~
+END
+
+Name         bypassduel~
+Category    pkrelated~
+Position    resting~
+END
+
+Name         cannibalize~
+Category    undefined~
+Position    standing~
+END
+
+Name         cast~
+Category    magic~
+Position    dead~
+END
+
+Name         changes~
+Category    notes~
+Position    dead~
+END
+
+Name         channels~
+Category    statistics~
+Position    dead~
+END
+
+Name         circle~
+Category    combat~
+Position    fighting~
+END
+
+Name         close~
+Category    misc~
+Position    resting~
+END
+
+Name         claw~
+Category    combat~
+Position    fighting~
+END
+
+Name         classstats~
+Category    statistics~
+Position    dead~
+END
+
+Name         classinfo~
+Category    statistics~
+Position    dead~
+END
+
+Name         clantalk~
+Category    communication~
+Position    dead~
+END
+
+Name         cranks~
+Category    undefined~
+Position    dead~
+END
+
+Name         clanranks~
+Category    clan~
+Position    dead~
+END
+
+Name         color~
+Category    undefined~
+Position    dead~
+END
+
+Name         colour~
+Category    utilities~
+Position    dead~
+END
+
+Name         collect~
+Category    misc~
+Position    standing~
+END
+
+Name         cook~
+Category    misc~
+Position    resting~
+END
+
+Name         combine~
+Category    utilities~
+Position    dead~
+END
+
+Name         commands~
+Category    statistics~
+Position    dead~
+END
+
+Name         commune~
+Category    magic~
+Position    dead~
+END
+
+Name         compact~
+Category    utilities~
+Position    dead~
+END
+
+Name         compare~
+Category    object~
+Position    resting~
+END
+
+Name         consider~
+Category    combat~
+Position    resting~
+END
+
+Name         continue~
+Category    undefined~
+Position    resting~
+END
+
+Name         count~
+Category    statistics~
+Position    sleeping~
+END
+
+Name         cskinfo~
+Category    undefined~
+Position    dead~
+END
+
+Name         cspinfo~
+Category    undefined~
+Position    dead~
+END
+
+Name         credits~
+Category    statistics~
+Position    dead~
+END
+
+Name         ctalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         ctime~
+Category    statistics~
+Position    dead~
+END
+
+Name         dawnftp~
+Category    utilities~
+Position    dead~
+END
+
+Name         delet~
+Category    undefined~
+Position    dead~
+END
+
+Name         delete~
+Category    utilities~
+Position    dead~
+END
+
+Name         demote~
+Category    clan~
+Position    dead~
+END
+
+Name         description~
+Category    utilities~
+Position    dead~
+END
+
+Name         diagnose~
+Category    misc~
+Position    standing~
+END
+
+Name         dig~
+Category    misc~
+Position    standing~
+END
+
+Name         dirt~
+Category    combat~
+Position    fighting~
+END
+
+Name         disarm~
+Category    combat~
+Position    fighting~
+END
+
+Name         dismount~
+Category    movement~
+Position    standing~
+END
+
+Name         donate~
+Category    misc~
+Position    standing~
+END
+
+Name         drink~
+Category    object~
+Position    resting~
+END
+
+Name         drag~
+Category    undefined~
+Position    standing~
+END
+
+Name         draw~
+Category    object~
+Position    fighting~
+END
+
+Name         drop~
+Category    object~
+Position    resting~
+END
+
+Name         duel~
+Category    pkrelated~
+Position    standing~
+END
+
+Name         acceptduel~
+Category    pkrelated~
+Position    standing~
+END
+
+Name         declineduel~
+Category    pkrelated~
+Position    resting~
+END
+
+Name         declineooc~
+Category    communication~
+Position    dead~
+END
+
+Name         eat~
+Category    object~
+Position    resting~
+END
+
+Name         emote~
+Category    rp~
+Position    resting~
+END
+
+Name         empty~
+Category    object~
+Position    resting~
+END
+
+Name         enter~
+Category    movement~
+Position    standing~
+END
+
+Name         envenom~
+Category    combat~
+Position    resting~
+END
+
+Name         equipment~
+Category    object~
+Position    dead~
+END
+
+Name         examine~
+Category    misc~
+Position    resting~
+END
+
+Name         exits~
+Category    movement~
+Position    resting~
+END
+
+Name         fill~
+Category    object~
+Position    resting~
+END
+
+Name         fullexits~
+Category    auto~
+Position    dead~
+END
+
+Name         forget~
+Category    rp~
+Position    resting~
+END
+
+Name         fork~
+Category    undefined~
+Position    standing~
+END
+
+Name         flee~
+Category    combat~
+Position    fighting~
+END
+
+Name         flame~
+Category    undefined~
+Position    dead~
+END
+
+Name         flourish~
+Category    undefined~
+Position    standing~
+END
+
+Name         flip~
+Category    rp~
+Position    resting~
+END
+
+Name         fly~
+Category    movement~
+Position    resting~
+END
+
+Name         follow~
+Category    movement~
+Position    resting~
+END
+
+Name         for~
+Category    undefined~
+Position    dead~
+END
+
+Name         forage~
+Category    misc~
+Position    standing~
+END
+
+Name         freevnum~
+Category    olc~
+Position    dead~
+END
+
+Name         gain~
+Category    misc~
+Position    resting~
+END
+
+Name         gamble~
+Category    misc~
+Position    sitting~
+END
+
+Name         gamesettings~
+Category    statistics~
+Position    dead~
+END
+
+Name         get~
+Category    object~
+Position    resting~
+END
+
+Name         genname~
+Category    utilities~
+Position    dead~
+END
+
+Name         give~
+Category    object~
+Position    resting~
+END
+
+Name         glance~
+Category    misc~
+Position    resting~
+END
+
+Name         gs~
+Category    communication~
+Position    sleeping~
+END
+
+Name         go~
+Category    undefined~
+Position    standing~
+END
+
+Name         goooc~
+Category    communication~
+Position    standing~
+END
+
+Name         gore~
+Category    combat~
+Position    fighting~
+END
+
+Name         gouge~
+Category    combat~
+Position    fighting~
+END
+
+Name         gprompt~
+Category    utilities~
+Position    dead~
+END
+
+Name         grab~
+Category    misc~
+Position    standing~
+END
+
+Name         grats~
+Category    undefined~
+Position    dead~
+END
+
+Name         group~
+Category    statistics~
+Position    sleeping~
+END
+
+Name         groups~
+Category    statistics~
+Position    sleeping~
+END
+
+Name         heal~
+Category    magic~
+Position    dead~
+END
+
+Name         help~
+Category    helps~
+Position    dead~
+END
+
+Name         helpcat~
+Category    helps~
+Position    dead~
+END
+
+Name         helplist~
+Category    helps~
+Position    dead~
+END
+
+Name         helpprev~
+Category    helps~
+Position    dead~
+END
+
+Name         helpnext~
+Category    helps~
+Position    dead~
+END
+
+Name         herbalism~
+Category    magic~
+Position    standing~
+END
+
+Name         herblore~
+Category    undefined~
+Position    sitting~
+END
+
+Name         hide~
+Category    misc~
+Position    resting~
+END
+
+Name         history~
+Category    rp~
+Position    dead~
+END
+
+Name         hit~
+Category    undefined~
+Position    fighting~
+END
+
+Name         hlook~
+Category    rp~
+Position    dead~
+END
+
+Name         hold~
+Category    object~
+Position    resting~
+END
+
+Name         ic~
+Category    undefined~
+Position    dead~
+END
+
+Name         ictime~
+Category    statistics~
+Position    dead~
+END
+
+Name         ideas~
+Category    notes~
+Position    dead~
+END
+
+Name         info~
+Category    statistics~
+Position    sleeping~
+END
+
+Name         introduce~
+Category    rp~
+Position    resting~
+END
+
+Name         inventory~
+Category    object~
+Position    dead~
+END
+
+Name         invitelist~
+Category    statistics~
+Position    dead~
+END
+
+Name         ispell~
+Category    utilities~
+Position    dead~
+END
+
+Name         kick~
+Category    combat~
+Position    fighting~
+END
+
+Name         kill~
+Category    combat~
+Position    fighting~
+END
+
+Name         kneel~
+Category    movement~
+Position    sleeping~
+END
+
+Name         knock~
+Category    misc~
+Position    sitting~
+END
+
+Name         lay~
+Category    misc~
+Position    standing~
+END
+
+Name         lag~
+Category    utilities~
+Position    dead~
+END
+
+Name         language~
+Category    communication~
+Position    sleeping~
+END
+
+Name         land~
+Category    movement~
+Position    resting~
+END
+
+Name         laston~
+Category    statistics~
+Position    dead~
+END
+
+Name         lastonreload~
+Category    undefined~
+Position    dead~
+END
+
+Name         letter~
+Category    rp~
+Position    dead~
+END
+
+Name         lines~
+Category    utilities~
+Position    dead~
+END
+
+Name         list~
+Category    statistics~
+Position    resting~
+END
+
+Name         loc~
+Category    undefined~
+Position    resting~
+END
+
+Name         lock~
+Category    misc~
+Position    resting~
+END
+
+Name         lockers~
+Category    object~
+Position    resting~
+END
+
+Name         look~
+Category    misc~
+Position    resting~
+END
+
+Name         lore~
+Category    magic~
+Position    resting~
+END
+
+Name         losepet~
+Category    utilities~
+Position    resting~
+END
+
+Name         mccp~
+Category    utilities~
+Position    dead~
+END
+
+Name         metric~
+Category    utilities~
+Position    dead~
+END
+
+Name         misc~
+Category    notes~
+Position    dead~
+END
+
+Name         mixflask~
+Category    misc~
+Position    resting~
+END
+
+Name         mode~
+Category    olc~
+Position    dead~
+END
+
+Name         moon~
+Category    statistics~
+Position    resting~
+END
+
+Name         moot~
+Category    noble~
+Position    dead~
+END
+
+Name         motd~
+Category    statistics~
+Position    dead~
+END
+
+Name         msp~
+Category    utilities~
+Position    dead~
+END
+
+Name         mudstats~
+Category    statistics~
+Position    dead~
+END
+
+Name         mudftp~
+Category    utilities~
+Position    dead~
+END
+
+Name         mxp~
+Category    utilities~
+Position    dead~
+END
+
+Name         mxpreflect~
+Category    utilities~
+Position    dead~
+END
+
+Name         name_b4short~
+Category    statistics~
+Position    dead~
+END
+
+Name         name_only_4known~
+Category    statistics~
+Position    dead~
+END
+
+Name         needlepoint~
+Category    combat~
+Position    standing~
+END
+
+Name         news~
+Category    notes~
+Position    dead~
+END
+
+Name         newbietalk~
+Category    communication~
+Position    dead~
+END
+
+Name         nofollow~
+Category    movement~
+Position    dead~
+END
+
+Name         nomisc~
+Category    notes~
+Position    dead~
+END
+
+Name         nosummon~
+Category    movement~
+Position    dead~
+END
+
+Name         nocharm~
+Category    auto~
+Position    dead~
+END
+
+Name         nonames~
+Category    auto~
+Position    dead~
+END
+
+Name         noheromsg~
+Category    auto~
+Position    dead~
+END
+
+Name         notes~
+Category    notes~
+Position    dead~
+END
+
+Name         noteach~
+Category    magic~
+Position    dead~
+END
+
+Name         nspeak~
+Category    noble~
+Position    sleeping~
+END
+
+Name         ntalk~
+Category    noble~
+Position    sleeping~
+END
+
+Name         ntell~
+Category    noble~
+Position    dead~
+END
+
+Name         nreply~
+Category    communication~
+Position    dead~
+END
+
+Name         ooc~
+Category    communication~
+Position    dead~
+END
+
+Name         open~
+Category    misc~
+Position    resting~
+END
+
+Name         order~
+Category    misc~
+Position    resting~
+END
+
+Name         outcast~
+Category    clan~
+Position    dead~
+END
+
+Name         outfit~
+Category    utilities~
+Position    resting~
+END
+
+Name         ownerlist~
+Category    undefined~
+Position    dead~
+END
+
+Name         panic~
+Category    combat~
+Position    dead~
+END
+
+Name         password~
+Category    utilities~
+Position    dead~
+END
+
+Name         peek~
+Category    misc~
+Position    resting~
+END
+
+Name         pick~
+Category    misc~
+Position    resting~
+END
+
+Name         place~
+Category    object~
+Position    standing~
+END
+
+Name         pkinfo~
+Category    pkrelated~
+Position    dead~
+END
+
+Name         pmote~
+Category    rp~
+Position    resting~
+END
+
+Name         pour~
+Category    object~
+Position    resting~
+END
+
+Name         pose~
+Category    undefined~
+Position    resting~
+END
+
+Name         pounce~
+Category    combat~
+Position    fighting~
+END
+
+Name         practice~
+Category    misc~
+Position    sleeping~
+END
+
+Name         pray~
+Category    rp~
+Position    dead~
+END
+
+Name         promote~
+Category    clan~
+Position    dead~
+END
+
+Name         prompt~
+Category    utilities~
+Position    dead~
+END
+
+Name         push~
+Category    undefined~
+Position    standing~
+END
+
+Name         put~
+Category    object~
+Position    resting~
+END
+
+Name         quaff~
+Category    magic~
+Position    resting~
+END
+
+Name         question~
+Category    communication~
+Position    dead~
+END
+
+Name         quester~
+Category    rp~
+Position    dead~
+END
+
+Name         qpoints~
+Category    undefined~
+Position    dead~
+END
+
+Name         qui~
+Category    undefined~
+Position    dead~
+END
+
+Name         quiet~
+Category    communication~
+Position    sleeping~
+END
+
+Name         quit~
+Category    utilities~
+Position    dead~
+END
+
+Name         racestats~
+Category    statistics~
+Position    dead~
+END
+
+Name         raceinfo~
+Category    statistics~
+Position    dead~
+END
+
+Name         ride~
+Category    movement~
+Position    standing~
+END
+
+Name         read~
+Category    misc~
+Position    resting~
+END
+
+Name         recall~
+Category    movement~
+Position    fighting~
+END
+
+Name         recite~
+Category    magic~
+Position    resting~
+END
+
+Name         remove~
+Category    object~
+Position    resting~
+END
+
+Name         rent~
+Category    movement~
+Position    dead~
+END
+
+Name         replay~
+Category    communication~
+Position    sleeping~
+END
+
+Name         replaychannels~
+Category    communication~
+Position    dead~
+END
+
+Name         replayroom~
+Category    communication~
+Position    dead~
+END
+
+Name         reply~
+Category    communication~
+Position    dead~
+END
+
+Name         report~
+Category    statistics~
+Position    dead~
+END
+
+Name         requestooc~
+Category    communication~
+Position    dead~
+END
+
+Name         requestletgain~
+Category    utilities~
+Position    dead~
+END
+
+Name         rpsheet~
+Category    rp~
+Position    dead~
+END
+
+Name         rptell~
+Category    rpsupport~
+Position    dead~
+END
+
+Name         rpreply~
+Category    communication~
+Position    dead~
+END
+
+Name         cletgain~
+Category    utilities~
+Position    dead~
+END
+
+Name         rletgain~
+Category    utilities~
+Position    dead~
+END
+
+Name         cancelletgain~
+Category    utilities~
+Position    dead~
+END
+
+Name         rescue~
+Category    undefined~
+Position    fighting~
+END
+
+Name         rest~
+Category    movement~
+Position    sleeping~
+END
+
+Name         retell~
+Category    communication~
+Position    dead~
+END
+
+Name         retreat~
+Category    combat~
+Position    fighting~
+END
+
+Name         rules~
+Category    statistics~
+Position    dead~
+END
+
+Name         save~
+Category    utilities~
+Position    dead~
+END
+
+Name         rsay~
+Category    undefined~
+Position    resting~
+END
+
+Name         say~
+Category    communication~
+Position    resting~
+END
+
+Name         saymote~
+Category    communication~
+Position    resting~
+END
+
+Name         sayto~
+Category    communication~
+Position    resting~
+END
+
+Name         scan~
+Category    misc~
+Position    standing~
+END
+
+Name         score~
+Category    statistics~
+Position    dead~
+END
+
+Name         scroll~
+Category    utilities~
+Position    dead~
+END
+
+Name         scribe~
+Category    magic~
+Position    resting~
+END
+
+Name         search~
+Category    object~
+Position    standing~
+END
+
+Name         set~
+Category    undefined~
+Position    dead~
+END
+
+Name         setage~
+Category    utilities~
+Position    resting~
+END
+
+Name         setdeity~
+Category    undefined~
+Position    dead~
+END
+
+Name         setichour~
+Category    undefined~
+Position    dead~
+END
+
+Name         setrooms~
+Category    olc~
+Position    dead~
+END
+
+Name         second~
+Category    combat~
+Position    dead~
+END
+
+Name         seek~
+Category    clan~
+Position    dead~
+END
+
+Name         sell~
+Category    object~
+Position    resting~
+END
+
+Name         shadow~
+Category    undefined~
+Position    standing~
+END
+
+Name         sharpen~
+Category    misc~
+Position    resting~
+END
+
+Name         show~
+Category    statistics~
+Position    dead~
+END
+
+Name         showaffects~
+Category    statistics~
+Position    dead~
+END
+
+Name         showmisc~
+Category    notes~
+Position    dead~
+END
+
+Name         sheathe~
+Category    object~
+Position    standing~
+END
+
+Name         sit~
+Category    movement~
+Position    sleeping~
+END
+
+Name         skills~
+Category    statistics~
+Position    dead~
+END
+
+Name         skillgroups~
+Category    statistics~
+Position    dead~
+END
+
+Name         slice~
+Category    misc~
+Position    resting~
+END
+
+Name         sleep~
+Category    movement~
+Position    sleeping~
+END
+
+Name         smote~
+Category    rp~
+Position    dead~
+END
+
+Name         sneak~
+Category    movement~
+Position    standing~
+END
+
+Name         social~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         socials~
+Category    statistics~
+Position    dead~
+END
+
+Name         socshow~
+Category    olc~
+Position    dead~
+END
+
+Name         spells~
+Category    magic~
+Position    dead~
+END
+
+Name         spinfo~
+Category    magic~
+Position    dead~
+END
+
+Name         sinfo~
+Category    magic~
+Position    dead~
+END
+
+Name         sing~
+Category    magic~
+Position    dead~
+END
+
+Name         speedwalk~
+Category    movement~
+Position    standing~
+END
+
+Name         split~
+Category    utilities~
+Position    resting~
+END
+
+Name         stand~
+Category    movement~
+Position    sleeping~
+END
+
+Name         steal~
+Category    object~
+Position    standing~
+END
+
+Name         story~
+Category    statistics~
+Position    dead~
+END
+
+Name         study~
+Category    magic~
+Position    resting~
+END
+
+Name         surrender~
+Category    combat~
+Position    fighting~
+END
+
+Name         subdue~
+Category    combat~
+Position    resting~
+END
+
+Name         summon~
+Category    magic~
+Position    dead~
+END
+
+Name         take~
+Category    object~
+Position    resting~
+END
+
+Name         tame~
+Category    misc~
+Position    standing~
+END
+
+Name         teach~
+Category    magic~
+Position    resting~
+END
+
+Name         tell~
+Category    communication~
+Position    dead~
+END
+
+Name         tether~
+Category    movement~
+Position    standing~
+END
+
+Name         throw~
+Category    object~
+Position    standing~
+END
+
+Name         date~
+Category    statistics~
+Position    dead~
+END
+
+Name         time~
+Category    statistics~
+Position    dead~
+END
+
+Name         title~
+Category    statistics~
+Position    dead~
+END
+
+Name         train~
+Category    communication~
+Position    resting~
+END
+
+Name         tracks~
+Category    misc~
+Position    dead~
+END
+
+Name         trip~
+Category    combat~
+Position    fighting~
+END
+
+Name         typo~
+Category    utilities~
+Position    dead~
+END
+
+Name         unalias~
+Category    utilities~
+Position    dead~
+END
+
+Name         unlock~
+Category    misc~
+Position    resting~
+END
+
+Name         unread~
+Category    notes~
+Position    sleeping~
+END
+
+Name         untether~
+Category    movement~
+Position    standing~
+END
+
+Name         uptime~
+Category    statistics~
+Position    dead~
+END
+
+Name         value~
+Category    object~
+Position    resting~
+END
+
+Name         vanish~
+Category    misc~
+Position    standing~
+END
+
+Name         visible~
+Category    misc~
+Position    sleeping~
+END
+
+Name         unhide~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         vote~
+Category    noble~
+Position    dead~
+END
+
+Name         wake~
+Category    movement~
+Position    sleeping~
+END
+
+Name         wear~
+Category    object~
+Position    resting~
+END
+
+Name         weather~
+Category    statistics~
+Position    resting~
+END
+
+Name         whisper~
+Category    communication~
+Position    resting~
+END
+
+Name         who~
+Category    statistics~
+Position    dead~
+END
+
+Name         whois~
+Category    statistics~
+Position    dead~
+END
+
+Name         whoformat~
+Category    undefined~
+Position    dead~
+END
+
+Name         wield~
+Category    object~
+Position    resting~
+END
+
+Name         wimpy~
+Category    combat~
+Position    dead~
+END
+
+Name         wizlist~
+Category    statistics~
+Position    dead~
+END
+
+Name         worship~
+Category    undefined~
+Position    standing~
+END
+
+Name         worth~
+Category    statistics~
+Position    sleeping~
+END
+
+Name         money~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         gold~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         silver~
+Category    undefined~
+Position    sleeping~
+END
+
+Name         yell~
+Category    communication~
+Position    resting~
+END
+
+Name         testyell~
+Category    undefined~
+Position    resting~
+END
+
+Name         zap~
+Category    magic~
+Position    resting~
+END
+
+Name         boneshatter~
+Category    undefined~
+Position    fighting~
+END
+
+Name         charge~
+Category    undefined~
+Position    standing~
+END
+
+Name         conceal~
+Category    undefined~
+Position    resting~
+END
+
+Name         cutoff~
+Category    undefined~
+Position    fighting~
+END
+
+Name         dervish~
+Category    undefined~
+Position    fighting~
+END
+
+Name         entangle~
+Category    undefined~
+Position    fighting~
+END
+
+Name         hobble~
+Category    undefined~
+Position    fighting~
+END
+
+Name         hurl~
+Category    undefined~
+Position    fighting~
+END
+
+Name         overhead~
+Category    undefined~
+Position    fighting~
+END
+
+Name         shieldcleave~
+Category    undefined~
+Position    fighting~
+END
+
+Name         vault~
+Category    undefined~
+Position    fighting~
+END
+
+Name         automap~
+Category    auto~
+Position    dead~
+END
+
+Name         autoreset~
+Category    olc~
+Position    dead~
+END
+
+Name         autosaymote~
+Category    auto~
+Position    dead~
+END
+
+Name         autosaycolourcodes~
+Category    auto~
+Position    dead~
+END
+
+Name         autovote~
+Category    noble~
+Position    dead~
+END
+
+Name         map~
+Category    movement~
+Position    dead~
+END
+
+Name         mapclear~
+Category    movement~
+Position    dead~
+END
+
+Name         nomapexits~
+Category    movement~
+Position    dead~
+END
+
+Name         nomapblanks~
+Category    movement~
+Position    dead~
+END
+
+Name         areamap~
+Category    undefined~
+Position    dead~
+END
+
+Name         scalemap~
+Category    undefined~
+Position    dead~
+END
+
+Name         scalemxp~
+Category    undefined~
+Position    dead~
+END
+
+Name         mapnum~
+Category    undefined~
+Position    dead~
+END
+
+Name         fullmap~
+Category    undefined~
+Position    dead~
+END
+
+Name         amap~
+Category    undefined~
+Position    dead~
+END
+
+Name         dump~
+Category    undefined~
+Position    dead~
+END
+
+Name         reboo~
+Category    undefined~
+Position    dead~
+END
+
+Name         shutdow~
+Category    undefined~
+Position    dead~
+END
+
+Name         sla~
+Category    undefined~
+Position    dead~
+END
+
+Name         invis~
+Category    undefined~
+Position    dead~
+END
+
+Name         admintalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         addclan~
+Category    clan~
+Position    standing~
+END
+
+Name         addcourt~
+Category    undefined~
+Position    dead~
+END
+
+Name         addmoot~
+Category    undefined~
+Position    dead~
+END
+
+Name         addscript~
+Category    undefined~
+Position    dead~
+END
+
+Name         advance~
+Category    undefined~
+Position    dead~
+END
+
+Name         allow~
+Category    undefined~
+Position    dead~
+END
+
+Name         allow~
+Category    undefined~
+Position    dead~
+END
+
+Name         allowimmtalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         anote~
+Category    undefined~
+Position    dead~
+END
+
+Name         anote~
+Category    undefined~
+Position    dead~
+END
+
+Name         atell~
+Category    undefined~
+Position    dead~
+END
+
+Name         atlevel~
+Category    undefined~
+Position    dead~
+END
+
+Name         ban~
+Category    undefined~
+Position    dead~
+END
+
+Name         banedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         bardify~
+Category    undefined~
+Position    dead~
+END
+
+Name         breaktell~
+Category    undefined~
+Position    dead~
+END
+
+Name         boon~
+Category    undefined~
+Position    dead~
+END
+
+Name         castatlevel~
+Category    undefined~
+Position    fighting~
+END
+
+Name         chardesc~
+Category    nsupport~
+Position    dead~
+END
+
+Name         charhistory~
+Category    nsupport~
+Position    dead~
+END
+
+Name         charinfo~
+Category    undefined~
+Position    dead~
+END
+
+Name         charnotes~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkbug~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkclanbank~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkcode~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkdead~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkhelps~
+Category    undefined~
+Position    dead~
+END
+
+Name         checklog~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkirc~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkbalance~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkexits~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkmoblog~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkooc~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkmultilog~
+Category    undefined~
+Position    dead~
+END
+
+Name         checknewbie~
+Category    undefined~
+Position    dead~
+END
+
+Name         checknsup~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkntalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         checktypos~
+Category    undefined~
+Position    dead~
+END
+
+Name         checkban~
+Category    undefined~
+Position    dead~
+END
+
+Name         cinfo~
+Category    undefined~
+Position    dead~
+END
+
+Name         clist~
+Category    undefined~
+Position    dead~
+END
+
+Name         clanlist~
+Category    undefined~
+Position    dead~
+END
+
+Name         class~
+Category    undefined~
+Position    dead~
+END
+
+Name         createspell~
+Category    undefined~
+Position    dead~
+END
+
+Name         clone~
+Category    undefined~
+Position    dead~
+END
+
+Name         cwhere~
+Category    undefined~
+Position    dead~
+END
+
+Name         codetalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         clear_createcount~
+Category    undefined~
+Position    dead~
+END
+
+Name         councillist~
+Category    undefined~
+Position    dead~
+END
+
+Name         delmoot~
+Category    undefined~
+Position    dead~
+END
+
+Name         delscript~
+Category    undefined~
+Position    dead~
+END
+
+Name         delquest~
+Category    undefined~
+Position    dead~
+END
+
+Name         deny~
+Category    undefined~
+Position    dead~
+END
+
+Name         disable~
+Category    undefined~
+Position    dead~
+END
+
+Name         disconnect~
+Category    undefined~
+Position    dead~
+END
+
+Name         disallowpkill~
+Category    undefined~
+Position    dead~
+END
+
+Name         dlook~
+Category    noble~
+Position    dead~
+END
+
+Name         dofor~
+Category    undefined~
+Position    dead~
+END
+
+Name         dream~
+Category    undefined~
+Position    dead~
+END
+
+Name         echo~
+Category    undefined~
+Position    dead~
+END
+
+Name         editcharnote~
+Category    olc~
+Position    dead~
+END
+
+Name         exitlist~
+Category    undefined~
+Position    dead~
+END
+
+Name         exlist~
+Category    undefined~
+Position    dead~
+END
+
+Name         fadein~
+Category    undefined~
+Position    dead~
+END
+
+Name         fadeout~
+Category    undefined~
+Position    dead~
+END
+
+Name         flag~
+Category    undefined~
+Position    dead~
+END
+
+Name         freeze~
+Category    undefined~
+Position    dead~
+END
+
+Name         force~
+Category    undefined~
+Position    dead~
+END
+
+Name         mforce~
+Category    undefined~
+Position    dead~
+END
+
+Name         nforce~
+Category    undefined~
+Position    dead~
+END
+
+Name         forcetick~
+Category    undefined~
+Position    dead~
+END
+
+Name         gecho~
+Category    undefined~
+Position    dead~
+END
+
+Name         got~
+Category    undefined~
+Position    dead~
+END
+
+Name         goecho~
+Category    undefined~
+Position    dead~
+END
+
+Name         goto~
+Category    undefined~
+Position    dead~
+END
+
+Name         herbedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         holylist~
+Category    undefined~
+Position    dead~
+END
+
+Name         holylight~
+Category    undefined~
+Position    dead~
+END
+
+Name         holyname~
+Category    undefined~
+Position    dead~
+END
+
+Name         holyspeech~
+Category    undefined~
+Position    dead~
+END
+
+Name         holywalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         holyvnum~
+Category    undefined~
+Position    dead~
+END
+
+Name         hotreboot~
+Category    undefined~
+Position    dead~
+END
+
+Name         hightalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         ignoremulti~
+Category    undefined~
+Position    dead~
+END
+
+Name         hideareas~
+Category    undefined~
+Position    dead~
+END
+
+Name         immtalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         immget~
+Category    undefined~
+Position    dead~
+END
+
+Name         immtitle~
+Category    undefined~
+Position    dead~
+END
+
+Name         immwiznet~
+Category    undefined~
+Position    dead~
+END
+
+Name         immwiznetc~
+Category    undefined~
+Position    dead~
+END
+
+Name         imotd~
+Category    undefined~
+Position    dead~
+END
+
+Name         incognito~
+Category    undefined~
+Position    dead~
+END
+
+Name         inote~
+Category    undefined~
+Position    dead~
+END
+
+Name         inroom~
+Category    undefined~
+Position    dead~
+END
+
+Name         iwizi~
+Category    undefined~
+Position    dead~
+END
+
+Name         iwhere~
+Category    undefined~
+Position    dead~
+END
+
+Name         jail~
+Category    undefined~
+Position    dead~
+END
+
+Name         ktell~
+Category    undefined~
+Position    dead~
+END
+
+Name         lastoncouncil~
+Category    undefined~
+Position    dead~
+END
+
+Name         lastonremove~
+Category    undefined~
+Position    dead~
+END
+
+Name         lastonstats~
+Category    undefined~
+Position    dead~
+END
+
+Name         langedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         letgain~
+Category    undefined~
+Position    dead~
+END
+
+Name         lethero~
+Category    undefined~
+Position    dead~
+END
+
+Name         listscripts~
+Category    undefined~
+Position    dead~
+END
+
+Name         listquest~
+Category    undefined~
+Position    dead~
+END
+
+Name         load~
+Category    undefined~
+Position    dead~
+END
+
+Name         localechos~
+Category    undefined~
+Position    dead~
+END
+
+Name         localecho~
+Category    undefined~
+Position    dead~
+END
+
+Name         log~
+Category    undefined~
+Position    dead~
+END
+
+Name         memory~
+Category    undefined~
+Position    dead~
+END
+
+Name         mixedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         mixshow~
+Category    undefined~
+Position    dead~
+END
+
+Name         mythostalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         mwhere~
+Category    undefined~
+Position    dead~
+END
+
+Name         mpdump~
+Category    undefined~
+Position    dead~
+END
+
+Name         mplist~
+Category    olc~
+Position    dead~
+END
+
+Name         mpstat~
+Category    undefined~
+Position    dead~
+END
+
+Name         mudclientstats~
+Category    undefined~
+Position    dead~
+END
+
+Name         mxpinfo~
+Category    undefined~
+Position    dead~
+END
+
+Name         newbielock~
+Category    undefined~
+Position    dead~
+END
+
+Name         noble~
+Category    undefined~
+Position    dead~
+END
+
+Name         nochannel~
+Category    undefined~
+Position    dead~
+END
+
+Name         nochannels~
+Category    undefined~
+Position    dead~
+END
+
+Name         noemote~
+Category    undefined~
+Position    dead~
+END
+
+Name         norp~
+Category    undefined~
+Position    dead~
+END
+
+Name         noshout~
+Category    undefined~
+Position    dead~
+END
+
+Name         notell~
+Category    undefined~
+Position    dead~
+END
+
+Name         noterestrict~
+Category    undefined~
+Position    dead~
+END
+
+Name         nopray~
+Category    undefined~
+Position    dead~
+END
+
+Name         nsupport~
+Category    undefined~
+Position    dead~
+END
+
+Name         owhere~
+Category    undefined~
+Position    dead~
+END
+
+Name         listletgain~
+Category    undefined~
+Position    dead~
+END
+
+Name         listmoot~
+Category    undefined~
+Position    dead~
+END
+
+Name         clearletgain~
+Category    undefined~
+Position    dead~
+END
+
+Name         offletgain~
+Category    undefined~
+Position    dead~
+END
+
+Name         offlineletgain~
+Category    undefined~
+Position    dead~
+END
+
+Name         offmoot~
+Category    undefined~
+Position    dead~
+END
+
+Name         declinelet~
+Category    undefined~
+Position    dead~
+END
+
+Name         declineletgain~
+Category    undefined~
+Position    dead~
+END
+
+Name         page~
+Category    undefined~
+Position    dead~
+END
+
+Name         pdisable~
+Category    undefined~
+Position    dead~
+END
+
+Name         peace~
+Category    undefined~
+Position    dead~
+END
+
+Name         pecho~
+Category    undefined~
+Position    dead~
+END
+
+Name         penalty~
+Category    undefined~
+Position    dead~
+END
+
+Name         penable~
+Category    undefined~
+Position    dead~
+END
+
+Name         permban~
+Category    undefined~
+Position    dead~
+END
+
+Name         permban~
+Category    undefined~
+Position    dead~
+END
+
+Name         permrawcol~
+Category    undefined~
+Position    dead~
+END
+
+Name         pinfo~
+Category    undefined~
+Position    dead~
+END
+
+Name         playerlock~
+Category    undefined~
+Position    dead~
+END
+
+Name         pload~
+Category    undefined~
+Position    dead~
+END
+
+Name         poofin~
+Category    undefined~
+Position    dead~
+END
+
+Name         poofout~
+Category    undefined~
+Position    dead~
+END
+
+Name         prefix~
+Category    undefined~
+Position    dead~
+END
+
+Name         pracsystester~
+Category    undefined~
+Position    dead~
+END
+
+Name         protect~
+Category    undefined~
+Position    dead~
+END
+
+Name         purge~
+Category    undefined~
+Position    dead~
+END
+
+Name         qdie~
+Category    undefined~
+Position    dead~
+END
+
+Name         rawcolour~
+Category    utilities~
+Position    dead~
+END
+
+Name         reboot~
+Category    undefined~
+Position    dead~
+END
+
+Name         rebootresolver~
+Category    undefined~
+Position    dead~
+END
+
+Name         removequester~
+Category    undefined~
+Position    dead~
+END
+
+Name         rename~
+Category    undefined~
+Position    dead~
+END
+
+Name         resolve~
+Category    undefined~
+Position    dead~
+END
+
+Name         restore~
+Category    undefined~
+Position    dead~
+END
+
+Name         release~
+Category    undefined~
+Position    dead~
+END
+
+Name         return~
+Category    undefined~
+Position    dead~
+END
+
+Name         return~
+Category    undefined~
+Position    dead~
+END
+
+Name         rpobjload~
+Category    undefined~
+Position    dead~
+END
+
+Name         rpsupport~
+Category    undefined~
+Position    dead~
+END
+
+Name         runscript~
+Category    undefined~
+Position    dead~
+END
+
+Name         rwhere~
+Category    undefined~
+Position    dead~
+END
+
+Name         seevnum~
+Category    undefined~
+Position    dead~
+END
+
+Name         send~
+Category    nsupport~
+Position    dead~
+END
+
+Name         setalliance~
+Category    undefined~
+Position    dead~
+END
+
+Name         setrace~
+Category    undefined~
+Position    dead~
+END
+
+Name         settendency~
+Category    undefined~
+Position    dead~
+END
+
+Name         sgive~
+Category    undefined~
+Position    dead~
+END
+
+Name         short~
+Category    undefined~
+Position    dead~
+END
+
+Name         showaffectprofile~
+Category    undefined~
+Position    dead~
+END
+
+Name         showban~
+Category    undefined~
+Position    dead~
+END
+
+Name         shutdown~
+Category    undefined~
+Position    dead~
+END
+
+Name         silently~
+Category    undefined~
+Position    dead~
+END
+
+Name         slay~
+Category    undefined~
+Position    dead~
+END
+
+Name         snoop~
+Category    undefined~
+Position    dead~
+END
+
+Name         snote~
+Category    undefined~
+Position    dead~
+END
+
+Name         sockets~
+Category    undefined~
+Position    dead~
+END
+
+Name         social_import~
+Category    undefined~
+Position    dead~
+END
+
+Name         socedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         socialedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         spdebug~
+Category    undefined~
+Position    dead~
+END
+
+Name         stat~
+Category    undefined~
+Position    dead~
+END
+
+Name         string~
+Category    rp~
+Position    dead~
+END
+
+Name         stripaff~
+Category    undefined~
+Position    dead~
+END
+
+Name         stransfer~
+Category    undefined~
+Position    dead~
+END
+
+Name         switch~
+Category    undefined~
+Position    dead~
+END
+
+Name         switchprefix~
+Category    undefined~
+Position    dead~
+END
+
+Name         oextended~
+Category    rp~
+Position    dead~
+END
+
+Name         olcwizi~
+Category    undefined~
+Position    dead~
+END
+
+Name         owizi~
+Category    undefined~
+Position    dead~
+END
+
+Name         tadvance~
+Category    undefined~
+Position    dead~
+END
+
+Name         teleport~
+Category    undefined~
+Position    dead~
+END
+
+Name         telnetga~
+Category    undefined~
+Position    dead~
+END
+
+Name         telnetga~
+Category    undefined~
+Position    dead~
+END
+
+Name         trapset~
+Category    olc~
+Position    dead~
+END
+
+Name         trapshow~
+Category    olc~
+Position    dead~
+END
+
+Name         trapremove~
+Category    olc~
+Position    dead~
+END
+
+Name         transfer~
+Category    undefined~
+Position    dead~
+END
+
+Name         trust~
+Category    undefined~
+Position    dead~
+END
+
+Name         testhelps~
+Category    undefined~
+Position    dead~
+END
+
+Name         tgive~
+Category    undefined~
+Position    dead~
+END
+
+Name         tremove~
+Category    undefined~
+Position    dead~
+END
+
+Name         ttimer~
+Category    undefined~
+Position    dead~
+END
+
+Name         tjunk~
+Category    undefined~
+Position    dead~
+END
+
+Name         toprpers~
+Category    undefined~
+Position    dead~
+END
+
+Name         twhere~
+Category    undefined~
+Position    dead~
+END
+
+Name         undeny~
+Category    undefined~
+Position    dead~
+END
+
+Name         unletgain~
+Category    undefined~
+Position    dead~
+END
+
+Name         unlethero~
+Category    undefined~
+Position    dead~
+END
+
+Name         update~
+Category    undefined~
+Position    dead~
+END
+
+Name         updatemagic~
+Category    undefined~
+Position    dead~
+END
+
+Name         webpass~
+Category    undefined~
+Position    dead~
+END
+
+Name         where~
+Category    undefined~
+Position    dead~
+END
+
+Name         whovis~
+Category    undefined~
+Position    dead~
+END
+
+Name         whoinvis~
+Category    undefined~
+Position    dead~
+END
+
+Name         whotext~
+Category    undefined~
+Position    dead~
+END
+
+Name         wizhelp~
+Category    undefined~
+Position    dead~
+END
+
+Name         wizinvis~
+Category    undefined~
+Position    dead~
+END
+
+Name         wizlistedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         wiznet~
+Category    undefined~
+Position    dead~
+END
+
+Name         wiznetc~
+Category    undefined~
+Position    dead~
+END
+
+Name         wiznet2~
+Category    undefined~
+Position    dead~
+END
+
+Name         wiznet2c~
+Category    undefined~
+Position    dead~
+END
+
+Name         wiznet3~
+Category    undefined~
+Position    dead~
+END
+
+Name         wiznet3c~
+Category    undefined~
+Position    dead~
+END
+
+Name         wiznetdefault~
+Category    undefined~
+Position    dead~
+END
+
+Name         violate~
+Category    undefined~
+Position    dead~
+END
+
+Name         visualdebug~
+Category    undefined~
+Position    dead~
+END
+
+Name         vnum~
+Category    undefined~
+Position    dead~
+END
+
+Name         vnummap~
+Category    undefined~
+Position    dead~
+END
+
+Name         xpen~
+Category    undefined~
+Position    dead~
+END
+
+Name         zecho~
+Category    undefined~
+Position    dead~
+END
+
+Name         zoecho~
+Category    undefined~
+Position    dead~
+END
+
+Name         notenet~
+Category    undefined~
+Position    dead~
+END
+
+Name         skillgroupedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         skgroupedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         skgrpedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         gameedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         asave~
+Category    olc~
+Position    dead~
+END
+
+Name         aslist~
+Category    olc~
+Position    dead~
+END
+
+Name         alist~
+Category    olc~
+Position    dead~
+END
+
+Name         aroomlist~
+Category    olc~
+Position    dead~
+END
+
+Name         autobalance~
+Category    undefined~
+Position    dead~
+END
+
+Name         bolist~
+Category    olc~
+Position    dead~
+END
+
+Name         bollist~
+Category    olc~
+Position    dead~
+END
+
+Name         bovlist~
+Category    olc~
+Position    dead~
+END
+
+Name         bmlist~
+Category    olc~
+Position    dead~
+END
+
+Name         bmllist~
+Category    olc~
+Position    dead~
+END
+
+Name         bmvlist~
+Category    olc~
+Position    dead~
+END
+
+Name         hlist~
+Category    utilities~
+Position    dead~
+END
+
+Name         resets~
+Category    olc~
+Position    dead~
+END
+
+Name         redit~
+Category    olc~
+Position    dead~
+END
+
+Name         rlist~
+Category    olc~
+Position    dead~
+END
+
+Name         brlist~
+Category    olc~
+Position    dead~
+END
+
+Name         rpurge~
+Category    olc~
+Position    dead~
+END
+
+Name         medi~
+Category    undefined~
+Position    dead~
+END
+
+Name         medit~
+Category    olc~
+Position    dead~
+END
+
+Name         mlist~
+Category    olc~
+Position    dead~
+END
+
+Name         mobloglist~
+Category    olc~
+Position    dead~
+END
+
+Name         mxpmodlist~
+Category    undefined~
+Position    dead~
+END
+
+Name         mobhelp~
+Category    olc~
+Position    dead~
+END
+
+Name         ifhelp~
+Category    olc~
+Position    dead~
+END
+
+Name         aedit~
+Category    olc~
+Position    dead~
+END
+
+Name         ashow~
+Category    olc~
+Position    dead~
+END
+
+Name         oedit~
+Category    olc~
+Position    dead~
+END
+
+Name         olist~
+Category    olc~
+Position    dead~
+END
+
+Name         oshow~
+Category    olc~
+Position    dead~
+END
+
+Name         hedit~
+Category    olc~
+Position    dead~
+END
+
+Name         hsave~
+Category    olc~
+Position    dead~
+END
+
+Name         mshow~
+Category    olc~
+Position    dead~
+END
+
+Name         mpshow~
+Category    olc~
+Position    dead~
+END
+
+Name         rshow~
+Category    olc~
+Position    dead~
+END
+
+Name         mpedit~
+Category    olc~
+Position    dead~
+END
+
+Name         vlist~
+Category    olc~
+Position    dead~
+END
+
+Name         olcgoto~
+Category    olc~
+Position    dead~
+END
+
+Name         pkill~
+Category    pkrelated~
+Position    fighting~
+END
+
+Name         pknote~
+Category    notes~
+Position    dead~
+END
+
+Name         pbackstab~
+Category    undefined~
+Position    fighting~
+END
+
+Name         pbs~
+Category    undefined~
+Position    fighting~
+END
+
+Name         pip~
+Category    undefined~
+Position    dead~
+END
+
+Name         pipe~
+Category    undefined~
+Position    dead~
+END
+
+Name         syste~
+Category    undefined~
+Position    dead~
+END
+
+Name         system~
+Category    undefined~
+Position    dead~
+END
+
+Name         crashloo~
+Category    undefined~
+Position    dead~
+END
+
+Name         crashloop~
+Category    undefined~
+Position    dead~
+END
+
+Name         mpreset~
+Category    olc~
+Position    dead~
+END
+
+Name         mpinfo~
+Category    olc~
+Position    dead~
+END
+
+Name         mptrace~
+Category    olc~
+Position    dead~
+END
+
+Name         showplayerlist~
+Category    undefined~
+Position    dead~
+END
+
+Name         reducelaston~
+Category    undefined~
+Position    dead~
+END
+
+Name         remort~
+Category    undefined~
+Position    dead~
+END
+
+Name         resetroo~
+Category    undefined~
+Position    dead~
+END
+
+Name         resetroom~
+Category    undefined~
+Position    dead~
+END
+
+Name         resetare~
+Category    undefined~
+Position    dead~
+END
+
+Name         resetarea~
+Category    undefined~
+Position    dead~
+END
+
+Name         rinfo~
+Category    undefined~
+Position    dead~
+END
+
+Name         showplayerlist~
+Category    undefined~
+Position    dead~
+END
+
+Name         commandsnoop~
+Category    undefined~
+Position    dead~
+END
+
+Name         comedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         csnoop~
+Category    undefined~
+Position    dead~
+END
+
+Name         dedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         owritepassw~
+Category    undefined~
+Position    dead~
+END
+
+Name         overwritepassw~
+Category    undefined~
+Position    dead~
+END
+
+Name         overwritepassword~
+Category    undefined~
+Position    dead~
+END
+
+Name         owritepassword~
+Category    undefined~
+Position    dead~
+END
+
+Name         owritepasswd~
+Category    undefined~
+Position    dead~
+END
+
+Name         objrestrict~
+Category    undefined~
+Position    dead~
+END
+
+Name         savedeitydb~
+Category    undefined~
+Position    dead~
+END
+
+Name         saveherbs~
+Category    undefined~
+Position    dead~
+END
+
+Name         savemixdb~
+Category    undefined~
+Position    dead~
+END
+
+Name         relookup~
+Category    undefined~
+Position    dead~
+END
+
+Name         raceedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         npcinfo~
+Category    undefined~
+Position    dead~
+END
+
+Name         racelist~
+Category    undefined~
+Position    dead~
+END
+
+Name         classedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         write_skills~
+Category    undefined~
+Position    dead~
+END
+
+Name         write_languages~
+Category    undefined~
+Position    dead~
+END
+
+Name         cedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         clanedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         write_classes~
+Category    undefined~
+Position    dead~
+END
+
+Name         read_classes~
+Category    undefined~
+Position    dead~
+END
+
+Name         write_skillgroups~
+Category    undefined~
+Position    dead~
+END
+
+Name         read_nameprofiles~
+Category    undefined~
+Position    dead~
+END
+
+Name         write_nameprofiles~
+Category    undefined~
+Position    dead~
+END
+
+Name         saveclans~
+Category    undefined~
+Position    dead~
+END
+
+Name         loadclans~
+Category    undefined~
+Position    dead~
+END
+
+Name         write_comtable~
+Category    undefined~
+Position    dead~
+END
+
+Name         saveraces~
+Category    undefined~
+Position    dead~
+END
+
+Name         savequestdb~
+Category    undefined~
+Position    dead~
+END
+
+Name         savegameset~
+Category    undefined~
+Position    dead~
+END
+
+Name         loadgameset~
+Category    undefined~
+Position    dead~
+END
+
+Name         saveautostat~
+Category    undefined~
+Position    dead~
+END
+
+Name         loadautostat~
+Category    undefined~
+Position    dead~
+END
+
+Name         savecorpses~
+Category    undefined~
+Position    dead~
+END
+
+Name         loadcorpses~
+Category    undefined~
+Position    dead~
+END
+
+Name         material_list~
+Category    undefined~
+Position    dead~
+END
+
+Name         sedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         sshow~
+Category    undefined~
+Position    dead~
+END
+
+Name         spsklist~
+Category    undefined~
+Position    dead~
+END
+
+Name         qedit~
+Category    undefined~
+Position    dead~
+END
+
+Name         :~
+Category    undefined~
+Position    dead~
+END
+
+Name         immtalk~
+Category    undefined~
+Position    dead~
+END
+
+Name         saycolour~
+Category    undefined~
+Position    dead~
+END
+
+Name         saycolor~
+Category    undefined~
+Position    dead~
+END
+
+Name         motecolour~
+Category    undefined~
+Position    dead~
+END
+
+Name         motecolor~
+Category    undefined~
+Position    dead~
+END
+
+Name         textsearch~
+Category    undefined~
+Position    dead~
+END
+
+Name         debugroom~
+Category    undefined~
+Position    dead~
+END
+
+Name         debugmob~
+Category    undefined~
+Position    dead~
+END
+
+Name         debugobject~
+Category    undefined~
+Position    dead~
+END
+
+Name         makecorefile~
+Category    undefined~
+Position    dead~
+END
+
+Name         detect_oldstyle_note_writing~
+Category    undefined~
+Position    dead~
+END
+
+EOF~

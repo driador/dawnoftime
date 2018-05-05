@@ -1,0 +1,315 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword COMPONENTS~
+level 92
+category undefined~
+text The component section has been divided into nine categories.  Not all of the 
+components listed in these categories are in the game at the moment.  I went 
+through and thought up as many components possible and alternative names so 
+in the future, these will never have to be added into the component charts 
+and the code of what to register.  My idea is that the code will register 
+the group of what the spell will use.  Example: barkskin would use category 
+(wood) component: all So the code would register every material thats in the 
+wood category and any object's material that is in the wood category would 
+work with barkskin.  Other spells will be more specific.  Example: 
+fireshield uses categories rock and earth component: coal, ash Another 
+problem that could occur would be if someone set material on an object for 
+example to ashes, so when these words are put into the categories the word 
+ash would have to have: ash, ashes, another example: leaf, leaves 
+-=========================================================================- 
+Categories Materials/Components 
+-=========================================================================- 
+Metals: adamantium, brass, bronze, copper, iron, obsidian, platinum silver, 
+gold, steel, metal, ore, titanium, adamantite, 
+ 
+Jewels: amber, bloodstone, crystal, jade, diamond, emerald, onyx, opal
+pearl, quartz, sapphire, gem, turquoise, ruby, jet, ameythst
+ 
+Flesh: blood, bone, hair, flesh, shell, ivory, dragonscale, feather
+fur, wool, horn, skull, skin, hide, scale, beak, claw, eye,
+finger, toe, leg, arm, head, guts, heart, tail, tongue, wing
+ 
+Alchemy: ink, wax, ether, mercury, sulfur, slime, spiderweb, water,
+alcohol, acid, venom, sap, honey, honeycomb, saltwater,
+ 
+Rock: lead, marble, rock, sand, glass, coal, stone, pebble, gravel,
+brimstone, limestone,
+ 
+Wood: ash-wood, wood, bamboo, oak, wood, bark, tree, paper,
+parchment, branch, limb, twig, stick, pine, cedar, redwood,
+redoak, water oak,
+ 
+Earth: clay, mud, dust, ash, dirt, grime, sludge, tar, muck, gunk,
+ 
+Plant: flower, hay, moss, fungus, mushroom, straw, vine, root, leaf
+pine needle, grass, rose, dandelion, tulip, carnelion, pedal
+seed, weed, sumac, poison ivy, blossom, shrub,
+ 
+Herb/Spice: herb, fireroot, cinnamin, sage, paprika, garlic, salt
+pepper, oregano, spice, parsley, thyme, basil, ginger
+sugar, aloe, soapwart, marjoram, tarragon, wormwood
+savory, sassafras, rosemary, mint, saffron, mustard
+witch hazel, barberry, chives, bay, catnip, bloodroot
+ephreda, flax, jimsonweed, comfrey, periwinkle
+peppermint, mistletoe, pennyroyal, elderberry, hawthorn
+mugwort, fennel, cloves, geranium, hemlock, rue, birch
+serpentwood, hellebore, snakeroot, betony, eucalyptus
+ 
+~
+END
+
+keyword PLUS-TO-SKILLS~
+level 92
+category undefined~
+see_also SKBAL-CHART~
+text `c======================== `RPLUS-TO-SKILLS-SECTION `c========================`X `1`1This is the helpfile on the systematics of the plus-to-skills syst This 
+works on objects, and will increase the variety in objects throughout the 
+realm.  The plus-to-skills system, In my opinion should not be given to 
+mortals.  Reasons being the way the system is works and the fact of just 
+what these items do I think that only one item of each skill should be 
+available in the game thus no multiple items of pluses to backstab for 
+example that would be way out of balance.  Leaving this to only immortals 
+areas, it would be alot easier for us to do, rather than having to send a 
+list to every builder everytime a new plus-to-skills item is imped and 
+cannot be used.  `1`1The way the system works is, first off no objects under level 20 ( can have 
+these skills added to them.  In `RHELP SKBAL-CHART`X you can see the required 
+level an item must be to get certain skills.  Refering to the `RSKBAL-CHART`X 
+you will notice that the skill backstab is towards the bottom at the 75-79 
+range what this means is that the item you create with backstab skill added 
+to it has to be at least level 75 and at level 75 then it can have +1% added 
+to backstab notice is says 75-79 so at level 76 that would be plus 2% and so 
+on to level 79 where it would be at 5%.  All items have a 1-91 global 
+percentage of 10%.  What this means is that, for example, the language 
+skills is set under the levels 20-24, meaning its max percentage would be at 
+level 24 at 5%, its global percentage would be 10%.  The guidelines for 
+making an item above its 5% max percentage are as follows using the language 
+skills for example: `1`1`gskill(s) `=?= `rlanguages`X `1`glevel requirement `=?= `r20-24`X `1`gglobal requirement `=?= `r20-91`X `1`gmax level percent `=?= `r5%`X `1`gmax global percent `=?= `r10%`X `1`gmax global level req `=?= `r49-91`X `1`gglobal system `=?= `r+1% every 5 levels.  `X `1`1One thing that can be done I suppose is if one item is made with 5 another 
+can be made with 5%.  Or so on with one as 1% 9 more can be made with 1% 
+etc.  Realm would keep track of the items their vnums, and what they do, 
+would then be put into a helpfile for fast access on what is in and what is 
+already to its realm limits.  I think this about covers it, knowing me I 
+probably forgot a few more things, I'd like for All of Realm and Balance to 
+check this systematics chart in `RHELP SKBAL-CHART`X and tell me if everything 
+looks good, or if you feel that the level ranges on some of the skills need 
+to be upped or lowered.
+~
+END
+
+keyword SKBAL-CHART~
+level 92
+category undefined~
+text `1[ Level 20-24 ] languages build forage cook diagnose riding slice `1[ Level 25-29 ] scan awareness lay on hands bash claw weapon `1[ Level 30-34 ] peek hide steal sneak pick lock envenom `1[ Level 35-39 ] dirt kick gore gouge hand to hand kick trip `1[ Level 40-44 ] animal training berserk second attack `1[ Level 45-49 ] rescue wands staves domesticate enhanced damage `1[ Level 50-54 ] retreat third attack disarm `1[ Level 55-59 ] haggle lore sharpen stiffle dodge parry shieldblock `1[ Level 60-64 ] ultra damage quad attack `1[ Level 65-69 ] seasons spheres realms `1[ Level 70=74 ] brew meditation mana focusing channel fast healing `1[ Level 75-79 ] scribe recall backstab sorcery `1[ Level 80-84 ] `1[ Level 85-90 ] 
+ 
+wildstrike??........hobble??
+boneshatter??.......hurl??
+charge??............overhead??
+cutoff??............shieldcleave??
+dervish??...........screech??
+entangle??..........death screech??
+~
+END
+
+keyword TRACKING-MOVEMENTS~
+level 92
+category undefined~
+see_also TRACKING-DIRECTIONS TRACKING-TABLES~
+text Messages printed across the screen when tracking NPC'S, PC'S..  This will 
+refer to the current listing of races in NPCEDIT.  It will cover all 10 
+directions when tracking someone and be based on weight of the character by 
+using RSIZE and the RACE of the character, whether be NPC or PC.  `1`1Weight Table`1============`1deeply`1heavily`1fairly`1lightly`1faintly`1`1Time Table`1==========`1extremely new`1very new`1rather new`1moderately new`1fairly new`1fairly old`1moderately old`1rather old`1very old`1extremely old`1faintly visible`1barely visible`1`1Diagnostics of Print-Outs for tracking example 1{}A set of [Time] 
+[footprints/tracks] of [a/an] [race] lead towards the [direction].  `1`1Diagnotics of Print-Outs ofr tracking Example 2: Some [Time] [Weight] 
+imprinted [footprints/tracks] of [a/an] [race] lead towards the [direction]. 
+ `1`1Also can leave out Weight in track command and add new command that would 
+give better descriptions on the track your tracking.  Say if your tracking 
+an orc.  Each room you walk in you see for example: A set of extremely new 
+footprints of an orc lead towards the east.  You can then type Analyze track 
+and it will analyze the tracks of which your currently tracking, in this 
+example typing analyze track you will see something like These tracks are 
+deeply imprinted into the ground.  Chart system below: `1`1These tracks are [weight] into the [sector]
+~
+END
+
+keyword TRACKING-TABLES~
+level 92
+category undefined~
+see_also TRACKING-MOVEMENTS TRACKING-DIRECTIONS~
+text `1`1`#`CWeight Table: `cdeeply, heavily, fairly, lightly, faintly`^ `1`1`#`CTime Table: `cextremely new, very new, rather new, moderately new, fairly 
+new, fairly old, moderately old, rather old, very old, extremely old, 
+faintly visible, barely visible `1`1`#`CSector Table: `cinside, city, field, forest, hills, mountain, swim(no track), 
+noswim(no track), swamp, air(no track), desert, cave, underwater(no track) `1`1`CRace Table: `cundefined race, human, elf, dwarf, half-elf, gnome, halfling, 
+half-orc, orc, draconian, drow, avian, gnoll, kobold, duergar, mrem, 
+lizardman, voadkyn, alaghi, minotaur, goblin, dragon, other, bat, bear, cat, 
+centipede, dog, doll, fido, fox, hobgoblin, lizard, modron, pig, rabbit, 
+school monster, snake, song bird, troll, water fowl, wolf, wyvern, unicorn, `1`1`#`CDirection Table: `cnorth, northeast, east, southeast, south, southwest, west, 
+northwest, up, down
+ 
+~
+END
+
+keyword TRACKING-DIRECTIONS~
+level 92
+category undefined~
+text `#`cCommand to type: `CTrack `X(race) `1`1`#`cPrint-Out Diagnostics for Track`^ `1`1`XA set of `B[`cTime`B] [`cfootprints`B/`ctracks`B] `Xof `B[`ca`B/`can`B] [`cRace`B] `Xleads toward the `1`1`cPrint-Out Diagnostics for Analyze Track`1`1`XThese `B[`cfootprints`B/`ctracks`B] `Xare `B[`cWeight`B] `Ximpacted into the `B[`cSector`B]`X.  `1`1 =============================================================== 
+`1`1
+~
+END
+
+keyword BNOTE~
+level 92
+category undefined~
+text .. The only purpose for bnote at this time is for the bardic council... for the
+future planned bard system.
+~
+END
+
+keyword COOL-PK-NOTE MY-DEATH-AND-LOVES-LOST~
+level 92
+category undefined~
+text It was a frosty morn on the Month of Frost Blight 1218AK. On the day of 
+despair oh so fitting was a time that led to my death. I was preparing for a 
+class within the Mages Academy around 7am. I reached over and put down a 
+ghost like tiara given to me by whom I was told was Suhl. I suppose I should 
+start with the whole story...
+ 
+I have two loves, Traolin and Ariaken, my heart is between them both and I 
+hath confessed a love beyond imagining to both. Judge me as thou wilt I was 
+out but two weeks ago in an open field, all three of us were there 
+discussing a perculiar draconian who would not leave Trao alone, he was a 
+funny sort- but I stray from my story. I lifted my head and in silent 
+prayer, i prayed to Lanthos to give me strength to make choice between my 
+loves.
+ 
+At that moment a gaunt shadowy figure appeared before us and proclaimed not 
+either deserved my love and he bestowed a betrothal gift apon me, a tiara 
+that dazzled mine eye with it's beauty, so much in fact I became unaware of 
+my actions for a short time.
+ 
+What took place next was I was fussed over and they both feared for my 
+safety - quite flattering dont you think? When Ariaken told Traolin just 
+exactly why he called me his love he was unmistakably upset. Traolin did not 
+know I felt as strongly for the dark knight who I hath grown so fond of 
+these past weeks. He immediately stormed off, his passions ripping him to 
+shreds no doubt for I saw it in his eyes.
+ 
+This morning, he gated to me, we argued and he used fairly rough treatment, 
+I wept and looked deeply into his eyes but for consequence had it he found 
+not the heart this time to forgive me. He asked me to come with him for he 
+sent me a parchment previously he was being hunted for his foul deeds 
+towards Endomar and the Academy of Magic. I followed him obediantly outside 
+into the cold bitting air of the morning where we walked briskly for a few 
+miles arguing. It got to the point where he griped my arm and shook me 
+violently, I returned a stare full of hate and love at the same time, I 
+admit I do still truely love him beyond anything imaginable - and Lanthos 
+strike me down if I feel otherwise.
+ 
+He charmed me and from what I remember his voice softened its edge, looking 
+into mine eyes he promised me that he would set me free and in doing so 
+touched my cheek and sent me to a dreamland. After that I felt the essence 
+of my being slip away and my heart slow down. I was unconscience and before 
+I could wake from my slumber I had a dagger plunged lovingly into mine 
+chest. I awoke painlessly, red essence streaming from my heart, I crawled on 
+my hands and knees a fair distance away from him before he delivered me into 
+eternal sleep.
+ 
+I forgive Traolin and love him for the hate, for the love, and for 
+deliverance.
+ 
+`#`RAdell `^
+~
+END
+
+keyword MULTILOGGERS ALLOWED-MULTILOGGERS~
+level 92
+category undefined~
+text `1 This is a list of players allowed to "multilogg" - they aren't exactly 
+multiloggers, but brothers, couples, etc.  
+ 
+Elgi and Yiuleung (`#`Rsnickers.org`^)
+Thorin and Singe (`#`Rcld.brightok.net`^) 
+Celrion, Jasil, Quentalus (`#`Rmudconnector.com`^)
+Eidora and Arthur (`#`Rtx.pub-ip.psi.net`^)
+Galdar, Ghanest, Zethoc, Bjoerq, Falen (`#`R195.67.79.132`^*) - logging from school
+Iridien, Alecca (`#`Rcr237546-a.rchmd1.bc.wave.home.com`^)
+Ginemis, Eitheus (`#`Rppp*.on.bellglobal.com`^) - allegedly
+Neotho, Ferox, Dacki, Dreant, Naazack (`#`R193.15.218.189`^) - school
+Rendere & Halder, Fangore & Droghan `#`R(*.o1.jps.net)`^ - Linux Ipmasq
+~
+END
+
+keyword NOTE-ANSWER NOTE-ANSWERS~
+level 1
+category undefined~
+text . Many a time your notes may seem neglected by the immortal staff, which is 
+usually not the case. The main reason for you not getting a direct answer 
+is we receive so many notes, that we choose not to answer many, else we'd 
+spend all our online time writing notes. 
+ 
+ Sometimes, your note many indeed get lost amid our huge mail. Don't take 
+it personal :) Spam can always hide a note or two. If you do think your 
+note needs an answer, forward it again to us, after a week.
+ 
+ Most notes, though, won't really require an answer from us. In an effort 
+to answer as many notes as possible, I wrote this list of general answers, 
+that apply to 99% of the following cases: 
+ 
+ `Cbugs and typos: `=?we read them, and add them to the coders todo-list. These 
+notes do not require an answer. 
+ 
+ `Calign change: `=?both the player and an imm must be online to do this. So, 
+after you posted your note, and sent your history, keep an eye for online 
+imms. These notes will seldom get answers, unless we think the reasons for 
+the request were incomplete. 
+ 
+ `Cquest requests and new quest ideas: `=?we seldom have the time to do 
+personalized quests. What we do is save the idea, and if that fits in a 
+general quest we are running, we add it in. Ideas are also saved for future 
+use. These notes are also seldom answered, unless the idea is to be used 
+right away. Do not feel neglected (if it makes you feel better, I was 
+promised a quest when I was still a mortal - like 1.5 years ago - and am 
+still waiting :p), it is just we imms that are stupidly busy. You might 
+consider turning to rpsupport, for help. I am sure they can arrange you 
+something :)
+ 
+ `Cideas: `=?we try to read them, and if one stands out we may consider it. Most 
+of our decisions on the game dynamics are done in-house by our immortal 
+staff, who have a more objective view of the game in general. Also, ideas 
+are meant as a discussion forum, not as a place to demand things imped :p 
+(btw, we usually skip those *cackle*). 
+ 
+ `Cpkill notes: `=?we look into them all and if we find that something did in 
+fact occur that is totally outside the rules we intervene. Otherwise, we 
+dont think there is a need for an answer - consider that as 'there was no 
+problem'. 
+ 
+ `Cnotes to law:`=? if you write us about a potential cheating, we will look 
+at it, and if we find something wrong, it's between us and the cheater. You 
+will hardly get a note telling you how we punished the cheater ;p
+ 
+ `Cmob death notes: `=?we have no control over lag, and bad luck. Being killed 
+by a mob is part of the game, no one escapes that fate. So, don't bother 
+writing notes about that, unless you believe it was a bug, or if it was an 
+aggie that was summoned to towns. 
+ 
+ I hope this answers many unanswered past and future notes. I believe I 
+have included here all kinds of notes that usually do not receive answers. 
+Whenever you send a note and get no answer, refer back to this news, to see 
+if it fits in one of the above cases. 
+ 
+ Ylerin :) 
+~
+END
+
+keyword HOW-TO-MAKE-LASAGNA~
+level 1
+category undefined~
+text Get the frozen lasagna.  Put it on the microwave.  Set it for 10 minutes.  
+Serve hot.  
+~
+END
+
+EOF~
+#$

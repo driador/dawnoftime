@@ -1,0 +1,277 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword GOALS~
+category undefined~
+text This is the founding document written at the time when plans began 
+on the Dawn of Time.
+
+`GThe Dawn of Time Policy Document (concept) - July 97 - Bahn
+`c========---------------------------------------------========
+`GThe goals of our mud.`=?
+
+1. Increase players, playing.
+   (When in doubt, make the popular decision)
+
+2. Have the Dawn of Time become a 'Mud' in it's own right.
+
+3. Flexiblity in Rp.
+
+4. Uniformity in Rp.
+
+5. Greater automony to players.
+
+6. Clear and open decision making.
+
+7. Increased immortal accountability.
+
+8. Feedback where possible.
+
+9. Keeping in mind the fun aspect of playing, when 
+   making decisons where realism and rp are a factor.
+
+10. Immortals are here to serve. (the Dawn of Time)
+
+11. Credit given where due, and rewards both ic & ooc given to those who serve.
+~
+END
+
+keyword RP-POLICY POLICY-RP~
+level 1
+category undefined~
+text This is a list of Roleplaying laws that should be followed in this game.
+ 
+- Mobs are as alive as any character is, those who are sentient, as sentient 
+as your character. They are to be treated as such. You should use your 
+imagination, and ignore the fact that our code does not have artificial 
+intelligence.
+ 
+- Swears used in this game are not supposed to offend anyone who is playing 
+the game. Do not use low level language. Create new, colorful swears, like 
+'you pile of rotten pig ears!'. Penalties will be applied.
+ 
+- Alignments should not flicker. They are anchored to the depths of your 
+character's soul. If you feel your rp is not in accord with your alignment, 
+read 'help alignment-change' and note the Roleplay Council.
+ 
+- The only language that should be used here, in character, is english. 
+French, German, or whatever other earth language do not exist here, and 
+should not be used. If you want to speak in a different language, learn 
+one of Mythrin languages (such as goblin and gnoll).
+ 
+- Charmed mobs and pets should not be equipped with things they shouldnt be 
+able to wear, `#`Weven if the code allows it`^. Things like turtles wearing 
+rings, horses holding swords, crabs wearing plate mails are deeply frowned 
+upon.
+~
+END
+
+keyword SWEAR-POLICY POLICY-SWEAR SWEARING~
+level 1
+category undefined~
+text Low level swearing is not accepted here either over the OOC channel or IC.  
+By low level swearing, we mean all those 4 letter words that many people are 
+so fond of (and some that are more or less than 4 letters).  This type of 
+swearing is offensive to others playing the game.  The use of such words 
+while IC will result in negative moots for your character.  If you use such 
+language over the OOC channel, you are likely to loose your OOC privileges 
+for a day or more.  We do encourage you to come up with more creative forms 
+of swearing and insults.  As an example, you could say, "you pile of rotten 
+pig ears..."  
+~
+END
+
+keyword NSUPPORT-POLICY POLICY-NSUPPORT~
+level 1
+category undefined~
+text Newbie support are the crucial gateways for newbies to learn about the Dawn 
+of Time.  As such powerful influences, newbie support personnel are expected 
+to be kind and helpful, and be able to offer meaningful answers for most any 
+question that newbies may have.  Most of the newbie helpers have played at 
+Dawn of Time for more than 6 months, and many have mudded elsewhere and are 
+familiar with general mudding commands.`+
+`+
+Some times showing people the ropes is extremely time consuming, and 
+likewise very frustrating to accomplish.  Those that are newbie support must 
+have the patience and understanding to deal with these sort of situations.  
+If you don't believe this, try explaining to one of your non-mudder friends 
+how to play.  If you have any questions about newbie support, direct them at 
+a member of the `#`MSupport Council`^.  Check the wizlist for information.`+
+`+
+Newbies are considered those under level 11 and not letgained, though 
+nsupport can still tell to those upto level 25 and not letgained.  Most 
+"newbies" are not really newbies, but rather people who have recreated a new 
+player to start again.  For this reason, it's adviseable to not spam every 
+newbie with messages of help until they show signs of needing it.  Of 
+course, it's been shown to give off more of a friendly atmosphere to go out 
+and offer assistance, even when it's not needed. 
+~
+END
+
+keyword AREA-REQUIREMENTS~
+level 92
+category undefined~
+text . 
+`#`WArea Requirements`^
+ 
+- In order of implementing an area, there is a minimum number or rooms that 
+are required. Depending on how powerful the items on the area will be, the 
+number of required rooms change. The reason is that powerful items will 
+be better protected. The following table shows the relation between items 
+and rooms:
+ 
+    Kind of Area         Rooms
+ 
+    Simple items         15 +
+    Good items           30 +
+    Powerful items       50 +
+ 
+  To know the kind of items your area has, check Table 2 on the Object Balance 
+Section of the Builder's Manual. The table lists 3 levels of equipment level:
+ 
+    `#`Wnormal
+    with one alliance flag or the magic flag
+    with 2 alliances flags and the magic flag`^
+ 
+  What determines the kind of your area is the kind of items your main mobs will 
+be wearing.
+ 
+  Main mobs are those that rule the area, or the most powerful mobs in the 
+area. Examples: main mobs in Mekali are the guard captain and the shopkeepers; 
+in the Training Fields, it is the Absent General.
+ 
+- The area must have an internal organization. There should be a hierarchy 
+(who rules?), an economy (what do they eat? Where does that come from?), and 
+facilities (where do the poor guards sleep? not to mention toilets, 
+kitchen...). Your area could be an exception for some of the above mentioned 
+organization, but hardly to all of them.
+  Examples of non-aggressive areas you can use as a comparison:
+    - facilities: 
+       good example: Silver Temple, Brigand Camp
+       bad example: Training Fields
+    - hierarchy:
+       good example: Training Fields, Orcish Fortress, Mrem Tree, Brigand Camp.
+       bad example: City of Lost Winds
+ 
+- You are expected to write a small help file (one paragraph is enough), 
+describing the history and organization of your area. This file will be 
+imm-only and is OOC.
+ 
+- If you want to add an item with a mythos, history, diary, you must submit 
+your text to the Roleplay Council.
+ 
+- You should read the mythos related to any race you are using in your area. 
+If your group will be radically different from the general individuals of that 
+race, you must report that to the Roleplay Council. That means that if you 
+want an area of orcs that will be angels, you must discuss that with Roleplay.
+ 
+~
+END
+
+keyword SKILL-ABUSE-POLICY POLICY-SKILL-ABUSE~
+level 1
+category undefined~
+text Abusing skills or spells by spamming their command in an attempt to get your 
+skills percentage increased is not allowed.  This means sitting in one place 
+and repeatedly typing the skill command for no better reason than to get 
+better at the skill.  Anyone caught doing this will likely find their skill 
+removed or minimally, set back to 1 depending on circumstances.  There will 
+also be a minor experience penalty.  Increasing a skills percentage through 
+natural and non-spammy use is fine.  
+~
+END
+
+keyword OOC-COMMANDS-ICLY~
+level 92
+category undefined~
+text `#`BCOMMAND     COMMENT
+-------     -------`^
+ 
+`#`ySLAY`^        Slay can have an ic use in a few specific situations: if a death is 
+            required, and a pkill fight won't fit (like a ritual); if a player 
+            is to meet certain death, from which he shouldn't have a chance to 
+            flee (like when a divine lighting falls from the sky).
+ 
+`#`yPDISABLE`^    Usually there is no need for disabling a mortal's command, for the 
+            sake of rp. Just sending a tell 'You are mute now, rp it' should 
+            be enough. In the case of a disable that should last longer, 
+            though, pdisable could be useful. In this case, `#`Ymake sure you 
+            speak to the player prior to disabling the command`^. (NOSAY, 
+            NOEMOTE fall into this case).
+ 
+`#`yFORCE`^       This can be most fun, for it can bring some surprises to the player. 
+            Once again, though, `#`Ymake sure you speak to the player prior to 
+            doing this`^.
+ 
+`#`yTRANSFER`^    Although tempting, transfer should not be used when switched into a 
+            mob that does not have that power (like Mekali's laborers :p).
+ 
+`#`yLOAD`^        Same as above. A god can 'create a buquet of roses'. Mekali's jewler
+            can 'create a beautiful necklace'. But most mobs can't.
+ 
+`#`yPURGE`^       Same thing. Just use common sense.
+~
+END
+
+keyword **PK-REASONS~
+level 1
+category undefined~
+text .. 
+`#`WPK REASONS
+ 
+`rStrong ones:
+------ ----`^
+ 
+These are reasons that can justify a pkill by themselves.
+ 
+- being pkilled (if a group attacked you that's reason enough to kill all the 
+  group).
+- being killed - cases such as a charmed mob killing you at the order of a 
+  player.
+- a cool rp situation - mind you, a true rp situation - like someone stealing 
+your girlfriend, or a court plot.
+- being payed to do so - `#`YNote:`^ this is a special case. The killer doesn't 
+need any other reasons, but the employer does.
+- your friend was killed - `#`YNote:`^ in which case, your friend will no longer 
+have a reason to pkill his murderer.
+ 
+`#`bMild ones:
+---- ----`^
+ 
+Here are the reasons which, by themselves, `#`Rdo not`^ justify a pkill, but if 
+joined, might. Note that some reasons will weight more than others. An example: 
+being teleported counts more than a spit. Usually, though, more than two of 
+these reasons will be needed to justify a pkill.
+ 
+- invasion of your clan.
+- invasion of your house.
+- spitting, swearing, general harrassment.
+- being teleported, slept.
+- being stolen.
+- killing innocent people (mobs).
+ 
+`#`CNotes:
+ 
+`s1.`c the nobles and immortals reserve the right to judge each situation 
+independently, and to change the afford mentioned reasons, as they seem fit.
+ 
+`s2.`c All the above reasons are subject to your alignment. A +3/+3, for example 
+would not kill for any of the above, but he might rescue a little child who's 
+is being attacked.
+ 
+`s3.`c Once you pkill someone, `Call`c your pkreasons are reseted. That is, you 
+won't have any reason left to pkill the same person again. Even if you had 
+1,000 reasons, 1 pkill eliminates them all. You can only think of pkilling the 
+same person if that person gives you brand new reasons.
+ 
+`s4.`c Suspicions are `Cnot`c good pk-reasons. All your reasons must be concrete, 
+ie, you must be able to prove them if asked.`^
+`^
+~
+END
+
+EOF~
+#$

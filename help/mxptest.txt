@@ -1,0 +1,15 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword MXPTEST~
+helpflags hide_keywords~
+category undefined~
+text This is a test for MXP
+~
+END
+
+EOF~
+#$

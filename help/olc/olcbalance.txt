@@ -1,0 +1,261 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword OLCBALANCE-WDAMAGE~
+helpflags builder~
+category undefined~
+text . 
+                  WEAPON DAMAGE:
+ 
+Level:  Damage:             Level:  Damage:
+ 
+-7      1d4                 43      7d6
+-6      1d4                 44      2d24 5d9  10d4
+-5      1d4                 45      3d16
+-4      1d4                 46-47   2d25 4d12 13d3
+-3      1d4                 48      2d26 3d17 6d8
+-2      1d5                 49      5d10 11d4
+-1      1d5                 50      2d27 4d13 7d7
+0       1d5                 51      3d18  
+1       1d6                 52-53   2d28  
+2       1d7  2d3            54-55   2d29 3d19 4d14
+3       1d8                 56      2d30  
+4       1d9  2d4            57      3d20 7d8  9d6  
+5       1d10                58      4d15 8d7  16d3  
+6       1d11 2d5  3d3       59      5d12 13d4  
+7       1d12                60-61   3d21 6d10 11d5  
+8       1d13 2d6            62      4d16 17d3  
+9       1d14 3d4            63      3d22  
+10-11   1d15 2d7  4d3       64-65   5d13 7d9  10d6
+12-13   2d8  3d5            66-67   3d23 4d17 6d11
+14      2d9  4d4  5d3       68-69   3d24 5d14 15d4  
+15      3d6                 70      4d18 19d3  
+16-17   2d10                71      7d10 11d6  
+18      2d11 3d7  4d5 6d3   72-73   3d25 6d12 13d5  
+19      5d4                 74      4d19 5d15 8d9
+20      2d12                75-76   3d26 9d8  
+21      3d8                 77-78   3d27 4d20 6d13
+22-23   2d13 4d6  7d3       79-80   5d16 17d4  
+24-25   2d14 3d9  5d5 6d4   81      3d28 
+26      2d15 4d7  8d3       82-83   4d21 8d10 11d7
+27      3d10                84      3d29 5d17 6d14
+28      2d16                85      7d12 13d6  
+29      5d6  7d4            86      4d22 23d3  
+30-31   2d17 3d11 4d8 6d5   87-88   3d30  
+32      2d18                89      5d18 19d4  
+33      3d12                90-91   3d31 4d23 6d15
+34-35   2d19 4d9  5d7 8d4   92      7d13 14d6  
+36-37   2d20 3d13 6d6 7d5   93      3d32 9d10 11d8  
+38      2d21 4d10 11d3      94-95   4d24 5d19 10d9
+39      3d14 5d8  9d4       96-97   3d33 6d16 17d5  
+40-41   2d22                98      4d25 8d12 13d7
+42      2d23 3d15 4d11 6d7  99      3d34 5d20 7d14
+`r<continued in OLCBALANCE-WDAMAGE2>`=?
+~
+END
+
+keyword OLCBALANCE-WDAMAGE2~
+helpflags builder~
+category undefined~
+text .                 WEAPON DAMAGE:
+                 (levels 50-99)
+ 
+Level:       Damage:
+51           3d18  
+52-53        2d28  
+54-55        2d29  3d19  4d14  5d11  6d9  10d5  12d4  15d3  
+56           2d30  
+57           3d20  7d8  9d6  
+58           4d15  8d7  16d3  
+59           5d12  13d4  
+60-61        3d21  6d10  11d5  
+62           4d16  17d3  
+63           3d22  
+64-65        5d13  7d9  10d6  14d4  
+66-67        3d23  4d17  6d11  8d8  9d7  12d5  18d3  
+68-69        3d24  5d14  15d4  
+70           4d18  19d3  
+71           7d10  11d6  
+72-73        3d25  6d12  13d5  
+74           4d19  5d15  8d9  10d7  16d4  20d3  
+75-76        3d26  9d8  
+77-78        3d27  4d20  6d13  7d11  12d6  14d5  21d3  
+79-80        5d16  17d4  
+81           3d28  
+82-83        4d21  8d10  11d7  22d3  
+84           3d29  5d17  6d14  9d9  10d8  15d5  18d4  
+85           7d12  13d6  
+86           4d22  23d3  
+87-88        3d30  
+89           5d18  19d4  
+90-91        3d31  4d23  6d15  8d11  12d7  16d5  24d3  
+92           7d13  14d6  
+93           3d32  9d10  11d8  
+94-95        4d24  5d19  10d9  20d4  25d3  
+96-97        3d33  6d16  17d5  
+98           4d25  8d12  13d7  26d3  
+99           3d34  5d20  7d14  15d6  21d4
+ 
+`r<Previous levels on help OLCBALANCE-WDAMAGE>`=?
+~
+END
+
+keyword OLCBALANCE-WMODIFY~
+helpflags builder~
+category undefined~
+text Weapon Modifier:           Read Damage at Level:
+ 
+dagger                             -8
+whip                               -3
+flail                              -2
+exotic (usable by mages/druids)    -3
+exotic (not usable by mages/druids)+0
+sword or mace                      +0
+axe or 2 handed spear(staff)       +3
+two handed maces or swords         +6
+polearms                           +8
+2 handed axes                      +9
+-20 mana                           +1
++10 mana                           -1
+-4 hp                              +1
++2 hp                              -1
+-2 hit or dam                      +1
++2 hit or dam                      -1
++1 attribute                       -1
+-2 attribute                       +1
+sharp                              -4
+vorpal                             -4
+vampiric                           -4
+flaming                            -3
+freezing                           -3
+empowered                          -3
+poisoned                           -3
+holy                               -3
+ 
+`bExamples:`=?
+ 
+A level 30 sword +10hp +1 me +2hit reads damage at 
+lvl (30+0-5-1-2)=22 (4d6) ave 14
+ 
+A level 30 sword -20hp -2 me -2hit reads damage at 
+lvl (30+0+5+1+2)=38 (4d10) ave 22
+ 
+A level 30 dagger -20 hp sharp +2 hit -4 me reads damage at
+lvl (30-8+5-4-1+2)=24 (5d5) ave 15
+ 
+These are guidelines but these keep the game in balance
+Do not deviate too far from these and only then if the eq
+is very difficult to get, or very expensive if sold.
+ 
+See also: `rhelp wdamage`=?
+~
+END
+
+keyword OLCBALANCE-MSTATS~
+helpflags builder~
+category undefined~
+text ..                         MOBILE STATISTICS:
+ 
+level hit pts     ac    damage         level hit pts       ac   damage 
+ 
+  1   1d4+1       90    1d4+0            51  5d9+280      -210  5d8+20
+  2   1d4+2       80    1d5+0            52  5d9+285      -220  6d7+20
+  3   1d5+3       70    1d6+0            53  5d9+290      -230  6d7+21
+  4   2d4+1       60    1d5+1            54  5d9+295      -240  7d6+22
+  5   2d5+1       50    1d6+1            55  5d9+300      -250  10d4+23
+  6   2d5+4       40    1d7+1            56  6d9+300      -260  10d4+24
+  7   2d5+5       40    1d8+1            57  6d9+305      -270  6d8+24
+  8   2d5+8       30    1d7+2            58  6d9+310      -280  5d10+25
+  9   2d5+12      20    1d8+2            59  6d9+315      -290  8d6+26
+ 10   2d5+18      10    2d4+2            60  6d9+320      -300  8d6+27
+ 11   2d5+22      10    1d10+2           61  6d10+320     -310  8d6+28
+ 12   2d5+45      00    1d10+3           62  6d10+325     -320  8d7+28
+ 13   2d5+50     -10    2d5+3            63  6d10+330     -330  8d7+29
+ 14   2d5+55     -10    1d12+3           64  6d10+335     -340  8d7+30
+ 15   3d5+60     -20    2d6+3            65  6d10+340     -350  7d8+32
+ 16   3d5+67     -20    2d6+4            66  7d10+340     -360  7d8+32
+ 17   3d5+72     -30    3d4+4            67  7d10+345     -370  7d8+33
+ 18   3d5+79     -30    2d7+4            68  7d10+350     -380  7d8+34
+ 19   3d5+82     -40    2d7+5            69  7d10+355     -390  8d8+33
+ 20   3d5+88     -40    2d8+5            70  7d10+360     -400  8d8+34
+ 21   4d5+90     -50    4d4+5            71  7d11+360     -410  8d8+35
+ 22   4d5+95     -50    4d4+6            72  7d11+365     -420  8d8+36
+ 23   4d5+100    -60    3d6+6            73  7d11+370     -430  8d9+36
+ 24   4d5+105    -60    2d10+6           74  7d11+375     -440  8d9+37
+ 25   4d5+110    -70    2d10+7           75  7d11+380     -450  8d9+38
+ 26   4d5+115    -70    3d7+7            76  8d11+380     -460  8d9+39
+ 27   4d5+120    -80    5d4+7            77  8d11+385     -470  9d9+38
+ 28   5d5+125    -80    2d12+8           78  8d11+390     -480  9d9+39
+ 29   5d5+130    -90    2d12+8           79  8d11+395     -490  9d9+40
+ 30   5d5+140    -90    4d6+8            80  8d11+400     -500  9d9+41
+ 31   5d6+150    -100   4d6+9            81  8d12+400     -510  9d10+40
+ 32   5d6+160    -100   6d4+9            82  8d12+405     -520  9d10+41
+ 33   5d6+195    -110   6d4+10           82  8d12+410     -530  9d10+42
+ 34   5d6+205    -110   4d7+10           83  8d12+415     -540  9d10+43
+ 35   5d6+210    -110   4d7+11           84  8d12+420     -550  10d10+42
+ 36   5d6+215    -120   3d10+11          85  9d12+420     -560  10d10+43
+ 37   5d6+220    -120   3d10+12          86  9d12+425     -570  10d10+44
+ 38   5d6+225    -130   5d6+12           87  9d12+430     -580  10d10+45
+ 39   5d6+230    -130   5d6+13           88  9d12+435     -590  10d11+44
+ 40   5d6+235    -130   4d8+13           89  9d12+440     -600  10d11+45
+ 41   5d7+240    -140   4d8+14           90  9d13+440     -610  10d11+46
+ 42   5d7+242    -140   3d12+14          91  9d13+445     -620  10d11+47
+ 43   5d7+245    -150   3d12+15          92  9d13+450     -630  10d11+48
+ 44   5d7+247    -150   8d4+15           93  9d13+455     -640  10d11+49
+ 45   5d7+250    -150   8d4+16           94  9d13+460     -650  10d11+50
+ 46   5d8+255    -160   6d6+16           95  10d13+460    -660  10d11+51
+ 47   5d8+260    -170   6d6+17           96  10d13+465    -670  10d11+52
+ 48   5d8+265    -180   6d6+18           97  10d13+470    -680  10d11+53
+ 49   5d8+270    -190   4d10+18          98  10d13+475    -690  10d11+54
+ 50   5d9+275    -200   5d8+19           99  10d13+480    -700  10d11+55
+ 
+------------------------------------------------------------------------
+Thief mobiles should read their hp, ac, and damage at one level lower.
+Mage mobiles read hp and ac at one level lower, and damage three 
+levels lower.
+Cleric mobiles read damage at two levels lower.
+Warrior mobiles read hit points one level higher.
+Armor class vs. magical attacks should be computed by this formula: 
+(ac - 10) / n + 10, where n is 4 for most mobiles, 3 for thieves and 
+clerics, and 2 for mages. 
+ 
+Remember, +hit should only be given to very exceptional mobiles.
+~
+END
+
+keyword OLCBALANCE-ACVALUE OLCBALANCE-ACVALUES~
+helpflags builder~
+category undefined~
+text .              Recommended Armor Class Values
+ 
+Armor Type   Ac Pierce  Ac Bash   Ac Slash  Ac Magic
+ 
+Finger       level      level     level     level/15
+Neck         level/6    level/6   level/6   level/8
+Torso        level/3    level/3   level/3   level/4
+Head         level/4    level/4   level/4   level/5
+Legs         level/4    level/4   level/4   level/5
+Feet         level/5    level/5   level/5   level/6
+Hands        level/5    level/5   level/5   level/6
+Arm          level/4    level/4   level/4   level/5
+About Body   level/4    level/4   level/4   level/5
+About Waist  level/5    level/5   level/5   level/7
+Wrist        level/7    level/7   level/7   level/9
+Shield       level/3    level/3   level/3   level/4
+ 
+Floating Item   Use Type Jewelry, Treasure, etc. (no AC)
+ 
+`bExamples:`=?  A level 60 shield would have AC's 20 20 20 15.
+ 
+*You may want to adjust armor classes down a bit on an item that has
+ strong magical properties, if you feel it is too strong.  Along the
+ same lines, if the item has some sort of negative effect, feel free
+ to use higher than recommended armor classes.
+~
+END
+
+EOF~
+#$

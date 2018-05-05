@@ -1,0 +1,52 @@
+name none~
+END
+
+name valarin~
+END
+
+name endomar~
+END
+
+name kerallyan~
+END
+
+name rhynia~
+END
+
+name ring_isle~
+END
+
+name orcs~
+END
+
+name elenarthya~
+END
+
+name confederacy~
+END
+
+name delenth~
+END
+
+name markrist~
+END
+
+name aarislan~
+END
+
+name faerie_ring~
+END
+
+name plane_air~
+END
+
+name plane_water~
+END
+
+name plane_earth~
+END
+
+name plane_fire~
+END
+
+EOF~

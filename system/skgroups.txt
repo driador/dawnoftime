@@ -1,0 +1,354 @@
+######SKILLGROUP    dawn basics~
+flags 
+	creation_selectable
+	free_for_all~
+skillswithvalues
+	recall 1
+~
+class_ratings
+	mage 0
+	cleric 0
+	thief 0
+	warrior 0
+	druid 0
+	paladin 0
+	ranger 0
+	barbarian 0
+	spellfilcher 0
+	bard 0
+~
+END
+
+
+######SKILLGROUP    mage basics~
+flags 
+	creation_selectable~
+skillswithvalues
+	dagger 1
+	scrolls 1
+	wands 1
+~
+class_ratings
+	mage 0
+~
+END
+
+
+######SKILLGROUP    cleric basics~
+flags 
+	creation_selectable~
+skillswithvalues
+	mace 1
+	scrolls 1
+	staves 1
+~
+class_ratings
+	cleric 0
+~
+END
+
+
+######SKILLGROUP    thief basics~
+flags 
+	creation_selectable~
+skillswithvalues
+	dagger 1
+	steal 1
+~
+class_ratings
+	thief 0
+~
+END
+
+
+######SKILLGROUP    warrior basics~
+flags 
+	creation_selectable~
+skillswithvalues
+	sword 1
+~
+class_ratings
+	warrior 0
+~
+END
+
+
+######SKILLGROUP    druid basics~
+flags 
+	creation_selectable~
+skillswithvalues
+	mace 1
+	scrolls 1
+~
+class_ratings
+	druid 0
+~
+END
+
+
+######SKILLGROUP    paladin basics~
+flags 
+	creation_selectable~
+skillswithvalues
+	sword 1
+	staves 1
+	scrolls 1
+~
+class_ratings
+	paladin 0
+~
+END
+
+
+######SKILLGROUP    ranger basics~
+flags 
+	creation_selectable~
+skillswithvalues
+	sword 1
+	awareness 1
+~
+class_ratings
+	ranger 0
+~
+END
+
+
+######SKILLGROUP    barbarian basics~
+flags 
+	creation_selectable~
+skillswithvalues
+	berserk 1
+	bash 1
+	axe 1
+~
+class_ratings
+	barbarian 0
+~
+END
+
+
+######SKILLGROUP    spellfilcher basics~
+flags 
+	creation_selectable~
+skillswithvalues
+	dagger 1
+	lore 1
+	steal 1
+	scrolls 1
+	wands 1
+~
+class_ratings
+	spellfilcher 0
+~
+END
+
+
+######SKILLGROUP    mage default~
+flags 
+	creation_selectable~
+skillswithvalues
+	scan 1
+	essence 1
+	alteration 1
+	evocation 1
+	dodge 1
+	conjuration 1
+	necromancy 1
+	conjuration 1
+	summoning 1
+~
+class_ratings
+	mage 40
+~
+END
+
+
+######SKILLGROUP    cleric default~
+flags 
+	creation_selectable~
+skillswithvalues
+	scan 1
+	convocation 1
+	protection 1
+	healing 1
+	death 1
+	meditation 1
+	combat 1
+~
+class_ratings
+	cleric 40
+~
+END
+
+
+######SKILLGROUP    thief default~
+flags 
+	creation_selectable~
+skillswithvalues
+	mace 1
+	'dirt kicking' 1
+	backstab 1
+	disarm 1
+	dodge 1
+	'second attack' 1
+	hide 1
+	peek 1
+	'pick lock' 1
+	sneak 1
+~
+class_ratings
+	thief 40
+~
+END
+
+
+######SKILLGROUP    warrior default~
+flags 
+	creation_selectable~
+skillswithvalues
+	'shield block' 1
+	trip 1
+	'second attack' 1
+	dagger 1
+	'dual wield' 1
+	sword 1
+	'fast healing' 1
+	rescue 1
+	disarm 1
+	scan 1
+	'enhanced damage' 1
+	parry 1
+	dodge 1
+~
+class_ratings
+	warrior 40
+~
+END
+
+
+######SKILLGROUP    ranger default~
+flags 
+	creation_selectable~
+skillswithvalues
+	scan 1
+	sneak 1
+	build 1
+	awareness 1
+	staff 1
+	axe 1
+	'animal training' 1
+	domesticate 1
+	land 1
+	water 1
+	plant 1
+	animal 1
+~
+class_ratings
+	ranger 40
+~
+END
+
+
+######SKILLGROUP    druid default~
+flags 
+	creation_selectable~
+skillswithvalues
+	scan 1
+	'hand to hand' 1
+	'animal training' 1
+	summer 1
+	winter 1
+	autumn 1
+	spring 1
+	plant 1
+	animal 1
+	land 1
+~
+class_ratings
+	druid 40
+~
+END
+
+
+######SKILLGROUP    paladin default~
+flags 
+	creation_selectable~
+skillswithvalues
+	scan 1
+	'second attack' 1
+	'third attack' 1
+	'lay on hands' 1
+~
+class_ratings
+	paladin 40
+~
+END
+
+
+######SKILLGROUP    barbarian default~
+flags 
+	creation_selectable~
+skillswithvalues
+	'enhanced damage' 1
+	mace 1
+	flail 1
+	staff 1
+	polearm 1
+	build 1
+	cook 1
+	slice 1
+	'dirt kicking' 1
+	'fast healing' 1
+	'hand to hand' 1
+	riding 1
+	scan 1
+	'second attack' 1
+	'third attack' 1
+	'dual wield' 1
+~
+class_ratings
+	barbarian 40
+~
+END
+
+
+######SKILLGROUP    spellfilcher default~
+flags 
+	creation_selectable~
+skillswithvalues
+	scan 1
+	backstab 1
+	'second attack' 1
+	'dirt kicking' 1
+	sneak 1
+	hide 1
+~
+class_ratings
+	spellfilcher 40
+~
+END
+
+
+######SKILLGROUP    weaponsmaster~
+flags 
+	creation_selectable~
+skillswithvalues
+	axe 1
+	dagger 1
+	flail 1
+	mace 1
+	polearm 1
+	staff 1
+	sword 1
+	whip 1
+~
+class_ratings
+	warrior 15
+	paladin 18
+	ranger 20
+	barbarian 10
+~
+END
+
+
+EOF~

@@ -1,0 +1,1940 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Slime Kingdom~
+ShortName   Slime Kingdom~
+Builders    None~
+Credits     Khan~
+VNUMs       12315 12367
+LRange      10 91
+Security    9
+Colour      R~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#12315
+Name small red slime~
+ShortD a small red slime~
+LongD A small red slime lays here.~
+Desc A small red slime looks right back at you with eyes that do not exist.  You 
+wonder if it really knows you're there and hope it isn't aggressive, as it 
+looks strangely dangerous.
+~
+Race unique~
+Align -3 -2
+Level 10
+Hitroll 1
+HitDice 2d5+18
+ManaDice 2d5+145
+DamDice 2d4+2
+DamType suction
+AC 10 10 10 40
+Wealth 0
+Act    npc no_tame aggressive stay_area~
+AffBy  detect_hidden regeneration~
+Imm    charm cold acid poison~
+Res    bash cold~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#12316
+Name medium red slime~
+ShortD a medium-sized red slime~
+LongD A medium-sized, red slime sucking on a skull.~
+Desc A medium-sized, slime sucking on his favourite skull which looks vaguely 
+familiar.  Maybe its one of your friends?  These red slime types seem to be 
+overly aggressive.
+~
+Race unique~
+Align -3 -2
+Level 15
+Hitroll 1
+HitDice 3d5+60
+ManaDice 3d5+170
+DamDice 2d6+3
+DamType suction
+AC -20 -20 -20 10
+Wealth 0
+Act    npc no_tame aggressive stay_area~
+AffBy  detect_hidden regeneration~
+Imm    charm acid poison disease drowning~
+Res    bash cold~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#12317
+Name large red slime~
+ShortD a large red slime~
+LongD A large red slime lies here ready to suck your brains out.~
+Desc A large, red slime looks ready to jump and suck your brains out.  How a 
+slime jumps is beyond you but it looks like this slime could do it.
+~
+Race unique~
+Align -3 -2
+Level 16
+Hitroll 2
+HitDice 3d5+88
+ManaDice 3d5+195
+DamDice 2d8+5
+DamType suction
+AC -40 -40 -40 0
+Wealth 0
+Act    npc no_tame aggressive stay_area~
+AffBy  detect_hidden regeneration~
+Imm    charm acid poison disease drowning~
+Res    bash cold~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#12318
+Name huge red slime~
+ShortD a huge red slime~
+LongD A huge red slime sliding along the ground.~
+Desc A huge red slime slides effortlessly towards you.  If slimes could smile 
+this one would, and he looks ready to slide over you.
+~
+Race unique~
+Align -3 -2
+Level 17
+Hitroll 2
+HitDice 4d5+110
+ManaDice 4d5+220
+DamDice 2d10+7
+DamType suction
+AC -70 -70 -70 -30
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_hidden regeneration~
+Imm    charm bash acid poison disease drowning~
+Res    cold~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material unknown
+END
+
+#12319
+Name enormous red slime~
+ShortD a enormous red slime~
+LongD An enormous red slime sitting in its bowl.~
+Desc An enormous red slime lays here in its bowl.  It looks somehow content and 
+all to sure of itself.  Almost like nothing has challenged this massive 
+blob of disgust for many years.
+~
+Race unique~
+Align -3 -2
+Level 38
+Hitroll 4
+HitDice 5d9+275
+ManaDice 5d9+345
+DamDice 5d8+21
+DamType suction
+AC -200 -200 -200 -140
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden regeneration~
+Imm    charm bash fire acid poison disease drowning~
+Res    cold~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#12320
+Name small green slime~
+ShortD a small green slime~
+LongD A small green slime lies here.~
+Desc A small green slime lies here looking bored for a slime.  Maybe it just 
+wishes it could suck on your skull and wants to grow up to be as big as his 
+larger buddies.
+~
+Race unique~
+Align -3 -2
+Level 10
+Hitroll 1
+HitDice 2d5+18
+ManaDice 2d5+145
+DamDice 2d4+2
+DamType suction
+AC 10 10 10 40
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_hidden detect_good regeneration~
+Imm    charm bash cold acid poison disease~
+Res    lightning~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#12321
+Name medium-sized green slime~
+ShortD a medium-sized green slime~
+LongD A medium-sized green slime oozing residue.~
+Desc A medium-sized green slime is laying out a beautiful trail of residue 
+behind it and looks about ready to lay it right over your head.
+~
+Race unique~
+Align -3 -2
+Level 13
+Hitroll 1
+HitDice 3d5+60
+ManaDice 3d5+170
+DamDice 2d6+3
+DamType suction
+AC -20 -20 -20 10
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_hidden detect_good regeneration~
+Imm    charm cold acid poison disease drowning~
+Res    bash lightning~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#12322
+Name large green slime~
+ShortD a large green slime~
+LongD A large green slime looking disgusting.~
+Desc A large green slime seems to think you'll taste great for lunch.  It is at 
+least double your size and seems to want to go for triple or nothing.
+~
+Race unique~
+Align -3 -2
+Level 18
+Hitroll 2
+HitDice 3d5+88
+ManaDice 3d5+195
+DamDice 2d8+5
+DamType suction
+AC -40 -40 -40 0
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_hidden detect_good regeneration~
+Imm    charm bash cold acid poison drowning~
+Res    lightning~
+Form   edible blob~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#12323
+Name enormous green slime~
+ShortD a enormous green slime~
+LongD An enormous green slime in its bowl.~
+Desc An enormous green slime is laying in its bowl.  It looks rather content and 
+well fed.  For some reason it seems to be looking you over even though it 
+apparently has no sensory apparatus.
+~
+Race unique~
+Align -3 -2
+Level 40
+Hitroll 4
+HitDice 5d9+275
+ManaDice 5d9+345
+DamDice 5d8+22
+DamType suction
+AC -200 -200 -200 -140
+Wealth 400
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_hidden detect_good regeneration~
+Imm    charm bash cold acid poison disease drowning~
+Res    lightning~
+Vuln   fire~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#12324
+Name huge green slime~
+ShortD a huge green slime~
+LongD A huge green slime smelling bad.~
+Desc A huge green slime seems to have no interest what so ever in its safety as 
+it just lazily moves around.  This is very scary for some reason to you.
+~
+Race unique~
+Align -3 -2
+Level 21
+Hitroll 2
+HitDice 4d5+110
+ManaDice 4d5+220
+DamDice 2d10+7
+DamType suction
+AC -70 -70 -70 10
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  detect_magic detect_hidden regeneration~
+Imm    charm bash cold acid poison disease drowning~
+Res    lightning~
+Vuln   fire~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material unknown
+END
+
+#12325
+Name small blue slime~
+ShortD a small blue slime~
+LongD A small blue slime smiling like only a slime can.~
+Desc A small blue slime is smiling at you with its non-existant mouth.  All 
+these slimes give you the creeps because of their nonchalant behaviour.
+~
+Race unique~
+Align -3 -2
+Level 10
+Hitroll 1
+HitDice 2d5+18
+ManaDice 2d5+145
+DamDice 2d4+2
+DamType suction
+AC 10 10 10 40
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  invisible detect_invis detect_hidden detect_good regeneration~
+Imm    charm cold acid poison disease drowning~
+Res    bash fire~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#12326
+Name medium-sized blue slime~
+ShortD a medium-sized blue slime~
+LongD A medium-sized blue slime, floating on the ground.~
+Desc A medium-sized blue slime is effortlessly floating on the ground.  Actually 
+it is sliding but the lack of friction makes it look like it is floating.
+~
+Race unique~
+Align -3 -2
+Level 15
+Hitroll 1
+HitDice 3d5+60
+ManaDice 3d5+170
+DamDice 2d6+3
+DamType suction
+AC -20 -20 -20 10
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  invisible detect_invis detect_hidden detect_good regeneration~
+Imm    charm bash cold acid disease drowning~
+Res    fire~
+Form   edible poison~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#12327
+Name large blue slime~
+ShortD a large blue slime~
+LongD A large blue slime gurgling happily.~
+Desc A large blue slime gurgles happily on some piece of flesh probably.  You 
+wonder how something so disgusting could do something that is usually 
+associated with being cute or funny.
+~
+Race unique~
+Align -3 -2
+Level 18
+Hitroll 2
+HitDice 3d5+88
+ManaDice 3d5+195
+DamDice 2d8+5
+DamType suction
+AC -40 -40 -40 0
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  invisible detect_invis detect_hidden detect_good regeneration~
+Imm    charm bash cold acid poison disease drowning~
+Res    fire~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#12328
+Name huge blue slime~
+ShortD a huge blue slime~
+LongD A huge blue slime sucking on a rib.~
+Desc A huge blue slime seems to be contently picking at its teeth with a rib but 
+I guess it would help if the slime had teeth.  In fact all you see is a rib 
+floating inside the slime.
+~
+Race unique~
+Align -3 -2
+Level 25
+Hitroll 2
+HitDice 4d5+110
+ManaDice 4d5+220
+DamDice 2d10+7
+DamType suction
+AC -70 -70 -70 -20
+Wealth 0
+Act    npc no_tame stay_area~
+AffBy  invisible detect_invis detect_hidden detect_good regeneration~
+Imm    charm bash cold acid poison disease drowning~
+Res    fire~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material unknown
+END
+
+#12329
+Name enormous blue slime~
+ShortD an enormous blue slime~
+LongD An enormous blue slime laying in its bowl.~
+Desc An enormous blue slime seems rather happy in its bowl.  Considering this 
+bowl it is in is rather wide and large you can see why. It seems proud of 
+the pile of bones beside it.
+~
+Race unique~
+Align -3 -2
+Level 46
+Hitroll 4
+HitDice 5d9+275
+ManaDice 5d9+345
+DamDice 5d8+22
+DamType suction
+AC -200 -200 -200 -140
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  invisible detect_invis detect_hidden detect_good regeneration~
+Imm    summon charm bash cold acid poison disease drowning~
+Res    fire~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#12330
+Name small yellow slime~
+ShortD a small yellow slime~
+LongD A small yellow slime serving the other slimes.~
+Desc A small yellow slime seems to be the lowest rank in the chain of slimes.  
+This is the first slime you have seen that seems discontented.
+~
+Race unique~
+Align -3 -2
+Level 10
+Hitroll 1
+HitDice 2d5+18
+ManaDice 2d5+145
+DamDice 2d4+2
+DamType suction
+AC 10 10 10 40
+Wealth 0
+Act    npc no_tame stay_area wimpy~
+AffBy  detect_hidden detect_good regeneration~
+Imm    charm poison disease drowning~
+Res    bash acid~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#12331
+Name medium-sized yellow slime~
+ShortD a medium-sized yellow slime~
+LongD A medium-sized yellow slime looking unhappy for a slime.~
+Desc This slime seems to you more like a big puddle of urine and smells the same 
+too.  You hope you don't accidently step on this slime.
+~
+Race unique~
+Align -3 -2
+Level 15
+Hitroll 1
+HitDice 3d5+60
+ManaDice 3d5+170
+DamDice 2d6+3
+DamType suction
+AC -20 -20 -20 10
+Wealth 0
+Act    npc no_tame stay_area wimpy~
+AffBy  detect_hidden detect_good regeneration~
+Imm    charm bash poison disease drowning~
+Res    acid~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#12332
+Name large yellow slime~
+ShortD a large yellow slime~
+LongD A large yellow slime acting as a slave.~
+Desc A large yellow slime seems to be a slave only to the highest sized of the 
+slimes.  Most of the smaller slimes seem to be jealous.
+~
+Race unique~
+Align -3 -2
+Level 18
+Hitroll 2
+HitDice 3d5+88
+ManaDice 3d5+195
+DamDice 2d8+5
+DamType suction
+AC -40 -40 -40 0
+Wealth 0
+Act    npc no_tame stay_area wimpy~
+AffBy  detect_hidden detect_good regeneration~
+Imm    charm bash poison disease drowning~
+Res    acid~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#12333
+Name huge yellow slime~
+ShortD a huge yellow slime~
+LongD A huge yellow slime looking rather bored.~
+Desc A huge yellow slime seems rather bored with its existence.  With nothing 
+eat currently it seems to use its time just sitting around taking up space.
+~
+Race unique~
+Align -3 -2
+Level 25
+Hitroll 2
+HitDice 4d5+110
+ManaDice 4d5+220
+DamDice 2d10+7
+DamType suction
+AC -70 -70 -70 -20
+Wealth 0
+Act    npc no_tame stay_area wimpy~
+AffBy  detect_hidden detect_good regeneration~
+Imm    charm bash poison disease drowning~
+Res    acid~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material unknown
+END
+
+#12334
+Name enormous yellow slime~
+ShortD an enormous yellow slime~
+LongD An enormous yellow slime lying in its bowl.~
+Desc An enormous yellow slime master of the slave slimes seems to not mind its 
+job description too much.  With the pile of bones to its left its no wonder 
+this slime looks well fed.  
+~
+Race unique~
+Align -3 -2
+Level 48
+Hitroll 4
+HitDice 5d9+275
+ManaDice 5d9+345
+DamDice 5d8+22
+DamType suction
+AC -200 -200 -200 -140
+Wealth 480
+Act    npc dont_wander no_tame stay_area wimpy~
+AffBy  detect_hidden detect_good regeneration~
+Imm    charm bash cold poison disease drowning sound~
+Res    acid~
+Form   edible poison blob~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material unknown
+END
+
+#12335
+Name king slime~
+ShortD the king slime~
+LongD The king of the slimes lays here in its throne bowl.~
+Desc The King of the Slimes is almost purely transparent and seems to be the 
+only one of its kind.  It looks smart for a slime and is easily the largest 
+creature you have ever seen.  This Slime by the looks of it could swallow 
+your city.  
+~
+Race unique~
+Align -3 -2
+XPMod 120
+Level 103
+Hitroll 5
+HitDice 10d13+750
+ManaDice 5d10+450
+DamDice 10d13+85
+DamType slime
+AC -800 -800 -800 -700
+Wealth 1000
+Act    npc dont_wander no_tame aggressive stay_area~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared haste regeneration~
+Off    area_attack bash~
+Imm    summon charm poison disease drowning sound~
+Res    bash cold acid~
+Vuln   fire lightning holy energy mental light~
+Form   instant_decay blob~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material unknown
+END
+
+#12336
+Name thing~
+ShortD the thing~
+LongD A thing.~
+Desc This thing is nothing but to be called a thing.  It has no eyes yet it 
+sees, no ears but it hears, its face has no features and it keeps making 
+this low frequency noise.  What is this thing?.
+~
+Race unique~
+Align -3 -3
+XPMod 125
+Level 67
+Hitroll 2
+HitDice 8d11+390
+ManaDice 5d10+400
+DamDice 8d9+39
+DamType smash
+AC -460 -460 -460 -360
+Wealth 670
+Act    npc dont_wander no_tame aggressive stay_area warrior~
+AffBy  invisible detect_evil detect_invis detect_magic detect_hidden detect_good berserk regeneration~
+Off    berserk~
+Res    summon charm bash cold lightning acid poison negative holy energy mental disease drowning light sound~
+Form   instant_decay biped~
+Part   head arms legs heart brains hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#12337
+Name albino slime~
+ShortD an albino slime~
+LongD An albino slime laying completely still.~
+Desc This seems to be some weird breed of guard slime.  Sitting completely 
+motionless in its special bowl it has an air of something not to mess with.
+~
+Race unique~
+Align -3 -2
+Level 33
+Hitroll 2
+HitDice 5d6+215
+ManaDice 5d6+270
+DamDice 4d7+12
+DamType suction
+AC -120 -120 -120 -80
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good regeneration~
+Imm    summon charm bash acid poison disease drowning~
+Res    light~
+Vuln   fire~
+Form   edible poison~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    random~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#12315
+Name long handled bone key~
+Short a long handled bone key~
+Desc A long handled bone key has been left here.~
+Level 0
+ItemType key~
+Cost 1
+Asize 2
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material bone~
+Wear     take~
+ExtraDesc long handled bone key~
+This key is carved from bone, and is rather long.
+~
+End
+
+#12316
+Name broken old statue~
+Short a broken old statue~
+Desc A broken old statue is lying on its side here.~
+Level 0
+ItemType container~
+Cost 1
+Asize 2
+Rsize 50
+Values 1000 AC 0 500 100
+Weight 4000
+Material stone~
+Extra    noremove nodegrade burnproof~
+ExtraDesc broken old statue~
+The statue is old and broken.  It seems that the hand might be grasping 
+something, and can be opened.
+~
+End
+
+#12317
+Name orb power~
+Short an `#`Corb of power`^~
+Desc An `#`Corb of power`^ has been left here.~
+Level 91
+ItemType gem~
+Cost 1990
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material energy~
+Extra    glow hum magic nonmetal nolocate nodegrade burnproof~
+Wear     take hold~
+ClassAllowances mage cleric druid paladin ranger spellfilcher~
+Affect modifier -1 91 -1 mana 100 0
+Affect modifier -1 91 -1 memory 2 0
+Affect modifier -1 91 -1 reasoning 2 0
+Affect modifier -1 91 -1 selfdiscipline 1 0
+ExtraDesc orb power~
+This large orb is seemingly made of enrgy, or raw magic.  It glows with a 
+near-blinding light.  
+~
+End
+
+#0
+
+
+
+#ROOMS
+#12315
+Name Standing above a Hole in the Ground~
+Desc This field looks the same as any other except for the fact that there is a 
+hole just big enough for you to fit into in the ground.  It looks rather 
+dark and the smell is, well disgusting!  The plains stretch out to the west,
+while a forest lies just east.
+~
+Sector field~
+Exit west 30447
+Exit down 12316
+EDesc Inside the hole.
+~
+End
+
+
+#12316
+Name Inside a Hole~
+Desc Splash, what is that smell?  The area around you reminds you of a river 
+except that this river is brown and has floating chunks of something you'd 
+rather not think about.  To the east and west lead tunnels to God knows 
+what?  Since your already smelling like this place you might as well head 
+in one of the directions.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 12317
+EDesc Eastern Tunnel.
+~
+Exit west 12322
+EDesc Western Tunnel.
+~
+Exit up 12315
+EDesc Standing above a hole in the ground.
+~
+End
+
+
+#12317
+Name Eastern Tunnel~
+Desc The smell seems to be a little less harsh here and there aren't as many 
+chunks of that unknown smelly substance.  You spy a hole in the wall to the 
+far east of here.  You can head east or west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 12318
+EDesc The tunnel continues.
+~
+Exit west 12316
+EDesc Inside the hole.
+~
+End
+
+
+#12318
+Name Eastern Tunnel~
+Desc You can now take deep breaths without gagging and there are no more 
+floating chunks.  It seems kind of odd that the chunks just disappeared.  
+You can see light coming from a hole in the wall to the east.  You can also 
+head back west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 12319
+EDesc The tunnel continues.
+~
+Exit west 12317
+EDesc Eastern Tunnel.
+~
+End
+
+
+#12319
+Name Eastern Tunnel, Beside a Hole in the Wall~
+Desc Wow the smell is gone!  It appears to be fairly dry here and the light that 
+you saw before seems to have gone.  The hole seems to lead to a door which 
+looks rather large.  A sign is posted on the door but you're too far to read 
+it.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 12320
+EDesc A hole.
+~
+Exit west 12318
+EDesc Eastern Tunnel.
+~
+End
+
+
+#12320
+Name Inside a Dark Passage~
+Desc Everything is black here and the whole room reaks of magic.  The walls 
+appear to be there when you touch them but once you take your hand away its 
+as if your walking in darkness.  A huge iron bolted door is before you and 
+the sign appears to be half rusted away.  
+~
+RoomFlags dark indoors~
+Sector inside~
+ExtraDesc sign~
+Ghargihg Nooan Freesnl!!!
+\/\/\/\/\/\/\/\/\/\/\/\/
+/\/\/\/\/\/\/\/\/\/\/\/\
+Ghargihg Nooan Freesnl!!!
+\/\/\/\/\/
+/\/\\
+Gha.
+~
+Exit east 12321
+EFlags door closed locked hard~
+EKeyvnum 12315
+EKeywords door~
+EDesc A door.
+~
+Exit west 12319
+EDesc Eastern Tunnel beside a hole in the wall.
+~
+End
+
+
+#12321
+Name Inside the Prison Cell~
+Desc You in what appears to be a Prison Cell but everything in it seems rather 
+ancient.  A clay bowl which looks like it was used for serving food is 
+broken on the dirt floor and a set of shackles lay rusted and broken on a 
+nail.  What could possibly have deserved this horrible imprisonment?.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit west 12320
+EFlags door closed locked hard~
+EKeyvnum 12315
+EKeywords door~
+EDesc Inside a Dark Passage.
+~
+End
+
+
+#12322
+Name Western Tunnel~
+Desc The smell if this is possible seems to be getting worse.  You feel 
+something brush against you but it was probably just one of those chunks of 
+unknown substance.  You can continue west or head back east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 12316
+EDesc Inside the hole.
+~
+Exit west 12323
+EDesc Split in the Tunnel.
+~
+End
+
+
+#12323
+Name Split in the Tunnel~
+Desc It seems that out of nowhere this tunnel now splits to the northwest and 
+southwest.  The smell seems stronger to the southwest and a bluish light is 
+coming from the northwest.  You can also head back east.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit east 12322
+EDesc Western Tunnel.
+~
+Exit southwest 12324
+EDesc South-Western Tunnel.
+~
+Exit northwest 12326
+EDesc A tunnel.
+~
+End
+
+
+#12324
+Name South-Western Tunnel~
+Desc The smell is causing you to wish you hadn't eaten recently and things keep 
+brushing against your body.  Slime is everywhere and in many different 
+colours and shades.  You can keep heading southwest or turn back northeast.
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+Exit northeast 12323
+EDesc Split in the Tunnel.
+~
+Exit southwest 12325
+EDesc The tunnel continues.
+~
+End
+
+
+#12325
+Name Entrance to the Slime Kingdom~
+Desc You have entered what looks like a desert's worse nightmare.  Slime is 
+everywhere and its not just sitting and looking pretty, its moving and 
+seems to be intelligent.  All around you are blue, green, yellow and red 
+slimes and they don't look to pleased that your here.  You can feel 
+non-existant eyes on you.  At least it isn't dark anymore.
+~
+RoomFlags indoors~
+Sector city~
+Exit down 12328
+EDesc Bowl of Slime.
+~
+Exit northeast 12324
+EDesc South-Western Tunnel.
+~
+End
+
+
+#12326
+Name North-Western Tunnel~
+Desc The smell is completely gone, and you clean out your nasal cavities 
+thankfully.  This tunnel has the feeling of cleansiness which is odd 
+considering what you just walked through.  What looks like a temple 
+is to the west.
+~
+RoomFlags dark no_mob indoors~
+Sector inside~
+Exit west 12327
+EDesc A temple.
+~
+Exit southeast 12323
+EDesc Split in the Tunnel.
+~
+End
+
+
+#12327
+Name Ancient Temple in Ruins~
+Desc You have entered a place that once was beautiful but now is ruins.  The 
+statue of some forgotten god lies broken on its side.  Its hand grasping 
+some unseen object.  This was obviously a place of worship and goodness but 
+now it is just a place of dust and time.  There are no exits except back 
+whence you came.
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit east 12326
+EDesc North-Western Tunnel.
+~
+End
+
+
+#12328
+Name Bowl of Slime~
+Desc It seems that these slime creatures move around simple by sliding along 
+stone half-tunnels.  Slime is still everywhere and to the north you can see 
+a rather large mound of dirt covered in slime residue.  You can also head 
+east or west along the slime roads/half-tunnels.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12329
+EDesc Northern Slime Road.
+~
+Exit east 12334
+EDesc Eastern Slime Road near the Wall.
+~
+Exit west 12339
+EDesc Western Slime Road near the Wall.
+~
+Exit up 12325
+EDesc A tunnel leads up.
+~
+End
+
+
+#12329
+Name Northern Slime Road~
+Desc This Slime road seems to be a little wider then the rest and in the 
+distance you can see many different coloured slimes heading in and out of 
+the mound to the north.  You look up for the first time and notice that 
+there is no ceiling but just a lake bottom which is somehow magically held 
+in place?  You can keep heading north or head east into what looks like a 
+room of some sort in a smaller looking mound.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12331
+EDesc Northern Slime Road #2.
+~
+Exit south 12328
+EDesc Bowl of Slime.
+~
+End
+
+
+#12330
+Name Slime Eating Area~
+Desc You now have a pretty good idea of where the smell was coming from as you 
+see the decomposing bones of many different races lying in pile ontop of 
+pile in this mound.  There is not a piece of flesh anywhere but the stench 
+is definately there.  These slimes seem to have one purpose in life and 
+that is to eat you.  The exit is west.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 12331
+End
+
+
+#12331
+Name Northern Slime Road~
+Desc This is pretty much the same as to the south of you except for the fact 
+that the mound is a little closer.  To the west is a smaller mound and to 
+the north the road continues until it hits the large mound.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12333
+EDesc Northern Slime Road #3.
+~
+Exit east 12330
+Exit south 12329
+EDesc Northern Slime Road.
+~
+Exit west 12332
+EDesc Slime Reproduction Area.
+~
+End
+
+
+#12332
+Name Slime Reproduction Area~
+Desc Ewwwwww!  This seems to be where some of the human flesh went.  It seems 
+that the slimes reproduce by laying baby slimes inside the heads of its 
+victims.  All around the room are the half decomposed heads of who knows 
+what with little slimes throbbing inside them.  You can exit east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 12331
+EDesc Northern Slime Road #2.
+~
+End
+
+
+#12333
+Name Northern Slime Road~
+Desc All the slimes seem to be gone now, either in the large mound or off 
+hunting for who knows what.  The smell seems rather strange now but you 
+can't put your finger on it.  Just to the north is the entrance to the 
+large mound and to the east and west lead separate slime roads.  You or 
+having second thoughts about entering this mound covered in slime because 
+it smells so DAMN BAD!.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12361
+EDesc Entrance to Slime Palace.
+~
+Exit south 12331
+EDesc Northern Slime Road #2.
+~
+End
+
+
+#12334
+Name Eastern Slime Road near the Wall~
+Desc You heading along one of the slime roads and to your immediate south is 
+some kind of hardened slime.  It looks fragile from a distance but when you 
+touch it you have second thoughts about its texture.  To the east the road 
+continues while north there seems to be a lot of red slime in a small 
+mound.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12335
+EDesc Red Slime Mound.
+~
+Exit east 12337
+EDesc Eastern Slime Road near a Wall.
+~
+Exit west 12328
+EDesc Bowl of Slime.
+~
+End
+
+
+#12335
+Name Red Slime Mound~
+Desc There is RED slime everywhere.  Its almost as if within the slime society 
+status is based on slime colour?  There are large and small slimes sliding 
+everywhere and some sort of doorway to the east.  You can leave south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 12336
+EDesc Red Slime Room.
+~
+Exit south 12334
+EDesc Eastern Slime Road near the wall.
+~
+End
+
+
+#12336
+Name Red Slime Room~
+Desc This seems to be where the head slime resides.  A huge bowl obviously meant 
+for a slime to sit, er rest, or whatever slimes do is in the middle of the 
+room.  The smell is not nearly as bad here and it seems that the bigger 
+slime is the more respect it gets.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 12335
+EDesc Red Slime Mound.
+~
+End
+
+
+#12337
+Name Eastern Slime Road near the Wall~
+Desc Why does everything have to smell so bad?  The slimes seem very angered by 
+your presence and seem to travel in herds of their own colour or size.  You 
+can continue east or west.
+~
+RoomFlags indoors~
+Sector city~
+Exit east 12338
+EDesc South-East Corner of Slime Kingdom.
+~
+Exit west 12334
+EDesc Eastern Slime Road near the wall.
+~
+End
+
+
+#12338
+Name South-East Corner of Slime Kingdom~
+Desc You have reached a corner of the Slime Kingdom and it is very dark here as 
+for some reason the shadows seem to cross here.  There is slime residue of 
+a colour you don't recall seeing before and it appears to be almost black 
+and it feels very oily.  You can head north or west.
+~
+RoomFlags dark indoors~
+Sector city~
+Exit north 12351
+EDesc Dry Path heading north.
+~
+Exit west 12337
+EDesc Eastern Slime Road near the Wall.
+~
+End
+
+
+#12339
+Name Western Slime Road near the Wall~
+Desc This place stinks quite literally.  There seem to be more blue slimes in 
+this area and there is slime residue everywhere.  You spy a small mound to 
+the north and you can either head east or west along the slime road.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12340
+Exit east 12328
+EDesc Bowl of Slime.
+~
+Exit west 12342
+EDesc Western Slime Road near the Wall.
+~
+End
+
+
+#12340
+Name Blue Slime Mound~
+Desc The Blue Slimes seem a lot more passive then the Red Slimes which were very 
+aggressive looking.  The smell seems very strange now. to the west is some 
+sort of doorway leading to an extension of the mound.  You can leave to the 
+south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 12339
+Exit west 12341
+EDesc Blue Slime Room.
+~
+End
+
+
+#12341
+Name Blue Slime Room~
+Desc This seems to be where the head slime resides.  A huge bowl obviously meant 
+for a slime to sit, er rest, or whatever slimes do is in the middle of the 
+room.  The smell is not nearly as bad here and it seems that the bigger 
+slime is the more respect it gets.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 12340
+EDesc Blue Slime Mound.
+~
+End
+
+
+#12342
+Name Western Slime Road near the Wall~
+Desc Why does everything have to smell so bad?  The slimes seem very angered by 
+your presence and seem to travel in herds of their own colour or size.  You 
+can continue east or west but its probably best to do so holding your nose.
+~
+RoomFlags indoors~
+Sector city~
+Exit east 12339
+EDesc Western Slime Road near the Wall.
+~
+Exit west 12343
+EDesc South-West Corner of Slime Kingdom.
+~
+End
+
+
+#12343
+Name South-West Corner of Slime Kingdom~
+Desc You have reached a corner of the Slime Kingdom and it is very dark here as 
+for some reason the shadows seem to cross here.  There is slime residue of 
+a colour you don't recall seeing before and it appears to be almost black 
+and it feels very oily.  You can head north or east.
+~
+RoomFlags dark indoors~
+Sector city~
+Exit north 12344
+EDesc Slippery Path.
+~
+Exit east 12342
+EDesc Western Slime Road near the Wall.
+~
+End
+
+
+#12344
+Name Slippery Path~
+Desc You are heading along a slippery path which seems to be coated in slime 
+residue.  To the north you can see some yellow slimes entering a small 
+mound to the west.  You can head north or south.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12345
+EDesc Slippery Path beside a Small Mound.
+~
+Exit south 12343
+EDesc South-West Corner of Slime Kingdom.
+~
+End
+
+
+#12345
+Name Slippery Path beside a Small Mound~
+Desc To you west you see the small mound the yellow slimes headed into and the 
+smell which is around you now faintly reminds you of human waste.  The path 
+continues north into darkness.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12348
+EDesc Slippery Path near a Dark Corner.
+~
+Exit south 12344
+EDesc Slippery Path.
+~
+Exit west 12346
+EDesc Yellow Slime Mound.
+~
+End
+
+
+#12346
+Name Yellow Slime Mound~
+Desc It is now pretty obvious to you that the Yellow Slimes are pretty much the 
+slave colour of slimes.  They all move away whenever you get close and they 
+seem a little smaller then the others.  To the north is some kind of 
+entrance way leading into another section of the mound.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 12347
+EDesc Yellow Slime Room.
+~
+Exit east 12345
+EDesc Slippery Path beside a Small Mound.
+~
+End
+
+
+#12347
+Name Yellow Slime Room~
+Desc This seems to be where the head slime resides.  A huge bowl obviously meant 
+for a slime to sit,er rest or whatever slimes do is in the middle of the 
+room.  The smell is not nearly as bad here and it seems that the bigger 
+slime is the more respect it gets but in the case of the yellow slimes it 
+seems that the biggest one just gets to be head slave slime.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 12346
+EDesc Yellow Slime Mound.
+~
+End
+
+
+#12348
+Name Slippery Path near a Dark Corner~
+Desc You are almost at the darkness to the north and everything has the aura of 
+rush and hurry.  You wish you knew what was going on.  Slimes seem very 
+intent on completing some goal which is not apparent to you right now.  You 
+also spy a square shaped mound to the east.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12350
+EDesc North-West Corner of Slime Kingdom.
+~
+Exit east 12349
+EDesc Slime Prison.
+~
+Exit south 12345
+EDesc Slippery Path beside a Small Mound.
+~
+End
+
+
+#12349
+Name Slime Prison~
+Desc It seems that this is where the Slimes keep their food until they eat it.  
+Unfortunately it seems they keep their food alive until then.  You spy 
+various races in horrible states of physical abuse and dehydration.  Some 
+don't even look like they are breathing.  Most look devoid of any hope and 
+the others don't look like they have function of their minds anymore.  You 
+notice that they are kept in place by some kind of slime residue similar to 
+the stuff that makes up the walls around the Kingdom.  You wonder how you 
+can possibly break it.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 12348
+EDesc Slippery Path near a Dark Corner.
+~
+End
+
+
+#12350
+Name North-West Corner of Slime Kingdom~
+Desc You have reached a corner of the Slime Kingdom and it is very dark here as 
+for some reason the shadows seem to cross here.  There is slime residue of 
+a colour you don't recall seeing before and it appears to be almost black 
+and it feels very oily.  You can head south or east.
+~
+RoomFlags dark indoors~
+Sector city~
+Exit east 12359
+EDesc A White Path.
+~
+Exit south 12348
+EDesc Slippery Path near a Dark Corner.
+~
+End
+
+
+#12351
+Name Dry Path~
+Desc You are now travelling on a very dry path and this seems very odd 
+considering what you've seen so far.  It seems that only the green slimes 
+can travel on this dry path and the other slimes are avoiding this path as 
+well.  You can head north or south.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12352
+EDesc Dry Path near a small mound.
+~
+Exit south 12338
+EDesc South-East Corner of Slime Kingdom.
+~
+End
+
+
+#12352
+Name Dry Path near a Small Mound~
+Desc The path seems to be a little damper here and a small mound is just to the 
+west of you.  It seems as if some large slime of some type just dragged 
+itself over the dry part not giving a care about the dryness.  The smell is 
+horrible here.  The Green Slimes it seems smell the worst of all.  
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12355
+EDesc Dry Path almost at Dark Corner.
+~
+Exit south 12351
+EDesc Dry Path heading north.
+~
+Exit west 12353
+EDesc Green Slime Mound.
+~
+End
+
+
+#12353
+Name Green Slime Mound~
+Desc It is now pretty apparent that the Green slimes are the most independant of 
+the slime creatures.  Maybe most of the other slimes just can't stand the 
+smell.  The greens seem to be larger then the other slimes and have a lot 
+more in total population.  To the north you spy an entrance to another 
+section of the mound.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 12354
+EDesc Green Slime Room.
+~
+Exit east 12352
+EDesc Dry Path near a small mound.
+~
+End
+
+
+#12354
+Name Green Slime Room~
+Desc This seems to be where the head slime resides.  A huge bowl obviously meant 
+for a slime to sit, er rest, or whatever slimes do is in the middle of the 
+room.  The smell is the worst its ever been here and it seems that the 
+bigger slime is the more respect it gets.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 12353
+EDesc Green Slime Mound.
+~
+End
+
+
+#12355
+Name Dry Path almost at Dark Corner~
+Desc It really isn't proper to call this a dry path anymore as the slime residue 
+from many slimes has rolled onto the dirt and created the most disgusting 
+form of mud you have ever stepped in or smelt before.  To the immediate 
+north is another dark corner.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12356
+EDesc North-East Corner of Slime Kingdom.
+~
+Exit south 12352
+EDesc Dry Path near a small mound.
+~
+End
+
+
+#12356
+Name North-East Corner of Slime Kingdom~
+Desc You have reached a corner of the Slime Kingdom and it is very dark here as 
+for some reason the shadows seem to cross here.  There is slime residue of 
+a colour you don't recall seeing before and it appears to be almost black 
+and it feels very oily.  You can head south or west.
+~
+RoomFlags dark indoors~
+Sector city~
+Exit south 12355
+EDesc Dry Path almost at Dark Corner.
+~
+Exit west 12357
+EDesc A White Path.
+~
+End
+
+
+#12357
+Name A White Path~
+Desc You are now on a White path which is extremely smooth and gleams of freshly 
+coated slime.  You wonder what material it could possibly be until you 
+realize that its bone.  You shudder a little at the thought and continue 
+on.  To the further west is the entrance to the large mound.
+~
+RoomFlags indoors~
+Sector city~
+Exit east 12356
+EDesc North-East Corner of Slime Kingdom.
+~
+Exit west 12358
+EDesc A White Path.
+~
+End
+
+
+#12358
+Name A White Path~
+Desc You are on the white path of bone and notice a raised platform type mound. 
+It seems not quite obvious that this mound is some sort of Slime Palace?  
+You can enter the raised platform to the north or head east or west.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12363
+EDesc Slime Guard Mound.
+~
+Exit east 12357
+EDesc A White Path.
+~
+Exit west 12361
+EDesc Entrance to Slime Palace.
+~
+End
+
+
+#12359
+Name A White Path~
+Desc You are on a strange white path which on second looks turns out to be made 
+of bone.  You realize its coated in slime and rather disgusting to think 
+about.  You see to the further east the entrance to the large mound.
+~
+RoomFlags indoors~
+Sector city~
+Exit east 12360
+EDesc A White Path.
+~
+Exit west 12350
+EDesc North-West Corner of Slime Kingdom.
+~
+End
+
+
+#12360
+Name A White Path~
+Desc Still on the bone path you notice a raised type platform to the north.  
+When you glance further east you also notice the same is on the east side 
+of the mound.  This large mound is obviously some sort of Slime Palace.  
+You can enter the raised platform to the north or go east or west.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12362
+EDesc Slime Guard Mound.
+~
+Exit east 12361
+EDesc Entrance to Slime Palace.
+~
+Exit west 12359
+EDesc A White Path.
+~
+End
+
+
+#12361
+Name Entrance to Slime Palace~
+Desc You are now standing in front of the Slime Palace which really is just a 
+large mound.  This is where all the slimes were heading and your determined 
+to find out why.  The whole palace seems to be made out of the same bone 
+stuff used to make the bone roads.  You can head north into the palace or 
+east, west or south.
+~
+RoomFlags indoors~
+Sector city~
+Exit north 12364
+EDesc Tunnel leading further into Palace.
+~
+Exit east 12358
+EDesc A White Path.
+~
+Exit south 12333
+EDesc Northern Slime Road #3.
+~
+Exit west 12360
+EDesc A White Path.
+~
+End
+
+
+#12362
+Name Slime Guard Mound~
+Desc This seems to be some sort of overlooking post.  You wonder how the slimes 
+manage to create these structures and wonder if it was magical?  It seems 
+that this is where the giant green slimes go to make sure no one 
+unauthorized goes into the Slime Palace.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 12360
+EDesc A White Path.
+~
+End
+
+
+#12363
+Name Slime Guard Mound~
+Desc This seems to be some sort of overlooking post.  You wonder how the slimes 
+manage to create these structures and wonder if it was magical?  It seems 
+that this is where the giant green slimes go to make sure no one 
+unauthorized goes into the Slime Palace.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 12358
+EDesc A White Path.
+~
+End
+
+
+#12364
+Name Tunnel leading further into Palace~
+Desc You are in a circular tunnel which is is made completely out of bone.  To 
+the north you can see a bright light which is definately magical.  There is 
+no smell at all anymore.  Everything smells very nothing like.  The place 
+although with no smell reeks of magic.  You can head north or back south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 12365
+EDesc Tunnel inside Palace heading to a large room.
+~
+Exit south 12361
+EDesc Entrance to Slime Palace.
+~
+End
+
+
+#12365
+Name Tunnel inside Palace heading to a Large Room~
+Desc You are getting annoyed at the fact that you can't smell anything by 
+magical means.  The whole bone tunnel is creepy and up ahead the room to 
+the north seems rather enormous considering how large the mound was from 
+the outside.  You hear some rumblings and it sounds like there is something
+`#`RHUGE `^living to the north!!!
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 12366
+EDesc The Slime Throne.
+~
+Exit south 12364
+EDesc Tunnel leading further into Palace.
+~
+End
+
+
+#12366
+Name The Slime Throne~
+Desc The room is enormous and is an exact sphere cut into the bone of what must 
+been from millions of corpses.  There is a huge path of slime residue 
+leading up to a huge bowl.  The room you realize is more a place of worship 
+then anything.  Countless smaller slimes come and pray and bow in reverence 
+to the Head Slime.  The light for this room comes from everywhere but 
+nowhere and the whole place is obviously a creation of powerful magic.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 12365
+EDesc Tunnel inside Palace heading to a large room.
+~
+Exit down 12367
+EFlags door closed~
+EKeywords trapdoor~
+EDesc Secret Chamber beneath the Slime Throne.
+~
+End
+
+
+#12367
+Name Secret Chamber beneath the Slime Throne~
+Desc You are now directly under where the bowl was placed and are staring 
+straight at a huge white sphere of pure magic.  There are runes of ancient 
+meaning all around the stand which is underneath the sphere, unfortunately 
+the runes are of a lanugage you do not recognize.  You now realize that the 
+magical power of the King Albino Slime was from this sphere of magic.  The 
+slimes seemed to have thought that the Albino Slime was born with magic but 
+in the truth of the matter its powers were derived from the sphere.  There 
+is a light humming of the sphere in the room and you feel enlightened by 
+the whole experience of seeing something obviously created by a god or an 
+extremely powerful magical being.
+~
+RoomFlags dark no_mob no_recall nowhere noscry~
+Sector inside~
+Exit up 12366
+EFlags door closed~
+EKeywords secret~
+EDesc The Slime Throne.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 12335 spec_breath_acid
+S
+
+
+
+#RESETS2
+M 0 12336 1 12321 1
+M 0 12330 13 12325 2
+M 0 12330 13 12325 2
+M 0 12327 9 12325 1
+M 0 12316 10 12325 1
+O 0 12316 0 12327
+P 0 12315 1 12316 1
+M 0 12332 6 12328 1
+M 0 12322 9 12328 1
+M 0 12321 9 12328 2
+M 0 12321 9 12328 2
+M 0 12315 14 12328 1
+M 0 12317 5 12329 1
+M 0 12325 15 12329 2
+M 0 12325 15 12329 2
+M 0 12321 9 12329 1
+M 0 12330 13 12329 1
+M 0 12322 9 12330 1
+M 0 12318 6 12330 2
+M 0 12318 6 12330 2
+M 0 12330 13 12330 3
+M 0 12330 13 12330 3
+M 0 12330 13 12330 3
+M 0 12332 6 12331 2
+M 0 12332 6 12331 2
+M 0 12327 9 12331 1
+M 0 12320 17 12331 1
+M 0 12316 10 12331 1
+M 0 12315 14 12332 4
+M 0 12315 14 12332 4
+M 0 12315 14 12332 4
+M 0 12315 14 12332 4
+M 0 12330 13 12332 4
+M 0 12330 13 12332 4
+M 0 12330 13 12332 4
+M 0 12330 13 12332 4
+M 0 12320 17 12332 4
+M 0 12320 17 12332 4
+M 0 12320 17 12332 4
+M 0 12320 17 12332 4
+M 0 12325 15 12332 4
+M 0 12325 15 12332 4
+M 0 12325 15 12332 4
+M 0 12325 15 12332 4
+M 0 12324 2 12334 1
+M 0 12328 3 12334 1
+M 0 12315 14 12334 1
+M 0 12316 10 12334 1
+M 0 12317 5 12335 1
+M 0 12316 10 12335 3
+M 0 12316 10 12335 3
+M 0 12316 10 12335 3
+M 0 12319 3 12336 1
+M 0 12326 3 12337 1
+M 0 12325 15 12337 2
+M 0 12325 15 12337 2
+M 0 12318 6 12337 1
+M 0 12337 4 12338 1
+M 0 12325 15 12339 1
+M 0 12320 17 12339 1
+M 0 12331 8 12339 1
+M 0 12332 6 12339 1
+M 0 12325 15 12340 1
+M 0 12326 3 12340 2
+M 0 12326 3 12340 2
+M 0 12328 3 12340 1
+M 0 12329 2 12341 1
+M 0 12331 8 12342 1
+M 0 12322 9 12342 1
+M 0 12320 17 12342 1
+M 0 12315 14 12342 1
+M 0 12317 5 12342 1
+M 0 12337 4 12343 1
+M 0 12331 8 12344 1
+M 0 12333 4 12344 1
+M 0 12321 9 12344 1
+M 0 12318 6 12344 1
+M 0 12315 14 12344 1
+M 0 12330 13 12345 1
+M 0 12331 8 12345 1
+M 0 12328 3 12345 1
+M 0 12333 4 12346 1
+M 0 12331 8 12346 2
+M 0 12331 8 12346 2
+M 0 12332 6 12346 1
+M 0 12334 1 12347 1
+M 0 12325 15 12348 3
+M 0 12318 6 12348 1
+M 0 12327 9 12348 1
+M 0 12325 15 12348 3
+M 0 12325 15 12348 3
+M 0 12337 4 12350 1
+M 0 12324 2 12351 1
+M 0 12321 9 12351 2
+M 0 12321 9 12351 2
+M 0 12320 17 12351 1
+M 0 12322 9 12351 1
+M 0 12320 17 12352 2
+M 0 12320 17 12352 2
+M 0 12330 13 12352 1
+M 0 12322 9 12353 1
+M 0 12320 17 12353 2
+M 0 12320 17 12353 2
+M 0 12321 9 12353 2
+M 0 12321 9 12353 2
+M 0 12323 3 12354 1
+M 0 12316 10 12355 1
+M 0 12318 6 12355 1
+M 0 12315 14 12355 2
+M 0 12315 14 12355 2
+M 0 12322 9 12355 1
+M 0 12337 4 12356 1
+M 0 12322 9 12357 1
+M 0 12325 15 12357 1
+M 0 12327 9 12357 1
+M 0 12331 8 12357 1
+M 0 12333 4 12357 1
+M 0 12327 9 12358 1
+M 0 12322 9 12358 1
+M 0 12320 17 12358 2
+M 0 12320 17 12358 2
+M 0 12331 8 12359 1
+M 0 12333 4 12359 1
+M 0 12325 15 12359 1
+M 0 12320 17 12359 1
+M 0 12316 10 12359 1
+M 0 12317 5 12360 1
+M 0 12315 14 12360 2
+M 0 12315 14 12360 2
+M 0 12330 13 12360 1
+M 0 12332 6 12360 1
+M 0 12327 9 12361 2
+M 0 12327 9 12361 2
+M 0 12315 14 12361 2
+M 0 12315 14 12361 2
+M 0 12323 3 12362 2
+M 0 12323 3 12362 2
+M 0 12319 3 12362 1
+M 0 12319 3 12363 1
+M 0 12329 2 12363 1
+M 0 12320 17 12364 2
+M 0 12320 17 12364 2
+M 0 12321 9 12364 1
+M 0 12317 5 12364 1
+M 0 12327 9 12365 2
+M 0 12327 9 12365 2
+M 0 12322 9 12365 1
+M 0 12316 10 12365 2
+M 0 12316 10 12365 2
+M 0 12335 1 12366 1
+O 0 12317 -1 12367
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

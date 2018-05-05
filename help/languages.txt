@@ -1,0 +1,32 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword LANGUAGES SPEECH SPEAKING TONGUES~
+category undefined~
+see_also ARCAIC~
+text `=lSyntax: `=?language <language>`+
+`+
+The most common language is human, because of this many refer to human as 
+the common tongue.  If everyone started playing elves though the common 
+tongue would no doubt become elven.  So when you wounder why human is the 
+common tongue and there doesn't seem to be another language that is the 
+common tongue, it is purely because the common tongue is whatever language 
+most people speak at any one point is time.`+
+`+
+There are many languages spoken by the inhabitants of Dawn of Time.  You may 
+use his command to switch between the languages that you can speak.  You may 
+only speak one language at a time. The languages of Dawn of Time are:`+
+`+
+Avian           Elven             Halfling          Kobold`+
+Drow            Gnoll             Human             Orcish`+
+Dwarven         Gnomish           Lizardman         Alaghi`+
+Goblin          `#`Y*`^Arcaic`+
+`+
+~
+END
+
+EOF~
+#$

@@ -1,0 +1,41 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword LAG~
+category undefined~
+immsee_also LAG-IMM~
+text `=?
+`=lSyntax:`=?
+	lag on
+	lag off
+
+Turning lag on will activate lag prevention. Lag prevention computes the 
+best path over the internet to your computer using faster links if
+possible. It also enlarges the TCP tx/rx window so that more data can
+be in flight without constantly needing to receive ACK packets, which
+sometimes increases lag.
+
+Lag does not remember states from login to login, so everytime you enter the
+game, you must type 'lag on' to turn it on.
+
+~
+END
+
+keyword LAG-IMM~
+level 92
+category undefined~
+text `=?
+`=lSyntax:`=?
+	lag on
+	lag off
+
+Lag was an april fools joke that was never removed... it does 
+nothing what so ever.  Written 100% by Imidazole.
+~
+END
+
+EOF~
+#$

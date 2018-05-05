@@ -1,0 +1,787 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        The Outland Burrows~
+ShortName   Outland Burrows~
+Builders    None~
+Credits     Cadoren~
+VNUMs       42400 42449
+LRange      1 6
+Security    9
+Colour      G~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#42400
+Name large turkey gobbling~
+ShortD a gobbling turkey~
+LongD A gobbling turkey waddles about here.~
+Desc This wild turkey has a dark, iridescent body.  Its feathers are black with 
+brown stripes and are barred with white.  It has red wattles, a caruncle, 
+and a blackish breast tuft.  It waddles about, making gobbling sounds.  
+~
+Race bird~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType claw
+AC 90 90 90 72
+Wealth 0
+Act    npc no_tame stay_area noautosocial~
+AffBy  flying~
+Off    dodge fast~
+Res    light~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#42401
+Name pheasant~
+ShortD a pheasant~
+LongD A pheasant pecks at the ground.~
+Desc This pheasant has red wattles on the sides of itss face and has a strong 
+beak.  Its feathers are a rainbow of brilliant reds and golden yellows with 
+a white chest.  It pecks at the ground, foraging for food.  
+~
+Race bird~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+5
+DamDice 1d4+0
+DamType peck
+AC 90 90 90 80
+Wealth 0
+Act    npc no_tame stay_area noautosocial~
+AffBy  flying~
+Off    dodge fast~
+Res    light~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#42402
+Name no name~
+ShortD a ground squirrel~
+LongD A ground squirrel scurries over the hill.~
+Desc This ground squirrel is small with brown fur and nine rows of squarish white 
+spots on its back.  It has a whitish belly, small, round ears and a bushy 
+tail.  It scurries over the hills looking for food.  
+~
+Race rabbit~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType scratch
+AC 80 80 80 71
+Wealth 0
+Act    npc no_tame stay_area noautosocial~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#42403
+Name brown hare~
+ShortD a brown hare~
+LongD A brown hare hops about inside its burrow.~
+Desc This hare has especially long ears and large hind feet.  Its are furry and 
+its upper body is greyish brown, while the underparts are lighter colored.  
+It hops about inside its burrow.  
+~
+Race rabbit~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+5
+DamDice 1d5+0
+DamType claw
+AC 80 80 80 69
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#42404
+Name black mole~
+ShortD a black mole~
+LongD A black mole is burrowing into the ground.~
+Desc This black mole has a long, tapering snout and has small, barely noticeable 
+eyes.  It has a short neck, and muscular forelegs with heavily clawed feet.  
+It is digging a hole in the ground.  
+~
+Race rabbit~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+5
+DamDice 1d6+0
+DamType charge
+AC 70 70 70 58
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#42405
+Name furry opossum~
+ShortD a furry opossum~
+LongD A furry opossum hangs upside down from a tree.~
+Desc This furry opossum has a long, scaly tail and short, black, leathery ears.  
+Its snout is long and slender.  It hangs from a tree, upside down, peering 
+about with large brown eyes.  
+~
+Race rabbit~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType scratch
+AC 60 60 60 54
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#42406
+Name short-tailed shrew~
+ShortD a short-tailed shrew~
+LongD A short-tailed shrew digs a tunnel in the dirt.~
+Desc This shrew has an unusually short tail, and has a brown back with a slightly 
+lighter underbelly.  It has a relatively short, broad nose.  Using its sharp 
+claws, it digs a tunnel through the dirt.  
+~
+Race fox~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+5
+DamDice 1d5+1
+DamType bite
+AC 60 60 60 50
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#42407
+Name sly fox~
+ShortD a sly fox~
+LongD A fox stealthily creeps through the long grass.~
+Desc The hair along the middle of the fox's back and tail is tipped in black and 
+has the appearance of a black mane.  It has a grey tail and white 
+under-belly.  It stealthily creeps through the long grass looking for prey.  
+
+~
+Race fox~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+5
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 43
+Wealth 0
+Act    npc no_tame stay_area noautosocial~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#42408
+Name grey-fox grey fox~
+ShortD a grey fox~
+LongD A grey fox sleeps in the long grass.~
+Desc This small fox has greyish-red fur and yellowish brown ears.  Its tail is a 
+buff grey with a black tip.  It sleeps, curled into a ball, in the long 
+grass.  
+~
+Race fox~
+Align 0 0
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+10
+DamDice 1d7+1
+DamType bite
+AC 40 40 40 32
+Wealth 0
+Act    npc no_tame stay_area noautosocial~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#42400
+Name tall oak tree~
+Short a tall oak tree~
+Desc A tall oak tree casts patterns of shade across the field.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 UVW 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#42401
+Name plucked large turkey~
+Short a large turkey~
+Desc A plucked turkey lies here.~
+Level 1
+ItemType food~
+Cost 50
+Asize 0
+Rsize 50
+Values 20 20 0 0 0
+Weight 10
+Material meat~
+Extra    inventory nonmetal~
+Wear     take~
+End
+
+#42402
+Name opossum hat fur~
+Short an `#`Sopossum fur`^ hat~
+Desc An `#`Sopossum fur`^ hat lies here.~
+Level 4
+ItemType armor~
+Cost 50
+Asize 0
+Rsize 50
+Values 1 1 1 0 0
+Weight 10
+Material fur~
+Extra    nonmetal nodegrade~
+Wear     take head~
+End
+
+#42403
+Name pair fox skin boots~
+Short a pair of `#`yfox skin`^ boots~
+Desc A pair of `#`yfox skin`^ boots lie here.~
+Level 5
+ItemType armor~
+Cost 85
+Asize 0
+Rsize 50
+Values 1 1 1 0 0
+Weight 10
+Material unknown~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+End
+
+#42404
+Name grey fox fur cloak~
+Short a `#`Sgrey fox`^ fur cloak~
+Desc A `#`Sgrey fox`^ fur cloak lies here.~
+Level 6
+ItemType armor~
+Cost 92
+Asize 0
+Rsize 50
+Values 1 1 1 0 0
+Weight 10
+Material fur~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#42405
+Name hare hide pouch~
+Short a `#`yhare-hide`^ pouch~
+Desc A `#`yhare-hide`^ pouch has been left here.~
+Level 2
+ItemType container~
+Cost 10
+Asize 30
+Rsize 50
+Values 10 A 0 5 100
+Weight 2
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take waist~
+ExtraDesc pouch~
+This pouch is a small one, very small.
+~
+End
+
+#42406
+Name pheasant plucked~
+Short a small pheasant~
+Desc A plucked pheasant is here, ready to be roasted.~
+Level 1
+ItemType food~
+Cost 50
+Asize 0
+Rsize 50
+Values 15 15 0 0 0
+Weight 10
+Material meat~
+Extra    inventory nonmetal~
+Wear     take~
+End
+
+#42407
+Name acorn nuts~
+Short some acorn nuts~
+Desc Some acorn nuts lie scattered here.~
+Level 1
+ItemType food~
+Cost 22
+Asize 0
+Rsize 50
+Values 2 2 0 0 0
+Weight 1
+Material nuts~
+Extra    nodegrade~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#42400
+Name Standing Over a Wide Mole Hill~
+Desc You stand on a hill where a large hole has been dug, probably by a mole.  
+Creatures move through the long grass, some stalking prey, others burrowing 
+out holes to live in.  A warm breeze blows over the hills, ruffling the long 
+grass, and making the leaves on the trees tremble slightly.  The hole leads 
+downwards.  
+~
+Sector field~
+Exit east 42403
+Exit south 42405
+Exit down 42417
+Exit southwest 42402
+End
+
+
+#42401
+Name Standing Over a Large Mole Hill~
+Desc Hills, carpeted with green, stretch before you.  Creatures move through the 
+long grass, some stalking prey, others burrowing out holes to live in.  A 
+warm breeze blows over the hills, ruffling the long grass, and making the 
+leaves on the trees tremble slightly.  A hole has been dug in the ground 
+here, and is probably the home of a mole.  
+~
+Sector field~
+Exit north 42402
+Exit east 42404
+Exit down 42416
+End
+
+
+#42402
+Name A Grass-Swept Hill~
+Desc Hills swept with grass stretch out in all directions.  Creatures move 
+through the long grass, some stalking prey, others burrowing out holes to 
+live in.  A warm breeze blows over the hills, ruffling the long grass, and 
+making the leaves on the trees tremble slightly.  
+~
+Sector field~
+Exit east 42405
+Exit south 42401
+Exit northeast 42400
+End
+
+
+#42403
+Name A Grass-Carpeted Hill~
+Desc A grass-carpeted hill stretches before you.  Creatures move through the long 
+grass, some stalking prey, others burrowing out holes to live in.  A warm 
+breeze blows over the hills, ruffling the long grass, and making the leaves 
+on the trees tremble slightly.  
+~
+Sector field~
+Exit east 42406
+Exit south 42408
+Exit west 42400
+End
+
+
+#42404
+Name Standing Over a Wide Tunnel~
+Desc A tunnel has been burrowed into the ground on this hill.  Creatures move 
+through the long grass, some stalking prey, others burrowing out holes to 
+live in.  A warm breeze blows over the hills, ruffling the long grass, and 
+making the leaves on the trees tremble slightly.  The tunnel leads 
+downwards, into the soil.  
+~
+Sector field~
+Exit north 42405
+Exit east 42407
+Exit west 42401
+Exit down 42415
+Exit southeast 42421
+End
+
+
+#42405
+Name A Small Hill~
+Desc You stand upon a small hill, and looking out, you see a vast stretch of 
+thick green hills.  Creatures move through the long grass, some stalking 
+prey, others burrowing out holes to live in.  A warm breeze blows over the 
+hills, ruffling the long grass, and making the leaves on the trees tremble 
+slightly.  
+~
+Sector field~
+Exit north 42400
+Exit east 42408
+Exit south 42404
+Exit west 42402
+End
+
+
+#42406
+Name A Hilly Tussock~
+Desc The hilly tussock you stand on is covered with thick, long green grass.  
+Creatures move through the grass, some stalking prey, others burrowing out 
+holes to live in.  A warm breeze blows over the hills, ruffling the long 
+grass, and making the leaves on the trees tremble slightly.  
+~
+Sector field~
+Exit south 42411
+Exit west 42403
+Exit southeast 42420
+End
+
+
+#42407
+Name A Grassy Meadow~
+Desc A vast meadow stretches before you, covering the land with curves of thick 
+green.  Creatures move through the long grass, some stalking prey, others 
+burrowing out holes to live in.  A warm breeze blows over the hills, 
+ruffling the long grass, and making the leaves on the trees tremble 
+slightly.  
+~
+Sector field~
+Exit north 42408
+Exit east 42410
+Exit south 42421
+Exit west 42404
+End
+
+
+#42408
+Name Standing Over a Small Hole~
+Desc Looking at the ground on this hill you notice a small hole has been dug into 
+the soil.  Creatures move through the long grass, some stalking prey, others 
+burrowing out holes to live in.  A warm breeze blows over the hills, 
+ruffling the long grass, and making the leaves on the trees tremble 
+slightly.  
+~
+Sector field~
+Exit north 42403
+Exit east 42411
+Exit south 42407
+Exit west 42405
+Exit down 42414
+End
+
+
+#42409
+Name Over the Hill~
+Desc You stand in a slight valley between two hills.  In all directions the grass 
+grows green and thick.  Creatures move through the long grass, some stalking 
+prey, others burrowing out holes to live in.  A warm breeze blows over the 
+hills, ruffling the long grass, and making the leaves on the trees tremble 
+slightly.  
+~
+Sector field~
+Exit north 42410
+Exit east 42418
+Exit west 42421
+End
+
+
+#42410
+Name Standing Over a Mole Hill~
+Desc A mole hill stands on the hill here, and you hear snuffling sounds coming 
+from beneath it.  Creatures move through the long grass, some stalking prey, 
+others burrowing out holes to live in.  A warm breeze blows over the hills, 
+ruffling the long grass, and making the leaves on the trees tremble 
+slightly.  
+~
+Sector field~
+Exit north 42411
+Exit east 42419
+Exit south 42409
+Exit west 42407
+Exit down 42413
+End
+
+
+#42411
+Name Standing Over a Narrow Burrow~
+Desc On this hill of lush green grass, a burrow for a rabbit or hare has been dug 
+into the side of the hill.  Creatures move through the long grass, some 
+stalking prey, others burrowing out holes to live in.  A warm breeze blows 
+over the hills, ruffling the long grass, and making the leaves on the trees 
+tremble slightly.  
+~
+Sector field~
+Exit north 42406
+Exit east 42420
+Exit south 42410
+Exit west 42408
+Exit down 42412
+End
+
+
+#42412
+Name Inside a Hare's Burrow~
+Desc ~
+RoomFlags no_mob~
+Sector cave~
+Exit up 42411
+End
+
+
+#42413
+Name Inside a Mole Hill~
+Desc ~
+RoomFlags no_mob~
+Sector cave~
+Exit up 42410
+End
+
+
+#42414
+Name Inside a Hare's Burrow~
+Desc ~
+RoomFlags no_mob~
+Sector cave~
+Exit up 42408
+End
+
+
+#42415
+Name Inside a Tunnel~
+Desc ~
+RoomFlags no_mob~
+Sector cave~
+Exit west 42416
+Exit up 42404
+End
+
+
+#42416
+Name Inside a Mole Hill~
+Desc ~
+RoomFlags no_mob~
+Sector cave~
+Exit east 42415
+Exit up 42401
+End
+
+
+#42417
+Name Inside a Mole Hill~
+Desc ~
+RoomFlags no_mob~
+Sector cave~
+Exit up 42400
+End
+
+
+#42418
+Name A Crop of Hills~
+Desc A vast crop of hills stretch before you, covering the land with curves of 
+thick green.  Creatures move through the long grass, some stalking prey, 
+others burrowing out holes to live in.  A warm breeze blows over the hills, 
+ruffling the long grass, and making the leaves on the trees tremble 
+slightly.  
+~
+Sector field~
+Exit north 42419
+Exit west 42409
+Exit southeast 33001
+End
+
+
+#42419
+Name A Stretch of Hills~
+Desc You stand on a stretch of hills covering the land with curves of thick 
+green.  Creatures move through the long grass, some stalking prey, others 
+burrowing out holes to live in.  A warm breeze blows over the hills, 
+ruffling the long grass, and making the leaves on the trees tremble 
+slightly.  
+~
+Sector field~
+Exit north 42420
+Exit south 42418
+Exit west 42410
+End
+
+
+#42420
+Name A Grass-Covered Hill~
+Desc A tall oak tree casts patterns of shade across the field.  Creatures move 
+through the long grass, some stalking prey, others burrowing out holes to 
+live in.  A warm breeze blows over the hills, ruffling the long grass, and 
+making the leaves on the trees tremble slightly.  
+~
+Sector field~
+Exit south 42419
+Exit west 42411
+Exit northwest 42406
+End
+
+
+#42421
+Name A Small Hill~
+Desc You stand on a small hill, overlooking a stretch of more hills.  Creatures 
+move through the long grass, some stalking prey, others burrowing out holes 
+to live in.  A warm breeze blows over the hills, ruffling the long grass, 
+and making the leaves on the trees tremble slightly.  
+~
+Sector field~
+Exit north 42407
+Exit east 42409
+Exit northwest 42404
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 42402 2 42402 1
+G 0 42407 -1
+M 0 42402 2 42403 1
+G 0 42407 -1
+M 0 42400 3 42405 3
+G 0 42401 -1
+M 0 42400 3 42405 3
+M 0 42400 3 42405 3
+M 0 42407 2 42406 1
+G 0 42403 -1
+M 0 42401 3 42407 2
+G 0 42406 -1
+M 0 42401 3 42407 2
+M 0 42401 3 42410 1
+M 0 42408 1 42411 1
+G 0 42404 -1
+M 0 42403 2 42412 1
+M 0 42404 4 42413 1
+M 0 42403 2 42414 1
+G 0 42405 -1
+M 0 42406 1 42415 1
+M 0 42404 4 42416 2
+M 0 42404 4 42416 2
+M 0 42404 4 42417 1
+M 0 42407 2 42419 1
+M 0 42405 1 42420 1
+G 0 42402 -1
+O 0 42400 -1 42420
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

@@ -1,0 +1,7432 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Gypsie Carnival~
+ShortName   Gypsie Carnival~
+Builders    None~
+Credits     Cadoren Kalahn Lancelittle Llyran Tava Darkbloome~
+VNUMs       18100 18299
+LComment    [  ALL  ]
+Security    9
+Colour      G~
+colourcode  `
+MapScale    6
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#18100
+Name A pretty gypsy lady~
+ShortD a pretty young lady~
+LongD A pretty young lady with hair the color of India ink waits for your order.~
+Desc You see a pretty young gypsy lady here.  She waits patiently, her black eyes 
+twinkling as she hums quietly to herself.  She wears a bright red dress 
+which sets off her dark skin nicely.  Her hair is left uncovered in a long 
+braid down her back.  
+~
+Race human~
+Align 0 2
+Level 120
+Hitroll 121
+HitDice 10d20+1000
+ManaDice 0d0+1
+DamDice 10d11+50
+DamType slap
+AC -670 -670 -670 -600
+Wealth 1200
+Act    npc dont_wander no_tame stay_area update_always changer~
+AffBy  detect_invis detect_hidden infrared~
+Imm    summon charm magic weapon sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg GRALL 18100 100~
+END
+
+#18101
+Name persuasive looking barker~
+ShortD a persuasive-looking barker~
+LongD A persuasive-looking barker calls out his tempting phrases.~
+Desc This barker is average looking and is congenial to the general public.  He 
+is somewhat handsome and though he is in shape, he is not overly muscular.  
+Just an average young man with a lot of charisma.  When a person shows 
+interest in his shpeel, he comes over to them and stands waiting 
+unobtrusively for the offer of money.  After the price has been met, the 
+barker gives the customer balls to throw at the target.  
+~
+Race human~
+Align 0 0
+Level 120
+Hitroll 20
+HitDice 10d20+1000
+ManaDice 120d10+100
+DamDice 10d11+50
+DamType punch
+AC -670 -660 -660 -600
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden infrared~
+Off    disarm dodge kick dirt_kick parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg SPEECH 18138 no~
+MProg SPEECH 18137 yes~
+MProg GRALL 18136 100~
+MProg GIVE 18128 18121~
+MProg GIVE 18126 18120~
+END
+
+#18102
+Name muscle-bound man~
+ShortD a muscle-bound man~
+LongD A muscle-bound man lounges against a post looking bored.~
+Desc You see a heavily muscled man in flared knickers and a short vest here.  He 
+is large, bald, and mean looking.  He is so tall that his head comes up to 
+the sign on the post he is leaning against.  Unless you give him reason to 
+notice you, he practically ignores your existence.  
+~
+Race human~
+Align 2 -2
+Level 120
+Hitroll 0
+HitDice 10d20+1020
+ManaDice 0d0+1
+DamDice 10d11+70
+DamType smash
+AC -610 -680 -660 -570
+Wealth 900
+Act    npc dont_wander no_tame stay_area warrior update_always~
+AffBy  detect_hidden regeneration~
+Off    area_attack bash berserk disarm rescue crush assist_all~
+Imm    summon charm magic weapon~
+Res    bash pierce slash poison disease~
+Vuln   lightning mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos resting~
+Size   large~
+Sex    male~
+Material flesh
+MProg GRALL 18135 100~
+MProg GIVE 18128 18121~
+MProg GIVE 18125 18120~
+END
+
+#18103
+Name gnome gnomish toy man~
+ShortD a gnomish toyman~
+LongD A gnomish toyman sits here working on a new toy.~
+Desc This dark wrinkled old gnome has mischievous eyes deeply set into a kindly 
+face neatly framed with white hair.  He appears to enjoy his work and the 
+happiness and laughter his toys and gags bring to his customers.  As you 
+walk in he looks up from his task, eyes twinkling with amusement, and he 
+smiles at you encouragingly.  
+~
+Race gnome~
+Align 0 1
+Level 120
+Hitroll 20
+HitDice 10d20+999
+ManaDice 0d0+1
+DamDice 10d11+45
+DamType pierce
+AC -660 -600 -650 -670
+Wealth 1200
+Act    npc dont_wander no_tame stay_area wimpy update_always~
+AffBy  detect_evil infrared~
+Off    dodge fast parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos resting~
+Size   small~
+Sex    male~
+Material flesh
+END
+
+#18104
+Name small dark child~
+ShortD a small dark child~
+LongD A small child wanders aimlessly.~
+Desc A small dark child wanders aimlessly.  Not appearing lost, most likely the 
+offspring of one of the gypsies.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 5d9+5
+DamDice 1d4+0
+DamType none
+AC 90 90 90 100
+Wealth 5
+Act    npc no_tame stay_area wimpy noalign update_always~
+AffBy  detect_hidden~
+Off    kick trip~
+Imm    summon charm~
+Res    magic disease~
+Vuln   bash pierce slash~
+Form   edible biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg SPEECH 18101 hi~
+MProg SPEECH 18101 hello~
+END
+
+#18105
+Name grand champeen~
+ShortD the "Grand Champeen"~
+LongD The "Grand Champeen" stands here waiting for the bell to ring.~
+Desc You see a tough looking fighter with bulging biceps.  There is something 
+definitely orcish about him though cant say exactly what it is as he has no 
+really tell-tale signs but it shows that he has some orc blood in him.  When 
+he sees you enter the ring he snorts and begins weaving from side to side 
+ready to knock your brains out.  Dare you accept this challenge after all?  
+~
+Race half-orc~
+Align 2 -2
+Level 63
+Hitroll 1
+HitDice 6d10+330
+ManaDice 20d10+50
+DamDice 8d7+29
+DamType crush
+AC -330 -340 -330 -300
+Wealth 0
+Act    npc dont_wander stay_area warrior update_always~
+AffBy  detect_hidden infrared~
+Off    bash berserk disarm dodge fast kick parry crush~
+Imm    summon charm sleep~
+Res    bash disease wood~
+Vuln   fire cold light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg DEATH 18102 100~
+END
+
+#18106
+Name grand keeper wiry man~
+ShortD the "Grand Keeper"~
+LongD A wiry man with a cane stands here yelling and waving his cane with a flourish.~
+Desc You see a thin wiry middle aged barker standing here gesticulating wildly 
+with his cane.  He has jet-black hair with a bit of grey at the temples and 
+sizes you up with bright black eyes.  He's wearing a white outfit with a 
+red-and-white striped vest.  A flat wide-brimmed straw hat with a 
+red-and-white striped band rests at a jaunty angle upon his head.  
+ 
+~
+Race human~
+Align -1 0
+Level 120
+Hitroll 0
+HitDice 10d20+1010
+ManaDice 0d0+1
+DamDice 10d11+50
+DamType beating
+AC -670 -660 -670 -620
+Wealth 1000
+Act    npc dont_wander stay_area update_always~
+AffBy  detect_invis detect_hidden infrared~
+Off    area_attack bash disarm fast parry rescue assist_all~
+Imm    summon charm magic weapon disease sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GRALL 18103 100~
+MProg BRIBE 18171 500~
+MProg SPEECH 18109 cost~
+MProg SPEECH 18108 fight~
+MProg SPEECH 18106 no~
+MProg SPEECH 18105 yes~
+MProg TICK 18104 10~
+MProg GIVE 18129 18120~
+MProg GIVE 18128 18121~
+END
+
+#18107
+Name madame pechoulii old gypsy woman fortune teller~
+ShortD madame Pechoulii~
+LongD An old gypsy woman offers to tell your fortune.~
+Desc This is a funny looking old gyspy lady.  She smiles often, which is 
+unfortunate since she has a few teeth missing.  Her hair is rich black and 
+drapes about her shoulders.  She has small dark-skinned hands and a slight 
+cackle to her laugh.  
+~
+Race human~
+Align 0 0
+Level 99
+Hitroll 0
+HitDice 10d13+475
+ManaDice 0d0+1
+DamDice 10d11+52
+DamType drain
+AC -700 -690 -700 -620
+Wealth 0
+Act    npc dont_wander stay_area mage update_always~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good~
+Off    area_attack fade assist_all~
+Imm    summon charm magic~
+Res    poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+MProg BRIBE 18149 200~
+MProg BRIBE 18145 50~
+MProg BRIBE 18141 100~
+MProg GRALL 18140 100~
+END
+
+#18108
+Name frightened lost child crying~
+ShortD a lost, frightened child~
+LongD A lost, frightened child is crying here.~
+Desc A small seemingly well kept child in a sailor suit is here looking lost.  
+Some sticky sweets have left their mark all over its face and the child 
+clutches a stick that holds a sodden mass of goo most likely the remnants of 
+some faerie sugar.  
+~
+Race human~
+Align 2 3
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 0d0+1
+DamDice 1d4+0
+DamType scratch
+AC 90 90 90 130
+Wealth 1
+Act    npc stay_area wimpy update_always~
+Off    dodge fast kick~
+Imm    summon~
+Res    charm~
+Vuln   magic weapon bash pierce mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material flesh
+MProg TICK 18107 40~
+END
+
+#18109
+Name rough-looking gypsy teenager~
+ShortD a rough looking gypsy teenager~
+LongD A rough looking gypsy teenager stands here rolling his eyes.~
+Desc A lanky dark-skinned teenage boy stands here manning the stall.  A long 
+pony-tail of fine black hair snakes down his back.  His clothes hang loosely 
+on him and you can tell he still has some filling out to do.  
+~
+Race human~
+Align -2 -1
+Level 129
+Hitroll 0
+HitDice 10d20+1000
+ManaDice 0d0+1
+DamDice 10d11+50
+DamType punch
+AC -670 -660 -670 -600
+Wealth 1000
+Act    npc dont_wander stay_area update_always changer~
+AffBy  detect_hidden~
+Imm    summon charm magic weapon sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GRALL 18115 90~
+END
+
+#18110
+Name ticketseller ticket ticketman man~
+ShortD a ticketman~
+LongD A ticketman sits here selling tickets~
+Desc This dark skinned man has a thick crop of black hair which hangs almost to 
+his shoulders.  Dark eyes peer at the customers with indifference.  He seems 
+to have been in this job a long time as his hands seem a little stained from 
+the dye of the tickets he sells.  He speaks in a deep voice and sits here 
+wearily passing out tickets.  
+~
+Race human~
+Align 0 1
+Level 120
+Hitroll 20
+HitDice 10d20+999
+ManaDice 0d0+1
+DamDice 10d11+45
+DamType pierce
+AC -660 -600 -650 -670
+Wealth 1200
+Act    npc dont_wander no_tame stay_area wimpy update_always~
+AffBy  detect_evil infrared~
+Off    dodge fast parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   small~
+Sex    male~
+Material flesh
+MProg GRALL 18112 100~
+MProg SPEECH 18113 yellow~
+MProg SPEECH 18114 red~
+MProg SPEECH 18114 stall~
+MProg SPEECH 18113 ride~
+END
+
+#18111
+Name huge man~
+ShortD a huge sweaty man~
+LongD A huge sweaty man is pulling on the ropes.~
+Desc A huge man groans as he heaves and pulls the thick rope which turns this 
+wheel.  Sweat drips off his body and you can see his muscles are well 
+worked.  A bandanna keeps the hair off his face and he wears a thin singlet 
+to try and keep cool.  
+~
+Race human~
+Align 0 1
+Level 120
+Hitroll 20
+HitDice 10d20+999
+ManaDice 0d0+1
+DamDice 10d11+45
+DamType beating
+AC -660 -600 -650 -670
+Wealth 1200
+Act    npc dont_wander no_tame stay_area wimpy update_always~
+AffBy  detect_evil infrared~
+Off    dodge fast parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material flesh
+END
+
+#18112
+Name huge man~
+ShortD a huge sweaty man~
+LongD A huge sweaty man is turning the handle.~
+Desc This huge man lets out an occasional groan as he turns the sturdy handle 
+which operates this wheel.  Sweat drips off his body and you can see his 
+muscles are well worked.  A bandanna keeps the hair off his face and he 
+wears a thin singlet to try and keep cool.  
+~
+Race human~
+Align 0 1
+Level 120
+Hitroll 20
+HitDice 10d20+999
+ManaDice 0d0+1
+DamDice 10d11+45
+DamType beating
+AC -660 -600 -650 -670
+Wealth 1200
+Act    npc dont_wander no_tame stay_area wimpy update_always~
+AffBy  detect_evil infrared~
+Off    dodge fast parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material flesh
+END
+
+#18113
+Name scrawny man ticket collector~
+ShortD a scrawny man~
+LongD A scrawny man stands here collecting tickets and grinning.~
+Desc This scrawny, dark skinned man has a constant grin on his face.  He has dark 
+eyes overset by thick dark eyebrows.  His hair is slicked back and you 
+notice his thin fingers when he collects your ticket.  
+~
+Race human~
+Align 0 1
+Level 120
+Hitroll 20
+HitDice 10d20+999
+ManaDice 0d0+1
+DamDice 10d11+45
+DamType beating
+AC -660 -600 -650 -670
+Wealth 1200
+Act    npc dont_wander no_tame stay_area wimpy update_always~
+AffBy  detect_evil infrared~
+Off    dodge fast parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material flesh
+MProg GIVE 18129 18120~
+MProg GIVE 18170 18121~
+MProg GRALL 18169 100~
+END
+
+#18114
+Name heavy set man carousel ticket collector~
+ShortD a heavy thick-set man collecting tickets for the carousel~
+LongD A heavy thick-set man is here collecting tickets for the carousel.~
+Desc A heavy thick-set man greets you as you enter.  He has a warm, friendly face 
+which makes him ideal for operating a children's ride.  When you hand him 
+your ticket you notice his nails are covered in grease.  
+~
+Race human~
+Align 0 1
+Level 120
+Hitroll 20
+HitDice 10d20+999
+ManaDice 0d0+1
+DamDice 10d11+45
+DamType beating
+AC -660 -600 -650 -670
+Wealth 1200
+Act    npc dont_wander no_tame stay_area wimpy update_always~
+AffBy  detect_evil infrared~
+Off    dodge fast parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GIVE 18129 18120~
+MProg GRALL 18167 100~
+MProg GIVE 18166 18121~
+END
+
+#18115
+Name old grey haired man~
+ShortD an old grey-haired man~
+LongD An old grey-haired man takes your tickets for the gondola.~
+Desc An elderly man stands here smiling.  Wispy grey hair frames his wrinkly face 
+and a set of tarnished teeth smile at you as you arrive.  He slouches 
+slightly and seems to enjoy operating this quieter ride as he watches the 
+gondolas float about with amusement in his eyes.  
+~
+Race human~
+Align 0 1
+Level 120
+Hitroll 20
+HitDice 10d20+999
+ManaDice 0d0+1
+DamDice 10d11+45
+DamType beating
+AC -660 -600 -650 -670
+Wealth 1200
+Act    npc dont_wander no_tame stay_area wimpy update_always~
+AffBy  detect_evil infrared~
+Off    dodge fast parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GIVE 18177 18121~
+MProg GIVE 18129 18120~
+MProg GRALL 18184 100~
+END
+
+#18116
+Name mob18116 sinister gypsy man~
+ShortD a sinister gypsy man~
+LongD A sinister gypsy man beckons for you to enter.~
+Desc A sinister looking gypsy man peers at you curiously as you arrive.  His face 
+seems even darker than the usual gypsy and his eyes are blacker than his 
+hair.  He slouches slightly as he beckons you inside.  
+~
+Race human~
+Align 0 1
+Level 120
+Hitroll 20
+HitDice 10d20+999
+ManaDice 0d0+1
+DamDice 10d11+45
+DamType beating
+AC -660 -600 -650 -670
+Wealth 1200
+Act    npc dont_wander no_tame stay_area wimpy update_always~
+AffBy  detect_evil infrared~
+Off    dodge fast parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg BRIBE 18175 300~
+MProg GRALL 18174 100~
+END
+
+#18117
+Name unshaven man~
+ShortD an unshaven dark-skinned man~
+LongD An unshaven, dark-skinned man encourages you to play his stall game.~
+Desc This tall dark-skinned man, looks unclean and unshaven.  In fact you even 
+notice a slight rancour coming from him as you enter the tent.  As soon as 
+he notices you his eyes light up and he tries every way he knows to get you 
+to play the game.  
+~
+Race human~
+Align 2 -2
+Level 120
+Hitroll 0
+HitDice 10d20+1020
+ManaDice 0d0+1
+DamDice 10d11+70
+DamType smash
+AC -610 -680 -660 -570
+Wealth 900
+Act    npc dont_wander no_tame stay_area warrior update_always~
+AffBy  detect_hidden regeneration~
+Off    area_attack bash berserk disarm rescue crush assist_all~
+Imm    summon charm magic weapon~
+Res    bash pierce slash poison disease~
+Vuln   lightning mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GRALL 18132 100~
+MProg GIVE 18128 18121~
+MProg GIVE 18123 18120~
+END
+
+#18118
+Name handsome young man~
+ShortD a handsome young man~
+LongD A handsome young man stands here exchanging rings for tickets.~
+Desc A handsome young man runs this stall.  He has a soft, somewhat charming 
+voice, which he uses to his advantage when coaxing you to play.  His dark 
+hair is slicked back off his face and his smile shows a mouth of bright 
+clean teeth.  You can't help but notice his beautiful shining eyes enticing 
+you to stay, for at least one game.  
+~
+Race human~
+Align 2 -2
+Level 120
+Hitroll 0
+HitDice 10d20+1020
+ManaDice 0d0+1
+DamDice 10d11+70
+DamType smash
+AC -610 -680 -660 -570
+Wealth 900
+Act    npc dont_wander no_tame stay_area warrior update_always~
+AffBy  detect_hidden regeneration~
+Off    area_attack bash berserk disarm rescue crush assist_all~
+Imm    summon charm magic weapon~
+Res    bash pierce slash poison disease~
+Vuln   lightning mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GRALL 18133 100~
+MProg GIVE 18128 18121~
+MProg GIVE 18121 18120~
+END
+
+#18119
+Name dark rat-faced man~
+ShortD a dark rat-faced man~
+LongD A dark rat-faced man taunts you to play the game.~
+Desc Two beady eyes and a goatee-covered pointy chin peer at you as you arrive.  
+This rat-faced man looks lean and mean.  His hands feel rough as you pass 
+him the ticket and his voice sounds coarse as he taunts you.  
+~
+Race human~
+Align 2 -2
+Level 120
+Hitroll 0
+HitDice 10d20+1020
+ManaDice 0d0+1
+DamDice 10d11+70
+DamType smash
+AC -610 -680 -660 -570
+Wealth 900
+Act    npc dont_wander no_tame stay_area warrior update_always~
+AffBy  detect_hidden regeneration~
+Off    area_attack bash berserk disarm rescue crush assist_all~
+Imm    summon charm magic weapon~
+Res    bash pierce slash poison disease~
+Vuln   lightning mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GRALL 18134 100~
+MProg GIVE 18128 18121~
+MProg GIVE 18124 18120~
+END
+
+#18120
+Name muscle-bound man~
+ShortD a muscle-bound man~
+LongD A muscle-bound man stands here collecting tickets for the Hall of Mirrors~
+Desc You see a heavily muscled man in flared knickers and a short vest here.  He 
+is large, bald, and mean looking.  He stands here scuffing his feet, waiting 
+for the next customer to volunteer for this ride.  
+~
+Race human~
+Align 2 -2
+Level 120
+Hitroll 0
+HitDice 10d20+1020
+ManaDice 0d0+1
+DamDice 10d11+70
+DamType smash
+AC -610 -680 -660 -570
+Wealth 900
+Act    npc dont_wander no_tame stay_area warrior update_always~
+AffBy  detect_hidden regeneration~
+Off    area_attack bash berserk disarm rescue crush assist_all~
+Imm    summon charm magic weapon~
+Res    bash pierce slash poison disease~
+Vuln   lightning mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+MProg GIVE 18129 18120~
+MProg GIVE 18118 18121~
+MProg EXALL 18117 0~
+MProg EXALL 18119 2~
+END
+
+#18121
+Name persuasive looking gypsy man~
+ShortD a persuasive-looking gypsy man~
+LongD A persuasive looking gypsy man collects tickets for the House of Horrors.~
+Desc This man is average looking and is congenial to the general public.  He is 
+somewhat handsome and though he is in shape, he is not overly muscular.  
+Just an average young man with a lot of charisma.  When he speaks he seems 
+very persuasive, which is a necessary quality when you operate a ride like 
+this one.  
+~
+Race human~
+Align 0 0
+Level 120
+Hitroll 20
+HitDice 10d20+1000
+ManaDice 120d10+100
+DamDice 10d11+50
+DamType punch
+AC -670 -660 -660 -600
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden infrared~
+Off    disarm dodge kick dirt_kick parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GIVE 18129 18120~
+MProg GIVE 18111 18121~
+MProg EXALL 18117 2~
+END
+
+#18122
+Name tall man~
+ShortD a tall dark-skinned man~
+LongD A tall dark-skinned man smiles as he waits for your ticket.~
+Desc A tall man stands here, smiling.  He has dark skin, like most gypsies and 
+his eyes twinkle with mischief.  His hair is trimmed short and his clothes 
+look clean.  
+~
+Race human~
+Align 0 0
+Level 120
+Hitroll 20
+HitDice 10d20+1000
+ManaDice 120d10+100
+DamDice 10d11+50
+DamType punch
+AC -670 -660 -660 -600
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden infrared~
+Off    disarm dodge kick dirt_kick parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GIVE 18129 18120~
+MProg GIVE 18120 18121~
+MProg EXALL 18117 1~
+END
+
+#18123
+Name brown horse~
+ShortD a brown horse~
+LongD A brown horse stands here grazing.~
+Desc ~
+Race human~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 0d0+1
+DamDice 1d5+1
+DamType charge
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    fast kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material '0 '
+END
+
+#18124
+Name pig~
+ShortD a pig~
+LongD A pig is snuffling here.~
+Desc This pig looks as ordinary as they come.  It has a snout, two eyes and a 
+curly tail.  
+~
+Race human~
+Align 0 0
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 0d0+1
+DamDice 1d7+2
+DamType smash
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash dodge kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#18125
+Name cow black splotch~
+ShortD a white cow with black splotches~
+LongD A white cow with black splotches stands here chewing its cud.~
+Desc ~
+Race human~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 3d8+8
+ManaDice 0d0+1
+DamDice 2d8+5
+DamType charge
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#18126
+Name young gypsy girl~
+ShortD a young gypsy girl~
+LongD A gyspy girl smiles as she collects tickets for this game.~
+Desc A sweet looking face greets you as you enter this tent.  She has dark-olive 
+skin and dark brown eyes framed with long lashes.  She has a cheerful voice 
+and enjoys working at this stall.  
+~
+Race human~
+Align -2 -1
+Level 129
+Hitroll 0
+HitDice 10d20+1000
+ManaDice 0d0+1
+DamDice 10d11+50
+DamType punch
+AC -670 -660 -670 -600
+Wealth 1000
+Act    npc dont_wander no_tame stay_area update_always~
+AffBy  detect_hidden~
+Imm    summon charm magic weapon sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+MProg GRALL 18139 100~
+MProg GIVE 18131 18120~
+MProg GIVE 18128 18121~
+END
+
+#18127
+Name young gypsy boy~
+ShortD a young gypsy boy~
+LongD A young gypsy boy is pulling the ducks from the water as they get picked.~
+Desc This young gypsy boy has a cheerful grin as he goes about his work.  He 
+looks very similar to the girl who works here, they are probably related.  
+He has dark-olive skin and his hair is hidden under a bandanna.  He smiles 
+with a bright set of teeth and has a happy laugh.  
+~
+Race human~
+Align -2 -1
+Level 129
+Hitroll 0
+HitDice 10d20+1000
+ManaDice 0d0+1
+DamDice 10d11+50
+DamType punch
+AC -670 -660 -670 -600
+Wealth 1000
+Act    npc dont_wander no_tame stay_area update_always~
+AffBy  detect_hidden~
+Imm    summon charm magic weapon sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg GRALL 18139 100~
+MProg GIVE 18130 18120~
+MProg GIVE 18128 18121~
+END
+
+#18137
+Name door close~
+ShortD door close~
+LongD Door close~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 18150 100~
+END
+
+#18138
+Name sliding stairs~
+ShortD stairs~
+LongD Stairs trip~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 18153 100~
+MProg DELAY 18151 100~
+END
+
+#18140
+Name swing bridge~
+ShortD swing bridge~
+LongD Swing bridge~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18154 20~
+END
+
+#18141
+Name lily pad~
+ShortD lily pad~
+LongD Lily pad~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 18152 100~
+MProg DELAY 18155 100~
+END
+
+#18142
+Name spooky stuff~
+ShortD spooky stuff~
+LongD Spooky stuff~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18157 10~
+MProg RANDOM 18158 10~
+END
+
+#18143
+Name hand grabbing~
+ShortD hand grab~
+LongD Hand grab~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18163 5~
+END
+
+#18144
+Name slime~
+ShortD slime~
+LongD Slime~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18162 6~
+END
+
+#18145
+Name IT~
+ShortD iT~
+LongD IT~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18161 10~
+END
+
+#18146
+Name trapdoor~
+ShortD trapdoor~
+LongD Trapdoor~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 18212 100~
+MProg DELAY 18164 100~
+END
+
+#18147
+Name spooks~
+ShortD spooks~
+LongD Spooks~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18158 10~
+MProg RANDOM 18156 10~
+END
+
+#18148
+Name spooks 2~
+ShortD spooks~
+LongD Spooks~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18160 10~
+MProg RANDOM 18157 10~
+END
+
+#18149
+Name whispers~
+ShortD whispers~
+LongD Whispers~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18159 10~
+END
+
+#18150
+Name gondola~
+ShortD on the gondola~
+LongD On the gondola~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18165 100~
+END
+
+#18151
+Name gondola1~
+ShortD on the gondola~
+LongD On the gondola~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18178 100~
+END
+
+#18152
+Name carousel music~
+ShortD carousel~
+LongD Carousel music~
+Desc ~
+Race human~
+Align 0 0
+Level 90
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18168 10~
+END
+
+#18153
+Name puppet show~
+ShortD puppet show~
+LongD The Puppet Show~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18173 10~
+END
+
+#18154
+Name freakshow~
+ShortD freaks and oddities~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#18155
+Name gondola2~
+ShortD on the gondola~
+LongD On the gondola~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18179 100~
+END
+
+#18156
+Name gondola3~
+ShortD on the gondola~
+LongD On the gondola~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18180 100~
+END
+
+#18157
+Name gondola4~
+ShortD on the gondola~
+LongD On the gondola~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18181 100~
+END
+
+#18158
+Name gondola5~
+ShortD on the gondola~
+LongD On the gondola~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18182 100~
+END
+
+#18159
+Name freakshow1~
+ShortD freakshow~
+LongD Freakshow~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18110 100~
+END
+
+#18160
+Name freakshow~
+ShortD freakshow~
+LongD Freakshow~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18172 100~
+END
+
+#18161
+Name freakshow2~
+ShortD freakshow~
+LongD Freakshow~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18185 100~
+END
+
+#18162
+Name freakshow3~
+ShortD freakshow~
+LongD Freakshow~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18186 100~
+END
+
+#18163
+Name freakshow4~
+ShortD freakshow~
+LongD Freakshow~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18187 100~
+END
+
+#18164
+Name freakshow5~
+ShortD freakshow~
+LongD Freakshow~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18188 100~
+END
+
+#18165
+Name freakshow6~
+ShortD freakshow~
+LongD Freakshow~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18189 100~
+END
+
+#18166
+Name ferris wheel part1~
+ShortD ferris wheel ride~
+LongD On the ferris wheel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18193 100~
+END
+
+#18167
+Name fwpart2~
+ShortD ferris wheel ride~
+LongD On the ferris wheel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18194 100~
+END
+
+#18168
+Name fwpart3~
+ShortD ferris wheel ride~
+LongD On the ferris wheel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18195 100~
+END
+
+#18169
+Name fwpart4~
+ShortD ferris wheel ride~
+LongD On the ferris wheel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18196 100~
+END
+
+#18170
+Name fwpart5~
+ShortD ferris wheel ride~
+LongD On the ferris wheel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18197 100~
+END
+
+#18171
+Name fwpart6~
+ShortD ferris wheel ride~
+LongD On the ferris wheel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18198 100~
+END
+
+#18172
+Name carousel part1~
+ShortD ferris wheel ride~
+LongD On the carousel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18204 100~
+END
+
+#18173
+Name carousel part 2~
+ShortD ferris wheel ride~
+LongD On the carousel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18205 100~
+END
+
+#18174
+Name carousel part 3~
+ShortD ferris wheel ride~
+LongD On the carousel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18206 100~
+END
+
+#18175
+Name carousel part 4~
+ShortD ferris wheel ride~
+LongD On the carousel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18207 100~
+END
+
+#18176
+Name carousel part 5~
+ShortD ferris wheel ride~
+LongD On the carousel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18208 100~
+END
+
+#18177
+Name carousel part 6~
+ShortD ferris wheel ride~
+LongD On the carousel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18209 100~
+END
+
+#18178
+Name circus~
+ShortD circus~
+LongD At the circus~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg RANDOM 18203 10~
+END
+
+#18179
+Name ringmaster~
+ShortD a ringmaster~
+LongD A ringmaster stands here welcoming the crowd.~
+Desc The ringmaster stands here with a large grin on his face, announcing the 
+acts and encouraging the crowd to applaud.  He is a slim man with a slightly 
+pointy face, covered by a dark beard.  He wears a top hat and carries a 
+ringmasters stick.  
+~
+Race human~
+Align 0 0
+Level 120
+Hitroll 20
+HitDice 10d20+1000
+ManaDice 120d10+100
+DamDice 10d11+50
+DamType punch
+AC -670 -660 -660 -600
+Wealth 1000
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_invis detect_hidden infrared~
+Off    disarm dodge kick dirt_kick parry rescue assist_all~
+Imm    summon charm magic weapon sleep~
+Res    mental disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+END
+
+#18180
+Name windy tunnel~
+ShortD windy tunnel~
+LongD Windy tunnel~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18211 100~
+MProg GRALL 18210 100~
+END
+
+#18181
+Name slide~
+ShortD slide~
+LongD Slide~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg DELAY 18214 100~
+MProg GRALL 18213 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#18100
+Name stand bleachers~
+Short a stand of bleachers~
+Desc Bleachers line the tent canvas in a broken ring.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 10000 CFILS 100 100
+Weight 4500
+Material wood~
+Extra    nodegrade~
+End
+
+#18101
+Name faerie sugar~
+Short some `#`Mfaerie sugar`^ on a stick~
+Desc Faerie sugar on a stick lies melting here.~
+Level 1
+ItemType food~
+Cost 10
+Asize 0
+Rsize 50
+Values 10 15 0 0 0
+Weight 1
+Material spun sugar~
+Extra    inventory~
+Wear     take hold~
+ExtraDesc faerie sugar stick~
+You see a fluffy pink substance on a stick.  It smells strangely warm and 
+sweet.  If you feel it, at first it would feel as it looks and smells--soft 
+and warm but after awhile it would melt in your hand, leaving a sticky 
+residue.  You would have to eat this treat quickly before it melted!  
+~
+End
+
+#18102
+Name fizzy fruity mead~
+Short a cup of `#`Cfizzy `mfruity`^ mead~
+Desc A paper cup is lying on its side spilling its contents.~
+Level 1
+ItemType drinkcontainer~
+Cost 15
+Asize 0
+Rsize 50
+Values 4 4 icewine 0 0
+Weight 1
+Material paper~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc fizzy fruit mead~
+This mead is different from what you are used to.  It is a blue-violet color and it fizzes and bubbles as if it were boiling though it is ice cold. It smells and tastes faintly of blueberries.
+~
+End
+
+#18103
+Name a cone of flavored ice~
+Short a cone of `#`rflavoured`^ ice~
+Desc A cone of `#`rflavoured`^ ice is melting all over the place.~
+Level 1
+ItemType drinkcontainer~
+Cost 5
+Asize 0
+Rsize 50
+Values 4 4 'cranberry juice' 0 0
+Weight 1
+Material paper and ice~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc a cone of flavored ice~
+This small paper cone holds a large scoop of shaved ice with red flavoring 
+poured liberally over it.  It's sweet cold and sticky.  If not eaten fast it 
+will melt all over making a horrible mess!  
+~
+End
+
+#18104
+Name fiery hot barbecued dragon wings~
+Short some `#`Rfiery hot`^ barbecued dragon wings~
+Desc Some `#`Rfiery hot`^ barbecued dragon wings are attracting flies here.~
+Level 1
+ItemType food~
+Cost 20
+Asize 0
+Rsize 50
+Values 5 24 0 0 0
+Weight 2
+Material cooked meat~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc fiery hot barbecued dragon wings~
+This pair of dragon wings has been barbecued using a secret sauce.  They are 
+a bright red and smell spicy.  If you are adventurous enough, taste this 
+tongue shriveling delicacy.  
+~
+End
+
+#18105
+Name mystik-tart tart~
+Short a `#`Rm`ry`Ys`Gt`gi`Bk`b-`Ct`ma`Mr`Rt`^~
+Desc A `#`Rm`ry`Ys`Gt`gi`Bk`b-`Ct`ma`Mr`Rt`^ has been dropped here.~
+Level 1
+ItemType pill~
+Cost 50
+Asize 0
+Rsize 50
+Values 4 'induce sleep' '' '' ''
+Weight 1
+Material candy~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc tart mystik-tart~
+This rainbow-hued treat looks sweet and smells fruity.  
+~
+End
+
+#18106
+Name small pink pill~
+Short a small pink pill~
+Desc A small pink pill has been dropped here.~
+Level 1
+ItemType pill~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 'cure light' 'create food' 'create spring' ''
+Weight 1
+Material unknown~
+Extra    glow~
+Wear     take hold~
+ExtraDesc small pink pill~
+This is a small pink pill; whether it has any value or if it is just a sweet 
+is hard to tell.  
+~
+End
+
+#18107
+Name grand champeen belt~
+Short `#the `YGrand Champeen's`^ belt`^~
+Desc A gold belt with Grand Champeen engraved on it lies here.~
+Level 57
+ItemType treasure~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Extra    nodegrade burnproof~
+Wear     take waist~
+Affect modifier -1 57 -1 move -40 0
+Affect modifier -1 57 -1 hp 4 0
+Affect modifier -1 57 -1 damroll 4 0
+Affect modifier -1 57 -1 hitroll 4 0
+ExtraDesc grand champeen belt~
+This is the belt many have tried to get from the "Grand Champeen".  Many 
+have tried but few can beat the great fighter.  It is pure gold with his 
+name engraved into it.  On the inside it says "congratulations you have 
+beaten the "Grand Champeen", give this belt to the "Grand Keeper" for your 
+reward!  
+~
+End
+
+#18108
+Name gnarled wooden cane~
+Short a gnarled wooden cane~
+Desc A gnarled wooden cane has been left here.~
+Level 90
+ItemType weapon~
+Cost 100
+Asize 0
+Rsize 50
+Values staff 3 0 beating 0
+Weight 5
+Material wood~
+Extra    rotdeath nodegrade burnproof~
+Wear     wield~
+ClassAllowances cleric warrior druid paladin ranger~
+ExtraDesc gnarled wooden cane~
+This cane looks as if it was a piece of drift-wood washed up from some 
+beach.  There are many lines and whorls in the grain as well as many 
+interesting bumps.  
+~
+End
+
+#18109
+Name ring~
+Short the "Grand Champeen" Ring~
+Desc A roped in fighter's ring is here.~
+Level 0
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 K A 18183 0
+Weight 0
+Material unknown~
+Extra    noremove nodegrade burnproof~
+ExtraDesc grand champeen ring~
+A square mat is here with ropes all around where challengers face the "Grand 
+Champeen" (and usually get their brains knocked out).  Do you dare face him? 
+ Enter the ring.  Or maybe you just want to peek inside it.  
+~
+End
+
+#18110
+Name chaotic-surge surge~
+Short a `#`Rchao`rti`Rc-sur`rge`^~
+Desc A `#`Rchao`rti`Rc-sur`rge`^ lies here.~
+Level 1
+ItemType pill~
+Cost 50
+Asize 0
+Rsize 50
+Values 3 utterdark '' '' ''
+Weight 1
+Material sugar~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc chaotic-surge surge~
+Here is a small round sweet.  It's red and smells like cinnamon.  
+~
+End
+
+#18111
+Name porcelain baby doll~
+Short a `#`Wporcelain`^ baby doll~
+Desc A `#`Wporcelain`^ baby doll rests here with its eyes closed.~
+Level 1
+ItemType treasure~
+Cost 500
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material porcelain~
+Extra    inventory nonmetal meltdrop nodegrade~
+Wear     take hold~
+ExtraDesc porcelain baby doll~
+This is a clever piece of work for a doll.  When it is set down its glass 
+eyes shut.  Its porcelain head has been finely painted adding realism and it 
+also has porcelain arms and legs.  Its clothes are really a part of its 
+cloth body.  
+~
+End
+
+#18112
+Name wooden cradle~
+Short a wooden doll cradle~
+Desc A wooden doll cradle stands here.~
+Level 1
+ItemType container~
+Cost 200
+Asize 0
+Rsize 50
+Values 1 0 0 1 1
+Weight 1
+Material wood~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc wooden doll cradle~
+You see a wooden cradle obviously made out of wood since it is to small for 
+a real baby.  It has been made out of what appears to be waxed cherry wood; 
+it is a shiny dark reddish-brown.  Its little rockers allow a child to 
+really rock their "little one" to sleep.  
+~
+End
+
+#18113
+Name small red ball~
+Short `#a small `Rred`^ ball`^~
+Desc `#a small `Rred`^ ball lies here.`^~
+Level 1
+ItemType treasure~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material leather~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc small red ball~
+This small red ball seems to be made from many layers of soft leather sewn 
+together.  A red dye has been used on the leather to give it its colour and 
+small white threading runs across the ball stitched together.  
+~
+End
+
+#18114
+Name map ~
+Short a map~
+Desc (no description)~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+ExtraDesc map ~
+.                                         
+_________________________________________
+|                                       |
+|      N^             ________          |
+|   W<    >E         /ENTRANCE\         |
+|      Sv           /__________\        |
+|                    |__|  |__|         |
+|                    |  |  |  |         |
+|                    |__|  |__|         |
+|                    |  |  |  |         |
+|                    |__|  |__|         |
+|                    |  |  |  |         |
+|      ______________|__|  |__|__       |
+|     |  |  |  |  |  |        |  |      |
+|  \__|__|__|__|__|__|   __   |__|__    |
+|     |                 |  |     |  |   |
+|   __|______________   |__|   __|__|   |
+|  /  |  |  |  |  |  |        |  |      |
+|     |__|__|__|__|__|__    __|__|      |
+|                       |  |            |
+|                     __|  |__          |
+|                    |  |  |  |         |
+|                    |__|__|__|         |
+|                       |  |            |
+|                       |__|            |
+|_______________________________________|
+~
+End
+
+#18115
+Name glowing skull~
+Short a glowing skull~
+Desc A huge glowing skull is here.~
+Level 0
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 0 F 18128 0
+Weight 0
+Material unknown~
+ExtraDesc huge glowing skull~
+This huge glowing skull opens its sharp-toothed jaws wide as if bidding you 
+to enter.  Dare you enter this ghastly apparition of death?  
+~
+End
+
+#18116
+Name pink love potion elixer~
+Short a pink sweet smelling elixer~
+Desc A pink sweet smelling elixer rests here.~
+Level 12
+ItemType potion~
+Cost 100
+Asize 0
+Rsize 50
+Values 10 'charm person' '' '' ''
+Weight 3
+Material unknown~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#18117
+Name bright green satin scarf~
+Short a `#`Gbright green`^ satin scarf~
+Desc A `#`Gbright green`^ satin scarf lies here.~
+Level 92
+ItemType armor~
+Cost 500
+Asize 0
+Rsize 50
+Values -1 0 -2 -7 0
+Weight 1
+Material satin~
+Extra    magic antievil nonmetal~
+Wear     take head hold~
+ClassAllowances mage druid spellfilcher~
+End
+
+#18118
+Name bright red satin blouse~
+Short a `#`Rbright red`^ satin blouse~
+Desc A `#`Rbright red`^ satin blouse lies here.~
+Level 91
+ItemType armor~
+Cost 520
+Asize 0
+Rsize 50
+Values -1 0 -2 -7 0
+Weight 2
+Material satin~
+Extra    magic antievil nonmetal~
+Wear     take torso hold~
+ClassAllowances mage druid spellfilcher~
+End
+
+#18119
+Name a wooden marionette~
+Short a wooden marionette on strings~
+Desc A wooden marionette is lying here getting its strings tangled.~
+Level 1
+ItemType treasure~
+Cost 350
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 3
+Material wood~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc marionette ~
+You are looking at a hand-painted marionette with brightly colored clothes 
+that is attached to a wooden cross-piece by strings.  It's use is fairly 
+obvious, lifting one arm of the cross lifts one leg and vice versa while the 
+other two arms cause the head to nod or shake and the arms are attached to 
+another piece of wood which controls one arm at a time or both.  
+~
+End
+
+#18120
+Name red carnival stall ticket~
+Short a `#`Rred`^ carnival stall ticket~
+Desc A `#`Rred`^ carnival stall ticket has been left here~
+Level 1
+ItemType trash~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc red carnival stall ticket~
+This small `#`Rred`^ ticket will let you play on any of the carnival stall games.
+~
+End
+
+#18121
+Name yellow carnival ride ticket~
+Short a `#`Yyellow`^ carnival ride ticket~
+Desc A `#`Yyellow`^ carnival ride ticket has been left here~
+Level 1
+ItemType trash~
+Cost 200
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Extra    inventory nodegrade~
+Wear     take hold~
+ExtraDesc ~
+This small `#`Rred`^ ticket will let you play on any of the carnival stall games.
+~
+ExtraDesc yellow carnival ride ticket~
+This small `#`Yyellow`^ ticket will let you ride on any of the carnival rides.
+~
+End
+
+#18122
+Name lucky charm~
+Short a lucky charm~
+Desc Someone's lucky charm has been left here~
+Level 1
+ItemType jewelry~
+Cost 10
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material leather~
+Wear     take neck~
+Affect modifier -1 1 -1 memory 1 0
+Affect modifier -1 1 -1 reasoning 1 0
+ExtraDesc lucky charm~
+This little charm is hanging on a thin leather string.
+~
+End
+
+#18123
+Name small doll~
+Short a small doll~
+Desc A small doll has been left here~
+Level 1
+ItemType trash~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material wood~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#18124
+Name toy sword~
+Short a toy sword~
+Desc A toy sword has been left here~
+Level 1
+ItemType trash~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material wood~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#18125
+Name bright pink satin blouse~
+Short a `#`Mbright pink`^ satin blouse~
+Desc A `#`Mbright pink`^ satin blouse lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Wear     take torso~
+End
+
+#18126
+Name bright green vest~
+Short a `#`Gbright green`^ vest~
+Desc A `#`Gbright green`^ vest lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#18127
+Name bright blue flowing skirt~
+Short a `#`Cbright blue`^ flowing skirt~
+Desc A `#`Cbright blue`^ flowing skirt lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#18128
+Name bright yellow flowing skirt~
+Short a `#`Ybright yellow`^ flowing skirt~
+Desc A `#`Ybright yellow`^ flowing skirt lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#18129
+Name bright blue vest~
+Short a `#`Cbright blue`^ vest~
+Desc A `#`Cbright blue`^ vest lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#18130
+Name bright red vest~
+Short a `#`Rbright red`^ vest~
+Desc A `#`Rbright red`^ vest lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#18131
+Name bright red pants~
+Short some `#`Rbright red`^ pants~
+Desc Some `#`Rbright red`^ pants lie here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#18132
+Name bright yellow pants~
+Short some `#`Ybright yellow`^ pants~
+Desc Some `#`Ybright yellow`^ pants lie here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#18133
+Name bright purple pants~
+Short some `#`mbright purple`^ pants~
+Desc Some `#`mbright purple`^ pants lie here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#18134
+Name long black cloak~
+Short a long black cloak~
+Desc A long black cloak lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#18135
+Name bright blue pants~
+Short some `#`Bbright blue`^ pants~
+Desc Some `#`Bbright blue`^ pants lie here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#18136
+Name singlet~
+Short a singlet~
+Desc A singlet lies here~
+Level 1
+ItemType clothing~
+Cost 240
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cotton~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#18137
+Name soft toy~
+Short a soft toy~
+Desc A soft toy has been left here~
+Level 1
+ItemType trash~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material wood~
+Extra    nodegrade~
+Wear     take hold~
+ExtraDesc soft toy~
+You small soft toy has been sewn together out of `#`Cc`Mo`Rl`Bo`Gu`Yr`re`Wd`^ patches of 
+material.  Two little beads have been attached for eyes and a little nose 
+shape and whiskers have been sewn on.  
+~
+End
+
+#18138
+Name 18138 token_mermaid_tank~
+Short token_mermaid_tank~
+Desc Token_mermaid_tank~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18139
+Name 18139 token_mermaid_tank_2_or_3_balls_flag~
+Short token_mermaid_tank_2_or_3_balls_flag~
+Desc Token_mermaid_tank_2_or_3_balls_flag~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18140
+Name candy~
+Short a sweet candy~
+Desc A sweet candy is melting here~
+Level 1
+ItemType food~
+Cost 50
+Asize 0
+Rsize 50
+Values 2 0 0 0 0
+Weight 0
+Material candy~
+Wear     take hold~
+ExtraDesc candy ~
+This is a little round candy slightly pink in colour and it smells of raspberries. It is hard, and made of crystalised sugar.
+~
+End
+
+#18141
+Name rotten apple~
+Short a rotten apple~
+Desc A rotten apple is here rotting away~
+Level 1
+ItemType food~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 0 0 A 0
+Weight 0
+Material apple~
+Wear     take hold~
+End
+
+#18142
+Name 18142 token_evil_align_1~
+Short token_evil_align_1~
+Desc Token_evil_align_1~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18143
+Name 18143 token_good_align_1~
+Short token_good_align_1~
+Desc Token_good_align_1~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18144
+Name 18144 token_neutral_align_1~
+Short token_neutral_align_1~
+Desc Token_neutral_align_1~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18145
+Name 18145 token_evil_align_2a~
+Short token_evil_align_2a~
+Desc Token_evil_align_2a~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18146
+Name 18145 token_evil_align_2b~
+Short token_evil_align_2b~
+Desc Token_evil_align_2b~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18147
+Name 18145 token_evil_align_2c~
+Short token_evil_align_2c~
+Desc Token_evil_align_2c~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18148
+Name 18148 token_good_align_2a~
+Short token_good_align_2a~
+Desc Token_good_align_2a~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18149
+Name 18149 token_good_align_2b~
+Short token_good_align_2b~
+Desc Token_good_align_2b~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18150
+Name 18150 token_good_align_2c~
+Short token_good_align_2c~
+Desc Token_good_align_2c~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18151
+Name 18151 token_neutral_align_2a~
+Short token_neutral_align_2a~
+Desc Token_neutral_align_2a~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18152
+Name 18152 token_neutral_align_2b~
+Short token_neutral_align_2b~
+Desc Token_neutral_align_2b~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18153
+Name 18152 token_neutral_align_2c~
+Short token_neutral_align_2c~
+Desc Token_neutral_align_2c~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18154
+Name colourful dress~
+Short a `#`?colourful`^ dress~
+Desc A `#`?colourful`^ dress lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Wear     take torso~
+End
+
+#18155
+Name sailor suit~
+Short a little sailor suit~
+Desc A little sailor suit lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Wear     take torso~
+End
+
+#18156
+Name sailor suit~
+Short a little sailor suit~
+Desc A little sailor suit lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Wear     take~
+End
+
+#18157
+Name picnic tables~
+Short a picnic table~
+Desc A picnic table is here~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 6 500 EHK 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#18158
+Name picnic tables~
+Short a picnic table~
+Desc A picnic table is here~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 6 500 EHK 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#18159
+Name large mat~
+Short a large mat~
+Desc A large mat covers the ground here~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 10000 EHK 0 0
+Weight 0
+Material material~
+Extra    noremove nodegrade~
+End
+
+#18160
+Name wooden puppet stand~
+Short a wooden puppet stand~
+Desc A wooden puppet stand is here~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc puppet stand~
+This wooden stand has a hole at the top where two little puppets peer out 
+from.  Two tiny velvet curtains frame are tied on either side of the puppet 
+stage.  
+~
+End
+
+#18161
+Name small wooden table~
+Short a small wooden table~
+Desc A small wooden table stands here~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#18162
+Name a wooden chair~
+Short a wooden chair~
+Desc A wooden chair stands here~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 100 EH 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#18163
+Name a wooden chair~
+Short a wooden chair~
+Desc A wooden chair stands here~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1 100 EH 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#18164
+Name crystal ball~
+Short a `#`Ccrystal`^ ball~
+Desc A `#`Ccrystal`^ ball shines here~
+Level 90
+ItemType treasure~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material crystal~
+Extra    magic noremove nodegrade~
+ExtraDesc crystal ball~
+At first you see a plain ball made of `#`Ccrystal`^, but as soon as Madame 
+Pechoulli touches it, it seems to come to life.  Colours swirl and shift 
+within and a radiant glow surrounds it.  
+~
+End
+
+#18165
+Name carousel~
+Short a carousel of dancing animals~
+Desc A carousel of dancing animals turns slowly.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    hum noremove nodegrade~
+End
+
+#18166
+Name a ferris wheel~
+Short a ferris wheel~
+Desc A ferris wheel moves in a circular motion rocking its seats back and forth.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#18167
+Name litter~
+Short a piece of litter~
+Desc A piece of litter blows about here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#18168
+Name sliding stairs~
+Short sliding stairs~
+Desc Sliding stairs flip and turn every so often.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#18169
+Name bubbles~
+Short some `#`Rr`Ya`Gi`Bn`mb`Mo`Rw`^ coloured bubbles~
+Desc Some `#`Rr`Ya`Gi`Bn`mb`Mo`Rw`^ coloured bubbles float about.~
+Level 1
+ItemType treasure~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material soap~
+Extra    noremove~
+End
+
+#18170
+Name sack~
+Short a sack~
+Desc A sack lies here~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 200 E 0 0
+Weight 0
+Material sacking~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#18171
+Name sack~
+Short a sack~
+Desc A sack lies here~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 200 E 0 0
+Weight 0
+Material sacking~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#18172
+Name banana boat~
+Short a `#`Ybanana`^ boat~
+Desc A `#`Ybanana`^ boat rocks here gently.~
+Level 1
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 M A 18155 0
+Weight 0
+Material unknown~
+Extra    noremove nodegrade~
+End
+
+#18173
+Name satin shorts~
+Short some `#`mburgandy`^ satin shorts~
+Desc Some `#`mburgandy`^ satin shorts have been left here~
+Level 59
+ItemType clothing~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material satin~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#18174
+Name puppet red hat marionette gnome~
+Short a marionette of a gnome in a `#`Rred`^ hat~
+Desc A marionette of a gnome in a `#`Rred`^ hat performs here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc marionette red hat gnome~
+A big fat nose is the first thing you notice about this marionette.  It has 
+carved wooden cheeks painted a rosy red, and bright eyes, it looks to be a 
+gnome.  Strings are attached to its arms, feet and head.  
+~
+End
+
+#18175
+Name puppet yellow hat marionette gnome~
+Short a marionette of a gnome in a `#`Yyellow`^ hat~
+Desc A marionette of a gnome in a `#`Yyellow`^ hat performs here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc marionette yellow hat gnome~
+This little marionette looks like a little gnome on strings.  He has a 
+`#`Yyellow`^ hat and brightly coloured clothes.  Strings are attached to his 
+hands, feet, and head.  
+~
+End
+
+#18176
+Name hard wooden seats~
+Short hard wooden seats~
+Desc Hard wooden seats are here to sit on.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 20 1000 EH 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#18177
+Name 18177 token_gondola_ride~
+Short token_gondola_ride~
+Desc Token_gondola_ride~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18178
+Name 18178 token_freak_show~
+Short token_freak_show~
+Desc Token_freak_show~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18179
+Name 18179 token_fight_champeen~
+Short token_fight_champeen~
+Desc Token_fight_champeen~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#18180
+Name Swan-shaped gondolas~
+Short swan-shaped gondolas~
+Desc Swan-shaped gondolas are tied to a jetty here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#18181
+Name 18191 token_freak_show_first_person_needs_fast_forwarding_by_prog_18191~
+Short token_freak_show_first_person_needs_fast_forwarding_by_prog_18191~
+Desc Token_freak_show_first_person_needs_fast_forwarding_by_prog_18191~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#18182
+Name black pants~
+Short some black pants~
+Desc Some black pants lie here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#18183
+Name black jacket~
+Short a black jacket~
+Desc A black jacket lies here~
+Level 1
+ItemType clothing~
+Cost 520
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material satin~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#18184
+Name ringmaster's stick~
+Short a ringmaster's stick~
+Desc A ringmaster's stick has been left here~
+Level 90
+ItemType trash~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material wood~
+Extra    rotdeath nodegrade burnproof~
+Wear     take hold~
+ClassAllowances cleric warrior druid paladin ranger~
+ExtraDesc ringmaster stick~
+This long stick is black with two white tips on either end.
+~
+End
+
+#18185
+Name bandanna~
+Short a `#`Rred`^ bandanna~
+Desc A `#`Rred`^ bandanna lies here~
+Level 1
+ItemType clothing~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cotton~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#18186
+Name tophat~
+Short a tophat~
+Desc A tophat lies here~
+Level 1
+ItemType clothing~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material cotton~
+Extra    nodegrade~
+Wear     take head~
+End
+
+#0
+
+
+
+#ROOMS
+#18100
+Name Carnival Entrance~
+Desc As soon as you enter, you find yourself immersed in music, laughter, 
+screams, and the game vendors shouting for people to come play.  The warm 
+salty-sweet smell of carnival foods fills your nostrils as sawdust crunches 
+under your feet.  Excitement fills the air as you hold yourself back trying 
+to take it all in.  
+~
+Sector city~
+Exit north 18196
+Exit south 18101
+End
+
+
+#18101
+Name Walkway~
+Desc The walkway is covered in sawdust keeping the path somewhat dry and 
+providing a little more traction than the bare dirt would give.  To the west 
+is a concession stand that boasts foods you don't see every day.  Or you 
+could go east and buy tickets for the various attractions.  
+~
+Sector city~
+Exit north 18100
+Exit east 18103
+Exit south 18104
+Exit west 18102
+End
+
+
+#18102
+Name Food Stall~
+Desc You stand before a counter seeing people bustle busily behind it.  The smell 
+of exotic foods and sweets assail your nostrils making your mouth water and 
+your stomach growl.  There is a price list for you to choose from.  
+~
+Sector inside~
+Exit east 18101
+End
+
+
+#18103
+Name Ticket Booth~
+Desc Here stands a small booth that has a window enclosed with bars.  There is a 
+counter that juts from beneath the window leaving a small slot for passing 
+money and tickets through.  There is a `#`?sign`^ with price listings below the 
+window.  The ticket seller waits patiently while you read it.  
+~
+Sector inside~
+ExtraDesc sign ~
+`G****************************************
+*                                      *
+*    `BBuy your carnival tickets here!   `G*
+*                                      *
+*    `Y1 gold `mcoin for a `Rstall `mticket    `G*
+*    `Y2 gold `mcoin for a `Yride `mticket     `G*
+*                                      *
+*      `BRIDES:   `MFerris Wheel           `G*
+*               `CCarousel               `G*
+*               `YGondola                `G*
+*               `WHall of Mirrors        `G*
+*               `RHouse of Horrors       `G*
+*               `mFun Haus               `G*
+*                                      *
+*    `W(children must be over 1m tall    `G*
+*          `Wto go on any rides)         `G*
+*                                      *
+****************************************
+~
+Exit west 18101
+End
+
+
+#18104
+Name Walkway~
+Desc Sawdust and straw covers the walkway and collects in the corners of the 
+tents.  You hear an angelic voice singing a sweet lullaby that draws you 
+westwards while the tent to the east is pretty quiet except for the tolling 
+of a bell that sounds off every once in awhile.  
+~
+Sector city~
+Exit north 18101
+Exit east 18106
+Exit south 18107
+Exit west 18105
+End
+
+
+#18105
+Name Mermaid Tank~
+Desc In this open area, there is a cage with a mermaid on a swing.  Attached to 
+the cage is a bullseye target.  Below the cage is a large tub filled with 
+water.  A rope is tied around the cage to keep people from getting to close. 
+ 
+~
+Sector inside~
+Exit east 18104
+End
+
+
+#18106
+Name Hit the Bell~
+Desc In this small tent, there is a tall board with words painted on it at 
+various numbered intervals.  At the bottom of the board is a springboard 
+with a pellet on the end touching the board.  On the top is a bell.  Leaning 
+against the board is a big soft headed mallet.  There is a sign on a post to 
+one side.  
+~
+Sector inside~
+ExtraDesc sign ~
+`Y*********************************
+*                               *
+*      `RTest your strength!      `Y*     
+*                               *
+*     `BHit the bell with the     `Y*
+*     `Bmallet to win a prize!    `Y*
+*                               *
+*********************************
+~
+Exit west 18104
+End
+
+
+#18107
+Name Walkway~
+Desc The sound of children's sweet voices to the west contend with the harsh 
+voice of a gypsy barker to the east in trying to draw your attention.  
+Turning to the children's voices, you seem to hear the faint rippling of 
+water while to the east comes a loud popping noise from time to time.  
+~
+Sector city~
+Exit north 18104
+Exit east 18109
+Exit south 18110
+Exit west 18108
+End
+
+
+#18108
+Name Lucky Ducky~
+Desc There is a small table with a miniature forest set up here.  Somehow, a 
+small stream has been made to flow around the forest.  Floating in the 
+stream are brightly painted tiny wooden ducks.  Two gypsy youths, a boy and 
+a girl, stand on either side collecting tickets for a chance to pick a duck. 
+ There is a sign hanging above the model forest.  
+~
+Sector inside~
+ExtraDesc sign ~
+`M********************************
+*                              *
+*       `BTry your luck!         `M*
+*                              *
+*   `BIf you can hook a duck     `M*
+*   `Bbefore the time is up      `M*
+*    `Byou'll get a prize!       `M*
+*                              *
+*    `W(be careful, there are    `M*
+*        `Wbooby prizes!)        `M*
+*                              *
+********************************
+~
+Exit east 18107
+End
+
+
+#18109
+Name Dart Game~
+Desc In this covered booth, there is a large cork board that makes up the back 
+wall.  Attached all over the board are inflated rodent stomachs.  A dark 
+rat-faced man with a wide brimmed hat taunts you to step up to the counter 
+and try your luck, once in awhile attaching a stomach to the sign and 
+popping it with a thrown dart.  
+~
+Sector inside~
+Exit west 18107
+End
+
+
+#18110
+Name Walkway~
+Desc The walkway vibrates to the music and noise coming from near and far.  To 
+the east and west comes the sounds of tinkling and crashing as if one object 
+were being thrown against another.  Smells of smoke and exotic foods mingle 
+with everyday smells in a pleasant way.  To the not very distant south a 
+huge tent can be seen.  
+~
+Sector city~
+Exit north 18107
+Exit east 18112
+Exit south 18113
+Exit west 18111
+End
+
+
+#18111
+Name Ring Toss~
+Desc In the middle of this open tent, there is a square area bordered on all four 
+sides by a low wall.  On the inside of the square, a few feet back from the 
+wall, there are rows of bottles.  A handsome young man walks between the 
+wall and the bottles exchanging rings for tickets and making sure no-one 
+steps over the wall.  
+~
+Sector inside~
+Exit east 18110
+End
+
+
+#18112
+Name Milk Bottle Toss~
+Desc In the back of this booth like tent, a small shelf holds a few small groups 
+of milk bottles.  In each group, three are placed side by side with two more 
+balanced on top and one on the top of that, making a triangle.  The low 
+partition keeps people from getting closer than two feet to the bottles.  
+~
+Sector inside~
+Exit west 18110
+End
+
+
+#18113
+Name Walkway~
+Desc You are on the walkway circling the Big Top.  To the south is the northern 
+entrance.  To the north is a line of games.  Music and yells fill the air.  
+The smell of sweet and salty treats fill the air.  
+~
+Sector city~
+ExtraDesc south big top entrance~
+Two flaps have been tied back making the northern entrance to the Big Top.  
+~
+Exit north 18110
+Exit east 18114
+Exit south 18117
+Exit west 18133
+End
+
+
+#18114
+Name Walkway~
+Desc The walkway faces the entrance of a group of tents that have been put 
+together to form one U-shaped tent.  There are signs decorating the outside, 
+around the opening.  One sign has a green boy; another a big lady; one has a 
+tall man standing near a tiny lady; still another is two pictures painted of 
+the same man back to back, in one he is breathing out fire and in the other 
+he has his head tossed back with the handle of a sword coming out of his 
+mouth.  
+~
+Sector city~
+Exit east 18115
+Exit south 18116
+Exit west 18113
+End
+
+
+#18115
+Name Freaks and Oddities~
+Desc A small tent stands here with a heavy curtain blocking the entrance way.  
+You can here gasps of astonishment and horror from inside the tent.  A 
+sinister man stands near the curtain beckoning to you to enter inside to see 
+creatures you never dreamed of seeing, not even in your worst nightmares.  
+Does your curiousity get the better of you?  
+~
+Sector inside~
+Exit west 18114
+End
+
+
+#18116
+Name Walkway~
+Desc You are on the walkway circling the Big Top.  To the west you see its 
+eastern exit.  To the distant east you see a square rug in front of some 
+kind of structure.  The buzz of voices is everywhere, punctuated by some 
+advertisement.  You smell a faint sweet fragrance in the air.  
+~
+Sector city~
+ExtraDesc 'western big top entrance'~
+Two flaps have been tied back making the eastern entrance to the Big Top.  
+~
+Exit north 18114
+Exit east 18118
+Exit south 18120
+Exit west 18117
+End
+
+
+#18117
+Name Big Top~
+Desc This is a huge tent.  In the middle are three rings where circus shows are 
+performed.  Acts such as the trapeze and tight rope as well as clown and 
+animal acts are performed here.  Bleachers for sitting on to watch the show 
+line the tent all the way around the show area in a broken circle.  
+~
+Sector city~
+Exit north 18113
+Exit east 18116
+Exit south 18121
+Exit west 18131
+End
+
+
+#18118
+Name Walkway~
+Desc A small distance away to the east is a large box covered with tent canvas.  
+There is a large square of carpeting set before it for people to sit on 
+while they watch what goes on inside the box.  
+~
+Sector city~
+Exit east 18119
+Exit west 18116
+End
+
+
+#18119
+Name Puppet Show~
+Desc A large mat covers the ground, and the people sitting here are peering up at 
+a large wooden box draped with tenting canvas.  Two velvet curtains frame a 
+square opening in the box, and you can see two wooden puppets play acting to 
+entertain the audience.  The little puppets have strings attached and jiggle 
+and wobble as they dance around in the box.  Dramatic expressions have been 
+painted on their faces and they are dressed in colourful clothes.  
+~
+Sector inside~
+Exit west 18118
+End
+
+
+#18120
+Name Walkway~
+Desc You are on the walkway circling the Big Top but there are no entrances 
+here.  The sweet fragrance of incense is noticeably stronger here and seems 
+to be coming from the small tent to the east.  There is a sign in front of 
+it.  
+~
+Sector city~
+ExtraDesc sign ~
+`b___________________________________________
+`b|                                         |
+`b|       `C____  `b                            |
+`b|      `C/ `M__`C \  `b                           |
+`b|     `C| `M/ \\`C | `b                           |
+`b|     `C| `M\/ / `C| `b                           |
+`b|      `C\`M -  `C/  `b                           |
+|     `y ------                           `b  |
+`b|     `y/      \        `w_______________     `b|
+`b|    `y----------      `w|               |    `b|
+`b|         `YMADAM      `w|     `D-----     `w|    `b|
+`b|                    `w|     `D\   /     `w|    `b|
+`b|                    `w|      `D|`rx`D|      `w|    `b|
+`b|                    `w|      `D|`rx`D|      `w|    `b|
+`b|        `y||          `w|      `D|`rx`D|      `w|    `b|
+`b|      `y||||          `w|    `C/-----\    `w|    `b|
+`b|      `y||||||        `w|     `C| | |     `w|    `b|
+`b| `y\ \  ||||||||      `w|     `C| | |     `w|    `b|
+`b|  `y\ \ ||||||||      `w|     `C| | |     `w|    `b|
+`b|   `y\    \____ )     `w|     `C| | |     `w|    `b|
+`b|   `y|   ----   \     `w|     `C| | |     `w|    `b|
+`b|   `y\   /    \ |     `w|      `C\|/      `w|    `b|
+|    `y\ /      /       `w---------------     `b|
+`b|     `y|     /               `YPECHOULII     `b|
+`b|     `y|    |                              `b|
+|_________________________________________|
+~
+ExtraDesc east tent~
+In front of this small but elaborate tent there is a sign with a crystal 
+ball, a tarot card and an open hand.  A small tendril of smoke can be seen 
+rising through the bead curtain that enhances more than conceals the tent 
+opening.  
+~
+Exit north 18116
+Exit east 18122
+Exit west 18121
+End
+
+
+#18121
+Name Walkway~
+Desc You are on the walkway circling the Big Top.  To the north is its southern 
+entrance.  To the distant south, you see the rooftops of some trailer type 
+buildings.  To the west you hear an occasional splash.  There is a hint of 
+incense in the air that seems to be coming from the east.  
+~
+Sector city~
+ExtraDesc north big top entrance~
+Two flaps have been tied back making the southern entrance to the Big Top.  
+~
+Exit north 18117
+Exit east 18120
+Exit south 18125
+Exit west 18129
+End
+
+
+#18122
+Name Fortune Teller~
+Desc You are in a small dark tent.  Sweet-smelling smoke fills the air from two 
+medium-sized incense pots, one on either side of a small table.  The table 
+itself has a candle, a crystal ball, and a pack of tarot cards set upon it.  
+
+~
+Sector inside~
+ExtraDesc 'table crystal ball incense pots candle'~
+`W_                   `C__                  `W_
+`W \                 `C/  \                `W/
+`W /                `C|    |               `W\
+`W \                 `C\  /                `W/
+`W /                 `y/--\                `W\
+`W \         `y_______/____\_______    `W    /
+`W /         `y|                  |    `W    \
+`W \         `y|                  |    `W    /
+`r ---       `y|                  |   `r   ---
+`r / \       `y|                  |   `r   / \
+`r|   |      `y|                  |   `r  |   |
+`r\   /      `y|                  |   `r  \   /
+`r ---                               `r  ---
+~
+Exit west 18120
+End
+
+
+#18123
+Name A room of mirrors~
+Desc You walk into a room entirely covered by mirrors and the door shuts behind 
+you.  Every single wall has a mirror and all you can see are dozens upon 
+dozens of reflections of yourself.  The reflections go for miles as each 
+reflection mirrors the reflection of an adjacent wall.  You feel a little 
+disoriented by it all.  
+~
+Sector inside~
+Exit south 18124
+EFlags door closed~
+EKeywords door~
+Exit west 18170
+EFlags door closed~
+EKeywords door~
+Exit northeast 18173
+EFlags door closed~
+EKeywords door~
+Exit northwest 18171
+EFlags door closed~
+EKeywords door~
+End
+
+
+#18124
+Name Hall of Mirrors~
+Desc A small doorway lies to the north where people can test their directional 
+sense in the maze of mirrors for the price of a ticket or two.  The walkway 
+is to the west if someone decides not to enter the Hall of Mirrors.  
+~
+Sector inside~
+Exit north 18123
+EFlags door closed~
+EKeywords door~
+Exit west 18126
+End
+
+
+#18125
+Name Walkway~
+Desc Here's a quiet corner where sometimes you might see someone displaying a 
+talent for a bit of money.  It's a nice spot to catch your breath if you're 
+a bit overwhelmed by all the sights sounds and smells.  
+~
+Sector city~
+Exit north 18121
+Exit south 18126
+End
+
+
+#18126
+Name Walkway~
+Desc You stand in a corner of the carnival where tents and boards have been set 
+up as temporary buildings.  You can hear intermittent high-pitched giggles 
+coming from the south, towards the east you hear the occasional sound of 
+someone crying and to the west, an odd scream curdles towards you.  You see 
+signs in front of all three entrances.  
+~
+Sector city~
+ExtraDesc west ~
+`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^`W^`D^
+`D<      `Y____      ____                     `D>
+`D<     `Y/_`R()`Y_\    /_`R()`Y_\                    `D>
+`D<                                         >
+<  `WH  H   A   U  U N    N TTTTT EEEE DD   `D>
+<  `WH  H  A A  U  U N N  N   T   E    D D  `D>
+<  `WHHHH AAAAA U  U N  N N   T   EEE  D  D `D>
+<  `WH  H A   A U  U N   NN   T   E    D D  `D>
+<  `WH  H A   A UUUU N    N   T   EEEE DD   `D>
+<                      `R_____      _____   `D>
+<                     `R/`Y__   `R\    /`Y__   `R\  `D>
+<                    `R/`Y(`R( `Y)`R___\  /`Y(`R(`Y )`R___\ `D>
+`D<                                         >
+<     `WH  H   OOOO   U  U   SSS   EEEE     `D>
+<     `WH  H   O  O   U  U  S   S  E        `D>
+<     `WHHHH   O  O   U  U   S     EEE      `D>
+<     `WH  H   O  O   U  U     S   E        `D>
+<     `WH  H   O  O   U  U  S    S E        `D>
+<     `WH  H   OOOO   UUUU   SSSS  EEEE     `D>
+<                                         `D>
+<    `G/\    /\                             `D>
+<   `G/  \  /  \                            `D>
+<  `G/`R_//`G/  \`R\\_`G\                           `D>
+< `G/`R/_/`G/    `G\`R\_\`G\                          `D>
+< `G\__`G/      `G\__`G/                          `D>
+<                                         `D>
+`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv`Dv`Wv
+~
+ExtraDesc west ~
+`W^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+`D^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+`W^^   `#`R_____        _____`^                 `^^^
+`D^^  `#`R/_`R(`Y()`R)\      /_(`Y()`R)\`^                `^^^
+`W^^                                      ^^
+`D^^  `#`wH  H   A   U  U N   N TTT EEEE DD`^   ^^
+`W^^  `#`wH  H  A A  U  U NN  N  T  E    D D`^  ^^
+`D^^  `#`wHHHH  AAA  U  U N N N  T  EEE  D  D`^ ^^
+`W^^  `#`wH  H A   A U  U N  NN  T  E    D  D`^ ^^
+`D^^  `#`wH  H A   A UUUU N   N  T  EEEE DDD`^  ^^
+`W^^       `#`G______        ______`^           `^^^
+`D^^      `#`G/ `Y____  `G\     / `Y___  `G\`^          `^^^
+`W^^     `#`G/ `Y/ `R_  `Y\  `G\   / `Y/ `R_ `Y\  `G\`^         ^^
+`D^^     `#`G\ `Y|`R--- `Y|   `G\ /  `Y|`R---`Y|  `G/`^         ^^
+`W^^     `#`G__`Y__`R-`Y__`G__     __`Y__`R-`Y__`G__`^          ^^
+~
+ExtraDesc south ~
+`R*`G * `Y* `R *`G * `Y* `R *`G * `Y* `R *`G * `Y* `R * `G* `Y*  `R*`G * `Y* 
+`R*        `y ___             `R_      _     `Y*  
+`R*        `y(   )            `R|\    |      `Y*  
+`R*        `Y/  `B@`y_            `R| \   |      `Y*  
+`R*        `Y/  `RO             `R|  \  |      `Y*  
+`R*       `w_UUUU_            `R|   \ |      `Y*  
+`R*                        `R_|    \|      `Y*  
+`R*           `M _        _                `Y*  
+`R*            `M |      |                 `Y*  
+`R*            `M |      |         `G_____   `Y*  
+`R*   `Y______   `M |      |        `G/     \  `Y*  
+`R*  `Y|         `M |      |        `G---`CS`G---  `Y*  
+`R*  `Y|         `M \      /            `CS    `Y*  
+`R*  `Y|___       `M  ---             `CS      `Y*  
+`R*  `Y|                              `CS    `Y*  
+`R*  `Y|                           `CS       `Y*  
+`R*  `Y|                       `CS  `R_    _   `Y*  
+`R*                             `R|    |   `Y*  
+`R*               `B_             `R|    |   `Y*  
+`R*              `B( )            `R|----|   `Y*  
+`R*          `M_         __       `R|    |   `Y*  
+`R*         `M( )       /  \      `R|    |   `Y*  
+`R*              `Y_   `M| __ |              `Y*  
+`R*             `Y( )  `M|    |              `Y*  
+`R*         `G_    _   `M|    |              `Y*  
+`R*         `G|    |   `M|    |              `Y*  
+`R*         `G|    |   `R _                  `Y*  
+`R*         `G|    |   `R( )                 `Y*  
+`R*    `B__   `G\    /           `G_           `Y*  
+`R*   `B/  \  `G ---            `G( )          `Y*  
+`R*  `B \     `G                `G             `Y*  
+`R*  `B   \   `G                `G             `Y*  
+`R*  `B/   \   `G               `G             `Y*  
+`R* `B \___/  `G                `G             `Y*  
+`R*                                      `Y*
+`R* `G* `Y*  `R* `G* `Y*  `R* `G* `Y*  `R* `G* `Y*  `R* `G* `Y*  `R* `G* `Y*
+~
+ExtraDesc east ~
+`B*`M*`G*`Y*`R*`B*`M*`G*`Y*`R*`B*`M*`G*`Y*`R*`B*`M*`G*`Y*`R*`B*`M*`G*`Y*`R*`B*`M*`G*`Y*`R*`B*`M*`G*`Y*`R*`B*`M*`G*`Y*`R*`B*`M*
+`R*                                        `G*
+ 
+`Y*  `CSRORRIM FO LLAH `W|`C//`W| `CHALL OF MIRRORS  `Y*
+ 
+`G*                                        `R*
+`M*`B*`R*`Y*`G*`M*`B*`R*`Y*`G*`M*`B*`R*`Y*`G*`M*`B*`R*`Y*`G*`M*`B*`R*`Y*`G*`M*`B*`R*`Y*`G*`M*`B*`R*`Y*`G*`M*`B*`R*`Y*`G*`M*`B*
+~
+Exit north 18125
+Exit east 18124
+Exit south 18127
+Exit west 18128
+End
+
+
+#18127
+Name Fun Haus~
+Desc Caricatures of knights, mages, thieves and other professions adorn the 
+walls.  The artist seems to be quite a prankster.  If people who find 
+themselves here, like a little humor, they could go southeast for some fun, 
+or leave through the exit to the north.  There are other attractions to be 
+seen from the walkways and a tall man stands here collecting tickets.  
+~
+Sector inside~
+Exit north 18126
+End
+
+
+#18128
+Name House of Horrors~
+Desc Spooky sounds emanate from the southwest.  An adventurous person can test 
+their courage in this eerie Haunted House or seek the safety of the walkway 
+to the east.  
+~
+Sector inside~
+Exit east 18126
+Exit south 18156
+EFlags door closed oneway~
+EKeywords door~
+End
+
+
+#18129
+Name Walkway~
+Desc You are on the walkway circling the Big Top but there are no entrances here. 
+ To the west, there is a faint sound of water and boats can be seen in the 
+distance.  It is a little quieter here but not much.  
+~
+Sector city~
+Exit north 18131
+Exit east 18121
+Exit west 18130
+End
+
+
+#18130
+Name Gondola~
+Desc A man-made stream has been made here through great skill, or magic perhaps.  
+Here, people can enter boats that look like stylized swans big enough for 
+two people...  For the price of a ticket, of course.  
+~
+Sector inside~
+Exit east 18129
+End
+
+
+#18131
+Name Walkway~
+Desc You are on the walkway circling the Big Top.  To the east is the western 
+entrance.  The smell of food is strong here and the noise is almost 
+deafening.  There are tents off to the west lining the walkway and people 
+pass you if you stay too long in one place.  
+~
+Sector city~
+ExtraDesc east big top entrance~
+Two flaps have been tied back making the western entrance to the Big Top.  
+~
+Exit north 18133
+Exit east 18117
+Exit south 18129
+Exit west 18132
+End
+
+
+#18132
+Name Walkway~
+Desc To the north, the smells and sounds of a picnic area are evident.  It is 
+quite loud here and the walkway is a bit damp.  To the somewhat distant 
+east, a huge tent can be seen and a long row of smaller tents can be seen 
+disappearing into the distant west.  
+~
+Sector city~
+Exit north 18134
+Exit east 18131
+Exit west 18135
+End
+
+
+#18133
+Name Walkway~
+Desc As you make your way across the sawdust strewn and straw covered walkways, 
+the sound of different musics and the buzzing of voices fill your ears in a 
+cacophony of sound.  To the west, you see a huge covered pavilion where you 
+can take a rest and perhaps eat any goodies you've bought.  Or you can 
+circle the big circus tent to the east or the south.  
+~
+Sector city~
+Exit east 18113
+Exit south 18131
+Exit west 18134
+End
+
+
+#18134
+Name Food Court~
+Desc This area is composed of shaded picnic tables where people can bring their 
+treats they've bought from the concession stands.  Not quite a tent, rather 
+it is more of a huge piece of canvas strung between four poles.  The smell 
+of sweets and grilled meats mix together, their aromas adding excitement to 
+the already charged atmosphere.  Folk music fills the air in the distance 
+and children run all about, screaming with laughter as they chase each-other 
+around the tables.  
+~
+Sector city~
+Exit east 18133
+Exit south 18132
+End
+
+
+#18135
+Name Walkway~
+Desc To the north, a voice can be heard yelling challenges from time to time.  
+From the south the sound of calliope music can be heard once in awhile.  
+~
+Sector city~
+Exit north 18139
+Exit east 18132
+Exit south 18136
+Exit west 18137
+End
+
+
+#18136
+Name Carousel~
+Desc This is a strange device; it is a large round platform, sort of like a wheel 
+on its side.  On the platform are different kinds of painted wooden animals. 
+ All of the animals are big and sturdy enough to be climbed onto.  In the 
+middle of the wheel, there is a small calliope (a pedal operated pipe 
+organ).  The instrument is set up in such a way that the air produced by the 
+playing of it in turn moves the wheel in a circle.  
+~
+Sector inside~
+Exit north 18135
+End
+
+
+#18137
+Name Walkway~
+Desc Bleating sounds can be heard coming from the north, while to the south you 
+can see seats attached to a giant wheel which is circling up and down.  
+Children's squeals drift over to where you're standing.  
+~
+Sector city~
+Exit north 18140
+Exit east 18135
+Exit south 18138
+Exit west 18141
+End
+
+
+#18138
+Name Ferris Wheel~
+Desc A giant wheel creaks slowly as it circles up and down, swinging the seats 
+back and forth as it moves.  Two sweaty men are pulling on the ropes and 
+turning a great handle which seems to keep the whole thing moving.  Another 
+man stands nearby collecting the tickets to go on this ride.  Children 
+riding in the seats squeal with delight and wave down at the people below.  
+The occasional couple can be seen snuggling together as their seat swings 
+dreamily above the crowd.  
+~
+Sector inside~
+Exit north 18137
+End
+
+
+#18139
+Name Challenge the "Champeen"~
+Desc Your in small tent with a ring in the middle where you can challenge the 
+"Grand Champeen" by entering the ring.  Perhaps you should look at the ring 
+BEFORE thinking of becoming a challenger.  There is a `#`?sign`^ displaying the 
+entry fee on a post near the ring.  
+~
+Sector inside~
+ExtraDesc sign ~
+`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*
+*                              *
+*       `W5 gold to fight        `B*
+*        the "Champeen"        `B*
+*                              *
+*  `WDo you have what it takes?  `B*
+*    `WEnter at your own risk    `B*
+*                              *
+*  `R(we take no responsibility  `B*
+*   `Rfor any injuries incurred) `B*
+*                              *
+`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*`C*`B*
+~
+Exit south 18135
+End
+
+
+#18140
+Name Corral~
+Desc Fenced in animals munch on this grassy patch of land.  This is where the 
+gypsy folk keep their horses, pigs, and cows to graze until the gypsies move 
+on to their next place.  Fierce growls and scratchings can be heard from 
+inside a few barred wagons, obviously where they keep their less friendly 
+animals.  To the west you can see more wagons and carriages.  
+~
+Sector field~
+Exit south 18137
+Exit west 18143
+End
+
+
+#18141
+Name Walkway~
+Desc The walkway seems to be leading to the exit as there are few stands setup in 
+this area.  You can see caravan wagons to your north, and from the south, 
+comes the sound of someone chipping away at something.  
+~
+Sector city~
+Exit east 18137
+Exit south 18142
+Exit west 18144
+End
+
+
+#18142
+Name Toy Stall~
+Desc This tent is a bit small and over-warm.  Here, you find some toys and a 
+couple of gags.  You can look at the price list if you want to buy a toy or 
+get a prank to fool a friend.  A funny gnomish man sits here working on a 
+new toy.  
+~
+Sector inside~
+ExtraDesc price list sign~
+.
+`B*`R******`Y******`B******`R*`Y*`B*`R*`B******`Y******`R*******`B*
+*                                         *
+*                 `wT o Y s                 `B*
+*                                         *
+*     `wPorcelain dolls with glass eyes     `B*
+`Y*                                         *
+*             `wMarionettes                 `Y*
+*                                         *
+*                                         *
+*                  `wG a G s                `Y*
+`R*                                         *
+*                `wMystik-tarts             `R* `R* `w(sweet dreams are made of these!) `R*
+*                 `w50 silver               `B*
+*                                         *
+`B*               `wChaotic-surge             `B* *            `w(lights out!)          `B*
+*                 `w50 silver               `B*
+*                                         *
+*`R******`Y******`B******`R*`Y*`B*`R*`B******`Y******`R*******`B*
+~
+Exit north 18141
+End
+
+
+#18143
+Name Gypsy caravans and wagons~
+Desc You have wandered into the area where the gypsies have set up camp for the 
+duration they are here.  Tents and caravan wagons are crammed into this 
+space.  Dark skinned children run inbetween the wagons playing, while their 
+parents work in the carnival for long hours.  Every wagon broadcasts the 
+words "`#`MG`Cy`Bp`gs`ry `GC`ma`Wr`Rn`bi`Cv`ca`Sl`^" in bright gaudy colours.  
+~
+Sector field~
+Exit east 18140
+End
+
+
+#18144
+Name Walkway~
+Desc Close to the exit, there is a last minute stop for specialties in the way of 
+carnival food.  The tell-tale smells of exotic foods lead the way to the 
+south.  The sounds of laughter, screaming and squealing are barely heard 
+from this end of the carnival.  A slight breeze blows a piece of litter 
+about.  
+~
+Sector city~
+Exit east 18141
+Exit south 18145
+Exit west 18147
+End
+
+
+#18145
+Name Food Stall~
+Desc This food stand is set close to the exit so people can grab some goodies 
+before leaving the grounds.  The same sweet, salty, and exotic foods are for 
+sale here.  The gypsy teenager who looks after this stall stands here 
+rolling his eyes, because this is all he does..  All ..  Day..  Long.  
+~
+Sector inside~
+Exit north 18144
+End
+
+
+#18147
+Name Carnival Exit~
+Desc The noise sounds distant here, as you're leaving you can barely hear more 
+than a dull hum once in awhile.  Until the gypsies shut down and move on, 
+you can always turn around and go back.  Otherwise, read the sign.  
+~
+Sector city~
+ExtraDesc sign ~
+_______________________________________
+|                                     |
+|  `Y__  __  _  _  ___   __   _  __  |  `w|
+| `Y/  \|  | |\/|  |__  |  \ /_\/  \ |/ `w|
+|`Y |   |  | |  |  |    |  / | ||    |\ `w|
+|`Y \   |  | |  |  |    |  \ | |\    | |`w|
+|`Y  --  --  -  -  ---  |__/ - - --- - -`w|
+|                                     |
+|     `Y___    ___   ___    _    _      `w|
+|    `Y/   \  |   | |   |   |\   |      `w|
+|   `Y|       |   | |   |   | \  |      `w|
+|   `Y \__    |   | |   |   |  \ |      `w|
+|   `Y    \   |   | |   |   |   \|      `w|
+|   `Y     |  |   | |   |   |    |      `w|
+|   `Y\___/   |___| |___|  _|    |_     `w|
+|                                     |
+|_____________________________________|
+~
+Exit east 18144
+Exit west 30134
+EFlags oneway~
+End
+
+
+#18148
+Name The "Champeen" Ring~
+Desc This is a roped in canvas-covered wooden square.  This is where many have 
+have fallen to the "Great Champeen".  It is bare except for a few large dark 
+reddish-brown stains and smells strongly of sweat.  
+~
+Sector inside~
+Exit south 18139
+EFlags oneway~
+End
+
+
+#18149
+Name Windy Tunnel~
+Desc As soon as you enter this tunnel, you are blown up against the wall by a 
+strong gust of wind.  The force of the wind pastes your hair to your face, 
+and your mouth begins to be pushed back into a strange looking grin.  You 
+have to close your eyes as the force of the wind hurts too much to look.  
+ 
+~
+Sector inside~
+End
+
+
+#18150
+Name Sliding Stairs~
+Desc The first thing you notice as you enter is that there is no wind in here 
+whatsoever.  You see before you a rising set of stairs with wide steps.  As 
+you stand and watch you see them suddenly move, the steps flip down making 
+it into a slide.  You realise that if you are ever going to make it to the 
+top you're going to have to time it just right.  
+~
+Sector inside~
+End
+
+
+#18151
+Name Bubbles~
+Desc You finally make it to the top of the stairs and have entered a room filled 
+with delicate `#`Rr`Ya`Gi`Bn`mb`Mo`Rw`^ coloured bubbles.  The bubbles dance and float about 
+you as you slowly drift through the room.  A small hole in the floor seems 
+to be popping more bubbles into the room and a gentle breeze blows them 
+about.  
+~
+Sector inside~
+Exit southwest 18152
+EFlags oneway~
+End
+
+
+#18152
+Name Swing Bridge~
+Desc You walk onto a roughly built swing bridge which hangs between the room to 
+the northwest and the room to the northeast.  Thick rope spans the distance 
+as a hand rail for you to cling to as you walk across the bridge.  It sways 
+and rocks and you suddenly realise there are a few planks missing.  
+~
+Sector inside~
+Exit northwest 18153
+End
+
+
+#18153
+Name Slide~
+Desc You find yourself at the top of a giant slide.  It seems to go on for miles 
+and appears to be rather steep.  Some sacks have been placed at the top of 
+the slide for you to cushion the ride as you dare to ride down this tall 
+slide to the ground below.  
+~
+Sector inside~
+Exit down 18154
+EFlags oneway~
+Exit southeast 18152
+End
+
+
+#18154
+Name Banana Split~
+Desc You slide down the giant slide and land with a thud.  As you get up and look 
+around, you see you are on a little jetty which has some small `#`Ybanana`^ shaped 
+boats tied to it.  In this small man-made pool of water, the `#`Ybanana`^ boats 
+rock gently waiting for you to `#`Center`^ them.  
+~
+Sector inside~
+End
+
+
+#18155
+Name Lily Pads~
+Desc You climb out of the `#`Ybanana`^ boat onto another jetty.  Before you lies a 
+large specially built pool which has been made to look like a swamp with 
+giant lilypads dotting the surface.  You realise that the only way out of 
+here, will be to leap from pad to pad, and you hope you don't misjudge your 
+step.  
+~
+Sector inside~
+End
+
+
+#18156
+Name Pitchblack~
+Desc You are in a pitchblack room with no obvious way out.
+~
+RoomFlags dark~
+Sector inside~
+Exit southwest 18157
+EFlags door closed~
+End
+
+
+#18157
+Name Pitchblack~
+Desc You stumble about in pitch blackness, until you realise there is something 
+watching you..  all you can see are two `#`Yglowing`^ eyes!  
+~
+RoomFlags dark~
+Sector inside~
+Exit south 18158
+EFlags door closed~
+Exit northeast 18156
+EFlags door closed~
+End
+
+
+#18158
+Name Pitchblack~
+Desc Pitch blackness surrounds you but as you feel around for a way out you find 
+several exits.  
+~
+RoomFlags dark~
+Sector inside~
+Exit north 18157
+EFlags door closed~
+Exit south 18161
+EFlags door closed~
+Exit west 18159
+EFlags door closed~
+End
+
+
+#18159
+Name Small lit room~
+Desc A small candle flickers in this room casting fearsome shadows over the 
+walls.  
+~
+Sector inside~
+Exit north 18160
+EFlags door closed~
+Exit east 18158
+EFlags door closed~
+End
+
+
+#18160
+Name Darkness~
+Desc You leave the light behind and stumble once more into pitchblack.  As you 
+stumble around blindly you realise you have come to a dead end.  
+~
+Sector inside~
+Exit south 18159
+EFlags door closed~
+End
+
+
+#18161
+Name Pitchblack~
+Desc You find yourself surrounded by blackness..  Only you sense you are not 
+alone as you can hear eerie whispers all around you.  
+~
+RoomFlags dark~
+Sector inside~
+Exit north 18158
+EFlags door closed~
+Exit west 18162
+EFlags door closed~
+Exit southwest 18164
+EFlags door closed~
+End
+
+
+#18162
+Name A softly lit room~
+Desc You stumble out of the blackness for a moment into a dimly lit room with a 
+candle casting eerie shadows over you.  Its soft light quivers and trembles 
+as if a gentle breeze is blowing in the room.  
+~
+Sector inside~
+Exit east 18161
+EFlags door closed~
+Exit northwest 18163
+EFlags door closed~
+End
+
+
+#18163
+Name Darkness~
+Desc You leave the soft light behind and stumble into another place where you 
+cannot even see your own hand.  All you can hear is your own soft breathing. 
+ 
+~
+Sector inside~
+Exit southeast 18162
+EFlags door closed~
+End
+
+
+#18164
+Name Pitchblack~
+Desc More pitchblack surrounds only this time, you can hear a gruff snorting and 
+snarling, and its getting to closer to you!  
+~
+RoomFlags dark~
+Sector inside~
+Exit northeast 18161
+EFlags door closed~
+Exit northwest 18165
+EFlags door closed~
+End
+
+
+#18165
+Name Pitchblack~
+Desc You stumble into a void of blackness, which seems to close in on you.  You 
+can hear eerie, sinister voices taunting you.  
+~
+RoomFlags dark~
+Sector inside~
+Exit southeast 18164
+EFlags door closed~
+Exit northwest 18166
+EFlags door closed~
+End
+
+
+#18166
+Name Pitchblack~
+Desc The blackness closes in around you..  As you feel something slimy closing in 
+on you also.  Everywhere you turn, you touch..  Soft sticky slime!  
+~
+RoomFlags dark~
+Sector inside~
+Exit northeast 18167
+EFlags door closed~
+Exit southeast 18165
+EFlags door closed~
+End
+
+
+#18167
+Name Pitchblack~
+Desc You stumble out of the slime into more blackness. And as you fumble`1about looking for a way out of here, you feel a cold, hand grab your leg!
+~
+RoomFlags dark~
+Sector inside~
+Exit northeast 18168
+EFlags door closed oneway~
+Exit southwest 18166
+EFlags door closed~
+End
+
+
+#18168
+Name Pitchblack~
+Desc You feel nothing but stillness as you wander around in this darkness.  As 
+you blindly feel the wall for a way out, you get a growing feeling that 
+maybe there is no way out!  
+~
+RoomFlags dark~
+Sector inside~
+End
+
+
+#18169
+Name Freak ands Oddities Show~
+Desc Inside the tent is a small stage with a velvet curtain tied at either side.  
+A row of hard wooden seats face the stage for the audience to watch the 
+show.  There is very little light which creates an atmosphere of mystery, 
+anticipation and fear.  
+~
+Sector inside~
+Exit west 18115
+EFlags oneway~
+End
+
+
+#18170
+Name A room of mirrors~
+Desc You open the door into another room of mirrors and the door swings shut 
+behind you.  When you look at your reflection in the mirrors of this room 
+you see you are as tall as the mirror is high, and about as skinny as a pin. 
+ When you turn side on you look to be as skinny a fine human hair.  The wall 
+of mirrors give no clue as to the way out.  
+~
+Sector inside~
+Exit north 18171
+EFlags door closed~
+EKeywords door~
+Exit east 18123
+EFlags door closed~
+EKeywords door~
+End
+
+
+#18171
+Name A room of mirrors~
+Desc You stumble into another room lined with mirrors.  The door quickly shuts 
+behind you.  When you look in the mirrors a creature resembling you looks 
+back at you..  Only its missing a neck..  And knees.  You wonder where the 
+exit could be.  
+~
+Sector inside~
+Exit south 18170
+EFlags door closed~
+EKeywords door~
+Exit northeast 18172
+EFlags door closed~
+EKeywords door~
+Exit southeast 18123
+EFlags door closed~
+EKeywords door~
+End
+
+
+#18172
+Name A room of mirrors~
+Desc The door closes behind you as you enter yet another room filled with 
+mirrors.  When you gaze at your reflection you see a hideous creature 
+staring back at you.  It looks as if when you were made, something went 
+terribly wrong.  Your head looks like a giant balloon sitting on top of a 
+tiny stump of a body.  You can't help but laugh, it looks so ridiculous.  
+How do you get out of here!  
+~
+Sector inside~
+Exit north 18176
+EFlags door closed~
+EKeywords door~
+Exit east 18173
+EFlags door closed~
+EKeywords door~
+Exit southwest 18171
+EFlags door closed~
+EKeywords door~
+End
+
+
+#18173
+Name A room of mirrors~
+Desc You walk into this room and realise the door shut by itself.  Mirrors 
+surround you and when you look at the mirrors, trying to find a way out, you 
+see yourself..  Only you look as though a heavy weight had been dropped on 
+you because you see a short, fat version of yourself.  You stumble about 
+trying to find a way out.  
+~
+Sector inside~
+Exit west 18172
+EFlags door closed~
+EKeywords door~
+Exit southeast 18174
+EFlags door closed~
+EKeywords door~
+Exit southwest 18123
+EFlags door closed~
+EKeywords door~
+End
+
+
+#18174
+Name A room of mirrors~
+Desc The door slams shut behind you and when you look around, you see you're 
+still in the Hall of Mirrors.  Your reflection looks like ripples on a lake 
+as your reflected form waves and weaves like a river as you move.  You can 
+see no obvious exits from this room.  
+~
+Sector inside~
+Exit southwest 18175
+EFlags door closed~
+EKeywords door~
+Exit northwest 18173
+EFlags door closed~
+EKeywords door~
+End
+
+
+#18175
+Name A room of mirrors~
+Desc You walk into a room filled with mirrors reflecting an image of yourself.  
+When you look at the reflection you see yourself with a well-proportioned 
+and head and feet..  And then you notice your torso is as wide as a house.  
+When you go to find the way out, you now realise the door shut behind you 
+and you see only walls of mirrors.  
+~
+Sector inside~
+Exit northeast 18174
+EFlags door closed~
+EKeywords door~
+End
+
+
+#18176
+Name Roughly built hallway~
+Desc This hallway looks as if its been thrown together in a hurry.  Fortunately, 
+there's not a mirror in sight.  You can even see light peeping in from the 
+door to the north.  Of course you could always turn around and go back to 
+the endless maze of mirrors.  
+~
+Sector inside~
+Exit north 18120
+EFlags oneway~
+Exit south 18172
+EFlags door closed~
+End
+
+
+#18177
+Name Small tranquil lake~
+Desc The gondola drifts gently onto a small tranquil lake.  You can see forest 
+life surrounding the edges of this lake, and you sit back and dreamily soak 
+it all in.  
+~
+Sector inside~
+End
+
+
+#18178
+Name Gentle River~
+Desc The gondola floats down a gentle, wavy river.  Small forest animals hop 
+about in the forest to either side of the river.  
+~
+Sector inside~
+End
+
+
+#18179
+Name Under the bridge~
+Desc The gondola drifts down the river and floats underneath an old stone bridge. 
+ People crossing the bridge look down and watch as the gondola disappears 
+under the bridge, and reappears on the other side.  
+~
+Sector inside~
+End
+
+
+#18180
+Name Through a park~
+Desc The gondola drifts out from under the bridge and bobs about the river which 
+now weaves through a small park.  Flowers grow in patches and children can 
+be seen climbing the trees.  
+~
+Sector inside~
+End
+
+
+#18181
+Name Large lake~
+Desc The river flows down to a large lake, and the gondola bobs about on the 
+waves.  Swans and ducks float about on the water and occasionally swim up to 
+the gondola out of curiousity.  
+~
+Sector inside~
+End
+
+
+#18182
+Name Jetty~
+Desc The gondola floats towards the jetty, where the old man ties the gondola to 
+it with a rope.  
+~
+Sector inside~
+End
+
+
+#18183
+Name Inside the ring~
+Desc You are standing within the roped in canvas-covered wooden square.  This is 
+where many have have fallen to the "Great Champeen".  It is bare except for 
+a few large dark reddish-brown stains and smells strongly of sweat.  Before 
+you stands the grand "champeen" hopping from foot to foot, waiting for his 
+next victory.  
+~
+Sector inside~
+Exit south 18139
+EFlags oneway~
+End
+
+
+#18184
+Name Ferris Wheel~
+Desc The ferris wheel slowly begins moving again.  
+ 
+~
+Sector inside~
+End
+
+
+#18185
+Name Ferris Wheel on its way up~
+Desc As the ferris wheel turns, you get lifted towards the sky.  
+~
+Sector inside~
+End
+
+
+#18186
+Name Ferris Wheel almost at the top~
+Desc Your seat is high above the crowd almost at the top.
+~
+Sector inside~
+End
+
+
+#18187
+Name Ferris Wheel at the top~
+Desc You reach the top of the circular motion of the wheel.  
+~
+Sector inside~
+End
+
+
+#18188
+Name Ferris Wheel on its way down~
+Desc The wheel turns as your seat slowly comes down to the ground again.
+~
+Sector inside~
+End
+
+
+#18189
+Name Ferris Wheel ~
+Desc The wheel stops when you are at the bottom of the full circle.
+~
+Sector inside~
+End
+
+
+#18190
+Name On the carousel~
+Desc The carousel begins to grind and churn, turning slowly around.
+~
+Sector inside~
+End
+
+
+#18191
+Name On the carousel~
+Desc The carousel turns full circle.
+~
+Sector inside~
+End
+
+
+#18192
+Name On the carousel~
+Desc The carousel begins a second cycle.
+~
+Sector inside~
+End
+
+
+#18193
+Name On the carousel~
+Desc The carousel turns slowly as it completes another circle.
+~
+Sector inside~
+End
+
+
+#18194
+Name On the carousel~
+Desc The carousel turns one last time.
+~
+Sector inside~
+End
+
+
+#18195
+Name End of the Carousel ride~
+Desc The music begins to die down and the carousel slows to a stop.
+~
+Sector inside~
+End
+
+
+#18196
+Name A Sandy Path~
+Desc A sandy path leads south and north along this hilly path. Seagulls fly low 
+by, picking at the remains of what look like sweets other attractively 
+wrapped foods. The air is salty and taking a deep breath of it fills you 
+with a revigorating feeling. The sounds of laughter can be heard coming from 
+the south. 
+~
+Sector city~
+Exit north 30114
+Exit south 18100
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 18104 spec_thief
+S
+
+
+
+#RESETS2
+M 0 18100 1 18102 1
+E 0 18125 -1 torso~
+E 0 18127 -1 legs~
+G 0 18101 -1
+G 0 18102 -1
+G 0 18103 -1
+G 0 18104 -1
+M 0 18110 1 18103 1
+G 0 18120 -1
+G 0 18121 -1
+E 0 18133 -1 legs~
+E 0 18126 -1 torso~
+M 0 18101 1 18105 1
+E 0 18131 -1 legs~
+E 0 18129 -1 torso~
+M 0 18102 1 18106 18106
+E 0 18130 -1 torso~
+E 0 18132 -1 legs~
+M 0 18108 1 18107 1
+E 0 18155 -1 torso~
+E 0 18156 -1 legs~
+M 0 18126 1 18108 1
+E 0 18125 -1 torso~
+E 0 18128 -1 legs~
+M 0 18127 1 18108 1
+E 0 18131 -1 legs~
+E 0 18126 -1 torso~
+E 0 18185 -1 head~
+M 0 18119 1 18109 1
+E 0 18129 -1 torso~
+E 0 18132 -1 legs~
+M 0 18118 1 18111 1
+E 0 18130 -1 torso~
+E 0 18133 -1 legs~
+M 0 18117 1 18112 1
+E 0 18132 -1 legs~
+E 0 18126 -1 torso~
+M 0 18104 20 18113 2
+E 0 18154 -1 torso~
+M 0 18116 1 18115 1
+E 0 18134 -1 torso~
+E 0 18133 -1 legs~
+O 0 18100 -1 18117
+O 0 18100 0 18117
+M 0 18178 1 18117 1
+M 0 18179 1 18117 1
+E 0 18182 -1 legs~
+E 0 18183 -1 torso~
+E 0 18184 -1 hold~
+E 0 18186 -1 head~
+M 0 18104 20 18119 3
+E 0 18136 -1 torso~
+E 0 18131 -1 legs~
+G 0 18106 -1
+M 0 18104 20 18119 3
+G 0 18106 -1
+E 0 18154 -1 torso~
+O 0 18159 -1 18119
+O 0 18160 -1 18119
+O 0 18174 -1 18119
+O 0 18175 -1 18119
+M 0 18153 1 18119 1
+M 0 18107 1 18122 1
+G 0 18116 -1
+E 0 18117 -1 head~
+E 0 18118 -1 torso~
+E 0 18128 -1 legs~
+O 0 18161 -1 18122
+O 0 18162 -1 18122
+O 0 18163 -1 18122
+O 0 18164 -1 18122
+M 0 18137 10 18123 1
+M 0 18120 1 18124 1
+M 0 18122 1 18127 1
+M 0 18121 1 18128 1
+M 0 18115 1 18130 1
+E 0 18135 -1 legs~
+E 0 18130 -1 torso~
+O 0 18180 -1 18130
+O 0 18157 -1 18134
+O 0 18158 -1 18134
+M 0 18104 20 18136 3
+E 0 18154 -1 torso~
+G 0 18106 -1
+M 0 18104 20 18136 3
+E 0 18154 -1 torso~
+G 0 18106 -1
+M 0 18114 1 18136 1
+E 0 18132 -1 legs~
+E 0 18129 -1 torso~
+O 0 18165 -1 18136
+M 0 18152 1 18136 1
+M 0 18112 1 18138 1
+E 0 18136 -1 torso~
+E 0 18135 -1 legs~
+M 0 18111 1 18138 1
+E 0 18136 -1 torso~
+E 0 18132 -1 legs~
+M 0 18113 1 18138 1
+E 0 18130 -1 torso~
+E 0 18133 -1 legs~
+O 0 18166 -1 18138
+M 0 18106 1 18139 18139
+E 0 18108 -1 wielded~
+E 0 18132 -1 legs~
+E 0 18129 -1 torso~
+M 0 18123 5 18140 2
+M 0 18124 5 18140 2
+M 0 18125 5 18140 2
+M 0 18104 20 18141 1
+E 0 18136 -1 torso~
+E 0 18132 -1 legs~
+G 0 18106 -1
+M 0 18103 1 18142 1
+G 0 18105 -1
+G 0 18110 -1
+G 0 18111 -1
+G 0 18112 -1
+G 0 18113 -1
+G 0 18119 -1
+E 0 18131 -1 legs~
+E 0 18126 -1 torso~
+M 0 18104 20 18143 2
+E 0 18154 -1 torso~
+O 0 18167 -1 18144
+M 0 18109 1 18145 1
+G 0 18104 -1
+G 0 18102 -1
+G 0 18103 -1
+G 0 18101 -1
+E 0 18132 -1 legs~
+E 0 18129 -1 torso~
+O 0 18109 -1 18148
+M 0 18180 1 18149 1
+O 0 18168 -1 18150
+M 0 18138 1 18150 1
+O 0 18169 -1 18151
+M 0 18140 1 18152 1
+O 0 18170 -1 18153
+O 0 18171 -1 18153
+M 0 18181 1 18153 1
+O 0 18172 -1 18154
+M 0 18141 1 18155 1
+M 0 18137 10 18156 1
+M 0 18142 20 18156 1
+M 0 18137 10 18157 1
+M 0 18147 10 18157 1
+M 0 18137 10 18158 1
+M 0 18142 20 18158 1
+M 0 18147 10 18160 1
+M 0 18137 20 18161 1
+M 0 18149 10 18161 1
+M 0 18148 10 18163 1
+M 0 18137 20 18163 1
+M 0 18137 20 18164 1
+M 0 18145 1 18164 1
+M 0 18142 20 18165 1
+M 0 18149 10 18165 1
+M 0 18144 1 18166 1
+M 0 18143 1 18167 1
+M 0 18146 1 18168 1
+O 0 18176 -1 18169
+M 0 18165 1 18169 1
+M 0 18164 1 18169 1
+M 0 18163 1 18169 1
+M 0 18162 1 18169 1
+M 0 18161 1 18169 1
+M 0 18160 1 18169 1
+M 0 18159 1 18169 1
+M 0 18137 10 18170 1
+M 0 18137 10 18171 1
+M 0 18137 10 18172 1
+M 0 18137 10 18173 1
+M 0 18137 10 18174 1
+M 0 18137 10 18175 1
+M 0 18150 1 18177 1
+M 0 18151 1 18178 1
+M 0 18155 1 18179 1
+M 0 18156 1 18180 1
+M 0 18157 1 18181 1
+M 0 18158 1 18182 1
+M 0 18105 1 18183 1
+E 0 18107 -1 waist~
+E 0 18173 -1 legs~
+M 0 18166 1 18184 1
+M 0 18167 1 18185 1
+M 0 18168 1 18186 1
+M 0 18169 1 18187 1
+M 0 18170 1 18188 1
+M 0 18171 1 18189 1
+M 0 18172 1 18190 1
+M 0 18173 1 18191 1
+M 0 18174 1 18192 1
+M 0 18175 1 18193 1
+M 0 18176 1 18194 1
+M 0 18177 1 18195 1
+S
+
+
+
+#SHOPS
+#18100
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+close_hour 24
+END
+
+#18103
+buy_type treasure~
+buy_type pill~
+buy_type weapon~
+profit_buy 100
+close_hour 23
+END
+
+#18107
+buy_type potion~
+profit_buy 100
+close_hour 24
+END
+
+#18109
+buy_type food~
+buy_type drinkcontainer~
+profit_buy 100
+close_hour 23
+END
+
+#18110
+buy_type treasure~
+profit_buy 100
+close_hour 24
+END
+
+#0
+
+
+#MOBPROGS
+#18217
+title fortune telling neutralalign 1~
+code sayto $n hmm.. yes..
+sayto $n I see much wealth in your future.
+emote nods to herself.
+sayto $n of course, for a small amount of 50 silver I could reveal more.
+mob oload 18144
+mob tgive 18144 $n
+~
+disabled false
+END
+
+#18216
+title fortune telling goodalign 1~
+code sayto $n ah yes..
+sayto $n I see a romance in your future.
+emote smiles to herself.
+sayto $n of course, for a small amount of 50 silver I could reveal more.
+mob oload 18143
+mob tgive 18143 $n
+~
+disabled false
+END
+
+#18215
+title fortune telling evilalign 1~
+code sayto $n hmm... oh dear..
+sayto $n I see a death in your future.
+emote nods to herself.
+sayto $n of course, for a small amount of 50 silver I could reveal more.
+mob oload 18142
+mob tgive 18142 $n
+~
+disabled false
+END
+
+#18214
+title slide~
+code mob echo You slide down the slide riding on a sack.
+mob transfer all 18154
+~
+disabled false
+END
+
+#18213
+title slide delay~
+code mob delay 4
+~
+disabled false
+END
+
+#18212
+title trapdoor delay~
+code mob delay 2
+~
+disabled false
+END
+
+#18211
+title windy tunnel~
+code mob echo The wind lashes against your face.
+mob echo Wind whips through your hair.
+mob echo The force of the wind grows too strong and you are swept up into a whirlwind.
+mob transfer all 18150
+mob vforce 18138 mob call 18153
+~
+disabled false
+END
+
+#18210
+title windy tunnel delay 5~
+code mob delay 5
+~
+disabled false
+END
+
+#18209
+title carousel part6~
+code mob echo `#`CYou climb off your pony and jump down off the platform`^.
+mob transfer all 18136
+~
+disabled false
+END
+
+#18208
+title carousel part5~
+code mob echo `#`MYour pony dances up and down as you go around`^.
+mob transfer all 18195
+mob vforce 18177 mob call 18202
+~
+disabled false
+END
+
+#18207
+title carousel part4~
+code mob echo `#`CA child waves to you as you ride past on your`^ `#`Wwhite pony`^.
+mob transfer all 18194
+mob vforce 18176 mob call 18202
+~
+disabled false
+END
+
+#18206
+title carousel part3~
+code mob echo `#`MThe crowd watching begins to blur as you go round and round and round`^.
+mob transfer all 18193
+mob vforce 18175 mob call 18202
+~
+disabled false
+END
+
+#18205
+title carousel part2~
+code mob echo `#`CYou are lifted up and down as the`^ `#`Wpony`^ `#`Cdances on the pole attached to the platform`^.
+mob transfer all 18192
+mob vforce 18174 mob call 18202
+~
+disabled false
+END
+
+#18204
+title carousel part1~
+code mob echo `#`MYou climb onto a`^ `#`Wwhite pony`^ `#`Mand hold onto its reins as the whirlygig music starts up`^.
+mob transfer all 18191
+mob vforce 18173 mob call 18202
+~
+disabled false
+END
+
+#18203
+title circus~
+code if rand 14
+   mob echo `#`?Two dwarf clowns run around the ring entertaining the crowd`^.
+else
+   if rand 16
+      mob echo `#`?A juggler juggles sticks of flaming fire`^.
+   else
+     if rand 20
+      mob echo `#`?Trapeze artists swing back and forth on swings, tossing and catching one another`^.
+ 
+     else
+        if rand 25
+           mob echo `#`?A large brown bear dances for the crowd`^.
+           
+        else
+           if rand 33
+             mob echo `#`?A lion tamer opens the jaws of a lion with his hands and carefully puts his head inside the lions jaws and then takes his head out`^
+           else
+             if rand 50 
+               mob echo `#`?A gypsy lady in a leotard balances on a tightrope`^.     
+             else
+               mob echo `#`?A man slowly puts three swords down his throat and then draws them out, without a single cut`^.
+          endif  
+         endif
+        endif   
+      endif
+   endif
+endif
+~
+disabled false
+END
+
+#18202
+title carousel delay 3~
+code mob delay 3
+~
+disabled false
+END
+
+#18201
+title junk all.token_freak_show...~
+code mob tjunk all.18181 self
+~
+disabled false
+END
+
+#18200
+title freakshow speed (delay) and remember (for echoat's)~
+code mob remember $n
+mob delay 4
+ 
+~
+disabled false
+END
+
+#18199
+title ferris delay 3~
+code mob delay 3
+~
+disabled false
+END
+
+#18198
+title ferris wheel part6~
+code mob echo The man opens the bar for you to climb out.  
+mob echo `#`YYou carefully step down, trying to steady yourself.`^
+mob transfer all 18138
+~
+disabled false
+END
+
+#18197
+title ferris wheel part5~
+code mob echo `#`YChildren from below watch as the wheel rocks the seats on its way down.`^
+mob transfer all 18189
+mob vforce 18171 mob call 18199
+~
+disabled false
+END
+
+#18196
+title ferris wheel part4~
+code mob echo `#`YLooking out from your seat you can see people as small as ants`1 wandering about the carnival, and you can see the gondolas on the river.`^  
+mob transfer all 18188
+mob vforce 18170 mob call 18199
+~
+disabled false
+END
+
+#18195
+title ferris wheel part3~
+code mob echo `#`YYou look down and realise you are far above the crowd.`^
+mob transfer all 18187
+mob vforce 18169 mob call 18199
+~
+disabled false
+END
+
+#18194
+title ferris wheel part2~
+code mob echo `#`YThe seat sways as you get lifted higher and higher.`^
+mob transfer all 18186
+mob vforce 18168 mob call 18199
+~
+disabled false
+END
+
+#18193
+title ferris wheel part1~
+code mob echo `#`YYour seat rocks back and forth as you lift off the ground.`^  
+mob transfer all 18185
+mob vforce 18167 mob call 18199
+~
+disabled false
+END
+
+#18192
+title forget and cancel delay~
+code mob forget
+mob cancel
+~
+disabled false
+END
+
+#18191
+title freakshow fastforward 1 step~
+code * technically mob18116 could be a $i (since that should be who runs the prog)
+if hastoken $i 18181
+    * go thru each mob in show, forcing them to run the function 
+    * that is their delay trigger, the run prog 18192 which
+    * cancels their pending delay trigger using 'mob cancel'
+    mob vforce 18165 mob call 18189
+    mob vforce 18165 mob call 18192
+    mob vforce 18164 mob call 18188
+    mob vforce 18164 mob call 18192
+    mob vforce 18163 mob call 18187
+    mob vforce 18163 mob call 18192
+    mob vforce 18162 mob call 18186
+    mob vforce 18162 mob call 18192
+    mob vforce 18161 mob call 18185
+    mob vforce 18161 mob call 18192
+    mob vforce 18159 mob call 18110
+    mob vforce 18159 mob call 18192
+    mob vforce 18160 mob call 18172
+    mob vforce 18160 mob call 18192
+endif
+~
+disabled false
+END
+
+#18190
+title mob delay 10~
+code mob delay 10
+~
+disabled false
+END
+
+#18189
+title closing freakshow~
+code mob echoat $q The man says '`#`M(human)`^`#`WYou saw it all here folks! Freaks of nature and incredible oddities!`^
+mob echoat $q The man says '`#`M(human)`^`#`WLet's give them all another round of applause!`^
+mob echoat $q The crowd gets to its feet applauding.
+mob echoat $q The curtains close and the crowd begins slowly filtering out, whispering amongst themselves about the unusual sights they've just witnessed.
+~
+disabled false
+END
+
+#18188
+title freakshow part5~
+code mob echoat $q The man says '`#`M(human)`^`#`WLadies and gentlemen, prepare to be astonished as you witness the acts of the`^ `#`YIron-tongued Marvel!`^
+mob echoat $q A man of regular build walks onto the stage, carrying a heavy iron anvil.
+mob echoat $q The crowd watches with anticipation.
+mob echoat $q The man sets the anvil at his feet, then lifts the chain attached to it up to his mouth.
+mob echoat $q You see a large ring which pierces his tongue as he hooks up the chain to the ring.
+mob echoat $q Slowly and steadily, the man lifts the 25 pound anvil off the ground.. suspending it in mid-air from his tongue!
+mob echoat $q The crowd gasps in amazement, then gives a round of applause.
+mob vforce 18165 mob call 18200 $q
+~
+disabled false
+END
+
+#18187
+title freakshow part4~
+code mob echoat $q The man says '`#`M(human)`^`#`WLadies and gentlemen, keep your distance as you are about to see the largest rat alive.. the`^ `#`RGIANT Killer Rat!`^
+mob echoat $q The petite gypsy lady comes onto stage pushing a small trolley which carries a large metal cage.
+mob echoat $q Inside the cage is the biggest rat you have ever seen, almost the size of small bear.
+mob echoat $q The rat claws at its cage and gnaws on the metal bars, revealing a mouthful of giant sharp teeth.
+mob echoat $q The crowd quietens with fear.
+mob vforce 18164 mob call 18200 $q
+~
+disabled false
+END
+
+#18186
+title freakshow part3~
+code mob echoat $q A hush comes over the crowd as a creature, one third man, one third pony and one third FROG walks onto the stage.
+mob echoat $q The man says '`#`M(human)`^`#`WThat's right folks! You've witnessed it yourselves! The one and only`^ `#`GFROG BOY!`^
+mob echoat $q You watch with curiousity as the creature half-ambles, half-hops off stage.
+mob vforce 18163 mob call 18200 $q
+~
+disabled false
+END
+
+#18185
+title freakshow part2~
+code mob echoat $q A petite gypsy lady comes onto stage carrying a large jar.
+mob echoat $q Inside the jar is a tiny male figure with the tail of a fish.
+mob echoat $q You watch in amazement as it swims about in its container.
+mob echoat $q The man says '`#`M(human)`^`#`WYes ladies and gentlemen, its a real`^ `#`gMerman!`^
+mob echoat $q The crowd claps as the petite lady carries the jar offstage.
+mob vforce 18162 mob call 18200 $q
+~
+disabled false
+END
+
+#18184
+title greeting gondola~
+code if hastoken $n 18177 
+sayto $n I hope you enjoyed the journey.
+smile $n
+mob tremove 18177 $n 
+else
+smile
+sayto $n Hello there, would you like to take a lovely scenic tour on one of the gondolas?
+sayto $n Just one yellow ticket, and you'll be set to go.
+endif
+~
+disabled false
+END
+
+#18183
+title mob delay 4~
+code mob remember $n
+mob delay 4
+~
+disabled false
+END
+
+#18182
+title gondola at jetty~
+code if rand 50
+   mob echo The gondola drifts in and stops at the jetty.
+else
+   mob echo The gondola floats over to the jetty.
+endif
+mob transfer all 18130
+mob forget
+ 
+~
+disabled false
+END
+
+#18181
+title gondola on large lake~
+code if rand 50
+   mob echo The gondola rocks gently on ripples of this lake.
+else
+   mob echo The gondola drifts about slowly, rocking gently.
+endif
+mob transfer all 18182
+mob at 18182 mob force gondola5 mob call 18153 $n
+mob forget
+ 
+~
+disabled false
+END
+
+#18180
+title gondola through park~
+code if rand 50
+   mob echo The gondola weaves through a park.
+else
+   mob echo The gondola follows the river through a park.
+endif
+mob transfer all 18181
+mob at 18181 mob force gondola4 mob call 18153 $n
+mob forget
+ 
+~
+disabled false
+END
+
+#18179
+title gondola under bridge~
+code if rand 50
+   mob echo The gondola drifts under the bridge.
+else
+   mob echo The gondola disappears under the bridge and comes out on the other side.
+endif
+mob transfer all 18180
+mob at 18180 mob force gondola3 mob call 18153 $n
+mob forget
+ 
+~
+disabled false
+END
+
+#18178
+title gondola on gentle river~
+code if rand 50
+   mob echo The gondola floats down the gentle river.
+else
+   mob echo The gondola gently drifts down the river.
+endif
+mob transfer all 18179
+mob at 18179 mob force gondola2 mob call 18183
+~
+disabled false
+END
+
+#18177
+title gondola ride starter~
+code mob junk all.ticket
+mob oload 18177
+mob tgive 18177 $n
+mob ttimer $n 18177 200
+pmote $n holds a gondola steady for @ to climb in.
+emote unties the gondola.
+mob transfer $n 18177
+mob echo $N leaves on the gondola.
+mob at 18177 mob force gondola mob call 18183
+~
+disabled false
+END
+
+#18176
+title freak show~
+code mob echo A burly looking man appears on the stage.
+mob echo The man says '`#`M(human)`WWelcome to this fantastic and extraordinary show of freaks and oddities!`^
+mob echo The man says '`#`M(human)`WToday you will be amazed by Mr Peek-a-boo the contortionist, horrified by the giant killer rat, astonished at the Frog Boy, see a real live Merman, and witness the Iron-tongued Marvel!`^
+mob echo The crowd applauds with excitement and anticipation.
+if rand 20
+ mob echo A thin man walks onto the stage, bows to the audience and then begins to twist into several impossible positions.
+ mob echo You watch in horror as he begins to wrap his arms behind his back revealing his socket joints, and then continues to lift his legs one at a time over his head, until he forms a contorted ball of skin and bones.
+ mob echo The man says '`#`M(human)`WLadies and gentlemen, a round of applause for Mr Peek-a-boo!`^
+ mob echo The crowd applauds as the contortionist unravels, bows and then leaves the stage.
+else
+ if rand 25
+  mob echo A petite gypsy lady comes onto stage carrying a large jar.
+  mob echo Inside the jar is a tiny male figure with the tail of a fish.
+  mob echo You watch in amazement as it swims about in its container.
+  mob echo The man says '`#`M(human)`WYes ladies and gentlemen, its a real Merman!`^
+  mob echo The crowd claps as the petite lady carries the jar offstage.
+ else
+  if rand 33
+   mob echo A hush comes over the crowd as a creature, one third man, one third pony and one third FROG walks onto the stage.
+   mob echo The man says '`#`M(human)`WThat's right folks! You've witnessed it yourselves! The one and only FROG BOY!`^
+   mob echo You watch with curiousity as the creature half-ambles, half-hops off stage.
+  else
+   if rand 50
+     mob echo The man says '`#`M(human)`WLadies and gentlemen, keep your distance as you are about to see the largest rat alive.. the GIANT killer rat!`^
+     mob echo The petite gypsy lady comes onto stage pushing a small trolley which carries a large metal cage.
+     mob echo Inside the cage is the biggest rat you have ever seen, almost the size of small bear.
+     mob echo The rat claws at its cage and gnaws on the metal bars, revealing a mouthful of giant sharp teeth.
+     mob echo The crowd quietens with fear.
+   else
+       mob echo The man says '`#`M(human)`WLadies and gentlemen, prepare to be astonished as you witness the acts of the Iron-tongued Marvel!`^
+       mob echo A man of regular build walks onto the stage, carrying a heavy iron anvil.
+       mob echo The crowd watches with anticipation.
+       mob echo The man sets the anvil at his feet, then lifts the chain attached to it up to his mouth.
+       mob echo You see a large ring which pierces his tongue as he hooks up the chain to the ring.
+       mob echo Slowly and steadily, the man lifts the 25 pound anvil off the ground.. suspending it in mid-air from his tongue!
+       mob echo The crowd gasps in amazement, then gives a round of applause.
+    endif
+  endif
+ endif
+endif
+mob echo The man says '`#`M(human)`WYou saw it all here folks! Freaks of nature and incredible oddities!`^
+mob echo The man says '`#`M(human)`WLet's give them all another round of applause!`^
+mob echo The crowd gets to its feet applauding.
+mob echo The curtains close and the crowd began slowly filtering out, whispering amongst themselves about the unusual sights they've just witnessed.
+~
+disabled false
+END
+
+#18175
+title freak show bribe~
+code ***** MARK $n AS HAVING SEEN THE SHOW - NO REPEATING GREETALL
+*----- token 18178 is for greetall triggering on mob 18116 (ticket taker)
+mob oload 18178
+mob tgive 18178 $n
+* junk the token incase we didn't successfully give it
+mob tjunk all.18178 self
+***** MAKE SURE THE PREVIOUS PERSON DOESN'T GET THEIR SHOW CANCELED
+*----- prog 18191 fast forwards the show by 1 step if previous person 
+*----- hasn't been past on to the second stage yet (avoid overwriting mob remember)
+*----- This state is determined with token 18191, on mob 18116 (ticket taker)
+mob call 18191 
+*-----  token 18181 if for fast forward system, mob 18160 forces us to purge it later
+mob oload 18181 1 wear
+***** ACTIVATE THE SHOW FOR $n
+pmote $n pulls the curtain to the side for @ to enter.
+mob transfer $n 18169
+mob echo $N leaves east.
+mob vforce 18160 mob call 18200 $n
+~
+disabled false
+END
+
+#18174
+title greeting freaks and oddities~
+code if hastoken $n 18178
+mob tremove 18178 $n
+sayto $n Enjoy the show?
+chuck
+else
+say Step right up! Step right up!
+say The show's about to begin!
+say Enter if you dare!
+sayto $n 300 silver entry fee.
+endif
+~
+disabled false
+END
+
+#18173
+title puppet show~
+code if rand 20
+   mob echo One gnome says to the other '`#`M(gnome)`WKnock Knock?`^'
+   mob echo The other gnome says '`#`M(gnome)`WWho's There?`^'
+   mob echo The first gnome says to the other '`#`M(gnome)`WDoris`^'
+   mob echo The other gnome says '`#`M(gnome)`WDoris Who?.`^'
+   mob echo The first gnome says '`#`M(gnome)`WDoris locked, that's why I had to knock!`^'
+   mob echo The gnomes fall to the ground laughing.
+else
+   if rand 25
+      mob echo One gnome says to the other '`#`M(gnome)`WKnock knock?`^'
+      mob echo The other gnome says '`#`M(gnome)`WWho's there?`^'
+      mob echo The first gnome says to the other '`#`M(gnome)`WDishes!`^'
+      mob echo The other gnome says '`#`M(gnome)`WDishes who?`^'
+      mob echo The first gnome says '`#`M(gnome)`WDishes your friend so let me in!`^'
+      mob echo The gnomes fall to the ground laughing.
+   else
+     if rand 33
+      mob echo One gnome says to the other '`#`M(gnome)`WWhy won``t cannibals eat clowns?`^'
+      mob echo The other gnome says '`#`M(gnome)`WBecause they taste funny!`^'
+      mob echo The gnomes fall to the ground laughing.
+     else
+        if rand 50 
+           mob echo One gnome says to the other '`#`M(gnome)`WWhy did the skeleton play the piano?`^'
+           mob echo The other gnome says '`#`M(gnome)`WBecause he didn``t have any organs!`^'
+           mob echo The gnomes fall to the ground laughing.
+        else
+           mob echo One gnome says to the other '`#`M(gnome)`WHow much money did the pirate pay for his ear to get pierced?`^'
+           mob echo The other gnome says '`#`M(gnome)`WA buck an ear!`^'
+           mob echo The gnomes fall to the ground laughing.
+        endif   
+      endif
+   endif
+endif
+ 
+~
+disabled false
+END
+
+#18172
+title opening to freakshow~
+code mob echoat $q A sinister looking man appears on the stage.
+mob echoat $q The man says '`#`M(human)`^`W`WWelcome to this fantastic and extraordinary show of freaks and oddities!`^
+mob echoat $q The man says '`#`M(human)`^`#`WToday you will be amazed by`^ `#`BMr Peek-a-Boo the Contortionist`^, `#`Whorrified by the`^ `#`RGIANT Killer Rat`^, `#`Wastonished at the`^ `#`GFrog Boy`^, `#`Wsee a real live`^ `#`gMerman`^, `#`Wand witness the`^ `#`YIron-tongued Marvel`^`#`W!`^
+mob echoat $q The crowd applauds with excitement and anticipation.
+***** start the next mob in the show, passing our remember person for them to remember
+mob vforce 18159 mob call 18200 $q 
+***** remove the token from mob 18116 that said stage one hadnt finished yet
+*---- prog 18201 simply just junk all.token_freak_show_first_person_needs_fast_forwarding_by_prog_18191
+mob vforce 18116 mob call 18201
+~
+disabled false
+END
+
+#18171
+title bribe for champeen~
+code mob oload 18179
+mob tgive 18179 $n
+mob ttimer $n 18179 200
+sayto $n Good luck to you then.
+grin
+wave $n
+mob transfer $n 18148
+~
+disabled false
+END
+
+#18170
+title ferris wheel ride~
+code pmote $n stops the nearest swinging seat and opens the bar for @ to climb in.  
+mob echoat $n `#`YYou take a seat`^.  
+emote closes the bar and orders the men to start pulling the ropes.  
+mob transfer $n 18184
+mob echoaround $N rides on the ferris wheel.
+mob vforce 18166 mob call 18199
+~
+disabled false
+END
+
+#18169
+title greeting ferris wheel~
+code pmote $n grins at @.
+sayto $n come to ride on the big wheel have ya?
+sayto $n give me your ticket and you can hop right on.
+emote puts his hand out for a ticket.
+~
+disabled false
+END
+
+#18168
+title carousel music~
+code if rand 50
+  mob echo Joyful organ music chimes from within the carousel.
+else
+  mob echo Happy organ music pipes from the carousel as it turns.
+endif
+~
+disabled false
+END
+
+#18167
+title greeting carousel~
+code emote smiles warmly.
+sayto $n Greetings, welcome to the carousel, a ride which will delight any child.
+sayto $n One of those yellow tickets and you can climb right aboard.
+pmote $n smiles at @.
+~
+disabled false
+END
+
+#18166
+title carousel~
+code mob junk all.ticket
+smile $n
+sayto $n Well climb aboard then.
+pmote $n helps @ onto the platform.
+mob transfer $n 18190
+mob echoaround $N rides on the carousel.
+mob vforce 18172 mob call 18202
+~
+disabled false
+END
+
+#18165
+title gondola on small lake~
+code if rand 50
+   mob echo The gondola rocks gently on ripples of this lake.
+else
+   mob echo The gondola drifts about slowly, rocking gently.
+endif
+mob transfer all 18178
+mob at 18178 mob force gondola1 mob call 18183
+~
+disabled false
+END
+
+#18164
+title trapdoor~
+code mob echo As you stumble about blindly, you must have stepped on a switch somewhere,`1 because suddenly, a trapdoor opens below you and you slide down a chute and land`1 with a thud back at the entrance.
+mob transfer all 18128
+ 
+~
+disabled false
+END
+
+#18163
+title hand grab~
+code if rand 50
+   mob echo A bony hand reaches out from nowhere and grabs you by the ankle.
+   mob echo You stumble and fall to the ground.
+else
+   mob echo A strong, hairy hand reaches up and grabs your foot.
+   mob echo You feel it tugging, trying to pull you down.
+endif
+~
+disabled false
+END
+
+#18162
+title slime~
+code if rand 50
+   mob echo The slimes oozes and bubbles.
+   mob echo It begins to slide over your feet, slowly creeping up.
+else
+   mob echo The slime squishes and squelches as you step through it.
+   mob echo It senses your movement and begins oozing towards you.
+endif
+~
+disabled false
+END
+
+#18161
+title IT~
+code if rand 50
+   mob echo You hear a footstep, then a clunk.. a footstep then a clunk..
+   mob echo Before you appears the most hideous beast you've ever seen.
+   mob echo The creature snarls and glares at you, wondering if you will make a good meal.
+else
+   mob echo A creature is revealed from the shadows.
+   mob echo It snarls and gropes at you.
+   mob echo You can see the slobber dripping from its mouth.
+endif 
+~
+disabled false
+END
+
+#18160
+title spooky stuff 5~
+code if rand 50
+   mob echo A skeleton appears before you from nowhere.
+else
+   mob echo You trip over something and land on a pile of bones.
+endif
+~
+disabled false
+END
+
+#18159
+title spooky stuff 4~
+code if rand 50
+   mob echo A soft whisper calls to you.. "help.. me!"
+else
+   mob echo A soft whisper calls.. "don't leave me here!"
+endif
+~
+disabled false
+END
+
+#18158
+title spooky stuff 3~
+code if rand 50
+   mob echo Creaking sounds echo through the darkness.
+else
+   mob echo A door slams shut.
+endif
+~
+disabled false
+END
+
+#18157
+title spooky stuff 2~
+code if rand 50
+  mob echo A high-pitched scream fills the room.
+else
+  mob echo A muffled scream fills the room.
+endif
+~
+disabled false
+END
+
+#18156
+title spooky stuff 1~
+code if rand 50
+  mob echo A ghostly wail moans.. "you.. must .. die!"
+else
+  mob echo A ghostly wail moans.. "I have.. been waiting.. for.. you!"
+endif
+~
+disabled false
+END
+
+#18155
+title lilypad~
+code if rand 20 
+    mob echo `#`GYou step gingerly onto the first lilypad.
+    mob echo `#`GIt seems to support your weight so you take another step.
+    mob echo `#`GYou manage to leap carefully from lilypad to lilypad to the other side.
+    mob transfer all 18127   
+    mob forget
+else
+    if rand 50
+       mob echo `#`GYou step gingerly onto the first lilypad.
+       mob echo `#`GIt seems to support your weight so you take another step.
+       mob echo `#`GYou just about reach the other side when the final lily pad collapses`1 under your weight and you land with a great `#`Csplash`^ into the pool.
+       
+       mob echo `#`GYou wade to the other side and pull yourself out, dripping wet.
+       mob transfer all 18127 
+       mob forget
+    else
+       mob echo `#`GYou step gingerly onto the first lilypad.
+       mob echo `#`GIt seems to support your weight so you take another step.
+       mob echo `#`GUnfortunately this time you're not so lucky and land with a great`1 `#`Csplash`^ in the water.
+       mob echo `#`GYou wade to the other side and pull yourself out, dripping wet.
+       mob transfer all 18127
+       mob forget
+    endif       
+endif
+~
+disabled false
+END
+
+#18154
+title swing bridge~
+code mob echo The bridge swings about in the wind.
+mob echo A plank falls from the bridge and tumbles to the ground below.
+~
+disabled false
+END
+
+#18153
+title stairs memory~
+code mob delay 5
+~
+disabled false
+END
+
+#18152
+title delay for lilypad~
+code mob remember $n
+mob delay 5
+~
+disabled false
+END
+
+#18151
+title sliding stairs~
+code if rand 20 
+    mob echo You quickly clamber up the stairs making it to the top.
+    mob transfer all 18151
+else
+    mob delay 1
+    if rand 31
+       mob echo You almost make it to the top but just as you are about to, the stairs flip and you slide back down.
+        
+    else
+        if rand 45
+            mob echo You make it to halfway before the stairs flip and change.
+ 
+        else
+            if rand 67
+                mob echo You barely make it to halfway before the steps turn into a slide.
+ 
+            else
+                if rand 50
+                    mob echo You take a few steps and end up sliding back down.
+ 
+                else
+                    mob echo You go to place your foot on the first step and the steps flip into a slide.
+  
+                endif      
+            endif    
+        endif
+    endif       
+ 
+endif
+~
+disabled false
+END
+
+#18150
+title mirror room door close~
+code close north
+close south
+close east
+close west
+close southeast
+close southwest
+close northeast
+close northwest
+~
+disabled false
+END
+
+#18149
+title fortune telling 3~
+code if hastoken $n 18145
+  sigh
+  sayto $n yes.. I'm afraid..
+  sayto $n [in a whisper] it is your own death I foresee.
+  sayto $n but perhaps its not too late to change your ways.
+  emote folds her hands in her lap.
+  sayto $n perhaps I could interest you in a potion before you go?
+  mob tjunk all.18145 $n
+else
+  if hastoken $n 18146
+    sigh
+    sayto $n I'm afraid.. I sense it is one of your relatives..
+    sayto $n perhaps a sibling.. or an aunty or uncle..
+    emote nods to herself.
+    sayto $n well, death must come to us all at some stage.
+    emote folds her hands in her lap.
+    sayto $n perhaps I could interest you in a potion before you go?
+  mob tjunk all.18146 $n
+  else
+    if hastoken $n 18147
+       chuck
+       sayto $n it is indeed a birth..
+       sayto $n and I sense it is a birth of your own blood.. perhaps soon you will begin a family.
+       smile
+       emote folds her hands in her lap.
+       sayto $n perhaps I could interest you in a potion before you go?
+    mob tjunk all.18147 $n
+    else
+       if hastoken $n 18148 
+       smile
+       sayto $n yes, I can see a lovely romance developing.. in fact..
+       emote peers into the ball again.
+       sayto $n yes, I can see a wedding cake..
+       sayto $n marriage is a most wonderful thing, when the two are truely in love.
+       emote folds her hands in her lap.
+       sayto $n perhaps I could interest you in a potion before you go?
+       mob tjunk all.18148 $n
+       else
+          if hastoken $n 18149
+             sayto $n yes, I can see a romance budding..
+             sayto $n it appears to be the romance between two of your closest friends.
+             smile
+             sayto $n love is a wonderful thing indeed.
+             emote folds her hands in her lap.
+             sayto $n perhaps I could interest you in a potion before you go?
+             mob tjunk all.18149 $n
+          else
+             if hastoken $n 18150
+                sigh
+                sayto $n yes, I can see a battle coming up in the near future.
+                sayto $n there will be many wounded, you must make sure to be well prepared.
+                emote folds her hands in her lap.
+                sayto $n perhaps I could interest you in a potion before you go?
+                mob tjunk all.18150 $n
+             else
+               if hastoken $n 18151
+                  sayto $n yes, I can see that you are going to become very wealthy indeed.
+                  sayto $n just remember, money is the root of all evil.
+                  emote folds her hands in her lap.
+                  sayto $n perhaps I could interest you in a potion before you go?
+                  mob tjunk all.18151 $n
+               else
+                  if hastoken $n 18152
+                     sayto $n yes, I can see much wealth around you, but I'm afraid..
+                     sayto $n I don't see you living that of a wealthy type at all.
+                     emote folds her hands in her lap.
+                     sayto $n perhaps I could interest you in a potion before you go?
+                     mob tjunk all.18152 $n
+                  else
+                     if hastoken $n 18153
+                        sayto $n yes, I can see many travels lie ahead of you.
+                        sayto $n and I see good health preceeds you.
+                        emote folds her hands in her lap.
+                        sayto $n perhaps I could interest you in a potion before you go?
+                        mob tjunk all.18153 $n
+                     else 
+                    endif
+                  endif
+               endif
+            endif
+         endif
+      endif
+   endif
+endif
+endif
+~
+disabled false
+END
+
+#18147
+title fortune telling neutral align 2~
+code if hastoken $n 18144
+mob tremove 18144 $n 
+ 
+ if rand 33
+    emote nods to herself.
+    sayto $n yes, I can see a great collection of wealth.
+    sayto $n hmm.. it appears to be you carrying this great wealth.
+    emote smiles as she packs away her cards.
+    sayto $n well, thank you for coming.
+    emote hesitates.
+    sayto $n of course, for another 200 silver, I could tell you more.
+    mob oload 18151
+    mob tgive 18151 $n
+    mob ttimer 18151 1000
+ else
+  if rand 50
+    smile
+    sayto $n hmm.. yes, I can definitely see a lot of gold coins.. and treasure too..
+    emote peers into the ball a little closer.
+    sayto $n hm.. I see it is someone else that carries this great wealth.
+    emote packs away her cards.
+    sayto $n well, thank you for coming.
+    emote hesitates.
+    sayto $n of course, for another 200 silver, I could tell you more.
+    mob oload 18152
+    mob tgive 18152 $n
+    mob ttimer 18152 1000
+  else
+    emote looks into the crystal ball.
+    emote nods to herself.
+    sayto $n oh, no it's not a lot of gold I see.. it is many maps.
+    sayto $n yes, now I can see that there are many travels ahead of you..
+    emote quietly folds her hands in her lap.
+    sayto $n well, thank you for coming.
+    emote hesitates.
+    sayto $n of course, for another 200 silver, I could tell you more.
+    mob oload 18153
+    mob tgive 18153 $n
+    mob ttimer 18153 1000  
+  endif
+ endif
+else
+ 
+endif
+~
+disabled false
+END
+
+#18146
+title fortune telling neutral align~
+code mob oload 18144
+mob tgive 18144 $n
+mob ttimer $n 18144 1000
+emote slowly moves her hands across the ball.
+emote a blank expression comes across *'s face.
+sayto $n hmm.. yes.. yes I can see your future..
+sayto $n I see much gold and treasure..
+emote smiles slightly.
+sayto $n of course, for another small amount.. of say.. 40 silver, I could seek further wisdom.
+~
+disabled false
+END
+
+#18145
+title fortune telling part 2~
+code if hastoken $n 18144
+    mob tjunk all.18144 $n 
+    if rand 33
+        emote nods to herself.
+        sayto $n yes, I can see a great collection of wealth.
+        sayto $n hmm.. it appears to be you carrying this great wealth.
+        emote smiles as she packs away her cards.
+        sayto $n well, thank you for coming.
+        emote hesitates.
+        sayto $n of course, for another 200 silver, I could tell you more.
+        mob oload 18151
+        mob tgive 18151 $n
+    else
+        if rand 50 
+            emote nods to herself.
+            sayto $n yes, I can see a great collection of wealth.
+            sayto $n hmm.. it seems to be someone you know that will become very rich.
+            emote smiles as she packs away her cards.
+            sayto $n well, thank you for coming.
+            emote hesitates.
+            sayto $n of course, for another 200 silver, I could tell you more.
+            mob oload 18152
+            mob tgive 18152 $n
+        else
+            emote looks into the crystal ball.
+            emote nods to herself.
+            sayto $n oh, no it's not a lot of gold I see.. it is many maps.
+            sayto $n yes, now I can see that there are many travels ahead of you..
+            emote quietly folds her hands in her lap.
+            sayto $n well, thank you for coming.
+            emote hesitates.
+            sayto $n of course, for another 200 silver, I could tell you more.
+            mob oload 18153
+            mob tgive 18153 $n  
+        endif
+    endif   
+endif
+ 
+if hastoken $n 18142
+    mob tjunk all.18142 $n
+    if rand 33
+        sayto $n ahh.. yes.. I can see a battle field..
+        sayto $n .. I can see many dead bodies.. many.. are dead..
+        gasp
+        emote covers her mouth quickly.
+        sayto $n [in almost a whisper]yes.. well.. thank you for coming.
+        emote quietly stacks her cards.
+        emote hesitates.
+        sayto $n of course, for another 200 silver, I could tell you more.
+        mob oload 18145
+        mob tgive 18145 $n
+    else
+        if rand 50
+            sayto $n hmm.. let me see.. yes.. 
+            sayto $n I can see a death in the near future..
+            emote looks closer into the crystal ball.
+            sayto $n it seems to be someone close to you.
+            emote packs away her cards.
+            sayto $n well, thank you for coming.
+            emote hesitates.
+            sayto $n of course, for another 200 silver, I could tell you more.
+            mob oload 18146
+            mob tgive 18146 $n
+        else
+            sayto $n hmm.. let me see..
+            sayto $n oh! its not a death after all.. its a birth..
+            chuckle
+            emote quietly folds her hands in her lap.
+            sayto $n well, thank you for coming.
+            emote hesitates.
+            sayto $n of course, for another 200 silver, I could tell you more.
+            mob oload 18147
+            mob tgive 18147 $n  
+        endif
+    endif       
+endif
+        
+        
+if hastoken $n 18143
+    mob tjunk all.18143 $n
+    if rand 33
+        if sex $n == 1
+            chuckle
+            sayto $n yes, I see a lovely young lady.. she has beautiful flowing hair..
+            smile
+            emote looks into the crystal ball again.
+            sayto $n yes, she's certainly beautiful..
+            emote smiles as she packs away her cards.
+            sayto $n well, thank you for coming.
+            emote hesitates.
+            sayto $n of course, for another 200 silver, I could tell you more.
+            mob oload 18148
+            mob tgive 18148 $n
+        else
+            if sex $n == 2
+                chuckle
+                sayto $n yes, I see a lovely young man.. he has fine features..
+                smile
+                emote looks into the crystal ball again.
+                sayto $n yes, he's certainly handsome..
+                emote smiles as she packs away her cards.
+                sayto $n well, thank you for coming.
+                emote hesitates.
+                sayto $n of course, for another 200 silver, I could tell you more.
+                mob oload 18148
+                mob tgive 18148 $n
+            endif
+        endif
+    else
+        if rand 50
+            smile
+            sayto $n yes, its definitely a romance..
+            emote peers closer into the ball.
+            emote looks a little surprised.
+            sayto $n oh.. oh, its not your romance, its a romance between someone you know.
+            emote packs away her cards.
+            sayto $n well, thank you for coming.
+            emote hesitates.
+            sayto $n of course, for another 200 silver, I could tell you more.
+            mob oload 18149
+            mob tgive 18149 $n
+        else
+            emote looks into the crystal ball.
+            emote nods to herself.
+            sayto $n oh, dear me.. its not a romance at all, its a battle..
+            emote quietly folds her hands in her lap.
+            sayto $n well, thank you for coming.
+            emote hesitates.
+            sayto $n of course, for another 200 silver, I could tell you more.
+            mob oload 18150
+            mob tgive 18150 $n
+        endif
+    endif
+endif
+ 
+~
+disabled false
+END
+
+#18144
+title fortune telling good align 2~
+code if hastoken $n 18143
+mob tremove 18143 $n
+    if rand 33
+      if sex $n == 1
+        chuckle
+        sayto $n yes, I see a lovely young lady.. she has beautiful flowing hair..
+        smile
+        emote looks into the crystal ball again.
+        sayto $n yes, she's certainly beautiful..
+        emote smiles as she packs away her cards.
+        sayto $n well, thank you for coming.
+        emote hesitates.
+        sayto $n of course, for another 200 silver, I could tell you more.
+        mob oload 18148
+        mob tgive 18148 $n
+        mob ttimer 18148 1000
+      endif
+      if sex $n == 2
+        chuckle
+        sayto $n yes, I see a lovely young man.. he has fine features..
+        smile
+        emote looks into the crystal ball again.
+        sayto $n yes, he's certainly handsome..
+        emote smiles as she packs away her cards.
+        sayto $n well, thank you for coming.
+        emote hesitates.
+        sayto $n of course, for another 200 silver, I could tell you more.
+        mob oload 18148
+        mob tgive 18148 $n
+        mob ttimer 18148 1000
+      endif
+    else
+      if rand 50
+        smile
+        sayto $n yes, its definitely a romance..
+        emote peers closer into the ball.
+        emote looks a little surprised.
+        sayto $n oh.. oh, its not your romance, its a romance between someone you know.
+        emote packs away her cards.
+        sayto $n well, thank you for coming.
+        emote hesitates.
+        sayto $n of course, for another 200 silver, I could tell you more.
+        mob oload 18149
+        mob tgive 18149 $n
+        mob ttimer 18149 1000
+      else
+        emote looks into the crystal ball.
+        emote nods to herself.
+        sayto $n oh, dear me.. its not a romance at all, its a battle..
+        emote quietly folds her hands in her lap.
+        sayto $n well, thank you for coming.
+        emote hesitates.
+        sayto $n of course, for another 200 silver, I could tell you more.
+        mob oload 18150
+        mob tgive 18150 $n
+        mob ttimer 18150 1000  
+      endif
+    endif
+else
+endif
+~
+disabled false
+END
+
+#18143
+title fortune telling good align~
+code mob oload 18143
+mob tgive 18143 $n
+mob ttimer $n 18143 1000
+emote slowly moves her hands across the ball.
+emote a soft smile comes across *'s face.
+sayto $n oh.. this is good news..
+sayto $n I can see.. [and she speaks in a low whisper]a time of romance.
+pmote $n looks up at @ smiles.
+sayto $n of course, for another small amount.. of say.. 60 silver, I could seek further wisdom.
+~
+disabled false
+END
+
+#18142
+title fortune telling evil align~
+code mob oload 18142
+mob tgive 18142 $n
+mob ttimer $n 18142 1000
+emote moves her hands across the ball.
+emote a furrowed look comes across *'s face.
+sayto $n hmm... this isn't good.
+sayto $n I can see.. [and she speaks in a low whisper]death in the near future.
+pmote $n looks up at @ blankly.
+sayto $n of course, for another small amount.. of say.. 50 silver, I could seek further wisdom.
+~
+disabled false
+END
+
+#18141
+title fortune telling part1~
+code sayto $n now.. let me see..
+emote looks into her crystal ball.
+if isevil $n
+  mob call 18215 $n
+else
+  if isgood $n
+  mob call 18216 $n
+  else
+    if isneutral $n
+    mob call 18217 $n
+    endif
+  endif
+endif
+~
+disabled false
+END
+
+#18140
+title fortune teller greeting~
+code pmote $n looks up from her crystal ball and smiles at @.
+sayto $n I knew you would come.
+sayto $n please, have a seat.
+sayto $n for a small fee of 100 silver, I can tell you what your future holds.
+~
+disabled false
+END
+
+#18139
+title boy/girl greeting~
+code pmote $n smiles at @.
+~
+disabled false
+END
+
+#18138
+title answer no to barket~
+code say Awwww go on, you get three shots.
+say Go on, give it a go!
+smirk
+~
+disabled false
+END
+
+#18137
+title answer yes to barker~
+code emote laughs.
+say Alright then, one ticket..
+emote puts his hand out for the ticket.
+~
+disabled false
+END
+
+#18136
+title greeting 18105~
+code pmote $n walks up to @ quickly.
+say See this lovely mermaid here?
+emote points to the mermaid.
+say I bet ya couldn't knock her off her swing if you tried!
+snicker
+say You get three shots.. what do ya reckon? Reckon you could do it?
+~
+disabled false
+END
+
+#18135
+title greeting hit the bell~
+code pmote $n nods at @.
+say How strong do you reckon y'are?
+say Hit the bell, you win a prize.
+~
+disabled false
+END
+
+#18134
+title greeting dart game~
+code pmote $n looks at @ and grins.
+say You look like you'd have a good throwing arm.
+say How about it?
+say Five darts, if you pop five stomachs, you win the prize!
+emote grins.
+~
+disabled false
+END
+
+#18133
+title greeting ring toss~
+code smile
+say Welcome! Welcome!
+say one ticket for five rings!
+say If you can throw all five rings so they land on the bottles you win a prize!
+~
+disabled false
+END
+
+#18132
+title greeting milk bottle toss~
+code say Play to win! Play to win!
+say 5 chances to knock over the bottles.
+say If you knock all five over you win a prize!
+~
+disabled false
+END
+
+#18131
+title lucky ducky game~
+code mob junk all.ticket
+pmote $n smiles as she hands @ a small fishing rod.
+emote turns the timer.
+sayto $n start now!
+mob echoat $n You lift the rod and wave it about trying to catch a ducky before the timer goes off.
+mob echoaround Everyone watches as $N to catch a ducky.
+if rand 20 
+    mob echoat $n You manage to hook a duck and it gets lifted from the water.
+    mob echo The boy takes the duck off the rod and hands it to the girl.
+    emote looks at the number on the duck.
+    sayto $n Great! You won a prize!    
+    mob call 18122 $n
+else
+    if rand 31
+        mob echoat $n You manage to hook a duck and it gets lifted from the water.
+        mob echo The boy takes the duck off the rod and hands it to the girl.
+        emote looks at the number on the duck.
+        sayto $n You get to have another turn!
+        mob oload 18120 1
+        give red $n
+    else
+        if rand 45
+            mob echoat $n You manage to hook a duck and it gets lifted from the water.
+            mob echo The boy takes the duck off the rod and hands it to the girl.
+            emote looks at the number on the duck.
+            sayto $n Well done! You won a candy!
+            mob oload 18140 1
+            give candy $n
+        else
+            if rand 67
+                mob echoat $n You manage to hook a duck and it gets lifted from the water.
+                mob echo The boy takes the duck off the rod and hands it to the girl.
+                emote looks at the number on the duck.
+                giggle
+                sayto $n You won a booby prize!
+                mob oload 18141 1
+                give apple $n
+            else
+                if rand 50
+                    mob echoat $n You just about manage to hook a duck but the time is up.
+                    mob echoaround The time is up just as $N is about to catch a duck. 
+                else
+                    mob echoat $n The time is up before you get a chance to hook one of the ducks.
+                    mob echoaround The time is up before $N gets a chance to hook one of the ducks.
+            
+                endif      
+            endif    
+        endif
+    endif       
+endif
+~
+disabled false
+END
+
+#18130
+title gypsy boy receives ticket~
+code mob junk all.ticket
+chuckle
+sayto $n She collects the tickets.
+emote points to the girl.
+mob oload 18120
+give red $n
+~
+disabled false
+END
+
+#18129
+title gives wrong ticket (red)~
+code mob junk all.ticket
+sayto $n You'll need one of the yellow ones to go on this ride.
+sayto $n Here, go and use that in one of the stalls.
+mob oload 18120
+give red $n
+~
+disabled false
+END
+
+#18128
+title gives wrong ticket (yellow)~
+code mob junk all.ticket
+sayto $n You'll need one of the red ones for these stalls.
+sayto $n Save this for the rides.
+mob oload 18121
+give yellow $n
+~
+disabled false
+END
+
+#18127
+title mermaid tank scenarios~
+code if hastoken $n 18138 
+if rand 10 
+    mob echoat $n ***You hit the bullseye right in the middle.
+    mob echoaround $N hits the bullseye right in the middle.
+    mob echo The mermaid screams as she plunges into the water below.
+    mob echo Water splashes out of the tank.
+    sayto $n Congratulations! You win a prize!
+    if hastoken $n 18139
+        pmote $n takes the remaining balls from @.
+    endif
+    mob call 18122 $n
+    mob tremove 18138 $n
+else
+    if rand 11
+        mob echoat $n ***You hit the bulleye but obviously not hard enough because the mermaid is still sitting on her swing, grinning slightly.
+        mob echoaround $N hits the bulleye but obviously not hard enough because the mermaid is still sitting on her swing, grinning slightly.
+    else
+        if rand 25
+            mob echoat $n ***You throw the ball and it brushes the side of the bullseye.
+            mob echoaround $N throws the ball and it brushes the side of the bullseye.
+        else
+            if rand 33
+                mob echoat $n ***You throw the ball and it flies just past the bullseye.
+                mob echoaround $N throws the ball and it flies just past the bullseye.
+            else
+                if rand 63
+                    mob echoat $n ***You throw the ball but it misses the bullseye.
+                    mob echoaround $N throws the ball but it misses the bullseye.
+                else
+                    if rand 33
+                       mob echoat $n ***You throw the ball and it misses by a long shot.
+                       mob echoaround $N throws the ball and it misses by a longshot.
+                       mob echo The mermaid lets out a little laugh.
+                    else
+                           mob echoat $n ***You throw the ball and it hits the mermaid on the nose.
+                           mob echoaround $N throws the ball and it hits the mermaid on the nose.
+                           mob echo The mermaid rubs her nose and frowns at $N.
+                   endif      
+                endif    
+            endif
+        endif       
+    endif
+endif
+endif
+~
+disabled false
+END
+
+#18126
+title mermaid tank game~
+code mob junk all.red
+pmote $n hands @ three small leather balls.
+mob echo The mermaid watches nervously.
+mob oload 18138
+mob tgive 18138 $n
+mob oload 18139
+mob tgive 18139 $n
+mob call 18127 $n
+mob call 18127 $n
+mob tremove 18139 $n
+mob junk all.18139
+mob call 18127 $n
+if hastoken $n 18138
+    mob echo The mermaid looks relieved.
+    sayto $n Good try, how about another go?
+else
+    mob echo The mermaid climbs out of the tank and back onto her swing, pouting a little.
+endif
+mob tremove 18138 $n
+mob junk all.18138
+~
+disabled false
+END
+
+#18125
+title hit the bell game~
+code mob junk all.ticket
+pmote $n hands @ the mallet.
+sayto $n Good luck to ya!
+pmote $n stands back and watches @.
+mob echoat $n You muster all your strength and slam the mallet down on the springboard.
+mob echoaround Everyone watches as $N slams the mallet down on the springboard.
+if rand 20 
+    mob echo `#`WThe pellet flies up to the`^ `#`Rtop`^ `#`Wringing the bell`^.
+    gasp
+    sayto $n Its not often I see that! Congratulations!    
+    mob call 18122 $n
+else
+    if rand 31
+        mob echo `#`WThe pellet flies towards the bell but stops short of it at the`^ `#`Ythree-quarter`^ `#`Wmark`^.
+        pmote $n claps at @'s performance.
+        sayto $n Close! You get another chance to win!
+        mob oload 18120 1
+        give red $n
+    else
+        if rand 45
+            mob echo `#`WThe pellet flies up to the`^ `#`Ghalfway`^ `#`Wmark`^.
+            say Not bad, have another whack at it. 
+        else
+            if rand 67
+                mob echo `#`WThe pellet rises to just under the halfway mark stopping at the`^ `#`Bquarter`^ `#`Wmark`^.
+                say Almost halfway... have another try!
+            else
+                if rand 50
+                    mob echo `#`WThe pellet barely lifts off the board`^.
+                    chuckle
+                    say hmmm.. I could of sworn you had some muscles, have another go!
+                else
+                    mob echo `#`WNothing happens`^.
+                    emote tries not to laugh.
+                    sayto $n I'm sure you would have better luck next time round!
+                endif      
+            endif    
+        endif
+    endif       
+endif
+~
+disabled false
+END
+
+#18124
+title dart game~
+code mob junk all.ticket
+pmote $n hands @ five darts.
+sayto $n Good luck to ya!
+emote moves out of the way.
+mob echoat $n You throw the darts one by one trying to hit the targets.
+mob echoaround Everyone watches as $N tries to throw the darts at the targets.
+if rand 20 
+    gasp
+    sayto $n 5 stomachs! Congratulations!
+    sayto $n You win a prize!    
+    mob call 18122 $n
+else
+    if rand 31
+        pmote $n claps at @'s performance.
+        sayto $n 4 stomachs! You get another chance to win!
+        mob oload 18120 1
+        give red $n
+    else
+        if rand 45
+            chuckle
+            say 3 stomachs! Have another go! 
+        else
+            if rand 67
+                smile
+                say 2 stomachs... have another try!
+            else
+                if rand 50
+                    chuckle
+                    say only 1 target.. come on, give it another go!
+                else
+                    say No stomachs, with a little practise you'll get better.
+                    sayto $n You could win next time round!
+                endif      
+            endif    
+        endif
+    endif       
+endif
+~
+disabled false
+END
+
+#18123
+title milk bottle toss~
+code mob junk all.ticket
+pmote $n hands @ five small leather balls.
+mob echoat $n You toss the balls towards the bottles, trying to knock them over.
+mob echoaround Everyone watches as $N tries to knock over the bottles.
+if rand 20 
+    gasp
+    sayto $n 5 bottles! You've got quite a throw! 
+    sayto $n Congratulations! You win a prize!    
+    mob call 18122 $n
+else
+    if rand 31
+        pmote $n claps at @'s performance.
+        sayto $n 4 bottles! You get another chance to win!
+        mob oload 18120 1
+        give red $n
+    else
+        if rand 45
+            emote nods slowly.
+            say 3 bottles! Have another go! 
+        else
+            if rand 67
+                smile
+                say 2 bottles... try again!
+            else
+                if rand 50
+                    chuckle
+                    say only 1 bottle.. come on, give it another go!
+                else
+                    say No bottles, you need to work on that throw.
+                    sayto $n Try again, you could win next time round!
+                endif      
+            endif    
+        endif
+    endif       
+endif
+~
+disabled false
+END
+
+#18122
+title prizes for stalls~
+code emote takes down one of the small prizes from the shelf.
+if rand 20
+   mob oload 18123
+   give doll $n
+   sayto $n There you are.. you want to try for another prize?
+   chuckle
+else
+   if rand 25
+     mob oload 18101
+     give faerie $n
+     sayto $n There you are.. you want to try for another prize?
+     chuckle
+   else
+     if rand 33
+       mob oload 18137
+       give soft $n
+       sayto $n There you are.. you want to try for another prize?
+       chuckle
+     else
+       if rand 50
+         mob oload 18124
+         give sword $n
+         sayto $n There you are.. you want to try for another prize?
+         chuckle
+       else
+         mob oload 18122
+         give charm $n
+         sayto $n There you are.. you want to try for another prize?
+         chuckle
+       endif
+     endif
+   endif
+endif
+      
+~
+disabled false
+END
+
+#18121
+title hoop game~
+code mob junk all.ticket
+pmote $n hands @ five round hoops.
+sayto $n Good luck to ya!
+pmote $n stands back and watches @.
+mob echoat $n You throw the hoops one by one trying to land them on the bottles.
+mob echoaround Everyone watches as $N tries to throw the hoops over the  bottles.
+if rand 20 
+    gasp
+    sayto $n 5 hoops! Congratulations!
+    sayto $n You win a prize!    
+    mob call 18122 $n
+else
+    if rand 31
+        pmote $n claps at @'s performance.
+        sayto $n 4 hoops! You get another chance to win!
+        mob oload 18120 1
+        give red $n
+    else
+        if rand 45
+            emote nods slowly.
+            say 3 hoops! Good try! 
+        else
+            if rand 67
+                smile
+                say 2 hoops... have another try!
+            else
+                if rand 50
+                    chuckle
+                    say only 1 hoop.. come on, give it another go!
+                else
+                    say No hoops, with a little practise you'll get better.
+                    sayto $n You could win next time round!
+                endif      
+            endif    
+        endif
+    endif       
+endif
+~
+disabled false
+END
+
+#18120
+title ticket for fun haus~
+code mob junk all.ticket
+sayto $n Thank you, have fun!
+emote laughs at his own joke.
+mob transfer $n 18149
+mob echo $N leaves east.
+mob vforce 18180 mob call 18210
+~
+disabled false
+END
+
+#18119
+title leaving hall of mirrors~
+code pmote $n looks at @ with a look of surprise.
+sayto $n You managed to find your way out I see.
+chuckle
+~
+disabled false
+END
+
+#18118
+title ticket for hall of mirrors~
+code mob junk all.ticket
+sayto $n Thank you, enjoy yourself!
+mob transfer $n 18123
+mob echo $N leaves north.
+~
+disabled false
+END
+
+#18117
+title no ride ticket~
+code if sex $n == 1
+sayto $n You'll need to give me one of them yellow tickets sir.
+emote nods firmly.
+else
+if sex $n == 2
+sayto $n You'll need to give me one of them yellow tickets miss.
+emote nods firmly.
+else
+sayto $n You'll need to give me one of them yellow tickets.
+emote nods firmly.
+endif
+endif
+~
+disabled false
+END
+
+#18116
+title teenage money received~
+code pmote $n there y'are.
+emote tucks the coins into his pocket.
+emote goes back to rolling his eyes.
+~
+disabled false
+END
+
+#18115
+title teenage greeting~
+code pmote $n stops rolling his eyes for a second and looks at @.
+sayto $n yeah, whatdya want?
+~
+disabled false
+END
+
+#18114
+title ticketman red stall ticket~
+code nod
+sayto $n feeling like a bit of competition huh?
+sayto $n well, good luck to ya then, you'll be needing it.
+emote grins.
+~
+disabled false
+END
+
+#18113
+title ticketman yellow ride ticket~
+code chuckle
+sayto $n You want to go on one of the rides eh?
+sayto $n You've sure got guts, some of 'em could right turn ya stomach.
+emote laughs to himself.
+pmote $n watches @ with a look of amusement in his eyes.
+~
+disabled false
+END
+
+#18112
+title ticketman greeting~
+code if sex $n == 1
+sayto $n What'll it be, sir?
+emote grins.
+else
+if sex $n == 2
+sayto $n What'll it be, miss?
+pmote $n smiles at @.
+else
+sayto $n What'll it be?
+~
+disabled false
+END
+
+#18111
+title ticket for hall of horrors~
+code mob junk all.ticket
+sayto $n Thank you, enjoy yourself!
+cackle
+mob transfer $n 18156
+mob echo $N leaves south.
+ 
+~
+disabled false
+END
+
+#18110
+title freakshow part1~
+code mob echoat $q A thin man walks onto the stage, bows to the audience and then begins to twist into several impossible positions.
+mob echoat $q You watch in horror as he begins to wrap his arms behind his back revealing his socket joints, and then continues to lift his legs one at a time over his head, until he forms a contorted ball of skin and bones.
+mob echoat $q The man says '`#`M(human)`^`#`WLadies and gentlemen, a round of applause for`^ `#`BMr Peek-a-Boo!`^
+mob echoat $q The crowd applauds as the contortionist unravels, bows and then leaves the stage.
+mob vforce 18161 mob call 18200 $q
+~
+disabled false
+END
+
+#18109
+title cost of the fight~
+code sayto $n Don't you know how to read?!
+emote points at the sign.
+ 
+ 
+~
+disabled false
+END
+
+#18108
+title fight reply~
+code say Thats the way! Go in there and knock him right out!
+beam
+emote smiles with a twinkle in his eye.
+ 
+ 
+~
+disabled false
+END
+
+#18107
+title childs crying~
+code say Mommy where are you?!
+say I want my mommy!!!
+cry
+~
+disabled false
+END
+
+#18106
+title speech 'no' to challenge~
+code pmote $n pats @ on the shoulders.
+sayto $n Come on, you don't think you got it in ya, do you?
+sayto $n Come back when you think your ready.
+smile $n
+snicker
+ 
+ 
+~
+disabled false
+END
+
+#18105
+title speech 'yes' to challenge~
+code emote taps his cane on the ground and smiles happily.
+say For a small fee of five gold or five hundred silver you can challenge your strength against the grand champ!
+ 
+~
+disabled false
+END
+
+#18104
+title mans yell to challenge grand champ~
+code emote smiles with a twinkle in his eye.
+yell Step right up and challenge the Grand Champeen!
+yell Show your brawn and strength and maybe you can beat him to the punch!
+~
+disabled false
+END
+
+#18103
+title man's greet to challenge the champ~
+code if hastoken $n 18179
+ If level $n <= 50
+  pmote $n looks at @ with slight suspicion.
+  sayto $n Did ya chicken out did ya?
+  chuck
+  sayto $n most do..
+ else
+  pmote $n looks at @ with surprise.
+  sayto $n you made it out alive!
+  sayto $n good on ya!
+  sayto $n come back anytime for another try!
+ endif
+mob tremove 18179 $n
+else
+ if sex $n == 1
+  emote smiles with a twinkle in his eye.
+  sayto $n My do you look like a strong young man.
+  sayto $n Do you wish to challenge the Grand Champeen!
+ else
+  if sex $n == 2
+   sayto $n Well hello there, you will find the carousel to the south from here.
+   smile $n
+  else
+   sayto $n How would you like to try your strength against the Grand Champeen!
+   sayto $n 5 gold coins or 500 silver entry fee.
+  endif
+ endif
+endif
+~
+disabled false
+END
+
+#18102
+title grand champeen leaves the ring~
+code emote howls in fustration!
+emote runs from the ring throwing his belt down in disgrace!
+mob oload 18107 57 none
+drop belt
+mob purge $i
+~
+disabled false
+END
+
+#18101
+title child's reply~
+code sayto $n Mommy told me not to talk to strangers!
+~
+disabled false
+END
+
+#18100
+title gypsie shopkeeper greeting~
+code if sex $n == 1
+sayto $n How can I help you, sir?
+flutter
+else
+if sex $n == 2
+sayto $n How can I help you, miss?
+inn $n
+else
+sayto $n How can I help you?
+~
+disabled false
+END
+
+#0
+
+
+#$

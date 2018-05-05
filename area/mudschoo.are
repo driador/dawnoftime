@@ -1,0 +1,6546 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1+4
+Name        Mud school~
+ShortName   ~
+Builders    none~
+Credits     Cadoren Kalahn Tibault~
+VNUMs       7300 7499
+AFlags  noteleport noscry nogateinto nosummoninto noportalinto~
+LRange      0 0
+Security    9
+Colour      ~
+colourcode  `
+MapScale    4
+MapLevel    1
+Vnum_offset 0
+Continent   none~
+*LastSaved  Sun Feb  1 20:22:11 2004~
+End
+
+
+
+#MOBILES
+#7300
+Name kalahn ball light sphere teacher being~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg ACT 7419 gets a bronze key from a wooden chest~
+MProg LOGOUTROOM 7404 100~
+MProg ACT 7333 is now learned at~
+MProg ACT 7328 puts a~
+MProg ACT 7327 drops a~
+MProg ACT 7321 beckons for you to follow~
+MProg ACT 7320 follows you~
+MProg ACT 7318 walks like a duck~
+MProg ACT 7316 smiles at you~
+MProg ACT 7307 opens a wooden chest~
+MProg ENTRY 7302 100~
+MProg SPEECH 7312 hello~
+MProg SPEECH 7312 greetings~
+MProg ACT 7314 opens the door.~
+MProg SPEECH 7301 no~
+MProg SPEECH 7355 yes~
+MProg PREKILL 7396 100~
+MProg SPEECH 7400 west~
+MProg SPEECH 7401 east~
+END
+
+#7301
+Name unseen_resume_beginner_school_kal_on_login~
+ShortD unseen_kal_loader~
+LongD Unseen_kal_loader~
+Desc ~
+Race human~
+Align 0 0
+Level 101
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg LOGINAREA 7403 100~
+END
+
+#7302
+Name young woman~
+ShortD a young woman~
+LongD A young woman is here, looking a little sad.~
+Desc This woman is young, perhaps in her early twenties.  She has soft, mousy 
+brown hair which falls to her shoulders.  She seems a little sad, as there 
+is a slight frown on her face.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+0
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 90
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+MProg REPOP 7420 100~
+MProg GIVE 7310 flower~
+MProg PREKILL 7396 100~
+END
+
+#7303
+Name citizen lance~
+ShortD a citizen~
+LongD A citizen is walking past here.~
+Desc A young man is here, walking along the streets.  He is tall with a good 
+posture.  His hair is short and neatly cut.  He has a slim build, and a 
+slight tan.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+0
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 90
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+MProg REPOP 7420 100~
+MProg SPEECH 7313 name~
+MProg PREKILL 7396 100~
+END
+
+#7304
+Name shopkeeper short man~
+ShortD a short man~
+LongD A short man is tending to the customers here.~
+Desc This man is short and stout.  He is balding and looks to be middle-aged.  He 
+has a cheerful voice and enjoys his work.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+0
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 90
+Wealth 10
+Act    npc dont_wander stay_area~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+MProg REPOP 7420 100~
+MProg PREKILL 7396 100~
+END
+
+#7305
+Name shopkeeper young man~
+ShortD a young man~
+LongD A young man is polishing the blade of a sword here.~
+Desc A young man sits here polishing a sword to a fine gleam.  His hair is swept 
+off his face, and he is clean-shaven.  His clothes are neatly pressed, and 
+he has a helpful manner.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+0
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 90
+Wealth 10
+Act    npc dont_wander stay_area~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+MProg REPOP 7420 100~
+MProg PREKILL 7396 100~
+END
+
+#7306
+Name pudgy middle-aged lady~
+ShortD a rather pudgy middle-aged lady~
+LongD A rather pudgy middle-aged lady stands here, restocking the shelves.~
+Desc This middle-aged woman has a warm, friendly face.  She seems a little on the 
+pudgy side, with little dimples showing on her cheeks, and arms.  She is 
+short, and has dull brown hair.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+0
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 90
+Wealth 10
+Act    npc dont_wander stay_area~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+MProg REPOP 7420 100~
+MProg PREKILL 7396 100~
+END
+
+#7307
+Name wise looking old man~
+ShortD a wise looking old man~
+LongD A wise looking old man stands here, with a thick book in his hands.~
+Desc The tell-tale signs of old-age are present on this silver-white haired old 
+man.  His body is slightly hunched and though it is now frail-looking he 
+still carries himself as if he were in his prime.  His eyes sparkle with 
+wisdom and understanding.  The book he carries is always open, whether he is 
+teaching from it or has fallen asleep with it in his lap.  
+~
+Race human~
+Align 3 3
+XPMod 110
+Level 100
+Hitroll 1
+HitDice 5d10+999
+ManaDice 5d10+999
+DamDice 8d6+100
+DamType pierce
+AC -500 -500 -500 -500
+Wealth 1000
+Act    npc dont_wander no_tame stay_area train practice warrior nopurge gain~
+AffBy  detect_evil detect_invis detect_hidden detect_good sanctuary haste~
+AffBy2 possession~
+Off    disarm dodge dirt_kick parry~
+Imm    summon charm~
+Res    magic weapon~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material flesh
+MProg REPOP 7420 100~
+MProg PREKILL 7396 100~
+END
+
+#7308
+Name pesky mosquito~
+ShortD a pesky mosquito~
+LongD A pesky mosquito buzzes in your ear.~
+Desc This mosquito is small and black, but it sure is annoying.  It flies around 
+looking for a nice piece of flesh to sink its proboscis into, and buzzes 
+loudly.  
+~
+Race centipede~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+0
+ManaDice 1d4+0
+DamDice 1d1+0
+DamType bite
+AC 90 90 90 110
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  dark_vision~
+AffBy2 possession~
+Off    dodge fast~
+Res    cold~
+Form   edible poison animal sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+MProg DEATH 7338 100~
+END
+
+#7309
+Name leather plant~
+ShortD a leather plant~
+LongD A leather plant has taken root here.~
+Desc The leaves on this plant are made of a leathery texture, and probably used 
+to make leather items from.  It stands tall for a shrub, and looks fairly 
+sturdy.  
+~
+Race centipede~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+0
+ManaDice 1d4+0
+DamDice 1d1+0
+DamType bite
+AC 90 90 90 110
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  dark_vision~
+AffBy2 possession~
+Off    dodge fast~
+Res    cold~
+Form   edible poison animal sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+MProg REPOP 7417 100~
+END
+
+#7310
+Name little gnomish gnome inventor man~
+ShortD a little gnomish man~
+LongD A little gnomish man is here tinkering away on some invention.~
+Desc Fuzzy white hair sticks up all over this little gnomish man's head.  He 
+stands about 3 feet tall and has a round, ruddy red nose.  His cheeks seem a 
+little flushed as he busies himself with his latest invention.  
+~
+Race gnome~
+Align 1 1
+Level 100
+Hitroll 1
+HitDice 10d14+500
+ManaDice 10d10+200
+DamDice 11d12+60
+DamType punch
+AC 0 0 0 0
+Wealth 1000
+Act    npc dont_wander stay_area~
+AffBy  infrared~
+AffBy2 possession~
+Imm    magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg REPOP 7420 100~
+MProg GRALL 7356 100~
+MProg GIVE 7357 7353~
+MProg GIVE 7358 7352~
+MProg GIVE 7359 7341~
+MProg GIVE 7360 7340~
+MProg GIVE 7361 7344~
+MProg GIVE 7362 7342~
+MProg GIVE 7363 7343~
+MProg GIVE 7364 7345~
+MProg PREKILL 7396 100~
+END
+
+#7311
+Name little gnomish gnome woman~
+ShortD a little gnomish woman~
+LongD A little gnomish woman is here running a little shop.~
+Desc A bright, big smile adorns the face of this smallish female gnome.  Her hair 
+is fluffy and brown and she has a round nose and rosy cheeks.  She is 
+fussing over the fruit she's trying to sell, polishing them up nice and 
+shiny.  
+~
+Race gnome~
+Align 1 1
+Level 100
+Hitroll 1
+HitDice 10d14+500
+ManaDice 10d10+200
+DamDice 11d12+60
+DamType punch
+AC 0 0 0 0
+Wealth 1000
+Act    npc dont_wander stay_area~
+AffBy  infrared~
+AffBy2 possession~
+Imm    magic weapon~
+Res    magic poison disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg REPOP 7420 100~
+MProg PREKILL 7396 100~
+END
+
+#7312
+Name bee~
+ShortD a bee~
+LongD A bee buzzes about, feasting on nectar.~
+Desc This bee is black and yellow striped, with buzzing wings.  Its having the 
+time of its life feeding on all the pollen in this garden.  
+~
+Race centipede~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+0
+ManaDice 1d4+0
+DamDice 1d1+0
+DamType bite
+AC 90 90 90 110
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  dark_vision~
+AffBy2 possession~
+Off    dodge fast~
+Res    cold~
+Form   edible poison animal sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#7313
+Name butterfly~
+ShortD a butterfly~
+LongD A butterfly flits from flower to flower.~
+Desc The wings on this butterfly are white, and delicately soft.  Its black 
+antennae twitch constantly as it flits from flower to flower.  
+~
+Race centipede~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+0
+ManaDice 1d4+0
+DamDice 1d1+0
+DamType bite
+AC 90 90 90 110
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  dark_vision~
+AffBy2 possession~
+Off    dodge fast~
+Res    cold~
+Form   edible poison animal sentient biped insect mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#7314
+Name sparrow~
+ShortD a sparrow~
+LongD A sparrow chirps happily from high in the branches.~
+Desc This sparrow is a dull brown, and hops about in the branches, chirping and 
+singing.  
+~
+Race water fowl~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+1
+DamDice 1d4+0
+DamType bite
+AC 90 90 90 100
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign~
+AffBy  flying~
+AffBy2 possession~
+Off    fast~
+Imm    drowning~
+Res    bash disease~
+Vuln   cold~
+Form   edible animal sentient biped mammal fish~
+Part   head heart brains guts eye tail scales~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material flesh
+END
+
+#7315
+Name kalahn ball light sphere being teacher 7315~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg ENTRY 7302 100~
+MProg PREKILL 7396 100~
+MProg SPEECH 7407 continue~
+END
+
+#7316
+Name shopkeeper tall man~
+ShortD a tall shopkeeper~
+LongD A tall man stocks the shelves in the shop here.~
+Desc This man is tall and lean, with a clean-shaven face and neatly combed hair.  
+He has strong-looking hands, which seem handy for lifting things.  He runs 
+the stall here, serving the odd customer that comes in.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+0
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 90
+Wealth 10
+Act    npc dont_wander stay_area~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+MProg REPOP 7420 100~
+MProg PREKILL 7396 100~
+END
+
+#7317
+Name unseen_question_channels~
+ShortD unseen_question_channels~
+LongD Unseen_question_channels~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 7378 c~
+MProg SPEECH 7377 b~
+MProg SPEECH 7376 a~
+END
+
+#7318
+Name unseen_question_swearing~
+ShortD unseen_question_swearing~
+LongD Unseen_question_swearing~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 7382 c~
+MProg SPEECH 7381 b~
+MProg SPEECH 7380 a~
+END
+
+#7319
+Name unseen_question_multilogging~
+ShortD unseen_question_multilogging~
+LongD Unseen_question_multilogging~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 7386 c~
+MProg SPEECH 7385 b~
+MProg SPEECH 7384 a~
+END
+
+#7320
+Name unseen_question_roleplay~
+ShortD unseen_question_roleplay~
+LongD Unseen_question_roleplay~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 7390 c~
+MProg SPEECH 7389 b~
+MProg SPEECH 7388 a~
+END
+
+#7321
+Name unseen_question_setting~
+ShortD unseen_question_setting~
+LongD Unseen_question_setting~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg SPEECH 7395 c~
+MProg SPEECH 7394 b~
+MProg SPEECH 7393 a~
+END
+
+#7322
+Name unseen_check_for_weapon~
+ShortD unseen_check_for_weapon~
+LongD Unseen_check_for_weapon~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXALL 7397 100~
+END
+
+#7323
+Name unseen_check_has_trained~
+ShortD unseen_check_has_trained~
+LongD Unseen_check_has_trained~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXALL 7398 100~
+END
+
+#7324
+Name unseen_new_flower_grows~
+ShortD unseen_new_flower_grows~
+LongD Unseen_new_flower_grows~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg ACT 7399 gets~
+END
+
+#7325
+Name unseen_close_door~
+ShortD unseen_close_door~
+LongD Unseen_close_door~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXALL 7402 east~
+END
+
+#7326
+Name unseen_grow_new_leather_plant~
+ShortD unseen_grow_new_leather_plant~
+LongD Unseen_grow_new_leather_plant~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg ROOMDEATH 7415 100~
+END
+
+#7327
+Name kalahn ball light sphere being teacher 7327~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg PREKILL 7396 100~
+END
+
+#7328
+Name kalahn ball light sphere being teacher 7328~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg PREKILL 7396 100~
+END
+
+#7329
+Name kalahn ball light sphere being teacher 7329~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg PREKILL 7396 100~
+END
+
+#7330
+Name kalahn ball light sphere being teacher 7330~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg PREKILL 7396 100~
+END
+
+#7331
+Name kalahn being all light sphere teacher 7331~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg ENTRY 7302 100~
+MProg PREKILL 7396 100~
+MProg SPEECH 7407 continue~
+END
+
+#7332
+Name kalahn being all light sphere teacher 7332~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg PREKILL 7396 100~
+MProg EXALL 7426 north~
+MProg EXALL 7426 east~
+MProg EXALL 7426 south~
+MProg EXALL 7426 west~
+MProg EXALL 7431 up~
+END
+
+#7333
+Name kalahn being all light sphere teacher 7333~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg ENTRY 7302 100~
+MProg PREKILL 7396 100~
+MProg LOGOUTROOM 7404 100~
+END
+
+#7334
+Name kalahn being all light sphere teacher 7333~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg PREKILL 7396 100~
+END
+
+#7335
+Name unseen_close_door~
+ShortD unseen_close_door~
+LongD Unseen_close_door~
+Desc ~
+Race human~
+Align 0 0
+Level 100
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area unseen~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg EXALL 7402 south~
+END
+
+#7370
+Name kalahn ball light sphere teacher being~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 7410 no~
+MProg SPEECH 7409 yes~
+MProg LOGINROOM 7408 100~
+MProg GRALL 7408 100~
+MProg PREKILL 7396 100~
+END
+
+#7371
+Name kalahn ball light sphere teacher being~
+ShortD a being of light~
+LongD A being of light beams radiantly here.~
+Desc Before you is some kind of creature of light...  You have not seen anything 
+like it before, and it radiates light in a very unique way.  You feel as if 
+you should kneel for the radiance that comes from this being is very 
+overwhelming.  The colour of light radiated changes from white to dark 
+purple through dark red, the whole spectrum of the rainbow.  Every now and 
+then, you think you get a glimpse of a form, almost human.  
+~
+Race unique~
+Align 3 3
+Level 101
+Hitroll 0
+HitDice 10d13+475
+ManaDice 10d13+100
+DamDice 10d11+46
+DamType none
+AC -670 -670 -670 -670
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy2 possession~
+Imm    summon charm sleep~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg SPEECH 7412 beginner~
+MProg LOGINROOM 7411 100~
+MProg GRALL 7411 100~
+MProg PREKILL 7396 100~
+MProg SPEECH 7416 advanced~
+MProg SPEECH 7433 quest~
+END
+
+#7372
+Name friendly shopkeeper~
+ShortD a friendly shopkeeper~
+LongD A friendly shopkeeper is here to help you.~
+Desc Thick, dark hair is brushed neatly, and looks as if its been recently 
+trimmed, on this friendly middle-aged shopkeeper.  His complexion is fair, 
+and his build slight.  He has a friendly way about him, and seems more than 
+helpful.  
+~
+Race human~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+0
+DamDice 1d4+0
+DamType slap
+AC 90 90 90 90
+Wealth 10
+Act    npc dont_wander stay_area~
+AffBy2 possession~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    female~
+Material flesh
+MProg SPEECH 7425 weapon~
+MProg SPEECH 7424 armor~
+MProg SPEECH 7424 armour~
+MProg SPEECH 7423 yes~
+MProg SPEECH 7422 no~
+MProg GRALL 7421 100~
+MProg REPOP 7420 100~
+MProg PREKILL 7396 100~
+END
+
+#0
+
+
+
+#OBJECTS
+#7300
+Name token I-Have-A-Kal_Token~
+Short `#`WI-Have-A-Kal-Token`Y~
+Desc `#`WI-Have-A-Kal-Token`Y~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath visdeath~
+End
+
+#7301
+Name wooden chest~
+Short a wooden chest~
+Desc A wooden chest lies at the side of the path.~
+Level 1
+ItemType container~
+Cost 200
+Asize 0
+Rsize 50
+Values 20 AC 0 20 0
+Weight 20
+Material wood~
+Extra    nodegrade~
+ExtraDesc chest ~
+This small wooden chest looks a little weather-beaten, as if it had been 
+here for some time.  The lid is shut, though not locked as there is no sign 
+of a keyhole.  
+~
+End
+
+#7302
+Name small onyx key~
+Short a small onyx key~
+Desc A small key lies here.~
+Level 1
+ItemType key~
+Cost 15
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material onyx~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7303
+Name bronze key~
+Short a bronze key~
+Desc A bronze key lies here~
+Level 1
+ItemType key~
+Cost 15
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material onyx~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7304
+Name red flower~
+Short a `#`Rred`^ flower~
+Desc A `#`Rred`^ flower grows here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material plant~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#7305
+Name yellow tall flower~
+Short a tall, `#`Yyellow`^ flower~
+Desc A tall, `#`Yyellow`^ flower grows here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material plant~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#7306
+Name purple iris flower~
+Short a `#`mpurple`^ iris~
+Desc A `#`mpurple`^ iris grows here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material plant~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#7307
+Name nice little bench~
+Short a nice little bench~
+Desc A nice little bench.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 99999 BEHKN 105 105
+Weight 300
+Material wood~
+Extra    nodegrade~
+ExtraDesc nice little bench~
+A comfortable little bench sits along the path here.
+~
+End
+
+#7308
+Name plain dress~
+Short a plain dress~
+Desc a plain dress is here.~
+Level 0
+ItemType clothing~
+Cost 18
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc plain dress~
+This is a very plain looking dress, it isn't very revealing.
+~
+End
+
+#7309
+Name token I_know_how_to_talk~
+Short `#`WI_know_how_to_talk`^~
+Desc `#`WI_know_how_to_talk`^~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath visdeath~
+End
+
+#7310
+Name token I_know_how_to_follow_you~
+Short `#`WI_know_how_to_follow_you`^~
+Desc `#`WI_know_how_to_follow_you`^~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath visdeath~
+End
+
+#7311
+Name well tailored pants~
+Short well tailored pants~
+Desc A pair of well tailored pants lie here, folded neatly.~
+Level 1
+ItemType clothing~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cloth~
+Extra    nodegrade~
+Wear     take legs~
+End
+
+#7312
+Name plain white shirt~
+Short a plain white shirt~
+Desc A plain white shirt lies here.~
+Level 1
+ItemType clothing~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cloth~
+Extra    nodegrade~
+Wear     take torso~
+End
+
+#7313
+Name small wooden shield~
+Short a small wooden shield~
+Desc A small wooden shield is lying here.~
+Level 1
+ItemType armor~
+Cost 50
+Asize 20
+Rsize 50
+Values 3 3 3 2 0
+Weight 10
+Material wood~
+Extra    inventory nonmetal nodegrade~
+Wear     take shield~
+ExtraDesc A small wooden shield.~
+A standard wooden shield.  Nothing special about it.
+~
+End
+
+#7314
+Name leather belt~
+Short a leather belt~
+Desc A leather belt is lying here.~
+Level 1
+ItemType armor~
+Cost 28
+Asize 5
+Rsize 50
+Values 1 2 1 0 0
+Weight 5
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take waist~
+ExtraDesc leather belt~
+A standard leather belt.  Nothing special about it.
+~
+End
+
+#7315
+Name leather boots~
+Short leather boots~
+Desc Leather boots are lying here.~
+Level 1
+ItemType armor~
+Cost 28
+Asize 0
+Rsize 50
+Values 2 1 2 1 0
+Weight 5
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take feet~
+ExtraDesc leather boots~
+Standard leather boots.  Nothing special about them.
+~
+End
+
+#7316
+Name leather leggings~
+Short leather leggings~
+Desc Leather leggings are lying here.~
+Level 1
+ItemType armor~
+Cost 48
+Asize 5
+Rsize 50
+Values 2 2 2 2 0
+Weight 5
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take legs~
+ExtraDesc leather leggings~
+Standard leather leggings.  Nothing special about them.
+~
+End
+
+#7317
+Name leather vest~
+Short a leather vest~
+Desc A leather vest is lying here.~
+Level 1
+ItemType armor~
+Cost 56
+Asize 5
+Rsize 50
+Values 3 3 3 1 0
+Weight 10
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take about~
+ExtraDesc leather vest~
+A standard leather vest.  Nothing special about it.
+~
+End
+
+#7318
+Name leather gloves~
+Short leather gloves~
+Desc Leather gloves are lying here.~
+Level 1
+ItemType armor~
+Cost 35
+Asize 5
+Rsize 50
+Values 2 2 2 1 0
+Weight 5
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take hands~
+ExtraDesc leather gloves~
+Standard leather gloves. Nothing special about them.
+~
+End
+
+#7319
+Name leather cap~
+Short a leather cap~
+Desc A leather cap is lying here.~
+Level 1
+ItemType armor~
+Cost 36
+Asize 5
+Rsize 50
+Values 2 2 2 1 0
+Weight 5
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take head~
+ExtraDesc leather cap~
+A standard leather cap.  Nothing special about it.
+~
+End
+
+#7320
+Name leather sleeves~
+Short leather sleeves~
+Desc Leather sleeves are lying here.~
+Level 1
+ItemType armor~
+Cost 62
+Asize 5
+Rsize 50
+Values 2 2 2 2 0
+Weight 10
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take arms~
+ExtraDesc leather sleeves~
+Standard leather sleeves.  Nothing special about them.
+~
+End
+
+#7321
+Name small hand axe~
+Short a small hand axe~
+Desc A small hand axe is lying here.~
+Level 1
+ItemType weapon~
+Cost 62
+Asize 30
+Rsize 50
+Values axe 1 6 slice 0
+Weight 40
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ClassAllowances warrior druid paladin ranger barbarian~
+ExtraDesc small hand axe~
+A small light axe.  Pretty standard as far as materials and crafstmanship.  
+~
+End
+
+#7322
+Name halberd polearm~
+Short a halberd~
+Desc A halberd is lying here.~
+Level 1
+ItemType weapon~
+Cost 76
+Asize 75
+Rsize 50
+Values polearm 1 14 thrust F
+Weight 50
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc halberd~
+A standard halberd.  Nothing special about it.
+~
+End
+
+#7323
+Name battlaxe axe~
+Short a battleaxe~
+Desc A battleaxe is lying here~
+Level 1
+ItemType weapon~
+Cost 71
+Asize 40
+Rsize 50
+Values axe 1 9 slice F
+Weight 45
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc battleaxe~
+A standard battleaxe.  Nothing special about it.  Looks like you'd need two 
+hands to wield this properly.  
+~
+End
+
+#7324
+Name whip~
+Short a whip~
+Desc A whip is lying here.~
+Level 1
+ItemType weapon~
+Cost 51
+Asize 5
+Rsize 50
+Values whip 1 5 sting 0
+Weight 10
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ExtraDesc whip~
+A standard whip.  Nothing special about it.
+~
+End
+
+#7325
+Name spear~
+Short a spear~
+Desc A spear is lying here.~
+Level 1
+ItemType weapon~
+Cost 68
+Asize 60
+Rsize 50
+Values polearm 1 9 pierce F
+Weight 25
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc spear~
+A standard spear.  Nothing special about it.
+~
+End
+
+#7326
+Name mace~
+Short a mace~
+Desc A mace is lying here.~
+Level 1
+ItemType weapon~
+Cost 62
+Asize 30
+Rsize 50
+Values mace 1 6 smash 0
+Weight 40
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ExtraDesc mace~
+A standard mace.  Nothing special about it.
+~
+End
+
+#7327
+Name longsword sword~
+Short a longsword~
+Desc A longsword is lying here.~
+Level 1
+ItemType weapon~
+Cost 57
+Asize 40
+Rsize 50
+Values sword 1 7 slash 0
+Weight 40
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc longsword~
+A standard longsword.  Nothing special about it.
+~
+End
+
+#7328
+Name shortsword sword~
+Short a shortsword~
+Desc A shortsword is lying here.~
+Level 1
+ItemType weapon~
+Cost 65
+Asize 20
+Rsize 50
+Values sword 1 6 slash 0
+Weight 20
+Material steel~
+Extra    inventory nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+ExtraDesc shortsword sword~
+A standard shortsword.  Nothing special about it.
+~
+End
+
+#7329
+Name dagger~
+Short a dagger~
+Desc A dagger is lying here.~
+Level 1
+ItemType weapon~
+Cost 45
+Asize 20
+Rsize 50
+Values dagger 1 4 pierce 0
+Weight 25
+Material steel~
+Extra    inventory nodegrade~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+ExtraDesc dagger~
+A standard dagger.  Nothing special about it.
+~
+End
+
+#7330
+Name trash can~
+Short a trash can~
+Desc A trash can.~
+Level 1
+ItemType container~
+Cost 10
+Asize 25
+Rsize 50
+Values 99999 0 0 100 100
+Weight 150
+Material wood~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc trash can~
+A wooden trash can, full of empty bottles.
+~
+End
+
+#7331
+Name oil lamp~
+Short an oil lamp~
+Desc An oil lamp is lying here.~
+Level 1
+ItemType light~
+Cost 26
+Asize 12
+Rsize 50
+Values 0 0 160 0 0
+Weight 10
+Material copper~
+Extra    inventory~
+Wear     take hold~
+End
+
+#7332
+Name waterskin water skin~
+Short a waterskin~
+Desc A waterskin is lying here.~
+Level 1
+ItemType drinkcontainer~
+Cost 32
+Asize 5
+Rsize 50
+Values 70 70 water 0 0
+Weight 10
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Wear     take hold~
+End
+
+#7333
+Name loaf bread~
+Short a loaf of bread~
+Desc A loaf of bread is lying here.~
+Level 1
+ItemType food~
+Cost 13
+Asize 5
+Rsize 50
+Values 15 20 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#7334
+Name roast chicken~
+Short a roast chicken~
+Desc A roast chicken is lying here.~
+Level 1
+ItemType food~
+Cost 23
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#7335
+Name small backpack pack~
+Short a small backpack~
+Desc A small backpack has been left here.~
+Level 1
+ItemType container~
+Cost 63
+Asize 5
+Rsize 50
+Values 175 A 0 35 95
+Weight 10
+Material leather~
+Extra    nonmetal~
+Wear     take back~
+ExtraDesc small backpack pack~
+A small leather backpack.
+~
+End
+
+#7336
+Name bedroll~
+Short a bedroll~
+Desc A bedroll has been left here.~
+Level 1
+ItemType furniture~
+Cost 106
+Asize 30
+Rsize 50
+Values 1 9999 BEHKN 115 115
+Weight 20
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take~
+ExtraDesc bedroll~
+This comfortable bedroll is made from thick cloth and is filled 
+with feathers or some soft material.  It would be great for
+those times when it's necessary to sleep in the wilderness.
+~
+End
+
+#7337
+Name bowl stew~
+Short a bowl of stew~
+Desc A bowl of stew is lying here.~
+Level 1
+ItemType food~
+Cost 17
+Asize 5
+Rsize 50
+Values 20 15 0 0 0
+Weight 5
+Material flesh~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#7338
+Name fresh spring water~
+Short a spring of fresh water~
+Desc A spring of fresh water flows from the ground here.~
+Level 1
+ItemType fountain~
+Cost 1
+Asize 30000
+Rsize 50
+Values 30000 30000 water 0 0
+Weight 30000
+Material earthen~
+Extra    nodegrade burnproof~
+End
+
+#7339
+Name long white robe ~
+Short a long white robe~
+Desc A long white robe lies here.~
+Level 1
+ItemType clothing~
+Cost 14
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#7340
+Name gold shoelaces~
+Short some `#`ygold`^ shoelaces~
+Desc Some `#`ygold`^ shoelaces lie curled up here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material shoelace~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7341
+Name silver shoelaces~
+Short some `#`Ssilver`^ shoelaces~
+Desc Some `#`Ssilver`^ shoelaces lie curled up here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material shoelace~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7342
+Name cherry-red shoelaces~
+Short some `#`rcherry`R-red`^ shoelaces~
+Desc Some `#`rcherry`R-red`^ shoelaces lie curled up here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material shoelace~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7343
+Name blueberry-blue shoelaces~
+Short some `#`Bblueberry-blue`^ shoelaces~
+Desc Some `#`Bblueberry-blue`^ shoelaces lie curled up here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material shoelace~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7344
+Name hot-pink shoelaces~
+Short some `#`Mhot-pink`^ shoelaces~
+Desc Some `#`Mhot-pink`^ shoelaces lie curled up here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material shoelace~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7345
+Name peppermint-green shoelaces~
+Short some `#`Cpeppermint`G-green`^ shoelaces~
+Desc Some `#`Cpeppermint`G-green`^ shoelaces lie curled up here.~
+Level 1
+ItemType trash~
+Cost 5
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material shoelace~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7346
+Name beatafeet boots gold laces~
+Short some `#`Rb`Ye`Ba`Rt`Ya`Bf`Re`Ye`Bt`^ boots with `#`Ygold`^ laces~
+Desc Some `#`Rb`Ye`Ba`Rt`Ya`Bf`Re`Ye`Bt`^ boots with `#`Ygold`^ laces have been left here.~
+Level 1
+ItemType armor~
+Cost 30
+Asize 0
+Rsize 50
+Values 2 1 2 1 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 1 -1 hp 2 0
+Affect modifier -1 1 -1 move 80 0
+ExtraDesc beatafeet boots gold laces~
+By the look of these boots, you can just tell they're some crazy gnomish 
+invention.  The leather seems to be made up of the strangest swirls of 
+colour.  They seem very light, and have fantastic bright laces.  
+~
+End
+
+#7347
+Name beatafeet boots silver laces~
+Short some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`Ssilver`^ laces~
+Desc Some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`Ssilver`^ laces have been left here.~
+Level 1
+ItemType armor~
+Cost 30
+Asize 0
+Rsize 50
+Values 2 1 2 1 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 1 -1 move 45 0
+ExtraDesc beatafeet boots gold laces~
+By the look of these boots, you can just tell they're some crazy gnomish 
+invention.  The leather seems to be made up of the strangest swirls of 
+colour.  They seem very light, and have fantastic bright laces.  
+~
+End
+
+#7348
+Name beatafeet boots cherry-red laces~
+Short some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`rcherry`R-red`^ laces~
+Desc Some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`rcherry`R-red`^ laces have been left here.~
+Level 1
+ItemType armor~
+Cost 30
+Asize 0
+Rsize 50
+Values 2 1 2 1 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 1 -1 move 40 0
+ExtraDesc beatafeet boots gold laces~
+By the look of these boots, you can just tell they're some crazy gnomish 
+invention.  The leather seems to be made up of the strangest swirls of 
+colour.  They seem very light, and have fantastic bright laces.  
+~
+End
+
+#7349
+Name beatafeet boots blueberry-blue laces~
+Short some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`Bblueberry-blue`^ laces~
+Desc Some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`Bblueberry-blue`^ laces have been left here.~
+Level 1
+ItemType armor~
+Cost 30
+Asize 0
+Rsize 50
+Values 2 1 2 1 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 1 -1 move 40 0
+ExtraDesc beatafeet boots gold laces~
+By the look of these boots, you can just tell they're some crazy gnomish 
+invention.  The leather seems to be made up of the strangest swirls of 
+colour.  They seem very light, and have fantastic bright laces.  
+~
+End
+
+#7350
+Name beatafeet boots hot-pink laces~
+Short some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`Mhot-pink`^ laces~
+Desc Some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`Mhot-pink`^ laces have been left here.~
+Level 1
+ItemType armor~
+Cost 30
+Asize 0
+Rsize 50
+Values 2 1 2 1 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 1 -1 move 40 0
+ExtraDesc beatafeet boots gold laces~
+By the look of these boots, you can just tell they're some crazy gnomish 
+invention.  The leather seems to be made up of the strangest swirls of 
+colour.  They seem very light, and have fantastic bright laces.  
+~
+End
+
+#7351
+Name beatafeet boots peppermint-green laces~
+Short some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`Cpeppermint`G-green`^ laces~
+Desc Some `#`Rb`Be`Ya`Rt`Ba`Yf`Re`Be`Yt`^ boots with `#`Cpeppermint`G-green`^ laces have been left here.~
+Level 1
+ItemType armor~
+Cost 30
+Asize 0
+Rsize 50
+Values 2 1 2 1 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take feet~
+Affect modifier -1 1 -1 move 40 0
+ExtraDesc beatafeet boots gold laces~
+By the look of these boots, you can just tell they're some crazy gnomish 
+invention.  The leather seems to be made up of the strangest swirls of 
+colour.  They seem very light, and have fantastic bright laces.  
+~
+End
+
+#7352
+Name ripe pomegranate~
+Short a ripe pomegranate~
+Desc A ripe pomegranate lies here.~
+Level 1
+ItemType food~
+Cost 25
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 5
+Material pomegranate~
+Wear     take~
+End
+
+#7353
+Name leaf leather plant~
+Short the `#`Gleaf`^ of a `#`Gleather plant`^~
+Desc A leaf from a leather plant lies here.~
+Level 1
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material unknown~
+Wear     take about~
+End
+
+#7354
+Name beatafeet gnomish half-finished contraption~
+Short a half-finished, gnomish contraption~
+Desc A half-finished contraption stands here, constructed with odds'n'ends.~
+Level 1
+ItemType trash~
+Cost 450
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 200
+Material odds'n'ends~
+Extra    nodegrade~
+ExtraDesc half-finished gnomish beatafeet contraption~
+This odd looking contraption definitely comes from the imaginings of a 
+creative, perhaps even borderline insane, mind.  It appears to be only 
+half-finished, but what you can make of it is a hole on top of the thing, to 
+the left, a few odd buttons and wheels in the middle, and a sloping tray to 
+the other end.  One thing's for sure, if you get this thing cranked up, it 
+sure could make a lot of noise!  
+~
+End
+
+#7355
+Name bunch bananas~
+Short a bunch of `#`Ybananas`^~
+Desc A bunch of `#`Ybananas`^ lie here, rotting.~
+Level 1
+ItemType food~
+Cost 13
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 5
+Material unknown~
+Wear     take~
+End
+
+#7356
+Name watermelon~
+Short a watermelon~
+Desc A watermelon has been left here.~
+Level 1
+ItemType food~
+Cost 13
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 5
+Material unknown~
+Wear     take~
+End
+
+#7357
+Name bunch grapes~
+Short a bunch of `#`mgrapes`^~
+Desc A bunch of `#`mgrapes`^ lie here.~
+Level 1
+ItemType food~
+Cost 13
+Asize 0
+Rsize 50
+Values 5 5 0 0 0
+Weight 5
+Material unknown~
+Wear     take~
+End
+
+#7358
+Name black cast-iron key~
+Short a black cast-iron key~
+Desc A black cast-iron key lies here.~
+Level 0
+ItemType key~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cast iron~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7359
+Name pile junk~
+Short a pile of junk~
+Desc A pile of junk is heaped here.~
+Level 1
+ItemType container~
+Cost 10
+Asize 0
+Rsize 50
+Values 50 0 0 50 0
+Weight 1000
+Material junk~
+Extra    nodegrade~
+ExtraDesc pile junk~
+A large pile of junk stands here.  Made up of old wooden wheels, mishapen 
+pieces of tin, pieces of wire, lengths of tangled rope, this collection is a 
+landmine for inventors..  And to others, just a pile of junk!  
+~
+End
+
+#7360
+Name flowerbeds of sweetpeas~
+Short flowerbeds of `#`rs`mw`Me`Re`Yt`rp`Me`ra`Rs`^~
+Desc Flowerbeds of `#`rs`mw`Me`Re`Yt`rp`Me`ra`Rs`^ fill the air with sweet scents.~
+Level 1
+ItemType container~
+Cost 50
+Asize 0
+Rsize 50
+Values 10 0 0 2 0
+Weight 1000
+Material flowers~
+Extra    nodegrade~
+End
+
+#7361
+Name fruit stall~
+Short a fruit stall~
+Desc A fruit stall stands here.~
+Level 1
+ItemType furniture~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 200
+Material unknown~
+Extra    nodegrade~
+End
+
+#7362
+Name tin bucket~
+Short a tin bucket filled with an opaque liquid~
+Desc A tin bucket filled with an opaque liquid is to the side of the stall.~
+Level 1
+ItemType container~
+Cost 50
+Asize 0
+Rsize 50
+Values 10 0 0 1 0
+Weight 200
+Material unknown~
+Extra    nodegrade~
+End
+
+#7363
+Name lemon juice drink~
+Short a cup of home-made lemonade~
+Desc A cup of home-made lemonade has been left here.~
+Level 1
+ItemType drinkcontainer~
+Cost 24
+Asize 0
+Rsize 50
+Values 5 5 lemonade 0 0
+Weight 5
+Material lemonade~
+Wear     take~
+End
+
+#7364
+Name flowerbed snow-white flowers~
+Short a flowerbed of `#`Wsnow-white`^ flowers~
+Desc A flowerbed of `#`Wsnow-white`^ flowers attracts the bees and butterflies.~
+Level 1
+ItemType container~
+Cost 50
+Asize 0
+Rsize 50
+Values 10 0 0 2 0
+Weight 1000
+Material flowers~
+Extra    nodegrade~
+End
+
+#7365
+Name shelves shelf~
+Short some shelves~
+Desc Rows of shelves line the shed wall.~
+Level 1
+ItemType container~
+Cost 350
+Asize 0
+Rsize 50
+Values 50 0 0 50 0
+Weight 50
+Material wood~
+Extra    nodegrade~
+End
+
+#7366
+Name broken watering can~
+Short a broken watering can~
+Desc A broken watering can has been left here.~
+Level 1
+ItemType container~
+Cost 10
+Asize 0
+Rsize 50
+Values 10 0 0 10 0
+Weight 12
+Material tin~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7367
+Name old spade~
+Short an old spade~
+Desc An old spade has been left here.~
+Level 1
+ItemType container~
+Cost 20
+Asize 0
+Rsize 50
+Values 10 0 0 10 0
+Weight 15
+Material cast-iron~
+Extra    nodegrade~
+Wear     take~
+ExtraDesc old spade~
+This old spade is made of cast-iron and is quite heavy.  There seems to be 
+something gold tied to the top of the handle.  
+~
+End
+
+#7368
+Name flowerbed tulips daisies poppies lobelias~
+Short `#`Rred tulips`^, `#`Yyellow daisies`^, `#`gtall poppies`^ and `#`Bblue lobelias`^~
+Desc A flowerbed of `#`Rred tulips`^, `#`Yyellow daisies`^, `#`gtall poppies`^ and `#`Bblue lobelias`^ grows here.~
+Level 1
+ItemType container~
+Cost 50
+Asize 0
+Rsize 50
+Values 10 0 0 2 0
+Weight 1000
+Material flowers~
+Extra    nodegrade~
+End
+
+#7369
+Name garden of tangled wildflowers~
+Short a garden of tangled `#`mw`Mi`Yl`Md`mf`Yl`mo`Yw`Me`mr`Ys`^~
+Desc A garden of tangled `#`mw`Mi`Yl`Md`mf`Yl`mo`Yw`Me`mr`Ys`^ covers the path.~
+Level 1
+ItemType container~
+Cost 50
+Asize 0
+Rsize 50
+Values 10 0 0 2 0
+Weight 1000
+Material flowers~
+Extra    nodegrade~
+ExtraDesc garden wildflowers~
+These wildflowers bloom with the colours of vivid crimsons and purples, and 
+vibrant yellows.  In the tangle of flowers, you notice something red caught 
+up in the stems.  
+~
+End
+
+#7370
+Name willow tree~
+Short a willow tree~
+Desc A willow tree sways in the gentle breeze here.~
+Level 1
+ItemType container~
+Cost 50
+Asize 0
+Rsize 50
+Values 10 0 0 2 0
+Weight 1000
+Material flowers~
+Extra    nodegrade~
+End
+
+#7371
+Name large grey boulder~
+Short a large `#`Sgrey`^ boulder~
+Desc A large `#`Sgrey`^ boulder sits in the middle of the garden.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 500 BEHK 0 0
+Weight 500
+Material stone~
+Extra    nodegrade~
+End
+
+#7372
+Name narrow stream~
+Short a narrow stream~
+Desc A narrow stream trickles over the river stones here.~
+Level 1
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values 300000 300000 water 0 0
+Weight 100
+Material water~
+End
+
+#7373
+Name bright yellow dress~
+Short a `#`Ybright yellow`^ dress~
+Desc A `#`Ybright yellow`^ dress is here.~
+Level 0
+ItemType clothing~
+Cost 18
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#7374
+Name bright green overalls~
+Short some `#`Gbright green`^ overalls~
+Desc Some `#`Gbright green`^ overalls lie here.~
+Level 0
+ItemType clothing~
+Cost 18
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material cotton~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#7375
+Name narrow stream river~
+Short a stream~
+Desc ~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 10 0
+Weight 100
+Material water~
+End
+
+#7376
+Name upturned flowerpot pot~
+Short an upturned flowerpot~
+Desc An upturned flowerpot has been abandoned here.~
+Level 1
+ItemType container~
+Cost 5
+Asize 0
+Rsize 50
+Values 10 0 0 10 0
+Weight 10
+Material pottery~
+Extra    nodegrade~
+Wear     take~
+End
+
+#7377
+Name large parchment map world~
+Short a large world map~
+Desc A large world map lies here.~
+Level 1
+ItemType map~
+Cost 25
+Condition 75
+Asize 3
+Rsize 50
+Values A 0 0 0 0
+Weight 1
+Material paper~
+Wear     take~
+ExtraDesc reverse ~
+`RRed Areas    `Xmeans to avoid these areas, if not experienced.
+`YYellow Areas `Xmeans these are good hunting grounds, but 
+                 before you enter these hunting grounds type
+                 '`CArea [Areas's name]`X' An example of this
+                 is typing area goblin. this will show the area
+                 statistics on goblin warrens, and its level 
+                 range. make sure to check the level range before
+                 seeking it out.
+`WWhite Area `Xmeans these are the starting cities, and great places
+                 to find Roleplay or someone to help you.
+ 
+~
+ExtraDesc map parchment world large~
+This map is not even close to scale. but general directions are accurate.
+On it you will find the large population centers, and a few new areas
+players might be interested in. There are also a few areas for new
+players right in Mekali and Dzagari.
+ 
+`#`CPLEASE TYPE 'AREAS' TO SEE A COMPLETE LIST OF EXISTING AREAS`^
+ 
+ 
+     `RADVANCED     `y^^^^^^^^ `RFire       `RObsidian   `RCity of `B%%%%%%%%%%%%%%%
+     `RPLAYER AREAS `y^^^^^^^ `RGiants `y^^^^^ `RTower `y^^^^ `RThieves`B%%%%%%%%%%%%%%%
+     `y^^ ^^^^^^^^^^^ ^ ^^^^^       ^^     ^^^^^^^`g@@@@@@@`S|`g@@@`B%%%%%%%%%%%%%
+      `y^  ^^^^^^^^^^^ ^   ^^^^^^  `YKnir Valley `y^^ `g@@@@@@@`S|`g@@@@`B%%%%%%%%%%%%  
+       `s|-----X  `y^^^^^^^ ^ ^^^       ^^  ^^    `y^^ `g@@@@@@`s|`g@@@@@@`B%%%%%%%%%%   
+       `s|`y^^^^^^^^^^^^^^`s|`y^^^^^^^^^ ^^  ^^ ^`YHalflings `g@@@@`s|`g@@@@@@`B%%%%%%%%%%
+       `s---------------|--------------------------------|`g@@ `YFishing `B%%%%%
+       `s|`g@@@@@@@@@@@@@@`s|`g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`s|`g@@ `YVillage `B%%%%%
+       `s|`g@@@@@@@@@@@@@@`s|`g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`s|`S------`c-----`g@@@@@
+       `s| `RDandenong `g@@@`s|`g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`s|`g@@@`c---`g@@@@@@@@@@ 
+       `s|____`RTown `g@@@@@`s|`g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`s|`g@@`c-`g@@@@@ `RLight @
+`g@@@@@@@@@@@@@@@@@@@@@@`s|`g@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@`s|`g@`c-`g@@@@@@ `RHouse `g@
+`RBlack  `g@@@@@@@@@@@@@@@`s|`g@`s__ `g@@@@@@@@@`c------------------ `GTroll `g@@@@@@@@@@@    
+`REagle  `g@@@@@@@@@@@@@@@`s|`g@`s| `YSlime `g@@ `YIn the `g@@@@@@@@@@@ `GBridge `g@@@@@@@@@@@
+`RCastle `g@@@ `YGoblin`s-----|-- `YKingdom `c- `YTrees `g@@@@@@@@@@@@@`s|`g@@@@@@@@@@@@@@@@ 
+ `s|     `g@@@ `YWarrens `g@@@`s|`g@@@@@@@@`c---`g@@@@@@@@@@@@@@@@@@@@@`s|`g@@@@@@ `YMonastery
+ `s|     `g@@@@@@@@@@@@@@@`s|`g@@@@@@@`c-`g@@@@@@@@@@@@@@@@@@@@@@@@`s|`g@@@@@@@@@@@`s|`g@@@@
+ `s| `YGrave `g@  `YLost `g@@@@@`s|`g@@@@@@`c-`g@@@@@ `RMrem `g@@@ `YBrigand `g@@`s| `YEastern `g@@`s|`g@@@@  
+ `s|-`YYard @`g `YKingdom `g@@@@`s|`g@@@@@`c-`g@@@@@`R Village `g@@@ `YCamp `g@@@`s| `YStar Inn `g@`s|`g@@@@
+ `s|   `g@@@@@@@`s|`g@@@@@@@@@`s|`g@@@@`c-`g@@@@@@@@@@@@@@@@@@@@@@@@@@@`s| `g@@@@@@@@@@`s|`g@@@@ 
+ `s|   ---------------`WMekali`s---------------------|-------`s+-----------|----
+ `s|   |`g@@@@@@@@@@@@@@@@`s|`g@@`c-`g@@@@@@@@@@@@@`s|`g@@@@@@@@@@@@@@@`s|`g@@@@@@@@@@@@@@@@
+ `s|----`g@@@@@@@@`c--------`s|`c----------`g@@@ `RSilver `g@@@@@@@@@@@`s|`g@@@@`c------`g@@@@@@
+`c--------------`g@@@@@@@@`S|-`YTraining `c-`g@@ `RTemple `g@@@@@@@@@@@`s|`g@@@`c-`g@@@@@@`c-`g@@@@@
+ `RGnoll `g@@@@@@@@@@@@@@@`s| `YGrounds  `g@`c------------ `YReeking`c-`s|`c---`g@@@@@@@@`c-`g@@@@
+ `REncampment `g@@@@@@@@@@`s|`g@@@@@@@@@@@@@@@ `YSwamps  `YVillage `s|`g@@@@@@@@@@@@`c-`g@@@
+ `g@@@@@@@@@@`s| `XChurch `g@@`s| `YTakers `g@@@@@@@@@@@@@@@@@@@@@@@@`s|`g@@@@@@@@@@@@@`c-`g@@
+ `g@@@@@@@@@@`s|`g@@@@@@@@@@`s| `YPlace `g@ `YWarlocks `g@@@@@@@@@@@@@@`s|`g@@@@@@@@@@@@@@`c-`g@   
+ `g@@@@@@@@@@`s|`g@@@@@@@@@@`s|`g@@@@@@@@@@ `YKeep `g@@@@@@@@@@@@@@@@`s|`g@@@@@@@@@@@@@@@`c-
+ `s|---------------------------------------------------`WDzagari `g@@@@@@@@@@@
+ `RDefiled         `s|
+ `RSanctuary    `YDarkhate Castle
+ 
+ 
+`XThis is far from the world of Mythrin, this map shows the most general
+areas within a distance of the main lands. It lists area's to hunt
+as well as one's to avoid. There is a list on the back of the map 
+that gives you a diagram of what the colours in this map mean.
+Type '`#`Clook reverse`X' to the the charts on the colours.
+~
+End
+
+#7378
+Name token gnome-has-greeted~
+Short gnome-has-greeted-token~
+Desc Gnome-has-greeted~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath visdeath~
+End
+
+#7379
+Name token has-given-leaf~
+Short token has-given-leaf~
+Desc Token has-given-leaf~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath visdeath~
+End
+
+#7380
+Name token has-given-pomegranate~
+Short token has-given-pomegranate~
+Desc Token has-given-pomegranate~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath visdeath~
+End
+
+#7381
+Name token has-beatafeet-boots~
+Short token has-beatafeet-boots~
+Desc Token has-beatafeet-boots~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath visdeath~
+End
+
+#7382
+Name small map mekali~
+Short a small map of Mekali~
+Desc A small map has been left here.~
+Level 1
+ItemType map~
+Cost 25
+Condition 75
+Asize 3
+Rsize 50
+Values A 0 0 0 0
+Weight 1
+Material paper~
+Wear     take~
+ExtraDesc map small mekali~
+`C                           (Mekali)                       `mLEGEND`+
+                `sIronmaul                                  `gGreen: Necessity`+
+                `sEstates <<                                `yTan: Travel`+
+           `CToys           `yNorth Gate                      `CCyan: Sight`+
+`x            |                 |                           `RRed: Guild`+
+`x +----------+-----------------+--------+--------+----------+ `+
+ |          |                 |        |        |          | `+
+ |         `CPets     Bed &   `x--+      `gPrison  Guard HQ      `x| `+
+ |           `CBakery Breakfast `x|  `CAuctions Tanner           `x| `+
+ | `CSilver`x       |      |      |      |      |              | `+
+ | `CPlatter`x------+------+------+------+------+-----`CJeweller `x| `+
+ |              |      |      |      |      |              | `+
+ |          `CFarmer's Arena    `x|    `gBath   `CMagic            `x| `+
+ |          `CMarket            `x|           `CShop             `x| `+
+ |                    `RTemple`x--+--`CPark                Maps`x--| `+
+ |                            |                            | `+
+ |                            |  `CDancing`x                   | `+
+ |                    `gHealer`x--+--`CDragon              `yJobs`x--| `+
+ |                            |  `CBar`x                       | `+
+ |       `gClothier  Supplies`x   |`C   Apothecary `gWeaponry`x      |`s >> Crossroads `+
+`yWest`x        |        |        |        |        |        `yEast `+
+Gate`x--------+--------+------`CPlaza`x------+--------+--------`yGate `+
+`x            |        |        |        |        |          | `+
+         `RArcanum   `gArmoury`x    |    `CJewellery `RFighters   `CMerchant `+
+                              `x|`C                          Office `+
+                        `RCove`x--+--`yStable `+
+`x                              |                         `YN `+
+`C                  Sunken      `x|                       `s..`B^`s.. `+
+`C                  Ship  `gBank`x--+--`CLocksmith            `s.`b\|/`s. `+
+`C                  Tavern`x      |                     `YW`B<`b-=`BO`b=-`B>`YE `+
+`x                     |        |                       `s'`b/|\`s' `+
+`y               Port`x--+--------+--`yBoats                `s''`Bv`s'' `+
+`x                              |                         `YS `+
+`y                        River Crossing `+
+`xAs of: Winter 1219 `+
+`+
+~
+End
+
+#7383
+Name small map dzagari~
+Short a small map of Dzagari~
+Desc A small map has been left here.~
+Level 1
+ItemType map~
+Cost 25
+Condition 75
+Asize 3
+Rsize 50
+Values A 0 0 0 0
+Weight 1
+Material paper~
+Wear     take~
+ExtraDesc map small dzagari~
+`C                               (Dzagari)`m                  LEGEND `+
+         `YN                                                `gGreen: Necessity `+
+       `s..`B^`s..            Crossroads                        `yTan: Travel `+
+       `s.`b\|/`s.                ^                             `CCyan: Sight `+
+     `YW`B<`b-=`BO`b=-`B>`YE              `s^                             `RRed: Guild `+
+       `s'`b/|\`s'                  `x.-`yBoats `+
+       `s''`Bv`s''            `yNorth Gate `+
+         `YS                  `x| `+
+                            | `+
+                 `CBeastiary`x--+--`CCourier                `x+--`CTorture `+
+                            `x|  `CService                `x|  `CShack `+
+                    `CGems &  `x|                         | `+
+                     `CMisc.`x--+--`gBank         `RBuilding`x--+ `+
+                            |                         | `+
+`yCarriage Stable   `gButcher   `x|    `gWeaponry `RArcanum     `x|    `RNecromicon `+
+`x   |       |        |       |       |        |        |        | 
+`y  West`x-----+--------+-----`CSquare`x----+--------+--------+--------+--`sFortress `+
+`y  Gate`x     |        |       |       |        |        |        | `+
+               `x,-`gSupplies   `x|    `gArmoury  `RFighters`x    |     `RThieves `+
+`g        Clothing `x           |                         |    `R  Union `+
+`g                  Chaotica`x--+--`CPestilence      `RWagon`x--+ `+
+`x                            |  `CPit                 `x   | `+
+`x                            |                         | `+
+`x                 ,-`CTrellis`x--+--`CMetalworks`x             +  `s>> Lapis `+
+`C             Merchant`x       |                               `sCaves `+
+`C              Office`x        | `+
+                        `ySouth Gate`x `+
+As of: Winter 1219 `+
+`+
+ 
+~
+End
+
+#7384
+Name token_has_completed_advanced_test~
+Short `#`Wtoken_has_completed_advanced_test`^~
+Desc `#`Wtoken_has_completed_advanced_test`^~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+Extra    rotdeath visdeath~
+End
+
+#7385
+Name pair reading glasses~
+Short a pair of reading glasses~
+Desc A pair of glasses lie here.~
+Level 1
+ItemType jewelry~
+Cost 111
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material glass~
+Extra    nodegrade burnproof~
+Wear     take eyes~
+Affect modifier -1 1 -1 memory 1 0
+End
+
+#0
+
+
+
+#ROOMS
+#7300
+Name Lesson 1 - How to Move~
+Desc The first lesson in the basics of mudding - movement.
+~
+RoomFlags light~
+Sector city~
+Exit east 7301
+EFlags oneway~
+End
+
+
+#7301
+Name Lesson 2 - How to Look~
+Desc Lets create a typical scene of what its like in the ic (in character) world 
+of Dawn..  `1`1You walk down a quiet street, which has a `#`Sgate`^ leading to the north.  
+Colourful `#`Sflowers`^ grow along the street, and there is a `#`Ssignpost`^ up ahead.  
+~
+RoomFlags light~
+Sector city~
+ExtraDesc gate ~
+You set eyes upon a solid wooden gate.  There are intricate designs carved 
+in the wood and the hinges are rusting slightly.  It reaches the waist of an 
+average human, in height, and is left open.  
+~
+ExtraDesc flowers ~
+Brightly coloured flowers of every shade, from deep red, to crimson to 
+vibrant pinks and yellows grow in abundance here.  They add a sweet scent to 
+the air, attracting butterflies and other small critters.  
+~
+ExtraDesc signpost ~
+The signpost points to the north, and reads:`1`1 `#`RThis way to lesson 3`^ 
+~
+Exit north 7302
+EFlags door oneway~
+EKeywords gate~
+End
+
+
+#7302
+Name Lesson 3 - How to Open~
+Desc As you walk along this street, you come to what at first, seems like a dead 
+end.  Looking around though, you notice a door to the east.  However, unlike 
+the gate in the previous room, this door is closed.  
+~
+RoomFlags light~
+Sector city~
+Exit east 7303
+EFlags door closed oneway~
+End
+
+
+#7303
+Name Lesson 4 - How to Unlock~
+Desc You continue along this street and see another closed `#`Sdoor`^ which heads to 
+the south.  
+~
+RoomFlags light~
+Sector city~
+ExtraDesc door ~
+The door which is firmly shut has a small keyhole near the handle.  There is 
+no key in the lock though.  
+~
+Exit south 7304
+EFlags door closed locked oneway~
+EKeyvnum 7302
+EKeywords door~
+End
+
+
+#7304
+Name Lesson 5 - How to Get~
+Desc Heading along the street to the south, you come to a closed gate.  There is 
+a padlock with a small keyhole attached to the gate.  A weather-beaten chest 
+lies at the side of the path.  
+~
+RoomFlags light~
+Sector city~
+Exit south 7305
+EFlags door closed locked oneway~
+EKeyvnum 7303
+EKeywords gate~
+End
+
+
+#7305
+Name A summary of Lessons 1-5~
+Desc Keywords to revise about the topics you've covered so far:
+ 
+- How to Move -   `#`Sexit / direction (east or e for short)`^
+ 
+- How to Look -   `#`Slook / look <keyword> / look in <container>
+                  examine <keyword>`^
+ 
+- How to Open -   `#`Sopen <direction>`^
+ 
+- How to Unlock - `#`Sunlock <direction> / open <direction>`^
+ 
+- How to Get -    `#`Sget <keyword> / get <object> <container>
+                  get all / get all.<keyword>`^ 
+~
+RoomFlags light~
+Sector city~
+Exit east 7306
+EFlags oneway~
+End
+
+
+#7306
+Name Lesson 6 - How to Give~
+Desc Lets imagine for a moment that you are in the ic (in character) world..  `1`1 You are in a central plaza with people coming and going.  The path is 
+cobbled with grey stones and there is a wooden bench here.  A street heads 
+off to the southeast.  
+~
+RoomFlags light~
+Sector city~
+Exit southeast 7307
+EFlags oneway~
+End
+
+
+#7307
+Name Lesson 7 - How to Talk~
+Desc Lets create a typical scene where there are other people to interact with..  
+`1`1 You are on a side street, which comes off the plaza.  Citizens wander 
+about happily, and laborers walk past quickly getting on with their work.  
+~
+RoomFlags light~
+Sector city~
+Exit south 7308
+EFlags oneway~
+End
+
+
+#7308
+Name Lesson 8 - Socials~
+Desc You head south, continuing along this small street.  The road turns a 
+corner, heading southeast up ahead.  
+~
+RoomFlags light~
+Sector city~
+Exit southeast 7309
+EFlags oneway~
+End
+
+
+#7309
+Name Lesson 9 - Emotes~
+Desc The street you are on turns another corner here, heading to the east.  It's 
+a rather quiet little street, with not many travellers passing by.  
+~
+RoomFlags light~
+Sector city~
+Exit east 7310
+EFlags oneway~
+End
+
+
+#7310
+Name Lesson 10 - How to follow~
+Desc The quiet little street you on, turns a sharp bend and heads to the 
+northeast.  The road is narrow, with scarcely another person in sight.  
+~
+RoomFlags light~
+Sector city~
+Exit northeast 7311
+EFlags oneway~
+End
+
+
+#7311
+Name A summary of lessons 6-10~
+Desc Keywords to revise about the topics you've covered so far:
+ 
+ - How to Give -        `#`Sgive <item> <keyword of player>
+                        give <item> <name of player>
+                        give all <player> / give all.<item> <player>`^
+ 
+ - How to Talk -        `#`Ssay <message> / 'message 
+                        sayto <player> <message> / '>player message`^
+ 
+ - How to use Socials - `#`Stype socials for a list available`^
+ 
+ - How to do Emotes -   `#`Semote <action> / ,action
+                        type help emote for more info`^  
+ 
+ - How to Follow -      `#`Sfollow <player> / beckon <player>
+                        follow self / nofollow`^ 
+                   
+~
+RoomFlags light~
+Sector city~
+Exit east 7312
+EFlags oneway~
+End
+
+
+#7312
+Name Lesson 11 - How to Buy~
+Desc Lets create the sort of shop setting you'll find in the ic (in character) 
+world..  `1`1 You walk into a small shop.  Shelves line the walls and from them you can 
+see a range of clothing and armor garments.  A counter stands at the front 
+of the shop, and there is a short man standing behind it, tending to the 
+customers.  
+~
+RoomFlags light~
+Sector inside~
+Exit east 7313
+End
+
+
+#7313
+Name Lesson 11 - How to Buy Part 2~
+Desc This is another typical shop setting..  `1`1You walk into a narrow shop.  Weapons of all kinds are displayed on the 
+walls.  There are sparkling swords and daggers, solid axes and polearms, and 
+a special display case of exotic weapons.  A young man serves from behind 
+the counter at the side of the room.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 7314
+Exit west 7312
+End
+
+
+#7314
+Name Lesson 12 - How to Wear and Wield~
+Desc Let's imagine you've just come out of the shop, and you're back on a small 
+street.  `1`1The road here is neatly cobbled, and wide enough to fit two carriages 
+widthways.  There is a small building to the south with display cases of 
+weapons, and to the east, the road continues to weave its way along.  
+~
+RoomFlags light~
+Sector city~
+Exit east 7315
+EFlags oneway~
+Exit south 7313
+End
+
+
+#7315
+Name Lesson 13 - How to Hold~
+Desc Lets imagine you are in one of the main towns and you walk into one of the 
+shops..  `1`1You are inside what looks to be, a general store.  There are shelves lined 
+with packaged goods, and at the front of the room is a counter with loaves 
+of fresh bread sitting on top.  
+~
+RoomFlags light~
+Sector inside~
+Exit northeast 7316
+EFlags oneway~
+End
+
+
+#7316
+Name Lesson 14 - How to Eat and Drink~
+Desc Lets create a typical park scene, that you might see in the ic world..  `1`1A path heads off the main street to a small park filled with large, shady 
+trees and flowerbeds blooming with radiant colours.  Butterflies and 
+sparrows fly about in the cool air, it seems like the perfect place for a 
+picnic.  
+~
+RoomFlags light~
+Sector field~
+Exit northwest 7317
+EFlags oneway~
+End
+
+
+#7317
+Name Lesson 15 - How to Rest and Sleep~
+Desc You are still in a typical park setting, that you might see in the ic world. 
+ `1`1Green grass grows lushly here, covering the ground in a carpet of soft 
+green.  Tall trees cast shade on the park, and their leaves wave gently in 
+the breeze.  Sparrows fly about in the sky above you, landing every so often 
+to hop about looking for worms.  
+~
+RoomFlags light~
+Sector field~
+Exit north 7318
+EFlags oneway~
+End
+
+
+#7318
+Name A summary of lessons 11-15~
+Desc Keywords from the topics you've covered so far:
+ 
+- How to buy - `#`Slist / buy <item> / 
+               buy 5.item (buy the fifth item on the list)
+               buy 5.leather (buy the fifth leather item on the list)
+               buy 5*item (buy 5 items of the same, ie. 5 chickens)
+               sell <item> / sell all`^
+ 
+- How to wear/wield - `#`Swear <item> / wear all / remove <item>
+               wield <weapon> / second <weapon>`^
+ 
+- How to hold/drop/put - `#`Shold <item> / drop <item>
+               drop all / put <item> <container>`^
+ 
+- How to eat/drink - `#`Seat <item> / fill <container>
+               drink <container>`^
+ 
+- How to rest/sleep - `#`Srest / sleep / sleep <furniture>`^
+ 
+                
+~
+RoomFlags light~
+Sector city~
+Exit northwest 7319
+EFlags oneway~
+End
+
+
+#7319
+Name Lesson 16 - How to Train and Practise~
+Desc Lets create the atmosphere of a guild, your place of training.  `1`1 You are inside a large dusty room.  An old oak bookshelf stands against 
+one wall filled with dusty novels and manuscripts.  On the adjacent wall 
+hang a display of weapons in all shapes and sizes.  Judging by the lack of 
+sheen on the weapons you can tell that they are well used.  
+~
+RoomFlags light~
+Sector inside~
+Exit northwest 7321
+EFlags oneway~
+End
+
+
+#7320
+Name Lesson 18 - How to Consider and Flee~
+Desc You are somewhere deep in the middle of mudschool.  There is a murky pool of 
+mosquito infested water before you.  The stench of the stagnant water hangs 
+heavily in the air and you hear the endless drone of mosquitos buzzing in 
+the air.  
+~
+RoomFlags light~
+Sector field~
+Exit west 7322
+EFlags oneway~
+End
+
+
+#7321
+Name Lesson 17 - Prompt and Score~
+Desc This room in the mudschool is a plain, white-washed square room.  It seems 
+rather dull, the carpet is dirt-tan in colour and there is only a single 
+window shedding light on the room.  There is an exit to the southwest and 
+another to the southeast.  
+~
+RoomFlags light~
+Sector city~
+Exit southwest 7320
+EFlags oneway~
+End
+
+
+#7322
+Name Lesson 19 - Wimpy and Recovery~
+Desc You head along a road in the mud school.  The path is covered in tiny 
+pebbles and seems well-trodden.  Small clumps of flowers grow wildly at the 
+edge of the path on either side.  The path heads southwest up ahead.  
+~
+RoomFlags light~
+Sector city~
+Exit southwest 7323
+EFlags oneway~
+End
+
+
+#7323
+Name Lesson 20 - How to Group~
+Desc You stand in a small classroom somewhere in the mudschool.  The wallpaper is 
+a mellow cream colour and several windows let rays of light inside.  
+~
+RoomFlags light~
+Sector inside~
+Exit northwest 7324
+EFlags oneway~
+End
+
+
+#7324
+Name A summary of lessons 16-20~
+Desc Keywords from the topics you've covered so far:
+ 
+- How to train and practice - `#`Spractice (prac) <skill/realm> eg. dagger, summer
+                              train (tr) <statistic> eg. me, hp
+                              gain <skill/realm>`^
+ 
+- How to consider -    `#`Scon <creature>`^
+ 
+- Prompt and Score -   `#`Shelp prompt
+                       help score`^
+ 
+- Wimpy and Recovery - `#`Srest / rest bed
+                       wimpy <number>`^                      
+ 
+- How to group -       `#`Sfollow <player>
+                       group <player>`^
+ 
+ 
+NOTE: You can be transported straight to the junkyard (one north from here) 
+by saying the word "quest" to the being who asks if you are a beginner or 
+advanced.
+~
+RoomFlags light~
+Sector city~
+Exit north 7348
+EFlags oneway~
+End
+
+
+#7325
+Name Advanced School, Lesson 1 - Who's Who?~
+Desc You walk into a large, well-lit room inside the mudschool.  A lush red 
+carpet is spread out on the polished wooden floor.  In the corner stands an 
+oak end table, adorned with a small lamp.  There is an open door to the 
+northwest leading into another room.  
+~
+RoomFlags light~
+Sector inside~
+Exit northwest 7326
+EFlags oneway~
+End
+
+
+#7326
+Name Adv. School, Lesson 2 - Rules~
+Desc You enter yet another room in the mudschool.  There is an open entrance way 
+on the western wall leading to what looks to be another class.  Plain walls 
+surround you, with polished wood covering the floor.  An open window lets in 
+a soft breeze which greets you as you enter.  
+~
+RoomFlags light~
+Sector inside~
+Exit west 7327
+EFlags oneway~
+End
+
+
+#7327
+Name Adv. School, Lesson 3 - IC/OOC~
+Desc Four solid, white-washed walls surround you.  A polished wooden floor gleams 
+from one wall to the other, and immediately opposite the door you just came 
+through, is another exit to the southwest.  
+~
+RoomFlags light~
+Sector inside~
+Exit southwest 7328
+EFlags oneway~
+End
+
+
+#7328
+Name Adv. School, Lesson 4 - Channels~
+Desc You enter a long, tidy room in the mud school which seems a little bare.  
+Apart from the rug on the floor, there are no other furnishings.  A panel of 
+windows along one wall sheds light into the room and there is an open 
+doorway to the east.  
+~
+RoomFlags light~
+Sector inside~
+Exit east 7329
+EFlags oneway~
+End
+
+
+#7329
+Name Adv. School, Lesson 5 - Responding to Tells~
+Desc Yet another room within the mudschool.  This room looks pretty much like the 
+last one, with a doorway to the east leading into another room.  
+~
+RoomFlags light~
+Sector inside~
+Exit east 7330
+EFlags oneway~
+End
+
+
+#7330
+Name Adv. School, Summary of Lessons 1-5~
+Desc Helpfiles from the topics you've covered so far:
+ 
+- Who's Who? - `#`SWho (to see who's currently on)
+               help who / help who-levels
+               wizlist / help council
+               help noble 
+               help area-building`^
+ 
+- Rules -      `#`Shelp rules
+               helplist policy`^
+ 
+- IC/OOC -     `#`Shelp in character / help out of character
+               help newbie`^ 
+ 
+- Channels -   `#`Shelp -channels`^
+ 
+- Sending/Receiving Tells - `#`Shelp tell`^
+~
+RoomFlags light~
+Sector inside~
+Exit southeast 7373
+EFlags oneway~
+End
+
+
+#7331
+Name Adv. School, Lesson 6 - Roleplay~
+Desc A seeming dull room, with four walls, wooden floorboards and a ceiling 
+surrounds you.  Three tall windows, almost the entire height of the room, 
+are positioned along the eastern wall.  To the northeast, is an open 
+entranceway.  
+~
+RoomFlags light~
+Sector inside~
+Exit northeast 7332
+EFlags oneway~
+End
+
+
+#7332
+Name Adv. School, Lesson 7 - Alignment~
+Desc This room seems a little lavish for a classroom in the mudschool.  Or 
+perhaps it is just the soft, maroon velvet curtains that give it the 
+impression of lavishness.  Other than the striking curtains, the floor is 
+made of the same wooden floorboards as every other room you've entered so 
+far.  A doorway leads off to the north.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 7333
+EFlags oneway~
+End
+
+
+#7333
+Name Adv. School, Lesson 8 - Letgains~
+Desc This room has been covered in a soft, cream wallpaper which goes nicely with 
+the polished wood floors and skirting boards.  A four-panelled window sheds 
+light into the room, and you notice an exit to the southwest.  
+~
+RoomFlags light~
+Sector inside~
+Exit southwest 7334
+EFlags oneway~
+End
+
+
+#7334
+Name Adv. School, Lesson 9 - Short and Long Descriptions~
+Desc Pale walls, broken only by the bay windows, surround you on all four sides.  
+An open doorway leads off the southwest, presumably into another classroom 
+within the mudschool.  
+~
+RoomFlags light~
+Sector inside~
+Exit southwest 7335
+EFlags oneway~
+End
+
+
+#7335
+Name Adv. School, Summary of Lessons 6-9~
+Desc Helpfiles from the topics you've covered so far:
+ 
+- Roleplay -  `#`Shelp role-playing
+              help ic / help ooc
+              help examplegood / help examplebad`^
+ 
+- Alignment - `#`Shelp alignment / help alignment definition`^
+ 
+- Letgains -  `#`Shelp letgain
+              help history / help history-requirements
+              help history-example
+              help rpsheet
+              help race / help mythos`^
+ 
+- Short/Long Descriptions - `#`Shelp long / help short
+              help description-editor
+              help race`^                
+ 
+~
+RoomFlags imm_only light~
+Sector inside~
+Exit southwest 7373
+EFlags oneway~
+End
+
+
+#7336
+Name Adv. School, Lesson 10 - Leveling~
+Desc You enter a smallish room within the mudschool.  Polished wooden floors 
+glisten silently and rays of light shine in from the windows along the 
+western wall.  A doorway opens into another room to the southeast.  
+~
+RoomFlags light~
+Sector inside~
+Exit southeast 7337
+EFlags oneway~
+End
+
+
+#7337
+Name Adv. School, Lesson 11 - Guilds~
+Desc Peachy-cream wallpaper decorates the walls in this mudschool classroom.  A 
+matching peach-cream lampshade hangs from a light in the ceiling.  Panels of 
+polished wood glisten on the floor, and there is an exit to the east of this 
+room.  
+~
+RoomFlags light~
+Sector inside~
+Exit east 7338
+EFlags oneway~
+End
+
+
+#7338
+Name Adv. School, Lesson 12 - Races and Classes~
+Desc The classroom you enter is brightly lit.  Four windows along the wall 
+stretch from the floor to the ceiling, and fill the room with light.  A door 
+heads out of the room to the north.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 7339
+EFlags oneway~
+End
+
+
+#7339
+Name Adv. School, Lesson 13 - Mythos~
+Desc A striped peppermint green wallpaper decorates the walls in this room.  The 
+ceiling is tall with banisters of solid wood stretching across it.  Polished 
+wooden floorboards shine beneath your feet.  There is a door to the west, 
+leading into another classroom.  
+~
+RoomFlags light~
+Sector inside~
+Exit west 7340
+EFlags oneway~
+End
+
+
+#7340
+Name Adv. School, Summary of Lessons 10-13~
+Desc Helpfiles and keywords from the topics you've covered so far:
+ 
+- Leveling - `#`Sgain experience (xp) through:
+              roleplay / moot rewards / killing monsters
+              part of a group killing monsters /
+              increase skills through use`^
+ 
+- Guilds -   `#`SMekali / Dzagari / Crossroads / Silver temple
+             train <st qu pr em in co ag sd me re hp mana>
+             practice <skill>
+             gain <skill>`^
+ 
+- Races & Classes - `#`Shelp race-list / help racial-skills
+             help race-overview / help race-<race_name>
+             help race-myths
+             help class_name`^
+ 
+- Mythos and Setting - `#`Shelp mythos / help god-pantheon`^
+~
+RoomFlags light~
+Sector inside~
+Exit northwest 7373
+EFlags oneway~
+End
+
+
+#7341
+Name Adv. School, Lesson 14 - Areas~
+Desc This is a relatively small classroom, with four adjacent windows.  A dullish 
+cream paint covers the walls, and skirting boards.  To the southwest, a door 
+leads out of the classroom.  
+~
+RoomFlags light~
+Sector inside~
+Exit southwest 7342
+EFlags oneway~
+End
+
+
+#7342
+Name Adv. School, Lesson 15 - Maps~
+Desc Cream wallpaper with tiny swirls of light grey has been slathered on the 
+walls in this room within the mudschool.  The room is large but mostly 
+empty.  On the southern wall, a solid wood door stands, and probably leads 
+into another room much like this one.  
+~
+RoomFlags light~
+Sector inside~
+Exit south 7343
+EFlags oneway~
+End
+
+
+#7343
+Name Adv. School, Lesson 16 - Things to get involved in~
+Desc This room is narrow and long, and dimly lit.  Small windows high up on the 
+walls let in very little light, and the curtains are half-shut.  The 
+polished wooden floors seem dull in this light.  There is an exit to the 
+east.  
+~
+RoomFlags light~
+Sector inside~
+Exit east 7344
+EFlags oneway~
+End
+
+
+#7344
+Name Adv. School, Lesson 17 - Helpfiles~
+Desc You enter a large room, with fine, polished wood floors.  The frames on the 
+windows are also fine, polished wood with little gold latches.  The walls 
+are barren, and painted a mildew green colour, though the paint seems to be 
+a little faded now.  A door leads out of the room to the north.  
+~
+RoomFlags light~
+Sector inside~
+Exit north 7345
+EFlags oneway~
+End
+
+
+#7345
+Name Adv. School, Summary of Lessons 14-17~
+Desc Helpfiles and keywords from the topics you've covered so far:
+ 
+- Areas -  `#`Sareas`^
+ 
+- Maps -   `#`Slook map`^
+ 
+- Things to get involved in - `#`Shelp clan / help politic
+           help ic-houses / help jobs
+           help pkill
+           help autoquest`^        
+ 
+- Helpfiles - `#`Shelplist <keyword>`^     
+~
+RoomFlags light~
+Sector inside~
+Exit northeast 7373
+EFlags oneway~
+End
+
+
+#7346
+Name Adv. School, The Big Test: Question 1~
+Desc The keywords you'll need:
+ 
+   - `#`Shelp rules`^
+~
+RoomFlags light~
+Sector inside~
+End
+
+
+#7347
+Name A shop of all-sorts~
+Desc This is the last shop before entering the ic world.  It is stocked with a 
+hodge-podge of goods, from armor, to weapons, to food, and other useful 
+items.  A door leads south back out of the shop, into the classrooms.  
+~
+RoomFlags imm_only light~
+Sector inside~
+End
+
+
+#7348
+Name A junkyard~
+Desc You stumble across a junkyard, filled with every odd bit of scrap metal and 
+wood and old wheels that you could find.  Its piled high and almost entirely 
+surrounds you.  In front of you stands a strange looking contraption which 
+looks to be only half finished.  Oddly enough, leading out of this curious 
+little spot, you notice a path heading into a garden of flowers and trees to 
+the north, and another smaller path pushes its way through the piles of junk 
+to the east.  
+~
+RoomFlags light~
+Sector city~
+Exit north 7349
+Exit east 7350
+End
+
+
+#7349
+Name A delightful garden~
+Desc The sweet scent of sweatpeas in bloom wafts through the air.  This garden is 
+divided into small flower beds filled with rambling sweetpeas and colourful 
+stocks.  The garden has been recently weeded and each flower bed has been 
+carefully edged with small grey stones.  The grassy path heads off in 
+several directions, to the west it looks like some sort of stall, and to the 
+east and north, more delightful flower gardens.  
+~
+RoomFlags light~
+Sector field~
+Exit north 7353
+Exit east 7352
+Exit south 7348
+Exit west 7351
+End
+
+
+#7350
+Name A tranquil garden~
+Desc This garden is serene and tranquil garden with only the quiet, and 
+infrequent sounds of a bird twittering in the willow trees above.  A piece 
+of string seems to be tangled in the branches of one of the trees.  The 
+grass is soft and lush, a perfect place to take an afternoon nap in the sun. 
+ To the west, you see a pile of odds'n'ends which contrasts strongly with 
+this delightful garden, and the other gardens to the east and north.  
+~
+RoomFlags light~
+Sector field~
+Exit north 7352
+Exit east 7357
+Exit west 7348
+End
+
+
+#7351
+Name A fruit stall~
+Desc Set in the corner of the garden is a small stall, stocked with bunches of 
+fruit.  The stall barely comes to the height of a human knee, and would suit 
+being run by someone small such as a gnome.  On the wooden stall, which is 
+decorated with red and orange flags, are plates of grapes, pomegranates, 
+bananas and watermelons.  There is a container made of tin to the side of 
+the stall and is filled with an opaque, lemony liquid.  
+~
+RoomFlags light~
+Sector inside~
+Exit east 7349
+End
+
+
+#7352
+Name A garden brimming with flowers~
+Desc The path seems hard to find as flowers of every colour imaginable spread 
+across the garden in no logical pattern.  Bright red tulips, soft yellow 
+daisies, tall poppies, crimson and blue lobelias, blue string, the garden is 
+full of them.  The mingling scents fill the air with a fruit salad of 
+aromas.  Grassy paths head off to the north, south and east to more gardens. 
+ 
+~
+RoomFlags light~
+Sector field~
+Exit north 7355
+Exit east 7356
+Exit south 7350
+Exit west 7349
+End
+
+
+#7353
+Name A quiet garden ~
+Desc Flowerbeds brimming with flowers in bloom line the path through this garden. 
+ The flowerbeds are home to many small bedding plants, with delicate blooms. 
+ The predominant colour is snow-white, with the occasional deep blue and 
+crimson red.  Butterflies and bees flit about in the breeze stopping to soak 
+up the nectar of these little flowers.  A small shed stands to the north of 
+the garden, and the garden continues to the east and south.  
+~
+RoomFlags light~
+Sector field~
+Exit north 7354
+EFlags door closed locked~
+EKeyvnum 7358
+EKeywords shed door~
+Exit east 7355
+Exit south 7349
+End
+
+
+#7354
+Name A small shed~
+Desc A small tin shed stands here, filled with shelves of gardening tools and old 
+spades and broken watering cans.  A tiny glass window on the eastern wall 
+sheds pale light into the room, enabling you to at least get your bearings.  
+The shelves are covered in dust, and looking a little closer, you notice 
+cobwebs starting to take over the corners of the ceiling.  The door to the 
+south opens into the garden.  
+~
+RoomFlags light~
+Sector inside~
+Exit south 7353
+EFlags door closed locked~
+EKeyvnum 7358
+EKeywords door~
+End
+
+
+#7355
+Name A garden of native plants~
+Desc The garden here is filled with shrubs and trees, the myriad of greens and 
+olives blending together to create a native and natural setting.  Grasses 
+and mosses grow along the ground, and at the edge of the paths, while 
+taller, sturdier bushes and shrubs grow at the edge of the garden.  To the 
+southeast you see a garden of wildflowers and to the west and south, more 
+gardens filled with flowers.  
+~
+RoomFlags light~
+Sector field~
+Exit south 7352
+Exit west 7353
+Exit southeast 7356
+End
+
+
+#7356
+Name A romantic garden of wildflowers~
+Desc The path almost disappears beneath a garden of tangled wildflowers.  The 
+sweet scent of the rainbow of flowers attracts bees and butterflies, which 
+bob about on the flowerheads, feasting on the nectar.  You can barely make 
+out a path through the flowers to the south and another to the northwest.  
+~
+RoomFlags light~
+Sector field~
+Exit south 7357
+Exit west 7352
+Exit northwest 7355
+End
+
+
+#7357
+Name A quiet, secluded garden~
+Desc This quiet, secluded garden is set in amongst several trees and in the 
+middle is a large, comfortable looking boulder, perfect for lazing on.  
+Birds flit about in the branches, enjoying the cool, gentle breeze which 
+blows through the leaves.  To the east you hear the sound of a trickling 
+stream, and to the west and north the garden continues.  
+~
+RoomFlags light~
+Sector field~
+Exit north 7356
+Exit east 7358
+Exit west 7350
+End
+
+
+#7358
+Name A garden by the river~
+Desc At the edge of the garden a narrow stream trickles past at a sleepy pace.  
+The bank is covered in long lush grass and clumps of wildflowers.  The only 
+sound you hear is of the water bumbling over small river stones, and a 
+straggling piece of string, as it flows along.  Heading west leads back to 
+the central garden.  
+~
+RoomFlags light~
+Sector field~
+Exit west 7357
+End
+
+
+#7359
+Name New Player Recall Point~
+Desc As a new player you `Yrecall`W to this room`x till level six.  After that point in 
+time, you will recall to the standard recall location for your class & race 
+combination.  `1`1There are exits from this room in the four cardinal directions, of which 
+three lead to various recall locations:`1`1 North - Takes you to the mud school`1 South - Takes you to the Forest Recall Point`1 West  - Takes you to the Mekali Recall Point`1 East  - Takes you to the Dzagari Recall Point`1 Up    - Takes you to the Newbie Shop`1
+~
+RoomFlags light~
+Sector inside~
+Exit north 7371
+Exit east 27003
+EFlags oneway~
+Exit south 33002
+EFlags oneway~
+Exit west 3000
+EFlags oneway~
+Exit up 7372
+End
+
+
+#7360
+Name Adv. School, The Big Test: Question 2~
+Desc The keywords you'll need:
+ 
+`#`S   - help rules`^
+~
+Sector inside~
+End
+
+
+#7361
+Name Adv. School, The Big Test: Question 3~
+Desc The keywords you'll need:
+ 
+   `#`S- help rules`^
+~
+Sector inside~
+End
+
+
+#7362
+Name Adv. School, The Big Test: Question 4~
+Desc The keywords you'll need:
+ 
+   `#`S- help rules`^
+~
+Sector inside~
+End
+
+
+#7363
+Name Adv. School, The Big Test: Question 5~
+Desc The keywords you'll need:
+ 
+`#`S   - help rules`^
+~
+Sector inside~
+End
+
+
+#7370
+Name Welcome to the Dawn of Time!~
+Desc ~
+RoomFlags safe imm_only noscry light noautomap noautoexits~
+Sector inside~
+End
+
+
+#7371
+Name Welcome to the Dawn of Time Mud School~
+Desc This school is set up to teach you the basics of mudding, and about topics 
+which are unique to Dawn.  
+~
+Sector inside~
+Exit south 7359
+End
+
+
+#7372
+Name Newbies-R-Us Trading Inc.~
+Desc This spacious shop seems to sell a collection of plain, yet practical items, 
+such as basic armour and weaponry.  A friendly shopkeeper runs the place, 
+and seems more than willing to help you find the right item to suit you.  
+~
+Sector inside~
+Exit down 7359
+End
+
+
+#7373
+Name Welcome to Advanced School~
+Desc Advanced school is organised into four series, based on similar topics. Choose a direction to get started.
+ 
+North - Advanced Lessons 1-5
+East  - Advanced Lessons 6-10
+South - Advanced Lessons 11-13
+West  - Advanced Lessons 14-17
+Up    - Advanced Test 
+~
+Sector inside~
+Exit north 7325
+EFlags oneway~
+Exit east 7331
+EFlags oneway~
+Exit south 7336
+EFlags oneway~
+Exit west 7341
+EFlags oneway~
+Exit up 7346
+EFlags oneway~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 7301 1 7300 1
+M 0 7325 10 7302 1
+M 0 7335 10 7303 1
+O 0 7301 -1 7304
+P 0 7303 10 7301 1
+O 0 7304 -1 7304
+O 0 7305 -1 7304
+O 0 7306 -1 7304
+M 0 7324 1 7304 1
+M 0 7335 10 7304 1
+O 0 7307 -1 7306
+M 0 7302 1 7306 1
+E 0 7308 -1 about~
+M 0 7303 1 7307 1
+M 0 7304 1 7312 1
+E 0 7311 -1 legs~
+E 0 7312 -1 torso~
+G 0 7313 -1
+G 0 7314 -1
+G 0 7315 -1
+G 0 7316 -1
+G 0 7317 -1
+G 0 7318 -1
+G 0 7319 -1
+G 0 7320 -1
+M 0 7305 1 7313 1
+E 0 7311 -1 legs~
+E 0 7312 -1 torso~
+G 0 7326 -1
+G 0 7327 -1
+G 0 7328 -1
+G 0 7329 -1
+G 0 7321 -1
+M 0 7322 1 7313 1
+O 0 7330 -1 7315
+M 0 7306 1 7315 1
+E 0 7308 -1 torso~
+G 0 7331 -1
+G 0 7332 -1
+G 0 7333 -1
+G 0 7334 -1
+G 0 7335 -1
+G 0 7336 -1
+G 0 7337 -1
+O 0 7330 -1 7315
+O 0 7338 -1 7316
+M 0 7307 1 7319 1
+E 0 7339 -1 about~
+M 0 7323 1 7319 1
+M 0 7308 1 7320 1
+M 0 7317 1 7346 1
+M 0 7316 1 7347 1
+E 0 7311 -1 legs~
+E 0 7312 -1 torso~
+G 0 7313 -1
+G 0 7314 -1
+G 0 7315 -1
+G 0 7316 -1
+G 0 7317 -1
+G 0 7318 -1
+G 0 7319 -1
+G 0 7320 -1
+G 0 7321 -1
+G 0 7322 -1
+G 0 7323 -1
+G 0 7324 -1
+G 0 7325 -1
+G 0 7326 -1
+G 0 7327 -1
+G 0 7328 -1
+G 0 7329 -1
+G 0 7331 -1
+G 0 7332 -1
+G 0 7333 -1
+G 0 7334 -1
+G 0 7335 -1
+G 0 7336 -1
+G 0 7337 -1
+O 0 7354 -1 7348
+O 0 7359 -1 7348
+P 0 7341 20 7359 1
+M 0 7310 1 7348 1
+E 0 7374 -1 about~
+O 0 7360 -1 7349
+P 0 7376 10 7360 1
+P 0 7358 10 7376 1
+O 0 7370 -1 7350
+P 0 7345 10 7370 1
+M 0 7314 10 7350 1
+O 0 7361 -1 7351
+O 0 7362 -1 7351
+M 0 7311 1 7351 1
+G 0 7355 -1
+G 0 7356 -1
+G 0 7357 -1
+G 0 7352 -1
+G 0 7363 -1
+E 0 7373 -1 about~
+O 0 7368 -1 7352
+P 0 7343 10 7368 1
+O 0 7364 -1 7353
+M 0 7312 10 7353 1
+M 0 7313 10 7353 1
+O 0 7365 -1 7354
+P 0 7366 10 7365 1
+P 0 7377 50 7365 1
+P 0 7331 10 7365 1
+O 0 7367 -1 7354
+P 0 7340 10 7367 1
+M 0 7309 10 7355 1
+M 0 7326 1 7355 1
+O 0 7369 -1 7356
+P 0 7342 10 7369 1
+M 0 7312 10 7356 1
+M 0 7313 10 7356 1
+O 0 7371 -1 7357
+M 0 7314 10 7357 1
+O 0 7372 -1 7358
+O 0 7375 -1 7358
+P 0 7344 10 7375 1
+M 0 7318 1 7360 1
+M 0 7327 1 7360 1
+M 0 7319 1 7361 1
+M 0 7328 1 7361 1
+M 0 7320 1 7362 1
+M 0 7329 1 7362 1
+M 0 7321 1 7363 1
+M 0 7330 1 7363 1
+M 0 7370 1 7370 1
+M 0 7371 1 7371 1
+M 0 7372 1 7372 1
+E 0 7312 -1 torso~
+E 0 7311 -1 legs~
+G 0 7313 -1
+G 0 7314 -1
+G 0 7315 -1
+G 0 7316 -1
+G 0 7317 -1
+G 0 7318 -1
+G 0 7319 -1
+G 0 7320 -1
+G 0 7326 -1
+G 0 7321 -1
+G 0 7323 -1
+G 0 7327 -1
+G 0 7329 -1
+G 0 7328 -1
+M 0 7332 10 7373 1
+S
+
+
+
+#SHOPS
+#7304
+buy_type armor~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#7305
+buy_type weapon~
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#7306
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#7311
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#7316
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#7372
+profit_buy 100
+profit_sell 100
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#7433
+title transfer to the start of the mudschool quest~
+code ** load a mob and trans a player there
+mq1 '>$n Been here before haven't you.  Off you go then.
+mq4 mob transfer $n 7348
+~
+disabled false
+END
+
+#7432
+title advanced school greeting~
+code mq1 rsay Welcome to Advanced School!
+mq4 rsay This school covers topics which might be helpful to someone who has mudded before, but is new to Dawn. 
+mq7 rsay Advanced school is organised into four series, so that you can do as much or as little at a time, as you like, until you're level 6.
+mq9 rsay When you have completed all four series, you can go upstairs to test yourself on the rules of Dawn.
+mq13 rsay Just recall whenever you're ready to play in the game, and you'll be taken back to the recall point.
+mq13 smile
+~
+disabled false
+END
+
+#7431
+title exall trigger for advanced test~
+code ** load a kalahn when the player enters an advanced lesson
+mob at 7346 mob mload 7333
+mob at 7346 mob vforce 7333 mob call 7414 $n
+mob at 7346 mob vforce 7333 mob call 7375 $n
+mob letpass
+ 
+~
+disabled false
+END
+
+#7430
+title reward for completing test~
+code lang native
+if hastoken $n 7384
+mq3 mob force being say Good luck, and have fun!
+ 
+mq5 mob transfer $n 7373
+ 
+else
+mob force being say These reading glasses will help you with your future studies.
+mob force being mob oload 7385
+mob force being give glasses $n
+mob force being mob oload 7384
+mob force being mob tgive 7384 $n
+mq3 mob force being say Good luck, and have fun!
+ 
+mq5 mob transfer $n 7373
+ 
+endif
+~
+disabled false
+END
+
+#7429
+title exall trigger for advanced lessons 14-17~
+code ** load a kalahn when the player enters an advanced lesson 14-17
+mob at 7341 mob mload 7333
+mob at 7341 mob force being mob call 7414 $n
+mob at 7341 mob force being mob call 7302 $n
+mob letpass
+~
+disabled false
+END
+
+#7428
+title exall trigger for advanced lessons 11-13~
+code ** load a kalahn when the player enters an advanced lesson 11-13
+mob at 7336 mob mload 7333
+mob at 7336 mob force being mob call 7414 $n
+mob at 7336 mob force being mob call 7302 $n
+mob letpass
+~
+disabled false
+END
+
+#7427
+title exall trigger for advanced lessons 6-10~
+code ** load a kalahn when the player enters an advanced lesson 6-10
+mob at 7331 mob mload 7333
+mob at 7331 mob force being mob call 7414 $n
+mob at 7331 mob force being mob call 7302 $n
+mob letpass
+~
+disabled false
+END
+
+#7426
+title exall trigger for advanced school~
+code ** load a kalahn when the player enters an advanced lesson
+mob mload 7333
+mob inroom mob vforce 7333 mob call 7414 $n
+mob inroom mob vforce 7333 mob call 7302 $n
+mob letpass
+~
+disabled false
+END
+
+#7425
+title weapon assistance needed~
+code if class $n mage
+or class $n thief
+or class $n spellfilcher
+ 
+sayto $n Well, let me see..
+pmote $n takes a step back as he looks @ over.
+mq3 sayto $n I think one of these daggers [as he holds one up for show] would suit you best.
+mq3 smile $n
+  end
+endif
+ 
+if class $n ranger
+or class $n paladin
+or class $n warrior
+sayto $n Hmm... you look like you'd be a natural with a sword.
+mq2 sayto $n I've got a selection of shortswords and longswords in stock.. take your pick.
+mq2 smile $n
+  end
+endif
+ 
+if class $n cleric
+or class $n druid
+sayto $n A weapon.. hmm.. 
+pmote $n looks at @ for a moment.
+mq3 sayto $n One of these maces [as he holds one up] would do just the job, I think.
+mq3 smile $n
+  end
+endif
+ 
+if class $n barbarian
+sayto $n You look like you'd be talented with any weapon..
+chuckle
+mq3 sayto $n But how about this hand axe for starters, or if you prefer a two-handed weapon, you could take the battleaxe.
+mq3 smile $n
+  end
+endif
+ 
+sayto $n Why don't you have a look over the range, and see if there's one you'd like to buy.
+~
+disabled false
+END
+
+#7424
+title armour assistance~
+code nod
+sayto $n A suit of armour.. well, I have just the thing.
+mq2 sayto $n It's all the trend these days, [as he takes several pieces of armour down from the shelf.]
+mq5 sayto $n It's made of quality leather, so it will endure well, and has been designed with the amateur hunter or warrior in mind.
+mq8 sayto $n I've got everything from the leather cap, down to the leather boots.
+mq12 sayto $n It comes to 343 silver for the full suit, including the shield, or 293 silver without.
+mq12 smile $n
+~
+disabled false
+END
+
+#7423
+title yes.. assistance is needed~
+code beam
+sayto $n Excellent, you've come to the right place.
+mq2 sayto $n Now, is it a weapon you're after, or a suit of armour?
+~
+disabled false
+END
+
+#7422
+title no help needed~
+code nod
+sayto $n Alright then, I'll just be over here if you need anything [and motions towards the counter.]
+~
+disabled false
+END
+
+#7421
+title what a friendly salesman~
+code language native
+sayto $n Well, hello there.. can I be of assistance?
+~
+disabled false
+END
+
+#7420
+title speak the native language~
+code language native
+~
+disabled false
+END
+
+#7419
+title close chest after key is taken~
+code mob silent close chest
+~
+disabled false
+END
+
+#7418
+title load a key to put in the chest~
+code if !objhere 7303
+  mob oload 7303 
+  mob silent put key chest
+endif
+~
+disabled false
+END
+
+#7417
+title load a leaf~
+code mob sil mob oload 7353 0 about
+~
+disabled false
+END
+
+#7416
+title start of advanced school~
+code mq1 '>$n Excellent! Off to Advanced School then ...
+ 
+mq3 mob transfer $n 7373
+mq4 mob at 7373 mob force being mob call 7414 $n
+mq5 mob at 7373 mob force being mob call 7432 $n
+~
+disabled false
+END
+
+#7415
+title delay prog 7406 by 1 second~
+code ** unseen mob grows new leather plant in 1 second time
+mq1 mob call 7406
+~
+disabled false
+END
+
+#7414
+title 7300 kal mob starting basic training~
+code ** This program is run when mob 7300 is forced to, upon being loaded
+mob mpfollow $n
+mob remember $n
+language native
+autoself on
+~
+disabled false
+END
+
+#7412
+title mud school enterance - say beginner~
+code ** load a mob and trans a player there
+mq1 '>$n Wanting some basic training aye?  then basic training it is.
+mq4 mob at 7300 mob mload 7300
+mq4 mob transfer $n 7300
+mq4 mob at 7300 mob force being mob call 7414 $n
+mq5 mob at 7300 mob force being mob call 7302 $n
+~
+disabled false
+END
+
+#7411
+title welcome to the mud school~
+code ** This prog is run by the 'mudschool greeting Kalahn' when ever someone enters 
+** the room, trans into the room or if they login to the room.
+lang native
+autoself on
+mob dequeueall
+mq 1 '>$n Welcome to the `N Mud School, here you can learn the basics of how to mud, and about more advanced mudding topics related to the `N.
+mq 4 '>$n If you are a beginner, `Ssay beginner`x and we can get started with some basic mud training.
+mq 4 '>$n If you are a veteran mudder, perhaps new to particular mud you will be wanting to visit the advanced school, if this is you `Ssay advanced`x.
+mq 4 '>$n If you have played here before and have no interest in futher lessons, walk `Ssouth`x to leave the mud school.
+mob loginprocessed
+ 
+~
+disabled false
+END
+
+#7410
+title Answer no - Haven't played here before~
+code mq1 '>$n [while grinning from ear to ear]Great a new player!!!
+mq1 '>$n Lets go to the mud school and get started right away!
+mq2 mob transfer $n 7371
+mq3 mob vforce 7371 mob call 7411 $n
+~
+disabled false
+END
+
+#7409
+title Answer yes - Have played here before~
+code mq1 '>$n Excellent, Welcome back.
+mq3 mob echoat $n `SA being of light continues `x'You can start off at the new player recall point. `1If you want to have any lessons on mudding, feel free to goto the mudschool `1which is to the north of the new player recall point (where you recall to`1till level 6).`1
+mq3 smile $n
+mq7 tip $n
+mq8 mob transfer $n 7359
+~
+disabled false
+END
+
+#7408
+title Newbie Greeting~
+code ** This prog is run by the greeting Kalahn when ever someone has just finished 
+** creating a character, or if they login to the room.
+lang native
+mob seeall
+mq2 '>$n Welcome to the `N!
+mq4 '>$n Have you played on `N before?
+mq4 "$n type `Ysay yes`x or `Ysay no`x to answer.
+mob loginprocessed
+~
+disabled false
+END
+
+#7407
+title call transfer for different rooms in advanced school~
+code ** End of Adv. Series One
+if room $i == 7330
+ mob transfer $n 7331
+ mob at 7331 mob force 7331 mob mpfollow $n
+ mob at 7331 mob force 7331 remember $n
+ 
+ mob at 7331 mob force 7331 mob call 7302 $n
+ 
+endif
+ 
+** End of Adv. Series Two
+if room $i == 7335
+ mob transfer $n 7336
+ mob force mob force 7331 mpfollow $n
+ mob force mob force 7331 remember $n
+ 
+ mob at 7336 mob force 7332 mob call 7302 $n
+endif
+ 
+** End of Adv. Series Three
+if room $i == 7340
+ mob transfer $n 7341
+ mob force mob force 7331 mpfollow $n
+ mob force mob force 7331 remember $n
+ 
+ mob at 7341 mob force 7333 mob call 7302 $n
+endif
+~
+disabled false
+END
+
+#7406
+title unseen mob grows new leather plant~
+code ** replenish leather plant so next newbie has some
+if !mobhere 7309
+  mob echo A new leather plant begins to grow.
+  mob mload 7309
+  mob oload 7353
+  mob silent give leaf plant
+  mob force plant sil wear plant
+endif
+ 
+ 
+~
+disabled false
+END
+
+#7405
+title purge self if dont have a target~
+code if !hastarget $i
+  say Oh well, I guess I'm not needed here any more, for now [and shrugs to himself.]
+  emote fades out of existance.
+  mob purge self
+endif
+~
+disabled false
+END
+
+#7404
+title being of light gets rid of self when player logs out~
+code ** run this prog only on the player we currently remember ($q)
+if !istarget $n
+  end
+endif
+ 
+tip $n
+* queue calling the purge of self prog 7405 if they dont have a target
+mq3 mob call 7405
+~
+disabled false
+END
+
+#7403
+title load a kalahn for players that login after a logout~
+code ** a player has logged in to the mudschool area 
+ 
+** this prog only handles if they logged into the beginner area
+if room $n < 7300
+or room $n > 7324
+  end
+endif
+ 
+mob at $n mob mload 7300
+mob at $n mob force being mob mpfollow $n
+mob at $n mob force being mob remember $n
+mob at $n mob force being emote fades into existence.
+mob at $n mob force being language native
+mob at $n mob force being rsay Back again?  Lets continue...
+mob at $n mob force being mob call 7302 $n
+ 
+ 
+~
+disabled false
+END
+
+#7402
+title unseen mob closes door ~
+code mob letpass
+if isnpc $n
+ close door
+endif
+~
+disabled false
+END
+
+#7401
+title has been through the school before, heads east~
+code if istarget $n 
+  mob call 7301 $n
+endif
+~
+disabled false
+END
+
+#7400
+title has been through the school before, heads west~
+code if istarget $n
+  mob call 7355 $n
+endif
+~
+disabled false
+END
+
+#7399
+title unseen mob grows new flowers~
+code ** replenish flowers so next newbie has some
+if objhere 7306
+else
+mob echo A new iris begins to grow.
+mob oload 7306
+mob silent drop iris
+endif
+ 
+if objhere 7305
+else
+mob echo A new yellow flower begins to grow.
+mob oload 7305
+mob silent drop yellow
+endif
+ 
+if objhere 7304
+else
+mob echo A new red flower begins to grow.
+mob oload 7304
+mob silent drop red
+endif
+ 
+ 
+~
+disabled false
+END
+
+#7398
+title exall check has trained~
+code if hastrains $n >4
+ say You need to train before we go on.
+end
+endif
+ 
+mob letpass
+~
+disabled false
+END
+
+#7397
+title exall check for weapon~
+code if hasskill $n sword > 0
+  if carries $n sword
+    mob letpass
+    end
+  endif
+endif 
+ 
+if hasskill $n dagger > 0
+  if carries $n dagger
+    mob letpass
+    end
+  endif
+endif 
+ 
+if hasskill $n mace> 0
+  if carries $n mace
+    mob letpass
+    end
+  endif
+endif 
+ 
+sayto $n You need to purchase a weapon that is listed in your skills list before you can go on.
+~
+disabled false
+END
+
+#7396
+title prekill prevention~
+code mob preventattack
+pmote $n blocks @.
+language native
+say Save your energy for later!
+chuckle
+~
+disabled false
+END
+
+#7395
+title test - question 5 - c~
+code lang native
+mob force being say Firstly, "rp" is an ooc term, and second "sucks" is a slang word in this century, not the century dawn is set in.
+mob force being say Please try again.
+~
+disabled false
+END
+
+#7394
+title test - question 5 - b~
+code lang native
+mob force being say Correct! You passed the mudschool and are ready to start playing.
+mob force being say Remember, look at your map to get your bearings, and use the `#`Snewbie channel`^ if you get stuck.
+mq3 mob force being say Well, you've been a great student.. the rest is up to you!
+mq5 mob call 7430 $n
+ 
+ 
+ 
+ 
+~
+disabled false
+END
+
+#7393
+title test - question 5 - a~
+code lang native
+mob force being say Sure, if the mud was set in the year 2000.. but its not.
+mob force being say Please try again.
+~
+disabled false
+END
+
+#7392
+title delete me~
+code mob mpfollow $n
+mob remember $n
+language native
+sayto $n Great, lets head off to the `#`Swest`^ and get started.
+smile $n
+ 
+ 
+ 
+~
+disabled false
+END
+
+#7391
+title test - question 5 - setting~
+code lang native
+mq1 say Please `#`Ssay`^ `#`Sa`^, `#`Sb`^, or `#`Sc`^ according to which you think is correct.
+mq3 say 5. Which of these terms best fits with the setting of dawn?
+mq5 say `#`Sa)`^ Hey dude, you got your ass kicked by that goblin!
+mq5 say `#`Sb)`^ Greetings stranger, might you know where I could acquire the Immense Blade of Koboldmashing?
+mq5 say `#`Sc)`^ Your RP like SUCKS man!
+~
+disabled false
+END
+
+#7390
+title test - question 4 - c~
+code lang native
+mob force 7329 say Dawn of Time is a roleplay mud, this means roleplay is encouraged and required.
+mob force 7329 say Please try again.
+~
+disabled false
+END
+
+#7389
+title test - question 4 - b~
+code lang native
+mob force 7329 say Dawn of Time is a roleplay mud, this means roleplay is required.
+mob force 7329 say Please try again.
+~
+disabled false
+END
+
+#7388
+title test - question 4 - a~
+code lang native
+mob force 7329 say Correct, this is a roleplay mud, which means roleplay is required.
+mob force 7329 smile
+mob force 7329 say On to the next question..
+ 
+ 
+ 
+mq2 mob transfer $n 7363
+ 
+mq3 mob at 7363 mob force 7330 mob call 7391
+~
+disabled false
+END
+
+#7387
+title test - question 4 - roleplay~
+code lang native
+mq1 say Please `#`Ssay`^ `#`Sa`^, `#`Sb`^, or `#`Sc`^ according to which you think is correct.
+mq3 say 4. Roleplay is:
+mq5 say `#`Sa)`^ required
+mq5 say `#`Sb)`^ optional
+mq5 say `#`Sc)`^ discouraged
+~
+disabled false
+END
+
+#7386
+title test - question 3 - c~
+code lang native
+mob force 7328 say Correct, multilogging is unacceptable, and could result in a siteban.
+mob force 7328 smile
+mob force 7328 say On to the next question..
+ 
+ 
+mq2 mob transfer $n 7362
+ 
+mq3 mob at 7362 mob force 7329 mob call 7387
+~
+disabled false
+END
+
+#7385
+title test - question 3 - b~
+code lang native
+mob force 7328 say Multilogging is against the rules, and if you are seen to be multilogging, this could result in a siteban.
+mob force 7328 say Please try again.
+~
+disabled false
+END
+
+#7384
+title test - question 3 - a~
+code lang native
+mob force 7328 say Multilogging is against the rules and will be dealt to severly.
+mob force 7328 say Please try again.
+~
+disabled false
+END
+
+#7383
+title test - question 3 - multilogging~
+code lang native
+mq1 say Please `#`Ssay`^ `#`Sa`^, `#`Sb`^, or `#`Sc`^ according to which answer you think is correct.
+mq3 say 3. Multilogging is:
+mq5 say `#`Sa)`^ encouraged
+mq5 say `#`Sb)`^ fine if you don't get caught
+mq5 say `#`Sc)`^ unacceptable and could result in sitebanning
+~
+disabled false
+END
+
+#7382
+title test - question 2 - c~
+code lang native
+mob force 7327 say Correct, swearing is not acceptable on the Dawn of Time.
+mob force 7327 smile
+mob force 7327 say On to the next question..
+ 
+ 
+mq2 mob transfer $n 7361
+ 
+mq3 mob at 7361 mob force 7328 mob call 7383
+~
+disabled false
+END
+
+#7381
+title test - question 2 - b~
+code lang native
+mob force 7327 say Swearing is not acceptable, no matter where you are in the game.
+mob force 7327 say Please try again.
+~
+disabled false
+END
+
+#7380
+title test - question 2 - a~
+code lang native
+mob force 7327 say Swearing is not acceptable on the dawn of time.
+mob force 7327 say Please try again.
+~
+disabled false
+END
+
+#7379
+title test - question 2 - swearing~
+code lang native
+mq1 say Please `#`Ssay`^ `#`Sa`^, `#`Sb`^, or `#`Sc`^ according to the correct answer.
+mq3 say 2. Swearing is:
+mq5 say `#`Sa)`^ acceptable
+mq5 say `#`Sb)`^ acceptable in ooc rooms only
+mq5 say `#`Sc)`^ not acceptable
+~
+disabled false
+END
+
+#7378
+title test - question 1 - c~
+code lang native
+mob force 7333 say The question/answer channel is for questions about game mechanics, not ic questions.
+mob force 7333 say Please try again.
+~
+disabled false
+END
+
+#7377
+title test - question 1 - b~
+code lang native
+mob force 7333 say Correct, ic questions can only be asked icly, in the game.
+mob force 7333 smile
+mob force 7333 say On to the next question..
+mq2 mob transfer $n 7360
+mq2 mob force 7333 mob purge self
+mq3 mob at 7360 mob force 7327 mob call 7379
+ 
+ 
+ 
+~
+disabled false
+END
+
+#7376
+title test - question 1 - a~
+code mob force 7333 say The ooc channel is for out of character discussions only.
+mob force 7333 say Please try again.
+~
+disabled false
+END
+
+#7375
+title test - question 1 - ic/ooc~
+code mq2 say This is an `#`Sopen helpfile`^ test, which means you can look up any helpfiles you need.
+mq2 smile
+mq4 say There are five questions to be answered.
+mq7 say Please `#`Ssay`^ `#`Sa`^, `#`Sb`^, or `#`Sc`^ according to which you think is correct.
+mq9 say 1. In character questions, such as "where is the armor shop" can be asked:
+mq11 say `#`Sa)`^ on the ooc channel
+mq11 say `#`Sb)`^ icly, in the game
+mq11 say `#`Sc)`^ on the question/answer channel
+~
+disabled false
+END
+
+#7374
+title adv. summary of lessons 14-17~
+code mq1 rsay >$n Well, we've covered a lot.
+ 
+mq4 rsay >$n This is your last chance to revise the rules, before heading to the `#`Sthe big test`^!
+mq4 emote grins with a twinkle in his eye.
+mq7 rsay You can either recall now, or head back to the central room to go upstairs to the advanced test.
+ 
+~
+disabled false
+END
+
+#7373
+title adv. lesson 17 - helpfiles~
+code mq1 chuckle
+mq2 rsay >$n In case you hadn't noticed by now, Dawn of Time has plenty of `#`Shelpfiles`^.
+mq6 rsay In fact, there's probably a helpfile for almost every topic you can think of.
+mq9 rsay So whenever you get stuck, this is the first place to turn to.
+mq12 rsay You can search for a topic by using `#`Shelplist`^ with the keyword of the topic.
+mq16 emote motions towards the door.
+~
+disabled false
+END
+
+#7372
+title adv. lesson 16 - things to get involved in~
+code mq1 rsay There are many exciting things to get involved in, once you start playing here.
+mq4 rsay You could join a `#`Sclan`^ (help clan) or the world of `#`Spolitics`^ (help politic).
+mq7 rsay Maybe you could buy a `#`Shouse`^ (help ic-house-price) or set up business and buy a `#`Sshop`^ (help jobs).
+mq11 rsay Of course, you could be involved in `#`Spkills`^ (playerkills) but there are strict rules on this and pkilling is `#`Srestricted`^ (help pkill).
+mq14 rsay And there are `#`Squests`^ to be part of, and `#`Sautoquests`^ to solve (help autoquest).
+mq17 rsay Lastly, there's always plenty of opportunities to get involved with roleplay situations.
+mq17 smile
+mq21 rsay Shall we go on?
+~
+disabled false
+END
+
+#7371
+title adv. lesson 15 - maps~
+code mq1 smile $n
+mq2 rsay >$n I mentioned briefly in the last lesson about maps.
+mq6 rsay >$n Here are a few maps to help you get around when you start playing.
+mq6 mob oload 7382
+mq7 give map $n
+mq7 mob oload 7383
+mq8 give map $n
+mq9 mob oload 7377
+mq9 give map $n
+mq12 rsay >$n That's a basic map of Valarin, and its two main cities, Mekali and Dzagari.
+mq12 rsay You can `#`Slook`^ at the `#`Smap`^ to get orientated.
+mq16 rsay Of course, [with a chuckle] exploring is always fun too.
+~
+disabled false
+END
+
+#7370
+title adv. lesson 14 - areas~
+code mq1 rsay There are many areas in the land of mythrin, all of which are original to Dawn.
+mq4 rsay You can see a list of the `#`Sarea`^s which have the recommended level range next to them, using the `#`Sarealist`^ command.
+mq7 rsay Some areas are designed for specific purposes such as roleplay areas (which has [[all] beside it), and others are designed for killing monsters (these have the level range beside it).
+mq12 rsay When you get started, you'll arrive at a place which is your `#`Srecall`^ point.
+mq13 rsay This means, that whenever you `#`Srecall`^, you'll come back to this place.
+mq16 rsay Forest-type classes, such as rangers, druids and barbarians, recall to a forest spot near the crossroads.
+mq18 rsay Good races, such as humans and elves, recall to Mekali.
+mq17 rsay Evil races, such as gnolls and kobolds, recall to Dzagari.
+mq22 rsay Each area has its own hunting area for low level places.
+mq25 rsay In Mekali - the park, Dzagari - the post office, Crossroads - forsaken gardens.
+mq27 rsay A word of advice.. its generally frowned upon to kill citizens in Mekali, find the park instead.
+mq30 rsay You can use a map for directions or ask someone you meet to help you.
+mq31 rsay >$n We can go when you're ready.
+~
+disabled false
+END
+
+#7369
+title adv. summary of lessons 10-13~
+code mq1 rsay You can either recall to begin playing, or head back to the central advanced room, to choose the next series of lessons.
+mq3 smile
+ 
+~
+disabled false
+END
+
+#7368
+title adv. lesson 13 - Mythos and Setting~
+code mq1 rsay Dawn of Time has its own mythos, stories about how things came into existence.
+mq3 rsay Its useful to read `#`Shelp`^ on the `#`Smythos`^ because it can add to your character's roleplay and history.
+mq7 rsay The setting of dawn is medieval fantasy.
+mq10 rsay The world of Mythrin also has its own gods and goddesses.
+mq14 rsay When playing your character, you may wish to choose one from the `#`Shelp`^ on `#`Sgod-pantheon`^.
+mq17 rsay After you... 
+~
+disabled false
+END
+
+#7367
+title adv. lesson 12 - races and classes~
+code mq1 rsay >$n There are many races available to choose from, each with their own strengths and weaknesses.
+mq4 rsay There is `#`Shelp`^ about the `#`Srace-list`^ and `#`Shelp`^ to view `#`Sracial-skills`^.
+mq7 rsay When you create a character, you choose both a race and a class.
+mq10 rsay Depending on your combination, this will decide how much experience you will need to level.
+mq14 rsay To see which races are best suited to which classes, have a look at the `#`Shelp`^ on the `#`Srace-overview`^.
+mq18 rsay If you want further information on a race, you can look at the `#`Shelp`^file on your `#`Srace-<race_name>`^ and `#`Shelp`^ on `#`Srace-myths`^.
+mq22 rsay To find out more about classes, have a look at the `#`Shelp`^ available for that `#`Sclass_name`^.
+mq25 rsay We'll continue when you're ready.
+mq25 smile
+~
+disabled false
+END
+
+#7366
+title start adv. school after completing beginners school~
+code mob mpfollow $n
+mob remember $n
+mq1 rsay Right.. to the `#`Swest`^ this time then.
+mq2 smile
+~
+disabled false
+END
+
+#7365
+title load kal at the end of beginner's school~
+code language native
+mob remember $n
+mq2 beam $n
+mq2 rsay >$n Congratulations! You made it through!
+mq4 rsay >$n [with a twinkle in his eye] You must have had a great teacher!
+mq10 rsay >$n Lets head back to the main mud school entrance, you can then take some more advanced classes if interested.
+mq12 mob transfer $n 7371
+mq12 mob vforce 7371 mob call 7411 $n
+mq12 mob purge self
+~
+disabled false
+END
+
+#7364
+title beginner's test - trigger green shoelace~
+code *** Peppermint-Green BOOTS
+mob remember $n
+** check to see if they have a pair of boots
+if hastoken $n 7381
+  rsay >$n You already have a pair of boots, I'm keeping the rest for myself!
+  give laces $n
+  end
+endif
+** check to see if they're doing it in order
+if !hastoken $n 7380
+  rsay >$n You'll need to bring me a pomegranate first.
+  give laces $n
+  end
+endif
+ 
+mq1 clap $n
+mq3 rsay >$n Splendid! Just splendid!
+mq6 rsay Now, I'll just thread this through here [as he slots the shoelace into the device.]
+mq10 emote begins to turn a wheel, cranking up the beatafeet contraption.
+mq13 mob echo A slow `#`Ywhirring`^ sound begins.. followed by a `#`Bwhizz`^, then a `#`Mwheeeee`^, then a `#`Cbee-bop bee-bop`^ and finally.. a `#`Rkerplunk`^!
+mq18 mob echo Out pop a pair of `#`Rb`Ye`Ba`Rt`Ya`Bf`Re`Ye`Bt`^ boots with `#`Cpeppermint`G-green`^ laces!
+mq20 beam
+mq21 rsay It works!  A pair of beatafeet boots!!!
+mq24 rsay >$n And I couldn't have done it without you!
+mq24 mob oload 7351
+mq27 rsay >$n [picking up the boots] Here! I'd like you to have this pair.
+** Give them the boots and a token 
+mq27 give boot $n
+mq27 beam $n
+mq27 mob oload 7381
+mq27 mob tgive 7381 $n
+ 
+mq30 mob mload 7300
+mq31 mob echo A being of light appears.
+mq32 mob force being mob call 7365 $n
+~
+disabled false
+END
+
+#7363
+title beginner's test - trigger blue shoelace~
+code *** Blueberry BOOTS
+mob remember $n
+** check to see if they have a pair of boots
+if hastoken $n 7381
+  rsay >$n You already have a pair of boots, I'm keeping the rest for myself!
+  give laces $n
+  end
+endif
+** check to see if they're doing it in order
+if !hastoken $n 7380
+  rsay >$n You'll need to bring me a pomegranate first.
+  give laces $n
+  end
+endif
+ 
+mq1 clap $n
+mq3 rsay >$n Splendid! Just splendid!
+mq6 rsay Now, I'll just thread this through here [as he slots the shoelace into the device.]
+mq10 emote begins to turn a wheel, cranking up the beatafeet contraption.
+mq13 mob echo A slow `#`Ywhirring`^ sound begins.. followed by a `#`Bwhizz`^, then a `#`Mwheeeee`^, then a `#`Cbee-bop bee-bop`^ and finally.. a `#`Rkerplunk`^!
+mq18 mob echo Out pop a pair of `#`Rb`Ye`Ba`Rt`Ya`Bf`Re`Ye`Bt`^ boots with `#`Bblueberry-blue`^ laces!
+mq20 beam
+mq21 rsay It works!  A pair of beatafeet boots!!!
+mq24 rsay >$n And I couldn't have done it without you!
+mq24 mob oload 7349
+mq27 rsay >$n [picking up the boots] Here! I'd like you to have this pair.
+** Give them the boots and a token 
+mq27 give boot $n
+mq27 beam $n
+mq27 mob oload 7381
+mq27 mob tgive 7381 $n
+ 
+mq30 mob mload 7300
+mq31 mob echo A being of light appears.
+mq32 mob force being mob call 7365 $n
+~
+disabled false
+END
+
+#7362
+title beginner's test - trigger red shoelace~
+code *** CHERRY BOOTS
+mob remember $n
+** check to see if they have a pair of boots
+if hastoken $n 7381
+  rsay >$n You already have a pair of boots, I'm keeping the rest for myself!
+  give laces $n
+  end
+endif
+** check to see if they're doing it in order
+if !hastoken $n 7380
+  rsay >$n You'll need to bring me a pomegranate first.
+  give laces $n
+  end
+endif
+ 
+mq1 clap $n
+mq3 rsay >$n Splendid! Just splendid!
+mq6 rsay Now, I'll just thread this through here [as he slots the shoelace into the device.]
+mq10 emote begins to turn a wheel, cranking up the beatafeet contraption.
+mq13 mob echo A slow `#`Ywhirring`^ sound begins.. followed by a `#`Bwhizz`^, then a `#`Mwheeeee`^, then a `#`Cbee-bop bee-bop`^ and finally.. a `#`Rkerplunk`^!
+mq18 mob echo Out pop a pair of `#`Rb`Ye`Ba`Rt`Ya`Bf`Re`Ye`Bt`^ boots with `#`rcherry`R-red`^ laces!
+mq20 beam
+mq21 rsay It works!  A pair of beatafeet boots!!!
+mq24 rsay >$n And I couldn't have done it without you!
+mq24 mob oload 7348
+mq27 rsay >$n [picking up the boots] Here! I'd like you to have this pair.
+** Give them the boots and a token 
+mq27 give boot $n
+mq27 beam $n
+mq27 mob oload 7381
+mq27 mob tgive 7381 $n
+ 
+mq30 mob mload 7300
+mq31 mob echo A being of light appears.
+mq32 mob force being mob call 7365 $n
+~
+disabled false
+END
+
+#7361
+title beginner's test - trigger pink shoelace~
+code *** HOTPINK BOOTS
+mob remember $n
+** check to see if they have a pair of boots
+if hastoken $n 7381
+  rsay >$n You already have a pair of boots, I'm keeping the rest for myself!
+  give laces $n
+  end
+endif
+** check to see if they're doing it in order
+if !hastoken $n 7380
+  rsay >$n You'll need to bring me a pomegranate first.
+  give laces $n
+  end
+endif
+ 
+mq1 clap $n
+mq3 rsay >$n Splendid! Just splendid!
+mq6 rsay Now, I'll just thread this through here [as he slots the shoelace into the device.]
+mq10 emote begins to turn a wheel, cranking up the beatafeet contraption.
+mq13 mob echo A slow `#`Ywhirring`^ sound begins.. followed by a `#`Bwhizz`^, then a `#`Mwheeeee`^, then a `#`Cbee-bop bee-bop`^ and finally.. a `#`Rkerplunk`^!
+mq18 mob echo Out pop a pair of `#`Rb`Ye`Ba`Rt`Ya`Bf`Re`Ye`Bt`^ boots with `#`Mhot-pink`^ laces!
+mq20 beam
+mq21 rsay It works!  A pair of beatafeet boots!!!
+mq24 rsay >$n And I couldn't have done it without you!
+mq24 mob oload 7350
+mq27 rsay >$n [picking up the boots] Here! I'd like you to have this pair.
+** Give them the boots and a token 
+mq27 give boot $n
+mq27 beam $n
+mq27 mob oload 7381
+mq27 mob tgive 7381 $n
+ 
+mq30 mob mload 7300
+mq31 mob echo A being of light appears.
+mq32 mob force being mob call 7365 $n
+~
+disabled false
+END
+
+#7360
+title beginner's test - trigger gold shoelace~
+code *** GOLD BOOTS
+mob remember $n
+** check to see if they have a pair of boots
+if hastoken $n 7381
+  rsay >$n You already have a pair of boots, I'm keeping the rest for myself!
+  give laces $n
+  end
+endif
+** check to see if they're doing it in order
+if !hastoken $n 7380
+  rsay >$n You'll need to bring me a pomegranate first.
+  give laces $n
+  end
+endif
+ 
+mq1 clap $n
+mq3 rsay >$n Splendid! Just splendid!
+mq6 rsay Now, I'll just thread this through here [as he slots the shoelace into the device.]
+mq10 emote begins to turn a wheel, cranking up the beatafeet contraption.
+mq13 mob echo A slow `#`Ywhirring`^ sound begins.. followed by a `#`Bwhizz`^, then a `#`Mwheeeee`^, then a `#`Cbee-bop bee-bop`^ and finally.. a `#`Rkerplunk`^!
+mq18 mob echo Out pop a pair of `#`Rb`Ye`Ba`Rt`Ya`Bf`Re`Ye`Bt`^ boots with `#`Ygold`^ laces!
+mq20 beam
+mq21 rsay It works!  A pair of beatafeet boots!!!
+mq24 rsay >$n And I couldn't have done it without you!
+mq24 mob oload 7346
+mq27 rsay >$n [picking up the boots] Here! I'd like you to have this pair.
+** Give them the boots and a token 
+mq27 give boot $n
+mq27 beam $n
+mq27 mob oload 7381
+mq27 mob tgive 7381 $n
+ 
+mq30 mob mload 7300
+mq31 mob echo A being of light appears.
+mq32 mob force being mob call 7365 $n
+~
+disabled false
+END
+
+#7359
+title beginner's test - trigger silver shoelace~
+code *** SILVER BOOTS
+mob remember $n
+** check to see if they have a pair of boots
+if hastoken $n 7381
+  rsay >$n You already have a pair of boots, I'm keeping the rest for myself!
+  give laces $n
+  end
+endif
+** check to see if they're doing it in order
+if !hastoken $n 7380
+  rsay >$n You'll need to bring me a pomegranate first.
+  give laces $n
+  end
+endif
+ 
+mq1 clap $n
+mq3 rsay >$n Splendid! Just splendid!
+mq6 rsay Now, I'll just thread this through here [as he slots the shoelace into the device.]
+mq10 emote begins to turn a wheel, cranking up the beatafeet contraption.
+mq13 mob echo A slow `#`Ywhirring`^ sound begins.. followed by a `#`Bwhizz`^, then a `#`Mwheeeee`^, then a `#`Cbee-bop bee-bop`^ and finally.. a `#`Rkerplunk`^!
+mq18 mob echo Out pop a pair of `#`Rb`Ye`Ba`Rt`Ya`Bf`Re`Ye`Bt`^ boots with `#`Ssilver`^ laces!
+mq20 beam
+mq21 rsay It works!  A pair of beatafeet boots!!!
+mq24 rsay >$n And I couldn't have done it without you!
+mq24 mob oload 7347
+mq27 rsay >$n [picking up the boots] Here! I'd like you to have this pair.
+** Give them the boots and a token 
+mq27 give boot $n
+mq27 beam $n
+mq27 mob oload 7381
+mq27 mob tgive 7381 $n
+ 
+mq30 mob mload 7300
+mq31 mob echo A being of light appears.
+mq32 mob force being mob call 7365 $n
+~
+disabled false
+END
+
+#7358
+title beginner's quest - trigger pomegranate~
+code mob remember $n
+** check to see if they have a pair of boots
+if hastoken $n 7381
+ rsay >$n You already have a pair of boots, I'm keeping the rest for myself!
+ end
+endif
+** check to see if they've started at the beginning
+if hastoken $n 7379
+** if they bring the same of something
+if hastoken $n 7380
+ rsay >$n Does this look like shoelace?
+ rsay >$n I'll save this for a snack.. now, go and find a shoelace!
+ end
+endif
+ 
+mq1 rsay >$n Oh, you're a genius!
+mq3 beam $n
+mq5 rsay Now, I'll just squeeze this in here [and he squashes the juice out of the fruit and into a hole in the machine.]
+mq8 emote pauses for a moment.
+mq9 rsay Hmm.. I know I've forgotten something..
+mq12 rsay Just one more thing, and it'll be ready.. what was it?
+mq13 emote scratches his head.
+mq16 rsay >$n Ah yes! A shoelace!
+mq19 rsay >$n I need a shoelace.. just one.. could you find me one?
+mq20 pmote $n grins at @ with a crazy, inventor's sort of grin.
+mq21 emote starts polishing the contraption, for its big moment.
+mob oload 7380
+mob tgive 7380 $n
+else
+rsay >$n I need a leaf from a leather plant first.
+endif
+~
+disabled false
+END
+
+#7357
+title beginner's quest - trigger leaf~
+code mob remember $n
+** check to see if they have a pair of boots
+if hastoken $n 7381
+ rsay >$n You already have a pair of boots, I'm keeping the rest for myself!
+ end
+endif
+ 
+if hastoken $n 7379
+ rsay >$n Another one? I only wanted one.
+ give leaf $n
+ chuckle
+ rsay >$n Now, will you go and find me a pomegranate?
+ end
+endif
+ 
+mq1 beam $n
+mq4 rsay [with a wide grin] Oh fantastic! Super! Just fantastic!
+mq7 rsay This'll do me splendid [and he starts hammering the leathery leaf to his contraption.]
+mq10 emote pauses for a moment, and then suddenly remembers something.
+mq14 rsay I know what I need!
+mq17 rsay >$n Every good invention needs a good pomegranate to get it cranking away!
+mq17 emote laughs to himself.
+mq20 rsay >$n Could you find me a pomegranate.. a nice ripe one, they've got the most juice.
+mq21 rsay >$n You're a good sort.
+mq21 smile $n
+mq23 emote continues to tinker away.
+mob oload 7379
+mob tgive 7379 $n
+~
+disabled false
+END
+
+#7356
+title beginners quest - gnome greets~
+code language native
+mob remember $n
+** check to see if they have a pair of boots
+if hastoken $n 7381
+ rsay >$n You already have a pair of boots, I'm keeping the rest for myself!
+ end
+endif
+** check to see if they've been greeted
+if hastoken $n 7378
+  end
+endif
+ 
+mob oload 7378
+mob tgive 7378 $n 
+mq1 rsay Goodness me! Goodness me!
+mq1 rsay What good is a beatafeet contraption which doesn't work!
+mq4 rsay I must find the leaf of a leather plant!
+mq7 pmote $n notices @ and a grin begins to form on his face.
+mq10 rsay >$n Well, hello there!
+mq12 pmote $n puts an arm about @'s shoulders.
+mq15 rsay >$n You look like an intelligent sort, would you mind `Yfinding me a the leaf of a leather plant`x?
+mq18 rsay Because, my beatafeet invention is almost done.. I just need a few more things.
+mq20 rsay >$n Could you find me one?
+mq21 beam $n
+mq24 emote goes back to tinkering away.
+~
+disabled false
+END
+
+#7355
+title starting dialog for adv. school~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+** Starting dialog for people who know how to mud, but are new to dawn
+if room $i == 7300
+mob mload 7315
+mob vforce 7315 mob call 7392 $q
+mob purge self
+endif
+~
+disabled false
+END
+
+#7354
+title question to separate newbies from oldies~
+code rsay >$n First of all, have you played on a mud before? (type `#`Ssay yes`^ or `#`Ssay no`^)
+~
+disabled false
+END
+
+#7353
+title adv. lesson 11 - guilds~
+code mq1 rsay When you gain levels, the place to practise and train is at your `#`Sguild`^.
+mq4 rsay There is a separate guild for each `#`Sclass`^, and this is a good place to meet people who are on a similar path in life.
+mq8 rsay All characters who are forest types, such as barbarians, druids and rangers have a guild at the crossroads, between Mekali and Dzagari (the two main towns of Valarin, the main continent in Mythrin).
+mq10 rsay All other classes have guilds in both Mekali and Dzagari.
+mq14 rsay At your guild, you'll see someone who resembles a teacher.
+mq14 rsay This is your guildmaster, the one who helps you with your learning.
+mq18 rsay We'll continue when you're ready.
+mq18 emote grins widely.
+~
+disabled false
+END
+
+#7352
+title adv. lesson 10 - leveling~
+code mq1 rsay Part of the fun of playing, is going up levels.
+mq4 rsay There are 101 levels on D.o.T, and up to 91 levels are available to mortals.
+mq8 rsay You go up levels by gaining experience.
+mq10 rsay This can be done by roleplaying, moot rewards, killing monsters, being part of a group which kills monsters, or when your skills increase through use.
+mq14 rsay The amount of experience needed before you reach the next level is determined by your creation points.
+mq16 rsay Creation points are based on your class and race combination, and by the amount of skills you gain during creation.
+mq18 rsay To get the minimum number of experience (xp) to level, use up to 40 creation points.
+mq20 rsay When you raise a level, you are given 2 trains and 3 pracs which you can use to gain new skills or increase your skills and statistics.
+mq25 rsay We'll move on when you're ready [and smiles warmly.]
+~
+disabled false
+END
+
+#7351
+title adv. summary of lessons 6-9~
+code mq1 rsay Well, we've covered a little about making your character unique.
+mq3 rsay Such as a history, a description of how they look, and the alignment they will be.
+mq6 rsay When you're ready for the next lesson, we'll move on.
+mq6 smile
+~
+disabled false
+END
+
+#7350
+title adv. lesson 9 - short/long descs~
+code mq1 smile
+mq2 rsay When you see other players in the game, what you see is similar to a real life situation in that you would see "a tall woman" or "a stout, bearded man".
+mq5 rsay We call these `#`Sshort descriptions`^.
+mq8 rsay A short description is what you see at first glance, and describes in one statement, your race, gender and any distinctive features.
+mq12 rsay Having a short description helps you to be recognised by other players, and is also necessary before being letgained.
+mq14 rsay To get a short description, you'll need to write a `#`Slong description`^ and then ask an immortal to set your short description.
+mq18 rsay A `#`Slong description`^ is a paragraph (of at least 5 lines) detailing your appearance, and describes everything you would see by looking at you.
+mq21 rsay However, it cannot describe aspects such as the things you wear, as these change from day to day.
+mq25 rsay When you are writing your long description, imagine you are describing a still photo of yourself.
+mq29 rsay If you are a race other than human, having a look at the `#`Shelp`^ available on `#`Srace`^s may help you to describe your appearance.
+mq23 rsay You can look at the `#`Shelp`^file on `#`Slong`^ descriptions to learn more about this, and how to use the editor to write your description.
+mq35 rsay [with a smile] When you're ready..
+~
+disabled false
+END
+
+#7349
+title adv. lesson 8 - letgains~
+code mq1 rsay As this is a roleplaying mud, we have a system called `#`Sletgain`^ing to encourage players to put a little thought into their characters.
+mq4 rsay All players need to be letgained before level 25 or you will not get any more experience until you are.
+mq7 rsay To `#`Srequestletgain`^ you need to write a character `#`Shistory`^, fill out your character's `#`Srpsheet`^ and have a `#`Sshort`^ and `#`Slong description`^.
+mq12 rsay A `#`Shistory`^ is the life story of your character up to this point, and gives insight as to what type of person they are and what their goals are.
+mq16 rsay You can find out more `#`Shelp`^ about `#`Shistory`^ requirements and `#`Shelp`^ on `#`Smythos`^ to help you with your character's history.
+mq20 rsay Each character has an `#`Srpsheet`^ which needs to be filled out in order to be letgained.
+mq24 rsay Rpsheets record details about your characters personality and physical traits, and you can find out more `#`Shelp`^ about `#`Srpsheets`^ also.
+mq27 rsay We'll cover short and long descriptions in the next lesson.
+mq28 emote waits by the door patiently.
+~
+disabled false
+END
+
+#7348
+title adv. lesson 7 - alignment~
+code mq1 rsay When you create a character, you choose what alignment your character will roleplay.
+mq4 rsay Your character's alignment is based on their values and beliefs, and determines how they will behave and respond to certain situations.
+mq7 rsay You must roleplay your character according to their alignment at all times, and good roleplay of your alignment can result in moots (xp bonuses).
+mq10 rsay There is more `#`Shelp`^ available on `#`Salignment`^ if you need it.
+mq11 smile
+~
+disabled false
+END
+
+#7347
+title adv. summary of lessons 1-5~
+code mq1 rsay >$n We've covered some pretty important topics so far, such as rules and ic/ooc.
+mq4 rsay >$n If you're not clear on something, take some time now to go over the helpfiles before we go on.
+mq5 emote waits patiently, with a quiet smile on his face.
+mq6 rsay You can either recall now, and begin playing, or head southeast to go to the central advanced room to choose the next series in the advanced school.
+~
+disabled false
+END
+
+#7346
+title adv. lesson 5 - tells~
+code mq1 rsay Occasionally you will receive or want to send a message to an immortal or newbie helper, if you are a newbie (under level 10).
+mq4 rsay When an imm or newbie helper sends you a tell, you can respond by sending a `#`Stell`^ to the `#`Sname`^ of that person.
+mq8 rsay If you were sent an anonymous message, you can respond by `#`Sreply`^ing with your message.
+mq12 rsay To send a tell to an immortal, or newbie helper, you can send a `#`Stell`^ to the `#`Sname`^ of that person with your message.
+mq16 rsay You can `#`Sreplay`^ to see if you've been sent any tells.
+mq19 rsay There is more `#`Shelp`^ on sending and receiving `#`Stells`^ if you need it.
+mq21 rsay Using tells is for ooc communication only.
+mq22 rsay >$n When you're ready, we'll continue.
+mq22 smile
+~
+disabled false
+END
+
+#7345
+title adv. lesson 4 - channels~
+code mq1 rsay There are four channels used to communicate with other players anywhere in the game.
+mq4 rsay The channel most relevant to you at this stage is the `#`Snewbie`^ channel.
+mq6 rsay This is the channel especially for players that are not yet letgained, to get their questions about the game answered in a helpful friendly way.
+mq6 rsay Immortals and newbie helpers will be able to help you on this channel.
+mq9 rsay Type `#`Snewbie`^ before your message to use this channel.
+mq13 rsay The `#`Sooc`^ channel (out-of-character), which looks like this `#`c<name ooc>`^ is for discussing real life issues only.
+mq16 rsay You can use this channel by typing `#`Sooc`^ before your message.
+mq19 rsay If you have a specific question regarding MUD game mechanics, you can type `#`Squestion`^ before your message, to use the `#`gquestion and answer`^ channel.
+mq22 rsay This channel is also an `#`Sooc`^ channel.
+mq26 rsay To go to a designated ooc room, type `#`Sgoooc`^.
+mq30 rsay We'll move on when you're ready.
+mq30 smile
+~
+disabled false
+END
+
+#7344
+title adv. lesson 2 - rules~
+code mq1 rsay Dawn of Time, just like any game, has rules.
+mq4 rsay Have a read of the `#`Shelp`^ on `#`Srules`^ so you know how to play the game.
+mq4 smile
+mq10 rsay Oh, and by the way.. there'll be a test on the rules at the end of this school.
+mq10 chuckle
+mq15 rsay We'll get going when you're done reading.
+mq15 emote waits patiently.
+~
+disabled false
+END
+
+#7343
+title adv. lesson 1 - who's who?~
+code mq1 rsay There are many people who make up the Dawn of Time.
+mq2 rsay >$n Firstly there's you, one of the players, also called `#`Smortal`^s because you can die in the game.
+mq2 emote chuckles mischieviously.
+mq7 rsay Then there are `#`Simmortal`^s (because they cannot die), who are the people in charge of making the game run smoothly.
+mq7 rsay Immortals do everything from `#`Scoding`^ to `#`Squests`^ to `#`Sroleplaying`^ with mortals.
+mq12 rsay You can find out more about immortals by looking at the `#`Swizlist`^.
+mq17 rsay If you type `#`Swho`^ you'll see a list of everyone on at the current time.
+mq21 rsay Names above the pink line are mortals, below are immortals.
+mq26 rsay If a player has `#`S[[+++]]`^ next to their name, this means they are a newbie helper and will be able to help you with any questions you may have.
+mq30 rsay Another group of players are the `#`Snobles`^. 
+mq35 rsay These players have been recognised for their outstanding roleplay and have the ability to reward other players who are doing well at roleplay, with experience points or `#`Smoots`^.
+mq40 rsay Another important group of people are the `#`Sbuilders`^, made up of both mortals and immortals.
+mq45 chuckle
+mq45 rsay That's quite a team, you can find out more `#`Shelp`^ about `#`Swho`^ is on D.o.T if you need to.
+mq47 rsay Let's head northwest, when you're ready.
+~
+disabled false
+END
+
+#7342
+title adv. lesson 3 - ic/ooc~
+code mq1 rsay There are two aspects to the Dawn of Time.
+mq4 rsay The `#`Sic`^ (in-character) aspect is where you play the game, talk to other characters, roleplay and lead the life of your character.
+mq8 rsay When you are playing the game, all actions and words must be `#`Sin character`^, for example, staying at the inn, going by horse and carriage, wearing a suit of armor.
+mq12 rsay The opposite is the `#`Sooc`^ (out-of-character) aspect.
+mq16 rsay `#`SOOC`^ means topics you would talk about to someone in real life, or actions you would do in real life, for example surfing, watching movies, wearing a pair of jeans.
+mq20 rsay The only times you can talk or act `#`Sout of character`^ is when you are talking over the `#`Sooc channel`^ or in a designated `#`Sooc room`^.
+mq24 rsay This is one of the rules of D.o.T and both players and admin will pull you up on it if you are having trouble following this rule.
+mq24 emote grins with a twinkle in his eye.
+mq28 rsay >$n [pointing to the west] After you...
+~
+disabled false
+END
+
+#7341
+title adv. lesson 6 - roleplay~
+code mq1 rsay >$n Dawn of Time is a roleplaying mud, which means roleplaying is required, not optional.
+mq4 rsay >$n Roleplaying, or rp, means to act and talk like the character you have made.
+mq7 rsay When you are roleplaying, this is called `#`Sin character`^ or `#`Sic`^.
+mq10 rsay Doing a great job at roleplaying can result in `#`Smoots`^ which are xp bonuses to encourage your good roleplay skills.
+mq14 rsay You can get more `#`Shelp`^ about `#`Sgoodexample`^s or `#`Shelp`^ on `#`Sbadexample`^s of roleplay to really get the hang of this.
+mq18 smile
+mq18 rsay We'll continue when you're ready.
+~
+disabled false
+END
+
+#7340
+title summary of lesson 16-20~
+code ** first junk the tokens so they can resume the bettafeet quest
+mob tjunk all.7378 $n
+** now tell them guide mob will meet them on the other side
+mq1 rsay >$n Well, you've covered the basics of playing on a mud.
+mq4 rsay >$n Coming up next is a test to see how well you use the new skills you've been learning.
+mq8 rsay >$n Here's some extra coins, in case you need them.
+mq8 give 500 silver $n
+mq12 rsay If you get through it okay, you can head on to the advanced school.. 
+mq15 rsay But if you don't make it out, you might have to do a refresher course.
+mq20 rsay >$n Good luck, I'll be waiting for you at the other end.
+mq21 cheer $n
+mq24 emote starts to radiate light so bright you are forced to close your eyes, finding yourself able to open your eyes seconds later he is gone.
+mq25 mob purge self
+~
+disabled false
+END
+
+#7339
+title lesson 20 - how to group~
+code mq1 rsay >$n Remember earlier when you learnt how to follow a friend.
+mq3 rsay >$n If you want to go on an adventure with a friend, you can join a `#`Sgroup`^.
+mq6 rsay You need to `#`Sfollow`^ your friend, so that they can add you to their group.
+mq9 rsay If you're feeling brave and want to lead a group of friends, make sure your friends are following you.
+mq12 rsay Then, if your friends name is Sam, you can `#`Sgroup Sam`^.
+mq15 rsay When you are part of a group, you will share each e`#`Sxp`^erience.
+mq19 rsay >$n You can only be part of a group of players, not creatures such as myself, so you'll have to wait until you get to the ic world to practise this.
+mq19 smile
+~
+disabled false
+END
+
+#7338
+title mosquito dead call 7336~
+code mob vforce 7300 mob call 7336 $n
+~
+disabled false
+END
+
+#7337
+title lesson 19 - wimpy and recovery~
+code mq1 smile $n
+mq3 rsay That seemed to go well, but sometimes an adventure might not go so well.
+mq6 rsay Its important to rest so you can regenerate, or resting on a comfortable bedroll will help you to heal faster.
+mq10 rsay If you're feeling a little `#`Swimpy`^ you can set your `#`Swimpy`^ to a minimum number such as `#`S5`^ if your maximum hitpoints is 10 so you will automatically try to flee when your hitpoints get down to this number.
+mq14 rsay Let's continue when you're ready.
+~
+disabled false
+END
+
+#7336
+title congrats for killing mosquito~
+code mq1 clap $n
+mq3 rsay >$n Nice work!
+mq6 rsay >$n I'll make sure to take you with me next time I come across a mosquito-infested swamp.
+mq6 chuckle
+mq7 smile $n
+mq7 rsay >$n We'll go when you've finished celebrating your triumph.
+mq9 wink $n
+~
+disabled false
+END
+
+#7335
+title lesson 17 - prompt and score~
+code mq1 rsay >$n You may have noticed there is a line of information on the screen looking like a string of numbers and letters.
+mq3 rsay This is your `#`Sprompt`^.
+mq3 rsay It tells you the directions available, the time in the game, your current and maximum hitpoints and movements, and how much experience you need to gain before you reach the next level.
+mq6 rsay >$n You can find out more `#`Shelp`^ about your `#`Sprompt`^ if you need to.
+mq10 rsay Your `#`Sscore`^ also tells you this kind of information.
+mq14 rsay Its important to know how you're holding up because you may need to rest at times to regenerate your health (hp) or ability to move (mv).
+mq17 rsay >$n We'll continue when you're ready.
+~
+disabled false
+END
+
+#7334
+title lesson 18 - how to consider and flee~
+code mq1 rsay [while swatting at the pest] What an annoying mosquito!
+mq3 rsay >$n Perhaps you could `#`Sconsider`^ getting rid of the `#`Smosquito`^.
+mq5 rsay If it seems like an easy fight, you could `#`Skill`^ the `#`Smosquito`^.
+mq5 rsay >$n But first, take a look at your prompt to make sure you're in good health (maximum hp).
+mq9 rsay >$n If you notice your hitpoints going down fast or getting close to zero, you can `#`Sflee`^ from the fight before you die.
+mq12 rsay There's a chance you might not be able to escape on the first attempt so just try to `#`Sflee`^ again until you leave the room.
+mq15 rsay Its also important to know that there is a loss of 10xp if you flee from a fight.. but surely that's not worth dying for right?
+mq15 chuckle
+mq19 c 'armour' $n
+mq19 rsay >$n Well you're the one with the weapon, see if you can't get rid of this pest!
+mq20 cheer $n
+~
+disabled false
+END
+
+#7333
+title lesson 16 - how to train and practice Part 2~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+mq1 rsay >$n Excellent, now if you run into any nasty creatures you'll at least be able to defend yourself with a weapon.
+mq4 rsay But its also a good idea to `#`Strain`^ some of your attributes, which you'll see in your `#`Sscore`^.
+mq6 rsay >$n Its a good idea to `#`Strain`^ your endurance, or `#`Sh`^it`#`Sp`^oints `#`S(hp)`^ and depending on what you intend to become, you can train some other attributes.
+mq6 rsay For example, `#`Strain`^ your `#`Sst`^rength if you intend on becoming a brave hunter, or `#`Strain`^ your `#`Sme`^mory if you want to learn fast.
+mq10 rsay You can also save up your trains to `#`Sgain`^ new skills or realms, which you didn't gain during creation.
+mq12 rsay >$n We'll move on when you finished your training.
+~
+disabled false
+END
+
+#7332
+title lesson 16 - how to train and practice~
+code mq1 rsay >$n Looks like we've come across a guild, a place where you can train and practice your skills.
+mq4 rsay Before you start any adventures its wise to `#`Spractice`^ using your `#`Sdagger`^ or chosen weapon.
+mq7 rsay While we're here this fellow, your guild master [pointing to the wise-looking man] will be more than happy to help you practise until you are `#`Slearned`^ with your weapons.
+~
+disabled false
+END
+
+#7331
+title summary of lessons 11-15~
+code mq2 smile $n
+mq2 rsay >$n You're covered quite a bit about looking after yourself.
+mq5 rsay We'll put that nice suit of armor to use, in the following lessons.
+mq7 rsay >$n When you're ready, we'll move on.
+mq7 smile
+~
+disabled false
+END
+
+#7330
+title lesson 15 - how to rest and sleep~
+code mq1 rsay >$n Well, now that you're full and happy, lets stop for a `#`Srest`^.
+mq2 rest
+mq6 rsay >$n You've learnt a lot today, if you're feeling a little tired, you could `#`Ssleep`^ here, under the trees.
+mq7 rsay Or if you have a bedroll, you could `#`Ssleep`^ on your `#`Sbedroll`^.
+mq7 stand
+mq10 rsay Rest, and sleep are very important.. if you're feeling like you can barely move, or have ended up with a few bumps and bruises, there's nothing like a good sleep to replenish the body.
+mq14 rsay Its important to listen to your body too, if you are `#`Sfeeling tired`^, perhaps you should rest a little, but if you're `#`Sfeeling very tired`^ its best to get a good sleep.. it could be a little embarrassing to collapse in the middle of the street (hopefully someone will be kind enough to `#`Swake`^ you if this happens).
+mq14 chuckle
+mq17 stretch
+mq17 rsay >$n When you've rested long enough.. `#`Sstand`^ and we'll move on.
+mq17 smile $n
+~
+disabled false
+END
+
+#7329
+title lesson 14 - how to eat and drink~
+code mq1 emote looks around and smiles.
+mq3 rsay This seems like a nice place to stop and have a picnic.
+mq5 rsay >$n If you're hungry, now might be a good time to `#`Seat`^ a roast `#`Schicken`^ or some other food.
+mq7 emote pulls out an apple from his pocket and begins to `#`Seat`^ the `#`Sapple`^.
+mq7 rsay mmm.. delicious.
+mq11 rsay >$n Feel like a drink?
+mq11 rsay >$n You could `#`Sfill`^ your `#`Swaterskin`^ from that spring there, and `#`Sdrink`^ from your `#`Swater`^skin.
+mq12 emote points to the small spring.
+~
+disabled false
+END
+
+#7328
+title tidy person puts a chicken in the trash~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+beam $n
+mq2 rsay >$n You're a prize pupil!
+mq4 rsay >$n [with a smile] shall we move on?
+~
+disabled false
+END
+
+#7327
+title messy person drops a chicken~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+frown $n
+mq1 rsay >$n I'm guessing you were aiming for the trash can, but missed.
+mq3 nudge $n
+mq4 rsay >$n Go on, try to get it in the trash this time..
+mq4 chuckle 
+~
+disabled false
+END
+
+#7326
+title lesson 13 - how to hold/drop/put~
+code mq1 rsay This looks like a general store, you could `#`Sbuy`^ a `#`Schicken`^ to eat, and `#`Sbuy`^ a `#`Swaterskin`^ to drink from.
+mq3 rsay It might get dark later, so `#`Sbuy`^ing an `#`Soil lamp`^ might be a good idea too.
+mq7 rsay >$n And if you don't care much for a hard floor, you could `#`Sbuy`^ a `#`Sbedroll`^.
+mq11 rsay You can `#`Shold`^ the `#`Slamp`^ in your hand.
+mq11 give 500 silver $n
+mq12 rsay [with a smile] There's some money, if you need it.
+mq15 rsay >$n If you're carrying something you don't want, you could be lazy and `#`Sdrop`^ the `#`Schicken`^ on the ground..
+mq17 rsay [noticing the trash can] or you could `#`Sput`^ the `#`Schicken`^ in the `#`Strash`^ can there.
+mq17 smile $n
+~
+disabled false
+END
+
+#7325
+title lesson 12 - how to wear~
+code mq1 rsay >$n Great, you've brought all this nice equipment, how about you `#`Swear`^ some of it now.
+mq4 rsay You can check what's in your `#`Sinventory`^ (or `#`Si`^ for short) to see what you want to wear.
+mq4 rsay If its clothing or armor, you can `#`Swear`^ the `#`Ssleeves`^ or `#`Swear`^ the `#`Sleggings`^ until you're all suited up.
+mq8 rsay If you want to wear everything you're carrying, you can `#`Swear`^ it `#`Sall`^.
+mq8 chuckle
+mq12 rsay You can see what you're wearing either by `#`Slook`^ing at your`#`Sself`^, or by checking your `#`Sequipment`^ (or eq for short).
+mq15 rsay >$n If you decide you don't like the cap you just put on, you can `#`Sremove`^ the `#`Scap`^, or if you have another cap in your inventory, you can `#`Swear`^ that `#`Scap`^ and will take the other one off automatically.
+mq20 rsay >$n You can `#`Swield`^ the `#`Sdagger`^ or whichever weapon you bought.
+mq24 rsay If you brought two daggers, you can use your `#`Ssecond`^ hand to hold the `#`Sdagger`^.
+mq24 smile
+~
+disabled false
+END
+
+#7324
+title lesson 11 - how to buy PART 2~
+code mq1 smile
+mq2 rsay >$n If you intend to attack creatures in the game, you'll need some weapons.
+mq6 rsay >$n You can see a `#`Slist`^ of what's available, and then buy the weapon you are skilled with.
+mq10 rsay You can type `#`Sskill`^ to see which weapon your class can use.
+mq14 rsay If you are skilled with a dagger, you can `#`Sbuy`^ the `#`Sdagger`^, if you are skilled with a mace, you can `#`Sbuy`^ the `#`Smace`^.
+mq18 rsay You can choose to either use two weapons, or one weapon and a shield. Buy two weapons at this stage, you can decide later which you prefer.
+mq22 rsay >$n So if you are skilled with a sword, you can `#`Sbuy 2*sword`^s.
+mq26 rsay Remember to buy the weapons which are at your level.
+~
+disabled false
+END
+
+#7323
+title lesson 11 - how to buy~
+code mq1 rsay >$n There are many different types of shops, this one here seems to be an armor shop.
+mq4 rsay >$n Have a look at the `#`Slist`^ of things for sale.
+mq7 rsay >$n You'll need to `#`Sbuy`^ a full suit of armor.
+mq12 rsay Its important to buy equipment which is at, or below your level so that you can get the full benefit of it.
+mq12 rsay At the moment, you can buy equipment which is level one, the level you are on.
+mq16 rsay First `#`Sbuy`^ the `#`Ssleeves`^ then `#`Sbuy`^ the `#`Scap`^ and so on.
+mq20 rsay You can get more `#`Shelp`^ with `#`Sbuy`^ing to learn other tips.
+mq25 rsay >$n You can `#`Ssell`^ the `#`Sshield`^ if you don't want it, and you can `#`Ssell all`^ of your things at once.
+mq25 rsay But the shopkeepers like to make a profit, so don't be surprised if you sell something for less than you bought it.
+mq25 chuckle
+~
+disabled false
+END
+
+#7322
+title summary of lessons 6-10~
+code mq1 rsay >$n Great, you now know how to interact with others.
+mq3 pmote $n looks at @ and chuckles slightly.
+mq3 rsay >$n We better get you dressed first.. before you head out into the ic (in character) world.
+mq5 smirk
+mq5 rsay We'll cover that in the next few lessons.
+mq9 rsay When you're ready.. we'll move on.
+mq9 smile
+~
+disabled false
+END
+
+#7321
+title lesson 10 - how to follow PART 3~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+follow $n
+mob mpfollow $n
+rsay >$n Excellent.. now I'm following you..
+mq3 chuckle
+mq3 rsay >$n Lets move on..
+~
+disabled false
+END
+
+#7320
+title lesson 10 - how to follow PART 2~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+rsay >$n Great!
+mq1 rsay >$n Now I can lead you around.
+mq4 rsay >$n If I didn't want you to follow me anymore, I'd just `#`Sfollow`^ my`#`Sself`^.
+mq4 rsay Or if I wanted no one to follow me, I'd type `#`Snofollow`^.
+mq7 rsay >$n Your turn to `#`Sbeckon`^ me to follow you.
+mq7 smile $n
+~
+disabled false
+END
+
+#7319
+title lesson 10 - how to follow~
+code if hastoken $n 7310
+else
+mq1 rsay >$n Lets suppose, that when you get to the ic (in character) world, that you make a friend, and want to go somewhere together.
+mq1 smile
+mq4 rsay If I wanted you to follow me, I'd `#`Sbeckon you`^ to follow, like this..
+mq7 beckon $n
+mq7 rsay >$n You can `#`Sfollow`^ me, `#`SKalahn`^ now.
+mob oload 7310
+mob tgive 7310 $n
+~
+disabled false
+END
+
+#7318
+title lesson 9 - emotes PART 2~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+mq2 emote bursts out laughing.
+mq3 rsay >$n You have no idea how silly you look!
+mq3 chuckle
+mq6 rsay >$n But at least you've got the idea..
+mq9 rsay You can find out more about emotes, smotes and pmotes by typing `#`Shelp emote`^.
+mq12 rsay >$n We'll carry on when you're ready..
+mq13 emote smiles cheerfully.
+~
+disabled false
+END
+
+#7317
+title lesson 9 - emotes~
+code mq1 rsay >$n You're a very social young mudder now..
+mq1 rsay >$n Let's teach you how to be an impressive young mudder.
+mq1 chuckle
+mq5 rsay >$n Sometimes, there just isn't a `#`Ssocial`^ which describes what you do when you flop down onto the bench exhausted, rather than just rest on the bench.
+mq5 smirk
+mq9 rsay >$n What you can use, is an `#`Semote`^ or `#`S,`^ (comma) for short.
+mq9 rsay For example, if I wanted to skip for joy down this street, I would type `#`Semote`^ skips for joy down the street.
+mq9 rsay It would look like this..
+mq10 emote skips for joy down the street.
+mq14 rsay >$n See if you can copy me..
+mq15 emote walks like a duck.
+mq16 rsay >$n To copy me, type `#`Semote walks like a duck`^.
+~
+disabled false
+END
+
+#7316
+title lesson 8 - socials PART 2~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+chuckle
+rsay >$n You're a friendly one, aren't you?
+smile $n
+rsay >$n Let's move on then..
+~
+disabled false
+END
+
+#7315
+title lesson 8 - socials~
+code mq1 rsay >$n It's great that you know talk to others now..
+mq4 rsay But at times, you'd like to be a little more `#`Ssocial`^, to show the way you are feeling.
+mq4 rsay Like when you're happy, and want to `#`Ssmile`^ or `#`Slaugh`^.
+mq7 rsay There is a whole world of possible ways to be `#`Ssocial`^..
+mq7 rsay You can find out more by typing `#`Ssocial`^ to see the list.
+mq9 chuckle
+mq12 rsay >$n You can smile at others too.. for example, you can `#`Ssmile`^ at me, `#`SKalahn`^..
+~
+disabled false
+END
+
+#7314
+title congrats.. the door is open~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+if room $I == 7302
+rsay >$q Well done. Now let's move on to the east.
+endif
+~
+disabled false
+END
+
+#7313
+title lesson 7 - how to talk PART 3~
+code language native
+emote stops for a moment.
+say Greetings, my name is Lance.
+smile
+emote waves and continues walking down the street.
+mq2 mob vforce 7300 rsay Well, shall we move on?
+~
+disabled false
+END
+
+#7312
+title lesson 7 - how to talk PART 2~
+code ** run this prog only on the player we currently remember ($q)
+if istarget $n
+else
+  end
+endif
+ 
+if room $i == 7307
+ if hastoken $n 7309
+ else
+mob dequeueall
+ rsay >$n Greetings!
+ mq5 rsay >$n There, you know how to talk now..
+ mq6 rsay But what if you were talking to me, and that citizen thought you were talking to him?
+ mq7 rsay >$n You can make sure that doesn't happen by using `#`Ssayto citizen`^ or, `#`S'>citizen`^ (with the apostrophe in front).
+ mq7 rsay If you knew their name, for example, my name is Kalahn, you could `#`Ssayto kalahn`^ hello, or `#`S'>kalahn`^ greetings.
+ mq9 rsay >$n Lets ask that citizen what his name is.
+ mob oload 7309
+ mob tgive 7309 $n
+ endif
+else
+smile $n
+endif
+~
+disabled false
+END
+
+#7311
+title lesson 7 - how to talk~
+code mq3 rsay >$n It must be pretty frustrating being mute..
+mq3 rsay >$n So lets get you talking..
+mq5 rsay When you want to talk, you can either `#`Ssay hello`^, or you can use an apostrophe in front, like this.. `#`S'hello`^
+mq7 rsay Of course, you don't always have to say hello..
+mq7 chuckle
+~
+disabled false
+END
+
+#7310
+title give flowers to woman~
+code ,*'s face brightens and a smile begins to form.
+language native
+rsay >$n oh, thank you.. you've made my day!
+beam $n
+mq2 mob vforce 7300 rsay Shall we continue?
+~
+disabled false
+END
+
+#7309
+title summary of lesson 1-5~
+code mq2 rsay >$n [with a smile] Well, so far you've learnt how to find your way around.
+mq4 rsay Next we'll cover how to interact with others.
+mq6 rsay >$n When you're ready for the next lesson, we'll move on.
+mq6 smile
+~
+disabled false
+END
+
+#7308
+title lesson 6 - how to give~
+code mq2 smile
+mq2 rsay >$n `#`SLook`^ at that `#`Swoman`^. She seems awfully sad.
+mq6 rsay >$n Maybe you could cheer her up, with those flowers you picked.
+mq6 rsay >$n Why don't you `#`Sgive`^ a `#`Sflower`^ to the `#`Swoman`^?
+mq7 rsay That would really make her day!
+mq9 chuckle
+ 
+if carries $n flower
+mq10 rsay >$n You didn't pick one up did you?
+mq11 chuckle
+mq13 rsay >$n Here, give her this one.
+mq13 mob oload 7304
+mq13 give flower $n
+endif
+~
+disabled false
+END
+
+#7307
+title lesson 5 - how to get PART 2~
+code ** run this prog only on the player we currently remember ($q)
+if !istarget $n
+  end
+endif
+ 
+** load  a replacement key if necessary
+mob call 7418 
+ 
+mq11 rsay >$n A key, `#`Sget`^ the `#`Skey`^ from the `#`Schest`^, it might be just the key to unlock the door.
+mq16 rsay Have a look around and see if there's anything else you can `#`Sget`^.
+mq19 rsay If its lying on the ground you can `#`Sget`^ the `#`Sobject`^, but if its inside something, like the key was, you'll need to `#`Sget`^ the `#`Sobject`^ from the `#`Scontainer`^.
+mq21 rsay See those flowers there, you can `#`Sget`^ a `#`Sflower`^ if you're not fussy, or if you can `#`Sget`^ the `#`Sred`^ one, if you like red, or you can `#`Sget`^ the `#`Siris`^ if you prefer.
+mq24 rsay If you like flowers that much, you can `#`Sget all`^ of the things lying on the ground.
+mq24 chuckle
+mq30 rsay Lets open that door, and move on.
+~
+disabled false
+END
+
+#7306
+title lesson 5 - how to get~
+code mq2 chuckle
+mq2 rsay Looks like another room with no way out.
+mq4 pmote $n looks at @ expectantly.
+mq9 emote searches his pockets.
+mq9 rsay Nope, no keys.. 
+mq10 emote looks around, and notices the chest on the ground.
+mq12 rsay >$n Maybe you could `#`Sopen`^ the `#`Schest`^ and `#`Sexamine`^ the `#`Schest`^.
+~
+disabled false
+END
+
+#7305
+title lesson 4 - how to unlock~
+code mq2 rsay >$n [with a grin] Great, you got us out of that room.
+mq2 rsay But it looks like we've walked straight into another room with no way out.
+mq5 rsay >$n Can you try `#`Slook`^ing around, to see if you can get us out of here?
+mq12 rsay Looks as if we're locked in!
+mq12 emote searches his pockets and pulls out a key.
+mob oload 7302
+mq14 chuckle
+mq14 rsay I was wondering what that jangling noise was.
+mq16 rsay >$n Here, use this to `#`Sunlock`^ the door to the `#`Ssouth`^.
+mq16 give key $n
+mq19 rsay After you `#`Sunlock`^ the `#`Ssouth`^ern door, you'll have to `#`Sopen`^ it..
+mq19 rsay [with a chuckle] unless you plan on walking into it.
+mq24 rsay Lets head south then.
+~
+disabled false
+END
+
+#7304
+title lesson 3 - how to open~
+code mq2 rsay >$n Sometimes you'll come across a room where there seems to be no obvious exit.
+mq4 rsay You can `#`Slook`^ for clues in the room description.
+mq6 rsay Or you can try to `#`Sopen`^ a door in the direction you want to go.
+mq8 rsay For example `#`Sopen north`^ or `#`Sopen east`^ until you find a door which opens for you.
+mq12 rsay Can you get us out of here?
+mq12 chuckle
+~
+disabled false
+END
+
+#7303
+title lesson 2 - how to look~
+code mq1 rsay >$n Looking around a room or a street is very important!
+mq1 rsay It will allow you to spot hidden exits and doors that you won't necessarily see when looking for `#`sexits`^
+mq5 rsay Have a good `#`slook`^ at this street. Do you see the gate?
+mq5 rsay `#`sLook`^ at the `sgate`^. Do you see the fine woodwork on it?
+mq9 smile
+mq10 rsay >$n See if you can spot anything else around here by `#`slook`^ing.
+mq13 rsay Lets head north when you're ready.
+~
+disabled false
+END
+
+#7302
+title call dialog for differnt rooms~
+code ** Dequeue previous programmes to prevent complications
+** when someone runs through the school.
+mob dequeueall
+ 
+** Begin room
+if room $i == 7300
+ mob call 7301 $q
+endif
+ 
+** Second room - how to look
+if room $i == 7301
+ mob call 7303 $q
+endif
+ 
+** Third room - how to open
+if room $i == 7302
+ mob call 7304 $q
+endif
+ 
+** Fourth room - how to unlock
+if room $i == 7303
+ mob call 7305 $q
+endif
+ 
+** Fifth room - how to get
+if room $i == 7304
+ mob call 7306 $q
+endif
+ 
+** Sixth room - summary of lessons 1-5
+if room $i == 7305
+ mob call 7309 $q
+endif
+ 
+** Seventh room - how to give
+if room $i == 7306
+ mob call 7308 $q
+endif
+ 
+** Eighth room - how to talk
+if room $i == 7307
+ mob call 7311 $q
+endif
+ 
+** Nineth room - socials
+if room $i == 7308
+ mob call 7315 $q
+endif
+ 
+** Tenth room - emotes
+if room $i == 7309
+ mob call 7317 $q
+endif
+ 
+** 11th room - how to follow
+if room $i == 7310
+ mob call 7319 $q
+endif
+ 
+** 12th room - summary of lessons 6-10
+if room $i == 7311
+ mob call 7322 $q
+endif
+ 
+** 13th room - how to buy
+if room $i == 7312
+ mob call 7323 $q
+endif
+ 
+** 14th room - how to buy PART 2
+if room $i == 7313
+ mob call 7324 $q
+endif
+ 
+** 15th room - how to wear/wield
+if room $i == 7314
+ mob call 7325 $q
+endif
+ 
+** 16th room - how to hold/drop/put
+if room $i == 7315
+ mob call 7326 $q
+endif
+ 
+** 17th room - how to eat/drink
+if room $i == 7316
+ mob call 7329 $q
+endif
+ 
+** 18th room - how to rest/sleep
+if room $i == 7317
+ mob call 7330 $q
+endif
+ 
+** 19th room - summary of lessons 11-15
+if room $i == 7318
+ mob call 7331 $q
+endif
+ 
+** 20th room - how to train and practice
+if room $i == 7319
+ mob call 7332 $q
+endif
+ 
+** 21st room - prompt and score
+if room $i == 7321
+ mob call 7335 $q
+endif
+ 
+** 22nd room - how to consider and flee
+if room $i == 7320
+ mob call 7334 $q
+endif
+ 
+** 23rd room - wimpy and recovery
+if room $i == 7322
+ mob call 7337 $q
+endif
+ 
+** 24th room - how to group
+if room $i == 7323
+ mob call 7339 $q
+endif
+ 
+** 25th room - summary of lessons 16-20
+if room $i == 7324
+ mob call 7340 $q
+endif
+ 
+** Advanced School
+** 1st room - who's who?
+if room $i == 7325
+ mob call 7343 $q
+endif
+ 
+** 2nd room - rules
+if room $i == 7326
+ mob call 7344 $q
+endif
+ 
+** 3rd room - ic/ooc
+if room $i == 7327
+ mob call 7342 $q
+endif
+ 
+** 4th room - channels
+if room $i == 7328
+ mob call 7345 $q
+endif
+ 
+** 5th room - tells
+if room $i == 7329
+ mob call 7346 $q
+endif
+ 
+** 6th room - summary of lessons 1-5
+if room $i == 7330
+ mob call 7347 $q
+endif
+ 
+** 7th room - roleplay
+if room $i == 7331
+ mob call 7341 $q
+endif
+ 
+** 8th room - alignment
+if room $i == 7332
+ mob call 7348 $q
+endif
+ 
+** 9th room - letgain
+if room $i == 7333
+ mob call 7349 $q
+endif
+ 
+** 10th room - short/long descs
+if room $i == 7334
+ mob call 7350 $q
+endif
+ 
+** 11th room - summary of lessons 6-9
+if room $i == 7335
+ mob call 7351 $q
+endif
+ 
+** 12th room - leveling
+if room $i == 7336
+ mob call 7352 $q
+endif
+ 
+** 13th room - guilds
+if room $i == 7337
+ mob call 7353 $q
+endif
+ 
+** 14th room - races and classes
+if room $i == 7338
+ mob call 7367 $q
+endif
+ 
+** 15th room - mythos and setting
+if room $i == 7339
+ mob call 7368 $q
+endif
+ 
+** 16th room - summary of lesson 10-13
+if room $i == 7340
+ mob call 7369 $q
+endif
+ 
+** 17th room - areas
+if room $i == 7341
+ mob call 7370 $q
+endif
+ 
+** 18th room - maps
+if room $i == 7342
+ mob call 7371 $q
+endif
+ 
+** 19th room - things to get involved in
+if room $i == 7343
+ mob call 7372 $q
+endif
+ 
+** 20th room - helpfiles
+if room $i == 7344
+ mob call 7373 $q
+endif
+ 
+** 21st room - summary of lessons 14-17
+if room $i == 7345
+ mob call 7374 $q
+endif
+ 
+** 22nd room - test - question 1 - ic questions
+if room $i == 7346
+ mob call 7375 $q
+endif
+ 
+** get rid of a heap of cloned mobs
+if players == 1 
+  if clones == 1
+    mob purge self 
+  endif 
+endif
+~
+disabled false
+END
+
+#7301
+title starting dialog for beg. school~
+code ** run this prog only on the player we currently remember ($q)
+if !istarget $n
+  end
+endif
+ 
+** Starting dialog for the buddy mob
+if room $i == 7300 
+mob dequeueall
+mq1 rsay The first thing you will need to learn is how to move around.
+mq1 rsay [with some amusement in it's voice]And you will need to know where to move to.
+mq5 rsay Have a good look at the `#`sexits`^ around you.
+mq9 rsay Then head off in any direction you choose.
+mq9 rsay For example `#`snorthwest`^, `ssouth`^, `sup `^or `seast`^.
+mq11 rsay >$n Heading `#`seast`^ is the path to take to get started.
+endif
+~
+disabled false
+END
+
+#7300
+title Load a Kal~
+code ** load a kal and force it to follow the newbie
+ 
+if hastoken $n 7300
+mob mload 7300
+mob force being mob mpfollow $n
+mob force being mob remember $n
+mob force being emote fades into existence.
+mob force being language native
+mob force being rsay Which way would you like to go this time?
+ end
+endif
+ 
+** Nothing
+ 
+ 
+ 
+ 
+mob mload 7300
+mob force being mob mpfollow $n
+mob force being mob remember $n
+mob force being emote fades into existence.
+mob force being language native
+mob force being rsay >$n Greetings and welcome to our school.
+mob oload 7300
+mob tgive 7300 $n
+mob force being mob call 7354 $n
+ 
+~
+disabled false
+END
+
+#0
+
+
+#$

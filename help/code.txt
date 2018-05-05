@@ -1,0 +1,203 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword CODE_AUTOMAP_OPTION~
+helpflags hide_keywords~
+category undefined~
+text The Dawn of Time has a line of sight mapper, that shows you the surrounding 
+terrain, Below on the right is an example of what this map looks like... The 
+`Y*`=? represents where your character is standing, there is a path running from 
+the west to the east, a river running to the east and south of you (the `b`-`=?), 
+and the rest of  the map is surrounded by hills.`+
+`+
+  `=? `S `=? `S `=? `S `g+`S `=? `S `=? `S `=?          `=? `S `=? `S `=? `S `=?C`S `=? `S `=? `S `=?      `+
+  `S `S `S `S `S `S `S|`S `S `S `S `S `S          `S `S `S `S `S `S `S|`S `S `S `S `S `S      `+
+  `=? `S `=? `S `g+`S-`g+`S-`b-`S `=? `S `=?          `=? `S `=? `S `WI`S-`=?C`S-`S#`S `=? `S `=?               `YMAP KEY`=?`+
+  `S `S `S `S `S `S `S|`S `S `S `S `S `S          `S `S `S `S `S `S `S|`S `S `S `S `S `S       `WI`=?= inside   `=?```=?= swimable water `+
+  `=? `S `G-`S `g+`S-`g+`S-`b-`S `g+`S `=?          `=? `S `WI`S `WI`S-`=?C`S-`WI`S `WI`S `=?       `sC`=?= city     `=?"`=?= `=?underwater `+
+  `S `S `S|`S `S|`S `S|`S `S `S `S|`S `S          `S `S `S|`S `S|`S `S|`S `S|`S `S|`S `S       `G-`=?= field    `b-`=?= noswim `+
+  `=? `S-`G-`S-`G-`S-`Y*`S-`G-`S-`G-`S-`G-         `=?C`S-`=?C`S-`=?C`S-`Y*`S-`=?C`S-`=?C`S-`=?C      `g+`=?= forest   `=?.`=?= air `+
+  `S `S `S|`S `S|`S `S|`S `S|`S `S|`S `S          `S `S `S|`S `S|`S `S|`S `S|`S `S|`S `S       `g^`=?= hills    `=?=`=?= swamp `+
+  `=? `S `G-`S `g+`S-`g+`S-`b-`S `g+`S `=?          `=? `S `WI`S `WI`S-`=?C`S-`WI`S `WI`S `=?       `s%`=?= mountain `yd`=?= desert `+
+  `S `S `S `S `S `S `S|`S `S `S `S `S `S          `S `S `S `S `S `S `S|`S `S `S `S `S `S       `=?@`=?= cave     `Y*`=?= you`+
+  `=? `S `=? `S `b-`S-`b-`S-`b-`S `=? `S `=?          `=? `S `=? `S `WI`S-`=?C`S `=? `S `=? `S `=?       `S#`=?= where the map changes scale`+
+  `S `S `S `S `S `S `S|`S `S `S `S `S `S          `S `S `S `S `S `S `S|`S `S `S `S `S `=?        `S  (going into another zone`=?`+
+  `=? `S `=? `S `=? `S `G-`S `=? `S `=? `S `=?          `=? `S `=? `S `=? `S `=?C`S `=? `S `=? `S `=?        `S      e.g city->world map)`=?`+
+   Outside the east     Large Plaza     `+
+    gate of mekali        Mekali        `+
+`+
+`+
+ This map can be seen at any time when you are awake within the game by 
+typing `Ymap`=?... you can also choose to have the map automatically updated as 
+you move between rooms. Would you like the map to automatically be displayed 
+as you navigate around the dawn realm Mythrin? (you can turn it on or off at 
+any time by typing `Yautomap`=? once in the game)`+
+`+
+`WDo you want the automap option enabled? `=?`+
+~
+END
+
+keyword CODE_OEDIT_ADDRESTRICT~
+level 92
+category undefined~
+text Syntax:  addrestrict <classgrouping> <affectprofile> [prority]`+
+`+
+affectprofile can be listed using showaffectprofile`+
+`+
+note: prority is optional, defaults to -1 (first -1 if all matching
+restrictions for a class are -1, then the first one is applied.
+otherwise the highest matching prority is used... if there is 2 or 
+more matching prorities between 0 and 100, ALL of them will be applied.
+~
+END
+
+keyword CODE_DO_QUESTER_NOARGUMENT~
+level 92
+category undefined~
+text .. 
+`#`=? By enabling the quester status, you are agreeing to be part of any quest, or 
+autoquest, and are accepting its outcome, including `Rdeaths `=?and `Rloss of 
+equipment`=?.  Read `Yhelp quester `=?before you take any decision.  `1 The quester status is not supposed to be removed.  To get it turned off 
+you will be mooted at least `R-5000xp`=?.  `^ 
+ To enable quester status, type `#`Yquester confirm`^.
+~
+END
+
+keyword CODE_DO_QUESTER_ENABLED~
+level 92
+category undefined~
+text .
+ Welcome, quester.  Your quester status has been activated.  This can not be 
+turned off.  Mobprogs that are programmed to work with only questers will 
+recognise you now.  
+~
+END
+
+keyword CODE_DO_SETAGE_NOARGUMENT~
+level 92
+category undefined~
+text When you create a character by default you start at the age of 17.
+You can change your age once and only once using the setage command.
+ 
+syntax:
+`Y  setage <age> confirm`=?
+ 
+The age you want to be can be in the range 4 thru 100.
+ 
+`RBE WARNED: `=?Once your age has been set you can not change it, and 
+you will age at the rate of 14 years per every in real life year.
+ 
+The confirm is required to hopefully help everyone realise this is not
+a reversible option.
+~
+END
+
+keyword AUTOVOTE CODE_DO_AUTOVOTE_INVALID_ARGUMENT~
+level 1
+helpflags noble~
+category undefined~
+text .. 
+`CSyntax`B: `cautovote <value>`=?
+ 
+After 15 seconds have past in the mooting process, the autovote system 
+becomes enabled.
+ 
+If the moot concerned is for an amount less than the value you have your 
+autovote set to, the code will not wait for you to vote before attempting 
+to resolve the moot.  The only time a moot will pass in a time less than 15
+seconds is if there is only one noble online - in other words they called a
+moot and there isnt any other nobles around to vote on it.
+ 
+Your current autovote value can be seen using the worth command.
+ 
+`CNote: `XAutovote only has affect on moots that are positive in value and 
+of type reward.
+~
+END
+
+keyword CODE_DO_BECOMEACTIVE_NOARGUMENT~
+level 92
+category undefined~
+text If you want to your pk status to become active (from peaceful) type:
+  `Ybecomeactive confirm`=?
+`RBE WARNED: `=?The pk status once on is not able to be removed.
+ 
+For more info see `Yhelp becomeactive`=?.
+~
+END
+
+keyword CODE_DO_BECOMEACTIVE_ENABLED~
+level 92
+category undefined~
+text Your pk status has been changed from `Bpeaceful`=? to `Ractive`=?.
+This is irreversible.
+~
+END
+
+keyword CODE_PKNOTE_REQUIRED_FROM_VICTIM~
+level 92
+category undefined~
+text `#`RYou have been involved in a player kill situation in which your character 
+was subdued or pkilled.  Player kill situations are allowed as long as they 
+are done within a roleplaying situation.  In accordance with the PKILL 
+rules, you are required to submit a `#`YPKNOTE to PKILL within 2 hours `^of the 
+pkill.  Pknotes MUST explain the IC backround surrounding the pkill and must 
+be of sufficient length `#`WAT LEAST 5 LINES`^.  Failure to comply with these 
+rules will result in penalties and/or loss of pkill privilege.  `^`+
+`+
+`#`SIf you don't consider this pkill totally IC or someone may claim it wasn't, 
+try to save a log of the fight and events leading up to this to support your 
+opinion.  Note to LAW with your claim.  `# 
+~
+END
+
+keyword CODE_PKNOTE_REQUIRED_FROM_ATTACKER~
+level 92
+category undefined~
+text `#`RYou have been involved in a player kill situation in which your character 
+subdued or pkilled another.  Player kill situations are allowed as long as 
+they are done within a roleplaying situation.  In accordance with the PKILL 
+rules, you are required to submit a `#`YPKNOTE to PKILL within 2 hours `^of the 
+pkill.  Pknotes MUST explain the IC backround surrounding the pkill and must 
+be of sufficient length `#`WAT LEAST 5 LINES`^.  Failure to comply with these 
+rules will result in penalties and/or loss of pkill privilege.  `^`+
+`+
+`#`SIf you don't consider this pkill totally IC or someone may claim it wasn't, 
+try to save a log of the fight and events leading up to this to support your 
+opinion.  Note to LAW with your claim.  `# 
+~
+END
+
+keyword CODE_DAMAGE_VALUES~
+level 92
+category undefined~
+text Dam == 0  "miss"
+dam <= 2  "scratch"
+dam <= 4  "graze"
+dam <= 6  "hit"
+dam <= 8  "injure"
+dam <= 10 "wound"
+dam <= 12 "maul"
+dam <= 14 "decimate"
+dam <= 16 "devastate"
+dam <= 20 "maim"
+dam <= 25 "MUTILATE"
+dam <= 30 "DISEMBOWEL"
+dam <= 40 "DISMEMBER"
+dam <= 50 "MASSACRE"
+dam <= 60 "MANGLE"
+dam <= 70 "*** DEMOLISH ***"
+dam <= 80 "*** DEVASTATE ***"
+dam <= 100 "=== OBLITERATE ==="
+dam <= 125 ">>> ANNIHILATE <<<"
+dam <= 150 "<<< ERADICATE >>>"
+     > 150 "do UNSPEAKABLE things to"
+ 
+~
+END
+
+EOF~
+#$

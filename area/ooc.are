@@ -1,0 +1,552 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        OOC Rooms~
+ShortName   ~
+Builders    None~
+Credits     Rathern Celrion~
+VNUMs       30000 30010
+LComment    [  ALL  ]
+Security    9
+Colour      B~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   none~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#30000
+Name easter bunny lag beast~
+ShortD the Lag Beast~
+LongD The lag beast stands here, dressed in an easter bunny suit.~
+Desc Looking at you with a sly grin, the lag beast looks ready to attack your 
+ISP!  Muhaha!  
+~
+Race mrem~
+Align 0 0
+Level 88
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area noautosocial~
+AffBy  dark_vision~
+Vuln   sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg ACT 30003 kisses you.~
+MProg SPEECH 30004 kiss me~
+MProg ACT 30005 appears from the ic realm~
+END
+
+#0
+
+
+
+#OBJECTS
+#30000
+Name rp board~
+Short rp notes to be readen~
+Desc The `#`?RP`^ board begs you "`#`?Read me, please!!`^"~
+Level 0
+ItemType treasure~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material computer screen~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc rp board~
+You see a curious-looking board: it is square, with a glass screen over 
+it. On a corner, you see 'Nec' written. You wonder what that means?
+ 
+Notes so far:
+ 
+`#`Cnote-1`^
+`#`Cnote-2`^
+`#`Cnote-3`^
+ 
+Hmm, pretty descriptive the name of the notes, don't you think? ;)
+ 
+`#`cYlerin`^
+~
+ExtraDesc note-1 ~
+Hey, everyone,
+ 
+Welcome to our small (hm, maybe not that small?) quest group. This note is 
+to tell you more about the nature of this quest.
+ 
+Before anything else, we have a sweet rule here: the `#`YRP Golden Rule`^, 
+which is to never, never, never mix ooc and ic. In order to make that easier, 
+avoid to discuss quest matters with pretty much anyone on ooc.
+ 
+First of all, understand that this quest is an effort to bring some realism 
+to our rp. In other words, to create some real rp here :) Thus, expect people 
+to react as in real life. Kings will be insulted, and your actions will have 
+consequences, contrary to what happens 90% of the time here. But I think you 
+already know all of this, so I'll skip this.
+ 
+Another thing you should understand is that this quest will not get you power, 
+or awesome items, or anything like that, out of the blue. Whatever is achieved 
+will be due to your efforts. If you want to be part of something, you must 
+create and work for it. Work here, obviously, means rp. And I must tell you, it 
+will be very, very hard for anyone to get anything. After all, the harder to 
+get, the better it is ;)
+ 
+The third thing you should realize is that this quest will not be lightning 
+fast. On the contrary. You will soon realize you will be involved in something. 
+Everyone else will be involved in something else as well. Hopefully I'll drag 
+some other imms on, but they all have tons of stuff to do. So patience is a 
+must here. This quest may go on for months (I at least hope it will do). Make 
+this our `#`sOOC Silver Rule`^: Patience.
+ 
+The forth thing you should know is that I will be sending tells everytime I 
+see something that strikes me as bad rp. That is not intended to offend anyone, 
+and if at any time you feel so, please tell me. Its purpose will be to help 
+you to be part of the general rp, and to get more fun out of it :)
+ 
+The last thing is that I hope to keep what I start here in a permanent basis. 
+If all goes well, that is what will happen. So, let us all work towards that.
+ 
+`#`cYlerin :)`^
+ 
+P.S. I knew I was forgetting something. This room is to remain secret from the 
+others, the non-participants ;)
+~
+ExtraDesc note-2 ~
+Now, to the quest itself.
+ 
+This quest will get you all to do things rather different from the day-to-day 
+rp of the mud. Each of you will be contacted by me, and we will discuss what 
+kind of activity you want to work on, what area of interest you have. In fact, 
+that was the purpose of my note, but its meaning got lost by most *chuckle*
+ 
+Most of you will interact IC in the most different ways, all of them far from:
+"Who was killed today?" and "Where can I hunt, do you know" ;)
+Mostly, it will have to do with jobs. Work. You will be either hired by someone, 
+or be given a mission, or maybe invited to join a dark group? *grin*
+ 
+The work and rp you will conduct will not demand any building of areas, or 
+anything. From neither you or us imms (well, prolly I'll have to do something 
+*chuckle*). But if you want to do something, that will be certainly 
+appreciated :)
+ 
+I will be talking to each of you in the next days. So I can know in which part 
+of the quest you will fill better in :)
+ 
+`#`cYlerin`^
+~
+ExtraDesc note-3 ~
+I want to apologize for the way this quest slowed down.  As most of you 
+surely noticed, I am not around much, due to a lot of rl things.  And the 
+quest is rather personalized, which means I usually have to rp with only 
+one, or two, of you at a time.  Which slowls the quest down even more.  I 
+will try to get Kriesara and Farheen into this asap, to help me to go on.  `1 `1 Until there, sorry for they delay.  `1 `1 `#`cYlerin`^ 
+~
+End
+
+#30001
+Name big plush leather couch~
+Short a big, plush leather couch~
+Desc A big, plush leather couch sits here, looking big and cushy.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10000 10000 BEHR 0 0
+Weight 0
+Material ooc couch stuff~
+Extra    nodegrade burnproof norestring~
+End
+
+#30002
+Name Hope is lying here DEAD!!~
+Short a corpse of Hope~
+Desc Hope is lying here DEAD!!~
+Level 1
+ItemType npccorpse~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material flesh~
+Extra    nodegrade~
+End
+
+#30003
+Name The Wheel of Doom~
+Short `#The Wheel of `SDOOM!!!`^~
+Desc `#The Wheel of `SDOOM`^ is here!!!`^~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material wood~
+Extra    nodegrade~
+ExtraDesc wheel of doom~
+This circular wheel drips with blood, and other nasties.  No telling what 
+poor soul spun this wheel and met their horrible deaths!  Its really SPOOKY 
+looking ---Whoooooo---- 
+~
+End
+
+#30004
+Name red speedos~
+Short a pair of red speedos~
+Desc A pair of red speedos sit on the ground, stinking of butt.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+Wear     take waist~
+End
+
+#30005
+Name enstruman~
+Short an enstruman~
+Desc An enstruman lies here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#30006
+Name foto-camera~
+Short a foto-camera~
+Desc A foto-camera lies here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#30007
+Name ping-pong paddle~
+Short a ping-pong paddle~
+Desc A ping-pong paddle lies here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade~
+End
+
+#30008
+Name no name~
+Short (no short description)~
+Desc (no description)~
+Level 0
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values A 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#30010
+Name no name~
+Short (no short description)~
+Desc (no description)~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#30000
+Name Chat Room Center~
+Desc This is the centre chat room.  The chat rooms are made so people can come 
+and have both group and private conversations OOC (see help ooc).  The chat 
+rooms are NOT for IC (see help ic) conversations.  While you are in the chat 
+rooms you will not get hungry, thirsty or tired.  Any spell effects on you 
+and or timers, ie Safe timer, will remain the same as when you entered the 
+chat rooms.
+ 
+           ***Please take a LOOK at these special NOTES***
+ 
+To leave the ooc rooms, type 'recall', and you will be transferred back 
+to the room which you entered from.
+~
+RoomFlags no_mob indoors safe law ooc~
+Sector inside~
+ExtraDesc Notes~
+There are some POSTINGS here you should read, they are labeled:
+		
+		Post1
+		Post2
+		Post3
+~
+ExtraDesc Post1~
+Take special note the chat rooms are not to be used by people who have a current PK timer.
+If you have been involved in a PK the chat rooms are not to be used as a safe place to hide.
+You may use them after your timer has run out. 
+~
+ExtraDesc Post2~
+Please do not drop link in the chat rooms, as time does not pass in the chat rooms dropping 
+link in them will mean you will remain in the game until it is reset or an Immortal forces 
+you to quit.
+~
+ExtraDesc Post3~
+The chat rooms are completly OOC, please do not abuse them.  Examples of said abuse are:
+	IC Conversations
+	and Equipment exchanges
+~
+Exit north 30008
+Exit east 30002
+Exit south 30004
+Exit west 30006
+Exit up 30009
+Exit down 30010
+Exit northeast 30001
+Exit southeast 30003
+Exit southwest 30005
+Exit northwest 30007
+End
+
+
+#30001
+Name Private Chat Room~
+Desc This is a private chat room that only 2 people can use at a time.  
+See NOTES in the central chat room for some more information about 
+the chat rooms and their operation. 
+~
+RoomFlags no_mob indoors private safe law ooc~
+Sector inside~
+Exit southwest 30000
+End
+
+
+#30002
+Name Public Chat Room~
+Desc This is a public chat room that everyone can use.  See NOTES in the 
+central chat room for some more information about the chat rooms 
+and their operation. 
+~
+RoomFlags no_mob indoors safe law ooc~
+Sector inside~
+Exit west 30000
+End
+
+
+#30003
+Name Private Chat Room~
+Desc This is a private chat room that only 2 people can use at a time.  
+See NOTES in the central chat room for some more information about 
+the chat rooms and their operation. 
+~
+RoomFlags no_mob indoors private safe law ooc~
+Sector inside~
+Exit northwest 30000
+End
+
+
+#30004
+Name Public Chat Room~
+Desc This is a public chat room that everyone can use.  See NOTES in the 
+central chat room for some more information about the chat rooms 
+and their operation. 
+~
+RoomFlags no_mob indoors safe law ooc~
+Sector inside~
+Exit north 30000
+End
+
+
+#30005
+Name Private Chat Room~
+Desc This is a private chat room that only 2 people can use at a time.  
+See NOTES in the central chat room for some more information about 
+the chat rooms and their operation. 
+~
+RoomFlags no_mob indoors private safe law ooc~
+Sector inside~
+Exit northeast 30000
+End
+
+
+#30006
+Name Public Chat Room~
+Desc This is a public chat room that everyone can use.  See NOTES in the 
+central chat room for some more information about the chat rooms 
+and their operation. 
+~
+RoomFlags no_mob indoors safe law ooc~
+Sector inside~
+Exit east 30000
+End
+
+
+#30007
+Name Private Chat Room~
+Desc This is a private chat room that only 2 people can use at a time.  
+See NOTES in the central chat room for some more information about 
+the chat rooms and their operation. 
+~
+RoomFlags no_mob indoors private safe law ooc~
+Sector inside~
+Exit southeast 30000
+End
+
+
+#30008
+Name Public Chat Room~
+Desc This is a public chat room that everyone can use.  See NOTES in the 
+central chat room for some more information about the chat rooms 
+and their operation. 
+~
+RoomFlags no_mob indoors safe law ooc~
+Sector inside~
+Exit south 30000
+End
+
+
+#30009
+Name The OOC Loft~
+Desc Up here is the lovely and spacious OOC loft.  From here you can look down 
+and see those in the room below, chatting away about whatever.  This room is 
+solitary, so one can read notes to their heart's content without concern, 
+please enjoy.  
+~
+RoomFlags solitary ooc~
+Sector inside~
+Exit down 30000
+End
+
+
+#30010
+Name A hole in the World of OOC~
+Desc This room is a solitary confirmed room, not very large in size.  Its main 
+objective is for the lucky person who wants to go into solitary to read 
+notes without people spamming them constantly.  
+~
+RoomFlags safe solitary ooc~
+Sector inside~
+Exit up 30000
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+O 0 30001 -1 30000
+M 0 30000 1 30000 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#30005
+title xmas kiss you~
+code emote hops about happily.
+emote nudges it's little nose from side to side.
+emote waggles it's bunny tail to and fro.
+~
+disabled false
+END
+
+#30004
+title Mahir kisses you!~
+code mob msptochar $n ikissu.wav
+kiss $n
+sayto $n I kiss you!!!
+~
+disabled false
+END
+
+#30003
+code if rand 80
+say [in a seductive arabic voice]My eyes green ..  I live alone !!!!!!!!!
+else
+if rand 75
+say I have home - car .........
+mob echo `#`gVROOM .. VROOM`^
+else
+if rand 66
+say She can stay my home ........
+emote beckons you towards him with his ping pong paddle.
+else
+if rand 50
+say I like to be friendship from different country ..
+else
+say Who is want to come ME  I can invitate .....
+wink
+endif
+~
+disabled false
+END
+
+#30001
+title Greet for OOC~
+code sayto $n I KISS YOU!!!
+kiss $n
+mob msptochar $n ikissu.wav
+~
+disabled false
+END
+
+#0
+
+
+#$

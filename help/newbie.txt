@@ -1,0 +1,374 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword NEWBIES GAME BACKGROUND NEWBIE-INFORMATION INTRODUCTION DOCUMENT DOCO NEWBIEDOCO NEWBIEDOCUMENT~
+helpflags hide_keywords~
+category undefined~
+text .            `GThe Dawn of Time Newbie Document`+
+`c========---------------------------------------------========`+
+`+
+`GNewbie Help Document.`=?`+
+`+
+Welcome to Dawn of Time. This file is for new players, and for long time 
+ones too. For those that do not know what Dawn of Time has to offer, this 
+will be a very useful document to read. It will give you an idea of where 
+Dawn of Time is,where it is going, and how you can fit in with everyone who 
+already has the jump on you. For more experienced players, it will serve to 
+remind you of a few things you might have missed, or could use some brushing 
+up on.  Rolemaster Based Attributes - The attribute system for Dawn of Time 
+is modled after the rolemaster role playing game. If you are not familiar 
+with rolemaster, don't worry. Take a look at the help file for ATTRIBUTES 
+and it will explain the ten attributes and how they effect your character. 
+The expanded number of attributes seems a bit daunting at first, but they 
+allow for a greater realism in character abilities. Before long they will 
+seem no more confusing than more standard six attribute MUDs.`+
+`+
+`CSEE: ATTRIBUTES CLASSES`=?`+
+`+
+`+
+Dynamic Mythos - The Immortals of Dawn of Time are constantly updating and 
+changing the game. A story line is being followed, and from time to time, 
+major events in Dawn of Time history occur. Some times new zones are added, 
+other times zones are rewritten to reflect what has been going on. Other 
+changes can occur based on player interaction. Everyone has the potential to 
+help craft the story line of Dawn of Time. `+
+`+
+`CSEE: ROLEPLAY, and all associated help files.`=?`+
+`+
+`+
+Magic System - Under the new Dawn of Time code system, spell casting classes 
+have a much greater control over what spells they learn. Gone are the days 
+of being guaranteed a certain spell simply by gaining a level. Now, each 
+spell caster chooses different spell Spheres and Realms that dictate what 
+spells will be available during their character's life. As you gain 
+experience, other spheres and realms can be gained (see also help GAIN) to 
+increase your character's spell casting ability. When you reach a new level, 
+a series of random checks are made to see if you learn a new spell. The 
+higher your level, the better chance you have of learning it. Technically, 
+it is possible for a second level mage to learn acid blast, but that would 
+be a rare case indeed!`+
+`+
+`CSEE: REALMS MAGIC SPELL`=?`+
+`+
+`+
+Role playing has several different facets to it. In terms of your character, 
+you are described by several different catagories. One of which is your 
+race. Race plays a big part of what your character is. Each of the races of 
+Dawn of Time speak a language native to them. Several races speak human, but 
+there are many others that have a tounge totally different. If you choose to 
+play an orc, and nobody you know speaks orcish, will your character try to 
+learn another language to communicate, or will it instead consider everyone 
+else the ignorant party? Race also plays a factor in who you consider a 
+potential ally, or enemy. Does your character carry any biases? If you are 
+an half breed race (half elf, or half orc) do you harbor any ill will toward 
+one half of your parentry? Or both? All questions worth considering. `+
+`+
+`CSEE: RACE LANGUAGE`=?`+
+`+
+`+
+Not only is your character marked by race, but by class. Your class will 
+dictate what gear you may use. If you look at someone else and see them 
+wearing the heaviest armors in the realm, they are not likely to be a mage. 
+Likewise, most warriors would not be dressed in only robes. Also, beyond 
+gear, the skills you choose are also class dependant. For example, everyone 
+can learn to dodge, but if you find a new player in the realm, and see them 
+dodging well in a fight, that might clue you into the fact that they might 
+be either a warrior or rogue. The level at which you can learn a skill 
+depends on your class, and the skill in question. (See help SKILLS and GAIN 
+for more information) `+
+`+
+`CSEE: CLASS GAIN`=?`+
+`+
+`r<see help GAME2 for the continued newbie help>`=? 
+~
+END
+
+keyword GAME2~
+helpflags hide_keywords~
+category undefined~
+text ..          `GThe Dawn of Time Newbie Document, Part2`+
+`c========---------------------------------------------========`=?`+
+`+
+These two groups define the character in it's most general form. There are 
+however other distinctions that need to be considered. One of these is your 
+character's alignment. How strongly they are influenced by good and evil, 
+law or chaos will reflect many things about a character. Who they will trust 
+(if anyone), what gear they will use, whether or not they are likely to 
+retrieve corpses for other players, what clans they will seek out to join, 
+nobles. `+
+`+
+`CSEE: `=_OOC `=_IC `=_RP`=?`+
+`+
+`+
+Another part of your character is how they regard clans. There are several 
+clans in Dawn of Time. Will your character choose to seek one that holds 
+beliefs close to thiers, or are they more of the solo type? Does your 
+character trust them? Would your character rather start thier own clan, on 
+thier own terms? Questions every character should be willing to answer. For 
+more information look at the help file for CLANs.`+
+ `+
+`CSEE: `=_CLAN `=_PRICES `=_FOUNDING`=?`+
+`+
+`+
+Lastly, but far from finally, your charcter is an individual. You have your 
+own view on the world, and how it should be. How you take steps toward that 
+end dictates ultimately what kind of a character you are. All of the above 
+items combine to form your character's outlook. What kind of mobs does your 
+character kill? Where does he or she choose to rest after a hard fought 
+battle? What skills do you want your character to develop first? Next? Notat 
+all? `+
+`+
+`CSEE: `=_HISTORY `=_HISTORY-EXAMPLE`=?`+
+`+
+`+
+Now, aside from role playing, there are certain parts of the game that 
+cannot be avoided. These are game mechanics and more or less what you have 
+to do to level, and improve yourself. Mostly, your character will improve 
+through killing mobs. Player killing IS allowed in Dawn of Time, after all, 
+this is supposed to be as realistic as possible. One word of warning is that 
+if you kill another player for a non-IC reason, you will be punished by the 
+nobles, the administration, or both. Player killing is accepted, but not 
+taken lightly.`+
+`+
+`CSEE: `=_DEATH `=_IC `=_WHY `=_OOC `=_RP`=?`+
+`+
+`+
+Combat is level dependant on Dawn of Time. That is to say, if you greatly 
+out class your opponent in terms of level, you will more than likely defeat 
+them very easily. The opposite is also true. If your intended kill out ranks 
+you, you may want to rethink your actions. Weapons also do damage that is 
+dependant on thier type. Daggers do the least amount of damage (all other 
+factors being equal) and two handed axes do the most. This should be self 
+evident. All players can wield a weapon, and hold one in thier off hand. 
+While so armed, the character gains an extra (and ONLY one) attack with that 
+secondary weapon. While using a shield, holding an item, or wielding a two 
+handed weapon, a secondary weapon cannot be used. `+
+`+
+Armor in Dawn of Time will protect you based on how much of your body it 
+covers. Items like neck armor protect compairitivly little of you, whereas 
+shields provide much better protection. Whether or not your character uses a 
+two handed weapon, two one handed weapons, or a weapon and a shield is 
+totally up to you. All three forms have thier advantages, and disadvantages. 
+`+
+`+
+Once you begin your character on Dawn of Time, you are encouraged to visit 
+several areas to get a grasp of what you just got yourself into. Firstly, 
+and most obivous, is the Mud School. Even experienced MUD players should 
+invest the time to go through mud school. The mobs there, and the refresher 
+course in mudding are valuable to everyone. `+
+`+
+Also, Dawn of Time has the roof of the mud school available to explore. This 
+is an area the explains mudding on more general terms, both for game 
+mechanics, and how it applies to Dawn of Time. Everyone should deffinatly go 
+through this area. To sum up, Dawn of Time is a unique game where those who 
+want to spend the time and effort to build interesting, multi-dimentional 
+characters have the opportunity to do so. If this is your goal, then submit 
+a character and get ready for a game you are not likely to soon forget.`+
+`+
+`CSEE: `=_MYTHOS `=_ADMIN `=_POLICY`=? 
+~
+END
+
+keyword MUDSCHOOL SCHOOL~
+category undefined~
+text We currently have no Mud School.  You start with 1000 silver in the main 
+plaza of your home town, and we suggest you look at the maps you'll find in 
+your inventory.  They show lots of good areas to go to for new players, as 
+well as everything in your home town.  It is also a good idea to type 'help 
+game', our main file for new players.  
+~
+END
+
+keyword SEND~
+helpflags nsupport~
+category undefined~
+text `=lSyntax: `=?send <charname> <email address>`+
+`+
+The send command, available only to immortals and newbie helpers, is for 
+sending a copy of the newbie document to the specified email address.  `+
+`+
+If you would like a copy of the newbie document sent to you, you can ask an 
+immortal or newbie helper to send you one, or you can find it online at 
+`Chttp://www.dawnoftime.org/newbie/`=?. 
+~
+END
+
+keyword CHARDESC~
+helpflags nsupport~
+category undefined~
+text `=lSyntax: `=?chardesc <character>`+
+`=?        chardesc <mobile>`+
+`+
+This command allows you to edit a characters long description, using the 
+familiar description editor.  You can edit a characters long description 
+using the character description command(chardesc).  It works exactly like 
+the descript command (for yourself) apart from youtype the characters name 
+as the single parameter.  You cannot edit a characters long description if 
+they have been letgained.  Only an immortal can do this.  This command is 
+specifically for helping those newbies that are absoultely new to RPing 
+and/or the description editor. `+
+`+
+eg CHARDESC BOB will edit bobs description...  NOTE: The person is totally 
+unaware that you are editing his/her long description.  You might want to 
+notify them that you are doing so, or else you'll both end up messing with 
+the description at the same time.`+
+`+
+You can also edit a mobiles description for quests and things like that. 
+Newbie support people are also able to edit descriptions of newbies. 
+~
+END
+
+keyword NSUPPORT-COMMANDS~
+helpflags nsupport~
+category undefined~
+see_also SEND CHARDESC~
+text Newbie support personnel have access to several comamnds to help them 
+accomplish their duties.  Most useful is the `#`Ctell`^ command, which will allow 
+you to talk to a newbie no matter where they are on the mud. The `Cchardesc`^ 
+will allow you to help a newbie with their long description, and `Csend`^ allows 
+you to email a copy of the newbie document to them.  Check the helps for 
+more information and syntax. `+
+`+
+~
+END
+
+keyword START-NEWBIE1~
+category newbie~
+parent_help SUMMARY~
+continues START-NEWBIE2~
+text Welcome,`+
+The following few help entries will introduce you to the basics of playing 
+this game and get you up and running.`+
+`+
+In these helps, the text '`=lSyntax:`=?' is used to specify what you must type 
+to activate a command, for example:`+
+  `=lSyntax:`=? help `=_start-newbie`+
+Means that you can type `=Chelp start-newbie`=? (which in this case is the 
+command used to display this help entry.)`+
+`+
+When you view these helps please read them carefully and view associated 
+help files, for example 'help `=_get' will also have help on the give command.`+
+`+
+Another way to figure out what all the commands do is to just type 
+`=Ccommand`=?, this will list all of the commands you can use.  You can view a 
+help on any of those commands by typing `=Chelp <command name>`=?.  e.g. if you 
+type command and you see a command listed called give, type `=Chelp give`=? for 
+help on what the command give actually does.`+
+`+
+See helps on:`+
+`+
+`G[Moving about]        [Grouping with others]`+
+`+
+     `=lSyntax:`=?                  `=lSyntax:`=?`=?`+
+* help `=_direction         * help `=_follow`+
+* help `=_exits             * help `=_group`+
+* help `=_recall            * help `=_split`+
+* help `=_wake`+
+* help `=_sleep`+
+ 
+~
+END
+
+keyword START-NEWBIE2~
+category newbie~
+parent_help SUMMARY~
+continues START-NEWBIE3~
+text `G[Using Objects]        [Information/Communication]
+ 
+`=lSyntax:`=?                  `=lSyntax:`=?`=?                  
+* help `=_give                * command [this lists all the commands you can 
+* help `=_wear                           type, type 'command' then look at help 
+* help `=_brandish                       for the ones you dont understand]
+* help `=_unlock              * help `=_commands [common commands]
+* help `=_drink               * help `=_equipment
+* help `=_buy                 * help `=_notes
+* help `=_wear                * help `=_communication
+                           * help `=_look
+                           * help `=_socials    
+                           * help `=_language
+                           * help `=_smote
+~
+END
+
+keyword START-NEWBIE3~
+category newbie~
+parent_help SUMMARY~
+continues START-THIS-MUD~
+text `G[Combat]            [Other]`=?
+ 
+`=lSyntax:`=?                  `=lSyntax:`=?`=?                  
+* `=_kill                     * `=_teach
+* `=_flee                     * `=_save
+* `=_backstab                 * `=_quit
+* `=_skills                   * `=_train 
+* `=_cast                     * `=_practice
+* `=_wimpy                    * `=_gain
+                           * `=_delete
+     
+ 
+Ok now you know the basics of mudding, lets talk about mudding here in particular...
+ 
+~
+END
+
+keyword START-THIS-MUD~
+title Starting to mud on The Dawn of Time~
+helpflags mud_specific~
+category newbie~
+parent_help SUMMARY~
+see_also ROLEPLAYING START-GENERAL~
+text This help entry introduces things which are specific about this mud, it is 
+recommended that you read '`=Chelp `=_start-newbie`=?' before reading this help if 
+you are new to mudding, for information about mudding in general.`+
+`+
+The Dawn of Time is a roleplaying MUD what does this mean?`+
+Well it means we have a lot of fun!  Once you have roleplayed you will never 
+think of mudding the same.  As roleplay and roleplaying is an integral part 
+of The Dawn Of Time please read these helps and associated helps.  You can 
+read more about roleplaying in 'help `=_roleplaying'. `+
+The Dawn of Time has a great magic system, it is slightly different from 
+other MUDS but be assured it is more fun, to understand the system in place 
+at the Dawn of Time and learn about its races, attribute system, classes 
+etc..read this help and associated help files.`+
+`+
+`=lSyntax:`=?`+
+  help `=_system [read all associated helps :)]`+
+  help `=_death`+
+  help `=_karn`+
+`+
+For some general knowledge regarding the game, the people who run it and 
+other things go check out help `=_start-general 
+~
+END
+
+keyword START-GENERAL~
+category undefined~
+text `=?
+`GOk things you need to know!`=?
+ 
+ To see our `cWebpages`=? check out the `=_sites help and to send 
+ your Immortals some EMAIL our areas our other stuff see the 
+`c`=_immemail`=? help file! 
+ 
+`=lSyntax:`=?`=?
+  help `=_immemail
+  help `=_sites
+ 
+ 
+`RImportant helps of interest you may have missed.`=?
+  help `=_magic-system
+  help `=_letgain
+  help `=_rules
+  help `=_policy
+  help `=_admin
+ 
+IF you have any other questions or suggestions send them in a note or email 
+to the immortals or ADMIN, we will be glad to here from you.
+~
+END
+
+EOF~
+#$

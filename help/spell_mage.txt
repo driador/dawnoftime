@@ -1,0 +1,1354 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword GATE~
+helpflags wordwrapped~
+category magic:spell~
+spell_name gate~
+text Creates a one-way gate to the target creature/character, and transports you 
+there straight away.  Gates cannot be made to certain destinations, nor used 
+to escape from gate-proof rooms.  When you arrive at the destination you 
+experience a little delay, as the spell settles. Gates are restricted to 
+travel within the same continent.  `+
+
+~
+END
+
+keyword GIANT-STRENGTH~
+helpflags wordwrapped~
+category magic:spell~
+spell_name giant strength~
+text Giant strength grants the target of this spell strength beyong their normal 
+abilities. This allows him to perform feats that normally couldn't be 
+accomplished withouth the assistance of magic, such as increased damage when 
+in melee combat.`+
+
+~
+END
+
+keyword HASTE~
+helpflags wordwrapped~
+category magic:spell~
+see_also SLOW~
+spell_name haste~
+text The haste spell increases the speed and agility of the recipient, allowing 
+an extra attack (or even a backstab) in combat, and improving evasive 
+abilities in combat.  However, it produces a great strain on the body, such 
+that recuperative abilities are halved.  Haste is capable of negating the 
+slow spell.  `+
+
+~
+END
+
+keyword IDENTIFY~
+helpflags wordwrapped~
+category magic:spell~
+spell_name identify~
+text Magic has been around since the beginning of time itself, and thus has the 
+powers to unlock mysteries that the common folk might have long forgot.  
+Casting a simple spell of identify on an object will reveal much 
+information, including, but not limited to the weight, magical enhancements, 
+and worth.`+
+
+~
+END
+
+keyword INDUCE-SLEEP~
+helpflags wordwrapped~
+category magic:spell~
+spell_name induce sleep~
+text This spell attempts to help a willing target character drift off to sleep.  
+It is not considered a form of attack.  `+
+ 
+~
+END
+
+keyword INFRAVISION~
+helpflags wordwrapped~
+category magic:spell~
+spell_name infravision~
+text This spell enables the target character to see heat patterns and 
+warm-blooded creatures in normal darkness without the use of a light.  Exits 
+of a room are also visible because of this.  `+
+
+~
+END
+
+keyword INVISIBILITY INVISIBLE~
+helpflags wordwrapped~
+category magic:spell~
+see_also MASS-INVIS~
+spell_name invisibility~
+text This invisibility spell will make a person vanish from sight and 
+undetectable from normal vision or even infravision.  Although the target of 
+this spell may not be visible, that doesn't mean that he is silenced or his 
+movements can't be heard.  Items dropped will suddenly become visible, and 
+items picked up will appear to have vanished.  Invisible characters will 
+become visible once they are involved in combat, they will themselves to 
+reappear, or the duration of the spell is over.  `+
+`+
+This spell may also be cast on an object to render it invisible.`+
+`+
+If you are affected by this spell, you can choose to go visible with the 
+`=Cvisible`=? command.`+
+ 
+~
+END
+
+keyword ILLUSIONS-GRANDEUR~
+helpflags wordwrapped~
+category magic:spell~
+spell_name illusions grandeur~
+text Illusions of grandeur grants the caster the powerful illusion of appearing 
+much greater than he/she really is.  This grants the caster the ability to 
+take more damage in melee combat, as if they actually were that much larger. 
+`+
+Once the illusion wears off though there is a possibility that the caster 
+may die if not sufficiently healed from wounds.`+
+ 
+~
+END
+
+keyword LOCATE-OBJECT~
+helpflags wordwrapped~
+category magic:spell~
+spell_name locate object~
+text The spell of locate object will reveal to the caster the location of all 
+objects that he or she is looking for.  The spell shows an image of where 
+the searched for object is or who is carrying it.  If you are vague in your 
+search details, you may find many more items that fit the description than 
+you were looking for.`+
+
+~
+END
+
+keyword MAGIC-RESISTANCE~
+helpflags wordwrapped~
+category magic:spell~
+spell_name magic resistance~
+text Magic resistance grants the caster a better resistance towards the ill 
+effects of spells.  When one successfully resists and makes a save against a 
+spell, they take only half the normal damage from the magical attack. 
+~
+END
+
+keyword MITHRIL-GLAZE~
+helpflags wordwrapped~
+category magic:spell~
+spell_name mithril glaze~
+text This spell will add a mana bonus attribute to any object worn around the 
+body, like robes, at a great cost.  It will destroy the first mithril item 
+in your inventory (always), and it has a 40% chance of destroying the object 
+that you cast it on.  If the target object is not destroyed, it will raise 
+it's level by 5.  You must have at least 200 mana to start casting it, and 
+it will absorb all of your mana upon finishing.  It will make you hungry, 
+thirsty, and 30 hours more tired.`+
+
+~
+END
+
+keyword NEXUS~
+helpflags wordwrapped~
+category magic:spell~
+see_also PORTAL WARPSTONES~
+spell_name nexus~
+text This spell is virtually identical to portal, with the only difference being 
+that while portal creates a one-way gate, a nexus spell makes a two-sided 
+gate.  It also lasts longer than the lower-powered portal spell.  Both 
+spells require an additional power source, the secret of which has been 
+lost.`+
+
+~
+END
+
+keyword PASS-DOOR~
+helpflags wordwrapped~
+category magic:spell~
+spell_name pass door~
+text This spell allows a character turn transparent and pass through closed 
+doorways.  Some doors are magically protected and aren't capable of being 
+walked through in this fashion.  Pass door cannot be casted on another.  `+
+
+~
+END
+
+keyword PHANTASMAL-FORCE~
+helpflags wordwrapped~
+category magic:spell~
+spell_name phantasmal force~
+text Phantasms are illusions of spirits of other monsters that perform mental 
+attacks on the victim.  While the damage is not real if the attacking 
+illusion is disbelieved, the will victim suffers great damage when he thinks 
+his attacker is real. With the affects of true seeing, the victim is granted 
+immunity to such illusionary attacks.`+
+
+~
+END
+
+keyword PORTAL~
+helpflags wordwrapped~
+category magic:spell~
+see_also NEXUS WARPSTONES ENTER~
+spell_name portal~
+text The portal spell is similar to gate, but creates a short duration one way, 
+two-dimensional gateway to the target, instead of instantaneously 
+transporting the caster.  Portals can be entered by using the 'ENTER 
+<portal>' command.  Portals cannot be made to certain destinations, nor used 
+to escape from gate-proof rooms.  Portal requires a special source of power 
+to be summoned, unfortunately the secret of this material component has been 
+lost.`+
+
+~
+END
+
+keyword PRISMATIC-SPRAY~
+helpflags wordwrapped~
+category magic:spell~
+spell_name prismatic spray~
+text This spell allows the caster to bring forth a powerful array of colors, 
+resembling a beautiful rainbow to those viewing it from afar.  To those near 
+enough, the illusionary array of colors causes a blinding affect, and 
+attacks the optical senses.`+
+
+~
+END
+
+keyword RAGE~
+category magic:spell~
+spell_name rage~
+text This spell fills the target character with a fierce battle rage that makes 
+him a formidable foe.  The enraged target fights without concern for his 
+wellfare, thus gaining bonuses from the spell.`+
+`+
+The target's can take much more damage without noticing the pain, as well as 
+deal more damage, because of the lack of defensive maneuvers.  Because of 
+this, the enraged person is much more likely to take a hit from weapons when 
+in battle.`+
+~
+END
+
+keyword RECHARGE~
+category magic:spell~
+spell_name recharge~
+text The recharge spell is used to restore energy to depleted wands and staves.  
+Fully exhausted items cannot be recharged, and the difficulty of the spell 
+is proportional to the number of charges used.  Magic items can only be 
+recharged one time successfully.  `+
+`+
+Casters can only recharge the staff/wand if they are familiar with the spell 
+they are attempting to recharge onto the item.`+
+~
+END
+
+keyword RUNE-EDGE~
+category magic:spell~
+spell_name rune edge~
+text This spell makes certain weapons sharp for the duration of the spell.  The 
+magic creates a humming affect on the edge of the enchanted weapon that 
+makes it so the weapon can cut though most anything with a lot less effort.  
+~
+END
+
+keyword -SHIELD~
+category magic:spell~
+text `=lSyntax: `=?cast shield <person>`+
+`+
+This spell creates a shimmering magical force field around the beneficiary 
+of the spell, offering protection from spells and melee weapons alike.`+
+`+
+`GREALMS: `=?conjuration 
+~
+END
+
+keyword -SLEEP~
+category magic:spell~
+see_also INDUCE-SLEEP~
+text `=lSyntax: `=?cast sleep <target> `+
+`+
+This spell attempts to put the victim to sleep against their will for a 
+long, long time.  It is considered a form of attack.  `+
+`+
+`GREALMS: `=?charm`+
+`+
+~
+END
+
+keyword SLOW~
+category magic:spell~
+spell_name slow~
+text Despite popular mythology, slow is not the opposite of haste, but is a spell 
+with it's own unique set of effects.  When cast on an unfortunate victim, it 
+slows its movements, making it easier to hit and reducing its rate of 
+attack.  The effect of slow also doubles movement costs and halves healing 
+rates, due to reduced metabolism.  `+
+~
+END
+
+keyword -SUMMON~
+category magic:spell~
+text `=lSyntax: `=?cast summon <target>`+
+`+
+This spell allow the caster to summon the target character from anywhere 
+else in the world.  Characters who are fighting or in a special room may not 
+be summoned.  Only characters that allow themselves to be open to the idea 
+of travel via magic can be summoned.`+
+`+
+`GREALMS: `=?conjuration summoning`+
+`+
+`CSEE-ALSO: NOSUMMON 
+~
+END
+
+keyword TELEPORT~
+category magic:spell~
+spell_name teleport~
+text This spell randomly transfers the target character to anywhere in the world. 
+ This spell may be useful for exploring the world or escaping pursuing 
+danger, but random travel can be quite risky and usually isn't suitable for 
+the timid.  `+
+~
+END
+
+keyword TRUE-SIGHT~
+category magic:spell~
+spell_name true sight~
+text This spell grants the the caster, or the recipient of the spell, the full 
+abilities to detect abnomallies in the spectrum of sight.  This means that 
+those affected by true sight can detect anyone invisible, and even some of 
+those that aren't too exceptional at hiding.`+
+~
+END
+
+keyword VAMPIRIC-TOUCH~
+category magic:spell~
+spell_name vampiric touch~
+text This spell grants the caster with a touch similar to that of a wraith.  The 
+caster's touch can drain life from the victim.  `+
+~
+END
+
+keyword VENTRILOQUATE~
+category magic:spell~
+spell_name ventriloquate~
+text This spell throws your voice, making it appear that some other object or 
+character in the room is saying your message.  Victims who make their saving 
+throw will know that someone is using ventriloquism, but not who.  Victims 
+who fail their saving throw will think that the object or character really 
+did say your message.  
+~
+END
+
+keyword WEAKEN~
+category magic:spell~
+spell_name weaken~
+text Weaken will sap the strength from the target, making them feel weaker and 
+more vulnerble in battles.  The amount of strength sapped is proportional to 
+the power of the caster.`+
+~
+END
+
+keyword WIZARD-EYE~
+category magic:spell~
+spell_name wizard eye~
+text This spell allows the caster to see a person not in the same room.  If 
+successful, the caster will be shown the room where the victim is located, 
+and all the contents of it.  This is a spell only detectable by certain 
+divination spells, but is otherwise useful for spying.  `+
+`+
+Some rooms and all immortals are immune to this spell.  `+
+~
+END
+
+keyword WORD-OF-RECALL~
+category magic:spell~
+spell_name word of recall~
+text This spell grants the spellcaster the same ability as a recall.  While they 
+may seem quite similar, there are instances when praying for a recall just 
+won't work, and the spell will transport you to your destination.  `+
+~
+END
+
+keyword WILDSTRIKE~
+category magic:spell~
+spell_name wildstrike~
+text A mage schooled in both wild magic and evocation may bring forth a powerful 
+stream of pure energy with this spell.  It does considerable damage, and in 
+some cases affects the victim in random ways.  As with all wild magic, use 
+at your own risk!`+
+~
+END
+
+keyword SHADOWFLIGHT~
+category magic:spell~
+spell_name shadowflight~
+text Shadowflight is a spell practiced primarily by the shadowy dabblers in 
+thievery and magics, known as spellfilchers.  While similar to the gate 
+spell that mages use, shadowflight isn't as unrestrictive in its uses.  In 
+order for shadowflight to work properly, the shadows must be full, meaning 
+the spell can only function between sunset and sunrise.`+
+~
+END
+
+keyword FLAME-WEAPON FROST-WEAPON~
+category magic:spell~
+text `=lSyntax: `=?cast 'flame weapon' <weapon>`+
+`=?        cast 'frost weapon' <weapon>`+
+`+
+Magics can be used to give wicked enchantments to weapons to enhance their 
+performance in melee combat.  Flame weapon can be used to give a weapon a 
+flaming aura, which causes fire damage, and perhaps smoke blindness when 
+contact is made.  It's counterpart, frost weapons, can imbue a weapons with 
+a biting cold that saps the muscles of energy when contact is made. Only one 
+may be cast on a weapon at a time.`+
+`+
+`GREALMS: `=?`=_enchantment `=_essence 
+~
+END
+
+keyword DRAIN-WEAPON~
+category magic:spell~
+text `=lSyntax: `=?cast 'drain weapon' <weapon>`+
+`+
+Magics can be used to give wicked enchantments to weapons to enhance their 
+performance in melee combat.  Those that are wicked and evil at heart can 
+imbue their weapon with a  vampiric essence using drain blade. The weapon 
+will slowly drain the life from the victim upon its touch, and has a slight 
+chance of channeling the life force to its wielded.`+
+`+
+`GREALMS: `=?`=_enchantment `=_necromancy 
+~
+END
+
+keyword LIGHTNING-BOLT~
+category magic:spell~
+text `=lSyntax: `=?cast 'lightning bolt' <target>`+
+`+
+This spell allows the spellcaster to act as a conduit for one of the 
+mightiest forces of nature.  It summons forth energies from the air, and 
+channels them into a searing bolt of lightning that leaps forth from the 
+hand of the caster.`+
+`+
+`GREALMS: `=?`=_evocation `=_essence 
+~
+END
+
+keyword COLD-RESISTANCE FIRE-RESISTANCE~
+category magic:spell~
+text `=lSyntax: `=?cast 'cold resistance'`+
+`=?        cast 'fire resistance'`+
+`+
+The resistances of cold and fire summon a protective aura about the caster 
+that offers protection from these essences. Since these auras are polar 
+opposites of each other, only one can be used at a time, or else they would 
+cancel each other out. When protected from either cold/fire, the caster will 
+suffer upto 50% less damage from the respective form of attack.`+
+`+
+`GREALMS: `=?`=_abjuration `=_essence 
+~
+END
+
+keyword FIREBALL~
+category magic:spell~
+text `=lSyntax: `=?cast fireball <target>`+
+`+
+This spell allows the spellcaster to channel forth a consuming ball of fire 
+from his palms.  The ball of fire starts no larger than a cantelope, and 
+grows to over three feet in diameter as it is hurled towards the unlucky 
+victim.`+
+`+
+`GREALMS: `=?`=_evocation `=_essence 
+~
+END
+
+keyword FROSTBALL~
+category magic:spell~
+text `=lSyntax: `=?cast frostball <target>`+
+`+
+Frostball summons forth a flurry of fist sized or larger ice balls to hurl 
+towards the unlucky victim of this spell.  As the frostballs travel through 
+air, they swell up to an even larger size, right before pummeling the 
+victim.  This spell requires little concentration to cast and can be quite 
+deadly in combat.`+
+`+
+`GREALMS: `=?`=_evocation `=_essence`+
+~
+END
+
+keyword CHILL-TOUCH~
+category magic:spell~
+text `=lSyntax: `=?cast 'chill touch' <target>`+
+`+
+When the final words of chill touch are uttered, the caster gets intensely 
+cold hands, which he then applies to the victim.  This magical cold seeps 
+into the muscles, causing them to become stiff and harder to use, depriving 
+any warrior of their once great strength.`+
+`+
+`GREALMS: `=?`=_evocation `=_necromancy 
+~
+END
+
+keyword CHAOTIC-POISON CHAOS-POISON~
+category magic:spell~
+text `=lSyntax: `=?cast 'chaotic poison' <target>
+`+
+Chaos prevails again!  Chaotic poison is far more likely to be prove fatal 
+than any simple poison concoction that your average thief can brew.  Those 
+that could shrug off the average poison might find themself feeling a little 
+`#`ggreen `^with the chaotic nature of this poison.  `+
+`+
+The cure for something this lethal is very difficult to discover.`+
+`+
+`GREALMS: `=?`=_alteration `=_necromancy `=_wild
+~
+END
+
+keyword CUTTING-WIND~
+category magic:spell~
+text `=lSyntax: `=?cast 'cutting wind' <target> `+
+`+
+This highly unpredictable spell focuses a stream of air into a thin, 
+fast-moving slice of air, which then hurtles downward from the sky.  While 
+very chaotic in nature, this produces a forceful stream of wind may injure 
+those other than the one intended. While always enough to damage its 
+intended victim, the cutting wind varies greatly in intensity.  Depending on 
+the whim of the air about - which is known to be chaotic - the wind may 
+inflict miniscule or tremendous amounts of damage. The only certainty is 
+that a more powerful mage can increase results, but even the most learned 
+wizard may, on ocassion, be outdone by the lowliest apprentice when dealing 
+with this spell. `+
+`+
+`GREALMS: `=?`=_evocation `=_essence `=_wild
+~
+END
+
+keyword DECAY~
+category magic:spell~
+text `=lSyntax: `=?cast 'decay' <target>
+        cast 'decay' <object>
+ 
+The decay spell was originally created by a mage trying to create an aging
+spell, but he made it too powerful. The target aged at such a pace that it
+actually fell apart and then crumbled to dust within moments.  The mage,
+instantly aware of the damage this could do in the wrong hands, vowed never
+to use the spell and locked away the book containing his research in a cave
+deep within the dwarven forest.  A few decades later, after the mage's
+death, the book was discovered by a necromancer and has since entered into
+more widespread use within certain circles.  It has two uses: it can be
+cast upon an object which the caster is carrying, causing it to crumble to
+dust within a few hours, or the magic can be focused into a quick burst
+aimed at a living creature, rapidly aging some of his body, causing
+grievous damage.
+ 
+`G`GREALMS: `=?`=_alteration `=_necromancy
+~
+END
+
+keyword DOWNDRAFT~
+category magic:spell~
+text `=lSyntax: `=?cast downdraft <target> `+
+`+
+Downdraft calls a great rush of wind down upon the target, doing a bit of 
+damage from the sheer force as well as possibly knocking some of the 
+target's equipment to the ground.  In order for the caster to do this, the 
+air from the lower part of the room is transported to the top and then 
+quickly thrown downward at the target.  The transit of the air is so fast, 
+though, that is changes the pressure in the room as well, and it is not 
+unknown for people's ears to pop when the spell is cast.  `+
+`+
+`GREALMS: `=?`=_alteration `=_essence`+
+~
+END
+
+keyword DISORIENTATION~
+category magic:spell~
+text `=lSyntax: `=?cast 'disorientation' <target> `+
+`+
+A mage commanding this spell can cause great confusion in the mind of 
+whoever is unfortunate enough to have drawn his ire.  The target of this 
+spell will believe they have been transported to a different place without 
+actually having moved.  `+
+`+
+`GREALMS: `=? `=_charm `=_illusion 
+~
+END
+
+keyword SPIRIT-WALK~
+category magic:spell~
+spell_name spirit walk~
+text Spirit walking was first discovered by the druids ages ago, but it has only 
+recently become more widely used by mages and clerics.  It is an invaluable 
+source of information, but also highly dangerous to the caster.  When the 
+spell is cast, the caster's spirit leaves his body in search of the 
+character or creature specified.  If it is able to find it, the spirit takes 
+the form of an invisible, floating ghost-like figure.  This is more than a 
+simple eyepiece for the caster, though: it is his soul in material form, 
+which can move about as the caster desires.  When the caster wishes to bring 
+his soul back into his body, he needs only 'return' to do so.  `+
+`+
+There is one major drawback to this spell, though: while the caster's soul 
+is away, his body is in a near-comatose state.  The caster cannot interact 
+with his physical body in any way, nor is he even aware of what goes on 
+around it.  Obviously, it is not a spell to be invoked lightly.  `+
+`+
+(Type return to get back to your body) `+
+~
+END
+
+keyword FLING~
+category magic:spell~
+text `=lSyntax: `=?cast 'fling' <target> `+
+`+
+This spell was created by a mage with a rather strange sense of humour.  The 
+caster points his finger at the target and, moments later, the first item he 
+or she is carrying goes flying up into the air, at which point winds rise up 
+and change its projectory until it is flying directly toward the target.  At 
+this point, the target is struck by the object, be it a boot, a rock, or a 
+pair of frilled pants.  Obviously, this spell can be embarassing to whoever 
+is unfortunate enough to have drawn the mage's wrath.  `+
+
+Please note that fling is an offensive spell and will enter you into combat
+with your target.
+
+`GREALMS: `=?`=_alteration`+
+~
+END
+
+keyword SHAPING-THE-CHAOS~
+category magic:spell~
+spell_name shaping the chaos~
+text In order to cast this spell, the mage reaches into the chaos permeating the 
+world and attempts to shape it into a physical manifestation.  
+Unfortunately, due to the nature of chaos, the results are quite 
+unpredictable, ranging from small twigs to living creatures, not all of 
+which are friendly.  If an object is created, it keeps its form for a bit, 
+but without any reason to stay in that form, it crumbles after a few hours.  
+However, if a living being is created, it remains, as its drive to live is 
+enough to hold its form.  Thus, this spell can be rather useful, but, at the 
+same time, there is a certain risk in casting it, as you can never be 
+certain what the results will be.  `+
+~
+END
+
+keyword ACID-ARROW~
+category magic:spell~
+text `=lSyntax: `=?cast 'acid arrow' <target>`+
+`+
+Moments after the final words of this spell are uttered, searing bolts of 
+acid shoot out of the fingertips.  They can cause nasty wounds and corrode 
+the finest of armors until useless if subjected to heavy doses. `+
+`+
+`GREALMS: `=?evocation essence     
+~
+END
+
+keyword ACID-BLAST~
+helpflags wordwrapped~
+category magic:spell~
+spell_name acid blast~
+text Moments after the final words of this spell are uttered, a large ball of 
+acid projects fromt the palms of the caster.  While much more powerful than 
+acid arrows, the blast has been known to permanently disfigure those 
+unfortunate to survive it's deadly force.  
+~
+END
+
+keyword ACID-RESISTANCE LIGHTNING-RESISTANCE~
+category magic:spell~
+text `=lSyntax: `=?cast 'acid resistance' `+
+`=?        cast 'lightning resistance'`+
+`+
+What conquers magic better than magic itself.  To protect one's self from a 
+potent acid blast or shocking burst of elecrical energy, the best compromise 
+would be a sheet magic which protects you from them.  When a successful save 
+is made, the caster is protected from upto 50% of the normal damage.  While 
+not perfect in any regards, it beats taking the full force of the blasts.`+
+`+
+`GREALMS: `=?abjuration essence 
+~
+END
+
+keyword BURNING-HANDS~
+category magic:spell~
+text `=lSyntax: `=?cast 'burning hands' <target>`+
+`+
+This spell allows the caster to displace huge amounts of energy through the 
+open palms, causing a great buildup of heat in the process.  This heat can 
+then be transferred to the target of this spell, causing anything from a 
+heat rash, to charred skin.`+
+`+
+`GREALMS: `=?`=_alteration `=_essence 
+~
+END
+
+keyword CANCELLATION~
+category magic:spell~
+text `=lSyntax: `=?cast cancellation <person>`+
+`+
+This spell peacefully removes spells from an ally without provoking attack.  
+It is much more effective than other spells that might remove magics, but 
+requires much more concentration to cast.  It also does not discriminate 
+between harmful and benign spells.  `+
+`+
+The chance of dispelling is based on the level of the spell and that of the 
+caster. Permanent spells, such as sanctuary, are much harder to remove.  
+Only spells may be dispelled, not plague/poisons/etc.`+
+`+
+`GREALMS: `=?`=_abjuration 
+~
+END
+
+keyword CONE-COLD CONECOLD~
+category magic:spell~
+text `=lSyntax: `=?cast 'cone cold' <target>`+
+`+
+Cone of cold send forth a powerful funnel of freezing cold, crystalized air, 
+causing anything from a severe case of the goose bumps to a degree of frost 
+burn. Those who are nearby will most likely get hit by the uncontrollable 
+funnel, and might assume the spell a form of aggression.`+
+`+
+`GREALMS: `=?`=_evocation `=_essence 
+~
+END
+
+keyword COLOUR-SPRAY~
+category magic:spell~
+text `=lSyntax: `=?cast 'colour spray' <target>`+
+`+
+Color spray is best described as twisting and combining the rays of light, 
+and sending them forth from the palms of the hands, much like the way a 
+prism bends lights.  When aimed for the eyes, there is a chance that color 
+spray can temporarily blind the victim.`+
+`+
+`GREALMS: `=?alteration 
+~
+END
+
+keyword ALARM~
+category magic:spell~
+text `=lSyntax: `=?cast alarm`+
+`+
+When an alarm is set, an undetectable ward is set in the area, where anyone 
+who walks in the vicinity of it will trigger it.  No matter who triggers it, 
+the caster will be notified by means of a magical telepathy that the alarm 
+has been tripped.  Alarm is most effective when there is little traffic to 
+walk by.`+
+`+
+`GREALMS: `=?alteration foretelling 
+~
+END
+
+keyword WINDS-OF-DEATH~
+category magic:spell~
+spell_name winds of death~
+text Winds of death causes a blast of foul winds to slam into the victim, 
+depriving them of air and usually causing a nauseating feeling.  These winds 
+had a distinct odor, similar to that of cadavers rotting in the high noon 
+sun. `+
+~
+END
+
+keyword SHOCKING-GRASP~
+category magic:spell~
+spell_name shocking grasp~
+text This spell charges the hands of the caster with an incredible amount of 
+energy, that's all released upon touching the victim.  Consider it like 
+rubbing your sockings across a rug, then zapping the next person that walks 
+by.  Multiply that sensation by 100.`+
+~
+END
+
+keyword RUNIC-BLADE~
+category magic:spell~
+spell_name runic blade~
+text This enchantment imbues weapons with a powerful magic that causes a natural 
+resonance in the weapon, allowing it to cut deeper, to slash harder, and to 
+stab quicker.  Only edged weapons are able to be enchanted in such a way.  A 
+common name for this type of enchantment is 'vorpal'.`+
+~
+END
+
+keyword FINGER-OF-DEATH~
+category magic:spell~
+text `=lSyntax: `=?cast 'finger of death' <target>`+
+`+
+Finger of death brings forth a phantom touch that puts the touch of a wraith 
+to shame. While it doesn't drain life such as a wraith, it's more 
+devestating and requires half the concentration to call upon.`+
+`+
+`GREALMS: `=?`=_evocation `=_necromancy 
+~
+END
+
+keyword SHADOW-SURGE~
+category magic:spell~
+spell_name shadow surge~
+text Shadow surge is a spell practiced primarily by those shadowy dabblers in 
+thievery and magics, known as spellfilchers. This spell brings forth a surge 
+of darkness that attempts to violate the soul of the victim.  This spell 
+causes more physical damage in the struggle than anything else.`+
+~
+END
+
+keyword SEE-HIDDEN SEE-INVISIBLE SEE-MAGIC~
+category magic:spell~
+spell_name see hidden~
+text `=?        cast 'see invisible'`+
+`=?        case 'see magic'`+
+`+
+Spells of foretelling allow the caster to detect things not seen with the 
+naked eye. Magical auras are hidden to the unaided eye, and can disillusion 
+those not attuned to reading them. See hidden imbues the caster with the 
+ability to detect those hidden in shadows.  See invisible allows the caster 
+to see those cloaked by the powers of magic.  See magic grants the caster 
+with the ability to easily see the faint auras of items that are imbued with 
+magic enchantments.`+
+~
+END
+
+keyword MIRAGE~
+category magic:spell~
+see_also WIZARD-EYE~
+text `=lSyntax: `=?cast mirage`+
+`+
+This spell was created for those that wish to impede those in close pursuit. 
+ Not only can scrying eyes be detected, but with a simple mirage, they can 
+be fooled as well.  Casting a mirage will cause those that wizard eye you to 
+scry upon your illusion, thinking you somewhere else than you actually are.`+
+`+
+`GREALMS: `=?illusion phantasm 
+`+
+~
+END
+
+keyword SHADOW-STREAM~
+category magic:spell~
+spell_name shadow stream~
+text Shadow stream summons conjures a shadowy sphere of negative energy to form 
+from the palms, then surges forward and blasts into the victim, draining the 
+life. `+
+~
+END
+
+keyword HEAT-SURGE~
+category magic:spell~
+text `=lSyntax: `=?cast 'heat surge' <victim>`+
+`+
+This causes an intense wave of heat to surge forth from the finger tips and 
+burn the victim.  It's similar to a fireball, but the damage is more heat 
+than fire, which tends to do significantly more damage.`+
+`+
+`GREALMS: `=?`=_evocation `=_essence 
+~
+END
+
+keyword FLAME-LANCE ICE-LANCE LIGHTNING-LANCE THUNDER-LANCE~
+category magic:spell~
+text `=lSyntax: `=?cast 'flame lance' <target'`+
+`=?        cast 'ice lance' <target>`+
+`=?        cast 'lightning lance' <target>`+
+`=?        cast 'thunder lance' <target>`+
+`+
+The lances of the elements originated by a battlemagi that rode horseback, 
+but would rather travel light with spells, than in suitmail with lance.  
+Upon approaching the victim, and concentrated force of the element would 
+spear out from the outstretched hand of the caster, impaling the victim with 
+the force from the lance.  Depending on the type of lance, the target will 
+suffer from the burns of  the flame lance, the sinking cold of the ice 
+lance, the electifying jolt of the lightning lance, or the pounding boom of 
+the thunder lance.`+
+`+
+`GREALMS: `=?`=_evocation `=_essence 
+~
+END
+
+keyword ICE-SPHERE~
+category magic:spell~
+text `=lSyntax: `=?cast 'ice sphere' <victim>`+
+`+
+Ice sphere creates a small, snowball sized of sphere of ice to form in the 
+palms of the caster, which is then hurled towards the victim, growing to 
+perhaps up to 3 feet in diameter.  This ice sphere shatters on impact, 
+causing nasty wounds from the ice shards. `+
+`+
+`GREALMS: `=?evocation essence 
+~
+END
+
+keyword SUMMON-GUARDIAN~
+category magic:spell~
+spell_name summon guardian~
+text `C (Excerpts for a students diary)`+
+`=?As for a creature, the guildmaster in New Thalos offered me his wisdom.  A 
+giant stone golem, the largest in the realms, with wings, was the wisest 
+choice that he came up with.  A dangerous foe it would be, and also a 
+formidable ally.  Golems though are known to be easily controlled by the 
+caster once created.  The description of the spell is as follows.  The 
+castor would summon a great, winged golem.  The golem would serve to protect 
+the conjurer from any danger, it would also raise alarm should someone 
+intrude on the guardian.  The guardian will be banished back to the chaos 
+realm after the duration of the spell.  `+
+`C (signed simply in flowing script) T.  D.  `+
+~
+END
+
+keyword CAUSE-FEAR~
+category magic:spell~
+text `=lSyntax: `=?cast 'cause fear' <target>`+
+`+
+This spell will cause the victim unimaginable fear.  The luckless victim 
+will be unable to cast spells or prevent themselves from running widly about 
+the place for the duration of the spell.  Victims of Cause Fear are pursued 
+by magical assilants which will drive the victim insane. It has even been 
+reported at times that people have even been driven insane by the fear, for 
+these poor souls the only hope is a swift thrust with a dagger to the heart, 
+to end their torture for eternity.`+
+`+
+`GREALMS: `=?`=_charm `=_phantasm 
+~
+END
+
+keyword PERMANANCE~
+category magic:spell~
+see_also 'ENCHANT ARMOUR' 'ENCHANT WEAPON'~
+spell_name permanance~
+text This spell allows an accomplished enchanter to extend the duration of 
+certain affects on weapons and armor.  You must be holding the item which 
+the spell will be directed at.  A successful cast takes much concentration 
+and magical energy and should be used only when a weapon is of sufficient 
+quality to warrant permanence.  `+
+~
+END
+
+keyword MAGIC-MISSILE~
+category magic:spell~
+text `=lSyntax: `=?cast 'magic missile' <target>`+
+`+
+This spell sends forth a stream of shooting missiles of magic towards the 
+victim, each one causing stinging pain to the unlucky victim.`+
+`+
+`GREALMS: `=?`=_evocation 
+~
+END
+
+keyword ARMOUR ARMOR~
+category magic:spell~
+text `=lSyntax: `=?cast armour <character>`+
+`+
+This spell creates a hard sheet-like layer of protective magic around the 
+target that decreases (improves) their armor class.`+
+`+
+`GREALMS: `=?conjuration summoning 
+~
+END
+
+keyword CHANGE-SEX SEX-CHANGE~
+category magic:spell~
+text `BSytnax: `=?cast 'change sex' <victim>`+
+`+
+This spell alters the gender of the character, making him/her into a 
+her/him, or possible into an asexual being. This condition is not permanent, 
+and usually the victim is reverted to his/her normal self once the spell 
+wears off.`+
+`+
+`GREALMS: `=?`=_alteration `=_necromancy 
+~
+END
+
+keyword CHARM-PERSON~
+category magic:spell~
+text `=lSyntax: `=?cast 'charm person' <target> `+
+`+
+This spell, if successful, causes the victim to follow you and to take 
+orders from you.  Use ORDER to order your charmed followers.  `+
+`+
+You are responsible for the actions of your followers.  Conversely, other 
+people who attack your followers will be penalized as if they attacked you.  
+`+
+`GREALMS: `=?`=_charm
+~
+END
+
+keyword CONTINUAL-LIGHT~
+category magic:spell~
+text `=lSyntax: `=?cast 'continual light'`+
+`=?        cast 'continual light' <object>`+
+`+
+This spell creates a glowing ball of light, which you can hold as a source 
+of light when not in a well lit city. This ball of light will last for a 
+very long time, almost seeming indefinate.  Continual light may also be used 
+to give an object an enchanted glow.`+
+`+
+`GREALMS: `=?`=_alteration 
+~
+END
+
+keyword FIRE-SHIELD CHILL-SHIELD~
+category magic:spell~
+text `=lSyntax: `=?cast 'chill shield' <person>`+
+`=?        cast 'fire shield' <person>`+
+`+
+This spell conjures a protective shield around the target that has a slight 
+chance of dealing damage back to any opponent that strikes the caster in 
+melee combat. The return damage from the shield is up to 50% of the damage 
+received and is of the appropriate type, either fire or cold. The two 
+opposing shields can not be conjured simultaneously.`+
+`+
+`GREALMS: `=?`=_alteration `=_evocation `=_essence 
+~
+END
+
+keyword CHAOS-LACE CHAOSLACE~
+category magic:spell~
+text `=lSyntax: `=?cast 'chaos lace' <object>`+
+`+
+This spell removes certain enchantments currently on an item like anti-evil, 
+flaming, etc.  It can be cast on the following object types, with these 
+possible results:`+
+`+
+`=?   torso armor - plus/minus hit points or strength`+
+`=?   helmet armor - plus/minus wisdom, intelligence, or mana `+
+`=?   leg armor - plus/minus constitution or movement `+
+`=?   weapon - plus/minus hit points, dexterity, or strength `+
+`+
+`GREALMS: `=?`=_enchantment `=_wild 
+~
+END
+
+keyword CREATE-ROSE~
+category magic:spell~
+text `=lSyntax: `=?summon 'create rose' `+
+`+
+This romantic summons creates a beautiful, fragrant red rose.  While a rose 
+has nearly no value for the common shopkeeper, it is sure to win the heart 
+of any lady.`+
+`+
+`GELEMENTS: `=?`=_plant `+
+`GSEASONS: `=?`=_spring 
+~
+END
+
+keyword CHAIN-LIGHTNING~
+category magic:spell~
+text `=lSyntax: `=?cast 'chain lightning' <target> `+
+`+
+Chain lightning is a deadly spell, producing a powerful bolt of lightning 
+that arcs from target to target in the room, until its force is fully 
+expended.  Allies of the caster may be hit by this spell, but the caster 
+himself will not be struck unless no other viable target remains.  Chain 
+lightning is most effective when used on groups of creatures.  `+
+`+
+`GREALMS: `=?`=_evocation `=_essence
+~
+END
+
+keyword DISPEL-MAGIC~
+category magic:spell~
+text `=lSyntax: `=?cast 'dispel magic' <target> `+
+`+
+Removes magical effects from the target.  It is considered an attack spell 
+and does not discriminate between harmful and benign spells.  `+
+`+
+The chance of dispelling is based on the level of the spell.  Permanent 
+spells (such as mobile sanctuary) are much harder to remove.  Not all spells 
+may be dispelled, notable examples are poison and plague.  `+
+`+
+`GREALMS: `=?`=_abjuration 
+~
+END
+
+keyword EMPOWER-WEAPON~
+category magic:spell~
+text `=lSyntax: `=?cast 'empower weapon' <weapon>`+
+`+
+Magics can be used to give wicked enchantments to weapons to enhance their 
+performance in melee combat.  Empower weapon charges the weapon with magical 
+energies, and realeases them on contact, shocking the victim much like a 
+bolt of lightning. `+
+`+
+`GREALMS: `=?`=_enchantment `=_essence 
+~
+END
+
+keyword ENCHANT-ARMOUR ENCHANT-WEAPON~
+category magic:spell~
+text `=lSyntax: `=?cast 'enchant armour' <armour>`+
+`=?        cast 'enchant weapon' <weapon>`+
+`+
+The best way to create the best armours and weapons in the lands are either 
+through the pricey process of having them hand-crafted by the finest smiths, 
+or enchanting them with powerful magics.`+
+`+
+Enchantments can focus strong magics onto the respective armour/weapon and 
+imbue it with powerful protection and effectiveness.  While magics can be 
+used for enhancement, be forewarned that magic can also make things more 
+brittle and unstable, causing weapons and armours to break in the middle of 
+a life or death battle.`+
+`+
+Enchants will fade after time unless a spell of permanancy is used to 
+strengthen the magic's hold on the armour/weapon, and cause it to remain 
+permanent.`+
+`+
+`GREALMS: `=?`=_enchantment 
+~
+END
+
+keyword ENERGY-DRAIN~
+helpflags wordwrapped~
+category magic:spell~
+spell_name energy drain~
+text This spell enables to caster to act as a conduit for magical energy around 
+him.  There is a chance that the victim of this spell will lose experience 
+points, mana, and movement points when touched by the caster, and the caster 
+will receive them in return.  `+
+
+~
+END
+
+keyword EXTENSION~
+category magic:spell~
+text `=lSyntax: `=?cast extension <object> `+
+`+
+Since magics often resist the efforts to "stick" on weapons and armours, a 
+spell not as difficult as the initial enchantment can be used to stabilize 
+the enchantment before it completely wears off.  This extension spell only 
+prolongs the temporary enchantment with the shortest remaining duration.`+
+`+
+`GREALMS: `=?`=_alteration `=_enchantment 
+~
+END
+
+keyword FLY~
+category magic:spell~
+text `=lSyntax: `=?cast 'fly' <target> `+
+`+
+This spell enables the caster to bestow the power of magical flight.  
+Walking on any terrain takes half the effort once in flight and the target 
+of this spell will be able to walk on water and fly upwards in the air with 
+ease.  Caution is advised when first using the spell of flight since balance 
+becomes very tricky.  `+
+`+
+`GREALMS: `=?`=_alteration 
+~
+END
+
+keyword FARSIGHT~
+category magic:spell~
+text `=lSyntax: `=?cast farsight
+`=?        cast farsight <direction>
+`+
+The farsight spell expands the caster's consciousness, allowing him or her
+to see far away beings like they were in the same room.  It takes intense
+concentration, often leaving the caster helpless for several minutes.
+The spell may be used for a general scan that reaches a short distance in
+all directions, or with a directional component to see creatures much
+farther away.
+`+
+`GREALMS: `=?`=_foretelling
+~
+END
+
+keyword FIREPROOF~
+category magic:spell~
+text `=lSyntax: `=?cast fireproof <object> `+
+`+
+The fireproof spell creates a short-lived protective aura around an object, 
+to protect it from the harmful effects heat.  Items protected by this spell 
+are not harmed by any forms of fire, including the heat metal spell.  
+Although inexpensive to use, the spell's short duration makes it impractical 
+for protecting large numbers of objects.`+
+`+
+`GREALMS: `=?`=_abjuration `=_enchantment `=_essence 
+~
+END
+
+keyword FLOATING-DISC~
+category magic:spell~
+text `=lSyntax: `=?cast 'floating disc' `+
+`+
+This useful spell creates a floating field of force which follows the 
+caster around, allowing him or her to pile treasure high with no fear of 
+weight penalties.  It lasts no more than twice the casters level in hours, 
+and usually less.  It can hold 10 pounds per level of the caster, with a 
+maximum of five pounds per item.  The spell requires an open float location 
+on the character, and the only way to remove the disc is to die or allow it 
+to run out of energy.  `+
+`+
+`GREALMS: `=?`=_conjuration `=_summoning 
+~
+END
+
+keyword ICE-STORM~
+category magic:spell~
+text `=lSyntax: `=?cast 'ice storm' <target>`+
+`+
+This spell conjures forth a devastating hail storm of large, condensed balls 
+of ice and packed snow, wreaking havoc on any who are trapped in the vicinity 
+of the ice storm.  Beware that any who are close enough to be pounded by the 
+ice may assume this to be an act of aggression, and draw weapons.`+
+`+
+`GREALMS: `=?evocation essence 
+~
+END
+
+keyword CANTRIP~
+category magic:spell~
+text `=lSyntax: `=?cast cantrip <person>`+
+`=?        cast cantrip `+
+`+
+Uttering this minor spell brings into existence a random object or effect.  
+It is useful for younger magic users who want to practice their channeling 
+of magical energies, or just impress their friends.  The results vary, and 
+more powerful casters can create greater effects.`+
+`+
+`GREALMS: `=?`=_alteration 
+~
+END
+
+keyword DETECT-SCRY~
+category magic:spell~
+text `=lSyntax: `=?cast 'detect scry'`+
+`+
+With magic strong once again in the realm, scrying eyes are everywhere.  
+Whether you wish for secrecy in your dirty deeds, or are hiding from a known 
+enemy, it might be useful to know when someone is looking in on your 
+actions.  Success, naturally, is dependant on the casting powers of the two 
+parties, and there is a slight chance that you will be able to detect 
+exactly who's scrying you.`+
+`+
+`GREALMS: `=?`=_abjuration `=_foretelling
+~
+END
+
+keyword AUGMENT-HEARING~
+category magic:spell~
+text `=lSyntax:`=? cast 'augment hearing' <target> `+
+`+
+With this spell, the caster may magically enhance the target's hearing to 
+the point that they will hear everything in the room, including all 
+whispers.`+
+`+
+`GREALMS: `=?alteration necromancy
+~
+END
+
+keyword BLINK~
+category magic:spell~
+text `=lSyntax: `=?cast blink <direction>`+
+`+
+A litle spell of chaotic transfer to brighten the day!  When you want to 
+move somewhere, and move there in the blink of an eye, you can just blink 
+away. You need to determine which direction you're headed, but only destiny 
+knows where's you'll stop. The further you travel, the more mana will be 
+absorbed.  Be careful not to blink too hard when next to a wall, tree, or 
+other brute force *ouch* `+
+`+
+`GREALMS: `=?`=_conjuration `=_summoning 
+~
+END
+
+keyword CORROSIVE-STREAM CORROSIVE-SURGE~
+category magic:spell~
+text `=lSyntax: `=?cast 'corrosive stream' <target>`+
+`=?        cast 'corrosive surge' <target>`+
+`+
+These spells spew forth a corrosive steam of acid from the finger tips of 
+the caster. While not as painfully devastating as a blast of acid, both of 
+these have been known to etch fine armors and weapons, rendering them 
+useless if exposed to the effects of the acid.  The surge is a quicker 
+release of the acid, meaning less damage is dealt, but it is much quicker to 
+cast off.`+
+`+
+`GREALMS: `=?`=_evocation `=_essence 
+~
+END
+
+keyword RESIST-ACID~
+category magic:spell~
+spell_name resist acid~
+text This summons an aura around the caster that attempts to neutralize acid 
+before it does any bodily damage.  When attacked with acid, the caster of 
+this spell makes a save against any acid based attack, taken only half 
+damage is successful.  Damage is also subjected to half the acid damage if 
+successful.`+
+~
+END
+
+keyword UTTERDARK~
+category magic:spell~
+spell_name utterdark~
+text A spell of enchantment, utterdark was first cast to give advantage to the 
+dark elf raiding parties. Upon uttering the words of this spell, an 
+impenetrable darkness envelops the general area, rendering all those without 
+special vision blind.  Only those that possess dark-vision, or some form of 
+infravision, are not totally blinded by this enchantment.`+
+~
+END
+
+keyword MINDSPEAK~
+level 1
+category magic:spell~
+text `=lSyntax: `^ c mindspeak <person> <message>`+
+         c mindspeak <person> ! <emote>`+
+`+
+This spell when successful allows the castor to speak their thoughts or 
+cast an image into the mind of another. Thus enabling a group to be more 
+effiecient when hunting or journeying. Or can be used as an illusionary 
+tactic to attempt to clutter the recipient's mind with speaking or visions.`+  
+`+
+`#`GREALMS: `^`=_evocation `=_phantasm 
+~
+END
+
+keyword IMMOLATION IMMOLATE~
+level 1
+category magic:spell~
+text `#`=lSyntax:`^ cast immolation <target> 
+ 
+An ancient spell only recently found, immolation gives ordinary mages 
+the power of the Magi themselves. The mages literally burn with magic, 
+consumed by the fires of sorcery which give them amazing strength and 
+protection. Furthermore, flames  leap forth from their bodies in a lash 
+wounding all creatures in their immediate vicinity. Unfortunately such 
+power comes at a great cost. The spell last only a short while and drains 
+the mage of all his energy, leaving him tired, hungry and exhausted. 
+ 
+`+`+`#`GREALMS:`^ `=_Evocation `=_Essence `=_Wild
+~
+END
+
+keyword VICEGRIP~
+level 1
+helpflags mud_specific~
+category magic:spell~
+spell_name vicegrip~
+text This spell grants the caster a grip of iron thus preventing any weapons
+wielded from being disarmed in combat.
+~
+END
+
+keyword MASS-INVISIBILITY~
+level 92
+category magic:spell~
+see_also INVISIBILITY VISIBLE~
+spell_name mass invis~
+text This mass invis spell will make the caster and all in his/her group vanish 
+from sight.  Each group member becoming undetectable from normal vision or 
+even infravision.`+
+`+
+Being invisible, that doesn't mean that you are silenced or your movements 
+go unnoticed.  Items dropped will suddenly become visible, and items picked 
+up will appear to have vanished.  Invisible characters will become visible 
+once they are involved in combat, they will themselves to reappear, or the 
+duration of the spell is over.  `+
+`+
+If you are affected by this spell, you can choose to go visible with the 
+`=Cvisible`=? command.`+
+ 
+~
+END
+
+EOF~
+#$

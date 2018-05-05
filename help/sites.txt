@@ -1,0 +1,30 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword SITES SITE WEBPAGE WEBSITE HOMEPAGE~
+category undefined~
+see_also EMAIL~
+text `c -------==============`- `GSites Relating to This Mud`c `-===============-------
+`=?
+*  DNS         telnet://yourmud.dawnoftime.org:1234
+*  IP`=?          telnet://???.???.???.???:1234
+ 
+*  Webpage`=?     http://www.yourmud.dawnoftime.org/
+ 
+`c --------============== `GGeneral Mudding Related Sites`c ==============--------
+`=?
+             The Mud Connector`=? - http://www.mudconnect.com/
+        The Offical Dawn of Time Website - http://www.dawnoftime.org/
+       The Offical Dawn of Time Forums - http://forums.dawnoftime.org/
+    MuClient (an excellent windows mud client)`=? - http://www.muclient.com/
+ 
+`c --------==============`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-`-==============--------
+`+
+~
+END
+
+EOF~
+#$

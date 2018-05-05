@@ -1,0 +1,2645 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        The Eastern Star Inn~
+ShortName   Eastern Star~
+Builders    None~
+Credits     Reave~
+VNUMs       28000 28099
+LComment    [  ALL  ]
+Security    9
+Colour      Y~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#28000
+Name robe druid~
+ShortD a druid~
+LongD A robed druid rests here, meditating in silence.~
+Desc This small female mrem, sits in the corner of the room on the floor, 
+meditating in silence.  Her greying fur suggests she's old indeed, and her 
+robes are a light green colour.  
+~
+Race elf~
+Align 3 3
+XPMod 110
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+200
+DamDice 2d12+8
+DamType pound
+AC -90 -90 -90 -70
+Wealth 300
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_evil sanctuary infrared~
+Off    fast assist_align~
+Imm    holy~
+Res    charm negative mental~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#28001
+Name young stableboy boy~
+ShortD a stableboy~
+LongD A young stableboy is here, waiting to lead your horse away.~
+Desc This young human boy can't be more than 10 years old.  He is wearing a 
+dirty tunic, and looks like he hasn't washed himself in weeks.
+~
+Race human~
+Align 1 1
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+2
+DamDice 1d5+0
+DamType punch
+AC 80 70 80 90
+Wealth 20
+Act    npc dont_wander no_tame stay_area wimpy~
+Off    dirt_kick~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#28002
+Name stablemaster master man~
+ShortD a stablemaster~
+LongD The stablemaster is here, tending to the horses.~
+Desc This middle-aged human is rather heavy and muscular.  He has dark black hair,
+and soft blue eyes.  He glances at you briefly, and turns back to his work.
+~
+Race human~
+Align 1 2
+Level 7
+Hitroll 0
+HitDice 2d5+5
+ManaDice 2d5+5
+DamDice 1d8+1
+DamType beating
+AC 40 30 50 40
+Wealth 70
+Act    npc dont_wander no_tame stay_area~
+Off    parry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28003
+Name brown horse~
+ShortD a dark brown horse~
+LongD A dark brown horse is here, munching on some hay.~
+Desc This finely bred horse is dark brown, and has a long black mane.  It looks
+well-fed and brushed.  It is munching on some hay right now.
+~
+Race horse~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType charge
+AC 70 50 60 80
+Wealth 0
+Act    npc dont_wander docile stay_area~
+Off    fast kick~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#28004
+Name heavily armored dwarf~
+ShortD a heavily armored dwarf~
+LongD A heavily armored dwarf is here, enjoying a fine dinner.~
+Desc This is one of the largest dwarves you've ever seen.  He is wearing a finely
+made platemail, and a large axe hangs on his back.  From the dirt on his
+armor and equipment, it looks like he is on a long trip, and has just stopped
+in for a quick meal.
+~
+Race dwarf~
+Align 1 0
+XPMod 115
+Level 35
+Hitroll 1
+HitDice 5d6+215
+ManaDice 4d5+90
+DamDice 4d7+11
+DamType slice
+AC -110 -110 -110 -90
+Wealth 350
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared berserk~
+Off    bash berserk disarm dodge parry~
+Imm    charm~
+Res    poison mental disease~
+Vuln   drowning~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg SPEECH 28002 markrist~
+MProg SPEECH 28001 khuzud~
+MProg SPEECH 28000 map~
+END
+
+#28005
+Name serving wench young girl waitress~
+ShortD a serving wench~
+LongD A young girl is here, going table to table pouring drinks.~
+Desc This young human girl is moving table to table, pouring drinks and taking
+orders.  She has long blond hair tied back, and is wearing an old patched
+dress.  
+~
+Race human~
+Align 1 2
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+3
+DamDice 1d6+0
+DamType scratch
+AC 70 70 70 90
+Wealth 30
+Act    npc dont_wander scavenger no_tame stay_area wimpy~
+Off    dodge~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#28006
+Name fat merchant~
+ShortD a fat merchant~
+LongD A fat merchant is here, grabbing the serving wenches as they walk by.~
+Desc This obese human is dressed in bright gaudy clothing of all types.  He is
+sitting at a table near the fireplace, watching the serving girls intently.
+~
+Race human~
+Align 1 -2
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+45
+DamDice 1d10+3
+DamType punch
+AC 0 0 -10 20
+Wealth 120
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28007
+Name old wizard~
+ShortD an old wizard~
+LongD An old wizard is here, intently studying a thick tome.~
+Desc This old human wizard is sitting at a table in the darkest corner of the 
+room, studying a thick book intently.  He has a long white beard, and 
+beady black eyes.  He wears crimson robes, and carries a long oak staff.
+~
+Race human~
+Align 2 3
+XPMod 111
+Level 32
+Hitroll 0
+HitDice 5d6+150
+ManaDice 5d6+400
+DamDice 2d12+8
+DamType pierce
+AC -100 -100 -100 -80
+Wealth 320
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  detect_invis protect_evil~
+Off    fast~
+Res    charm magic mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28008
+Name bartender~
+ShortD a bartender~
+LongD The bartender is here, drearily wiping off the bar.~
+Desc This tall burly human stands behind the bar and serves drinks for the inn's
+guests.  He is not wearing any armor or weapons, but you do notice many old
+scars covering his flesh, indicating that he has seen his share of fights.
+~
+Race human~
+Align 2 2
+Level 130
+Hitroll 0
+HitDice 1d1+800
+ManaDice 5d5+130
+DamDice 1d1+200
+DamType punch
+AC -1000 -1000 -1000 -820
+Wealth 280
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_hidden~
+Off    bash dodge fast parry~
+Imm    summon charm magic weapon bash pierce slash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28009
+Name obnoxious drunk~
+ShortD an obnoxious drunk~
+LongD An obnoxious drunk is here, raving loudly about his problems.~
+Desc This middle-aged male human looks and smells like he has been drinking for
+days.  His clothing is old and worn, and has a few stains.  His eyes are
+glassy, and it looks like he can barely stay on his stool.  He is raving
+nonsensically about how a dragon ate his village.
+~
+Race human~
+Align -3 0
+Level 14
+Hitroll 0
+HitDice 2d5+55
+ManaDice 2d5+20
+DamDice 1d12+3
+DamType beating
+AC 0 0 -10 20
+Wealth 140
+Act    npc no_tame stay_area~
+AffBy  slow~
+Off    berserk~
+Vuln   mental sound~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28010
+Name cleric robed priest~
+ShortD a cleric~
+LongD A robed cleric sits here, enjoying a fine meal.~
+Desc This old elf is here enjoying a fine meal.  He appears to be a priest of some
+type, as he wears robes and a holy symbol.  His clothing is fine, but seems
+worn and mud-spattered, perhaps he is on a long trip to some holy site.
+~
+Race elf~
+Align 3 3
+XPMod 110
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+200
+DamDice 2d12+8
+DamType pound
+AC -90 -90 -90 -70
+Wealth 300
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_evil sanctuary infrared~
+Off    fast assist_align~
+Imm    holy~
+Res    charm negative mental~
+Vuln   iron~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28011
+Name cook~
+ShortD a cook~
+LongD The cook is here, preparing meals for the guests.~
+Desc This human woman appears to be the inn's cook, from the food stains on the
+apron she is wearing.  She is middle-aged, and slightly chubby.
+~
+Race human~
+Align 1 1
+Level 6
+Hitroll 0
+HitDice 2d5+4
+ManaDice 2d5+4
+DamDice 1d7+1
+DamType scratch
+AC 40 40 30 60
+Wealth 60
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#28012
+Name young human boy~
+ShortD a boy~
+LongD A young human boy is here, helping the cook.~
+Desc This young human boy is about 15 years old, and is dressed neatly.  He is
+helping with various tasks in the kitchen, and carrying food into the
+common room for guests.
+~
+Race human~
+Align 0 2
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType punch
+AC 60 50 60 70
+Wealth 40
+Act    npc dont_wander no_tame stay_area wimpy~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#28013
+Name dirty rat~
+ShortD a dirty rat~
+LongD A dirty rat is here, trying to hide in the shadows.~
+Desc This dirty rat is about a foot long, and is covered with filthy hair and
+scabs.
+~
+Race rabbit~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+1
+DamDice 1d5+0
+DamType bite
+AC 80 90 70 90
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  detect_hidden infrared dark_vision~
+Off    dodge fast~
+Imm    disease~
+Vuln   light~
+Form   edible poison animal mammal~
+Part   head legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#28014
+Name large draconian officer~
+ShortD a large draconian officer~
+LongD A large draconian is here, running a meeting.~
+Desc This is one mean looking draconian.  He is covered with dark green scales
+and many scars.  He is wearing some symbols on the sleeve of his armor,
+which seem to indicate that he is a ranking officer of some group.
+~
+Race draconian~
+Align 2 -2
+Level 23
+Hitroll 0
+HitDice 4d5+105
+ManaDice 4d5+105
+DamDice 3d6+6
+DamType slash
+AC -50 -70 -60 -30
+Wealth 230
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared flying dark_vision~
+Res    fire cold lightning acid poison disease~
+Vuln   pierce~
+Form   edible sentient biped mammal reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP sitting~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#28015
+Name green scaled draconian~
+ShortD a green scaled draconian~
+LongD A green scaled draconian is here.~
+Desc This draconian is covered by green scales.  He is glaring at you, and does
+not seem happy that you have interrupted the meeting.
+~
+Race draconian~
+Align 1 -2
+Level 18
+Hitroll 0
+HitDice 3d5+82
+ManaDice 3d5+60
+DamDice 2d7+4
+DamType slash
+AC -20 -30 -40 0
+Wealth 180
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  infrared flying dark_vision~
+Off    assist_vnum~
+Res    fire cold lightning acid~
+Vuln   pierce~
+Form   edible sentient biped mammal reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP sitting~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#28016
+Name innkeeper~
+ShortD an innkeeper~
+LongD The innkeeper is here, looking at some papers on the desk.~
+Desc This male human looks to be about 50 years old.  He has black hair which 
+appears to be partially greying, and soft brown eyes.  He seems preoccupied 
+with the work in front of him on the desk.  
+~
+Race human~
+Align 2 2
+Level 26
+Hitroll 0
+HitDice 4d5+115
+ManaDice 4d5+115
+DamDice 3d7+7
+DamType punch
+AC -70 -70 -70 -40
+Wealth 260
+Act    npc dont_wander no_tame stay_area~
+Off    assist_align~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+InnBuy   110
+InnSell  90
+InnOpen  0
+InnClose 23
+InnRoom 28001 20
+Material unknown
+END
+
+#28017
+Name dark-haired woman~
+ShortD a dark-haired woman~
+LongD A dark haired woman is here, hanging clothes in a cabinet.~
+Desc This dark-haired woman was probably once a great beauty, but her age is now
+showing.  She has streaks of grey in her hair, and a tired look in her eyes.
+At the moment, she is hanging clothing in a cabinet, and looks very startled
+to see you here.
+~
+Race human~
+Align 0 2
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+1
+DamDice 1d5+1
+DamType scratch
+AC 60 50 70 90
+Wealth 40
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#28018
+Name striped gray black cat~
+ShortD a cat~
+LongD A grey and black striped cat is here, licking itself.~
+Desc This cat has somewhat long grey and black hair.  It is sitting on the floor
+cleaning itself with its tongue.
+~
+Race cat~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+2
+DamDice 1d5+0
+DamType claw
+AC 80 80 80 10
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  detect_hidden infrared dark_vision~
+Off    dodge fast~
+Form   edible animal biped mountable mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP sitting~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#28019
+Name cloaked figure~
+ShortD a cloaked figure~
+LongD A cloaked figure is here, angry at your intrusion.~
+Desc This shadowy figure is surrounded by a black cloak that obscures its face
+and body.  The only thing you see clearly is the flash of steel in its hand.
+~
+Race human~
+Align 1 -2
+Level 18
+Hitroll 0
+HitDice 3d5+72
+ManaDice 3d5+72
+DamDice 3d4+4
+DamType pierce
+AC -30 -20 -40 0
+Wealth 180
+Act    npc dont_wander no_tame aggressive stay_area thief~
+AffBy  sneak hide~
+Off    trip~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#28020
+Name robed merchant~
+ShortD a merchant~
+LongD A robed merchant is here, counting a pile of coins.~
+Desc This robed human seems to be a merchant of some type.  He is busy counting
+a pile of coins and shuffling around some papers.
+~
+Race human~
+Align 1 0
+Level 14
+Hitroll 0
+HitDice 2d5+55
+ManaDice 2d5+55
+DamDice 1d12+3
+DamType punch
+AC -10 -10 -10 10
+Wealth 140
+Act    npc dont_wander no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#28000
+Name a wooden mace~
+Short a wooden mace~
+Desc A wooden mace is lying here.~
+Level 30
+ItemType weapon~
+Cost 600
+Asize 30
+Rsize 50
+Values mace 2 17 smash 0
+Weight 90
+Material steel~
+Extra    bless antievil burnproof~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian~
+ExtraDesc wooden mace~
+This small wooden mace, is rather quite common and unappealing in all 
+fashions.  Thick bands of black leather wrap around its hilt and a few knots 
+poke out at the head of the mace.  
+~
+End
+
+#28001
+Name dirty cloth tunic~
+Short a dirty cloth tunic~
+Desc A dirty cloth tunic is lying here.~
+Level 2
+ItemType armor~
+Cost 40
+Condition 90
+Asize 10
+Rsize 45
+Values 0 1 2 0 0
+Weight 10
+Material cloth~
+Extra    nonmetal~
+Wear     take torso~
+ExtraDesc dirty cloth tunic~
+This small cloth tunic has definitely seen better days.  It is torn or worn
+through in several places, and is very dirty.
+~
+End
+
+#28002
+Name well~
+Short a well~
+Desc A deep well is dug in the middle of the yard.~
+Level 1
+ItemType fountain~
+Cost 1
+Condition 90
+Asize 1000
+Rsize 50
+Values 1 1 water 0 0
+Weight 1000
+Material stone~
+Extra    noremove otterlungs nonmetal nodegrade burnproof~
+ExtraDesc well deep~
+A deep well has been dug in the center of the yard.  It is surrounded by a
+low wall of stones, and has a bucket and robe for drawing water.
+~
+End
+
+#28003
+Name board two-by-four~
+Short a two-by-four board~
+Desc A 4-foot long board is lying here.~
+Level 6
+ItemType weapon~
+Cost 120
+Condition 90
+Asize 60
+Rsize 50
+Values mace 2 5 beating 0
+Weight 50
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc board two-by-four~
+This board is two by four inches wide, and about 4 feet long.  It is very
+sturdy.
+~
+End
+
+#28004
+Name old leather pants~
+Short some old leather pants~
+Desc A pair of old leather pants is laying here.~
+Level 7
+ItemType armor~
+Cost 140
+Condition 75
+Asize 10
+Rsize 55
+Values 2 2 2 1 0
+Weight 15
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+ExtraDesc old leather pants~
+These old pants are somewhat worn, but still look like they offer a bit of
+protection.
+~
+End
+
+#28005
+Name fine dwarven platemail~
+Short some fine dwarven platemail~
+Desc A small, finely made platemail is here.~
+Level 35
+ItemType armor~
+Cost 710
+Condition 90
+Asize 35
+Rsize 45
+Values 12 11 12 9 0
+Weight 150
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin barbarian~
+Affect modifier -1 35 -1 saves 4 0
+Affect modifier -1 35 -1 damroll 6 0
+Affect modifier -1 35 -1 hitroll 4 0
+ExtraDesc fine dwarven platemail~
+This small platemail appears to be of dwarven make.  It is not especially
+fancy, but fits together very well, protecting most of the body.
+~
+End
+
+#28006
+Name mithril axe~
+Short a mithril axe~
+Desc A mithril axe is here.~
+Level 35
+ItemType weapon~
+Cost 727
+Condition 90
+Asize 35
+Rsize 50
+Values axe 4 10 slice D
+Weight 55
+Material mithril~
+Extra    bless nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc mithril axe~
+This axe appears to be of dwarven make.  It is made of mithril, and is much
+lighter than it looks.  The blade has been sharpened to a razor edge.
+~
+End
+
+#28007
+Name blood red potion~
+Short a `#`Rblood red`^ potion~
+Desc A `#`Rblood red`^ potion is here.~
+Level 15
+ItemType potion~
+Cost 315
+Condition 90
+Asize 2
+Rsize 50
+Values 40 'giant strength' '' '' ''
+Weight 2
+Material water~
+Extra    magic burnproof~
+Wear     take hold~
+ExtraDesc blood red potion~
+This blood red potion is in a short glass vial.  It has a few dwarven 
+runes on it.
+~
+End
+
+#28008
+Name old patched dress~
+Short an old patched dress~
+Desc An old patched dress is here.~
+Level 1
+ItemType clothing~
+Cost 20
+Condition 90
+Asize 10
+Rsize 45
+Values 0 0 0 0 0
+Weight 7
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc old patched dress~
+This old dress is made of cotton, and has been repaired many times.  It is
+various shades of blue.
+~
+End
+
+#28009
+Name metal water pitcher~
+Short a metal water pitcher~
+Desc A finely made metal water pitcher is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 25
+Condition 90
+Asize 10
+Rsize 50
+Values 10 10 water 0 0
+Weight 20
+Material steel~
+Extra    burnproof~
+Wear     take hold~
+ExtraDesc metal water pitcher~
+This water pitcher is finely made of steel or some other hard metal.  It is
+brightly polished, and has the letters 'ES' engraved on it.
+~
+End
+
+#28010
+Name large backpack pack~
+Short a large backpack~
+Desc A large backpack is here.~
+Level 1
+ItemType container~
+Cost 75
+Condition 90
+Asize 20
+Rsize 50
+Values 500 A 0 55 80
+Weight 25
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take back~
+ExtraDesc large backpack pack~
+This backpack is huge, and looks like it could hold quite a bit.  It is made  
+of leather, which appears to have been specially treated to resist fire and
+other damage.
+~
+End
+
+#28011
+Name crimson robe~
+Short a `#`mcrimson`^ robe~
+Desc A `#`mcrimson`^ robe is here.~
+Level 32
+ItemType armor~
+Cost 666
+Condition 90
+Asize 15
+Rsize 45
+Values 8 8 8 6 0
+Weight 22
+Material cloth~
+Extra    magic bless antievil nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances mage cleric thief druid spellfilcher~
+Affect modifier -1 32 -1 mana 60 0
+ExtraDesc crimson robe~
+This crimson robe is made of some unrecognizable material.  It is soft to 
+the touch, yet seems far more durable than any normal cloth.  There are
+golden runes sewn into the collar and sleeves.
+~
+End
+
+#28012
+Name rune-covered dagger~
+Short a rune-covered dagger~
+Desc A rune-covered dagger is here.~
+Level 35
+ItemType weapon~
+Cost 700
+Condition 90
+Asize 15
+Rsize 50
+Values dagger 3 10 slash D
+Weight 25
+Material steel~
+Extra    glow hum magic nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger spellfilcher~
+ExtraDesc rune-covered dagger~
+This short dagger is finely made of hard steel.  It is completely covered
+with engraved runes, and appears to be very sharp.
+~
+End
+
+#28013
+Name oak staff~
+Short an oak staff~
+Desc An oak staff is here.~
+Level 5
+ItemType weapon~
+Cost 100
+Condition 90
+Asize 50
+Rsize 50
+Values staff 1 10 beating F
+Weight 30
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc oak staff~
+This is a simple oak staff.  It is about 5 feet long, and very sturdy.
+~
+End
+
+#28014
+Name parchment scroll~
+Short a parchment scroll~
+Desc A parchment scroll is here.~
+Level 40
+ItemType scroll~
+Cost 795
+Condition 90
+Asize 1
+Rsize 50
+Values 40 'enchant weapon' '' '' ''
+Weight 1
+Material paper~
+Wear     take hold~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+ExtraDesc parchment scroll~
+This scroll is made of parchment, and has strange writing on it.
+~
+End
+
+#28015
+Name mug ale~
+Short a mug of ale~
+Desc A frosty mug of ale is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 15
+Condition 90
+Asize 5
+Rsize 50
+Values 2 2 ale 0 0
+Weight 10
+Material liquid~
+Extra    inventory~
+Wear     take hold~
+End
+
+#28016
+Name cup honey mead~
+Short a cup of honey mead~
+Desc A cup of honey mead is here.
+~
+Level 1
+ItemType drinkcontainer~
+Cost 20
+Condition 90
+Asize 5
+Rsize 50
+Values 3 3 mead 0 0
+Weight 10
+Material liquid~
+Extra    inventory~
+Wear     take hold~
+End
+
+#28017
+Name glass red wine~
+Short a glass of `#`rred`^ wine~
+Desc A glass of `#`rred`^ wine is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 30
+Condition 90
+Asize 5
+Rsize 50
+Values 3 3 'red wine' 0 0
+Weight 10
+Material liquid~
+Extra    inventory nonmetal~
+Wear     take hold~
+End
+
+#28018
+Name shot whisky~
+Short a shot of whisky~
+Desc A shot of whisky is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 50
+Condition 90
+Asize 5
+Rsize 50
+Values 1 1 whisky 0 0
+Weight 10
+Material liquid~
+Extra    inventory~
+Wear     take hold~
+End
+
+#28019
+Name bottle rum~
+Short a bottle of rum~
+Desc A bottle of rum lies here.~
+Level 1
+ItemType drinkcontainer~
+Cost 200
+Condition 90
+Asize 10
+Rsize 50
+Values 10 10 rum 0 0
+Weight 20
+Material glass~
+Extra    inventory~
+Wear     take hold~
+End
+
+#28020
+Name broken bottle~
+Short a broken bottle~
+Desc A broken bottle is lying here.~
+Level 11
+ItemType weapon~
+Cost 1
+Asize 5
+Rsize 50
+Values dagger 1 9 slash 0
+Weight 20
+Material glass~
+Extra    nonmetal nodegrade burnproof~
+Wear     take wield~
+ExtraDesc broken bottle~
+This bottle has been recently smashed in half, and as a result has some very
+sharp edges.  It might be used as a weapon if grasped by the top.
+~
+End
+
+#28021
+Name fine steel mace~
+Short a fine steel mace~
+Desc A fine steel mace is lying here.~
+Level 30
+ItemType weapon~
+Cost 600
+Asize 30
+Rsize 50
+Values mace 2 17 smash 0
+Weight 90
+Material steel~
+Extra    bless antievil nodegrade burnproof~
+Wear     take wield~
+ClassAllowances cleric thief warrior druid paladin ranger barbarian~
+ExtraDesc fine steel mace~
+This sturdy mace is finely wrought of solid steel.  It is well balanced, and
+is in excellent condition.
+~
+End
+
+#28022
+Name platinum holy symbol~
+Short a platinum `#`Wholy`^ symbol~
+Desc A platinum `#`Wholy`^ symbol is here.~
+Level 35
+ItemType armor~
+Cost 788
+Asize 3
+Rsize 50
+Values 6 6 6 3 0
+Weight 3
+Material platinum~
+Extra    bless antievil antineutral nodegrade~
+Wear     take neck~
+Affect modifier -1 35 -1 empathy -1 0
+Affect modifier -1 35 -1 mana 40 0
+Affect modifier -1 35 -1 memory 2 0
+Affect modifier -1 35 -1 reasoning 2 0
+ExtraDesc platinum holy symbol~
+This small holy symbol is made of platinum, and is hanging on a thin chain.
+Engraved on it is a small dragon.
+~
+End
+
+#28023
+Name sharp kitchen knife~
+Short a sharp kitchen knife~
+Desc A sharp kitchen knife lies here.~
+Level 6
+ItemType weapon~
+Cost 135
+Asize 10
+Rsize 50
+Values dagger 2 4 pierce 0
+Weight 20
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+ExtraDesc sharp kitchen knife~
+This kitchen knife is made of steel, and has been sharpened to the point that
+it might serve as a weapon if necessary.
+~
+End
+
+#28024
+Name old apron~
+Short an old cooking apron~
+Desc An old cooking apron lies here.~
+Level 1
+ItemType clothing~
+Cost 20
+Condition 75
+Asize 8
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc old apron~
+An old white cooking apron.  It is covered with food stains.
+~
+End
+
+#28025
+Name silver serving tray~
+Short a `#`Ssilver`^ serving tray~
+Desc A `#`Ssilver`^ serving tray is here.~
+Level 1
+ItemType treasure~
+Cost 500
+Asize 20
+Rsize 50
+Values 0 0 0 0 0
+Weight 20
+Material silver~
+Extra    nodegrade burnproof~
+Wear     take hold~
+ExtraDesc silver serving tray~
+This serving tray is finely made of silver.  On it is a stylized engraving of
+a star over a mountain range, and the initials "ES".
+~
+End
+
+#28026
+Name serrated longsword sword~
+Short a serrated longsword~
+Desc A longsword with a serrated blade lies here.~
+Level 25
+ItemType weapon~
+Cost 550
+Asize 40
+Rsize 50
+Values sword 3 8 slash D
+Weight 60
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc serrated longsword~
+This nasty looking longsword has been finely made of steel.  The blade is
+serrated and is extremely sharp.
+~
+End
+
+#28027
+Name black ringmail~
+Short a `#`Sblack`^ ringmail~
+Desc A `#`Sblack`^ ringmail lies here.~
+Level 20
+ItemType armor~
+Cost 402
+Asize 40
+Rsize 50
+Values 7 6 7 5 0
+Weight 90
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 20 -1 quickness -1 0
+Affect modifier -1 20 -1 ac -15 0
+ExtraDesc black ringmail~
+This black armor is fashioned from hundreds of tiny steel rings.  It seems
+pretty durable.
+~
+End
+
+#28028
+Name plain longsword sword~
+Short a plain longsword~
+Desc A plain longsword lies here.~
+Level 20
+ItemType weapon~
+Cost 411
+Asize 45
+Rsize 50
+Values sword 2 12 slash 0
+Weight 45
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+ExtraDesc plain longsword~
+This longsword is well-made, but has no decoration or adornment.  The edge
+is fairly sharp.
+~
+End
+
+#28029
+Name steel ring~
+Short a `#`Ssteel`^ ring~
+Desc A `#`Ssteel`^ ring lies here.~
+Level 20
+ItemType jewelry~
+Cost 444
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material steel~
+Extra    magic nodegrade burnproof~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 20 -1 hp 4 0
+ExtraDesc steel ring~
+A simple steel ring, with no gems or decoration.
+~
+End
+
+#28030
+Name wooden chest~
+Short a `#`ywooden`^ chest~
+Desc A `#`ywooden`^ chest sits at the foot of the bed.~
+Level 1
+ItemType container~
+Cost 100
+Asize 200
+Rsize 50
+Values 1000 ACD 28031 200 100
+Weight 1000
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc wooden chest~
+This wooden chest looks very old, but is still very sturdy.
+~
+End
+
+#28031
+Name long iron key~
+Short a long iron key~
+Desc A long iron key lies here.~
+Level 1
+ItemType key~
+Cost 1
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material iron~
+Extra    burnproof~
+Wear     take hold~
+ExtraDesc long iron key~
+This old key is made of iron.  You see the letters 'ES' engraved on it.
+~
+End
+
+#28032
+Name pile coins~
+Short a pile of coins~
+Desc A pile of coins lies here.~
+Level 1
+ItemType money~
+Cost 0
+Asize 10
+Rsize 50
+Values 500 1 0 0 0
+Weight 1
+Material silver~
+Extra    burnproof~
+Wear     take~
+ExtraDesc pile coins~
+A pile of silver and gold coins.
+~
+End
+
+#28033
+Name small fine sapphire~
+Short a small fine `#`Bsapphire`^~
+Desc A small fine `#`Bsapphire`^ lies here.~
+Level 1
+ItemType gem~
+Cost 888
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material gem~
+Extra    nodegrade burnproof~
+Wear     take hold~
+ExtraDesc small fine sapphire~
+This small sapphire is finely cut and looks valuable.
+~
+End
+
+#28034
+Name fine white shirt~
+Short a fine `#`Wwhite`^ shirt~
+Desc A fine `#`Wwhite`^ shirt lies here.~
+Level 1
+ItemType clothing~
+Cost 25
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc fine white shirt~
+A finely made white cotton shirt.
+~
+End
+
+#28035
+Name soft leather pants~
+Short some soft leather pants~
+Desc Some soft leather pants lie here.~
+Level 1
+ItemType armor~
+Cost 25
+Asize 5
+Rsize 50
+Values 1 1 1 1 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take legs~
+ExtraDesc pair soft leather pants~
+These pants are finely tailored from soft leather.  They look quite
+comfortable and protective.
+~
+End
+
+#28036
+Name burgundy dress~
+Short a `#`rburgandy`^ dress~
+Desc A `#`rburgandy`^ dress lies here.~
+Level 1
+ItemType clothing~
+Cost 25
+Asize 5
+Rsize 45
+Values 0 0 0 0 0
+Weight 5
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc burgundy dress~
+This dress is finely made of a burgundy-colored material.
+~
+End
+
+#28037
+Name pearl necklace~
+Short a `#`Wpearl`^ necklace~
+Desc A `#`Wpearl`^ necklace lies here.~
+Level 1
+ItemType treasure~
+Cost 250
+Asize 5
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material pearl~
+Extra    nonmetal nodegrade burnproof~
+Wear     take neck~
+ExtraDesc pearl necklace~
+This necklace is made up of about thirty pearls on a string, with a small
+metal clasp.
+~
+End
+
+#28038
+Name cat collar~
+Short a cat's collar~
+Desc A cat's collar lies here.~
+Level 1
+ItemType armor~
+Cost 10
+Asize 5
+Rsize 30
+Values 1 1 0 0 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take neck~
+ExtraDesc cat collar~
+A leather cat collar, with a small metal clasp.
+~
+End
+
+#28039
+Name comfortable bed~
+Short a comfortable bed~
+Desc A wide, comfortable bed.~
+Level 1
+ItemType furniture~
+Cost 1
+Asize 2000
+Rsize 50
+Values 2 2000 EHKN 120 120
+Weight 2000
+Material wood~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc comfortable bed~
+This bed is crafted from oak wood and is finely made.  It is covered with
+fine linens and several pillows.
+~
+End
+
+#28040
+Name long dagger~
+Short a long dagger~
+Desc A long dagger lies here.~
+Level 18
+ItemType weapon~
+Cost 360
+Asize 15
+Rsize 50
+Values dagger 2 7 pierce 0
+Weight 30
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+ExtraDesc long dagger~
+This long dagger is forged from steel, and has a wooden hilt.
+~
+End
+
+#28041
+Name dirty leather armor~
+Short some dirty leather armor~
+Desc A dirty leather armor lies here.~
+Level 18
+ItemType armor~
+Cost 365
+Asize 15
+Rsize 45
+Values 6 6 6 5 0
+Weight 25
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+Affect modifier -1 18 -1 saves 2 0
+Affect modifier -1 18 -1 strength 2 0
+ExtraDesc dirty leather armor~
+This leather armor is sized for a human, and looks like it covers most of
+the upper body.  It has been neglected and is quite dirty however.
+~
+End
+
+#28042
+Name fancy red robe~
+Short a fancy `#`Rred`^ robe~
+Desc A fancy `#`Rred`^ robe lies here.~
+Level 9
+ItemType armor~
+Cost 181
+Asize 15
+Rsize 50
+Values 2 2 2 1 0
+Weight 20
+Material cloth~
+Extra    nonmetal nodegrade~
+Wear     take about~
+ExtraDesc fancy red robe~
+This robe is expertly crafted from dark red cloth.  The sleeves and collar
+are embroidered with gold cloth.  It looks valuable.
+~
+End
+
+#28045
+Name cup milk~
+Short a cup of `#`Wmilk`^~
+Desc A cup of `#`Wmilk`^ is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 10
+Asize 5
+Rsize 50
+Values 3 3 milk 0 0
+Weight 10
+Material liquid~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc cup milk~
+A cup of milk.
+~
+End
+
+#28046
+Name pitcher water~
+Short a pitcher of water~
+Desc A pitcher of water is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 5
+Asize 5
+Rsize 50
+Values 5 5 water 0 0
+Weight 5
+Material liquid~
+Extra    inventory~
+Wear     take hold~
+ExtraDesc pitcher water~
+A pitcher of crystal clear water.
+~
+End
+
+#28047
+Name whole roasted partridge~
+Short a whole roasted partridge~
+Desc A whole roasted partridge lies here.~
+Level 1
+ItemType food~
+Cost 45
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 10
+Material food~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc whole roasted partridge~
+This whole partridge has been seasoned and roasted to perfection over an open flame.
+~
+End
+
+#28048
+Name baked ham~
+Short a baked `#`rham`^~
+Desc A baked `#`rham`^ is here.~
+Level 1
+ItemType food~
+Cost 50
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 10
+Material food~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc baked ham~
+A juicy ham, baked in honey.
+~
+End
+
+#28049
+Name bowl mushroom soup~
+Short a bowl of mushroom soup~
+Desc A bowl of mushroom soup is here.~
+Level 1
+ItemType food~
+Cost 30
+Asize 5
+Rsize 50
+Values 15 20 0 0 0
+Weight 10
+Material food~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc bowl mushroom soup~
+This bowl of soup is full of mushrooms and is steaming hot.
+~
+End
+
+#28050
+Name hard dinner roll~
+Short a hard dinner roll~
+Desc A hard dinner roll is here~
+Level 1
+ItemType food~
+Cost 15
+Asize 5
+Rsize 50
+Values 10 15 0 0 0
+Weight 10
+Material food~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc hard dinner roll~
+This hard bread has been baked to a golden brown color.
+~
+End
+
+#28051
+Name bowl vegetable stew~
+Short a bowl of `#`gvegetable`^ stew~
+Desc A bowl of `#`gvegetable`^ stew is here.~
+Level 1
+ItemType food~
+Cost 30
+Asize 5
+Rsize 50
+Values 15 20 0 0 0
+Weight 10
+Material food~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc bowl vegetable stew~
+This bowl is full of tasty vegetable stew.  It contains carrots, peas, 
+potatoes, beans, and several other vegetables.
+~
+End
+
+#28052
+Name tall bar stool~
+Short a tall bar stool~
+Desc A tall bar stool.~
+Level 1
+ItemType furniture~
+Cost 10
+Asize 75
+Rsize 50
+Values 1 2000 BEH 100 100
+Weight 40
+Material wood~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc tall bar stool~
+This bar stool is finely crafted from oak wood, and is just tall emough 
+to sit comfortably by the bar.
+~
+End
+
+#28053
+Name tall bar stool~
+Short a tall bar stool~
+Desc A tall bar stool.~
+Level 1
+ItemType furniture~
+Cost 10
+Asize 75
+Rsize 50
+Values 1 2000 BEH 100 100
+Weight 40
+Material wood~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc tall bar stool~
+This bar stool is finely crafted from oak wood, and is just tall emough 
+to sit comfortably by the bar.
+~
+End
+
+#28054
+Name flagon dwarf spirits~
+Short a flagon of dwarf spirits~
+Desc A flagon of dwarf spirits is here.~
+Level 1
+ItemType drinkcontainer~
+Cost 100
+Asize 5
+Rsize 50
+Values 3 3 firebreather 0 0
+Weight 10
+Material liquid~
+Extra    inventory nonmetal~
+Wear     take hold~
+ExtraDesc flagon dwarf spirits~
+A flagon of powerful dwarf spirits.
+~
+End
+
+#28055
+Name leg mutton~
+Short a leg of mutton~
+Desc A leg of mutton is here.~
+Level 1
+ItemType food~
+Cost 40
+Asize 5
+Rsize 50
+Values 15 25 0 0 0
+Weight 10
+Material food~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc leg mutton~
+This mutton is flamecooked to perfection.
+~
+End
+
+#28056
+Name barbecued griffon wings~
+Short an order of `#`Rbarbequed`^ gryphon wings~
+Desc An order of `#`Rbarbequed`^ gryphon wings is here.~
+Level 1
+ItemType food~
+Cost 50
+Asize 5
+Rsize 50
+Values 20 30 0 0 0
+Weight 10
+Material food~
+Extra    nonmetal~
+Wear     take hold~
+ExtraDesc barbequed griffon wings~
+These wings are fried and covered with spicy barbeque sauce.
+~
+End
+
+#28057
+Name long wooden bench~
+Short a long wooden bench~
+Desc A long wooden bench.~
+Level 1
+ItemType furniture~
+Cost 1
+Asize 2000
+Rsize 50
+Values 4 10000 EHKN 105 105
+Weight 2000
+Material wood~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc long wooden bench~
+This bench is crafted from oak wood and is finely made.  It is long enough 
+to support four people confortably, and looks quite strong.
+~
+End
+
+#28058
+Name trash can~
+Short a trash can~
+Desc A trash can sits here.~
+Level 1
+ItemType container~
+Cost 10
+Asize 25
+Rsize 50
+Values 99999 0 0 100 100
+Weight 150
+Material wood~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc trash can~
+A wooden trash can, full of empty bottles.
+~
+End
+
+#28059
+Name steel barding~
+Short some steel barding~
+Desc Some steel barding has been left here.~
+Level 10
+ItemType armor~
+Cost 196
+Asize 0
+Rsize 50
+Values 4 4 4 2 0
+Weight 0
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ExtraDesc steel barding~
+Light steel armor for horses.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#28000
+Name Guest Room~
+Desc This bedroom is finely furnished with all manners of comfortable, cozy 
+looking furniture.  There is a wooden bed, covered in patch threaded 
+blankets.  In the northern corner a cabinet with a mirror attached to it, 
+and lying beside the bed is a beautiful white bear fur.  
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 28012
+EFlags door closed~
+EKeywords door~
+End
+
+
+#28001
+Name Entry Yard of the Eastern Star Inn~
+Desc You stand in the entry yard of a large inn.  There is a crossing of two
+major roads to the southwest, making this a very busy spot.  To the north
+is a small stable, and the main entrance lies to the east.  The inn is two 
+stories high, and is made of dark grey stone.  There are several windows
+facing this direction on both floors, and a large sign hangs above
+the wooden door. 
+~
+Sector city~
+ExtraDesc sign~
+The sign is made of wood.  It has carved into it "The Eastern Star", and has
+a carving of a bright star above a mountain range.
+~
+ExtraDesc stable~
+A small stable is to the north.  You hear the sounds of horses from that
+direction.
+~
+ExtraDesc inn stone window windows~
+A large inn lies to your east.  It is built from dark grey stone, and has
+many windows.  There is a wooden door, above which a sign hangs.
+~
+Exit north 28002
+EDesc To the north lies a small stable.  You hear the sounds of horses from that
+direction.
+~
+Exit east 28004
+EFlags door closed~
+EKeywords wooden door~
+EDesc To the east is a wooden door that leads into the inn.
+~
+Exit southwest 30111
+EDesc To the southwest lies a busy crossing of two roads.
+~
+End
+
+
+#28002
+Name Stable of the Eastern Star Inn~
+Desc This stable is here to house the horses and mules of those staying at the
+inn.  It has 10 stalls, each having buckets for food and water.  The entire 
+floor is covered by straw, oates, and an occasional pile of horse dung.
+Bridles and saddles of various sizes hang next to each stall, along with
+brushes and other grooming materials.  The roof is partially open to the
+sky.  The exit is to the south, and there is another small room through a
+doorway to the west.
+~
+Sector city~
+ExtraDesc straw~
+Dirty straw is scattered around the floor.
+~
+ExtraDesc bridles saddles brushes materials~
+Bridles, saddles, brushes, and other materials hang near each stall.
+~
+ExtraDesc dung~
+Horse shit.  It smells rather bad.
+~
+ExtraDesc bucket buckets food water~
+There are several old metal buckets, each full of oates or water.
+~
+ExtraDesc stall stalls~
+Each stall has a simple wood frame, and has straw covering the floor.
+~
+Exit south 28001
+EDesc The yard and the entrance to the inn are to the south.
+~
+Exit west 28003
+EDesc A small storeroom is through a doorway to the west.
+~
+End
+
+
+#28003
+Name The Stable Storeroom~
+Desc This small room is where the food and other stable supplies are kept.  
+Several wooden bins line the walls, each full of various grains and oates.  
+Like the stable itself, the floor is covered with straw.  There are also
+two dirty pallets, which seem to indicate that the stable workers sleep 
+here.  An open doorway to the main stable is to the east.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc pallets~
+Two very dirty beds made of cloth and straw are here.
+~
+ExtraDesc straw~
+This straw is much cleaner than that in the stable.
+~
+ExtraDesc food grains oates bins~
+There are several wooden bins that line the walls here.  Each is filled with
+grains and oates.
+~
+Exit east 28002
+EDesc The stables are to the east.
+~
+End
+
+
+#28004
+Name The Common Room~
+Desc This is the main common room of the Eastern Star Inn.  There are many 
+tables and chairs placed around the room, although few are being used at 
+the moment.  Windows line the south wall, and a huge stone fireplace is  
+in the southwest corner.  The bar and kitchen are to the north, and a 
+short hallway leads east to the reception desk and stairs.  The exit is  
+through a wooden door to the west.  It is very warm because of the fire, 
+and looks like an excellent place to sit back and enjoy a meal or a drink.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 115
+Heal 115
+ExtraDesc bar kitchen reception desk stairs~
+You can't make them out that well from here.  Perhaps you should go that 
+way and get a closer look.
+~
+ExtraDesc fireplace fire~
+A bright fire burns in a huge stone fireplace.  
+~
+ExtraDesc windows~
+These windows are made of very well made glass and are divided into 4 panes.
+Through them you see the road a bit to the south.
+~
+ExtraDesc tables chairs~
+Finely made chairs and tables are placed around the room.  They are made of
+some hard wood, perhaps oak.
+~
+Exit north 28005
+EDesc The bar and kitchen are to the north.
+~
+Exit east 28008
+EDesc A short hallway leads to the reception desk and the stairs.
+~
+Exit west 28001
+EFlags door closed~
+EKeywords wooden door~
+EDesc The exit to the inn's yard lies through a wooden door to the west.
+~
+End
+
+
+#28005
+Name The Bar~
+Desc This is the northernmost part of the common room.  The bar is here, made 
+of highly polished wood.  Behind it on shelves are many bottles of various 
+colored liquids, and several large wooden kegs.  A few unoccupied tall 
+stools sit in front of the bar.  There is a doorway to the north, and a 
+stairway that leads down.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 115
+Heal 115
+ExtraDesc stools~
+Several tall wooden stools are placed in front of the bar.
+~
+ExtraDesc kegs~
+Two large wooden kegs, banded with metal strips, are resting on the floor
+behind the bar.
+~
+ExtraDesc bottles liquids~
+Many bottles of various shapes and sizes sit on the shelves.
+~
+ExtraDesc bar polished wood~
+The bar is made of highly polished oak boards.  There are a few empty mugs
+sitting on it.
+~
+Exit north 28006
+EDesc To the north, an open doorway leads into the kitchen.
+~
+Exit south 28004
+EDesc More of the common room and the exit is to the south.
+~
+Exit down 28007
+EDesc The stairs lead down into darkness.
+~
+End
+
+
+#28006
+Name Kitchen~
+Desc This is the kitchen of the Eastern Star Inn.  On the west wall is a huge
+fireplace oven, in which a fire is burning.  Next to the oven are several
+pails of water, and scattered throughout the room are various cooking
+utensils.  There is a large table in the center of the room, upon which
+there are some food scraps and a few jugs of unidentified liquid.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc jugs liquid~
+A few jugs filled with cooking materials.  One smells like vinegar, the
+others you don't recognize.
+~
+ExtraDesc scraps~
+Mostly pieces of meat, bread, and vegetables.
+~
+ExtraDesc table~
+A large table, with a stone top.  It is covered with food scraps and jugs of
+liquid.
+~
+ExtraDesc utensils~
+Kitchen knives, large spoons, pots, pans, and various other cooking equipment.
+~
+ExtraDesc pails water~
+Water to put out the cooking fire and for other cooking purposes.
+~
+ExtraDesc fireplace oven~
+A large oven shaped from dark grey stone.  There is a metal grill positioned
+above the fire.
+~
+Exit south 28005
+EDesc The bar and common room are to the south.
+~
+End
+
+
+#28007
+Name Cellar Storeroom~
+Desc This large underground room is packed full of jars, barrels, and sacks of
+various kinds of food and drink.  The walls are stone, and it is kept very
+cool so that the items don't spoil quickly.  The lighting is very poor.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc sacks~
+Burlap sacks, filled with many kinds of food.
+~
+ExtraDesc barrels~
+At least 10 huge barrels and kegs, filled with different liquids.
+~
+ExtraDesc jars~
+Jars of many sizes and colors, filled with food of all types.
+~
+Exit up 28005
+EDesc The bar and common room are just up the stairs.
+~
+End
+
+
+#28008
+Name Hallway~
+Desc This wide hallway is very short.  It leads west to the common room, and
+east to the reception desk.  There is a doorway to the north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 28009
+EFlags door~
+EKeyvnum -1
+EKeywords door~
+EDesc A large room lies through a doorway to the north.
+~
+Exit east 28010
+EDesc The reception desk and stairs to the second floor are to the east.
+~
+Exit west 28004
+EDesc The common room is to the west.
+~
+End
+
+
+#28009
+Name Meeting Room~
+Desc This large room seems to be used as a meeting place for larger groups.  There
+is a wooden table taking up most of the center of the room.  Chairs are
+scattered throughout the room; some near the table and some facing a small
+fireplace on the north wall.  Near the fireplace is a window.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc fireplace~
+A small fireplace in which a fire is burning merrily.
+~
+ExtraDesc window~
+A glass window in the north wall.  Through it you see the fields behind the
+inn.
+~
+ExtraDesc chair chairs~
+All of the chairs are made of the same oak wood as the table.  Some of them
+even have cushions on the seat.
+~
+ExtraDesc table~
+This wooden table seems to be carved of oak wood, and is very large.  It is
+rectangular in shape.
+~
+Exit south 28008
+EFlags door~
+EKeyvnum -1
+EKeywords door~
+EDesc The hallway is through the doorway to the south.
+~
+End
+
+
+#28010
+Name Inn's Reception~
+Desc This is more of a wide hallway than a room.  There is a small desk along the
+east wall, upon which is a guestbook and a pen.  Stairs lead up to the
+second floor, and the hallway runs west.  There is a wooden door to the
+north and an open arch to the south.
+~
+RoomFlags indoors inn~
+Sector inside~
+ExtraDesc pen~
+The pen is rather fancy.  It seems to be made from the feather of some large
+bird.  There is a small inkwell next to it.
+~
+ExtraDesc guestbook book~
+The guestbook is full of the names of those who have stayed at the inn
+recently.  You don't recognize any of the names.
+~
+ExtraDesc desk~
+This small desk is made of some unknown wood and is rather nondescript.
+~
+Exit north 28011
+EFlags door closed~
+EKeyvnum -1
+EKeywords wooden door~
+EDesc A wooden doorway is to the north.
+~
+Exit south 28019
+Exit west 28008
+EDesc The wide hallway leads to the west.
+~
+Exit up 28012
+EDesc The wooden stairs lead up to the second floor.
+~
+End
+
+
+#28011
+Name Inkeepers Room~
+Desc This seems to be where the innkeeper and his wife live.  There is a large
+bed against one wall, and several chairs around a small table.  A fireplace
+is built into the north wall, as is a window.  Several cabinets are along
+the east wall, and a large chest lies at the foot of the bed.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc cabinet cabinets~
+The cabinets are open, and contain nothing but boring clothing.
+~
+ExtraDesc window~
+This small window faces north, and overlooks the yard behind the inn.
+~
+ExtraDesc fireplace~
+A small fireplace in which a fire is burning merrily.
+~
+ExtraDesc chair chairs table~
+The table and chairs are carved from some unknown wood, and are rather
+nondescript.
+~
+Exit south 28010
+EFlags door closed~
+EKeyvnum -1
+EKeywords wooden door~
+EDesc The reception and hallway are through the door to the south.
+~
+End
+
+
+#28012
+Name Second Floor Hallway~
+Desc This hallway is wide and fairly short.  There are stairs leading down to the
+first floor, and doors to the north and south.  The hallway continues to the
+west, where you see more doors.
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc door doors~
+The doors are made of wood.
+~
+ExtraDesc stairs~
+The stairs are made of wood, and lead down to the ground floor.
+~
+Exit north 28013
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc A guest room is through a wooden doorway to the north.
+~
+Exit east 28000
+EFlags door closed~
+EKeywords door~
+EDesc A guest room is through a wooden doorway to the east.
+~
+Exit south 28014
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc A guest room is through a wooden doorway to the south.
+~
+Exit west 28015
+EDesc The hallway lead a short distance west, where you see more doors.
+~
+Exit down 28010
+EDesc The stairs lead down to the ground floor.
+~
+End
+
+
+#28013
+Name Guest Room~
+Desc This is one of the inn's second floor guest rooms.  It is finely furnished
+with all sorts of comfortable furniture and decorations.  There is a large,
+comfortable bed, several chairs, a table, and a cabinet.  Built into the
+north wall is a small fireplace and a window.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 120
+Heal 120
+ExtraDesc window~
+A small window that faces north and overlooks the back yard of the inn and
+the mountain range to the north.
+~
+ExtraDesc fireplace~
+A small stone fireplace built into the north wall.
+~
+ExtraDesc chairs table cabinet~
+The chairs, table and cabinet are all finely made from the same oak wood.
+~
+ExtraDesc furniture decorations~
+There is a bed, chairs, a table, and a cabinet.
+~
+Exit south 28012
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc To the south is the door to the hallway.
+~
+End
+
+
+#28014
+Name Guest Room~
+Desc This is one of the inn's second floor guest rooms.  It is finely furnished
+with all sorts of comfortable furniture and decorations.  There is a large,
+comfortable bed, several chairs, a table, and a cabinet.  Built into the
+south wall is a small fireplace and a window.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 120
+Heal 120
+ExtraDesc window~
+A small window that overlooks the road and forest to the south.
+~
+ExtraDesc fireplace~
+A small stone fireplace built into the south wall.
+~
+ExtraDesc chairs table cabinet~
+The chairs, table and cabinet are all finely made from the same oak wood.
+~
+ExtraDesc furniture decorations~
+There is a bed, chairs, a table, and a cabinet.
+~
+Exit north 28012
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc To the north is the door to the hallway.
+~
+End
+
+
+#28015
+Name Second Floor Hallway~
+Desc The western end of this small hallway is rather unremarkable.  There are
+guest rooms through doorways to the north, south, and west.  Off to the east
+the hallway comes to more doors and a stairway.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 120
+Heal 120
+ExtraDesc door doors~
+The doors are made of wood and lead into guest rooms.
+~
+Exit north 28016
+EFlags door closed locked easy~
+EKeyvnum 28099
+EKeywords door~
+EDesc A guest room is through a wooden doorway to the north.
+~
+Exit east 28012
+EDesc The hallway runs east to the stairs and more rooms.
+~
+Exit south 28017
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc A guest room is through a wooden doorway to the south.
+~
+Exit west 28018
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc To the west is a wooden doorway which leads into a guest room.
+~
+End
+
+
+#28016
+Name Guest Room~
+Desc This is one of the inn's second floor guest rooms.  It is finely furnished
+with all sorts of comfortable furniture and decorations.  There is a large,
+comfortable bed, several chairs, a table, and a cabinet.  Built into the
+north wall is a small fireplace and a window.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 120
+Heal 120
+ExtraDesc window~
+A small window that faces north and overlooks the back yard of the inn and
+the mountain range to the north.
+~
+ExtraDesc fireplace~
+A small stone fireplace built into the north wall.
+~
+ExtraDesc chairs table cabinet~
+The chairs, table and cabinet are all finely made from the same oak wood.
+~
+ExtraDesc furniture decorations~
+There is a bed, chairs, a table, and a cabinet.
+~
+Exit south 28015
+EFlags door closed locked easy~
+EKeyvnum 28099
+EKeywords door~
+EDesc To the south is the door to the hallway.
+~
+End
+
+
+#28017
+Name Guest Room~
+Desc This is one of the inn's second floor guest rooms.  It is finely furnished
+with all sorts of comfortable furniture and decorations.  There is a large,
+comfortable bed, several chairs, a table, and a cabinet.  Built into the
+south wall is a small fireplace and a window.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 120
+Heal 120
+ExtraDesc window~
+A small window that overlooks the road and forest to the south.
+~
+ExtraDesc fireplace~
+A small stone fireplace built into the south wall.
+~
+ExtraDesc chairs table cabinet~
+The chairs, table and cabinet are all finely made from the same oak wood.
+~
+ExtraDesc furniture decorations~
+There is a bed, chairs, a table, and a cabinet.
+~
+Exit north 28015
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc To the north is the door to the hallway.
+~
+End
+
+
+#28018
+Name Guest Room~
+Desc This is one of the inn's second floor guest rooms.  It is finely furnished
+with all sorts of comfortable furniture and decorations.  There is a large,
+comfortable bed, several chairs, a table, and a cabinet.  Built into the
+west wall is a small fireplace and a window.
+~
+RoomFlags indoors~
+Sector inside~
+Mana 120
+Heal 120
+ExtraDesc window~
+A small window that overlooks the road and forest to the west.
+~
+ExtraDesc fireplace~
+A small stone fireplace built into the west wall.
+~
+ExtraDesc chairs table cabinet~
+The chairs, table and cabinet are all finely made from the same oak wood.
+~
+ExtraDesc furniture decorations~
+There is a bed, chairs, a table, and a cabinet.
+~
+Exit east 28015
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+EDesc To the east is the door to the hallway.
+~
+End
+
+
+#28019
+Name A Large Locker Storage Room~
+Desc . You are in a large dimly lit room with a number of lockers surrounding the 
+walls.  
+~
+Sector inside~
+LockerQuant 30
+LockerInitRent 100
+LockerOngoRent 250
+LockerWeight 150
+LockerCapacity 50
+LockerPickProof 1
+Exit north 28010
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 28000 spec_cast_druid
+M 28007 spec_cast_mage
+M 28010 spec_cast_cleric
+S
+
+
+
+#RESETS2
+O 0 28039 -1 28000
+M 0 28000 1 28000 1
+E 0 28000 -1 wielded~
+M 0 28001 1 28001 1
+E 0 28001 100 torso~
+O 0 28002 0 28001
+M 0 28002 1 28002 1
+E 0 28003 100 wielded~
+E 0 28004 100 legs~
+M 0 28003 4 28002 3
+E 0 28059 -1 torso~
+M 0 28003 4 28002 3
+E 0 28059 -1 torso~
+M 0 28004 1 28004 1
+E 0 28005 5 torso~
+E 0 28006 10 wielded~
+G 0 28007 -1
+M 0 28005 2 28004 1
+E 0 28008 100 about~
+E 0 28009 100 hold~
+M 0 28006 4 28004 1
+E 0 28010 100 about~
+M 0 28007 1 28004 1
+E 0 28011 5 about~
+E 0 28012 10 wielded~
+G 0 28013 -1
+G 0 28014 -1
+O 0 28057 0 28004
+M 0 28010 1 28004 1
+E 0 28021 10 wielded~
+E 0 28022 10 neck1~
+M 0 28008 1 28005 1
+E 0 28034 100 torso~
+E 0 28035 100 legs~
+G 0 28015 -1
+G 0 28016 -1
+G 0 28017 -1
+G 0 28018 -1
+G 0 28054 -1
+G 0 28019 -1
+G 0 28045 -1
+G 0 28046 -1
+G 0 28047 -1
+G 0 28048 -1
+G 0 28049 -1
+G 0 28050 -1
+G 0 28051 -1
+G 0 28056 -1
+G 0 28055 -1
+M 0 28009 1 28005 1
+E 0 28020 100 wielded~
+O 0 28052 0 28005
+O 0 28053 0 28005
+O 0 28057 0 28005
+O 0 28058 0 28005
+M 0 28011 1 28006 1
+E 0 28023 100 wielded~
+E 0 28024 100 about~
+M 0 28012 1 28006 1
+E 0 28025 100 hold~
+M 0 28013 2 28007 2
+M 0 28013 2 28007 2
+M 0 28014 1 28009 1
+E 0 28026 100 wielded~
+E 0 28027 100 torso~
+M 0 28015 4 28009 4
+E 0 28028 100 wielded~
+E 0 28029 30 rfinger~
+M 0 28015 4 28009 4
+E 0 28028 100 wielded~
+E 0 28029 30 rfinger~
+M 0 28015 4 28009 4
+E 0 28028 100 wielded~
+E 0 28029 30 rfinger~
+M 0 28015 4 28009 4
+E 0 28028 100 wielded~
+E 0 28029 30 rfinger~
+M 0 28016 1 28010 1
+G 0 28031 -1
+E 0 28034 100 torso~
+E 0 28035 100 legs~
+O 0 28030 0 28011
+P 0 28032 1 28030 1
+P 0 28033 1 28030 1
+M 0 28017 1 28011 1
+E 0 28036 100 about~
+E 0 28037 50 neck1~
+M 0 28018 2 28011 1
+E 0 28038 100 neck1~
+O 0 28039 0 28011
+O 0 28039 0 28013
+O 0 28039 0 28014
+M 0 28020 1 28014 1
+E 0 28042 100 about~
+O 0 28039 0 28016
+M 0 28019 2 28016 2
+E 0 28040 100 wielded~
+E 0 28041 100 torso~
+M 0 28019 2 28016 2
+E 0 28040 100 wielded~
+E 0 28041 100 torso~
+O 0 28039 0 28017
+O 0 28039 0 28018
+S
+
+
+
+#SHOPS
+#28008
+profit_buy 100
+profit_sell 75
+close_hour 23
+END
+
+#0
+
+
+#MOBPROGS
+#28002
+title ronar quest, speech markrist~
+code say Markrist is the lawless town on the big island to the northeast.
+say You gotta do a bit of sailing to get there.
+say Watch out for the sea serpents, they pack a wallop!
+emote guffaws deeply, spraying his meal all over you.
+~
+disabled false
+END
+
+#28001
+title ronar quest, speech password~
+code if hastoken $n 27158
+emote grins and relaxes.
+say Alright, I guess ye couldn't know that without the old man trustin ye.
+say Well, you ain't gonna be happy, cause I ain't got the map anymore.
+say I sold it to a smuggler in Markrist.
+say If ye want it, yer gonna have to find him.  
+emote thinks for a moment.
+say The streets are crawlin with smugglers there, so you're gonna have to ask around about the map.
+say Sorry I can't help ye any more than that.
+emote turns back to his meal.
+mob oload 27159
+mob tgive 27159 $n
+endif
+else
+say Khuzad? Don't know what you're talking about!
+emote turns back to his meal.
+endif
+~
+disabled false
+END
+
+#28000
+title ronar quest, speech map~
+code if hastoken $n 27157
+say Map you say?
+say I see you've been talking to the old man in town.
+say Well, i don't know if you look like the type I can trust.
+emote stares at you appraisingly.
+say Did the old man give you our password?
+say If so give it to me now, or leave me be.
+else
+say Map.. what map?
+emote grunts.
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

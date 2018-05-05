@@ -1,0 +1,987 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword SUNFIRE~
+category undefined~
+spell_name sunfire~
+text With the help of his/her god and the natural flow, a druid may concentrate 
+the sun's light into a potentially awesome strike.  It can of course only be 
+done outside and during daylight hours, and is especially effective against 
+those that are sensitive to the light.`+
+~
+END
+
+keyword WRATH-OF-THE-SKIES~
+category undefined~
+spell_name wrath of the skies~
+text This summons the wrath of nature from the skies, calling down a storm of 
+lighning from overhead that will strike down any who are within the vicinity 
+of the storm. This summons only works when outdoors and the conditions are 
+right for such a storm.`+
+~
+END
+
+keyword POISON-RAIN~
+category undefined~
+spell_name poison rain~
+text This summons from the air a dousing of caustic rain to shower the vicinity 
+of where it was called upon, causing damage to all.  This requires much 
+concentration to summon, and can't be used while already in combat.`+
+~
+END
+
+keyword BEARS-CLAW~
+category undefined~
+text `=lSyntax: `=?summon 'bears claw' <target>`+
+`+
+The caster summons the strength of the powerful brown bear to tear their 
+victim to shreds. Once summoned, the extended forearms of the druid are 
+momentarily transmuted into the fearsome claws of the formidable bear, long 
+enough to take a few swipes at their opponent.`+
+`+
+`GELEMENTS: `=?`=_animal `=_earth 
+~
+END
+
+keyword CLOSED-EYES~
+category undefined~
+text `=lSyntax: `=?summon 'closed eyes' <target>`+
+`+
+Closed eyes causes the victim to close their eyes so tight that it's 
+impossible to open them, rendering them completely blind.  Once the grip of 
+the spell wears off, the victim is once again free to open their eyes on 
+their own will.`+
+`+
+`GELEMENTS: `=?`=_animal `=_moon 
+~
+END
+
+keyword CALL-CREATURE~
+category undefined~
+text `=lSyntax: `=?summon 'call creature' <target>`+
+`+
+This summons will bring a creature from any part of the world, to the 
+caster. Creatures in special rooms protected from such magics, or those that 
+choose to not be, can't be summoned.  Only characters that choose to travel 
+via a magical summons may be called.`+
+`+
+`GELEMENTS: `=?`=_air `=_animal 
+~
+END
+
+keyword STONE-SKIN~
+category undefined~
+spell_name stone skin~
+text This spell allows the caster to become one with the land, and transmuted skin 
+to a nearly impenetrable, porous layer of rock for the duration.  This spell 
+has no known vulnerabilities (besides sinking like a rock when in water), 
+and provides equal or superior protection to most other spells of 
+protection.`+
+~
+END
+
+keyword STRIP-SPELLS~
+category undefined~
+spell_name strip spells~
+text This summon peacefully removes spells from an ally without provking attack.  
+It is much more effective than the more offensive spells which remove 
+magics, but requires much more concentation to complete.  It doesn't 
+distinguish between malignant and bening spells, and can't be used to remove 
+plagues, poisons, etc.`+
+~
+END
+
+keyword LION-ROAR~
+category undefined~
+text `=lSyntax: `=?summon 'lion roar' <target>`+
+`+
+The roar of the beast that instills the most fear in other prey is 
+undoubtedly the mighty king of the jungle, the lion.  Druids can summon the 
+roar of this mighty beast, which will cause deafening damage to the victim. 
+It takes very little concentration to summon forth the roar of the lion.`+
+`+
+`GELEMENTS: `=?`=_air animal 
+~
+END
+
+keyword BLACK-DEATH~
+category undefined~
+text `=lSyntax: `=?summon 'black death' <victim>`+
+`+
+A common name for the dreaded plague, black death infects any who come close 
+to the sickness, and has been known to cause those who are too weak to fend 
+off the disease to perish.`+
+`+
+`GSEASONS: `=?`=_summer `=_winter 
+~
+END
+
+keyword EARTHQUAKE~
+category undefined~
+text `=lSyntax: `=?summon earthquake `+
+`+
+This summons a unnerving groundshaking which causes the ground to tremble 
+and shift beneath anyone close enough to the source. Everyone caught in the 
+shaking will fall to the ground and suffer at least minor bumps and bruises. 
+Beware that others may assume this as a sign of aggression and draw weapons.`+
+`+
+`GELEMENTS: `=?`=_earth`+
+`GSEASONS: `=?`=_winter 
+~
+END
+
+keyword EARTHWALK~
+category undefined~
+text `=lSyntax: `=?summon earthwalk <target>`+
+`+
+Similar to the gate spell, this magic allows the caster to transport 
+him/herself and possessions to another place. Its use is restricted in that 
+the location you are coming from and the location you are going to must be 
+wilderness-type areas.`+
+`+
+`GELEMENTS: `=?`=_earth`+
+`GSEASONS: `=?`=_autumn 
+~
+END
+
+keyword FLAMESTORM~
+category undefined~
+text `=lSyntax: `=?summon flamestorm <target>`+
+`+
+Flamestorm calls upon the destructive element of fire and creates a 
+billowing vertical column of blistering hot fire on the target, inflicting 
+severe damage and critical burns.  Those standing near the victim have been 
+known to have singed many hairs, and should be advised to not stand so 
+close.`+
+`+
+`GELEMENTS: `=?`=_fire`+
+`GSEASONS: `=?`=_autumn 
+~
+END
+
+keyword FLYING-THORNS~
+category undefined~
+text `=lSyntax: `=?summon 'flying thorns' <target>`+
+`+
+Upon completion of this summons, the tiny, prickly thorns are conjured in 
+the palms of the caster.  With a force that can only be magical in nature, 
+the thorns are hurled forward toward the victim's face and general body. 
+While a single thorn itself does not cause much more than discomfort, this 
+barrage has been known to prick it's victim to death.`+
+`+
+`GELEMENTS: `=?`=_air `=_plant 
+~
+END
+
+keyword WEATHER-MASTERY~
+category undefined~
+spell_name weather mastery~
+text Like any trained druid, one that lives with the nature learns to become one 
+with nature. Summoning weather mastery allows the caster to control and 
+manipulate the weather to their likings, whether calling in rain clouds to 
+douse a fire, or calling in sunshine to dry things up.`+
+~
+END
+
+keyword WOLF-VISION~
+category undefined~
+spell_name wolf vision~
+text Wolves have one of the keenest eyes of all predators.  Because of this, they 
+can see upto 10 times further than the unaided human eyes.  Summoning the 
+vision of the wolf allows the caster to scan the general area that examines 
+everything in all directions, or if scanned in one direction, can see much 
+further away.`+
+~
+END
+
+keyword VITALITY-DRAIN~
+category undefined~
+spell_name vitality drain~
+text As the winter hides the necessary staples of those beast that don't 
+hibernate, a season long weakness saps them of their normal vitality.  This 
+summons a weakness of likeness upon the victim, causing muscles to not react 
+as quickly, or not with as much strength as they potentially have.`+
+~
+END
+
+keyword THORNY-FEET~
+category undefined~
+spell_name thorny feet~
+text As the final words of this summon are uttered, thick, twisting vines of 
+thorns wrap around the legs and feet of the victim, impeding all movement.  
+The victim is hopeless stopped from walking anywhere until the summons has 
+expired.`+
+~
+END
+
+keyword STRENGTH-OF-THE-LAND~
+category undefined~
+spell_name strength of the land~
+text The experienced druids are able to pull more vitality from the lands in the 
+wilderness.  Lasting for a small amount of time, this great vitality might 
+give the druid the ability take harder blows in combat. Even with this 
+though, the druid must be careful, because if they forget about the strength 
+they were given, then they may not survive the affects of it leaving them. 
+It has caused even the greatest druids to fall down dead at children's feet.`+
+~
+END
+
+keyword STAR-EYES~
+category undefined~
+spell_name star eyes~
+text When summoning the eyes of the stars, the caster can see all that appears in 
+the realms.  The eyes must be focused on a specific person, and grants the 
+caster a quick glimpse of where the victim is located.`+
+~
+END
+
+keyword SNAKE-ESSENCE~
+category undefined~
+spell_name snake essence~
+text Snake essence imbues the caster with the ability to dilute all internal 
+poisons before they become fatal. This power grants the caster an immunity 
+to all types of poisons, whether it be ingested with food, or a venemous 
+bite.`+
+~
+END
+
+keyword SNAKE-BITE~
+category undefined~
+spell_name snake bite~
+text Poison can have devestating effects when injected into the body.  Snakes 
+have long been feared for the usually fatal reactions to their bite.  Upon 
+becoming poisoned, the poison saps the strength of the victim, causing them 
+to feel week and nausious, as well as reduces the victim's regeneration 
+rate. A snake bite may also be used to poison food, drink, or a weapon in a 
+fashion similar to envenom, but with drastically reduced effectiveness.`+
+~
+END
+
+keyword SCORPION-CLAW~
+category undefined~
+spell_name scorpion claw~
+text A poisionous scorpion claw is summed forth to sting at your opponent.  With 
+each successful sting, there is a chance that the claw may poison the 
+victim.`+
+~
+END
+
+keyword RESIST-MAGIC~
+category undefined~
+spell_name resist magic~
+text Resist magic grants the caster a better resistance towards the ill effects 
+of spells.  When one successfully resists and makes a save against a spell, 
+they take only half the normal damage from the magical attack.`+
+~
+END
+
+keyword REMOVE-SPELLS~
+category undefined~
+spell_name remove spells~
+text This summons will attempt to strip off all spells affecting the target of 
+this spell. This is considered an casting of aggressive nature, and does not 
+discriminate between malignant and benign spells.`+
+The chance of dispelling is based on the level of the spell. Permanent 
+spells (such as mobile sanctuary) are much harder to remove. Not all spells 
+may be dispelled, notable examples are poison and plague.  `+
+~
+END
+
+keyword PURIFY-BODY~
+category undefined~
+spell_name purify body~
+text This summons attempts to combine the renewal of life, with a little druidic 
+curing powers. This will attempt to rid the recipient of this spell of which 
+ever disease affects them. If left untreated, diseases often spread like 
+wildfire in populated places.`+
+~
+END
+
+keyword POISON-ANTIDOTE~
+category undefined~
+spell_name poison antidote~
+text This summons attempts to combine the renewal of life with a little druidic 
+curing powers. This attempts to neutralize and purge all poison in the body 
+of the one poisoned. If successful, the effects are immediately noticeable, 
+as the symtoms disappear.`+
+~
+END
+
+keyword PLANTATION~
+category undefined~
+spell_name plantation~
+text The early spring is best known as a time of renewal of life.  This summons a 
+small crop of tasty little mushrooms to sprout from the ground. Unlike some 
+other mushrooms, these are quite edible and non-poisonous. The more powerful 
+the summons, the more mushrooms appear.`+
+~
+END
+
+keyword OBJECT-TRAIL~
+category undefined~
+spell_name object trail~
+text This summons attempts to locate an objet that the caster is looking for.   
+The summons reveals an image of where the searched for object is or who is 
+carrying it.  If you are vague in your search details, you may find many 
+more items that fit the description than you were looking for.`+
+~
+END
+
+keyword IMBUE-WITH-LIGHTNING~
+category undefined~
+text `=lSyntax: `=?summon 'imbue with lightning' <weapon>`+
+`+
+This summon attempts to place a little bit of nature upon a weapon of 
+choice.  Imbuing a weapon with lightning charges the weapon so a shocking 
+bolt is realeased upon contact.`+
+`+
+`GELEMENTS: `=?air`+
+`GSEASONS: `=?autumn 
+~
+END
+
+keyword IMBUE-WITH-FIRE~
+category undefined~
+text `=lSyntax: `=?summon 'imbue with fire' <weapon>`+
+`+
+This summon attempts to place a little bit of nature upon a weapon of 
+choice.  Imbuing a weapon with fire causes the weapon to glow hot with a 
+light flame licking it's edge.  Upon contact, the weapon will burn the 
+victim, with a chance of blinding the victim with smoke, and torching 
+scrolls and tomes not safely tucked away.`+
+`+
+`GELEMENTS: `=?fire`+
+`GSEASONS: `=?autumn 
+~
+END
+
+keyword IMBUE-WITH-ICE~
+category undefined~
+text `=lSyntax: `=?summon 'imbue with ice' <weapon>`+
+`+
+This summon attempts to place a little bit of nature upon a weapon of  
+choice. Imbuing a weapons with ice causes the weapon to take on a chilling 
+effect, attempting to freeze the victim on contact.  The cold blade may 
+freeze muscles, sapping the victim of strength, and freeze potions on 
+contact.`+
+`+
+`GSEASONS: `=?autumn winter 
+~
+END
+
+keyword HEALING-SURGE~
+category undefined~
+text `=lSyntax: `=?summon 'healing surge' <person>`+
+`+
+This spell grants the recipient of the summons the enhanced regeneration 
+abilities.  Those affected by this might notice that all wounds heal at a 
+faster pace.`+
+`+
+`GSEASONS: `=?`=_summer `=_winter 
+~
+END
+
+keyword CAT-SENSE~
+category undefined~
+text `=lSyntax: `=?summon 'cat sense'`+
+`+
+This spell grants the summoner the heightened visions of the cat, granting 
+them abilities to detect those that are magically invisible.`+
+`+
+`GELEMENTS: `=?`=_animal `=_sun 
+~
+END
+
+keyword BARKSKIN~
+category undefined~
+text `=lSyntax: `=?summon 'barkskin' <person>`+
+`+
+Trees have one of the most formidable natural protections on the forests.  
+Hence, it is thought that a body shield-like natural armor made of a thick, 
+bark-based material would provide great protection.  Unfortunately, just 
+like the bark it's consisted of, it's very susceptible to fire and heat. `+
+`+
+`GELEMENTS: `=_land `=_plant`=?`+
+
+~
+END
+
+keyword WIND-SHIELD~
+category undefined~
+spell_name wind shield~
+text This spell will conjure a magical wind which will spin around the victim of 
+the spell at high speeds.  Essentially the victim is entombed within a wall 
+of wind, creating a shield against attacks.  Though not a perfect defensive 
+against attacks the experienced caster can create such a shield that allows 
+great protection.`+
+~
+END
+
+keyword EAGLE-ESSENCE~
+category undefined~
+text `=lSyntax: `=?summon 'eagle essence' <person>`+
+`+
+Eagle essence enhances the senses of the target, as well as grants them the 
+ability of flight. The target gains the sight and smell of the very 
+formidable predator known as the eagle.  The sight will be capable of 
+detecting those hidden and invisible, and the hearing the allow you to hear 
+faintest of sounds, such as the hushed tones of a whisper.`+
+`+
+`GELEMENTALS: `=?`=_air `=_animal 
+~
+END
+
+keyword FAERIE-FOG~
+category undefined~
+text `=lSyntax: `=?summon 'faerie fog' `+
+`+
+Faerie fog summons a thick cloud of purplish smoke that rolls into the room, 
+and spreads slowly across the ground.  When settled, it will reveal all 
+manner of invisible, hidden, and sneaking people within the vicinity of the 
+settled fog.`+
+`+
+`GELEMENTS: `=?`=_moon `=_sun 
+~
+END
+
+keyword EYES-OF-THE-CAT~
+category undefined~
+text `=lSyntax: `=?summon 'eyes of the cat' <person>`+
+`+
+Formidable preys are never hindered by the concealing darkness of night 
+time.  This summons grants the target power of the eyes of the cat, which 
+are capable of known best for their superior night time vision. This allows 
+the target to determine heat shades in the darkness, meaning they can see 
+other warm blooded creatures, as well as exits.`+
+`+
+`GELEMENTS: `=?`=_animal `=_moon
+~
+END
+
+keyword WOLF-SENSE~
+category undefined~
+spell_name wolf sense~
+text Wolves have the ability of detecting its prey before they can visually see 
+it.  Whether it's due to superior sight or hearing, or perhaps an inate 
+sixth sense, it's hard to make a say.  Summoning the senses of the wolf 
+imbues the caster with this ability, allowing them to detect those hidden 
+from plain sight, whether they are hiding in shadows or behind an object.`+
+~
+END
+
+keyword WINGS-OF-THE-EAGLE~
+category undefined~
+spell_name wings of the eagle~
+text Summoning the wings of an eagle imbues the caster of this spell with the 
+abilities to take flight.  While the target of this spell might not be able 
+to soar like an eagle, they can walk to places with less weight on their 
+feet, meaning less effort is used for walking, and they can even walk on 
+water. Be careful of when the summons wears off though.`+
+~
+END
+
+keyword MERCILESS-HUNGER~
+category undefined~
+text `=lSyntax: `=?summon 'merciless hunger' <target>`+
+`+
+This will summon an painful hunger upon the victim, making it hard for them 
+to stand straight, and in much dire need of a healthy sized meal, even if 
+they just finished eating.  The victim will need to consume food 
+immediately, or could parish from this hunger.`+
+`+
+`GELEMENTS: `=?`=_animal`+
+`GSEASONS: `=?`=_winter 
+~
+END
+
+keyword OTTERLUNGS~
+category undefined~
+spell_name otterlungs~
+text While relatively painless, this spell will contort and shape your lungs to 
+a semblance of the water-loving sea otter's lungs.  Once the transformation 
+is complete, the caster of this spell may safely travel under the water for 
+much longer durations than normally possible.  When the spell wears off, the 
+same relatively painless transformation occurs back to your normal lungs.  
+Be careful not to be far from the surface when the spell wears off.  `+
+~
+END
+
+keyword ALCOHOL-PURGE~
+category undefined~
+text `=lSyntax: `=?summon 'alcohol purge' <person>`+
+`+
+Everyone enjoys, or rather over-enjoys, a little celebration once in a 
+while.  But there is the after affects that everyone can live without.  The 
+best cure for a hangover is to not sleep while drunk.  With a gentle mixture 
+of wild herbs and the strength of the sun, the burden of inebriation will be 
+lifted within moments.`+
+`+
+`GELEMENTS: `=?plant`+
+`GSEASONS: `=?summer 
+~
+END
+
+keyword -LIGHT~
+category undefined~
+text `=lSyntax: `=?summon light`+
+`=?        summon light <object>`+
+`+
+The emenating light rays of the sun can be focused onto itself to create a 
+small ball of glowing light, or even onto a material object to give 
+something an enchanted, glowing affect.`+
+`+
+`GELEMENTS: `=?sun`+
+`GSEASONS: `=?spring 
+~
+END
+
+keyword LIGHT-BONDING HEAVY-BONDING BONDING RESTORE-LIFE~
+category undefined~
+text `=lSyntax: `=?summon 'light bonding' <person>`+
+`=?        summon bonding <person>`+
+`=?        summon 'heavy bonding' <person>`+
+`=?        summon 'restore life' <person>`+
+`+
+Time heals all wounds.  The transition from the cold and lifeless winters, 
+to the warm and vivid summers can best depict the sense of rebirth and 
+regrowth that resembles the touch of all bonding spells.  When touched, 
+wounds seems to improve.  These summons of healing are listed in order of 
+effectiveness.`+
+`+
+`GSEASONS: `=?`=_summer `=_winter 
+~
+END
+
+keyword REVIGORATE~
+category undefined~
+spell_name revigorate~
+text As winter turns to summer, life is revigorated with a sense of newness. This 
+summons restores life and stamina to the target, allowing them to go more 
+days without sleep, and to keep up with the pace of the trail of the 
+adventurer.`+
+~
+END
+
+keyword RESIST-LIGHTNING~
+category undefined~
+spell_name resist lightning~
+text Combining the elements of air and land, this summons a semi-permeable packet 
+of aur around the caster, which attempts to transfer all electric energy 
+directly to the ground. This works best when standing firmly on the hard, 
+dry ground. When successful, the caster will only suffer half damage from 
+all lightning damage.`+
+~
+END
+
+keyword RESIST-FIRE~
+category undefined~
+spell_name resist fire~
+text This summons an aura around the caster that attempts to smother all fires 
+before any real damage is taken.  When attacked with fire, the caster of 
+this spell makes a save against any fire based attack, taken only half 
+damage is successful.`+
+~
+END
+
+keyword RESIST-COLD~
+category undefined~
+spell_name resist cold~
+text This summons an aura around the caster that attempts to create a thermo 
+barrier to ward off the biting coldness.  When attacked with cold, the 
+caster of this spell makes a save against any cold based attack, taking only 
+half damage if successful.`+
+~
+END
+
+keyword RESIST-POISON~
+category undefined~
+spell_name resist poison~
+text This spell enhances the body's abilities to fend off unknown toxins and 
+various poisons.  When affected by this spell, the caster has a higher 
+resistance to all forms of poison, but is still vulnerable to the stronger 
+poisons.  `+
+~
+END
+
+keyword FEAST~
+category undefined~
+text `=lSyntax: `=?summon 'feast'`+
+`+
+With this summon one will never go hungry.  Producing a feast that suits 
+your taste buds you can summon a peice of food that will be fresh and 
+perfect to nature's standards.  Indeed, it is one of Gaia's greatest 
+blessings.  `+
+`+
+`GELEMENTS: `=?`=_plant`+
+`GSEASONS: `=?`=_spring 
+~
+END
+
+keyword LIGHT-WITHERING WITHERING HEAVY-WITHERING DESTROY-LIVING~
+category undefined~
+text `=lSyntax: `=?summon 'light withering' <victim>`+
+`=?        summon withering <victim>`+
+`=?        summon 'heavy withering' <victim>`+
+`=?        summon 'destroy living' <victim>`+
+`+
+As time shifts from the height of vitality of the summers to the cold and 
+lifeless winters, everything perishes before life begins anew.  Upon 
+touching the victim, their skin seems to wither at the touch, causing old 
+wounds to open and life force to be drained.`+
+`+
+`GELEMENTS: `=?`=_summer `=_winter 
+~
+END
+
+keyword FRESH-WATER~
+category undefined~
+text `=lSyntax: `=?summon 'fresh water' <drink container>`+
+`+
+The caster summons from the dampness of the air a trickle of water to fill a 
+water container.  The fresh water is equally, if not more freshing than a 
+fresh stream of mountain clear water.`+
+`+
+`GELEMENTS: `=?`=_water `+
+`GSEASONS: `=?`=_spring 
+~
+END
+
+keyword FLOWING-WATER~
+category undefined~
+text `=lSyntax: `=?summon 'flowing water'`+
+`+
+Summoned from the moisture contained in the soils, a fresh spring of water 
+appears from right out of the ground.  It's similar to the fountains found 
+in the larger cities, but will fade into the soil when the magic dissipates.`+
+`+
+`GELEMENTS: `=?`=_water `+
+`GSEASONS: `=?`=_spring 
+~
+END
+
+keyword SENSE-POISON~
+category undefined~
+spell_name sense poison~
+text Most animals have a natural instinct to determine what is fatal to 
+eat/drink, and what is fine.  Humans and most other intelligent races don't 
+have the luxury of such survival instincts, and often consume the more fatal 
+poisons without knowing it. When the poison sensing abilities of animals is 
+summoned, the caster is able to "sniff" out the toxins before ingested, 
+avoiding much discomfort, or possibly death.`+
+~
+END
+
+keyword HYPNOTISM~
+category undefined~
+text `=lSyntax: `=?summon hypnotism <target>`+
+`+
+Snake charmers have the skills that any ranger would envy.  To merge minds 
+and think like one, with another creature.  This spell mimics the skills of 
+the greatest charmers in the land, and allows the caster to control the mind 
+of the victim. You can ORDER your charmed creature to do certain things for 
+you.`+
+`+
+You are always responsible for the actions of your charmed creatures.`+
+`+
+`GELEMENTS: `=?`=_animal`+
+`GSEASONS: `=?`=_autumn 
+~
+END
+
+keyword MERCILESS-THIRST~
+category undefined~
+text `=lSyntax: `=?summon 'merciless thirst' <target> `+
+`+
+This will summon an insatiable thirst in the victim, makes it hard for them 
+to speak, and in much dire need of a drink.  The victim will need to consume 
+water immediately, or could parish from lack of water.`+
+`+
+**Note** Under current code this spell only
+affects other players, not NPCs.  This may
+be changed in the future.
+
+`GELEMENTS: `=?`=_air `=_winter 
+~
+END
+
+keyword OWL-WISDOM~
+category undefined~
+spell_name owl wisdom~
+text The owl is ever depicted as being the omniscient being of the wilds, nothing 
+ever phasing it's eyes that show much insight.  Summon the knowledge of the 
+owls, and learn about any unknown item that you desire.  This will show such 
+things as enchantments, weights, a coin value.`+
+~
+END
+
+keyword PHOENIX-SENSES~
+category undefined~
+spell_name phoenix senses~
+text The heightened sense of the ever intelligent phoenix is called upon with 
+this summons.  With your senses heightened, you are capable of actually 
+"feeling" magical auras, and how strong they are.  This feeling is so 
+intense, that it is said some actually see it with their own eyes.`+
+~
+END
+
+keyword FAERIE-FIRE~
+category undefined~
+text `=lSyntax: `=?summon 'faerie fire' <target> `+
+`+
+This spell summons a relatively harmless pink aura around the victim.  The 
+aura perfectly outlines the character, making him a much easier target to 
+hit in combat, while sometimes instilling fear in those unfamiliar to the 
+spell, as if they're burning on fire.  `+
+`+
+`GELEMENTS: `=?`=_animal `=_sun 
+~
+END
+
+level 200
+category undefined~
+text **********************************************************************
+*                Druids magic help file                              *
+**********************************************************************
+~
+END
+
+keyword EYES-OF-THE-NATURE~
+category undefined~
+text `=lSyntax: `=?summon 'eyes of the nature' <person>`+
+`+
+Only the most powerful of those practiced in the druidic arts are capable of 
+summoning the eyes of the nature.  With these abilities, the druid will have 
+enhanced skills of detection and gain the ability to detect abnomallies not 
+normally visible to the naked eye.  It is understood that those that have 
+the eyes of the nature summoned upon them are capable of detecting anyone 
+invisible, and those that aren't too exceptionally practiced at hiding.`+
+`+
+`GELEMENTS: `=?`=_sun 
+~
+END
+
+keyword NATURESPEAK NATURE-SPEAK~
+level 1
+helpflags wordwrapped~
+category undefined~
+spell_name naturespeak~
+text Althought the forces of nature are widely misunderstood, they are recognized 
+as quite a powerful ally by those who learn to use them.  Powerful druids 
+that serve the forces of nature are granted the abiites of using it to 
+communicate with another nearly anywhere throughout the realm. While 
+standing in the forests, one may communicate a message to anyone else who 
+might be in the forests.  The recipient will notice a part of nature itself 
+take on the resemlance of the summoner, and speak the message to them. 
+~
+END
+
+keyword EMPTY-ENTRY~
+level 92
+category undefined~
+text .. 
+~
+END
+
+keyword CAUSE-HEADACHE~
+level 1
+category undefined~
+text CAUSE HEADACHE`1`1`#`=lSyntax: `^ cast 'cause headache' <target> `1`1With the spheres of convocation and mind, the castor can call upon divine 
+intervention and penetrate the affected mind to feel a sudden wave of 
+indescribale pain!  This offensive spell causes the afflicted to lose 
+self-discipline for a lengthy amount of time making it hard for them to 
+concentrate.  It also causes the afflicted to be unable to teach or learn.  
+This 'splitting headache' is indeed quite annoying.  `1`1`#`GSPHERES:`^ `=_convocation `=_mind 
+~
+END
+
+keyword CURE-HEADACHE~
+level 1
+category undefined~
+text CURE HEADACHE`1`1`#`=lSyntax: `^ cast 'cure headache' <recipient> `1`1Needed someone to cure that everlasting headache...  Those who learn cure 
+headache by using the spheres of healing and mind can try to send forth 
+healing energies to the recipient to allievate them of thier affliction.  `1`1`#`GSPHERES:`^ `=_healing `=_mind 
+~
+END
+
+keyword CLOUDBURST~
+level 1
+category undefined~
+text `=lSyntax: `=?summon 'cloudburst' <target>
+
+Druids can call upon a cloudburst to turn the wrath of the skies against 
+their enemies.  When this powerful summon is invoked, a thunderous surge of 
+energy tears through the heavens, striking the druid's target with 
+devastating fury.  Such summons require close proximity to their source of 
+power, and as such, can only be cast when surrounded by air. 
+ 
+`GELEMENTS: `=?`=_air
+`GSEASONS: `=?`=_winter
+~
+END
+
+keyword SCIROCCO~
+category undefined~
+spell_name scirocco~
+text With a single word of power, the skilled druid can cause a deadly scirocco
+to rise from the desert sands, rending his enemies with their fiery winds.  
+As would be expected, the summoner must be in a desert to call upon such 
+calamities. 
+~
+END
+
+keyword PINE-NEEDLES NEEDLEPOINT~
+level 1
+helpflags wordwrapped~
+category magic~
+spell_name pine needles~
+text `=lSyntax:`=? needlepoint <target> <all>`+
+`+
+This unique summon represents the duality of the wildes, offering both 
+protection and the potential to cause serious devestation.  With a single 
+word, the druid can call up a swirling shield of pine needles, which will 
+absorb some of the incoming blows being directed against him.  Then, with 
+nothing more than a simple gesture, he can send these nettles screeching 
+through the air, piercing the unfortunate target of his ire.  The caster can 
+decide whether one, or all of the swirling needles will be let loose.`+
+`+
+The needlepoint command is the effectively the second half of the spell, it 
+is used to release the pine needles at a target.`+
+
+~
+END
+
+keyword TREEFORM~
+level 1
+category undefined~
+spell_name treeform~
+text This powerful summon allows the skilled druid to harness the powers of the 
+oak as his own.  When the words of this summon are uttered, the druid's feet 
+take root in the soil, his arms turning into leaf-laden branches.  The 
+change is instantaneous, and while under its effects, the druid cannot be 
+seen, not even with the aide of detection magicks. After the metamorphasis, 
+the druid will be unable to move, summon, or speak without breaking the 
+spell.  
+ 
+But just as the tree, the druid's roots must be strong -- before such summons 
+can be harnessed, the druid must be well versed in transforming his skin to 
+mimic the bark of the mighty oak.
+~
+END
+
+keyword MIND-SHATTER~
+level 1
+category undefined~
+text `#`=lSyntax:`^ summon 'mind shatter' <target> `+
+`+
+With the element of air and the season of summer, this druid summons `+
+is called upon to create a massive headache within the targets mind.  `+
+This offensive spell causes the afflicted to lose self-discipline for `+
+a lengthy amount of time making it hard for them to concentrate.  It `+
+also causes the afflicted to be unable to teach or learn.  This `+
+'splitting headache' is indeed quite annoying.  
+`+
+`+
+`+`#`GElements/Seasons:`^  `=_air `=_summer
+~
+END
+
+keyword PASS-WITHOUT-TRACE~
+level 1
+category undefined~
+spell_name pass without trace~
+text The skilled druid can call upon the forces of nature to help him pass 
+through the wilde undetected.  By summoning the elements, the druid will 
+move through even the densest undergrowth and thickest forests without 
+leaving so much as a footstep in his wake, mending broken twigs and trampled 
+leaves behind him.  When a druid passes without a trace, his trail cannot be 
+detected by even the most skilled rangers.  
+~
+END
+
+keyword CLARITY LOGIC LUCIDITY MNEMONICS PERSUASION~
+level 1
+category undefined~
+text These unique summons will imbue the caster with improved insight, improving
+their view of the world.  The runes called upon in the casting of these powers
+have been lost, unfortunately, though certain dabblers in the herbal arts have
+been known to reproduce these results.
+ 
+`GELEMENTS:`=? Not Applicable
+~
+END
+
+keyword PHOENIX-PALM BRAMBLE-PALM WINTER-PALM~
+level 1
+category undefined~
+text `=lSyntax:`=? summon 'phoenix palm' <target>
+        summon 'bramble palm' <target>
+        summon 'winter palm' <target>
+ 
+These ancient summons call upon the elements to aide the druid who utters
+the necessary word of power.  When invoked, the elements rush to the aide
+of the druid, attacking his target with the fury of the wilde, be it with
+the flame-kissed winds of the phoenix, the bitter cold of midwinter, or the
+constricting thorns of brambles.
+~
+END
+
+keyword BLIZZARD~
+level 1
+category undefined~
+text `=lSyntax:`=? summon 'blizzard' <target>
+ 
+This powerful summon will call upon a fierce blizzard to surround 
+the caster's foes in freezing shards of ice.  The summon requires 
+the full concentration of a druid, often leaving him weary once the 
+words of power are invoked.
+ 
+`GELEMENTS:`=? `=_air `=_land `=_winter
+~
+END
+
+keyword INFERNO~
+level 1
+category undefined~
+text `=lSyntax:`=? summon 'inferno' <target>
+ 
+The scorching flames of a raging inferno will bow to the druid who
+calls upon this powerful summon.  Under his direction, the fiery
+tendrils will attack his target, severely burning them until the
+inferno subsides.
+ 
+`GELEMENTS:`=? `=_fire `=_land
+ `GSEASONS: `=?`=_summer
+~
+END
+
+keyword MINDSHATTER MIND-SHATTER~
+level 1
+category undefined~
+text `=lSyntax:`=? summon 'mind shatter' <target>
+ 
+This powerful druidic summon joins the scorching heat of summer and the 
+biting winds of the fiercest maelstrom.  Upon uttering a word of power, 
+a mind-numbing headache surges through the target of the druid's ire.  
+Whilst under the affects of this nefarious hex, victims find it difficult 
+to concentrate, speak, and even walk.
+ 
+`GELEMENTS:`=? `=_air
+`GSEASONS:`=? `=_summer
+ 
+~
+END
+
+keyword SPIDERGRIP~
+level 1
+category undefined~
+spell_name spidergrip~
+text This spell grants the caster the intensely powerful grip of a spider
+which prevents any weapons wielded from being disarmed in combat.
+~
+END
+
+EOF~
+#$

@@ -1,0 +1,170 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword DAWN CREDITS CREDIT-DAWN CREDIT-DOT KALAHN~
+category undefined~
+see_also CREDIT-DIKU CREDIT-MERC CREDIT-ROM CREDIT-OBLIVION~
+text The Dawn of Time opened to the public late August 1997.  It was 
+founded by a group of 9 immortals including Kalahn, Rathern, Reave
+and Bahn.
+ 
+Michael Garratt (aka Kalahn) was its founding implementor. He has been 
+the primary developer of the Dawn codebase from early 1997 up till 
+this point in time.
+ 
+While Dawn has a vast amount of original code, it was based upon some
+other codebases and incorporated while extending some other features 
+that were available to the mudding communitity as a whole (e.g. olc).
+Others who have contributed to those features we sourced externally
+are acknowledged in help `=_CREDIT-DAWN-EXTERNAL.
+ 
+The credits of the parent codebases are located in their own help entires
+per codebase as listed below.  
+ 
+See these help files for the credits from parent codebases: 
+~
+END
+
+keyword CREDIT-DAWN-EXTERNAL~
+category undefined~
+parent_help CREDIT-DAWN~
+see_also CREDIT-DIKU CREDIT-MERC CREDIT-ROM CREDIT-OBLIVION~
+text While Dawn has a vast amount of original code, it was based upon some other 
+codebases and incorporated while extending some other features that were 
+available to the mudding communitity as a whole (e.g. olc). Most who have 
+contributed to those features we sourced externally which have help files 
+are acknowledged in the helps for those features others are listed here.`+
+`+
+`=?Eric Young - Author of the ey_crypt.cpp code (the password encryption`+
+`=?             code), this code allows player files to be transfered `+
+`=?             between unix and win32 with encrypted passwords.`+
+`+
+The credits of the parent codebases are located in their own help entires 
+per codebase as listed below.`+
+ 
+~
+END
+
+keyword MERC CREDIT-MERC~
+category undefined~
+text `=?
+This mud is based on Merc 2.1, created by Furey, Hatchet, and Kahn.  
+Merc 2.1 is available as Merc_21.tar.gz from ftp.tcp.com and 
+ftp.math.okstate.edu.
+E-mail to 'merc-request@kpc.com' to join the merc mailing list.
+
+Thanks to ...
+  ... Diku Mud for starting it all.
+  ... The Free Software Foundation and DJ Delorie for kick-ass tools.
+  ... Copper Mud and Alfa Mud for releasing their code and worlds.
+  ... Aod of Generic for ... well, everything.  You're a hoopy frood, Aod.
+  ... Alander for many ideas and contributions.
+  ... John Brothers of Silly for permission to use Silly code and worlds.
+  ... Zrin for administering the mailing list.
+  ... Abaddon for proofreading our comm.c.
+  ... Hind, Quin, Vic, Diavolo, Oleg, Trienne, and others for porting help.
+  ... Diavolo, Grodyn, Morgenes, and others for code and bug fixes.
+  ... Raff, Doctor, VampLestat, Nirrad, Tyrst, PinkF, Chris, Glop for worlds.
+  ... the players and imps of Mud Dome, Final Mud, Mud Lite, Vego Mud, Rivers
+      of Mud, Ruhr Mud, and Mystic Realms for bug reports, ideas, new code,
+      and hours of enjoyment.
+
+~
+END
+
+keyword DIKU CREDIT-DIKU~
+category undefined~
+text `=?
+   `G              Original game idea, concept, and design:
+`=?
+	  Katja Nyboe               [Superwoman] (katz@freja.diku.dk)
+	  Tom Madsen              [Stormbringer] (noop@freja.diku.dk)
+	  Hans Henrik Staerfeldt           [God] (bombman@freja.diku.dk)
+	  Michael Seifert                 [Papi] (seifert@freja.diku.dk)
+	  Sebastian Hammer               [Quinn] (quinn@freja.diku.dk)
+
+
+          Developed at: DIKU -- The Department of Computer Science
+	      	      at the University of Copenhagen.
+
+
+~
+END
+
+keyword ROM CREDIT-ROM~
+category undefined~
+text `=?
+ROM started in early February 1993, using Merc 1.0 code. In July of 1993,  
+ROM II was started, eventually replacing the original ROM.  ROM was up for
+a little over a year, after which the code (version 2.3) was released,
+and various other ROM muds were started, including Rivers of Mud under
+a new management (Zump's ROM), at rom.org 9000.
+
+Alander's current project is Tesseract, the latest version of the ROM code.
+It can be found at hypercube.org 9000.
+
+The following people contributed to the ROM flavor of the merc base code:
+
+Socials --
+    Kelsey and Liralen
+
+New, Improved Valhalla --
+    Liralen
+
+Puff's new special proc and improved poofin/poofout code --
+    Seth
+
+Maps and map shop --
+    Ezra, Regnan (Olympus)
+
+Nirvana zone --
+    Forstall (mobiles rewritten by Alander)
+
+Mob Factory --
+    Pinkfloyd (originally written for ROM, mobiles rewritten by Alander)
+
+Geographically correct Midgaard (tm) --
+    Alander
+
+Ideas and playtesting --
+    Thousands of dedicated mudders around the world
+
+Beta testing --
+    Ken Blosser, Doug Araya, and Sherene Neil all helped with bug reports
+    and suggestions, saving a lot of headaches
+
+New Thalos area was donated by Onivel of Jedi, who was also the originator
+of the ASCII flags used in the zone files
+
+ROM 2.4 was developed during my time with Moosehead mud, and the release
+shares many of the features I wrote while I was there.  Additional code
+was written by Seth Scott (the new poofin/poofout), and many contributions
+and ideas from the Merc list were used. 
+
+The new features of 2.4 were largely produced in bull sessions with
+Gabrielle (my wife) and Brian Moore, without whom this release wouldn't
+have happened.  In particular, the new privacy code, furniture, and
+wiznet are largely the results of Gabrielle's ideas.
+
+Changes to the standard diku mob and object format, as well as the changes
+to Merc 2.1 source code, were done by Alander over many a late night of
+hair-pulling. Hope you enjoy it.
+
+(my apologies if anyone was forgotten in this list)
+~
+END
+
+keyword CREDIT-OBLIVION~
+category undefined~
+text `=?
+Dawn was originally based of the Oblivion code base written/released by 
+Wes Wagner/Airius.  This codebase was initially released by Airius to the 
+public as 'Oblivion 1.2alpha'.
+~
+END
+
+EOF~
+#$

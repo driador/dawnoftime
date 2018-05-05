@@ -1,0 +1,105 @@
+from a~
+to @~
+END
+
+from b~
+to b~
+END
+
+from c~
+to <~
+END
+
+from d~
+to |)~
+END
+
+from e~
+to 3~
+END
+
+from f~
+to ph~
+END
+
+from g~
+to g~
+END
+
+from h~
+to H~
+END
+
+from i~
+to 1~
+END
+
+from j~
+to j~
+END
+
+from k~
+to |<~
+END
+
+from l~
+to [~
+END
+
+from m~
+to m~
+END
+
+from n~
+to /\/~
+END
+
+from o~
+to 0~
+END
+
+from p~
+to P~
+END
+
+from q~
+to Q~
+END
+
+from r~
+to R~
+END
+
+from s~
+to 5~
+END
+
+from t~
+to +~
+END
+
+from u~
+to u~
+END
+
+from v~
+to z~
+END
+
+from w~
+to x~
+END
+
+from x~
+to }{~
+END
+
+from y~
+to Y~
+END
+
+from z~
+to ZZ~
+END
+
+EOF~

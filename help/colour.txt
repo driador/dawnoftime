@@ -1,0 +1,101 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword COLOURS COLOUR-CODES COLORS ANSI ANSI-COLOR~
+category undefined~
+text `=lSyntax:`=? colour <options>`+
+`+
+The colour system is extremely flexible, and allows the reassignment of over 
+120 different colour allocations within the game (using the '`=Ccolour show`=?' 
+and '`=Ccolour set`=?' commands).  In addition it supports mud wide colour 
+templates which you can easily switch to then customize (`=Ccolour use`=?).`+
+`#`+
+The colour prefix 'escape character' to specify a colour is the left handed 
+brace '``', following that you should use one of the following letters,`+
+`=?      `R``R`r``r     red     `C``C`c``c     cyan`+
+`=?      `G``G`g``g     green   `Y``Y`y``y     yellow`+
+`=?      `B``B`b``b     blue    `W``W`=?``=?    white`+
+`=?      `M``M`m``m     magenta `X``X`=?``=?    clear(reset colour)`+
+`=?      ````       `` char  `S``S`S``s     silver`=?`+
+`=?      `=?``?       `?`#random  `=?```-       tilde character`=?`+
+`=?      `=?``#       save    `^``^       restore`=?`+
+`+
+Use a capital letter for a highlighted version of a colour.`+
+`+
+Example: ``#``CYay!``^ will give you `#`CYay!`^`+
+`+
+If you want more than one colour, you start the colour change  with ``# and 
+change the other colours within the text. You end  it with ``^.`+
+`=? Example: I love ``?colours. ``#``=?Yes, ``YI ``=?do ``Mlove ``^them.``=?`+
+`=?          I love `?colours. `#`=?Yes, `YI `=?do `Mlove `^them.`+
+`+
+`=?Notice that in the above example, the word 'colours' is a random colour, 
+and the word 'them' is the same colour... this is because the random colour 
+(made with `Y``?`=?) was saved with the `Y``#`=? code then restored with the `Y``^`=? code.`+
+`+
+If you are used to using another colour prefix character, you can change 
+your prefix using the '`=Ccolour prefix`=?' command.`+
+`+
+For a complete list of the colour commands available to you, type `=Ccolour`=? 
+by itself. 
+ 
+Note: For those with mud clients supporting MXP colours, we have added a 
+number of additional colours.  In order to see these, your mud client 
+must be (and support) in 'html' colour mode (type "col mode html").
+In this mode, you can see the table of colours in help `=_colourtable
+~
+last_editor Kyla~
+last_editdate 1088616904
+END
+
+keyword COLOURTABLE COLOUR-TABLE COLORTABLE COLOR-TABLE COLTAB~
+category undefined~
+text The list of available colours... for best results you need a mud client 
+supporting MXP/HTML based colours and need to be in in html colour mode.
+ 
+`p###### `n###### `U###### `Q###### `q###### `P###### 
+`p##`x``p`p## `n##`x``n`n## `U##`x``U`U## `Q##`x``Q`Q## `q##`x``q`q## `P##`x``P`P##
+`p###### `n###### `U###### `Q###### `q###### `P######
+`a###### `A###### `v###### `V###### `M##00## `m##00##
+`a##`x``a`a## `A##`x``A`A## `v##`x``v`v## `V##`x``V`V## `M##`x``M`M## `m##`x``m`m## 
+`a###### `A###### `v###### `V###### `M##00## `m##00## 
+`b##00## `B##00## `e###### `E###### `f###### 
+`b##`x``b`b## `B##`x``B`B## `e##`x``e`e## `E##`x``E`E## `f##`x``f`f## 
+`b##00## `B##00## `e###### `E###### `f###### 
+`G##00## `g##00## `i###### `I###### `h###### `H###### `C##00## `c##00## 
+`G##`x``G`G## `g##`x``g`g## `i##`x``i`i## `I##`x``I`I## `h##`x``h`h## `H##`x``H`H## `C##`x``C`C## `c##`x``c`c## 
+`G##00## `g##00## `i###### `I###### `h###### `H###### `C##00## `c##00## 
+`y##00## `j###### `J###### `k###### `K###### `l######   
+`y##`x``y`y## `j##`x``j`j## `J##`x``J`J## `k##`x``k`k## `K##`x``K`K## `l##`x``l`l##   
+`y##00## `j###### `J###### `k###### `K###### `l######   
+`r##00## `R##00## `o###### `O###### `z###### `Z###### `Y##00## 
+`r##`x``r`r## `R##`x``R`R## `o##`x``o`o## `O##`x``O`O## `z##`x``z`z## `Z##`x``Z`Z## `Y##`x``Y`Y## 
+`r##00## `R##00## `o###### `O###### `z###### `Z###### `Y##00## 
+`s##00## `S##00## `w##00## `W##00##  
+`s##`x``s`s## `S##`x``S`S## `w##`x``w`w## `W##`x``W`W##   
+`s##00## `S##00## `w##00## `W##00##   
+~
+last_editor Kyla~
+last_editdate 1093717631
+END
+
+keyword RAINBOW-COLOURS~
+level 92
+category undefined~
+text The list of available colours... for best results you need a mud client 
+supporting MXP/HTML based colours and need to be in in html colour mode.
+ 
+`a##`x``a`a## `A##`x``A`A## `b##`x``b`b## `B##`x``B`B## `c##`x``c`c## `C##`x``C`C## `e##`x``e`e## `E##`x``E`E## `f##`x``f`f## `g##`x``g`g## `G##`x``G`G## 
+`h##`x``h`h## `H##`x``H`H## `i##`x``i`i## `I##`x``I`I## `j##`x``j`j## `J##`x``J`J## `k##`x``k`k## `K##`x``K`K## `l##`x``l`l## `m##`x``m`m## `M##`x``M`M## 
+`n##`x``n`n## `o##`x``o`o## `O##`x``O`O## `r##`x``r`r## `R##`x``R`R## `p##`x``p`p## `P##`x``P`P## `q##`x``q`q## `Q##`x``Q`Q## `U##`x``U`U## 
+`v##`x``v`v## `V##`x``V`V## `s##`x``s`s## `S##`x``S`S## `w##`x``w`w## `W##`x``W`W## `y##`x``y`y## `Y##`x``Y`Y## `z##`x``z`z## `Z##`x``Z`Z## 
+~
+last_editor Kyla~
+last_editdate 1088285935
+END
+
+EOF~
+#$

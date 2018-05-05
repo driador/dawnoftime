@@ -1,0 +1,825 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Troll Bridge~
+ShortName   Troll Bridge~
+Builders    None~
+Credits     Reave~
+VNUMs       986 999
+LRange      45 65
+Security    9
+Colour      R~
+colourcode  `
+MapScale    0
+MapLevel    35
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#986
+Name ugly troll~
+ShortD an ugly troll~
+LongD An ugly troll is here, glaring angrily at you.~
+Desc This big green troll is standing here apparently guarding the bridge.
+He is big and strong enough to do a fine job of it too.  Better pay
+the toll and move along, eh?
+~
+Race troll~
+Align -1 -2
+Level 45
+Hitroll 1
+HitDice 5d8+260
+ManaDice 2d9+100
+DamDice 6d6+18
+DamType pound
+AC -170 -170 -170 -130
+Wealth 450
+Act    npc dont_wander scavenger no_tame nopurge~
+AffBy  detect_hidden infrared regeneration~
+Off    berserk disarm dodge kick trip~
+Imm    charm~
+Res    bash cold disease~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+MProg EXIT 986 0~
+MProg BRIBE 987 100~
+END
+
+#987
+Name hideous troll~
+ShortD a hideous troll~
+LongD A hideous troll is hunched over here, counting large piles of silver coins.~
+Desc This group of four ugly green trolls are hunched over a few piles of
+silver coins.  And when I say ugly, I mean these bastards are repulsive! 
+Their skin is mottled green, grey, and black in color, and covered with
+warts and scars.  
+~
+Race troll~
+Align -1 -2
+Level 46
+Hitroll 0
+HitDice 5d9+300
+ManaDice 5d9+200
+DamDice 10d4+23
+DamType beating
+AC -200 -200 -200 -160
+Wealth 460
+Act    npc dont_wander aggressive stay_area~
+AffBy  detect_hidden infrared regeneration~
+Off    area_attack bash berserk~
+Res    charm bash~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#988
+Name glistening water drake~
+ShortD a water drake~
+LongD A glistening water drake has made its home here.~
+Desc This large drake is perhaps not as intelligent as a true dragon, but is
+in most ways just as dangerous.  This one is half-submerged in the water,
+its scales glistening in the dim light.  
+~
+Race dragon~
+Align -2 0
+XPMod 140
+Level 60
+Hitroll 2
+HitDice 6d9+320
+ManaDice 6d9+330
+DamDice 8d6+27
+DamType claw
+AC -300 -300 -300 -270
+Wealth 0
+Act    npc dont_wander aggressive stay_area~
+AffBy  infrared flying swim~
+Off    area_attack bash disarm fast parry tail~
+Res    charm bash fire~
+Vuln   cold~
+Form   edible sentient mountable reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    random~
+Material flesh
+END
+
+#989
+Name fearsome-looking troll~
+ShortD a fearsome-looking troll~
+LongD A fearsome-looking troll towers over you.~
+Desc This fearsome troll towers over you at around nine feet tall.  His shoulders 
+are broad and his arms are thick with muscle.  Tufts of hair cover his head 
+and body, and his mouth is full of mouldy teeth.  
+~
+Race troll~
+Align 0 -2
+Level 47
+Hitroll 1
+HitDice 5d8+255
+ManaDice 5d8+100
+DamDice 6d6+16
+DamType punch
+AC -100 -100 -100 -90
+Wealth 250
+Act    npc dont_wander no_tame aggressive stay_area warrior noautosocial~
+AffBy  detect_hidden infrared regeneration~
+Off    bash berserk dodge~
+Res    charm bash poison disease~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#990
+Name mottled-green skinned troll~
+ShortD a green skinned troll~
+LongD A mottled-green skinned troll is here, glaring at you.~
+Desc This ugly troll has mottled-green skin, covered in warts and scabs.  He has 
+a sturdy build with muscular arms and a thick neck.  His teeth gnash against 
+each other as he glares at you.  
+~
+Race troll~
+Align 0 -2
+Level 52
+Hitroll 1
+HitDice 5d9+280
+ManaDice 5d8+100
+DamDice 5d8+20
+DamType punch
+AC -210 -210 -210 -150
+Wealth 250
+Act    npc dont_wander no_tame aggressive stay_area warrior noautosocial~
+AffBy  detect_hidden infrared regeneration~
+Off    bash berserk dodge kick~
+Res    charm bash poison disease~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#991
+Name huge pitch-black troll skin~
+ShortD a huge pitch-black troll~
+LongD A huge troll with pitch-black skin raises his weapon towards you.~
+Desc This ugly member of the troll race is a little over nine feet, and his arms 
+hang almost to his knees.  His skin is the colour of night, making him 
+bearly visible in this dark, damp room.  He makes his presence known 
+however, with a threatening snarl.  
+~
+Race troll~
+Align 0 -2
+Level 56
+Hitroll 1
+HitDice 5d9+300
+ManaDice 5d8+100
+DamDice 10d4+23
+DamType punch
+AC -250 -250 -250 -160
+Wealth 250
+Act    npc dont_wander no_tame stay_area warrior noautosocial~
+AffBy  detect_hidden infrared regeneration~
+Off    bash berserk dodge kick~
+Res    charm bash poison disease~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#992
+Name giant black spider~
+ShortD a giant spider~
+LongD A giant spider is weaving its web here.~
+Desc The thick legs of this spider easily span the length of a human man.  Its 
+head, is covered in hundreds of glaring red eyes, and its body is covered in 
+coarse black hairs.  
+~
+Race other~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+275
+DamDice 5d8+19
+DamType bite
+AC -200 -200 -200 -180
+Wealth 0
+Act    npc no_tame aggressive stay_area noautosocial~
+AffBy  infrared~
+Off    dodge fast~
+Imm    light~
+Res    charm bash fire~
+Vuln   magic~
+Form   edible instant_decay sentient biped~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#986
+Name blue drake scale~
+Short a `#`bblue`^ drake scale~
+Desc A `#`Bblue`^ drake scale has been left here.~
+Level 60
+ItemType treasure~
+Cost 1002
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take ear~
+Affect modifier -1 60 -1 ac -10 0
+ExtraDesc blue drake scale~
+This large blue scale must have some from a dragon or some such creature.  
+~
+End
+
+#987
+Name sable spidersilk~
+Short some sable spidersilk~
+Desc Some sable spidersilk lies here.~
+Level 1
+ItemType treasure~
+Cost 100
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material spidersilk~
+Extra    nolocate nodegrade~
+Wear     take~
+ExtraDesc sable spidersilk~
+Thus bundle of dark sable silk-like material is bundled up in a roll.
+It has a sticky texture to it, and despite the roll's size, its as light
+as a feather.
+~
+End
+
+#988
+Name pair tanned leather gloves~
+Short a pair of `#`ytanned leather`^ gloves~
+Desc A pair of `#`ytanned leather`^ gloves lie here.~
+Level 46
+ItemType armor~
+Cost 920
+Asize 0
+Rsize 50
+Values 9 9 9 7 0
+Weight 20
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take hands~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 46 -1 ac -20 0
+End
+
+#989
+Name pair tanned leather boots~
+Short a pair of `#`ytanned leather`^ boots~
+Desc A pair of `#`ytanned leather`^ boots have been left here.~
+Level 46
+ItemType armor~
+Cost 800
+Asize 0
+Rsize 50
+Values 9 9 9 7 0
+Weight 40
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take feet~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 46 -1 hitroll 2 0
+Affect modifier -1 46 -1 agility 2 0
+Affect modifier -1 46 -1 move 40 0
+End
+
+#990
+Name tanned leather leggings~
+Short a pair of `#`ytanned leather`^ leggings~
+Desc A pair of `#`ytanned leather`^ leggings have been left here.~
+Level 46
+ItemType armor~
+Cost 1100
+Asize 0
+Rsize 50
+Values 12 12 12 10 0
+Weight 8
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take legs~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 46 -1 damroll 6 0
+Affect modifier -1 46 -1 hitroll 6 0
+Affect modifier -1 46 -1 agility -2 0
+End
+
+#991
+Name spiked-steel club~
+Short a spiked-steel club~
+Desc A spiked-steel club has been left here.~
+Level 52
+ItemType weapon~
+Cost 1250
+Asize 65
+Rsize 50
+Values mace 11 4 smash 0
+Weight 550
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances cleric warrior druid paladin barbarian~
+Affect modifier -1 52 -1 damroll 2 0
+Affect modifier -1 52 -1 hitroll 2 0
+Affect modifier -1 52 -1 hp 2 0
+End
+
+#992
+Name snakeskin belt~
+Short a snakeskin belt~
+Desc A snakeskin belt lies here.~
+Level 52
+ItemType armor~
+Cost 1020
+Asize 0
+Rsize 50
+Values 10 10 10 8 0
+Weight 5
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take waist~
+ClassAllowances warrior druid ranger barbarian~
+Affect modifier -1 52 -1 constitution 4 0
+Affect modifier -1 52 -1 hp 4 0
+Affect modifier -1 52 -1 saves 2 0
+ExtraDesc snakeskin belt~
+This belt has been fashioned from the skin of some sort of snake.  The hide 
+is black with streaks of grey in it.  A large silver belt buckle adds more 
+class to this belt its, silvery hue shining brightly.  
+~
+End
+
+#993
+Name grey wolfskin vest~
+Short a `#`sgrey wolfskin`^ vest~
+Desc A `#`Sgrey wolfskin`^ vest has been left here.~
+Level 52
+ItemType armor~
+Cost 1205
+Asize 45
+Rsize 50
+Values 16 16 16 14 0
+Weight 150
+Material fur~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances warrior druid ranger barbarian~
+Affect modifier -1 52 -1 hp 4 0
+Affect modifier -1 52 -1 ac -10 0
+Affect modifier -1 52 -1 quickness 2 0
+Affect modifier -1 52 -1 presence -1 0
+End
+
+#994
+Name grey wolfskin hood~
+Short a `#`sgrey wolfskin`^ hood~
+Desc A `#`Sgrey wolfskin`^ hood has been left here.~
+Level 52
+ItemType armor~
+Cost 1500
+Asize 0
+Rsize 50
+Values 13 13 13 11 0
+Weight 3
+Material wolfskin~
+Extra    nonmetal nodegrade burnproof~
+Wear     take head~
+ClassAllowances warrior druid ranger barbarian~
+Affect modifier -1 52 -1 mana 100 0
+End
+
+#995
+Name heavy brass-hilted longsword~
+Short a heavy, `#`ybrass-hilted`^ longsword~
+Desc A heavy, `#`ybrass-hilted`^ longsword lies here.~
+Level 46
+ItemType weapon~
+Cost 1500
+Asize 50
+Rsize 50
+Values sword 7 6 slash I
+Weight 100
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+End
+
+#996
+Name spider egg~
+Short some spider eggs~
+Desc A sack of spider eggs lie here.~
+Level 1
+ItemType food~
+Cost 5
+Asize 0
+Rsize 50
+Values 1 1 0 A 0
+Weight 5
+Material spider~
+Extra    nolocate~
+Wear     take~
+End
+
+#0
+
+
+
+#ROOMS
+#986
+Name On a Stone Bridge~
+Desc You are near the north end of a long stone bridge.  A wide river is
+below, flowing slowly from west to east.  Where the bridge meets land, paths
+wind away throught the fields to the west and north.  
+~
+Sector city~
+Exit north 30481
+Exit south 987
+End
+
+
+#987
+Name On a Stone Bridge~
+Desc You are in the middle of a sturdy stone bridge which spans a wide, slow
+river.  The river is flowing from west to east, and seems quite calm here. 
+As you peer down over the side of the bridge, you can see small openings
+which might be windows, but no obvious entrances to any rooms that might be
+down there.  
+~
+RoomFlags no_mob~
+Sector city~
+ExtraDesc opening windows~
+Small slits.  Seems like there are rooms down there.
+~
+ExtraDesc down stone floor~
+There seems to be a trapdoor in the bridge leading down!  How exciting!
+~
+ExtraDesc river water~
+The river flows calmly eastwards, under the bridge.
+~
+Exit north 986
+EDesc A path north.
+~
+Exit south 988
+EDesc A path south.
+~
+Exit down 989
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#988
+Name On a Stone Bridge~
+Desc You are near the south end of a long stone bridge.  The bridge seems
+fairly sturdy and in good condition.  Below it flows a wide, slow river,
+from west to east.  A path leads away south through the grass at the south
+end.  
+~
+Sector city~
+Exit north 987
+Exit south 30479
+End
+
+
+#989
+Name Small Damp Room~
+Desc You are in a small, dark room with stone walls.  It is very damp in here,
+and there are some moss and lichens growing in and around cracks in the
+floor and walls.  A small part of the ceiling is wood, and there is a
+trapdoor in it.  Openings lead north and south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stone walls floor~
+The walls are made from closely fit dark stone blocks.
+~
+ExtraDesc moss lichens~
+Various kinds of fungus and muss grow in the cracks here.
+~
+ExtraDesc wood ceiling~
+A trapdoor that opens downward is set in the ceiling.  
+~
+Exit north 991
+Exit south 990
+Exit up 987
+EFlags door closed~
+EKeywords trapdoor~
+End
+
+
+#990
+Name Small Dark Room~
+Desc This small room appears to have once been a storage area of some type. 
+There are some old tools lying about, and some broken and rotting shelves. 
+The stone walls are quite damp, and moss grows in some of the cracks.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc old tools~
+Old tools, useless because the handles have rotted and the metal parts rusted.
+~
+ExtraDesc broken rotting shelves.~
+The shelves are mostly rotted, and most have broken off the walls and lie
+in pieces on the floor.  
+~
+ExtraDesc moss cracks~
+Green and brown moss grows in some of the cracks.
+~
+Exit north 989
+End
+
+
+#991
+Name Small Dark Room~
+Desc This place is not so much a room as it is a corridor.  The walls are made
+of stone, and are damp in many places.  Lichens and moss grow in some spots,
+some glowing very softly.  There is a stone stairway leading down in the
+north end of the room, and a dark exit south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stone walls damp~
+The walls are of grey stone, and are quite damp.
+~
+ExtraDesc lichens moss~
+Slightly glowing mosses and lichens grow in some spots.
+~
+ExtraDesc stairway ~
+The stone stairway leads down into darkness.
+~
+Exit south 989
+Exit down 992
+End
+
+
+#992
+Name Small Room~
+Desc You are in a small, mostly dark room, with walls made of huge stone
+blocks.  There are small slits acting as windows on the east and west sides
+of the room.  Peering out them you can see a river flowing underneath, and
+it appears you are inside the lower part of a bridge crossing it.  Against
+the north wall are some stone stairs leading up, and a small exit leaves
+south.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc river water~
+A slowly flowing river is below.
+~
+ExtraDesc windows slits~
+These small slits let you peek out, and give a good view of the river below.
+~
+ExtraDesc stone walls stairway~
+Dark grey stone blocks fit together tightly to make up the walls.  A
+stone stairway also leads upwards.  
+~
+Exit south 993
+Exit up 991
+End
+
+
+#993
+Name Small Dark Room~
+Desc This room is small and cramped, and is very damp and dark.  There are
+slits on the east and west walls which let in a bit of the outside light,
+but not much.  Small exits to the north and south are placed in the stone
+walls.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stoen walls~
+The walls are made of stone blocks fit closely together.  
+~
+ExtraDesc slits ~
+The slits let you see outside a bit.  It appears you are in the middle of
+a stone bridge, spanning a river that flows calmly west to east.  
+~
+Exit north 992
+Exit south 994
+End
+
+
+#994
+Name Small Dark Room~
+Desc You are in a small, mostly dark room, with walls made of huge stone
+blocks.  There are small slits acting as windows on the east and west sides
+of the room.  Peering out them you can see a river flowing underneath, and
+it appears you are inside the lower part of a bridge crossing it.  Against
+the south wall are some stone stairs leading down, and a small exit leaves
+north.  As you glance up you notice thick, sticky webs above you.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc stairs ~
+The stone stairs lead down into darkness.
+~
+ExtraDesc river ~
+A wide, calm river flows underneath this bridge.
+~
+ExtraDesc slits windows~
+These small slits in the stone allow you to see outside.
+~
+ExtraDesc huge stone blocks wall~
+These stone blacks are dark grey and fit together nicely.
+~
+Exit north 993
+Exit down 995
+End
+
+
+#995
+Name Small Damp Room~
+Desc It is very damp in this small area.  The walls are made of grey stone
+blocks, and water trickles down them in a few places.  The floor is sloped
+downwards to the north, and in that direction there are a lot of puddles. 
+Lichens and moss are clinging to the walls in places, some glowing softly. 
+At the lowest point of the room a passageway exits north, while against the
+south wall stone stairs lead upwards.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc puddles water~
+Water trickles down the walls here, forming small puddles in the northern
+part of the room.  
+~
+ExtraDesc grey stone blocks lichens~
+Stone blocks fit together nicely to make up the walls and floor.  There
+are soflt glowing lichens and mosses in many places, especially in the
+cracks.  
+~
+ExtraDesc stairs ~
+The stone stairs lead upwards.
+~
+Exit north 996
+Exit up 994
+End
+
+
+#996
+Name Small Wet Room~
+Desc The floor of this room is sloped downwards to the north a bit.  Most of
+it is covered by a few inches of murky water.  Some slightly glowing fungus
+and lichens grow on the drier sections and in cracks in the stone walls. 
+There are narrow passageways leaving the room on the north and south ends.  
+~
+RoomFlags indoors~
+Sector inside~
+ExtraDesc murky water~
+The water is dirty and you can't see the floor through even a few inches.
+~
+ExtraDesc fungus lichens~
+Slightly glowing fungi and lichens grow about the place.
+~
+Exit north 997
+Exit south 995
+End
+
+
+#997
+Name Partially Submerged Room~
+Desc This entire room is partly submerged in murky water.  As you move around
+you find that the water depth varies from a few feet at the south end to at
+least six feet to the north.  The walls are made of grey stone blocks fit
+snugly together, and a small passageway is cut in the south end.  In the
+north end, huge piles of stone and dirt stick up out of the water, seemingly
+pushed there by the creation of a huge hole in the earth just above water
+level.  
+~
+Sector inside~
+ExtraDesc murky water~
+The water is dirty and gets quite deep in some spots.
+~
+ExtraDesc grey stone blocks wall dirt~
+The walls on the east, west, and south are cut grey stone blocks.  The
+north wall is rough earth, through which a huge hole has been dug.  
+~
+ExtraDesc huge hole~
+A hole has been punched through the north wall by some powerful force,
+creating piles of stone and dirt in the water.  
+~
+Exit south 996
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 988 spec_breath_lightning
+M 992 spec_poison
+S
+
+
+
+#RESETS2
+M 0 986 1 987 1
+M 0 987 1 989 1
+E 0 988 -1 hands~
+E 0 989 -1 feet~
+E 0 990 -1 legs~
+E 0 995 -1 wielded~
+M 0 989 5 990 1
+M 0 989 5 991 1
+M 0 989 5 992 1
+M 0 991 5 993 1
+M 0 990 5 994 1
+E 0 992 -1 waist~
+E 0 993 -1 torso~
+E 0 994 -1 head~
+E 0 991 -1 wielded~
+M 0 991 5 995 1
+M 0 991 5 996 1
+M 0 992 1 996 1
+G 0 987 -1
+G 0 996 -1
+M 0 988 1 997 1
+G 0 986 -1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#987
+title troll shifts you over bridge~
+code say Alright, move along then.
+mob transfer $n 30481
+mob echo $N leaves north.
+~
+disabled false
+END
+
+#986
+title transfer mobs and ask for 100 silver~
+code if isnpc $n
+    snarl $n
+    mob transfer $n 30481
+else
+    say Pay the toll or you're not going anywhere!
+    say 100 silver and not a coin less.
+    glare $n
+endif
+~
+disabled false
+END
+
+#0
+
+
+#$

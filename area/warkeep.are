@@ -1,0 +1,2319 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        The Warlock's Keep~
+ShortName   Warlock's Keep~
+Builders    None~
+Credits     Yaegar Reave~
+VNUMs       15700 15749
+LRange      10 35
+Security    9
+Colour      Y~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#15700
+Name warlock~
+ShortD the warlock~
+LongD The warlock chuckles at you and dares you to attack him.~
+Desc Before you stands the master of the keep, a warlock.  He is a
+handsome young man with long white hair, and deep blue eyes.
+He would appear to be almost angelic were it not for the diabolical
+gleam to his eyes, and the evil grin on his thin, cruel lips.
+~
+Race human~
+Align 2 -3
+Level 33
+Hitroll 0
+HitDice 5d6+160
+ManaDice 5d7+250
+DamDice 4d6+8
+DamType punch
+AC -100 -100 -100 -83
+Wealth 300
+Act    npc dont_wander no_tame mage~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good protect_good~
+Off    fade fast~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15701
+Name comely woman witch~
+ShortD the witch~
+LongD A comely woman in her early twenties grins at you.~
+Desc This woman is apparently a witch, and associate and lover of the 
+warlock. She is nude save for a leather bandolier across her chest 
+and buttocks, which contains a variety of potions, scrolls and 
+throwing daggers. She would be very attractive if she didn't cackle
+insanely so much.
+~
+Race human~
+Align 0 -3
+Level 31
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d7+240
+DamDice 2d12+8
+DamType punch
+AC -90 -90 -90 -80
+Wealth 280
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good protect_good~
+Off    fade fast~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#15702
+Name fiend~
+ShortD a fiend~
+LongD A minor fiend hisses and snarls at you.~
+Desc It looks like the master of this place managed to capture this fiend 
+and keep it in this room, but apparently lacked the power necessary 
+to control it, so dares not release it again. And now you're in here 
+with this eight foot tall, four armed, green skinned monstrosity from 
+the lower planes. Great.
+~
+Race human~
+Align -3 -3
+XPMod 110
+Level 35
+Hitroll 1
+HitDice 5d6+215
+ManaDice 2d5+18
+DamDice 4d7+11
+DamType claw
+AC -110 -110 -110 -94
+Wealth 330
+Act    npc dont_wander no_tame aggressive warrior~
+AffBy  detect_invis detect_hidden infrared dark_vision~
+Off    crush~
+Res    summon charm fire negative~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tentacles claws~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#15703
+Name cat familiar~
+ShortD a cat familiar~
+LongD Some mage's familiar, a black cat, hisses at you.~
+Desc This angry feline is probably someone's familiar.
+~
+Race cat~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+30
+DamDice 2d4+2
+DamType scratch
+AC 10 10 10 8
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  detect_hidden dark_vision~
+Off    dodge fast~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    female~
+Material unknown
+END
+
+#15704
+Name hawk familiar~
+ShortD a hawk familiar~
+LongD Some mage's familiar, a hawk, screeches at you.~
+Desc This angry bird is probably someone's familiar. 
+~
+Race unique~
+Align 0 0
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType claw
+AC 20 20 20 60
+Wealth 0
+Act    npc dont_wander stay_area noalign~
+AffBy  detect_hidden flying~
+Form   edible animal mountable bird~
+Part   head legs heart brains guts eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#15705
+Name troll guard~
+ShortD a troll guard~
+LongD A troll guard squints suspiciously at you.~
+Desc These trolls are meant to prevent strangers from entering the inner keep,
+but they see so many strange creatures here they aren't sure which type is
+allowed and which isn't.
+~
+Race troll~
+Align -1 -2
+Level 28
+Hitroll 0
+HitDice 5d5+130
+ManaDice 2d5+15
+DamDice 2d12+8
+DamType punch
+AC -80 -80 -80 -70
+Wealth 250
+Act    npc dont_wander no_tame stay_area warrior~
+AffBy  detect_hidden infrared regeneration~
+Off    bash berserk dirt_kick~
+Res    charm bash~
+Vuln   fire acid~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#15706
+Name flesh golem~
+ShortD a flesh golem~
+LongD A flesh golem stands here, arms folded.~
+Desc This mindless automaton is a foul creation of the warlock or some powerful
+mage.  It has veins running on the outside if its skin, and even more
+disgusting features.  It does not look friendly.
+~
+Race human~
+Align 0 0
+Level 27
+Hitroll 1
+HitDice 4d5+120
+ManaDice 4d5+120
+DamDice 5d4+7
+DamType pound
+AC -80 -80 -80 -66
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  regeneration slow~
+Off    bash~
+Res    charm mental~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#15707
+Name fire drake~
+ShortD a fire drake~
+LongD A fire drake snorts flames and attacks!~
+Desc This angry young dragon has been roused from its nap by you, and it isn't 
+happy about it.  It's scaled are a bright red.  You can't tell if that is
+the natural color, or from the lava it just crawled out of.
+~
+Race dragon~
+Align 1 -2
+XPMod 120
+Level 35
+Hitroll 1
+HitDice 5d6+210
+ManaDice 5d6+190
+DamDice 4d7+11
+DamType claw
+AC -110 -110 -110 -89
+Wealth 330
+Act    npc dont_wander no_tame aggressive stay_area~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared flying~
+Off    area_attack bash parry tail~
+Imm    charm fire~
+Res    bash slash fire~
+Vuln   cold~
+Form   edible sentient reptile dragon~
+Part   head legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    male~
+Material unknown
+END
+
+#15708
+Name zombie servant~
+ShortD a zombie servant~
+LongD A zombie servant gazes at you blankly.~
+Desc This poor fellow was probably once a living servant who made one mistake
+too many. Someone apparently decided that undead staff were more reliable
+anyway, from the general look of things.
+~
+Race human~
+Align -2 -2
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+40
+DamDice 1d10+3
+DamType chomp
+AC -20 -20 -20 10
+Wealth 90
+Act    npc dont_wander no_tame stay_area~
+AffBy  slow~
+Imm    negative~
+Vuln   holy~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#15709
+Name guard~
+ShortD a keep guard~
+LongD A keep guard stands rigidly at attention here.~
+Desc This guard is slightly bemused at your entrance, but doesn't move to stop
+you- He probably figures that if an intruder is too powerful for the master,
+then he certainly doesn't stand a chance, so why bother.
+~
+Race human~
+Align 1 -1
+Level 11
+Hitroll 1
+HitDice 2d5+45
+ManaDice 1d4+5
+DamDice 1d10+2
+DamType punch
+AC 10 10 10 8
+Wealth 80
+Act    npc dont_wander no_tame stay_area warrior~
+Off    bash~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15710
+Name apprentice~
+ShortD an apprentice mage~
+LongD An apprentice mage looks up from her work, startled.~
+Desc This woman is small and cute, but has a malevolent gleam in here eyes.  She
+is obviously a mage, if the spell components and robes are any indication.
+~
+Race human~
+Align 2 -2
+Level 24
+Hitroll 0
+HitDice 4d5+100
+ManaDice 5d6+180
+DamDice 4d4+5
+DamType punch
+AC -60 -60 -60 -49
+Wealth 210
+Act    npc dont_wander no_tame stay_area mage~
+AffBy  detect_invis detect_magic~
+Off    fast~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#15711
+Name grell~
+ShortD a grell~
+LongD A grell gropes at you with its tentacles.~
+Desc This looks like a huge brain with green tentacles and a huge squid-like
+beak. It hovers in the center of the room, glaring at you menacingly.
+~
+Race lizardman~
+Align -3 0
+Level 27
+Hitroll 1
+HitDice 4d5+120
+ManaDice 4d5+120
+DamDice 5d4+7
+DamType acbite
+AC -80 -80 -80 -68
+Wealth 240
+Act    npc dont_wander stay_area~
+AffBy  infrared~
+Off    area_attack~
+Res    bash disease~
+Vuln   cold~
+Form   edible magical sentient biped mountable reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tentacles tail scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#15712
+Name mimic chest wooden~
+ShortD a mimic~
+LongD A wooden chest suddenly comes to life!~
+Desc This mimic has been placed here by someone to fool (and hopefully slay)
+potential thieves.
+~
+Race human~
+Align 0 0
+Level 23
+Hitroll 1
+HitDice 4d5+100
+ManaDice 4d5+100
+DamDice 3d6+6
+DamType bite
+AC -60 -60 -60 -48
+Wealth 200
+Act    npc dont_wander aggressive stay_area~
+Off    area_attack~
+Form   edible sentient construct biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#15713
+Name crocodile~
+ShortD a hungry crocodile~
+LongD A hungry crocodile snaps its jaws at you.~
+Desc This hungry reptile looks like it hasn't been fed in days. They must be 
+starved to keep them savage.  You see some bones and clothing remnants 
+stuck in its teeth.
+~
+Race lizardman~
+Align 0 0
+Level 15
+Hitroll 1
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType bite
+AC -20 -20 -20 -17
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area noalign~
+Off    tail~
+Imm    summon charm~
+Res    bash disease~
+Vuln   cold~
+Form   edible animal sentient biped mountable reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material unknown
+END
+
+#15714
+Name war dog~
+ShortD a savage war dog~
+LongD A savage war dog snarls viciously at you.~
+Desc Bred from the most vicious species of dogs, these brutes are not a happy
+bunch.  They are even foaming at the mouth, someone must have infected 
+them with rabies to make them even more savage.
+~
+Race dog~
+Align -3 0
+Level 19
+Hitroll 0
+HitDice 3d5+82
+ManaDice 3d5+80
+DamDice 2d7+5
+DamType bite
+AC -40 -40 -40 -33
+Wealth 0
+Act    npc dont_wander no_tame aggressive stay_area noalign~
+AffBy  dark_vision~
+Off    fast~
+Imm    summon charm~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#15715
+Name cloaked figure assassin~
+ShortD an assassin~
+LongD An cloaked figure appears suddenly before you.~
+Desc This mysterious woman is cloaked in dark colors from head to toe.  There 
+is a flash or metal from within the cloaks, and a gleam from the eyes,
+but not much else.
+~
+Race human~
+Align 0 -3
+Level 23
+Hitroll 1
+HitDice 4d5+95
+ManaDice 2d5+30
+DamDice 4d4+6
+DamType punch
+AC -50 -50 -50 -43
+Wealth 200
+Act    npc dont_wander no_tame stay_area thief~
+Off    backstab fast~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#15716
+Name cloaked figure~
+ShortD the assassin~
+LongD A cloaked figure is skulking here.~
+Desc This figure is cloaked and keeping to the shadows, so you can't make out
+much detail.  You do catch a glimpse of the seal of some city from within
+his cloak, indicating perhaps that he is here to assassinate one of the
+evil ones in this place.  I'm sure he wouldn't mind if you helped out 
+though.
+~
+Race human~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+130
+ManaDice 3d5+60
+DamDice 2d12+8
+DamType punch
+AC -90 -90 -90 -72
+Wealth 270
+Act    npc dont_wander no_tame stay_area thief~
+Off    backstab fast~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15717
+Name gnoll slave~
+ShortD a gnoll slave~
+LongD A gnoll slave yelps in surprise at your presence.~
+Desc These evil dog-like humanoids must have been captured and set to work as 
+miners and laborers helping to excavate the ancient lower caverns beneath
+the keep.
+~
+Race gnoll~
+Align -1 -1
+Level 15
+Hitroll 1
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -16
+Wealth 120
+Act    npc dont_wander scavenger no_tame stay_area wimpy~
+AffBy  infrared~
+Res    bash cold disease~
+Vuln   fire~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#15718
+Name ogre slave~
+ShortD an ogre slave~
+LongD An ogre slave grunts as you enter, then turns back to his work.~
+Desc These evil giant-kin must have been captured and set to work as miners
+and laborers helping to excavate the ancient lower caverns beneath the keep.
+~
+Race orc~
+Align -1 -1
+Level 15
+Hitroll 1
+HitDice 3d5+60
+ManaDice 3d5+60
+DamDice 2d6+3
+DamType punch
+AC -20 -20 -20 -16
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Off    bash~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#15719
+Name flind slave master~
+ShortD a flind slave master~
+LongD A flind slave master howls fiercely and orders you to leave.~
+Desc This gnoll-kin seems to have been placed in charge of the gnolls 
+and ogres that labor here, and will not tolerate any interruptions.
+~
+Race human~
+Align -1 -2
+XPMod 105
+Level 21
+Hitroll 0
+HitDice 4d5+90
+ManaDice 4d5+90
+DamDice 4d4+5
+DamType punch
+AC -50 -50 -50 -43
+Wealth 180
+Act    npc dont_wander no_tame stay_area~
+AffBy  infrared~
+Off    bash dodge parry~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#15720
+Name otyugh~
+ShortD an otyugh~
+LongD An otyugh gibbers and attacks!~
+Desc This creature is a disgusting mass of flesh with a huge maw and two 
+tentacles. It rushes toward you on stubby legs. It is used to devour 
+the garbage of the keep, from the looks of things.
+~
+Race lizardman~
+Align 0 0
+Level 25
+Hitroll 1
+HitDice 4d5+110
+ManaDice 4d5+110
+DamDice 2d10+7
+DamType acbite
+AC -70 -70 -70 -60
+Wealth 110
+Act    npc dont_wander aggressive stay_area noalign~
+AffBy  infrared~
+Off    tail~
+Imm    disease~
+Res    bash acid poison disease~
+Vuln   cold~
+Form   edible poison animal sentient biped mountable reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tentacles tail scales~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#15700
+Name black robes~
+Short some `#`Sblack`^ robes~
+Desc Some `#`Sblack`^ robes have been left here.~
+Level 31
+ItemType armor~
+Cost 650
+Asize 5
+Rsize 50
+Values 7 8 7 6 0
+Weight 5
+Material cotton~
+Extra    magic nonmetal nodegrade~
+Wear     take about~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 31 -1 mana 40 0
+Affect modifier -1 31 -1 memory 1 0
+Affect modifier -1 31 -1 reasoning 1 0
+ExtraDesc black robes~
+Fine black robes.  Made from cotton, with runes stiched in.
+~
+End
+
+#15701
+Name bone staff~
+Short a bone staff~
+Desc A bone staff has been left here.~
+Level 25
+ItemType staff~
+Cost 550
+Asize 25
+Rsize 50
+Values 25 20 18 'cause critical' 0
+Weight 10
+Material bone~
+Extra    magic nonmetal nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric druid ranger~
+ExtraDesc bone staff~
+A long staff carved from the bone of some huge beast.
+~
+End
+
+#15702
+Name bone sword~
+Short a `#`Wbone`^ sword~
+Desc A `#`Wbone`^ sword has been left here.~
+Level 25
+ItemType weapon~
+Cost 520
+Condition 90
+Asize 40
+Rsize 50
+Values sword 7 3 slash 0
+Weight 20
+Material bone~
+Extra    magic nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 25 -1 damroll 2 0
+Affect modifier -1 25 -1 hitroll 2 0
+End
+
+#15703
+Name bronze circlet~
+Short a `#`ybronze`^ circlet~
+Desc A `#`ybronze`^ circlet lies here.~
+Level 28
+ItemType jewelry~
+Cost 580
+Asize 5
+Rsize 45
+Values 0 0 0 0 0
+Weight 2
+Material brass~
+Extra    magic nodegrade burnproof~
+Wear     take head~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 28 -1 mana 40 0
+Affect modifier -1 28 -1 ac -5 0
+End
+
+#15704
+Name leather bandolier~
+Short a leather bandolier~
+Desc A leather bandolier has been left here.~
+Level 1
+ItemType container~
+Cost 110
+Asize 10
+Rsize 50
+Values 150 0 0 30 100
+Weight 10
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take about~
+End
+
+#15705
+Name bright green potion~
+Short a `#`Gbright green`^ potion~
+Desc A `#`Gbright green`^ potion has been left here.~
+Level 15
+ItemType potion~
+Cost 330
+Asize 2
+Rsize 50
+Values 25 'stone skin' 'protection evil' 'cause light' ''
+Weight 2
+Material glass~
+Extra    nonmetal nodegrade~
+Wear     take~
+ExtraDesc bright green potion~
+A bright green potion, with red bits mixed in.
+~
+End
+
+#15706
+Name bright red potion~
+Short a `#`Rbright red`^ potion~
+Desc A `#`Rbright red`^ potion has been left here.~
+Level 15
+ItemType potion~
+Cost 330
+Asize 2
+Rsize 50
+Values 25 weaken '' 'cure critical' ''
+Weight 2
+Material glass~
+Extra    nonmetal nodegrade burnproof~
+Wear     take~
+ExtraDesc bright red potion~
+A bright red potion, with tiny green bits mixed in.
+~
+End
+
+#15707
+Name tightly rolled scroll~
+Short a tightly rolled scroll~
+Desc A tightly rolled scroll has been left here.~
+Level 20
+ItemType scroll~
+Cost 420
+Asize 2
+Rsize 50
+Values 20 'call lightning' '' '' ''
+Weight 1
+Material paper~
+Extra    magic nonmetal~
+Wear     take~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+ExtraDesc tightly rolled scroll~
+A tightly rolled scroll.
+~
+End
+
+#15708
+Name partly burnt scroll~
+Short a partly burnt scroll~
+Desc A partly burnt scroll has been left here.~
+Level 20
+ItemType scroll~
+Cost 420
+Asize 2
+Rsize 50
+Values 15 flamestrike '' '' ''
+Weight 1
+Material paper~
+Extra    magic nonmetal~
+Wear     take~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+ExtraDesc partly burnt scroll~
+A partly burnt scroll.
+~
+End
+
+#15709
+Name runed dagger~
+Short a runed dagger~
+Desc A runed dagger has been left here.~
+Level 25
+ItemType weapon~
+Cost 545
+Asize 20
+Rsize 50
+Values dagger 2 8 pierce C
+Weight 20
+Material steel~
+Extra    magic antigood nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+ExtraDesc runed dagger~
+A steel dagger, inscribed with runes.
+~
+End
+
+#15710
+Name wooden wand~
+Short a `#`ywooden`^ wand~
+Desc A `#`ywooden`^ wand has been left here.~
+Level 20
+ItemType wand~
+Cost 410
+Condition 90
+Asize 13
+Rsize 50
+Values 20 5 4 shield 0
+Weight 2
+Material wood~
+Extra    magic nonmetal nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric thief druid spellfilcher~
+End
+
+#15711
+Name garthalanium staff~
+Short a garthalanium staff~
+Desc A garthalanium staff has been left here.~
+Level 25
+ItemType staff~
+Cost 505
+Asize 50
+Rsize 50
+Values 25 18 16 'lightning bolt' 0
+Weight 15
+Material steel~
+Extra    magic nodegrade~
+Wear     take hold~
+ClassAllowances mage cleric warrior druid ranger~
+ExtraDesc garthalanium staff~
+A long thin staff made of some strange metal.
+~
+End
+
+#15713
+Name spiked club mace~
+Short a spiked club~
+Desc A spiked club has been left here.~
+Level 21
+ItemType weapon~
+Cost 444
+Asize 35
+Rsize 65
+Values mace 3 8 smash 0
+Weight 50
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+End
+
+#15714
+Name leather hauberk~
+Short a leather hauberk~
+Desc A leather hauberk has been left here.~
+Level 21
+ItemType armor~
+Cost 420
+Asize 10
+Rsize 50
+Values 7 7 7 5 0
+Weight 10
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take torso~
+Affect modifier -1 21 -1 strength 2 0
+End
+
+#15715
+Name drake hide shield~
+Short part of a drake's hide~
+Desc Part of a drake hide has been left here.~
+Level 35
+ItemType armor~
+Cost 717
+Asize 50
+Rsize 50
+Values 12 12 12 10 0
+Weight 30
+Material scales~
+Extra    nonmetal nodegrade burnproof~
+Wear     take shield~
+ClassAllowances cleric warrior druid paladin ranger barbarian~
+Affect modifier -1 35 -1 presence -1 0
+Affect modifier -1 35 -1 quickness 2 0
+Affect modifier -1 35 -1 constitution 2 0
+ExtraDesc drake hide~
+This might be useful as a shield.
+~
+End
+
+#15716
+Name bronze scalemail~
+Short some `#`ybronze`^ scalemail~
+Desc Some `#`ybronze`^ scalemail has been left here.~
+Level 22
+ItemType armor~
+Cost 444
+Asize 20
+Rsize 50
+Values 7 7 7 6 0
+Weight 100
+Material brass~
+Extra    nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 22 -1 hp 4 0
+End
+
+#15717
+Name bronze shield~
+Short a `#`ybronze`^ shield~
+Desc A `#`ybronze`^ shield has been left here.~
+Level 19
+ItemType armor~
+Cost 393
+Asize 30
+Rsize 50
+Values 7 6 6 5 0
+Weight 40
+Material brass~
+Extra    nodegrade burnproof~
+Wear     take shield~
+ClassAllowances cleric warrior paladin ranger barbarian~
+ExtraDesc bronze shield~
+A nicely made bronze shield.
+~
+End
+
+#15718
+Name bronze helm~
+Short a `#`ybronze`^ helm~
+Desc A `#`ybronze`^ helm has been left here.~
+Level 16
+ItemType armor~
+Cost 333
+Asize 15
+Rsize 50
+Values 4 4 4 3 0
+Weight 20
+Material brass~
+Extra    nodegrade burnproof~
+Wear     take head~
+ClassAllowances cleric warrior paladin ranger barbarian~
+Affect modifier -1 16 -1 empathy -1 0
+Affect modifier -1 16 -1 hitroll 2 0
+ExtraDesc bronze helmet~
+A finely made bronze helmet.
+~
+End
+
+#15719
+Name bronze sword~
+Short a `#`ybronze`^ sword~
+Desc A `#`ybronze`^ sword has been left here.~
+Level 21
+ItemType weapon~
+Cost 424
+Asize 45
+Rsize 50
+Values sword 3 8 slash 0
+Weight 40
+Material brass~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+End
+
+#15720
+Name green robes~
+Short some `#`ggreen`^ robes~
+Desc Some `#`ggreen`^ robes lie crumpled in a heap here.~
+Level 22
+ItemType armor~
+Cost 464
+Asize 7
+Rsize 50
+Values 5 6 6 4 0
+Weight 3
+Material cotton~
+Extra    magic nonmetal nodegrade~
+Wear     take about~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 22 -1 quickness -2 0
+Affect modifier -1 22 -1 mana 40 0
+Affect modifier -1 22 -1 reasoning 1 0
+Affect modifier -1 22 -1 memory 1 0
+ExtraDesc green robes~
+Nice green robes, with embroidered runes.
+~
+End
+
+#15721
+Name hardwood staff~
+Short a hardwood staff~
+Desc A hardwood staff has been left here.~
+Level 15
+ItemType weapon~
+Cost 300
+Asize 30
+Rsize 50
+Values exotic 6 3 beating F
+Weight 20
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wield~
+ExtraDesc hardwood staff~
+A hardwood staff with a bronze tip.
+~
+End
+
+#15722
+Name thin spellbook~
+Short a thin spellbook~
+Desc A thin spellbook has been left here.~
+Level 10
+ItemType scroll~
+Cost 205
+Asize 10
+Rsize 50
+Values 5 'word of recall' blindness weaken ''
+Weight 10
+Material paper~
+Extra    nonmetal~
+Wear     take~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+ExtraDesc thin spellbook~
+A thin spellbook, containing only a few pages.
+~
+End
+
+#15723
+Name deep pit~
+Short a deep pit~
+Desc A deep pit opens before you.~
+Level 1
+ItemType container~
+Cost 1
+Asize 1
+Rsize 50
+Values 10000 0 0 1000 100
+Weight 1
+Material stone~
+Extra    noremove nonmetal nodegrade burnproof~
+ExtraDesc deep pit~
+A deep, dark pit opens in front of you.
+~
+End
+
+#15724
+Name spiked leather collar~
+Short a spiked leather collar~
+Desc A spiked leather collar has been left here.~
+Level 10
+ItemType armor~
+Cost 202
+Condition 90
+Asize 10
+Rsize 50
+Values 2 2 2 1 0
+Weight 10
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take neck~
+ExtraDesc spiked leather collar~
+This simple collar has some short steel spikes.
+~
+End
+
+#15725
+Name assassin robes~
+Short the robes of an assassin~
+Desc The robes of an assassin have been left here.~
+Level 19
+ItemType armor~
+Cost 405
+Asize 10
+Rsize 50
+Values 5 5 5 4 0
+Weight 5
+Material cotton~
+Extra    magic nonmetal nodegrade~
+Wear     take about~
+ClassAllowances thief spellfilcher~
+Affect modifier -1 19 -1 saves 4 0
+Affect modifier -1 19 -1 quickness 3 0
+ExtraDesc robes assassin~
+These robes are finely made from black material.
+~
+End
+
+#15726
+Name throwing dagger~
+Short a throwing dagger~
+Desc A throwing dagger has been left here.~
+Level 18
+ItemType weapon~
+Cost 375
+Asize 9
+Rsize 50
+Values dagger 2 7 pierce 0
+Weight 6
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 18 -1 hitroll 2 0
+ExtraDesc throwing dagger~
+A steel dagger that is specially weighted for throwing.
+~
+End
+
+#15727
+Name thin steel sword~
+Short a thin steel sword~
+Desc A thin steel sword has been left here.~
+Level 27
+ItemType weapon~
+Cost 565
+Asize 40
+Rsize 50
+Values sword 2 13 slash D
+Weight 40
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+ExtraDesc thin steel sword~
+A very thin and sharp steel sword.
+~
+End
+
+#15728
+Name black ring~
+Short a `#`Sblack`^ ring~
+Desc A `#`Sblack`^ ring has been left here.~
+Level 25
+ItemType jewelry~
+Cost 600
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material steel~
+Extra    magic nodegrade~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 25 -1 hp 2 0
+Affect modifier -1 25 -1 damroll 2 0
+Affect modifier -1 25 -1 hitroll 2 0
+ExtraDesc black ring~
+A completely black ring, forged of some unknown metal.
+~
+End
+
+#15729
+Name black leather boots~
+Short some `#`Sblack`^ leather boots~
+Desc Some `#`Sblack`^ leather boots have been left here.~
+Level 26
+ItemType armor~
+Cost 540
+Asize 10
+Rsize 50
+Values 5 5 5 3 0
+Weight 10
+Material leather~
+Extra    magic nonmetal nodegrade~
+Wear     take feet~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 26 -1 hp 2 0
+Affect modifier -1 26 -1 quickness 1 0
+Affect modifier -1 26 -1 agility 1 0
+ExtraDesc black leather boots~
+Thin leather boots of elven make.
+~
+End
+
+#15730
+Name dark green cloak~
+Short a `#`gdark green`^ cloak~
+Desc A `#`gdark green`^ cloak has been left here.~
+Level 24
+ItemType armor~
+Cost 500
+Asize 10
+Rsize 50
+Values 6 6 6 5 0
+Weight 5
+Material cotton~
+Extra    magic nonmetal nodegrade~
+Wear     take about~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 24 -1 quickness 1 0
+Affect modifier -1 24 -1 agility 1 0
+Affect modifier -1 24 -1 hitroll 2 0
+ExtraDesc dark green cloak~
+An elven made cloak.  It is very dark green.
+~
+End
+
+#15731
+Name mining pick~
+Short a mining pick~
+Desc A mining pick has been left here.~
+Level 1
+ItemType weapon~
+Cost 12
+Asize 40
+Rsize 50
+Values mace 1 6 beating 0
+Weight 60
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ExtraDesc mining pick~
+A steel and wood mining pick.  Might make a decent weapon 
+in a pinch.
+~
+End
+
+#15732
+Name short shovel~
+Short a short shovel~
+Desc A short shovel has been left here.~
+Level 1
+ItemType weapon~
+Cost 12
+Asize 50
+Rsize 50
+Values axe 1 6 slice 0
+Weight 30
+Material shovel~
+Extra    nodegrade~
+Wear     take wield~
+ExtraDesc short shovel~
+A short shovel made of wood and steel.
+~
+End
+
+#15733
+Name rubble~
+Short a pile of rubble~
+Desc A pile of rubble.~
+Level 1
+ItemType trash~
+Cost 1
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc rubble~
+A pile of stones and wood is sitting here.
+~
+End
+
+#15734
+Name metal whip~
+Short a metal whip~
+Desc A metal whip has been left here.~
+Level 21
+ItemType weapon~
+Cost 422
+Asize 5
+Rsize 50
+Values whip 2 11 sting 0
+Weight 14
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ExtraDesc metal whip~
+This whip is fashioned from tiny strips of metal attached in 
+such a way as to be flexible.
+~
+End
+
+#15735
+Name black bracer~
+Short a `#`Sblack`^ bracer~
+Desc A `#`Sblack`^ bracer has been left here.~
+Level 15
+ItemType armor~
+Cost 305
+Asize 5
+Rsize 50
+Values 2 2 2 2 0
+Weight 5
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take wrist~
+Affect modifier -1 15 -1 memory -1 0
+Affect modifier -1 15 -1 agility 1 0
+Affect modifier -1 15 -1 constitution 1 0
+ExtraDesc black bracer~
+A thin, black, metal bracer.
+~
+End
+
+#15736
+Name rack~
+Short a torture rack~
+Desc A torture rack.~
+Level 1
+ItemType furniture~
+Cost 1
+Asize 1
+Rsize 50
+Values 1000 1000 EHK -100 -100
+Weight 1
+Material steel~
+Extra    noremove nodegrade burnproof~
+ExtraDesc torture rack~
+A torture device that inflicts pain by stretching.
+~
+End
+
+#15737
+Name gallows~
+Short a gallows~
+Desc A gallows has been erected here.~
+Level 1
+ItemType furniture~
+Cost 1
+Asize 1
+Rsize 50
+Values 1000 1000 BEHKN 0 0
+Weight 1
+Material wood~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc gallows~
+A tall wooden gallows has been erected here.  It is used regularly 
+to hang those who piss off the warlock.
+~
+End
+
+#15738
+Name stocks~
+Short the stocks~
+Desc The stocks sit here, waiting for a prisoner.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 1000 1000 CN 0 0
+Weight 0
+Material wood~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc stocks~
+Wooden stocks in which the warlock leaves prisoners out to die.
+~
+End
+
+#15739
+Name pot boiling oil~
+Short a pot of boiling oil~
+Desc A pot of boiling oil.~
+Level 1
+ItemType furniture~
+Cost 1
+Asize 1
+Rsize 50
+Values 1000 1000 CFIO -100 -100
+Weight 1
+Material copper~
+Extra    noremove nodegrade burnproof~
+ExtraDesc pot boiling oil~
+The warlock enjoys immersing insubordinate lackeys in here.
+~
+End
+
+#15740
+Name black flag~
+Short a `#`Sblack`^ flag~
+Desc A `#`Sblack`^ flag flutters atop a tall pole here.~
+Level 1
+ItemType furniture~
+Cost 1
+Asize 1
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material cotton~
+Extra    noremove nonmetal nodegrade~
+ExtraDesc black flag~
+It is plain black.  The warlock apparently isn't very imaginative.
+~
+End
+
+#15741
+Name leg irons~
+Short some leg irons~
+Desc Some leg irons have been left here.~
+Level 1
+ItemType armor~
+Cost 10
+Asize 10
+Rsize 50
+Values 1 1 1 0 0
+Weight 10
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take legs~
+Affect modifier -1 1 -1 move -20 0
+ExtraDesc leg irons~
+A set of steel leg irons.
+~
+End
+
+#0
+
+
+
+#ROOMS
+#15701
+Name Before the Keep~
+Desc You are standing outside the massive bronze-bound oak portals that bar the
+way into the keep. They currently stand open, though, as if the master were
+expecting visitors...
+~
+Sector city~
+Exit east 30254
+EKeyvnum -1
+Exit west 15704
+EFlags door~
+EKeywords door~
+End
+
+
+#15702
+Name A Guard Tower~
+Desc This tower sits above the gate you just entered. Guards march back and forth.
+They seem mildly surprised by your entrance, but they don't move to hinder
+you. The stairs continue up and down.
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 15703
+EKeyvnum -1
+Exit down 15704
+EKeyvnum -1
+End
+
+
+#15703
+Name The Roof of the Tower~
+Desc You emerge onto the roof of the tower. From here you can see far across the
+surrounding lands, and they do not look pleasant.  Immediately surrounding 
+this keep are scorched fields.  To the west are rocky hills, and to the east
+swampland.  A great distance north you see a mighty river winding its way
+from west to east.
+~
+Sector city~
+Exit down 15702
+EKeyvnum -1
+End
+
+
+#15704
+Name Inside the Keep~
+Desc Guards march to and fro in this small courtyard. Doorways lie to the
+north, west and south, while the entry gate looms to the east. A set
+of stairs leads up into the tower of the gatehouse.
+~
+Sector city~
+Exit north 15705
+EFlags door~
+Exit east 15701
+EFlags door~
+Exit south 15706
+EFlags door~
+Exit west 15707
+EFlags door~
+Exit up 15702
+EKeyvnum -1
+End
+
+
+#15705
+Name The Stables~
+Desc Here the guards of the Keep keep, or kept, rather, their steeds. There
+are none here now.  Perhaps the particularly harsh winter last year 
+left the Keep short of food, and necessitated the eating of the horses.
+They apparently have not been replaced yet.  The exit is to the south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 15704
+EFlags door~
+End
+
+
+#15706
+Name Barracks~
+Desc This room quarters some of the guards of the Keep. There are several bunks
+littered with dirty underwear and frayed tunics- evidently the master is
+not a stickler for discipline.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15704
+EFlags door~
+End
+
+
+#15707
+Name The Inner Courtyard~
+Desc You have passed into the inner courtyard, which lies before the stark 
+black walls of the inner keep, wherein reside the evil masters of this
+place. Guards occasionally stroll past, as does the occasional servant. 
+The servants appear to be rather lifeless and cold.
+~
+Sector city~
+Exit north 15708
+EKeyvnum -1
+Exit east 15704
+EFlags door~
+Exit south 15709
+EKeyvnum -1
+Exit west 15710
+EKeyvnum -1
+End
+
+
+#15708
+Name The Inner Courtyard~
+Desc You have passed into the inner courtyard, which lies before the stark black
+walls of the inner keep, wherein reside the evil masters of this place.
+Guards occasionally stroll past, as does the occasional servant. The servants
+appear to be rather lifeless and cold.  There is a doorway to the north.
+~
+Sector city~
+Exit north 15741
+EFlags door closed~
+EKeywords door~
+Exit south 15707
+EKeyvnum -1
+Exit west 15711
+End
+
+
+#15709
+Name The Inner Courtyard~
+Desc You have passed into the inner courtyard, which lies before the stark black
+walls of the inner keep, wherein reside the evil masters of this place.
+Guards occasionally stroll past, as does the occasional servant. The servants
+appear to be rather lifeless and cold. There is a doorway to the south.
+~
+Sector city~
+Exit north 15707
+EKeyvnum -1
+Exit south 15742
+EFlags door closed~
+EKeywords door~
+Exit west 15712
+EKeyvnum -1
+End
+
+
+#15710
+Name The Inner Courtyard~
+Desc You have passed into the inner courtyard, which lies before the stark black
+walls of the inner keep, wherein reside the evil masters of this place.
+Guards occasionally stroll past, as does the occasional servant. The 
+servants appear to be rather lifeless and cold.
+
+The doors to the inner keep lie to the west of here.
+~
+Sector city~
+Exit north 15711
+EKeyvnum -1
+Exit east 15707
+Exit south 15712
+EKeyvnum -1
+Exit west 15715
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15711
+Name The Inner Courtyard~
+Desc You have passed into the inner courtyard, which lies before the stark black
+walls of the inner keep, wherein reside the evil masters of this place.
+Guards occasionally stroll past, as does the occasional servant. The
+servants appear to be rather lifeless and cold. There is a trapdoor covering
+a pit here.
+~
+Sector city~
+Exit east 15708
+Exit south 15710
+EKeyvnum -1
+Exit down 15713
+EFlags door closed~
+EKeyvnum -1
+EKeywords trapdoor~
+End
+
+
+#15712
+Name The Inner Courtyard~
+Desc You have passed into the inner courtyard, which lies before the stark black
+walls of the inner keep, wherein resides the evil masters of this place.
+Guards occasionally stroll past, as does the occasional servant. The
+servants appear to be rather lifeless and cold. There is a trapdoor covering
+a pit here.
+~
+Sector city~
+Exit north 15710
+EKeyvnum -1
+Exit east 15709
+EFlags door~
+Exit down 15714
+EFlags door closed~
+EKeyvnum -1
+EKeywords trapdoor~
+End
+
+
+#15713
+Name The Garbage Pit~
+Desc Here the keep's occupants dump their garbage, to be devoured by the offal-
+eating creatures they keep in here. It smells very bad.... very VERY bad...
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 15711
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15714
+Name The Crocodile Pit~
+Desc Here the master keeps his pet crocodiles, whom he feeds insubordinate guards
+or slaves to. They are rather hungry, and they would take great pleasure
+in devouring you.
+~
+RoomFlags indoors~
+Sector inside~
+Exit up 15712
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15715
+Name The Inner Keep~
+Desc You stand within the inner keep. The entry room is a small dark chamber,
+with only four wooden doors to break the monotony of the black walls.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15716
+EFlags door~
+Exit east 15710
+EFlags door~
+Exit south 15717
+EFlags door~
+Exit west 15718
+EFlags door~
+End
+
+
+#15716
+Name Guard Room~
+Desc Here some of the guards of the inner keep reside. They are not very neat,
+and there is garbage everywhere. The exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 15715
+EFlags door~
+End
+
+
+#15717
+Name Guard Room~
+Desc Here some of the guards of the inner keep reside. They are not very neat,
+and there is garbage everywhere. The exit is north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15715
+EFlags door~
+End
+
+
+#15718
+Name A Stairwell~
+Desc These steps lead up into the upper levels of the keep, or down into the
+dungeons. You can hear sounds of construction coming from below.  A door
+is in the east wall. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 15715
+EFlags door~
+Exit up 15719
+EKeyvnum -1
+Exit down 15727
+EKeyvnum -1
+End
+
+
+#15719
+Name A Stairwell~
+Desc These steps lead up into the upper levels of the keep, or down into the
+dungeons. You can hear sounds of construction coming from below. There 
+is a doorway leading east.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 15720
+EFlags door closed~
+EKeywords door~
+Exit up 15726
+EKeyvnum -1
+Exit down 15718
+EKeyvnum -1
+End
+
+
+#15720
+Name Antechamber~
+Desc This small room is totally windowless, and would be utterly dark were it
+not for your pale light source. You feel uneasy here. Far away, someone
+screams, and you shiver uncomfortably.  There are doorways on the north,
+south, and west walls.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15721
+EFlags door closed~
+EKeywords door~
+Exit south 15722
+EFlags door closed~
+EKeywords door~
+Exit west 15719
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15721
+Name Assassins' Quarters~
+Desc It looks like here is where the assassins of the keep reside, spending 
+their spare time playing cards, making poisons, killing peasant rabble
+captured by the guards, etc. They would not be impressed by your intrusion.
+The exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 15720
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15722
+Name Apprentice Quarters~
+Desc Here resides a mage of some variety.  You see magical components and
+potion ingrediants scattered around on tables, and a few full book
+cases. The exit is north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15720
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15723
+Name Antechamber~
+Desc This small room is totally windowless, and would be utterly dark were it
+not for your pale light source. You feel uneasy here. Far away, someone
+screams, and you shiver uncomfortably. There are exits to the north,
+south, and west.
+~
+RoomFlags dark indoors~
+Sector inside~
+Exit north 15724
+EFlags door closed~
+EKeywords door~
+Exit south 15725
+EFlags door closed~
+EKeywords door~
+Exit west 15726
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15724
+Name Baragar's Chambers~
+Desc From the spellbooks and equipment here, you can tell that this is where a 
+powerful warlock resides. It is rather spartan, furnished only with a small
+military cot, a desk and a shelf full of books.  There are a few obviously
+magical items on display as well. Amazing that such a wicked man would be 
+so neat and disciplined. The exit is south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 15723
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15725
+Name Alara's Chamber~
+Desc This room is sloppy and messy, filled with useless junk and piles of unwashed
+clothing. There are two large beds, covered with expensive silks and pillows.
+A set of manacles hangs from one wall, used for some perversion you don't
+care to find out more about. The exit is north.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15723
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15726
+Name A Stairwell~
+Desc These steps lead up into the upper levels of the keep, or down into the
+dungeons. You can hear sounds of construction coming from below. There is
+a doorway set in the eastern wall.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 15723
+EFlags door closed~
+EKeywords door~
+Exit up 15736
+EKeyvnum -1
+Exit down 15719
+EKeyvnum -1
+End
+
+
+#15727
+Name The Dungeons~
+Desc You are in the dank, damp and dirty dungeons of the Keep. The passage you
+are in extends west into darkness. You can hear the sounds of construction
+more clearly now.
+~
+RoomFlags indoors~
+Sector inside~
+Exit west 15728
+EKeyvnum -1
+Exit up 15718
+EKeyvnum -1
+End
+
+
+#15728
+Name The Dungeons~
+Desc You are in the dank, damp and dirty dungeons of the Keep. The passage you
+are in extends west into darkness. You can hear the sounds of construction
+more clearly now.
+
+Doors lie to the north and south of here. The southern door has strange
+runes inscribed upon it.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15729
+EFlags door closed~
+EKeyvnum -1
+EKeywords door~
+Exit east 15727
+EKeyvnum -1
+Exit south 15730
+EFlags door closed~
+EKeywords door~
+EDesc This door is inscribed with strange runes.  They seem to be runes of
+containment, although you can't be sure.
+~
+Exit west 15731
+EKeyvnum -1
+End
+
+
+#15729
+Name A Treasure Room~
+Desc This room has a huge chest cram-packed with loot in the middle of it. But
+as you enter, you feel rather uneasy about the whole situation.  The exit
+is south.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 15728
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15730
+Name A Summoning Room~
+Desc Someone uses (or used) this room for practicing their gate spells, but it
+has been long sealed for some reason.  Perhaps something unexpected and
+powerful was summoned.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15728
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15731
+Name A Junction~
+Desc You are at a rather busy junction in the dungeons. To the north runs a dark
+passage, while to the south lies a door. To the west lies the source of
+the noises you heard earlier. it is obvious that a team of workers is
+excavating down here. 
+~
+RoomFlags no_mob indoors~
+Sector inside~
+Exit north 15733
+EKeyvnum -1
+Exit east 15728
+EKeyvnum -1
+Exit south 15735
+EFlags door closed~
+EKeywords door~
+Exit west 15732
+EKeyvnum -1
+End
+
+
+#15732
+Name The Entryway to the Mines~
+Desc Here there is a crude elevator which you can use to lower yourself into
+the lower caverns, wherein the excavation is occuring. Looking down, you
+can tell that the lower caves are natural rather than manmade.
+~
+RoomFlags indoors~
+Sector inside~
+Exit east 15731
+EKeyvnum -1
+Exit down 15737
+EKeyvnum -1
+End
+
+
+#15733
+Name A Dark Passage~
+Desc This passage extends north into a large cave. The cave emits a glow visible
+from here, permeating the perpetual darkness here.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15734
+EKeyvnum -1
+Exit south 15731
+EKeyvnum -1
+End
+
+
+#15734
+Name A Fiery Cavern~
+Desc This cave is illuminated by a lava pool in the center of the room, which
+is bubbling slowly.  The heat is incredible.
+~
+RoomFlags indoors~
+Sector cave~
+Mana 40
+Heal 40
+Exit south 15733
+EKeyvnum -1
+End
+
+
+#15735
+Name A Lab~
+Desc This room was once used as a lab, but looks to be long deserted.  There
+is a huge nest of some type in the far corner, and bones and torn clothing
+are scattered about.  A few overturned and broken tables are present also.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15731
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15736
+Name The Roof of the Inner Keep~
+Desc You are standing on the roof, atop the highest point of the whole keep.
+The lands of Thera lay spread out before you, and from this windswept
+position you can see for miles. You hear the cry of some bird, and look
+above to see several vultures slowly winging their way toward the desolate
+lands to the south. 
+~
+Sector city~
+Exit down 15726
+EKeyvnum -1
+End
+
+
+#15737
+Name The Mines~
+Desc Workers rush back and forth, busily carting bags of excavated stone to and
+from the digging sites. They are intent on their work, and ignore you. You
+see some rather valuable veins of ore in the walls, left untouched, and
+you assume the treasure below must be magnificent indeed for them to ignore
+such wealth.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 15738
+EKeyvnum -1
+Exit up 15732
+EKeyvnum -1
+End
+
+
+#15738
+Name The Mines~
+Desc Workers rush back and forth, busily carting bags of excavated stone to and
+from the digging sites. They are intent on their work, and ignore you. You
+see some rather valuable veins of ore in the walls, left untouched, and
+you assume the treasure below must be magnificent indeed for them to ignore
+such wealth.
+~
+RoomFlags indoors~
+Sector cave~
+Exit north 15740
+EKeyvnum -1
+Exit south 15737
+EKeyvnum -1
+Exit west 15739
+EKeyvnum -1
+End
+
+
+#15739
+Name The Mines~
+Desc Workers rush back and forth, busily carting bags of excavated stone to and
+from the digging sites. They are intent on their work, and ignore you. You
+see some rather valuable veins of ore in the walls, left untouched, and
+you assume the treasure below must be magnificent indeed for them to ignore
+such wealth.
+~
+RoomFlags indoors~
+Sector cave~
+Exit east 15738
+EKeyvnum -1
+End
+
+
+#15740
+Name The Mines~
+Desc Workers rush back and forth, busily carting bags of excavated stone to and
+from the digging sites. They are intent on their work, and ignore you. You
+see some rather valuable veins of ore in the walls, left untouched, and
+you assume the treasure below must be magnificent indeed for them to ignore 
+such wealth.
+~
+RoomFlags indoors~
+Sector cave~
+Exit south 15738
+EKeyvnum -1
+End
+
+
+#15741
+Name The Dog Pits~
+Desc Here are kept the vicious war dogs.  You can tell by the way everthing in
+here is either torn to shreds or full of deep bite marks.
+~
+RoomFlags indoors~
+Sector inside~
+Exit south 15708
+EFlags door closed~
+EKeywords door~
+End
+
+
+#15742
+Name The Dog Pits~
+Desc Here are kept the vicious war dogs.  You can tell by the way everthing in
+here is either torn to shreds or full of deep bite marks.
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 15709
+EFlags door closed~
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 15700 spec_cast_mage
+M 15701 spec_cast_mage
+M 15702 spec_cast_undead
+M 15703 spec_cast_mage
+M 15704 spec_cast_mage
+M 15705 spec_fido
+M 15707 spec_breath_fire
+M 15708 spec_janitor
+M 15709 spec_guard
+M 15710 spec_cast_mage
+M 15713 spec_fido
+M 15714 spec_poison
+M 15715 spec_thief
+M 15716 spec_cast_mage
+M 15717 spec_janitor
+M 15718 spec_janitor
+M 15719 spec_poison
+M 15720 spec_fido
+S
+
+
+
+#RESETS2
+M 0 15709 12 15701 12
+E 0 15716 100 torso~
+E 0 15717 100 shield~
+E 0 15718 100 head~
+E 0 15719 100 wielded~
+M 0 15709 12 15702 12
+E 0 15716 100 torso~
+E 0 15717 100 shield~
+E 0 15718 100 head~
+E 0 15719 100 wielded~
+O 0 15741 0 15703
+M 0 15709 12 15703 12
+E 0 15716 100 torso~
+E 0 15717 100 shield~
+E 0 15718 100 head~
+E 0 15719 100 wielded~
+M 0 15709 12 15704 12
+E 0 15716 100 torso~
+E 0 15717 100 shield~
+E 0 15718 100 head~
+E 0 15719 100 wielded~
+O 0 15738 0 15707
+M 0 15708 12 15708 12
+O 0 15739 0 15709
+M 0 15708 12 15709 12
+M 0 15705 8 15710 8
+E 0 15713 100 wielded~
+E 0 15714 100 torso~
+O 0 15740 0 15711
+O 0 15740 0 15712
+M 0 15720 1 15713 1
+O 0 15736 0 15713
+M 0 15713 4 15714 4
+M 0 15705 8 15716 8
+E 0 15713 100 wielded~
+E 0 15714 100 torso~
+M 0 15705 8 15717 8
+E 0 15713 100 wielded~
+E 0 15714 100 torso~
+M 0 15708 12 15718 12
+M 0 15708 12 15719 12
+M 0 15715 4 15721 4
+E 0 15725 100 about~
+E 0 15726 100 wielded~
+M 0 15710 1 15722 1
+E 0 15720 100 about~
+E 0 15721 100 wielded~
+E 0 15722 100 hold~
+M 0 15706 1 15723 1
+O 0 15737 0 15723
+M 0 15708 12 15723 12
+M 0 15700 1 15724 1
+E 0 15700 100 about~
+E 0 15701 100 hold~
+E 0 15702 100 wielded~
+E 0 15703 100 head~
+M 0 15704 1 15724 1
+M 0 15701 1 15725 1
+E 0 15710 100 wielded~
+E 0 15711 100 hold~
+E 0 15704 100 torso~
+P 0 15705 1 15704 1
+P 0 15706 1 15704 1
+P 0 15707 1 15704 1
+P 0 15708 1 15704 1
+P 0 15709 1 15704 1
+M 0 15703 1 15725 1
+M 0 15708 12 15726 12
+M 0 15716 1 15726 1
+E 0 15727 100 wielded~
+E 0 15728 100 lfinger~
+E 0 15728 100 rfinger~
+E 0 15729 100 feet~
+E 0 15730 -1 about~
+M 0 15712 1 15729 1
+O 0 15723 0 15729
+O 0 15723 0 15729
+M 0 15702 1 15730 1
+M 0 15717 10 15732 10
+E 0 15731 100 wielded~
+O 0 15733 0 15732
+M 0 15707 1 15734 1
+E 0 15715 100 about~
+M 0 15711 1 15735 1
+O 0 15741 0 15736
+M 0 15717 10 15737 10
+E 0 15732 100 wielded~
+O 0 15733 0 15737
+M 0 15717 10 15738 10
+E 0 15731 100 wielded~
+O 0 15733 0 15738
+M 0 15718 4 15738 4
+E 0 15732 100 wielded~
+M 0 15717 10 15739 10
+E 0 15732 100 wielded~
+O 0 15733 0 15739
+M 0 15719 1 15739 1
+E 0 15735 -1 lwrist~
+G 0 15734 100
+M 0 15717 10 15740 10
+E 0 15731 100 wielded~
+O 0 15733 0 15740
+M 0 15718 4 15740 4
+E 0 15731 100 wielded~
+M 0 15714 6 15741 6
+E 0 15724 100 neck1~
+M 0 15714 6 15742 6
+E 0 15724 100 neck1~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

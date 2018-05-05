@@ -1,0 +1,906 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        In the Trees~
+ShortName   Sarsis~
+Builders    None~
+Credits     Khan~
+VNUMs       12368 12389
+LRange      1 30
+Security    9
+Colour      G~
+colourcode  `
+MapScale    7
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#12368
+Name squirrel little~
+ShortD a little squirrel~
+LongD A little squirrel is here, chewing nuts.~
+Desc A cute little squirrel with its cheeks full of little acorns.  It looks at 
+you with wide little eyes and sniffs at your feet with its tiny little nose.
+~
+Race unique~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+110
+DamDice 1d6+0
+DamType scratch
+AC 70 70 70 70
+Wealth 0
+Act    npc wimpy~
+Form   edible animal mountable~
+Part   head arms legs heart brains ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#12369
+Name sarsi monk~
+ShortD a sarsi monk~
+LongD A sarsi monk is here, deep in meditation.~
+Desc This is a sarsi monk deep in meditation.  He has a little bald spot on his 
+head and looks rather happy in his oneness with nature.  This monk stands at 
+about 5 foot tall and seems tall for his kind.  
+~
+Race unique~
+Align 2 3
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 3d5+195
+DamDice 2d8+10
+DamType pound
+AC -40 -40 -40 -40
+Wealth 200
+Act    npc dont_wander no_tame stay_area cleric~
+AffBy  detect_evil detect_invis sanctuary regeneration~
+Off    disarm dodge~
+Imm    fire poison holy disease wood~
+Form   edible biped~
+Part   head arms legs heart brains hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material unknown
+END
+
+#12370
+Name sarsi child~
+ShortD a sarsi child~
+LongD A sarsi child rubbing two sticks together.~
+Desc A sarsi child is here apparently using non-violent means to start a fire to 
+cook raw leaves.  The child wears clothes made of wood and leaves and it has 
+the cute appearance of a small hairless child.  All the sarsi children seem 
+to be very short and hairless.  
+~
+Race unique~
+Align 2 3
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+120
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 50
+Wealth 50
+Act    npc no_tame stay_area wimpy~
+AffBy  detect_evil detect_invis detect_hidden~
+Imm    fire poison holy disease wood~
+Form   edible~
+Part   head arms legs heart brains hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#12371
+Name sarsi elder~
+ShortD a sarsi elder~
+LongD A sarsi elder is here, with a stern look on his face.~
+Desc This sarsi elder seems rather old and wisened from years and years of life.  
+He looks rather impervious to anything around him.  He stands about 6 feet 
+tall which is extremely rare for a sarsi.  He also has a beard and it 
+appears that only the elder is able to grow a beard.  Other then the beard 
+the elder is completely hairless.  
+~
+Race unique~
+Align 2 3
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d5+245
+DamDice 4d6+8
+DamType bite
+AC -90 -90 -90 -90
+Wealth 300
+Act    npc dont_wander no_tame stay_area~
+AffBy  detect_evil detect_invis sanctuary protect_good haste regeneration~
+Off    dodge dirt_kick~
+Imm    summon fire poison holy disease wood~
+Form   edible~
+Part   head arms legs heart brains hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12372
+Name sarsi male~
+ShortD a sarsi male~
+LongD A sarsi male is here, looking at a tree.~
+Desc A sarsi male is here looking at some tree in the far off distance.  He seems 
+particularly interested in the tall trees.  He has little or no body hair 
+and is completely bald.  He stands about 4 to 5 feet tall and has the 
+appearance of a shrunken human.  
+~
+Race unique~
+Align 2 3
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+155
+DamDice 1d10+3
+DamType bite
+AC 0 0 0 0
+Wealth 120
+Act    npc no_tame stay_area~
+AffBy  detect_evil detect_invis~
+Off    dirt_kick~
+Imm    fire poison holy disease wood~
+Form   edible~
+Part   head arms legs heart brains hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#12373
+Name sarsi female~
+ShortD a sarsi female~
+LongD A sarsi female is here, staring at the leaves.~
+Desc A sarsi female is here staring at some pattern in the leaves.  She seems to 
+enjoy doing this for long periods of time.  She is dressed in clothes made 
+from leaves and branches and seems to have very thin hair.  In fact it seems 
+the females are the only ones able to grow hair past their eyebrows.  
+~
+Race unique~
+Align 2 3
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+145
+DamDice 2d4+2
+DamType bite
+AC 10 10 10 10
+Wealth 100
+Act    npc no_tame stay_area~
+AffBy  detect_evil detect_invis~
+Off    dirt_kick~
+Imm    fire poison holy disease wood~
+Form   edible~
+Part   head arms legs heart brains hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#12368
+Name large branch~
+Short a large branch~
+Desc A large branch with little grooves has been left here.~
+Level 5
+ItemType weapon~
+Cost 105
+Asize 0
+Rsize 50
+Values mace 1 10 smash 0
+Weight 5
+Material wood~
+Extra    antievil nonmetal nodegrade~
+Wear     take wield~
+ClassAllowances cleric druid~
+ExtraDesc large branch~
+A large branch with little grooves.
+~
+End
+
+#12369
+Name cloak leaves~
+Short a cloak made from `#`Gleaves`^~
+Desc A cloak made from `#`Gleaves`^ has been left here.~
+Level 10
+ItemType armor~
+Cost 200
+Asize 0
+Rsize 50
+Values 3 3 3 4 0
+Weight 10
+Material wood~
+Extra    antievil nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 10 -1 memory 1 0
+ExtraDesc cloak leaves~
+A cloak made from the leaves of many trees.
+~
+End
+
+#12370
+Name pair wooden pants~
+Short a pair of `#`ywooden`^ pants~
+Desc A pair of `#`ywooden`^ pants lie here.~
+Level 11
+ItemType armor~
+Cost 220
+Asize 0
+Rsize 50
+Values 3 3 3 2 0
+Weight 2
+Material wood~
+Extra    antievil nonmetal nodegrade~
+Wear     take legs~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 11 -1 ac -5 0
+ExtraDesc pair wooden pants~
+A pair of pants seemingly made of wood.
+~
+End
+
+#12371
+Name old wooden medallion~
+Short an old `#`ywooden`^ medallion~
+Desc A wooden medallion with some grooves and knots in the shapes of magical symbols.~
+Level 25
+ItemType armor~
+Cost 250
+Asize 0
+Rsize 50
+Values 3 4 3 1 0
+Weight 2
+Material wood~
+Extra    antievil nonmetal nodegrade~
+Wear     take neck~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 25 -1 move 5 0
+Affect modifier -1 25 -1 mana 20 0
+Affect modifier -1 25 -1 selfdiscipline 1 0
+ExtraDesc old wooden medallion~
+A wooden medallion with grooves and knots in the shapes of magical symbols.
+~
+End
+
+#12372
+Name pair wooden gloves~
+Short a pair of `#`ywooden`^ gloves~
+Desc A pair of `#`ywooden`^ gloves have been left here.~
+Level 17
+ItemType armor~
+Cost 340
+Asize 0
+Rsize 50
+Values 3 4 3 3 0
+Weight 1
+Material wood~
+Extra    antineutral nonmetal nodegrade~
+Wear     take hands~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 17 -1 hitroll 2 0
+ExtraDesc wooden gloves~
+A pair of seemingly wooden gloves.
+~
+End
+
+#12373
+Name leaf ring~
+Short a `#`Gleaf`^ ring~
+Desc A `#`Gleaf`^ ring lies here.~
+Level 30
+ItemType jewelry~
+Cost 460
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material wood~
+Extra    glow nonmetal nodegrade burnproof~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 30 -1 constitution 2 0
+Affect modifier -1 30 -1 selfdiscipline 1 0
+ExtraDesc leaf ring compressed~
+A ring made of compressed leaves.
+~
+End
+
+#12374
+Name book engraved leaves branches~
+Short a book engraved with leaves and branches~
+Desc A book engraved with leaves and branches.~
+Level 1
+ItemType trash~
+Cost 500
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material paper~
+Extra    nonmetal nodegrade burnproof~
+Wear     take~
+ExtraDesc book~
+It seems to be a book about the Sarsi but you can't seem to read the old 
+script, maybe you should find a librarian.
+~
+End
+
+#12375
+Name long cloak of leaves~
+Short a long cloak of `#`Glea`gve`Gs`^~
+Desc A long cloak of `#`Glea`gve`Gs`^ lies here.~
+Level 30
+ItemType armor~
+Cost 103
+Asize 0
+Rsize 50
+Values 8 8 8 7 0
+Weight 10
+Material leaves~
+Extra    antineutral nonmetal nodegrade~
+Wear     take torso~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 30 -1 damroll 2 0
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 mana 20 0
+End
+
+#12376
+Name woven sleeves~
+Short a pair of woven sleeves~
+Desc A pair of woven sleeves lie here.~
+Level 30
+ItemType armor~
+Cost 103
+Asize 0
+Rsize 50
+Values 7 7 7 6 0
+Weight 10
+Material leaves~
+Extra    antineutral nonmetal nodegrade~
+Wear     take arms~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 30 -1 presence 2 0
+Affect modifier -1 30 -1 selfdiscipline 2 0
+End
+
+#12377
+Name wooden cuff~
+Short a `#`ywooden`^ cuff~
+Desc A `#`ywooden`^ cuff is here.~
+Level 20
+ItemType armor~
+Cost 35
+Asize 0
+Rsize 50
+Values 6 6 6 5 0
+Weight 20
+Material wood~
+Extra    nonmetal nodegrade~
+Wear     take wrist~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 20 -1 ac -10 0
+End
+
+#12378
+Name soft green cape~
+Short a soft green cape~
+Desc A soft green cape lies here.~
+Level 20
+ItemType armor~
+Cost 103
+Asize 0
+Rsize 50
+Values 4 4 4 3 0
+Weight 10
+Material leaves~
+Extra    antineutral nonmetal nodegrade~
+Wear     take about~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 20 -1 quickness 1 0
+Affect modifier -1 20 -1 intuition 1 0
+End
+
+#12379
+Name threaded belt~
+Short a threaded belt~
+Desc A threaded belt lies here.~
+Level 30
+ItemType armor~
+Cost 25
+Asize 0
+Rsize 50
+Values 6 6 6 5 0
+Weight 12
+Material leather~
+Extra    nonmetal nodegrade~
+Wear     take waist~
+ClassAllowances mage cleric thief druid ranger spellfilcher~
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 saves -4 0
+End
+
+#0
+
+
+
+#ROOMS
+#12368
+Name In the Trees~
+Desc You are now high up in the great trees of the Sarsi.  Looking around you 
+see bridges seemingly made out of branches stretching across the air to 
+unknown destinations.  The tree you are on appears to be taller then the 
+others.
+~
+Sector forest~
+Exit north 12387
+EDesc Bridge made from Branches.
+~
+Exit west 12370
+EDesc Bridge made from Branches.
+~
+Exit up 12369
+EDesc High in the Great Sarsi Tree.
+~
+End
+
+
+#12369
+Name High in the Great Sarsi Tree~
+Desc You appear to be in some sort of temple built across the highest branches 
+of this ancient Sarsi tree.  Little wooden candles sprout from the branches 
+themselves and it shows the obvious connection with nature these Sarsi 
+people must have.  You can leave back down.
+~
+Sector forest~
+Exit down 12368
+EDesc In the Trees.
+~
+End
+
+
+#12370
+Name Bridge made from Branches~
+Desc You appear to be walking on the interwinding of two branches of separate 
+trees.  The path is nice and wide and little knots are nicely placed to 
+allow better grip.  There is an extreme harmony of nature here.  You can 
+head east or west.
+~
+Sector forest~
+Exit east 12368
+EDesc In the Trees.
+~
+Exit west 12379
+End
+
+
+#12371
+Name Bridge made from Branches~
+Desc You are now at the end of this bridge and you can see the next tree to your 
+west.  The birds are chirping here and a little woodchuck scurries away 
+when you step near.  The tree to the west seems to have a little hole in it 
+which looks just big enough for you to climb in.  You may go east or west.
+~
+Sector forest~
+Exit east 12379
+Exit west 12372
+EDesc On Top of a Great Sarsi Tree.
+~
+End
+
+
+#12372
+Name On Top of a Great Sarsi Tree~
+Desc You are now right beside a knothole in the tree itself.  You can also head 
+north along what looks like another branch bridge.  The smell of wet wood 
+is in the air and you might have glimpsed a pair of glowing eyes from the 
+hole.  You can head north, east or down into the hole.
+~
+Sector forest~
+Exit north 12374
+EDesc Bridge made from Branches.
+~
+Exit east 12371
+EDesc Bridge made from Branches.
+~
+Exit down 12373
+EDesc Inside a Knothole.
+~
+End
+
+
+#12373
+Name Inside a Knothole~
+Desc You appear to have squeezed into a little room made entirely out of bark.  
+Little tables and chairs seemed to have sprouted out of the tree itself.  
+You assume a family of Sarsi lives here by the many little wooden toys 
+spread around the floor.  Many look peaceful and most are of animals and 
+plants.  You can leave up or stay for a bit.
+~
+RoomFlags dark~
+Sector forest~
+Exit up 12372
+EDesc On Top of a Great Sarsi Tree.
+~
+End
+
+
+#12374
+Name Bridge made from Branches~
+Desc You appear to be heading towards another tree which looks almost exactly 
+the same as the one to the south of you.  There also appears to be a 
+knothole in this tree.  You can head north or south.
+~
+Sector forest~
+Exit north 12375
+EDesc Bridge made from Branches.
+~
+Exit south 12372
+EDesc On Top of a Great Sarsi Tree.
+~
+End
+
+
+#12375
+Name Bridge made from Branches~
+Desc You seem to be heading a little higher in the trees and the tree in front 
+of you is so identical to the one to the south that you wonder if it is 
+just the same tree split in half.  The birds are still chirping.  You can 
+head north or south.
+~
+Sector forest~
+Exit north 12377
+EDesc On Top of a Great Sarsi Tree.
+~
+Exit south 12374
+EDesc Bridge made from Branches.
+~
+End
+
+
+#12376
+Name Inside a Knothole~
+Desc This appears to be a library of sorts.  Perfectly shaped bookshelves are 
+all around the room and for some reason you don't see any books.  Maybe 
+they read trees?  You can leave up.
+~
+RoomFlags dark~
+Sector forest~
+Exit up 12377
+EDesc On Top of a Great Sarsi Tree.
+~
+End
+
+
+#12377
+Name On Top of a Great Sarsi Tree~
+Desc You are on top of a great Sarsi tree and a knothole is just below you 
+looking rather inviting for a knothole.  You hear all the sounds of nature 
+around you with that rather content little breeze blowing by.  You can go 
+down into the knothole, east or south.
+~
+Sector forest~
+Exit east 12378
+EDesc Bridge made from Branches.
+~
+Exit south 12375
+EDesc Bridge made from Branches.
+~
+Exit down 12376
+EDesc Inside a Knothole.
+~
+End
+
+
+#12378
+Name Bridge made from Branches~
+Desc You are on a bridge made by two branches from two separate trees.  The 
+little knotholes are placed perfectly for optimum grip.  To the northeast 
+is a smaller bridge and west is a great Sarsi tree.
+~
+Sector forest~
+Exit west 12377
+EDesc On Top of a Great Sarsi Tree.
+~
+Exit northeast 12381
+End
+
+
+#12379
+Name Bridge made from Branches~
+Desc You appear to be walking on the interwinding of two branches of separate 
+trees.  The path is nice and wide and little knots are nicely placed to 
+allow better grip.  There is an extreme harmony of nature here.  You can 
+head east or west.  
+~
+Sector forest~
+Exit east 12370
+Exit west 12371
+End
+
+
+#12381
+Name Intersection of Small Branch Bridges~
+Desc The two small branch bridges seem to intersect here.  To the immediate 
+north is the strange looking tree with the steps and there is a strange 
+peace here.  You can go southwest, southeast or north.
+~
+Sector forest~
+Exit north 12382
+EDesc Stairs leading up the Tree.
+~
+Exit southeast 12384
+Exit southwest 12378
+End
+
+
+#12382
+Name Stairs leading up the Tree~
+Desc You are on the bottom step of a huge tree and there is a huge sense 
+of peace and harmony with nature here.  Its almost as if the steps were 
+created by the tree itself.  Above you can see a glowing light of some 
+sort.  You can head up or south.
+~
+Sector forest~
+Exit south 12381
+EDesc Intersection of Small Branch Bridges.
+~
+Exit up 12383
+EDesc Top of the Highest Sarsi Tree.
+~
+Exit down 30302
+EDesc Down to the ground.
+~
+End
+
+
+#12383
+Name Top of the Highest Sarsi Tree~
+Desc You are now extremely high above the continent and think you can spot your 
+city from here.  The wind seems to sing here and no birds are chirping for 
+some reason.  Some sort of groove in the top of the tree is here looking a 
+lot like some sort of firepit.  A leaf falls from a branch nearby and you 
+think you might have heard a scream but it was probably the wind.  You can 
+leave down.
+~
+Sector forest~
+Exit down 12382
+EDesc Stairs leading up the Tree.
+~
+End
+
+
+#12384
+Name Bridge made from Branches~
+Desc You are on a bridge made by two branches from two separate trees.  The 
+little knotholes are placed perfectly for optimum grip.  To the northwest 
+is a smaller bridge and east is a great Sarsi tree.
+~
+Sector forest~
+Exit east 12385
+EDesc On Top of a Great Sarsi Tree.
+~
+Exit northwest 12381
+End
+
+
+#12385
+Name On Top of a Great Sarsi Tree~
+Desc You are on top of a great Sarsi tree and a knothole is just below you 
+looking rather inviting for a knothole.  You hear all the sounds of nature 
+around you with a rather content little breeze blowing by.  You can go down 
+into the knothole, west or south.
+~
+Sector forest~
+Exit south 12386
+EDesc Bridge made from Branches.
+~
+Exit west 12384
+EDesc Bridge made from Branches.
+~
+Exit down 12388
+EDesc Inside a Knothole.
+~
+End
+
+
+#12386
+Name Bridge made from Branches~
+Desc You are on top of two branches wrapped around each other from separate 
+trees.  There are convenient knotholes everywhere and there is no fear of 
+falling as it seems the leaves would catch you somehow anyways.  You may go 
+north or south.
+~
+Sector forest~
+Exit north 12385
+EDesc On Top of a Great Sarsi Tree.
+~
+Exit south 12387
+EDesc Bridge made from Branches.
+~
+End
+
+
+#12387
+Name Bridge made from Branches~
+Desc You are on top of a bridge made from two branches off of two separate 
+trees.  Somehow this is a very sturdy bridge and the sounds of nature can 
+be heard everywhere along with a woodchuck in the distance chewing on some 
+kind of nut.  You may go north or south.
+~
+Sector forest~
+Exit north 12386
+EDesc Bridge made from Branches.
+~
+Exit south 12368
+EDesc In the Trees.
+~
+End
+
+
+#12388
+Name Inside a Knothole~
+Desc You are in a very small knothole and the room appears to be some sort of 
+school.  Little stools and tables are carved out of the wood by some 
+natural means and there is no garbage to be found.  Whoever lives here must 
+be very clean.  You can leave up.
+~
+RoomFlags dark~
+Sector forest~
+Exit up 12385
+EDesc On Top of a Great Sarsi Tree.
+~
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 12368 7 12368 1
+M 0 12369 1 12369 1
+E 0 12371 111 neck1~
+E 0 12377 -1 lwrist~
+E 0 12377 -1 rwrist~
+E 0 12378 -1 about~
+M 0 12372 11 12370 1
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12373 8 12370 1
+E 0 12368 111 wielded~
+E 0 12369 111 about~
+M 0 12372 11 12371 1
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12373 8 12371 1
+E 0 12368 111 wielded~
+E 0 12369 -1 about~
+M 0 12372 11 12372 1
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12370 10 12373 3
+M 0 12370 10 12373 3
+M 0 12370 10 12373 3
+M 0 12373 8 12373 1
+E 0 12368 111 wielded~
+E 0 12369 111 about~
+M 0 12372 11 12374 1
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12368 7 12375 2
+M 0 12368 7 12375 2
+M 0 12370 10 12376 2
+M 0 12370 10 12376 2
+M 0 12372 11 12376 1
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12373 8 12376 1
+E 0 12368 111 wielded~
+E 0 12369 111 about~
+M 0 12368 7 12377 1
+M 0 12372 11 12378 1
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12373 8 12378 1
+E 0 12368 111 wielded~
+E 0 12369 111 about~
+M 0 12368 7 12381 1
+M 0 12368 7 12381 1
+M 0 12372 11 12382 2
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12372 11 12382 2
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12371 1 12383 1
+E 0 12373 111 lfinger~
+E 0 12375 -1 torso~
+E 0 12376 -1 arms~
+E 0 12379 -1 waist~
+M 0 12372 11 12384 1
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12373 8 12385 2
+E 0 12368 111 wielded~
+E 0 12369 111 about~
+M 0 12373 8 12385 2
+E 0 12368 111 wielded~
+E 0 12369 111 about~
+M 0 12370 10 12385 1
+M 0 12372 11 12386 1
+E 0 12368 111 wielded~
+E 0 12370 111 legs~
+E 0 12372 111 hands~
+M 0 12368 7 12387 1
+M 0 12373 8 12387 1
+E 0 12368 -1 wielded~
+E 0 12369 -1 about~
+M 0 12370 10 12388 4
+M 0 12370 10 12388 4
+M 0 12370 10 12388 4
+E 0 12374 111 hold~
+M 0 12370 10 12388 4
+M 0 12372 11 12388 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

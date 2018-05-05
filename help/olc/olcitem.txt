@@ -1,0 +1,199 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword OLC-ITEM-TOKEN~
+title OBJECT TYPE: Token - Flags~
+helpflags builder~
+category olc:oedit:item~
+text Flags Available:
+ 
+`#`WDropdeath `^- `y(what it suggests) :p`^
+`#`WQuitdeath `^- `yToken will disappear when character quits.`^
+`#`y            Tokens will remain across hotreboots however.`^
+~
+END
+
+keyword OLC-ITEM-LIGHT~
+title OBJECT TYPE: Light - Values~
+helpflags builder~
+category olc:oedit:item~
+text .   value 0    unused
+   value 1    unused
+   value 2    hours of light available, 0 is dead, -1 or 999 is infinite
+   value 3    unused
+   value 4    unused
+~
+END
+
+keyword OLC-ITEM-STAFF-WAND~
+title OBJECT TYPE: Staff/Wand - Values~
+helpflags builder~
+category olc:oedit:item~
+text .   value 0    level
+   value 1    max charges
+   value 2    current charges
+   value 3    spell name
+   value 4    unused
+ 
+ 
+An up-to-date list of spells can be obtained by typing:
+? SPELLS [ignore/attack/defend/self/object/all]
+~
+END
+
+keyword OLC-ITEM-SCROLL-POTION-PILL~
+title OBJECT TYPE: Scroll/Potion/Pill - Values~
+helpflags builder~
+category olc:oedit:item~
+text .   value 0    level
+   value 1    spell name 1
+   value 2    spell name 2
+   value 3    spell name 3
+   value 4    spell name 4
+ 
+An up-to-date list of spells can be obtained by typing:
+? SPELLS [ignore/attack/defend/self/object/all]
+~
+END
+
+keyword OLC-ITEM-ARMOR OLC-ITEM-ARMOUR~
+title OBJECT TYPE: Armour - Values~
+helpflags builder~
+category olc:oedit:item~
+see_also OLC-ARMS-AND-ARMOUR OLCBALANCE-ACVALUE~
+text .   value 0    ac pierce
+   value 1    ac bash
+   value 2    ac slash
+   value 3    ac exotic (magic)
+   value 4    unused
+~
+END
+
+keyword OLC-ITEM-WEAPON~
+title OBJECT TYPE: Weapon - Values~
+helpflags builder~
+category olc:oedit:item~
+see_also OLC-ARMS-AND-ARMOUR OLC-SPECIAL-DAM~
+text .   value 0    weapon class.
+   value 1    number of dice to roll.
+   value 2    type of dice to roll.
+   value 3    weapon type.
+   value 4    special weapon type.
+ 
+An up-to-date list of values can be obtained by typing
+? WCLASS
+help WEAPON_DICE
+? WEAPON
+? WTYPE
+ 
+The table for weapon damage per level is on `rhelp `=_OLCBALANCE-WDAMAGE
+The guidelines for weapon modifiers are at `rhelp `=_OLCBALANCE-WMODIFY
+ 
+~
+END
+
+keyword OLC-ITEM-CONTAINER~
+title OBJECT TYPE: Container - Values~
+helpflags builder~
+category olc:oedit:item~
+text .   value 0    max weight
+   value 1    flags: closeable, pickproof, closed, locked, puton           
+   value 2    key vnum
+   value 3    capacity
+   value 4    weight multiplier
+ 
+Notes: v0 = is the maximum weight the container can hold... that is obtained 
+by adding all objects in the containers true weights together.
+v3 = is the maximum weight any single object can be to be able to be put 
+inside the container
+ 
+An up-to-date list of flags can be obtained by typing
+? CONTAINER
+~
+END
+
+keyword OLC-ITEM-DRINK~
+title OBJECT TYPE: Drink - Values~
+helpflags builder~
+category olc:oedit:item~
+text .   value 0    capacity
+   value 1    current quantity
+   value 2    liquid type
+   value 3    poisoned?
+   value 4    unused
+ 
+An up-to-date list of liquid types can be obtained by typing
+? LIQUID
+~
+END
+
+keyword OLC-ITEM-FOOD~
+title OBJECT TYPE: Food - Values~
+category olc:oedit:item~
+text .   value 0    hours of food value
+   value 1    unused
+   value 2    unused
+   value 3    poisoned?
+   value 4    unused
+~
+END
+
+keyword OLC-ITEM-MONEY~
+title OBJECT TYPE: Money - Values~
+helpflags builder~
+category olc:oedit:item~
+text .   value 0    value in silver pieces
+   value 1    value in gold pieces
+   value 2    unused
+   value 3    unused
+   value 4    unused
+~
+END
+
+keyword OLC-ITEM-POULTICE~
+title OBJECT TYPE: Poultice - Values~
+category olc:oedit:item~
+text .   value 0    spell level
+   value 1    total number of applications
+   value 2    current number of applications
+   value 3    spell name
+   value 4    unused
+ 
+ 
+An up-to-date list of spells can be obtained by typing:
+? SPELLS [ignore/attack/defend/self/object/all]
+~
+END
+
+keyword OLC-ITEM-FURNITURE~
+title OBJECT TYPE: Furniture - Values~
+helpflags builder~
+category olc:oedit:item~
+text .  `=Cv`=?alue `=C0`=?   max people (suggested range 1 to 1000). 
+  `=Cv`=?alue `=C1`=?   max weight (typically v1 * 20). 
+  `=Cv`=?alue `=C2`=?   furniture flags, these include:
+stand_at           stand_on           stand_in           stand_under        
+sit_at             sit_on             sit_in             sit_under          
+rest_at            rest_on            rest_in            rest_under         
+sleep_at           sleep_on           sleep_in           sleep_under        
+put_at             put_on             put_in             put_inside         
+put_under          kneel_at           kneel_on           kneel_in           
+kneel_under 
+ 
+  `=Cv`=?alue `=C3`=?   healing bonus as a % increase or decrease 
+            (modifies a players hp regeneration rate when they are "on it".
+            item requires sit, sleep, or something like that in v2). 
+ 
+  `=Cv`=?alue `=C4`=?   mana bonus as a % increase or decrease
+           (modifies a players mana regeneration rate when they are "on it". 
+            item requires sit, sleep, or something like that in v2). 
+  
+An up-to-date list of furniture flags can be obtained by typing: `=C? furniture`=?
+~
+END
+
+EOF~
+#$

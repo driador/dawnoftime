@@ -1,0 +1,3631 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69s Development Site~
+*parent_codebase 1.69s-Beta4
+Name        Dawn Resources~
+ShortName   ~
+Builders    None~
+Credits     Kalahn Reave Rathern ...~
+VNUMs       1 499
+LComment    [  N/A  ]
+AFlags  noteleport noscry hidden~
+Security    9
+Colour      B~
+colourcode  `
+MapScale    0
+MapLevel    1
+Vnum_offset 0
+Continent   none~
+*LastSaved  Wed Jan 3 23:48:10 2007~
+End
+
+
+
+#MOBILES
+#1
+Name death~
+ShortD death!~
+LongD You see Death, sitting on an undescribable throne.~
+Desc You are looking at the end and the beginning of Life as you know it.  It is 
+both beautiful and dreadful, fearful and calm, quiet and exciting, enticing 
+and cold.  All in One.  
+~
+Race human~
+Align 0 0
+Level 200
+Hitroll 20
+HitDice 15d15+1000
+ManaDice 10d10+1000
+DamDice 30d20+100
+DamType wrath
+AC -500 -500 -500 -500
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  detect_invis detect_hidden haste dark_vision~
+Off    area_attack backstab disarm dodge fade fast~
+Res    magic weapon fire cold lightning acid~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#2
+Name welcome death mob1~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area nopurge unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 2 100~
+END
+
+#3
+Name welcome death mob2~
+ShortD (no short description)~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc dont_wander stay_area nopurge unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+MProg GRALL 3 100~
+END
+
+#50
+Name little brown bat~
+ShortD a little brown bat~
+LongD A little brown bat flies overhead here.~
+Desc This small creature looks like a rodent with wings.
+~
+Race bat~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+2
+ManaDice 1d4+105
+DamDice 1d5+0
+DamType scratch
+AC 80 80 80 80
+Wealth 20
+Act    npc wimpy~
+AffBy  flying dark_vision~
+Off    dodge fast assist_race assist_vnum~
+Imm    sound~
+Res    bash~
+Vuln   light~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet fingers ear eye wings claws~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+END
+
+#51
+Name black rabbit~
+ShortD a black rabbit~
+LongD A black rabbit sits quietly here.~
+Desc This small, furry creature has long ears, a small tail, large feet, and 
+black fur.  It is most often seen innocently hopping about.
+~
+Race rabbit~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d5+110
+DamDice 1d6+0
+DamType bite
+AC 70 70 70 70
+Wealth 30
+Act    npc wimpy~
+AffBy  detect_evil~
+Off    dodge fast~
+Res    sound~
+Form   edible animal mammal~
+Part   head arms legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#52
+Name three legged dog~
+ShortD a three legged dog~
+LongD A three legged dog hobbles about here.~
+Desc This grey dog has only three legs, but, oddly enough, it looks strangely 
+like it's supposed to be that way.  There is no stump or ragged fur, just a 
+smooth area where its shoulder should be.
+~
+Race dog~
+Align 0 0
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+115
+DamDice 1d5+1
+DamType bite
+AC 60 60 60 60
+Wealth 40
+Act    npc~
+AffBy  detect_evil~
+Off    dodge fast assist_race assist_vnum~
+Form   edible animal mammal~
+Part   head arms legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#53
+Name huge black wolf~
+ShortD a huge black wolf~
+LongD A huge black wolf stalks about here.~
+Desc This black wolf is much larger than most wolves, standing well over three 
+feet at the shoulders.  Intense black eyes look out at the world, seeming 
+to regard everything as prey.
+~
+Race wolf~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+145
+DamDice 2d4+2
+DamType chomp
+AC 10 10 10 10
+Wealth 100
+Act    npc aggressive~
+AffBy  detect_hidden dark_vision~
+Off    dodge fast assist_race assist_vnum~
+Vuln   pierce~
+Form   edible animal mammal~
+Part   head arms legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+END
+
+#54
+Name tiny newt~
+ShortD a tiny newt~
+LongD A tiny newt looks for a patch of sun here.~
+Desc This tiny reptilian creature is undoubtably a newt.  It has large feet and 
+a thin, lithe body, which is a mix of bright reds and yellows.
+~
+Race lizardman~
+Align 0 0
+Level 2
+Hitroll 0
+HitDice 1d4+6
+ManaDice 1d4+105
+DamDice 1d5+0
+DamType none
+AC 80 80 80 80
+Wealth 20
+Act    npc~
+Off    dodge fast~
+Imm    poison~
+Res    bash disease~
+Vuln   cold~
+Form   edible poison sentient biped mountable reptile amphibian cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail scales~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+END
+
+#55
+Name large brown bear~
+ShortD a large brown bear~
+LongD A large brown bear is here.~
+Desc This large brown bear has sharp claws and looks to be quite hungry.
+~
+Race bear~
+Align 0 0
+XPMod 105
+Level 12
+Hitroll 0
+HitDice 2d5+45
+ManaDice 2d5+155
+DamDice 1d10+5
+DamType claw
+AC 0 0 0 0
+Wealth 120
+Act    npc~
+AffBy  berserk slow~
+Off    berserk disarm crush~
+Res    bash cold~
+Vuln   bash disease~
+Form   edible animal mountable mammal~
+Part   head arms legs heart brains guts feet ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#56
+Name huge grinning troll~
+ShortD a huge grinning troll~
+LongD A huge grinning troll is here.~
+Desc Nothing quite inspires fear in the majority of the inhabitants of the land 
+the way a troll does, and it's easy to see why.  He has great, yellowed 
+teeth and a heavily muscled body, which would be enough to inspire fear 
+into the average man, but, in addition, his eyes bear a wicked, intense 
+gleam.  He looks to enjoy pulling smaller things apart.
+~
+Race troll~
+Align -1 -1
+Level 14
+Hitroll 0
+HitDice 2d5+55
+ManaDice 2d5+165
+DamDice 1d12+3
+DamType punch
+AC -10 -10 -10 -10
+Wealth 140
+Act    npc scavenger no_tame aggressive warrior~
+AffBy  detect_hidden infrared berserk regeneration~
+Off    bash berserk dodge parry assist_race assist_vnum~
+Res    charm bash acid~
+Vuln   fire acid poison~
+Form   edible poison sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    male~
+Material unknown
+END
+
+#57
+Name green black bird~
+ShortD a green and black bird~
+LongD A green and black bird flies overhead here.~
+Desc This small bird has a black body with bright green wings and tail feathers. 
+ It looks to be quite agile, as if it could easily fly circles around most 
+other birds.  Its form is so perfect that it almost seems to be a product 
+of magic instead of nature.
+~
+Race song bird~
+Align 1 1
+XPMod 140
+Level 4
+Hitroll 0
+HitDice 2d4+1
+ManaDice 2d4+150
+DamDice 1d5+1
+DamType peck
+AC 20 20 20 60
+Wealth 40
+Act    npc mage~
+AffBy  detect_evil protect_evil flying haste~
+Off    dodge fast assist_players~
+Res    charm~
+Vuln   weapon~
+Form   edible magical animal mountable bird~
+Part   head legs heart brains guts feet eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#58
+Name tall sturdy tree~
+ShortD a tall sturdy tree~
+LongD A tall sturdy tree grows here.~
+Desc This tall tree stretches well over one hundred feet into the air, its 
+branches filled with deep green leaves.  Its bark is thick, giving it a 
+sturdy appearance.
+~
+Race human~
+Align 0 0
+XPMod 200
+Level 15
+Hitroll 0
+HitDice 3d5+100
+ManaDice 3d5+170
+DamDice 1d1+1
+DamType beating
+AC -20 -20 -20 -20
+Wealth 150
+Act    npc dont_wander no_tame stay_area cleric noalign nopurge~
+AffBy  blind protect_evil regeneration slow~
+Imm    charm weapon bash pierce slash sound~
+Res    fire lightning~
+Vuln   acid poison mental disease drowning~
+Form   edible sentient construct biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material wood
+END
+
+#59
+Name tiny black pig~
+ShortD a tiny black pig~
+LongD A tiny black pig is here.~
+Desc This black pig is rather ordinary in every way except one: it is only about 
+two inches tall.  Other than that, though, it's just a pig.
+~
+Race pig~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+100
+DamDice 1d4+1
+DamType charge
+AC 90 90 90 90
+Wealth 10
+Act    npc scavenger wimpy~
+AffBy  sneak~
+Off    dodge~
+Res    charm weapon~
+Form   edible animal mammal~
+Part   head legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    male~
+Material unknown
+END
+
+#60
+Name bear massive brown~
+ShortD a bear~
+LongD A massive, brown bear stands here.~
+Desc A massive bear, standing on its back paws, greets you with a mouth full of 
+sharp teeth. Its fur is a warm dark brown and is in trimmed around its face, 
+showing fierce looking features. Its eyes gaze down at you fearlessly. 
+~
+Race bear~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType claw
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+Off    berserk disarm crush~
+Res    bash cold~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#61
+Name stag thick furred~
+ShortD a stag~
+LongD A thick furred stag stands here.~
+Desc Before you stands a majestic stag. It is covered by its thick coat of 
+shiny, light brown fur. Now and again it lifts its head to the sky sniffing 
+the air with its nose. On top of its head its sharp tipped rack swings 
+dangerously through the air as it does so. 
+~
+Race deer~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType charge
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+Off    gore~
+Res    disease~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    random~
+Material unknown
+END
+
+#62
+Name swallow black-tailed~
+ShortD a swallow~
+LongD A black-tailed swallow is here.~
+Desc This quite small bird is covered in long, sleek black and white feathers. 
+The slight tufts at the back of its neck grow upwards creating a slightly 
+comical look. When not flying it supports itself on two thin legs with 
+fierce looking claws. 
+~
+Race bird~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType peck
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  flying~
+Off    dodge fast~
+Res    light~
+Vuln   fire~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#63
+Name osprey grey feathered~
+ShortD an osprey~
+LongD A grey feathered osprey is here.~
+Desc Grey feathers line the wings of this powerful, hawk-like bird. Its small 
+head has two pitch-black, beady eyes and a razor sharp beak. A crown of 
+smaller, white feathers stands atop his head. 
+~
+Race bird~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType peck
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  flying~
+Off    dodge fast~
+Res    light~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#64
+Name green tortoise turtle~
+ShortD a tortoise~
+LongD A green tortoise with a mottled carapace is here.~
+Desc This giant tortoise stands four hands tall at the shoulder, its clumsy body 
+obscured by the heavy, mottled grey carapace it carries on its back.  Its 
+flesh is leathery, and tough, and adorned with small black spots.  Its 
+too-short legs end in sharp claws, used for burrowing through muck and mire. 
+~
+Race turtle~
+Align 0 0
+Level 90
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType bite
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  slow~
+Off    parry~
+Res    bash~
+Vuln   cold~
+Form   edible sentient biped mammal amphibian cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#65
+Name black raven feathered bird~
+ShortD a raven~
+LongD A black-feathered raven casts a watchful glance here.~
+Desc A wealth of onyx-coloured feathers cover the minute form of this small bird, 
+meshing seamlessly with its caliginous, sharp beak.  Its slight frame is 
+supported by two thin legs, which end in sharp claws, ideal for gripping 
+branches or pulling away carrion.  Its eyes are absent and deep black, like 
+its feathers, casting a watchful glance around the surroundings. 
+~
+Race bird~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType peck
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  flying~
+Off    dodge fast~
+Res    light~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#66
+Name bat small brown furred~
+ShortD a bat~
+LongD A small, brown furred bat is here.~
+Desc This winged mammal has two small wings, that it has wrapped around it's 
+furry body. The wings are ribbed and look more like large duck feet with 
+small sharp nails protruding at the edges. The little creatures face is 
+twisted and houses a flat nose and a mouth full of miniscule yet sharp 
+teeth. 
+~
+Race bat~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType bite
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  flying dark_vision~
+Off    dodge fast~
+Res    light~
+Vuln   fire light~
+Form   edible animal sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#67
+Name grey furred timber wolf~
+ShortD a wolf~
+LongD A grey-furred timber wolf stands here proudly.~
+Desc This sleek animal is covered in a thick coat of grey fur, obscuring somewhat 
+its muscular frame.  It stands no less than seven hands at the shoulder, a 
+broad muzzle extending from its head.  Its vice-like jaws conceal a 
+tooth-lined maw, while a bushy ash-coloured tail sways lazily behind it. 
+~
+Race wolf~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType bite
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  dark_vision~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#68
+Name serpent luminous multicoloured scales~
+ShortD a serpent~
+LongD A serpent covered in luminous, multicoloured scales slithers here.~
+Desc This snake measures no less than six feet in length, its lithe body wrapped 
+into a tight coil.  Overlapping scales gleam in a spectrum of hues, a 
+luminous, multi-coloured sheath which seems to pulsate with every movement. 
+Its head is flat, and broader than its body, the wickedly sharp tips of two, 
+curved fangs visible protruding from its upper palatte.  A forked, black 
+tongue darts out as blind eyes survey the surroundings, tasting the air 
+cautiously. 
+~
+Race snake~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType bite
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+Res    poison~
+Vuln   cold~
+Form   edible animal sentient biped mammal reptile snake cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue tail fangs scales~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#69
+Name toad wart-covered~
+ShortD a toad~
+LongD A wart-covered toad hops here.~
+Desc This small creature is a better descripted by a large pile of warts. say It 
+sits hunched between it's proportionally large back legs. Now and again it 
+hops to a destination a few feet from where it once stood. It's skin is a 
+slimy yellow, brown and green in colour. 
+~
+Race frog~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType bite
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+Off    dodge~
+Imm    poison disease~
+Vuln   cold~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    random~
+Material unknown
+END
+
+#70
+Name brown feather owl~
+ShortD an owl~
+LongD A brown-feathered owl flaps its wings here.~
+Desc This wise-looking bird is covered in brown and white feathers, growing 
+lighter as they reach the tips of its wings.  Its eyes seem too large for 
+its rotund body, a discerning slate colour as they scan the surroundings 
+vigilantly.  A hooked, yellow beak protrudes from its face, while stubby, 
+thin legs end in wickedly curved talons. 
+~
+Race bird~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType peck
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+AffBy  flying~
+Off    dodge fast~
+Res    light~
+Vuln   fire~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#71
+Name hare light brown~
+ShortD a hare~
+LongD A light brown hare stands here.~
+Desc Slightly larger than your average rabbit and definatly alot less cute, this 
+hare stands here looking at it's surrounding with a rather apathetic 
+sidelong glance. It's long, strong hind legs stand on either side of his 
+body and look ready to catapult this creature at a high pace at any sign of 
+danger. 
+~
+Race rabbit~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType bite
+AC 0 0 0 0
+Wealth 0
+Act    npc stay_area~
+Off    dodge fast~
+Form   edible animal sentient biped mountable mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    random~
+Material unknown
+END
+
+#80
+Name stone golem wings~
+ShortD a stone golem~
+LongD A mighty stone golem with massive wings hovers here.~
+Desc This golem is huge, it hovers off the ground, held there by mighty stone 
+wings which beat with magical rhythm.  The stone body of this golem seems 
+supple as it moves with grace which has obviously been bestowed upon it by 
+magic means.  Its face is set with a hard look, unyeilding, impassive and 
+defintely not willinging to talk.  Stone covers its body, looking close you 
+can see an engraving over the golems heart, the initials T.D are inscribed 
+here.  Slashed across the golems front are three words, 
+                      "United in knowledge".
+~
+Race draconian~
+Align 0 0
+XPMod 5
+Level 25
+Hitroll 10
+HitDice 4d5+110
+ManaDice 4d5+220
+DamDice 2d10+7
+DamType crush
+AC -100 -100 -100 -100
+Wealth 0
+Act    npc dont_wander stay_area noalign outdoors indoors~
+AffBy  detect_invis detect_hidden infrared flying pass_door haste berserk regeneration~
+Off    area_attack bash berserk fade fast kick crush~
+Imm    summon charm lightning poison mental disease drowning sound~
+Res    fire cold lightning acid silver~
+Vuln   weapon pierce~
+Form   edible magical instant_decay sentient mist intangible biped reptile~
+Part   head arms legs heart brains guts hands feet fingers ear eye long_tongue wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material stone
+END
+
+#90
+Name spirit semi transperant ~
+ShortD a semi-transperant looking spirit~
+LongD A semi-transperant looking spirit is here.~
+Desc Before you is a pale semi-transperant looking spirit.
+~
+Race human~
+Align 2 3
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d5+145
+DamDice 2d4+2
+DamType chill
+AC 50 50 50 50
+Wealth 100
+Act    npc update_always~
+AffBy  invisible detect_invis detect_hidden sneak hide flying pass_door dark_vision slow~
+Off    area_attack fast tail assist_align~
+Imm    bash slash poison mental~
+Res    summon magic fire lightning holy energy light sound~
+Vuln   pierce~
+Form   edible magical instant_decay sentient intangible biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP resting~
+DefPos resting~
+Size   medium~
+Sex    female~
+Material unknown
+END
+
+#106
+Name vyr controlled_vyr strange horse dragon animal dracons~
+ShortD an undead dracon~
+LongD A strange animal is here, it is part horse and part dragon.~
+Desc A pitch black dracon is here.  It upper torso is the head and neck of a 
+dragon, its lower torso is that of a horse.  It holds itself proudly with 
+its mouth twisted in a sneer.  Dark black horse like legs support a shorter 
+than normal dragon shaped neck, gleaming teeth show.  Claw like hands 
+protrude from its front torso making it look all the more horrible.
+~
+Race dragon~
+Align -3 -3
+Level 91
+Hitroll 4
+HitDice 5d9+275
+ManaDice 5d9+345
+DamDice 5d8+19
+DamType divine
+AC -600 -600 -600 -600
+Wealth 0
+Act    npc dont_wander undead cleric mage thief warrior nopurge~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared flying dark_vision berserk~
+Off    area_attack berserk fast~
+Imm    summon charm poison mental disease drowning~
+Res    charm bash fire holy~
+Vuln   pierce cold~
+Form   edible instant_decay sentient undead biped centaur mountable reptile dragon cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg FIGHT 121 80~
+MProg DEATH 122 100~
+MProg ACT 120 is DEAD!!~
+MProg SPEECH 119 vkill~
+MProg SPEECH 118 vsearch~
+MProg SPEECH 117 vspell~
+MProg SPEECH 116 vwarcry~
+MProg SPEECH 115 vrest~
+MProg SPEECH 114 vdestroy~
+MProg SPEECH 113 vnot follow~
+MProg SPEECH 112 vfollow~
+MProg SPEECH 111 vstand~
+MProg SPEECH 110 vcommands~
+END
+
+#107
+Name vyr wild_vyr strange horse dragon animal dracons~
+ShortD an undead dracon~
+LongD A strange animal is here, it is part horse and part dragon.~
+Desc A pitch black dracon is here.  It upper torso is the head and neck of a 
+dragon, its lower torso is that of a horse.  It holds itself proudly with 
+its mouth twisted in a sneer.  Dark black horse like legs support a shorter 
+than normal dragon shaped neck, gleaming teeth show.  Claw like hands 
+protrude from its front torso making it look all the more horrible.
+~
+Race dragon~
+Align -3 -3
+Level 91
+Hitroll 4
+HitDice 5d9+275
+ManaDice 5d9+345
+DamDice 5d8+19
+DamType divine
+AC -600 -600 -600 -600
+Wealth 0
+Act    npc dont_wander aggressive undead cleric mage thief warrior nopurge~
+AffBy  detect_evil detect_invis detect_magic detect_hidden detect_good infrared flying dark_vision berserk~
+Off    area_attack berserk fast~
+Imm    summon charm poison mental disease drowning~
+Res    charm bash fire holy~
+Vuln   pierce cold~
+Form   edible instant_decay sentient undead biped centaur mountable reptile dragon cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings tail claws fangs scales~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material unknown
+MProg ACT 120 is DEAD!!~
+MProg DEATH 122 100~
+MProg FIGHT 121 80~
+END
+
+#444
+Name object_mudprog_mob~
+ShortD object_mudprog_mob~
+LongD Object_mudprog_mob~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#499
+Name -~
+ShortD `YDO NOT BUILD MOBS IN AREA!~
+LongD (no default description)~
+Desc ~
+Race human~
+Align 0 0
+Level 0
+Hitroll 0
+HitDice 0d0+1
+ManaDice 0d0+1
+DamDice 0d0+1
+DamType none
+AC 0 0 0 0
+Wealth 0
+Act    npc no_tame stay_area~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#1
+Name coin silver gcash~
+Short a silver coin~
+Desc One miserable silver coin.~
+Level 0
+ItemType money~
+Cost 0
+Asize 10
+Rsize 50
+Values 1 0 0 0 0
+Weight 10
+Material silver~
+Wear     take~
+End
+
+#2
+Name coin gold gcash~
+Short a gold coin~
+Desc One valuable gold coin.~
+Level 0
+ItemType money~
+Cost 0
+Asize 10
+Rsize 50
+Values 0 1 0 0 0
+Weight 10
+Material gold~
+Wear     take~
+End
+
+#3
+Name coins gold gcash~
+Short %d gold coins~
+Desc A pile of gold coins.~
+Level 0
+ItemType money~
+Cost 0
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Wear     take~
+End
+
+#4
+Name coins silver gcash~
+Short %d silver coins~
+Desc A pile of silver coins.~
+Level 0
+ItemType money~
+Cost 0
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material silver~
+Wear     take~
+End
+
+#5
+Name coins silver gold gcash~
+Short %d silver coins and %d gold coins~
+Desc A pile of coins.~
+Level 0
+ItemType money~
+Cost 0
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Wear     take~
+End
+
+#6
+Name rock~
+Short a large rock~
+Desc A large rock rests here.~
+Level 10
+ItemType furniture~
+Cost 250
+Asize 0
+Rsize 50
+Values 5 1000 BEHKN 150 150
+Weight 4
+Material granite~
+Extra    nolocate nodegrade burnproof~
+ExtraDesc rock ~
+A large rock made of granite is here.  On one side of the rock there is some 
+writing which reads:`1 `SKalahn, Dec 2000.  `x 
+~
+End
+
+#7
+Name steel flask water crystal~
+Short a steel flask of crystal water~
+Desc An unadorned steel flask filled with crystal water has been left here.~
+Level 1
+ItemType treasure~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Wear     take hold~
+End
+
+#8
+Name steel flask water~
+Short a steel flask of water~
+Desc An unadorned steel flask filled with water has been left here.~
+Level 1
+ItemType treasure~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Extra    nodegrade burnproof~
+Wear     take hold~
+End
+
+#9
+Name dummy~
+Short a dummy item, to be tweaked and stuff as needed~
+Desc (no description)~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#10
+Name corpse~
+Short the corpse of %s~
+Desc The corpse of %s is lying here.~
+Level 0
+ItemType npccorpse~
+Cost 0
+Condition 25
+Asize 1000
+Rsize 50
+Values 0 0 0 A 0
+Weight 1000
+Material meat~
+Wear     take~
+End
+
+#11
+Name corpse~
+Short the corpse of %s~
+Desc The corpse of %s is lying here.~
+Level 0
+ItemType pc corpse~
+Cost 0
+Condition 25
+Asize 1000
+Rsize 50
+Values 0 0 0 A 0
+Weight 1000
+Material meat~
+Extra    nopurge~
+Wear     take~
+End
+
+#12
+Name head~
+Short the head of %s~
+Desc The severed head of %s is lying here.~
+Level 0
+ItemType trash~
+Cost 0
+Condition 25
+Asize 50
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material meat~
+Wear     take~
+End
+
+#13
+Name heart~
+Short the heart of %s~
+Desc The torn-out heart of %s is lying here.~
+Level 0
+ItemType food~
+Cost 0
+Condition 25
+Asize 20
+Rsize 50
+Values 16 16 0 0 0
+Weight 20
+Material meat~
+Wear     take~
+End
+
+#14
+Name arm~
+Short the arm of %s~
+Desc The sliced-off arm of %s is lying here.~
+Level 0
+ItemType food~
+Cost 0
+Condition 25
+Asize 50
+Rsize 50
+Values 20 20 0 0 0
+Weight 50
+Material meat~
+Wear     take~
+End
+
+#15
+Name leg~
+Short the leg of %s~
+Desc The sliced-off leg of %s is lying here.~
+Level 0
+ItemType food~
+Cost 0
+Condition 25
+Asize 50
+Rsize 50
+Values 20 20 0 0 0
+Weight 50
+Material meat~
+Wear     take~
+End
+
+#16
+Name guts entrails~
+Short the guts of %s~
+Desc A steaming pile of %s's entrails is lying here.~
+Level 0
+ItemType food~
+Cost 0
+Condition 25
+Asize 20
+Rsize 50
+Values 5 5 0 A 0
+Weight 20
+Material meat~
+Wear     take~
+End
+
+#17
+Name brains brain~
+Short the brains of %s~
+Desc The splattered brains of %s are lying here.~
+Level 0
+ItemType food~
+Cost 0
+Condition 25
+Asize 20
+Rsize 50
+Values 10 10 0 0 0
+Weight 20
+Material meat~
+Wear     take~
+End
+
+#18
+Name pile ashes~
+Short a pile of ashes~
+Desc A pile of ashes is here.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 7 99999 ADGJM 100 100
+Weight 5
+Material ash~
+Wear     take~
+ExtraDesc ashes pile~
+A pile of charred wood and ashes.  Looks like the remains of a small fire.  
+~
+End
+
+#19
+Name small fire~
+Short a small fire~
+Desc A small fire is burning here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 7 999999 ADGJ 110 110
+Weight 0
+Material fire~
+Extra    nonmetal nodegrade burnproof~
+ExtraDesc small fire~
+A pile of small logs and sticks is burning merrily here.
+~
+End
+
+#20
+Name mushroom~
+Short a mushroom~
+Desc A delicious mushroom is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material food~
+Wear     take~
+End
+
+#21
+Name ball light~
+Short a bright ball of light~
+Desc A bright ball of light shimmers in the air.~
+Level 0
+ItemType light~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 100 0 0
+Weight 0
+Material energy~
+Extra    glow magic~
+Wear     take~
+End
+
+#22
+Name spring~
+Short a spring~
+Desc A spring flows from the ground here.~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values 100000 100000 water 0 0
+Weight 0
+Material water~
+Extra    magic~
+End
+
+#23
+Name disc disk floating black~
+Short a floating disc~
+Desc A floating black disc hangs in the air.~
+Level 0
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 E 0 0 0
+Weight 0
+Material energy~
+Extra    magic noremove rotdeath meltdrop burnproof nouncurse~
+Wear     take float~
+End
+
+#24
+Name meat slice~
+Short a sliced bit of meat~
+Desc Some sliced meat is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material food~
+Wear     take~
+End
+
+#25
+Name gate portal~
+Short a shimmering gate~
+Desc A shimmering black gate rises from the ground, leading to parts unknown.~
+Level 0
+ItemType portal~
+Cost 0
+Asize 0
+Rsize 50
+Values -1 0 0 0 0
+Weight 0
+Material shadow~
+Extra    magic nopurge nolocate~
+End
+
+#26
+Name large parchment map world~
+Short a large world map~
+Desc A large world map lies here.~
+Level 1
+ItemType map~
+Cost 25
+Condition 75
+Asize 3
+Rsize 50
+Values A 0 0 0 0
+Weight 1
+Material paper~
+Wear     take~
+ExtraDesc map parchment world large~
+This map is not even close to scale. but general directions are accurate.
+On it you will find the large population centers, and a few new areas
+players might be interested in. There are also a few areas for new
+players right in Mekali and Dzagari.
+ 
+`#`CPLEASE TYPE 'AREAS' TO SEE A COMPLETE LIST OF EXISTING AREAS`^     LEGEND
+                                                                       `WWhite: Recall
+                                                                       `GGreen: No danger
+                                             `RFire Giants               `YYellow: Caution
+                                                  `S|                     `RRed: Dangerous
+                                            `S+-----+-----+`RThe Kennels    `SGrey: Roads
+          `RArmy of                           `S|      
+`RMonastery Hafran  `S+---------------+---------+-----+
+    |      |      |               |             `RTroll 
+    `S+------+------+               |             `RBridge
+    `S|                          `GIn the             `S|
+    +-------------------+      `GTrees              `S+-----`RLighthouse          `GMarkrist
+                `YWarlocks`S|        |                |                          `GIsland
+                  `YKeep`S--+--------+----------------+ 
+                        |                         |     `YFishing Village    `YPirate
+ `GHalfling               `S|      `GMrem               `S|                         `YShip
+ `GVillage   `GOrphanage    `S|     `GVillage    `GBrigand  `S|`GEastern
+   `S|           |        |                 `GCamp    `S|`GStar Inn
+   `S|    +------+-----`WMekali`S-----------------------+------+-------+Beach
+   |    |             `WCity                `WOutlands`S|    `GGypsie    `S|
+   `S+----+               |                         |   `GCarnival   `S|
+           +------------+--`GTraining               `S+---------+    |
+           |    `YInsect  `S|  `GGrounds                `S|         |    |
+           |     `YHive   `S|                         |      `YTaker's `S|
+           +------+-----+          `YDire           `S|       `YPlace  `S|
+           |     `GGnome  `S|          `YSwamp        `WDzagari     `S|    |
+           +----+`GVillage`S|                        `WCity`S---`GFortress `S|
+                |  |    |                         `S|`YSewers        `S|
+                +--+----+-------------------------+--------------+
+                    |                             |    `YDandenong `S|
+                    |                  `GGoblin`S-----+      `YTown    `S|
+                `RDarkhate               `GWarrens`S    |        |     +--Desert
+                 `RCastle                        `S+--+--------+
+                                               |
+                                               +--`RSlime
+                                                 Kingdom 
+ 
+`XThis is far from the world of Mythrin, this map shows the most general
+areas within a distance of the main lands. It lists area's to hunt
+as well as one's to avoid. There is a list on the back of the map 
+that gives you a diagram of what the colours in this map mean.
+Type '`#`Clook reverse`X' to the the charts on the colours.
+~
+ExtraDesc reverse ~
+. 
+`RRed Areas    `Xmeans to avoid these areas, if not experienced.
+`YYellow Areas `Xmeans these are good hunting grounds, but 
+                 before you enter these hunting grounds type
+                 '`CArea [Areas's name]`X' An example of this
+                 is typing area goblin. This will show the area
+                 statistics on goblin warrens, and its level 
+                 range. Make sure to check the level range before
+                 seeking it out.
+`GGreen Areas  `Xmeans good areas for inexperienced adventurers.
+`WWhite Areas `X means these are great places to find Roleplay 
+                 or someone to help you, and are the recall points. 
+                 Rangers, druids and barbarians recall to the 
+                 Outlands. Good races recall to Mekali City, and 
+                 evil races recall to Dzagari City.
+ 
+~
+End
+
+#27
+Name small map mekali~
+Short a small map of Mekali~
+Desc A small map has been left here.~
+Level 1
+ItemType map~
+Cost 25
+Condition 75
+Asize 3
+Rsize 50
+Values A 0 0 0 0
+Weight 1
+Material paper~
+Wear     take~
+ExtraDesc map small mekali~
+`B                           (Mekali)                      
+                                                                `BBlue:  Shops`+
+                                                                `gGreen: Travel`+
+                          `gNorth Gate    `BBargains                `bNavy Blue: Local Feature`+
+                              `W|             |                   `RRed:    Guild
+ `W+------+------+------+-------+-----+-------+-------+-------+   `SGrey:   Law
+ `W|             |              |                             |   `WWhite: Roads
+ `W|         `BFurniture          `W|                             |   `YYellow: Recall
+ `W+--`BPottery             Pets`W--+--`bPark            `SGuards HQ`W--+
+ |                            |                             |
+ |                            |                             |
+ +--`BMarket            `RTemple`W--+--`BAntiques                   `W|
+ |                            |                             |
+ |                            |  `bDancing            Silver`W--+
+ +--`bPublic Baths      Healer`W--+--`bDragon             Platter `W|
+ |                            |  `bBar                        `W|
+ |    `BMagic                   `W|                             | 
+ |    `BItems Clothes Supplies  `W| `BApothecary Weapons Maps     `W|
+`gWest    `W|      |      |       |     |       |       |     `gEast 
+`gGate`W----+------+------+-----`YPlaza`W---+-------+-------+-----`gGate  `SCrossroads >>
+ `W|      |      |      |       |     |       |       |       |
+ |    `BToys  `RArcanum `BArmoury   `W| `BJewellery `RFighters `BTannery  `W|
+ |                            |                             |
+ |                            |                             |
+ +--`bInn                 `BBank`W--+--`BBakery                     `W|
+ |                            |                             |       `YN 
+ `W|                            |                             |     `s..`B^`s.. 
+ `W|                   `RKnights`W--+--`BLocksmith          `SPrison`W--+     `s.`b\|/`s. 
+ `W|                            |                             |   `YW`B<`b-=`BO`b=-`B>`YE 
+ `W|                            |                             |     `s'`b/|\`s' 
+ `W|                   `BAuction`W--+--`gCity Stables               `W|     `s''`Bv`s'' 
+ `W|   `bTavern  `gBoats    `BHall`W    |            `BJobs             `W|       `YS 
+ `W|      |      |              |             |               |
+ +------+------+------+-------+-----+-------+-------+-------+                 
+        |                     |                         
+      `gPort             `gRiver Crossing 
+ 
+ 
+~
+End
+
+#28
+Name small map dzagari~
+Short a small map of Dzagari~
+Desc Map~
+Level 1
+ItemType map~
+Cost 25
+Condition 75
+Asize 3
+Rsize 50
+Values A 0 0 0 0
+Weight 1
+Material paper~
+Extra    nodegrade~
+Wear     take~
+ExtraDesc map small dzagari~
+`C                         (Dzagari)`m                  LEGEND `+
+         `YN                                              `BBlue: Shops `+
+       `s..`B^`s..               Crossroads                   `gGreen: Travel`+
+       `s.`b\|/`s.                   ^                        `bNavy Blue: Local Feature `+
+     `YW`B<`b-=`BO`b=-`B>`YE                 `s^                        `RRed: Guild `+
+       `s'`b/|\`s'                 `gNorth                      `WWhite: Roads`+
+       `s''`Bv`s''                 `gGate                       `YYellow: Recall`+
+         `YS                     `W|
+   +-----------+---------------+----------------------+-------+
+   |           |               `W|                      |       `W|  
+   |        `gCarriage           `W|                  `BBargains    `W|
+   `W+--`BCap in Hand   `BBeastiary`W--+--`bCourier`W                     +--`bPestilence
+   `W|                           `W|  `bService`W                     |     `bPit Inn
+   `W|                           `W|                              | 
+   +--`bBlack Market       `BGems`W--+--`BBank                  Maps`W--+
+   |                           `W|                              |
+   |                           `W|                              | 
+   | `gStable  `BFish  Butcher     `W| `BWeaponry `RArcanum `BCopperworks `W| `RNecromicon 
+   `W|    |      |      |        |      |       |       |       |     |
+`gWest`W----+------+------+-----`YSquare`W----+-------+-------+-------+-----+-----`bFortress
+`gGate    `W|      |      |        |      |       |       |       |     | 
+   |  Hovel   `BRags Supplies    `W|  `BArmoury `RFighters `BDelicacies `W|  `RKnights
+   `W|                           |                              |     
+   |                           |   `bThe                        `W| 
+   +--`RThieves        `bChaotica`W--+--`bDrunken              `RWagon`W--+
+   |   `RUnion                   `W|  `bStupor                      `W|   
+   |                    `bThe    `W|                              |
+   |                  `bTrellis`W--+--`BMetalworks                  `W+--`BMagicks
+   `W|   `BTabacco  `bDen            `W|           `BPoisons            `W|
+   |      |      |             |              |               |
+   +------+------+------+------+------+-------+-------+-------+                    
+          |      |      |      |      |       |       |
+        `gBoats  `BRugs  Woodworks `W|   `BTannery  `WHovel `BSlaughterhouse
+                             `gSouth
+                             Gate`+
+~
+End
+
+#29
+Name strange translucent mists~
+Short some strange translucent mists~
+Desc Some strange translucent mists seem to swirl together here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 50 1000000 DGJ 100 100
+Weight 100
+Material ethereal mists~
+Extra    glow nodegrade~
+ExtraDesc some strange translucent mists~
+This strange translucent mist seems to swirl together in the shape of some 
+sort of spherical ball.  It has a faint almost gloomy pale like colour to it 
+and it emits this awkward soothing warmth from it.  
+~
+End
+
+#30
+Name rose~
+Short a red rose~
+Desc A red rose is lying on the ground.~
+Level 0
+ItemType treasure~
+Cost 0
+Asize 5
+Rsize 50
+Values BC 0 0 0 0
+Weight 80
+Material oldstyle~
+Wear     take head~
+ExtraDesc rose~
+It's a beautiful red rose, with a soft and romantic fragrance.
+~
+End
+
+#31
+Name paper crumpled~
+Short some paper~
+Desc a piece of paper with words on it~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material paper~
+Wear     take~
+ExtraDesc words writing~
+Hi, Citizens of Mekali
+Mekali is looking forward to raising a militia, but for that it would need
+some volunteers. Mekali is really in need of people to defend it's
+citizens, if you are interested, and that you are of good will. Come in to
+Mekali and go see the sly looking human. or send a note to me, i need your
+names.  The arm of justice of Mekali militia, is open to your membership.
+This note is not an obligation to be a member, just speak to me or leave a 
+note with me if you are interested.
+
+Thank you from the sly human.
+-Ranor
+
+Arm of justice, militia of mekali
+~
+End
+
+#32
+Name banner~
+Short an embroided dragon banner~
+Desc This is the dragon banner of Naraxi.~
+Level 1
+ItemType light~
+Cost 200
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 5
+Material cotton~
+Extra    glow magic antigood antievil otterlungs nolocate burnproof~
+Wear     take hold~
+Affect modifier -1 1 -1 mana 15 0
+Affect modifier -1 1 -1 hp 3 0
+Affect modifier -1 1 -1 damroll 1 0
+ExtraDesc embroided pattern design dragon naraxi~
+OOn a field of diagonal gray and red stripes lays the silhouette of a black 
+sword.  Entwined about the sword like a vine is a sinuous white dragon, whose 
+eyes, teeth, and scales have all been meticulously stitched with scarlet thread.  
+~
+End
+
+#33
+Name wooden raft~
+Short a wooden raft~
+Desc A wooden raft has been left here.~
+Level 1
+ItemType boat~
+Cost 11
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 900
+Material wood~
+Wear     take~
+ExtraDesc wooden raft~
+This sturdy raft is made of 5 thick logs lashed together with some sort of 
+natural material.  It is surprisingly light for its size.  
+~
+End
+
+#34
+Name newbie guide book~
+Short a small newbie guide book~
+Desc A small booklet lies here.~
+Level 0
+ItemType scroll~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 '' '' '' ''
+Weight 5
+Material paper~
+Extra    nodegrade burnproof~
+Wear     take~
+ExtraDesc chapter-1 ~
+`#`WChapter 1. How do I find someone to help me?`^
+          
+If you don't understand something type `chelp <subject>`^ - <subject> is any keyword you wish to find help on. If you cannot understand this there are people who will help you.
+  
+`YSTEP 1. `^Type `cwho`^ and look at the list. You might see players like this:
+   
+      [***] Ka 
+      [+++] Zyria
+  `r-======= `GIMMORTALS `r=======-
+      `G[`rDEM`G] Yonae`^
+    
+                  ....this means Zyria is a 'newbie helper' the [+++] indicates this. You can also ask an immortal if they are present, in this example the immortal is Yonae.
+          
+`YSTEP 2. `^For example, type `ctell Zyria help me please`^ and the player will respond to any questions you may have. 
+    
+`YSTEP 3. `^If there is no [+++] player. Type `cooc help me please.`^
+      
+`YSTEP 4. `^Alternatively, type `cquestion <your question>`^ to ask a question on the question channel.
+    
+Ettiquette is important on dawn and `Rit is a rule to not share or ask character information over OOC`^. 
+     
+References`^ : `chelp WHO`^, `chelp OUT OF CHARACTER`^ and `chelp -CHANNELS`^.
+~
+ExtraDesc chapter-final~
+`#`WChapter 10. Final advice!`^
+  
+`Y*`^ When stuck, ask a friendly newbie helper.
+ 
+`Y*`^ Be nice to newbie helpers and immortals, you never know when they might come in handy ;)
+  
+`Y*`^ The SCAN skill is good when adventuring.
+ 
+`Y*`^ Look at your prompt. Your prompt can tell you alot about your character including hit points, movement, mana and time of day. Type `chelp prompt`^ for a clear explanation.
+   
+`Y*`^ Unless you intend to roleplay, generally buying equipment higher than your level is not beneficial.
+ 
+`Y*`^ Explore as much as possible and be prepared to make mistakes and die.
+ 
+`Y*`^ When you see 'you are tired' appear try and sleep or you will find that your character will pass out.
+  
+`Y*`^ Make as many friends as you can and maybe later on join one of our CLANS.
+ 
+`Y*`^ Have FUN!
+ 
+You have read the newbie book, any questions please ask a `Ynewbie helper`^ or on the `Yquestion channel`^. Good luck!
+~
+ExtraDesc chapter-9 ~
+`#`WChapter 9. How do I heal?`^
+  
+`YSTEP 1. `^The best thing to do if you are hurt and not 'tired' is to type `crest.`^
+ 
+`YSTEP 2. `^Sometimes you are poisoned. When this happens type `crecall`^ and find a healer. Once in the healers type `cheal`^ and it will bring up a list. Or better yet, ask someone for help, making friends and having fun on dawn is what we aim for.
+  
+`YSTEP 3. `^If you are past level 6, a message like this could appear on the screen:
+ 
+You are tired.
+ 
+If this happens find a safe place and type `csleep`^ and `Ywait`^ until you fall asleep. Hunger and thirst heightens the chance you will get tired quicker.
+ 
+`YSTEP 4. `^Sleeping or resting by fires and bedrolls gives you a better chance of recovering quicker. To pass the time while your character is sleeping, read notes by typing `cnote`^ or `cidea`^ or even read our mythos `chelp mythos.`^
+ 
+References : `chelp REST`^, `chelp NOTES`^,`c help MYTHOS`^ and `chelp TIRED`^.
+~
+ExtraDesc chapter-8 ~
+`#`WChapter 8. What do I do when I'm dead?`^
+ 
+Usually what happens is the gods bless you and you get a second chance. *wink* If you die in a battle against a mob you get transported up to purgatory.
+  
+`YSTEP 1. `^Well, don't just sit there! Type `crecall`^ and return.
+ 
+`YSTEP 2. `^You are completely naked like you were at the start. Find where your body is or if you don't think you can, ask someone by typing `csay Could you please help me get my equipment back?`^ 
+ 
+`YSTEP 3. `^If you cannot seem to get it back, buy some new things and continue to explore. Remember it is a game and nearly everyone dies once or twice... or even more!
+ 
+`YSTEP 4. `^If you are `Yplayer killed`^, this is different. 
+ 
+`RYou *must* write a pkill note TO PKILL no more half an hour real life past the time you killed someone or were killed.`^
+  
+It will display a pkill message when this happens in `RRED.`^ Ask a newbie helper how to write notes if you do not know how.
+  
+`YSTEP 5. `^Dawn has a `Ykarn`^ system. Karns are your lives and you get a maximum of five karns. You can only pkill if you are LETGAINED. But you can be pkilled if you are not letgained. You may get letgained as low as level 1.
+ 
+References : `chelp DYING`^,`c help PKILL`^,`c help KARN`^ and `chelp LETGAIN`^.
+~
+ExtraDesc chapter-7 ~
+`#`WChapter 7. How do I Practice and Train to gain more skills and spells?`^
+    
+Before you go to fight something it is a good idea to practice your weapon skill. To do this you need to find your GUILD hall.
+    
+`YSTEP 1.`^ Type `cscore`^, it will show your `Yclass`^. Each class has a `Yguild`^. Eg. If I was a mage I would want to find the arcanum. Use your map to find the location. If you can't find it, type `crecall`^ and ask someone.
+   
+`YSTEP 2.`^ Once in your guild, type `cgain list`^, `cpractice`^, and `ctrain`^. It is best to `ctrain hp`^. Type `chelp attribute`^ for more detail.
+  
+`YSTEP 3.`^ If you don't have human, type `cgain human`^. Then after this type `cpractice human`^. Practice it until it is 75% (70% for barbarians.) Although you do not have to practice this is it recommended.
+  
+`YSTEP 4.`^Type `cskill`^ and find your weapon skill, the `cpractice <weaponskill>`^ Eg. practice sword, until it is at 75%. Then type `cscore`^ to see if you have any trains or practices and if you have used them as you would like.
+  
+`YSTEP 6.`^To get spells you need to have the SKILLS of `Yrealms`^, `Yshperes`^, `Yelements`^ or `Yseasons`^. When you PRACTICE these skills your chance improves to learn a spell when you level.  
+ 
+You cannot 'gain spells' here. You gain spells by `Ylevelling `^and other methods.
+   
+Now you are ready to start `Ya`Rd`Cv`Be`Gn`Mt`ru`Wr`Yi`Rn`gg`B!`^
+   
+References : `chelp GUILD`^,`c help SCORE`^,`c help CLASS`^,`c help GAIN LIST`^,`c help TRAIN`^,`c help PRACTICE`^,`c help ATTRIBUTES`^,`c help MAGIC-SYSTEM`^ and`c help SKILL`^.
+~
+ExtraDesc chapter-6 ~
+`#`WChapter 6. How do I gain experience and levels?`^
+     
+There are TWO ways to gain experience: Roleplay and combat.
+    
+`YSTEP 1. ROLEPLAY:`^ Yes roleplaying gives you experience, it is an automatic system! Type `chelp emote`^. Try this example: `cemote smiles softly.`^
+    
+`YSTEP 2.`^ Type `csocial`^. Warning: long list!
+ 
+`YSTEP 3. `^If an immortal or noble sees you roleplaying well, you may get MOOTED. If you feel like living on the edge type `chelp quester`^. Dawn has `Yboth`^ autoquests and player/imm ran quests.
+    
+`#`YSTEP 4. COMBAT:`^ Good places to fight when you start is the park in Mekali and if you start in Dzagari try killing pigeons in the town. Type `carea`^ to see the different areas in which you can fight and explore, another long list! 
+   
+`YSTEP 5.`^ Before battle checklist: 
+`Y* `^Have you bought a weapon(s) and armor?
+`Y* `^Have you practiced your weapon skill to 75% (70% for barbarians)?
+`Y* `^Have you trained your hp? 
+`Y* `^Do you have wimpy and panic set?
+      
+`YSTEP 6.`^Type `cconsider <mobile/monster>`^. It will show you a rating of what your chances are of winning against it. If you feel lucky type `ckill <mob>`^. Killing mobs earn you gold and experience. To cast a spell, `cc 'spell name' <person/monster> `^. Eg. c 'fireball' goblin
+  
+References : `chelp EMOTE`^,`c help SOCIAL`^,`c help NOBLE`^,`c help QUESTER`^,`c help EXPERIENCE`^,`c help WIMPY`^,`c help PANIC`^,`c help CONSIDER`^,`c  help KILL`^ and `chelp CAST`^.
+~
+ExtraDesc chapter-5 ~
+`#`WChapter 5. How do I buy and wear things?
+  
+`YSTEP 1. `^ Go to the Armory on the map. If you can't find it ASK someone by typing `csay Where is the Armory?`^ or look at your map.
+  
+`YSTEP 2.`^ Once at the armory you need clothes! Type `clist 1 `^(1 is for your level). You will see a list come up somthing like this:
+ 
+ [ 1    42 -- ] a leather belt 
+ [ 1    42 -- ] leather boots 
+ `#[ `R1`^    93 -- ] leather sleeves 
+  
+`YSTEP 3.`^ Buy some level 1 equipment. Type `chelp buy`^ for more detail. Buy *SUGGESTED EQUIPMENT*: Belt, boots, leggings, vest, gloves, cap and sleeves. Now type `clist boot`^. If you have a list like this:
+  
+ [35  1050  1 ] some leather boots 
+ [50  1500  1 ] some heavy leather boots 
+ `#[ `R1`^    42 -- ] leather boots
+  
+`#You need to buy the level `R1`^ boot. Type buy `Y3`^.boot. The leather boots are `Y3`^rd on the list. Wear what you bought (refer to chapter-2).
+ 
+`YSTEP 4.`^ After that go to the General store and buy a lamp, a waterskin and bread.
+ 
+`YSTEP 5.`^ Type `cskill`^ to find out your `Yweapon skill`^. For example thieves use daggers. Go to the weapon shop on the map. Buy two (level 1) daggers. Type `cwear dagger`^ to wear the first one, then type `csecond dagger`^ to put the other dagger in your off hand. If you are cleric you would get a mace etc, all depending on your `Yweapon skill`^.
+   
+References : `chelp BUY`^ and `chelp SECOND`^.
+~
+ExtraDesc chapter-4 ~
+`#`WChapter 4. How do I get a 'long description' and 'short' description?`^
+  
+`YSTEP 1. `^Type `cdlook`^. Your LONG is what you see when you `clook <person>`^. It is a good idea to write down on paper what you want your character to look like. Read `chelp long`^ before you type in your description. Once you have an idea, type out these commands using this as an example:
+     
+`#   `cdesc `^(enter editor)
+    `cAn elf with brown hair is here.`^ (enter your own description)
+                        
+    `^NOTE: `RYou are in the editor at this point you cannot talk or action. 
+                           To get out of it and talk type `c@`^.
+    
+    `c .h`^ (for help)
+    `c .s`^ (for show)
+    `c .f`^ (format...word wrapping is your friend!)
+    `c @ `^ (indicates finish and now you can type `csay`^ once again.)
+   
+`YSTEP 2. `^A SHORT is what you see when someone walks into the room. Eg. `BA tall blonde man is standing here. `^Read `chelp short`^ before asking an immortal to set your short.
+   
+`#`YSTEP 3.`^ After this you can be `Yletgained`^. Read `chelp history`^ and `chelp history-requirements`^ - `R*IF YOU DO NOT READ THIS YOUR HISTORY MAY BE DECLINED!*`^ Email your history to `Ydawn-histories@dawn.stwing.upenn.edu`^ with your character's NAME as the SUBJECT and cut and paste or type your history into the body of the message, no attachments please! Type `crequestletgain <your short>`^ Eg. requestletgain a brown haired elf (Note: Do not include punctuation at the end.)
+  
+References :  `chelp LONG`^, `chelp SHORT`^,`c help LONG-EXAMPLE`^,`c help DESCRIPTION-EDITOR`^,`c help HISTORY`^,`c help LETGAIN`^ and `chelp HISTORY-REQUIREMENTS`^.
+~
+ExtraDesc chapter-3 ~
+`#`WChapter 3. How do I look at my stats/score/character information/configuration?`^
+        
+`YSTEP 1. `^These commands will give you character information. Type these out and see what they do!
+            
+          `cSCORE`^   shows your character stats, experience and level.
+          `cWORTH`^   shows your tiredness, how much gold and other info.
+          `cSKILL`^   shows you the skills and realms/spheres you have.
+          `cAFFECT`^  shows if you are affected by any spells.
+          `cSPELL`^   shows the spells you may cast.
+          `cAUTO`^    shows what configuration you are set to.
+          `cINV`^     shows what you have in inventory.
+          `cWIMPY`^   sets the amount of hp you flee from combat.
+          `cPANIC`^   sets the amount of hp you recall from combat.
+          
+`YSTEP 2. `^If you type `ccommands`^, it shows a list of commands. WARNING: long list!
+        
+`YSTEP 3. `^For the magic users of the realm, typing `ccspinfo <class>`^ gives you a list of spells for that class. ie. cspinfo mage
+      
+On a side note, please be patient in learning spells, once you `Ylevel`^ you gain spells - unless you learn some other way! ;)
+           
+ References : `chelp SCORE`^,`c help WORTH`^,`c help SKILL`^,`c help AFFECT`^,`c help SPELL`^,`c help AUTO`^,`c help WIMPY`^,`c help PANIC`^,`c help MAGIC-SYSTEM`^ and `chelp CSPINFO`^.
+~
+ExtraDesc chapter-2 ~
+`#`WChapter 2. How do I move and talk?`^
+                        
+`YSTEP 1. `^Type `cN`^, this will move you north. Type `chelp move`^ for more detail. If you get lost type `crecall`^. To follow someone type `cfollow <person/keyword>`^.
+   
+`#`YSTEP 2. `^Try these things with an object: `cget <object>`^, `cdrop <object>`^,`c wear <object> `^and `cremove <object>`^. With drinking containers you can `cfill <object>`^ and `cempty <object>`^. To give an object to someone `cgive <object> <person/keyword>`^.
+  
+`#`YSTEP 3. `^*You have maps when you start!* To view them type `clook map`^ and `clook 2.map`^.
+   
+`#`YSTEP 4. `^If you cannot speak human, refer to chapter-7 (`clook chapter-7`^) as human is the main spoken in character language on dawn. Try these commands:
+    
+`c ooc hello`^                    This is a real life channel.
+`c say hello`^                    This sends a message to the room.
+      
+You cannot say or ask anything IC (in character) on the OOC channel, but you may talk about real life issues here. To get into the chat rooms type `cgoooc`^ then you may talk about real life using `csay`^.
+   
+Note: If you are confused about the difference between OOC(Real life/out of character) and IC(In character) ask your friendly newbie helper! :)
+ 
+Note: `RYou cannot swear either OOC or IC. `^Read `chelp swear`^ and `chelp rules`^ for more detail.
+   
+References : `chelp MOVE`^, `chelp SAY`^, `chelp GET`^,`c help WEAR`^,`c help FILL`^,`c help RECALL`^,`c help OUT OF CHARACTER`^,`c help IN CHARACTER`^,`c help -CHANNELS`^,`c help SWEAR `^and `chelp RULES`^.
+~
+ExtraDesc newbie guide book small~
+`cHELP GAME`x`#`+
+ `c*********************`+
+ * `YNEWBIE GUIDE BOOK`c *`+
+ *********************`x`+
+`^Welcome to DoT (Dawn of Time).  This is a quick start guide to help you 
+learn the very basics.  If you get confused type `Cooc help me please.  `x`+
+ `+
+The book is divided into easy chapters.  You see the Table of Contents:`+
+ `+
+Chapter 1 (type `clook chapter-1`x) ....  How do I find someone to help me?  `+
+Chapter 2 (type `clook chapter-2`x) ....  How do I move and talk?  `+
+Chapter 3 (type `clook chapter-3`x) ....  How do I look at my statistics / score 
+                                        / character information / configuration?  `+
+Chapter 4 (type `clook chapter-4`x) ....  How do I get a 'long description' and 
+                                          'short description'? `+ 
+Chapter 5 (type `clook chapter-5`x) ....  How do I buy and wear things?  `+
+Chapter 6 (type `clook chapter-6`x) ....  How do I gain experience and levels?  `+
+Chapter 7 (type `clook chapter-7`x) ....  How do I Practice and Train to gain 
+                                          more skills and spells?  `+
+Chapter 8 (type `clook chapter-8`x) ....  What do I do when I'm dead?  `+
+Chapter 9 (type `clook chapter-9`x) ....  How do I heal?  `+
+Chapter 10 (type `clook chapter-final`x) Final advice!  `+
+ `+
+If you read through these `Yshort and easy`x steps from Chapter 1 to 10 which 
+won't take you long, you will be playing Dawn of Time like a regular!  Good 
+luck!  `x`+
+ 
+~
+End
+
+#35
+Name small camouflaged shelter~
+Short a small camouflaged shelter~
+Desc A small camouflaged shelter.~
+Level 1
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 99999 CFLO 110 110
+Weight 8888
+Material wood~
+Extra    nonmetal~
+ExtraDesc small camouflaged shelter~
+This small shelter has been built from branches, leaves, and other natural 
+materials, all cut expertly fromt he surrounding forest.  It looks big 
+enough to squeeze a person or two inside, and quite protective from the 
+elements.  
+~
+End
+
+#36
+Name rp item~
+Short an rp item~
+Desc (no description)~
+Level 0
+ItemType rp~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+Wear     take hold~
+End
+
+#37
+Name hammer spirit~
+Short a `#`Bspirit`^ hammer~
+Desc A spirit hammer is lying here, bathed in it's own radiance.~
+Level 1
+ItemType weapon~
+Cost 0
+Asize 0
+Rsize 50
+Values mace 0 0 divine I
+Weight 42
+Material spirit~
+Extra    bless noremove rotdeath meltdrop burnproof norestring~
+Extra2   nodecay nochaoslace~
+Wear     take wield~
+AttuneFlags attunable hard infuriating~
+End
+
+#38
+Name finely carved wooden staff~
+Short a finely carved wooden staff~
+Desc A finely carved wooden staff has been set here.~
+Level 0
+ItemType weapon~
+Cost 0
+Asize 0
+Rsize 50
+Values staff 0 0 none F
+Weight 15
+Material wood~
+Extra    nonmetal~
+Wear     take wield~
+End
+
+#39
+Name skinned vest~
+Short skinned vest~
+Desc (no description)~
+Level 0
+ItemType armor~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#40
+Name skinned cape~
+Short skinned cape~
+Desc (no description)~
+Level 0
+ItemType armor~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#41
+Name skinned hat~
+Short skinned hat~
+Desc (no description)~
+Level 0
+ItemType armor~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#42
+Name skinned leggings~
+Short skinned leggings~
+Desc (no description)~
+Level 0
+ItemType armor~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#43
+Name skinned boots~
+Short skinned boots~
+Desc (no description)~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#50
+Name floating hooded brass lantern~
+Short a floating, hooded brass lantern~
+Desc a hooded brass lantern floats a few inches above the ground~
+Level 0
+ItemType light~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 999 0 0
+Weight 2
+Material brass~
+Extra    glow magic otterlungs~
+Wear     take float~
+Affect affects -1 0 -1 none 0 protect_good
+Affect affects -1 0 -1 none 0 protect_evil
+End
+
+#51
+Name huge chunk cheese~
+Short a huge chunk of cheese~
+Desc a huge chunk of cheese sits here~
+Level 0
+ItemType food~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 4 0 0 0
+Weight 2
+Material clay~
+Extra    otterlungs~
+Wear     take head~
+End
+
+#52
+Name wood metal meshed quarterstaff staff~
+Short a quarterstaff of meshed wood and metal~
+Desc an oddly fashioned quarterstaff is here~
+Level 0
+ItemType weapon~
+Cost 0
+Asize 0
+Rsize 50
+Values staff 2 8 pound 0
+Weight 8
+Material steel~
+Extra    otterlungs~
+Wear     take wield~
+Affect modifier -1 0 -1 presence -1 0
+Affect modifier -1 0 -1 mana 15 0
+End
+
+#53
+Name small metal ring~
+Short a small metal ring~
+Desc a small metal ring is here~
+Level 0
+ItemType armor~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material copper~
+Extra    evil noremove otterlungs~
+Wear     take finger~
+Affect modifier -1 0 -1 strength -1 0
+Affect modifier -1 0 -1 constitution -4 0
+Affect modifier -1 0 -1 hp -5 0
+Affect modifier -1 0 -1 hitroll -1 0
+End
+
+#54
+Name huge stone fountain~
+Short a huge stone fountain~
+Desc a huge stone fountain is here~
+Level 0
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values 1000 1000 'rose wine' 0 0
+Weight 4000
+Material stone~
+Extra    otterlungs burnproof~
+End
+
+#55
+Name small round stone~
+Short a small round stone~
+Desc a small round stone is here~
+Level 0
+ItemType warpstone~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material stone~
+Extra    glow magic otterlungs~
+Wear     take hold~
+End
+
+#56
+Name small green gem~
+Short a small green gem~
+Desc a small green gem is here~
+Level 0
+ItemType treasure~
+Cost 500
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material diamond~
+Extra    otterlungs~
+Wear     take~
+End
+
+#57
+Name long wooden bench~
+Short a long wooden bench~
+Desc A long wooden bench.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 4 500 BEHKN 110 110
+Weight 0
+Material wood~
+Extra    otterlungs~
+End
+
+#58
+Name shackle ball chain iron~
+Short a ball and chain shackle~
+Desc an iron ball attached to a chain is here~
+Level 0
+ItemType armor~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material iron~
+Extra    noremove otterlungs burnproof~
+Wear     take feet~
+Affect modifier -1 0 -1 quickness -1 0
+Affect modifier -1 0 -1 move -100 0
+Affect modifier -1 0 -1 ac 2 0
+Affect modifier -1 0 -1 hitroll -1 0
+End
+
+#59
+Name single leather glove~
+Short a single leather glove~
+Desc a leather glove is here, its match absent~
+Level 0
+ItemType armor~
+Cost 0
+Asize 0
+Rsize 50
+Values 2 2 2 2 0
+Weight 2
+Material leather~
+Extra    magic noremove otterlungs burnproof~
+Wear     take hands~
+Affect modifier -1 0 -1 presence 2 0
+Affect modifier -1 0 -1 mana 40 0
+Affect affects -1 0 -1 none 0 dark_vision
+End
+
+#60
+Name gnarled staff druidstaff~
+Short a gnarled druidstaff~
+Desc A gnarled staff has been left here.~
+Level 10
+ItemType weapon~
+Cost 0
+Asize 0
+Rsize 50
+Values staff 0 0 none F
+Weight 15
+Material wood~
+Extra    nonmetal~
+Wear     take wield~
+End
+
+#61
+Name carved wooden totem totemstaff~
+Short a carved wooden totemstaff~
+Desc A carved wooden totemstaff lies here.~
+Level 10
+ItemType weapon~
+Cost 0
+Asize 0
+Rsize 50
+Values staff 0 0 none F
+Weight 25
+Material wood~
+Extra    nonmetal~
+Wear     take wield~
+End
+
+#65
+Name couch l-shaped~
+Short an l-shaped couch~
+Desc A comfortable looking L-shaped couch is here.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 5 0 EHKN 150 150
+Weight 0
+Material unknown~
+Extra    nopurge nodegrade~
+End
+
+#80
+Name unleashed fury sword artifact3~
+Short a double edged sword~
+Desc A sword with a clear blade lies here.~
+Level 1
+ItemType staff~
+Cost 1
+Asize 5
+Rsize 50
+Values 91 -1 -1 'summon justice' 0
+Weight 10
+Material gemstone~
+Extra    magic bless nopurge otterlungs nolocate burnproof~
+Wear     take hold~
+ExtraDesc sword unleashed fury~
+This sword is very intricate, runes of power line its length to the very
+tip of the blade.  The hilt is inlaid with gold and silver, thick leather 
+bonds the hilt tight.  Where the hilt meets the blade an inscription is
+set into the strange see-through blade.  It reads :
+
+      "The sword of unleashed fury, Holy sword of the Angelic Hosts"
+       "Gifted for my beloved ReiJin, may his soul rest peacefully"
+~
+End
+
+#81
+Name justice unleashed fury sword artifact3-temp~
+Short a double edged sword~
+Desc A sword with a clear blade lies here.~
+Level 21
+ItemType weapon~
+Cost 0
+Asize 1
+Rsize 50
+Values sword 10 8 divine ADE
+Weight 1
+Material gemstone~
+Extra    magic bless antievil antineutral noremove nopurge otterlungs nolocate burnproof~
+Wear     take wield~
+ClassAllowances cleric druid paladin ranger~
+Affect modifier -1 21 -1 strength 5 0
+Affect modifier -1 21 -1 quickness 5 0
+Affect modifier -1 21 -1 presence 30 0
+Affect modifier -1 21 -1 empathy 30 0
+Affect modifier -1 21 -1 constitution 10 0
+Affect modifier -1 21 -1 agility 5 0
+Affect modifier -1 21 -1 memory 5 0
+Affect modifier -1 21 -1 reasoning 5 0
+Affect modifier -1 21 -1 hp 75 0
+Affect modifier -1 21 -1 hitroll 10 0
+Affect modifier -1 21 -1 damroll 10 0
+Affect affects -1 21 -1 none 0 'detect_invis detect_hidden sanctuary haste regeneration'
+Affect immune -1 21 -1 none 0 'fire poison negative disease'
+ExtraDesc sword unleashed fury~
+This sword is very intricate, runes of power line its length to the very
+tip of the blade.  The hilt is inlaid with gold and silver, thick leather 
+bonds the hilt tight.  Where the hilt meets the blade an inscription is
+set into the strange see-through blade.  It reads :
+
+      "The sword of unleashed fury, Holy sword of the Angelic Hosts"
+       "Gifted for my beloved ReiJin, may his soul rest peacefully"
+~
+End
+
+#200
+Name cooked rabbit alaghi~
+Short a cooked rabbit~
+Desc A cooked rabbit is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material rabbit~
+Wear     take~
+End
+
+#201
+Name juicy worm avian~
+Short a `#`Mworm`^~
+Desc A juicy `#`Mworm`^ is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material worm~
+Wear     take~
+End
+
+#202
+Name slab meat draconian~
+Short a slab of meat~
+Desc A slab of raw meat is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material meat~
+Wear     take~
+End
+
+#203
+Name giant spider leg drow~
+Short a spider leg~
+Desc A giant spider leg is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material spider~
+Wear     take~
+End
+
+#204
+Name salted rat~
+Short a salted rat~
+Desc A salted rat lies here, lifeless.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material rat~
+Wear     take~
+End
+
+#205
+Name silver fruit elves elf~
+Short a `#`Ssilver`^ fruit~
+Desc A `#`Ssilver`^ fruit is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material fruit~
+Wear     take~
+End
+
+#206
+Name carrion crawler~
+Short a carrion crawler~
+Desc A succulent carrion crawler is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material carrion~
+Wear     take~
+End
+
+#207
+Name bone gnoll~
+Short a `#`Wbone`^~
+Desc A scrumptious `#`Wbone`^ is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material bone~
+Wear     take~
+End
+
+#208
+Name cheese wedge gnome~
+Short a wedge of `#`Ycheese`^~
+Desc A wedge of `#`Ycheese`^ is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material cheese~
+Wear     take~
+End
+
+#209
+Name bone meat half-orc~
+Short a meaty bone~
+Desc A meaty bone is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material meat~
+Wear     take~
+End
+
+#210
+Name tomato halfling~
+Short a `#`Rtomato`^~
+Desc A plump `#`Rtomato`^ is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material tomato~
+Wear     take~
+End
+
+#211
+Name bread loaf human~
+Short a loaf of bread~
+Desc A loaf of bread is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material bread~
+Wear     take~
+End
+
+#212
+Name baked mushroom kobold~
+Short a baked mushroom~
+Desc A baked mushroom is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material mushroom~
+Wear     take~
+End
+
+#213
+Name fish fresh lizardman~
+Short a fish~
+Desc A fresh fish is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material fish~
+Wear     take~
+End
+
+#214
+Name turkey large minotaur~
+Short a large turkey~
+Desc A large turkey is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material turkey~
+Wear     take~
+End
+
+#215
+Name kitty snack mrem~
+Short a kitty snack~
+Desc A kitty snack is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material catstuff~
+Wear     take~
+End
+
+#216
+Name flesh hunk orc~
+Short a hunk of flesh~
+Desc A hunk of flesh is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material flesh~
+Wear     take~
+End
+
+#217
+Name buckroot leafy voadkyn~
+Short a buckroot~
+Desc A leafy buckroot is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material buckroot~
+Wear     take~
+End
+
+#218
+Name watermelon half-elf~
+Short a `#`rwatermelon`^~
+Desc A succulent `#`rwatermelon`^ is here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material watermelon~
+Wear     take~
+End
+
+#219
+Name sticky honeycomb~
+Short a sticky `#`yhoneycomb`^~
+Desc A sticky `#`yhoneycomb`^ lies here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material watermelon~
+Wear     take~
+End
+
+#220
+Name rack ribs~
+Short a rack of `#`Rbloody`^ ribs~
+Desc A rack of `#`Rbloody`^ ribs lies here.~
+Level 0
+ItemType food~
+Cost 0
+Asize 10
+Rsize 50
+Values 8 8 0 0 0
+Weight 10
+Material watermelon~
+Wear     take~
+End
+
+#299
+Name grill~
+Short a grill~
+Desc A mortal-sized grill is here, with crispy remains still clinging to the top.~
+Level 0
+ItemType furniture~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 99999 BEHKNR 0 0
+Weight 0
+Material steel~
+Extra    nodegrade~
+ExtraDesc grill ~
+The grill is long and thin and has a big propane tank attached to it.  The 
+crispy remains of former annoying mortals still cling to the top.  
+~
+End
+
+#400
+Name mace~
+Short a mace~
+Desc A mace is lying here.~
+Level 1
+ItemType weapon~
+Cost 62
+Asize 30
+Rsize 50
+Values mace 1 6 smash 0
+Weight 40
+Material steel~
+Extra    inventory nodegrade~
+Extra2   nosell~
+Wear     take wield~
+ExtraDesc mace~
+A standard mace.  Nothing special about it.
+~
+End
+
+#401
+Name dagger~
+Short a dagger~
+Desc A dagger is lying here.~
+Level 1
+ItemType weapon~
+Cost 45
+Asize 20
+Rsize 50
+Values dagger 1 4 pierce 0
+Weight 25
+Material steel~
+Extra    inventory nodegrade~
+Extra2   nosell~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger barbarian spellfilcher~
+ExtraDesc dagger~
+A standard dagger.  Nothing special about it.
+~
+End
+
+#402
+Name shortsword sword~
+Short a shortsword~
+Desc A shortsword is lying here.~
+Level 1
+ItemType weapon~
+Cost 65
+Asize 20
+Rsize 50
+Values sword 1 6 slash 0
+Weight 20
+Material steel~
+Extra    inventory nodegrade burnproof~
+Extra2   nosell~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+ExtraDesc shortsword sword~
+A standard shortsword.  Nothing special about it.
+~
+End
+
+#403
+Name staff~
+Short a small staff~
+Desc A small staff is here.~
+Level 5
+ItemType weapon~
+Cost 100
+Condition 90
+Asize 50
+Rsize 50
+Values staff 1 14 beating F
+Weight 30
+Material wood~
+Extra    nonmetal nodegrade~
+Extra2   nosell~
+Wear     take wield~
+ExtraDesc staff ~
+A standard staff.  Nothing special about it.
+~
+End
+
+#404
+Name small hand axe~
+Short a small hand axe~
+Desc A small hand axe is lying here.~
+Level 1
+ItemType weapon~
+Cost 62
+Asize 30
+Rsize 50
+Values axe 1 6 slice 0
+Weight 40
+Material steel~
+Extra    inventory nodegrade~
+Extra2   nosell~
+Wear     take wield~
+ClassAllowances warrior druid paladin ranger barbarian~
+ExtraDesc small hand axe~
+A small light axe.  Pretty standard as far as materials and crafstmanship.  
+~
+End
+
+#405
+Name flail~
+Short a flail~
+Desc A flail is lying here.~
+Level 1
+ItemType weapon~
+Cost 62
+Asize 30
+Rsize 50
+Values flail 1 6 smash 0
+Weight 40
+Material steel~
+Extra    inventory nodegrade~
+Extra2   nosell~
+Wear     take wield~
+ExtraDesc flail ~
+ëêêêì~
+End
+
+#406
+Name whip~
+Short a whip~
+Desc A whip is lying here.~
+Level 1
+ItemType weapon~
+Cost 51
+Asize 5
+Rsize 50
+Values whip 1 5 sting 0
+Weight 10
+Material steel~
+Extra    inventory nodegrade~
+Extra2   nosell~
+Wear     take wield~
+ExtraDesc whip~
+A standard whip.  Nothing special about it.
+~
+End
+
+#407
+Name halberd polearm~
+Short a halberd~
+Desc A halberd is lying here.~
+Level 1
+ItemType weapon~
+Cost 76
+Asize 75
+Rsize 50
+Values polearm 1 14 thrust F
+Weight 50
+Material steel~
+Extra    inventory nodegrade~
+Extra2   nosell~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+ExtraDesc halberd~
+A standard halberd.  Nothing special about it.
+~
+End
+
+#408
+Name sickle~
+Short a sickle~
+Desc A sickle is lying here.~
+Level 1
+ItemType weapon~
+Cost 62
+Asize 30
+Rsize 50
+Values flail 1 6 smash 0
+Weight 40
+Material steel~
+Extra    inventory nodegrade~
+Extra2   nosell~
+Wear     take wield~
+ExtraDesc sickle ~
+A standard sickle.  Nothing special about it.
+~
+End
+
+#409
+Name leather vest~
+Short a leather vest~
+Desc A leather vest is lying here.~
+Level 1
+ItemType armor~
+Cost 56
+Asize 5
+Rsize 50
+Values 3 3 3 1 0
+Weight 10
+Material leather~
+Extra    inventory nonmetal nodegrade~
+Extra2   nosell~
+Wear     take about~
+ExtraDesc leather vest~
+A standard leather vest.  Nothing special about it.
+~
+End
+
+#410
+Name small wooden shield~
+Short a small wooden shield~
+Desc A small wooden shield is lying here.~
+Level 1
+ItemType armor~
+Cost 50
+Asize 20
+Rsize 50
+Values 3 3 3 2 0
+Weight 10
+Material wood~
+Extra    inventory nonmetal nodegrade~
+Extra2   nosell~
+Wear     take shield~
+ExtraDesc A small wooden shield.~
+A standard wooden shield.  Nothing special about it.
+~
+End
+
+#411
+Name oil lamp~
+Short an oil lamp~
+Desc An oil lamp is lying here.~
+Level 1
+ItemType light~
+Cost 26
+Asize 12
+Rsize 50
+Values 0 0 160 0 0
+Weight 10
+Material copper~
+Extra    inventory~
+Extra2   nosell~
+Wear     take hold~
+End
+
+#420
+Name wooden donation chest~
+Short a wooden donation chest~
+Desc A wooden donation chest is here.~
+Level 1
+ItemType container~
+Cost 500
+Asize 0
+Rsize 50
+Values 999999 0 0 999999 999999
+Weight 1000
+Material wood~
+Extra    nodegrade~
+ExtraDesc donation chest wooden~
+The wooden chest here has been purposely built to receive donations from 
+throughout the lands.  
+~
+End
+
+#498
+Name guts entrails~
+Short the guts of %s~
+Desc A steaming pile of %s's entrails is lying here.~
+Level 0
+ItemType food~
+Cost 0
+Condition 25
+Asize 20
+Rsize 50
+Values 5 5 0 A 0
+Weight 20
+Material meat~
+Wear     take~
+End
+
+#499
+Name no name 499~
+Short `YDO NOT BUILD OBJECTS IN AREA!~
+Desc (no description 499)~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material unknown~
+End
+
+#0
+
+
+
+#ROOMS
+#1
+Name The Void~
+Desc You are floating in nothing.
+~
+RoomFlags no_mob indoors light~
+Sector forest~
+End
+
+
+#2
+Name Limbo~
+Desc You are floating in a formless void, detached from all sensation of physical
+matter, surrounded by swirling glowing light, which fades into the relative
+darkness around you without any trace of edges or shadow.
+   There is a "No Tipping" notice pinned to the darkness.
+~
+RoomFlags indoors safe ooc light~
+Sector city~
+Exit up 3001
+EFlags oneway~
+EKeyvnum -1
+End
+
+
+#3
+Name A bright green clearing~
+Desc You awaken to find youself in a beautiful glade.  Light dances through the 
+leaves, making kalidescopic patterns on the forest floor.  You can hear the 
+quiet, comforting murmur of a small brook, and you are surrounded by peace 
+and calm.  The soft scent of lilac and honeysuckle wafts through the air, 
+mixed with the smell of freshly-baked sweets.  Even the grass beneath your 
+feet seems more lush than any you have ever seen and everything around you 
+is vibrant with with colors and sounds of life.  `1Around you, the trees go so high you can't make out their end.  The light 
+that comes from above, passing through the many leaves, shows a great and 
+colourful pattern on the floor and all around you.  
+~
+RoomFlags no_mob safe law noscry light~
+Sector inside~
+Exit north 5
+Exit east 4
+Exit south 13
+Exit west 9
+Exit down 3000
+EFlags oneway~
+EDesc As you look down, into the grass, you see in your mind the image of Mekali's 
+Large Plaza.  
+~
+Exit northeast 6
+Exit southeast 14
+Exit southwest 12
+Exit northwest 8
+End
+
+
+#4
+Name A dark green clearing~
+Desc You are suddenly aware of eyes upon you, of unfriendly creatures lurking in 
+the shadows.  Trees tower above you, letting only the smallest amounts of 
+sunlight to reach the floor of this dank place.  Sickly plants struggle to 
+survive, and the smell of decay assails you.  Some slimy thing has left it's 
+trail at your feet, and by the size of it, you don't want to be here if the 
+thing should decide to return.  
+~
+RoomFlags no_mob safe law noscry light~
+Sector inside~
+Exit north 6
+Exit east 10
+Exit south 14
+Exit west 3
+Exit northeast 7
+Exit southeast 11
+Exit southwest 13
+Exit northwest 5
+End
+
+
+#5
+Name A path in the forest. ~
+Desc You enter a small path in the forest running ahead, to your back, right and 
+left.  The great, immense trees tower you like titanic collumns while their 
+dense foliage lets out very little of the sunlight comt through, giving you 
+the feeling that there is no actual sun in this place, only an omnipresent 
+light coming from above.  In this part of the forest, time loses meaning and 
+the directions seem muffled as the utter sense of statis and everlasting 
+harmony hits you right in your heart.  It seems as though this place has 
+always been, and will always be.  `1Here, you also notice that the things you see and things you touch are 
+somewhat more real than reality itself, as if you whole life has been but a 
+dream, and you finally woke up.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 13
+Exit east 6
+EDesc To the east you see the forest path getting darker and eerie.
+~
+Exit south 3
+Exit west 8
+Exit northeast 15
+Exit southeast 4
+Exit southwest 9
+Exit northwest 12
+End
+
+
+#6
+Name A path in a dark forest~
+Desc As you step in this sector of the forest, you see the massive, gigantic 
+trees towering you and reaching into what seems to be miles and miles of 
+height.  They are somewhat darker and colder then the others on the forest, 
+and in here you feel as if you were constantly dying, eternally decomposing 
+and suffering the forever limitations of the flesh.  Around you, you see 
+shadow bunnies and ethereal animals running, half-decomposed, in an eerie 
+feeling of undead existance.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 14
+Exit east 7
+Exit south 4
+Exit west 5
+EDesc To the west you see the path getting lighter.
+~
+Exit northeast 11
+Exit southeast 10
+Exit southwest 3
+Exit northwest 15
+End
+
+
+#7
+Name A path in the forest~
+Desc You enter a path in the forest going ahead, back, right and left.  In one 
+specific direction, it seems as if the forest grows denser and darker, into 
+an eerie spot.  To the other side, it is lighter and quieter.  You see, at 
+sparse intervals, some shadows moving around you, as the only form of life 
+in this place, other than the plants.  `1Here, the trees are so tall you can't possibly see the sky above them, 
+except for what seems to be a vast, omnipresent light falling from above, 
+from among the pale leaves of the trees.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 11
+Exit east 8
+Exit south 10
+Exit west 6
+Exit northeast 12
+Exit southeast 9
+Exit southwest 4
+Exit northwest 14
+End
+
+
+#8
+Name A light meadow ~
+Desc You have entered on a light meadow.  Although the trees here are very away 
+from each other, they are so tall you still can't see their ends, as if they 
+continued on for infinity.  The sky is to you just a vague, omnipresent 
+lighting copming from above that falls into the floor in odd patterns formed 
+by the collorful leaves of the trees.  `1In here, you sense a great quiet as the stillness of the forests around you 
+create a silent and rather sacred spot.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 12
+Exit east 5
+Exit south 9
+Exit west 7
+Exit northeast 13
+Exit southeast 3
+Exit southwest 10
+Exit northwest 11
+End
+
+
+#9
+Name The silver lake~
+Desc As you walk into this enticingly quiet lake, you sense an utter calm and 
+silence surrendering your soul.  It is as if, from the silvery water, your 
+existance was purified, and from the onmipresent light above the gigantic 
+trees, your life was blessed.  `1The lake water reflects the trees and the colourful patterns made by the 
+tree's leaves when they touch the light, and the bushes and grass are soft 
+and perfectly still.  The ever sense of quiet of this place is only countered by 
+its equivalent sense of solitude, that of a beauty few can appreciate.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 8
+Exit east 3
+Exit south 12
+Exit west 10
+Exit northeast 5
+Exit southeast 13
+Exit southwest 11
+Exit northwest 7
+End
+
+
+#10
+Name The Pool of Sorrow~
+Desc You enter a small clearing on a scorched part of the forest, where the dark 
+trees and pale light seems to oppress your soul with silent cries of revenge 
+and an anguished feeling of sorrow.  `1In the middle of this clearing, you see a pond of blood that seems to be 
+bottomless.  The pond seems to be crying out for revenge, in a desperate 
+attempt to ease its own suffering.  You sense as if all of the pain and 
+suffering emanating from this pond sowered the world below.  `1Ah...  The pond is growing.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 7
+Exit east 9
+Exit south 11
+Exit west 4
+Exit northeast 8
+Exit southeast 12
+Exit southwest 14
+Exit northwest 6
+End
+
+
+#11
+Name A darkening forest~
+Desc You enter a path in the forest where it seems to grow darker in many 
+directions.  Here, too, the trees are so tall that you can't make out their 
+ending, and the light coming from the sky (?)  Fill the floor with 
+intricated patterns made by the leaves.  `1However, you also feel as if some sort of silent anguish or unspoken fear 
+were entering your soul as you near some parts of this forest, just as you 
+feel it leave as you near others.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 10
+Exit east 12
+Exit south 7
+Exit west 14
+Exit northeast 9
+Exit southeast 8
+Exit southwest 6
+Exit northwest 4
+End
+
+
+#12
+Name The Golden clearing~
+Desc As you enter this clearing on the forest, you are showered with a golden 
+light coming from above.  Here, the immense trees also block out the sky 
+lights with theyr odd leaves, but their leaves here are golden, reflecting 
+the light with a beautiful glow.  `1In this clearing, the grass seems softer and the very air seems sweeter as 
+the light that fills in the whole place surrounds it in a somewhat sacred 
+aura.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 9
+Exit east 13
+Exit south 8
+Exit west 11
+Exit northeast 3
+Exit southeast 5
+Exit southwest 7
+Exit northwest 10
+End
+
+
+#13
+Name A light forest ~
+Desc You are on a lighter portion of the forest, where the gigantic trees that 
+tower you, blocking the sky light, do not opress you with their presence, 
+but rather, seem to embrace you as you move along.  The light that comes 
+from everywhere on the sky hits the ground in odd, but rather beautiful 
+patterns as it pass through the leaves of the trees.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 3
+Exit east 14
+Exit south 5
+Exit west 12
+Exit northeast 4
+Exit southeast 15
+Exit southwest 8
+Exit northwest 9
+End
+
+
+#14
+Name A dark forest~
+Desc You enter a darker portion of the forest, where the towering trees seems to 
+suffocate you, as they deprive you of both the sunlight and the freedom of 
+movement.  It seems as if the very air you breathe was devoid of live and it 
+gets ever more desperate to try to inhale a greater amount of air at every 
+breath.  In every sense, it seems to you as if this place was drawing your 
+life away.  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Exit north 4
+Exit east 11
+Exit south 6
+Exit west 13
+Exit northeast 10
+Exit southeast 7
+Exit southwest 15
+Exit northwest 3
+End
+
+
+#15
+Name The Point of Transitoriety~
+Desc As you enter this...  Place(?)  , you see, or rather, sense, the whole life 
+as you knew it coming to an end, and coming to life once again.  In here, 
+you see the eternal decomposition of the matter and the transitory nature of 
+the physical as, before your eyes, all bodies and all form keeps on an 
+eternal decomposition.  Oddly enough, everything in this place is constantly 
+changinc its nature, as death brings an ever increasing rebirth of all forms 
+and all life.  `1From this evolutionary heaven, you can see the very face, the very 
+representation of transitoriety itself, with its ever-changing, loving and 
+hateful, beautiful and hideous being: Death.  `1In here, you also feel your body crumbling to the ever-increasing 
+mutability and instability as your matter utter for death, and your spirit 
+claim for life!  
+~
+RoomFlags indoors safe no_recall law nowhere noscry light~
+Sector inside~
+Mana -100
+Heal -100
+Exit northeast 14
+Exit southeast 6
+EDesc To the southeast you see a not too friendly forest beginning.
+~
+Exit southwest 5
+EDesc To the southwest you see a quiet and calm forest appearing.
+~
+Exit northwest 13
+End
+
+
+#16
+Name A small clearing with a large rock.~
+Desc You are in a small clearing with exits in all directions.  In the middle of 
+the clearing there is a large rock.  
+~
+RoomFlags indoors safe light~
+Sector forest~
+Exit north 5
+EFlags oneway~
+Exit east 4
+EFlags oneway~
+Exit south 13
+EFlags oneway~
+Exit west 9
+EFlags oneway~
+End
+
+
+#299
+Name Path of the Damned~
+Desc You are walking on what seems to be a path formed out of an endless rib
+cage.  Huge vertebrae stretch out as a walk way under your feet, preventing
+you from falling into the seemingly endless abyss below.  Huge ribs stick
+out from the infinitely long spinal cord, towering over you.  It is eerily
+quiet all around you, the only sounds are the ones you make.
+~
+RoomFlags indoors no_recall law nowhere ooc noscry noautomap~
+Sector forest~
+Exit north 299
+Exit east 299
+Exit south 299
+Exit west 299
+End
+
+
+#499
+Name `YDO NOT BUILD ROOMS IN AREA!~
+Desc ~
+Sector inside~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 80 spec_summoned_guardian
+S
+
+
+
+#RESETS2
+M 0 2 1 3 1
+M 0 3 1 4 1
+M 0 1 1 15 1
+O 0 6 -1 16
+O 0 299 -1 299
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#499
+title `YDO NOT BUILD MOBPROGS IN AREA!~
+disabled false
+END
+
+#123
+title artifact3-check~
+code if carries $n artifact3 
+say My blessing on my chosen one.
+mob oload 101
+give artifact3 $n
+end
+~
+disabled false
+END
+
+#122
+title undead dracon attacks~
+code emote SCREAMS !!!! then speaks as it dies.
+say Curse you...I will see you dead and myself free!
+mob echo Blackness streaks from the sky, slamming into the ground, you are struck!!
+mob damage all 50 100
+~
+disabled false
+END
+
+#121
+title a badass mprog~
+code mob cast 'dispel magic' $n
+mob cast 'shadow b' $n
+mob cast 'wrath' $n
+mob cast 'blind' $n
+mob cast 'plague' $n
+mob cast 'slow' $n
+mob cast 'weaken' $n
+mob cast 'poison' $n
+~
+disabled false
+END
+
+#120
+title undead dragon purges room~
+code emote smiles slyly.
+say I would love to see more death but the way is clear and I must take it!
+emote turns and looks skyward, its face determined and grim.
+mob echo Black lightning streaks from the sky and strikes $I.
+mob echo Blackness envelopes $I and $j fades away with the lightning.
+mob purge $i
+~
+disabled false
+END
+
+#119
+title artifact2 check~
+code if wears $n artifact2
+  say Very well Master your wish is my command.
+  emote charges straight toward $q.
+  kill $q
+  end
+~
+disabled false
+END
+
+#118
+title artifact2 check~
+code if wears $n artifact2
+  mob remember $r
+  say Do you wish $q to be my target Master.
+  end
+~
+disabled false
+END
+
+#117
+title artifact2 spellup~
+code if wears $n artifact2
+  emote bears its teeth then utters some words "Na Tane Flor".
+  mob cast rejuvinate $n
+  mob cast sanc $n
+  mob cast bless $n
+  mob cast armor $n
+  mob cast shield $n
+  mob cast haste $n
+  emote turns and looks skyward, its face determined and grim.
+  mob echo Black lightning streaks from the sky and strikes $I.
+  mob echo Blackness envelopes $I and $j fades away with the lightning.
+  mob purge $i
+end
+~
+disabled false
+END
+
+#116
+title artifact2 something~
+code if wears $n artifact2
+  emote raises itself on its back legs, teeth bared $I lets forth a horrid scream.
+  mob zecho A horrid scream echos about the area..  "Rrrryh Rrrryh Deeaath!!!" 
+  end
+~
+disabled false
+END
+
+#115
+title artifact2 something~
+code if wears $n artifact2
+  say I act as you will Master, I rest now.
+  rest
+  end
+~
+disabled false
+END
+
+#114
+title artifact2 something~
+code if wears $n artifact2
+  say I act as you will Master, I destroy now.
+  get all
+  mob junk all
+  emote is consumed by black fire, the next instant the fire is gone. 
+  end
+~
+disabled false
+END
+
+#113
+title artifact2 something~
+code if wears $n artifact2
+  say I act as you will Master, I follow no one.
+  follow self
+  end
+~
+disabled false
+END
+
+#112
+title artifact2 something~
+code if wears $n artifact2
+  say I act as you will Master, I follow now.
+  follow $n
+  end
+~
+disabled false
+END
+
+#111
+title artifact2 something~
+code if wears $n artifact2
+  say I act as you will Master, I stand now.
+  stand
+  end
+~
+disabled false
+END
+
+#110
+title artifact2 something~
+code if wears $n artifact2
+  say I will obey these commands Master.
+  say stand, rest, destroy, follow. not follow, warcry, spell, search, kill.
+  emote eyes flash red, and a grin shows white teeth.
+  end
+~
+disabled false
+END
+
+#3
+title welcome to death for newbies~
+code mob echo `RUnfortunately you have died.`x
+mob echo The Gods, in their greater wisdon, have judged your soul, and considered you worthy to be released back into the world.
+mob echo To re-enter the world, please step `Ydownwards`x, or `Yrecall`x, and you shall leave the wonders of the Forests of the Gods for the reality that is `YMythrin`x.
+~
+disabled false
+END
+
+#2
+title welcome to death for newbies.1~
+code mob echo `RUnfortunately you have died.`x
+mob echo The Gods, in their greater wisdon, have judged your soul, and considered you worthy to be released back into the world.
+mob echo To re-enter the world, please step `Ydownwards`x, or `Yrecall`x, and you shall leave the wonders of the Glades of the Gods for the reality that is `YMythrin`x.
+~
+disabled false
+END
+
+#0
+
+
+#$

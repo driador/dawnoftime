@@ -1,0 +1,2851 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Aarislan, Land of Lost Children~
+ShortName   Aarislan~
+Builders    None~
+Credits     Cadoren Illyssa~
+VNUMs       16050 16099
+LComment    [ QUEST ]
+AFlags  noscry nogateinto nosummoninto noportalinto~
+Security    9
+Colour      G~
+colourcode  `
+MapScale    5
+MapLevel    1
+Vnum_offset 0
+Continent   aarislan~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#16050
+Name child moon~
+ShortD a peaceful-looking child~
+LongD A child is here, sitting in the crescent of the moon.~
+Desc This child has a dreamy look on their face, as they sit in the crescent of 
+the moon, gazing up at the stars.  Their face has the sweet, innocent look 
+of a young child and their is a peacefulness about them.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#16051
+Name young girl summer garden~
+ShortD a young girl~
+LongD A young girl is here, prancing like a horse.~
+Desc This child has a dreamy look on their face, as she prances about, pretending 
+to be a horse.  Her face has the sweet, innocent look of a young child and 
+their is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16052
+Name young boy playing flute~
+ShortD a young boy~
+LongD A young boy is here, playing a flute.~
+Desc This child has a dreamy look on his face, as he sits among the grasses, 
+playing merry tunes on his flute.  His face has the sweet, innocent look of 
+a young child and there is a peacefulness about him.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg RANDOM 16070 5~
+END
+
+#16053
+Name child eating cake~
+ShortD a child eating cake~
+LongD A child is here, eating some birthday cake.~
+Desc This child has a dreamy look on her face, as she nibbles on the piece of 
+birthday cake which she is holding in her hand.  Her face has the sweet, 
+innocent look of a young child and their is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16054
+Name child leader~
+ShortD a child being the leader~
+LongD A child is here, being the leader~
+Desc This child has a dreamy look on his face, as he plays at being the leader, 
+leading his friends through the grass.  His face has the sweet, innocent 
+look of a young child and there is a peacefulness about him.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg RANDOM 16081 5~
+END
+
+#16055
+Name child autumn garden hiding~
+ShortD a child~
+LongD A child is hiding here in the garden.~
+Desc This child has a dreamy look on his face, as he hides in the garden, 
+thinking no one can find him.  His face has the sweet, innocent look of a 
+young child and there is a peacefulness about him.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+AffBy  hide~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#16056
+Name child rainbow~
+ShortD a child on a rainbow~
+LongD A child is here, sliding on a rainbow.~
+Desc This child has a dreamy look on her face, as she slides down the rainbow, 
+laughing with joy.  Her face has the sweet, innocent look of a young child 
+and there is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP sitting~
+DefPos sitting~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16057
+Name young girl fresias~
+ShortD a young girl~
+LongD A young girl is twirling about, in the fresias here.~
+Desc This child has a dreamy look on their face, as she twirls about, amongst the 
+fresias.  Her face has the sweet, innocent look of a young child and their 
+is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16058
+Name child eating candy~
+ShortD a child eating candy~
+LongD A child is here, eating candies from the tree.~
+Desc This child has a dreamy look on his face, as he picks sweet candies from the 
+tree and eats them.  His face has the sweet, innocent look of a young child 
+and there is a peacefulness about him.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#16059
+Name child making snowman~
+ShortD a child~
+LongD A child is here, making a snowman.~
+Desc This child has a dreamy look on his face, as he goes about making a snowman out of snow and sticks.  His face has the sweet, innocent look of a young child 
+and there is a peacefulness about him.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#16060
+Name young girl~
+ShortD a young girl~
+LongD A young girl is playing with a squirrel here.~
+Desc This child has a dreamy look on their face, as she plays with a friendly 
+squirrel here.  Her face has the sweet, innocent look of a young child and 
+their is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16061
+Name child bubble~
+ShortD a child in a bubble~
+LongD A child is here, floating in a bubble.~
+Desc This child has a dreamy look on their face, as she floats along, inside a 
+bubble.  Her face has the sweet, innocent look of a young child and their is 
+a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16062
+Name child floating leaf~
+ShortD a child on a leaf~
+LongD A child is floating down the river here, on a leaf.~
+Desc This child has a dreamy look on his face, as he floats down the river on a 
+leaf.  His face has the sweet, innocent look of a young child and there is a 
+peacefulness about him.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#16063
+Name young girl sunflowers~
+ShortD a young girl~
+LongD A young girl is dancing among the sunflowers here.~
+Desc This child has a dreamy look on their face, as she dances in and out of the 
+tall sunflowers.  Her face has the sweet, innocent look of a young child and 
+their is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16064
+Name young boy seashells~
+ShortD a young boy~
+LongD A young boy is collecting seashells here.~
+Desc This child has a dreamy look on his face, as he collects flowers of the sea. 
+ His face has the sweet, innocent look of a young child and there is a 
+peacefulness about him.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#16065
+Name young girl cloud~
+ShortD a young girl on a cloud~
+LongD A young girl is playing on a cotton candy cloud.~
+Desc This child has a dreamy look on their face, as she plays on the cloud of 
+cotton candy here.  Her face has the sweet, innocent look of a young child 
+and their is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16066
+Name girl reading~
+ShortD a girl~
+LongD A girl is here, reading a book.~
+Desc This child has a dreamy look on their face, as she quietly reads her book, 
+amongst the tulips.  Her face has the sweet, innocent look of a young child 
+and their is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg DEATH 16050 100~
+MProg SPEECH 16051 hello~
+MProg SPEECH 16051 hi~
+MProg SPEECH 16051 greetings~
+MProg SPEECH 16052 reading~
+MProg SPEECH 16053 have~
+MProg SPEECH 16053 take~
+MProg SPEECH 16053 give~
+MProg SPEECH 16054 play~
+MProg GIVE 16060 16076~
+END
+
+#16067
+Name boy dirty face~
+ShortD a boy with a dirty face~
+LongD A boy with a dirty face, is playing with some kittens here.~
+Desc This child has a dreamy look on his face, as he happily gets more and more 
+dirty.  His face has the sweet, innocent look of a young child and there is 
+a peacefulness about him.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+END
+
+#16068
+Name girl dressing up~
+ShortD a girl dressing up~
+LongD A girl is here, dressing up.~
+Desc This child has a dreamy look on their face, as she plays games while 
+dressing up in fancy costumes.  Her face has the sweet, innocent look of a 
+young child and their is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg RANDOM 16069 5~
+END
+
+#16069
+Name girl eating cupcakes~
+ShortD a girl eating cupcakes~
+LongD A girl is picking cupcakes from the tree here.~
+Desc This child has a dreamy look on their face, as she picks cupcakes from the 
+tree and eats them.  Her face has the sweet, innocent look of a young child 
+and their is a peacefulness about her.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16070
+Name boy blowing bubbles~
+ShortD a boy blowing bubbles~
+LongD A boy is here, blowing bubbles across the garden.~
+Desc This child has a dreamy look on his face, as he blows bubbles across the 
+garden.  His face has the sweet, innocent look of a young child and there is 
+a peacefulness about him.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    male~
+Material unknown
+MProg RANDOM 16068 5~
+END
+
+#16071
+Name girl quest star sad~
+ShortD a sad looking girl~
+LongD A girl looks at you with home-sick eyes, welled up with tears.~
+Desc This child, once happy to live in this dreamy land of childhood daydreams, 
+now has a lonely, lost look on her face, and her head hangs sadly.  When you 
+arrive, she looks up at you, with a slight glimmer of hope dawning on her 
+face.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg GIVE 16062 16050~
+MProg RANDOM 16061 5~
+MProg GIVE 16063 16051~
+MProg GIVE 16064 16075~
+MProg GIVE 16065 16053~
+MProg GIVE 16066 16054~
+END
+
+#16072
+Name child smelling roses~
+ShortD a child~
+LongD A child is here, smelling a rose.~
+Desc This child has a dreamy look on her face, as she tenderly holds a rose in 
+her hand, smelling its sweet scent.  Her face has the look of sweet 
+innocence that all children do.  
+~
+Race human~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area~
+Imm    summon charm sleep scry~
+Vuln   disease drowning~
+Form   edible instant_decay sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16073
+Name fairie flowers~
+ShortD the fairie of flowers~
+LongD The fairie of the flowers flits about, looking after her flowers.~
+Desc This delicate fairie looks like a tiny girl with fragile wings.  She has a 
+cute little face with a bright smile.  She looks after the flowers, 
+sprinkling them with water every day, and tucking them into bed at night.  
+~
+Race doll~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+Imm    summon charm cold poison negative holy mental disease drowning sleep scry~
+Res    bash light~
+Vuln   slash fire lightning acid energy disease drowning~
+Form   edible instant_decay other sentient construct biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16074
+Name fairie tooth~
+ShortD the tooth fairie~
+LongD The tooth fairie is here, making a necklace.~
+Desc This delicate fairie looks like a tiny girl with fragile wings.  She has a 
+cute little face with a bright smile.  She is the tooth fairie, flying down 
+to children who have left a tooth beside their bed, and in return leaving a 
+gold coin for them.  
+~
+Race doll~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+Imm    summon charm cold poison negative holy mental disease drowning sleep scry~
+Res    bash light~
+Vuln   slash fire lightning acid energy disease drowning~
+Form   edible instant_decay other sentient construct biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg SPEECH 16056 snow~
+MProg SPEECH 16056 snowfairy~
+MProg SPEECH 16056 snowfairie~
+END
+
+#16075
+Name fairie sweets~
+ShortD the fairie of sweets~
+LongD The fairie of sweets is making some lovely sugar-coated cherries.~
+Desc This delicate fairie looks like a tiny girl with fragile wings.  She has a 
+cute little face with a bright smile.  She is the fairie of sweets, making 
+sure there is always enough sweets for every child.  
+~
+Race doll~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+Imm    summon charm cold poison negative holy mental disease drowning sleep scry~
+Res    bash light~
+Vuln   slash fire lightning acid energy disease drowning~
+Form   edible instant_decay other sentient construct biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg SPEECH 16058 snow~
+MProg SPEECH 16058 snowfairie~
+MProg SPEECH 16058 snowfairy~
+END
+
+#16076
+Name fairie snow~
+ShortD the snow fairie~
+LongD The snow fairie is sprinkling snowflakes here.~
+Desc This delicate fairie looks like a tiny girl with fragile wings.  She has a 
+cute little face with a bright smile.  She is the snow fairie, and every 
+day, sprinkles snowflakes across the meadow for the children to play in.  
+~
+Race doll~
+Align 0 0
+XPMod 0
+Level 6
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 60
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+Imm    summon charm cold poison negative holy mental disease drowning sleep scry~
+Res    bash light~
+Vuln   slash fire lightning acid energy disease drowning~
+Form   edible instant_decay other sentient construct biped mammal cold_blood~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+MProg SPEECH 16055 snowflake~
+MProg SPEECH 16059 pix~
+END
+
+#16077
+Name bushy-tailed squirrel~
+ShortD a bushy-tailed squirrel~
+LongD A bushy-tailed squirrel is playing in the trees here.~
+Desc This cute looking squirrel has a bushy-tail and is very friendly with the 
+children here.  It has soft golden fur and large brown eyes.  
+~
+Race undefined race~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d2+2
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 70
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign noautosocial~
+AffBy  infrared~
+Off    dodge fast~
+Imm    summon charm light sleep scry~
+Vuln   pierce cold~
+Form   edible animal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#16078
+Name beautiful white pony~
+ShortD a beautiful white pony~
+LongD A beautiful white pony stands here, for the children to ride.~
+Desc This beautiful white pony has a calm nature, and enjoys the attention the 
+children give it.  It happily stands here neighing to the children.  
+~
+Race horse~
+Align 0 0
+Level 5
+Hitroll 8
+HitDice 2d5+1
+ManaDice 2d5+0
+DamDice 1d6+1
+DamType charge
+AC 50 50 50 50
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy  haste~
+Off    dodge fast kick~
+Imm    summon charm sleep scry~
+Form   edible animal sentient biped mountable mammal~
+Part   head legs heart brains guts hands feet fingers ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material unknown
+END
+
+#16079
+Name fluffy yellow chicks~
+ShortD some fluffy yellow chicks~
+LongD Some fluffy yellow chicks peck at the ground here.~
+Desc Some baby chicks peck at the ground here.  They are soft and fluffy and have 
+yellow feathers.  They make a tiny little "peep" when they are cuddled.  
+~
+Race chicken~
+Align 0 0
+Level 3
+Hitroll 0
+HitDice 1d5+3
+ManaDice 1d100+1
+DamDice 1d6+0
+DamType peck
+AC 70 70 70 70
+Wealth 0
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy  flying haste swim~
+Imm    summon charm sleep scry~
+Res    drowning~
+Form   edible animal sentient biped mammal bird~
+Part   head arms legs heart brains guts hands feet fingers ear eye wings~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#16080
+Name cat~
+ShortD some small kittens~
+LongD Some small kittens mew softly here.~
+Desc These tiny little kittens are newly born and their fur is all fluffy and 
+soft.  They have a small, soft mew when they get cuddled.  
+~
+Race cat~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d1+3
+DamDice 1d4+0
+DamType scratch
+AC 90 90 90 100
+Wealth 0
+Act    npc dont_wander no_tame stay_area noalign noautosocial~
+AffBy  dark_vision~
+Off    dodge fast~
+Imm    summon charm sleep scry~
+Form   edible animal mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    female~
+Material unknown
+END
+
+#16081
+Name pink-winged butterfly~
+ShortD a `#`Mpink-winged`^ butterfly~
+LongD A `#`Mpink-winged`^ butterfly is flying over the flowers here.~
+Desc This butterfly has bright `#`Mpink`^ wings which are delicate and almost 
+transparent.  It quietly flits from one flower to another.  
+~
+Race bat~
+Align 0 0
+Level 1
+Hitroll 0
+HitDice 1d4+1
+ManaDice 1d4+0
+DamDice 1d4+0
+DamType pierce
+AC 90 90 90 90
+Wealth 1
+Act    npc dont_wander no_tame stay_area~
+AffBy  flying~
+Off    dodge fast~
+Imm    summon charm sleep scry~
+Res    pierce~
+Vuln   bash light~
+Form   edible animal sentient biped mammal bird~
+Part   guts wings~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material unknown
+END
+
+#16082
+Name snowy-white bunny rabbit~
+ShortD a snowy-white bunny rabbit~
+LongD A snowy-white bunny rabbit hops about.~
+Desc This little rabbit is covered with grey fur.  Tall, tapered ears droop lazily on its
+head.  A pink nose is centered perfectly on its face, twitching occasionally.
+~
+Race human~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 0d0+1
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 50
+Wealth 0
+Act    npc no_tame stay_area noautosocial~
+Imm    summon charm sleep scry~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    random~
+Material unknown
+END
+
+#16083
+Name A little grey pony~
+ShortD a little `#`Sgrey`^ pony~
+LongD A `#`Sgrey`^ pony lays back on the soft grass here.~
+Desc Here is a little grey pony barely three feet from head to toe.  It seems to 
+enjoy rolling onto its back on the grass.  
+~
+Race horse~
+Align 0 0
+Level 5
+Hitroll 0
+HitDice 2d5+1
+ManaDice 2d5+0
+DamDice 1d6+1
+DamType bite
+AC 50 50 50 50
+Wealth 1
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy  haste~
+Off    fast kick~
+Imm    summon charm sleep scry~
+Vuln   bash light~
+Form   edible animal sentient biped mountable mammal~
+Part   head legs heart brains guts feet ear eye tail fangs~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    female~
+Material flesh
+END
+
+#16084
+Name castatlevel 50 bless~
+ShortD i'm here to bless you!~
+LongD I'm here to bless you!~
+Desc ~
+Race human~
+Align 0 0
+Level 50
+Hitroll 0
+HitDice 5d9+275
+ManaDice 5d9+270
+DamDice 5d8+19
+DamType none
+AC -200 -200 -200 -200
+Wealth 0
+Act    npc dont_wander stay_area cleric unseen~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material unknown
+END
+
+#0
+
+
+
+#OBJECTS
+#16050
+Name porcelain doll~
+Short a small doll~
+Desc A small girl's doll is here.~
+Level 1
+ItemType trash~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material porcelain~
+Extra    nonmetal nolocate nodegrade burnproof nogetall~
+Wear     take hold~
+ExtraDesc small doll~
+This tiny doll, made of porcelain, looks a little dusty, but underneath the 
+dust is a sweet girl-like face, although the paint is now faded.  She is 
+wearing a faded, red dress with gold trimmings.  
+~
+End
+
+#16051
+Name girl's hair ribbon~
+Short a girl's hair ribbon~
+Desc A ribbon lies here.~
+Level 1
+ItemType trash~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material ribbon~
+Extra    nonmetal nolocate nodegrade burnproof nogetall~
+Wear     take head~
+ExtraDesc girl's hair ribbon~
+A red hair ribbon is hair.  The ends are slightly tassled from age.  
+~
+End
+
+#16052
+Name crown~
+Short a beautiful `#`Ycrown`^~
+Desc A `#`Ycrown`^ has been left here.~
+Level 1
+ItemType clothing~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material gold~
+Extra    noremove nonmetal nolocate nodegrade burnproof~
+Wear     take head~
+End
+
+#16053
+Name locket necklace~
+Short a small locket~
+Desc A small locket lies here.~
+Level 1
+ItemType treasure~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material gold~
+Extra    nonmetal nolocate nodegrade burnproof nogetall~
+Wear     take neck~
+ExtraDesc locket ~
+This small locket is made of gold, though it is worn and has lost its shine. 
+ It hangs on a gold chain, and is the shape of a heart.  It opens into two 
+halves, and inside are two faded pictures which you can barely make out.  
+~
+ExtraDesc pictures ~
+Looking closely at the pictures, it looks to be a man in one half of the 
+locket, and a woman in the other.  Both are smiling.  
+~
+End
+
+#16054
+Name puppy dog~
+Short a puppy with big brown eyes~
+Desc `#`BA puppy is here, looking up at you with big brown eyes.`^~
+Level 1
+ItemType trash~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 50
+Material flesh~
+Extra    nonmetal nolocate nodegrade burnproof~
+Wear     take~
+ExtraDesc puppy dog~
+This little puppy dog looks up at you with big brown eyes.  He doesn't know 
+whether to hide from you, or to run to you.  He has floppy ears and soft 
+fur.  
+~
+End
+
+#16055
+Name oak tree~
+Short a swing hanging from a tree~
+Desc A swing hangs from a tree here.~
+Level 1
+ItemType furniture~
+Cost 1
+Asize 0
+Rsize 50
+Values 2 500 EH 0 0
+Weight 10000
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#16056
+Name blossoming tree~
+Short a tree covered in blossoms~
+Desc A tree grows here, covered in apple blossoms.~
+Level 1
+ItemType trash~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1000
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#16057
+Name cupcake tree~
+Short a tree with flowering cupcakes~
+Desc A tree with flowering cupcakes grows here.~
+Level 1
+ItemType container~
+Cost 1
+Asize 0
+Rsize 50
+Values 100 0 0 100 0
+Weight 1000
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#16058
+Name pink icing cupcake~
+Short a cupcake with `#`Mpink`^ icing~
+Desc A cupcake with `#`Mpink`^ icing is here.~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material cupcake~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16059
+Name purple icing cupcake~
+Short a cupcake with `#`mpurple`^ icing~
+Desc A cupcake with `#`mpurple`^ icing is here.~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material cupcake~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16060
+Name blue icing cupcake~
+Short a cupcake with `#`Cblue`^ icing~
+Desc A cupcake with `#`Cblue`^ icing is here.~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material cupcake~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16061
+Name green peppermint icing cupcake~
+Short a cupcake with `#`Gpeppermint green`^ icing~
+Desc A cupcake with `#`Gpeppermint green`^ icing is here.~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material cupcake~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16062
+Name strawberries~
+Short some `#`Rripe strawberries`^~
+Desc Some `#`Rripe strawberries`^ grow here.~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material cupcake~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16063
+Name watermelon~
+Short a large watermelon~
+Desc A large watermelon grows here.~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material cupcake~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16064
+Name crater~
+Short a crater in the moon~
+Desc ~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 100 0 0 100 0
+Weight 0
+Material moonstuff~
+Extra    noremove nonmetal nolocate nodegrade~
+End
+
+#16065
+Name a table~
+Short a table~
+Desc A table stands here.~
+Level 1
+ItemType container~
+Cost 1
+Asize 0
+Rsize 50
+Values 50 0 0 100 100
+Weight 10000
+Material wood~
+Extra    noremove nodegrade~
+ExtraDesc under~
+There is a puppy whimpering under the table.  
+~
+End
+
+#16066
+Name under the table~
+Short there is a puppy under the table.~
+Desc ~
+Level 1
+ItemType trash~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10000
+Material wood~
+Extra    noremove nonmetal nolocate nodegrade burnproof~
+End
+
+#16067
+Name chocolate cake~
+Short a chocolate cake topped with candles~
+Desc A chocolate cake topped with candles is on the table here.~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 10 5 0 0 0
+Weight 1
+Material chocolate cake~
+Extra    glow nodegrade~
+Wear     take~
+End
+
+#16068
+Name candies tree candy~
+Short a tree flowering with candies~
+Desc A tree flowering with candies grows here.~
+Level 1
+ItemType container~
+Cost 1
+Asize 0
+Rsize 50
+Values 100 0 0 100 0
+Weight 1000
+Material wood~
+Extra    nodegrade~
+End
+
+#16069
+Name pink marshmallow puff~
+Short a `#`Mpink`^ marshmallow puff~
+Desc A `#`Mpink`^ marshmallow puff is here.~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material cupcake~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16070
+Name white marshmallow puff~
+Short a `#`Wwhite`^ marshmallow puff~
+Desc A `#`Wwhite`^ marshmallow puff is here.~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material cupcake~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16071
+Name green white striped candy canes~
+Short a `#`Gg`Wr`Ge`We`Gn`^ and `#`Ww`Gh`Wi`Gt`We`^ striped candy cane~
+Desc A `#`Gg`Wr`Ge`We`Gn`^ and `#`Ww`Gh`Wi`Gt`We`^ striped candy cane is here~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material candy cane~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16072
+Name chocolate covered cherries cherry~
+Short a chocolate covered `#`rcherry`^~
+Desc A chocolate covered `#`rcherry`^ is here~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material cherry~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16073
+Name peppermint leaf~
+Short a `#`Gpeppermint`^ leaf~
+Desc A `#`Gpeppermint`^ leaf is here~
+Level 1
+ItemType food~
+Cost 1
+Asize 0
+Rsize 50
+Values 6 2 0 0 0
+Weight 1
+Material peppermint leaf~
+Extra    nodegrade~
+Wear     take~
+End
+
+#16074
+Name branches~
+Short some barren branches~
+Desc ~
+Level 1
+ItemType container~
+Cost 1
+Asize 0
+Rsize 50
+Values 100 0 0 100 0
+Weight 1
+Material branches~
+Extra    noremove nonmetal nolocate nodegrade~
+End
+
+#16075
+Name small book tiny creature~
+Short a small book with a tiny creature on the front~
+Desc A small book has been left here~
+Level 1
+ItemType map~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 5
+Material paper~
+Extra    nonmetal nolocate nodegrade nogetall~
+Wear     take hold~
+ExtraDesc fairy~
+`#`YFaeries`^ 
+ 
+The spores of mushrooms are said to be magical, and to bestow special powers to those 
+who eat them.  Under these mushrooms, from time to time, a special flower 
+blossoms.  Each flower is of a different color, and a different smell.  They 
+are among the most beautiful sights one can imagine.  They are the mothers 
+of the faeries.  From within each of these flowers, a faerie is born.  
+  `#`W<Hey, that is me!  Me is faerie!  Faeries are cool!>`^ 
+ 
+ Andromeda, called Mellyn the first faerie that was born.  She was blessed 
+with divine powers.  She is the faerie of light and life.  
+  `#`Y<Andromeda is golden!  She shiiiiiines!  Like the sun!>`^ 
+ Mellyn instructed her to protect the faeries, and above all, to care for 
+life.  
+  <Me likes life!  Me likes!>
+The next four faeries to be born were special too.  They are silver 
+faeries, and the unicorns taught them the secrets of the elements.  
+  `#`S<Shiny horses with a stick on their heads!  Hihihihi>`^ 
+ Selenia deals with fire she was born during summer, and has a dragon as 
+friend.  She loves gold, but no one knows what she does with it.  
+  `#`Y<Selenia smart!>`^ 
+ Pix has the powers of water, having been born in the winter.  
+ `#`Y<Faeries good!>`^   
+ Tylara, the faerie of spring, masters air, and Titania, born in the fall, 
+has knowledge of earth.  Lastly, there is Lilantra, who is master of the 
+essence of magic.  She received her knowledge from all the unicorns.  
+  `#`W<Me!  Me!  Lilantra is me!>`^
+ 
+ Faeries come from life, they are life and they protect life.  They aren't 
+much larger than the palm of the hand, and have colored wings...  
+ `#`Y<Mine is full of stars!  Look!  Aren't stars pretty?>`^ 
+...  And hair.  
+  `#`C<Cyan wings!  Like mine!>`^ 
+ They are little spirits, sweetly smiling at you...  
+  `#`W<Me smiles!>`^ 
+  ...  At one moment, biting you at the next.  Ouch!  They travel the world, 
+unseen to most eyes, protecting life.
+~
+ExtraDesc tiny creature~
+Looking at the tiny creature, it looks to be a little girl with wings. It must be a fairy.
+~
+End
+
+#16076
+Name snowflake~
+Short a `#`Wsnowflake`^~
+Desc A pile of snow melts here.~
+Level 1
+ItemType treasure~
+Cost 1
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material snow~
+Extra    nonmetal nolocate~
+Wear     take~
+End
+
+#16077
+Name Snow Woman~
+Short a snow-woman made of the `#`Wpurest white snow`^ stands half finished here.~
+Desc A snow-woman made of the `#`Wpurest white snow`^ stands half finished here.~
+Level 0
+ItemType trash~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material snow~
+End
+
+#16078
+Name token_quest_doll~
+Short token_quest_doll_mp16062~
+Desc Token_quest_doll_mp16062~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16079
+Name token_quest_ribbon~
+Short token_quest_ribbon_mp16063~
+Desc Token_quest_ribbon_mp16063~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16080
+Name token_quest_book~
+Short token_quest_book_mp16064~
+Desc Token_quest_book_mp16064~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16081
+Name token_quest_locket~
+Short token_quest_locket_mp16065~
+Desc Token_quest_locket_mp16065~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16082
+Name token_quest_puppy~
+Short token_quest_puppy_mp16066~
+Desc Token_quest_puppy_mp16066~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16083
+Name token_quest_counter~
+Short token_quest_counter_mp16067~
+Desc Token_quest_counter_mp16067~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16084
+Name token_completed_aarislan_quest~
+Short token_completed_aarislan_quest_mp16067~
+Desc Token_completed_aarislan_quest_mp16067~
+Level 1
+ItemType token~
+Cost 0
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 0
+Material none~
+Extra    nodegrade~
+Wear     take hold~
+End
+
+#16085
+Name magician's hat~
+Short a `#`Smagician's`^ hat~
+Desc A top hat has been left here.~
+Level 1
+ItemType clothing~
+Cost 30
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material black felt~
+Extra    noremove nonmetal nolocate nodegrade burnproof~
+Wear     take head~
+End
+
+#16086
+Name dress-up box~
+Short a dress-up box~
+Desc A dress-up box is here, draped with play clothes.~
+Level 1
+ItemType container~
+Cost 1
+Asize 0
+Rsize 50
+Values 50 0 0 100 100
+Weight 10000
+Material wood~
+Extra    noremove nodegrade~
+End
+
+#16087
+Name wooden flute~
+Short a wooden flute~
+Desc A wood flute lies here, waiting to be played.~
+Level 1
+ItemType trash~
+Cost 1000
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 2
+Material wood~
+Extra    noremove nolocate nodegrade~
+Wear     take hold~
+End
+
+#16088
+Name floral pinafore~
+Short a pinafore with a `#`Mf`rl`Yo`Rr`Ba`ml`^ pattern~
+Desc A girl's pinafore has been left here.~
+Level 1
+ItemType clothing~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    noremove nodegrade~
+Wear     take torso~
+End
+
+#16089
+Name baby pink dress~
+Short a `#`Mbaby-pink`^ dress~
+Desc A `#`Mbaby-pink`^ dress has been left here.~
+Level 1
+ItemType clothing~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    noremove nodegrade~
+Wear     take torso~
+End
+
+#16090
+Name blue playsuit~
+Short a `#`Bblue`^ playsuit~
+Desc A `#`Bblue`^ playsuit has been left here.~
+Level 1
+ItemType clothing~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    noremove nodegrade~
+Wear     take torso~
+End
+
+#16091
+Name striped playsuit green~
+Short a playsuit with `#`Gg`gr`Ge`ge`Gn`^ stripes~
+Desc A playsuit with `#`Gg`gr`Ge`ge`Gn`^ stripes has been left here.~
+Level 1
+ItemType clothing~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    noremove nodegrade~
+Wear     take torso~
+End
+
+#16092
+Name rose-coloured pinafore~
+Short a `#`rrose-coloured`^ pinafore~
+Desc A `#`rrose-coloured`^ pinafore has been left here.~
+Level 1
+ItemType clothing~
+Cost 50
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material cotton~
+Extra    noremove nodegrade~
+Wear     take torso~
+End
+
+#16093
+Name transparent gem faerie dust~
+Short a `#`Ctransparent`^ gem of swirling `#`Wf`Sa`?e`Mr`Si`We `Sd`Mu`?s`Wt`^~
+Desc A `#`Ctransparent`^ gem floats here.~
+Level 21
+ItemType treasure~
+Cost 340
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 1
+Material faerie dust~
+Extra    hum magic antievil nopurge nolocate nodegrade norestring~
+Wear     take float~
+ClassAllowances mage cleric thief druid paladin ranger spellfilcher~
+Affect modifier -1 21 -1 mana 20 0
+Affect modifier -1 21 -1 memory 2 0
+Affect modifier -1 21 -1 selfdiscipline 2 0
+ExtraDesc faerie dust gem~
+A grem as transparent as glass floats here.  Captured inside the gem, 
+glittering faerie dust swirls and dances by some magic of its own.  
+~
+End
+
+#16094
+Name river water~
+Short a river~
+Desc ~
+Level 1
+ItemType container~
+Cost 0
+Asize 0
+Rsize 50
+Values 10 0 0 20 0
+Weight 0
+Material chocolate~
+Extra    nodegrade~
+End
+
+#16095
+Name bowl of punch~
+Short a bowl of punch~
+Desc A bowl of fruit punch sits on the table.~
+Level 1
+ItemType fountain~
+Cost 0
+Asize 0
+Rsize 50
+Values 10000 10000 lemonade 0 0
+Weight 200
+Material lemonade~
+Extra    nodegrade~
+End
+
+#0
+
+
+
+#ROOMS
+#16050
+Name Aarislan, Land of the Lost Children~
+Desc The sun is richly warm in a sky of cornflower blue.  The green earth and 
+distant fields are mellow in its light.  The air tingles with magic, and the 
+joyful sound of children's laughter mixes with the melodies of a trickling 
+brook and a dancing flute.  As far as the eye can see, fields of glorious 
+flowers in their full splendour, blossom and dance in the gentle wind.  The 
+sweet smell of candy and roses drift towards you, beckoning to you, to 
+delight in this wonderland of childish daydreams.  
+~
+Sector field~
+Exit south 16054
+Exit northeast 16080
+Exit southeast 16055
+Exit southwest 16053
+Exit northwest 16081
+End
+
+
+#16051
+Name Field of Sunflowers~
+Desc Gold petalled sunflowers fill the field with a brilliant radiant yellow, 
+blending into the green of their stems and soft, leathery leaves.  A sweet 
+pollen musk floats through the air as you walk through the field.  The 
+petals sway ever so slightly in the breeze and the grass beneath your feet 
+is soft as you walk through the field.  
+~
+Sector field~
+Exit east 16079
+Exit west 16080
+Exit northwest 16056
+End
+
+
+#16052
+Name Field of Tulips~
+Desc Brilliant deep reds, and bright golden yellows splash the field with colour. 
+ Dancing tulips of red, yellow, blue, and white grow in clumps across the 
+field, and tilt slightly as the breeze blows over them.  Looking up you see 
+a brilliant baby-blue sky filled with cotton candy clouds, moving and 
+changing into shapes of rabbits, and dragons, and puppy dogs.  
+~
+Sector field~
+Exit east 16081
+Exit west 16060
+Exit northeast 16059
+End
+
+
+#16053
+Name Field of Poppies~
+Desc A rainbow of colours dot the field with wild wispy poppies.  Fresh green, 
+crisp white, velvet purple, and sweetheart red, every colour grows 
+splendidly, speckled with a black centre.  The air is warm, and the breeze 
+gentle as it sweeps through the field, bringing the poppies to life, as they 
+dance and bob about in the wind.  
+~
+Sector field~
+Exit west 16064
+Exit northeast 16050
+End
+
+
+#16054
+Name A Birthday Party~
+Desc A children's party is here decorated with coloured balloons and bright 
+streamers.  A table is laid out with children's sweets and a chocolate cake 
+topped with several lit candles.  Party hats lie at one end of the table, 
+and there are many beautifully wrapped gifts on the ground nearby.  You hear 
+a soft whimper from under the table.  Children are running about playing 
+party games and laughing merrily.  
+~
+Sector field~
+Exit north 16050
+Exit southeast 16070
+Exit southwest 16069
+End
+
+
+#16055
+Name Field of Roses~
+Desc The sweet, delicate aroma of rosebuds floats through the air, reminding you 
+of peaches and strawberries.  Tightly furled rosebuds of snow white, soft 
+cream, deep lavendar, and plum red grow up amongst the roses in full bloom.  
+Each blossom tilting towards the sun, grows proudly and with splendour.  
+~
+Sector field~
+Exit east 16075
+Exit northwest 16050
+End
+
+
+#16056
+Name Meadow of Wild Azaleas~
+Desc A bubbling brook trickles through the meadow of wild azaleas.  The pink 
+floral clusters grow delicately alongside the stream reflecting pools of 
+rippling pink as the water flows on, and over the pebbles.  A fresh scent of 
+sweet sugar fills the air, as the breeze blows the pollen over the meadow.  
+The sky is a swirl of blues and purple-lavendars, with no blemish of clouds. 
+ 
+~
+Sector field~
+Exit southeast 16051
+Exit northwest 16057
+End
+
+
+#16057
+Name Flowers of the Sea~
+Desc Swept up onto the sand, flowers of the sea lie waiting like treasure, for a 
+small hand to pick them up.  Tiny seashells, curled and spiralling drift 
+onto the beach, as the warm, sky-blue watery waves lap back and forth.  A 
+tingling smell of fresh salt is carried on the waves and a golden, setting 
+sun melts across the horizon, blending into a purple haze of dreamy colour.  
+
+~
+Sector field~
+Exit up 16058
+Exit southeast 16056
+Exit southwest 16059
+End
+
+
+#16058
+Name On a Cotton Candy Cloud~
+Desc Floating on a cotton candy cloud, which drifts gently across the sky, you 
+look down over all of Aarislan, and see a rainbow of swirling colour, as the 
+flowering meadows blend into one.  As you walk on the cloud, each footstep 
+sinks down as if you are walking in snow, but their is a lightness to your 
+step, and only the sound of a quiet breeze brushing against your cheek.  The 
+cotton cloud feels like a snuggly blanket and smells just like sweet candy.  
+
+~
+Sector inside~
+Exit down 16057
+End
+
+
+#16059
+Name Meadow of Morning Glories~
+Desc Beautiful, trumpet-shaped morning glories dazzle the meadow with splashes of 
+purple, pink, white and blue.  Tall, wispy grass grows in amongst the 
+flowers and you weave through the grass as you walk through the meadow.  The 
+sky above is a brilliant blue, with scattered soft, white puff-clouds.  A 
+sweet scent floats in the air.  
+~
+Sector field~
+Exit northeast 16057
+Exit southwest 16052
+End
+
+
+#16060
+Name Field of Sweet Peas~
+Desc You walk into a field of wild and tangled sweet peas which twist and wind 
+themselves around the trees, creating a dazzling world of bright cherry, 
+pink, white, and yellow flowers.  The sweet peas scent the air ever so 
+slightly and their petals are soft to the touch.  A swing hangs from one of 
+the branches and swings out over the field of wild sweet peas.  
+~
+Sector field~
+Exit east 16052
+Exit west 16061
+End
+
+
+#16061
+Name Spring Garden~
+Desc The sound of new-born creatures surrounds you as you walk into this garden 
+of blossoming trees and daffodil-filled fields.  Everywhere, young baby 
+animals stand with their new eyes taking in the world around them.  
+Honeysuckle flowers blossom on the trees, and apple buds sprinkle the 
+tree-tops with pink colour.  The air is alive with movement and wonder.  
+~
+Sector field~
+Exit east 16060
+Exit up 16062
+Exit southeast 16063
+End
+
+
+#16062
+Name Swinging on a Star~
+Desc The night-sky twinkles with the light of hundreds of stars, flickering and 
+glowing.  You are on one unique star amongst the many, which has a swing 
+hanging from it, which swings right out over the skies, up into the night 
+glow, and back, looking down at the fields and gardens below.  The air is 
+still and quiet as you swing to and fro under the stars.  
+~
+Sector inside~
+Exit down 16061
+End
+
+
+#16063
+Name Field of Camellias~
+Desc The air is a cool luke warm, and blows gently across a field of candy pink 
+and cherry red camellias.  Many tall willows and oaks provide shade for the 
+delicate flowers and blot out the blue sky above, letting only trinkles of 
+light shine through their leaves.  Butterflies dance from flower to flower, 
+resting momentarily on their petals, before being carried on by the breeze 
+to the next flower.  
+~
+Sector field~
+Exit southeast 16064
+Exit northwest 16061
+End
+
+
+#16064
+Name An Orchard of Cupcake Trees~
+Desc The field spills into an orchard of bright green trees, decorated with 
+blossoming cupcakes, growing in splendiforous iced pinks, and greens, and 
+blues, and purples, and sprinkled with rainbow sprinkles.  Several cupcakes 
+have fallen to the ground, ripe and ready to be eaten.  The air is filled 
+with sweetness as you wander through the orchard.  
+~
+Sector field~
+Exit east 16053
+Exit south 16065
+Exit northwest 16063
+End
+
+
+#16065
+Name Field of Daffodils~
+Desc Cheerfully bright, yellow daffodils with orange centres grow in full 
+splendour across the field.  The scent of newness and spring floats on the 
+air, drifting over the fresh green stems, beneath the yellow flowerheads.  A 
+soft, blue sky fills the sky above and dreamy cotton candy clouds sail on 
+the breeze.  
+~
+Sector field~
+Exit north 16064
+Exit south 16067
+End
+
+
+#16067
+Name Summer Garden~
+Desc Dancing in the warm, summer breeze are white lady-tresses, and rosy trumpet 
+creepers, and dandelions, butterfly weeds, and purple mist flowers.  The air 
+is alive with the scent of pollen, and the sweet smell of strawberries, and 
+watermelons and peaches.  The sky above is a brilliant blue with streaked 
+puffy cotton clouds which drift slowly across the sky.  
+~
+Sector field~
+Exit north 16065
+Exit up 16068
+Exit northeast 16069
+End
+
+
+#16068
+Name Sitting in the Crescent of a Moon~
+Desc The world below is blanketed with a deep black sky filled with twinkling 
+stars.  You are sitting in the crescent of a silver moon, nestled into its 
+curved shape, and looking around you can see the shimmering shapes of 
+flowers and trees blown by the wind below, and glowing, sprinkles of stars 
+above.  In one of the craters, you see the trimming on a piece of material.  
+The air is still and quiet, and you feel very safe in the comforting 
+crescent of this moon.  
+~
+Sector inside~
+Exit down 16067
+End
+
+
+#16069
+Name Meadow of Summer Grasses~
+Desc Buttercup yellow and four-leafed clovers grow in abundance across the meadow 
+of summer grasses.  Rye grass and wheat blends into a haze of gold, coloured 
+with the purples and whites of the foxtails.  The sky is still, and clear 
+blue, with no clouds, and the air is hot and warm.  
+~
+Sector field~
+Exit northeast 16054
+Exit southwest 16067
+End
+
+
+#16070
+Name Meadow of Autumn Grasses~
+Desc Frolicking in the wading autumn sun, wild clumps of bush clover and 
+bellflowers, blow in the wind against a backdrop of pampas grass which cover 
+the ground in a carpet of plumage and autumn grass.  The field is a dry, 
+golden, dusky colour of flowers and grasses leaving their goodness behind 
+and drifting into the barren winterless season without colour or life.  
+~
+Sector field~
+Exit southeast 16071
+Exit northwest 16054
+End
+
+
+#16071
+Name Autumn Garden~
+Desc Autumn leaves dance gently as they waft to the ground, splashing the ground 
+with a landscape of firey oranges, golden yellows, and rusty reds.  The 
+grand trees are alight with the colours of autumn, and a slightly chilled 
+breeze blows through the branches, sending more leaves floating to the 
+ground.  Tall autumn grasses grow around the trees and there is a warm, 
+musky smell in the air.  
+~
+Sector field~
+Exit north 16074
+Exit up 16072
+Exit northwest 16070
+End
+
+
+#16072
+Name On a `#`RR`ra`Yi`Gn`Bb`mo`Mw`^~
+Desc You are on a wonderful, coloured rainbow which stretches across the meadows. 
+ The rainbow begins at deep red, and goes through the spectrum of colours to 
+indigo.  Each colour is a brilliant colour, yet almost transparent 
+simultaneously.  It feels like a gentle mist, yet it holds you high amongst 
+the cotton candy clouds.  
+~
+Sector inside~
+Exit down 16071
+End
+
+
+#16074
+Name Field of Fresias~
+Desc The fresh, delicate yet sweet smell of a field of blossoming fresias greets 
+you as you roam through the field.  The field is splashed with bright 
+yellows, whites, burgandies and violets, with dashes of green stems.  Above, 
+the sky is bright blue and filled with floating cotton candy clouds.  A warm 
+breeze blows through the field, making the fresias tremble.  
+~
+Sector field~
+Exit north 16075
+Exit south 16071
+End
+
+
+#16075
+Name An Orchard of Candy Trees~
+Desc A path leads through a brilliant, leafy orchard of trees covered in 
+delightful candies.  There are pink and white marshmallow puffs, and green 
+and white striped candy canes, and chocolate covered cherries, and 
+peppermint leaves.  Several candies lie on the ground beneath the trees, 
+waiting to be eaten, and over-ripe.  A mingling scent of sweetness and sugar 
+fills the air, and tempting you to pick a candy from the tree.  
+~
+Sector field~
+Exit south 16074
+Exit west 16055
+Exit northeast 16076
+End
+
+
+#16076
+Name A Snow-Covered Field~
+Desc Your feet crunch on the freshly dusted, pure white snow beneath you.  The 
+snow is chilled to the touch, seeming as though it came down in the last 
+night, and only a few deer hoofs spoil the icing-like snow.  The air is 
+chilly and crisp, and the few trees are barren from leaves, and you can see 
+something red caught in the branches.  Light, delicate snow-flakes drift 
+gently to the ground around you.  
+~
+Sector field~
+ExtraDesc red ~
+It looks like a piece of frayed ribbon, caught in the branches.
+~
+Exit northeast 16077
+Exit southwest 16075
+End
+
+
+#16077
+Name Winter Garden~
+Desc The field is covered in soft, fresh snow, and the dark green pines fill the 
+air with a scent of pine.  Pine cones lay scattered across the meadow, along 
+with nuts, seed pods, dried weed flowers, milkweed pods, and cat tails.  
+Bushes of green mistletoe dotted with red berries brighten the white field 
+with colour, and the feel of christmas.  Some children have made a snowman 
+with sticks in the middle of the meadow and there are several squirrels 
+playing in the trees.  
+~
+Sector field~
+Exit west 16079
+Exit up 16078
+Exit southwest 16076
+End
+
+
+#16078
+Name Floating in a Bubble~
+Desc You float inside a rainbow, delicate bubble across the fields.  The bubble 
+is like a giant crystal ball, swept about on the breeze.  You can see 
+through the swirl of crystalized colours down to the fields below which are 
+coloured in fiery autumns, and snowy whites, and chocolate browns.  The 
+bubble floats on dreamily.  
+~
+Sector inside~
+Exit down 16077
+End
+
+
+#16079
+Name On a Chocolate River~
+Desc A flowing river of melted chocolate streams alongside the field.  Spearmint 
+reeds grow along the river bank and chocolate coated leaves hang from the 
+flakey chocolate tree branches overhead.  Something catches your eye as it 
+sparkles in the water.  A sweet chocolatey aroma wafts through the air, 
+mixed with a sugary scent.  The river of chocolate is slightly warm to the 
+touch and tastes divine.  
+~
+Sector field~
+ExtraDesc something ~
+You move towards the object which is sparkling in the sunlight.  Looking 
+closer it seems to be a necklace on a chain.  
+~
+Exit east 16077
+Exit west 16051
+End
+
+
+#16080
+Name Field of Wild Flowers~
+Desc A mingling blend of sweet scents wafts heavily through the air, drifting up 
+from the myriad of wildflowers in the field.  Honeybees dot the flowers, 
+collecting pollen from the smorgasbord of flowers, and carrying it away on 
+the breeze to make honey.  The petals tickle your legs as you walk through 
+the field.  
+~
+Sector field~
+Exit east 16051
+Exit southwest 16050
+End
+
+
+#16081
+Name Field of Lush Green Grass~
+Desc A sea of luscious long grass sweeps over the field in waves, dancing with 
+the gentle wind.  The grass feels soft and ticklish as you run your hands 
+through it, and it tickles playfully against your legs as you tread through 
+the field.  
+~
+Sector field~
+Exit west 16052
+Exit southeast 16050
+End
+
+
+#0
+
+
+
+#SPECIALS
+S
+
+
+
+#RESETS2
+M 0 16063 1 16051 1
+E 0 16088 -1 torso~
+M 0 16066 1 16052 1
+E 0 16075 -1 hold~
+E 0 16089 -1 torso~
+M 0 16083 10 16054 1
+M 0 16053 1 16054 1
+E 0 16089 -1 torso~
+M 0 16075 1 16054 1
+O 0 16065 -1 16054
+P 0 16054 20 16065 1
+O 0 16067 -1 16054
+O 0 16095 -1 16054
+M 0 16072 1 16055 1
+E 0 16088 -1 torso~
+M 0 16082 1 16056 1
+M 0 16064 1 16057 1
+E 0 16091 -1 torso~
+M 0 16065 1 16058 1
+E 0 16088 -1 torso~
+M 0 16073 1 16059 1
+M 0 16067 1 16060 1
+E 0 16091 -1 torso~
+M 0 16080 1 16060 1
+O 0 16055 -1 16060
+M 0 16070 1 16061 1
+E 0 16090 -1 torso~
+M 0 16079 1 16061 1
+O 0 16056 -1 16061
+M 0 16071 1 16062 1
+E 0 16092 -1 torso~
+M 0 16084 1 16062 1
+M 0 16074 1 16063 1
+M 0 16081 1 16063 1
+M 0 16069 1 16064 1
+O 0 16057 -1 16064
+P 0 16058 50 16057 5
+P 0 16059 50 16057 5
+P 0 16060 50 16057 5
+P 0 16061 50 16057 5
+E 0 16088 -1 torso~
+M 0 16068 1 16065 1
+O 0 16086 -1 16065
+G 0 16052 -1
+G 0 16085 -1
+E 0 16089 -1 torso~
+M 0 16051 1 16067 1
+E 0 16088 -1 torso~
+M 0 16078 1 16067 1
+O 0 16062 -1 16067
+O 0 16063 -1 16067
+M 0 16050 1 16068 1
+O 0 16064 -1 16068
+P 0 16050 5 16064 1
+E 0 16090 -1 torso~
+M 0 16052 1 16069 1
+E 0 16087 -1 hold~
+E 0 16091 -1 torso~
+M 0 16054 1 16070 1
+E 0 16090 -1 torso~
+M 0 16055 1 16071 1
+E 0 16091 -1 torso~
+M 0 16056 1 16072 1
+E 0 16089 -1 torso~
+M 0 16057 1 16074 1
+E 0 16089 -1 torso~
+M 0 16058 1 16075 1
+O 0 16068 -1 16075
+P 0 16069 50 16068 2
+P 0 16070 50 16068 2
+P 0 16071 50 16068 2
+P 0 16072 50 16068 2
+P 0 16073 50 16068 2
+E 0 16091 -1 torso~
+M 0 16059 1 16076 1
+E 0 16090 -1 torso~
+O 0 16077 -1 16076
+M 0 16076 1 16076 1
+O 0 16074 -1 16076
+P 0 16051 1 16074 1
+M 0 16060 1 16077 1
+E 0 16089 -1 torso~
+M 0 16077 1 16077 1
+M 0 16061 1 16078 1
+E 0 16089 -1 torso~
+M 0 16062 1 16079 1
+E 0 16091 -1 torso~
+O 0 16094 -1 16079
+P 0 16053 1 16094 1
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#16081
+title boy playing leader~
+code if rand 50
+say I'm the leader! Follow me!
+emote twirls about until he gets dizzy.
+else
+say Follow the leader!
+emote hops like a frog.
+endif
+~
+disabled false
+END
+
+#16070
+title boy playing flute~
+code if rand 50
+mob echo A beautiful, dream of musical notes wavers on the air.
+else
+mob echo A playful, dancing melody floats up to your ears.
+endif
+~
+disabled false
+END
+
+#16069
+title girl dressing up~
+code if rand 50  * princess
+  if wears $i hat
+    giggle
+    say Ooh.. I think I'll dress up like a princess!
+    remove hat
+    wear crown
+    emote dances about proudly.
+    end
+  endif
+else * magician
+  if wears $i crown 
+    beam
+    say I know! I'll dress up like a magician!
+    remove crown
+    wear hat
+    emote pretends to pull a rabbit out of a hat.
+    end
+  endif
+endif
+ 
+ 
+~
+disabled false
+END
+
+#16068
+title boy blowing bubbles~
+code if rand 50
+ emote blows some bubbles, which dance on the wind.
+else
+ emote dips his bubble-blower into a soapy bottle.
+endif
+~
+disabled false
+END
+
+#16067
+title mob call counter of things given to girl~
+code if hastoken $n 16084
+end
+else
+ mob tjunk all.16083 $i
+ 
+ if hastoken $n 16078
+  mob oload 16083
+ endif
+ if hastoken $n 16079
+  mob oload 16083
+ endif
+ if hastoken $n 16080
+  mob oload 16083
+ endif
+ if hastoken $n 16081
+  mob oload 16083
+ endif
+ if hastoken $n 16082
+  mob oload 16083
+ endif
+ 
+ if hastoken $i 5.16083
+ sayto $n You found all of my old things!
+ say Now I can go back home.
+  mob oload 16084
+  mob tgive 16084 $n
+  mob echo Three faeries arrive and begin to fly around the girl, sprinkling their magical faerie dust over her.
+  mob echo The girl dances and twirls as the glittery dust sweeps her up, and in a moment she is gone.
+  mob echo A sprinkling of faerie dust lands on you, dreamily.
+  mob force bless mob cast 'bless' $n
+  mob echo A handful of faerie dust falls to the ground and solidifies into a gem.
+  mob oload 16093
+  mob silently drop gem
+  mob echo The faeries twirl and in a moment are gone.
+  mob purge $i
+  end
+ endif
+ 
+ if hastoken $i 4.16083
+  say Oh, there is just one more thing.. if only I had it, then I could go home..
+  end
+ endif
+ 
+ if hastoken $i 3.16083
+  sayto $n Oh, you've found three of my things, soon I can go home.
+  end
+ endif
+ 
+ if hastoken $i 2.16083
+  sayto $n Oh, you've found two of my things, thank you!
+  end
+ endif
+ if hastoken $i 16083
+  say If only I could find my other things too.. then I could go home.
+  end
+ endif
+endif
+~
+disabled false
+END
+
+#16066
+title give puppy to girl~
+code mob oload 16082
+mob tgive 16082 $n
+mob ttimer 16082 $n 1000
+say Rosey! You found Rosey!
+beam
+emote hugs her puppy closely.
+sayto $n Oh, thank you!
+emote plays with her puppy happily.
+mob call 16067 $n
+~
+disabled false
+END
+
+#16065
+title give locket to girl~
+code mob oload 16081
+mob tgive 16081 $n
+mob ttimer 16081 $n 1000
+say My locket!
+emote clasps it to her chest.
+sayto $n Oh thank you! Thank you!
+emote opens the locket and smiles as she looks at the pictures of her parents inside.
+mob call 16067 $n
+~
+disabled false
+END
+
+#16064
+title give book to girl~
+code mob oload 16080
+mob tgive 16080 $n
+mob ttimer 16080 $n 1000
+sayto $n You found my book about fairies!
+emote sighs happily.
+sayto $n Thank you!
+beam $n
+emote giggles, as she turns the pages of her book.
+mob call 16067 $n
+~
+disabled false
+END
+
+#16063
+title give ribbon to girl~
+code mob oload 16079
+mob tgive 16079 $n
+mob ttimer 16079 $n 1000
+beam
+say You found my hair ribbon!
+emote smiles cheerfully.
+emote ties her hair up with her old ribbon.
+sayto $n Thank you very much!
+mob call 16067 $n
+~
+disabled false
+END
+
+#16062
+title give doll to girl~
+code mob oload 16078
+mob tgive 16078 $n
+mob ttimer 16078 $n 1000
+emote looks delighted!
+say Oh! You found my doll!
+beam
+emote hugs her doll tightly.
+sayto $n Thank you so much!
+emote quietly plays with her doll, with a small smile on her face.
+mob call 16067 $n
+~
+disabled false
+END
+
+#16061
+title girl randomly says things about home~
+code if rand 20
+ sigh
+ say I wish I had my puppy dog.
+ say If only he was here, I wouldn't feel so homesick.
+else
+ if rand 25
+  emote looks at the ground sadly.
+  say How I miss reading..
+  say I remember.. my favourite book was about fairies.
+  giggle
+ else
+  if rand 33
+   emote 's eyes well up with tears.
+   say If only I hadn't lost my locket.
+   say Then I could remember what my mama and papa looked like.
+   emote sobs quietly.
+  else
+   if rand 50
+     emote feels her tangled hair.
+     say Oh! I've lost my precious hair ribbon.
+     say If I had that, I could make sure to look pretty for when I go back home.
+     sigh
+   else
+     emote sobs quietly.
+     say If only I had my doll to play with..
+     emote looks at the ground, miserable that she has nothing to do.
+   endif
+  endif
+ endif
+endif
+~
+disabled false
+END
+
+#16060
+title give book after receiving snowflake~
+code emote 's eyes light up.
+sayto $n Ooh! You found one!
+pmote $n gently holds the snowflake in her hand, as she gives @ the book.
+remove book
+give book $n
+emote dances about happily playing with her snowflake.
+mob purge snowflake
+mob oload 16075
+~
+disabled false
+END
+
+#16059
+title give snowflake for guessing name~
+code giggle
+sayto $n Oh wonderful! You have heard about me then!
+laugh
+sayto $n here's the snowflake I promised you.
+mob oload 16076
+give snowflake $n
+emote giggles as she goes back to sprinkling snowflakes about.
+~
+disabled false
+END
+
+#16058
+title sweet fairy telling name of snow fairy~
+code giggle
+sayto $n The snow fairie's name...
+sayto $n rhymes with mix!
+emote giggles as she goes back to mixing her next batch of sweets.
+~
+disabled false
+END
+
+#16057
+title flower fairy telling name of snow fairy~
+code giggle
+sayto $n The snow fairie?
+sayto $n Oh, her name starts with a P!
+say Petunias and petals start with P too [and giggles.]
+~
+disabled false
+END
+
+#16056
+title tooth fairy telling name of snow fairy~
+code giggle
+sayto $n oh yes, the snow fairy!
+sayto $n She was born in winter!
+emote giggles as she goes back to counting her coins.
+~
+disabled false
+END
+
+#16055
+title I want a snowflake ~
+code giggle
+sayto $n You want a snowflake?
+laugh
+sayto $n well.. if you want a snowflake..
+sayto $n you have to guess my name!
+emote giggles as she flies up into the tree.
+~
+disabled false
+END
+
+#16054
+title what do you want to play with?~
+code emote puts her head on her hand, thinking.
+giggle
+sayto $n [with a bright smile] I know!
+sayto $n I want to play with some snowflakes!
+emote giggles as she looks back down at her book.
+~
+disabled false
+END
+
+#16053
+title can I have the book?~
+code emote looks a little hesitant for a moment.
+pmote $n looks up at @ with a cute expression.
+sayto $n alright.. 
+sayto $n but only if you bring me something to play with instead!
+mq2 say I know! I would love to play in the snow...
+mq2 sayto $n maybe you could bring me a snowflake!
+giggle 
+~
+disabled false
+END
+
+#16052
+title what are you reading~
+code sayto $n its about fairies [and holds up the cover.]
+~
+disabled false
+END
+
+#16051
+title greeting girl reading book~
+code pmote $n looks up from her book and peers at @ with curiousity.
+~
+disabled false
+END
+
+#16050
+title no book for killing girl~
+code mob junk 16075
+ 
+~
+disabled false
+END
+
+#0
+
+
+#$

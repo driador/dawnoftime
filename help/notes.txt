@@ -1,0 +1,186 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword NOTE-GROUPS~
+level 92
+helpflags wordwrapped~
+category notes~
+text There are different groups that are available with the notes system, they 
+are as follows:`+
+`+
+`Y Title - Received by:`=? `+
+All - Everyone `+
+imm - All immortals `+
+admin - The admin as per wizlist `+
+noble - All nobles, mortal and immortal.  `+
+build - Those with an olc security of 1 or higher.  `+
+olc - Those with an olc security of 5 or higher.  `+
+hero - Those who have reached level 91 `+
+nsupport- all newbie support characters.  `+
+allclans - all the clans in the game `+
+quester - all players with their quester flag on`+
+nonquester - all players that aren't questers`+
+ 
+~
+END
+
+keyword EXTENDED-NOTES NOTE-EXTENDED~
+category undefined~
+see_also NOTE-READ NOTE-WRITE~
+text `=?
+ 
+Advanced note features.
+ 
+``1   Forces a newline.  
+``1``1 Forces a blank line and then starts on a newline.
+ 
+How does this all look when working? 
+ 
+EXAMPLE, The following commands...
+`c***************************************************************************`=?
+ 
+note to all
+note subject extend-note
+note + This is a little note to show people how the advanced note features 
+work. 
+note + These features are very helpful.  ``1Trust me, try them out. ``1``1- 
+ 
+`c***************************************************************************`=?
+ 
+Will produce THIS note if you have autoreformat on.
+ 
+`c***************************************************************************`=?
+ 
+[ 46] Somename: extend-note
+Tue Aug 19 23:35:30 1997
+To: all
+This is a little note to show people how the advanced note features work. 
+These features are very helpful.  
+Trust me, try them out. 
+ 
+ 
+`c***************************************************************************`=?
+ 
+ 
+~
+END
+
+keyword NOTES IDEAS NEWS CHANGES MESSAGES READ UNREAD POSTINGS~
+helpflags wordwrapped~
+category undefined~
+see_also NOTE-READ NOTE-WRITE UNREAD NOTE-MARKLASTREAD~
+text The notes on this mud replace the bulletin boards and mail systems found on 
+various other muds. There are a number note categories, or boards, available 
+to players that you can read and/or post to.  These include notes, ideas, 
+changes, and news.  You can only post to notes and ideas though.  Posting to 
+changes and news are reserved for immortals. `+
+`+
+When you log in, you will be informed that you have messages for you on the 
+different boards.  To check this at any time after log in, type `=Cunread`=? to 
+see what messages you have waiting.  To read the next message on any 
+particular board, just type the name of the board that the message appears 
+on; i.e. to read the next note, type: note.`+
+`+
+`=lType:`=? help `=_note-read`+
+`=?      For advanced help on reading notes.`+
+`+
+`=lType:`=? help `=_note-write`+
+`=?      For help on how to write/post a note.`+
+`+
+From here on out, note will be used interchangeably with other boards.  Just 
+replace "note" with "idea", etc.`+
+ 
+~
+END
+
+keyword NOTE-READ NOTE-PEEK NOTE-SEARCH NOTE-LIST NOTE-CATCHUP NOTE-TAIL~
+helpflags hide_keywords~
+category undefined~
+text `MReading Notes on Dawn of Time`=?`+
+`+
+There are many option available when reading notes:`+
+`S"note" is interchangeable with "idea", "change", and "news"`=?`+
+`+
+note                  :Shows next unread note
+note list             :Shows all notes (unread marked with an N)
+note tail <number>    :Shows the last <number> of notes
+note read #           :Allows you to read any note in your list (# is 
+                       its number)
+note catchup          :Marks all notes as read
+note search <topic>   :Searches your whole list for notes that have 
+                       the a topic you want within them 
+                       (ex: 'note search Kalahn' will show you all 
+                       the notes with the word Kalahn in them)
+~
+END
+
+keyword NOTE-WRITE NOTE-SHOW NOTE-EDIT~
+helpflags hide_keywords~
+category undefined~
+see_also NOTES NOTE-READ~
+text `MWriting Notes on Dawn of Time`=?`+
+`+
+There is more than one way to write a note.  You will always have to enter 
+the "to" line and the "subject" line.  Do that as follows:`+
+`s"note" is interchangeable with "idea"`+
+`+
+`=?note to     : sets the to line (playername or clanname)`+
+`=?            = note to all will go to everyone`+
+`=?            = note to immortal will go to the immortals`+
+`=?            = note to admin will go to the admin immortals`+
+`=?            = note to <council> will go to an Imm Council (`CSEE HELP COUNCIL`=?)`+
+`=?            = note to noble will go to the nobles`+
+`=?            = note to <clanname> will go to a clan (`CSEE HELP CLANLIST`=?)`+
+`Y*`=?If you have multiple recipients of the note, enter one name after another, 
+seperated by a space.  DO NOT separate the names with commas, otherwise people
+may not receive their note.`+
+`+
+note subject   :this will set the subjet for a new note`+
+`+
+`RNote Method #1:`=?`+
+With this method you build your note one line at a time.  Don't try writing 
+the whole note in one line, else some of it might get chopped off.  You'll 
+be warned when you reach the maximum character length of the line, when your 
+line gets chopped off.`+
+`+
+note +         :add a line to a new note (i.e. note + hi guys!) `+
+note -         :removes the bottom line from a note in progress `+
+`+
+`RNote Method #2:`=?`+
+If you are familiar with the editor (used for entering the long description, 
+`Chelp DESCRIPTION-EDITOR`=? for more details) then you can type `Rnote edit`=? and 
+this will enter you into the editor.  You must have a note started by either 
+using giving the note a subject (note subject), or a recipient (note 
+to.)  Everything you type within the editor is entered into the note you are 
+working on.`+
+`+
+Other options:`+
+note clear     :erase a note in progress`+
+note show      :shows the note you are working on`+
+note post      :MUST be done to post a new note`+
+`+
+`S****************************************************************************`+
+`G              See help EXTENDED-NOTE for advanced note features.`+
+`S****************************************************************************`+
+`+
+~
+END
+
+keyword NOTE-MARKLASTREAD MARKLASTREAD~
+helpflags wordwrapped~
+category notes~
+see_also NOTES~
+text `=lSyntax: `=?note marklastread <#>`+
+`+
+This command sets the note number last read as the one you specified.  It's 
+a particularly useful command if you accidently type '`=Cnote read <#>`=?' 
+instead of '`=Cnote peek <#>`=?'.`+
+ 
+~
+END
+
+EOF~
+#$

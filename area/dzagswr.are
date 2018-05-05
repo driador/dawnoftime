@@ -1,0 +1,1540 @@
+#DAWNAREADATA
+Version     11
+FromMUD     Dawn 1.69r Development Site~
+*parent_codebase 1.69r-ReleaseCandiate1
+Name        Dzagari Sewers~
+ShortName   Dzagari Sewers~
+Builders    none~
+Credits     Arminius Vladomir~
+VNUMs       33450 33499
+LRange      10 35
+Security    9
+Colour      Y~
+colourcode  `
+MapScale    2
+MapLevel    1
+Vnum_offset 0
+Continent   valarin~
+*LastSaved  Sat Jan 31 23:48:10 2004~
+End
+
+
+
+#MOBILES
+#33450
+Name decrepit old orcish man~
+ShortD a decrepit old orcish man~
+LongD A decrepit old orcish man is here hunched over holding his back.~
+Desc Before you is a decrepit old man. He seems to have once been a city guard 
+due to several dzagari markings on his arms. He seems to be of orcish 
+decent as his crusty teeth stick out of his mouth. 
+~
+Race orc~
+Align 0 0
+Level 18
+Hitroll 0
+HitDice 3d5+79
+ManaDice 1d10+10
+DamDice 2d7+4
+DamType punch
+AC -30 -30 -30 -20
+Wealth 16
+Act    npc scavenger no_tame stay_area thief~
+AffBy  infrared slow~
+Off    parry~
+Vuln   bash~
+Form   edible sentient mammal~
+Part   head legs heart brains guts hands feet fingers ear eye~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    male~
+Material flesh
+END
+
+#33451
+Name tiny red jelly~
+ShortD `#a tiny `Rred`^ jelly~
+LongD `#A tiny `Rred`^ jelly sludges around.~
+Desc This reddish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 1d2+5
+DamDice 2d4+2
+DamType digestion
+AC 10 10 10 10
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    pierce fire~
+Vuln   bash cold~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material gel
+END
+
+#33452
+Name tiny green jelly~
+ShortD `#a tiny `Ggreen`^ jelly~
+LongD `#A tiny `Ggreen`^ jelly sludges around.~
+Desc This greenish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 1d2+5
+DamDice 2d4+2
+DamType digestion
+AC 10 10 10 10
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    pierce acid~
+Vuln   bash lightning~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material gel
+END
+
+#33453
+Name tiny yellow jelly~
+ShortD `#a tiny `Yyellow`^ jelly~
+LongD `#A tiny `Yyellow`^ jelly sludges around.~
+Desc This yellowish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 1d2+5
+DamDice 2d4+2
+DamType digestion
+AC 10 10 10 10
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    pierce lightning~
+Vuln   bash fire~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   tiny~
+Sex    neutral~
+Material gel
+END
+
+#33454
+Name small red jelly~
+ShortD `#a small `Rred`^ jelly~
+LongD `#A small `Rred`^ jelly sludges around.~
+Desc This reddish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 1d5+20
+DamDice 2d6+3
+DamType digestion
+AC -20 -20 -20 -10
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    pierce fire~
+Vuln   bash cold~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material gel
+END
+
+#33455
+Name small green jelly~
+ShortD `#a small `Ggreen`^ jelly~
+LongD `#A small `Ggreen`^ jelly sludges around.~
+Desc This greenish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 1d5+20
+DamDice 2d6+3
+DamType digestion
+AC -20 -20 -20 -10
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    pierce acid~
+Vuln   bash lightning~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material gel
+END
+
+#33456
+Name small yellow jelly~
+ShortD `#a small `Yyellow`^ jelly~
+LongD `#A small `Yyellow`^ jelly sludges around.~
+Desc This yellowish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 15
+Hitroll 0
+HitDice 3d5+60
+ManaDice 1d5+20
+DamDice 2d6+3
+DamType digestion
+AC -20 -20 -20 -10
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    pierce lightning~
+Vuln   bash fire~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material gel
+END
+
+#33457
+Name big red jelly~
+ShortD `#a big `Rred`^ jelly~
+LongD `#A big `Rred`^ jelly sludges around.~
+Desc This reddish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 2d10+25
+DamDice 2d8+5
+DamType digestion
+AC -40 -40 -40 -30
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    fire~
+Vuln   cold~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material gel
+END
+
+#33458
+Name big green jelly~
+ShortD `#a big `Ggreen`^ jelly~
+LongD `#A big `Ggreen`^ jelly sludges around.~
+Desc This greenish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 2d10+25
+DamDice 2d8+5
+DamType digestion
+AC -40 -40 -40 -30
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    acid~
+Vuln   lightning~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material gel
+END
+
+#33459
+Name big yellow jelly~
+ShortD `#a big `Yyellow`^ jelly~
+LongD `#A big `Yyellow`^ jelly sludges around.~
+Desc This yellowish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 20
+Hitroll 0
+HitDice 3d5+88
+ManaDice 2d10+25
+DamDice 2d8+5
+DamType digestion
+AC -40 -40 -40 -30
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    acid~
+Vuln   lightning~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   large~
+Sex    neutral~
+Material gel
+END
+
+#33460
+Name immense red jelly~
+ShortD `#an immense `Rred`^ jelly~
+LongD `#An immense `Rred`^ jelly sludges here.~
+Desc This reddish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 23
+Hitroll 0
+HitDice 4d5+110
+ManaDice 2d10+25
+DamDice 2d10+7
+DamType digestion
+AC -70 -70 -70 -50
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    bash fire~
+Vuln   pierce cold~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material gel
+END
+
+#33461
+Name immense green jelly~
+ShortD `#an immense `Ggreen`^ jelly~
+LongD `#An immense `Ggreen`^ jelly sludges here.~
+Desc This greenish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 23
+Hitroll 0
+HitDice 4d5+110
+ManaDice 2d10+25
+DamDice 2d10+7
+DamType digestion
+AC -70 -70 -70 -50
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    bash acid~
+Vuln   pierce lightning~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material gel
+END
+
+#33462
+Name immense yellow jelly~
+ShortD `#an immense `Yyellow`^ jelly~
+LongD `#An immense `Yyellow`^ jelly sludges here.~
+Desc This yellowish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 23
+Hitroll 0
+HitDice 4d5+110
+ManaDice 2d10+25
+DamDice 2d10+7
+DamType digestion
+AC -70 -70 -70 -50
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    bash lightning~
+Vuln   pierce fire~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material gel
+END
+
+#33463
+Name colossal red jelly~
+ShortD a colossal `#`Rred`^ jelly~
+LongD `#A colossal `Rred`^ jelly sludges here.~
+Desc This reddish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d10+30
+DamDice 4d6+8
+DamType digestion
+AC -90 -90 -90 -70
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    bash fire~
+Vuln   pierce cold~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material gel
+END
+
+#33464
+Name colossal green jelly~
+ShortD `#a colossal `Ggreen`^ jelly~
+LongD `#A colossal `Ggreen`^ jelly sludges here.~
+Desc This greenish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d10+30
+DamDice 4d6+8
+DamType digestion
+AC -90 -90 -90 -70
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    bash acid~
+Vuln   pierce lightning~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material gel
+END
+
+#33465
+Name colossal yellow jelly~
+ShortD `#a colossal `Yyellow`^ jelly~
+LongD `#A colossal `Yyellow`^ jelly sludges here.~
+Desc This yellowish colored jelly appears to have no bones inside it's being at all.
+~
+Race unique~
+Align 0 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d10+30
+DamDice 4d6+8
+DamType digestion
+AC -90 -90 -90 -70
+Wealth 0
+Act    npc dont_wander stay_area~
+Off    bash berserk~
+Res    bash lightning~
+Vuln   pierce fire~
+Form   edible sentient~
+Part   guts~
+StartP standing~
+DefPos standing~
+Size   giant~
+Sex    neutral~
+Material gel
+END
+
+#33466
+Name stinking rat~
+ShortD a stinking rat~
+LongD A stinking rat scurries around here.~
+Desc This little bitty rat smells of trash and garbage. It has small red eyes 
+when it is awake and scrambling around. 
+~
+Race other~
+Align 0 0
+Level 10
+Hitroll 0
+HitDice 2d5+18
+ManaDice 2d1+2
+DamDice 2d4+2
+DamType bite
+AC 10 10 10 10
+Wealth 0
+Act    npc stay_area wimpy~
+AffBy  infrared~
+Vuln   bash fire~
+Form   edible sentient mammal~
+Part   head legs heart brains guts ear eye tail claws fangs~
+StartP standing~
+DefPos standing~
+Size   small~
+Sex    neutral~
+Material unknown
+END
+
+#33467
+Name small stinking green kobold~
+ShortD a small stinking green kobold~
+LongD A small stinking green kobold sits at the oaken table.~
+Desc This small green kobold is close to 4 feet tall and has a foul odor coming 
+from it's being. His skinny arms protrude from his warted body. He has 
+pointy facial features, and a small patch of black hair on top of his head. 
+
+~
+Race kobold~
+Align -3 -2
+Level 28
+Hitroll 0
+HitDice 5d5+125
+ManaDice 4d4+80
+DamDice 2d12+8
+DamType claw
+AC -80 -80 -80 -60
+Wealth 280
+Act    npc dont_wander scavenger no_tame stay_area thief noautosocial~
+AffBy  infrared dark_vision~
+Off    dodge parry trip~
+Imm    summon~
+Res    pierce poison~
+Vuln   energy mental light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material flesh
+Helpgroup 1
+END
+
+#33468
+Name fat pudgy kobold~
+ShortD a fat pudgy kobold~
+LongD A small pudgy kobold sits at the oaken table.~
+Desc This pudgy kobold has small rolls of sweaty fat that seem to carry a unique 
+odor with him. His small beaty red eyes glow when his eyes are open. Small 
+stubby limbs protrude out from his body. 
+~
+Race kobold~
+Align -2 0
+Level 30
+Hitroll 0
+HitDice 5d5+140
+ManaDice 5d4+60
+DamDice 4d6+8
+DamType claw
+AC -90 -90 -90 -70
+Wealth 108
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy  infrared dark_vision~
+Imm    summon~
+Res    pierce poison~
+Vuln   energy mental light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material flesh
+Helpgroup 1
+END
+
+#33469
+Name stout muscular kobold~
+ShortD a stout, muscular kobold~
+LongD A stout and muscular kobold sits at the oaken table.~
+Desc This kobold stands a little over 4 and a half feet tall, which is rather 
+large for the normal kobold. His muscles are irregulary well formed and his 
+limbs are the size of small tree trunks. His skin is a dark brown color and 
+he has a grey patch of hair on his head. 
+~
+Race kobold~
+Align -2 -1
+Level 34
+Hitroll 0
+HitDice 5d6+205
+ManaDice 4d5+100
+DamDice 4d7+10
+DamType claw
+AC -110 -110 -110 -90
+Wealth 210
+Act    npc dont_wander no_tame stay_area warrior noautosocial~
+AffBy  infrared dark_vision~
+Off    bash disarm dodge parry~
+Imm    summon~
+Res    pierce poison~
+Vuln   energy mental light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP sitting~
+DefPos sitting~
+Size   medium~
+Sex    male~
+Material flesh
+Helpgroup 1
+END
+
+#33470
+Name sly female kobold~
+ShortD a sly looking female kobold~
+LongD A sly looking female kobold sits at the oaken table.~
+Desc This female kobold appears to be a young adult and is around 4 feet in tall 
+and rather skinny but toned. Her facial features are quite attractive for 
+her race, as they appear to be elvish in nature, but she is no doubt a 
+kobold. 
+~
+Race kobold~
+Align -2 -2
+Level 26
+Hitroll 0
+HitDice 4d5+115
+ManaDice 3d4+40
+DamDice 3d7+7
+DamType claw
+AC -70 -70 -70 -50
+Wealth 260
+Act    npc dont_wander no_tame stay_area noautosocial~
+AffBy  infrared dark_vision~
+Imm    summon~
+Res    pierce poison~
+Vuln   energy mental light~
+Form   edible sentient biped mammal~
+Part   head arms legs heart brains guts hands feet fingers ear eye claws~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    female~
+Material flesh
+Helpgroup 1
+END
+
+#33471
+Name blob enormous goo~
+ShortD an enormous blob of goo~
+LongD An enormous blob of goo oozes around here.~
+Desc This enormous blob of green and red colors appears to have no bones holding 
+it together. This nasty creature just seems to ooze around in a lifelike 
+manner. 
+~
+Race undefined race~
+Align 0 0
+Level 35
+Hitroll 0
+HitDice 5d6+210
+ManaDice 5d4+100
+DamDice 4d7+11
+DamType suction
+AC -110 -110 -110 -80
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  infrared berserk~
+Off    bash~
+Imm    summon~
+Vuln   cold~
+Form   sentient blob mountable~
+StartP standing~
+DefPos standing~
+Size   huge~
+Sex    neutral~
+Material goo
+END
+
+#33472
+Name rat gigantic furry~
+ShortD a gigantic furry rat~
+LongD A gigantic furry rat scurries around here.~
+Desc This giant rat is several feet in length and has to weight over 100 pounds. 
+Its hair is soaked in grease and its paws are black with mud. It's large 
+red eyes gleam in the darkness when it is awake. 
+~
+Race undefined race~
+Align 0 0
+Level 32
+Hitroll 0
+HitDice 5d6+160
+ManaDice 3d3+80
+DamDice 6d4+9
+DamType bite
+AC -100 -100 -100 -70
+Wealth 0
+Act    npc dont_wander stay_area~
+AffBy  infrared~
+Off    dodge fast tail~
+Form   edible animal sentient mammal~
+Part   head arms legs heart brains guts feet ear eye~
+StartP standing~
+DefPos standing~
+Size   medium~
+Sex    neutral~
+Material flesh
+END
+
+#0
+
+
+
+#OBJECTS
+#33450
+Name rusty chipped iron sword~
+Short a rusty chipped iron sword~
+Desc An old chipped iron sword covered in rust has been left here.~
+Level 18
+ItemType weapon~
+Cost 85
+Asize 0
+Rsize 55
+Values sword 3 6 slash H
+Weight 200
+Material iron~
+Extra    nodegrade burnproof~
+Wear     take wield~
+ClassAllowances warrior paladin ranger barbarian~
+Affect modifier -1 18 -1 hitroll 1 0
+Affect modifier -1 18 -1 damroll 1 0
+End
+
+#33451
+Name rusty iron bracer~
+Short a rusty iron bracer~
+Desc An iron bracer covered in rust has been left here.~
+Level 18
+ItemType armor~
+Cost 250
+Asize 0
+Rsize 55
+Values 2 2 2 2 0
+Weight 80
+Material iron~
+Extra    nodegrade burnproof~
+Wear     take wrist~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 18 -1 hitroll 1 0
+Affect modifier -1 18 -1 damroll 1 0
+End
+
+#33452
+Name black iron lantern~
+Short a black iron lantern~
+Desc A black iron lantern has been left here.~
+Level 18
+ItemType light~
+Cost 250
+Asize 0
+Rsize 50
+Values 0 0 90 0 0
+Weight 100
+Material iron~
+Extra    nodegrade burnproof~
+Wear     take~
+Affect modifier -1 18 -1 move 40 0
+End
+
+#33453
+Name torn heavy woolen cloak~
+Short a torn heavy woolen cloak~
+Desc A heavy woolen cloak torn in several places is here.~
+Level 18
+ItemType armor~
+Cost 250
+Asize 0
+Rsize 55
+Values 4 4 4 3 0
+Weight 100
+Material wool~
+Extra    nodegrade burnproof~
+Wear     take about~
+Affect modifier -1 18 -1 ac -5 0
+End
+
+#33454
+Name old mouldy wood table~
+Short an old mouldy wooden table~
+Desc An old mouldy wooden table with several chairs has been placed here.~
+Level 1
+ItemType container~
+Cost 2000
+Asize 0
+Rsize 50
+Values 1000 0 0 0 0
+Weight 1000
+Material wood~
+Extra    nodegrade burnproof~
+End
+
+#33455
+Name deck symbolic cards~
+Short a deck of symbolic cards~
+Desc A deck of symbolic holding cards has been left here.~
+Level 1
+ItemType treasure~
+Cost 300
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material paper~
+Extra    nonmetal nodegrade~
+Wear     take hold~
+End
+
+#33456
+Name small pile gold coins~
+Short a small pile of gold coins~
+Desc A small pile of gold coins has been left here.~
+Level 1
+ItemType money~
+Cost 400
+Asize 0
+Rsize 50
+Values 4 0 0 0 0
+Weight 10
+Material gold~
+Extra    nodegrade burnproof~
+Wear     take~
+End
+
+#33457
+Name small shining dagger~
+Short a small shining dagger~
+Desc A small dagger that shines has been left here.~
+Level 28
+ItemType weapon~
+Cost 430
+Asize 0
+Rsize 45
+Values dagger 6 4 stab D
+Weight 60
+Material steel~
+Extra    evil magic antigood antineutral nodegrade burnproof~
+Wear     take wield~
+ClassAllowances mage thief warrior paladin ranger spellfilcher~
+Affect modifier -1 28 -1 hitroll 4 0
+Affect modifier -1 28 -1 damroll 4 0
+End
+
+#33458
+Name silver onyx embedded ring~
+Short a silver, onyx embedded ring~
+Desc A silver ring with a small onyx stone embedded on it is here.~
+Level 28
+ItemType jewelry~
+Cost 520
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 5
+Material silver~
+Extra    hum evil magic antigood antineutral nodegrade burnproof~
+Wear     take finger~
+ClassAllowances cleric thief warrior paladin ranger spellfilcher~
+Affect modifier -1 28 -1 quickness 4 0
+End
+
+#33459
+Name stained studded leather vest~
+Short a stained studded leather vest~
+Desc A studded leather vest with a brown stain tanned on it is here.~
+Level 28
+ItemType armor~
+Cost 650
+Asize 0
+Rsize 45
+Values 12 11 13 7 0
+Weight 250
+Material leather~
+Extra    antigood nonmetal nodegrade burnproof~
+Wear     take torso~
+ClassAllowances cleric warrior druid paladin ranger barbarian spellfilcher~
+Affect modifier -1 28 -1 ac -5 0
+Affect modifier -1 28 -1 hp 4 0
+End
+
+#33460
+Name inscribed mahogany staff~
+Short an inscribed mahogany staff~
+Desc A mahogany staff with many inscriptions upon it has been left here.~
+Level 30
+ItemType weapon~
+Cost 470
+Asize 0
+Rsize 45
+Values staff 3 12 thwack F
+Weight 100
+Material mahogany~
+Extra    hum nonmetal nodegrade burnproof~
+Wear     take wield~
+Affect modifier -1 30 -1 hitroll 2 0
+Affect modifier -1 30 -1 damroll 2 0
+End
+
+#33461
+Name black small bandanna~
+Short a small black bandanna~
+Desc A small black bandanna has been left here.~
+Level 30
+ItemType clothing~
+Cost 46
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 5
+Material cloth~
+Extra    nonmetal nodegrade burnproof~
+Wear     take head~
+Affect modifier -1 30 -1 memory 3 0
+End
+
+#33462
+Name rotted wooden sandals~
+Short a pair of rotted wooden sandals~
+Desc A pair of rotted sandals made of wood have been left here.~
+Level 1
+ItemType clothing~
+Cost 10
+Condition 50
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 10
+Material wood~
+Extra    nonmetal~
+Wear     take feet~
+End
+
+#33463
+Name stained studded leather leggings~
+Short some stained studded leather leggings~
+Desc Some studded leather leggings tailored with stain have been left here.~
+Level 28
+ItemType armor~
+Cost 450
+Asize 0
+Rsize 45
+Values 7 7 7 5 0
+Weight 40
+Material leather~
+Extra    antigood nonmetal nodegrade burnproof~
+Wear     take legs~
+Affect modifier -1 28 -1 quickness 1 0
+Affect modifier -1 28 -1 agility 1 0
+Affect modifier -1 28 -1 hp 2 0
+End
+
+#33464
+Name smelly grey cloth pants~
+Short a pair of smelly grey cloth pants~
+Desc A pair of smelly grey cloth pants give off an odour here.~
+Level 1
+ItemType clothing~
+Cost 40
+Condition 75
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 20
+Material cloth~
+Extra    nonmetal~
+Wear     take legs~
+End
+
+#33465
+Name blue steel short-sword~
+Short a blue steel short-sword~
+Desc A short-sword made of bluish steel has been left here.~
+Level 34
+ItemType weapon~
+Cost 600
+Asize 0
+Rsize 45
+Values sword 4 8 slash D
+Weight 120
+Material steel~
+Extra    hum nodegrade burnproof~
+Wear     take wield~
+ClassAllowances thief warrior paladin ranger barbarian~
+Affect modifier -1 34 -1 damroll 2 0
+Affect modifier -1 34 -1 hitroll 2 0
+Affect modifier -1 34 -1 strength 1 0
+End
+
+#33466
+Name ivory-bone collar~
+Short an ivory-bone collar~
+Desc A collar made of ivory and bone has been left here.~
+Level 34
+ItemType armor~
+Cost 475
+Asize 0
+Rsize 45
+Values 5 5 5 4 0
+Weight 30
+Material bone~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take neck~
+ClassAllowances cleric thief warrior paladin ranger spellfilcher~
+Affect modifier -1 34 -1 intuition -2 0
+Affect modifier -1 34 -1 empathy -2 0
+Affect modifier -1 34 -1 hitroll 4 0
+Affect modifier -1 34 -1 damroll 4 0
+End
+
+#33467
+Name gleaming green quartz stone~
+Short `#a gleaming `ggreen`^ quartz~
+Desc A gleaming stone made of green quartz floats here.~
+Level 34
+ItemType jewelry~
+Cost 550
+Asize 0
+Rsize 50
+Values 0 0 0 0 0
+Weight 10
+Material stone~
+Extra    magic nonmetal nodegrade burnproof~
+Wear     take float~
+ClassAllowances cleric thief warrior paladin ranger spellfilcher~
+Affect modifier -1 34 -1 hitroll 2 0
+Affect modifier -1 34 -1 damroll 2 0
+Affect modifier -1 34 -1 saves -4 0
+End
+
+#33468
+Name dark woolen cloak~
+Short a dark woolen cloak~
+Desc A dark cloak made of wool has been left here.~
+Level 34
+ItemType armor~
+Cost 425
+Asize 0
+Rsize 45
+Values 8 8 8 6 0
+Weight 80
+Material wool~
+Extra    nonmetal nodegrade burnproof~
+Wear     take about~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 34 -1 ac -15 0
+End
+
+#33469
+Name ring band small silver~
+Short a small silver band~
+Desc A small ring-band of silver has been left here.~
+Level 26
+ItemType jewelry~
+Cost 450
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 5
+Material silver~
+Extra    glow evil magic antigood antineutral nodegrade burnproof~
+Wear     take finger~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 26 -1 damroll 2 0
+Affect modifier -1 26 -1 hitroll 2 0
+Affect modifier -1 26 -1 mana 40 0
+End
+
+#33470
+Name skirt black leather~
+Short a black leather skirt~
+Desc A black leather skirt has been left here.~
+Level 26
+ItemType clothing~
+Cost 250
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 20
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take legs~
+Affect modifier -1 26 -1 quickness 1 0
+Affect modifier -1 26 -1 agility 1 0
+End
+
+#33471
+Name top black leather~
+Short a black leather top~
+Desc A black leather top has been left here.~
+Level 26
+ItemType clothing~
+Cost 250
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 20
+Material leather~
+Extra    nonmetal nodegrade burnproof~
+Wear     take torso~
+Affect modifier -1 26 -1 ac -10 0
+End
+
+#33472
+Name collar large spiked dog~
+Short a large spiked dog collar~
+Desc A large dog collar with spikes in it have been left here.~
+Level 32
+ItemType armor~
+Cost 320
+Asize 0
+Rsize 50
+Values 5 5 5 4 0
+Weight 30
+Material steel~
+Extra    nodegrade burnproof~
+Wear     take neck~
+ClassAllowances cleric thief warrior paladin ranger barbarian spellfilcher~
+Affect modifier -1 32 -1 hp 6 0
+End
+
+#33499
+Name small twisted silver necklace~
+Short a small twisted silver necklace~
+Desc A small necklace made of twisted strands of silver is here.~
+Level 26
+ItemType jewelry~
+Cost 500
+Asize 0
+Rsize 45
+Values 0 0 0 0 0
+Weight 10
+Material silver~
+Extra    magic nodegrade burnproof~
+Extra2   nodecay~
+Wear     take neck~
+ClassAllowances mage cleric thief warrior druid paladin ranger spellfilcher~
+Affect modifier -1 26 -1 mana 40 0
+Affect modifier -1 26 -1 damroll 2 0
+Affect modifier -1 26 -1 hitroll 2 0
+Affect modifier -1 26 -1 intuition -1 0
+End
+
+#0
+
+
+
+#ROOMS
+#33450
+Name A Dark, Damp Sewer Tunnel~
+Desc Down in the sewer there is about 3 inches of filthy water on the bottom of 
+the tunnel. Around you there is slime dripping down the walls from the 
+waste of the city above. Through the darkness you can see many shadows 
+moving around, and amongst them you can hear faint whispers. There are 
+tunnels leading off in many direction, but each of them are as dark as the 
+other. 
+~
+RoomFlags indoors~
+Sector inside~
+Exit north 33466
+Exit east 33459
+Exit south 33451
+Exit west 33463
+Exit up 27040
+EFlags door closed~
+End
+
+
+#33451
+Name A Dark, Damp Sewer Tunnel~
+Desc Below you there are several inches of murky water covering the tunnel that 
+gives off an awful smell. Around you there is slime dripping down the 
+walls from some waste above. Through the darkness, shadows seem to move all 
+about. The musky tunnel appears to lead off to the north and to the east. 
+~
+Sector inside~
+Exit north 33450
+Exit east 33452
+End
+
+
+#33452
+Name A Dark, Damp Sewer Tunnel~
+Desc Below you is a `#`sgrate`^ where water is flowing down into the darkness.  All 
+around you the walls are gunked with a slimey gel that radiates in the dark 
+tunnel.  Through the darkness, the shadows seem to move all about.  The 
+musky tunnel appears to lead off to the west.  
+~
+Sector inside~
+ExtraDesc grate ~
+The grate appears to be moveable.
+~
+Exit west 33451
+Exit down 33453
+EFlags door closed~
+EKeywords grate~
+End
+
+
+#33453
+Name Below a Grate in a Dark, Damp Sewer Tunnel~
+Desc Above you is a `#`sgrate`^ where water is flowing down to the floor of the tunnel. 
+ There is multi-colored gel caked on the walls that radiates in the 
+darkness.  Peering into the blackness around you, the shadows seem to move 
+all about.  The musky tunnel appears to lead off to the east.  
+~
+Sector inside~
+ExtraDesc grate ~
+The grate appears to be moveable.
+~
+Exit east 33454
+Exit up 33452
+EFlags door closed~
+End
+
+
+#33454
+Name A Tunnel Full of Gel Caked Walls~
+Desc There is a slimey green water below you that fills the bottom of the tunnel. 
+ A flare of gels caked on the wall appear to radiate light into the room. 
+Peering around you the tunnel leads off west into the darkness, but several 
+other turns in the tunnel in other directions seem to radiate the same light 
+as this room does. 
+~
+RoomFlags light~
+Sector inside~
+Exit east 33456
+Exit south 33455
+Exit west 33453
+End
+
+
+#33455
+Name A Tunnel Full of Gel Caked Walls~
+Desc There is a slimey green water below you that fills the bottom of the tunnel. 
+ A flare of gels caked on the wall appear to radiate light into the room. 
+Peering around you the tunnel leads off to the north and east, and both 
+rooms seem to radiate with the same colorful light that this room does. 
+~
+RoomFlags light~
+Sector inside~
+Exit north 33454
+Exit east 33457
+End
+
+
+#33456
+Name A Tunnel Full of Gel Caked Walls~
+Desc There is a slimey green water below you that fills the bottom of the tunnel. 
+ A flare of gels caked on the wall appear to radiate light into the room. 
+Peering around you the tunnel leads off to the west and south, and both 
+rooms seem to radiate with the same colorful light that this room does. 
+~
+RoomFlags light~
+Sector inside~
+Exit south 33457
+Exit west 33454
+End
+
+
+#33457
+Name A Tunnel Full of Gel Caked Walls~
+Desc There is a slimey green water below you that appears to be flowing down 
+through a `sgrate`x. A flare of gels caked on the wall appear to radiate light 
+into the room. Peering around you the tunnel leads off to north and west, 
+and both rooms seem to radiate with the same colorful light that this room 
+does. 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc grate ~
+The grate appears to be moveable.
+~
+Exit north 33456
+Exit west 33455
+Exit down 33458
+EFlags door closed~
+EKeywords grate~
+End
+
+
+#33458
+Name A Flooded Pit~
+Desc This room's floor has about 2 feet of water in it, where there appears to be 
+cracks in the floor in the northeast corner where the water is slowly 
+draining out into the unknown. The walls are completely covered in 
+colorful, flaring gel that lights up the room like a dozen torches. The 
+water is very putrid and it reeks of waste and fecies. The water also 
+appears to be steaming a little in the damp pit. The only way out of this 
+room appears to be a `sgrate`x with a ladder built into the wall leading upward. 
+ 
+~
+RoomFlags light~
+Sector inside~
+ExtraDesc grate ~
+The grate appears to be moveable.
+~
+Exit up 33457
+EFlags door closed~
+End
+
+
+#33459
+Name A Dark, Damp Sewer Tunnel~
+Desc Below you there is several inches of murkey water covering the tunnel that 
+gives off an aweful smell. Around you there is slime dripping down the 
+walls from some waste above. Through the darkness, the shadows seem to move 
+all about. The musky tunnel appears to lead westward and off to the 
+northeast. 
+~
+Sector inside~
+Exit west 33450
+Exit northeast 33460
+End
+
+
+#33460
+Name A Dark, Damp Sewer Tunnel~
+Desc Below you there is several inches of murky water covering the tunnel that 
+gives off an awful smell. Around you there is slime dripping down the 
+walls from some waste above. Through the darkness, the shadows seem to move 
+all about. The musky tunnel appears to lead to the southwest and off to the 
+east. 
+~
+Sector inside~
+Exit east 33462
+Exit southwest 33459
+End
+
+
+#33462
+Name A Large and Thick Nest~
+Desc This part of the tunnel is completely covered with trash and straw type 
+material that has been structured into some sort of nest. There is some 
+water that has leaked up next to the nest, but it has not entered the nest. 
+There is a reaking smell coming from the nest, and there is also some fur 
+ontop of it. Through the darkness, the shadows seem to move all about. The 
+musky tunnel appears to lead to the west. 
+~
+Sector inside~
+Exit west 33460
+End
+
+
+#33463
+Name A Dark, Damp Sewer Tunnel~
+Desc Below you there is several inches of murkey water covering the tunnel that 
+gives off an aweful smell. The water seems to be moving in a current to the 
+northwest. Around you there is slime dripping down th walls from some waste 
+above. Through the darkness, shadows seem to move all about. The musky 
+tunnel appears to lead off to the northwest and to the east. 
+~
+Sector inside~
+Exit east 33450
+Exit northwest 33464
+End
+
+
+#33464
+Name A Dark, Damp Sewer Tunnel~
+Desc Below you is several inches of murkey water that drain down into an open 
+sewer hole in the floor. There looks to be a ladder built into the tunnel 
+that leads down with the tunneled hole. Around you there is slime dripping 
+down the walls from some waste above. Through the darkness, shadows seem to 
+move all about. The musky tunnel appears to lead downward into the unknown 
+and off to the southeast. 
+~
+Sector inside~
+Exit down 33465
+Exit southeast 33463
+End
+
+
+#33465
+Name A Nasty Sewer Dump~
+Desc This room is completely enveloped in murky water and mounds of trash and 
+waste. There is a most aweful smell that rises from this room as insect and 
+other things grovel in the waste. The shadows all around seem to move as 
+the dump you are in only appears to exit through a small hole in the ceiling 
+of which a ladder is attached to the wall that leads up and through the 
+opening. 
+~
+Sector inside~
+Exit up 33464
+End
+
+
+#33466
+Name A Dark, Damp Sewer Tunnel~
+Desc Below you there is several inches of murkey water covering the tunnel floor 
+that gives off an aweful smell. Around you there is slime dripping down the 
+walls from some waste above. Through the darkness, the shadows seem to move 
+all about. The musky tunnel appears to lead to the northeast and off to the 
+south. 
+~
+Sector inside~
+Exit south 33450
+Exit northeast 33467
+End
+
+
+#33467
+Name A Dark, Damp Sewer Tunnel~
+Desc Below you there is several inches of murkey water covering the tunnel floor 
+that gives off an aweful smell. Around you there is slime dripping down the 
+walls from some waste above. Through the darkness, the shadows seem to move 
+all about. To the west there is a beaten up oaken door blocking the tunnel 
+passage. To the northwest the tunnel leads on into the unknown. 
+~
+Sector inside~
+Exit west 33469
+EFlags door closed~
+EKeywords door~
+Exit southwest 33466
+Exit northwest 33468
+End
+
+
+#33468
+Name A Dark, Damp Sewer Tunnel~
+Desc Below you there is some water near the exit of the tunnel, but the northwest 
+corner of the tunnel appears to be dry, as the current is leading 
+southeastward and not to the north. The walls are covered in dripping slime 
+coming from some waste above. Peering around the shadows seem to dance 
+everywhere. This tunnel appears to be nothing more than a dead end. The 
+tunnel leads to the southeast. 
+~
+Sector inside~
+Exit southeast 33467
+End
+
+
+#33469
+Name A Room Built into the Sewer Tunnel~
+Desc This room appears to be an old dead end of the sewer tunnels. The floor is 
+free of water, but is caked with mud by the door. The walls are covered 
+with animal furs, and several torches hang on the wall. The ceiling has old 
+mold on it as this tunnel is damp, and there seems to be moisture in the 
+air. To the east is an oak door that has been built onto the tunnel. 
+
+~
+RoomFlags light~
+Sector inside~
+Exit east 33467
+EFlags door closed~
+EKeywords door~
+End
+
+
+#0
+
+
+
+#SPECIALS
+M 33466 spec_poison
+M 33472 spec_poison
+S
+
+
+
+#RESETS2
+M 0 33450 1 33450 1
+E 0 33450 -1 wielded~
+E 0 33451 -1 rwrist~
+E 0 33451 -1 lwrist~
+E 0 33452 -1 light~
+E 0 33453 -1 about~
+M 0 33466 6 33451 1
+M 0 33466 6 33453 1
+M 0 33451 2 33454 2
+M 0 33452 2 33454 2
+M 0 33453 2 33454 2
+M 0 33454 2 33455 2
+M 0 33455 2 33455 2
+M 0 33456 2 33455 2
+M 0 33457 2 33456 2
+M 0 33458 2 33456 2
+M 0 33459 2 33456 2
+M 0 33460 2 33457 2
+M 0 33461 2 33457 2
+M 0 33462 2 33457 2
+M 0 33463 2 33458 2
+M 0 33464 2 33458 2
+M 0 33465 2 33458 2
+M 0 33466 6 33459 1
+M 0 33472 1 33462 1
+E 0 33472 -1 neck1~
+M 0 33471 1 33465 1
+M 0 33466 4 33467 1
+O 0 33454 -1 33469
+P 0 33456 1 33454 1
+P 0 33455 1 33454 1
+M 0 33467 1 33469 1
+E 0 33457 -1 sheathed~
+E 0 33463 -1 legs~
+E 0 33458 -1 lfinger~
+E 0 33459 -1 torso~
+M 0 33468 1 33469 1
+G 0 33460 -1
+E 0 33461 -1 head~
+E 0 33462 -1 feet~
+E 0 33464 -1 legs~
+M 0 33469 1 33469 1
+E 0 33465 -1 sheathed~
+E 0 33466 -1 neck1~
+E 0 33467 -1 floating~
+E 0 33468 -1 about~
+M 0 33470 1 33469 1
+E 0 33499 -1 neck1~
+E 0 33469 -1 rfinger~
+E 0 33470 -1 legs~
+E 0 33471 -1 torso~
+S
+
+
+
+#SHOPS
+#0
+
+
+#MOBPROGS
+#0
+
+
+#$

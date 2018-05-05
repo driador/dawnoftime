@@ -1,0 +1,2329 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword MOBPROG MOBILE-PROGRAMS~
+level 1
+category undefined~
+text `+
+ Usually mobiles never do anything but wait to be slaughtered, unless
+someone has added many special procedures called mobile programs. The
+backbone of the mobile programs is called `#`Ytriggers`^, essentially 
+they are procedures calls which provide the context for what is going
+on around the mobile. So if something happens in the mobile's room and 
+a trigger is activated, then a list of `#`Ycommands`^ is sent to the 
+interpreter in the mobile's name, thus making her/it/him do an 
+appropriate something.
+  Since knowing the appropriate response for every mobile to every 
+possible trigger is not easy, this command list shouldn't be a rigid 
+script, but needs to be somehow unique for the mobile and the situation
+However, in order to know the situation, a mobile needs to know more
+about the trigger than that it just happened. So we have to include
+some sort of `#`Yvariables`^, as well as to set the context appropriately.
+`+
+`+
+`#`CSEE-ALSO: `=_TRIGGERS`+, `=_VARIABLES`+, `=_MPCOMMANDS`+, `=_IF_CHECKS`+, `=_OPERATORS`+, 
+`=_MPSYNTAX`+, `=_MP-BUILDING`+, `=_MPEXAMPLES`+.`^
+~
+END
+
+keyword TRIGGERS~
+level 1
+category undefined~
+see_also VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES~
+text `+
+Triggers' Summary:
+`+
+`#`r-----------------------------------------------------------------------------------------
+`+
+`YTRIGGER   `=?ARGUMENT`+
+`+
+`YACT`=?       <string>`r..............`=?to match in a message on screen
+`YSPEECH`=?    <string>`r..............`=?to match in dialogue (say, tell) to mobile
+`YRANDOM`=?    <percent>`r.............`=?chance to check from time to time
+`YGREET`=?     <percent>`r.............`=?chance to check if a visible char enters mobile's room
+`YGRALL`=?     <percent>`r.............`=?chance to check when any char enters the mobile's room
+`YENTRY`=?     <percent>`r.............`=?chance to check when mobile moves to a new room
+`YEXIT`=?      <direction number>`r....`=?a visible char tries to exit the mobile's room
+`YEXALL`=?     <direction number>`r....`=?any char tries to exit the mobile's room
+`YGIVE`=?      <object name or vnum>`r.`=?to match when the object is given to mobile
+`YBRIBE`=?     <integer>`r.............`=?minimum amount of silver coins given to mobile
+`YKILL`=?      <percent>`r.............`=?chance to check when the mobile begins fighting
+`YFIGHT`=?     <percent>`r.............`=?chance to check at fight_pulse if mobile is fighting
+`YHPCNT`=?     <percent>`r.............`=?lower than mobile's hit/max_hit if mobile is fighting
+`YDEATH`=?     <percent>`r.............`=?chance to check after mobile has been slain
+`YDELAY`=?     <percent>`r.............`=?chance to check if the delay expires
+`YSURR`=?      <percent>`r.............`=?chance to activate when a char surrenders to mobile
+`YREPOP`=?     <percent>`r.............`=?chance to activate when the mobile is loaded on the room
+`YROOMDEATH`=? <percent>`r.............`=?chance to activate when something dies in the room
+`YTICK`=?      <percent>`r.............`=?chance to activate when the tick changes
+`YHOUR`=?      <game hour>`r...........`=?to match when the game hour changes
+`+
+`r-------------------------------------------------------------------------------------------`^
+`+
+`+
+SEE ALSO: TRIGGER_<TRIGGER NAME>
+~
+END
+
+keyword ACT TRIGGER_ACT~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES SAY YELL EMOTE~
+text `+
+`#`=lSyntax:`^ `#`WACT`^ `#`R<string>`^
+`+
+   The argument is a phrase, a text string. The trigger is activated 
+whenever the phrase is contained in the screen message. This is a most
+general trigger and applies to almost every event which happens in the
+mud, But the output of "say", "yell" and "emote" do not trigger this
+event.
+   You can use only one word or a whole phrase, but to use a whole 
+phrase you need enclose it between quotes (''), be sure to know how the 
+message appears on the screen, to set this trigger and make the program
+work properly.
+`+
+`#`BExamples:`^
+`+
+`#`WACT `Rflees`^
+When the message "...flees..."  appears on the screen, the trigger
+will be activated.
+`+
+`#`WACT `R'has arrived' `^
+When the message "...has arrived..."  appears on the screen,
+the trigger will be activated.
+~
+END
+
+keyword TRIGGER_SPEECH~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES~
+text `+
+`#`=lSyntax:`^ `#`WSPEECH`^ `#`R<string>`^
+`+
+   The argument is a phrase, a text string, this is only activated 
+when the phrase is contained in a message which has been said by a 
+player character (PC) in the same room as the mobile, this doesn't
+work with 'yells'. The PC restriction is not necessary, but 
+infinite loops between two talking mobiles is impossible. 
+   You can use only one word or a whole phrase, but to use a whole 
+phrase you need enclose it between quotes (''). Be sure to choose a 
+suitable word or phrase, because the trigger will be activated no 
+matter if a PC has said the word/phrase to the mobile (to trigger 
+the mobprog) or to another PC in the same room as the mobile, which
+who he is talking about something else using the same word/phrase.
+`+
+`#`BExamples:`^
+`+
+`#`WSPEECH `Rhello`^
+This trigger will be activated when the mobile hears someone in the 
+same room says the word hello.
+`+
+`#`WSPEECH `R'please open the door!' `^
+This trigger will be activated when the mobile hears someone in the
+same room says the phrase 'please open the door!', this trigger checks
+the whole phrase, even the periods. 
+`+
+~
+END
+
+keyword TRIGGER_RANDOM RANDOM~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES PULSE-MOBILE MOB_ACT_UPDATE_ALWAYS MOBPROGRAM_LIST~
+text `+
+`#`=lSyntax:`^ `#`WRANDOM`^ `#`R<percent>`^
+`+
+  The argument is a number between 0 and 100. This trigger is checked
+at each `#`YPULSE_MOBILE`^ and if the argument is greater than a 
+percentage roll the trigger is activated. This will happen even if there
+is no player character (PC) in the room with the mobile, but there must 
+be players in the same area. To activate this trigger without PCs inside
+the area you need include the act flag `#`Yupdate_always`^ on the mobile.
+  Note that if the mobile has two random triggers and the first trigger
+in the `#`YMOBprogram list`^ has an argument of 100, the other random 
+trigger will never be activated, no matter if you set it to 100 too.
+  It is very nice give a personality to a mob to make it more alive, but
+don't set the argument too high to avoid spams. See the mobile doing
+something different is nice, but after some time see the mobile doing
+it over and over is annoying.
+`+
+`#`BExamples:`^
+`+
+`#`WRANDOM `R20`^
+This trigger will be activated if the percentage roll is lower than 20.
+`+
+`#`WRANDOM `R100`^
+This trigger will be activated each PULSE_MOBILE, because the percentage
+roll will always be lower than 100.
+`+
+~
+END
+
+keyword TRIGGER_GREET TRIGGER_GRALL~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES MOB_AFF_DETECT_HIDE MOB_AFF_DETECT_INVIS~
+text `+
+`#`=lSyntax:`^ `#`WGREET`^ `#`R<percent>`^
+         `#`WGRALL`^ `#`R<percent>`^
+`+
+  The argument is a number between 0 and 100. This trigger is checked 
+whenever someone enters the room with the mobile, and the mobile saw
+the person enter, this means that the mobile will not see hiding, 
+invisible or sneaking people, if the mobile has not the affect flag 
+`#`Ydetect_hide`^ and/or `#`Ydetect_invis`^.
+  If the argument is lower than 100, the trigger will be activated if
+the percentage roll is lower than the argument. The greet trigger 
+activates only when the mobile is not busy (fighting, sitting, sleeping,
+etc.).
+  If you want be sure to catch all the players, no matter if they
+are hiding, sneaking or invisible use the trigger grall. The grall
+trigger will be activated even if the mobile didn't see the  arrival
+or is busy.
+  Remember that only some mobiles are able to see hiding/sneaking/
+invisible players, so please don't abuse the grall trigger, a normal
+human citizen wouldn't be able to see those players, but a powerful
+mage would be able to see them.
+`+
+`#`BExamples:`^
+`+
+`#`WGREET `R30`^
+This trigger will be activated when someone enters the room with the
+mobile, the mobile saw the person enter, the mob is not busy and the 
+percentage roll is lower than 30.
+`+
+`#`WGREET `R100`^
+This trigger will be activated when someone enters the room with the
+mobile, the mobile saw the person enter, and the mob is not busy. 
+`+
+`#`WGRALL `R30`^
+This trigger will be activated when someone enters the room with the
+mobile, and the percentage roll is lower than 30, no matter if the
+mobile is busy or not able to see the person.
+`+
+`#`WGRALL `R100`^
+This trigger will be activated when someone enters the room with the
+mobile, no matter if the mobile is busy or not able to see the person.
+`+
+~
+END
+
+keyword TRIGGER_ENTRY~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES SILVER GOLD~
+text `+
+`#`=lSyntax:`^ `#`WENTRY`^ `#`R<percent>`^
+`+
+   The argument is a number between 0 and 100. This trigger is the 
+opposite of the greet trigger, whenever the mobile itself enters
+a new room and the percentage roll is lower than the argument this
+trigger is activated.
+   One important thing to remember is that in the entry program, 
+the mobile can only refer to a random PC (the `#`Yvariable`^ $r in 
+`#`YIf_checks`^), there is no way to know how many PCs exist in the
+room the mobile enters! Also, you must check the visibility of the
+target in your program, because even if the player is hiding/sneaking
+or invisible the mobile will be able to see them, even if the mobile
+doesn't have the affect flag `#`Ydetect_hide`^ and/or `#`Ydetect_invis`^.
+`+
+`#`BExamples:`^
+`+
+`#`WENTRY `R30`^
+This trigger will be activated when the mobile enters a new room
+and if the percentage rolls is lower than 30.
+`+
+`#`WENTRY `R100`^
+This trigger will be activated when the mobile enters a new room.
+`+
+~
+END
+
+keyword TRIGGER_EXIT TRIGGER_EXALL~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES MOB_AFF_DETECT_HIDE MOB_AFF_DETECT_INVIS MOB_TRANSFER MOB_GTRANSFER~
+text `+
+`#`=lSyntax:`^ `#`WEXIT`^ `#`R<exit number>`^
+        `#`WEXALL`^ `#`R<exit number>`^
+`+
+  The argument is the exit number:`+
+`+
+`#`RNORTH`Y 0          `RUP `Y4            `RNORTHEAST `Y6`+
+`REAST  `Y1          `RDOWN `Y5          `RSOUTHEAST `Y7`+
+`RSOUTH `Y2                          `RSOUTHWEST `Y8`+
+`RWEST  `Y3                          `RNORTHWEST `Y9`^`+
+`+
+   This trigger is the opposite of the entry trigger. This is activated
+when a PC tries to leave a room through an exit indicated by the argument,
+and the mobile sees the person leave. This means that the mobile will not
+see hiding, invisible or sneaking people, if the mobile has not the affect
+flag `#`Ydetect_hide`^ and/or `#`Ydetect_invis`^. An exit trigger works 
+better than an entry trigger, since you can refer to a specific PC instead
+of a random PC.
+   One important thing to remember is that if this event is triggered, the
+victim will not move through the exit. If necessary, you must move the
+character yourself in your program (using the commands `#`YMOB TRANSFER`^
+or `#`YMOB GTRANSFER`^). Also this event is not triggered when a character 
+flees from combat, if the mobile is not in its default position or  if the 
+mob is busy (fighting, sitting, sleeping, etc.).
+  If you want be sure to catch all the players, no matter if they are  
+hiding, sneaking or invisible use the trigger exall. The exall trigger will
+be activated even if the mobile didn't see the person trying to leave or if 
+the mobile is busy.
+  Remember that only some mobiles are able to see hiding/sneaking/
+invisible players, so please don't abuse the exall trigger, a normal
+human citizen wouldn't be able to see those players, but a powerful
+mage would be able to see them.
+`+
+`#`BExamples:`^
+`+
+`#`YEXIT `R0`^
+This trigger will be activated when the mobile see someone trying to 
+leave the room through the north exit.
+`+
+`#`YEXALL `R9`^
+This trigger will be activated if someone is trying to leave the room
+through the northwest exit.
+`+
+~
+END
+
+keyword TRIGGER_GIVE~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES VNUM MOBPROGRAM_LIST~
+text `+
+`#`=lSyntax:`^ `#`WGIVE`^ `#`R<string>`^
+        `#`WGIVE`^ `#`R<object vnum>`^
+`+
+   The argument is either a string containing words to be matched against
+the keywords of the object name, or the word 'all'. The argument can be 
+the virtual number (`#`YVNUM`^) of a single object too. 
+   This is triggered whenever something is given to the mobile. Since
+the first trigger is the only one of the type which is processed, the
+'all' argument in the script at the end of the `#`YMOBprogram list`^ is
+essentially a default response.
+   To set a trigger using two words don't forget the enclose it between
+quotes (''). Take care when you use the keywords of the name of the object
+to trigger the mobile program, if the name has two words, the program will
+be triggered if at least one word match the name of the object, see the
+example bellow:
+`+
+`#`BExamples:`^
+`+
+`#`WGIVE `R'long sword'`^
+This trigger will be activated if someone gives an object which has as 
+name's keyword long sword, or a long bow, or a small sword, etc. to 
+the mobile. Note that at least one word need match the keyword.
+`+
+`#`WGIVE `R250 `^
+This trigger will be activated if someone gives the object which virtual
+number (`#`YVNUM`^) 250 to the mobile.
+`+
+`#`WGIVE `Rall `^
+This trigger will be activated if someone gives any object to the mobile,
+except money, which has a proper trigger.
+`+
+~
+END
+
+keyword TRIGGER_BRIBE~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES SILVER GOLD~
+text `+
+`#`=lSyntax:`^ `#`WBRIBE`^ `#`R<number>`^
+`+
+   The argument is any positive integer number, this trigger can be
+activated whenever money is given to the mobile. If the amount given
+exceeds the number, then the commands are processed. Note that the
+argument of 1 would act as a default response. Also note that if the
+script is not triggered (because of too little money having been
+given), the mobile still keeps the money.
+   For this bribe trigger the amount to be given is converted to 
+`#`Ysilver`^ coins with the rate of 1 `#`Ygold`^ = 100 silver, thus the number 
+in the argument should be the expected amount in silver coins.
+`+
+`+
+`#`BExamples:`^
+`+
+`#`WBRIBE `R50`^
+This trigger will be activated if someone gives 50 silver coins or 
+more to the mobile.
+`+
+`#`WBRIBE `R1 `^
+This trigger will be activated if somone gives any amount of silver
+coins to the mobile.
+`+
+`+
+~
+END
+
+keyword TRIGGER_KILL~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES~
+text `+
+`#`=lSyntax:`^ `#`WKILL`^ `#`R<percent>`^
+`+
+   The argument is a number between 0 and 100, this trigger is checked
+whenever a PC attacks the mobile. The check occurs onle once, in the 
+beggining of the combat, and if the percentage roll is lower than the
+argument the trigger is activated.
+`+
+`#`BExamples:`^
+`+
+`#`WKILL `R20`^
+This trigger will be activated if a PC attacks the mobile and if the
+percentage roll is lower than 20.
+`+
+`#`WKILL `R100 `^
+This trigger will be activated if a PC attacks the mobile.
+`+
+~
+END
+
+keyword TRIGGER_FIGHT~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES PULSE-VIOLENCE~
+text `+
+`#`=lSyntax:`^ `#`WFIGHT`^ `#`R<percent>`^
+`+
+   The argument is a number between 0 and 100, this trigger is checked
+every `#`YPULSE_VIOLENCE`^ when the mobile is fighting, in each PULSE_
+VIOLENCE only one trigger of this type can be sucessful, to save time,
+if the percentage roll is greater than the argument the trigger is
+activated. 
+   For example if you have four fight triggers on the same mob, every 
+PULSE_VIOLENCE those triggers are checked, if one is sucessful, only 
+this sucessful trigger is processed and no other fight trigger is 
+checked in the same PULSE_VIOLENCE.
+`+
+`#`BExamples:`^
+`+
+`#`WFIGHT `R20`^
+This trigger will be activated every PULSE_VIOLENCE in which the mobile
+is fighting and if the percentage roll is lower than 20.
+`+
+`#`WFIGHT `R100 `^
+This trigger will be activated every PULSE_VIOLENCE while the mobile
+is fighting.
+`+
+~
+END
+
+keyword TRIGGER_HPCNT TRIGGER_HIT_POINT_PERCENTAGE~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES MOBPROGRAM_LIST PULSE-VIOLENCE~
+text `+
+`#`=lSyntax:`^ `#`WHPCNT`^ `#`R<percent>`^
+`+
+   The argument is a number between 0 and 100, this trigger is checked
+at each PULSE_MOBILE when the mobile is fighting, it is activated if the
+hit points of the mobile are below the given percentage. If you want 
+include more than one hpcnt trigger on the same mobile it should be listed
+in the  `#`YMOBprogram list`^ in increasing order of percent since a 40%
+will always be activated before a 20%, and only the first sucessful trigger
+is performed. In the mobile stats we should have:
+`+
+`#`yMOBPrograms for [ 3000]:`+
+ Number Vnum Trigger Phrase`+
+ ------ ---- ------- ------`+
+[    0] 3000   HPCNT 20`+
+[    1] 3001   HPCNT 40`^`+
+`+
+   In this case when the mobile hp reachs 40% the mobprogram 3001 will be
+processed and when it reachs 20% the mobprog 3001 will be processed.
+`+
+`#`BExamples:`^
+`+
+`#`WHPCNT `R20`^
+This trigger will be activated if the hit point of the mobile is below
+20% of its total hit points, while the mobile is fighting.
+`+
+`#`WHPCNT `R40`^
+This trigger will be activated if the hit point of the mobile is below
+40% of its total hit points, while the mobile is fighting.
+`+
+~
+END
+
+keyword TRIGGER_DEATH~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES SILVER GOLD~
+text `+
+`#`=lSyntax:`^ `#`WDEATH`^ `#`R<percent>`^
+`+
+   The argument is a number between 0 and 100. When the mobile dies, if
+the percentage roll is greater than the argument the mobile performs the
+MOBprogram commands (`#`YMPCOMMANDS`^) rather than the usual death cry
+sequence. This is done before the corpse is made, so the command can be
+considered the mobile last gasp. The position of the mobile is set to
+`#`YSTAND`^, and so it can do all the normal commands, without worrying
+about being `#`YDEAD`^. However even if the mobile restores itself to full
+hit points, it will still die.
+`+
+`#`BExamples:`^
+`+
+`#`WDEATH `R20`^
+This trigger will be activated if the mobile dies and if the the 
+percentage roll is lower than 20.
+`+
+`#`WDEATH `R100`^
+This trigger will be activated when the mobile dies.
+`+
+ 
+  
+~
+END
+
+keyword TRIGGER_DELAY~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES SILVER GOLD~
+text `+
+`#`=lSyntax:`^ `#`WDELAY`^ `#`R<percent>`^
+`+
+   The argument is a number between 0 and 100, this trigger is activated
+when the delay of a mobile (set with the `#`YMOB DELAY`^ command) expires.
+For example, the mob is processing a program and in its code has the 
+command:`+
+`+
+`#`y MOB DELAY 20`^`+
+`+
+   When this timer 20*`#`YPULSE_MOBILE`^ expires the program will check
+the delay trigger:`+
+`+
+`#`yMOBPrograms for [ 3006]:`+
+ Number Vnum Trigger Phrase`+
+ ------ ---- ------- ------`+
+[    0] 3009   DELAY 20`^`+
+`+
+If the percentage roll is lower than 20, the program 3009 will be
+executed.`+
+   A mobile can have several delay triggers, but every time the delay 
+timer expires, all the triggers are checked and the first sucessful one
+is executed.
+`+
+`#`BExamples:`^
+`+
+`#`WDELAY `R50`^
+This trigger will be activated if the mobile is processing a program which
+has the command MOB DELAY and its timer has expired (timer*PULSE_MOBILE)
+and if the percentage roll is lower than 50.
+`+
+`#`WDELAY `R100`^
+This trigger will be activated if the mobile is processing a program which
+has the command MOB DELAY and its timer has expired (timer*PULSE_MOBILE).
+`+
+~
+END
+
+keyword TRIGGER_SURR TRIGGER_SURRENDER~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES SURRENDER MOB_KILL~
+text `+
+`#`=lSyntax:`^ `#`WSURR`^ `#`R<percent>`^
+`+
+   The argument is a number between 0 and 100, this trigger activates 
+when the mobile is fighting and the opponent issues a '`#`Ysurrender`^' 
+command, and if the percentage roll is greater than the argument. 
+When triggered, both parties will cease fighting, and the mobile can 
+accept the surrender. Note that if the mobile does not accept the 
+surrender, it must resume the fight with `#`YMOB KILL`^. 
+   If the character surrenders and the mobile does not have a surrender
+trigger, or the trigger does not activate, the fight resumes.
+`+
+`#`BExamples:`^
+`+
+`#`WSURR `R20`^
+This trigger will be activated if the enemy surrenders and if the
+percentage roll is lower than 20.
+`+
+`#`WSURR `R100 `^
+This trigger will be activated if the enemy surrenders.
+`+
+~
+END
+
+keyword TRIGGER_REPOP~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES MOB_OLOAD~
+text `+
+`#`=lSyntax:`^ `#`WREPOP`^ `#`R<percent>`^
+`+
+   The argument is a percentage, This trigger is checked when a mobile
+is loaded in an area reset, and if the percentage roll is greater than 
+the argument the trigger is activated. Could be used for such things as 
+saying something, or loading an object, etc. It is a good trigger for
+making mobiless load "rare" objects. 
+   When this repop trigger gets activated, the mobile will not have any
+of its equipment set on it yet, so if the mobile needs give an object it
+should load it first with the `#`YMOB_OLOAD`^ command.
+`+
+`#`BExamples:`^
+`+
+`#`WREPOP`^ `#`R3`^
+This trigger will be activated when the mobile load itself because of an
+area `#`Yreset`^ and if the percentage roll is lower than 3.
+`+
+`#`WREPOP`^ `#`R100`^
+This trigger will be activated when the mobile load itself because of an
+area reset.
+`+
+~
+END
+
+keyword TRIGGER_ROOMDEATH~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES DEATH KILL OBJ_TYPE_TOKEN~
+text `+
+`#`=lSyntax:`^ `#`WROOMDEATH`^ `#`R<percent>`^
+`+   
+   The argument is a percentage, this trigger will be checked if 
+something in the mob's room gets killed, and when the percentage roll
+is greater than the argument it will be activated. The mobile should be
+able to hear the death cry in the room, if the mobile is sleeping it 
+doesn't get triggered.
+   The main function of this trigger is for work with the `#`Ytoken`^ system.
+The killer can be refered as who activated the trigger (`#`Y$n`^).
+`+
+`#`BExamples:`^
+`+
+`#`WROOMDEATH`^ `#`R20`^
+This trigger will be activated when something gets killed in the mobile's
+room and if the percentage roll is lower than 20.
+`+
+`#`WROOMDEATH`^ `#`R100`^
+This trigger will be activated when something gets killed in the mobile's
+room.
+`+
+~
+END
+
+keyword TRIGGER_TICK~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES TICK~
+text `+
+`#`=lSyntax:`^ `#`WTICK`^ `#`R<percent>`^
+`+
+   The argument is a percentage, this trigger is checked at each `#`Ytick`^
+change and if the argument is greater than a percentage roll the trigger
+is activated. This will happen even if there is no PC in the room with the
+mobile. It will be activated no matter the position of the mobile (resting, 
+sleeping, etc.). It is not a good trigger to interact with players, since
+players don't activate this trigger and some variables (`#`Y$n`^) would not work
+properly, but the random variable (`#`Y$r`^) works fine.
+`+
+`#`BExamples:`^
+`+
+`#`WTICK`^ `#`R20`^
+This trigger will be activated when the tick changes and if the percentage
+roll is lower than 20.
+`+
+`#`WTICK`^ `#`R100`^
+This trigger will be activated in each the tick changes.
+`+
+~
+END
+
+keyword TRIGGER_HOUR~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES TIME~
+text `+
+`#`=lSyntax:`^ `#`WHOUR`^ `#`R<game hour>`^
+`+
+   The argument is the game hour (0-23). This trigger will be activated
+when the game hour matchs the argument used in the trigger. As the tick
+trigger, it is not a good trigger to interact with players, but the random
+variable ($r) still works. This trigger will be activated no matter the
+position of the mobile (sleeping, resting, sitting, etc). 
+`+
+`#`BExamples:`^
+`+
+`#`WHOUR`^ `#`R6`^
+This trigger will be activated when the game hour is 6 am.
+`+
+`#`WHOUR`^ `#`R12`^
+This trigger will be activated when the game hour is 12 am.
+`+
+`#`WHOUR`^ `#`R18`^
+This trigger will be activated when the game hour is 6 pm.
+`+
+`#`WHOUR`^ `#`R0`^
+This trigger will be activated when the game hour is 12 pm.
+`+
+~
+END
+
+keyword OPERATORS~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS MPSYNTAX MP-BUILDING MPEXAMPLES~
+text `+
+   Most of the basic numeric operators are legal and perform the same
+function as in C.
+`+
+   The Operators are:
+`+
+`#`Y<`r......`^is less than
+`#`Y>`r......`^is greater than
+`#`Y==`r.....`^is equal to
+`#`Y!=`r.....`^is not equal to 
+`#`Y<=`r.....`^is less than or equal to
+`#`Y>=`r.....`^is greater than or equal to
+`+
+`+
+~
+END
+
+keyword VARIABLES MP-VARIABLES MOB-VARIABLES~
+level 1
+category undefined~
+see_also TRIGGERS MPCOMMANDS IF_CHECKS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES MOB_REMEMBER MOB_FORGET~
+text `+
+   To make things came alive, variables are needed. These are respresented
+in mobile programs by using a dollar sign convention, when the mud command
+is processed, those variables are expanded into the values shown below.
+`+
+`#`r-----------------------------------------------------------------------
+`^`+
+`#`YVARIABLES`^`+
+`+
+`#`Y$i`r....`^the first of the name of the mobile itself`+
+`#`Y$I`r....`^the short description of the mobile itself`+
+`#`Y$n`r....`^the name of whomever caused the trigger to happen`+
+`#`Y$N`r....`^the short description of whomever caused the trigger to happen`+
+`#`Y$t`r....`^the name of the secondary character target (i.e. A smiles at B)`+
+`#`Y$T`r....`^the short description, or name and title of the target (NPC vs PC)`+
+`#`Y$r`r....`^the name of a random PC in the room with the mobile`+
+`#`Y$R`r....`^the short description, or name and title of the random PC`+
+`#`Y$q`r....`^the name of the mobile program target (`#`YMOB REMEMBER`^)`+
+`#`Y$Q`r....`^the short description of the mobile program target`+
+`+
+`#`Y$j`r....`^he, she, it based on the sex of $i`+
+`#`Y$J`r....`^he, she, it based on the sex of $r`+
+`#`Y$e`r....`^he, she, it based on the sex of $n`+
+`#`Y$E`r....`^he, she, it based on the sex of $t`+
+`+
+`#`Y$k`r....`^him, her, it based on the sex of $i`+
+`#`Y$K`r....`^him, her, it based on the sex of $r`+
+`#`Y$m`r....`^him, her, it based on the sex of $n`+
+`#`Y$M`r....`^him, her, it based on the sex of $t`+
+`+
+`#`Y$l`r....`^his, hers, its based on the sex of $i`+
+`#`Y$L`r....`^his, hers, its based on the sex of $r`+
+`#`Y$s`r....`^his, hers, its based on the sex of $n`+
+`#`Y$S`r....`^his, hers, its based on the sex of $t`+
+`#`Y$Z`r....`^his, hers, its based on the sex of $q`+
+`+
+`#`Y$o`r....`^the first of the names of the primary object (i.e. A drops B)`+
+`#`Y$O`r....`^the short description of the primary object`+
+`#`Y$p`r....`^the first of the names of the secondary object (i.e A puts B in C)`+
+`#`Y$P`r....`^the short description of the secondary object`+
+`+
+`#`Y$V`r....`^the vnum of the room the mob is moving to with a premove trigger`+
+`+
+`#`r-------------------------------------------------------------------------`^
+`+
+   In `#`YIf_checks`^ the accepted variable are the basics ones
+(i,n,t,r,o,p,q). If the variable is referenced that doesn't exist, 
+then the value is simply left blank or replaced with 'someone' or
+'something' in output.
+   If the variable $q has not been defined, it is automatically set
+to the last player that has triggered the program being executed ($n).
+Once $q has been defined, it can be modified with `#`YMOB REMEMBER`^ 
+and `#`YMOB FORGET`^ commands in a program. Note that $q is set 
+automatically only the first time the mobile executes a program, every
+time thereafter it must be set with `#`YMOB REMEMBER`^.
+`+
+~
+END
+
+keyword IF_CHECKS~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES~
+text `+
+   The provided list of if_checks and their arguments are below.  They
+should all be fairly obvious in what they do, but some of the more obtuse
+deserve a slight explanation.
+`+
+`+
+There are five types of if_checks:
+Type 1: `#`RKeyword and value.....................`^`#`Yhelp IFTYPE1`^`+
+Type 2: `#`RKeyword, comparison and value.........`^`#`Yhelp IFTYPE2`^`+
+Type 3: `#`RKeyword and actor.....................`^`#`Yhelp IFTYPE3`^`+
+Type 4: `#`RKeyword, actor and value..............`^`#`Yhelp IFTYPE4`^`+
+Type 5: `#`RKeyword, actor, comparison and value..`^`#`Yhelp IFTYPE5`^`+
+`+
+`+
+~
+END
+
+keyword IFTYPE1~
+level 1
+category undefined~
+see_also IF_CHECKS IF_RAND TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES IFTYPE2 IFTYPE3 IFTYPE4 IFTYPE5~
+text `+
+   A value type of string is a sequence of characters. It does not need
+to be included in quotes or anything like that (i.e. if objhere table )
+`+
+Type 1: `#`RKeyword and value`^`+
+`+
+`#`Yrand`^      `#`Rnum`^    Is random percentage less than or equal to num
+`#`Ymobhere`^   `#`Rvnum`^   Is a NPC with this vnum in the room
+`#`Ymobhere`^   `#`Rname`^   Is a NPC with this name in the room
+`#`Yobjhere`^   `#`Rvnum`^   Is an object with this vnum in the room
+`#`Yobjhere`^   `#`Rname`^   Is an object with this name in the room
+`#`Ymobexists`^ `#`Rname`^   Does NPC 'name' exist somewhere in the world
+`#`Yobjexists`^ `#`Rname`^   Does object 'name' exist somewhere in the world
+`+ 
+~
+END
+
+keyword IFTYPE2~
+level 1
+category undefined~
+see_also IF_CHECKS IF_RAND TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES IFTYPE1 IFTYPE3 IFTYPE4 IFTYPE5~
+text `+
+   Any '==' operator can be replaced with any of the available ones, and
+the value is one integer.
+`+ 
+Type 2: `#`RKeyword, comparison and value`^`+
+`+ 
+`#`Ypeople`^  `#`B==`^ `#`Rinteger`^   Is the number of people in the room equal to integer
+`#`Yplayers`^ `#`B==`^ `#`Rinteger`^   Is the number of PCs in the room equal to integer
+`#`Ymobs`^    `#`B==`^ `#`Rinteger`^   Is the number of NPCs in the room equal to integer
+`#`Yclones`^  `#`B==`^ `#`Rinteger`^   Is the number of NPCs in the room with the same vnum 
+                      as the NPC who activated the program equal to integer
+`#`Yorder`^   `#`B==`^ `#`Rinteger`^   Is the order (of several similar NPCs) of the NPC who
+                      activated the trigger equal to integer
+`#`Yhour`^    `#`B==`^ `#`Rinteger`^   Is the hour (game time) equal to integer
+`+ 
+~
+END
+
+keyword IFTYPE3~
+level 1
+category undefined~
+see_also IF_CHECKS IF_RAND TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES IFTYPE1 IFTYPE2 IFTYPE4 IFTYPE5~
+text `+
+   The argument $* refers to any of the variables which make sense for 
+that if_check (i.e. for an if_check which is referencing a person the
+only valid variables would be $i, $n, $t, $r or $q).
+`+ 
+Type 3: `#`RKeyword and actor`^`+
+`+
+`#`Yisnpc`^      `#`B$*`^   Is $* an NPC
+`#`Yispc`^       `#`B$*`^   Is $* a PC
+`#`Yisgood`^     `#`B$*`^   Does $* have a good alignment 
+`#`Yisneutral`^  `#`B$*`^   Does $* have a neutral alignment
+`#`Yisevil`^     `#`B$*`^   Does $* have an evil alignment
+`#`Yisimmort`^   `#`B$*`^   Is $* an immortal (level of $* > LEVEL_HERO)
+`#`Yischarm`^    `#`B$*`^   Is $* affected by charm
+`#`Yisfollow`^   `#`B$*`^   Is $* a follower with their master in the room
+`#`Yisactive`^   `#`B$*`^   Is $*'s position > POS_SLEEPING
+`#`Yisdelay`^    `#`B$*`^   Does $* have a delayed MOBprogram pending
+`#`Yisvisible`^  `#`B$*`^   Is $* visible to NPC who activated the program
+`#`Yhastarget`^  `#`B$*`^   Does $* have a MOBprogram target in the room
+`#`Yistarget`^   `#`B$*`^   Is $* the target of NPC who activated the program
+`+ 
+ 
+~
+END
+
+keyword IFTYPE4~
+level 1
+category undefined~
+see_also IF_CHECKS IF_RAND TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES IFTYPE1 IFTYPE2 IFTYPE3 IFTYPE5~
+text `+
+   The argument $* refers to any of the variables which make sense for
+that if_check (i.e. for an if_check which is referencing a person the 
+only valid variables would be $i, $n, $t, $r or $q). A value type of
+string is a sequence of characters. It does not need to be included
+in quotes or anything like that (i.e. if name $n fido )
+`+ 
+Type 4: `#`RKeyword, actor and value`^`+
+`+  
+`#`Yaffected`^   `#`B$*`^   `#`Y'affect'`^                  Is $* affected by 'affect'
+`#`Yact`^        `#`B$*`^   `#`Y'act'`^                     Is $*'s ACT bit 'act' set
+`#`Yoff`^        `#`B$*`^   `#`Y'off'`^                     Is $*'s OFF bit 'off' set
+`#`Yimm`^        `#`B$*`^   `#`Y'imm'`^                     Is $*'s IMM bit 'imm' set
+`#`Ycarries`^    `#`B$*`^   `#`Y'name'`^                    Is $* carrying object 'name'
+`#`Ywears`^      `#`B$*`^   `#`Y'name'`^                    Is $* wearing object 'name'
+`#`Yhas`^        `#`B$*`^   `#`Y'type'`^                    Does $* have object of item_type 'type'
+`#`Yuses`^       `#`B$*`^   `#`Y'type'`^                    Is $* wearing object of item_type 'type'
+`#`Yname`^       `#`B$*`^   `#`Y'name'`^                    Is $*'s name 'name'
+`#`Yexactname`^  `#`B$*`^   `#`Y'name'`^                    Is $*'s name 'name'
+`#`Ypos`^        `#`B$*`^   `#`Y'position'`^                Is $*'s position 'position' (sleeping etc.)
+`#`Yclan`^       `#`B$*`^   `#`Y'name'`^                    Does $* belong to clan 'name'
+`#`Yrace`^       `#`B$*`^   `#`Y'name'`^                    Is $* of race 'name'
+`#`Yclass`^      `#`B$*`^   `#`Y'name'`^                    Is $*'s class 'name'
+`#`Yobjtype`^    `#`B$*`^   `#`Y'type'`^                    Is $*'s item_type 'type'
+`#`Ysector`^     `#`B$*`^   `#`Y'sector'`^                  Is the room's sector type where $* is
+`#`Yarea`^       `#`B$*`^   `#`Y'full exact name of area'`^ Is the area's name 'area's name' where the $* is 
+`#`Yhas`^        `#`B$*`^   `#`Y'token's vnum'`^            Is $* carrying the token with that vnum
+`#`Yroomflag`^   `#`B$*`^   `#`Y dark`^                     Is dark the room where $* is
+`+ 
+~
+END
+
+keyword IFTYPE5~
+level 1
+category undefined~
+see_also IF_CHECKS IF_RAND TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES IFTYPE1 IFTYPE2 IFTYPE3 IFTYPE4~
+text `+
+   Any '==' operator can be replaced with any of the available ones 
+described above.  The argument $* refers to any of the variables which
+make sense for that if_check (i.e. for an if_check which is referencing
+a person the only valid variables would be $i, $n, $t, $r or $q). The
+value is any integer.
+`+ 
+Type 5: `#`RKeyword, actor, comparison and value`^`+
+`+ 
+`#`Yvnum`^       `#`B$*  ==`^ `#`Rinteger`^ Is $*'s virtual number equal to integer
+`#`Yhpcnt`^      `#`B$*  ==`^ `#`Rinteger`^ Is $*'s hitpoint percentage equal to integer
+`#`Yroom`^       `#`B$*  ==`^ `#`Rinteger`^ Is vnum of the room $* is in equal to integer
+`#`Ysex`^        `#`B$*  ==`^ `#`Rinteger`^ Is $*'s sex equal to integer
+`#`Ylevel`^      `#`B$*  ==`^ `#`Rinteger`^ Is $*'s level equal to integer
+`#`Yalign`^      `#`B$*  ==`^ `#`Rinteger`^ Is $*'s alignment equal to integer
+`#`Ymoney`^      `#`B$*  ==`^ `#`Rinteger`^ Does $* have money (in silver) equal to integer
+`#`Yobjval#`^    `#`B$*  ==`^ `#`Rinteger`^ Is $*->value[#] equal to integer (# from 0-4)
+`+
+~
+END
+
+keyword IF_RAND~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES~
+text `+
+`#`=lSyntax:`^ if `#`Yrand`^ `#`R<number>`^
+`+
+   The argument used on this if_check is a percentage number, between 0
+and 100. This rand if_check, turns true if a random number (`#`Yrand`^) is less
+or equal to the argument, and false if the random number (`#`Yrand`^) is greater
+than the argument.
+`+
+`#`BExample:`^
+`+
+   say head I win.
+   emote tosses up a coin.
+   `#`cif`^ `#`Yrand`^ `#`R50`^
+      say HEAD! I've won!!
+   `#`celse`^
+      say damned!! you've won!
+      `#`ymob oload`^ 5034
+      give coin $n
+   `#`cendif`^
+`+
+`+            
+~
+END
+
+keyword MPCOMMANDS~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES IF_CHECK~
+text `+
+`+
+   Mobile program pcommands are special commands that allow mobiles to 
+perform immortal-like actions within a mobile program (transferring 
+players or loading items, for example). Most mobile commands them are
+wiz commands which have been changed to allow for mobiles to perform 
+the commands. In this version of mobile programs, players have been
+prevented from using these commands by adding a separate interpreter
+for mobile program commands.`+
+`+
+Here goes a list of the commands`+
+`+
+`#`r-------------------------------------------------------------------`^
+`+
+`#`YMOB ASOUND`^`#`r......`#`R[string]`^`+
+`#`YMOB ZECHO`^`#`r.......`#`R[string]`^`+
+`#`YMOB GECHO`^`#`r.......`#`R[string]`^`+
+`#`YMOB ECHO`^`#`r..... ..`#`R[string]`^`+
+`#`YMOB ECHOAT`^`#`r......`#`R[victim]`^`#`r........`#`B[string]`^`+
+`#`YMOB ECHOAROUND`^`#`r..`#`R[victim]`^`#`r........`#`B[string]`^`+
+`#`YMOB MLOAD`^`#`r.......`#`R[vnum]`^`+
+`#`YMOB OLOAD`^`#`r.......`#`R[vnum]`^`#`r..........`#`B[level]`^`#`r..`#`G{'room'/'wear'}`^`+
+`#`YMOB KILL`^`#`r........`#`R[victim]`^`+
+`#`YMOB FLEE`^
+`#`YMOB REMOVE`^`#`r......`#`R[victim]`^`#`r........`#`B[vnum/'all']`^`+
+`#`YMOB JUNK`^`#`r........`#`R[object]`^`+
+`#`YMOB PURGE`^`#`r.......`#`R[argument]`^`+
+`#`YMOB AT`^`#`r..........`#`R[location]`^`#`r......`B[command]`^`+
+`#`YMOB GOTO`^`#`r........`#`R[location]`^`+
+`#`YMOB TRANSFER`^`#`r....`#`R[victim/'all']`^`#`r..`#`B[location]`^`+
+`#`YMOB GTRANSFER`^`#`r...`#`R[victim]`^`#`r........`#`B[location]`^`+
+`#`YMOB OTRANSFER`^`#`r...`#`R[object]`^`#`r........`#`B[location]`^`+
+`#`YMOB FORCE`^`#`r.......`#`R[victim/'all']`^`#`r..`#`B[command]`^
+`#`YMOB GFORCE`^`#`r......`#`R[victim]`^`#`r........`#`B[command]`^
+`#`YMOB VFORCE`^`#`r......`#`R[vnum]`^`#`r..........`#`B[command]`^
+`#`YMOB CAST`^`#`r........`#`R[spell]`^`#`r.........`#`B[victim]`^
+`#`YMOB DAMAGE`^`#`r......`#`R[victim/'all']`^`#`r..`#`B[min]`^`#`r.....`#`G[max]`^`#`r.....`#`W[lethal]`^
+`#`YMOB DELAY`^       
+`#`YMOB CANCEL`^
+`#`YMOB REMEMBER`^`#`r....`#`R[victim]`^
+`#`YMOB FORGET`^
+`#`YMOB CALL`^`#`r........`#`R[vnum]`^`#`r..........`#`B[victim]`^`#`r..`#`G[target1]`^`#`r.`#`W[target2]`^
+`#`YMOB TTIMER`^`#`r......`#`R[victim]`^`#`r........`#`B[token]`^`#`r...`#`G[time]`^
+`#`YMOB TREMOVE`^`#`r.....`#`R[token]`^`#`r.........`#`B[victim]`^
+`#`YMOB TGIVE`^`#`r.......`#`R[token]`^`#`r.........`#`B[victim]`^
+`+
+`r-----------------------------------------------------------------------`^
+`+
+`+
+`+
+~
+END
+
+keyword MOB_ASOUND MOB_ZECHO MOB_GECHO~
+level 1
+category undefined~
+see_also MOB_ECHO MPCOMMANDS~
+text `+
+`#`=lSyntax:`+`^
+`+
+`#`YMOB ASOUND`^ `#`R[string]`^`+
+`#`YMOB ZECHO`^  `#`R[string]`^`+
+`#`YMOB GECHO`^  `#`R[string]`^`+
+`+
+   The command `#`Ymob asound`^ prints the text string to the rooms around the 
+mobile in the same manner as a death cry. `#`YMob zecho`^ prints the string to 
+all players in the same area with the mobile. `#`YMob gecho`^ prints the string
+to all  players in the game.`+
+   We would like avoid the use of `#`Ymob gecho`^ in the game, it should only
+be used in quests made by immortals.`+
+`+
+`#`BExamples:`^
+`+
+`#`YMOB ASOUND`^ `#`RYou hear a lovely music...`^`+
+The message: "You hear a lovely music..." will be displayed in all
+the rooms around the mobile's room, but not in the mobile's room!
+If you want display a message in the same room as the mobile you
+should use the `#`YMOB ECHO`^ too.
+`+
+`#`YMOB ZECHO`^ `RThe earth trembles!`^
+The message:" The earth trembles!" will be displayed in all the 
+rooms of the area, try not abuse of this command, it should be 
+only used when you are sure the whole area would be able to hear it!
+`+
+`#`YMOB GECHO`^ `RThe sky turns dark!`^
+The message: "The sky turns dark!" will be showed to all players
+in the mud, even if they can see the sky or not, this command should
+not be used, except by immortals for quests.
+`+
+`+
+~
+END
+
+keyword MOB_ECHO MOB_ECHOAT MOB_ECHOAROUND~
+level 1
+category undefined~
+see_also MOB_GOTO MOB_AT MPCOMMANDS VARIABLES~
+text `+
+`#`=lSyntax`^
+`#`YMOB ECHO`^                 `#`R[string]`^
+`#`YMOB ECHOAT`^      `#`G[victim]`^ `#`R[string]`^
+`#`YMOB ECHOAROUND`^  `#`G[victim]`^ `#`R[string]`^
+`+
+   The command `Y`#mob echo`^ displays the string to everyone in the room, the
+`#`Ymob echoat`^ displays the string to the victim only, and the command `#`Ymob 
+echoaround`^ displays the string to everyone inside the room except to the
+victim. The three options let you tailor the message to goto victims or 
+to do things sneaky.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB ECHO`^ `#`RYou see a feather falling from the sky.`^
+The message: "You see a feather falling from the sky." will be displayed to
+everyone inside the room.
+`+
+`#`YMOB ECHOAT`^ `#`G$n`^ `#`RHelp me, please!!`^
+The message: "Help me, please!!" will be displayed to the player who has
+activated the mobprog trigger (`#`Y$n`^).
+`+
+`#`YMOB ECHOAROUND`^ `#`G$n`^ `#`R$N disappears on a puff of smoke!!`^
+The message: "<victim short description> disappears on a puff of smoke!!"
+will be displayed to everyone inside the room, except to the victim.
+`+ 
+`#`BMore Examples:`^
+`+
+A merchand could have the command on his mobprog:
+`#`Ymob at`^ guard `#`Ymob echoat`^ guard rescue_please 
+`+
+This coupled with a guard act trigger on rescue_please to:
+`#`Ymob goto`^ $n
+`#`Ymob echo`^ $I has arrived.
+`+
+It is an affective way of quickly bringing guards to the scene of
+an attack. (Note that the merchant has to be the only one of its
+kind in the game or have a unique name, otherwise the guard might
+go to different mobile...).
+`+
+`+
+~
+END
+
+keyword MOB_OLOAD MOB_MLOAD~
+level 1
+category undefined~
+see_also MOB_AT MOB_TRANSFER MOB_OTRANSFER MPCOMMANDS VNUM~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB MLOAD`^ `#`R[vnum]`^
+`#`YMOB OLOAD`^ `#`R[vnum]`^ `#`G[level]`^ `#`W{'room'/'wear'}`^
+`+
+   The `#`Ymob mload`^ command creates a mobile and places it in the same room 
+with the mobile, and the `#`Ymob oload`^ command loads the object into the 
+inventory of the mobile which has the mobile program. Even if the item is
+non-takable, the mobile will receive it in the inventory. This lets a 
+mobile distribute a quest item or load a key or something. The optional
+3rd parameter can be specified; 'room' means to load the object to the
+room, 'wear' means to force the mobile to wear the object loaded
+(useful for equipping mobiles on the fly), but don't forget to include 
+the [level], otherwise the 'room' or 'wear'will not work.
+   To transfer objects or mobiles to other rooms you can use the commands
+`#`Ymob transfer`^ and `#`Ymob otransfer`^ too.
+`+
+ 
+`#`BExamples:`^
+`+
+`#`YMOB MLOAD`^ `#`R3031`^
+This command will load the mobile which has the vnum 3031 in the same
+room of the mobile. To load mob on other places you can use the command
+`#`YMOB AT`^ before the `#`Ymob mload`^ command.
+`+
+`#`YMOB OLOAD`^ `#`R3021`^ `#`G5`^ `#`Wwield`^
+This command will load the object 3021 with level 5 and wield it.
+`+
+`#`YMOB OLOAD`^ `#`R3010`^ `#`G5`^ `#`Wroom`^
+This command will load the object 3021 with level 5 and left it on the
+room's ground. To load objects on another rooms you can use the command
+`#`Ymob at`^ before the `#`Ymob oload`^ command.
+`+
+`+
+~
+END
+
+keyword MOB_KILL~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB KILL`^ `#`R[victim]`^
+`+
+   This command lets a mobile kill a player without having to murder. Lots
+of mobile programs end up with mpkill $n commands floating around. It 
+works on both mobiles and players.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB KILL`^ `#`R$n`^
+This command forces the mobile to attack the player who activated the
+program (`#`Y$n`^).
+`+
+`#`YMOB KILL`^ `#`R$r`^
+This command forces the mobile to attack a random player in the room
+(`#`Y$r`^).
+`+
+`+
+~
+END
+
+keyword MOB_FLEE~
+level 1
+category undefined~
+see_also MPCOMMANDS TRIGGERS TRIGGER_HPCNT WIMPY~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB FLEE`^
+`+
+   This command causes a mobile to unconditionally flee from combat. Can
+be used for example with the hit point percentage trigger (`#`Yhpcnt`^ trigger)
+to simulate "wimpy" behavior.
+`+
+`#`BExample:`^
+`+
+`#`YMOB FLEE`^
+The mobile will flee when the interpreter reachs this command.
+`+
+`#`BMore Examples:`^
+`+
+If you set a trigger hpcnt:
+`#`y
+MOBPrograms for [ 3002]:
+ Number Vnum Trigger Phrase
+ ------ ---- ------- ------
+[    0] 3005  HPCNT 20`^
+`+
+And in the code of the program you use the command:
+`+
+`#`YMOB FLEE`^
+The mobile will flee when its hit points of the mobile is below 20%.
+`+
+`+
+~
+END
+
+keyword MOB_REMOVE~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES VNUM~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB REMOVE`^ `#`R[victim]`^ `#`G[vnum|'all']`^
+`+
+   This command lets the mobile to strip an object of given vnum from the
+victim. Objects removed are destroyed. If the vnum is replaced with "all",
+the whole inventory of the victim is destroyed. This command is probably
+most useful for extracting quest items from a player after a quest has
+been completed.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB REMOVE`^ `#`R$n`^ `#`G3000`^
+The mobile will remove the object which has the vnumber 3000 from the player
+who activated the trigger (`#`Y$n`^).
+`+
+`#`YMOB REMOVE`^ `#`R$r`^ `#`Gall`^
+The mobile will remove all the equipment from a random player inside the room.
+`+
+`+
+~
+END
+
+keyword MOB_JUNK~
+level 1
+category undefined~
+see_also MPCOMMANDS~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB JUNK`^ `#`R[object]`^
+`+
+   This command destroys the object refered to in the mobile's inventory. 
+It prints no message to the world and you can do things like junk all.bread 
+or junk all. This is nice for having janitor mobiles clean out their
+inventory if they are carrying too much. Don't use the vnum of the objects
+because it doesn't work.
+`+
+`#`BExample:`^
+`+
+`#`YMOB JUNK`^ `#`Rkey`^
+This command will destory the key which the mobile is carrying.
+`+
+`#`YMOB JUNK`^ `#`Rall.ring`^
+This command will destroy all the rings which the mobile is carrying.
+`+
+`+
+~
+END
+
+keyword MOB_PURGE~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB PURGE`^ `#`R[argument]`^
+`+
+   This command destroys the argument from the room of the mobile. Without
+an argument the result is the cleansing of all NPC's and items from the room
+with the exception of the mobile itself.  However, mob purge $i will indeed
+purge the mobile, but it MUST be the last command the mobile tries to
+do, otherwise the mud can't reference the acting mobile trying to do the
+commands and bad things happen.  
+`+
+`#`BExamples:`^
+`+
+`#`YMOB PURGE`^ `#`Rtable`^
+This command will destroy any object called table which is inside the room.
+`+
+`#`YMOB PURGE`^
+This command will destroy everything inside the room.
+`+
+`#`YMOB PURGE`^ `#`R$i`^
+This command will destroy the mobile itself, remember that it MUST be the last
+command of the program.
+`+
+`+
+~
+END
+
+keyword MOB_AT~
+level 1
+category undefined~
+see_also MPCOMMANDS MOB_KILL VARIABLES~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB AT`^ `#`R[location]`^ `#`G[command]`^
+`+
+   This command perfoms the command at the designated location. Very 
+useful for doing magic slight of hand tricks that leave players 
+dumbfounded.. such as metamorphing mobiles, or guard summoning, or 
+corpse vanishing. Remember that the mobile only performs the command
+on the location, the mobile itself is not there.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB AT`^ `#`R$n`^ `#`YMOB KILL`^ `#`R$n`^
+This command will force the mobile to attack the player who activated
+the mobprogram, no matter where the player is.
+`+
+`#`YMOB AT`^ `#`R3004`^ `#`Gsay hello!`^
+This command will force the mobile to say hello in the room number 3004,
+no matter if there is a player there or not.
+`+
+`+
+~
+END
+
+keyword MOB_GOTO~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES MOB_ECHO~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB GOTO`^ `#`R[location]`^
+`+
+   This command moves the mobile to the room or mobile or object requested.
+It makes no message of its departure or of its entrance, so these must be
+supplied with `#`Ymob echo`^ commands if they are desired.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB GOTO`^ `#`R3000`^
+This command moves the mobile to the room 3000.
+`+
+`#`YMOB GOTO`^ `#`Rguard`^
+This command moves the mobile to the same room where there is a mobile
+called guard. Take care with this command, there are lots of mobs 
+called guards.
+`+
+`#`YMOB GOTO`^ `#`Rtable`^
+This command moves the mobile to the same room where there is an object
+called table. Take care with this command, there are lots of objects
+called table.
+`+
+`#`YMOB GOTO`^ `#`R$n`^
+This command moves the mobile to the same room where the player who 
+activated the program is.
+`+
+`+
+~
+END
+
+keyword MOB_TRANSFER MOB_GTRANSFER MOB_OTRANSFER~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES~
+text `+
+`#`=lSyntax:`^
+`#`YMOB TRANSFER`^  `#`R[victim|'all']`^ `#`G[location]`^
+`#`YMOB GTRANSFER`^ `#`R[victim]`^       `#`G[location]`^
+`#`YMOB OTRANSFER`^ `#`R[object]`^       `#`G[location]`^
+`+
+   The `#`Ymob transfer`^ command sends the victim to the destination or to 
+the room of the mobile as a default.  If the victim is "all" then all the 
+characters in the room of the mobile are transfered to the destination.  Good
+for starting quests or things like that.  There is no message given to the 
+player that it has been transfered and the player doesnt do a look at the 
+new room unless the mob forces them to. The command `#`Ymob gtransfer`^ works like 
+transfer, except that the group the victim belong to is transferred with 
+the victim. The command `#`Ymob otransfer`^ transfers an object in the room.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB TRANSFER`^ `#`R$n`^ `#`G3020`^
+This command transfer the player who activated the program to the room 
+3020.
+`+
+`#`YMOB TRANSFER`^ `#`Rall`^ `#`Gguard`^
+This command will transfer all the players from the room to another room
+where there is a mob called guard. Take care when you use the name of a 
+mobile or of an object to give the location, because there are lots of
+mobs called guard.
+`+
+`#`YMOB TRANSFER`^ `#`Rghost`^ `#`G$n`^
+This command will transfer the mobile called ghost which is in the same 
+room as the mobile, to the room where the player who activated the program
+is.
+`+
+`#`YMOB GTRANSFER`^ `#`R$n`^ `#`G3030`^
+This command will transfer the player who activated the program and all 
+his group to the room number 3030.
+`+
+`#`YMOB OTRANSFER`^ `#`Rring`^ `#`G$n`^
+This command will transfer the object ring, which the mobile is carrying 
+to the room where the player who activated the program is.
+`+
+`+
+~
+END
+
+keyword MOB_FORCE MOB_GFORCE MOB_VFORCE~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES~
+text `+
+`#`=lSyntax:`^
+`#`YMOB FORCE`^  `#`R[victim|'all']`^ `#`G[command]`^
+`#`YMOB GFORCE`^ `#`R[victim]`^       `#`G[command]`^
+`#`YMOB VFORCE`^ `#`R[vnum]`^         `#`G[command]`^
+`+
+   The `#`Ymob force`^ command forces the victim to do the designated command.
+The victim is not told that they are forced, they just do the command,
+so some echos message would be nice. You can force players to remove 
+belongings and give them to you, etc. The player sees the normal command
+messages (such as removing the item and giving it away in the above 
+example). If the victim is "all" then everyone in the mobiles room does 
+the command. 
+   The `#`Ymob gforce`^ command works like force except that it affects the 
+group the victim belongs to. The `#`Ymob vforce`^ command affects all mobiles 
+with given vnum in the game world. This is useful for, for example, 
+purging certain type of NPCs from the game (by forcing them to purge 
+themselves).
+`+
+`#`BExamples:`^
+`+
+`#`YMOB FORCE`^ `#`R$n`^ `#`Gpkill $r`^
+This commansd will force the player who activated the program to attack a
+random player in the same room, or attack himself too.
+`+
+`#`YMOB FORCE`^ `#`Rall`^ `#`Grest`^
+This command will force all the players in the room to rest.
+`+
+`#`YMOB GFORCE`^ `#`R$n`^ `#`Gdrop all`^
+This command will force all the group of the player who activated the
+program to drop everything they are carrying.
+`+
+`#`YMOB VFORCE`^ `#`R3002`^ `#`Gsing`^
+This command will force all the mobiles which has the vnum 3002 to sing.
+`+
+`+
+ 
+~
+END
+
+keyword MOB_CAST~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES SPELLS~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB CAST`^ `#`R[spell]`^ `#`G[victim]`^
+`+
+   This command lets the mobile to cast spells. Beware, this does only 
+crude validity checking and does not use up any mana. All spells are 
+available regardless of the race or other abilities of the mobile. 
+Casting the spell occurs silently, but spell effects are displayed 
+normally. Remember to write the spell name between quotes (''), if it 
+has two words.
+`+
+`#`BExample:`^
+`+
+`#`YMOB CAST`^ `#`R'cause light'`^ `#`G$n`^
+The mobile will cast the cause light spell on the player who activated
+the program.
+`+
+`#`YMOB CAST`^ `#`Rdecay`^ `#`G$r`^
+The mobile will cast the decay spell on a random player inside the room.
+`+
+`+
+~
+END
+
+keyword MOB_DAMAGE~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB DAMAGE`^ `#`R[victim|'all']`^ `#`G[min] [max]`^ `#`W`lethal}`^
+`+
+   This command causes unconditional damage to the victim. Specifying 
+"all" as victim causes damage to all characters in the room except the
+mobile. Min and max parameters define the minimum and maximum amounts of
+damage caused, remember that this damage is like a damage of a weapon, all
+`#`YAC`^s and affects of the victim will be taken in account and the damage
+that the victim will sufer will be lower than that used on the `#`Ymob damage`^
+command. By  default, the damage is non-lethal, but by supplying the optional
+'lethal' parameter, the damage can kill the victim. 
+   This command is silent, you must echo all messages yourself in the
+program. Useful for implementing special attacks for mobiles.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB DAMAGE`^ `#`R$n`^ `#`G10 100`^ `#`Wlethal`^
+The mobile will causes from 10 to 100 damage to the player who has
+activated the program, remember that the player will be protected
+with armor and magic, so the damage he will sufer will be lower, but
+this damage will be able to kill him.
+`+
+`#`YMOB DAMAGE`^ `#`Rall`^ `#`G100 1000`^
+The mobile will causes from 100 to 1000 damage to all the players
+inside the room, remember that the player will be protected
+with armor and magic, so the damage they will sufer will be lower, and
+the damage will not be able to kill them, once their hp reaches 3, they
+will not sufer further damage.
+`+
+`+ 
+~
+END
+
+keyword MOB_DELAY MOB_CANCEL~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES PULSE_MOBILE TRIGGER_DELAY~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB DELAY`^
+`#`YMOB CANCEL`^
+`+
+   The `#`Ymob delay`^ command sets the time in `#`YPULSE_MOBILE`^ after which the
+mobile's `#`Ydelay trigger`^ is activated. If the mobile has a program defined
+for delay trigger, the program is executed when the timer expires.
+The `#`Ymob cancel`^ resets the delay timer.
+For example, the mob is processing a program and in its code has the 
+command:
+`+
+`#`YMOB DELAY`^ `#`R20`^
+`+
+   When this timer 20*PULSE_MOBILE expires the program will check
+the delay trigger:
+`+
+`#`yMOBPrograms for [ 5000]:
+ Number Vnum Trigger Phrase
+ ------ ---- ------- ------
+[    0] 3000   DELAY 20`^
+`+
+If the percentage roll is lower than 20, the program 3000 will be
+executed.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB DELAY`^ `#`R10`^
+The mobile will look for a `#`Ydelay trigger`^ after 10*PULSE_MOBILE.
+`+
+`#`YMOB CANCEL`^
+The mobile resets the delay timer.
+`+
+`+
+~
+END
+
+keyword MOB_REMEMBER MOB_FORGET~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB REMEMBER`^ `#`R[victim]`^
+`#`YMOB FORGET`^
+`+
+   The `#`Ymob remember`^ command enables the mobile to remember a player for 
+future reference in a MOBprogram. The player can subsequently be referred
+as '$q' in programs activated by the mobile. The `#`Ymob forget`^ clears
+the target. Note that if the first time the mobile runs a program, $q is
+automatically set to the player who triggered the event. Most commonly
+this command is used in delayed programs, where the mobile has to remember
+the player who triggered the original event, for example to continue 
+conversation.
+`+
+`#`BExample:`^
+`+
+`#`YMOB REMEMBER`^ `#`R$n`^
+The mobile will remember the name of the player who activated the program
+to use on other program as `#`Y$q`^.
+`+
+`#`YMOB CANCEL`^
+The mobile will forget its target.
+`+
+`+
+~
+END
+
+keyword MOB_CALL~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB CALL`^ `#`R[vnum]`^ `#`G{victim}`^ `#`W{target1} {target2}`^
+`+
+   The `#`Ymob call`^ command lets you call MOBprograms from within a 
+running one, i.e. to call a MOBprogram subroutine. The first parameter is 
+the vnum of the program to execute, the second is the victim's name (for 
+example $n), and the third and fourth are optional object names. All other
+parameters except vnum can be replaced with word 'null' indicating ignored
+parameter. MOBprograms can be called recursively, but as a safety measure,
+parser allows only 5 recursions.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB CALL`^ `#`R5003`^ `#`G$n`^ `#`Wnull null`^
+While running one program the mobile will call the program num 5003, the 
+victim of this program will be the player who activated the first program.
+`+
+`+
+~
+END
+
+keyword MOB_TGIVE MOB_TREMOVE MOB_TTIMER OBJ_TYPE_TOKEN~
+level 1
+category undefined~
+see_also MPCOMMANDS VARIABLES OBJ_TYPE_TOKEN~
+text `+
+`#`=lSyntax:`^
+`+
+`#`YMOB TTIMER`^     `#`R[victim]`^  `#`G[token]`^   `#`W[time]`^
+`#`YMOB TREMOVE`^    `#`R[token]`^   `#`G[victim]`^
+`#`YMOB TGIVE`^      `#`R[token]`^   `#`G[victim]`^
+`+
+   Those commands are used to work with a new object type called token.
+`#`YTokens`^ are items created expressly for use in mobile programs.
+They are totally undetectable unless for immortals.  These tokens can be
+used as budget variables on mobiles programs, for such things as marking
+killers, adding people on to the healer's list of not welcome players, 
+etc. It is recommended to name the tokens in a uniform way so they are 
+easier to identify with their proper mobprogs.
+`+  
+`#`Glong desc: TOKEN##### <string>`^
+`+
+   Where ##### would be the vnum of the mobile program and the string 
+would be a short description of its use. When a player dies, a set flag 
+(v0 dropdeath) will decide whether the token dissolves of the token is 
+stripped from the corpse and reset in the mortal's inventory. They are 
+weightless, invisible  and can't be handled amongst mortals.
+`+
+   The `#`Ymob tgive`^ command is used to give a mortal a token.  Since 
+players may not receive what they cannot see, the normal give command won't
+work correctly, the `#`Ymob tremove`^ command is used to easily remove the
+token from the chosen player's inventory without having to steal it from 
+them, and the `#`Ymob ttimer`^ command puts a timer on a token that's in 
+the inventory of the designated player.  After the set number of ticks, the  
+token will automatically disintegrate and vanish from the inventory of who 
+ever happens to be carrying it. Remember that the mobile will only be able
+to use the `#`Ymob tgive`^ commands after have loaded the proper token on
+its inventory.
+`+
+`#`BExamples:`^
+`+
+`#`YMOB TGIVE`^ `#`Rtoken5008`^  `#`G$n`^
+This command will give the token5008 which is in the mobile's inventory
+to the player who has activated the program.
+`+
+`#`YMOB TREMOVE`^ `#`Rtoken5009`^ `#`G$n`^
+This command will remove the token5009 from a player's inventory who has
+activated the program.
+`+
+`#`YMOB TTIMER`^ `#`Rtoken5020`^ `#`G$n`^ `#`W10`^
+This command will set a timer on the token5020 which the player who has 
+activated the program is carrying, after the 10 ticks the token will
+disappear from the player's inventory.
+`+
+`+
+~
+END
+
+keyword MPSYNTAX~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS IF_CHECKS OPERATORS MP-BUILDING MPEXAMPLES~
+text `+
+   The syntax of any mobile program can be as shown below:
+`+
+`#`Yif`^   <if_check_1> <argument> <operator> <value>
+`#`Yor`^   <if_check_2> <argument> <operator> <value>
+`#`Yor`^   <if_check_N> <argument> <operator> <value>
+`#`Yand`^  <if_check_N> <argument> <operator> <value>
+`#`Yand`^  <if_check_N> <argument> <operator> <value>
+`+            
+           <program_command_1>
+           <program_command_2>
+ 
+           `#`Ybreak`^
+ 
+           <program_command_N>
+ 
+`#`Yelse`^
+ 
+           <program_command_1>
+           <program_command_2>
+ 
+           `#`Ybreak`^
+ 
+           <program_command_N>
+ 
+`#`Yendif`^
+`+
+   Basically it is an '`#`Yif`^' line, followed by '`#`Yand`^' and/or '`#`Yor`^' lines, 
+followed by some mud commands, which may contain a '`#`Ybreak`^' line, possibly 
+followed by an '`#`Yelse`^' line, followed by more mud commands, which may contain
+a '`#`Ybreak`^'line, followed by an '`#`Yendif`^' line. 
+   The 'if' line is any valid `#`Yif_check`^ expression, those if_check 
+expression can be conbinated with the logic operators or and and. The BREAK
+command bails out of the entire mobile program regardless of the level if
+nesting. (END is a synonym for BREAK).
+`+
+`#`BExamples:`^
+`+
+`#`yMOBPrograms for [ 5003]:
+ Number Vnum Trigger Phrase
+ ------ ---- ------- ------
+[    0] 5009  ACT    pokes you in the ribs.`^
+`+
+#5009
+if isnpc $n
+   chuckle
+   poke $n
+   break
+else
+   if level $n <= 5
+   or isgood $n
+      tell $n I would rather you didnt poke me.
+   else
+      if level $n > 15
+ scream
+ say Ya know $n. I hate being poked!!!
+ if mobhere guard
+    mob force guard kill $n
+ endif
+ kill $n
+ break
+      endif
+      slap $n
+      shout MOMMY!!! $N is poking me.
+   endif
+endif
+`+ 
+This trigger will only happen when the mobile gets the message "... pokes
+you in the ..." If the offender (recall the $n and $N refer to the char
+who did the poking...) is an NPC, then the mobile merely chuckles and 
+pokes back. If the offender was a PC then good and low level characters
+get a warning, high level chars get attacked, and midlevel chars get 
+slapped and whined at. Also, when attacking, the mobile will check if 
+there are guards in the room (if mobhere guard) and if one is found, 
+it will be forced to attack the player, too (mob force guard mob kill $n).
+Notice the use of a mobile command "mob force".
+`+
+`+
+~
+END
+
+keyword MOBPROGRAM_LIST~
+level 1
+category undefined~
+text `+
+   MOBprogram list, is a list that contains virtual numbers of the 
+programs, its  triggers and arguments, that is set on the mobile.
+On the olc building it can be seen when you type medit <mob's vnum>, 
+and it looks like the  table below:
+`+
+`#`yMOBPrograms for [ 3004]:
+ Number Vnum Trigger  Phrase
+ ------ ---- -------  ------
+[    0] 3005   REPOP  3
+[    1] 3009   HPCNT  20
+[    2] 3004   ACT    sits
+[    3] 3006   SPEECH help me please!!
+[    4] 3008   GREET  100`^
+`+
+   The first number [    0] is the number of the program on the MOBprogram
+list, the second number 3005, is the virtual number of the program which 
+is called when the trigger REPOP is activated, and the last number or 
+phrase is the argument to activate the trigger.
+`+
+   On the text file of the area, the MOBprogram list is included below
+the mobile statistics, and it looks like the list below:
+`+
+`#`y
+M repop   3005 3
+M hpcnt   3009 20
+M act     3004 sits
+M speech  3006 help me please!!
+M greet   3008 100`^
+`+
+`+
+`#`CSEE ALSO: `=_MEDIT`+, `=_MOBPROG`+.`^
+~
+END
+
+keyword MOB_ACT_UPDATE_ALWAYS MOB_AFF_DETECT_HIDE MOB_AFF_DETECT_INVIS~
+level 1
+helpflags builder~
+category undefined~
+text `+
+UNDER CONSTRUCTION! :)
+`+
+`#`Y
+\
+  \
+    \
+      \ 
+        \ 
+          \ /\ 
+          /    \ 
+          \     .
+            \. /
+
+`^
+`+
+~
+END
+
+keyword PULSE-MOBILE PULSE-VIOLENCE~
+level 1
+category undefined~
+text `+
+   Each pulse mobile is set to 4 seconds.
+   While fighting each round is set to one pulse violence, so in the
+fight trigger if you set it to 100% each round it will be activated.
+`+
+~
+END
+
+keyword MP-BUILDING~
+level 1
+category undefined~
+see_also MPEXAMPLES MUDFTP MP-BUILDING1~
+text `+
+   The first step to build a mobile program is building the mobile, see
+which trigger is better to use, and build the code. To build the code
+you need see what virtual numbers are available for the mobile program,
+use the command `#`Ymplist`^ to see all the mobile programs of the current
+area and its vnums, you will see something like the list below:
+`+
+1`#`s[`c 3070`y-mekali `g  Reave `s]`r healer throws you out`^
+2`#`s[`c 3069`y-mekali `g  Reave `s]`r healer shit list`^
+3`#`s[`c 3060`y-mekali `g  Reave `s]`r towel boy takes towel as player leaves bathhouse and thanks them for coming`^
+4`#`s[`c 3059`y-mekali `g  Reave `s]`r towel boy transfers player into bath when they pay 3 gold admission`^
+5`#`s[`c 3058`y-mekali `g  Reave `s]`r towel boy prevents those who havent paid form entering bath house`^
+6`#`s[`c 3057`y-mekali `g  Reave `s]`r towel boy welcomes to bath and states price`^
+`+
+   Where you see the number of the mobile program, its virtual number, the
+name of the area, the builder's name and the title of the mobile program.
+   To start or edit one mobprogram you have the command:
+`+
+ `#`Ympedit create `R<vnum>`^      - To create a new mobprog
+ `#`Ympedit `R<vnum>`^             - To edit an old mobprog
+`+
+when you type the command to create a new mobprog the message below will
+appear:
+`+
+MobProgram Code Created.
+`+
+   Now you are on the mobprog editing mode, to see the statistics and code
+of the mobile program type show or hit the return bottom on your keyboard
+you sill see the table below:
+`+
+`#`s=============================================================================`^
+`#`yVnum:`^  5011     `#`yTitle:`^`#`s unknown`^
+`#`yAuthor(s):`^`#`r Ninive`^
+`#`yCode:`^
+ 
+`#`s=============================================================================`^
+Currently no mobiles use this program.
+`#`s=============================================================================`^
+`+
+   You have some commands to change those settings, to see all the available
+commands type `#`Ycommand`^:
+`+
+         `#`W--=========== `YMPEDIT COMMANDS`^ `#`W===========--`^
+commands       create         code           author         title          
+show           ?              
+`+
+`#`Ycommands`^                  - List the available commands
+`#`Ycreate`^                    - Creates a new mobprog (`#`Ympedit create `R<vnum>`^)
+`#`Ycode`^                      - To edit the code
+`#`Yauthor`^ `#`R<builder's name>`^   - To set the author's name
+`#`Ytitle`^  `#`R<mobprog name>`^     - To set the mobprog's name
+`#`Yshow`^                      - To see the mobprog statistics and code
+`+
+  To start coding the mobile program, type `#`Ycode`^ and you will start
+the text editor mode, the `#`Ymudftp`^ is very useful for coding your
+program.
+`+
+-=======- Entering APPEND Mode -========-
+    Type .h on a new line for help
+ Terminate with a - or @ on a blank line.
+-=======================================-
+`+
+`+
+   When you finish the coding and type show you will see something like 
+this:
+`+
+`#`s=============================================================================`^
+`#`yVnum:`^  3001     `#`yTitle:`^`#`r mekali guards dying thrust`^
+`#`yAuthor(s):`^`#`r Reave`^
+`#`yCode:`^
+`#`csay Curse you to hell, evil one!
+mob echoat $n The guard thrusts his blade deep into your midsection with his last bit of strength!
+mob damage $n 25 50`^
+`+
+`#`s=============================================================================`^
+Currently no mobiles use this program.
+`#`s=============================================================================`^
+`+
+see `#`Chelp MP-Building1
+`+
+~
+END
+
+keyword MPEXAMPLES~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES1~
+text `+ 
+Here goes some mobile programs examples:
+`+
+In #MOBILES:
+`+
+`#`yM act 1000 pokes you in the ribs.`^
+`+
+Or in the olc mobile editing:
+`+
+`#`yMOBPrograms for [ 1000]:
+ Number Vnum Trigger Phrase
+ ------ ---- ------- ------
+[    0] 1000  ACT    pokes you in the ribs.`^
+`+
+In #MOBPROGS:
+`+
+#1000
+`#`yif isnpc $n
+   chuckle
+   poke $n
+   break
+else
+   if level $n <= 5
+   or isgood $n
+      tell $n I would rather you didnt poke me.
+   else
+      if level $n > 15
+ scream
+ say Ya know $n. I hate being poked!!!
+ if mobhere guard
+    mob force guard kill $n
+ endif
+ kill $n
+ break
+      endif
+      slap $n
+      shout MOMMY!!! $N is poking me.
+   endif
+endif`^
+ 
+`+
+Ok.. time to translate.. the trigger will only happen when the mobile
+gets the message "... pokes you in the ..." If the offender (recall
+the $n and $N refer to the char who did the poking...) is an NPC, then
+the mobile merely chuckles and pokes back. If the offender was a PC
+then good and low level characters get a warning, high level chars
+get attacked, and midlevel chars get slapped and whined at.
+Also, when attacking, the mobile will check if there are guards in the
+room (if mobhere guard) and if one is found, it will be forced to
+attack the player, too (mob force guard mob kill $n). Notice the
+use of a MOBcommand "mob force".
+`+
+Note that two of these mobiles could easily get into an infinite poke
+war which slows down (or frequently crashes) the mud just a bit :( 
+Be very careful about things like that if you can. (i.e dont respond 
+to a poke with a poke, and try not to let heavily programmed robot mobiles
+wander around together. More on that is given above.)
+`+
+Also, it is clear that the 'order' command could get confused with the 'or'
+control flow. However, this is only the case when 'order' is abbreviated to
+its two letter form, and placed immediately following an 'if' line. Thus,
+if you want to be that malicious in trying to break the MOBprogram code,
+noone is going to stand in your way (However, the result of this would be
+a bug message and a bail out from the ifcheck so things dont really break)
+`+
+`#`BMore Examples:`^ `#`Chelp mpexamples1`^
+`+
+~
+END
+
+keyword MPEXAMPLES1~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES2~
+text `+
+Another example:
+`+
+This program could be used on a temple guardian mobile, whose job is to
+prevent evil characters from entering the sanctuary. Let's assume
+the exit to the temple is north (exit 0) and the temple antechamber is
+room 2301
+`+
+In #MOBILES text file:
+`+
+`#`yM exit 1001 0`^
+`+
+Or in the olc mobile edit:
+`+
+`#`yMOBPrograms for [ 1000]:
+ Number Vnum Trigger Phrase
+ ------ ---- ------- ------
+[    0] 1001  EXIT   0`^
+`+
+In #MOBPROGS
+`+
+#1001
+`#`y
+if isgood $n
+   say Hail!
+   emote salutes $n.
+   if carries $n holy
+      mob transfer $n 2301
+   else
+      say If you wish to enter the temple, get a holy symbol.
+   endif
+else
+   curse $n
+   say Get lost, you scum!
+endif
+`^
+
+`+
+How this works: The trigger is activated when the player tries to exit
+north from the room. If the player is of good alignment, the guard will
+greet the player. However, the guard will not let the player to the
+temple unless he or she carries a holy symbol. If the player is neutral
+or evil, the guard will curse and block the way.
+`+
+`#`BMore Examples:`^ `#`Chelp mpexamples2`^
+`+
+`+
+~
+END
+
+keyword MPEXAMPLES2~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING MPEXAMPLES3~
+text `+
+Example of using DELAY and REMEMBER:
+`+
+In #MOBILES text file:
+`+
+`#`yM greet 1002 100
+M delay 1003 100`^
+`+
+In the olc mobile edit:
+`+
+`#`yMOBPrograms for [ 1000]:
+ Number Vnum Trigger Phrase
+ ------ ---- ------- ------
+[    0] 1002  GREET   100
+[    1] 1003  DELAY   100`^
+`+
+In #MOBPROGS
+`+
+#1002
+`#`yif isevil $n
+   say You infidel! Go away or face the wrath of mighty Mota!
+   mob remember $n
+   mob delay 10
+   break
+endif`^
+
+`+
+#1003
+`#`yif hastarget $i
+   growl
+   mob echo $I screams and attacks $Q.
+   mob kill $q
+else
+   mob forget
+endif`^
+
+`+
+How this works: When the player enters a room, the mobile checks if the
+player is evil. If this is the case, the mobile makes the player the
+target (mob remember) and sets up a delay of 10 * PULSE_MOBILE.
+When the delay expires, program #1003 is activated. The mobile checks
+if the target is still in the room (hastarget), and if the player hasn't
+left, the mobile attacks ($q and $Q refer to the target). If the player
+has left, the mobile will forget the player (mob forget).
+`+
+`#`BMore Examples:`^ `#`Chelp mpexamples3`^
+`+
+`+
+~
+END
+
+keyword MPEXAMPLES3~
+level 1
+category undefined~
+see_also TRIGGERS VARIABLES MPCOMMANDS OPERATORS MPSYNTAX MP-BUILDING~
+text `+
+    A Officer requires a "Just Visiting" card in order to enter the jail
+area. If the person doesn't have it then they cannot enter, but if they 
+do have it, they can.  The card would only be good for one visit though
+before they would have to get another one.
+`+
+In the #MOBILE text file should have:
+`+
+`#`y
+M grall 3019 100
+M delay 3018 100
+M give  3017 visiting`^
+`+
+In the olc mobile edit:
+`+
+`#`yMOBPrograms for [ 3000]:
+ Number Vnum Trigger Phrase
+ ------ ---- ------- ------
+[    0] 3019  GRALL   100
+[    1] 3018  DELAY   100
+[    2] 3017  GIVE    visiting
+`^
+`+
+#3017
+`#`y
+say Your papers seem to be in order.
+mob transfer $n 3054`^
+
+`+
+#3019
+`#`y
+if isdelay $i
+   break
+ else
+   say Your papers please.
+   mob remember $n
+   mob delay 5
+endif`^
+
+`+
+#3018
+`#`y
+if hastarget $i
+   say Begone if you do not have your papers!
+   emote shows you the door.
+   mob transfer $q 3054
+ else
+   mob forget
+endif`^
+
+`+
+When you walk into the room where Hassan is you trigger mprog 3019 where
+he asks for your papers.  If you don't give him your papers within 5
+pulses, mprog 3018 kicks in where he tells you to leave and then transfers
+you to another location.  (To simulate actually showing you out the door)
+If you give Hassan something that has the 'name' visiting card then you
+activate program 3017 and he will transfer you to another location.
+`+
+If I were going to do something like a Jail, I would make it where there
+was no physical entrance, just something in the room description where the
+jailkeeper mob was that indicated a door.  Then if I handed the correct
+paperwork to the mob, it would transfer me inside the Jail.  Once inside,
+just have a one-way exit that would allow someone to leave the jail.
+`+
+`+
+ 
+~
+END
+
+keyword MP-BUILDING1~
+level 1
+category undefined~
+text `+
+   To set the mobprog on the mobile, first you need have built the mobile
+(see `#`Chelp MOB-BUILDING`^), while editing the mobile , if you type
+`#`Ycommand`^ you will notice some commands to deal with mobprog:
+`+
+`#`Yaddmprog`^ `#`R<vnum>`^  `#`G<trigger>`^ `#`W<argument>`^ - To add a mobprog
+`#`Ydelmprog`^ `#`R[number]`^                     - To remove the mobprog
+`+
+   When you type show or hit the return bottom on your keyboard you 
+will see the statistics of the mobile and at the end you will see the 
+`#`YMOBprogram list`^
+`+
+`#`yMOBPrograms for [ 3001]:
+ Number Vnum Trigger Phrase
+ ------ ---- ------- ------
+[    0] 3001   DEATH 50
+[    1] 3010   GREET 100
+[    2] 3011   GREET 100`^
+`+
+   Where you see the number of the program on the mobprogram list, the
+vnum of the program, its trigger and argument.
+`+
+   After you have added the mobile program on your mobile, if you edit the
+program again you will see at the end of the table the vnum and the short
+description of the mobile which has the mobprog: 
+`+
+`#`s=============================================================================`^
+`#`yVnum:`^  3002     `#`yTitle:`^`#`r storyteller-asks for a story`^
+`#`yAuthor(s):`^`#`r Reave`^
+`#`yCode:`^
+`#`csay Ah, you say you want to hear a story?`^
+`+
+`#`s=============================================================================`^
+`#`yMobiles that use this program are:`^
+3017 the storyteller (storyteller old man) uses prog 3002.
+`#`s=============================================================================`^
+`+
+   Sometimes one defective mobprog (usually invalid if-check) can make all
+the mobprogs don't work, to see the vnum of the defective mobprog you can
+use the command `#`Ympinfo`^, and see the list below:
+`+
+`#`B-==============================`^ `#`YMOBPROGS INFO`^ `#`B==============================-`^
+    Displaying mobprog callstack - calllevel currently is 0
+      [ 0] MOBprog 2503 on mob 2505 (in room 2521) `#`RABORT (BUGGY???)`^
+      [ 1] MOBprog 0 on mob 0 (in room 0)
+      [ 2] MOBprog 0 on mob 0 (in room 0)
+      [ 3] MOBprog 0 on mob 0 (in room 0)
+      [ 4] MOBprog 0 on mob 0 (in room 0)
+ 
+    You can select the number of loglines, type mpinfo <number of lines>
+`#`y-===================`^ `#`YPiping:`^ tail admin\mpbugs.txt -n 10 `#`y===================-`^
+ 
+`+
+   If the message `#`RABORT (BUGGY???)`^ appears next to the mobprog's
+number, you should fix the mobprog, usually you have at the end of the
+list the error on the mobprog. After you have fixed the mobprog type
+`#`Ympreset`^ to reset the mobile programs.
+`+  
+`+ 
+`#`CSEE ALSO: `=_MOB-BUILDING`+, `=_MOBPROGRAM_LIST`+`^
+~
+END
+
+keyword MP-BOOK~
+title THE MAGNIFICENT WORLD OF MOBILE PROGRAMS (MPROGS)~
+helpflags builder mud_specific mud_should_customize~
+category undefined~
+continues MP-BUILDING~
+text In this guide to the world of mobile programs `#`C(MPROG)`^ we will discuss each 
+and every function that we have at this time to our disposal to use on the 
+Dawn of Time.  The section will cover detailed descriptions on every 
+`#`CIF_CHECK`X, `CTRIGGER`X,`^ and `CVARIABLE`X`^.  Along with many, many more abilities, and 
+functions in the mprog world.  I'll try to explain as much as I can with as 
+much clarity as possible, and help guide you into becoming an Mobile 
+Programmer.  In each section where I explain different types of mprogs, 
+there will be Mprog examples to help you along the way as well.  `1`1First off, let us begin with what exactly is a Mobile Program `#`C(MPROG)`^.  
+Explaining what an mprog is, is much more simpler than showing how to make 
+one.  First off, a mobile program is something you use for a huge variety of 
+things.  Believe me, as we study deeper into this vast field, more abilities 
+crop up in the mix, leading one to believe there is no limit's to how much 
+an mprog can do, the only limit is the mobile programmer's imagination.  
+Well of course, there is some limits, but once you get the hang of coding 
+mprog's, you'll see what I mean.  Common things that we use Mprog's for are 
+things like: `CSpecial Attacks`X, `CGuarding Exists`X, `CPC Interaction`X, `CGreetings`X, 
+`CQuests`X, the list goes on and on.  `1`1So let us begin through the step-by-step process on how to create a mobile 
+program.  First off, you'll need to get your `#`CMPROG-CODE-BOOKLET`^ Now what 
+this booklet does, is its your plane ticket for the ride of your life into 
+the world of Mprogs.  To get your own Mprog-code-booklet go to 
+`#`Cwww.dawnoftime.org/olc`^`X.  Here you will find documents for how to 
+build your own area, as well as this mprog booklet.  Before going any 
+further through the helpfiles of this introduction to mprogs, go to the site 
+mentioned above and download the MPROG-CODE-BOOKLET.  After downloading the 
+booklet if you have a printer I suggest printing out the booklet, after 
+printing the booklet out get a hole puncher and punch holes in the far left 
+sides of the paper and place each piece in a folder.  If you don't have a 
+printer just copy it to floppy disk and carry it to your local Kinko's, if 
+there isn't one around where you live, your work office, any other type of 
+business that will print out for you, will do fine as well.  If you have no 
+access whatsoever to a printer then, loading it up in MSWord or any sort of 
+text viewing program you have.  `1`1As I said above this section will carry you breifly into what Mprog's can 
+do.  If you want a more detailed and full blown small book on how to do 
+mprog's then download the mprog booklet from the site listed above.  If 
+you've already got the MPROG-CODE-BOOKLET then open it up in a view file or 
+have your folder handy to use.  If you don't have the MPROG-CODE-BOOKLET 
+then you must at least have the old mprog.  Txt file from the site listed 
+above.  So as I discuss how to make these mprogs, you can use the mprog.  
+Txt of MP-CODE-BOOKLET for reference in its charts, tables, and definitions. 
+~
+END
+
+keyword COMMAND_TRIGGER~
+level 92
+category undefined~
+text Add the Command Triggers in here as you use them please.`+`+`+
+~
+END
+
+keyword MOBLOG MPTRACE MPINFO DEBUG MOBHELP IFHELP~
+helpflags builder~
+category olc~
+see_also CHECKMOBLOG MEDIT~
+text Debugging mobprogs without tools can at times be near impossible at the best 
+of times. This help entry documents some of the mobprog debugging features 
+and commands built into the dawn codebase.`+
+`+
+`=lSyntax:`=? mptrace [lines to look back]`+
+`+
+The mud mobprog system remembers the last 500 mobprogs triggered.  In 
+addition it records, the type of trigger, the mob which the mobprog was 
+triggered on, the room the mob was in and the time of the triggering.  All 
+this information can be displayed with the mptrace command.  By default 
+mptrace only displays the most recent 20 triggered mobprogs.  You can view 
+earlier triggerings by specify how many lines back into the trace you want 
+to look.`+
+`+
+`=lSyntax:`=? mpinfo [lines to look back]`+
+`+
+Often bugs in syntax within a program are not obvious initially.  In 
+addition some syntax errors in mobprogs will cause the program to terminate 
+and be marked inactive until edited.  These errors are logged and can be 
+displayed using the mpinfo command.`+
+`+
+`=U  medit's act moblog flag`=? `+
+At times, a mobprog can be behaving in ways you don't intend or not behave 
+at all... you can tell it is triggering using mptrace and no errors are 
+showing up in the mpinfo log.  In situations like this it can be useful to 
+see 'what the mob sees'.  A mob with the 'act moblog' flag turned on will 
+log all output from commands run by the mob and other events to the moblog 
+file.  The contents of this file can then be seen using the `=_checkmoblog 
+command.`+
+`+
+An example line in a mobprog might read '`gmq6 at 3118 mob transfer $n 3119`=?'. 
+ This may appear to be correct at first, but at is an immortal command.  
+Turning on the moblog for a mob running this prog, you would shortly see 
+that the at command was running attune.  Then you could correct the prog to 
+read '`gmq6 mob at 3118 mob transfer $n 3119`=?'.`+
+`+
+In addition there are two reference commands to help check syntax...`+
+`+
+`=lSyntax:`=? mobhelp            - display a list of all mob commands.`+
+`=lSyntax:`=? mobhelp [command]  - display matching example notes.`+
+`=lSyntax:`=? ifhelp             - display help on 'if' mobprog syntax.`+
+`=lSyntax:`=? ifhelp [check]     - display help on specific 'if' check.`+
+ 
+~
+END
+
+EOF~
+#$

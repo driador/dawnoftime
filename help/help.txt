@@ -1,0 +1,77 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword HELPLIST~
+command_reference helplist~
+category helpsys~
+see_also HELP HELPCAT~
+text `=lSyntax: `=?helplist <keywords>`+
+`+
+Helplist will search through the help files for entries containing the 
+keywords you are looking for.  This command is useful for searching for 
+helpfiles related to a certain topic.  Be certain to keep the search words 
+simple, so there is a better chance of finding the help entry you are 
+looking for.`+
+`+
+Example:`+
+    `=Chelplist clan`=?`+
+Will return information about many clans, as well as clan commands and any 
+information related to them. 
+~
+END
+
+keyword HELP~
+command_reference help~
+category helpsys~
+see_also HELPLIST HELPCAT~
+text `=lSyntax:`=? help`+
+`=lSyntax:`=? help <keyword>`+
+`+
+`=Chelp`=? without any arguments shows a one-page command summary.`+
+`+
+`=Chelp <keyword>`=? shows a page of help on that keyword.  The keywords include 
+all the commands, spells, and skills listed in the game.`+
+~
+END
+
+keyword HELPCAT~
+command_reference helpcat~
+category helpsys~
+see_also HELP HELPLIST HLIST HEDIT~
+text `=lSyntax:`=? helpcat`+
+`=lSyntax:`=? helpcat <category>`+
+`+
+Helpcat is used to access the help categories system.  Helps entries are 
+filed in different categories as appropriate.`+
+`+
+You can list all the help categories by typing `=Chelpcat`=? by itself.`+
+Type `=Chelpcat <category name>`=? to see helps in that category.`+
+`+
+Helps are filed into help categories using the olc help editor - hedit. 
+~
+END
+
+keyword HLIST~
+level 92
+helpflags builder wordwrapped~
+category notes~
+see_also HEDIT HELPLIST HELPCAT~
+text `=lSyntax: `=?hlist`+
+`=lSyntax: `=?hlist <helpfilename>`+
+`+
+The `=Chlist`=? command when used with no parameters, displays the list of files 
+which contain all helps within the help system.  In addition, the list 
+displays a count that gives an indication of the number of help entries 
+stored in the various helpfiles.`+
+`+
+It is possible to list all the helps within a particular helpfile by typing 
+hlist <helpfilename>.  e.g. '`=Chlist pointers`=?'.`+
+
+~
+END
+
+EOF~
+#$

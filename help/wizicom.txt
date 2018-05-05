@@ -1,0 +1,1645 @@
+#HELPFILEDATA
+colourcode `
+security 7
+END
+
+#HELPENTRIES
+keyword CINFO~
+level 92
+category undefined~
+see_also -CLASS~
+text `Bsyntax: `=?cinfo <part of spell/skill name>`+
+`+
+The cinfo command lists class information about the spells or skills that 
+match the criteria of the search.  This command is for class balance to 
+quickly determine how strong each class is in their skills. `+
+`+
+~
+END
+
+keyword RWHERE~
+level 92
+category undefined~
+see_also RESTRING~
+text `=lSyntax: `=?rwhere`+
+        `=?rwhere <# of item to show stat for>`+
+`+
+RWHERE will search the realm for restrung objects.  Normally, only heroes 
+should be carrying restrung objects. Exceptions will be useless restrung 
+objects given to others, or someone who looted the corpse of a hero.`+
+`+
+RWHERE can also be used to stat a restrung object, by typing in the number 
+of the object in the main rwhere list as the rwhere parameter.`+
+`+
+~
+END
+
+keyword NSUPPORT NEWBIESUPPORT NEWBIE-SUPPORT~
+level 92
+category undefined~
+text `=?
+`=lSyntax:`=?
+    nsupport <player>
+
+Sets the specified player as newbie support.  this means they are always 
+visible to newbies and can send and receive tells from them, it also means 
+they can chardesc newbies.
+~
+END
+
+keyword RENAME~
+level 96
+category undefined~
+text `=lSyntax:`=?
+    rename <character-old> <character-new>
+
+Will rename a character to a new name.
+~
+END
+
+keyword SGIVE SDROP SILENT-GIVE SILENT-DROP~
+level 92
+category undefined~
+text `=lSyntax:`=?
+    sgive <target> <item>
+    sdrop <target> <item>
+
+Drops and gives items without a message being shown, useful for quests.
+~
+END
+
+keyword HOTREBOOT~
+category undefined~
+text A Hotreboot is a complete reboot of the mud that is done in the 
+background without disconnecting you.  You are lagged for 1 to 7 seconds
+at the final stage of the hotreboot when all the players are transfered 
+across to the newly rebooted copy of the mud.
+ 
+Playerfiles are automatically saved during a hotreboot so there is no
+need to manually save.
+Notes in progress are transfered across a hotreboot, you dont have to 
+worry about quickly posting if a hotreboot is announced.
+Keys held in inventories are transfered across to the new mud.
+ 
+Currently, mounted creatures (unless a pet) and bedrolls that are on 
+the ground are not transfered across a hotreboot.  Corpses are however,
+automatically transfered across hotreboots.
+~
+END
+
+keyword CTIME~
+level 1
+category undefined~
+text `=lSyntax:`=?
+    ctime
+
+Tells you the last time the mud was compiled.
+~
+END
+
+keyword STRANS~
+level 95
+category undefined~
+text `=lSyntax:`=?
+    strans <character> <room>
+ 
+Using this command without an arugment will transfer the character to you.
+The essential difference between this and transfer is this trans will not
+show the message arrives in a swirling mist.  It's a transfer for when you 
+are roleplaying inside a switch mob and want to get about unseen.
+~
+END
+
+keyword WHOVIS WHOINVIS~
+level 92
+category command:immortal~
+immsee_also WIZINVIS INCOGNITO~
+text `=lSyntax:`=? whovis`+
+`=lSyntax:`=? whoinvis`+
+`+
+Immortals visiblity on the wholist to mortals is NOT determined based on 
+wizinvis, incognito, hidden or invisible status.  Visibility is controlled
+entirely with the use of the whovis and whoinvis commands.`+
+`+
+With whovis set, you appear on the wholist regardless.  With whoinvis set
+you do not appear on the wholist to mortals.   Wizinvis can be used when 
+combined with whoinvis to hide from immortals below the level of your 
+wizinvis.
+`+
+When whovis, the colour of your name to all on the who list will be `Gbright 
+green`=? (default colour template).  When whoinvis, the colour of your name 
+will be red for those that can see you on the who list.  In addition to the 
+colour on the wholist, if you have [  ] at the left of your name you are 
+whovis, if it is <   > you are whoinvis.`+
+  
+~
+END
+
+keyword SECURITY~
+level 97
+category undefined~
+text `=lSyntax:`=?
+    set char <character> security <number>
+
+This is a number between 1 and 9, 9 being the highest.  The
+security rating determines who can use OLC in what areas etc.
+~
+END
+
+keyword ATLEVEL~
+level 94
+helpflags wordwrapped~
+category undefined~
+see_also CASTATLEVEL~
+text `=lSyntax:`=? atlevel <#> <command>`+
+`+
+This command will perform a command ic or ooc at the specified level.  You 
+could perhaps use this command for things like checking who a level X player 
+could see on the wholist, etc.`+
+`+
+When casting spells, use:`+
+`=Ccastatlevel <level> <spell> <spell parameters>`=?`+
+ 
+~
+END
+
+keyword UPDATE~
+level 97
+category undefined~
+text `=lSyntax:`=? 
+    update <char> <times>
+
+This command executes the 'check to see which spells a player learns
+for gaining this level' function over the player.  It was originally 
+written to test the magic system... but it now used when manually 
+compensating a player for some unexpected loses.
+~
+END
+
+keyword -LETGAIN UNLETGAIN~
+level 95
+category undefined~
+see_also HISTORY CHARDESC LISTLET~
+text `=lSyntax: `=?letgain <character>`+
+`=?        unletgain <character>`+
+`+
+This sets or removes the letgain flag in the player's pfile, giving them the 
+status of letgain (or not letgained).  Do not letgain players unless there 
+history has been seen and approved, and their short & long description are 
+up to the standards.`+
+`+
+There is a database of offline letgain requests as well.  View this with 
+`Clistlet`=?. You can letgain offline people as well, after you make sure they 
+meet all the requirements for being eligable for letgain.`+
+`+
+~
+END
+
+keyword PENABLE PDISABLE DISABLE~
+level 97
+helpflags wordwrapped~
+category undefined~
+text `=lSyntax:`=? pdisable <command> <character>`+
+`=lSyntax:`=? penable <command> <character>`+
+`+
+These commands are used to disable and enable access to commands on a person 
+by person basis. You must be sure to use the full name of the command you 
+wish to disable, and the full name of the character you are disabling the 
+command for.`+
+`+
+Pdisable and penable without an arugement lists the current commands 
+disabled.`+
+`+
+`=lSyntax:`=? disable <command>`+
+`+
+The disable command can be used to disable access to a particular command 
+for everyone.  To reenable the particular command type disable <command> 
+once again.`+
+ 
+~
+END
+
+keyword OBJDESC~
+level 95
+category undefined~
+see_also CHARDESC STRING~
+text `=lSyntax:`=?
+OBJDESC <object> 
+
+This command allows you to edit an objects long description.  You can 
+edit an objects long description using the object description command
+(objdesc).  It works exactly like descript (for yourself) apart from you
+type the objects name as the single parameter.  This command is 
+specifically for creating multiline extended descriptions on objects.
+
+eg OBJDESC 'dagger' will edit a daggers long description...  
+
+You can edit an objects description for quests and restrings.
+
+~
+END
+
+keyword CLONE~
+level 92
+category undefined~
+text `=lSyntax:`=?
+  clone obj <object>
+  clone mob <mobile>
+  clone <name>
+
+The clone command duplicates an object or mobile.  The level of item or mobile
+that may be cloned depends on your level.  The target object or mob must be in
+the same room as you, or in your possession.  Strung and set information is
+preserved by clone, as well as any spell effects and container contents or
+mobile inventory, except for items which are too high for you to clone.  
+Strung extended descriptions on objects are not kept, however.
+~
+END
+
+keyword ADVANCE~
+level 99
+category undefined~
+see_also TADVANCE TRUST~
+text `=lSyntax:`=? advance <character> <level>
+
+ADVANCE sets a character's level to the specified value.  It is the
+only way to create new immortal characters within the game.  ADVANCE
+may also be used to demote characters.
+
+~
+END
+
+keyword TRUST~
+level 99
+category undefined~
+see_also ADVANCE TADVANCE~
+text `=lSyntax:`=? trust <character> <level>
+ 
+TRUST sets a character's trust to the specified level.  This is similar to
+advancing the character for accessing immortal commands, but has no effect
+on combat strength, etcetera.  You can give more trust to mortal (or
+immortal) characters to give them access to more power without messing up
+the character.  You can also restrict a player's trust to less than their
+natural level.
+ 
+A trust of 0 means to use the character's natural level again.
+ 
+~
+END
+
+keyword SITEMASK BAN-EXAMPLE~
+level 96
+category undefined~
+text The <sitemask> is a pattern matching based expression.  When you ban a site, 
+be sure to not lock out more players than you have to.  You can use various 
+wildcards when setting up the ban.  Here are the accepted wildcards:`+
+`+
+`=?  '`Y*`=?' matches ANYTHING`+
+`=?  '`Y%`=?' The matches ANY NUMBER OF NON-SPACE CHARS`+
+`=?  '`Y?`=?' matches EXACTLY ONE CHARACTER`+
+`=?  '`Y-`=?' matches AT LEAST ONE SPACE or more`+
+Be careful not to accidently lock out too many sites with a wildcard.`+
+`+
+Here is an example of some bans:`+
+`+
+Say we have 2 players, from the following sites:`+
+`=?   PLAYER1 (trt-on30-47.netcom.ca)`+
+`=?   PLAYER2 (ham-on7-44.netcom.ca)`+
+There is more than 1 way to do a ban, you can be more technically correct, 
+but so long as the ban works, and it is banning the people you want to ban, 
+then everything is fine.`+
+`=?   permban trt-on*.netcom.ca all`+
+you can do other options as below:`+
+`=?      permban trt-on*-*.netcom.ca all`+
+`=?   or permban trt-on%.netcom.ca all`+
+`=?   or permban trt-on%-%.netcom.ca all`+
+ 
+~
+END
+
+keyword REBOOT SHUTDOWN~
+level 99
+category undefined~
+text `=lSyntax:`=? reboot
+        shutdown
+
+REBOOT shuts down the server.  When the normal 'startup' script is used
+to control the server, a delay of fifteen seconds will ensue (to allow
+old connections to die), followed by a reboot.
+
+SHUTDOWN shuts down the server and prevents the normal 'startup' script
+from restarting it.
+~
+END
+
+keyword WIZLOCK NEWLOCK~
+level 96
+category undefined~
+text `=lSyntax:`=? wizlock
+        newlock
+
+Wizlock and newlock both block login attempts to Dawn of Time. Wizlock locks
+out all non-gods (i.e. level less than 52), except for link-dead players who
+are returning.  Newlock only locks out new character generation, typically
+used for preventing a spammer from returning.  Wizlocking should be avoided,
+and newlocking should be accompanied by mail or a note to the imps.
+
+A god must be at least level 59 to wizlock the game.
+~
+END
+
+keyword DENY~
+level 98
+category undefined~
+text `=lSyntax:`=? deny <name>
+
+Deny locks a character out of a game permanently, rendering their character
+name unusable.  It may only be removed by editing the file, for this reason
+freeze is usually preferred.
+~
+END
+
+keyword DISCONNECT~
+level 97
+category undefined~
+text `=lSyntax:`=? 
+    disconnect <name>
+
+Disconnect breaks a player's link to the game, dumping them back to the telnet
+prompt.  This is a non-lethal way of getting rid of spammers and annoying
+players.
+~
+END
+
+keyword FREEZE~
+level 97
+category undefined~
+text `=lSyntax:`=? 
+    freeze <name>
+
+FREEZE <character> is a toggle which prevents a character from issuing any
+commands at all. It can be removed from within the game, so freezing a 
+troublemaker is usually a better option than they deny command.
+~
+END
+
+keyword FORCE~
+level 93
+category undefined~
+text `=lSyntax:`=? force <character> <command>
+`=lSyntax:`=? force all <command>
+
+FORCE forces one character to execute a command, except of course delete.
+
+Below level 97 (Deity) force can only be used on mobiles, and force all is
+unavailable.  You also cannot 'force orc murder hugo', for example. 
+
+FORCE 'all' forces all player characters to execute a command.
+This is typically used for 'force all save'.
+~
+END
+
+keyword SOCKETS~
+level 96
+category undefined~
+see_also IGNOREMULTI~
+text `=lSyntax:`=? sockets [matchtext]`+
+`+
+The sockets command displays all of the visible users connected to the 
+server, including users in the process of logging in.  This list can be 
+filtered, to show only information matching, e.g. 'sock aol', would show 
+only connections with aol in the playername or hostname.`+
+`+
+`=U  Example sockets output:`=?`+
+`+
+`S[`WNum `GConnected_State `cLogin@   `xIdle`S] `BPlayer Name  `WHost `C(Sys time: 10:04AM)`+
+`S--------------------------------------------------------------------------`+
+`S[`W 12 `G FTPCOMMAND   `c           `x 15s`S]`B -kalahn-  `W   myhost.dawnoftime.org:3869`+
+`S[`W  9 `G    PLAYING   `c  01:05PM  `x  0s`S]`B Kalahn    `W   myhost.dawnoftime.org+4039`+
+`S[`W 16 `G    PLAYING   `c  01:07PM  `x 10m`S]`B Testchar  `W   `Ykal`S@`Wlocalhost:3923+ `+
+`=?`+
+Sockets displays a lot of information... from left to right:`+
+`+
+`WNum `=?- the socket number they are attaching on.  On unix systems this is the 
+file descriptor number at the operating system level.`+
+`+
+`GConnected_State `=?- at what state a particular connection is in.  There is 
+about 30 states (all listed in nanny.h in the source code).`+
+`+
+`cLogin@ `=?- displays the time a character connection logs in.  Times for 
+DawnFTP connections are not shown.`+
+`+
+`xIdle `=?- how long since something has been received from the connection.`+
+`+
+`BPlayer Name `=?- The name of the player, or the authenticated name surrounded 
+by -'s for a DawnFTP connection.`+
+`+
+`WHost `=?- The main piece of information the Host field shows is where the 
+player is connecting from.  This will either be a host name or an ip 
+address.  If all of the hosts are ip addresses, it is possible that the DNS 
+resolver for the mud isn't setup correctly or DNS resolution isn't working 
+for the machine hosting the mud.  In addition the host field can display the 
+results of an ident lookup for a connection... you can see kal@localhost in 
+the above example... the kal@ information has come from an ident server 
+running on the machine of testchar.  At the far right of the host name you 
+will notice a number... this number is the port from which the connection is 
+coming from.  If a + is displayed between the hostname and remote port then 
+multilog detection is disabled for this player (this can be 
+disabled/reenabled using the `=_ignoremulti command).  If the ignoremulti 
+setting hasn't been set on a player and multiple logins come from that 
+particular host at the same time, all offending hostnames will appear red in 
+sockets.`+
+ 
+~
+END
+
+keyword LOAD~
+level 96
+category undefined~
+see_also CLONE VNUM STAT~
+text `=lSyntax:`=? load mob <vnum>
+        load obj <vnum> <level>
+
+The load command is used to load new objects or mobiles (use clone to 
+duplicate strung items and mobs).  The vnums can be found with the vnum
+command, or by stat'ing an existing mob or object.
+
+Load puts objects in inventory if they can be carried, otherwise they are
+put in the room.  Mobiles are always put into the same room as the god. Old
+format objects must be given a level argument to determine their power, new
+format objects have a preset level that cannot be changed without set.
+
+~
+END
+
+keyword SET~
+level 97
+category undefined~
+see_also STRING STAT~
+text `=lSyntax:`=? set mob   <mobile> <field> <value>
+        set obj   <object> <field> <value>
+        set room  <number> <field> <value>
+        set skill <char>   <name>  <rating>
+        set skill <char>   all     <rating>
+
+The set command is used to change the numerical values of the various data
+structures. Type set <class> without an argument to see a listing of options.
+Set skill all (pc's only) will set all the character's skills to the value
+given.  Use STRING to change the strings on an object or mobile.
+
+~
+END
+
+keyword NOCHANNEL NOEMOTE NOSHOUT NOTELL NOPRAY~
+level 92
+category undefined~
+text `=lSyntax:`=? nochannel <character>
+        noemote   <character>
+        noshout   <character>
+        notell    <character>
+        nopray    <character>
+
+Noemote, noshout, and notell are used to muffle other characters, by
+preventing them from emoting, shouting, and telling, respectively.
+Characters who are noshout'ed or notell'ed will also not receive those
+forms of communication.
+
+The nochannel command is similar, but more drastic. It prevents the victim
+from using any of the channels (ic, ooc, Q/A, quest) on the game.
+Nochannels usually result from swearing or spamming on public channels.
+~
+END
+
+keyword PURGE~
+level 96
+category undefined~
+text `=lSyntax:`=? purge
+        purge <character>
+
+Purge is used to clean up the world.  Purge with no arguments removes all the
+NPC's and objects in the current room.  Purge with an argument purges one
+character from anywhere in the world.
+
+Purge will not get rid of PC's, or objects or mobiles with a NOPURGE flag
+set (i.e. the pit, the fountain, shopkeepers, Hassan).  Mobiles may be
+purged if they are called directly by name.
+~
+END
+
+keyword -RESTORE~
+level 96
+category undefined~
+text `=lSyntax:`=? restore <character>
+        restore room
+        restore all
+
+Restore restores full hit points, mana points, and movement points to the
+target character.  It also heals poison, plague, and blindness.
+
+Restore room (or restore with no argument) performs a restore on every player
+in the room, restore all does the same for all connected players. Restore all
+is only usable by creators and implementors.  Restore should be used sparingly
+or not at all.
+~
+END
+
+keyword SLAY~
+level 97
+category undefined~
+text `=lSyntax:`=? slay <character>
+
+Slay kills a character in cold blood, no saving throw.  Best not to use this
+command on players if you enjoy being a god.
+~
+END
+
+keyword TRANSFER TELEPORT~
+level 95
+category undefined~
+text `=lSyntax:`=? transfer <character>
+        transfer all
+        transfer <character> <location>
+        transfer all         <location>
+
+Transfer transfers the target character, or ALL player characters,
+to your current location (default) or to a specified location. Trans all 
+should almost never be used, as 100 players popping into one room can have
+horrible effects on slow links. Teleport is a synonym for transfer. 
+~
+END
+
+keyword AT~
+level 94
+category undefined~
+text `=lSyntax:`=? at <location> <command>
+
+At executes the given command (which may have arguments) at the given
+location.  The location may be specified as a vnum, as the name of
+a mobile, or as the name of an object.
+
+At works by temporarily moving you to that location, executing the
+command, and then moving you back (if the command didn't change your
+location).
+~
+END
+
+keyword ECHO GECHO PECHO ZECHO~
+level 94
+helpflags wordwrapped~
+category undefined~
+text `=lSyntax:`=? echo  <message>`+
+`=lSyntax:`=? gecho <message>`+
+`=lSyntax:`=? pecho <character> <message>`+
+`=lSyntax:`=? zecho <message>`+
+`+
+These commands all perform similar functions.`+
+`+
+Echo sends the message to all characters in the same room as the user, with 
+no indication of who sent it.`+
+`+
+Gecho does the same for all players connected to the game.`+
+`+
+Pecho is short for player echo - it sends the message to the player 
+specified as the target. Any higher-level god will see a prompt in front of 
+your message, informing him or her that it is an echo.`+
+`+
+zecho stands for zone echo - it is heard by every one in the same area/zone 
+as you.`+
+
+~
+END
+
+keyword GOTO~
+level 92
+category undefined~
+text `=lSyntax:`=? goto <location>
+
+Goto takes you to a location.  The location may be specified as a vnum,
+as the name of a mobile, or as the name of an object.
+
+You may not Goto a room if it is PRIVATE and has two (or more) characters
+already present, or if it is SOLITARY and has one (or more) characters
+already present. Some other rooms are barred to players below a certain
+god level.
+
+Implementors can use the violate command to get into private rooms.
+~
+END
+
+keyword HOLYLIGHT HOLYNAME HOLYSPEECH HOLYWALK HOLYVNUM~
+level 92
+category undefined~
+see_also WHOVIS WIZINVIS~
+text `=lSyntax:`=? holylight
+        holyname
+        holyspeech
+        wizinvis [level]    - level is optional
+ 
+HOLYLIGHT is a toggle that allows you to see (almost) every character and
+mobile in the game.  With holylight, you can see what's in the game more
+easily.  Without holylight, you see what mortal players see.
+ 
+HOLYNAME gives you the name of a character in brackets after the players
+short description... this is a toggle, type holyname to turn it on and off.
+ 
+HOLYSPEECH makes it so when you speak, your words are not scrambled 
+in anyway by the language system... each character in the room will hear
+your words perfectly, and you will understand anything anyone says perfectly 
+as well.  
+NOTE: This does not mean that 2 mortals in a room can understand each other
+just cause you are there, and you can understand both of them.
+ 
+HOLYWALK - With it on you can walk closed doors, over water, into the air,
+into guilds, into newbie only areas etc.  Also with it on you can throw
+objects thru doors.
+ 
+HOLYVNUM: With this on you will see the vnum/levels of objects, mobs
+and players.  Mobs surrounded by ** have mob progs on them.
+ 
+~
+END
+
+keyword WIZINVIS -INVIS~
+level 92
+category undefined~
+see_also WHOVIS SCORE IWIZI OWIZI~
+text `=lSyntax:`=? wizinvis [level]    - level is optional
+ 
+WIZINVIS makes you invisible to all players of a lower level/trust than your 
+invisibility level.  Typing wizinvis by itself will default to the lowest 
+immortal level, meaning that you aren't 'hiding' from immortals, and this 
+enables the immortals to work together as a team more effectively.  You 
+can type a parameter, which will be the level you will wizinvis at.
+ 
+  Basic Wizinvis examples:
+  - wizi 95 will make you invisible to immortals whose level/trust is < 95.
+  - wizi 5  will make you visible to everyone level 5 and above.
+ 
+WIZINVIS is different from other muds in that not only are you invisible but
+a lot of actions that involve you short/name or another wizi player aren't
+seen by those lower than the higher of the people listed in the action.
+  Some example commands that are included in this are says, emotes, pmotes,
+smotes, look, socials, casting of spells (the part that has who cast it)
++ many more.
+ 
+You will notice that something simular to '[Wizi 92] ' is in front of a lot
+of things, this is the level at which that particular action is seen.
+ 
+NOTES:
+- Unlike other on other codebases, WIZINVIS DOES NOT HIDE YOU FROM THE
+  MORTAL WHOLIST... use `=_whoinvis for that.
+- Immortals are the only characters to actually see that '[Wizi 92]' info
+  (This means you could be controlling say a ghost and set the wizi to 40,
+  then be talking in a room, with a level 25, and 40 and 43 character in the
+  room, and only be seen/heard by the level 40 and 43 players... etc)
+- Socials aren't always consistant with the [Wizi 92] syntax...
+  e.g. Typing smile <name> will say you smile at <name> but not show the
+  [Wizi 92] bit, the person you smile at if below level 92 wouldn't see the
+  smile.
+- Score shows you what your wizi level is.
+- You can be heard yelling when wizinvis.`+
+ 
+~
+END
+
+keyword INCOGNITO~
+level 92
+category undefined~
+text Toggling your incognito status will hide your presence from people outside the
+room you are in, but leave you visible to those who are with you.  It takes
+a level argument similar to wizinvis, people at that level or higher can see
+you regarless of location.
+~
+END
+
+keyword MEMORY~
+level 92
+category undefined~
+text `=lSyntax:`=? memory
+
+Memory reports the size of your mud.
+
+The 'Mobs' and 'Objs' lines report the number of types of mobiles and objects,
+not the number of instances currently in the game.
+
+The 'Strings' line shows memory used by area-file strings.  These strings have
+a maximum limit, which is also shown.
+
+The 'Perms' line shows permanently allocated memory blocks.  There is no limit
+on the number and size of these blocks.
+~
+END
+
+keyword VNUM~
+level 96
+category undefined~
+see_also LOAD~
+text `=lSyntax:`=? vnum <name>
+        vnum <obj or mob> <name>
+        vnum skill <name>
+ 
+Vnum finds all objects and mobiles with a particular name, and prints out
+the results.  Use vnum obj or vnum mob to limit the search.  This vnum is
+very useful for loading. Vnum skill returns the skill number (for set) and
+the slot number (for making new zones) of a skill name.
+ 
+~
+END
+
+keyword -STAT~
+level 92
+category undefined~
+text `=lSyntax:  `=?stat <name>
+`=?         stat mob  <name>
+`=?         stat obj  <name>
+`=?         stat room <number>
+ 
+The stat command gives you detailed information on an object, mobile, or room
+within the game.  Without a class argument, the command will return an object
+(if found), a mobile (if no object exists, but a mobile does), or a room 
+(if a number is  given).  Stat room with no argument stats the room you are
+standing in.  Stat can be used to find room vnums for goto.`+
+ 
+`CSEE-ALSO: GOTO TRANSFER
+~
+END
+
+keyword MWHERE IWHERE OWHERE~
+level 93
+helpflags wordwrapped~
+category undefined~
+see_also CWHERE~
+text `=lSyntax:`=? mwhere [name]`+
+`+
+Mwhere shows you the locations of all mobiles with a particular name. If no 
+parameter is specified it shows the location of all players in the game.  
+Typing `=Cmwhere`=? or just `=Cm`=? for short without any name will display the 
+location of all players in the game.`+
+`+
+`=lSyntax:`=? iwhere`+
+`+
+The iwhere command shows the locations of all immortals you can currently 
+see.  It also shows any players in the same room as a mortal and the 
+visiblity level of everyone listed.  This command is useful to see if a 
+particular imm is talking with someone before you goto them.`+
+`+
+`=lSyntax:`=? owhere [name]`+
+`+
+Owhere shows you the locations of all objects with a particular name in the 
+game.`+
+ 
+~
+END
+
+keyword PINFO~
+level 92
+category undefined~
+see_also STAT LETGAIN CHARNOTES~
+text `=lSyntax:`=? pinfo [filter]
+ 
+Pinfo is short for player info, it shows info on the currently connected
+players in rows.  type a single 'p' to use the command.
+ 
+The specific details of each column from left to right 
+[ Gender, Status, Alliance, Tendency, 
+          class, race, hitpoints (percentage of max), 
+                   mana (percentage of max), 
+                             pkills, karns ] <name> - <short description>
+ 
+Pinfo is colour coded (No colour? try 'raw p'):
+  [White] = normal player      `BBlue`=? name  = no long description, 
+  [`gGreen`=?] = letgained player   `BBlue`=? short = generic short 
+  [`RRed`=?]   = noble              `Y-`=? after name = charnotes (help `=_charnote)
+ 
+Pinfo is searchable by by race, class, name and short.
+e.g. 'p ma' = show all mages, males ...
+ 
+Here is an example of pinfo with the columns labeled:
+`=?
+ S  L   A  T   R     C   H   M   P  K
+ E  V   L  E   C     L   P   N   K  R
+ X  L   I  N   E     A   %   %   S  N
+`=?[`=?M  14 +0/+0 Human  Mag 100  99  0  2`=?] `BDwante`Y-`=? `=?a young man with long blonde hair`=?
+`=?[`=?M* 23 +0/-3 Elf    Mag  93 100  0  4`=?] `=?Solmon-`=? `Ba male elf`=?
+`G[`RM@ 95 +2/+1 Elf    War 100 100  1  4`G] `=?Celrion-`=? `=?celrion`=?
+`=?[`gM+ 23 -3/-3 Elf    Mag 100 100  0  3`=?] `=?Lyonas-`=? `=?an old and frail looking elven form`=?
+`=?[`gF+ 23 +1/+1 Hf-Elf Spf 100 100  0  3`=?] `=?Xanetia-`=? `=?a green tinged shadowy figure`=?
+`=?[`gM`- 67 -2/-3 Drow   Thi  95   5  1  3`=?] Thendril- a tall male dark-elf with long silver-grey hair`=?
+`=?[`gMs 70 +2/+2 Human  Ran 100 100  1  5`=?] `=?Ragor-`=? `=?a tall man with midnight hair`=?
+`G[`RF  92 +0/+0 Human  Ran 100 100  0  3`G] `=?Cadoren-`=? `=?a faerie with `#`?c`?o`?l`?o`?u`?r`?f`?u`?l`^ wings`=?
+`G[`RM#100 +3/+3 Avian  Thi 100 100 13  5`G] `=?Kalahn-`=? `=?a being of light`=?
+`=?[`gM  42 +0/-1 Drac   Thi 100 100  0  4`=?] `=?Draek-`=? `=?a ghost white draconian with ivory-like horns`=?
+ 
+In the above example:
+- Dwante isn't letgained and has a charnote attached to him (`Y-`=? by name), 
+  he has no long description (`Bblue`=? name).
+- Solmon is currently fighting a mob (the *), not letgained (white), 
+  his short description hasn't been set yet (`Bblue`=? generic short).
+- Celrion is switched into a mob (@ status) and is a noble (`Rred`=?).
+- Lyonas and Xanetia are both in pkill fights (+ status), and are letgained (`ggreen`=?).
+- Thendril is letgained (`ggreen`=?) and is in the description editor (`- status).
+- Ragor is sleeping (s status).
+- Kalahn is writing a note (# status) and is a noble (`Rred`=?)
+ 
+  The status column tells you what a players doing   
+  S     s - sleeping
+  T     + - means in a pkill fight
+  A     # - currently editing or working on a note of some kind
+  T     * - fighting a mob
+  U     @ - is switched into something
+  S     `- - in description editor
+        (blank means nothing in particular)
+~
+END
+
+keyword PEACE~
+level 95
+category undefined~
+text `=lSyntax:`=? peace
+
+Peace causes all characters in a room to stop fighting. It also strips the
+AGGRESSIVE bit from mobiles.
+~
+END
+
+keyword POOFIN POOFOUT~
+level 92
+category undefined~
+see_also GOTO FADEIN FADEOUT~
+text `=lSyntax:`=? poofin  <message>`+
+`=?        poofout <message>`+
+`+
+The standard messages for goto are 'arrives in a swirling mist' and
+'leaves in a swirling mist'.  You can replace these messages with messages of
+your own choosing using the poofin and poofout commands.  These messages
+dont have to include your name somewhere in the string.`+
+`+
+Poofin and poofout only show to characters who can see you.`+
+`+
+~
+END
+
+keyword PROTECT~
+level 99
+category undefined~
+text `=lSyntax:`=? 
+    protect <character>
+
+Protect is used to protect a character from unwanted snooping.  Removing 
+protected status from a character WILL be seen by that character.
+~
+END
+
+keyword LOG SNOOP CSNOOP~
+level 95
+category undefined~
+text `=lSyntax:`=? 
+    log    <character>
+    log    all
+    snoop  <character>
+    csnoop <character>
+
+Log <character> causes all of a character's commands to be logged into
+the server's log file.  Like Freeze, it is a permanent character toggle.
+Logs may only be used by creators and implementors, and should be accompanied
+by mail to the implementors.
+
+Certain commands (Password) are protected against log.  Conversely, certain
+commands (especially immortal commands) are always logged.
+
+Log all logs all character commands.  It is a server-wide toggle; it does not
+persist across reboots. Please do not use this unless you tell the imps.
+
+Snoop shows you a copy of all the input and output going to a character.
+The character must have an open channel.  You may snoop more than one
+character at a time. Try to respect privacy.
+
+Snoop yourself to cancel ALL outstanding snoops.
+resnoop the character to toggle your snooping of them on an off.
+csnoop is short for command snoop, it only shows the commands a player is 
+typing... (as well as the time) very useful for checking multilogging
+without getting spammed.
+~
+END
+
+keyword SWITCH RETURN~
+level 94
+category undefined~
+text `=lSyntax:`=? 
+    switch <character>
+    return
+
+Switch switches you into the body of another character (who must not
+already have a descriptor, e.g. you can't switch into a PC). You also cannot
+switch into link-dead PCs.
+
+Return returns you to your original body.
+~
+END
+
+keyword IMMTALK :~
+level 92
+category undefined~
+text `=lSyntax:`=? 
+    immtalk <message>
+    immtalk
+
+Immtalk sends a message to all immortals.  : is a synonym for immtalk.
+Using this command with no argument turns off the immortal channel (or
+turns it back on).
+~
+END
+
+keyword WIZNET IMMWIZNET WIZNETC IMMWIZNETC WIZNET2C WIZNET3C~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also WIZNETDEFAULT~
+continues WIZNET-TECHNICAL~
+text `=lSyntax:`=? immwiznet [channel]`+
+`=lSyntax:`=? immwiznetc <colour prefix text>`+
+`=lSyntax:`=? wiznet [channel]`+
+`=lSyntax:`=? wiznetc <colour prefix text>`+
+`=lSyntax:`=? wiznet2 [channel]`+
+`=lSyntax:`=? wiznet2c <colour prefix text>`+
+`=lSyntax:`=? wiznet3 [channel]`+
+`=lSyntax:`=? wiznet3c <colour prefix text>`+
+`+
+Wiznet is a notification system for immortals.  It works in a channel 
+subscription like manner, in that you subscribe to the 'channels' you are 
+interested in receiving notifications about.  For example you may be 
+interested in being notified of player logins and player deaths.  If this 
+was the case you would have both of those channels enabled.  Typing `=Cwiznet`=? 
+by itself will list the channels you have turned on for the wiznet layer as 
+shown here:`+
+`+
+`=?        ---=========== Current Wiznet Settings ===========--- `+
+`=?              beta            off        bugs            on   `+
+`=?              deaths          on         flags           on   `+
+`=?              levels          on         links           on   `+
+`=?              load            off        logins          on   `+
+`=?              mobdeaths       off        memcheck        off  `+
+`=?              newbies         on         nohelp          on   `+
+`=?              penalties       off        playerlog       off  `+
+`=?              prayers/dreams  off        questing        on   `+
+`=?              resets          off        autoon          on   `+
+`=?              rpexp           off        rpmonitor       off  `+
+`=?              secure          on         sites           on   `+
+`=?              showchannel     on         snoops          on   `+
+`=?              spam            off        switches        off  `+
+`=?              thefts          on         ticks           off  `+
+`=?              whispers        off        newbietells     off  `+
+`=?`+
+`=?              (You currently have this wiznet active)`+
+`=?                wiznet colour prefix is set to '``S``#'`+
+`+
+To change the status of a particular notification for the wiznet layer, type 
+wiznet [channel] as listed above.  E.g. if you wanted to turn on the 
+whispers channel, you would type `=Cwiznet whispers`=?. `+
+`+
+The wiznet system is a little complex to explain to a full technical level, 
+and has more flexibility than most require.  If you are not interested in 
+the fulldown on how it works we recommend typing `=Cwiznetdefault confirm`=? and 
+leaving it at that.  Full technical details on wiznet continue in the next 
+help. 
+~
+END
+
+keyword WIZHELP~
+level 92
+helpflags wordwrapped~
+category undefined~
+text `=lSyntax:`=? wizhelp`+
+`=lSyntax:`=? wizhelp <level>`+
+`=lSyntax:`=? wizhelp <partword>`+
+`+
+Wizhelp provides a list of all the immortal commands with their 
+corresponding level.  There are a large number of immortal commands which 
+can be overwhelming at first.  Fortunately wizhelp also has a filtering 
+features to show a subset of the available commands. The filtering features 
+allow you to instruct wizhelp to only display helps of a certain level or 
+helps which contain a certain part of a word.`+
+`+
+`=U  Examples:`=?`+
+`+
+`=Cwizhelp 94`=? will list all level 94 immortal commands.`+
+`=Cwizhelp list`=? will list all immortal commands that contain 'list'.`+
+ 
+~
+END
+
+keyword TADVANCE~
+level 99
+category undefined~
+see_also ADVANCE TRUST~
+text `=lSyntax:`=?
+    tadvance <char> <level>
+ 
+Tadvance advances someone to the level specified just like advance... The
+only difference is the players trust is unaffected... this was mainly put
+in for testing of mortal characters against mobs and new code.
+ 
+~
+END
+
+keyword -CLASS~
+level 96
+category undefined~
+see_also SPINFO CINFO~
+text `=lSyntax:`=?
+    class <class> <skill/spell>
+    class <class> <skill/spell> <level> <rating> <low%level>
+    class <class> maketable
+    class <class> showall
+
+Class is used for configuring what level a certain class can get skills and
+what level the spells are rated at for that class.  
+
+If you are wanting to view an entry just type the class and skill.
+
+SKILLS:
+ level     - this is what level the class can get that skill
+ rating    - is the same for both skills and spells, when someone practices
+             the skill being modified, the basic percentage that will get is
+             divided by the rating value.
+             (so a harder skill has a higher rating)
+ low%level - relates to spells only.
+
+SPELLS: When you level spells have 3 calculations performed to determine if
+ someone gains a spell.  They must have all the realms, spheres and schools
+ the spell requires, then their average of all the realms, spheres and
+ schools must be greater than a random number from 1 to 100%.
+
+ Their level affects the spell learning curve system.
+
+ level     - the level at which there is a 50% chance of passing the spell
+             curve check.
+ rating    - affects practising - see the skill rating above.
+ low%level - the level at which there is about a 1% chance of passing the
+             spell curve check.
+
+ The whole spell curve system is based off a normal distribution curve, and
+ the low%level value is almost at the point of 3 standard deviations.
+
+ class <class> maketable - generates a comma seperated file (.csv) for the
+             selected class which can be imported into excel...
+             it shows you what is the percentage chance of a spell at a
+             certain level.
+
+ class <class> showall - shows you all spells and there
+            class, rating and spell levels.
+
+~
+END
+
+keyword RESTORE~
+level 1
+helpflags wordwrapped~
+category undefined~
+immsee_also -RESTORE~
+text If you see a message something like `Y<immortal name> has restored you.  `=? `+
+It means they have used the restore command on your character...  That it 
+does to your character is it restores you to full hit points, mana points, 
+and movement points, resets your tiredness counter so you are fully awake 
+and refreshed, heals poison, plague, and blindness and removes cause fear.  `+
+`+
+If none of the above spells affect you, then obviously that part of the 
+restore has no affect. 
+~
+END
+
+keyword MEMCHECK~
+level 92
+category undefined~
+text This is a wiznet channel that displays info whenever the memory used by the mud 
+is increased as the result of someone using a command.
+~
+END
+
+keyword NOTENET NOTE-NET KEY NOTE-FILTER~
+level 92
+helpflags wordwrapped~
+category undefined~
+text Notenet is an immortal note service, an option to assist immortals due to 
+the large amount of notes that you receive every day.  It is a filter set up 
+to filter out certain types of notes and help eliminate the daily note spam.`+
+`+
+Typing '`#`Gnotenet`^' by itself will display all possible filters.  "On" means 
+that the filter is active, and you won't see the notes, "Off" means the 
+filters are inactive and you'll see the notes as usual.  You can still 
+manually read the notes if you choose to.  `+
+`+
+Here is a quick explanation of the filter types: `+
+`+
+`C Noblepkill `=?&`C Immpkill`=? - This is the general pkill note to nobles that 
+lists the player results and outcome of a pkill.  Such info are karns left, 
+pkills, pkill defeats, and OOL hours.  `+
+`+
+`C Immpkilldetails`=? - This is the pkill note showing more information about 
+the pkill to immortals only.  It lists more player details, such as short 
+description, level, and clan.  It also displays the room where the kill took 
+place.  `+
+`+
+`C Clannnotes`=? - This will filter out all notes written to clans.  Normally, 
+immortals can read all notes that clans write between them.  Clan notes can 
+cause the most note spam for immortals.  `+
+`+
+`C To_pkill`=? - These are the pkill notes that players must write explaining 
+their reasons for being involved in the pkill.  
+~
+END
+
+keyword CHECK~
+level 92
+category undefined~
+text `CRedirection help file`+
+`+
+`=lType: `=Chelp `=_'CHECKHELP`+
+`=?      For help on the CHECKHELP command`+
+`+
+`BType  `=Chelp `=_CHECKOOC`+
+`=?      For help on the CHECKOOC command`+
+`+
+`BType  `=Chelp `=_CHECKNSUP`+
+`=?      For help on the CHECKNSUP command`+
+ 
+~
+END
+
+keyword TOKENS~
+level 1
+helpflags builder~
+category undefined~
+see_also TGIVE TREMOVE TWHERE TTIMER~
+text Tokens are items created expressly for use in mobprogs.  They are totally 
+undetectable unless holylight is on.  These tokens can be used as budget 
+variables on mobprogs, for such things as marking killers, adding people on 
+to the healer's sh*tlist, etc.  It is recommended to name the tokens in a 
+uniform way so they are easier to identify with their proper mobprogs.  
+ 
+`#`Gname: token_what_quest
+short desc: token_what_quest_mp####
+long desc: equal to short desc`^
+ 
+Where ##### would be the vnum of the mobprog that uses the token.  
+See token 11133 as an example.  
+`+
+`+
+When a player dies, a set flag will decide whether the 
+token dissolves of the token is stripped from the corpse and reset in the 
+mortal's inventory.  They are weightless, invisible and can't be handled 
+amongst mortals unless.
+~
+END
+
+keyword TGIVE TREMOVE TWHERE TTIMER~
+level 92
+helpflags builder wordwrapped~
+category undefined~
+see_also TGIVE TREMOVE TWHERE TTIMER TJUNK~
+text `=lSyntax:`=? ttimer <token> <player> <time>`+
+`=lSyntax:`=? tremove <token> <player>`+
+`=lSyntax:`=? tgive <token> <player>`+
+`=lSyntax:`=? twhere`+
+`+
+`=UTGIVE - `=?This command is used to give a mortal a token.  Since players may 
+not receive what they cannot see, the normal give command won't work 
+correctly.  `+
+`+
+`=UTREMOVE - `=?This command is used to easily remove the token from the chosen 
+player's inventory without having to steal it from them.  `+
+`+
+`=UTWHERE - `=?This command functions exactly the same as RWHERE, with the 
+exception that it will track down and return information on all tokens in 
+the realm.`+
+`+
+`=UTTIMER - `=?This command puts a timer on a token that's in the inventory of 
+the designated player.  After the set number of ticks, the  token will 
+automatically disintegrate and vanish from the inventory of who ever happens 
+to be carrying it.`+
+ 
+~
+END
+
+keyword CHECKHELP~
+level 92
+category undefined~
+text `=lSyntax: `=?checkhelp
+`=?        checkhelp <#>
+`1The checkhelp command can list up to the last 40 entries logged into the 
+no_help.txt file.  Every time someone checks for a help file that doesn't 
+exist, it is logged into that file.  Typing this command without a number, 
+by default lists the last 10 no_help entries.  It is a very useful command 
+for seeing which help files others are searching for.
+~
+END
+
+keyword CHECKNSUP~
+level 92
+category undefined~
+text `=lSyntax:  `=?checknsup`+
+`=?         checknsup <#>`+`+
+The checknsup command can list upto the 40 entries logged into the 
+nsup_log.txt.  If you type a number greater than 40, you'll see the previous 
+40 entries upto the number you specified.  Every time an nsupport personnel 
+sends or receives a tell to/from a newbie, it is logged into that file.  
+There are several flags listed in the help file, they are as follows:
+or under.`+
+`+ 
+`r  [O] `=?= The person typing the command is in OOC room`+
+`r  [N] `=?= The person logged is a newbie support member`+
+`+
+`GNote: `=?a newbie is considered someone who is not yet letgained AND level 10 
+or under.  
+~
+END
+
+keyword CHECKOOC~
+level 92
+category undefined~
+text `=lSyntax: `=?checkooc`+
+`=?        checkooc <#>`+
+`+
+The CHECKOOC command can list upto the last 40 entries logged into the 
+ooc_log.txt file.  If you type a number greater than 40, you'll see the 
+previous 40 entries upto the number you specified. 
+~
+END
+
+keyword STRIPAFF~
+level 92
+category undefined~
+text `=lSyntax: `=?stripaff <target> <specific spell>`+
+`=?        stripaff <target> all`+
+`=?        stripaff <target>`+
+`+
+This command will strip spell affects from the designated player.  You can 
+either specify individual spells to remove, or you can remove all spells 
+simply by stating 'all' or leaving the parameters blank. 
+~
+END
+
+keyword ALLOW PERMBAN SHOWBAN~
+level 96
+category undefined~
+see_also BANEDIT SITEMASK BAN-EXAMPLE~
+text `=lSyntax: `=?allow <sitemask>`+
+`=?        banedit <#>`+
+`=?        permban <sitemask> <all|email|newbie|permit>`+
+`=?        permban`+
+`=?        showban <#>`+
+`+
+PERMBAN <sitemask> prohibits players from that site from logging in.  There 
+are various types of banning: all, email, newbie, permit.  `CAll `=? will not 
+allow anyone from that sitemask to log on.  `CEmail`=? will allow certain allowed 
+emails to create new characters (see `Yhelp BANEDIT`=? for more info).  `CNewbie`=? 
+will ban all newbie creation from the site.  `CPermit`=? will allow certain 
+characters with a permit flag set to log on from the site.  Letgained 
+players automatically have the permit flag, but non-letgained characters 
+will have to have it manually entered into their pfile.  See `Yhelp SITEMASK`=? 
+and `Yhelp BAN-EXAMPLE`=? for more information regarding setting up the permban.`+
+`+
+PERMBAN with no arguments lists all of the banned sites.  Each ban will have 
+a unique index numer next to it.  Use this number for showban and banedit.`+
+`+
+ALLOW <sitemask> removes a site from the ban list, but only if the level of 
+the ban is not above the level of the remover.`+
+`+
+SHOWBAN will display the details of the ban without going into the edit 
+mode.`+
+`+
+BANEDIT allows you to edit the details about the ban.`+
+`+
+~
+END
+
+keyword BANEDIT~
+level 96
+category undefined~
+see_also PERMBAN SITEMASK~
+text Use banedit to edit the bans already in place.  Most of the fields can be 
+edited using the editor.  To see the syntax or enter the editor, type the 
+field without parameters.`+
+`+
+`=lSyntax: `=?sitemask <bansitemask>`+
+`=?   Sets the sitemask of the banned site.  Should already be set.`+
+`+
+`=lSyntax: `=?enabled`+
+`=?   Toggles whether or not the ban is active.  This applies instantly to 
+any new connections... depending on the type of ban will determine if it will
+affect already active connections.`+
+`+
+`=lSyntax: `=?permanent`+
+`=?   Toggles the ban from temporary to permanent.  If a ban is temporary, its
+entry is not saved into the banlist on disk, meaning next hotreboot the ban 
+will no longer be in the banlist.`+
+`+
+`=lSyntax: `=?type <bantype>`+
+`=?   Sets the type of ban: all, permit, email, or newbie.  See `CPERMBAN`=? for 
+more info.`+
+`+
+`=lSyntax: `=?expire <# of days>`+
+`=?   Sets number of days until ban expires.  Set to 0 to have ban permanent.  
+The automatic expiring of a ban is calculated when the bans are read in, 
+therefore, once the expirery date has past the next time the mud is 
+hotrebooted the ban will be disabled during the ban loading sequence.`+
+`+
+`+
+Use the editor for these:`+
+`YIntended`=? - A comment field for you to add who it was intended for.`+
+`YReason `=?- Comment field to specify reason of banning the site, you 
+should try to always fill this in so at a later date details are know
+for others who look at the ban.`+
+`YDisconnet `=?- Custom disconnect message, if you want one.`+
+`+
+`+
+Email ban only (use editor to change):`+
+`YAllowed `=?- When email ban is set, when a newbie tries to create it will
+ask them for an email address.  The allowed_email_masks is a list of email 
+masks that will be accepted. (e.g. *@aol.com, would mean that an email addy
+at *@aol.com would be accepted.)  You can have multiple email address masks
+per ban, just put them one per line.  You must make sure to have a least
+one email ban, just put a * if you want to allow any email addies and 
+therefore allow anyone from that isp... the only advantage of doing this is
+it means you know the email addy of who is creating characters... if you 
+wanted to do this, but didn't want to allow hotmail type accounts you could
+put *@hotmail.com in the disallowed email masks as per below.`+
+`+
+`YDisallowed `=?- Emails that specifically aren't allowed.`+
+`+
+The way the email banning system works, is the mud generates a 6hexadecimal 
+code which it emails to the email address the newbie supplies.  Then at
+the end of creation they are asked for that code, if they dont enter the
+code they can quit and come back later and will be asked for the code
+before they start to play their game... the code is only required once, the
+first time they start playing just after the MOTD.
+`+
+~
+END
+
+keyword SETALLIANCE SETTENDENCY~
+level 95
+category undefined~
+text `=lSyntax: `=?setalliance <character> <number>`+
+`=?        settendency <character> <number>`+
+`+
+These commands will set the alliance or tendency of the target.  The number 
+range is from -3 to +3. `+
+`+
+`CSEE-ALSO: ALIGNMENT-CHANGE-POLICY`=?   
+~
+END
+
+keyword FADEIN FADEOUT~
+level 92
+category undefined~
+see_also POOFIN POOFOUT~
+text `=lSyntax`=? fadein <message>`+
+`=?       fadeout <message>`+
+`+
+The standard messages for wizi are 'slowly fades into thin air' and 'fades
+into existance'.  You can replace these messages with messages of your own 
+using the fadein and fadeout commands.  These messages don't have to include 
+your name anywhere in the string.`+
+`+
+~
+END
+
+keyword RAWCOLOUR PERMRAWCOL RAWCOLOR~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also COLOUR~
+text `=lSyntax:`=? rawcolour <command>`+
+`=lSyntax:`=? permrawcol comfirm`+
+`+
+This command will show the colour codes without processing them.  It's most 
+useful for testing purposes, to make sure colours are reset where they 
+should be, and don't affect the colour of everything else. `+
+`+
+Example:`+
+typing `=Craw who`=? might show:`+
+`+
+`=?   {=?[{=?+++{=?]{# Caesar{^                          {=?[Slayer] {=?`+
+`=?   {=?[{=?***{=?]{# Mirtal{^ (H) (S){=?`+
+`=?   {=?[{=?***{=?]{# Lyta{^{=?`+
+`=?   {=?[{=?***{=?]{# Talagar{^{=?`+
+{r-======= {GIMMORTALS {r=======-{=?`+
+   {G[{rGUA{G]{# Quoxatyl{^ (Incog) (Wizi){=?`+
+`+
+instead of:`+
+`=?   `=?[`=?+++`=?]`# Caesar`^                          `=?[Slayer] `=?`+
+`=?   `=?[`=?***`=?]`# Mirtal`^ (H) (S)`=?`+
+`=?   `=?[`=?***`=?]`# Lyta`^`=?`+
+`=?   `=?[`=?***`=?]`# Talagar`^`=?`+
+`r-======= `GIMMORTALS `r=======-`=?`+
+`=?   `G[`rGUA`G]`# Quoxatyl`^ (Incog) (Wizi)`=?`+
+`+
+The permrawcol command is used to put your connection permanantly in a state 
+where colour codes are displayed instead of translating them.  To get out of 
+this command use the rawcolour command once.`+
+
+~
+END
+
+keyword IWIZI OWIZI~
+level 92
+category undefined~
+see_also WIZINVIS~
+text The wizi status is split into an IC wizi, and an OOC wizi, `#`RI`GWizi `^and `BO`GWizi`^. 
+Reasons why you might want to do this may be so you can talk to mortals in 
+some OOC room (such as immortal rooms), then go to an IC room to walk around 
+without forgetting that you dropped your Wizi status.  This is a common 
+mistake that many forget about.  For example, you can be IWizi 50 (invisible 
+to those under level 50) while in IC rooms, and be OWizi 94 (invisible to 
+those under level 93) while in OOC rooms.`+
+`+
+Here is a summary of the wizi status on the who list:`+
+If the I in `GIWizi`^ is `Rred`^ then you are and invisible to mortals and standing 
+in an IC room.  If the I in `GIWizi`^ is `Ggreen`^ then you have IWizi enabled, but 
+not standing in an IC room.`+
+If the O in `GOWizi`^ is `Bblue`^, then you are invisible to mortals and standing in 
+an OOC room.  If the O in `GOWizi`^ is `Ggreen`^ then you have OWizi enabled, but 
+are not standing in an OOC room.`+
+`+
+To acitivate IWizi or OWizi, go to the proper room (IC or OOC) and type the 
+wizi command.  If you don't see either IWizi or OWizi next to your name, 
+then you are visible to mortals! `+
+ 
+If you have your IWizi at 0, then your normal wizi status is used while in non OOC 
+rooms.  If you have your IWizi at 0, then your normal wizi status is used while in 
+OOC rooms.  (leave both off if you dont want to be affected by this system)`+
+`+
+~
+END
+
+keyword CLEARLETGAIN DECLINELETGAIN LISTLETGAIN OFFLETGAIN~
+level 92
+category undefined~
+text `=lSyntax: `=?listlet`+
+`=?        `=?offlet <player> <moot_value> `+
+`=?        `=?declinelet <player> <reason>`+
+`=?        `=?clearlet <player>`+
+`+
+`CListlet `=?will display the database of letgains.  Or else you can listlet 
+<playername> to display information about a specific person's record.`+
+`+
+`COfflet `=?will letgain someone, so when they log in next they can be 
+automatically letgained.  You can also give someone a new short, different 
+from the one requested if it isn't appropriate.  Type offlet for more 
+syntax.`+
+`+
+`CDeclinelet `=?will send the character a rejection reason as to why their
+letgain request was denied.  They then have time to correct the problem, and 
+request the letgain another time. `+
+`+
+`CClearlet `=?is the equivalent to the cancelletgain command, but you can remove 
+anyone's request in the database.`+
+ 
+~
+END
+
+keyword NOTE-FORWARD~
+level 92
+category undefined~
+text `=lSyntax: `=?note forward <#>`+
+`+
+You can forward a note/idea/etc that you either sent, or recieved to someone 
+else if you wish to.  It will be posted on the same board, meaning that a 
+note will still be a note, a news will still be a news. 
+~
+END
+
+keyword TELL_~
+level 92
+category undefined~
+text `=lSyntax: `=?tell <player>`+
+        ktell <player>`+
+        atell <player>`+
+        retell <player> or >`+
+`+
+`#When you `Mtell`^ a player it allows them to reply creating a two way link.  
+After you can use `Cretell`^ or`C >`^ to continue the conversation.  `CKtell`^ is 
+used when you wish to be known to a player when whoinvis.  If you are whovis 
+you can use `Matell`^ so it would appear as if from a mystery imm.  
+~
+END
+
+keyword KTELL ATELL~
+level 92
+category undefined~
+text `=lSyntax:`=? ktell <name> ...`+
+`+
+Ktell is short for 'known tell', it is used to start a 'tell conversation'
+with a mortal in such a way that your name will be known to them, even in
+situations that you are whoinvis.
+ 
+`=lSyntax:`=? atell <name> ...`+
+`+
+Atell is short for 'anonymous tell', it is used to start a 'tell conversation'
+with a mortal in such a way that your name will be unknown to them, even in
+situations that you are visible on the wholist.
+ 
+ 
+~
+END
+
+keyword MIX LISTMIX~
+level 92
+category undefined~
+text Mix and Listmix are part of the object mixing system, partially implemented
+and not yet completed at this point in time.
+~
+END
+
+keyword OBJRESTRICT~
+level 92
+category undefined~
+text The 'objrestrict' command is used to turn on/off the ic object 
+restrictions on yourself... really not used at this stage as the
+ic object restrictions system is not yet completed.
+~
+END
+
+keyword WIZNET-TECHNICAL~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+parent_help WIZNET~
+see_also WIZNETDEFAULT~
+text This help continues on from where "help `=_wiznet" left off.`+
+`+
+The entire wiznet system is made up of 4 layers - Immwiznet, wiznet, wiznet2 
+and wiznet3 (in order of highest matching priority to lowest matching 
+priority).  Each layer can have a unique prefix including colour codes which 
+is displayed before the wiznet message.`+
+`+
+Immwiznet (the highest priority) will only notify on events involving 
+immortals.  The other 3 layers will match on immortals and players.  Once a 
+layer has triggered a notification, no other layers will be evaluated for 
+notification.  The advantage of this is you can modify the appearance of 
+messages depending on how important they are likely to be to you.`+
+`+
+For example, if your IMM Wiznet prefix set to "``R##IMM##", your standard 
+wiznet prefix unset, and your wiznet2 prefix was set to "``S``#".`+
+`+
+`=U  Messages appearing on immwiznet would appear as:`=?`+
+`R##IMM##`x--06:18:34--logins--> Imm has joined the game via telnet. (lvl 95)`=?`+
+`+
+`=U  Messages appearing on the standard wiznet would appear as:`=?`+
+`x--06:18:34--logins--> Player has joined the game via telnet. (lvl 18)`=?`+
+`+
+`=U  Messages appearing on wiznet2 would appear as:`=?`+
+`S--09:55:32--ticks--> TICK!`=?`+
+`+
+Using this design, you can also make it easy to turn off a set of wiznet 
+messages when more players are logged in... e.g. rpmonitor or playerlog.  If 
+these two channels were enabled for wiznet3 and a large number of players 
+suddenly logged in you could type "wiznet3 off" and turn off a wiznet 
+monitoring profile.`+
+`+
+Expanding on what was explained higher up about a higher priority wiznet 
+layer masking/hiding a lower priority layer can be made clearer with an 
+example - If you have wiznet ticks turned on and wiznet2 ticks turned on.  
+The ticks will be displayed using the wiznet colour prefix (as compared to 
+using the wiznet2 colour prefix). 
+~
+END
+
+keyword WIZNETDEFAULT~
+level 92
+helpflags wordwrapped~
+category command:immortal~
+see_also WIZNET WIZNET-TECHNICAL~
+text `=lSyntax:`=? wiznetdefault confirm`+
+`+
+Wiznetdefault is used to setup a default wiznet profile for all wiznet 
+layers.  This profile includes prefixing immwiznet with `R###IMM###`=? and 
+making standard wiznet messages appear in `ssilver`=?.`+
+`+
+The notifications the command subscribes you to are the most commonly used 
+settings, you are then able to further customise wiznet to your exact 
+preferences from this foundation.`+
+`+
+Wiznetdefault overwrites any customisations you have done to your wiznet 
+profile, hence the confirm option.`+
+    
+~
+END
+
+keyword IGNOREMULTI~
+level 98
+helpflags wordwrapped~
+category command:immortal~
+see_also SOCKET~
+text `=lSyntax:`=? ignoremulti <playername>`+
+`+
+This command is used to disable the multilogging reporting and detection 
+features for a particular player.  Without this set on a player, their host 
+will appear red in sockets if there are multiple logins from a particular 
+host at the same time (multilogging has occured). 
+~
+END
+
+EOF~
+#$
