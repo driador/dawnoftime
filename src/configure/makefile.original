@@ -1,0 +1,31 @@
+beginhelp:
+	@echo =============================================================================
+	@echo Change into the configure directory and run ./configure to create a makefile
+	@echo 
+	@echo Notes: The makefile configure generates requires a version of make that
+	@echo "       has the sort function amoung other things.  If you find that make"
+	@echo "       is only compiling com_time.cpp when you type 'make rebuild' then you"
+	@echo "       need to use a newer version of make or manually remove the use"
+	@echo "       of sort from the makefile."
+	@echo 
+	@echo "       If the makefile has problems compiling the resolver, manually compile"
+	@echo "       extras/resolver.cpp as resolver in the directory above the source and"
+	@echo "       remove the resolver reference from the 'all' line in the makefile."
+	@echo 
+	@echo =============================================================================
+	@chmod +x configure/configure
+
+resetconfig:
+	rm -f $(OBJDIR)/*.o
+	rm -f configure/config.cache
+	rm -f configure/config.log
+	rm -f configure/config.status
+	rm -f configure/configure.lineno
+	rm -Rf configure/autom4te.cache
+	rm -f ./config.h
+	rm -f ./makefile
+	cp -f configure/makefile.original ./makefile
+	d2u *.cpp *.h
+	d2u configure/*
+	chmod +x configure/configure
+

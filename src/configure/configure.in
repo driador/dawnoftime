@@ -1,0 +1,100 @@
+dnl Process this file with autoconf to produce a configure script.
+AC_INIT(../dawn.h)
+AC_SUBST(ZLIBS)
+AC_SUBST(WS2_32)
+AC_CONFIG_HEADER(../config.h:config.hin)
+
+AC_LANG_CPLUSPLUS
+
+dnl Checks for programs.
+AC_PROG_CXX
+
+dnl Checks for libraries.
+
+dnl Checks for header files.
+AC_HEADER_STDC
+AC_HEADER_SYS_WAIT
+AC_CHECK_HEADERS(fcntl.h malloc.h sys/types.h sys/time.h unistd.h sys/socket.h)
+AC_CHECK_HEADERS(sys/param.h sys/sysctl.h sys/utsname.h netinet/in.h netdb.h arpa/inet.h)
+
+dnl Checks for typedefs, structures, and compiler characteristics.
+AC_TYPE_PID_T
+AC_TYPE_SIZE_T
+AC_DAWN_CHECK_TYPE(socklen_t, int)
+AC_HEADER_TIME
+
+dnl Checks for library functions.
+AC_TYPE_SIGNAL
+AC_FUNC_STRFTIME
+AC_FUNC_VPRINTF
+AC_CHECK_FUNCS(gettimeofday select socket strstr)
+
+dnl Test for libz
+AC_CHECK_LIB(z, deflate, 
+	[AC_CHECK_HEADER([zlib.h], [AC_DEFINE(HAVE_ZLIB)] [ZLIBS="-lz"] )] )
+
+dnl Test for libws2_32 used by MinGW
+AC_CHECK_LIB(ws2_32, main, 
+	[AC_CHECK_HEADER([winsock2.h], [AC_DEFINE(WIN32_USE_WINSOCK2)] [WS2_32="-lws2_32"] )] )
+
+echo "${nl}checking for IPv6 Networking support..."
+dnl Start of checking for IPv6 support...
+
+AC_ARG_ENABLE(ipv6,
+  [  --disable-ipv6          Disable IPv6 support in Dawn.],
+  [ if test "$enableval" = "no"; then
+        user_disabled_ipv6=1
+    fi ],
+  [ user_disabled_ipv6=0 ] )
+
+case $host in
+  *)
+    broken_ipv6=0
+esac
+
+
+AC_SEARCH_LIBS(getaddrinfo, socket inet6)
+AC_SEARCH_LIBS(gai_strerror, socket inet6)
+AC_SEARCH_LIBS(getnameinfo, socket inet6)
+AC_CHECK_FUNCS(gai_strerror)
+APR_CHECK_WORKING_GETADDRINFO
+APR_CHECK_NEGATIVE_EAI
+APR_CHECK_WORKING_GETNAMEINFO
+APR_CHECK_SOCKADDR_IN6
+
+have_ipv6="0"
+if test "$user_disabled_ipv6" = 1; then
+    ipv6_result="no -- disabled by user"
+else
+    if test "x$broken_ipv6" = "x0"; then
+        if test "x$have_sockaddr_in6" = "x1"; then
+            if test "x$ac_cv_working_getaddrinfo" = "xyes"; then
+                if test "x$ac_cv_working_getnameinfo" = "xyes"; then
+                    have_ipv6="1"
+                    ipv6_result="yes"
+                else
+                    ipv6_result="no -- no getnameinfo"
+                fi
+            else
+                ipv6_result="no -- no working getaddrinfo"
+            fi
+        else
+            ipv6_result="no -- no sockaddr_in6"
+        fi
+    else
+        ipv6_result="no -- the platform has known problems supporting IPv6"
+    fi
+fi
+
+if test "x$have_ipv6" = "x1"; then
+	AC_DEFINE(IPV6_SUPPORT_ENABLED)
+fi
+
+AC_MSG_CHECKING(for sufficient IPv6 support)
+AC_MSG_RESULT($ipv6_result)
+
+CHECK_BSD_MAKE()
+CHECK_GNU_MAKE()
+CHECK_DEPRECATED_CONST_STRING_CONVERSION()
+
+AC_OUTPUT(../makefile:makefile.in)

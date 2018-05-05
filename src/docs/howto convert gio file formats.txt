@@ -1,0 +1,144 @@
+/**************************************************************************/
+// HOWTO: Convert GIO file formats 
+// - This is one way... not the only way - Kal
+/**************************************************************************/
+typedef cmd_type OLD_cmd_type; 
+GIO_START(OLD_cmd_type)
+GIO_SHINTH(position,			"Position        ")
+GIO_SHINTH(level,				"Level           ")
+GIO_SHINTH(log,					"Log             ")
+GIO_SHINTH(show,				"Show            ")
+GIO_WFLAGH(flags,				"Flags           ", commandflag_flags)
+GIO_WFLAGH(council,				"Council         ", council_flags)
+GIO_SHWFLAGH(category,			"Category        ", com_category_flags)
+GIO_FINISH_NOCLEAR	
+/**************************************************************************/
+// converting routine
+void do_read_oldcommandtable(char_data *ch, char *argument)
+{
+	FILE *fp;
+	int count=0;
+
+	logf("Reading in old command table from %s...", COMMANDS_FILE );
+	fclose( fpReserve );
+
+    if ( ( fp = fopen( COMMANDS_FILE, "r" ) ) == NULL )
+    {
+		perror( COMMANDS_FILE);
+		ch->printlnf( "An error occured trying to open %s for reading!", COMMANDS_FILE );
+    }
+    else
+    {
+		bool morefile=true;
+		char *readword;
+		char buf[MIL];
+		sh_int i;
+
+		while (morefile && !feof(fp)) {
+			readword= fread_word(fp);
+
+			if (!str_cmp(readword, "EOF") || !str_cmp(readword, "EOF~")){
+				morefile=false;
+			}else{
+				if(!str_cmp(readword, "name")){
+					readword=fread_string(fp);
+					sprintf(buf,"%s", readword);
+	
+					i=command_lookup(buf);
+					if(i>=0){
+						GIO_LOAD_RECORD(OLD_cmd_type, &cmd_table[i], fp)
+						count++;
+					}else{
+						cmd_type t;
+						bugf("UNKNOWN COMMAND IN '%s'\n---------- Found '%s' "
+							"expecting a known command name", COMMANDS_FILE, buf);
+						GIO_LOAD_RECORD(OLD_cmd_type, &t, fp)
+					}
+				}else{// unexpected file format
+					bugf("Unexpected fileformat in '%s' - found '%s' "
+						"expecting 'name'", COMMANDS_FILE, readword);
+					do_abort();
+					return;
+				}
+			}
+		}
+		fclose( fp );
+
+		ch->printlnf( "Finished reading old commandtable format from %s. (read in %d)",
+			COMMANDS_FILE,
+			count );
+    }
+	fpReserve = fopen( NULL_FILE, "r" );
+
+	logf("Finished reading old commandtable format. (read in %d), now resaving in new format.", count);
+	do_write_commandtable(ch, "");
+}
+/**************************************************************************/
+void do_read_commandtable(char_data *ch, char *argument)
+{
+	// autoconversion routine for old format of table 
+	// - can be removed once your mud has converted its code
+	if(file_exists(COMMANDS_FILE) && !file_exists(COMMANDS_CATEGORIES_FILE)){
+		do_read_oldcommandtable(ch, argument);
+		return;
+	}
+
+	FILE *fp;
+	int count=0;
+
+	logf("Reading in command table from %s...", COMMANDS_FILE );
+	fclose( fpReserve );
+
+    if ( ( fp = fopen( COMMANDS_FILE, "r" ) ) == NULL )
+    {
+		perror( COMMANDS_FILE);
+		ch->printlnf( "An error occured trying to open %s for reading!", COMMANDS_FILE );
+    }
+    else
+    {
+		bool morefile=true;
+		char *readword;
+		char buf[MIL];
+		sh_int i;
+
+		while (morefile && !feof(fp)) {
+			readword= fread_word(fp);
+
+			if (!str_cmp(readword, "EOF") || !str_cmp(readword, "EOF~")){
+				morefile=false;
+			}else{
+				if(!str_cmp(readword, "name")){
+					readword=fread_string(fp);
+					sprintf(buf,"%s", readword);
+	
+					i=command_lookup(buf);
+					if(i>=0){
+						GIO_LOAD_RECORD(cmd_type, &cmd_table[i], fp)
+						count++;
+					}else{
+						cmd_type t;
+						bugf("UNKNOWN COMMAND IN '%s'\n---------- Found '%s' "
+							"expecting a known command name", COMMANDS_FILE, buf);
+						GIO_LOAD_RECORD(cmd_type, &t, fp)
+					}
+				}else{// unexpected file format
+					bugf("Unexpected fileformat in '%s' - found '%s' "
+						"expecting 'name'", COMMANDS_FILE, readword);
+					do_abort();
+					return;
+				}
+			}
+		}
+		fclose( fp );
+
+		ch->printlnf( "Finished reading commandtable from %s. (read in %d)",
+			COMMANDS_FILE,
+			count );
+    }
+	fpReserve = fopen( NULL_FILE, "r" );
+
+	logf("Finished reading commandtable. (read in %d)", count);
+	
+	do_read_commandcategories(ch,"");	
+}
+/**************************************************************************/

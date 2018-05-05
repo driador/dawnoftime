@@ -1,0 +1,1574 @@
+============================================================================
+============================================================================
+== DAWN 1.69r RELEASED 1Feb04
+============================================================================
+13:22 02/02/2004 - Kal
+- put in cygwin compiler error fix
+
+22:41 04/02/2004 - Kal - typos reported by spilinek
+- Fixed a bug in do_equipment which prevented the displaying of your 
+  secondary weapon - reported by spilinek
+- fixed spelling error of 'equiped' (should be 'equipped')
+
+18:43 05/02/2004 - Kal
+- added GIO_STR(default_prompt) into GIO_START(game_settings_type) so the
+  default prompt saves
+
+01:12 07/02/2004 - Kal
+- spellname text within hedit_show() is now shown in white
+
+10:16 09/02/2004 -Kal
+- "done" within clanedit() no longer calls edit_done() twice... typo 
+  reported by spilinek
+
+14:29 14/02/2004 - Kal
+- turning on your prompt now shows the system default prompt if you don't 
+  have a prompt set.
+
+01:07 09/04/2004 - Kal
+- On Windows dawn now displays the text 
+  "Application exiting, press any key to close this window." when it is 
+  exiting if it wasn't started from the command line (this avoids people
+  first running dawn and just getting a black box appear for a second then 
+  disappear).
+- On Windows, if check_directories() fails to find all the directories required, 
+  it displays the following message:
+	 If this is your first time starting with the Dawn of Time codebase it is
+	 strongly recommended that you read the getting started guide at:
+	     http://www.dawnoftime.org/    (assuming you haven't done so already)
+
+*============================================================================
+*============================================================================
+*= DEVELOPMENT FORKED FOR MF - 10 April 04 
+*============================================================================
+
+01:05 10/04/2004 - Kal
+- Installed previously developed mining system into MF
+- wrote recall pendant system
+
+14:49 10/04/2004 - Kal
+- mpedit_show() now is more verbose about disabled progs and how to reenable
+  them.
+
+16:02 10/04/2004 - Kal
+- removed the fullstops after the word ago in laston listings.
+
+20:15 10/04/2004 - Kal
+- started global rename of mobprogs to mudprogs.
+- did a search and replace of mobprog for mudprogs while retaining case
+- renamed mob_prog.cpp to mud_prog.cpp
+- changed the 'mob' command to 'mp' (even though the old command works)
+- renamed mob_cmd.* to mp_cmds.*
+- changed mobhelp to mphelp (old command still works)
+
+20:16 10/04/2004 - Kal
+- made it so "mccp on" defaults to on2.
+
+21:07 10/04/2004 - Kal
+- changed the preprocessor defines in connect.h so if WIN32_MCCP_ENABLED is 
+  defined, different zlib libary versions are linked against for a debug 
+  build (zlib_debug.lib) and for a release build (zlib_release.lib).
+  The following commands can be used to create the libaries in the zlib 
+  source directory:
+                      nmake -f win32/Makefile.msc clean
+                      nmake -f win32/Makefile.msc LOC=/MLd
+                      copy zlib.lib zlib_debug.lib
+                      nmake -f win32/Makefile.msc clean
+                      nmake -f win32/Makefile.msc LOC=/ML
+                      copy zlib.lib zlib_release.lib
+  then copy zlib_*.lib into the linker path.
+- process_telnet_options() now converts the telnet options in the section
+  relating to DEBUG_TELNET_OPTION_NEGOTIATION.
+
+22:25 10/04/2004 - Kal
+- fixed mccp, so it turns on correctly for all mud clients... this was 
+  causing problems with hotreboots for some mud clients.
+
+13:55 11/04/2004 - Kal
+- wrote oedit_addmprog() based on the medit version
+
+19:14 11/04/2004 - Kal
+- weaken is now removed by restore
+
+23:45 11/04/2004 - Kal
+- wrote MUDPROG_TRIG_ON enum type including:
+    MUDPROG_TRIG_ON_MOBILE, MUDPROG_TRIG_ON_OBJECT, MUDPROG_TRIG_ON_ROOM
+- implemented mprog2_flags[], oprog_flags[] and oprog2_flags[]
+- added support to the above tables for rooms as well
+- updated fix_mudprogs() to support objects
+
+01:06 12/04/2004 - Kal
+- SET_BIT( pMob->mprog_flags, trigger ); is no longer called within 
+  fread_mob_NAFF()... instead fix_mudprogs() sets the appropriate trigger 
+  flags on mobs and objects.
+
+11:24 12/04/2004 - Kal
+- completed CONFIG2_MP_TRIGGER_IN_AREA, with this set you see mudprogs
+  trigger in your area.
+- renamed the mprog_list struct to mudprog_trigger_list, as 
+  mprog_list was being used as a global variable name as well.
+- renamed MPROG_LIST to MUDPROG_TRIGGER_LIST... a bit verbose but makes
+  the code a lot more readible
+- renamed mprog_code to mudprog_code - this stores the details on an 
+  individual program as edited by mpedit.
+- renamed mprog_list struct to mudprog_list - this is chains a global list 
+  of mudprog_code.
+- renamed mob_index_data's MUDPROG_TRIGGER_LIST from mprogs to mob_triggers
+- renamed obj_index_data's MUDPROG_TRIGGER_LIST from mprogs to obj_triggers
+- allocated vnum 444 to "mob_vnum_to_run_object_mudprogs".
+
+12:57 12/04/2004 - Kal
+- renamed do_mp_trigger_in_area to do_mp_trigger_in_room, and modified
+  associated details as it was getting to spammy
+
+14:24 12/04/2004 - Kal
+- added code so objects can load their mudprog trigger lists
+- wrote oprog_execute_if_appropriate(), object_program_flow() and 
+  create_objectmudprog_mob().
+- successfully tested the first object prog using a get trigger :)
+
+14:34 12/04/2004 - Kal
+- renamed char_data's id to player_id, did a similar change in laston and 
+  the letgain databases - file format unchanged though.  This change was 
+  done because it made it difficult to search for, since '->id' matches
+  a number of things.
+- removed get_mob_id()... not used anywhere.
+- create_objectmudprog_mob() now defaults the mobs it creates language to 
+  native.
+- create_objectmudprog_mob() now defaults to 'mp seeall' on.
+- added obj_data *running_mudprog_for_object; to char_data.
+
+16:57 12/04/2004 - Kal
+- added oedit_delmprog()
+- changed medit_addmprog() and oedit_addmprog() so the phrase is all the 
+  trailing text (with all whitespace trimmed on both sides) instead of
+  just the first argument of the phrase.
+- implemented the following object prog triggers:
+    GET_PRE, GET_POST, DROP_PRE, DROP_POST, PUT_PRE, PUT_POST, WEAR_PRE, 
+    WEAR_MID, WEAR_POST, LOOKAT_PRE, LOOKAT_POST, LOOKIN_PRE, LOOKIN_POST
+
+18:10 12/04/2004 - Kal
+- implemented mp preventobjectaction - used to stop wearing etc.
+
+19:53 12/04/2004 - Kal
+- wrote mpedit_indent() system to automatically indent your mudprog code.
+
+23:16 12/04/2004 - Kal
+- wrote REMOVE_PRE and REMOVE_POST triggers
+
+00:20 17/04/2004 - Kal
+- fixed bug related to wearing a pendant to replace an existing pendant
+- added support for "and" and "or" to indent_mobprog_code().
+- wrote mpedit_autoindent system - the code will now be automatically 
+  indented when you finished editing mobprog code.
+- changed .i to .spell in the string editor
+- setup .i as indent in the string editor (only works while in mpedit)
+
+12:43 17/04/2004 - Kal
+- made it so load_thread() uses new_note() to allocate memory instead of 
+  directly allocating memory.
+- changed new_note() so it initialises all the memory to 0 before returning
+- added cc_list to the note_data structure
+- cc_list is now saved by save_thread() only if the entry has text.
+
+13:19 17/04/2004 - Kal
+- rewrote the logic of 'note remove', as the code wasn't documented and 
+  pretty hard to read.
+- renamed new_is_note_to() to is_note_to_new()
+- wrote 'note cc' command into parse_note()
+- changed 'note to' and 'note cc' so they now use replace_string()
+- code now strips colour codes from the to and cc lists before checking if
+  the note is addressed to a player... this means colour codes can now be
+  used in these lists.
+- 'note forward' now records the cc field.
+
+14:33 17/04/2004 - Kal
+- "laston -f" no longer displays the : before the [level] 
+
+14:37 17/04/2004 - Kal
+- changed path checkcode uses, so it can access the coding logs
+
+14:53 17/04/2004 - Kal
+- Made checkcode compatible with the bsd version of tail.
+
+22:46 17/04/2004 - Kal
+- fixed a typo in tables.cpp, specifically size_table[].
+
+16:58 18/04/2004 - Kal
+- tweak to mining to fix a compile warning on a version of gcc.
+
+22:43 18/04/2004 - Kal
+- fixed a replace_string() timing issue within mpedit_indent()
+
+22:54 24/04/2004 - Kal
+- object progs now dequeue all events before deleting the mob 
+
+21:04 26/04/2004 - Tristan
+- do_mpsetclass() modified to set the skills when changing a class on a 
+  player.
+- wrote do_mpcustomize()
+- wrote changes to nanny.cpp, so the new creation system can be tested
+  by creating using "newsystem", instead of "new" at the login prompt.
+
+21:45 26/04/2004 - Kal
+- disabled DEBUG_TELNET_OPTION_NEGOTIATION... not required for the time 
+  being.
+- added GAMESET5_SECOND_SKILL_ALIAS_NOT_REQUIRED, if set, the "second" alias 
+  isn't enabled in skill_lookup()
+
+1:22  1/5/2004 - Tristan
+- Modified weapon message to citizens when equipping
+- Skill is 50% with every weapon while citizen.
+
+2:36  17/5/2004 - Tristan
+- Changed skill to 65% for citizens
+- Removed hunger & thirst in customization
+- Created skill for common language
+- Added do_apurge(), purges an entire area
+
+16:18 13/06/2004 - Kal
+- extended mpedit_show() so it tells you which objects are using a prog.
+- extended do_look() so it now is more descriptive instead of saying
+  "You do not see that here", it will say something like 
+  "You do not see any '%s' here to look in." etc.
+- extended object progs so the contents of an object are transfered to the
+  inventory of the 'objectmob' then back to the contents of the object once
+  the prog has finished running (allowing you to manipulate the contents
+  of containers as though it is your inventory).
+- get_obj_token() now strips the colour codes from tokens before matching
+  their names.
+- added the following object prog triggers:
+  OTRIG_CONTAINER_GET_PRE, OTRIG_CONTAINER_GET_POST, 
+  OTRIG_CONTAINER_PUTIN_PRE, OTRIG_CONTAINER_PUTIN_POST... currently the
+  mudprog engine has no method or variables to find out what the objects 
+  causing these triggers to occur are/were.
+- updated format_obj_to_char_new() so objects with progs standout like
+  mobs with progs do.
+
+19:45 13/06/2004 - Kal
+- Extra otterlungs now works on items worn on the face with a higher
+  priority to items worn as a light.
+
+22:57 13/06/2004 - Kal
+- do_mptransfer() now displays the room vnum the mob, not the victim if it
+  fails to find the player.
+
+23:45 13/06/2004 - Kal
+- fixed a bug in gain_condition() relating to if a player is disconnected, 
+  then their ch->desc value becomes NULL.
+
+16:51 15/06/2004 - Tristan
+- minor change to do_mpcustomize() which sets the players starting CP to 
+  their racial preset instead of 0.
+- primes are applied when class is switched, player is now notified of their
+  new class.
+
+22:24 16/06/2004 - Kal
+- implemented game_settings->global_scale_mining_value_scaling_percentage,
+  used to globally scale the value of mined ore.
+
+22:57 16/06/2004 - Kal
+- fixed a bug in sedit_show() where DYN_SHOWFLAGS was being set, but not
+  unset on ch->dyn.
+
+22:40 17/06/2004 - Kal
+- added game_settings->newbies_recall_to_roomvnum_newbie_recall_until_level.
+
+22:51 17/06/2004 - Kal
+- fixed do_herbalism(), so the message which is displayed when you fail if
+  it cant find the object shows the vnum it attempted to load instead of 
+  the vnum it would load if it was successful.
+- added game_settings->obj_vnum_mix_bad_low and 
+  game_settings->obj_vnum_mix_bad_high, enabling the vnum range for mixes to 
+  be customised in gameedit.
+
+23:19 17/06/2004 - Kal
+- changed class skill_type{}, renaming "type" to "sktype" and converting
+  it from an sh_int to an int.  The changes making the code easier to 
+  search and the datatype change was required for sedit_type() below.
+- added SKTYPE_REALM, SKTYPE_SPHERE and SKTYPE_ELEMENTSEASON.
+- removed dynamictypes { DYNTYPE_UNDEFINED, DYNTYPE_SPELL, DYNTYPE_SKILL,
+  DYNTYPE_REALM, DYNTYPE_SPHERE, DYNTYPE_SEASON};... as it wasn't used
+  anywhere properly.
+- in dynlookup_type{}, renamed type to dyn_sktype, and of type int.
+- converted all the dynamic tables to use SKTYPE_*.
+- wrote sedit_type(), the system prevents changing something edited to or 
+  from being a spell.
+
+10:15 18/06/2004 - Tristan
+- spell_mana_regeneration() and spell_blessed_grounds()
+
+19:58 20/06/2004 - Kal
+- split out wordflag_to_value() from fread_wordflag()
+- improved documentation of beats in sedit_show()
+- added GAMESET5_TRANSLATE_ROGUE_CLASS_TO_THIEF to convert the remaining
+  class allowance flags which are still incorrectly set
+- forage now uses the beats parameter of gsn_forage if set
+
+20:30 20/06/2004 - Kal
+- extended mix system to use failed short, name and long values.
+
+03:12 21/06/2004 - Tristan
+- arms mastery, blade mastery, dagger mastery, magic mastery.
+
+00:33 26/06/2004 - Kal
+- experimental additional html colours - using the letters v and o 
+  (requires MXP client, and "col mode html")
+
+20:01 26/06/2004 - Kal & Kyla
+- defined a number of html colours, and implemented a mapping system to 
+  map html colour codes into a rough (very rough) ansi version.
+
+23:41 26/06/2004 - Kal
+- Introduced "col mode mxp" (colours based on HTML mode) - this scheme uses
+  an mxp <c> tag instead of the html <font tag>.  This should result in 
+  less data being sent from the mud server, In addition the colours for the
+  ansi values are brighter for dark monitors.  
+- changed the code which loads the colour table, so it inserts the <font>
+  tags and <c> instead of needing to include them in the loading table.
+
+00:13 27/06/2004 - Kal
+- added the bright colour mode, moved the mxp codes there, and the mxp mode
+  has been moved to closer to the html scheme.
+
+10:13 01/07/2004 - Kal
+- fix to do_mpsetskill() for those with negative pracs/trains.
+
+19:34 19/08/2004 - Kal
+- implemented logic fix to check_learn_spell() for lower levels found by
+  Kewlage on the dawn forums.
+- implemented "#define MFCODE 1 " into version.h
+    When MFCODE is set, the code compiles in code which only belongs 
+    to MF not the dawn codebase... new code should use #ifdef MFCODE sections
+    if it is to be exclusive to MF.
+
+14:44 20/08/2004 - Tristan
+- GAMESET5_ENABLE_NEW_CREATION_SYSTEM, for better organization of the new
+  creation system.  Currently disabled, creating with "newsystem" will still
+  take you through the new creation system.
+- Added "advanced dodge" skill
+- Sheath item type, to be used in sheath & draw, creation skill to come.
+- Added OBJEXTRA2_BLESSED_IN_HOLY_HANDS, weapon is blessed while in the hands
+  of a class with the HOLY_CLASS flag set.  
+- Blessed weapons now do 1.5x damage to undead/corpse/zombie types
+
+00:39 21/08/2004 - Kal
+- further enhanced check_dodge() so standard dodge skill has a bearing on
+  enhanced dodge (so they work together).
+
+*00:42 21/08/2004 - Kal
+* Installed Archiel's fishing code with tweaks :)
+
+10:42 21/08/2004 - Kal
+- can now "note cc imm" - previously it told you to use an inote.
+
+*20:35 22/08/2004 - Kal
+* fixed a bug in do_fish() where bait wasn't properly being extracted.
+
+21:21 22/08/2004 - Kal
+- prompt all6c moved to all6c2, all6c is now a slightly less colourful
+  version
+- wrote continent_exact_lookup(), continent_lookup() now does an exact 
+  lookup first before doing a prefix match.
+- changed the contient code, so it automatically creates a "none" if one
+  doesn't exist.
+- areas now default to continent "none".
+
+22:11 22/08/2004 - Kal
+- improved set rooms, so you can set rooms flags 2 and you can set only in 
+  the current room by using a .
+
+*22:37 22/08/2004 - Kal
+* split out gamesetting flags relating to mf only into flagsmf1.
+**So far the following fields have been moved:
+**   GAMESETMF1_ENABLE_NEW_CREATION_SYSTEM	
+**   GAMESETMF1_SHEATH_ITEM_REQUIRED
+**Example use:  if(GAMESETTINGMF1( GAMESETMF1_ENABLE_NEW_CREATION_SYSTEM )..
+
+19:45 23/08/2004 - Kal
+- wrote "mp returnmoney" for mudprogs - used to return money from a bribe
+  trigger.
+
+21:47 23/08/2004 - Kal
+- added movement percentage into pinfo
+
+23:15 23/08/2004 - Kal
+- tweaked replay to still display the titlebar if there is only one entry.
+
+23:29 23/08/2004 - Archiel
+- fixed sprintf code typo in olc_act.cpp
+
+23:33 23/08/2004 - Kal
+- do_wake now makes you stand even when fighting
+
+20:31 24/08/2004 - Kal
+- auto show affects at the bottom of score now works through switch
+
+21:56 25/08/2004 - Kal
+- added GAMESET5_PREVENT_PLAYERS_NAMING_AFTER_AREALIST_NAMES
+* added fishing tweak from Archiel re the weight of a caught fish
+
+*13:54 28/08/2004 - Kal
+* added GAMESETMF1_SHOW_NEWBIE_HINTS
+
+12:32 29/08/2004 - Kal
+- added the following additional custom colour codes:
+	CC_SCORE_LEVEL,
+	CC_SCORE_RACE_GENDER_CLASS,
+	CC_SCORE_LABELS,
+	CC_SCORE_ATTRIBUTES,
+	CC_SCORE_BORN,
+	CC_SCORE_AGE,
+	CC_SCORE_PRAC_TRAIN,
+	CC_SCORE_XP_RPS,
+	CC_SCORE_XPTNL,
+	CC_SCORE_CURRENTVALUE,
+	CC_SCORE_MAXVALUE,
+	CC_SCORE_ALIGNMENT,
+	CC_SCORE_AC,
+	CC_SCORE_GOLD,
+	CC_SCORE_SILVER,
+	CC_SCORE_FORWARD_SLASH,
+	CC_SCORE_IMMORTAL_VALUES,
+	CC_SCORE_SHOW_AFFECTS_TITLE,
+	CC_SCORE_SHOW_AFFECTS_TEXT,
+- fixed a bug in custom_colour_set() where it was not using the correct 
+  colour codes to indicate a colour change.
+- changed CC_SCORE_NAME to CC_SCORE_NAME_REMORT.
+
+*14:00 29/08/2004 - Kal
+* Fixed loading of OldCla - was in the 'C' section instead of the 'O' section
+**for loading from pfiles.
+* Moved old_clss into pcdata from char_data, and set all related code to use
+**an MFCODE block
+* do_mpsetclass moved into an MFCODE block
+
+21:54 29/08/2004 - Kal
+- objects of type map on longer disappear on logout, but objects of type 
+  key still do.
+
+*22:59 30/08/2004 - Kal
+* completed newbie_prac_location_hint and newbie_train_location_hint for
+**use with classedit and related code sections.
+
+17:21 02/09/2004 - Archiel
+- A pet's necktag now displays the owner player's name, not short.
+
+00:18 05/09/2004 - Kal
+- typo fix in the regenerating a karn text from Archiel
+
+23:35 06/09/2004 - Kal
+- fixed a bug in do_put() where "put all.object container", where if the 
+  object weight was equal to the v3 value of the container, it wouldn't be
+  put in.
+
+*23:37 06/09/2004 - Kal
+* nanny_get_new_class() now recorrectly allocates prime stats, this was 
+**disabled in earlier code development for citizens.
+
+22:31 07/09/2004 - Kal
+- fixed up check_immune() based on a report of a flaw in its code reported
+  by blackout on the Dawn forums.
+
+23:11 28/09/2004 - Archiel
+- Most of the changes are due to a typo in the credits of the file header.
+  (St{rfeldt to  Staerfeldt)
+- Fixed typo in worth, socedit, act_info, magic_da.cpp and update.cpp.
+  These were mostly spelling errors.
+
+23:20 28/09/2004 - Archiel
+- transperantly mispelled in a comment of connect.cpp....
+- reseting mispelled in handler.cpp, act_wiz2.cpp, and fight.cpp
+
+22:29 29/09/2004 - Archiel
+- Lots of typos fixed, detailed on: 
+  http://forum.dawnoftime.org/viewtopic.php?p=4868#4868
+
+23:39 03/10/2004 - Archiel
+- A few more typos, same forum post as detailed above.
+
+21:32 04/10/2004 - Archiel
+- Yet more typos fixed, again mostly the same forum post.
+
+11:38 18/10/2004 - Archiel
+- http://forum.dawnoftime.org/viewtopic.php?t=1192&highlight=
+  Correction to do_grab.
+
+13:25 19/11/2004 - Archiel
+* Updated a chance calculation in fishing to allow certain baits to only
+**result in certain fish. (Basically makes it easy to make a bait that
+**will only catch one kind of fish. Helpful for fishing quests)
+**Added food category system.
+- Added src/logs/todo.txt containing outstanding issues.
+
+*13:37 19/11/2004 - Archiel
+* 'fishedit list' now displays fish in 2 columns instead of 4. They have 
+**long names.
+
+*00:05 16/04/2005 - Kal
+* tweaked code so notes on MF never expire (at this stage).
+* fixed create_first_food_category() so c->next=NULL; & c->parent=NULL;
+
+*12:48 16/04/2005 - Kal
+* tweaked formatting of the credits since converting St{rfeldt to Staerfeldt
+
+12:52 16/04/2005 - Kal
+- Added GAMESET5_KEEP_NOTE_SPOOLS_INDEFINATELY
+
+00:06 17/04/2005 - Kal
+- audit of all changes to date
+- line spacing tweaks
+
+10:56 17/04/2005 -Kal
+- langedit_show() now correctly formats wordmaps with colour codes in them
+- Fixed bug in languages where typing in all caps would prevent the 
+  scrambling of text
+- fixed do_goto() so you can goto a number
+- do_losepet() now displays the short description of the pet you are losing
+
+*11:43 17/04/2005 - Kal
+* when you type language by itself, it now lists the languages you can 
+**speak in addition to the language you are currently speaking
+
+16:37 17/04/2005 - Kal
+- fixed gender typo in spell_possession()
+- fixed a minor improvement abuse bug in do_pick()
+- fixed up note_format_noteentry_for_char() regarding the width of the
+  to and cc fields
+- extended str_width() to have an extra parameter cut_if_too_long... if true
+  the resulting string will be cut to the requested length... the default 
+  option was true previously
+- wrote IS_SAME_ROOM macro... #define IS_SAME_ROOM(ch1, ch2) 
+      ( IS_VALID(ch1) && IS_VALID(ch2) && (ch1)->in_room == (ch2)->in_room )
+
+- fixed disappearing dagger bug in hurl when a victim is slayed
+- one_hit() now uses IS_SAME_ROOM() to prevent weapon effects after death
+
+22:09 17/04/2005 - Kal
+- created entity.h & class entity_data;... what will become the superclass
+  of characters and objects... possibly rooms
+- moved struct obj_data; into obj_data.h and converted it to a class which 
+  decends from entity_data
+- changed char_data so it decends from entity_data
+
+18:36 18/04/2005 - Kal
+- renamed mpqueue system to mudqueue
+- changed mud queue system to work with entity_data instead of char_data
+- added entity.o and objdata.o to makefile.in
+
+21:38 18/04/2005 - Archiel
+- Fixed bug in gameedit.cpp where it would not set defaults of some gameset
+  variables if a gameedit.txt was not found.
+
+22:43 19/04/2005 - Kal
+- added some test code into new_char() and free_char() relating to entities
+
+19:05 20/04/2005 - Kal
+- removed char *name; from obj_data since it is in entity_data.
+
+20:56 20/04/2005 - Kal
+- changed new_char() and new_obj() so they use memcpy instead of just = to
+  copy the static objects across, this way the vtable is duplicated as well.
+  i.e. memcpy(obj, &obj_zero, sizeof(*obj));
+ instead of *obj=obj_zero;
+
+18:01 27/04/2005 - Archiel
+- Changed a typo in a bugf in areas.cpp. "Fread_char" to "Fread_mob"
+
+21:43 31/10/2005 - Kal
+- Fixes to the DNS resolver, a pointer wasn't correctly be initialised, 
+  which could lead to rare unexpected crashes.
+
+21:46 01/11/2005 - Kal
+- medit_copy(), added copying of mprog2_flags
+- oedit_copy(), added copying of obj_triggers, oprog_flags and oprog2_flags
+- relocated dup_mudprog_list() from medit.cpp to mud_prog.cpp, updated 
+  prototype.h
+- wrote mpedit_mpcopy() and related code.
+
+22:50 02/11/2005 - Kal
+- implemented basic object queuing extensions into run_mudqueue()... needs 
+  cleaning up though.
+- wrote do_dumpmpqueue(), basic diagnostic command
+
+09:18 03/11/2005 - Kal
+- renamed run_mudqueue() to mudqueue_execute()
+- do_mpdequeueall(), upgraded to support object prog mobs
+- created ch->bug_printlnf() type functions... sends a bug to the system bug
+  log but also notifies the user if they are not NULL.
+- renamed create_objectmudprog_mob() to 
+  objectmudprog_generate_mobified_object(), extended functionality to 
+  handle transfering the contents of objects into the inventory of the mob
+- wrote objectmudprog_degenerate_mobified_object(), which transfers the
+  inventory back and purges the mob
+- rewrote the code handling which creates/deletes object mobs to use the 
+  above functions.
+- cleaned up dequeue code, so it now uses a single function called 
+  mudqueue_delink_and_purge_child_node() to handle dequeuing.
+- do_dream now defaults to visible on the command list
+- improved layout of do_dumpmpqueue(), reduced its default level to ADMIN+1
+
+13:33 03/11/2005 - Kal
+- removed code specific for _AIX, apollo and __hpux.
+
+14:57 03/11/2005 - Kal - fixes to bugs reported on the Dawn forums:
+- spilinek: medit_copy() - missing copying helpgroups
+- spilinek: do_newcast() - NO_MANA mana_focusing and sorcery improve flaws
+- Arlodon: need to improve in spells when casting, lead to enhancing
+  check_realm_improve() so it has a multiplier parameter, and teach+study etc
+  using it with a high multiplier and casting using it with a low multiplier.
+- do_drink(), fixed it so -1 for liquid total (v0) or liquid left (v1) is 
+  infinite, not just liquid left.  Long outstanding issue rehighlighted by 
+  Skye.
+- do_lore() improved formatting of number of weapons a shealth will hold.
+
+16:52 03/11/2005 - Kal
+- extended to_affect_string(), so it has an additional parameter 
+  "report_unknown_where_value_errors" so reporting of unknown bits is 
+  optional.
+- fixed do_lore() so it the use of to_affect_string() is outside of a loop
+  that ment it was used infrequently... problem reported by Arlodon.
+- fixed similar issue in spell_identify()
+- do_grab() removed code which made lag only affect unix platforms.
+
+18:05 03/11/2005 - Kal
+- added Arlodon's fix for remorters colour turning off.
+- applied Trellan's fix to do_buy() limiting purchases to 100 items a time
+- applied Spilinek's "next_in_room" fixes to check_assist() and mob_hit().
+- applied Aloundo's fix to muting info_broadcast() with Quiet etc
+
+19:03 03/11/2005 - Archiel
+- Corrected double declaration of spell_barkskin in magic.h (Spilinek)
+- Corrected incorrect comment in bust_a_prompt in comm.cpp (Spilinek)
+- Corrected a constructor comment in mud_q.cpp (Spilinek)
+
+22:23 03/11/2005 - Archiel
+- Added a comment noting that renamable is an alternate spelling of 
+  renameable
+- "siiting" to "sitting" in act_info.cpp and hers to her:
+  http://forum.dawnoftime.org/viewtopic.php?t=1163
+- Removed occurances of "the the" in act_info.cpp (Spilinek)
+
+11:40 04/11/2005 - Kal
+- wrote macro IS_ALIVE().
+- poison affect in one_hit() checks if the victim is alive before displaying
+  poison wearing off to them.
+- added a tweak from daos to prevent recalling while affected by cause fear
+
+14:09 05/11/2005 - Kal
+- spilt up damage() into 3 functions... 
+    damage_calculate_infliction() - calculates the damage
+    damage_display_infliction_message() - displays the damage message
+    damage_inflict()  - this function handles death thru sub functions
+  This approach allows the use of damage with show==false, to actually
+  implement the top and bottom of the two functions and put their own custom
+  display routine inbetween the application of damage and
+- wrote a new damage() - a wrapper for the other three, showing usage
+- changed one_hit() so weapon affects now use the individual parts of the 
+  split damage functions.
+
+16:41 05/11/2005 - Kal
+- applied fix to remove_obj() for removing lodged items submitted by Gwareth
+- applied fix to char_to_room() relating to plague submitted by Spilinek
+
+18:43 05/11/2005 - Kal
+- added sizeof() displaying code to do_memory().
+
+13:13 06/11/2005 - Kal
+- improve output of the vnum command, to show the short name of an area a 
+  mob or object belongs to aligned in a column on the far right. 
+
+14:42 06/11/2005 - Kal
+- MXP Enabled vnum output.
+- added code to record tracks the riding of mounts 
+- added code to make it so those being riden now leave tracks of type 
+  TRACK_RIDING
+- made it so track is easier to use
+
+15:35 06/11/2005 - Kal
+- added obj_vnum_outfit_spear to the game settings
+- added GIO_INT_WITH_DEFAULT(obj_vnum_outfit_sickle, 418) to game edit
+  (so object 418 is reserved as a basic spear)... added this to the dawn.are
+- added WEAPON_SPEAR to weapon_table[]
+- added fixes to weapontype() and weapon_name() suggested by bbailey on 
+  the forums.
+
+16:29 06/11/2005 - Kal
+- added Arlodon's fix to create_mobile() where affected_by2 wasn't being
+  applied from the template mobile.
+- removed duplicate code for removing invis from damage() suggested by 
+  Spilinek.
+
+16:42 06/11/2005 - Kal
+- changed a number of functions in fight.cpp, magic.cpp, nanny.cpp, trap.cpp
+  and update.cpp affect_parentspellfunc_strip() in place of affect_strip() 
+  as appropriate.
+- added fix from Arlodon to make the fade affect work and use check_fade()
+
+19:48 06/11/2005 - Kal
+- removed flawed code to one_hit() relating to backstab and circle... issue
+  identified by Arlodon on the dawn forums.
+- slightly increased the difficultly of circle in do_circle().
+- changed one_hit() to no longer use number_bits()... now uses number_range()
+
+20:07 06/11/2005 - Kal
+- converted the use of number_bits() to number_range() through the whole 
+  codebase... conversion is to take number_bits(x), and replace with
+  number_range(0, (2^x)-1)
+- removed the number_bits() function from the game - code should be 
+  intuitive and immediately obvious - unlike this function :)
+- changed spec_cast_undead() to make it more evenly distribute its casting
+
+20:34 06/11/2005 - Kal
+- added src dir to directories required to be created, as code logs are in 
+  a subdirectory of this.
+
+21:55 06/11/2005 - Kal
+- moved some of the autosave code for hotreboot into reboot_autosave()
+- added save_intro_database() into reboot_autosave()... the only time the
+  database was being saved was once every 15minutes, and not with any form
+  of rebooting/shutting down the mud.
+
+21:08 07/11/2005 - Kal
+- Moved bool valid; from char_data and obj_data into entity_data
+- moved running_mudprog_for_object out of char_data into entity_data;
+- added mud_q.h
+- juggled around a lot of the queuing code, entity_data() now has two 
+  member functions queue_command() and queue_print() both taking two 
+  parameters (int seconds, const char *argument).
+- There shouldn't be any need to call this function, than inside the 
+  entity_data class.
+
+12:17 08/11/2005 - Archiel
+- Forage now shows the character what was foraged. Fixed a possible
+  segmentation fault for foraging on a new sector.
+
+12:53 08/11/2005 - Archiel
+- Typo in cleric classgroup_table. Thanks to Spilinek.
+
+15:40 08/11/2005 - Archiel
+- Forage now correctly scales to be easier for low level players. It was 
+  backwards.
+- Brew no longer explodes the vials if it succeeds. It looks like a > was 
+  switched.
+- Foraging for food now yields foods with some nutritive content.
+
+23:17 08/11/2005 - Kal
+- added prev pointer to mudqueue_data... going to make it a double linked 
+  list
+
+19:13 09/11/2005 - Kal
+- fixed a bug with queuing, where events more than 257 seconds in the future
+  could be delayed in executing
+- updated do_dumpmpqueue() to also calculate the oldest event, instead of
+  just starting counting from current_time-1.
+
+18:08 12/11/2005 - Kal
+- code now compiles cleanly without MFCODE defined on windows.
+
+18:18 12/11/2005 - Kal
+- fixed compiler warning in the mapping code relating to an unused range
+  variable in some for loops
+* moved all the extra MXP colours into an MFCODE block
+* fixed a fprintf format error warning in colour_generate_html_table()
+* moved colour_generate_html_table(), colour_table_extract_html_rgbcode()
+*  colour_table_extract_html_rgbcode_text() + colour_write_html_table_entry()
+*  into a MFCODE block
+- changed resolver_init_unix() execlp() call ends with a type cast 
+   ,(char*)NULL); instead of just a ,NULL); as per the man page requirements.
+- do_who() fixed a compiler wanting caused by an extra unneeded wch in a 
+  for loop.
+
+21:32 28/12/2005 - Kal
+- added comment about quota regarding error about diskspace.
+
+21:07 02/01/2006 - Kal
+- changed do_aslist(), do_alist, do_vlist() to use a dynamic buffer instead
+  of a static MSL*4 buffer.
+
+21:51 22/01/2006 - Kal
+- changed release version to #define DAWN_RELEASE_VERSION "1.69s_alpha1"
+- implemented code which enables compiling a statically linked release which
+  will expire in 60 days... makes use of the DAWN_STATIC_ALPHA_RELEASE and 
+  DAWN_STATIC_ALPHA_RELEASE_EXPIRY_DATE defines.
+
+*21:56 22/01/2006 - Kal
+* changed code.txt log, so dates which are mfcode only have a * infront of 
+**the date, and ** in front of wrapped lines... so they can be grepped out
+**easily when releasing the dawn codelog.
+* added in original code log since 1.69r
+
+============================================================================
+============================================================================
+== DAWN 1.69s_alpha1 RELEASED 22Jan06 - not released, will clean up soon
+============================================================================
+15:41 27/01/2006 - Kal
+- " is now shorthand for say instead of whisper.
+
+*15:36 28/01/2006 - Kal
+* Added GAMESETMF1_RPONLY_CHARACTER_AUDIT_EXEMPT, which when set, skips 
+** the rp audit for rponly players (those with an rps modifier of 200)
+* added GAMESETMF1_ENSURE_HIGH_STRENGTH_ROLLS - to make it when you are 
+*  rolling stats, to never be given strength which is below 80.
+
+22:25 03/02/2006 - Kal
+- classinfo can now also support displaying by class name
+
+15:55 04/02/2006 - Kal
+- removed do_updatemagic()... very old code no longer required.
+- optimised on_level_learn()... now doesn't attempt to learn spells you
+  already know.
+- fixed the code in on_level_learn() for newbies.
+
+*16:35 04/02/2006 - Kal
+* Added GAMESETMF1_SPELL_ONLEVEL_LEARN_EASIER_IF_ABOVE_SPELL_LEVEL
+
+18:27 04/02/2006 - Kal
+- modified advance_level() to remove all rounding down errors.
+
+*22:35 09/02/2006 - Kal
+* Wiznet beta shows more information about spell learning.
+
+21:53 12/02/2006 - Kal
+- No longer have to be with a trainer to use "gain list"
+
+23:13 13/02/2006 - Kal
+- fixed typo in do_lore() when you don't have enough mana
+- added two custom colour codes for says and emotes
+
+22:56 16/02/2006 - Kal
+- do_train(), fixed spelling mistake with training intuition with the full 
+  word
+- mobile_update(), scavenger mobs no longer take bedrolls while people are 
+  on them
+- do_affects() increased the width of affects list fit in protection 
+  lightening.
+- added custom colour code equipment list none
+- do_equipment(), now uses new colour code if a wear location is empty
+- removed full stop after word nothing on equipment list
+
+*17:13 19/02/2006 - Kal
+* Added the ability to set a recall pendant vnum to start with on new 
+*   players in classedit.
+* Split up prac into two sections, stuff you can and can't prac.
+* moved battle lag up above group prompt
+* restore now removes lag on players
+
+*21:33 20/02/2006 - Kal
+* Recall pendants now show where they lead to in classedit
+
+*19:39 24/02/2006 - Kal
+* Added newbiemap vnum to class_data and related classedit enhancements
+
+*12:28 25/02/2006 - Kal
+* Added support for giving the class newbie map to players when they create
+
+13:51 25/02/2006 - Kal
+- changed read_from_connection() so it always reads from the socket even if
+  there is pending input from the player to be processed - basically get
+  the data off the network stack sooner.
+- changed process_input() and read_from_connection() so they call 
+  read_from_buffer[] so connection_data->incomm[] always has something in it
+  if there is input from the user - this allows detecting of queued commands
+  
+*13:56 25/02/2006 - Kal
+*- added code to battlelag for MF, so it can report how many commands you 
+*  have queued
+
+*18:11 25/02/2006 - Kal
+*- Spells now split out one level further, now shows spells that can only be
+*  cast by yourself in their own section.
+*- gain list, now shows trains and pracs.
+*- spells list now splits out self only spells from defensive for all spells
+
+18:25 25/02/2006 - Kal
+- added code to prevent the realiasing of the " character
+
+============================================================================
+============================================================================
+== DAWN 1.69s_beta1 RELEASED 2March06 (about time!!!)
+============================================================================
+
+08:46 04/03/2006 - Kal
+- fixed a bug where the mud can crash if you start a hotreboot then logout
+  during the process and noone else is logged in... why would you want to
+  do this other than to prove it crashes is another question ;)
+
+14:43 04/03/2006 - Kal
+- cast now suggests standing if required.
+ 
+21:43 08/03/2006 - Kal
+- fixed aliasing bug introduced above
+- improved robots.txt on the webserver to stop being indexed unnecessarily
+- updated PERS() when the looker is NULL to show more detail
+- added additional debugging code to do_mppurge().
+- updated do_setichour() so it sets to 1 minute behind the hour and no 
+  longer directly calls weather_update()
+
+11:18 15/04/2006 - Kal
+- implemented compiler error fix to lockers.h for new GCC versions.
+
+============================================================================
+============================================================================
+== DAWN 1.69s_beta2 RELEASED 17June06
+============================================================================
+
+18:04 09/09/2006 - Kal
+- fixed bug where language name would disappear for people who first 
+  arrived in a room when more than 2 people were talking.
+
+20:29 09/09/2006 - Kal
+- fixed a bug in language.cpp, initially found by spilinek.
+- added additional code to use malloc instead of new to make above fix 
+  complete.
+
+20:32 09/09/2006 - Kal
+- added code to save the letgain database after one is cleared or canceled
+- increased the time for idling during creation to 7 minutes before being
+  disconnected
+
+10:19 10/09/2006 - Kal
+- changed the logging of mp, mob and mq to don't log instead of log never.
+
+22:27 29/12/2006 - Kal
+- note_format_noteentry_for_char() now takes into consideration colour
+  codes while formatting the from column in note lists
+
+23:31 29/12/2006 - Kal
+- Bumped version information for 1.69s_beta3
+
+23:47 29/12/2006 - Kal
+- renamed classedit_name() to classedit_rename(), added entries into 
+  cedit.*, but commented out entry, so there but not enabled by default.
+
+12:40 30/12/2006 - Kal
+- set skill now shows the name of the skill that has been set
+
+13:27 30/12/2006 - Kal
+- added note to mpedit_show() to comment that "mp call" can be used to 
+  cause code to run that isn't directly linked to a mob.
+
+16:00 30/12/2006 - Kal
+- added note to forcetick about using setichour to test hourly mudprogs
+- do_setichour() tweaked to cause the ic hour change to happen immediately
+- do_dumpmpqueue() now displays the time in seconds with different colours
+  to help in seeing which ones are going to happen in the same timing
+
+11:47 31/12/2006 - Kal
+- cspinfo now shows average percentage of realms etc
+- rewrote the core of the mudprog queuing code and execution to make the 
+  code a lot easier to read and easier to debug
+
+13:18 31/12/2006 - Kal
+- do_trust() is now clearer when setting the trust to 0 on a player
+
+22:02 31/12/2006 - Kal
+- Relocated description into entity_data... haven't relocated short_descr
+  even though common to both obj and char, because room_index_data may also
+  one day become a decendant class of entity_data
+
+12:07 01/01/2007 - Kal
+- changed most of all the char_data->println* functions to perform the 
+  addition of the \r\n in place, instead of calling print("\r\n"), if in 
+  the case of queued printing is being used or vsnprintf()... this is 
+  because in the case of queued printing, two events were being queued.
+- GIO now uses an initial ".", show_tilde/hide_tilde and fix_string for 
+  STR_ARRAY and STR_ARRAYLIST in addition to STR.
+
+16:44 01/01/2007 - Kal
+- score now shows a total of the right hand modifiers
+- charinfo now shows MXP auto setting of the character
+- charinfo now shows what the player has their colour mode set to
+- startup option "testboot" causes the mud to remain a foreground process
+
+12:24 02/01/2007 - Kal
+- renamed mud_q.* to events.*
+- changed naming of classes
+- changed events to be queued and executed based on a pulse count instead 
+  of seconds - this means the mud has a lot more even execution of events.
+- removed some of the unused historical code
+
+12:47 02/01/2007 - Kal
+- changed MAX_KEY_HASH from 1024 to 3079, to improve hashing performance
+- renamed MPQUEUE_HASH_SIZE to EVENTQUEUE_HASH_SIZE
+- Set EVENTQUEUE_HASH_SIZE to 3 (from 257) for testing
+
+13:49 02/01/2007 - Kal
+- renamed testyell to testgeneric, since it has a number of generic tests
+- changed connections_update() so it doesn't display the message to those
+  reading the MOTD or IMOTD
+
+17:47 02/01/2007 - Kal
+- within event code, changed next/prev to next_in_queue/prev_in_queue
+
+20:13 02/01/2007 - Kal
+- wrote next_for_entity, and prev_for_entity code
+- wrote code to list all queued commands for an entity
+- extended do_ostat() and do_mstat() to list the queued commands
+
+22:24 02/01/2007 - Kal
+- Added tracking of source mudprog number to each queued event
+
+22:42 02/01/2007 - Kal
+- Changed do_mpdequeall() and all entity event purging code to use the 
+  next_for_entity linked list, instead of searching the entire hash
+  table of queued events.
+
+23:10 02/01/2007 - Kal
+- added safety code to free_char() and free_object() to dequeue any queued
+  events which haven't been caught else where.
+
+23:34 02/01/2007 - Kal
+- coded extensions into char_from_room() and char_to_room() to track if the
+  previous room was OOC or IC... when moving between the types of rooms
+  queued events are suspended/unsuspended.  As part of this introduced
+  enum PREVIOUS_ROOM_TYPE in chardata.h
+
+12:36 03/01/2007 - Kal
+- renamed do_dumpmpqueue to do_dumpeventqueue
+- log_string_core() no longer reports an error if log_string() it told to
+  write an empty string.
+
+13:09 03/01/2007 - Kal
+- wrote moving_from_ic_to_ooc() and moving_from_ooc_or_load_to_ic() code 
+  for characters and objects... it works recursively so when a player moves
+  to ooc, all of the objects they carry, and their pet has its events
+  suspended, moving out of ooc does the opposite.  This code really 
+  confirms that making obj_data and char_data a decendant of entity_data 
+  was the right approach!
+- event_data::when, is now pulse orienated... no longer converted to 
+  seconds when dequeued.
+- Confirmed queued events on mobs, pets and objects suspend when moved to
+  ooc.
+
+14:47 03/01/2007 - Kal
+- added code to warn admin during login if either NPC Corpse or PC Corpse 
+  object template are missing.
+- added code to warn admin during login if the objectprog mobile template 
+  is missing.
+
+23:45 03/01/2007 - Kal
+- Changed "received a karn" message to use printing delays
+- Fixed the spelling of "dont" for "don't" where actual text that a player
+  sees, or a comment.  Haven't changed dont in places like dont_wander etc.
+
+===== PACKAGED AND RELEASED AS Dawn1.69s.beta3
+
+16:21 06/01/2007 - Kal
+- added a virtual destructor to entity_data in order to adhere to the c++ 
+  specs, and also address a compiler warning with the latest GCC versions.
+
+19:23 06/01/2007 - Kal
+- Renamed EVENTQUEUE_DEBUG_ENABLED to EVENTQUEUE_TRACE_ENABLED
+- Increased EVENTQUEUE_HASH_SIZE to 769 (from the testing value of 3)
+- Added to the entity_data class member functions save_events() and 
+  load_events()
+- Wrote event_data::save_events_for_entity_chain()
+- Added an event_flags[] table for saving/loading event flags
+- Added an event_types[] table for saving/loading event types
+- Renamed ET_ECHOAT to ET_ECHOTO
+- eventtype_to_text() now uses flag_string() and the event_types[] table
+
+20:21 06/01/2007 - Kal
+- wrote loading of events for characters
+
+20:25 06/01/2007 - Kal
+- made pets and objects load and save events
+
+21:21 06/01/2007 - Kal
+- added a "group" field to event_type... This is to allow the events system
+  to support grouping of events.  If you don't specify a group when queuing
+  a command, it defaults to group EVENTGROUP_DEFAULT (1).  
+  With grouped events, it will be possible to dequeue all events
+  relating to a set of mudprogs without dequeing the others.  Also, an 
+  ifcheck will be implemented so you can test to see if a mob/object has 
+  any events queued belonging to be a particular group.
+- Extended do_mpqueue to allow the optional specifying of the group at the
+  time of queuing... the syntax is:
+  "mud queue [g#,]<seconds> command"  Where # is the group number... e.g.
+  "mqg5,2 smile" will queue an event that smiles in 2 seconds in group 5.
+- Mudprogs can queue events with a group value of 1 through 31999, 
+  system/hardcoded events can use EVENTGROUP_SYSTEM (32000) and higher.	
+- Delayed prints by the code are in group EVENTGROUP_SYSTEM_PRINT (32001).
+- Changed do_mpqueue so you can now queue events to occur in up to 25 days
+
+18:38 07/01/2007 - Kal
+- extended event purge system to support purging individual groups and
+  all mudprog queued events with EVENTGROUP_PURGE_ALL (0), and every
+  queued event except that which is executing using 
+  EVENTGROUP_PURGE_EVERY_EVENT_INCLUDING_SYSTEM_EVENTS(-1)
+- extended do_mpdequeueall to support an optional parameter of 0 thru 31999
+- enhanced all debug and logging functions to show event group value
+- PERS() now shows a Q before a mob/obj vnum in holyvnum with queued events
+
+21:54 07 January 2007  - Kal
+- added mudhelp as an invisible alias for mphelp
+- extended the mphelp on queue to discuss queue groupings.
+- wrote has_eventgroupqueued() and ifcheck haseventgroupqueued
+- wrote ifhelp entry haseventgroupqueued with example
+- extended the mphelp on dequeueall to document the extended functionality
+- confirmed that queued events on corpses and the objects they contain can
+  save across reboots.
+
+22:05 07/01/2007 - Kal
+- begin_remort() now copies the class and race from the old class to the 
+  new, this is overwritten when they player goes through creation, but it 
+  allows previous class/races selections to effect available remort choices
+- added remort_to_classes to class_type
+
+22:46 07/01/2007 - Kal
+- wrote classedit_setremortclasses() and classedit_addremortclass()
+- added code to save remort_to_classes and initialise it correctly on load
+- implemented enforcement of remort_to_classes into nanny_get_new_class()
+  and other creation code.
+
+21:23 07/07/2007 - Kal
+- event_data::event_data() constructor calls smash_tilde() over text input.
+- renamed do_dump() to do_dumpstats()... moved it below do_dumpeventqueue
+  in the interp table.  do_dumpstats() is pretty pointless, tweaked it
+  so it gives some screen output about what it is doing.
+
+22:11 07/07/2007 - Kal
+- Started converting mydrian fields only code into code for the dawn release
+- converted the mf_experimental creation system
+- made visible the mf gamesetting flags
+
+22:32 07/07/2007 - Kal
+- Increased size of EVENTQUEUE_HASH_SIZE from 769 to 6151, results in an
+  extra 25KB to 50KB of memory footprint, but will provide better 
+  performance on muds that use queuing heavily.
+- Fixed a crash bug, where non queued events were attempting to dequeue
+  themselves on player quit, if the player was in ooc.
+- Moved events statistics counters into event_data() contructors and 
+  destructor
+- added code to log enqueuing as well as dequeuing
+
+22:50 07/07/2007 - Kal
+- MF CODE Enablements:
+-  added GAMESETMF1_PENDANTS_ENABLED
+-  enabled 16 additional MXP/HTML colours previously in MF only code
+-  prac is now split into two sections, stuff you can and can't prac.
+-  enabled hint giving directions to where you can prac and train if defined
+-  enabled mf gsn_*_mastery where * = blade, dagger & arms (tristan)
+-  restoring a player, removes their lag - useful when teaching spells as 
+   an imm to a player.
+- classedit gets the following additions:
+	Newbie_prac_location_hint: none
+	Newbie_train_location_hint: none
+	Pendant Object Vnum: 25103 (an emerald pendant)
+	---------Recalls to: Eldorynth Town Hall (room 24500) [Eldorynth]
+	NewbieMap Object Vnum: 24577 (a map of eldorynth)
+- classedit gets the following functions
+	DECLARE_OLC_FUN( classedit_newbie_prac_location_hint );
+	DECLARE_OLC_FUN( classedit_newbie_train_location_hint);
+	DECLARE_OLC_FUN( classedit_pendant_vnum);
+	DECLARE_OLC_FUN( classedit_newbiemap);
+- introduction of a new imp function - replaychar()
+- colour system gets some functions to generate html tables
+  colour_generate_html_table() etc
+- MF battlelag prompt - shows the number of queued commands
+- enabled GAMESETMF1_SPELL_ONLEVEL_LEARN_EASIER_IF_ABOVE_SPELL_LEVEL
+- spell list has a new category - "Use On Self Only Spells"
+- enabled blessed_grounds and mana regen (tristan)
+- enabled advanced_dodge (tristan)
+- enabled common language
+- enabled /me for emote (for irc users)
+- do_language() lists the languages you can speak
+- enabled do_mpsetclass (tristan)
+- new players get a map specific to their class on create if one is set
+- enabled GAMESETMF1_ENSURE_HIGH_STRENGTH_ROLLS
+- do_gain() shows useful extra info
+
+20:54 31/07/2007 - Kal
+- Configure system updated to support IPv6 :)
+
+22:21 31/07/2007 - Kal
+- Surrounded visual studio specific #pragmas with #ifdef _MSC_VER instead of
+  #ifdef WIN32... since they relate to the specific compiler.
+- resolver_poll_and_process_WIN32(), cleaned up use of PeekNamedPipe to get
+  around compiler errors with MinGW
+
+23:42 02/08/2007 - Kal
+- removed the manual defining of rename() in db.cpp and save.cpp... this 
+  should be defined in stdio.h.
+- various cleanups to make the code compile cleanly in Visual C++ 2005:
+- changed order of include files, so wincfg.h is one of the first includes
+- wincfg.h defines _CRT_SECURE_NO_DEPRECATE, _CRT_NONSTDC_NO_DEPRECATE and
+  #ifndef _USE_32BIT_TIME_T if the compiler is visual c++.
+- resolve.cpp - now specifies ASCII version of CreateProcessA etc even if 
+  UNICODE is defined
+- fixed up some of the cpp files, so either network.h or include.h is always 
+  the first file included.
+
+00:03 03/08/2007 - Kal
+- Updated configure.in and makefile.in to work with MinGW and autodetect the
+  need for ws2_32 lib... also moved $(LIBS) to the end of the linking line
+  to work around a stupid bug in MinGW
+- Added $(LIBS) to resolver linking line so MinGW can link it
+
+21:54 03/08/2007 - Kal
+- Immget now directly just takes sheathed items, instead of unequiping them,
+  since they aren't actually equiped.
+- changed number_lines() so it takes a 3rd parameter - use_mxp... when true
+  it functions as it has, when false it doesn't show the mxp links on the 
+  line numbering.
+- changed the .b raw string formatting to not include the mxp formatting.
+- fixed a handful of typos in the "warm and fuzzy inside ..." messages
+  when saving languages, clans etc.
+- pendants now show as <worn as a pendant> instead of <worn around the neck>
+  in the equipment list
+- removed OLCAREA_LOADING flag, it didn't do anything.
+- added upper bounds on length of note subjects and text to note copy and
+  note forward.
+- fixed a crash bug in set_fighting() around setting OLCAREA_CHANGED
+
+14:11 04/08/2007 - Kal
+- build system enhancements to make releasing easier
+
+============================================================================
+============================================================================
+== DAWN 1.69s.beta4 RELEASED 4August07
+============================================================================
+22:02 14/09/2007 - Kal
+- changed some sprintf's to strcpy's in websvr.cpp
+
+20:00 24/03/2008 - Kal 
+- start of work on making the code compile cleanly with G++ v4.3
+- changed numerous functions including:
+	file_exists(const char * fmt, ...);
+	*makef_titlebar(const char *fmt, ...);
+	broadcast(char_data *except, const char * fmt, ...);
+	bugf (const char * fmt, ...); 
+	boundsbug(const char * fmt, ...);
+	mpbug(const char * fmt, ...);
+	centerf_to_char( char_data *ch, int cols, const char *fmt, ...);
+	logf (const char * fmt, ...);
+	log_notef(const char * fmt, ...);
+	pkill_broadcast(const char * fmt, ...);
+	multilog_alertf(char_data *ch, const char * fmt, ...);
+	info_broadcast(char_data *ch, const char * fmt, ...);
+    msp_to_char()
+	quit_char()
+
+16:06 30/03/2008 - Kal
+- updated extras\resolver.* to make it compile with gcc v4.2 cleanly
+
+11:25 3/20/2009 - Kal
+- upgrades to the configure and make system... now tests if the compiler 
+  generates a "deprecated conversion from string constant to 'char*'"
+  warning (g++ v4.2 and higher).  Makefile will suppress test using 
+  -Wno-write-strings if the setting is found to be effective.
+- makefile.original now also includes resetconfig
+- makefile.original also chmod'd configure/configure to +x
+- upgrades to the following functions to avoid g++ compiler warnings:
+	get_cost()
+	do_pinfo()
+	assign_area_vnum()
+	fread_to_eol()
+	do_areas()
+	do_areasalpha()
+	help_find_keyword()
+	interpret()
+	PERS()
+	do_language()
+	obj_cast_spell()
+	spell_curse()
+	spell_earthquake()
+	spell_weaken()
+	spell_deafness()
+	spell_immolation()
+	spell_augment_hearing()
+	mxp_prefix_secure()
+	save_mobiles()
+	do_dlook()
+	char_update()
+- laston now saves player_id as a long - GIO_LONGH(player_id, "id")
+- fixed bug at top of get_ictimediff() with back to front 
+  multi-dimensional array declaration
+- fixed a security flaw in websrv.cpp
+
+14:04 3/20/2009 - Kal
+- #### Implemented the following fixes reported on the forums:
+- Daos: do_at() hide room number from players when called via wizard eye
+- Trellan: load_mobiles() removing affect flag instead of off_flags
+- Ramuh: raceedit_show(), support for multiword class names
+
+20:44 21/03/2009 - Kal
+- #### Implemented the following fixes reported on the forums:
+- Alturin: in char_update, changed 
+       if ( ch->position == POS_STUNNED ) update_pos( ch );
+    to if ( ch->position <= POS_STUNNED ) update_pos( ch ); 
+- Zyrian: Added gamesetting to suppress seeing echoes while you are sleeping
+  GAMESET5_ROOM_ECHOES_UNSEEN_WHILE_SLEEPING
+- Alturin: added !IS_NPC() to do_charinfo() to prevent crash when switched
+- Daos: code to prevent using pipe during a hotreboot - prevents stall
+- Daos: preventing looking into closed portals
+- Daos: do_channel() - generalized the use of him gender to victim based.
+- Daos: do_map() - code to prevent using the map command in noautomap rooms
+- Daos: spell_sleep() - if successful, make any rider fall off their mount
+
+21:29 21/03/2009 - Kal
+- #### Implemented the following fixes reported on the forums:
+- Daos: do_requestooc() - can no longer request victims already in ooc
+- Daos: do_collectwater() - can no longer collect water while sleeping
+- Daos: spell_utterdark() - removed duplicated room_law check
+
+7:37 p.m. 22/03/2009 - Kal
+- Wiznet login in now shows players remort number just like logout
+- disabled EVENTQUEUE_TRACE_ENABLED define... no more verbose logging of the
+  event queue :)
+
+9:09 p.m. 23/03/2009 - Kal
+- added a do_topwealth() command - like toprp, but tracks players wealth
+  in laston
+- split out parts of do_pload() out into some sub functions: 
+    char_data *pload_load_character(char_data *ch, char *name ...)
+    bool pload_unload_character(char_data *ch, char_data *char_to_unload)
+- wrote do_laston_update_from_disk() - a function that will pload the 
+  ENTIRE player base, and update laston from what is in the pfile.
+- enhanced laston_load() so if there is no wealth details for ALL of the 
+  laston database, it will automatically execute do_laston_update_from_disk()
+  one time to populate topwealth
+- added prefix searching to do_topwealth()
+- do_laston_update_from_disk() now calls update_alarm() so the mud doesn't 
+  terminate itself if the command takes a long time
+- changed topwealth so it doesn't include level 1 players with 1000 silver
+  unless a name prefix filter is used
+
+21:29 21/03/2009 - Kal
+- #### Implemented the following fixes reported on the forums:
+- Arlodon: check_dodge() and check_parry() prevent mobs from succeeding in 
+  it if they don't have the appropriate OFF_* flag set, nor can they succeed
+  for players that don't have the skill.
+- Arlodon: check_fade(), can no longer fade if stunned, nor will it succeed 
+  for a player that doesn't have the skill.
+
+8:43pm 26/03/2009 - Kal
+- added code to laston to tally up all shown players wealth.
+- Added Tristans fix to area_vnum_range_used() so you can't create areas 
+  that overlap an area.
+- Daos's fix so immortals don't trigger players room alarms.
+- fixed extract_char() so it clears any alarms a player may have set
+- added DYN_USER_OF_ALARM_SPELL, set on a player when they set an alarm
+- optimized extract_char() so it only scans every room in the game if the 
+  player had DYN_USER_OF_ALARM_SPELL set
+- Spilinek: fix to can_see_room() where ch->in_room was being used instead
+  of the pRoomIndex parameter
+- Spilinek: fix of act_new() to use icaptialize() instead of trying to do
+  initial uppercase while considering colour codes
+- Spilinek: fix of icapitialize() to support custom colour codes `=X etc  
+- Optimized icapitialize() so it uses strcpy() once it has done its first cap
+  
+8:15pm 27/03/2009 - Kal
+- Fixed a bug Archiel reported on PowerPC OSX where the category of skills
+  wasn't saving/loading properly.  Issue was due to category being an int
+  but GIO configuration was treating it as a short.  Fix was changing
+    GIO_SHWFLAGH(category,			"Category        ", category_types)
+  To:
+    GIO_WFLAGH(category,			"Category        ", category_types)
+  Within GIO config of for skill_type (in dynamics.cpp around line 244)
+- Fixed 6 memory leaks during bootup (2 of which were reported by spilinek) 
+  around reading in a string using fread_string() but not freed.
+- Spilinek: fix for memory leaks where pMob->material and pObj->material 
+  weren't being freed in free_mob_index() and free_obj_index()
+- Fixed langedit_addword() so you can blank a single character word
+- Daos: Fixed saving of clan recall rooms so it uses an int instead of short
+- Spilinek: do_mset() changing of immtitle and title now shows victims name
+- Spilinek: added memory leak fix to do_clear_createcount()
+- Spilinek: fixed spell_summon() and tame_a_little() so they work on
+  victim->act when removing ACT_AGGRESSIVE instead of victim->affected_by
+- Daos: fixed typo in output of fread_affect() regarding bitvectors
+- Zyrian: fix for newer sectors costing no movement points... the following
+  sectors now have the following costs:
+    Snow  ----  6 mv
+    Ice   ----  6 mv
+    Trail ----  2 mv
+    Lava  ---- 15 mv
+
+8:41pm 29/03/2009 - Kal
+- fixed alignment n/a skills above your level in do_skill()
+
+8:41pm 30/04/2009 - Kal
+- Added $u and $U for Unique ID's for use with mudprogs
+  $u = uid of mob/object triggered on
+  $U = uid of character who triggered prog
+- fixed oprog_execute_if_appropriate() so it correctly triggered on the 
+  OTRIG_WEAR_MID case - this is used when someone wears an object... after
+  the previous object has been removed but the replacement object hasn't 
+  been put on yet
+- added optimisation to program_flow() so it recognises mp commands and
+  skips running them via interpret()
+- introduced a system to prevent object progs recursing on themself with the
+  same trigger type... using the following macros
+  #define IS_RUNNING_OTRIGGER(obj,trig) (IS_SET((obj)->running_otrigger,(trig)))
+  #define SET_RUNNING_OTRIGGER(obj,trig) (SET_BIT((obj)->running_otrigger,(trig)))
+  #define REMOVE_RUNNING_OTRIGGER(obj,trig) (REMOVE_BIT((obj)->running_otrigger,(trig)))
+  Macros hook into oprog_execute_if_appropriate()
+  
+7:53pm 1/05/09 - Kal
+- Added OTRIG_REMOVE_PRE and OTRIG_REMOVE_POST triggers - for the removal of items
+- Added OBJEXTRA2_MUDPROG_RECURSION_ALLOWED so the system to preventing 
+  mudprog recursion can be disabled for a specific object... doubt it will
+  ever be needed, but keeping options open for builders
+- Implemented system to prevent recursion for mobiles for all trigger types
+  except MTRIG_GREET and MTRIG_GRALL
+- Added ACT2_MUDPROG_RECURSION_ALLOWED for mobs so the recursion prevention
+  code can be disabled on a per mobile basis
+  
+16:21 23/05/09 - Kal
+- Added Affect3 flags to mobiles based on Daos's post on the forums
+- Moved the implemented AFF2_DET_TRAPS to AFF3_DET_TRAPS, so there is an
+  example within the affect3 tables.
+- do_rename() now updates names in the offline letgain database if they exist
+
+16:58 23/05/09 - Kal
+- Fixed some incorrect printf %d format codes (changed to %ld)
+
+=============================================================================
+== RELEASED beta 5
+=============================================================================
+=============================================================================
+
+20:01 31May09 - Kal
+- Added mudprog support to the freevnum command
+
+21:11 14Sep09 - Kal
+- Added missing finished_running_prog_for_trigger(mob, ch, type); call before 
+  early return in  mp_percent_trigger()
+- Moved finished_running_prog_for_trigger() up a few lines in 
+  mp_greet_trigger to achieve intended functionality
+
+20:53 12Mar10 - Kal
+- do_pload() added check for ch being null - a corrupt laston.txt with a 
+  blank name and no wealth records could cause a pload, which causes 
+  do_pload() to be called to show syntax for a blank parameter which causes
+  a crash.
+  
+21:17 4Sep10 - Kal
+- Some ch->printf( .* "\r\n") -> ch->println(.*) changes in act_wiz2.cpp
+- swapped order the switch cases for CON_REROLL_STATS & CON_GET_NEW_CLASS 
+  appear, so they now represent the order connections are processed, has no
+  functional change in behaviour, just makes it clearer for new coders based
+  on a comment on the forums.
+- Fixed the use of #elif with no qualifier instead of just #else in dawnstat.cpp
+- Fixed bug in fwrite_pet() reported in the forums by Blackout that assigns to the 
+  pets position instead of evaluating it 
+  i.e. "pet->position = ..." is incorrect
+       "pet->position == ..." is correct.
+
+4:09 p.m. 5/09/2010 - Kal
+- changed do_delete() so rename is used instead of sending it off to system()
+  
+7:38 p.m. 5/09/2010 - Kal
+- extras/resolver.cpp fixed g++ 4.4 compiler warnings.
+
+7:44 p.m. 5/09/2010 - Kal
+- fixed use of sprintf instead of strcpy in:
+  do_delete(), do_pour(), bust_a_prompt(), do_string(), check_realm_improve(),
+  do_spinfo(), do_sinfo(), 
+
+
+8:08 p.m. 5/09/2010 - Kal
+- renamed some variables in get_whovis_player_world() to make it easier to 
+  read.
+- removed do_send(), historically it has been used to send the newbie guide
+  but in reality these days guides are on websites.  The command itself has
+  security issues due to its implementation.  Fortunately it is not 
+  accessible to the general player population.
+
+8:31 p.m. 5/09/2010- Kal
+- fixed a memory leak in get_current_working_directory().
+- changed all calls to getcwd() to call get_current_working_directory().
+
+9:27 p.m. 5/09/2010 - Kal
+- refactored examine_last_command(), so the results of all fscanf's are checked
+- renamed file_exists(const char * fmt, ...) to file_existsf(const char * fmt, ...)
+- created file_exists( const char *filename).
+- file_existsf(const char * fmt, ...) formats the string then uses file_exists()
+
+7:35 p.m. 6/09/2010 - Kal
+- Split up makef_titlebar() into two functions:
+  format_titlebar() and format_titlebarf(...), then removed makef_titlebar()
+- converted the use of makef_title bar to the appropriate new version (about
+  80 instances - about 25 required the "f" version.
+- renamed all usage of mpbug() to mpbugf(...)
+- created mpbug(t), took the quick option of making it call mpbugf("%s", t)
+- do_vlist() cleaned up a lot of sprintf use, when strcpy would have been fine
+- fixed up all remaining gcc 4.4 "format not a string literal and no format 
+  arguments" warnings
+- defined INVALID_CHARACTERS_FROM_USERS_FOR_SYSTEM_CALLS in params.h and
+  changed functions that needed to sanity check functions to use this 
+  definition instead of their own local copy - is_invalid_email() and 
+  is_valid_scriptname()
+
+8:34 p.m. 6/09/2010 - Kal
+- do_system() now checks and responds to the result of the system() call
+- email_descriptor_unlock_id() within the ban code now checks the return 
+  code of the system call.  If an error is reported it:
+  * logs an error to the main log
+  * logs the error on wiznet secure
+  * gives the code to the new player
+
+8:49 p.m. 6/09/2010 - Kal
+- Fixed a bug in laston_logout() that permkilled status wasn't be correctly 
+  recorded.  Instead when a permkilled player logged out marks everyone as 
+  permkilled until someone else logs out.
+- changed laston_immortal() to display PermKilled flag in the general list
+  as a replacement for the on/deleted word.
+
+10:22 p.m. 6/09/2010 - Kal
+- fixed a memory leak in load_intro_database()
+- added code to report when reinitialing a know entry in attach_know()
+- intro_data_database[player->know_index]->owner_id!=player->player_id bug
+  now displays inplace id if available.
+- laston now shows the year instead of the hh:mm:ss in the detail portion
+  if an entry is older than 1 year ago.  Wide format shows complete time 
+  and year in those circumstances.
+
+8:52 p.m. 7/09/2010 - Kal
+- fixed a crashbug in ispell_init() where if the fork failed it would try to 
+  sprintf() to NULL
+- ispell_init() now checks the result of the pipe() and read() calls
+- do_script() now checks result of system() call, probably pointless on unix
+  as it runs scripts in the background using &
+- nanny_enter_unlock_id() now uses rename() for "deleting" instead of system
+  call.  rename() result is also checked and errors reported via logs and a
+  system note.
+- skillgroup_ReadClassRatings() now checks the fscanf result codes.
+- loadRecord() in gio.cpp now checks the fscanf result codes.
+- fixed a typo in char_update() when you receive a karn - momement was spelt 
+  momemement.
+- intro_data type extended to also carry a copy of the players name - makes 
+  debugging a heap easier and these days memory is very cheap.
+- intro_db.txt now stores the players name and date in text format for 
+  reference - name is loaded, text date is discarded on load.
+- intro system now logs when an expired introduce data record is discarded
+
+11:10 p.m. 7/09/2010 - Kal
+- do_delete() now moves players level 5 and higher to the deleted directory
+  on windows just like it always has in linux.
+- wiznet newbies now gives info on new players - how long in creation, 
+  number of times rerolled etc.
+- roll_stats() no longer increments reroll counter, since it is already being
+  incremented in nanny_reroll_stats()
+
+10:07 p.m. 8/09/2010 - Kal
+- Fixed up the tracking system's use of race_oldchar[]... all the bitmasking
+  was based on a 32bit mask, not a 16bit mask.
+- increased the default MAX_TRACKABLE_CHARACTERS_IN_GAME to 30k from 10k,
+  this increases the mud memory consumption slightly, but then allows up to
+  30KB mobs in the game concurrently + tracks lasting longer when you 
+  approach the threshhold
+
+9:49 p.m. 11/09/2010 - Kal
+- A player is now remembered by the introduction system for up to 500 days
+  since their last login (increased from 90).
+
+9:56pm 22/09/2010 - Kal
+- Packaging up for release as 1.69s.Beta6.
+- Updated License - less restrictive, but note new "help greeting" required.
+============================================================================
+============================================================================
+== DAWN 1.69s_beta6 RELEASED 22September2010
+============================================================================
+

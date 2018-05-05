@@ -1,0 +1,1 @@
+The obj folder contains all the object files for a unix compile.

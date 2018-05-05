@@ -1,0 +1,101 @@
+/**************************************************************************/
+// HOWTO: Another howto on converting part of a GIO file format - not the
+//        only way as always - Kal
+// A lot of the code referenced here is/was once contained in races.cpp
+/**************************************************************************/
+// Originally the skills for a pcrace were stored as an array of char *
+// within the game... this was changed to an array of sh_int to store
+// the gsn's of the skills. 
+// 
+// Under the old system GIO was using the entry 
+//    GIO_STR_ARRAYLIST(skills, 10)
+// to save the complete list... this resulted in lines like
+//   skills[0] berserk~
+//   skills[1] sneak~
+// in the file which a race was saved.
+//
+// The new format uses 2 custom GIO functions to read and write the pcrace
+// info to/from disk.
+//   GIO_CUSTOM_WRITEH(skills, "skills", pcrace_WriteSkills)
+//   GIO_CUSTOM_READH(skills, "skills", pcrace_ReadSkills)
+// Because the skills list is not read in before pcraces, the information
+// is stored in a text form during read in, then converted by the function
+// pcrace_convert_skills() after the skill table has been read.
+//
+// The old format is read in using: 
+//  GIO_CUSTOM_READH(skills, "skills[0]", pcrace_ReadSkill_OLD_FORMAT)
+//  GIO_CUSTOM_READH(skills, "skills[1]", pcrace_ReadSkill_OLD_FORMAT)
+//  GIO_CUSTOM_READH(skills, "skills[2]", pcrace_ReadSkill_OLD_FORMAT)
+//  GIO_CUSTOM_READH(skills, "skills[3]", pcrace_ReadSkill_OLD_FORMAT)
+//  GIO_CUSTOM_READH(skills, "skills[4]", pcrace_ReadSkill_OLD_FORMAT)
+//  GIO_CUSTOM_READH(skills, "skills[5]", pcrace_ReadSkill_OLD_FORMAT)
+//  GIO_CUSTOM_READH(skills, "skills[6]", pcrace_ReadSkill_OLD_FORMAT)
+//  GIO_CUSTOM_READH(skills, "skills[7]", pcrace_ReadSkill_OLD_FORMAT)
+//  GIO_CUSTOM_READH(skills, "skills[8]", pcrace_ReadSkill_OLD_FORMAT)
+//  GIO_CUSTOM_READH(skills, "skills[9]", pcrace_ReadSkill_OLD_FORMAT)
+// Notice there is only a read and no write for this.
+
+/**************************************************************************/
+// read the pcrace skills for a pcrace - OLD FORMAT
+void pcrace_ReadSkill_OLD_FORMAT(gio_type *, int, void *data, FILE *fp)
+{	
+	pc_race_type * pcRace= (pc_race_type *) data;
+	if(IS_NULLSTR(pcRace->load_skills)){
+		pcRace->load_skills=str_dup("");
+	}
+	char *another_skill=fread_string(fp);
+	char all_skills[MSL];
+	sprintf(all_skills, "%s '%s'", pcRace->load_skills, another_skill);
+	replace_string(pcRace->load_skills, all_skills);
+	free_string(another_skill);
+}
+/**************************************************************************/
+// create pc_race_type GIO lookup table 
+GIO_START(pc_race_type)
+GIO_STR(name)
+GIO_BOOL(creation_selectable)
+GIO_STR(who_name)
+GIO_STR(prime_language)
+GIO_SHINTH(points, "Creation_Points")
+GIO_SHINTH(stat_bonus[STAT_ST], "statmod_ST")
+GIO_SHINTH(stat_bonus[STAT_QU], "statmod_QU")
+GIO_SHINTH(stat_bonus[STAT_PR], "statmod_PR")
+GIO_SHINTH(stat_bonus[STAT_EM], "statmod_EM")
+GIO_SHINTH(stat_bonus[STAT_IN], "statmod_IN")
+GIO_SHINTH(stat_bonus[STAT_CO], "statmod_CO")
+GIO_SHINTH(stat_bonus[STAT_AG], "statmod_AG")
+GIO_SHINTH(stat_bonus[STAT_SD], "statmod_SD")
+GIO_SHINTH(stat_bonus[STAT_ME], "statmod_ME")
+GIO_SHINTH(stat_bonus[STAT_RE], "statmod_RE")
+GIO_SHINT(start_hp)
+GIO_INT(max_hp)
+GIO_SHINT(low_size)
+GIO_SHINT(high_size)
+GIO_SHINT(size)
+GIO_CUSTOM_WRITEH(name, "class_modifiers", pcrace_WriteClassMods)
+GIO_CUSTOM_READH(name, "class_modifiers", pcrace_ReadClassMods)
+GIO_INT(recall_room)
+GIO_INT(death_room)
+GIO_INTH(race_restrict,"*race_restrict") // needs to be allocated dynamically 
+GIO_CUSTOM_WRITEH(skills, "skills", pcrace_WriteSkills)
+GIO_CUSTOM_READH(skills, "skills", pcrace_ReadSkills)
+
+GIO_CUSTOM_READH(skills, "skills[0]", pcrace_ReadSkill_OLD_FORMAT)
+GIO_CUSTOM_READH(skills, "skills[1]", pcrace_ReadSkill_OLD_FORMAT)
+GIO_CUSTOM_READH(skills, "skills[2]", pcrace_ReadSkill_OLD_FORMAT)
+GIO_CUSTOM_READH(skills, "skills[3]", pcrace_ReadSkill_OLD_FORMAT)
+GIO_CUSTOM_READH(skills, "skills[4]", pcrace_ReadSkill_OLD_FORMAT)
+GIO_CUSTOM_READH(skills, "skills[5]", pcrace_ReadSkill_OLD_FORMAT)
+GIO_CUSTOM_READH(skills, "skills[6]", pcrace_ReadSkill_OLD_FORMAT)
+GIO_CUSTOM_READH(skills, "skills[7]", pcrace_ReadSkill_OLD_FORMAT)
+GIO_CUSTOM_READH(skills, "skills[8]", pcrace_ReadSkill_OLD_FORMAT)
+GIO_CUSTOM_READH(skills, "skills[9]", pcrace_ReadSkill_OLD_FORMAT)
+
+GIO_SHINT(min_height)
+GIO_SHINT(max_height)
+GIO_SHINT(min_weight)
+GIO_SHINT(max_weight)
+GIO_INT(food_vnum)
+GIO_WFLAG(flags, pcrace_flags)
+GIO_SHINT(remort_number)
+GIO_FINISH

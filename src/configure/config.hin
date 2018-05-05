@@ -1,0 +1,47 @@
+#ifndef config_h
+#define config_h
+
+/* Define if you have strftime(). */
+#undef HAVE_STRFTIME
+
+/* Define if you have vprintf(). */
+#undef HAVE_VPRINTF
+
+/* Define if you have zlib.h. */
+#undef HAVE_ZLIB
+
+/* Define if you have sys/types.h. */
+#undef HAVE_SYS_TYPES_H
+
+/* Define if you have sys/time.h. */
+#undef HAVE_SYS_TIME_H
+
+/* Define if you have sys/socket.h. */
+#undef HAVE_SYS_SOCKET_H
+
+/* Define if you have sys/param.h. */
+#undef HAVE_SYS_PARAM_H
+
+/* Define if you have sys/sysctl.h. */
+#undef HAVE_SYS_SYSCTL_H
+
+/* Define if you have sys/utsuname.h. */
+#undef HAVE_SYS_UTSNAME_H
+
+/* Define if time.h is protected against multiple inclusion. */
+#undef TIME_WITH_SYS_TIME
+
+/* Define if you have sys/wait.h. */
+#undef HAVE_SYS_WAIT_H
+
+/* Define these if any type is missing. */
+#undef pid_t
+#undef size_t
+#undef socklen_t
+#undef const
+#undef inline
+
+/* Define if you have ipv6 support */
+#undef IPV6_SUPPORT_ENABLED
+
+#endif

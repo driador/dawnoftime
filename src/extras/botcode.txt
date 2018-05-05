@@ -1,0 +1,43 @@
+# The below code is inserted into the eggbot startup script to make
+# the bot a mud connection server
+
+proc play_dawn {nick uhost hand chan text} {
+  global botnick 
+  set i [myip]
+     putlog "PRIVMSG $nick :DCC CHAT chat $i 1235"
+  if {$botnick != $nick} {
+     puthelp "PRIVMSG $nick :\001DCC CHAT chat $i 1235\001\n"
+  }
+}
+
+proc play_dawnmsg {nick uhost hand chan } {
+  global botnick
+  set i [myip]
+     putlog "PRIVMSG $nick :DCC CHAT chat $i 1235"
+  if {$botnick != $nick} {
+     puthelp "PRIVMSG $nick :\001DCC CHAT chat $i 1235\001\n"
+  }
+}
+proc play_dawnolc {nick uhost hand chan} {
+  global botnick
+  set i [myip]
+     putlog "PRIVMSG $nick :DCC CHAT chat $i 4322"
+  if {$botnick != $nick} {
+     puthelp "PRIVMSG $nick :\001DCC CHAT chat $i 4322\001\n"
+  }
+}
+
+
+proc do_topic_set {nick uhost hand chan} {  
+  global botnick
+  if {$botnick != $nick} {
+    puthelp "NOTICE $nick :To play an online roleplaying game /msg $botnick !dawn"
+    return 0
+  }
+  putserv "TOPIC $chan :To play an online roleplaying game /msg $botnick !dawn"
+  bind pub -|- !dawn play_dawn
+  bind msg -|- !dawn play_dawnmsg
+  bind msg -|- !olc play_dawnolc
+
+}
+bind join - * do_topic_set

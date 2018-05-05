@@ -1,0 +1,314 @@
+=============================================================================
+SECTOR HOW-TO  -  What needs to be done and reviewed if a new sector is added
+=============================================================================
+
+I. DEFINE A NEW SECTOR
+----------------------
+Sector definition held in dawn.h
+
+1. #define SECTOR_NEWSECTOR    (Value of SECTOR_MAX)
+2. increment SECTOR_MAX value by 1
+
+   ie ... #define SECTOR_MAX 	13
+
+   would look like
+
+          #define SECTOR_NEWSECTOR  13
+          #define SECTOR_MAX        14
+
+
+II. Considerations: act_comm.cpp
+--------------------------------
+
+1. sectyelltable[]  needs a new entry
+
+sectyellinfo sectyelltable[]={
+	{SECT_INSIDE		,(float)0.90}, // reduction amounts on the 
+	{SECT_CITY			,(float)0.85}, // high side to make the yell
+	{SECT_FIELD			,(float)0.75}, // command actually useable
+	{SECT_FOREST		,(float)0.70},
+	{SECT_HILLS			,(float)0.70}, 
+	{SECT_MOUNTAIN		,(float)0.65}, 
+	{SECT_WATER_SWIM		,(float)0.55},
+	{SECT_WATER_NOSWIM	,(float)0.45},
+	{SECT_SWAMP			,(float)0.45},
+	{SECT_AIR			,(float)0.65},
+	{SECT_DESERT		,(float)0.65},
+	{SECT_CAVE			,(float)0.80},
+	{SECT_UNDERWATER		,(float)0.35}
+};
+2. Derive a value based on above sectors, lower values will dampen out the
+   sounds quicker.
+
+
+III. Considerations: act_info.cpp
+---------------------------------
+
+1. in do_weather()
+
+   if ( !IS_OUTSIDE(ch) || ch->in_room->sector_type == SECT_CAVE ) 
+   {
+      ch->println( "You can't see the sky from here." );
+      return;
+   }
+
+   Some sectors are considered to be outdoors, but you may not be able to
+   view the sky from them, as is the case with SECT_CAVE
+
+
+IV. Considerations: act_move.cpp
+--------------------------------
+
+1. New movement loss value needs to be added
+
+   const   sh_int  movement_loss   [SECT_MAX]  =
+   {
+       1, 2, 2, 3, 4, 6, 4, 7, 10, 10, 6, 4, 6
+   };
+
+2. in move_char()  - certain sectors may need protective or enabling spells,
+   skills, or items to allow passage
+   ie SECT_AIR (fly)
+      SECT_UNDERWATER (otterlungs) etc
+
+   
+V. Considerations: act_wiz.cpp
+------------------------------
+
+1. do_zoecho() and do_geoecho()  may require special sector checks this is
+   especially true if a special sector check was added to do_weather()
+   [Item III.]
+
+
+VI. Considerations: fight.cpp
+-----------------------------
+
+1. do_dirt()  new sectors may affect the dirt kicking skill modifier roll
+
+
+VII. Considerations: handler.cpp
+--------------------------------
+
+1. room_is_dark()  sectors may default a room to a dark or light state.
+   return true; (if dark) or return false; (if light)
+
+
+VIII. Considerations: macros.h
+------------------------------
+
+1. #define IS_WATER_SECTOR(sect)   (sect==SECT_WATER_SWIM \
+                                 || sect==SECT_WATER_NOSWIM \
+                                 || sect==SECT_UNDERWATER)
+
+2. #define IS_OUTSIDE(ch) \
+       (( !IS_SET((ch)->in_room->room_flags, ROOM_INDOORS) \
+       && ((ch)->in_room->sector_type != SECT_UNDERWATER)))
+
+
+IX. Considerations: magic.cpp
+-----------------------------
+
+1. spell_call_lightning() - again, if item III do_weather() has been modified
+   this may well need to be changed
+2. spell_create_food2 - text output differs for SECT_AIR and uses
+   IS_WATER_SECTOR macro
+
+
+X. Considerations: magic_ce.cpp
+-------------------------------
+
+1. spell_strength_of_the_land() may need new switch entry
+
+
+XI. Considerations: magic_da.cpp
+--------------------------------
+
+1. spell_naturespeak() will likely need a new switch entry for both the 
+   caster's feedback message and what the victim of the naturespeak percieves
+
+
+XII. Considerations: magic_ke.cpp
+---------------------------------
+
+1. spell_earthwalk() will need new sector based messages and outdoor sector
+   checking
+2. spell_sunfire() may need a sector restriction (esp if item III is changed)
+3. spell_treeform() may need allowable sector type casting permissions
+   (SECT_FOREST_CONIFEROUS, SECT_FOREST_DECIDUOUS, etc)
+4. spell_pine_needles() as XII.3 above
+
+
+XIII. Considerations: magic_re.cpp
+----------------------------------
+
+1. build_fire() may have sector restrictions, currently
+
+   if ( !IS_OUTSIDE( ch )
+      || IS_WATER_SECTOR( ch->in_room->sector_type )
+      || ch->in_room->sector_type == SECT_AIR )
+      {
+          ch->println( "You can't build a fire here." );
+          return;
+      }
+2. build_raft() - as per XII.3
+
+
+XIV. Considerations: map.cpp
+----------------------------
+
+1. init_map_tables()
+   a. new map character must be added to the sector_table
+   b. new colour value must be assigned to the map character
+
+
+XV. Considerations: mob_cmds.cpp
+--------------------------------
+
+1. do_mpzoecho() - as per item V.1
+2. do_mpzuecho() - will likely remain unchanged since it's a specialized
+   mob echo command designed for underwater rooms only
+
+XVI. Considerations: skills_ke.cpp
+----------------------------------
+
+1. do_forage() - new food items (restrung) may need to be added dependant
+   on the new sector_type
+2. do_bury() - may have new sector restrictions
+3. do_dig() - may also have sector restrictions
+
+
+XVII. Considerations: tables.cpp
+--------------------------------
+1. const struct flag_type sector_flags[] =
+   {
+     { "inside",    SECT_INSIDE,        true },
+     { "city",      SECT_CITY,          true },
+     { "field",     SECT_FIELD,         true },
+     { "forest",    SECT_FOREST,        true },
+     { "hills",     SECT_HILLS,         true },
+     { "mountain",  SECT_MOUNTAIN,      true },
+     { "swim",      SECT_WATER_SWIM,    true },
+     { "noswim",    SECT_WATER_NOSWIM,  true },
+     { "swamp",     SECT_SWAMP,         true },
+     { "air",       SECT_AIR,	        true },
+     { "desert",    SECT_DESERT,        true },
+     { "cave",      SECT_CAVE,          true },
+     { "underwater",SECT_UNDERWATER,    true },
+     { NULL,        0,                  0    }
+   };
+
+2. const struct sector_type sect_table[] =
+   {
+     { "inside"        },
+     { "city"          },
+     { "field"         },
+     { "forest"        },
+     { "hills"         },
+     { "mountain"	   },
+     { "water_swim"    },
+     { "water_noswim"  },
+     { "swamp"         },
+     { "air"           },
+     { "desert"        },
+     { "cave"          },
+     { "underwater"    },
+     { NULL            }
+   };
+
+3. const struct flag_type sector_desc[] =
+   {
+     { "inside",              SECT_INSIDE,        false },
+     { "in the city",         SECT_CITY,          false },
+     { "in the field",        SECT_FIELD,         false },
+     { "in the forest",       SECT_FOREST,        false },
+     { "in the hills",        SECT_HILLS,         false },
+     { "on a mountain",       SECT_MOUNTAIN,      false },
+     { "in shallow waters",   SECT_WATER_SWIM,    false },
+     { "in deep waters",      SECT_WATER_NOSWIM,  false },
+     { "in a swamp",          SECT_SWAMP,         false },
+     { "in the air",          SECT_AIR,           false },
+     { "in the desert",       SECT_DESERT,        false },
+     { "in a cave",           SECT_CAVE,          false },
+     { "underwater",          SECT_UNDERWATER,    false },
+     { NULL,                  0,                  0     }
+   };
+
+4. const struct flag_type sectorbit_flags[] = //For sect rest, enhance, damp
+   {
+     { "inside",        SECTBIT_INSIDE,          true },
+     { "city",          SECTBIT_CITY,            true },
+     { "field",         SECTBIT_FIELD,           true },
+     { "forest",        SECTBIT_FOREST,          true },
+     { "hills",         SECTBIT_HILLS,           true },
+     { "mountain",      SECTBIT_MOUNTAIN,        true },
+     { "swim",          SECTBIT_WATER_SWIM,      true },
+     { "noswim",        SECTBIT_WATER_NOSWIM,    true },
+     { "swamp",         SECTBIT_SWAMP,           true },
+     { "air",           SECTBIT_AIR,             true },
+     { "desert",        SECTBIT_DESERT,          true },
+     { "cave",          SECTBIT_CAVE,            true },
+     { "underwater",    SECTBIT_UNDERWATER,      true },
+     { NULL,            0,                       0    }
+   };
+
+XVIII. Considerations: track.cpp
+
+1. show_tracks()
+   a. may need addition for the separation of fieldtrack and city tracking
+   b. some sectors may not pick up tracks (ie IS_WATER_SECTOR and SECT_AIR)
+
+
+XIX.  Considerations: update.cpp
+
+1. hit_gain() Drows and Duergar races gain hits in certain environs
+   regardless of day/night status
+2. mana_gain() Drows and Duergar races gain mana in certain environs
+   regardless of day/night status
+3. char_update() has an underwater check there for drowning damage
+4. obj_update() has the falling code if the obj is in SECT_AIR
+5. static weather_influence_data	sector_weather_table[] =
+   weather influence modifiers based on sector
+       INFLUENCE_M* = less likely event with 4 being least likely
+       INFLUENCE_P* = more likely event with 4 being most likely
+6. Weather sector conversion table.  Some sectors don't have normal weather
+   patterns.  Currently, only the desert has any form of aberrant weather.
+
+   static int weather_sector_conversion[SECT_MAX][SKY_MAX] =
+   {
+     { 0,1,2,3}, // SECT_INSIDE
+     { 0,1,2,3}, // SECT_CITY
+     { 0,1,2,3}, // SECT_FIELD
+     { 0,1,2,3}, // SECT_FOREST
+     { 0,1,2,3}, // SECT_HILLS
+     { 0,1,2,3}, // SECT_MOUNTAIN
+     { 0,1,2,3}, // SECT_WATER_SWIM
+     { 0,1,2,3}, // SECT_WATER_NOSWIM
+     { 0,1,2,3}, // SECT_SWAMP
+     { 0,1,2,3}, // SECT_AIR
+     { 0,0,0,3}, // SECT_DESERT
+     { 0,1,2,3}, // SECT_CAVE
+     { 0,1,2,3}  // SECT_UNDERWATER
+   };
+7. static char * weather_message[SECT_MAX][8]
+   a. holds all the weather messages which are sector dependant.  Format:
+
+      // SECT_INSIDE (No Weather Messages)
+      {
+        // Cloudless
+        "", "",
+        // Cloudy
+        "", "",
+        // Rainy
+        "", "",
+        // Lightning
+        "", ""
+      }
+
+=============================================================================
+Written on March 28, 2000 - New entries to be put in their respective
+                            Consideration entry, or make new ones accordingly
+                            Log versioning below
+=============================================================================
+
+March 28, 2000 - Original documentation
+
